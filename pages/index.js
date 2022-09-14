@@ -3,6 +3,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const specializedSiteBlockHeight = 300;
+  const specializedSiteBlockWidth = 510;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,12 +19,53 @@ export default function Home() {
           Welcome to <a href="http://urbancruiseship.org/">Urban Cruise Ship</a>
         </h1>
 
-        <div className="bg-yellow-300 m-2 p-2 text-amber-700 text-xl">
-          Tailwind Styled Text
+        <div className="grid grid-cols-3 gap-x-4">
+          <Image
+            src="/images/specialized-site-blocks/energy.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/matter.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/habitat.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/cities.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/waste.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/oceans.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/space.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/costs.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
+          <Image
+            src="/images/specialized-site-blocks/history.svg"
+            height={specializedSiteBlockHeight}
+            width={specializedSiteBlockWidth}
+          />
         </div>
-        <Image src="/vercel.svg" height={230} width={230} />
-        <Image src="/images/specialized-site-blocks/energy.svg" height={300} width={1000} />
-
       </main>
     </div>
   );
