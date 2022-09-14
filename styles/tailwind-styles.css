@@ -1,0 +1,7 @@
+/* https://tailwindcss.com/docs/installation */
+/* https://youtu.be/bxmDnn7lrnk?t=559 */
+/* imports the base functionality per Tailwind-css docs */
+/* https://tailwindcss.com/docs/installation */
+@tailwind base; /* tailwind directive */
+@tailwind components; /* tailwind directive */
+@tailwind utilities; /* tailwind directive */

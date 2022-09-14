@@ -16,6 +16,8 @@ export default function Home() {
           Welcome to <a href="http://urbancruiseship.org/">Urban Cruise Ship</a>
         </h1>
 
+        <div className="bg-yellow-300 m-2 p-2 text-amber-700 text-xl">Tailwind Styled Text</div>
+
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
