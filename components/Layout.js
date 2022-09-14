@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Script from 'next/script';
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +10,7 @@ const Layout = ({ children }) => {
       this is a tempoary script for copy & pasting to Michael's code...
       ...in the final build, this will be deleted and we will use the command:
       $npm run build-css */}
-        <script src="https://cdn.tailwindcss.com"></script>
+        <Script src="https://cdn.tailwindcss.com"></Script>
       <Navbar />
       <div className="page-content">{children}</div>
       <Footer />
