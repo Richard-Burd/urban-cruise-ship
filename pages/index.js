@@ -22,46 +22,55 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-x-4">
           <Image
             src="/images/specialized-site-blocks/energy.svg"
+            alt="Energy"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/matter.svg"
+            alt="Matter"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/habitat.svg"
+            alt="Habitat"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/cities.svg"
+            alt="Cities"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/waste.svg"
+            alt="Waste"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/oceans.svg"
+            alt="Oceans"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/space.svg"
+            alt="Space"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/costs.svg"
+            alt="Costs"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
           <Image
             src="/images/specialized-site-blocks/history.svg"
+            alt="History"
             height={specializedSiteBlockHeight}
             width={specializedSiteBlockWidth}
           />
