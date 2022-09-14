@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       this is a tempoary script for copy & pasting to Michael's code...
       ...in the final build, this will be deleted and we will use the command:
       $npm run build-css */}
-        <script src="https://cdn.tailwindcss.com" defer></script>
+        <script src="https://cdn.tailwindcss.com" async></script>
       <Navbar />
       <div className="page-content">{children}</div>
       <Footer />
