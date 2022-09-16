@@ -565,6 +565,11 @@ video {
   margin: 3rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .grid {
   display: grid;
 }
@@ -624,4 +629,16 @@ video {
 
 .arial-rounded-mt-bold {
   font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+@media (min-width: 640px) {
+  .sm\:max-w-screen-md {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:max-w-screen-lg {
+    max-width: 1024px;
+  }
 }
