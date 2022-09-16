@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         <script src="https://cdn.tailwindcss.com"></script>*/}
       <div className="sm:max-w-screen-md lg:max-w-screen-lg mx-auto">
         <Navbar />
-        <div className="page-content">{children}</div>
+        <div>{children}</div>
         <Footer />
       </div>
     </>

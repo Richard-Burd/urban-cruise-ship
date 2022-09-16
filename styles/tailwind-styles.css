@@ -11,3 +11,11 @@
 .arial-rounded-mt-bold {
   font-family: "Arial Rounded MT Bold", sans-serif;
 }
+
+.sites-intro-font-size {
+  font-size: 4rem;
+}
+
+.top-navbar-shadow {
+  box-shadow: 8px 8px 4px rgb(120, 120, 120);
+}

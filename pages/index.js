@@ -19,11 +19,11 @@ export default function Home() {
           height={300}
           width={510}
         />
-        <div className="arial-rounded-mt-bold text-6xl text-gray-700">
+        <div className="arial-rounded-mt-bold pt-32 text-6xl text-gray-700">
           Welcome!
         </div>
       </div>
-      <h1 className="arial-rounded-mt-bold text-6xl text-gray-700">
+      <h1 className="arial-rounded-mt-bold sites-intro-font-size text-gray-700">
         Our specialized sites:
       </h1>
       {/* <--mobile view--> 770px <--tablet view--> 1025px <--desktop view--> */}
