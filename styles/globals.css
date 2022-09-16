@@ -570,11 +570,6 @@ video {
   margin-right: auto;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -632,14 +627,24 @@ video {
   padding-right: 2rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .pt-32 {
@@ -734,7 +739,7 @@ video {
 }
 
 .specialized-site-navbar-shadow {
-  box-shadow: 8px 8px 4px rgb(150, 150, 150);
+  box-shadow: 5px 8px 4px rgb(150, 150, 150);
 }
 
 .energy-background-color {
@@ -774,10 +779,10 @@ video {
 }
 
 .elliptical-geometry {
-  border-bottom-left-radius: 35px 10px;
-  border-bottom-right-radius: 35px 10px;
-  border-top-left-radius: 35px 10px;
-  border-top-right-radius: 35px 10px;
+  border-bottom-left-radius: 26px 10px;
+  border-bottom-right-radius: 26px 10px;
+  border-top-left-radius: 26px 10px;
+  border-top-right-radius: 26px 10px;
 }
 
 @media (min-width: 640px) {
