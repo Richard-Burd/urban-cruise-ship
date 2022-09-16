@@ -26,4 +26,4 @@ The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Verc
   <img alt="a high level overview of the project architecture" src="https://imgur.com/XmKqMk7">
 </a>
 
-[![name](https://imgur.com/XmKqMk7)](https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing)
+[<img alt="alt_text" width="800px" src="https://imgur.com/XmKqMk7" />](https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing)
