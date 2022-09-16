@@ -15,7 +15,7 @@ The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Verc
 
 ---
 
-### Installation instructions (Ubuntu):
+### Installation instructions (Bash commands):
 
 1. run: `npm install` to install the node module dependencies
 2. run: `npm run dev` to run the development server
