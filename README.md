@@ -23,5 +23,7 @@ The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Verc
 4. run: `npm run build` to build out a production version of the site
 
 <a href="/https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing" target="_blank">
-  <img alt="I high level overview of the project architecture" src="https://imgur.com/XmKqMk7">
+  <img alt="a high level overview of the project architecture" src="https://imgur.com/XmKqMk7">
 </a>
+
+[![name](https://imgur.com/XmKqMk7)](https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing)
