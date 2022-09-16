@@ -21,9 +21,10 @@ The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Verc
 2. run: `npm run dev` to run the development server
 3. run: `npm run build-css` to build out any necessary TailwindCSS classes (if you add any)
 4. run: `npm run build` to build out a production version of the site
+---
 
-<a href="/https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing" target="_blank">
-  <img alt="a high level overview of the project architecture" src="https://imgur.com/XmKqMk7">
-</a>
+### Schematic Overview
 
-[<img alt="alt_text" width="800px" src="https://imgur.com/XmKqMk7" />](https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing)
+The visualization below is available [here](https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing)
+
+![an image of the package.json file](https://imgur.com/XmKqMk7.png)
