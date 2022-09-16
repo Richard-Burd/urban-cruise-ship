@@ -570,6 +570,16 @@ video {
   margin-right: auto;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -599,6 +609,15 @@ video {
        column-gap: 1rem;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
 .bg-amber-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 230 138 / var(--tw-bg-opacity));
@@ -613,8 +632,22 @@ video {
   padding-right: 2rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pt-3 {
@@ -657,6 +690,10 @@ video {
   letter-spacing: 0.1em;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -672,6 +709,16 @@ video {
   color: rgb(113 63 18 / var(--tw-text-opacity));
 }
 
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-zinc-200 {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
 /* tailwind directive */
 
 .arial-rounded-mt-bold {
@@ -683,7 +730,54 @@ video {
 }
 
 .top-navbar-shadow {
-  box-shadow: 8px 8px 4px rgb(120, 120, 120);
+  box-shadow: 8px 8px 4px rgb(150, 150, 150);
+}
+
+.specialized-site-navbar-shadow {
+  box-shadow: 8px 8px 4px rgb(150, 150, 150);
+}
+
+.energy-background-color {
+  background-color: #f2bb56ff;
+}
+
+.matter-background-color {
+  background-color: #adeb48ff;
+}
+
+.habitat-background-color {
+  background-color: #8ee8ceff;
+}
+
+.cities-background-color {
+  background-color: #ffb4b4ff;
+}
+
+.waste-background-color {
+  background-color: #c1b698ff;
+}
+
+.oceans-background-color {
+  background-color: #647fecff;
+}
+
+.space-background-color {
+  background-color: #333333ff;
+}
+
+.costs-background-color {
+  background-color: #b998d6ff;
+}
+
+.history-background-color {
+  background-color: #bed0d8ff;
+}
+
+.elliptical-geometry {
+  border-bottom-left-radius: 35px 10px;
+  border-bottom-right-radius: 35px 10px;
+  border-top-left-radius: 35px 10px;
+  border-top-right-radius: 35px 10px;
 }
 
 @media (min-width: 640px) {
