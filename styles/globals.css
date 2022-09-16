@@ -630,4 +630,13 @@ video {
   line-height: 2rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 /* tailwind directive */
+
+.arial-rounded-mt-bold {
+  font-family: "Arial Rounded MT Bold", sans-serif;
+}

@@ -12,7 +12,6 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="http://urbancruiseship.org/">Urban Cruise Ship</a>
         </h1>
-
         <div className="grid grid-cols-3 gap-x-4">
           <Image
             src="/images/specialized-site-buttons/energy.svg"

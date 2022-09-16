@@ -5,3 +5,9 @@
 @tailwind base; /* tailwind directive */
 @tailwind components; /* tailwind directive */
 @tailwind utilities; /* tailwind directive */
+
+@import url("https://fonts.cdnfonts.com/css/arial-rounded-mt-bold");
+
+.arial-rounded-mt-bold {
+  font-family: "Arial Rounded MT Bold", sans-serif;
+}
