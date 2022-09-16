@@ -3,72 +3,22 @@ import styles from "../styles/Home.module.css";
 import SpecializedSiteButton from "../components/SpecializedSiteButton";
 
 export default function Home() {
-  const specializedSiteBlockHeight = 300;
-  const specializedSiteBlockWidth = 510;
-
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="http://urbancruiseship.org/">Urban Cruise Ship</a>
-        </h1>
-        <div className="grid grid-cols-3 gap-x-4">
-          <Image
-            src="/images/specialized-site-buttons/energy.svg"
-            alt="Energy"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/matter.svg"
-            alt="Matter"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/habitat.svg"
-            alt="Habitat"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/cities.svg"
-            alt="Cities"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/waste.svg"
-            alt="Waste"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/oceans.svg"
-            alt="Oceans"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/space.svg"
-            alt="Space"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/costs.svg"
-            alt="Costs"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-          <Image
-            src="/images/specialized-site-buttons/history.svg"
-            alt="History"
-            height={specializedSiteBlockHeight}
-            width={specializedSiteBlockWidth}
-          />
-        </div>
-      </main>
-    </div>
+    <>
+      <h1 className="arial-rounded-mt-bold text-6xl text-gray-700">
+        Our specialized sites:
+      </h1>
+      <div className="grid grid-cols-3 gap-x-4">
+        <SpecializedSiteButton site={"energy"} />
+        <SpecializedSiteButton site={"matter"} />
+        <SpecializedSiteButton site={"habitat"} />
+        <SpecializedSiteButton site={"cities"} />
+        <SpecializedSiteButton site={"waste"} />
+        <SpecializedSiteButton site={"oceans"} />
+        <SpecializedSiteButton site={"space"} />
+        <SpecializedSiteButton site={"costs"} />
+        <SpecializedSiteButton site={"history"} />
+      </div>
+    </>
   );
 }
