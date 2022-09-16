@@ -5,6 +5,12 @@ import SpecializedSiteButton from "../components/SpecializedSiteButton";
 export default function Home() {
   return (
     <>
+      <Image
+        src={`/images/ucs-logo.svg`}
+        alt={"UCS Logo"}
+        height={300}
+        width={510}
+      />
       <h1 className="arial-rounded-mt-bold text-6xl text-gray-700">
         Our specialized sites:
       </h1>
