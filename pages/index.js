@@ -13,13 +13,14 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-between">
-        <Image
+        <Image className="opacity-90"
           src={`/images/ucs-logo.svg`}
           alt={"UCS Logo"}
-          height={300}
-          width={510}
+          height={340}
+          width={620}
+          priority // https://nextjs.org/docs/basic-features/image-optimization#priority
         />
-        <div className="arial-rounded-mt-bold pt-32 text-6xl text-gray-700">
+        <div className="arial-rounded-mt-bold pt-32 pr-4 text-6xl text-gray-700">
           Welcome!
         </div>
       </div>
@@ -33,10 +34,10 @@ export default function Home() {
       <div
         className={
           mobile
-            ? "grid grid-cols-1 gap-x-4" 
+            ? "grid grid-cols-1" 
             : tablet
-            ? "grid grid-cols-2 gap-x-4"
-            : "grid grid-cols-3 gap-x-4"
+            ? "grid grid-cols-2 gap-x-2"
+            : "grid grid-cols-3 gap-x-2"
         }
       >
         <SpecializedSiteButton site="energy" />

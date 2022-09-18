@@ -19,7 +19,7 @@ export const useMediaQuery = (width) => {
     if (media.matches) setTargetReached(true);
 
     return () => media.removeEventListener("change", updateTarget);
-  }, []);
+  }, [width, updateTarget]);
 
   return targetReached;
 };

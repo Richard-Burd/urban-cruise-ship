@@ -8,7 +8,7 @@ const SpecializedSiteButton = ({ site }) => {
           src={`/images/specialized-site-buttons/${site}.svg`}
           alt={site}
           height={300}
-          width={510}
+          width={568}
         />
       </a>
     </>
