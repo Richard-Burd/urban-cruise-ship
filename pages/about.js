@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AboutPageDropdown from "../components/AboutPageDropdown";
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
       <div className="m-12 p-12 text-8xl">
         this is the &quot;About&quot; page
       </div>
+      <AboutPageDropdown />
     </>
   );
 };
