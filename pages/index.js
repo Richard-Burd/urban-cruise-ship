@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import SpecializedSiteButton from "../components/SpecializedSiteButton";
@@ -12,8 +13,13 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Urban Cruise Ship</title>
+        <meta name="keywords" content="homepage, landing page" />
+      </Head>
       <div className="flex justify-between">
-        <Image className="opacity-90"
+        <Image
+          className="opacity-90"
           src={`/images/ucs-logo.svg`}
           alt={"UCS Logo"}
           height={340}
@@ -34,7 +40,7 @@ export default function Home() {
       <div
         className={
           mobile
-            ? "grid grid-cols-1" 
+            ? "grid grid-cols-1"
             : tablet
             ? "grid grid-cols-2 gap-x-2"
             : "grid grid-cols-3 gap-x-2"
