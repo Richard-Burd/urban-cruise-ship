@@ -8,62 +8,12 @@
 
 @import url("https://fonts.cdnfonts.com/css/arial-rounded-mt-bold");
 
+/* This is the standard branding font used by UCS */
 .arial-rounded-mt-bold {
   font-family: "Arial Rounded MT Bold", sans-serif;
 }
 
+/* This is the tempoary bookmark for the different ./paths */
 .sites-intro-font-size {
   font-size: 4rem;
-}
-
-.top-navbar-shadow {
-  box-shadow: 8px 8px 4px rgb(150, 150, 150);
-}
-
-.specialized-site-navbar-shadow {
-  box-shadow: 5px 8px 4px rgb(150, 150, 150);
-}
-
-.energy-background-color {
-  background-color: #f2bb56ff;
-}
-
-.matter-background-color {
-  background-color: #adeb48ff;
-}
-
-.habitat-background-color {
-  background-color: #8ee8ceff;
-}
-
-.cities-background-color {
-  background-color: #ffb4b4ff;
-}
-
-.waste-background-color {
-  background-color: #c1b698ff;
-}
-
-.oceans-background-color {
-  background-color: #647fecff;
-}
-
-.space-background-color {
-  background-color: #333333ff;
-}
-
-.costs-background-color {
-  background-color: #b998d6ff;
-}
-
-.history-background-color {
-  background-color: #bed0d8ff;
-}
-
-
-.elliptical-geometry {
-  border-bottom-left-radius: 26px 10px;
-  border-bottom-right-radius: 26px 10px;
-  border-top-left-radius: 26px 10px;
-  border-top-right-radius: 26px 10px;
 }

@@ -10,6 +10,11 @@ const Navbar = () => {
       <Link href="/associations">Associations</Link>
       <Link href="/presentations">Presentations</Link>
       <Link href="/accomplishments">Accomplishments</Link>
+      <style jsx>{`
+        .top-navbar-shadow {
+          box-shadow: 8px 8px 4px rgb(150, 150, 150);
+        }
+      `}</style>
     </div>
   );
 };
