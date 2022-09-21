@@ -3,7 +3,7 @@ import Link from "next/link";
 const SpecializedSiteNavbar = () => {
   const standardSpecializedSiteNavbarValues = "elliptical-geometry my-4 px-3 py-0.5 specialized-site-navbar-shadow tracking-wide"
   return (
-    <div className="border-b-2 border-gray-300 flex justify-between px-4 pt-2 pb-3 standard-font-1 text-gray-900">
+    <div className="border-b-2 border-gray-300 flex justify-between px-4 pt-2 pb-3 standard-font-1 text-black text-opacity-75">
       <button className={`energy-background-color ${standardSpecializedSiteNavbarValues}`}>
         <Link href="/energy">ENERGY</Link>
       </button>
@@ -19,10 +19,10 @@ const SpecializedSiteNavbar = () => {
       <button className={`waste-background-color ${standardSpecializedSiteNavbarValues}`}>
         <Link href="/waste">WASTE</Link>
       </button>
-      <button className={`oceans-background-color text-zinc-200 ${standardSpecializedSiteNavbarValues}`}>
+      <button className={`oceans-background-color text-opacity-80 text-white ${standardSpecializedSiteNavbarValues}`}>
         <Link href="/oceans">OCEANS</Link>
       </button>
-      <button className={`space-background-color text-zinc-200 ${standardSpecializedSiteNavbarValues}`}>
+      <button className={`space-background-color text-opacity-80 text-white ${standardSpecializedSiteNavbarValues}`}>
         <Link href="/space">SPACE</Link>
       </button>
       <button className={`costs-background-color ${standardSpecializedSiteNavbarValues}`}>

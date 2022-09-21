@@ -29,6 +29,23 @@ NOTE: standard styling for all components in this project are done in the:
   font-style: normal;  /* ibid. */
 }
 
+/* NOTE: Standard font colors are subject to be changed per John's tastes  */
+
+/* This is the standard font color for titles & subtitles  */
+.standard-font-color-1 {
+  color: #3d3d3d;
+}
+
+/* This is the standard font color for subtitles & text   */
+.standard-font-color-2 {
+  color: #252528;
+}
+
+/* This is the standard font color for text & footnotes   */
+.standard-font-color-3 {
+  color: #3f3e4e;
+}
+
 /* This is the tempoary bookmark for the different ./paths */
 /* ...it will get deleted as the project progresses */
 .sites-intro-font-size {

@@ -26,13 +26,13 @@ export default function Home() {
           width={620}
           priority // https://nextjs.org/docs/basic-features/image-optimization#priority
         />
-        <div className="pt-32 pr-4 standard-font-1 text-6xl text-gray-700">
+        <div className="pt-32 pr-4 standard-font-1 standard-font-color-1 text-6xl">
           Welcome!
         </div>
       </div>
-      <h1 className="sites-intro-font-size standard-font-1 text-gray-700">
+      <div className="pb-6 standard-font-1 standard-font-color-1 text-6xl">
         Our specialized sites:
-      </h1>
+      </div>
       {/* <--mobile view--> 770px <--tablet view--> 1025px <--desktop view--> */}
       {/* If the viewport is less than 770px, render mobile option */}
       {/* else if th viewport is less than 1025px, render tablet option */}
