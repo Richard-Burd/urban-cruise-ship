@@ -1,3 +1,12 @@
+/* 
+
+NOTE: standard styling for all components in this project are done in the: 
+      tags located at the bottom of each ".js" component file that look like 
+      this: <style jsx>{`...`}</style> ...the stylings that need to be 
+      shared by multiple components are included below in this file.
+
+*/
+
 /* https://tailwindcss.com/docs/installation */
 
 /* https://youtu.be/bxmDnn7lrnk?t=559 */
@@ -6,7 +15,11 @@
 
 /* https://tailwindcss.com/docs/installation */
 
-/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */
+/* 
+
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -806,13 +819,29 @@ video {
 
 /* tailwind directive */
 
-/* This is the standard branding font used by UCS */
+/* This is the primary branding font used by UCS */
 
-.arial-rounded-mt-bold {
+/* it is imported into this project here: ./pages/_document.js */
+
+.standard-font-1 {
   font-family: "Arial Rounded MT Bold", sans-serif;
 }
 
+/* This is the secondary branding font used by UCS  */
+
+/* it is imported into this project here: ./pages/_document.js */
+
+.standard-font-2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  /* does nothing, included for templating only */
+  font-style: normal;
+  /* ibid. */
+}
+
 /* This is the tempoary bookmark for the different ./paths */
+
+/* ...it will get deleted as the project progresses */
 
 .sites-intro-font-size {
   font-size: 4rem;

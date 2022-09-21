@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const SpecializedSiteNavbar = () => {
   return (
-    <div className="arial-rounded-mt-bold border-b-2 border-gray-300 flex justify-between px-4 pt-2 pb-3 text-gray-900">
+    <div className="border-b-2 border-gray-300 flex justify-between px-4 pt-2 pb-3 standard-font-1 text-gray-900">
       <button className="energy-background-color elliptical-geometry my-4 px-3 py-0.5 specialized-site-navbar-shadow tracking-wide">
         <Link href="/energy">ENERGY</Link>
       </button>

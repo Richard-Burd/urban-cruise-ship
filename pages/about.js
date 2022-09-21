@@ -8,8 +8,8 @@ const About = () => {
         <title>About UCS</title>
         <meta name="keywords" content="about, about us, about UCS" />
       </Head>
-      <div className="m-12 p-12 text-8xl">
-        this is the &quot;About&quot; page
+      <div className="m-12 p-12 text-8xl standard-font-2">
+      Who started Urban Cruise Ship and why?
       </div>
       <AboutPageDropdown />
     </>
