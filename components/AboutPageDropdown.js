@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const AboutPageDropdown = () => {
+const AboutPageDropdown = (props) => {
   const [isVisible, setVisible] = useState(false);
 
   return (
     <>
-      <div className="elliptical-geometry overflow-hidden w-1/2 z-0">
+      <div className="elliptical-geometry overflow-hidden ">
         <motion.div onTap={() => setVisible(!isVisible)}>
-          <div className="bg-slate-400 cursor-pointer elliptical-geometry p-2 relative text-center text-2xl w-full z-20">
-            This is a dropdown box using Framermotion
+          <div className="about-page-button-color cursor-pointer elliptical-geometry mr-5 my-4 p-1.5 relative shadow-geometry standard-font-2 text-center hover:text-gray-100 transition text-xl z-20">
+            {props.title}
           </div>
         </motion.div>
         <AnimatePresence>
@@ -24,16 +24,11 @@ const AboutPageDropdown = () => {
                 collapsed: { height: 0, y: "any-prefer-fixed" }, // https://www.framer.com/developers/guides/auto-sizing/
               }}
               transition={{
-                duration: 0.8,
+                duration: 0.4,
               }}
             >
-              <div className="bg-slate-300 elliptical-geometry pt-12 relative -translate-y-11 z-10">
-                <p className="p-4 text-base">
-                  This is the Panel, there is some text inside of it just to
-                  fill up some space for testing purposes...This is a really
-                  long piece of text, it needs to be in order to see the
-                  dropdown that is supposed to happen
-                </p>
+              <div className="border border-black elliptical-geometry mr-5 pb-5 pt-14 px-8 relative shadow-geometry text-justify -translate-y-14 z-10">
+                {props.content}
               </div>
             </motion.div>
           )}
@@ -41,10 +36,19 @@ const AboutPageDropdown = () => {
       </div>
       <style jsx>{`
         .elliptical-geometry {
-          border-bottom-left-radius: 70px 25px;
-          border-bottom-right-radius: 70px 25px;
-          border-top-left-radius: 70px 25px;
-          border-top-right-radius: 70px 25px;
+          border-bottom-left-radius: 67px 21.7px;
+          border-bottom-right-radius: 67px 21.7px;
+          border-top-left-radius: 67px 21.7px;
+          border-top-right-radius: 67px 21.7px;
+        }
+        .shadow-geometry {
+          box-shadow: 4px 6px 6px #86888f;
+        }
+        .about-page-button-color {
+          background-color: #bfc4cdff;
+        }
+        .about-page-button-color:hover {
+          background-color: #374151;
         }
       `}</style>
     </>

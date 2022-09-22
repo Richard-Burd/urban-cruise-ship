@@ -7,11 +7,11 @@ const NavbarTitleBlock = (props) => {
     <>
       <div className="pt-16 pb-11 grid grid-cols-2 gap-20 items-center">
         <Image
-          className="opacity-90"
+          className="opacity-90 -translate-x-2"
           src={`/images/ucs-logo.svg`}
           alt={"UCS Logo"}
-          height={171}
-          width={450}
+          height={173}
+          width={449}
           priority // https://nextjs.org/docs/basic-features/image-optimization#priority
         />
         <div>
