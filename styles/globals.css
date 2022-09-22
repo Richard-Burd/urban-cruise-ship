@@ -641,8 +641,16 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .gap-x-2 {
@@ -747,17 +755,25 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-11 {
+  padding-bottom: 2.75rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 

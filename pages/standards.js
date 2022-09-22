@@ -1,4 +1,5 @@
 import Head from "next/head";
+import NavbarTitleBlock from "../components/NavbarTitleBlock";
 
 const Standards = () => {
   return (
@@ -7,8 +8,13 @@ const Standards = () => {
         <title>UCS Standards</title>
         <meta name="keywords" content="standards, graphic standards, convention, criteria principles" />
       </Head>
-      <div className="m-12 p-12 text-8xl">
-        this is the &quot;Standards&quot; page
+      <div>
+        <NavbarTitleBlock
+          title={"Our Standards"}
+          subtitle={
+            "Urban Cruise Ship operates according to the following principles:"
+          }
+        />
       </div>
     </>
   );

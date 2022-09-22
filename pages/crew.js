@@ -1,17 +1,26 @@
 import Head from "next/head";
+import NavbarTitleBlock from "../components/NavbarTitleBlock";
 
 const Crew = () => {
-    return (
-        <>
-          <Head>
-            <title>UCS Crew</title>
-            <meta name="keywords" content="team, cohort, leadership, about us, people, persons" />
-          </Head>
-          <div className="m-12 p-12 text-8xl">
-            this is the &quot;Crew&quot; page
-          </div>
-        </>
-      );
-}
- 
+  return (
+    <>
+      <Head>
+        <title>UCS Crew</title>
+        <meta
+          name="keywords"
+          content="team, cohort, leadership, about us, people, persons"
+        />
+      </Head>
+      <div>
+        <NavbarTitleBlock
+          title={"The Crew"}
+          subtitle={
+            "Urban Cruise Ship is comprised of the following current and past crewmembers."
+          }
+        />
+      </div>
+    </>
+  );
+};
+
 export default Crew;

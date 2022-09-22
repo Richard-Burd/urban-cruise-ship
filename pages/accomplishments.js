@@ -1,4 +1,5 @@
 import Head from "next/head";
+import NavbarTitleBlock from "../components/NavbarTitleBlock";
 
 const Accomplishments = () => {
     return (
@@ -7,9 +8,14 @@ const Accomplishments = () => {
             <title>UCS Accomplishments</title>
             <meta name="keywords" content="accomplishments, credentials, production, realization" />
           </Head>
-          <div className="m-12 p-12 text-8xl">
-            this is the &quot;Accomplishments&quot; page
-          </div>
+          <div>
+        <NavbarTitleBlock
+          title={"Accomplishments"}
+          subtitle={
+            "John will think of a good subtitle for this accomplishments page."
+          }
+        />
+      </div>
         </>
       );
 }
