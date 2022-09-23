@@ -590,6 +590,16 @@ video {
   margin: 3rem;
 }
 
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -613,12 +623,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.-mb-2 {
-  margin-bottom: -0.5rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
+}
+
+.-mb-2 {
+  margin-bottom: -0.5rem;
 }
 
 .mr-5 {
@@ -821,6 +831,11 @@ video {
   text-align: justify;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -844,11 +859,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .tracking-widest {
