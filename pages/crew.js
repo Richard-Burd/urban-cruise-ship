@@ -1,10 +1,18 @@
 import Head from "next/head";
 import NavbarTitleBlock from "../components/NavbarTitleBlock";
 import Image from "next/image";
+import Link from "next/link";
 
 const Crew = () => {
   return (
     <>
+      <div className="standard-font-3">
+        some test font here; this is <b>bold</b>, this is <i>italic</i>, this is{" "}
+        <b>
+          <i>both</i>
+        </b>
+        , this is both-and-colored fancy.
+      </div>
       <Head>
         <title>UCS Crew</title>
         <meta
@@ -23,7 +31,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Michael Goff
       </div>
-      <div className="columns-3 my-7 standard-font-2 text-justify text-lg">
+      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
         <div>
           Michael Goff is the president and primary researcher of Urban Cruise
           Ship.
@@ -53,7 +61,11 @@ const Crew = () => {
         </div>
       </div>
       <center className="link-icon-set">
-        <a href="https://twitter.com/MichaelKGoff" target="_blank" rel="noreferrer">
+        <a
+          href="https://twitter.com/MichaelKGoff"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/twitter.svg`}
@@ -62,7 +74,11 @@ const Crew = () => {
             width={100}
           />
         </a>
-        <a href="https://www.linkedin.com/in/michaelkgoff" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/michaelkgoff"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/linkedin.svg`}
@@ -71,7 +87,11 @@ const Crew = () => {
             width={100}
           />
         </a>
-        <a href="mailto:michael@urbancruiseship.org" target="_blank" rel="noreferrer">
+        <a
+          href="mailto:michael@urbancruiseship.org"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/email.svg`}
@@ -88,7 +108,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         John van der Harst
       </div>
-      <div className="columns-3 my-7 standard-font-2 text-justify text-lg">
+      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
         <div>
           John van der Harst manages research aims, graphic and language
           standards, human resources, and development for Urban Cruise Ship.
@@ -126,16 +146,44 @@ const Crew = () => {
           transit, scenery preservation and billboards, economic disparity, and
           human and animal rights. Since 2002, John&apos;s methods, successes,
           and personal lifestyle led to various published profiles, in two
-          newspapers, two magazines, a 2004 documentary “Immaterial John”
-          produced by Red Clay Pictures , and listings in Marquis Who&apos;s Who
-          in America, Who&apos;s Who in the World, and Who&apos;s Who in Science
-          and Engineering. John is among the 5% of their listees Marquis has
-          given a &quot;Lifetime Achievement Award&quot; to. Hobbies include
-          gardening, cartooning, and triathlons.
+          newspapers, two magazines, a 2004 documentary&nbsp;
+          <a
+            tabindex="5"
+            href="https://www.imdb.com/title/tt1863278/"
+            target="_blank"
+            rel="noreferrer"
+            class="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+          >
+            <strong>
+              <i>“Immaterial John”</i>
+            </strong>
+            <br></br>
+          </a>
+          produced by&nbsp;
+          <a
+            tabindex="6"
+            href="https://redclaypictures.com/"
+            target="_blank"
+            rel="noreferrer"
+            class="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+          >
+            <strong>
+              <i>Red Clay Pictures</i>
+            </strong>
+          </a>
+          , and listings in Marquis Who&apos;s Who in America, Who&apos;s Who in
+          the World, and Who&apos;s Who in Science and Engineering. John is
+          among the 5% of their listees Marquis has given a &quot;Lifetime
+          Achievement Award&quot; to. Hobbies include gardening, cartooning, and
+          triathlons.
         </div>
       </div>
       <center className="link-icon-set">
-        <a href="mailto:john@urbancruiseship.org" target="_blank" rel="noreferrer">
+        <a
+          href="mailto:john@urbancruiseship.org"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/email.svg`}
@@ -152,7 +200,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Lee Nelson
       </div>
-      <div className="columns-3 my-7 standard-font-2 text-justify text-lg">
+      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
         <div>
           Lee Nelson is an Exhibit Producer and Researcher with Urban Cruise
           Ship.
@@ -181,7 +229,11 @@ const Crew = () => {
         </div>
       </div>
       <center className="link-icon-set">
-        <a href="https://www.linkedin.com/in/lee-nelson-b5701981" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/lee-nelson-b5701981"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/linkedin.svg`}
@@ -190,7 +242,11 @@ const Crew = () => {
             width={100}
           />
         </a>
-        <a href="https://www.supremelifeforce.info/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.supremelifeforce.info/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/home.svg`}
@@ -199,7 +255,11 @@ const Crew = () => {
             width={100}
           />
         </a>
-        <a href="mailto:lee@urbancruiseship.org" target="_blank" rel="noreferrer">
+        <a
+          href="mailto:lee@urbancruiseship.org"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/email.svg`}
@@ -216,7 +276,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Richard Burd
       </div>
-      <div className="columns-3 my-7 standard-font-2 text-justify text-lg">
+      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
         <div>Richard Burd is an assistant researcher at Urban Cruise Ship.</div>
         <div className="my-4"></div>
         <div>
@@ -246,7 +306,11 @@ const Crew = () => {
         </div>
       </div>
       <center className="link-icon-set">
-        <a href="https://www.linkedin.com/in/richardburd/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/richardburd/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/linkedin.svg`}
@@ -255,7 +319,11 @@ const Crew = () => {
             width={100}
           />
         </a>
-        <a href="https://richard-burd.github.io/" target="_blank" rel="noreferrer">
+        <a
+          href="https://richard-burd.github.io/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/home.svg`}
@@ -264,7 +332,11 @@ const Crew = () => {
             width={100}
           />
         </a>
-        <a href="https://github.com/Richard-Burd" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/Richard-Burd"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/github.svg`}
@@ -273,7 +345,11 @@ const Crew = () => {
             width={100}
           />
         </a>
-        <a href="mailto:richard@urbancruiseship.org" target="_blank" rel="noreferrer">
+        <a
+          href="mailto:richard@urbancruiseship.org"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
             src={`/images/external-link-icons/email.svg`}
@@ -291,12 +367,14 @@ const Crew = () => {
       <br></br>
       <br></br>
       <br></br>
-      <center className="standard-font-1 standard-font-color-1 text-6xl">Past Crew</center>
+      <center className="standard-font-1 standard-font-color-1 text-6xl">
+        Past Crew
+      </center>
       <br></br>
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Andrew Evans
       </div>
-      <div className="my-7 standard-font-2 text-justify text-lg">
+      <div className="my-7 standard-font-3 text-justify text-lg">
         <div>
           Andrew Evans was a researcher and exhibit producer with Urban Cruise
           Ship.
@@ -315,7 +393,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Al-Fassi Jones
       </div>
-      <div className="my-7 standard-font-2 text-justify text-lg">
+      <div className="my-7 standard-font-3 text-justify text-lg">
         <div>
           Al-Fassi Jones was a part-time researcher and exhibit producer with
           Urban Cruise Ship.
@@ -325,7 +403,6 @@ const Crew = () => {
           Al has education in accounting and work experience in retail sales.
         </div>
       </div>
-
       <style jsx>{`
         .crew-member-custom-text-size {
           font-size: 2.4rem;

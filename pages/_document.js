@@ -10,6 +10,9 @@ export default function Document() {
         <link rel="icon" href="/../images/ufavicon.ico" />
         <link href='https://fonts.cdnfonts.com/css/arial-rounded-mt-bold' rel='stylesheet' />
         <link href="https://fonts.cdnfonts.com/css/arial" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
       </Head>
       <body>
         <Main />

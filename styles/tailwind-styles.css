@@ -29,6 +29,14 @@ NOTE: standard styling for all components in this project are done in the:
   font-style: normal;  /* ibid. */
 }
 
+/* This is the tertiary branding font used by UCS  */
+/* it is imported into this project here: ./pages/_document.js */
+/* Arial is not a standard webfont and has poor support for italics & bold styling */
+/* this font has both bold and italics built into it from Google Fonts */
+.standard-font-3 {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* NOTE: Standard font colors are subject to be changed per John's tastes  */
 
 /* This is the standard font color for titles & subtitles  */

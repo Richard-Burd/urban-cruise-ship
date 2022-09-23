@@ -674,11 +674,6 @@ video {
        columns: 3;
 }
 
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -875,12 +870,21 @@ video {
   line-height: 2rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-blue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .text-yellow-900 {
@@ -962,6 +966,18 @@ video {
   /* ibid. */
 }
 
+/* This is the tertiary branding font used by UCS  */
+
+/* it is imported into this project here: ./pages/_document.js */
+
+/* Arial is not a standard webfont and has poor support for italics & bold styling */
+
+/* this font has both bold and italics built into it from Google Fonts */
+
+.standard-font-3 {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* NOTE: Standard font colors are subject to be changed per John's tastes  */
 
 /* This is the standard font color for titles & subtitles  */
@@ -990,13 +1006,33 @@ video {
   font-size: 4rem;
 }
 
+.hover\:text-red-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
 .hover\:text-gray-100:hover {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .hover\:opacity-90:hover {
   opacity: 0.9;
+}
+
+.focus\:text-red-900:focus {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.focus\:underline:focus {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .focus\:opacity-90:focus {
