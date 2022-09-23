@@ -1,10 +1,21 @@
+import Image from "next/image";
+
 const StandardsContainer = (props) => {
   return (
     <>
       <div className="elliptical-geometry -mb-10">
-        <div className="border border-slate-900 standards-page-button-color elliptical-geometry my-4 p-1.5 relative shadow-geometry standard-font-2 text-center text-xl z-20">
-          {props.title}
+        <div className="border border-slate-900 standards-page-button-color elliptical-geometry my-4 p-1.5 relative shadow-geometry z-20">
+          <div className="flex items-center justify-center text-zinc-900">
+            <Image
+              src={`/images/checkmark.svg`}
+              alt={`a checkmark`}
+              height={20}
+              width={30}
+            />
+            <div className="standard-font-2 text-center text-xl">{props.title}</div>
+          </div>
         </div>
+
         <div className="border border-slate-900 elliptical-geometry pb-4 pt-12 px-8 shadow-geometry standard-font-2 standards-page-panel-height text-lg text-zinc-800 -translate-y-14 z-10">
           {props.content}
         </div>
@@ -23,7 +34,7 @@ const StandardsContainer = (props) => {
           background-color: #bfc4cdff;
         }
         .standards-page-panel-height {
-            min-height: 80%;
+          min-height: 80%;
         }
       `}</style>
     </>
