@@ -1,18 +1,10 @@
 import Head from "next/head";
 import NavbarTitleBlock from "../components/NavbarTitleBlock";
 import Image from "next/image";
-import Link from "next/link";
 
 const Crew = () => {
   return (
     <>
-      <div className="standard-font-3">
-        some test font here; this is <b>bold</b>, this is <i>italic</i>, this is{" "}
-        <b>
-          <i>both</i>
-        </b>
-        , this is both-and-colored fancy.
-      </div>
       <Head>
         <title>UCS Crew</title>
         <meta
@@ -148,11 +140,10 @@ const Crew = () => {
           and personal lifestyle led to various published profiles, in two
           newspapers, two magazines, a 2004 documentary&nbsp;
           <a
-            tabindex="5"
             href="https://www.imdb.com/title/tt1863278/"
             target="_blank"
             rel="noreferrer"
-            class="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
           >
             <strong>
               <i>“Immaterial John”</i>
@@ -161,11 +152,10 @@ const Crew = () => {
           </a>
           produced by&nbsp;
           <a
-            tabindex="6"
             href="https://redclaypictures.com/"
             target="_blank"
             rel="noreferrer"
-            class="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
           >
             <strong>
               <i>Red Clay Pictures</i>
