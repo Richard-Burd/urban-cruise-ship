@@ -9,6 +9,7 @@ const Navbar = () => {
       <Link href="/crew">Crew</Link>
       <Link href="/associations">Associations</Link>
       <Link href="/presentations">Presentations</Link>
+      <Link href="/publications">Publications</Link>
       <Link href="/accomplishments">Accomplishments</Link>
       <style jsx>{`
         .top-navbar-shadow {
