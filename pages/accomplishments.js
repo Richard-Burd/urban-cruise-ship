@@ -29,10 +29,11 @@ const Accomplishments = () => {
         <div className="pb-6">
           <b>2022:</b>&nbsp;Produced the first trajectory-styled projection of
           progress toward producing energy without the use of fossil fuels (see
-          Sources of Electricity handout). This lessens the distractive clutter
-          and lack of achievability rationale (and accompanying puzzlingly wide
-          variations) associated with forecast (or scenario)-based presentations
-          used extensively previously by numerous other organizations
+          Electricity Production Forecast and Energy Production Forecast
+          handouts). This lessens the distractive clutter and lack of
+          achievability rationale (and accompanying puzzlingly wide variations)
+          associated with forecast (or scenario)-based presentations used
+          extensively previously by numerous other organizations
         </div>
         <div className="pb-6">
           <b>2020-Present:</b>&nbsp;Invented and developed
@@ -42,13 +43,17 @@ const Accomplishments = () => {
             target="_blank"
             rel="noreferrer"
           >
-            &nbsp;<b><i>Comparative Progress Studies</i></b>&nbsp;
+            &nbsp;
+            <b>
+              <i>Comparative Progress Studies</i>
+            </b>
+            &nbsp;
           </a>
           - a subfield of Progress Studies, as a tool for improving and
           verifying accuracy of cost-benefit metrics for solutions. This can
-          also improve policymakers&apos; funding prioritization. By the end of 2020,
-          the number of human endeavors presented stood at 35. By the end of
-          2021, that number had grown to 78, and was broken down into 8
+          also improve policymakers&apos; funding prioritization. By the end of
+          2020, the number of human endeavors presented stood at 35. By the end
+          of 2021, that number had grown to 78, and was broken down into 8
           categories in addition to being presented all together.
         </div>
         <div className="pb-6">
@@ -60,8 +65,8 @@ const Accomplishments = () => {
           development. By presenting this data, along with analysis and
           tentative problem-solution sets, others can use this to independently
           more easily develop high-quality solutions if they wish, in
-          competition with Urban Cruise Ship&apos;s own solution development. Such
-          competition should improve collective quality.
+          competition with Urban Cruise Ship&apos;s own solution development.
+          Such competition should improve collective quality.
         </div>
       </div>
     </>
