@@ -5,7 +5,7 @@ import Link from "next/link";
 const Energy = () => {
   // getStaticProps() might need to be used here to get the data from the json file,
   // https://youtu.be/mAHqpdVzJmA?t=84
-  // maybe not, since the JSON file is internal, not external and being "fetched" 
+  // maybe not, since the JSON file is internal, not external and being "fetched"
   // from an outside server
 
   // This iterates over Michael's "multi_solutions.json" and finds the "energy" site
@@ -13,9 +13,11 @@ const Energy = () => {
   data.map((item, index) => {
     if (data[index].site === "energy") {
       console.log("i just found the energy site");
-      console.log(`Here i am printing out the name of the site: ${data[index].site}`);
+      console.log(
+        `Here i am printing out the name of the site: ${data[index].site}`
+      );
     }
-  })
+  });
   // Talk to Chris bloom before you try any of this below
   console.log(data[0].topics);
 
@@ -40,9 +42,13 @@ const Energy = () => {
         this is the &quot;Energy&quot; specialized site
       </div>
       <div>
-        <h1 className="p-4 text-xl">These are all of the Focus Areas in this ENERGY site, they are dynamically rendered by iterating over the "data/multi_solutions.json" file that is part of Michael's original build:</h1>
+        <h1 className="p-4 text-xl">
+          These are all of the Focus Areas in this ENERGY site, they are
+          dynamically rendered by iterating over the &quot;data/multi_solutions.json&quot;
+          file that is part of Michael&apos;s original build:
+        </h1>
         {focusAreas.map((focusAreas) => (
-          <Link href={'/energy/' + focusAreas.url} key={focusAreas.url}>
+          <Link href={"/energy/" + focusAreas.url} key={focusAreas.url}>
             <a>
               <h3>{focusAreas.name}</h3>
             </a>
