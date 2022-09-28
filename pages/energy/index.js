@@ -40,7 +40,7 @@ const Energy = () => {
         this is the &quot;Energy&quot; specialized site
       </div>
       <div>
-        <h1>These are all of the Focus Areas in this ENERGY site:</h1>
+        <h1 className="p-4 text-xl">These are all of the Focus Areas in this ENERGY site, they are dynamically rendered by iterating over the "data/multi_solutions.json" file that is part of Michael's original build:</h1>
         {focusAreas.map((focusAreas) => (
           <Link href={'/energy/' + focusAreas.url} key={focusAreas.url}>
             <a>

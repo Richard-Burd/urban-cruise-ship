@@ -15,7 +15,10 @@ const Matter = () => {
         this is the &quot;Matter&quot; specialized site
       </div>
       <div className="m-6 p-6 text-2xl">
-        below are a list of Our focus areas in this MATTER specialized site:
+        below are a list of Our focus areas in this MATTER specialized site,
+        they are manually rendered and do not iterate over the
+        "data/multi_solutions.json" file that is part of Michael's original
+        build:
       </div>
       <div>
         <Link className="text-2xl" href="/matter/foodwater_priorities">
