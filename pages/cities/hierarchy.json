@@ -1,0 +1,60 @@
+[
+  {
+     "focus_area_name":"Priorities",
+     "focus_area_url":"cities_priorities",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Socioeconomics",
+     "focus_area_url":"cities_socioeconomics",
+     "articles":[
+       { "article_title": "Trends", "article_url": "cities_trends" },
+       { "article_title": "Size", "article_url": "cities_size" },
+       { "article_title": "Diversity", "article_url": "cities_diversity" },
+       { "article_title": "Housing", "article_url": "cities_housing_affordability" },
+       { "article_title": "Infrastructure", "article_url": "cities_infrastructure" }
+     ]
+  },
+  {
+     "focus_area_name":"Land Use",
+     "focus_area_url":"cities_land_use",
+     "articles":[
+       { "article_title": "Value of Natural Land", "article_url": "cities_natural_land" },
+       { "article_title": "Costs from Sprawl", "article_url": "cities_sprawl" },
+       { "article_title": "Density, Energy, and Emissions", "article_url": "cities_high_density" },
+       { "article_title": "Zoning", "article_url": "cities_zoning_rules" },
+       { "article_title": "New Cities", "article_url": "cities_new_cities" }
+     ]
+  },
+  {
+     "focus_area_name":"Mobility",
+     "focus_area_url":"cities_mobility",
+     "articles":[
+      { "article_title": "Development Sets", "article_url": "development_sets" },
+      { "article_title": "Pedestrian", "article_url": "cities_pedestrian" },
+      { "article_title": "Mass Transit", "article_url": "cities_mass_transit" },
+      { "article_title": "Transportation Speed and Space", "article_url": "cities_transportation_systems" },
+      { "article_title": "Latent and Induced Demand", "article_url": "cities_latent" }
+     ]
+  },
+  {
+     "focus_area_name":"Energy and Pollution",
+     "focus_area_url":"cities_energy_and_pollution",
+     "articles":[
+      { "article_title": "Thermal Transfer", "article_url": "cities_thermal" },
+      { "article_title": "Transportation", "article_url": "cities_transportation" },
+      { "article_title": "Communications", "article_url": "cities_comm" },
+      { "article_title": "Light Pollution", "article_url": "light" },
+      { "article_title": "Noise Pollution", "article_url": "noise" },
+      { "article_title": "Urban Heat Island", "article_url": "heat_island" }
+     ]
+  },
+  {
+     "focus_area_name":"Material Consumption",
+     "focus_area_url":"cities_material_consumption",
+     "articles":[
+      { "article_title": "Construction Materials", "article_url": "cities_construction" },
+      { "article_title": "Consumer Materials", "article_url": "cities_consumer" }
+     ]
+  }
+]
