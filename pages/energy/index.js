@@ -1,7 +1,13 @@
 import Head from "next/head";
 const data = require("../../data/multi_solutions.json");
+import Link from "next/link";
 
 const Energy = () => {
+  // getStaticProps() might need to be used here to get the data from the json file,
+  // https://youtu.be/mAHqpdVzJmA?t=84
+  // maybe not, since the JSON file is internal, not external and being "fetched" 
+  // from an outside server
+
   // This iterates over Michael's "multi_solutions.json" and finds the "energy" site
   // from here
   data.map((item, index) => {
@@ -36,11 +42,11 @@ const Energy = () => {
       <div>
         <h1>Focus Areas:</h1>
         {focusAreas.map((focusAreas) => (
-          <div key={focusAreas.url}>
+          <Link href={'/energy/' + focusAreas.url} key={focusAreas.url}>
             <a>
               <h3>{focusAreas.name}</h3>
             </a>
-          </div>
+          </Link>
         ))}
       </div>
     </>
