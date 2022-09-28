@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SpecializedSiteButton = ({ site }) => {
+const HomepageSpecializedSiteButton = ({ site }) => {
   return (
     <>
       <a href={`/${site}`}>
@@ -15,4 +15,4 @@ const SpecializedSiteButton = ({ site }) => {
   );
 };
 
-export default SpecializedSiteButton;
+export default HomepageSpecializedSiteButton;

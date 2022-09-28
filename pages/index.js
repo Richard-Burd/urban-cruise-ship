@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import SpecializedSiteButton from "../components/SpecializedSiteButton";
+import HomepageSpecializedSiteButton from "../components/HomepageSpecializedSiteButton";
 import { useMediaQuery } from "../components/UseMediaQuery";
 
 export default function Home() {
@@ -46,15 +46,15 @@ export default function Home() {
             : "grid grid-cols-3 gap-x-2"
         }
       >
-        <SpecializedSiteButton site="energy" />
-        <SpecializedSiteButton site="matter" />
-        <SpecializedSiteButton site="habitat" />
-        <SpecializedSiteButton site="cities" />
-        <SpecializedSiteButton site="waste" />
-        <SpecializedSiteButton site="oceans" />
-        <SpecializedSiteButton site="space" />
-        <SpecializedSiteButton site="costs" />
-        <SpecializedSiteButton site="history" />
+        <HomepageSpecializedSiteButton site="energy" />
+        <HomepageSpecializedSiteButton site="matter" />
+        <HomepageSpecializedSiteButton site="habitat" />
+        <HomepageSpecializedSiteButton site="cities" />
+        <HomepageSpecializedSiteButton site="waste" />
+        <HomepageSpecializedSiteButton site="oceans" />
+        <HomepageSpecializedSiteButton site="space" />
+        <HomepageSpecializedSiteButton site="costs" />
+        <HomepageSpecializedSiteButton site="history" />
       </div>
     </>
   );
