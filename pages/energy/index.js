@@ -40,7 +40,7 @@ const Energy = () => {
         this is the &quot;Energy&quot; specialized site
       </div>
       <div>
-        <h1>Focus Areas:</h1>
+        <h1>These are all of the Focus Areas in this ENERGY site:</h1>
         {focusAreas.map((focusAreas) => (
           <Link href={'/energy/' + focusAreas.url} key={focusAreas.url}>
             <a>
