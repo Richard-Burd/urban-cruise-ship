@@ -7,10 +7,12 @@
 
 import Head from "next/head";
 import Link from "next/link";
+import SpecializedSite from "../../components/SpecializedSite";
 
 const Cities = () => {
   return (
     <>
+      <SpecializedSite site={"cities"} />
       <Head>
         <title>UCS | Cities Site</title>
         <meta name="keywords" content="cities,  urban development, urban sprawl" />
