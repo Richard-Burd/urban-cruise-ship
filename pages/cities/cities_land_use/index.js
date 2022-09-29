@@ -14,11 +14,11 @@ function findFocusAreaName(searchValue) {
 // it should be the same as the folder name,
 // You will have to change this each time you 
 // create or move a focus area.
-const focusAreaUrl = "cities_socioeconomics";
+const focusAreaUrl = "cities_land_use";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const CitiesSocioeconomics = () => {
+const CitiesLandUse = () => {
   return (
     <>
       <FocusArea
@@ -31,4 +31,4 @@ const CitiesSocioeconomics = () => {
   );
 };
 
-export default CitiesSocioeconomics;
+export default CitiesLandUse;

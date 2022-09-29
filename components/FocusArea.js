@@ -3,6 +3,13 @@ import FocusAreasNavbar from "./FocusAreasNavbar";
 import ArticlesNavbar from "./ArticlesNavbar";
 
 const FocusArea = (props) => {
+  // This defines the native article path within Richard's new rebuild of the UCS Website
+  const nativePath = `/${props.site}/${props.focusAreaUrl}/`;
+
+  // This defines the legacy path to Michael's old version of the UCS Website so that we can
+  // use all of his original article files
+  const legacyPath = `http://urbancruiseship.org/solution/${props.site}/`;
+
   const searchValue = props.focusAreaUrl;
   const hierarchy = props.hierarchy;
   function findChildren(searchValue) {
@@ -17,6 +24,7 @@ const FocusArea = (props) => {
         site={props.site}
         focusAreas={hierarchy}
         articles={findChildren(searchValue)}
+        focusAreaUrl={props.focusAreaUrl}
       />
       <div className={`${props.site}-background-gradient`}>
         <Logos site={props.site} />
@@ -26,9 +34,11 @@ const FocusArea = (props) => {
             return (
               <div key={article.article_url}>
                 <a
-                  href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
+                  href={legacyPath + article.article_url}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {article.article_title}
+                  <button className={`${props.site}-article-button-background-color m-2 p-2`}>{article.article_title}</button>
                 </a>
               </div>
             );

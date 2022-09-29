@@ -1,23 +1,31 @@
-import Link from "next/link";
-
 const ArticlesNavbar = (props) => {
-  const articleSet = props.articles
-  console.log(articleSet);
+  // This defines the native article path within Richard's new rebuild of the UCS Website
+  const nativePath = `/${props.site}/${props.focusAreaUrl}/`;
+
+  // This defines the legacy path to Michael's old version of the UCS Website so that we can
+  // use all of his original article files
+  const legacyPath = `http://urbancruiseship.org/solution/${props.site}/`;
+
+  const articleSet = props.articles;
   return (
     <>
-      <div>This is the navbar that will display the individual articles</div>
-      <div>Here are all my articles</div>
       <div>
         {articleSet.map((article) => (
-          <Link 
-            key={article.article_title}
-            href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
+          <a
+            key={article.article_url}
+            href={legacyPath + article.article_url}
+            target="_blank"
+            rel="noreferrer"
           >
-           <button>
-              <h3 className={`${props.site}-article-button-background-color m-2 p-2`}>{article.article_title}</h3>
-           </button>
-          </Link>
-        ))};
+            <button>
+              <h3
+                className={`${props.site}-article-button-background-color m-2 p-2`}
+              >
+                {article.article_title}
+              </h3>
+            </button>
+          </a>
+        ))}
       </div>
     </>
   );

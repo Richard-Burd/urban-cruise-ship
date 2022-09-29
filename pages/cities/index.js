@@ -22,7 +22,6 @@ const Cities = () => {
       </Head>
       <SpecializedSite
         site={"cities"}
-        foo={"bar"}
         focusAreas={hierarchy}
       />
     </>
