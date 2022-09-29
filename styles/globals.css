@@ -598,6 +598,10 @@ video {
   margin: 1.5rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -782,6 +786,10 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-8 {
@@ -1022,6 +1030,26 @@ video {
 
 .standard-font-color-3 {
   color: #3f3e4e;
+}
+
+/* This section defines colors used in specialized sites */
+
+/* ...and their respective child focus area sites as well */
+
+.cities-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #ffd1d1
+  );
+}
+
+.cities-focus-area-button-background-color {
+  background-color: #eb8f8f;
+}
+
+.cities-article-button-background-color {
+  background-color: #ebb7b7;
 }
 
 /* This is the tempoary bookmark for the different ./paths */

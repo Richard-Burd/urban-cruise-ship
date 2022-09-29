@@ -54,6 +54,29 @@ NOTE: standard styling for all components in this project are done in the:
   color: #3f3e4e;
 }
 
+/* This section defines colors used in specialized sites */
+/* ...and their respective child focus area sites as well */
+.cities-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #ffd1d1
+  );
+}
+.cities-focus-area-button-background-color {
+  background-color: #eb8f8f;
+}
+.cities-article-button-background-color {
+  background-color: #ebb7b7;
+}
+
+
+
+
+
+
+
+
 /* This is the tempoary bookmark for the different ./paths */
 /* ...it will get deleted as the project progresses */
 .sites-intro-font-size {

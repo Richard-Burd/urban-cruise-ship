@@ -1,13 +1,3 @@
-// This would read the hierarchy.json file and create
-// a link to each article inside this focus area
-
-// If I had information outside the hierarchy that I
-// wanted to put on this focus area landing page,
-// I could add that in here.
-
-// I want to go in and find this:
-// "focus_area_url":"cities_socioeconomics",
-// ...then render only the children therein
 const data = require("../hierarchy.json");
 
 function findChildren(searchValue) {
@@ -17,7 +7,7 @@ function findChildren(searchValue) {
 }
 console.log(findChildren("cities_socioeconomics"))
 
-const citiesSocioeconomics = () => {
+const CitiesSocioeconomics = () => {
   return (
     <>
       <div>CITIES Specialized Site | Socioeconomics Focus Area</div>
@@ -35,4 +25,4 @@ const citiesSocioeconomics = () => {
   );
 };
 
-export default citiesSocioeconomics;
+export default CitiesSocioeconomics;
