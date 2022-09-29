@@ -1,32 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import FocusAreasNavbar from "./FocusAreasNavbar";
+import Logos from "./Logos";
 
 const SpecializedSite = (props) => {
   const focusAreas = props.focusAreas;
 
   return (
     <>
-      <FocusAreasNavbar
-        focusAreas={focusAreas}
-        site={props.site}
-      />
+      <FocusAreasNavbar focusAreas={focusAreas} site={props.site} />
       <div className={`${props.site}-background-gradient`}>
-        <Image
-          src={`/images/specialized-site-buttons/${props.site}.svg`}
-          alt={props.site}
-          height={300}
-          width={460}
-          priority
-        />
-
-        <Image
-          src={`/images/ucs-logo.svg`}
-          alt={props.site}
-          height={300}
-          width={460}
-        />
-
+        <Logos site={props.site} />
         <div className="standard-font-1 standard-font-color-1 text-2xl">
           Our Focus Areas:
         </div>
@@ -37,7 +21,9 @@ const SpecializedSite = (props) => {
               key={focusArea.focus_area_url}
             >
               <button>
-                <h3 className={`${props.site}-focus-area-button-background-color m-2 p-2`}>
+                <h3
+                  className={`${props.site}-focus-area-button-background-color m-2 p-2`}
+                >
                   {focusArea.focus_area_name}
                 </h3>
               </button>

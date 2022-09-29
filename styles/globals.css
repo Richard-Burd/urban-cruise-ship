@@ -572,6 +572,40 @@ video {
 
 /* tailwind directive */
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 /* tailwind directive */
 
 .relative {
@@ -1036,6 +1070,74 @@ video {
 
 /* ...and their respective child focus area sites as well */
 
+/* Energy Site */
+
+.energy-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #ffefd1
+  );
+}
+
+.energy-focus-area-button-background-color {
+  background-color: #ebc88f;
+}
+
+.energy-article-button-background-color {
+  background-color: #ebe1b7;
+}
+
+.energy-site-button-color {
+  background-color: #f2bb56ff;
+}
+
+/* Matter Site */
+
+.matter-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #edffd1
+  );
+}
+
+.matter-focus-area-button-background-color {
+  background-color: #b8eb8f;
+}
+
+.matter-article-button-background-color {
+  background-color: #c9ebb7;
+}
+
+.matter-site-button-color {
+  background-color: #adeb48ff;
+}
+
+/* Habitat Site */
+
+.habitat-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #d1fff7
+  );
+}
+
+.habitat-focus-area-button-background-color {
+  background-color: #8febdd;
+}
+
+.habitat-article-button-background-color {
+  background-color: #b7ebe0;
+}
+
+.habitat-site-button-color {
+  background-color: #8ee8ceff;
+}
+
+/* Cities Site */
+
 .cities-background-gradient {
   background-image: linear-gradient(
     to right,
@@ -1050,6 +1152,120 @@ video {
 
 .cities-article-button-background-color {
   background-color: #ebb7b7;
+}
+
+.cities-site-button-color {
+  background-color: #ffb4b4ff;
+}
+
+/* Waste Site */
+
+.waste-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #e0ddbc
+  );
+}
+
+.waste-focus-area-button-background-color {
+  background-color: #ebda8f;
+}
+
+.waste-article-button-background-color {
+  background-color: #ebe2b7;
+}
+
+.waste-site-button-color {
+  background-color: #c1b698ff
+}
+
+/* Oceans Site */
+
+.oceans-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #d1e8ff
+  );
+}
+
+.oceans-focus-area-button-background-color {
+  background-color: #8fb2eb;
+}
+
+.oceans-article-button-background-color {
+  background-color: #b7cdeb;
+}
+
+.oceans-site-button-color {
+  background-color: #647fecff;
+}
+
+/* Space Site */
+
+.space-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #b2b2b2
+  );
+}
+
+.space-focus-area-button-background-color {
+  background-color: #eb8f8f;
+}
+
+.space-article-button-background-color {
+  background-color: #ebb7b7;
+}
+
+.space-site-button-color {
+  background-color: #333333ff;
+}
+
+/* Costs Site */
+
+.costs-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #ffd1d1
+  );
+}
+
+.costs-focus-area-button-background-color {
+  background-color: #eb8f8f;
+}
+
+.costs-article-button-background-color {
+  background-color: #ebb7b7;
+}
+
+.costs-site-button-color {
+  background-color: #b998d6ff;
+}
+
+/* History Site */
+
+.history-background-gradient {
+  background-image: linear-gradient(
+    to right,
+    white,
+    #aed1d7
+  );
+}
+
+.history-focus-area-button-background-color {
+  background-color: #7db6bb;
+}
+
+.history-article-button-background-color {
+  background-color: #c8d9e7;
+}
+
+.history-site-button-color {
+  background-color: #bed0d8ff;
 }
 
 /* This is the tempoary bookmark for the different ./paths */

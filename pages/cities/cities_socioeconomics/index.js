@@ -1,26 +1,30 @@
-const data = require("../hierarchy.json");
+import FocusArea from "../../../components/FocusArea";
+const hierarchy = require("../hierarchy.json");
 
 function findChildren(searchValue) {
-  return data.find(({ focus_area_url }) => {
+  return hierarchy.find(({ focus_area_url }) => {
     return focus_area_url === searchValue;
-  }).articles
+  }).articles;
 }
-console.log(findChildren("cities_socioeconomics"))
+
+// The parent Specialized site name is inputted here
+const site = "cities";
+
+// The parent Specialized site name is inputted here
+const focusAreaName = "Socioeconomics";
+
+// The Focus Area URL is inputted here
+const focusAreaUrl = "cities_socioeconomics";
 
 const CitiesSocioeconomics = () => {
   return (
     <>
-      <div>CITIES Specialized Site | Socioeconomics Focus Area</div>
-      <div>Chris Bloom will help me render the children I am looking for</div>
-      <div>
-        {findChildren("cities_socioeconomics").map((article) => {
-          return (
-            <div key={article.article_url}>
-              <a href={article.article_url}>{article.article_title}</a>
-            </div>
-          )
-        })}
-      </div>
+      <FocusArea
+        site={site}
+        focusAreaName={focusAreaName}
+        focusAreaUrl={focusAreaUrl}
+        hierarchy={hierarchy}
+      />
     </>
   );
 };
