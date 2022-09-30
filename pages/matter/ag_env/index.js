@@ -18,7 +18,13 @@ const focusAreaUrl = "ag_env";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const EnergyDistribution = () => {
+const focusAreaDescription = (
+  <p>
+    In this section, we review of environmental and social impacts of agriculture.
+  </p>
+);
+
+const MatterImpacts = () => {
   return (
     <>
       <FocusArea
@@ -26,9 +32,10 @@ const EnergyDistribution = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );
 };
 
-export default EnergyDistribution;
+export default MatterImpacts;

@@ -18,6 +18,12 @@ const focusAreaUrl = "mining";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we review the best options for mining.
+  </p>
+);
+
 const MatterMining = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const MatterMining = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

@@ -12,13 +12,21 @@ function findFocusAreaName(searchValue) {
 
 // The Focus Area URL is inputted here,
 // it should be the same as the folder name,
-// You will have to change this each time you 
+// You will have to change this each time you
 // create or move a focus area.
 const focusAreaUrl = "ag_dist";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const EnergyDistribution = () => {
+const focusAreaDescription = (
+  <p>
+    In this section, we review the options and impacts of different portions of
+    the broader food distribution system, such as packaging, transportation,
+    preparation, and disposal.
+  </p>
+);
+
+const MatterFoodDistribution = () => {
   return (
     <>
       <FocusArea
@@ -26,9 +34,10 @@ const EnergyDistribution = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );
 };
 
-export default EnergyDistribution;
+export default MatterFoodDistribution;

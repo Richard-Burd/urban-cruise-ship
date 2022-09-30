@@ -18,6 +18,12 @@ const focusAreaUrl = "water";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we review options for usage and procurement of water.
+  </p>
+);
+
 const MatterWater = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const MatterWater = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

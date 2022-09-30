@@ -18,6 +18,12 @@ const focusAreaUrl = "nonfood";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we review the best options for industrial crops.
+  </p>
+);
+
 const MatterNonFoodCrops = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const MatterNonFoodCrops = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
       <div className={`${site}-background-gradient`}>a link to Michael&apos;s Matter page will go here (ISSUE: oddly-placed-articles)</div>
     </>
