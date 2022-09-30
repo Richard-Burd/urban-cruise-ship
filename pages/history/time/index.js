@@ -27,7 +27,7 @@ const HistoryTime = () => {
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
       />
-      <div className={`${site}-background-gradient`}>a link to Michael&apos;s Timelines page will go here</div>
+      <div className={`${site}-background-gradient`}>a link to Michael&apos;s Timelines page will go here (ISSUE: oddly-placed-articles)</div>
     </>
   );
 };

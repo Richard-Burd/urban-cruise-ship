@@ -12,7 +12,7 @@ function findFocusAreaName(searchValue) {
 
 // The Focus Area URL is inputted here,
 // it should be the same as the folder name,
-// You will have to change this each time you 
+// You will have to change this each time you
 // create or move a focus area.
 const focusAreaUrl = "energy_priorities";
 
@@ -27,6 +27,10 @@ const EnergyPriorities = () => {
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
       />
+      <div className={`${site}-background-gradient`}>
+        a link to Michael&apos;s Energy page Priorities article will go here
+        (ISSUE: oddly-placed-articles)
+      </div>
     </>
   );
 };
