@@ -18,6 +18,7 @@ const Matter = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
+        siteDescription={"Food, water, and other consumables"}
       />
     </>
   );

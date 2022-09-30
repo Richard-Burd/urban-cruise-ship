@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FocusAreasNavbar from "./FocusAreasNavbar";
+import SiteDescriptions from "./SiteDescriptions";
 import Logos from "./Logos";
 
 const SpecializedSite = (props) => {
@@ -10,6 +11,7 @@ const SpecializedSite = (props) => {
     <>
       <FocusAreasNavbar focusAreas={focusAreas} site={props.site} />
       <div className={`${props.site}-background-gradient`}>
+        <SiteDescriptions siteDescription={props.siteDescription} />
         <Logos site={props.site} />
         <div className="standard-font-1 standard-font-color-1 text-2xl">
           Our Focus Areas:

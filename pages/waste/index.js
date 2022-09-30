@@ -18,6 +18,7 @@ const Waste = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
+        siteDescription={"Zero waste methodology vs. scams"}
       />
     </>
   );

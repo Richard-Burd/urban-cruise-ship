@@ -18,6 +18,7 @@ const Cities = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
+        siteDescription={"Sustainable design principles"}
       />
     </>
   );
