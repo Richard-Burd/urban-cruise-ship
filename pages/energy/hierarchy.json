@@ -1,0 +1,101 @@
+[
+  {
+     "focus_area_name":"Priorities",
+     "focus_area_url":"energy_priorities",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Socioeconomics",
+     "focus_area_url":"energy_socioeconomics",
+     "articles":[
+       { "article_title": "Overview", "article_url": "energy_socioecon" },
+       { "article_title": "Outlook", "article_url": "energy_outlook" },
+       { "article_title": "Clean Energy Deployment", "article_url": "policy_se" },
+       { "article_title": "Research and Development", "article_url": "rd" },
+       { "article_title": "Energy Pricing", "article_url": "carbon_pricing_e" },
+       { "article_title": "Rebound Effect", "article_url": "rebound_se" },
+       { "article_title": "Population, Energy, and Emissions", "article_url": "energy_intensity_se" },
+       { "article_title": "Macroeconomics of Energy", "article_url": "economics_se" },
+       { "article_title": "Geopolitics of Energy", "article_url": "geopolitics_se" }
+     ]
+  },
+  {
+     "focus_area_name":"Production",
+     "focus_area_url":"energy_production",
+     "articles":[
+       { "article_title": "Production Overview", "article_url": "production" },
+       { "article_title": "Environmental Impacts of Energy", "article_url": "energy_env" },
+       { "article_title": "Coal", "article_url": "coal" },
+       { "article_title": "Natural Gas", "article_url": "gas" },
+       { "article_title": "Oil", "article_url": "petroleum" },
+       { "article_title": "Biomass and Biofuels", "article_url": "bio" },
+       { "article_title": "Hydropower", "article_url": "hydro" },
+       { "article_title": "Nuclear Fission", "article_url": "nuclear" },
+       { "article_title": "Nuclear Fusion", "article_url": "fusion" },
+       { "article_title": "Solar Power", "article_url": "solar" },
+       { "article_title": "Wind Power", "article_url": "wind" },
+       { "article_title": "Geothermal", "article_url": "geothermal" },
+       { "article_title": "Ocean Energy", "article_url": "mhk" },
+       { "article_title": "Exotic Energy Sources", "article_url": "exotic" }
+
+     ]
+  },
+  {
+     "focus_area_name":"Distribution",
+     "focus_area_url":"energy_distribution",
+     "articles":[
+      { "article_title": "Distribution Overview", "article_url": "distribution_overview" },
+      { "article_title": "Transportation Fuels", "article_url": "transpo_fuels" },
+      { "article_title": "Grid Overview", "article_url": "grid_overview" },
+      { "article_title": "Load Balancing", "article_url": "load_balancing" },
+      { "article_title": "Grid Design", "article_url": "grid_design" },
+      { "article_title": "Electricity Storage", "article_url": "grid_storage" },
+      { "article_title": "Hydrogen", "article_url": "hydrogen" },
+      { "article_title": "Ammonia", "article_url": "ammonia" },
+      { "article_title": "Methanol", "article_url": "methanol" },
+      { "article_title": "Synthetic Fuels", "article_url": "synfuels" },
+      { "article_title": "Methane", "article_url": "methane" },
+      { "article_title": "Transportation of Fossil Fuels", "article_url": "ff_transport" }
+     ]
+  },
+  {
+     "focus_area_name":"Industry",
+     "focus_area_url":"industry",
+     "articles":[
+      { "article_title": "Industry Overview", "article_url": "industry_main" },
+      { "article_title": "Metals and Materials", "article_url": "metals_materials" },
+      { "article_title": "Industrial Heat", "article_url": "industrial_heat" },
+      { "article_title": "Chemicals", "article_url": "chemicals_energy" },
+      { "article_title": "Steel, Cement, Aluminum, Paper", "article_url": "major_commodities" },
+      { "article_title": "Carbon Capture and Sequestration", "article_url": "ccs" },
+      { "article_title": "Recycling", "article_url": "recycling_energy" },
+      { "article_title": "Industrial Systems", "article_url": "industrial_systems" },
+      { "article_title": "Food and Water", "article_url": "ag_summary" }
+     ]
+  },
+  {
+     "focus_area_name":"Cities",
+     "focus_area_url":"cities",
+     "articles":[
+      { "article_title": "Cities Overview", "article_url": "cities_overview" },
+      { "article_title": "Energy in Buildings", "article_url": "building_energy" },
+      { "article_title": "Heating and Cooling", "article_url": "heating" },
+      { "article_title": "Lighting and Appliances", "article_url": "light_app" }
+     ]
+  },
+  {
+   "focus_area_name":"Transportation",
+   "focus_area_url":"transport",
+   "articles":[
+      { "article_title": "Overview of Transportation", "article_url": "transpo_overview" },
+      { "article_title": "Energy and Emissions in Transportation", "article_url": "transpo_ghg" },
+      { "article_title": "Aviation", "article_url": "transpo_air" },
+      { "article_title": "Passenger Rail", "article_url": "transpo_rail" },
+      { "article_title": "Automobiles", "article_url": "transpo_cars" },
+      { "article_title": "Mass Transit", "article_url": "transpo_transit" },
+      { "article_title": "Short Range Transportation", "article_url": "transpo_short" },
+      { "article_title": "Freight", "article_url": "transpo_freight" },
+      { "article_title": "Information Technology", "article_url": "transpo_data" }
+   ]
+}
+]
