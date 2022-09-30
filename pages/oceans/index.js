@@ -1,17 +1,26 @@
 import Head from "next/head";
+const hierarchy = require("./hierarchy.json");
+import SpecializedSite from "../../components/SpecializedSite";
+
+const siteConfig = require("./site_config.json");
+const site = siteConfig.specialized_site_name;
 
 const Oceans = () => {
-    return (
-        <>
-          <Head>
-            <title>UCS | Oceans Site</title>
-            <meta name="keywords" content="ocean, water, biodiversity, plastic, pollution, acidification, floating cities, seafood" />
-          </Head>
-          <div className="m-12 p-12 text-8xl">
-            this is the &quot;Oceans&quot; specialized site
-          </div>
-        </>
-      );
-}
- 
+  return (
+    <>
+      <Head>
+        <title>UCS | Oceans Site</title>
+        <meta
+          name="keywords"
+          content="ocean, water, biodiversity, plastic, pollution, acidification, floating cities, seafood"
+        />
+      </Head>
+      <SpecializedSite
+        site={site}
+        focusAreas={hierarchy}
+      />
+    </>
+  );
+};
+
 export default Oceans;

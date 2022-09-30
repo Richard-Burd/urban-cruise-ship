@@ -9,7 +9,7 @@ const Waste = () => {
   return (
     <>
       <Head>
-        <title>UCS | Energy Site</title>
+        <title>UCS | Waste Site</title>
         <meta
           name="keywords"
           content="waste, recycling, composition, landfill, wet, dry, funding, hazardous waste, material reduction"

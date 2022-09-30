@@ -1,0 +1,32 @@
+[
+  {
+     "focus_area_name":"Priorities",
+     "focus_area_url":"ocean_priorities",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Environment",
+     "focus_area_url":"ocean_environment",
+     "articles":[
+       { "article_title": "Biodiversity", "article_url": "ocean_biodiversity" },
+       { "article_title": "Ocean Acidification", "article_url": "ocean_acid" },
+       { "article_title": "Plastic Pollution", "article_url": "ocean_plastics" },
+       { "article_title": "Geoengineering", "article_url": "ocean_geoeng" }
+     ]
+  },
+  {
+   "focus_area_name":"Cities",
+   "focus_area_url":"ocean_cities",
+   "articles":[]
+  },
+  {
+   "focus_area_name":"Industry",
+   "focus_area_url":"ocean_industry",
+   "articles":[
+     { "article_title": "Energy", "article_url": "ocean_mhk" },
+     { "article_title": "Manufacturing", "article_url": "ocean_industry" },
+     { "article_title": "Seafood", "article_url": "seafood" },
+     { "article_title": "Deep Sea Mining", "article_url": "exotic_mining" }
+   ]
+  }
+]
