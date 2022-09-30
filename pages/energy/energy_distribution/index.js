@@ -12,11 +12,23 @@ function findFocusAreaName(searchValue) {
 
 // The Focus Area URL is inputted here,
 // it should be the same as the folder name,
-// You will have to change this each time you 
+// You will have to change this each time you
 // create or move a focus area.
 const focusAreaUrl = "energy_distribution";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
+
+const focusAreaDescription = (
+  <p>
+    In this section, we present key data on the forms in which energy can be
+    transported and used. The main issues in the power grid are in overall
+    design, reliability--particularly with the advent of variable energy power
+    sources--and storge of electricity. We review the roles, possibilities, and
+    limitations of hydrogen, ammonia, methanol, synfuels, and methane as fuels.
+    We also review the distribution of fossil fuels, which may remain important
+    as a distribution network of fuels of non-fossil origin.
+  </p>
+);
 
 const EnergyDistribution = () => {
   return (
@@ -26,6 +38,7 @@ const EnergyDistribution = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

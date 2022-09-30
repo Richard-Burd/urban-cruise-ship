@@ -1,6 +1,7 @@
 import Logos from "./Logos";
 import FocusAreasNavbar from "./FocusAreasNavbar";
 import ArticlesNavbar from "./ArticlesNavbar";
+import FocusAreaDescriptions from "./FocusAreaDescriptions";
 
 const FocusArea = (props) => {
   // This defines the native article path within Richard's new rebuild of the UCS Website
@@ -27,6 +28,7 @@ const FocusArea = (props) => {
         focusAreaUrl={props.focusAreaUrl}
       />
       <div className={`${props.site}-background-gradient`}>
+        <FocusAreaDescriptions site={props.site} focusAreaDescription={props.focusAreaDescription} />
         <Logos site={props.site} />
         <div className="standard-font-1 text-4xl">{props.focusAreaName}</div>
         <div>
