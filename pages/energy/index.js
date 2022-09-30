@@ -1,4 +1,3 @@
-// "energy, energy research, carbon pricing, solar, wind, biomass, nuclear, coal"
 import Head from "next/head";
 const hierarchy = require("./hierarchy.json");
 import SpecializedSite from "../../components/SpecializedSite";
