@@ -1,0 +1,10 @@
+[
+  {
+    "focus_area_name":"Priorities",
+    "focus_area_url":"economy",
+    "articles":[
+      { "article_title": "Theory", "article_url": "costs_theory" },
+      { "article_title": "Examples", "article_url": "costs_examples" }
+    ]
+  }
+]
