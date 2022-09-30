@@ -1,0 +1,55 @@
+[
+  {
+     "focus_area_name":"Priorities",
+     "focus_area_url":"foodwater_priorities",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Well-Being",
+     "focus_area_url":"wellbeing",
+     "articles":[
+       { "article_title": "Well-Being", "article_url": "wellbeing_socio" },
+       { "article_title": "Health and Safety", "article_url": "health_socio" },
+       { "article_title": "Social Well-Being", "article_url": "social_wellbeing" },
+       { "article_title": "Population", "article_url": "population_socio" }
+
+     ]
+  },
+  {
+    "focus_area_name":"Environment",
+    "focus_area_url":"environment",
+    "articles":[
+      { "article_title": "Land Use", "article_url": "land_use_socio" },
+      { "article_title": "Biodiversity", "article_url": "biodiversity" },
+      { "article_title": "Air Pollution", "article_url": "air_pollution_socio" },
+      { "article_title": "Climate Change", "article_url": "climate_socio" },
+      { "article_title": "Geoengineering", "article_url": "geoengineering" },
+      { "article_title": "Ozone Layer", "article_url": "ozone_socio" },
+      { "article_title": "Chemical Pollution", "article_url": "chemical_socio" },
+      { "article_title": "Nutrient Pollution", "article_url": "nutrient_socio" }
+    ]
+   },
+   {
+    "focus_area_name":"Economics",
+    "focus_area_url":"economy",
+    "articles":[
+      { "article_title": "Economic System", "article_url": "economic_system" },
+      { "article_title": "Consumerism", "article_url": "consumerism" },
+      { "article_title": "Environmental Valuation", "article_url": "valuation_socio" },
+      { "article_title": "Resource Availability", "article_url": "resources" },
+      { "article_title": "Decoupling", "article_url": "kuznets" },
+      { "article_title": "Environmental Concern", "article_url": "environmental_concern" },
+      { "article_title": "Economic Trends", "article_url": "economic_trends" }
+    ]
+  },
+  {
+    "focus_area_name":"Ethics",
+    "focus_area_url":"ethics",
+    "articles":[
+      { "article_title": "Environmental Ethics", "article_url": "ethics" },
+      { "article_title": "Conservation Ethics", "article_url": "cons_ethics" },
+      { "article_title": "Population Ethics", "article_url": "pop_ethics" },
+      { "article_title": "Animal Welfare", "article_url": "animal_welfare" }
+    ]
+  }
+]

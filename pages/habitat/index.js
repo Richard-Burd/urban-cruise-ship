@@ -1,4 +1,6 @@
 import Head from "next/head";
+const hierarchy = require("./hierarchy.json");
+import SpecializedSite from "../../components/SpecializedSite";
 
 const Habitat = () => {
   return (
@@ -10,9 +12,10 @@ const Habitat = () => {
           content="habitat, diet, health, population, social well-being, environment, Consumerism"
         />
       </Head>
-      <div className="m-12 p-12 text-8xl">
-        this is the &quot;Habitat&quot; specialized site
-      </div>
+      <SpecializedSite
+        site={"habitat"}
+        focusAreas={hierarchy}
+      />
     </>
   );
 };
