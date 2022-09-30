@@ -1,0 +1,89 @@
+[
+  {
+     "focus_area_name":"Priorities",
+     "focus_area_url":"foodwater_priorities",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Diets",
+     "focus_area_url":"diet",
+     "articles":[
+       { "article_title": "Feeding the World", "article_url": "ag_overview_fw" },
+       { "article_title": "Dietary Needs", "article_url": "nutrition" },
+       { "article_title": "Impacts of Diets", "article_url": "diet_fw" },
+       { "article_title": "Diet and Health", "article_url": "diet_health" }
+     ]
+  },
+  {
+   "focus_area_name":"Impacts",
+   "focus_area_url":"ag_env",
+   "articles":[
+     { "article_title": "Land Use in Agriculture", "article_url": "ag_landuse" },
+     { "article_title": "Energy and Emissions in Agriculture", "article_url": "ag_ee" },
+     { "article_title": "Water in Agriculture", "article_url": "ag_water" },
+     { "article_title": "Nutrient Cycles", "article_url": "ag_nutrient" },
+     { "article_title": "Soil Health", "article_url": "soil" },
+     { "article_title": "Pesticides", "article_url": "pesticides" },
+     { "article_title": "Risks in the Agricultural System", "article_url": "ag_risk" },
+     { "article_title": "Socioeconomics of Agriculture", "article_url": "ag_socio" }
+   ]
+  },
+  {
+   "focus_area_name":"Farming Practices",
+   "focus_area_url":"practices",
+   "articles":[
+     { "article_title": "Conservation Agriculture", "article_url": "conservation_ag" },
+     { "article_title": "Organic Agriculture", "article_url": "organic_ag" },
+     { "article_title": "Meat and Animal Products", "article_url": "meat" },
+     { "article_title": "Genetic Engineering", "article_url": "gmo" },
+     { "article_title": "Intensification", "article_url": "precision" },
+     { "article_title": "Indoor Farming", "article_url": "indoor" },
+     { "article_title": "Synthetic Farming", "article_url": "synthetic_ag" }
+   ]
+  },
+  {
+   "focus_area_name":"Food Distribution",
+   "focus_area_url":"ag_dist",
+   "articles":[
+     { "article_title": "Food System Overview", "article_url": "ag_dist_overall" },
+     { "article_title": "Food Waste", "article_url": "food_waste" },
+     { "article_title": "Cooking", "article_url": "cooking" }
+   ]
+  },
+  {
+   "focus_area_name":"Non-Food Crops",
+   "focus_area_url":"nonfood",
+   "articles":[
+     { "article_title": "Fibers, Polymers, and Building Material", "article_url": "ic_fiber" },
+     { "article_title": "Pharmaceuticals and Specialty Chemicals", "article_url": "ic_pharma" }
+   ]
+  },
+  {
+   "focus_area_name":"Water",
+   "focus_area_url":"water",
+   "articles":[
+     { "article_title": "Water Usage", "article_url": "water_usage" },
+     { "article_title": "Water Provision", "article_url": "water_provision" },
+     { "article_title": "Clean Water and Sanitation", "article_url": "clean_water" }
+   ]
+  },
+  {
+   "focus_area_name":"Forestry",
+   "focus_area_url":"forestry",
+   "articles":[
+     { "article_title": "Deforestation", "article_url": "deforestation" },
+     { "article_title": "Wood Products", "article_url": "wood_products" },
+     { "article_title": "Forestry Practices", "article_url": "forestation" },
+     { "article_title": "Wildfire Management", "article_url": "wildfire" }
+   ]
+  },
+  {
+   "focus_area_name":"Mining",
+   "focus_area_url":"mining",
+   "articles":[
+     { "article_title": "Mining Overview", "article_url": "mining_overview" },
+     { "article_title": "Metals Recycling", "article_url": "metals_recycling" },
+     { "article_title": "Environmental Impacts", "article_url": "mining_waste" }
+   ]
+  }
+]
