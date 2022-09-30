@@ -1,17 +1,26 @@
 import Head from "next/head";
+const hierarchy = require("./hierarchy.json");
+import SpecializedSite from "../../components/SpecializedSite";
+
+const siteConfig = require("./site_config.json");
+const site = siteConfig.specialized_site_name;
 
 const History = () => {
-    return (
-        <>
-          <Head>
-            <title>UCS | History Site</title>
-            <meta name="keywords" content="history, timelines, endeavors, cost, benefit" />
-          </Head>
-          <div className="m-12 p-12 text-8xl">
-            this is the &quot;History&quot; specialized site
-          </div>
-        </>
-      );
-}
- 
+  return (
+    <>
+      <Head>
+        <title>UCS | History Site</title>
+        <meta
+          name="keywords"
+          content="history, timelines, endeavors, cost, benefit"
+        />
+      </Head>
+      <SpecializedSite
+        site={site}
+        focusAreas={hierarchy}
+      />
+    </>
+  );
+};
+
 export default History;
