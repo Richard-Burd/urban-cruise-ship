@@ -18,6 +18,12 @@ const focusAreaUrl = "ethics";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we review some major principles in environmental ethics.
+  </p>
+);
+
 const HabitatEthics = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const HabitatEthics = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

@@ -28,8 +28,7 @@ const EnergyPriorities = () => {
         hierarchy={hierarchy}
       />
       <div className={`${site}-background-gradient`}>
-        a link to Michael&apos;s Energy page Priorities article will go here
-        (ISSUE: oddly-placed-articles)
+        a link to Michael&apos;s Energy page Priorities article will go here (ISSUE: oddly-placed-articles)
       </div>
     </>
   );

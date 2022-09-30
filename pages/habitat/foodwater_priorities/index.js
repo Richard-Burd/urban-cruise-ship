@@ -18,6 +18,12 @@ const focusAreaUrl = "foodwater_priorities";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    This section is under development.
+  </p>
+);
+
 const HabitatPriorities = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const HabitatPriorities = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

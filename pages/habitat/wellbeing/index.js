@@ -18,6 +18,12 @@ const focusAreaUrl = "wellbeing";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    We review the most important factors to human health, safety, and well-being.
+  </p>
+);
+
 const HabitatWellBeing = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const HabitatWellBeing = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

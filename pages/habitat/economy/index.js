@@ -18,6 +18,12 @@ const focusAreaUrl = "economy";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we review important principles in environmental economics.
+  </p>
+);
+
 const HabitatEconomy = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const HabitatEconomy = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );
