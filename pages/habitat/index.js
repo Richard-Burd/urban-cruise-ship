@@ -2,6 +2,9 @@ import Head from "next/head";
 const hierarchy = require("./hierarchy.json");
 import SpecializedSite from "../../components/SpecializedSite";
 
+const siteConfig = require("./site_config.json");
+const site = siteConfig.specialized_site_name;
+
 const Habitat = () => {
   return (
     <>
@@ -13,7 +16,7 @@ const Habitat = () => {
         />
       </Head>
       <SpecializedSite
-        site={"habitat"}
+        site={site}
         focusAreas={hierarchy}
       />
     </>
