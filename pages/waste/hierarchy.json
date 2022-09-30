@@ -1,0 +1,45 @@
+[
+  {
+     "focus_area_name":"Priorities",
+     "focus_area_url":"waste_priorities",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Society",
+     "focus_area_url":"waste_society",
+     "articles":[
+       { "article_title": "recycling_overview", "article_url": "recycling_overview" },
+       { "article_title": "Waste Composition", "article_url": "waste_composition" }
+     ]
+  },
+  {
+     "focus_area_name":"Zero Waste",
+     "focus_area_url":"zero_waste",
+     "articles":[]
+	},
+	{
+		 "focus_area_name":"Economics",
+		 "focus_area_url":"waste_economics",
+		 "articles":[
+			{ "article_title": "Job Creation", "article_url": "recycling_jobs" },
+			{ "article_title": "Recovery Facilities", "article_url": "waste_facilities" },
+			{ "article_title": "Landfill Taxation", "article_url": "landfill_tax" },
+			{ "article_title": "Demand for Recycling", "article_url": "recycle_demand" }
+		]
+  },
+  {
+	   "focus_area_name":"Material Reduction",
+	   "focus_area_url":"material_reduction",
+	   "articles":[]
+  },
+	{
+		"focus_area_name":"Hazardous Waste",
+		"focus_area_url":"hazardous_waste",
+		"articles":[
+		 { "article_title": "E-Waste", "article_url": "ewaste" },
+		 { "article_title": "Industrial Waste", "article_url": "industrial_waste" },
+		 { "article_title": "Mining Waste", "article_url": "mining_waste2" },
+		 { "article_title": "Nuclear Waste", "article_url": "nuclear_waste" }
+	 ]
+  }
+]
