@@ -1,0 +1,47 @@
+[
+  {
+     "focus_area_name":"Priorities",
+     "focus_area_url":"space_priorities",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Risk and Ethics",
+     "focus_area_url":"ethics",
+     "articles":[
+       { "article_title": "Orbital Debris", "article_url": "orbital_debris" },
+       { "article_title": "Planetary Protection", "article_url": "planetary_protection" },
+       { "article_title": "Environmental Impacts", "article_url": "space_environment" },
+       { "article_title": "Energy", "article_url": "space_energy" }
+     ]
+  },
+  {
+   "focus_area_name":"Service",
+   "focus_area_url":"industrialization",
+   "articles":[
+     { "article_title": "Mapping", "article_url": "space_mapping" },
+     { "article_title": "Predictions", "article_url": "space_predictions" },
+     { "article_title": "Resources", "article_url": "space_resources" },
+     { "article_title": "Manufacturing", "article_url": "space_mfg" }
+   ]
+  },
+  {
+   "focus_area_name":"Science",
+   "focus_area_url":"exploration",
+   "articles":[
+     { "article_title": "Scale", "article_url": "cosmic_scale" },
+     { "article_title": "Space and Time", "article_url": "spacetime" },
+     { "article_title": "Matter", "article_url": "knowledge" },
+     { "article_title": "Life", "article_url": "space_life" }
+    ]
+  },
+  {
+   "focus_area_name":"Transportation",
+   "focus_area_url":"space_travel",
+   "articles":[
+     { "article_title": "Launch", "article_url": "launch" },
+     { "article_title": "Propulsion", "article_url": "propulsion" },
+     { "article_title": "Human Health", "article_url": "space_health" },
+     { "article_title": "Colonization", "article_url": "colonization" }
+    ]
+  }
+]
