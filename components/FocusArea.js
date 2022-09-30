@@ -38,7 +38,7 @@ const FocusArea = (props) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <button className={`${props.site}-article-button-background-color m-2 p-2`}>{article.article_title}</button>
+                  <button className={`${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 p-2`}>{article.article_title}</button>
                 </a>
               </div>
             );

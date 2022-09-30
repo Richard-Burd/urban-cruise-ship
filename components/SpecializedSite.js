@@ -22,7 +22,7 @@ const SpecializedSite = (props) => {
             >
               <button>
                 <h3
-                  className={`${props.site}-focus-area-button-background-color m-2 p-2`}
+                  className={`${props.site}-focus-area-button-background-color ${props.site}-focus-area-button-font-color m-2 p-2`}
                 >
                   {focusArea.focus_area_name}
                 </h3>

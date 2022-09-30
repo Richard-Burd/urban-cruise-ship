@@ -11,7 +11,7 @@ const FocusAreasNavbar = (props) => {
             key={focusArea.focus_area_url}
           >
             <a>
-              <button className={`${props.site}-focus-area-button-background-color m-4 p-4`}>{focusArea.focus_area_name}</button>
+              <button className={`${props.site}-focus-area-button-background-color ${props.site}-focus-area-button-font-color m-4 p-4`}>{focusArea.focus_area_name}</button>
             </a>
           </Link>
         ))}

@@ -586,10 +586,6 @@ video {
   z-index: 10;
 }
 
-.m-12 {
-  margin: 3rem;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -760,10 +756,6 @@ video {
   background-color: rgb(253 230 138 / var(--tw-bg-opacity));
 }
 
-.p-12 {
-  padding: 3rem;
-}
-
 .p-1\.5 {
   padding: 0.375rem;
 }
@@ -874,11 +866,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
 }
 
 .text-xl {
@@ -1038,12 +1025,24 @@ video {
   background-color: #ebc88f;
 }
 
+.energy-focus-area-button-font-color {
+  color: #1b150d;
+}
+
 .energy-article-button-background-color {
   background-color: #ebe1b7;
 }
 
+.energy-article-button-font-color {
+  color: #19130c;
+}
+
 .energy-site-button-color {
   background-color: #f2bb56ff;
+}
+
+.energy-site-button-font-color {
+  color: #160f0b;
 }
 
 /* Matter Site */
@@ -1060,12 +1059,24 @@ video {
   background-color: #b8eb8f;
 }
 
+.matter-focus-area-button-font-color {
+  color: #0e170c;
+}
+
 .matter-article-button-background-color {
   background-color: #c9ebb7;
 }
 
+.matter-article-button-font-color {
+  color: #0f1b0f;
+}
+
 .matter-site-button-color {
   background-color: #adeb48ff;
+}
+
+.matter-site-button-font-color {
+  color: #0b1610;
 }
 
 /* Habitat Site */
@@ -1082,12 +1093,24 @@ video {
   background-color: #8febdd;
 }
 
+.habitat-focus-area-button-font-color {
+  color: #011b18;
+}
+
 .habitat-article-button-background-color {
   background-color: #b7ebe0;
 }
 
+.habitat-article-button-font-color {
+  color: #091414;
+}
+
 .habitat-site-button-color {
   background-color: #8ee8ceff;
+}
+
+.habitat-site-button-font-color {
+  color: #0e1819;
 }
 
 /* Cities Site */
@@ -1104,12 +1127,24 @@ video {
   background-color: #eb8f8f;
 }
 
+.cities-focus-area-button-font-color {
+  color: #1d0f0f;
+}
+
 .cities-article-button-background-color {
   background-color: #ebb7b7;
 }
 
+.cities-article-button-font-color {
+  color: #1b0d0d;
+}
+
 .cities-site-button-color {
   background-color: #ffb4b4ff;
+}
+
+.cities-site-button-font-color {
+  color: #110909;
 }
 
 /* Waste Site */
@@ -1126,12 +1161,24 @@ video {
   background-color: #ebda8f;
 }
 
+.waste-focus-area-button-font-color {
+  color: #16110a;
+}
+
 .waste-article-button-background-color {
   background-color: #ebe2b7;
 }
 
+.waste-article-button-font-color {
+  color: #1b160b;
+}
+
 .waste-site-button-color {
   background-color: #c1b698ff
+}
+
+.waste-site-button-font-color {
+  color: #120f0d;
 }
 
 /* Oceans Site */
@@ -1145,15 +1192,27 @@ video {
 }
 
 .oceans-focus-area-button-background-color {
-  background-color: #8fb2eb;
+  background-color: #1b3e75;
+}
+
+.oceans-focus-area-button-font-color {
+  color: #cbcfef;
 }
 
 .oceans-article-button-background-color {
   background-color: #b7cdeb;
 }
 
+.oceans-article-button-font-color {
+  color: #0e0c1d;
+}
+
 .oceans-site-button-color {
   background-color: #647fecff;
+}
+
+.oceans-site-button-font-color {
+  color: #cbcfea;
 }
 
 /* Space Site */
@@ -1167,15 +1226,27 @@ video {
 }
 
 .space-focus-area-button-background-color {
-  background-color: #e7e7e7;
+  background-color: #403e3e;
+}
+
+.space-focus-area-button-font-color {
+  color: #e7e7e7;
 }
 
 .space-article-button-background-color {
   background-color: #e5e5e5;
 }
 
+.space-article-button-font-color {
+  color: #1b1b1b;
+}
+
 .space-site-button-color {
   background-color: #333333ff;
+}
+
+.space-site-button-font-color {
+  color: #d9d9d9;
 }
 
 /* Costs Site */
@@ -1192,12 +1263,24 @@ video {
   background-color: #e88feb;
 }
 
+.costs-focus-area-button-font-color {
+  color: #191619;
+}
+
 .costs-article-button-background-color {
   background-color: #ddb7eb;
 }
 
+.costs-article-button-font-color {
+  color: #171617;
+}
+
 .costs-site-button-color {
   background-color: #b998d6ff;
+}
+
+.costs-site-button-font-color {
+  color: #090911;
 }
 
 /* History Site */
@@ -1211,23 +1294,27 @@ video {
 }
 
 .history-focus-area-button-background-color {
-  background-color: #7db6bb;
+  background-color: #9fbdc0;
+}
+
+.history-focus-area-button-font-color {
+  color: #222425;
 }
 
 .history-article-button-background-color {
   background-color: #c8d9e7;
 }
 
+.history-article-button-font-color {
+  color: #1b1c1d;
+}
+
 .history-site-button-color {
   background-color: #bed0d8ff;
 }
 
-/* This is the tempoary bookmark for the different ./paths */
-
-/* ...it will get deleted as the project progresses */
-
-.sites-intro-font-size {
-  font-size: 4rem;
+.history-site-button-font-color {
+  color: #080b0f;
 }
 
 .hover\:text-red-900:hover {
