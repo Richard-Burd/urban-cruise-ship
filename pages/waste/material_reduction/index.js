@@ -18,6 +18,12 @@ const focusAreaUrl = "material_reduction";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+
+  </p>
+);
+
 const MaterialReduction = () => {
   return (
     <>
@@ -26,10 +32,10 @@ const MaterialReduction = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
       <div className={`${site}-background-gradient`}>
-        A link to Michael&apos;s Material Reduction article will go here
-        (ISSUE: oddly-placed-articles)
+        A link to Michael&apos;s Material Reduction article will go here (ISSUE: oddly-placed-articles)
       </div>
     </>
   );

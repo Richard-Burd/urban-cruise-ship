@@ -18,6 +18,12 @@ const focusAreaUrl = "zero_waste";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    
+  </p>
+);
+
 const ZeroWaste = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const ZeroWaste = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
       <div className={`${site}-background-gradient`}>
         a link to Michael&apos;s Zero Waste article will go here (ISSUE: oddly-placed-articles)

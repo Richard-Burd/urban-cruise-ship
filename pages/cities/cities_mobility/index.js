@@ -18,6 +18,12 @@ const focusAreaUrl = "cities_mobility";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    
+  </p>
+);
+
 const CitiesMobility = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const CitiesMobility = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

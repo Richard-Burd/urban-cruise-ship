@@ -12,11 +12,18 @@ function findFocusAreaName(searchValue) {
 
 // The Focus Area URL is inputted here,
 // it should be the same as the folder name,
-// You will have to change this each time you 
+// You will have to change this each time you
 // create or move a focus area.
 const focusAreaUrl = "space_travel";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
+
+const focusAreaDescription = (
+  <p>
+    In this section, we review the most promising concepts for space launch and
+    propulsion.
+  </p>
+);
 
 const SpaceTravel = () => {
   return (
@@ -26,6 +33,7 @@ const SpaceTravel = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

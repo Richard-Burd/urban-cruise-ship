@@ -18,6 +18,12 @@ const focusAreaUrl = "cities_socioeconomics";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    
+  </p>
+);
+
 const CitiesSocioeconomics = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const CitiesSocioeconomics = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

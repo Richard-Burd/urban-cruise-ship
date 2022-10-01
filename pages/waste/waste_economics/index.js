@@ -18,6 +18,12 @@ const focusAreaUrl = "waste_economics";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we review the economics of waste management.
+  </p>
+);
+
 const WasteEconomics = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const WasteEconomics = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

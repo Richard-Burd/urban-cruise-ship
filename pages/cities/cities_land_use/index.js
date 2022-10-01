@@ -18,6 +18,12 @@ const focusAreaUrl = "cities_land_use";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    
+  </p>
+);
+
 const CitiesLandUse = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const CitiesLandUse = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

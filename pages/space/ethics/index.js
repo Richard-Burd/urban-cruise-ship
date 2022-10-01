@@ -12,13 +12,20 @@ function findFocusAreaName(searchValue) {
 
 // The Focus Area URL is inputted here,
 // it should be the same as the folder name,
-// You will have to change this each time you 
+// You will have to change this each time you
 // create or move a focus area.
 const focusAreaUrl = "ethics";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const SpaceEthics = () => {
+const focusAreaDescription = (
+  <p>
+    In this section, we discuss the social, legal, and ethical aspects of space
+    activity.
+  </p>
+);
+
+const SpaceRisksAndEthics = () => {
   return (
     <>
       <FocusArea
@@ -26,9 +33,10 @@ const SpaceEthics = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );
 };
 
-export default SpaceEthics;
+export default SpaceRisksAndEthics;

@@ -18,6 +18,12 @@ const focusAreaUrl = "economy";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we view top priorities in cost internalization.
+  </p>
+);
+
 const CostsPriorities = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const CostsPriorities = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

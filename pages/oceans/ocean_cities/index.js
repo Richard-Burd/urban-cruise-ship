@@ -18,6 +18,12 @@ const focusAreaUrl = "ocean_cities";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    
+  </p>
+);
+
 const OceanCities = () => {
   return (
     <>
@@ -26,10 +32,10 @@ const OceanCities = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
       <div className={`${site}-background-gradient`}>
-        a link to Michael&apos;s Cities article in the Oceans Site will go here
-        (ISSUE: oddly-placed-articles)
+        a link to Michael&apos;s Cities article in the Oceans Site will go here (ISSUE: oddly-placed-articles)
       </div>
     </>
   );

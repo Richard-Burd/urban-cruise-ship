@@ -18,6 +18,13 @@ const focusAreaUrl = "ocean_priorities";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we review key social and political issues around waste
+    management.
+  </p>
+);
+
 const OceanPriorities = () => {
   return (
     <>
@@ -26,6 +33,7 @@ const OceanPriorities = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

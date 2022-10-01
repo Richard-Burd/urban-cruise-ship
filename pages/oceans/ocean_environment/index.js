@@ -18,6 +18,12 @@ const focusAreaUrl = "ocean_environment";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we consider environmental concerns in the oceans.
+  </p>
+);
+
 const OceanEnvironment = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const OceanEnvironment = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

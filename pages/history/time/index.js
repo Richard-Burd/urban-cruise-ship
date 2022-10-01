@@ -18,6 +18,12 @@ const focusAreaUrl = "time";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+   
+  </p>
+);
+
 const HistoryTime = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const HistoryTime = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
       <div className={`${site}-background-gradient`}>a link to Michael&apos;s Timelines page will go here (ISSUE: oddly-placed-articles)</div>
     </>

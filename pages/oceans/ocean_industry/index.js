@@ -18,6 +18,12 @@ const focusAreaUrl = "ocean_industry";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+    In this section, we consider several prospects for industrializing the oceans.
+  </p>
+);
+
 const OceanIndustry = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const OceanIndustry = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );

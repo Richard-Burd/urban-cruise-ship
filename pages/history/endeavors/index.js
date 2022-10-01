@@ -18,6 +18,12 @@ const focusAreaUrl = "endeavors";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
+const focusAreaDescription = (
+  <p>
+   
+  </p>
+);
+
 const HistoryEndeavors = () => {
   return (
     <>
@@ -26,6 +32,7 @@ const HistoryEndeavors = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
       <div className={`${site}-background-gradient`}>a link to Michael&apos;s endeavors page will go here (ISSUE: oddly-placed-articles)</div>
     </>

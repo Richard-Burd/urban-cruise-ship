@@ -1,7 +1,7 @@
 const FocusAreaDescriptions = (props) => {
   return (
     <>
-      <div className={`${props.site}-site-button-font-color text-xl`}>{props.focusAreaDescription}</div>
+      <div className={`${props.site}-article-button-font-color text-xl`}>{props.focusAreaDescription}</div>
     </>
   );
 };

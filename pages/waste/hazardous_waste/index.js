@@ -12,11 +12,19 @@ function findFocusAreaName(searchValue) {
 
 // The Focus Area URL is inputted here,
 // it should be the same as the folder name,
-// You will have to change this each time you 
+// You will have to change this each time you
 // create or move a focus area.
 const focusAreaUrl = "hazardous_waste";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
+
+const focusAreaDescription = (
+  <p>
+    In this section, we review management options for several types of hazardous
+    waste: household hazardous, construction and demolition, industrial,
+    electronic, medical, mining, nuclear, etc.
+  </p>
+);
 
 const HazardousWaste = () => {
   return (
@@ -26,6 +34,7 @@ const HazardousWaste = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
+        focusAreaDescription={focusAreaDescription}
       />
     </>
   );
