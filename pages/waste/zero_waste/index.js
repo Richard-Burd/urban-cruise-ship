@@ -1,4 +1,5 @@
 import FocusArea from "../../../components/FocusArea";
+import FocusAreaArticleLink from "../../../components/FocusAreaArticleLink";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -35,7 +36,11 @@ const ZeroWaste = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className={`${site}-background-gradient`}>
-        a link to Michael&apos;s Zero Waste article will go here (ISSUE: oddly-placed-articles)
+        <FocusAreaArticleLink
+          site={site}
+          text={`Our legacy site has an article on zero waste`}
+          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/topic/waste/zero_waste`}
+        />
       </div>
     </>
   );

@@ -35,6 +35,11 @@ const HabitatEnvironment = () => {
         hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
+      <div>add the following with the appropriate links:</div>
+      <div>
+        See also solutions within the food system to nutrient pollution and
+        urban design solutions to light pollution, and noise pollution.
+      </div>
     </>
   );
 };

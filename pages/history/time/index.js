@@ -1,4 +1,5 @@
 import FocusArea from "../../../components/FocusArea";
+import FocusAreaArticleLink from "../../../components/FocusAreaArticleLink";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -34,7 +35,13 @@ const HistoryTime = () => {
         hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
-      <div className={`${site}-background-gradient`}>a link to Michael&apos;s Timelines page will go here (ISSUE: oddly-placed-articles)</div>
+      <div className={`${site}-background-gradient`}>
+        <FocusAreaArticleLink
+          site={site}
+          text={`Our legacy site has a series of timelines`}
+          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/solution/history/deeptime`}
+        />
+      </div>
     </>
   );
 };
