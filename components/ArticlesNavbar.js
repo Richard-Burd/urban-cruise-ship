@@ -1,10 +1,8 @@
 const ArticlesNavbar = (props) => {
-  // This defines the native article path within Richard's new rebuild of the UCS Website
-  const nativePath = `/${props.site}/${props.focusAreaUrl}/`;
-
-  // This defines the legacy path to Michael's old version of the UCS Website so that we can
-  // use all of his original article files
-  const legacyPath = `http://urbancruiseship.org/solution/${props.site}/`;
+  // This is a global variable in the ".env.local" file located in the main directory...
+  // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
+  // use all of his original article files until we import them into the new site
+  const legacyPath = `${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_ARTICLE_URI}/${props.site}/`;
 
   const articleSet = props.articles;
   return (
