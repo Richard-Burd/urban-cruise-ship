@@ -2,15 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import HomepageSpecializedSiteButton from "../components/HomepageSpecializedSiteButton";
-import { useMediaQuery } from "../components/UseMediaQuery";
 
 export default function Home() {
-  // https://stackoverflow.com/questions/72238021/how-to-apply-media-query-in-nextjs
-  // this is a call to a custom React hook that detects the user's viewport width
-  // <--mobile view--> 770px <--tablet view--> 1025px <--desktop view-->
-  const mobile = useMediaQuery(770);
-  const tablet = useMediaQuery(1025);
-
   return (
     <>
       <Head>
@@ -38,13 +31,7 @@ export default function Home() {
       {/* else if th viewport is less than 1025px, render tablet option */}
       {/* finally, if neither of those conditions are met, render desktop option */}
       <div
-        className={
-          mobile
-            ? "grid grid-cols-1"
-            : tablet
-            ? "grid grid-cols-2 gap-x-2"
-            : "grid grid-cols-3 gap-x-2"
-        }
+        className={"grid grid-cols-3 gap-x-2"}
       >
         <HomepageSpecializedSiteButton site="energy" />
         <HomepageSpecializedSiteButton site="matter" />
