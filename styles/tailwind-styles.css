@@ -82,6 +82,9 @@ NOTE: standard styling for all components in this project are done in the:
 .energy-site-button-font-color {
   color: #1d140f;
 }
+.energy-site-focus-area-button-border-n-font-color {
+  color: #19120c;
+}
 
 
 /* Matter Site */
@@ -110,6 +113,9 @@ NOTE: standard styling for all components in this project are done in the:
 .matter-site-button-font-color {
   color: #0b1610;
 }
+.matter-site-focus-area-button-border-n-font-color {
+  color: #090b08;
+}
 
 /* Habitat Site */
 .habitat-background-gradient {
@@ -136,6 +142,9 @@ NOTE: standard styling for all components in this project are done in the:
 }
 .habitat-site-button-font-color {
   color: #0e1819;
+}
+.habitat-site-focus-area-button-border-n-font-color {
+  color: #0c0d0d;
 }
 
 /* Cities Site */
@@ -164,6 +173,9 @@ NOTE: standard styling for all components in this project are done in the:
 .cities-site-button-font-color {
   color: #110909;
 }
+.cities-site-focus-area-button-border-n-font-color {
+  color: #110e0e;
+}
 
 /* Waste Site */
 .waste-background-gradient {
@@ -191,6 +203,9 @@ NOTE: standard styling for all components in this project are done in the:
 .waste-site-button-font-color {
   color: #120f0d;
 }
+.waste-site-focus-area-button-border-n-font-color {
+  color: #191613;
+}
 
 /* Oceans Site */
 .oceans-background-gradient {
@@ -201,7 +216,7 @@ NOTE: standard styling for all components in this project are done in the:
   );
 }
 .oceans-focus-area-button-background-color {
-  background-color: #1b3e75;
+  background-color: #647fecff;
 }
 .oceans-focus-area-button-font-color {
   color: #cbcfef;
@@ -217,6 +232,9 @@ NOTE: standard styling for all components in this project are done in the:
 }
 .oceans-site-button-font-color {
   color: #dfe1ee;
+}
+.oceans-site-focus-area-button-border-n-font-color {
+  color: #dfe4f1;
 }
 
 /* Space Site */
@@ -245,6 +263,9 @@ NOTE: standard styling for all components in this project are done in the:
 .space-site-button-font-color {
   color: #d9d9d9;
 }
+.space-site-focus-area-button-border-n-font-color {
+  color: #e5e5e5;
+}
 
 /* Costs Site */
 .costs-background-gradient {
@@ -272,6 +293,9 @@ NOTE: standard styling for all components in this project are done in the:
 .costs-site-button-font-color {
   color: #090911;
 }
+.costs-site-focus-area-button-border-n-font-color {
+  color: #252228;
+}
 
 /* History Site */
 .history-background-gradient {
@@ -298,4 +322,7 @@ NOTE: standard styling for all components in this project are done in the:
 }
 .history-site-button-font-color {
   color: #080b0f;
+}
+.history-site-focus-area-button-border-n-font-color {
+  color: #222222;
 }

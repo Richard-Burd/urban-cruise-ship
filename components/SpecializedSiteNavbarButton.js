@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const SpecializedSiteNavBarButton = (props) => {
+const SpecializedSiteNavbarButton = (props) => {
   return (
     <>
       <button className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color my-4 px-3 py-0.5 specialized-site-navbar-shadow tracking-wide uppercase`}>
@@ -21,4 +21,4 @@ const SpecializedSiteNavBarButton = (props) => {
   );
 };
 
-export default SpecializedSiteNavBarButton;
+export default SpecializedSiteNavbarButton;
