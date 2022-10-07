@@ -883,6 +883,10 @@ video {
   line-height: 2rem;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -911,11 +915,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
@@ -928,10 +927,6 @@ video {
 
 .text-opacity-75 {
   --tw-text-opacity: 0.75;
-}
-
-.text-opacity-80 {
-  --tw-text-opacity: 0.8;
 }
 
 .underline {
@@ -1052,7 +1047,7 @@ video {
 }
 
 .energy-site-button-font-color {
-  color: #160f0b;
+  color: #1d140f;
 }
 
 /* Matter Site */
@@ -1222,7 +1217,7 @@ video {
 }
 
 .oceans-site-button-font-color {
-  color: #cbcfea;
+  color: #dfe1ee;
 }
 
 /* Space Site */
