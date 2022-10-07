@@ -64,9 +64,6 @@ NOTE: standard styling for all components in this project are done in the:
     #ffefd1
   );
 }
-.energy-focus-area-button-background-color {
-  background-color: #ebc88f;
-}
 .energy-focus-area-button-font-color {
   color: #2a2115;
 }
@@ -95,9 +92,6 @@ NOTE: standard styling for all components in this project are done in the:
     #edffd1
   );
 }
-.matter-focus-area-button-background-color {
-  background-color: #b8eb8f;
-}
 .matter-focus-area-button-font-color {
   color: #0e170c;
 }
@@ -124,9 +118,6 @@ NOTE: standard styling for all components in this project are done in the:
     white,
     #d1fff7
   );
-}
-.habitat-focus-area-button-background-color {
-  background-color: #8febdd;
 }
 .habitat-focus-area-button-font-color {
   color: #011b18;
@@ -155,9 +146,7 @@ NOTE: standard styling for all components in this project are done in the:
     #ffd1d1
   );
 }
-.cities-focus-area-button-background-color {
-  background-color: #eb8f8f;
-}
+
 .cities-focus-area-button-font-color {
   color: #1d0f0f;
 }
@@ -184,9 +173,6 @@ NOTE: standard styling for all components in this project are done in the:
     white,
     #e0ddbc
   );
-}
-.waste-focus-area-button-background-color {
-  background-color: #ebda8f;
 }
 .waste-focus-area-button-font-color {
   color: #16110a;
@@ -215,9 +201,6 @@ NOTE: standard styling for all components in this project are done in the:
     #d1e8ff
   );
 }
-.oceans-focus-area-button-background-color {
-  background-color: #647fecff;
-}
 .oceans-focus-area-button-font-color {
   color: #cbcfef;
 }
@@ -244,9 +227,6 @@ NOTE: standard styling for all components in this project are done in the:
     white,
     #b2b2b2
   );
-}
-.space-focus-area-button-background-color {
-  background-color: #403e3e;
 }
 .space-focus-area-button-font-color {
   color: #e7e7e7;
@@ -275,9 +255,6 @@ NOTE: standard styling for all components in this project are done in the:
     #f0d1ff
   );
 }
-.costs-focus-area-button-background-color {
-  background-color: #e88feb;
-}
 .costs-focus-area-button-font-color {
   color: #191619;
 }
@@ -304,9 +281,6 @@ NOTE: standard styling for all components in this project are done in the:
     white,
     #aed1d7
   );
-}
-.history-focus-area-button-background-color {
-  background-color: #9fbdc0;
 }
 .history-focus-area-button-font-color {
   color: #222425;

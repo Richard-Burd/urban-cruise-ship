@@ -3,6 +3,7 @@ import Link from "next/link";
 import FocusAreasNavbar from "./FocusAreasNavbar";
 import SiteDescriptions from "./SiteDescriptions";
 import Logos from "./Logos";
+import FocusAreaButton from "./FocusAreaButton";
 
 const SpecializedSite = (props) => {
   const focusAreas = props.focusAreas;
@@ -13,22 +14,19 @@ const SpecializedSite = (props) => {
       <div className={`${props.site}-background-gradient`}>
         <SiteDescriptions siteDescription={props.siteDescription} />
         <Logos site={props.site} />
-        <div className="standard-font-1 standard-font-color-1 text-2xl">
+        <div className="standard-font-1 text-5xl text-zinc-700 mb-3">
           Our Focus Areas:
         </div>
-        <div>
+        <div className="ml-8">
           {focusAreas.map((focusArea) => (
             <Link
               href={`/${props.site}/${focusArea.focus_area_url}`}
               key={focusArea.focus_area_url}
             >
-              <button>
-                <h3
-                  className={`${props.site}-focus-area-button-background-color ${props.site}-focus-area-button-font-color m-2 p-2`}
-                >
-                  {focusArea.focus_area_name}
-                </h3>
-              </button>
+              <FocusAreaButton
+                site={props.site}
+                focusAreaName={focusArea.focus_area_name}
+              />
             </Link>
           ))}
         </div>
