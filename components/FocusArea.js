@@ -1,5 +1,5 @@
 import Logos from "./Logos";
-import FocusAreasNavbar from "./FocusAreasNavbar";
+import FocusAreaNavbar from "./FocusAreaNavbar";
 import ArticlesNavbar from "./ArticlesNavbar";
 import FocusAreaDescriptions from "./FocusAreaDescriptions";
 
@@ -21,7 +21,7 @@ const FocusArea = (props) => {
   }
   return (
     <>
-      <FocusAreasNavbar site={props.site} focusAreas={hierarchy} />
+      <FocusAreaNavbar site={props.site} focusAreas={hierarchy} />
       <ArticlesNavbar
         site={props.site}
         focusAreas={hierarchy}

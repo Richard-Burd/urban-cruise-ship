@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const FocusAreaButton = (props) => {
   return (
     <>
       <button
         className={`border-current focus-area-button-shadow focus-area-button-border-width focus-area-button-elliptical-geometry ${props.site}-site-focus-area-button-border-n-font-color ${props.site}-site-button-color m-5 py-1 px-8 standard-font-1 text-4xl`}
       >
-        {props.focusAreaName}
+        <Link href={props.href}>{props.focusAreaName}</Link>
       </button>
       <style jsx>{`
         .focus-area-button-border-width {

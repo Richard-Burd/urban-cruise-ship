@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import FocusAreasNavbar from "./FocusAreasNavbar";
+import FocusAreaNavbar from "./FocusAreaNavbar";
 import SiteDescriptions from "./SiteDescriptions";
 import Logos from "./Logos";
 import FocusAreaButton from "./FocusAreaButton";
@@ -10,7 +10,7 @@ const SpecializedSite = (props) => {
 
   return (
     <>
-      <FocusAreasNavbar focusAreas={focusAreas} site={props.site} />
+      <FocusAreaNavbar focusAreas={focusAreas} site={props.site} />
       <div className={`${props.site}-background-gradient pb-8`}>
         <div className="italic p-8 standard-font-3 text-zinc-800 tracking-wide text-6xl">
           <SiteDescriptions siteDescription={props.siteDescription} />
@@ -19,17 +19,15 @@ const SpecializedSite = (props) => {
         <div className="standard-font-1 text-5xl text-zinc-700 mb-3">
           Our Focus Areas:
         </div>
-        <div className="ml-8">
+        <div className="flex flex-wrap ml-8">
           {focusAreas.map((focusArea) => (
-            <Link
-              href={`/${props.site}/${focusArea.focus_area_url}`}
-              key={focusArea.focus_area_url}
-            >
+            <div key={focusArea.focus_area_url}>
               <FocusAreaButton
                 site={props.site}
                 focusAreaName={focusArea.focus_area_name}
+                href={`/${props.site}/${focusArea.focus_area_url}`}
               />
-            </Link>
+            </div>
           ))}
         </div>
       </div>
