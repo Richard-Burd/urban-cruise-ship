@@ -32,7 +32,7 @@ const Logos = (props) => {
               opacity: 1,
               rotate: 0,
             }}
-            transition={{ duration: 0.3, type: "spring" }}
+            transition={{ duration: 0.5, type: "spring" }}
           >
             <div className="active:scale-100 transition hover:-translate-y-1 hover:scale-105 duration-200">
               <a href={`/${props.site}`}>
