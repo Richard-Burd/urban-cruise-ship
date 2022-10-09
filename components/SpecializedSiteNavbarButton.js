@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useState } from "react";
-import { motion, useScroll } from "framer-motion";
-
+// import { useRouter } from "next/router";              // currently not in use
+// import { useState } from "react";                     // currently not in use
+import { motion /* useScroll */ } from "framer-motion"; // useScroll() currently not in use
 
 const SpecializedSiteNavbarButton = (props) => {
   // We are using the router to see what the current page is
@@ -18,7 +17,7 @@ const SpecializedSiteNavbarButton = (props) => {
   // We will track the current page & site passed down in the props
   // by tracking the current state
   // const [isCorrectSite, setCorrectSite] = useState(false);
- 
+
   // https://www.framer.com/docs/scroll-animations/
   // const { scrollYProgress } = useScroll();
 
@@ -26,15 +25,29 @@ const SpecializedSiteNavbarButton = (props) => {
     <>
       <motion.div
         initial={{ x: "-20vw", scale: 2, opacity: 0, rotate: -5 }}
-        animate={{ x: 0, scale: 1, opacity: 1, rotate: 0 }}
-        transition={{
-          delay: 0.1,
-          duration: 0.6,
-          type: "spring",
-          stiffness: 100,
+        animate={{
+          x: 0,
+          y: 0,
+          scale: 1,
+          opacity: 1,
+          rotate: 0,
+          transition: {
+            delay: 0.1,
+            duration: 0.6,
+            type: "spring",
+            stiffness: 100,
+          },
         }}
-        whileHover={{ /* TailwindCSS is better than FramerMotion for this */ }}
-        whileTap={{ /* TailwindCSS is better than FramerMotion for this */ }}
+        whileHover={
+          {
+            /* TailwindCSS is better than FramerMotion for this */
+          }
+        }
+        whileTap={
+          {
+            /* TailwindCSS is better than FramerMotion for this */
+          }
+        }
       >
         <button
           className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color mt-4 mb-3 px-3 py-0.5 specialized-site-navbar-shadow tracking-wide transition hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 uppercase`}
