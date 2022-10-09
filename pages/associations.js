@@ -2,6 +2,8 @@ import Head from "next/head";
 import NavbarTitleBlock from "../components/NavbarTitleBlock";
 import Image from "next/image";
 
+const externalLinkIconStyles = "duration-300 ease-in-out hover:opacity-90 mx-2 opacity-40 active:translate-x-10 active:opacity-0 transition";
+
 const Associations = () => {
   return (
     <>
@@ -35,7 +37,7 @@ const Associations = () => {
           rel="noreferrer"
         >
           <Image
-            className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+            className={externalLinkIconStyles}
             src={`/images/external-link-icons/home.svg`}
             alt={"Home icon"}
             height={50}
@@ -62,7 +64,7 @@ const Associations = () => {
             rel="noreferrer"
           >
             <Image
-              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              className={externalLinkIconStyles}
               src={`/images/external-link-icons/email.svg`}
               alt={"Email icon"}
               height={50}
@@ -83,7 +85,7 @@ const Associations = () => {
             rel="noreferrer"
           >
             <Image
-              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              className={externalLinkIconStyles}
               src={`/images/external-link-icons/home.svg`}
               alt={"Home icon"}
               height={50}
@@ -111,7 +113,7 @@ const Associations = () => {
             rel="noreferrer"
           >
             <Image
-              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              className={externalLinkIconStyles}
               src={`/images/external-link-icons/home.svg`}
               alt={"Home icon"}
               height={50}
