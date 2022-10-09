@@ -23,38 +23,42 @@ const SpecializedSiteNavbarButton = (props) => {
 
   return (
     <>
-      <motion.div
-        initial={{ x: "-20vw", scale: 2, opacity: 0, rotate: -5 }}
-        animate={{
-          x: 0,
-          y: 0,
-          scale: 1,
-          opacity: 1,
-          rotate: 0,
-          transition: {
-            delay: 0.1,
-            duration: 0.6,
-            type: "spring",
-            stiffness: 100,
-          },
-        }}
-        whileHover={
-          {
-            /* TailwindCSS is better than FramerMotion for this */
-          }
-        }
-        whileTap={
-          {
-            /* TailwindCSS is better than FramerMotion for this */
-          }
-        }
-      >
-        <button
-          className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color mt-4 mb-3 px-3 py-0.5 specialized-site-navbar-shadow tracking-wide transition hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 uppercase`}
-        >
-          <Link href={`/${props.site}`}>{props.site}</Link>
-        </button>
-      </motion.div>
+      <Link href={`/${props.site}`}>
+        <a>
+          <motion.div
+            initial={{ x: "-20vw", scale: 2, opacity: 0, rotate: -5 }}
+            animate={{
+              x: 0,
+              y: 0,
+              scale: 1,
+              opacity: 1,
+              rotate: 0,
+              transition: {
+                delay: 0.1,
+                duration: 0.6,
+                type: "spring",
+                stiffness: 100,
+              },
+            }}
+            whileHover={
+              {
+                /* TailwindCSS is better than FramerMotion for this */
+              }
+            }
+            whileTap={
+              {
+                /* TailwindCSS is better than FramerMotion for this */
+              }
+            }
+          >
+            <button
+              className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color mt-4 mb-3 px-3 py-0.5 specialized-site-navbar-shadow tracking-wide transition hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 uppercase`}
+            >
+              {props.site}
+            </button>
+          </motion.div>
+        </a>
+      </Link>
       <style jsx>{`
         .specialized-site-navbar-shadow {
           box-shadow: 5px 6px 4px rgb(140, 140, 140);

@@ -15,30 +15,40 @@ const Navbar = () => {
         // className="sticky top-0 z-10" // ...so does this TailwindCSS
       >
         <div className="bg-amber-200 flex justify-between standard-font-1 text-yellow-900 text-lg top-navbar-shadow">
-          <div className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-2 pb-3 active:bg-gray-900 active:text-gray-200">
-            <Link href="/">Home</Link>
-          </div>
-          <div className={navBarStyles}>
-            <Link href="/about">About</Link>
-          </div>
-          <div className={navBarStyles}>
-            <Link href="/standards">Standards</Link>
-          </div>
-          <div className={navBarStyles}>
-            <Link href="/crew">Crew</Link>
-          </div>
-          <div className={navBarStyles}>
-            <Link href="/associations">Associations</Link>
-          </div>
-          <div className={navBarStyles}>
-            <Link href="/presentations">Presentations</Link>
-          </div>
-          <div className={navBarStyles}>
-            <Link href="/publications">Publications</Link>
-          </div>
-          <div className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-3 pr-5 pt-2 pb-3 active:bg-gray-900 active:text-gray-200">
-            <Link href="/accomplishments">Accomplishments</Link>
-          </div>
+          <Link href="/">
+            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-2 pb-3 active:bg-gray-900 active:text-gray-200">
+              Home
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className={navBarStyles}>About</a>
+          </Link>
+
+          <Link href="/standards">
+            <a className={navBarStyles}>Standards</a>
+          </Link>
+
+          <Link href="/crew">
+            <a className={navBarStyles}>Crew</a>
+          </Link>
+
+          <Link href="/associations">
+            <a className={navBarStyles}>Associations</a>
+          </Link>
+
+          <Link href="/presentations">
+            <a className={navBarStyles}>Presentations</a>
+          </Link>
+
+          <Link href="/publications">
+            <a className={navBarStyles}>Publications</a>
+          </Link>
+
+          <Link href="/accomplishments">
+            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-2 pb-3 active:bg-gray-900 active:text-gray-200">
+              Accomplishments
+            </a>
+          </Link>
           <style jsx>{`
             .top-navbar-shadow {
               box-shadow: 8px 8px 4px rgb(150, 150, 150);
