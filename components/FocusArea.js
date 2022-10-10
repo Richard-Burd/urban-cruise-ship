@@ -26,7 +26,7 @@ const FocusArea = (props) => {
         articles={findChildren(searchValue)}
         focusAreaUrl={props.focusAreaUrl}
       />
-      <div className={`${props.site}-background-gradient`}>
+      <div className={`border-t-2 border-gray-300 ${props.site}-background-gradient`}>
         <FocusAreaDescriptions site={props.site} focusAreaDescription={props.focusAreaDescription} />
         <Logos site={props.site} />
         <div className="standard-font-1 text-4xl">{props.focusAreaName}</div>
