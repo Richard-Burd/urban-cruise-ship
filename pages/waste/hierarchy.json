@@ -8,7 +8,7 @@
      "focus_area_name":"Society",
      "focus_area_url":"waste_society",
      "articles":[
-       { "article_title": "recycling_overview", "article_url": "recycling_overview" },
+       { "article_title": "Recycling Overview", "article_url": "recycling_overview" },
        { "article_title": "Waste Composition", "article_url": "waste_composition" }
      ]
   },

@@ -675,6 +675,18 @@ video {
   margin-right: 1rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mb-3\.5 {
   margin-bottom: 0.875rem;
 }
@@ -689,10 +701,6 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
 }
 
 .mt-4 {
@@ -852,6 +860,14 @@ video {
   padding: 0.25rem;
 }
 
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -863,6 +879,11 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .py-1 {
@@ -1001,9 +1022,9 @@ video {
   line-height: 1.75rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-2xl {
@@ -1011,9 +1032,9 @@ video {
   line-height: 2rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .uppercase {
@@ -1219,11 +1240,11 @@ video {
 }
 
 .matter-article-button-background-color {
-  background-color: #c9ebb7;
+  background-color: #c7e872ff;
 }
 
 .matter-article-button-font-color {
-  color: #0f1b0f;
+  color: #28432fff;
 }
 
 .matter-site-button-color {

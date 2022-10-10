@@ -3,7 +3,7 @@ const ArticleNavbarButton = (props) => {
     <>
       <div className="pb-1.5">
         <button
-          className={`article-navbar-elliptical-geometry article-navbar-height article-navbar-shadow ${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 standard-font-1 text-center hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 tracking-wide w-full`}
+          className={`article-navbar-elliptical-geometry article-navbar-height article-navbar-shadow ${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 p-0.5 standard-font-1 text-center hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 tracking-wide w-full`}
         >
           {props.articleTitle}
         </button>

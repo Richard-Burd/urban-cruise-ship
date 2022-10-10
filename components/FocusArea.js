@@ -4,7 +4,6 @@ import ArticleNavbar from "./ArticleNavbar";
 import FocusAreaDescriptions from "./FocusAreaDescriptions";
 
 const FocusArea = (props) => {
-
   // This is a global variable in the ".env.local" file located in the main directory...
   // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
   // use all of his original article files until we import them into the new site
@@ -26,11 +25,20 @@ const FocusArea = (props) => {
         articles={findChildren(searchValue)}
         focusAreaUrl={props.focusAreaUrl}
       />
-      <div className={`border-t-2 border-gray-300 ${props.site}-background-gradient`}>
-        <FocusAreaDescriptions site={props.site} focusAreaDescription={props.focusAreaDescription} />
+      <div
+        className={`border-t-2 border-gray-300 ${props.site}-background-gradient`}
+      >
+        <FocusAreaDescriptions
+          site={props.site}
+          focusAreaDescription={props.focusAreaDescription}
+        />
         <Logos site={props.site} />
-        <div className="standard-font-1 text-4xl">{props.focusAreaName}</div>
-        <div>
+        <span
+          className={`border-current ${props.site}-site-button-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 ml-10 standard-font-1 text-5xl`}
+        >
+          {props.focusAreaName}
+        </span>
+        <div className="flex flex-wrap ml-8 mt-12">
           {findChildren(props.focusAreaUrl).map((article) => {
             return (
               <div key={article.article_url}>
@@ -39,13 +47,31 @@ const FocusArea = (props) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <button className={`${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 p-2`}>{article.article_title}</button>
+                  <button
+                    className={`${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 p-2`}
+                  >
+                    {article.article_title}
+                  </button>
                 </a>
               </div>
             );
           })}
         </div>
       </div>
+      <style jsx>{`
+        .focus-area-title-border-width {
+          border-width: 2px;
+        }
+        .focus-area-title-shadow {
+          box-shadow: 9px 12px 7px rgb(150, 150, 150);
+        }
+        .focus-area-title-elliptical-geometry {
+          border-bottom-left-radius: 76px 32px;
+          border-bottom-right-radius: 76px 32px;
+          border-top-left-radius: 76px 32px;
+          border-top-right-radius: 76px 32px;
+        }
+      `}</style>
     </>
   );
 };
