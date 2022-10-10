@@ -1,4 +1,6 @@
-const ArticlesNavbar = (props) => {
+import ArticleNavbarButton from "./ArticleNavbarButton";
+
+const ArticleNavbar = (props) => {
   // This is a global variable in the ".env.local" file located in the main directory...
   // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
   // use all of his original article files until we import them into
@@ -7,7 +9,7 @@ const ArticlesNavbar = (props) => {
   const articleSet = props.articles;
   return (
     <>
-      <div>
+      <div className="border-b-2 border-gray-300 grid grid-cols-5 gap-x-4 gap-y-0.5 pb-1.5 mr-4">
         {articleSet.map((article) => (
           <a
             key={article.article_url}
@@ -15,13 +17,10 @@ const ArticlesNavbar = (props) => {
             target="_blank"
             rel="noreferrer"
           >
-            <button>
-              <h3
-                className={`${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 p-2`}
-              >
-                {article.article_title}
-              </h3>
-            </button>
+            <ArticleNavbarButton
+              site={props.site}
+              articleTitle={article.article_title}
+            />
           </a>
         ))}
       </div>
@@ -29,4 +28,4 @@ const ArticlesNavbar = (props) => {
   );
 };
 
-export default ArticlesNavbar;
+export default ArticleNavbar;

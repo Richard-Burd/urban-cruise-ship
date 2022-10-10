@@ -1,11 +1,9 @@
 import Logos from "./Logos";
 import FocusAreaNavbar from "./FocusAreaNavbar";
-import ArticlesNavbar from "./ArticlesNavbar";
+import ArticleNavbar from "./ArticleNavbar";
 import FocusAreaDescriptions from "./FocusAreaDescriptions";
 
 const FocusArea = (props) => {
-  // This defines the native article path within Richard's new rebuild of the UCS Website
-  const nativePath = `/${props.site}/${props.focusAreaUrl}/`;
 
   // This is a global variable in the ".env.local" file located in the main directory...
   // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
@@ -22,7 +20,7 @@ const FocusArea = (props) => {
   return (
     <>
       <FocusAreaNavbar site={props.site} focusAreas={hierarchy} />
-      <ArticlesNavbar
+      <ArticleNavbar
         site={props.site}
         focusAreas={hierarchy}
         articles={findChildren(searchValue)}
