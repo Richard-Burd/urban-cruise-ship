@@ -599,12 +599,16 @@ video {
   z-index: 10;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.m-4 {
+  margin: 1rem;
 }
 
 .m-5 {
   margin: 1.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .my-2 {
@@ -630,6 +634,11 @@ video {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mx-2\.5 {
@@ -816,6 +825,10 @@ video {
   overflow: visible;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -860,14 +873,6 @@ video {
   padding: 0.25rem;
 }
 
-.p-0\.5 {
-  padding: 0.125rem;
-}
-
-.p-0 {
-  padding: 0px;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -879,6 +884,16 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .px-10 {
@@ -909,11 +924,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .py-0\.5 {
@@ -1225,6 +1235,10 @@ video {
   color: #19120c;
 }
 
+.energy-focus-area-title-color {
+  background-color: rgba(242, 187, 86, 0.82);
+}
+
 /* Matter Site */
 
 .matter-background-gradient {
@@ -1257,6 +1271,10 @@ video {
 
 .matter-site-focus-area-button-border-n-font-color {
   color: #090b08;
+}
+
+.matter-focus-area-title-color {
+  background-color: rgba(173, 235, 72, 0.807);
 }
 
 /* Habitat Site */
@@ -1293,6 +1311,10 @@ video {
   color: #0c0d0d;
 }
 
+.habitat-focus-area-title-color {
+  background-color: rgba(142, 232, 207, 0.834);
+}
+
 /* Cities Site */
 
 .cities-background-gradient {
@@ -1325,6 +1347,10 @@ video {
 
 .cities-site-focus-area-button-border-n-font-color {
   color: #110e0e;
+}
+
+.cities-focus-area-title-color {
+  background-color: rgba(255, 180, 180, 0.82);
 }
 
 /* Waste Site */
@@ -1361,6 +1387,10 @@ video {
   color: #191613;
 }
 
+.waste-focus-area-title-color {
+  background-color: rgba(193, 182, 152, 0.82)
+}
+
 /* Oceans Site */
 
 .oceans-background-gradient {
@@ -1393,6 +1423,10 @@ video {
 
 .oceans-site-focus-area-button-border-n-font-color {
   color: #dfe4f1;
+}
+
+.oceans-focus-area-title-color {
+  background-color: rgba(100, 127, 236, 0.827);
 }
 
 /* Space Site */
@@ -1429,6 +1463,10 @@ video {
   color: #e5e5e5;
 }
 
+.space-focus-area-title-color {
+  background-color: rgba(51, 51, 51, 0.793);
+}
+
 /* Costs Site */
 
 .costs-background-gradient {
@@ -1463,6 +1501,10 @@ video {
   color: #252228;
 }
 
+.costs-focus-area-title-color {
+  background-color: rgba(185, 152, 214, 0.834);
+}
+
 /* History Site */
 
 .history-background-gradient {
@@ -1495,6 +1537,10 @@ video {
 
 .history-site-focus-area-button-border-n-font-color {
   color: #222222;
+}
+
+.history-focus-area-title-color {
+  background-color: rgba(190, 208, 216, 0.793);
 }
 
 .hover\:-translate-y-1:hover {

@@ -1,6 +1,7 @@
 import Logos from "./Logos";
 import FocusAreaNavbar from "./FocusAreaNavbar";
 import ArticleNavbar from "./ArticleNavbar";
+import ArticleButton from "./ArticleButton";
 import FocusAreaDescriptions from "./FocusAreaDescriptions";
 
 const FocusArea = (props) => {
@@ -16,6 +17,7 @@ const FocusArea = (props) => {
       return focus_area_url === searchValue;
     }).articles;
   }
+  
   return (
     <>
       <FocusAreaNavbar site={props.site} focusAreas={hierarchy} />
@@ -34,7 +36,7 @@ const FocusArea = (props) => {
         />
         <Logos site={props.site} />
         <span
-          className={`border-current ${props.site}-site-button-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 ml-10 standard-font-1 text-5xl`}
+          className={`border-current ${props.site}-focus-area-title-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 ml-10 standard-font-1 text-5xl`}
         >
           {props.focusAreaName}
         </span>
@@ -47,11 +49,7 @@ const FocusArea = (props) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <button
-                    className={`${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 p-2`}
-                  >
-                    {article.article_title}
-                  </button>
+                  <ArticleButton site={props.site} articleTitle={article.article_title} />
                 </a>
               </div>
             );

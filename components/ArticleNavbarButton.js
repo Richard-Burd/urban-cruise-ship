@@ -1,13 +1,31 @@
+import { motion } from "framer-motion";
+
 const ArticleNavbarButton = (props) => {
   return (
     <>
-      <div className="pb-1.5">
-        <button
-          className={`article-navbar-elliptical-geometry article-navbar-height article-navbar-shadow ${props.site}-article-button-background-color ${props.site}-article-button-font-color m-2 p-0.5 standard-font-1 text-center hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 tracking-wide w-full`}
-        >
-          {props.articleTitle}
-        </button>
-      </div>
+      <motion.div
+        initial={{ x: "-2vw", scaleX: 0.3, opacity: 0, rotate: -2 }}
+        animate={{
+          x: 0,
+          y: 0,
+          scaleX: 1,
+          opacity: 1,
+          rotate: 0,
+          transition: {
+            delay: 0.1,
+            stiffness: 70,
+          },
+        }}
+        transition={{ duration: 0.5, type: "spring" }}
+      >
+        <div className="pb-1.5">
+          <button
+            className={`article-navbar-elliptical-geometry article-navbar-height article-navbar-shadow ${props.site}-article-button-background-color ${props.site}-article-button-font-color p-1 standard-font-1 text-center hover:-translate-y-1 hover:scale-110 my-1 duration-100 active:scale-100 tracking-wide w-full`}
+          >
+            {props.articleTitle}
+          </button>
+        </div>
+      </motion.div>
       <style jsx>{`
         .article-navbar-height {
           height: 55px;
