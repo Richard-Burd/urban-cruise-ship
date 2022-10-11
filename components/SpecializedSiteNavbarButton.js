@@ -52,7 +52,7 @@ const SpecializedSiteNavbarButton = (props) => {
             }
           >
             <button
-              className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color mt-4 mb-3 px-3 py-0.5 specialized-site-navbar-shadow tracking-wide transition hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 uppercase`}
+              className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color lg:px-3 lg:py-0.5 specialized-site-navbar-shadow standard-font-1 text-lg tracking-wide transition hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 uppercase w-full`}
             >
               {props.site}
             </button>

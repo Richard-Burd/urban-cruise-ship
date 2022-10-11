@@ -6,6 +6,8 @@ import Link from "next/link";
 const MobileNavbar = () => {
   const [isVisible, setVisible] = useState(false);
 
+  // not used yet, would like to use it to have it "drop-down"
+  // when the user scrolls up
   const { scrollYProgress } = useScroll();
 
   const navBarStyles =
@@ -39,14 +41,11 @@ const MobileNavbar = () => {
               animate="open"
               exit="collapsed"
               variants={{
-                open: { height: "auto", y: 0, transition: { duration: 0.1 } },
-                collapsed: { height: 0, transition: { duration: 0 } }, // https://www.framer.com/developers/guides/auto-sizing/
-              }}
-              transition={{
-                duration: 1
+                open: { height: "auto", y: 0, transition: { duration: 0.5 } },
+                collapsed: { height: 0, transition: { duration: 0.5 } }, // https://www.framer.com/developers/guides/auto-sizing/
               }}
             >
-              <div className="bg-amber-200 bg-opacity-60 border-t-2 border-stone-700 divide-y divide-stone-400">
+              <div className="bg-amber-100 border-t-2 border-stone-700 divide-y divide-stone-400">
                 <Link href="/about">
                   <div className={navBarStyles}>About</div>
                 </Link>
