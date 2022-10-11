@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
+import MobileNavbar from "./MobileNavbar";
 import SpecializedSiteNavbar from "./SpecializedSiteNavbar";
 import Footer from "./Footer";
 
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       that we send Michael for him to integrate into his build 
         <script src="https://cdn.tailwindcss.com"></script>*/}
       <div className="sm:max-w-screen-md lg:max-w-screen-lg mx-auto">
+        <MobileNavbar />
         <Navbar />
         <SpecializedSiteNavbar />
         <div>{children}</div>

@@ -1,5 +1,7 @@
 // This controls the way the logo, title, and subtitle are displayed
 // on the pages listed in the very top navbar in the UCS website.
+// This is used on the Home, About, Standards, Crew, Associations,
+// & Presentations pages.
 import Image from "next/image";
 
 const NavbarTitleBlock = (props) => {

@@ -14,7 +14,7 @@ const Navbar = () => {
         // animate={{ position: "fixed" }} // this works...
         // className="sticky top-0 z-10" // ...so does this TailwindCSS
       >
-        <div className="bg-amber-200 flex justify-between standard-font-1 text-yellow-900 text-lg top-navbar-shadow">
+        <div className="bg-amber-200 hidden lg:flex justify-between standard-font-1 text-yellow-900 text-lg top-navbar-shadow">
           <Link href="/">
             <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-2 pb-3 active:bg-gray-900 active:text-gray-200">
               Home
