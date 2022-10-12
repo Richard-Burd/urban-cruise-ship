@@ -18,7 +18,7 @@ const About = () => {
         />
       </div>
       {/* This side-by-side display must dissapear for tablet & mobile views*/}
-      <div className="grid grid-cols-2 gap-4 mb-40">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ml-4 lg:ml-0 mb-40">
         <div className="first-column">
           <AboutPageDropdown
             title={`Why the name "Urban Cruise Ship?"`}

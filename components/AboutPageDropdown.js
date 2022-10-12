@@ -8,7 +8,7 @@ const AboutPageDropdown = (props) => {
     <>
       <div className="elliptical-geometry overflow-hidden">
         <motion.div onTap={() => setVisible(!isVisible)}>
-          <div className="about-page-button-color cursor-pointer elliptical-geometry mr-5 my-4 p-1.5 relative shadow-geometry standard-font-2 text-center hover:text-gray-100 transition text-xl z-20">
+          <div className="about-page-button-color cursor-pointer elliptical-geometry mr-5 my-4 p-1.5 relative shadow-geometry standard-font-2 text-center hover:text-gray-100 transition text-base md:text-xl">
             {props.title}
           </div>
         </motion.div>

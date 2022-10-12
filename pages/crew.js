@@ -3,6 +3,10 @@ import NavbarTitleBlock from "../components/NavbarTitleBlock";
 import Image from "next/image";
 
 const Crew = () => {
+  const crewDescriptionTestLayoutStyles = (
+    "columns-1 md:columns-2 lg:columns-3 my-7 standard-font-3 text-justify text-lg"
+  )
+
   return (
     <>
       <Head>
@@ -23,7 +27,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Michael Goff
       </div>
-      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
+      <div className={crewDescriptionTestLayoutStyles}>
         <div>
           Michael Goff is the president and primary researcher of Urban Cruise
           Ship.
@@ -100,7 +104,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         John van der Harst
       </div>
-      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
+      <div className={crewDescriptionTestLayoutStyles}>
         <div>
           John van der Harst manages research aims, graphic and language
           standards, human resources, and development for Urban Cruise Ship.
@@ -190,7 +194,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Lee Nelson
       </div>
-      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
+      <div className={crewDescriptionTestLayoutStyles}>
         <div>
           Lee Nelson is an Exhibit Producer and Researcher with Urban Cruise
           Ship.
@@ -266,7 +270,7 @@ const Crew = () => {
       <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
         Richard Burd
       </div>
-      <div className="columns-3 my-7 standard-font-3 text-justify text-lg">
+      <div className={crewDescriptionTestLayoutStyles}>
         <div>Richard Burd is an assistant researcher at Urban Cruise Ship.</div>
         <div className="my-4"></div>
         <div>
