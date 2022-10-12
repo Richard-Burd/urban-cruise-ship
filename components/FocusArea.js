@@ -17,7 +17,7 @@ const FocusArea = (props) => {
       return focus_area_url === searchValue;
     }).articles;
   }
-  
+
   return (
     <>
       <FocusAreaNavbar site={props.site} focusAreas={hierarchy} />
@@ -35,11 +35,13 @@ const FocusArea = (props) => {
           focusAreaDescription={props.focusAreaDescription}
         />
         <Logos site={props.site} />
-        <span
-          className={`border-current ${props.site}-focus-area-title-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 ml-10 standard-font-1 text-5xl`}
-        >
-          {props.focusAreaName}
-        </span>
+        <div className="scale-50 lg:scale-100">
+          <span
+            className={`border-current ${props.site}-focus-area-title-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 lg:ml-10 standard-font-1 text-5xl`}
+          >
+            {props.focusAreaName}
+          </span>
+        </div>
         <div className="flex flex-wrap ml-8 mt-12">
           {findChildren(props.focusAreaUrl).map((article) => {
             return (
@@ -49,7 +51,10 @@ const FocusArea = (props) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <ArticleButton site={props.site} articleTitle={article.article_title} />
+                  <ArticleButton
+                    site={props.site}
+                    articleTitle={article.article_title}
+                  />
                 </a>
               </div>
             );

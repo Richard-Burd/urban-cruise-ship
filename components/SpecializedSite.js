@@ -19,7 +19,7 @@ const SpecializedSite = (props) => {
         <div className="standard-font-1 text-5xl text-zinc-700 mb-3">
           Our Focus Areas:
         </div>
-        <div className="flex flex-wrap ml-8">
+        <div className="grid justify-items-center lg:flex lg:flex-wrap lg:justify-start lg:ml-8 scale-75 lg:scale-100 -translate-x-4 lg:-translate-x-0">
           {focusAreas.map((focusArea) => (
             <div key={focusArea.focus_area_url}>
               <FocusAreaButton
