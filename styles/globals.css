@@ -1208,6 +1208,22 @@ video {
 
 /* tailwind directive */
 
+/* This section of styles is used to style the MDX Markdown files */
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(124 45 18 / var(--tw-text-opacity));
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(63 98 18 / var(--tw-text-opacity));
+}
+
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */

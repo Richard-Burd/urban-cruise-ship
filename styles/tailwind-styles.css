@@ -15,6 +15,14 @@ NOTE: standard styling for all components in this project are done in the:
 @tailwind components; /* tailwind directive */
 @tailwind utilities; /* tailwind directive */
 
+/* This section of styles is used to style the MDX Markdown files */
+h1 {
+  @apply text-4xl text-orange-900
+}
+h2 {
+  @apply text-xl text-lime-800
+}
+
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
 .standard-font-1 {
