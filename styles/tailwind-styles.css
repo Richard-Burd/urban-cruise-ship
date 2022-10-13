@@ -15,13 +15,6 @@ NOTE: standard styling for all components in this project are done in the:
 @tailwind components; /* tailwind directive */
 @tailwind utilities; /* tailwind directive */
 
-/* This is the css setup by Chris Bloom */
-/* It is reading colors from the tailwind.config.js file */
-/* All of the CSS files below should use this system */
-.bloom-config-special-colors {
-  @apply text-ucs-brown-100;
-}
-
 /* This section of styles is used to style the MDX Markdown files */
 h1 {
   @apply text-4xl text-orange-900;
@@ -308,4 +301,11 @@ p a {
 }
 .history-focus-area-title-color {
   background-color: rgba(190, 208, 216, 0.793);
+}
+
+/* This is the css setup by Chris Bloom */
+/* It is reading colors from the tailwind.config.js file */
+/* All of the CSS files below should use this system */
+.bloom-config-special-colors {
+  @apply text-ucs-brown-100;
 }
