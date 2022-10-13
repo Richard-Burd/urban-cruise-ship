@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const ArticleNavbarButton = (props) => {
+  const longClasses = `article-navbar-elliptical-geometry article-navbar-height article-navbar-shadow ${props.site}-article-button-background-color ${props.site}-article-button-font-color p-1 standard-font-1 text-xs md:text-base text-center hover:-translate-y-1 hover:scale-110 my-1 duration-100 active:scale-100 lg:tracking-wide w-full`;
   return (
     <>
       <motion.div
@@ -19,11 +20,7 @@ const ArticleNavbarButton = (props) => {
         transition={{ duration: 0.5, type: "spring" }}
       >
         <div className="pb-1.5">
-          <button
-            className={`article-navbar-elliptical-geometry article-navbar-height article-navbar-shadow ${props.site}-article-button-background-color ${props.site}-article-button-font-color p-1 standard-font-1 text-xs md:text-base text-center hover:-translate-y-1 hover:scale-110 my-1 duration-100 active:scale-100 lg:tracking-wide w-full`}
-          >
-            {props.articleTitle}
-          </button>
+          <button className={longClasses}>{props.articleTitle}</button>
         </div>
       </motion.div>
       <style jsx>{`

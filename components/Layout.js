@@ -19,10 +19,14 @@ const Layout = ({ children }) => {
       ...but for now, we will copy & paste the <script> tag below into each <head> tag
       that we send Michael for him to integrate into his build 
         <script src="https://cdn.tailwindcss.com"></script>*/}
-      <div className="sm:max-w-screen-md px-4 lg:px-0 lg:max-w-screen-lg mx-auto">
-        <MobileNavbar />
+      <div className="sm:max-w-screen-md px-4 lg:px-0 lg:max-w-screen-lg mx-auto relative">
+        <div className="relative z-10">
+          <MobileNavbar />
+        </div>
         <Navbar />
+        <div className="relative z-0">
         <SpecializedSiteNavbar />
+        </div>
         <div>{children}</div>
         <Footer />
       </div>

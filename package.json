@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build-css": "tailwindcss build styles/tailwind-styles.css -o styles/globals.css"
+    "build-css": "tailwindcss build -i styles/tailwind-styles.css -o styles/globals.css"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.12.1",

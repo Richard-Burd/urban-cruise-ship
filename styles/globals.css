@@ -599,6 +599,10 @@ video {
   z-index: 10;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1208,6 +1212,17 @@ video {
 
 /* tailwind directive */
 
+/* This is the css setup by Chris Bloom */
+
+/* It is reading colors from the tailwind.config.js file */
+
+/* All of the CSS files below should use this system */
+
+.bloom-config-special-colors {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
 /* This section of styles is used to style the MDX Markdown files */
 
 h1 {
@@ -1224,6 +1239,11 @@ h2 {
   color: rgb(63 98 18 / var(--tw-text-opacity));
 }
 
+p a {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */
@@ -1237,7 +1257,7 @@ h2 {
 /* it is imported into this project here: ./pages/_document.js */
 
 .standard-font-2 {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   /* does nothing, included for templating only */
   font-style: normal;
@@ -1253,7 +1273,7 @@ h2 {
 /* this font has both bold and italics built into it from Google Fonts */
 
 .standard-font-3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* NOTE: Standard font colors are subject to be changed per John's tastes  */
@@ -1283,11 +1303,7 @@ h2 {
 /* Energy Site */
 
 .energy-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #ffefd1
-  );
+  background-image: linear-gradient(to right, white, #ffefd1);
 }
 
 .energy-focus-area-button-font-color {
@@ -1321,11 +1337,7 @@ h2 {
 /* Matter Site */
 
 .matter-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #edffd1
-  );
+  background-image: linear-gradient(to right, white, #edffd1);
 }
 
 .matter-focus-area-button-font-color {
@@ -1359,11 +1371,7 @@ h2 {
 /* Habitat Site */
 
 .habitat-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #d1fff7
-  );
+  background-image: linear-gradient(to right, white, #d1fff7);
 }
 
 .habitat-focus-area-button-font-color {
@@ -1397,11 +1405,7 @@ h2 {
 /* Cities Site */
 
 .cities-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #ffd1d1
-  );
+  background-image: linear-gradient(to right, white, #ffd1d1);
 }
 
 .cities-focus-area-button-font-color {
@@ -1435,11 +1439,7 @@ h2 {
 /* Waste Site */
 
 .waste-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #e0ddbc
-  );
+  background-image: linear-gradient(to right, white, #e0ddbc);
 }
 
 .waste-focus-area-button-font-color {
@@ -1455,7 +1455,7 @@ h2 {
 }
 
 .waste-site-button-color {
-  background-color: #c1b698ff
+  background-color: #c1b698ff;
 }
 
 .waste-site-button-font-color {
@@ -1467,17 +1467,13 @@ h2 {
 }
 
 .waste-focus-area-title-color {
-  background-color: rgba(193, 182, 152, 0.82)
+  background-color: rgba(193, 182, 152, 0.82);
 }
 
 /* Oceans Site */
 
 .oceans-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #d1e8ff
-  );
+  background-image: linear-gradient(to right, white, #d1e8ff);
 }
 
 .oceans-focus-area-button-font-color {
@@ -1511,11 +1507,7 @@ h2 {
 /* Space Site */
 
 .space-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #b2b2b2
-  );
+  background-image: linear-gradient(to right, white, #b2b2b2);
 }
 
 .space-focus-area-button-font-color {
@@ -1549,11 +1541,7 @@ h2 {
 /* Costs Site */
 
 .costs-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #f0d1ff
-  );
+  background-image: linear-gradient(to right, white, #f0d1ff);
 }
 
 .costs-focus-area-button-font-color {
@@ -1587,11 +1575,7 @@ h2 {
 /* History Site */
 
 .history-background-gradient {
-  background-image: linear-gradient(
-    to right,
-    white,
-    #aed1d7
-  );
+  background-image: linear-gradient(to right, white, #aed1d7);
 }
 
 .history-focus-area-button-font-color {

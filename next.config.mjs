@@ -1,3 +1,4 @@
+// We did it this way to 
 // next.config.mjs
 import remarkGfm from "remark-gfm";
 import createMDX from "@next/mdx";
