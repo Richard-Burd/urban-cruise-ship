@@ -1,5 +1,4 @@
 import FocusArea from "../../../components/FocusArea";
-import FocusAreaArticleLink from "../../../components/FocusAreaArticleLink";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -28,13 +27,6 @@ const EnergyPriorities = () => {
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
       />
-      <div className={`${site}-background-gradient`}>
-        <FocusAreaArticleLink
-          site={site}
-          text={`Our legacy site has an article on Energy priorities`}
-          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/topic/energy/energy_priorities`}
-        />
-      </div>
     </>
   );
 };

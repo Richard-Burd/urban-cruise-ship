@@ -1212,36 +1212,48 @@ video {
 
 /* tailwind directive */
 
-/* This is the css setup by Chris Bloom */
-
-/* It is reading colors from the tailwind.config.js file */
-
-/* All of the CSS files below should use this system */
-
-.bloom-config-special-colors {
-  --tw-text-opacity: 1;
-  color: rgb(255 0 0 / var(--tw-text-opacity));
-}
-
 /* This section of styles is used to style the MDX Markdown files */
 
 h1 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(124 45 18 / var(--tw-text-opacity));
+  font-family: "Arial Rounded MT Bold", sans-serif;
 }
 
 h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   --tw-text-opacity: 1;
-  color: rgb(63 98 18 / var(--tw-text-opacity));
+  color: rgb(39 39 42 / var(--tw-text-opacity));
+  font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+  font-family: "Roboto", sans-serif;
+}
+
+/* This is the smaller text underneath images in the articles */
+
+h4 {
+  padding-bottom: 3.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
+  font-family: "Roboto", sans-serif;
 }
 
 p a {
+  font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 /* This is the primary branding font used by UCS */
@@ -1604,6 +1616,17 @@ p a {
 
 .history-focus-area-title-color {
   background-color: rgba(190, 208, 216, 0.793);
+}
+
+/* This is the css setup by Chris Bloom */
+
+/* It is reading colors from the tailwind.config.js file */
+
+/* All of the CSS files below should use this system */
+
+.bloom-config-special-colors {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:-translate-y-1:hover {
