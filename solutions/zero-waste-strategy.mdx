@@ -1,0 +1,15 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const meta = {
+  title: 'Zero Waste Strategy',
+  author: 'Lee Robinson'
+}
+
+## Details
+This is text inside the zero-waste-strategy.mdx file, there is a footnote here [^{"second"}] in the paragraph. This MDX Markdown file is being pass through, styled, and rendered by the SolutionDropdown.js component that needs to be animated.  This file is located in the ***./components*** directory, so it is not given a route by Next.js.
+
+It appears that in order to use this schema, we must be OK with solution dropdown boxes having their own footnotes section, otherwise a different approach should be taken.
+
+[^{"second"}]: This is the second footnote text
+
+export default ({ children }) => <SolutionDropdown meta={meta}>{children}</SolutionDropdown>
