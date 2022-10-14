@@ -19,7 +19,7 @@ NOTE: standard styling for all components in this project are done in the:
 
 /* Article Title */
 h1 {
-  @apply standard-font-1 px-4 text-6xl text-orange-900;
+  @apply standard-font-1 px-4 text-5xl text-zinc-700;
 }
 
 /* Article Section Title */
