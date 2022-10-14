@@ -16,18 +16,24 @@ NOTE: standard styling for all components in this project are done in the:
 @tailwind utilities; /* tailwind directive */
 
 /* This section of styles is used to style the MDX Markdown files */
+
+/* Article Title */
 h1 {
-  @apply standard-font-1 text-6xl text-orange-900;
+  @apply standard-font-1 px-4 text-6xl text-orange-900;
 }
+
+/* Article Section Title */
 h2 {
-  @apply standard-font-1 text-3xl text-zinc-800;
+  @apply standard-font-1 px-4 text-3xl text-zinc-800;
 }
+
+/* Article Main Body Text */
 p {
-  @apply standard-font-3 text-base text-zinc-900;
+  @apply standard-font-3 px-4 pb-8 text-base text-zinc-900;
 }
 /* This is the smaller text underneath images in the articles */
 h4 {
-  @apply standard-font-3 text-center text-sm px-12 md:px-32 lg:px-44 pb-14 text-zinc-800;
+  @apply standard-font-3 text-center px-4 text-sm md:px-32 lg:px-44 pb-14 text-zinc-800;
 }
 p a {
   @apply font-semibold text-blue-900;

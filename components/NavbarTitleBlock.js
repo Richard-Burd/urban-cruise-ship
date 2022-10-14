@@ -7,7 +7,7 @@ import Image from "next/image";
 const NavbarTitleBlock = (props) => {
   return (
     <>
-      <div id="mobile-version" className="mt-2">
+      <div id="mobile-version" className="mt-2 px-4 lg:px-0">
         <div className="lg:hidden pb-4">
           <div className="standard-font-1 standard-font-color-1 text-3xl">
             {props.title}
