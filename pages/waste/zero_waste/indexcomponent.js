@@ -13,19 +13,15 @@ function findFocusAreaName(searchValue) {
 
 // The Focus Area URL is inputted here,
 // it should be the same as the folder name,
-// You will have to change this each time you 
+// You will have to change this each time you
 // create or move a focus area.
-const focusAreaUrl = "nonfood";
+const focusAreaUrl = "zero_waste";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const focusAreaDescription = (
-  <p>
-    In this section, we review the best options for industrial crops.
-  </p>
-);
+const focusAreaDescription = <p></p>;
 
-const MatterNonFoodCrops = () => {
+const ZeroWaste = () => {
   return (
     <>
       <FocusArea
@@ -38,12 +34,12 @@ const MatterNonFoodCrops = () => {
       <div className={`${site}-background-gradient`}>
         <FocusAreaArticleLink
           site={site}
-          text={`Our legacy site has an article on non-food crops`}
-          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/topic/foodwater/nonfood`}
+          text={`Our legacy site has an article on zero waste`}
+          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/topic/waste/zero_waste`}
         />
       </div>
     </>
   );
 };
 
-export default MatterNonFoodCrops;
+export default ZeroWaste;
