@@ -1241,6 +1241,8 @@ p {
 /* This is the smaller text underneath images in the articles */
 
 h4 {
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding-bottom: 3.5rem;
   text-align: center;
   font-size: 0.875rem;
@@ -1248,6 +1250,20 @@ h4 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
   font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h4 {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
 }
 
 p a {
