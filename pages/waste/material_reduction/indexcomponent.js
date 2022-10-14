@@ -35,13 +35,6 @@ const MaterialReduction = () => {
         hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
-      <div className={`${site}-background-gradient`}>
-        <FocusAreaArticleLink
-          site={site}
-          text={`Our legacy site has an article on material reduction`}
-          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/topic/waste/material_reduction`}
-        />
-      </div>
     </>
   );
 };

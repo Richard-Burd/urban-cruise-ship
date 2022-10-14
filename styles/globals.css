@@ -1305,6 +1305,23 @@ p a {
   color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
+/* This styling effects the footnote container at the bottom of the articles */
+
+#footnote-label {
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 41 59 / var(--tw-border-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* This styling effects the individual footnotes at the bottom of the articles */
+
+ol li {
+  margin-left: 2rem;
+  list-style-type: decimal;
+}
+
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */

@@ -38,6 +38,14 @@ h4 {
 p a {
   @apply font-semibold text-blue-900;
 }
+/* This styling effects the footnote container at the bottom of the articles */
+#footnote-label {
+  @apply border-slate-800 border-t-2 pt-4 pb-4;
+}
+/* This styling effects the individual footnotes at the bottom of the articles */
+ol li {
+  @apply list-decimal ml-8;
+}
 
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
