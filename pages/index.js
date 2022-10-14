@@ -18,7 +18,7 @@ export default function Home() {
       <div className="flex justify-between">
         <div className="hidden lg:block">
           <Image
-            className="opacity-90"
+            className="opacity-70"
             src={`/images/ucs-logo.svg`}
             alt={"UCS Logo"}
             height={340}
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <div className="lg:hidden mx-16">
           <Image
-            className="opacity-90"
+            className="opacity-70"
             src={`/images/ucs-logo.svg`}
             alt={"UCS Logo"}
             height={180}

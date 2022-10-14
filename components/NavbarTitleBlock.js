@@ -19,7 +19,7 @@ const NavbarTitleBlock = (props) => {
 
         <div className="lg:hidden">
           <Image
-            className="opacity-90"
+            className="opacity-80"
             src={`/images/ucs-logo.svg`}
             alt={"UCS Logo"}
             height={173}
@@ -35,7 +35,7 @@ const NavbarTitleBlock = (props) => {
       >
         <div className="hidden lg:inline">
           <Image
-            className="opacity-90"
+            className="opacity-80"
             src={`/images/ucs-logo.svg`}
             alt={"UCS Logo"}
             height={173}

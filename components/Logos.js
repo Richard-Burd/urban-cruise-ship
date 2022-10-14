@@ -62,6 +62,7 @@ const Logos = (props) => {
 
         <div className="mr-2">
           <Image
+            className={`opacity-80`}
             src={`/images/ucs-logo.svg`}
             alt={props.site}
             height={240}
