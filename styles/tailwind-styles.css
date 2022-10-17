@@ -50,6 +50,12 @@ ol li {
   @apply list-decimal ml-8;
 }
 
+/* This section styles items inside of Solutions dropdown boxes */
+/* Article Section Title */
+.solution-dropdown h2 {
+  @apply standard-font-1 px-4 text-2xl text-zinc-800;
+}
+
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
 .standard-font-1 {

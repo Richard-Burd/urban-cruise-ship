@@ -1393,6 +1393,20 @@ ol li {
   list-style-type: decimal;
 }
 
+/* This section styles items inside of Solutions dropdown boxes */
+
+/* Article Section Title */
+
+.solution-dropdown h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
+  font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */

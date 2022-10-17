@@ -5,7 +5,7 @@ const SolutionDropdown = ({ problem, solution, children }) => {
   const [isVisible, setVisible] = useState(false);
   return (
     <>
-      <div className="pb-12">
+      <div className="solution-dropdown pb-12">
         <div className="overflow-hidden pb-8">
           <motion.div onTap={() => setVisible(!isVisible)}>
             <div className="solution-dropdown-color cursor-pointer solution-dropdown-elliptical-geometry relative solution-dropdown-shadow-geometry mx-16 standard-font-3 text-center hover:text-gray-100 transition text-xl z-20">
