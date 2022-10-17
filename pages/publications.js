@@ -15,7 +15,7 @@ const Publications = () => {
         <NavbarTitleBlock
           title={"Publications"}
           subtitle={
-            "John will think of a good subtitle for this presentations page."
+            "Urban Cruise Ship has published the following items below."
           }
         />
       </div>
