@@ -39,7 +39,7 @@ const HistoryEndeavors = () => {
         <FocusAreaArticleLink
           site={site}
           text={`Our legacy site has an Endeavors page`}
-          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/topic/history/endeavors`}
+          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/solution/history/endeavors`}
         />
       </div>
     </>
