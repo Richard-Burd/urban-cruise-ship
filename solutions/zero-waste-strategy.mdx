@@ -1,18 +1,34 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
 
 export const meta = {
   title: 'Zero Waste Strategy',
   author: 'Lee Robinson'
 }
 
+{/* Michael & Lee do not need to change above below this line */}
+
 export const problem = "This solution box is under construction right now.";
 export const solution = "This solution box must be developed in the future";
 
 ## Details
-This is text inside the zero-waste-strategy.mdx file, there is a footnote here [^{"second"}] in the paragraph. This MDX Markdown file is being pass through, styled, and rendered by the SolutionDropdown.js component that needs to be animated.  This file is located in the ***./components*** directory, so it is not given a route by Next.js.
+This is text inside the zero-waste-strategy.mdx file, there is a footnote here [^{"firstsolution"}] in the paragraph. This MDX Markdown file is being pass through, styled, and rendered by the SolutionDropdown.js component that needs to be animated.  This file is located in the ***./components*** directory, so it is not given a route by Next.js.
+
+[^{"firstsolution"}]: This is the first footnote text
 
 It appears that in order to use this schema, we must be OK with solution dropdown boxes having their own footnotes section, otherwise a different approach should be taken.
 
-[^{"second"}]: This is the second footnote text
+The image below is just a test image from another article to make sure images are rendering properly in a solution box
+
+<ArticleImage image={"reuse.svg"} width={900} height={350} />
+
+#### this is the smaller text used to describe images with a footnote [^{"secondsolution"}]
+
+[^{"secondsolution"}]: This is the second footnote text
+
+## Links
+This is just a link to [Google](https://www.google.com) to make sure links are working properly in a Solution dropdown box
+
+{/* Michael & Lee do not need to change anything below this line */}
 
 export default ({ children }) => <SolutionDropdown meta={meta} problem={problem} solution={solution}>{children}</SolutionDropdown>
