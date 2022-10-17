@@ -6,9 +6,9 @@ const AboutPageDropdown = (props) => {
 
   return (
     <>
-      <div className="elliptical-geometry overflow-hidden">
+      <div className="overflow-hidden">
         <motion.div onTap={() => setVisible(!isVisible)}>
-          <div className="about-page-button-color cursor-pointer elliptical-geometry mr-5 my-4 p-1.5 relative shadow-geometry standard-font-2 text-center hover:text-gray-100 transition text-xl z-20">
+          <div className="about-page-button-color cursor-pointer about-dropdown-elliptical-geometry mr-5 my-4 p-1.5 relative shadow-geometry standard-font-2 text-center hover:text-gray-100 transition text-xl z-20">
             {props.title}
           </div>
         </motion.div>
@@ -27,7 +27,7 @@ const AboutPageDropdown = (props) => {
                 duration: 0.4,
               }}
             >
-              <div className="border border-slate-900 elliptical-geometry mr-5 pb-5 pt-14 px-8 relative shadow-geometry text-justify -translate-y-14 z-10">
+              <div className="border border-slate-900 about-dropdown-elliptical-geometry mr-5 pb-5 pt-14 px-8 relative shadow-geometry text-justify -translate-y-14 z-10">
                 {props.content}
               </div>
             </motion.div>
@@ -35,11 +35,11 @@ const AboutPageDropdown = (props) => {
         </AnimatePresence>
       </div>
       <style jsx>{`
-        .elliptical-geometry {
-          border-bottom-left-radius: 67px 21.7px;
-          border-bottom-right-radius: 67px 21.7px;
-          border-top-left-radius: 67px 21.7px;
-          border-top-right-radius: 67px 21.7px;
+        .about-dropdown-elliptical-geometry {
+          border-bottom-left-radius: 60px 21px;
+          border-bottom-right-radius: 60px 21px;
+          border-top-left-radius: 60px 21px;
+          border-top-right-radius: 60px 21px;
         }
         .shadow-geometry {
           box-shadow: 4px 6px 6px #86888f;
