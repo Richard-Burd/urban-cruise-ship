@@ -1424,6 +1424,8 @@ ul li {
   }
 }
 
+/* links for bullet points inside of Solutions boxes and article files */
+
 ul li a {
   font-weight: 600;
   --tw-text-opacity: 1;
@@ -1439,6 +1441,61 @@ ul li a:hover {
 }
 
 ul li a:focus {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+/* This section styles the tables */
+
+table {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(39 39 42 / var(--tw-border-opacity));
+  padding: 0.25rem;
+  text-align: center;
+}
+
+td,  th {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(39 39 42 / var(--tw-border-opacity));
+  padding: 0.25rem;
+}
+
+th {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(228 228 231 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+td {
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+td a {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+  transition-duration: 200ms;
+}
+
+td a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+td a:focus {
   --tw-text-opacity: 1;
   color: rgb(127 29 29 / var(--tw-text-opacity));
   -webkit-text-decoration-line: underline;

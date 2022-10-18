@@ -61,9 +61,32 @@ ul li {
   @apply list-disc mx-14 lg:mx-24 -translate-y-5
 }
 
+/* links for bullet points inside of Solutions boxes and article files */
 ul li a{
   @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline
 }
+
+/* This section styles the tables */
+table {
+  @apply border-2 border-zinc-800 p-1 text-center mx-4;
+}
+
+td, th {
+  @apply border border-zinc-800 p-1;
+}
+
+th {
+  @apply bg-zinc-800 border border-zinc-200 text-zinc-200;
+}
+
+td {
+  @apply text-zinc-900;
+}
+
+td a{
+  @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
+}
+
 
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
