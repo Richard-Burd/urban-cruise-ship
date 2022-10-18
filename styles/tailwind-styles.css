@@ -56,6 +56,15 @@ ol li {
   @apply standard-font-1 px-4 text-2xl text-zinc-800;
 }
 
+/* bullet points inside of Solutions boxes and article files */
+ul li {
+  @apply list-disc mx-14 lg:mx-24 -translate-y-5
+}
+
+ul li a{
+  @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline
+}
+
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
 .standard-font-1 {

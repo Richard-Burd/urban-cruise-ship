@@ -1407,6 +1407,44 @@ ol li {
   font-family: "Arial Rounded MT Bold", sans-serif;
 }
 
+/* bullet points inside of Solutions boxes and article files */
+
+ul li {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  --tw-translate-y: -1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  list-style-type: disc;
+}
+
+@media (min-width: 1024px) {
+  ul li {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+ul li a {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+  transition-duration: 200ms;
+}
+
+ul li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+ul li a:focus {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */
