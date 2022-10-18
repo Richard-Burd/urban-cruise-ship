@@ -15,7 +15,7 @@ const Accomplishments = () => {
         <NavbarTitleBlock
           title={"Accomplishments"}
           subtitle={
-            "Urban Cruise Ship has accomplished the following milestones over the years."
+            ""
           }
         />
       </div>
