@@ -18,7 +18,7 @@ const History = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
-        siteDescription={"Past and future progress"}
+        /* siteDescription={"Past and future progress"} */
       />
     </>
   );

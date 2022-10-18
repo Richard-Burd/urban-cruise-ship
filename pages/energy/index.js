@@ -18,7 +18,7 @@ const Energy = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
-        siteDescription={"Production, distribution, and consumption"}
+        /* siteDescription={"Production, distribution, and consumption"} */
       />
     </>
   );

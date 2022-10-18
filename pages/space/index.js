@@ -18,7 +18,7 @@ const Space = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
-        siteDescription={"Human vs. robotic ventures"}
+        /* siteDescription={"Human vs. robotic ventures"} */
       />
     </>
   );

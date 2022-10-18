@@ -18,7 +18,7 @@ const Costs = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
-        siteDescription={"Internalized vs. subsidized"}
+        /* siteDescription={"Internalized vs. subsidized"} */
       />
     </>
   );

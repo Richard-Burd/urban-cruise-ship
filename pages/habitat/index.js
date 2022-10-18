@@ -18,7 +18,7 @@ const Habitat = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
-        siteDescription={"Perspective and Perception"}
+        /* siteDescription={"Perspective and Perception"} */
       />
     </>
   );

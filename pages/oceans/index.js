@@ -18,7 +18,7 @@ const Oceans = () => {
       <SpecializedSite
         site={site}
         focusAreas={hierarchy}
-        siteDescription={"Health, resources, and energy"}
+        /* siteDescription={"Health, resources, and energy"} */
       />
     </>
   );
