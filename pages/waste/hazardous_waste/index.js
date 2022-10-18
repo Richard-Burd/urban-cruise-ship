@@ -34,7 +34,7 @@ const HazardousWaste = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
-        focusAreaDescription={focusAreaDescription}
+        /* focusAreaDescription={focusAreaDescription} */
       />
     </>
   );

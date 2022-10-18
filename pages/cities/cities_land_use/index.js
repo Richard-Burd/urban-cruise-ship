@@ -32,7 +32,7 @@ const CitiesLandUse = () => {
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
-        focusAreaDescription={focusAreaDescription}
+        /* focusAreaDescription={focusAreaDescription} */
       />
     </>
   );
