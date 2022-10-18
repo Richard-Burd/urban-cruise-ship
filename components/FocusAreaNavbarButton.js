@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const FocusAreaNavbarButton = (props) => {
   return (
     <>
-      <motion.div
+      {/* <motion.div
         initial={{ x: "2vw", scale: 1.1, opacity: 0, rotate: 2 }}
         animate={{
           x: 0,
@@ -17,13 +17,13 @@ const FocusAreaNavbarButton = (props) => {
           },
         }}
         transition={{ duration: 0.5, type: "spring" }}
-      >
+      > */}
         <button
           className={`focus-area-navbar-border-width border-current ${props.site}-site-button-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-navbar-elliptical-geometry focus-area-navbar-shadow px-3.5 mx-2.5 my-2 standard-font-1 hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 tracking-wide`}
         >
           {props.focusAreaName}
         </button>
-      </motion.div>
+      {/* </motion.div> */}
       <style jsx>{`
         .focus-area-navbar-border-width {
           border-width: 1.6px;

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const HomepageSpecializedSiteButton = ({ site }) => {
   return (
     <>
-      <motion.div
+{/*       <motion.div
         initial={{ x: -40, y: 400, scale: 1.4, opacity: 0, rotate: 10 }}
         animate={{
           x: 0,
@@ -21,15 +21,15 @@ const HomepageSpecializedSiteButton = ({ site }) => {
         }}
         whileHover={
           {
-            /* TailwindCSS is better than FramerMotion for this */
+            
           }
         }
         whileTap={
           {
-            /* TailwindCSS is better than FramerMotion for this */
+            
           }
         }
-      >
+      > */}
         <div className="transition hover:-translate-y-1 hover:scale-110 duration-300 active:scale-100">
           <a href={`/${site}`}>
             <Image
@@ -40,7 +40,7 @@ const HomepageSpecializedSiteButton = ({ site }) => {
             />
           </a>
         </div>
-      </motion.div>
+      {/* </motion.div> */}
     </>
   );
 };
