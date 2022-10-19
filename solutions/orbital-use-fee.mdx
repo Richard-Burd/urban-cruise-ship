@@ -1,0 +1,21 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const meta = {
+  title: 'Orbital Use Fee',
+  author: 'Michael Goff'
+}
+
+export const problem = "Damage from Orbital Debris";
+export const solution = "Orbital Use Fee";
+
+Every satellite in orbit creates a risk of collision, which is an external cost unless somehow mitigated. An orbital use fee, which charges satellites a fee per year in orbit, it a way to internalize this cost.
+
+Rao, Burgess, and Kaffine propose an orbital use fee that would rise to $235,000 per satellite-year in 2040. Such a policy would create a net present value of $2.4 trillion over all future years [22].
+
+There are several ways in which an orbital use fee could be instituted. It could be agreed through international negotiations, modeled after the Vessel Day Scheme to establish a price floor on the leasing of fishing rights [22]. It could also be implemented in the context of the Outer Space Treaty and the Convention on International Liability for Damage Caused by Space Objects [22].
+
+There are still details to establish in an orbital use fee, such as differential rates between large and small satellites [22].
+
+An orbital use fee would have some limitations. It could put developing space programs, that are more cost-sensitive, at a disadvantage [4]. It would also not address legacy debris and debris from anti-satellite tests [25].
+
+export default ({ children }) => <SolutionDropdown meta={meta} problem={problem} solution={solution}>{children}</SolutionDropdown>
