@@ -1,16 +1,8 @@
-import FocusAreaNavbar from "/components/FocusAreaNavbar.js";
-import ArticleNavbar from "/components/ArticleNavbar.js";
-import { findArticles } from "/functions/findArticles.js";
+import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
 
 export const site = "costs";
 export const focusAreaUrl = "economy";
-export const searchValue = focusAreaUrl;
-export const articles = findArticles(searchValue, hierarchy);
-
-<FocusAreaNavbar site={site} focusAreas={hierarchy} />
-<ArticleNavbar site={site} focusAreas={hierarchy} articles={articles} focusAreaUrl={props.focusAreaUrl} />
-<div className={`article-wrap ${site}-background-gradient`}>
 
 ## Examples
 We have proposed a number of strategies to internalize costs or benefits of activities through taxes or subsidies.
@@ -31,5 +23,4 @@ We have proposed a number of strategies to internalize costs or benefits of acti
 | Mining | Environmental costs of mining and clean-up are not reflected in mining costs | Mining tax | Under Development |
 | Traffic Congestion | Taking up road space imposes unpriced costs on other motorists | Congestion pricing | Under Development |
 
-<br></br>
-</div>
+export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>

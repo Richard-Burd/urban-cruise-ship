@@ -1,16 +1,8 @@
-import FocusAreaNavbar from "/components/FocusAreaNavbar.js";
-import ArticleNavbar from "/components/ArticleNavbar.js";
-import { findArticles } from "/functions/findArticles.js";
+import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
 
 export const site = "costs";
 export const focusAreaUrl = "economy";
-export const searchValue = focusAreaUrl;
-export const articles = findArticles(searchValue, hierarchy);
-
-<FocusAreaNavbar site={site} focusAreas={hierarchy} />
-<ArticleNavbar site={site} focusAreas={hierarchy} articles={articles} focusAreaUrl={props.focusAreaUrl} />
-<div className={`article-wrap ${site}-background-gradient`}>
 
 # Theory
 Many economic activities generate costs or benefits for third parties that are not part of the transaction. These effects are known as externalities. Externalities can be corrected with taxes or subsidies so that their effect is accounted for in transactions [^{"Baumol1972"}].
@@ -66,5 +58,4 @@ In some instances, such as the English grazing lands that were the subject of Ha
 
 [^{"fairlielandofsummer2009"}]: Fairlie, S. ["A Short History of Enclosure in Britain"](https://www.thelandmagazine.org.uk/articles/short-history-enclosure-britain). The Land 7. Summer 2009.
 
-<br></br>
-</div>
+export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>
