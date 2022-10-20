@@ -1,0 +1,33 @@
+// This "2" version (ans in ArticleNavbar2.js) is for rendering Richard's 
+// new MDX Markdown article files as opposed to Michael's older article files
+import ArticleNavbarButton from "./ArticleNavbarButton";
+
+const ArticleNavbar2 = (props) => {
+  // This is a global variable in the ".env.local" file located in the main directory...
+  // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
+  // use all of his original article files until we import them into
+  const newPath = `${process.env.NEXT_PUBLIC_NEW_UCS_WEBSITE_ARTICLE_URI}/${props.site}/${props.focusAreaUrl}/`;
+
+  const articleSet = props.articles;
+  return (
+    <>
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-0.5 mr-3 ml-2 lg:mr-0 lg:ml-0 my-2">
+        {articleSet.map((article) => (
+          <a
+            key={article.article_url}
+            href={newPath + article.article_url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ArticleNavbarButton
+              site={props.site}
+              articleTitle={article.article_title}
+            />
+          </a>
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default ArticleNavbar2;

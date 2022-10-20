@@ -1,6 +1,8 @@
+// This "2" version (ans in FocusArea2.js) is for rendering Richard's 
+// new MDX Markdown article files as opposed to Michael's older article files
 import Logos from "./Logos";
 import FocusAreaNavbar from "./FocusAreaNavbar";
-import ArticleNavbar from "./ArticleNavbar";
+import ArticleNavbar2 from "./ArticleNavbar2";
 import ArticleButton from "./ArticleButton";
 import FocusAreaDescriptions from "./FocusAreaDescriptions";
 
@@ -8,7 +10,7 @@ const FocusArea2 = (props) => {
   // This is a global variable in the ".env.local" file located in the main directory...
   // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
   // use all of his original article files until we import them into the new site
-  const legacyPath = `${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_ARTICLE_URI}/${props.site}/`;
+  const newPath = `${process.env.NEXT_PUBLIC_NEW_UCS_WEBSITE_ARTICLE_URI}/${props.site}/${props.focusAreaUrl}/`;
 
   const searchValue = props.focusAreaUrl;
   const hierarchy = props.hierarchy;
@@ -22,7 +24,7 @@ const FocusArea2 = (props) => {
     <>
     {/* <div><a href={process.env.NEXT_PUBLIC_NEW_UCS_WEBSITE_ARTICLE_URI}>special link</a></div> */}
       <FocusAreaNavbar site={props.site} focusAreas={hierarchy} />
-      <ArticleNavbar
+      <ArticleNavbar2
         site={props.site}
         focusAreas={hierarchy}
         articles={findChildren(searchValue)}
@@ -48,7 +50,7 @@ const FocusArea2 = (props) => {
             return (
               <div key={article.article_url}>
                 <a
-                  href={legacyPath + article.article_url}
+                  href={newPath + article.article_url}
                   target="_blank"
                   rel="noreferrer"
                 >
