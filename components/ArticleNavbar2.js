@@ -1,5 +1,6 @@
-// This "2" version (ans in ArticleNavbar2.js) is for rendering Richard's 
+// This "2" version (ans in ArticleNavbar2.js) is for rendering Richard's
 // new MDX Markdown article files as opposed to Michael's older article files
+import Link from "next/link";
 import ArticleNavbarButton from "./ArticleNavbarButton";
 
 const ArticleNavbar2 = (props) => {
@@ -13,17 +14,16 @@ const ArticleNavbar2 = (props) => {
     <>
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-0.5 mr-3 ml-2 lg:mr-0 lg:ml-0 my-2">
         {articleSet.map((article) => (
-          <a
-            key={article.article_url}
-            href={newPath + article.article_url}
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
           >
-            <ArticleNavbarButton
-              site={props.site}
-              articleTitle={article.article_title}
-            />
-          </a>
+            <a key={article.article_url} target="_blank" rel="noreferrer">
+              <ArticleNavbarButton
+                site={props.site}
+                articleTitle={article.article_title}
+              />
+            </a>
+          </Link>
         ))}
       </div>
     </>

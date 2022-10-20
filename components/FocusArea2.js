@@ -1,5 +1,6 @@
-// This "2" version (ans in FocusArea2.js) is for rendering Richard's 
+// This "2" version (ans in FocusArea2.js) is for rendering Richard's
 // new MDX Markdown article files as opposed to Michael's older article files
+import Link from "next/link";
 import Logos from "./Logos";
 import FocusAreaNavbar from "./FocusAreaNavbar";
 import ArticleNavbar2 from "./ArticleNavbar2";
@@ -10,7 +11,6 @@ const FocusArea2 = (props) => {
   // This is a global variable in the ".env.local" file located in the main directory...
   // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
   // use all of his original article files until we import them into the new site
-  const newPath = `${process.env.NEXT_PUBLIC_NEW_UCS_WEBSITE_ARTICLE_URI}/${props.site}/${props.focusAreaUrl}/`;
 
   const searchValue = props.focusAreaUrl;
   const hierarchy = props.hierarchy;
@@ -22,7 +22,7 @@ const FocusArea2 = (props) => {
 
   return (
     <>
-    {/* <div><a href={process.env.NEXT_PUBLIC_NEW_UCS_WEBSITE_ARTICLE_URI}>special link</a></div> */}
+      {/* <div><a href={process.env.NEXT_PUBLIC_NEW_UCS_WEBSITE_ARTICLE_URI}>special link</a></div> */}
       <FocusAreaNavbar site={props.site} focusAreas={hierarchy} />
       <ArticleNavbar2
         site={props.site}
@@ -49,16 +49,16 @@ const FocusArea2 = (props) => {
           {findChildren(props.focusAreaUrl).map((article) => {
             return (
               <div key={article.article_url}>
-                <a
-                  href={newPath + article.article_url}
-                  target="_blank"
-                  rel="noreferrer"
+                <Link
+                  href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
                 >
-                  <ArticleButton
-                    site={props.site}
-                    articleTitle={article.article_title}
-                  />
-                </a>
+                  <a target="_blank" rel="noreferrer">
+                    <ArticleButton
+                      site={props.site}
+                      articleTitle={article.article_title}
+                    />
+                  </a>
+                </Link>
               </div>
             );
           })}
