@@ -1,6 +1,4 @@
-import FocusArea from "../../../components/FocusArea";
-import FocusAreaArticleLink from "../../../components/FocusAreaArticleLink";
-
+import FocusArea2 from "../../../components/FocusArea2";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -29,20 +27,13 @@ const focusAreaDescription = (
 const OceanCities = () => {
   return (
     <>
-      <FocusArea
+      <FocusArea2
         site={site}
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
         hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
-      <div className={`${site}-background-gradient`}>
-        <FocusAreaArticleLink
-          site={site}
-          text={`Our legacy site has an article on ocean cities`}
-          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/topic/oceans/ocean_cities`}
-        />
-      </div>
     </>
   );
 };
