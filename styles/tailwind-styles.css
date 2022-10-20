@@ -18,6 +18,10 @@ NOTE: standard styling for all components in this project are done in the:
 /* This section of styles is used to style the MDX Markdown files */
 
 /* Article Title */
+.article-wrap {
+  @apply border-t-2 border-gray-300 pt-8
+}
+
 h1 {
   @apply standard-font-1 px-4 text-5xl text-zinc-700;
 }

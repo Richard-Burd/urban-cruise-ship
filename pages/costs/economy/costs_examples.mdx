@@ -1,26 +1,16 @@
 import FocusAreaNavbar from "/components/FocusAreaNavbar.js";
 import ArticleNavbar from "/components/ArticleNavbar.js";
+import { findArticles } from "/functions/findArticles.js";
 import hierarchy from "../hierarchy.json";
 
 export const site = "costs";
 export const focusAreaUrl = "economy";
 export const searchValue = focusAreaUrl;
-
-export function findChildren(searchValue) {
-  return hierarchy.find(({ focus_area_url }) => {
-    return focus_area_url === searchValue;
-  }).articles;
-}
+export const articles = findArticles(searchValue, hierarchy);
 
 <FocusAreaNavbar site={site} focusAreas={hierarchy} />
-<ArticleNavbar 
-  site={site} 
-  focusAreas={hierarchy} 
-  articles={findChildren(searchValue)} 
-  focusAreaUrl={props.focusAreaUrl} 
-/>
-
-<div className={`${site}-background-gradient`}>
+<ArticleNavbar site={site} focusAreas={hierarchy} articles={articles} focusAreaUrl={props.focusAreaUrl} />
+<div className={`article-wrap ${site}-background-gradient`}>
 
 ## Examples
 We have proposed a number of strategies to internalize costs or benefits of activities through taxes or subsidies.

@@ -697,8 +697,12 @@ video {
   margin-right: 1.25rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .ml-8 {
@@ -1270,6 +1274,13 @@ video {
 /* This section of styles is used to style the MDX Markdown files */
 
 /* Article Title */
+
+.article-wrap {
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-top: 2rem;
+}
 
 h1 {
   padding-left: 1rem;
@@ -2048,6 +2059,10 @@ td a:focus {
 
   .lg\:ml-0 {
     margin-left: 0px;
+  }
+
+  .lg\:mr-0 {
+    margin-right: 0px;
   }
 
   .lg\:ml-10 {

@@ -9,7 +9,7 @@ const ArticleNavbar = (props) => {
   const articleSet = props.articles;
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-0.5 mr-4 my-2">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-0.5 mr-3 ml-2 lg:mr-0 lg:ml-0 my-2">
         {articleSet.map((article) => (
           <a
             key={article.article_url}
