@@ -17,7 +17,7 @@ const ArticleNavbar2 = (props) => {
             key={article.article_url}
             href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
           >
-            <a key={article.article_url} target="_blank" rel="noreferrer">
+            <a key={article.article_url} rel="noreferrer">
               <ArticleNavbarButton
                 site={props.site}
                 articleTitle={article.article_title}

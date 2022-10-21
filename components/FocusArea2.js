@@ -52,7 +52,7 @@ const FocusArea2 = (props) => {
                 <Link
                   href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
                 >
-                  <a target="_blank" rel="noreferrer">
+                  <a rel="noreferrer">
                     <ArticleButton
                       site={props.site}
                       articleTitle={article.article_title}
