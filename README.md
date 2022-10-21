@@ -169,21 +169,21 @@ export default ({ children }) =>
   </Article>
 ```
 
-The article's specialized site (OCEANS) and focus area (Industry) are specified here:
+In the example above, the markdown text is saved as the `{children}` object and injected into the `<Article />` component where it is styled.  The `<Article />` component passes `focusAreaUrl`, `hierarchy`, and `site` data through the component tree so the application renders the correct focus area navbar and article navbar. The article's specialized site (OCEANS) and focus area (Industry) are specified here:
 
 ```jsx
 export const site = "oceans";
 export const focusAreaUrl = "ocean_industry";
 ```
 
-The article is made aware of the hierarchy so it can display the correct focus area navbar and article navbar between the actual article and the top two navbars of the whole UCS Website with this line of code:
+The lines above make the article aware of its place within the UCS Website hierarchy.  This single line below lets the article know how the hierarchy is constructed:
 
 ```jsx
 import hierarchy from "../hierarchy.json";
 ```
 
 ### Adding Images
-Images are wrapped in the `./components/ArticleImage.js` file.  Here is how we would import an image into the middle of our Lobster article:
+Images are wrapped in the <ArticleImage /> component.  Here is how we would import an image into the middle of our Lobster article:
 
 ```jsx
 import Article from '/components/Article.js'
@@ -198,6 +198,7 @@ import ArticleImage from "/components/ArticleImage.js";
 Lobsters are cool
 
 <ArticleImage image={"image_name.svg"} width={750} height={400} />
+#### some small markdown text that goes under the image
 
 ## A Subtitle
 Subtitles are cool
@@ -211,7 +212,19 @@ export default ({ children }) =>
     {children}
   </Article>
 ```
-The project is setup to pull `"image_name.svg"` directly from the [UCS Images Repo](https://github.com/Richard-Burd/ucs-images/).
+
+NOTE: The `<h4>` Markdown symbol: `####` is used to create a small subtitle under the image.  This is a custom feature of the `<ArticleImage />` component and this UCS Website project.  Normally, any text following a `#` would be *larger* than the standard text size, not smaller, but in our case we are using the `####` symbol for the smaller sized *'sub-text`* that goes under each image.
+
+The project is setup to pull `"image_name.svg"` directly from the [UCS Images Repo](https://github.com/Richard-Burd/ucs-images/). The `.env.local` file in the main directory contains a variable specifying a path to this repo:
+
+```
+.env.local
+
+NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH
+```
+
+This path is then passed into the `<ArticleImage />` component located at: `./components/ArticleImage.js`.
+
 
 <br></br><br></br><br></br>
 
@@ -270,7 +283,7 @@ export const focusAreaUrl = "ocean_industry";
 
 import ArticleImage from "/components/ArticleImage.js";
 
-// import the solution MDX file
+// import the solution MDX file and give it an UpperCamelCase name
 import LobsterSolution from "/solutions/lobster_solution.mdx"
 
 # Lobsters
@@ -281,7 +294,7 @@ Lobsters are cool
 ## A Subtitle
 Subtitles are cool
 
-// place it wherever you want in the article
+// place the solution where you want it to appear in the article
 <LobsterSolution />
 
 export default ({ children }) => 
@@ -294,12 +307,21 @@ export default ({ children }) =>
   </Article>
 ```
 
-NOTE: the `LobsterSolution` name is arbitrary and can be anything you want as long as the import statement matches the placement statement.
+## Footnotes (References)
+The footnotes inside solutions should be different than those inside the articles so the two don't accidentally cross-reference each other. The easiest way to do this is to use quotation marks in the solutions so each footnote is a string like so:
+
+```markdown
+Article Footnote looks like this: [^1]
+Solution Footnote looks like this: [^"1"]
+```
+
+See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, footnotes are imported from the legacy site and retain the name numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render footnotes.  This will re-number the footnotes (when rendered to the browser) so that the first footnote to me mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the footnotes in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically.
+
+------
 
 <br></br> <br></br> <br></br>
 
 # Project Architecture
----
 This static site uses the following:
 
 1. **NPM/Node.js** - for package management
