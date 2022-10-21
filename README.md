@@ -53,21 +53,252 @@ This process will be discussed in more detail in the sections detailing the site
 
 ---
 
-## Instructions for Creating & Editing Article & Solution Markdown Files
-The...
+<br></br> <br></br> <br></br>
 
+# Instructions for Creating & Editing Article & Solution Markdown Files
 
+## Prerequisites
+You will need to know how to do the following in Markdown in order to create articles and solutions:
+- [How to create a link](https://www.markdownguide.org/basic-syntax/#links)
+- [How to create a table](https://www.markdownguide.org/extended-syntax/#tables)
+- [How to create a list](https://www.markdownguide.org/basic-syntax/#lists)
+- [How to create a heading](https://www.markdownguide.org/basic-syntax/#headings)
+- [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes)
 
+You will also need a basic understanding of GitHub and Bash commands in order to create, edit, and delete both articles and solutions.
 
+## Article Organization
+Articles are written in [Markdown-with-JSX](https://mdxjs.com/). these files have a `.mdx` file extension.  Articles are stored in `/pages` directory located in the top-level directory of this project.  In an example, the *Seafood* article [here](https://urban-cruise-ship.vercel.app/oceans/ocean_industry/seafood) would be located in the following directory:
 
+```
+├── urban-cruise-ship
+│   ├── pages
+│   │   ├── oceans
+│   │   │   ├── oceans_industry
+│   │   │   |   └── seafood.mdx
+.....etc.....
+```
+The `oceans_industry` folder is the OCEAN Site's ***Industry*** focus area.
 
+<br></br>
 
+### Creating a New Article
+If we wanted to create a new Article called `lobster.mdx` in the OCEANS Site's ***Industry*** focus area, we would create a new file called `lobster.mdx` in the `/pages/oceans/oceans_industry` directory:  
 
+```
+├── urban-cruise-ship
+│   ├── pages
+│   │   ├── oceans
+│   │   │   ├── oceans_industry
+│   │   │   |   ├── seafood.mdx
+│   │   │   |   └── lobster.mdx
+..............etc..............
+```
 
+Next we would navigate to the OCEAN Site's `hierarchy.json` file and add in the new article so that the components in the `./components/` directory know to render it:
 
+```JSON
+./pages/oceans/hierarchy.json
 
+...
 
+  {
+   "focus_area_name":"Industry",
+   "focus_area_url":"ocean_industry",
+   "articles":[
+     { "article_title": "Energy", "article_url": "ocean_mhk" },
+     { "article_title": "Manufacturing", "article_url": "ocean_industry" },
+     { "article_title": "Seafood", "article_url": "seafood" },
+     { "article_title": "Deep Sea Mining", "article_url": "exotic_mining" }
+     { "article_title": "Lobster", "article_url": "lobster" }
+   ]
+  }
+]
+```
+In our example, we will be creating the following Lobster Article:
 
+```markdown
+# Lobsters
+Lobsters are cool
+
+## A Subtitle
+Subtitles are cool
+```
+<br></br>
+
+### Article Structure
+Articles are written in MDX Markdown and then wrapped in an `<Article />` component.  The `<Article />` component is located in the `/components/Article.js` directory and is imported into the article `.mdx` file.  Articles are also made aware of the hierarchy so they can display the correct focus area navbar and article navbar between the actual article and the top two navbars of the whole UCS Website.  The final product looks like this:
+
+```jsx
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_industry";
+
+# Lobsters
+Lobsters are cool
+
+## A Subtitle
+Subtitles are cool
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
+```
+
+The `./components/Article.js` file wraps the article with this code:
+
+```jsx
+import Article from '/components/Article.js'
+
+      // other elements go here
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
+```
+
+The article's specialized site (OCEANS) and focus area (Industry) are specified here:
+
+```jsx
+export const site = "oceans";
+export const focusAreaUrl = "ocean_industry";
+```
+
+The article is made aware of the hierarchy so it can display the correct focus area navbar and article navbar between the actual article and the top two navbars of the whole UCS Website with this line of code:
+
+```jsx
+import hierarchy from "../hierarchy.json";
+```
+
+### Adding Images
+Images are wrapped in the `./components/ArticleImage.js` file.  Here is how we would import an image into the middle of our Lobster article:
+
+```jsx
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_industry";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Lobsters
+Lobsters are cool
+
+<ArticleImage image={"image_name.svg"} width={750} height={400} />
+
+## A Subtitle
+Subtitles are cool
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
+```
+The project is setup to pull `"image_name.svg"` directly from the [UCS Images Repo](https://github.com/Richard-Burd/ucs-images/).
+
+<br></br><br></br><br></br>
+
+## Solutions
+Solutions for all specialized sites are located in a single `./solutions/` directory:
+
+```
+├── urban-cruise-ship
+│   ├── solutions
+.........etc.........
+```
+To create a new solution, we would create a new file MXD in the `/solutions` directory like so:
+
+```
+├── urban-cruise-ship
+│   ├── solutions
+|   |   └── lobster_solution.mdx
+..............etc...............
+```
+
+Our solution will have the following body content:
+
+```markdown
+Lobster hunting is a bad idea.
+Eat more fish.
+```
+
+Solutions are wrapped in a `<Solution />` component located in the `/components/Solution.js` directory.  Solutions must define the ***Problem:*** and ***Solution:*** values for our `<Solution />` component to display. Our Solution will look like this:
+
+```jsx
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Lobsters are Dying";
+export const solution = "Ban Lobster Hunts";
+
+Lobster hunting is a bad idea.
+Eat more fish.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
+```
+
+Images are added to solutions in the same way as they are added to articles.  Here is how we would import our lobster solution into our Lobster article:
+
+```jsx
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_industry";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+// import the solution MDX file
+import LobsterSolution from "/solutions/lobster_solution.mdx"
+
+# Lobsters
+Lobsters are cool
+
+<ArticleImage image={"image_name.svg"} width={750} height={400} />
+
+## A Subtitle
+Subtitles are cool
+
+// place it wherever you want in the article
+<LobsterSolution />
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
+```
+
+NOTE: the `LobsterSolution` name is arbitrary and can be anything you want as long as the import statement matches the placement statement.
+
+<br></br> <br></br> <br></br>
+
+# Project Architecture
 ---
 This static site uses the following:
 
