@@ -115,7 +115,7 @@ Next we would navigate to the OCEAN Site's `hierarchy.json` file and add in the 
   }
 ]
 ```
-In our example, we will be creating the following Lobster Article:
+In our example, we will be creating the following Lobster Article at `./pages/oceans/ocean_industry/lobster` :
 
 ```markdown
 # Lobsters
@@ -232,7 +232,7 @@ To create a new solution, we would create a new file MXD in the `/solutions` dir
 ..............etc...............
 ```
 
-Our solution will have the following body content:
+Our solution will have the following body content at `./solutions/lobster_solution.mdx` :
 
 ```markdown
 Lobster hunting is a bad idea.
