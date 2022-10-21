@@ -1,3 +1,9 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_environment";
+
 # Biodiversity
 
 ## Biodiversity and Carbon Content
@@ -8,3 +14,5 @@ Ecosystem restoration could be done by removing the negative pressures on marine
 [^{ 1 }]: Krause-Jensen, D., Duarte, C. M. ["Substantial role of macroalgae in marine carbon sequestration"](https://www.nature.com/articles/ngeo2790). Nature Geoscience 9(10), pp. 737-742. October 2016.
 
 [^{ 2 }]: National Academies of Sciences, Engineering, and Medicine. [*A Research Strategy for Ocean-based Carbon Dioxide Removal and Sequestration*](https://www.nap.edu/catalog/26278/a-research-strategy-for-ocean-based-carbon-dioxide-removal-and-sequestration). Washington, DC: The National Academies Press. 2021.
+
+export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>

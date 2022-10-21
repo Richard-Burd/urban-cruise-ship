@@ -7,7 +7,6 @@ const ArticleNavbar2 = (props) => {
   // This is a global variable in the ".env.local" file located in the main directory...
   // ...it defines the legacy path to Michael's old version of the UCS Website so that we can
   // use all of his original article files until we import them into
-  const newPath = `${process.env.NEXT_PUBLIC_NEW_UCS_WEBSITE_ARTICLE_URI}/${props.site}/${props.focusAreaUrl}/`;
 
   const articleSet = props.articles;
   return (

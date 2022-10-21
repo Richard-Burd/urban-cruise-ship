@@ -1,0 +1,25 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+export const problem = "Impact of Bottom Trawling";
+export const solution = "Ban Bottom Trawling on the High Seas";
+
+Several nations and territories have banned bottom trawling in their borders, including Palau [^{ "8" }], Venezuela [^{ "22" }], Hong Kong [^{ "1" }], and Sri Lanka [^{ "36" }], and many others have restricted the practice [^{ "10" }]. There are limited regulations on bottom trawling in international waters, such as some restrictions (not a complete ban) in the Antarctic [^{ "3" }].
+
+Several avenues exist for implementing a bottom trawling ban in the deep sea (outside of any country's exclusive economic zone), including the Law of the Sea Convention and the Fish Stocks Agreement [^{ "4" }]. In the shorter term, a moratorium could be imposed under the United Nations Open-Ended Consultative Process on Oceans and the Law of the Sea, similar to past moratoria agreen upon [^{ "4" }].
+
+[^{ "1" }]: City University of Hong Kong. ["Research confirms trawl ban substantially increases the abundance of marine organisms"](https://www.sciencedaily.com/releases/2021/05/210505130538.htm). ScienceDaily. May 2021.
+
+[^{ "3" }]: Commission for the Conservation of Antarctic Marine Living Resources. ["Schedule of Conservation Measures in Force 2021/22"](https://www.ccamlr.org/en/document/conservation-and-management/schedule-conservation-measures-force-2021/22). Accessed August 3, 2022.
+
+[^{ "4" }]: Currie, D. E. J. ["Protecting the Deep Sea Under International Law: Legal Options for Addressing High Seas Bottom Trawling"](https://www.savethehighseas.org/publicdocs/duncan_final.pdf). Greenpeace. October 2004.
+
+[^{ "8" }]: FAOLEX Database. ["Act to ban bottom trawling in Palau's EEZ (RPPL No. 7-17)"](https://www.fao.org/faolex/results/details/en/c/LEX-FAOC147782/). March 2006.
+
+[^{ "10" }]: Food and Agriculture Organization of the United Nations. ["FAOLEX Database"](https://www.fao.org/faolex/en/). Accessed August 3, 2022.
+
+[^{ "22" }]: McConnaughey, R. A., Haddink, J. G., Jennings, S., Pitcher, C. R., Kaiser, M. J., Suuronen, P., Sciberras, M., Rijnsdorp, A. D., Collie, J. S., Mazor, T., Amoroso, R. O., Parma, A. M., Hilborn, R. ["Choosing best practices for managing impacts of trawl fishing on seabed habitats and biota"](https://onlinelibrary.wiley.com/doi/full/10.1111/faf.12431). Fish and Fisheries 21(2), pp. 319-337. March 2020.
+
+[^{ "36" }]: White, C. ["Sri Lanka bans bottom trawling, fishermen in India strike"](https://www.seafoodsource.com/news/environment-sustainability/sri-lanka-bans-bottom-trawling-fishermen-in-india-strike). Seafood Source. July 2017.
+
+export default ({ children }) => <SolutionDropdown problem={problem} solution={solution}>{children}</SolutionDropdown>

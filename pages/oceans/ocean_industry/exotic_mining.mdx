@@ -1,4 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_industry";
+
 import ArticleImage from "/components/ArticleImage.js";
+import AuthoritativeStudiesOnEcologicalImpacts from "/solutions/authoritative-studies-on-ecological-impacts.mdx"
 
 # Deep Sea Mining
 Through expulsion from hydrothermal sea vents, metals accumulate on the sea floor in economically valuable concentrations [^{ 2 } ]. In these nodules, the most commonly found economic minerals are nickel, copper, cobalt, and manganese [^{ 1 } ]. Lead, zinc, silver, gold, and some other rarer elements can be found at shallower depths [^{ 1 } ].
@@ -19,6 +26,8 @@ For the metals needed for an EV battery, lifecycle greenhouse gas emissions are 
 
 ## Ecosystem Impacts
 Despite the lower impacts generally, deep sea mining attracts concern because many of the long-term effects are not yet well understood [^{ 6 } ], [^{ 10 } ], [^{ 15 } ], [^{ 18 } ], [^{ 19 } ], particularly to ecosystems that are still poorly understood [^{ 11 } ], [^{ 16 } ]. Well-documented impacts include disturbance of ocean sediment, noise, and light [^{ 4 } ]. Microbial life takes an estimated 50 years to recover from the disturbance of deep sea mining [^{ 17 } ], and larger animals have not fully returned to the site of the DISturbance and reCOLonization experiment (DISCOL) after 26 years [^{ 14 } ]. Several researchers have called for a regulatory framework to be established before commercial operations begin, as this will be easier than after commercialization begins [^{ 4 } ], [^{ 7 } ].
+
+<AuthoritativeStudiesOnEcologicalImpacts />
 
 [^{ 1 } ]: Ahnert, A., Borowski, C. ["Environmental risk assessment of anthropogenic activity in the deep-sea"](https://link.springer.com/article/10.1023%2FA%3A1009963912171). Journal of Aquatic Ecosystem Stress and Recovery 7, pp. 299-315. October 2000.
 
@@ -53,3 +62,5 @@ Despite the lower impacts generally, deep sea mining attracts concern because ma
 [^{ 18 } ]: Washburn, T. W., Turner, P. J., Durden, J. M., Jones, D. O. B., Weaver, P., Van Dover, C. L. ["Ecological risk assessment for deep-sea mining"](https://www.sciencedirect.com/science/article/pii/S096456911830838X). Ocean & Coastal Management 176, pp. 24-39. June 2019.
 
 [^{ 19 } ]: Weaver, P. P. E., Billett, D. S. M., Van Dover, C. L. ["Environmental Risks of Deep-sea Mining"](https://link.springer.com/chapter/10.1007/978-3-319-60156-4_11). Handbook on Marine Environment Protection, pp. 215-245. August 2017.
+
+export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>

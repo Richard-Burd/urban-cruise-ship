@@ -1,4 +1,12 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_industry";
+
 import ArticleImage from "/components/ArticleImage.js";
+import EliminateFishingSubsidies from "/solutions/eliminate-fishing-subsidies.mdx"
+import BanBottomTrawlingOnTheHighSeas from "/solutions/ban-bottom-trawling-on-the-high-seas.mdx"
 
 # Seafood
 Seafood comprises 7% of the protein, and 17% of the animal protein, in the human diet [^{ 7 } ] as follows.
@@ -39,6 +47,9 @@ Most, and a growing percentage, of fisheries in the world are overfished or fish
 
 <ArticleImage image={"overfish.svg"} width={950} height={320} />
 #### Source: FAO [^{ 7 } ] with explanatory information from UW [^{ 32 } ]. 'Overfished' fishereries have less than 80% of the biomass that would give a maximum yield. The share of overfished fisheries has been growing since 1974, and the share of underfished fisheries is declining.
+
+<EliminateFishingSubsidies />
+<BanBottomTrawlingOnTheHighSeas />
 
 ## Aquaculture Environmental Impacts
 Seafood has the following estimated environmental impacts.
@@ -142,3 +153,7 @@ Additional environmental impacts of aquaculture include destruction of mangrove 
 [^{ 36 } ]: White, C. ["Sri Lanka bans bottom trawling, fishermen in India strike"](https://www.seafoodsource.com/news/environment-sustainability/sri-lanka-bans-bottom-trawling-fishermen-in-india-strike). Seafood Source. July 2017.
 
 [^{ 37 } ]: Zeller, D., Pauly, D. ["Sea Around Us: Fisheries, Ecosystems & Biodiversity"](https://www.seaaroundus.org/). University of British Columbia. Accessed October 20, 2021.
+
+export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>
+
+

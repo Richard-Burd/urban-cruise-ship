@@ -1,7 +1,16 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_environment";
+
 import ArticleImage from "/components/ArticleImage.js";
+import LimitedOceanGeoengineeringTrials from "/solutions/limited-ocean-geoengineering-trials.mdx";
 
 # Geoengineering
 It may be possible to manipulate ocean chemistry to remove carbon dioxide from the atmosphere. See also our broader analysis of [geoengineering and climate change](http://urbancruiseship.org/solution/energy/climate_se). Restoring the [oceans' biodiversity](http://urbancruiseship.org/solution/oceans/ocean_biodiversity) may be considered a form of geoengineering.
+
+<LimitedOceanGeoengineeringTrials />
 
 ## General Approches
 No form of ocean-based geoengineering is understood well enough to be deployed on a large scale. The following research budget has been suggested.
@@ -65,3 +74,5 @@ It is possible to capture carbon in specifically grown seaweed. A theoretical po
 [^{ 9 } ]: National Academies of Sciences, Engineering, and Medicine. [*A Research Strategy for Ocean-based Carbon Dioxide Removal and Sequestration*](https://www.nap.edu/catalog/26278/a-research-strategy-for-ocean-based-carbon-dioxide-removal-and-sequestration). Washington, DC: The National Academies Press. 2021.
 
 [^{ 10 } ]: Renforth, P., Jenkins, B. G., Kruger, T. ["Engineering challenges of ocean liming"](https://www.sciencedirect.com/science/article/abs/pii/S0360544213006816). Energy 60, pp. 442-452. October 2013.
+
+export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>

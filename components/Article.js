@@ -1,5 +1,5 @@
 import FocusAreaNavbar from "./FocusAreaNavbar.js";
-import ArticleNavbar from "./ArticleNavbar.js";
+import ArticleNavbar2 from "./ArticleNavbar2.js";
 
 const Article = ({ children, focusAreaUrl, site, hierarchy }) => {
 	const searchValue = focusAreaUrl;
@@ -11,10 +11,11 @@ const Article = ({ children, focusAreaUrl, site, hierarchy }) => {
   return (
     <>
       <FocusAreaNavbar site={site} focusAreas={hierarchy} />
-      <ArticleNavbar
+      <ArticleNavbar2
         site={site}
         focusAreas={hierarchy}
         articles={findArticles(searchValue, hierarchy)}
+        focusAreaUrl={focusAreaUrl}
       />
       <div className={`article-wrap ${site}-background-gradient pb-12`}>
         {children}
