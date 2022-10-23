@@ -100,7 +100,9 @@ Next we would navigate to the OCEAN Site's `hierarchy.json` file and add in the 
 ```JSON
 ./pages/oceans/hierarchy.json
 
-...
+]
+
+// other content
 
   {
    "focus_area_name":"Industry",
