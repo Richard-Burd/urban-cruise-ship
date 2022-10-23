@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "exploration";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Matter
 Our knowledge of the universe remains very limited, but we are continuing to make remarkable observations.
 
@@ -98,3 +106,12 @@ Research has found CP (charge conjugation parity) violations, indicating that th
 [^25]: Rubin, V. C., Ford, W. K. Jr., Thonnard, N. "Rotational properties of 21 SC galaxies with a large range of luminosities and radii, from NGC 4605 (R=4kpc) to UGC 2885 (R=122kpc)". Astrophysical Journal 238, pp. 471-487. June 1980.
 
 [^26]: Sather, E. "The Mystery of the Matter Asymmetry". Spring/Summer 1996.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

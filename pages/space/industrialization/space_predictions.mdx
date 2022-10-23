@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "industrialization";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Predictions
 The ability to make good forecasts, aided by the use of satellites, is critical for human well-being.
 
@@ -9,6 +17,8 @@ A large asteroid impact, though unlikely, could be a catastrophic event. As of S
 Efforts are ongoing to detect potentially threatening near Earth asteroids by ground- or space-based telescopes. So far, most of only the most threatening class of asteroids have been found.
 
 #### NASA's search for civilization-threatening asteroids is proceeding, but fewer potentially dangerous classes, such as the Tunguska impactor (about 50 meters) or the Chelybinsk impactor (about 20 meters) are known. Sources: Wall [^17][^18] and NASA [^15]. It is not feasible to find 100% of even large potential impactors, and thus the threat of an unexpected impact cannot be eliminated entirely [^10].
+
+
 
 If an asteroid with high risk of impact with Earth is found, it can be deflected or destroyed with nuclear devices, kinetic energy such as from striking it with a spacecraft, or momentum imparted by solar sails [^6]. It may require 5-10 years to conduct a successful deflection mission [^1]. No such mission has yet been demonstrated.
 
@@ -59,3 +69,12 @@ It has been proposed that the U. S. Federal Government establish a strategic res
 [^17]: Wall, M. ["About 17,000 Big Near-Earth Asteroids Remain Undetected: How NASA Could Spot Them"](https://www.space.com/40239-near-earth-asteroid-detection-space-telescope.html). Space.com. April 2018.
 
 [^18]: Wall, M. ["See the Dramatic Increase in Near-Earth Asteroids NASA Has Discovered (Video)"](https://www.space.com/41260-near-earth-asteroid-detection-video-nasa.html). Space.com. July 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

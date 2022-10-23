@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "industrialization";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Mapping
 Satellites are a large and growing business.
 
@@ -6,3 +14,12 @@ Satellites are a large and growing business.
 [^1]: Mohanta, N. ["How many satellites are orbiting the Earth in 2021?"](https://www.geospatialworld.net/blogs/how-many-satellites-are-orbiting-the-earth-in-2021/). Geospatial World. May 2021.
 
 [^2]: Union of Concerned Scientists. ["UCS Satellite Database"](https://www.ucsusa.org/resources/satellite-database). Accessed September 9, 2021.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

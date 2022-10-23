@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "space_travel";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Propulsion
 Following are select methods, currently in use and proposed, for propelling spacecraft that are already in space.
 
@@ -42,3 +50,12 @@ The best propulsion options depend on the application. For more efficient satell
 [^18]: Thomas, S., Paluszek, M., Cohen, S. "Fusion-Enabled Pluto Orbiter and Lander". Phase 1 Final Report, NASA Innovative Advanced Concepts grant. April 2017.
 
 [^19]: Wright, J. [*Solar Sailing.*](https://www.amazon.com/Space-Sailing-Jerome-Wright/dp/288124842X) ISBN-13: 978-2881248429, Routledge. January 1992.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

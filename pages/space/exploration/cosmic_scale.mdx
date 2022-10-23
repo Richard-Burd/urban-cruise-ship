@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "exploration";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Scale
 It is important to remember that, relative to the known universe, Earth is very small.
 
@@ -38,3 +46,12 @@ A Kardashev scale value of about 1.0 would be the limit that human civilization 
 [^12]: Smith, N., Hinkle, K. H., Ryde, N. ["Red Supergiants as Potential Type IIn Supernova Progenitors: Spatially Resolved 4.6 μm CO Emission Around VY CMa and Betelgeuse"](https://iopscience.iop.org/article/10.1088/0004-6256/137/3/3558). he Astronomical Journal 137(3), pp. 3558–3573. March 2009.
 
 [^13]: Wijers, R. ["On the stellar luminosity of the Universe"](https://arxiv.org/abs/astro-ph/0506218). arXiv preprint astro-ph/0506218. 2005.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

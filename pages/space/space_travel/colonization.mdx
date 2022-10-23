@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "space_travel";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Colonization
 Establishing permanent, self-sustaining settlements on Earth will be very challenging and, for the foreseeable future, does not seem to be feasible.
 
@@ -17,3 +25,12 @@ An offworld habitat will have high energy needs, as it will probably require [in
 [^5]: Power Engineering International. ["Powering a Moon village"](https://www.powerengineeringint.com/feature-articles/powering-a-moon-village/). March 2021.
 
 [^6]: Soilleux, R. J., Gunn, S. D. ["Environmental Control and Life Support (ECLSS) for Large Orbital Habitats: Ventilation for Heat and Water Transport and Management"](https://space.nss.org/wp-content/uploads/NSS-JOURNAL-ECLSS-for-Large-Orbital-Habitats-Ventilation-and-Heat-Transport.pdf). National Space Society Space Settlement Journal 3. November 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

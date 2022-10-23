@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "ethics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Orbital Debris
 Orbital debris, also known as space junk, refers to objects in orbit around Earth that do not (anymore) serve a useful function. Although orbital space is vast, high speeds create a growing risk of an orbital collision. It is necessary to take actions to mitigate the problem.
 
@@ -104,3 +112,12 @@ At present, no ADR occurs, though there are many possible methods [^15]. A demon
 [^28]: Weeden, B. ["2009 Iridium-Cosmos Collision Fact Sheet"](https://swfound.org/media/6575/swf_iridium_cosmos_collision_fact_sheet_updated_2012.pdf). Secure World Foundation. November 2010.
 
 [^29]: Wright, D. ["Space Debris from Anti-Satellite Weapons"](https://www.ucsusa.org/sites/default/files/2019-09/debris-in-brief-factsheet.pdf). Union of Concerned Scientists. April 2008.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

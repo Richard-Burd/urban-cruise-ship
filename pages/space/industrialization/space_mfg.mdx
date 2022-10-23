@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "space";
+export const focusAreaUrl = "industrialization";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Manufacturing
 Factories in orbit offer two features not available on the surface of the Earth: microgravity and the potential for a high quality vacuum. For these reasons, orbital manufacturing may allow products that are harder or impossible to manufacture on the surface [^1].
 
@@ -31,3 +39,12 @@ Beyond ZBLAN fiber optics, a microgravity environment may help manufacture a ran
 [^8]: Moraguez, M. T. ["Technology development targets for commercial In-Space Manufacturing"](https://dspace.mit.edu/handle/1721.1/119308). Doctoral dissertation, Massachusetts Institute of Technology. 2018.
 
 [^9]: Sun, W., Starly, B., Daly, A. C., Burdick, J. A., Groll, J., Skeldon, G., Shu, W., Sakai, Y., Shinohara, M., Nishikawa, M. ["The bioprinting roadmap"](https://iopscience.iop.org/article/10.1088/1758-5090/ab5158/meta). Biofabrication 12(2): 022002. February 2020.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
