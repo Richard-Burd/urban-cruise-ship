@@ -1,0 +1,29 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_environment";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Sea Level
+
+Since 1993, world sea levels have been rising at about 3 millimeters per year, and this increase is accelerating at 0.1 mm/yr/yr [^{ 1 }].
+
+<ArticleImage image={"sea_level_factors.svg"} width={450} height={300} />
+#### Source: Lindsey [^{ 2 }].
+
+Sea level will continue to rise through the 21st century, even if greenhouse gas emissions are brought under control.
+
+<ArticleImage image={"sea_level_projections.svg"} width={450} height={300} />
+#### Source: Lindsey [^{ 2 }].
+
+Ice loss from Greenland is accelerating, with 120 billion tons of loss from 1901-1990 and 330 billion tons from 2006-2018. Rising sea levels are expected to exacerbat the damages from coastal storms and flooding [^{ 2 }]. The United States will have to spend an estimated $300 billion cumulatively by 2100 on seawalls [^{ 3 }].
+
+[^{ 1 }]: United Nations ["The Second World Ocean Assessment"](https://www.un.org/regularprocess/woa2launch). 2021.
+
+[^{ 2 }]: Lindsey, R. ["Climate Change: Global Sea Level"](https://www.climate.gov/news-features/understanding-climate/climate-change-global-sea-level). climate.gov, NOAA. April 2022.
+
+[^{ 3 }]: Hummel, M. A., Griffin, R., Arkema, K., Guerry, A. D. ["Economic evaluation of sea-level rise adaptation strongly influenced by hydrodynamic feedbacks"](https://www.pnas.org/doi/abs/10.1073/pnas.2025961118). Proceedings of the National Academy of Sciences of the United States of America 118(29): e2025961118. July 2021.
+
+export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>
