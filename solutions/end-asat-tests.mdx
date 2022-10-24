@@ -1,3 +1,8 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Damage from Orbital Debris";
+export const solution = "End ASAT Tests";
+
 Antisatellite tests, such as the 2007 Chinese test and the 2021 Russian test, are a major source of orbital debris and a risk to future orbital activities. As of 2007, the Chinese test alone was responsible for over 10% of the large pieces (at least 10 centimeters) of orbital debris [^"29"].
 
 Experts debate the motivation behind the Chinese test and Chinese ASAT pursuits. Their goal may be to increase the cost and risk for an American defense of Taiwan, should China attack that island, or it may be fear that American space capability will nullify the Chinese nuclear deterrent [^"23"].
@@ -13,3 +18,11 @@ If a full legal ban on destructive ASAT testing is infeasible, then an alternati
 [^"23"]: Saunders, P. C., Lutes, C. D. ["China’s ASAT Test: Motivations and Implications"](https://apps.dtic.mil/sti/pdfs/ADA517485.pdf). National Defense University, Institute for National Strategic Studies, 260. 2007.
 
 [^"29"]: Wright, D. ["Space Debris from Anti-Satellite Weapons"](https://www.ucsusa.org/sites/default/files/2019-09/debris-in-brief-factsheet.pdf). Union of Concerned Scientists. April 2008.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

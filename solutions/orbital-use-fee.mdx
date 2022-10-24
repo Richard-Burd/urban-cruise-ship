@@ -1,3 +1,8 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Damage from Orbital Debris";
+export const solution = "Orbital Use Fee";
+
 Every satellite in orbit creates a risk of collision, which is an external cost unless somehow mitigated. An orbital use fee, which charges satellites a fee per year in orbit, it a way to internalize this cost.
 
 Rao, Burgess, and Kaffine propose an orbital use fee that would rise to $235,000 per satellite-year in 2040. Such a policy would create a net present value of $2.4 trillion over all future years [^"22"].
@@ -13,3 +18,11 @@ An orbital use fee would have some limitations. It could put developing space pr
 [^"22"]: Rao, A., Burgess, M. G., Kaffine, D. ["Orbital-use fees could more than quadruple the value of the space industry"](https://www.pnas.org/content/117/23/12756?__cf_chl_jschl_tk__=pmd_cb630375401e06282a44bb1f2d85925a21737c2f-1628230153-0-gqNtZGzNAeKjcnBszQjO). Proceedings of the National Academy of Sciences of the United States of America 117(23), pp. 12756-12762. May 2020.
 
 [^"25"]: Stilwell, R. ["Orbital use fees won't solve the space debris problem"](https://www.thespacereview.com/article/3971/1). The Space Review. June 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

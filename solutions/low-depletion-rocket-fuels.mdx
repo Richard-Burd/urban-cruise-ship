@@ -1,3 +1,8 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Ozone Depletion";
+export const solution = "Low-depletion rocket fuels";
+
 If the commercial spaceflight industry greatly expands, it could have a severe effect on stratospheric ozone concentrations. An industry-wide agreement to use low-ozone depleting rocket fuels will alleviate this risk. Such an agreement could be modeled after the High Speed Research program, which NASA led in the 1990s to develop commercial supersonic flight that did not result in ozone depletion [^"17"].
 
 Data on the ozone depletion of rocket launches is limited, and the differences vary by more than a factor of 20 by type of booster [^"20"]. Generally, solid rocket fuels emit much more ozone-depleting pollution than liquid fuels [^"15"].
@@ -7,3 +12,11 @@ Data on the ozone depletion of rocket launches is limited, and the differences v
 [^"17"]: Ross, M., Vedda, J. ["Op-ed | Time to clear the air about launch pollution"](https://spacenews.com/op-ed-time-to-clear-the-air-about-launch-pollution/). SpaceNews. July 2018.
 
 [^"20"]: Smith, T. W., Edwards, J. R., Pilson, D. ["Summary of the Impact of Launch Vehicle Exhaust and Deorbiting Space and Meteorite Debris on Stratospheric Ozone"](https://apps.dtic.mil/sti/pdfs/ADA414306.pdf). Prepared for U.S. Air Force Space and Missile Systems Center, Environmental Management Branch, SMC/AXFV. September 1999.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

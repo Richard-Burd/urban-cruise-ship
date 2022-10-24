@@ -1,1 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Asteroid Impact Risk";
+export const solution = "NASA should accelerate monitoring and deflection";
+
 While many potentially dangerous impactors have been found, there are still civilization-threatening near-Earth asteroids that have not been discovered, and many more dangerous asteroids. Furthermore, few dangerous comets have been discovered. In the event that a dangerous asteroid is found, no deflection mission has yet been demonstrated, though a test, DART, is scheduled to impact a near-Earth asteroid in September 2022. NASA's efforts and budget for planetary protection should be increased.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
