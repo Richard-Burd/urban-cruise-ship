@@ -1,4 +1,4 @@
-// This "2" version (ans in FocusArea2.js) is for rendering Richard's
+// This "2" version (as in FocusArea2.js) is for rendering Richard's
 // new MDX Markdown article files as opposed to Michael's older article files
 import Link from "next/link";
 import Logos from "./Logos";
