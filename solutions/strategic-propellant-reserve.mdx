@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions of Rocket Launch";
+export const solution = "Strategic Propellant Reserve";
+
+We propose the creation of a Strategic Propellant Reserve, modeled after the Strategic Petroleum Reserve, as proposed by Bruno et al. A Strategic Propellant Reserve would place propellant, created from lunar ice, in low-Earth orbit, near recti-linear halo orbit, the lunar surface, and in Mars orbit, to facilitate refuelling in space and longer, cheaper spacecraft journeys [^"7"].
+
+[^"7"]: Bruno, T., Otto, E., Clifton, W., Schmitt, A., Lococo, E., Sanders, J., Reed, J., Kutter, B. ["Creation of a U.S. Strategic Propellant Reserve"](https://medium.com/@ToryBrunoULA/creation-of-a-u-s-strategic-propellant-reserve-b111044887e8). September 7, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

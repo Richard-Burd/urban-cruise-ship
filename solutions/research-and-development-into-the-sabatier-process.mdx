@@ -1,3 +1,8 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions from natural gas";
+export const solution = "Research and development into the Sabatier process";
+
 The Sabatier reaction is developing method for converting carbon dioxide and hydrogen, with energy input, into methane and water [^"43"]. A more affordable process could help reduce the use of natural gas in heating, cement [^"3"] and other industry, and other terrestrial applications [^"23"], and it may provide another energy storage option [^"33"].
 
 Further refinement on the International Space Station [^"11"] or on Mars [^"17"] will help the development of this process.
@@ -13,3 +18,11 @@ Further refinement on the International Space Station [^"11"] or on Mars [^"17"]
 [^"33"]: Pritchard, T., Braun, R. J., Sullivan, N. P. ["Techno-Economic Analysis of the Sabatier Electrolyzer: CO2-to-Methane Using Proton-Conducting Ceramics"](https://iopscience.iop.org/article/10.1149/MA2020-02402657mtgabs). The Electrochemical Society, Volume MA2020-02, I02: Solid State Ionic Devices 13. 2020.
 
 [^"43"]: Wikipedia. ["Sabatier reaction"](https://en.wikipedia.org/wiki/Sabatier_reaction). Accessed July 14, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
