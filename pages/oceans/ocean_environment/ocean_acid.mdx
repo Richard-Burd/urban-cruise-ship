@@ -6,13 +6,26 @@ export const focusAreaUrl = "ocean_environment";
 
 import ArticleImage from "/components/ArticleImage.js";
 
-# Ocean Acidification
-Uptake of carbon is the main cause of ocean acidification, or the long-term trend of falling ocean pH. Ocean acidification poses a threat to marine ecosystems.
+# Ocean Chemistry
+
+The ocean's chemistry is altering in several ways.
+
+## Ocean Acifidication
+
+Ocean pH has increased by about 0.1 since the start of the Industrial Revolution, or an increase in acidity of about 30%, and it could increased by 0.2 to 0.3 by 2100 [^{ 4 } ]. Uptake of carbon is the main cause of ocean acidification, or the long-term trend of falling ocean pH. Ocean acidification poses a threat to marine ecosystems.
 
 <ArticleImage image={"acidification_impact.jpg"} width={1200} height={600} />
 #### Projected impacts from ocean acidification on marine ecosystems, resulting from the carbon emissions that would cause 2-3 ℃ warming. Source: Kroeker et al. [^{ 1 } ].
 
 Ocean acidification has negative impacts of fisheries, the ocean as a carbon sink, and the tourism, scentific, and cultural value of biodiversity [^{ 2 } ]. Losses has been estimated to reach $1 trillion per year by 2100 under projected CO2 emissions [^{ 3 } ].
+
+## Ocean Salinity
+
+The ocean is becoming saltier over time, with fresh areas generally become fresher and salty areas become saltier [^{ 4 } ]. This trend is expected to have a modest warming effect on the climate [^{ 5 } ].
+
+## Oxygen Content
+
+The oceans' oxygen content has decreased by about 2% since 1960 [^{ 6 } ][^{ 7 } ]. Rising temperature reduces the oceans' ability to take in oxygen, and this may be the main factor in the loss [^{ 4 } ]. Ocean patches of low oxygen may in turn drive warming by increasing emissions of nitrous oxide [^{ 4 } ].
 
 
 [^{ 1 }]: Kroeker, K., Kordas, R., Crim, R., Hendriks, I., Ramajo, L., Singh, G., Duarte, C., Gattuso, J. ["Impacts of ocean acidification on marine organisms: quantifying sensitivities and interaction with warming"](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.12179). Global Change Biology 19(6), pp. 1884-1896. February 2013.
@@ -20,5 +33,13 @@ Ocean acidification has negative impacts of fisheries, the ocean as a carbon sin
 [^{ 2 }]: Navrud, S., Seifert-Dähnn, I. ["The Economics of Ocean Acidification - A Scoping Study"](https://www.researchgate.net/publication/266413564_The_Economics_of_Ocean_Acidification-A_Scoping_Study). Fram Centre 57. January 2012.
 
 [^{ 3 }]: Secretariat of the Convention on Biological Diversity. [An Updated Synthesis of the Impacts of Ocean Acidification on Marine Biodiversity](https://www.cbd.int/doc/publications/cbd-ts-75-en.pdf). (Eds: S. Hennige, J.M. Roberts & P. Williamson). Montreal, Technical Series No. 75, 99 pages. 2014.
+
+[^{ 4 }]: United Nations ["The Second World Ocean Assessment"](https://www.un.org/regularprocess/woa2launch). 2021.
+
+[^{ 5 }]: Olson, S., Jansen, M. F., Abbot, D. S., Halevy, I., Goldblatt, C. ["The Effect of Ocean Salinity on Climate and Its Implications for Earth's Habitability"](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GL095748). Geophysical Research Letters 49(10): e2021GL095748. May 2022.
+
+[^{ 6 }]: Schmidtko, S., Stramma, L., Visbeck, M., ["Decline in global oceanic oxygen content during the past five decades"](https://www.nature.com/articles/nature21399). Nature 542, pp. 335–339. February 2017.
+
+[^{ 7 }]: Ito, T., Minobe, S., Long, M. C., Deutsch, C. ["Upper ocean O2 trends: 1958–2015"](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017GL073613). Geophysical Research Letters 44(9), pp. 4214-4223. April 2017.
 
 export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>
