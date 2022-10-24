@@ -5,6 +5,7 @@ export const site = "space";
 export const focusAreaUrl = "ethics";
 
 import ArticleImage from "/components/ArticleImage.js";
+import StudySafetyOfLaunchOfAFissionReactorSolution from "/solutions/study-safety-of-launch-of-a-fission-reactor.mdx"
 
 # Energy
 
@@ -13,6 +14,7 @@ The main power sources available in space are solar PV and various forms of nucl
 ## Power Sources
 Current and near future satellites and probes get their power as follows.
 
+<ArticleImage image={"space_power.jpg"} width={950} height={330} />
 #### Power sources in space. Sources: European Space Agency [^5] for solar, Gibson et al. [^6] for fission, and World Nuclear Association [^15] for radioisotopes.
 
 Active areas of research include higher efficiency, 4- to 6- junction solar cells [^5], new small fission reactors such as NASA's Kilopower project [^6], and reverse field configuration fusion [^13].
@@ -20,7 +22,15 @@ Active areas of research include higher efficiency, 4- to 6- junction solar cell
 ## Launch Safety
 The use of radioisotope thermal generators (RTG) or nuclear fission in space entails launching radioactive material from Earth, which raises safety concerns. Results have been found as follows.
 
+| Study | Results |
+| --- | --- |
+| Mars 2020 Environmental Impact Statement [^10] | Maximally exposed person would have less than 1/1,000,000 chance of death. |
+| Analysis of Ulysses Mission [^7] | Expected 3 cancer deaths if there is an accident after launch. |
+| General Review [^2] | RTG launch is generally safe. |
+
 Under international regulations, a fission reactor such as NASA's Kilopower could not be activated until it safely escapes Earth. However, there are scenarios under which a reactor could become critical in a launch failure [^8], and therefore rules are needed to govern the launch of reactors that go beyond what has been learned with RTGs [^1], [^3].
+
+<StudySafetyOfLaunchOfAFissionReactorSolution />
 
 KiloPower uses highly-enriched uranium (HEU) as its fuel. A reactor that uses low-enriched uranium (LEU) instead would have greater mass, increasing launch costs, but might save money overall because LEU would have lower security costs than HEU [^14].
 

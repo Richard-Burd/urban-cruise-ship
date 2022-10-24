@@ -5,6 +5,10 @@ export const site = "space";
 export const focusAreaUrl = "ethics";
 
 import ArticleImage from "/components/ArticleImage.js";
+import EndAsatTestsSolution from "/solutions/end-asat-tests.mdx"
+import OrbitalUseFeeSolution from "/solutions/orbital-use-fee.mdx"
+import TighterRulesOnDeorbitingSolution from "/solutions/tighter-rules-on-deorbiting-satellites.mdx"
+import ResearchActiveDebrisRemovalSolution from "/solutions/research-active-debris-removal.mdx"
 
 # Orbital Debris
 Orbital debris, also known as space junk, refers to objects in orbit around Earth that do not (anymore) serve a useful function. Although orbital space is vast, high speeds create a growing risk of an orbital collision. It is necessary to take actions to mitigate the problem.
@@ -12,15 +16,19 @@ Orbital debris, also known as space junk, refers to objects in orbit around Eart
 ## Extent
 Although vast, Earth's orbital face contains many pieces of dangerous debris, especially small pieces that are difficult to track.
 
+<ArticleImage image={"num_orbital_debris.svg"} width={750} height={200} />
 #### Source: Liou [^13].
 
-#### Orbital debris have many sources, especially anti-satellite (ASAT) tests and accidental explosions [^18]. Following are select major events that have created debris.
+Orbital debris have many sources, especially anti-satellite (ASAT) tests and accidental explosions [^18]. Following are select major events that have created debris.
 
+<ArticleImage image={"debris_created.svg"} width={750} height={400} />
 #### Piece of debris at least 10 centimeters in size created by several events. The 2021 Russian ASAT test was particularly destructive because the explosion occurred at a higher altitude than the other events, causing debris pieces to remain in orbit longer [^21]. Sources: [^7],[^21],[^26],[^28].
 
 Debris is less of a worry at altitudes below 600 kilometers, as a very thin atmosphere will cause objects to fall within years or less. Above 600 km, and especially above 1000 km, debris is more worrisome because atmospheric drag will not cause objects to fall in reasonable time [^3].
 
 The presence of small debris requires that satellites install shields, which adds 5-10% to the cost of satellite missions [^27].
+
+<EndAsatTestsSolution />
 
 ## Kessler Syndrome
 If a satellite is struck by a piece of debris, the explosion creates new debris, which in turn increases the risk of collision. Kessler Syndrom is a scenario in which this process becomes an uncontrollable cascade [^11]. The prediction market Metaculus indicates (as of August 18, 2021) a 15% chance of Kessler Syndrome by 2050, formally defined as the loss of at least 10% of satellites due to collisions with debris in one year [^16]. Another estimate is that in 200 years, there could be a catastrophic collision every 5-9 years, like the 2009 satellite collision [^12].
@@ -48,12 +56,15 @@ There are two major tools to protect satellites and the International Space Stat
 
 #### Current debris protection efforts leave a gap between 3 millimeters and 5 centimeters for which there is not an effective defense. Research is ongoing into telescopes that will be able to track smaller pieces of debris [^24].
 
+<OrbitalUseFeeSolution /> 
+<TighterRulesOnDeorbitingSolution />
+
 ## Active Debris Removal
 Even if launches cease today, there will continue to be orbital collisions and growth in the total amount of debris [^14], so efforts to remove debris from orbit (active debris removal, or ADR) are necessary. The removal of 5-10 well-chosen objects per year should be enough to stabilize the debris environment [^8]. Removing 15 objects per year would cost about an estimated $600 million per year [^2].
 
 At present, no ADR occurs, though there are many possible methods [^15]. A demonstration mission, ClearSpace-1, is scheduled for 2025 [^9].
 
-
+<ResearchActiveDebrisRemovalSolution />
 
 [^1]: Aerospace Corporation. ["Space Debris 101"](https://aerospace.org/article/space-debris-101). Accessed August 18, 2021.
 
