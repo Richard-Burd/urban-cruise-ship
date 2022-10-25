@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Risk from Agriculture Monoculture";
+export const solution = "Greater Variety in Planting";
+
+We propose that the U. S. Department of Agriculture develop low-cost polyculture techniques and disseminate them through education and outreach.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

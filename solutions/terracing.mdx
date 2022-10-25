@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Erosion";
+export const solution = "Terracing";
+
+On hilly terrains, terracing is another tool to reduce erosion. Terracing could also be promoted by the U. S. Department of Agriculture via education.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

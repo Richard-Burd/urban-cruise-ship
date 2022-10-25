@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Antibiotic Resistance";
+export const solution = "Tax on Antibiotics";
+
+We propose that a tax be levied on antibiotic usage for livestock. The basis for the tax would be the depletion of antibiotic effectiveness that results from usage, a harm that affects all antibiotic usage, including for human and veterinary medicine.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Uncertain Phosphate Reserves";
+export const solution = "Audit World Phosphate Reserves";
+
+We propose that the Food and Agriculture Organization of the United States audit world phosphate reserves.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Negative Impact of Pesticides";
+export const solution = "Integrated Pest Management";
+
+We propose that the U. S. Department of Agriculture develop techniques for integrated pest management and engage in education and outreach to disseminate those techniques.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

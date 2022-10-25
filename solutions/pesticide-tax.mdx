@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Negative Impact of Pesticides";
+export const solution = "Pesticide Tax";
+
+We propose a tax be levied on pesticide usage to incorporate the negative impacts outlined above. The purpose is not to reduce pesticide usage to zero, but to lower it to a socially optimal level.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
