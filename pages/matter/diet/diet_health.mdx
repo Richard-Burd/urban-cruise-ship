@@ -1,0 +1,62 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "diet";
+
+import ArticleImage from "/components/ArticleImage.js";
+import RemoveMeatFromSchoolLunchesSolution from "/solutions/remove-meat-from-school-lunches.mdx"
+
+# Diet and Health
+Vegetarian, and especially vegan, diets have significant health benefits.
+
+<ArticleImage image={"diet_health.svg"} width={1000} height={600} />
+#### A vegan avoids all animal products. A lacto-ovo vegetarian avoids meat but eats non-meat animal products such as eggs and cheese. A pesco vegetarian avoids terrestrial meat but eats fish. As defined in the review, a semivegetarian eats meat less often than once per week. A nonvegetarian has no such dietary restrictions. Source: [^6].
+
+Vegetarians and especially vegan may also face a reduction of risk from certain cancers [^2] and chronic kidney disease [^5]. There is evidence that avoidance of meat [^7], [^10] and dairy products [^8] reduces the risk of prostate cancer.
+
+Vegetarian diets are associated with fewer prescription drugs used among seniors, reducing the risk of harmful drug interactions [^3].
+
+<RemoveMeatFromSchoolLunchesSolution />
+
+## Diet and Longevity
+Vegetarian diets are associated with greater life expectancy.
+
+<ArticleImage image={"diet_longevity.svg"} width={1000} height={600} />
+#### Results from Singh et al. [^9] are determined from a metastudy of six studies. In each study, a 'vegetarian' diet entails eating meat no more than once per week, and the diet is maintained for at least 20 years.
+
+However, it is unclear to what extent long lives are caused by a vegetarian diet, as opposed to other factors [^4], [^11].
+
+## Risks of a Vegetarian Diet
+Vegetarians and vegans are at risk of some vitamin and mineral deficiencies that come primarily from animal products: vitamin B12, omega-3 fatty acids, vitamin D, calcium, iron, and zinc. However, these substances can be obtained with vegetarian or vegan diets, particularly through supplements or fortified food [^1]. To counter the risk of protein deficiency, it is necessary to consume sufficient legumes, nuts, and soy products [^6].
+
+[^1]: Craig, W. J. "Nutrition Concerns and Health Effects of Vegetarian Diets". Nutrition in Clinical Practice 25(6), pp. 613-620. December 2010.
+
+[^2]: Dinu, M., Abbate, R., Gensini, G. F., Casini, A., Sofi, F. "Vegetarian, vegan diets and multiple health outcomes: A systematic review with meta-analysis of observational studies". Critical Reviews in Food Science and Nutrition 57(17), pp. 3640-3649. November 2017.
+
+[^3]: Dos Santos, H., Gaio, J., Durisic, A., Beeson, W. L., Alabadi, A. "The Polypharma Study: Association Between Diet and Amount of Prescription Drugs Among Seniors". American Journal of Lifestyle Medicine. October 2021.
+
+[^4]: Ginter, E. "Vegetarian diets, chronic diseases, and longevity". Bratislava Medical Journal 109(10), pp. 463-466. January 2008.
+
+[^5]: Liu, H., Tsai, W., Liu, J., Kuo, K. "Association of Vegetarian Diet with Chronic Kidney Disease". Nutrients 11(2): 279. February 2019.
+
+[^6]: Marsh, K., Zeuschner, C., Saunders, A. "Health Implications of a Vegetarian Diet: A Review". American Journal of Lifestyle Medicine 6(3), pp. 250-267. May 2012.
+
+[^7]: Punnen, S., Hardin, J., Cheng, I., Klein, E. A., Witte, J. S. "Impact of Meat Consumption, Preparation, and Mutagens on Aggressive Prostate Cancer". PLoS One 6(11): e27711. November 2011.
+
+[^8]: Sargsyan, A., Dubasi, H. B. "Milk Consumption and Prostate Cancer: A Systematic Review". The World Journal of Men's Health 39(3): 419. July 2021.
+
+[^9]: Singh, P. N., Sabaté, J., Fraser, G. E. "Does low meat consumption increase life expectancy in humans?". The American Journal of Clinical Nutrition 78(3), pp. 526S-532S. September 2003.
+
+[^10]: Tantamango-Bartley, Y., Knutsen, S. F., Knutsen, R., Jacobsen, B. E., Fan, J., Beeson, W. L., Sabate, J., Hadley, D., Jaceldo-Siegl, K., Penniecook, J., Herring, P., Butler, T., Bennett, H., Fraser, G. "Are strict vegetarians protected against prostate cancer?". The American journal of clinical nutrition 103(1), pp. 153-160. January 2016.
+
+[^11]: Walter, P. "Effects of vegetarian diets on aging and longevity". Nutrition Reviews 55(1 Pt 2): S61-65, discussion S65-68. January 1997.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
