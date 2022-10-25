@@ -1,3 +1,12 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "ag_env";
+
+import ArticleImage from "/components/ArticleImage.js";
+import AuditWorldPhosphateReservesSolution from "/solutions/audit-world-phosphate-reserves.mdx"
+
 # Nutrient Cycles
 
 Food production is the main source of nitrogen pollution. See our discussion of nutrient pollution for information on broader causes and ecological impacts of them.
@@ -5,6 +14,7 @@ Food production is the main source of nitrogen pollution. See our discussion of 
 ## Food and Eutrophication
 Agriculture is the main source of nitrogen and phosphorous runoff, which leads to eutrophication. Generally, meat and animal products lead to much greater eutrophication over their lifetime than plant-based foods.
 
+<ArticleImage image={"eutrophication_by_food.svg"} width={950} height={500} />
 #### Sources: FAO [^2], Poore and Nemecek [^5].
 
 In addition to adopting plant-based diets, fertilizer runoff and eutrophication can be reduced through farming practices such as no-till and precision farming, and intensive farming methods such as greenhouses.
@@ -14,20 +24,32 @@ World economical reserves of phosphate rock, the main source of the critical ele
 
 The following phosphorous conservation opportunities have been estimated.
 
+<ArticleImage image={"phosphorous_conservation.svg"} width={950} height={500} />
 #### Sources: Gilmour et al. [^3], Satorious et al. [^6], Udawatta et al. [^7].
 
-[^1]: Edixhoven, J., Gupta, J., Savenije, H. "Recent revisions of phosphate rock reserves and resources: a critique". Earth Syst. Dynam., 5, pp. 491-507. December 2014.
+<AuditWorldPhosphateReservesSolution />
 
-[^2]: Food and Agriculture Organization. "Nutritive Factors". Accessed January 7, 2020.
+[^1]: Edixhoven, J., Gupta, J., Savenije, H. ["Recent revisions of phosphate rock reserves and resources: a critique"](http://www.earth-syst-dynam.net/5/491/2014/). Earth Syst. Dynam., 5, pp. 491-507. December 2014.
+
+[^2]: Food and Agriculture Organization. ["Nutritive Factors"](http://www.fao.org/economic/the-statistics-division-ess/publications-studies/publications/nutritive-factors/en/). Accessed January 7, 2020.
 
 [^3]: Gilmour, D., Blackwood, D., Comber, S., Thornell, A. "Identifying human waste contribution of phosphorus loads to domestic wastewater". 11th International Conference on Urban Drainage, Edinburgh, Scotland, UK. 2008.
 
-[^4]: Jasinski, S. "Phosphate Rock". U.S. Geological Survey, Mineral Commodity Summaries. January 2016.
+[^4]: Jasinski, S. ["Phosphate Rock"](http://minerals.usgs.gov/minerals/pubs/commodity/phosphate_rock/mcs-2012-phosp.pdf). U.S. Geological Survey, Mineral Commodity Summaries. January 2016.
 
-[^5]: Poore, J., Nemecek, T. "Reducing food’s environmental impacts through producers and consumers". Science 360(6392), pp. 987-992. June 2018.
+[^5]: Poore, J., Nemecek, T. ["Reducing food’s environmental impacts through producers and consumers"](https://science.sciencemag.org/content/360/6392/987). Science 360(6392), pp. 987-992. June 2018.
 
-[^6]: Sartorius, C., von Horn, J., Tettenborn, F. "Phosphorus recovery from wastewater - state-of-the-art and future potential". Conference presentation at Nutrient Recovery and Management Conference organised by International Water Association (IWA) and Water Environment Federation (WEF) in Florida, USA. 2011.
+[^6]: Sartorius, C., von Horn, J., Tettenborn, F. ["Phosphorus recovery from wastewater - state-of-the-art and future potential"](http://www.susana.org/en/resources/library/details/1304). Conference presentation at Nutrient Recovery and Management Conference organised by International Water Association (IWA) and Water Environment Federation (WEF) in Florida, USA. 2011.
 
-[^7]: Udawatta, R., Henderson, G., Jones, J., Hammer, D. "Phosphorus and nitrogen losses in relation to forest, pasture and row-crop land use and precipitation distribution in the midwest USA". Journal of Water Science 24(3), pp. 269-281. 2011.
+[^7]: Udawatta, R., Henderson, G., Jones, J., Hammer, D. ["Phosphorus and nitrogen losses in relation to forest, pasture and row-crop land use and precipitation distribution in the midwest USA"](http://www.erudit.org/revue/rseau/2011/v24/n3/1006477ar.html). Journal of Water Science 24(3), pp. 269-281. 2011.
 
-[^8]: Van Kauwenbergh, S. "World Phosphate Rock Reserves and Resources". International Fertilizer Development Center. September 2010.
+[^8]: Van Kauwenbergh, S. ["World Phosphate Rock Reserves and Resources"](http://pdf.usaid.gov/pdf_docs/Pnadw835.PDF). International Fertilizer Development Center. September 2010.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

@@ -1,27 +1,42 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "ag_env";
+
+import ArticleImage from "/components/ArticleImage.js";
+import PesticideTaxSolution from "/solutions/pesticide-tax.mdx"
+import IntegratedPestManagementSolution from "/solutions/integrated-pest-management.mdx"
+
 # Pesticides
 
 ## Pesticide Usage Trends
 World pesticide usage is generally increase, though may have peaked per kilocalorie of food produced.
 
+<ArticleImage image={"pesticide_trends.svg"} width={950} height={500} />
 #### Source: FAOSTAT [^5].
 
 Tonnage is not necessarily a complete indication of overall pesticide impact. For example, while insecticide usage in the United States has declined since 1997, overall toxicity to insects, particularly bees, has increased, likely driven by neonicotinoid usage [^3].
 
 By tonnage, herbicides are the most widely used class of pesticides.
 
+<ArticleImage image={"pesticide_by_type.svg"} width={950} height={500} />
 #### Source: Zhang [^15].
 
 Cereal crops tend to require less pesticide per ton of crop.
 
+<ArticleImage image={"pesticide_by_crop.svg"} width={950} height={500} />
 #### Sources: Fernandez-Cornejo et al. [^4] for pesticide usage, FAOSTAT [^5] for crop production.
 
 ## Value of Pesticides
 Without usage of modern pesticides, crop yields would be a bit less than half present values, requiring more than twice as much land for the same production.
 
+<ArticleImage image={"pesticide_yield.svg"} width={950} height={500} />
 #### Source: Agrios [^1] via Our World in Data [^13]. Figures are confirmed by the review of Popp et al. [^11].
 
 The following monetized costs and benefits in the United States have been estimated.
 
+<ArticleImage image={"pesticide_cost_benefit.svg"} width={950} height={500} />
 #### Estimated costs and benefits of pesticide usage in the United States from around 2002 to 2008. Figures reported by Popp et al. [^11], with direct cost and benefits from Gianessi [^6], Gianessi and Reigner (2005) [^7], and Gianessi and Reigner (2006) [^8] and externalized costs from Pimentel [^10].
 
 While pesticide usage is important in the modern food system, the presence of external costs suggests that pesticides are overused.
@@ -29,41 +44,55 @@ While pesticide usage is important in the modern food system, the presence of ex
 ## Costs of Pesticides
 The following externalized costs of pesticides in the United States have been estimated.
 
+<ArticleImage image={"pesticide_externalities.svg"} width={950} height={500} />
 #### Estimated external costs of pesticides in the United States, 2005-06. Note that damages are lower than those estimated above by Pimentel [^10]. Source: Leach and Mumford [^9] via Pretty and Bharucha [^12].
 
 An estimated 355,000 people, mostly farmworkers and their families, die each year from unintentional pesticide poisonings [^2].
 
 As pesticides kill organisms other than their intended targets, the impact on biodiversity, especially insects and pollinators [^14], is of great concern.
 
+<PesticideTaxSolution />
+
 ## Reducing Pesticide Usage
 Integrated pest management, a broader strategy for controlling pests, can allow a 50% reduction of pesticide usage without impacting yields, though data is limited [^12]. The challenge with IPM is greater labor cost and need for specialized knowledge [^12].
 
-[^1]: Agrios, G. Plant Pathology. Fifth Edition. Academic Press. 952 pages. 2005.
+<IntegratedPestManagementSolution />
 
-[^2]: Carvahlo, F. "Pesticides, environment, and food safety". Food and Energy Security 6(2). June 2017.
+[^1]: Agrios, G. [*Plant Pathology*](https://www.elsevier.com/books/plant-pathology/agrios/978-0-08-047378-9). Fifth Edition. Academic Press. 952 pages. 2005.
 
-[^3]: Douglas, M., Sponsler, D., Lonsdorf, E., Grozinger, C. "Rising insecticide potency outweighs falling application rate to make US farmland increasingly hazardous to insects". Scientific Reports 10, Article number: 797. January 2020.
+[^2]: Carvahlo, F. ["Pesticides, environment, and food safety"](https://onlinelibrary.wiley.com/doi/full/10.1002/fes3.108). Food and Energy Security 6(2). June 2017.
 
-[^4]: Fernandez-Cornejo, J., Nehring, R., Osteen, C., Wechsler, S., Martin, A., Vialou, A. "Pesticide Use in U.S. Agriculture: 21 Selected Crops, 1960-2008". United States Department of Agriculture, Economic Research Service, Economic Information Bulletin Number 124. May 2014.
+[^3]: Douglas, M., Sponsler, D., Lonsdorf, E., Grozinger, C. ["Rising insecticide potency outweighs falling application rate to make US farmland increasingly hazardous to insects"](https://www.nature.com/articles/s41598-019-57225-w). Scientific Reports 10, Article number: 797. January 2020.
 
-[^5]: Food and Agriculture Organization of the United Nations. "FAOSTAT".
+[^4]: Fernandez-Cornejo, J., Nehring, R., Osteen, C., Wechsler, S., Martin, A., Vialou, A. ["Pesticide Use in U.S. Agriculture: 21 Selected Crops, 1960-2008"](https://www.ers.usda.gov/publications/pub-details/?pubid=43855). United States Department of Agriculture, Economic Research Service, Economic Information Bulletin Number 124. May 2014.
+
+[^5]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](http://www.fao.org/faostat/en/#data).
 
 [^6]: Gianessi, L. P. "The value of insecticides in U.S. crop production". Croplife Foundation, Crop Protection Research Institute (CPRI). March 2009.
 
-[^7]: Gianessi, L. P., Reigner, N. "The value of fungicides in U.S. crop production". Croplife Foundation, Crop Protection Research Institute (CPRI). September 2005.
+[^7]: Gianessi, L. P., Reigner, N. ["The value of fungicides in U.S. crop production"](https://croplifefoundation.files.wordpress.com/2012/07/completed-fungicide-report.pdf). Croplife Foundation, Crop Protection Research Institute (CPRI). September 2005.
 
-[^8]: Gianessi, L. P., Reigner, N. "The value of herbicides in U.S. crop production". 2005 update. Croplife Foundation, Crop Protection Research Institute (CPRI). June 2006.
+[^8]: Gianessi, L. P., Reigner, N. ["The value of herbicides in U.S. crop production"](https://www.jstor.org/stable/4495894?seq=1). 2005 update. Croplife Foundation, Crop Protection Research Institute (CPRI). June 2006.
 
-[^9]: Leach, A. W., Mumford, J. D. "Pesticide Environmental Accounting: a method for assessing the external costs of individual pesticide applications". Environmental Pollution 151(1), pp. 139-147. January 2008.
+[^9]: Leach, A. W., Mumford, J. D. ["Pesticide Environmental Accounting: a method for assessing the external costs of individual pesticide applications"](https://pubmed.ncbi.nlm.nih.gov/17604888/). Environmental Pollution 151(1), pp. 139-147. January 2008.
 
-[^10]: Pimentel, D. "Environmental and Economic Costs of the Application of Pesticides Primarily in the United States". Environment, Development, and Sustainability 7, pp. 229–252. 2005.
+[^10]: Pimentel, D. ["Environmental and Economic Costs of the Application of Pesticides Primarily in the United States"](https://link.springer.com/article/10.1007/s10668-005-7314-2). Environment, Development, and Sustainability 7, pp. 229–252. 2005.
 
-[^11]: Popp, J., Pető, J., Nagy, J. "Pesticide productivity and food security. A review". Agronomy for Sustainable Development 33, pp. 243-255. 2013.
+[^11]: Popp, J., Pető, J., Nagy, J. ["Pesticide productivity and food security. A review"](https://link.springer.com/article/10.1007/s13593-012-0105-x). Agronomy for Sustainable Development 33, pp. 243-255. 2013.
 
-[^12]: Pretty, J., Bharucha, Z. "Integrated Pest Management for Sustainable Intensification of Agriculture in Asia and Africa". Insects 6(1), pp. 152-182. March 2015.
+[^12]: Pretty, J., Bharucha, Z. ["Integrated Pest Management for Sustainable Intensification of Agriculture in Asia and Africa"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4553536/). Insects 6(1), pp. 152-182. March 2015.
 
-[^13]: Roser, M. "Pesticides". Our World in Data. 2019.
+[^13]: Roser, M. ["Pesticides"](https://ourworldindata.org/pesticides). Our World in Data. 2019.
 
-[^14]: Sanchez-Bayo, F., Goka, K. "Impacts of Pesticides on Honey Bees". Beekeeping and Bee Conservation-Advances in Research 4, pp. 77-97. May 2016.
+[^14]: Sanchez-Bayo, F., Goka, K. ["Impacts of Pesticides on Honey Bees"](https://www.intechopen.com/books/beekeeping-and-bee-conservation-advances-in-research/impacts-of-pesticides-on-honey-bees). Beekeeping and Bee Conservation-Advances in Research 4, pp. 77-97. May 2016.
 
-[^15]: Zhang, W. "Global pesticide use: Profile, trend, cost / benefit and more". Proceedings of the International Academy of Ecology and Environmental Sciences 8(1), pp. 1-27. March 2018.
+[^15]: Zhang, W. ["Global pesticide use: Profile, trend, cost / benefit and more"](http://www.iaees.org/publications/journals/piaees/articles/2018-8(1)/global-pesticide-use-Profile-trend-cost-benefit.pdf). Proceedings of the International Academy of Ecology and Environmental Sciences 8(1), pp. 1-27. March 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
