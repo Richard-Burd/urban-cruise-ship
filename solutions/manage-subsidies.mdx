@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Mismanaged Subsidies";
+export const solution = "Manage Subsidies";
+
+We propose legislation to remove subsidies and give new appropriately priced subsidies to low energy cost and low GHG emissions crops and products.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
