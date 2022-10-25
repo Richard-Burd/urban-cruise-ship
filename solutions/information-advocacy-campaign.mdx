@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Feeding Future Population";
+export const solution = "Information Advocacy Campaign";
+
+As we have established in various areas of this website, a plant-based diet is superior in terms of using less resources to produce the same amount of calories and nutrients from animal sources. We propose to fund an informational campaign to advocate plant-based diets.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

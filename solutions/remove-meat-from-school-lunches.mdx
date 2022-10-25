@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Health Effects of Mean";
+export const solution = "Remove Meat from School Lunches";
+
+Due to the negative effects on health and the environment, governmental spending on meat should be removed from school lunches and other programs.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
