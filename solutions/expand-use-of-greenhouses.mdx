@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Land Use in Agriculture";
+export const solution = "Expand Use of Greenhouses";
+
+Expanded use of greenhouses for growing will reduce most environmental impacts. As greenhouses require more energy than conventional farming, it is necessary to source that energy from clean sources.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

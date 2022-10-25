@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Impacts of Agriculture";
+export const solution = "Research and Development in Precision Agriculture";
+
+The U. S. Department of Agriculture should develop better techniques for precision agriculuture and disseminate them through education and outreach.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

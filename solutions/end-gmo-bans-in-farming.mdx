@@ -1,0 +1,18 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Environmental Impacts of Agriculture";
+export const solution = "End GMO Bands in Farming";
+
+Several countries, including 19 of the 27 European Union Countries [^"6"], [^"7"], maintain severe restrictions or outright ban on the use of genetic engineering in farming. Such blanket bans are unjustified, given the current state of understanding of the health risks and environmental impacts of GMOs, and they should be repealed.
+
+[^"6"]: European Green Capital. "Several European countries move to rule out GMOs". European Commission. Accessed September 30, 2022.
+
+[^"7"]: Genetic Literacy Project. "Where are GMO crops and animals approved and banned?". Accessed September 30, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

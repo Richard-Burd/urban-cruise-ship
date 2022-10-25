@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Impacts of Farming";
+export const solution = "Promote No-Till Farming";
+
+We propose that the U. S. Department of Agriculture further develop techniques of no-till farming and disseminate them through education and outreach.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

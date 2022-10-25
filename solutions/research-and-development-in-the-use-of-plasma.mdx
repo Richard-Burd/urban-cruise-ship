@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Impacts of Agriculture";
+export const solution = "Research and Development in the Use of Plasma";
+
+We propose that the U. S. Department of Agriculture conduct research and development on the use of plasma in farming.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
