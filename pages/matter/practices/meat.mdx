@@ -1,6 +1,129 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "practices";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Meat and Animal Products
 
 In this section we consider several aspects of meat consumption. See also our analysis of seafood.
 
 ## Consumption Trends
 Meat consumption, as a share of total diet, has been increasing worldwide and varies considerably by country and region.
+
+<ArticleImage image={"meat_share.svg"} width={950} height={400} />
+#### Source: FAOSTAT [^11].
+
+Historically, increased wealth has been associated with a "nutrition transition", or a move to diets heavier in meat and dairy [^7]. The evidence is that humans have an innate preference for energy-dense foods, particularly those heavy in fats and sugar [^8].
+
+<ArticleImage image={"nutrient_density.svg"} width={950} height={400} />
+#### Figures are derived from the Food Balances data from FAOSTAT [^11].
+
+## Environmental and Welfare Impacts
+Animal products, especially beef, tend to have much greater land use, greenhouse gas, and water impacts than plant-based products.
+
+The feed conversion efficiency of an animal (or substitute) is the ratio of input feed to edible output product, measured by mass. Feed conversion efficiency is highly correlated with lifecycle land use and greenhouse gases [^2].
+
+<ArticleImage image={"fcr.svg"} width={950} height={400} />
+#### Data sources: Alexander et al. (2016) [^2] for poultry, pork, beef, lamb and mutton, eggs, and milk; Alexander et al. (2017) [^1] for mealworm, crickets, tilapia, Chinese carp, cultured meat, and imitation meat; Froehlich et al. [^12] for crustaceans. Values vary depending on the choice of feed, method of raising animals, and other factors.
+
+Following is an estimate of the number of animals that are slaughtered, or that are required to produce over their lifetimes, to provide 5% of a human's lifetime nutritional needs.
+
+<ArticleImage image={"animal_count.svg"} width={950} height={400} />
+#### Sources: Compassion in World Farming [^5], FAO ([^9], [^10], [^11]).
+
+In the United States, the trend has been toward more efficient beef production, though not at a rate that is sufficient to fundamentally change beef's high impacts relative to other foods.
+
+<ArticleImage image={"beef_improvement.svg"} width={950} height={400} />
+#### Source: Capper [^4].
+
+On metrics such as yield per animal [^11], meat production tends to perform better in wealthier countries than in poorer countries.
+
+## Animal Feed
+Livestock feed is derived as follows
+
+<ArticleImage image={"feed_sources.svg"} width={950} height={400} />
+#### Source: Xu et al. [^22].
+
+About 5% of feed by mass, 6% by calories, and 8% by protein is converted into meat that is sold [^22].
+
+Following is a comparison of estimated impacts of grass-fed beef, relative to feedlot beef.
+
+<ArticleImage image={"grass_fed.svg"} width={950} height={400} />
+#### Sources: Clapper [^4], Lupo et al. [^15], Tichenor et al. [^19].
+
+Grass-fed cattle may play a role in sequestering carbon in the soil, though the magnitude of this effect is of considerable controversy. Even with the sequestration effect, the lifecycle emissions of grass-fed beef is likely to be only marginally lower than those of feedlot beef [^15].
+
+As an additive to animal feed, seaweed has the potential to reduce enteric fermentation by 50-95% [^14][^18].
+
+Insects [^21] and algae [^17] are of interest as a partial replacement for fishmeal in feed for cattle, poultry, and aquaculture.
+
+## Potential for Dietary Shift
+Price is not necessarily a barrier in shifting to established meat alternatives.
+
+<ArticleImage image={"protein_price.svg"} width={950} height={400} />
+#### Sources Bashi et al. [^3], Diet & Fitness Today [^6], FAO [^9], IndexMundi [^13].
+
+It is unclear if emerging meat alternatives, such as cultured meat, will be better able to gain consumer acceptance than established alternatives. Such acceptance depends on politics and culture, in addition to cost, taste, and nutrition [^20]. Furthermore, in wealthier countries, protein and fat intake already exceed healthy levels [^20].
+
+It has been found that a 10% reduction in the cost of plant-based meat should reduce U. S. cattle production by 0.15%, suggesting that a market-driven shift toward plant-based meat will not be sufficient to displace meat significantly [^16].
+
+## For Further Reading
+*National Geographic* goes into greater detail on the outlook for aquaculture.
+
+*Modern Farmer* explains how animal products generally have greater environmental impacts than plant products and circumstances under which the reverse can be true.
+
+[^1]: Alexander, P., Brown, C., Arneth, A., Dias, C., Finnigan, J., Moran, D., Rounsevell, M. ["Could consumption of insects, cultured meat or imitation meat reduce global agricultural land use?"](https://www.sciencedirect.com/science/article/pii/S2211912417300056?via%3Dihub). Global Food Security 15, pp. 22-32. December 2017.
+
+[^2]: Alexander, P., Brown, C., Arneth, A., Finnigan, J., Rounsevell, M. ["Human appropriation of land for food: The role of diet"](https://www.sciencedirect.com/science/article/abs/pii/S0959378016302370). Global Environmental Change 41, pp. 88-98. November 2016.
+
+[^3]: Bashi, Z., McCullough, R., Ong, L., Ramirez, M. ["Alternative proteins: The race for market share is on"](https://www.mckinsey.com/industries/agriculture/our-insights/alternative-proteins-the-race-for-market-share-is-on). McKinsey & Company. August 2019.
+
+[^4]: Capper, J. ["Is the Grass Always Greener? Comparing the Environmental Impact of Conventional, Natural and Grass-Fed Beef Production Systems"](http://www.mdpi.com/2076-2615/2/2/127). Animals 2, pp. 127-143.
+
+[^5]: Compassion in World Farming. ["The life of: dairy cows"](https://www.ciwf.org.uk/media/5235185/the-life-of-dairy-cows.pdf). September 2012.
+
+[^6]: Diet & Fitness Today. ["Protein in salmon, per 100g"](http://www.dietandfitnesstoday.com/protein-in-salmon.php). Accessed January 27, 2020.
+
+[^7]: Drewnowski, A., Popkin, B. ["The nutrition transition: new trends in the global diet"](https://www.ncbi.nlm.nih.gov/pubmed/9155216). Nutrition Reviews 55(2), pp. 31-43. February 1997.
+
+[^8]: Drewnowski, A., Rock, C. ["The influence of genetic taste markers on food acceptance"](https://www.ncbi.nlm.nih.gov/pubmed/7661111). The American Journal of Clinical Nutrition 62(3), pp. 506-511. September 1995.
+
+[^9]: Food and Agriculture Organization. ["Nutritive Factors"](http://www.fao.org/economic/the-statistics-division-ess/publications-studies/publications/nutritive-factors/en/). Accessed January 7, 2020.
+
+[^10]: Food and Agriculture Organization of the United Nations. [*Egg Marketing - A Guide for the Production and Sale of Eggs*](http://www.fao.org/3/y4628e/y4628e03.htm). ISSN 1010-1365, FAO Agricultural Services Bulletin 150, Chapter 1. 2003.
+
+[^11]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](http://www.fao.org/faostat/en/#data).
+
+[^12]: Froehlich, H., Runge, C., Gentry, R., Gaines, S., Halpern, B. ["Comparative terrestrial feed and land use of an aquaculture-dominant world"](https://www.pnas.org/content/115/20/5295). Proceedings of the National Academy of Sciences of the United States of America 115(20), pp. 5295-5300. May 2018.
+
+[^13]: IndexMundi. ["IndexMundi"](https://www.indexmundi.com/). Accessed January 27, 2020.
+
+[^14]: Kinley, R., de Nys, R., Vucko, M., Machado, L., Tomkins, N. ["The red macroalgae Asparagopsis taxiformis is a potent natural antimethanogenic that reduces methane production during in vitro fermentation with rumen fluid"](https://researchonline.jcu.edu.au/43225/). Animal Production Science 56(3), pp. 282-289. March 2016.
+
+[^15]: Lupo, C., Clay, D., Benning, J., Stone, J. ["Life-cycle assessment of the beef cattle production system for the northern great plains, USA"](https://www.ncbi.nlm.nih.gov/pubmed/24216416). Journal of Environmental Quality 42(5), pp. 1386-94. September 2013.
+
+[^16]: Lusk, J., Blaustein-Rejto, D., Shah, S., Tonsor, G. T. ["Impact of Plant-Based Meat Alternatives on Cattle Inventories and Greenhouse Gas Emissions"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3961790). Available at SSRN. November 2021.
+
+[^17]: Madeira, M., Cardoso, C., Lopes, P., Coelho, D., Afonso, C., Bandarra, N., Prates, J. ["Microalgae as feed ingredients for livestock production and meat quality: A review"](https://www.sciencedirect.com/science/article/abs/pii/S1871141317302858). Livestock Science 205, pp. 111-121. November 2017.
+
+[^18]: Roque, B. et al. ["Effect of the macroalgae Asparagopsis taxiformis on methane production and rumen microbiome assemblage"](https://animalmicrobiome.biomedcentral.com/articles/10.1186/s42523-019-0004-4). Animal Microbiome 1(3). February 2019.
+
+[^19]: Tichenor, N., Peters, C., Norris, G., Thoma, G., Griffin, T. ["Life cycle environmental consequences of grass-fed and dairy beef production systems in the Northeastern United States"](https://www.sciencedirect.com/science/article/pii/S0959652616320005). Journal of Cleaner Production 142(4), pp. 1619-1628. January 2017.
+
+[^20]: van der Weele, C., Feindt, P., van der Goot, A., van Mierlo, B., van Boekel, M. ["Meat alternatives: an integrative comparison"](https://www.sciencedirect.com/science/article/pii/S0924224418308409). Trends in Food Science & Technology 88, pp. 505-512. June 2019.
+
+[^21]: van Huis, A., Oonincx, D. ["The environmental sustainability of insects as food and feed. A review"](https://link.springer.com/article/10.1007/s13593-017-0452-8#Sec10). Agronomy for Sustainable Development 37:43. October 2017.
+
+[^22]: Xu, X., Sharma, P., Shu, S., Lin, T., Ciais, P., Tubiello, F. N., Smith, P., Campbell, N., Jain, A. K. ["Global greenhouse gas emissions from animal-based foods are twice those of plant-based foods"](https://www.nature.com/articles/s43016-021-00358-x). Nature Food 2, pp. 724-732. September 2021.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

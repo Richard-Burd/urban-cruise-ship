@@ -1,6 +1,106 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "practices";
+
+import ArticleImage from "/components/ArticleImage.js";
+import CulturedMeatRNDSolution from "/solutions/cultured-meat-rnd.mdx"
+
 # Synthetic Farming
 
 ## Single-cell organisms
 Cellular agriculture refers to the cultivation of single-celled organisms for food. In some form, cellular agriculture goes back centuries in the cultivation of yeast and algae. Expanded use of new techniques could radically transform food production.
 
 Today, single-cell organisms are typically grown from agricultural residue, thus inheriting the environmental impacts of conventional farming. Even so, expanded use of such organisms could reduce impacts.
+
+<ArticleImage image={"scp_feed.svg"} width={950} height={400} />
+#### Comparison of soy-based salmon feed, which is commonly used today, with yeast- and bacteria-based alternatives. Source: Couture et al. [^6].
+
+If electrolytically produced inputs, such as hydrogen, methanol, and ammonia, are used, most land use can be saved, but at the cost of very high energy input.
+
+<ArticleImage image={"power_to_food.svg"} width={950} height={400} />
+#### The results of two power-to-food studies: a hydrogen-based, Chlamydomonas reinhardtii route compared to conventional wheat by Bogdahn [^1], and a methanol-based, Methylophilus methylotrophus route compared to soy by Linder [^15]. Impacts of wheat and soy are given by Clark and Tilman [^5]. Bogdahn reports the Chlamydomonas reinhardtii route's estimated energy need. Linder reports 1 gram of methanol is needed to produce 0.52 grams of dry mass from Methylophilus methylotrophus; the energy input is based on the energy density and electricity-to-methanol conversion efficiency given by Dana et al. [^7]. Figures do not include energy embodied in equipment or other potentially needed inputs, such as ammonia and trace nutrients. Greenhouse gas estimates for the bacteria routes are those of the energy inputs, with carbon intensity reported by the IPCC [^4]. Land use figures for the bacteria routes are those of the energy inputs as given by van Zalk and Behrens [^20], plus an additional 0.0018 m2/kg for the facilities themselves, as given by Linder but applied to both bacteria routes.
+
+At 25 kWh per kg crop, replacing all cereal and soy crops [^9] in the world would require about 83 petawatt-hours of electricity each year, or triple current world production [^3]. At 5¢/kWh, electricity costs alone are $1.25 per kilogram of food, well in excess of the 30-40¢/kg price recently observed for soybeans [^16].
+
+## Algaculture
+Algaculture is the cultivation of algae for food, fuel, or other purposes. Today algaculture is used primarily for high value applications, such as nutritional supplements and food additives [^2]. There is particular interest in algae as animal feed [^22].
+
+Algaculture typically has a much higher yield that conventional farming.
+
+<ArticleImage image={"algaculture_yield.svg"} width={950} height={400} />
+#### Yield of algae cultivation, in terms of protein per hectare per year, compared to common staple crops. Algae yields are reported by Walsh et al. [^22], with protein density of algae given by Lavens and Sorgeloos [^14]. As Walsh et al. estimate yields under idealized conditions, we compare algae yields to highest yield values reported by Clark and Tilman [^5] for wheat, maize, soybeans, and rice.
+
+The highest yielding algaculture systems require a carbon dioxide source in greater concentration than is available in the atmosphere [^22], which can be achieved by direct air capture or colocation with an emissions source.
+
+## Cultured Meat
+Cultured meat, also called in vitro meat, synthetic meat, or lab-grown meat, is grown in a reactor from animal muscle cells. Aside from the cells that are used to begin the growth process, cultured meat is never part of a living animal.
+
+As with other forms of intensive food production, cultured meat is likely to save land at the cost of greater energy input. The following are estimated impacts of common meats, cultured meat, and other meat alternatives.
+
+<ArticleImage image={"alt_meat.svg"} width={950} height={400} />
+#### Impacts for beef, poultry, and pork are the average of life cycle assessments as reported by Clark and Tilman [^5]. Estimates for cultured meat are given by Tuomisto et al. [^19], Mattick et al. [^17], and Smetana et al. [^18]. Smetana et al. also report estimated impacts for other meat alternatives.
+
+Cultured meat is still not a commercial product, and consumer acceptance is uncertain [^10]. Additionally, the reliance on fetal bovine serum and other animal products for cell culturing may be problematic for those who avoid meat for animal welfare concerns, though alternatives to animal products for growth media are active areas of research [^13].
+
+Cultured meat is still expected to be more expensive than conventional meat, even with large-scale production. To make cultured meat cost-competitive with conventional meat, several technological breakthroughs are still needed, in addition to the learning-by-doing gains that come with scaled production [^12].
+
+<ArticleImage image={"alt_meat_cost.svg"} width={950} height={400} />
+#### "Large-scale production" refers to expected cost with 100 million tons annually, greater that world beef production today, with learning-by-doing cost gains taken into account. Estimates of the cost of cultured meat from Humbird [^12], possible cost with research from Sinke et al. [^21], and current beef prices, as of January 2022, taken from the USDA [^8]. Notes that Hughes [^11] believes the Sinke et al. estimates are too optimistic and, even after research, the cost of cultured meat will be much higher.
+
+<CulturedMeatRNDSolution />
+
+[^1]: Bogdahn, I. "Agriculture-independent, sustainable, fail-safe and efficient food production by autotrophic single-cell protein". PeerJ Preprints 3:e1279v3. September 2015.
+
+[^2]: Borowitzka. "High-value products from microalgae—their development and commercialisation". Journal of Applied Phycology 25(3). June 2013.
+
+[^3]: BP. "Statistical Review of World Energy 2018". 2018.
+
+[^4]: Bruckner T., I.A. Bashmakov, Y. Mulugetta, H. Chum, A. de la Vega Navarro, J. Edmonds, A. Faaij, B. Fungtammasan, A. Garg, E. Hertwich, D. Honnery, D. Infield, M. Kainuma, S. Khennas, S. Kim, H.B. Nimir, K. Riahi, N. Strachan, R. Wiser, X. Zhang. 2014: Energy Systems. In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^5]: Clark, M., Tilman, D. ["Comparative analysis of environmental impacts of agricultural production systems, agricultural input efficiency, and food choice"](https://iopscience.iop.org/article/10.1088/1748-9326/aa6cd5). Environmental Research Letters 12(6). June 2017.
+
+[^6]: Couture, J., Geyer, R., Hansen, J., Kuczenski, B., Øverland, M., Palazzo, J., Sahlmann, C., Lenihan, H. ["Environmental Benefits of Novel Nonhuman Food Inputs to Salmon Feeds"](https://pubs.acs.org/doi/abs/10.1021/acs.est.8b03832). Environmental Science & Technology 53(4), pp. 1967-1975. January 2019.
+
+[^7]: Dana, A., Elishav, O., Bardow, A., Shter, G., Grader, G. ["Nitrogen‐Based Fuels: A Power‐to‐Fuel‐to‐Power Analysis"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5089635/). Angewandte Chemie (International Ed. in English) 55(31), pp. 8798–8805. July 2016.
+
+[^8]: Economic Research Service. ["Meat Price Spreads"](https://www.ers.usda.gov/data-products/meat-price-spreads/). U. S. Department of Agriculture. Accesssed January 21, 2022.
+
+[^9]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](http://www.fao.org/faostat/en/#data).
+
+[^10]: Hocquette, J. ["Is *in vitro* meat the solution for the future?"](http://www.sciencedirect.com/science/article/pii/S0309174016301358). Meat Science. April 2016.
+
+[^11]: Hughes, H. P. A. ["Review of Techno-Economic Assessment of Cultivated Meat"](https://www.scribd.com/document/526220188/Cultivated-Meat-review-of-the-cost-of-manufacturing). For: Australian Sustainable Animal Protein Production. Accessed January 22, 2022.
+
+[^12]: Humbird, D. ["Scale-up economics for cultured meat"](https://onlinelibrary.wiley.com/doi/10.1002/bit.27848). Biotechnology and Bioengineering 118(8), pp. 3239-3250. June 2021.
+
+[^13]: Kolkmann, A., Post, M., Rutjens, M., van Essen, A., Moutsatsou, P. ["Serum-free media for the growth of primary bovine myoblasts"](https://link.springer.com/article/10.1007/s10616-019-00361-y). Cytotechnology 72(1), pp. 111-120. February 2020.
+
+[^14]: Lavens, P., Sorgeloos, P. ["Manual on the Production and Use of Live Food for Aquaculture"](http://www.fao.org/3/W3732E/w3732e00.htm#Contents). Food and Agriculture Organization of the United Nations, Section 2.4. 1996.
+
+[^15]: Linder, T. ["Edible Microorganisms - An Overlooked Technology Option to Counteract Agricultural Expansion"](https://www.frontiersin.org/articles/10.3389/fsufs.2019.00032/full). Frontiers in Sustainable Food Systems. May 2019.
+
+[^16]: Macrotrends LLC. ["Soybean Prices - 45 Year Historical Chart"](https://www.macrotrends.net/2531/soybean-prices-historical-chart-data). Accessed February 10, 2020.
+
+[^17]: Mattick, C., Landis, A., Allenby, B., Genovese, N. ["Anticipatory Life Cycle Analysis of In Vitro Biomass Cultivation for Cultured Meat Production in the United States"](http://pubs.acs.org/doi/abs/10.1021/acs.est.5b01614). Environ. Sci. Technol 49(19), pp. 11941-11949. 2015.
+
+[^18]: Smetana, S., Mathys, A., Knoch, A., Heinz, V. ["Meat alternatives: life cycle assessment of most known meat substitutes"](https://link.springer.com/article/10.1007/s11367-015-0931-6). The International Journal of Life Cycle Assessment 20(9), pp. 1254-1267. September 2015.
+
+[^19]: Tuomisto, H., Ellis, M., Haastrup, P. ["Environmental impacts of cultured meat: alternative production scenarios"](https://core.ac.uk/download/pdf/38629617.pdf). Proceedings of the 9th International Conference on Life Cycle Assessment in the Agri-Food Sector. October 2014.
+
+[^20]: van Zalk, J., Behrens, P. ["The spatial extent of renewable and non-renewable power generation: A review and meta-analysis of power densities and their application in the U.S."](https://www.sciencedirect.com/science/article/pii/S0301421518305512). Energy Policy 123, pp. 83-91. December 2018.
+
+[^21]: Vergeer, R., Sinke, P., Odegard, I. ["TEA of cultivated meat. Future projections for different scenarios"](https://cedelft.eu/publications/tea-of-cultivated-meat/). Delft, CE Delft, prepared for The Good Food Institute. November 2021.
+
+[^22]: Walsh, B. et al. ["New feed sources key to ambitious climate targets"](https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-015-0040-7). Carbon Balance and Management. December 2015.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
+

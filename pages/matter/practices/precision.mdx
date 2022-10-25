@@ -1,6 +1,52 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "practices";
+
+import ArticleImage from "/components/ArticleImage.js";
+import ResearchAndDevelopmentInPrecisionAgricultureSolution from "/solutions/research-and-development-in-precision-agriculture.mdx"
+import ResearchAndDevelopmentInTheUseOfPlasmaSolution from "/solutions/research-and-development-in-the-use-of-plasma.mdx"
+
 # Intensification
 
 Beyond biotechnology, several emerging technologies have the potential to allow more crop production with fewer impacts.
 
 ## Precision Agriculture
 Precision agriculture is the use of technologies such as GPS, soil monitoring, and data analytics to optimize planting schedules, application of fertilizer and water, and other farming operations. Data on the potential benefits of precision agriculture techniques is limited; following are ranges of results found in a recent meta-analysis.
+
+<ArticleImage image={"precision_ag.svg"} width={950} height={400} />
+#### Source: Balafoutis et al. [^2].
+
+<ResearchAndDevelopmentInPrecisionAgricultureSolution />
+
+## Plasma
+A nonthermal plasma is a type of plasma that is not in thermal equilibrium, in that the electrons are at a very high temperature and disassociated from atomic nuclei, but the ions are at a lower temperature. Nonthermal plasmas has a variety of industrial uses, and they are being actively developed for seed treatment and increased yields in agriculture [^1], [^3], [^5]. Possible uses are as follows.
+
+| Agricultural Phase | Uses of Nonthermal Plasma |
+| --- | --- |
+| Seed Treatment | Supply reactive oxygen and nitrogen species, kill bacteria and fungus |
+| Plant Treatment | Increase yields, nutritional enhancement, decontamination, reduce water need |
+| Food processing | Decontaminant, other uses |
+#### Source: Puač et al. [^4].
+
+<ResearchAndDevelopmentInTheUseOfPlasmaSolution />
+
+[^1]: Attri, P., Ishikawa, K., Okumura, T., Koga, K., Shiratani, M. ["Plasma Agriculture from Laboratory to Farm: A Review"](https://www.mdpi.com/2227-9717/8/8/1002). Processes 8(8), p. 1002. August 2020.
+
+[^2]: Balafoutis, A., Beck, B., Fountas, S., Vangeyta, J., Van der Wal, T., Soto, I., Gómez-Barbero, M., Barnes, A., Eory, V. ["Precision Agriculture Technologies Positively Contributing to GHG Emissions Mitigation, Farm Productivity and Economics"](https://www.mdpi.com/2071-1050/9/8/1339). Sustainability 9(8), 1339. July 2017.
+
+[^3]: Hashizume, H., Kitano, H., Mizuno, H., Abe, A., Yuasa, G., Tohno, S., Tanaka, H., Ishikawa, K., Matsumoto, S., Sakakibara, H., Nikawa, S., Maeshima, M., Mizuno, M., Hori, M. ["Improvement of yield and grain quality by periodic cold plasma treatment with rice plants in a paddy field"](https://onlinelibrary.wiley.com/doi/epdf/10.1002/ppap.202000181). Plasma Processes and Polymers 18(1): e2000181. January 2021.
+
+[^4]: Puač, N., Gherardi, M., Shiratani, M. ["Plasma agriculture: A rapidly emerging field"](https://onlinelibrary.wiley.com/doi/10.1002/ppap.201700174). Plasma Processes and Polymers 15(2): e1700174. February 2018.
+
+[^5]: Ranieri, P., Sponsel, N., Kizer, J., Rojas-Pierce, M., Hernández, R., Gatiboni, L., Grunden, A., Stapelmann, K. ["Plasma agriculture: Review from the perspective of the plant and its ecosystem"](https://onlinelibrary.wiley.com/doi/epdf/10.1002/ppap.202000162). Plasma Processes and Polymers 18(1): e2000162. January 2021.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

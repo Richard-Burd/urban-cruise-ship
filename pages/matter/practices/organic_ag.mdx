@@ -1,3 +1,117 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "practices";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Organic Agriculture
 
-Organic farming is a system that avoids synthetic fertilizers and pesticides, genetically modified organisms, growth hormones, and antibiotics, and encourages the use of local seeds, measures to improve soil fertility, pasture, and other tools to support natural animal behavior [12]. It may be sensible to adopt the best aspects of organic agriculture but to avoid dogmatic adherance [26].
+Organic farming is a system that avoids synthetic fertilizers and pesticides, genetically modified organisms, growth hormones, and antibiotics, and encourages the use of local seeds, measures to improve soil fertility, pasture, and other tools to support natural animal behavior [^12]. It may be sensible to adopt the best aspects of organic agriculture but to avoid dogmatic adherance [^26].
+
+## Economics
+As of 2015, organic farming comprised 51 million hectares of cropland, about 1% of the world total, and constituted $82 billion of sales [^12]. Organic products command a significant price premium, reflecting both consumer preference and higher production cost.
+
+<ArticleImage image={"organic_premium.svg"} width={950} height={400} />
+#### Premium for organic products in the United States, expressed a percentage premium over the conventional equivalent, as of 2010. Data is reported by Carlson and Jaenicke [^4]. The above figures are the average premium over all products in a given category, with categories given as in Carlson [^3].
+
+The organic price premium tends to fluctuate and has generally declined in the late 2010s [^2].
+
+## Potential
+While organic farming plays a role in the food system, it is not possible to grow enough food to feed the world population without the use of industrially-produced nitrogen fertilizers.
+
+<ArticleImage image={"n_carrying_capacity.svg"} width={950} height={400} />
+#### Source: Our World in Data [^19].
+
+## Yields
+Yields of organic agriculture, compared to conventional agriculture, vary but are typically lower, as shown by the following sample of studies.
+
+<ArticleImage image={"organic_yield.svg"} width={950} height={400} />
+#### Yields of organic agriculture relative to conventional agriculture. Studies cited: [^5], [^6], [^7], [^8], [^16], [^18], [^21], [^24], [^26].
+
+The Rodale Institute's demonstration project, after showing an initial decline for a few years, eventually provided the same yields as the parallel conventional farm, and outperformed it during drought years [^25].
+
+Although organic farming does not use synthetic fertilizers directly, it often uses manure as fertilizer. The nutrients in manure are generally provided from the synthetic fertilizers that were applied to animal feed [^13]. This effect may limit the share of world agriculture that can be produced organically. Crop residues could provide up to 30% of needed nitrogen [^20].
+
+## Energy
+By reducing synthetic fertilizers and pesticides, organic farming tends to save energy relative to conventional farming.
+
+<ArticleImage image={"organic_energy.svg"} width={950} height={400} />
+#### Energy requirements of organic agriculture relative to conventional agriculture. Studies cited: [^1], [^5], [^8], [^9], [^10], [^11], [^14], [^17], [^26], [^27], [^28]. Another recent meta-study confirms that organic farming is generally more energy efficient [^22].
+
+## Other Environmental Impacts
+On other environmental metrics, organic agriculture often performs worse or similar to conventional agriculture on a per-product basis. However, performance also depends highly on local conditions [^26].
+
+<ArticleImage image={"organic_impact.svg"} width={950} height={400} />
+#### Comparitive impact of organic farming, relative to conventional equivalents, on a per-product basis, across several metrics. Data sources: [^5], [^15], [^26].
+
+## Health and Social Impacts
+A review of medical literature did not find strong evidence that organic foods are more nutritious that non-organic foods, though it did find a 30% lower risk of pesticide residue exposure and a lower risk of exposure to antibiotic-resistant bacteria [^23].
+
+Perceived social benefits include the desire to support agrarian lifestyles and local food production.
+
+[^1]: ADAS Consulting Ltd. ["Energy use in organic farming systems"](http://randd.defra.gov.uk/Document.aspx?Document=OF0182_181_FRP.pdf). March 2000.
+
+[^2]: Associated Press. ["Organic Price Premiums Dip as Demand Grows, Choices Multiply"](https://www.agweb.com/article/organic-price-premiums-dip-as-demand-grows-choices-multiply). January 2019.
+
+[^3]: Carlson, A. ["Investigating Retail Price Premiums for Organic Foods"](https://www.usda.gov/media/blog/2016/06/14/investigating-retail-price-premiums-organic-foods). United States Department of Agriculture. February 2017.
+
+[^4]: Carlson, A., Jaenicke, E. ["Changes in Retail Organic Price Premiums from 2004 to 2010"](https://iopscience.iop.org/article/10.1088/1748-9326/aa6cd5). United States Department of Agricultural, Economic Research Service. May 2016.
+
+[^5]: Clark, M., Tilman, D. "Comparative analysis of environmental impacts of agricultural production systems, agricultural input efficiency, and food choice". Environmental Research Letters 12(6). June 2017.
+
+[^6]: Crowder, D., Reganold, J. ["Financial competitiveness of organic agriculture on a global scale"](https://www.pnas.org/content/112/24/7611). Proceedings of the National Academy of Sciences of the United States of America 112(24), pp. 7611-7616. June 2015.
+
+[^7]: de Ponti, T., Rijk, B. van Ittersum, M. ["The crop yield gap between organic and conventional agriculture"](http://www.sciencedirect.com/science/article/pii/S0308521X1100182X). Agricultural Systems 108, pp. 1-9. April 2012.
+
+[^8]: Ferro, N., Zanin, G., Borin, M. ["Crop yield and energy use in organic and conventional farming: A case study in north-east Italy"](https://www.sciencedirect.com/science/article/abs/pii/S1161030117300370). European Journal of Agronomy 86, pp. 37-47. May 2017.
+
+[^9]: Fess, T., Benedito, V. ["Organic versus Conventional Cropping Sustainability: A Comparative System Analysis"](https://www.mdpi.com/2071-1050/10/1/272/htm). Sustainability 10(1), 272. January 2018.
+
+[^10]: Fließbach, A., Mäder, P. ["Productivity, Soil Fertility and Biodiversity in Organic Agriculture"](https://orgprints.org/7682/). 2006 Joint Organic Conference. May 2006.
+
+[^11]: Lynch, D., MacRae, R., Martin, R. ["The Carbon and Global Warming Potential Impacts of Organic Farming: Does It Have a Significant Role in an Energy Constrained World?"](http://www.mdpi.com/2071-1050/3/2/322). Sustainability 3(2), pp. 322-362. 2011.
+
+[^12]: Meemken, E., Qaim, M. ["Organic Agriculture, Food Security, and the Environment"](https://www.annualreviews.org/doi/10.1146/annurev-resource-100517-023252). Annual Review of Resource Economics 10, pp. 39-63. October 2018.
+
+[^13]: Nowak, B., Nesme, T., David, C., Pellerin, S. ["To what extent does organic farming rely on nutrient inflows from conventional farming?"](https://iopscience.iop.org/article/10.1088/1748-9326/8/4/044045). Environmental Research Letters 8(4): 044045. December 2013.
+
+[^14]: Pimentel, D., Berardi, G., Fast, S. "Energy efficiency of farming systems: Organic and conventional agriculture". Agriculture, Ecosystems & Environment 9(4), pp. 359-372. July 1983.
+
+[^15]: Pimentel, D., Hepperly, P., Hanson, J., Douds, D., Seidel, R. ["Environmental, Energetic, and Economic Comparisons of Organic and Conventional Farming Systems"](https://academic.oup.com/bioscience/article/55/7/573/306755). BioScience 55(7), pp. 573-582. July 2005.
+
+[^16]: Ponisio, L., M'Gonigle, L., Mace, K., Palomino, J., de Valpine, P., Kremen, C. ["Diversification practices reduce organic to conventional yield gap"](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2014.1396). Proceedings of the Royal Society B 282. January 2015.
+
+[^17]: Reganold, J., Glover, J., Andrews, P., Hinman, H. ["Sustainability of three apple production systems"](https://www.nature.com/articles/35073574). Nature 410, pp. 926-930. April 2001.
+
+[^18]: Reganold, J., Wachter, J. ["Organic agriculture in the twenty-first century"](https://www.nature.com/articles/nplants2015221). Nature Plants 2, Article Number 15221. February 2016.
+
+[^19]: Ritchie, H. ["How many people does synthetic fertilizer feed?"](https://ourworldindata.org/how-many-people-does-synthetic-fertilizer-feed). Our World in Data. November 2017.
+
+[^20]: Seufert, V., Ramankutty, N. ["Many shades of gray-The context-dependent performance of organic agriculture"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5362009/). Science Advances 3(3), e1602638. 2017.
+
+[^21]: Seufert, V., Ramankutty, N., Foley, J. ["Comparing the yields of organic and conventional agriculture"](http://www.nature.com/nature/journal/v485/n7397/full/nature11069.html). Nature 485, pp. 229-232. May 2012.
+
+[^22]: Smith, L., Williams, A., Pearce, B. ["The energy efficiency of organic agriculture: A review"](https://www.researchgate.net/publication/271934468_The_energy_efficiency_of_organic_agriculture_A_review). Renewable Agriculture and Food Systems 30(03), pp. 1-22. May 2014.
+
+[^23]: Smith-Spangler, C et al. ["Are Organic Foods Safer or Healthier Than Conventional Alternatives?: A Systematic Review"](http://annals.org/article.aspx?articleid=1355685). Annals of Internal Medicine 157(5). September 2012.
+
+[^24]: Stanhill, G. ["The comparative productivity of organic agriculture"](https://www.sciencedirect.com/science/article/abs/pii/016788099090179H). Agriculture, Ecosystems & Environment 30(1-2), pp. 1-26. January 1990.
+
+[^25]: The Rodale Institute. ["The Farming Systems Trial"](http://rodaleinstitute.org/our-work/farming-systems-trial/farming-systems-trial-30-year-report/). 2011.
+
+[^26]: Tuomisto, Hodge, I., Riordan, P., Macdonald, D. ["Does organic farming reduce environmental impacts? - A meta-analysis of European research"](http://www.sciencedirect.com/science/article/pii/S0301479712004264). Journal of Environmental Management 112, pp. 309-320. December 2012.
+
+[^27]: University of Manitoba. ["Glenlea Long-Term Crop Rotation: Historical Research Results"](http://umanitoba.ca/outreach/naturalagriculture/articles/gltr_results_hist.html). Accessed January 19, 2020.
+
+[^28]: Ziesemer, J. ["Energy use in organic food systems"](http://www.fao.org/docs/eims/upload/233069/energy-use-oa.pdf). Natural Resources Management and Environment Department, Food and Agriculture Organization of the United Nations. August 2007.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

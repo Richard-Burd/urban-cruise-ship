@@ -1,6 +1,112 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "practices";
+
+import ArticleImage from "/components/ArticleImage.js";
+import ExpandUseOfGreenhousesSolution from "/solutions/expand-use-of-greenhouses.mdx"
+
 # Indoor Farming
 
 Indoor farming techniques--greenhouses, hydroponics, and vertical farming--tend to greatly decrease land and water use, relative to conventional farming, while also greatly increasing energy use.
 
 ## Greenhouses
-Greenhouses are an increasingly widely used tool for producing vegetables [10]. Greenhouses are estimated to have the following environmental impacts relative to outdoor farming, often spending more energy to save land and water.
+Greenhouses are an increasingly widely used tool for producing vegetables [^10]. Greenhouses are estimated to have the following environmental impacts relative to outdoor farming, often spending more energy to save land and water.
+
+<ArticleImage image={"greenhouse.svg"} width={950} height={400} />
+#### The above figures are the range of estimates sources as follows: land use [^6], [^22], energy [^4], [^6], [^16], [^19], greenhouse gases [^4], [^6], eutrophication [^4], [^6], acidification [^4], [^6].
+
+Following is an illustration of the energy required to produce all world tomatoes from greenhouses.
+
+<ArticleImage image={"greenhouse_scenario.svg"} width={950} height={400} />
+#### Energy requirements are the 25th and 75th percentiles figures for greenhouse tomato production as reported by Clark and Tilman [^6]. The wide range of estimates account for widely varying climates, types of greenhouses, and study methodologies. Overall tomato and food production is determined from FAOSTAT [^11]. Due to the wide variation in life cycle analysis results, precise figures are not available.
+
+Greenhouses can be used to grains, such as barley [^4], but the environmental case for doing so may be weaker than it is for vegetables.
+
+The Netherlands is the world leader in effective use of greenhouses. They have drastically cut water and pesticide usage, and the Netherlands, a country that is not naturally well-suited for agriculture, is the number two food exporter by monetary value.
+
+<ArticleImage image={"netherlands_tomato.jpg"} width={950} height={400} />
+#### A tomato greenhouse in The Netherlands. (Source: Wikipedia. CC BY-SA 3.0)
+
+<ExpandUseOfGreenhousesSolution />
+
+## Hydroponics
+Hydroponics--the practice of growing plants with a nutrient solution instead of soil--may also save land and water at the cost of greater energy consumption. The following impacts, relative to open field farming, have been estimated.
+
+<ArticleImage image={"hydroponics.svg"} width={950} height={400} />
+#### Numbers are highly uncertain due to limited data and wide variance in both hydroponic and open field practices. Sources: [^1], [^3], [^5], [^15], [^17], [^20].
+
+Over 80% of the energy consumption identified by Barbosa et al. [^3] is for heating and cooling, an area for which a clean source of low-temperature industrial heat would be valuable. Passive ventilation [^3] and efficient LED lighting [^21] would also save energy.
+
+Related growing techniques are aquaponics, which is a symbiotic combination of an aquaculture and hydroponic system, and aeroponics, which does not use a growing medium. Their water, fertilizer, and land use impacts have been estimated as follows.
+
+<ArticleImage image={"ponics_comp.svg"} width={950} height={400} />
+#### Source: AlShrouf [1].
+
+An aquaponics system can save fertilizer consumption by using excretion from the fish [^18]. An aquaponics system designed specifically for Martian astronauts has been estimated to require 10 square meters per person without stacking [^12].
+
+Labor intensity is a barrier to expansion of hydroponics [^8] and aquaponics [^14], which can be addressed through greater automation.
+
+## Vertical Farming
+Vertical farming is the concept of growing food in layers. This may refer to the food-producing skyscrapers described by Dickson Despommier [^9], or more commonly, any indoor growing that relies mostly on artificial lighting [^7]. Even more so than greenhouses, vertical farm conserves land and water at the cost of additional energy consumption.
+
+<ArticleImage image={"vertical_farm.svg"} width={950} height={400} />
+#### Source: Hallikainen [^13].
+
+Most of the energy cost of a vertical farm is for artificial lighting, and vertical farms also have higher labor costs per unit product than other forms of farming [^2]. Due to high energy and other costs, vertical farms for the foreseeable future will probably be confined to producing leafy greens, herbs, and berries, which together constitute 6% of global caloric intake [^23].
+
+[^1]: AlShrouf, A. ["Hydroponics, Aeroponic and Aquaponic as Compared with Conventional Farming"](https://asrjetsjournal.org/index.php/American_Scientific_Journal/article/view/2543). American Scientific Research Journal for Engineering, Technology, and Sciences 27(1). January 2017.
+
+[^2]: Banerjee, C., Adenaeuer, L. ["Up, Up and Away! The Economics of Vertical Farming"](http://www.macrothink.org/journal/index.php/jas/article/viewFile/4526/3952). Journal of Agricultural Studies 2(1). 2014.
+
+[^3]: Barbosa, G., Gadelha, F., Kublik, N., Proctor, A., Reichelm, L., Weissinger, E., Wohlleb, G., Halden, R. ["Comparison of Land, Water, and Energy Requirements of Lettuce Grown Using Hydroponic vs. Conventional Agricultural Methods"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4483736/). Int J Environ Res Public Health 12(6), pp. 6879-6891. June 2015.
+
+[^4]: Bartzas, G., Zaharaki, D., Komnitsas, K. ["Life cycle assessment of open field and greenhouse cultivation of lettuce and barley"](https://www.sciencedirect.com/science/article/pii/S2214317315000463). Information Processing in Agriculture 2(3-4), pp. 191-207. October-December 2015.
+
+[^5]: Biksa, E. ["Hydroponics Yields Versus Field Grown Harvest Weights"](http://www.grozine.com/2014/03/22/hydroponics-yields-versus-field-grown-harvest-weights/). Grozine. March 2014.
+
+[^6]: Clark, M., Tilman, D. ["Comparative analysis of environmental impacts of agricultural production systems, agricultural input efficiency, and food choice"](https://iopscience.iop.org/article/10.1088/1748-9326/aa6cd5). Environmental Research Letters 12(6). June 2017.
+
+[^7]: Crowley, A. "The Economic and Financial Feasibility of Food Innovation Centers". Thesis - Master in City Planning and Master in Science in Real Estate Development, Massachusetts Institute of Technology. June 2015.
+
+[^8]: Daly, W., Fink, J., Shamshak, G. ["Economic Assessment of Hydroponic Lettuce Production"](https://www.goucher.edu/Documents/Environmental_Studies/Summer%20Research/ECONOMIC%20ASSESSMENT%20OF%20HYDROPONIC%20LETTUCE%20PRODUCTION_Final.pdf). Groucher College.
+
+[^9]: Despommier, D. The Vertical Farm. Picador; Reprint edition. October 2011.
+
+[^10]: Farm Credit Canada. ["Update on the North American Greenhouse Vegetable Industry"](https://www.fcc-fac.ca/fcc/agKnowledge/publications/ag-sector-guides/pdfs/north-american-greenhouse-vegetable-industry.pdf).
+
+[^11]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](http://www.fao.org/faostat/en/#data).
+
+[^12]: Greenbaum, C. ["MEALS: Mars Experimental Aquaponics Long-Duration System"](http://www.marspapers.org/paper/Greenbaum_2021_2pres.pdf). The Mars Society. 2021.
+
+[^13]: Hallikainen, E. ["Life cycle assessment on vertical farming"](https://aaltodoc.aalto.fi/handle/123456789/36351). Aalto University, Masters Thesis. January 2019.
+
+[^14]: Heidemann, K., Bailey, D., Shultz, C. (ed.). ["Commercial Aquaponics Case Study #3: Economic Analysis of the University of the Virgin Islands Commercial Aquaponics System"](http://www.southernsare.org/Educational-Resources/SARE-Project-Products/Case-Studies/Economic-Analysis-of-Commercial-Aquaponic-Production-Systems). Funded by Southern Sustainable Agriculture Research & Education (SARE) through a Graduate Student Grant under the award number 3048110880. 2015.
+
+[^15]: Khandelwal, G. ["Growing Compact and Going Compact"](https://uwspace.uwaterloo.ca/handle/10012/15484). UWSpace, Masters Thesis. January 2020.
+
+[^16]: Kuswardhani, N., Soni, P., Shivakoti, G. ["Comparative energy input–output and financial analyses of greenhouse and open field vegetables production in West Java, Indonesia"](http://www.sciencedirect.com/science/article/pii/S0360544213001461). Energy 53(1), pp. 83-92. May 2013.
+
+[^17]: Martinez-Mate, M., Martin-Gorriz, B., Martínez-Alvarez, B., Soto-García, M., Maestre-Valero, J. ["Hydroponic system and desalinated seawater as an alternative farm-productive proposal in water scarcity areas: Energy and greenhouse gas emissions analysis of lettuce production in southeast Spain"](https://www.sciencedirect.com/science/article/pii/S0959652617325799). Journal of Cleaner Production 172, pp. 1298-1310. January 2018.
+
+[^18]: Monsees, H., Suhl, J., Paul, M., Kloas, W., Dannehl, D., Würtz, S. ["Lettuce (Lactuca sativa, variety Salanova) production in decoupled aquaponic systems: Same yield and similar quality as in conventional hydroponic systems but drastically reduced greenhouse gas emissions by saving inorganic fertilizer"](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218368). PLoS ONE 14(6): e0218368. June 2019.
+
+[^19]: Ozkan, B., Fert, C., Karadeniz, F. ["Energy and cost analysis for greenhouse and open-field grape production"](http://www.sciencedirect.com/science/article/pii/S0360544206002659). Energy 32(8), pp. 1500-1504. August 2007.
+
+[^20]: Romeo, D., Vea, E., Thomsen, M. ["Environmental Impacts of Urban Hydroponics in Europe: A Case Study in Lyon"](https://www.sciencedirect.com/science/article/pii/S221282711730820X). Procedia CIRP 69, pp. 540-545. 2018.
+
+[^21]: Singh, D., Basu, C., Meinhardt-Wollweberm, M., Roth, B. ["LEDs for energy efficient greenhouse lighting"](http://www.sciencedirect.com/science/article/pii/S1364032115003871). Renewable and Sustainable Energy Reviews 49. September 2015.
+
+[^22]: Smith, G. ["Issue 94: Field Vs Glasshouse Tomatoes"](http://www.hydroponics.com.au/issue-94-field-vs-glasshouse-tomatoes/). Practical Hydroponics & Greenhouses. May/June 2007.
+
+[^23]: Tuomisto, H. ["Vertical Farming and Cultured Meat: Immature Technologies for Urgent Problems"](https://www.sciencedirect.com/science/article/pii/S2590332219301381). One Earth 1(3), pp. 275-277. November 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
