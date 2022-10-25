@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Food Security";
+export const solution = "Strategic Food Reserve";
+
+The United States should build a strategic food reserve to protect itself and allied nations from the risk of food supply disruption.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

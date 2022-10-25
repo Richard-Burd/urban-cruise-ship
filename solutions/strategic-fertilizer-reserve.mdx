@@ -1,0 +1,18 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Food Security";
+export const solution = "Strategic Food Reserve";
+
+Related to a strategic food reserve, the United States should build a strategic fertilizer reserve to protect against volatility in fertilizer prices. Nitrogen fertilizer comprises at least 30% of the cost of some commodity crops in the United States, and as of early 2022, the prices of nitrogen fertilizers have more than doubled since 2020 [^"11"]. High natural gas prices and export controls of fertilizer, resulting from the Russia-Ukraine War, have contributed to this price run-up [^"7"].
+
+[^"7"]: ChemAnalyst. "Ammonia Price Trend and Forecast". Accessed May 3, 2022.
+
+[^"11"]: Economic Research Service. "Fertilizer prices spike in leading U.S. market in late 2021, just ahead of 2022 planting season". U. S. Department of Agriculture. February 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
