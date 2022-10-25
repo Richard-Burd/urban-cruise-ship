@@ -4,6 +4,8 @@ import hierarchy from "../hierarchy.json";
 export const site = "oceans";
 export const focusAreaUrl = "ocean_environment";
 
+import ArticleImage from "/components/ArticleImage.js";
+
 import MarinePreserveSolution from "/solutions/marine-preserves.mdx";
 
 # Biodiversity
@@ -11,6 +13,15 @@ import MarinePreserveSolution from "/solutions/marine-preserves.mdx";
 <br></br><br></br>
 
 <MarinePreserveSolution />
+
+## Biodiversity Status
+
+As on land, biodiversity in the oceans is threatened.
+
+<ArticleImage image={"endangered_fish.svg"} width={450} height={300} />
+#### Source: World Ocean Assessment [^{ 3 }].
+
+Biodiversity ultimately depends on primary producers, which in the ocean is mainly plankton. While there is not yet strong enough data to establish a trend on plankton populations, it is expected that unabated global warming will reduce the amount of ocean plankton in the 21st century, reducing the carrying capacity of all other life [^{ 3 }].
 
 ## Biodiversity and Carbon Content
 A restored marine ecosystem will sequester carbon, countering the effects of climate change. The possible amount sequesterd is not well understood [^{ 2 }]. The potential for seaweed growth has been estimated at 0.6 billion tons of carbon [^{ 1 }], or the equivalent of about 1.7 billion tons of CO2, about 4% of annual world emissions today.
@@ -20,5 +31,7 @@ Ecosystem restoration could be done by removing the negative pressures on marine
 [^{ 1 }]: Krause-Jensen, D., Duarte, C. M. ["Substantial role of macroalgae in marine carbon sequestration"](https://www.nature.com/articles/ngeo2790). Nature Geoscience 9(10), pp. 737-742. October 2016.
 
 [^{ 2 }]: National Academies of Sciences, Engineering, and Medicine. [*A Research Strategy for Ocean-based Carbon Dioxide Removal and Sequestration*](https://www.nap.edu/catalog/26278/a-research-strategy-for-ocean-based-carbon-dioxide-removal-and-sequestration). Washington, DC: The National Academies Press. 2021.
+
+[^{ 3 }]: United Nations ["The Second World Ocean Assessment"](https://www.un.org/regularprocess/woa2launch). 2021.
 
 export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>
