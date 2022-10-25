@@ -1,0 +1,15 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+export const problem = "Poor Diet";
+export const solution = "Removal of Unhealthy Foods From Government Programs";
+
+Certain types of food, such as red meat, contribute to obesity and other health problems. Such foods can be removed from government food programs, such as school lunches.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

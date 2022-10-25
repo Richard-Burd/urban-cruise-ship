@@ -1,0 +1,83 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "diet";
+
+import ArticleImage from "/components/ArticleImage.js";
+import RemovalOfUnhealthyFoodsFromGovernmentProgramsSolution from "/solutions/removal-of-unhealthy-foods-from-government-programs.mdx"
+
+# Dietary Needs
+Beyond calories, humans need a balance of nutrients, vitamins, and minerals to be healthy.
+
+## Nutritional Needs
+Humans need more than mere calorie count to survive. Following are estimates of needs by macronutrient, vitamin, and mineral.
+
+<ArticleImage image={"dietary_needs.svg"} width={820} height={500} />
+
+Estimated macronutrient, vitamin, and mineral needs for an adult male, based on a 2200 calorie overall diet. Source: [^5].
+
+## Diet and Health
+In general, Americans consume too much added sugar, sodium, and saturated fat, and not enough valuable minerals.
+
+<ArticleImage image={"dietary_needs2.svg"} width={820} height={500} />
+#### Source: [^5]
+
+Obesity, resulting primarily from eating too much food, is a growing problem.
+
+<ArticleImage image={"obesity.svg"} width={820} height={500} />
+#### Sources: CIA [^2] and World Health Organization [^11].
+
+Additionally, 39% of the world's adults are considered overweight [^7]. Obesity is linked with 4.7 million deaths globally per year [^7], one of the leading causes.
+
+Complicating efforts to address malnutrition are food allergies, which affect about 10% of American adults [^3]. About 90% of food allergic reactions can be attributed to the following: milk, eggs, peanuts, tree nuts, fish, shellfish, soy, and wheat [^4].
+
+<RemovalOfUnhealthyFoodsFromGovernmentProgramsSolution />
+
+## Micronutrient Deficiency
+Major nutrient deficiencies, their effects, and their pravalencies are as follows.
+
+<ArticleImage image={"dietary_needs.svg"} width={820} height={500} />
+#### Sources: Biban and Lichiardopol [^1], Our World in Data [^6], and Roth et al. [^8].
+
+About half of children around the world suffer from "hidden hunger", or some form of micronutrient deficiency.
+
+<ArticleImage image={"hidden_hunger.svg"} width={820} height={500} />
+#### Source: UNICEF [^9].
+
+Micronutrient defiency can be addressed, among other methods, through fortification: dietary supplements, food fortification (e.g. adding micronutrients to cereals and other foods), and biofortification (genetic engineering, such as adding Vitamin A to golden rice) [^6].
+
+**Salt Iodization**
+
+Because salt is commonly consumed and easy to fortify, iodization of salt is a preferred method to respon to iodine deficiency. The World Health Organization estimates that it costs 2 to 5 cents per person per year to iodize salt [^10].
+
+[^1]: Biban, B., Lichiardopol, C. "Iodine Deficiency, Still a Global Problem?". Current health sciences journal 43(2), p. 103-111. April-June 2017.
+
+[^2]: Central Intelligence Agency. "The World Factbook". Accessed December 28, 2020.
+
+[^3]: Food Allergy Research & Education. "Facts and Statistics". Accessed December 28, 2020.
+
+[^4]: Natioanl Center for Health Statistics. "Food Allergy Among U.S. Children: Trends in Prevalence and Hospitalizations". Centers for Disease Control and Prevention. October 2008.
+
+[^5]: Office of Disease Prevention and Health Promotion. "Dietary Guidelines 2015-2020". U. S. Department of Health and Human Services. Accessed December 28, 2020.
+
+[^6]: Ritchie, H., Roser, M. "Micronutrient Deficiency". Our World in Data. August 2017.
+
+[^7]: Ritchie, H., Roser, M. "Obesity". Our World in Data. Accessed December 28, 2020.
+
+[^8]: Roth, D., Abrams, S., Aloia, J., Bergeron, G., Bourassa, M., Brown, K., Calvo, M., Cashman, K., Combs, G., De-Regil, L., Jefferds, M., Jones, K., Kapner, H., Martineau, A., Neufeld, L., Schleicher, R., Thacher, T., Whiting, S. "Global prevalence and disease burden of vitamin D deficiency: a roadmap for action in low‐ and middle‐income countries". Annals of the New York Academy of Sciences. September 2018.
+
+[^9]: UNICEF. "The State of the World’s Children 2019. Children, Food and Nutrition: Growing well in a changing world". UNICEF, New York. 2019.
+
+[^10]: WHO. Guideline: fortification of food-grade salt with iodine for the prevention and control of iodine deficiency disorders. Geneva: World Health Organization. 2014.
+
+[^11]: World Health Organization. "Obesity and overweight". April 2020.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
