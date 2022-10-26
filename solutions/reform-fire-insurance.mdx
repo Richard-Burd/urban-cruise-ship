@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Wildfire Risk";
+export const solution = "Reform Fire Insurance";
+
+We propose ending subsidies of fire insurance for development in wildfire-prone areas, as well as ending mandates that private insurers offer fire policies in these areas.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

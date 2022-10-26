@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Wildfire Risk";
+export const solution = "Forest Thinning";
+
+The U.S. Forest Service should strategically remove dead underbrush from forests (forest thinning) to reduce the risk of wildfire.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
