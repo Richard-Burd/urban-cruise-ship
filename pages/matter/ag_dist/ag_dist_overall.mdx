@@ -1,15 +1,28 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "ag_dist";
+
+import ArticleImage from "/components/ArticleImage.js";
+import FoodTradeSolution from "/solutions/food-trade.mdx"
+
 # Food System Overview
 
 ## Impacts of the Food System
 The larger food system consists of food production, processing, distribution, retailing, and cooking. However, most greenhouse gas emissions associated with the broader food system are in production: crop growing, feed production, and land use change.
 
+<ArticleImage image={"world_food_ghg.svg"} width={950} height={400} />
 #### Emissions from cookstoves are estimated from Bailis et al. [^1] at 1.0 to 1.2 billion tons CO2e per year, and include only traditional biomass cooking fuel and not modern energy for cooking. The remaining figures are reported by Poore and Nemecek [^6].
 
 Most greenhouse gas emissions in farming and livestock are not directly associated with energy. In the United States, the larger food production uses energy as follows.
 
+<ArticleImage image={"us_food_system.svg"} width={950} height={400} />
 #### Sources: Canning et al. [^2], IEA [^5], CBECS [^7], RECS [^8].
 
 With transportation a relatively minor component of the food-energy nexus, a movement toward local foods has limited potential to save on energy consumption. In some cases, localized production can increase energy consumption by requiring that food be grown in a climate that is not optimal [^4]. An exception is that air-shipped foods typically have higher lifecycle emissions than other options [^3].
+
+<FoodTradeSolution />
 
 [^1]: Bailis, R., Drigo, R., Ghilardi, A., Masera, O. "The carbon footprint of traditional woodfuels". Nature Climate Change 5, pp. 266-272. January 2015.
 
@@ -26,3 +39,12 @@ With transportation a relatively minor component of the food-energy nexus, a mov
 [^7]: U. S. Energy Information Administration. "2012 Commercial Buildings Energy Consumption Survey". 2015.
 
 [^8]: U. S. Energy Information Administration. "2015 Residential Energy Consumption Survey". 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
