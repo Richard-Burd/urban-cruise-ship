@@ -1,0 +1,22 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Environmental Impacts of Mining";
+export const solution = "Mining Tax";
+
+We propose a fee on mining to internalize the environmental impacts outlined above.
+
+It is common for states or countries to impose royaltees on mining to account for mineral depletion. However, these taxes are distinct from Pigouvian taxes, which are designed to account for the environmental externalities of mining [^"3"]. Mining taxes should account for both depletion and environmental externalities.
+
+Modeling in Brazil has found that if a Pigouvian tax were applied to copper mining, total mining activity would fall [^"2"].
+
+[^"2"]: Mardones, C. ["Pigouvian taxes to internalize environmental damages from Chilean mining−A computable general equilibrium analysis"](https://www.sciencedirect.com/science/article/abs/pii/S0959652622019631). Journal of Cleaner Production 362: 132359. August 2022.
+
+[^"3"]: Muzondo, T. R. ["Mineral Taxation, Market Failure, and the Environment"](https://www.jstor.org/stable/3867380). Staff Papers (International Monetary Fund) 40(1), pp. 152-177. March 1993.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
