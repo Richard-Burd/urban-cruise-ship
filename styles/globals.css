@@ -1285,6 +1285,7 @@ video {
 h1 {
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 2rem;
   font-size: 3rem;
   line-height: 1;
   --tw-text-opacity: 1;
