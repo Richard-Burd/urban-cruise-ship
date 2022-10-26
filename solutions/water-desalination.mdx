@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Risk of Water Shortage";
+export const solution = "Water Desalination";
+
+Although most areas of the world have sufficient water for any conceivable purpose, some areas such as California, South Africa, and in the Middle East face the risk of shortage. Building desalination plants, though not generally an ideal solutio, forestalls the risk of shortage.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Disease Caused by Poor Water and Sanitation";
+export const solution = "Prioritize Clean Water";
+
+Development agencies should prioritize access to clean water.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

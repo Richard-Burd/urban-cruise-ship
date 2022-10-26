@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Public Costs of Water Provision";
+export const solution = "Water Pricing";
+
+We propose that water rights be priced in accordance with the cost of provision, especially in water-stressed regions such as California.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

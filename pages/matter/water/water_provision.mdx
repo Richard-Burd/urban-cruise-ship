@@ -1,0 +1,92 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "watter";
+
+import ArticleImage from "/components/ArticleImage.js";
+import WasteWaterRecyclingSolution from "/solutions/waste-water-recycling.mdx"
+import WaterDesalinationSolution from "/solutions/water-desalination.mdx"
+
+# Water Provision
+
+## Source of Water
+Worldwide, most water withdrawals are fresh water from surface or ground sources, with small amounts from treated, recycled, or desalinated water.
+
+<ArticleImage image={"---"} width={950} height={400} />
+#### Source: AQUASTAT [^3].
+
+## Cost of Water Provision
+Worldwide, water treatment and distribution requires 10.2 exajoules of primary energy, almost 2% of the world total consumption, and about 4% of world electricity [^8]. The energy intensity of water may vary widely depending on how it is treated and distributed.
+
+<ArticleImage image={"---"} width={950} height={400} />
+#### Sources: Gandiglio et al. [^4], Inbar et al. [^6], IRENA [^7], Pan et al. [^8], Reekie [^9], WaterReuse [^15].
+
+In expensive coastal water markets such as California, desalinated water can be competitive with conventional options and serve as a backstop against the risk of shortage. However, desalination makes little sense where freshwater sources are abundant.
+
+<ArticleImage image={"---"} width={950} height={400} />
+#### Sources: Cooley et al. [^2], Ghaffour et al. [^5].
+
+## Waste Water Treatment
+Most wastewater today is discarded without treatment, but in principle it can mostly be recycled, extending freshwater resources and reducing pollution.
+
+<ArticleImage image={"---"} width={950} height={400} />
+#### Sources: UN [^13], Water Authority of Israel [^14].
+
+In theory, the energy that can be extracted from wastewater exceeds the energy required for treatment by a factor of 5-10 [^11], and in practice, emerging technology might make wastewater recovery a net energy producer [^11]. Electricity, biogas, hydrogen, and nutrients can potentially be extracted from wastewater [^11].
+
+The United States treats about 47 km3 wastewater per year, which, if fully recycled, would supply about 10% of total water withdrawl [^12].
+
+<WasteWaterRecyclingSolution />
+
+## Desalination
+Desalination is currently a niche but rapidly growing source of water [^13].
+
+Desalination has several significant environmental impacts. Aquatic organisms are entrapped or entrained by the intake or processing equipment. Additionally, discharge of the highly saline brine, which may be mixed with harmful chemicals and heavy metals, harms marine life [^1].
+
+<WaterDesalinationSolution />
+
+## Rainwater Capture
+Better use of captured rainwater can mitigate the need for irrigation, costly treatment, groundwater depletion, or desalination. It is estimated that rainwater harvesting could reduce the world need for water withdrawal by 500 km3 per year [^10], or a bit over 10% of current withdrawal, though the economic potential is uncertain.
+
+## Atmospheric Water Generation
+Even in deserts, the atmosphere contains water vapor that can, in principle, be collected as potable water. The energy requirements have been estimated at 300-650 kWh/m3 [^6], perhaps suitable for drinking water where there are no other options, but prohibitive to supply water on a large scale.
+
+[^1]: Cooley, H., Ajami, N., Heberger, M. "Key Issues for Seawater Desalination in California: Marine Impacts". The Pacific Institute. December 2013.
+
+[^2]: Cooley, H., Phurisamban, R., Gleick, P. "The cost of alternative urban water supply and efficiency options in California". Environmental Research Communications 1(4). May 2019.
+
+[^3]: Food and Agriculture Organization of the United Nations. "AQUASTAT". Accessed February 13, 2020.
+
+[^4]: Gandiglio, M., Lanzini, A., Soto, A., Leone, P., Santarelli, M. "Enhancing the Energy Efficiency of Wastewater Treatment Plants through Co-digestion and Fuel Cell Systems". Frontiers in Environmental Science 5, 70 pp. 2017.
+
+[^5]: Ghaffour, N., Missimer, T., Amy. G. "Technical review and evaluation of the economics of water desalination: Current and future challenges for better water supply sustainability". Desalination 309, pp. 197-207. January 2013.
+
+[^6]: Inbar, O., Gozlan, I., Ratner, S., Aviv, Y., Sirota, R., Avisar, D. "Producing Safe Drinking Water Using an Atmospheric Water Generator (AWG) in an Urban Environment". Water 12(10). October 2020.
+
+[^7]: International Renewable Energy Agency. "Water Desalination Using Renewable Energy: Technology Brief". IEA-ETSAP and IRENA© Technology Brief I12. March 2012.
+
+[^8]: Pan, S., Snyder, S., Packman, A., Lin, Y., Chiang, P. "Cooling water use in thermoelectric power generation and its associated challenges for addressing water-energy nexus". Water-Energy Nexus 1(1), pp. 24-41. June 2018.
+
+[^9]: Reekie, L. "Electricity Use and Management in the Municipal Water Supply and Wastewater Industries". Electric Power Research Institute and Water Research Foundation, Project #4454. 2013.
+
+[^10]: Rockström, J. "Potential of Rainwater Harvesting to Reduce Pressure on Freshwater Resources". International Water Conference, Hanoi Vietnam, October 14-16, 2002. October 2002.
+
+[^11]: U.S. Department of Energy. "The Water-Energy Nexus: Challenges and Opportunities". June 2014.
+
+[^12]: U.S. Environmental Protection Agency. "The Sources and Solutions: Wastewater". Accessed February 28, 2020.
+
+[^13]: United Nations World Water Assessment Programme. "The United Nations World Water Development Report 2014: Water and Energy". Paris, UNESCO. 2014.
+
+[^14]: Water Authority of Israel. "The Wastewater and Treated Effluents Infrastructure Development in Israel". 2015.
+
+[^15]: WaterResue Association Desalination Committee. "Seawater Desalination Power Consumption". White Paper. November 2011.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

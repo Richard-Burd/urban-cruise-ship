@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost of Water Provision";
+export const solution = "Waste Water Recycling";
+
+Improved recycling of treated waste water will reduce the environmental cost of supply water.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
