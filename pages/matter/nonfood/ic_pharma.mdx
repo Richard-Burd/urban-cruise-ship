@@ -1,0 +1,70 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "nonfood";
+
+import ArticleImage from "/components/ArticleImage.js";
+import PricingOfBiosprospectingValueProductionSolution from "/solutions/pricing-of-biosprospecting-value.mdx"
+import DevelopmentOfRfcSolution from "/solutions/development-of-rfc.mdx"
+
+# Pharmaceuticals and Specialty Chemicals
+
+Specialty products that can be produced from plants include essential oils, pharmaceuticals, herbal health products, dyes and colorants, cosmetics and personal care products, plant protection products (e.g. biocides), and intermediate products for the preceding. About 100,000 hectares are under cultivation around the world for pharmaceuticals or cosmetics, though many of these products are also harvested from the wild [^4].
+
+## Bioprospecting
+Bioprospecting is the practice of searching for pharmaceutical or other products among wild plants and animals. It has been proposed as a mechanism for funding conservation. In biodiversity hotspots, the value of nature from bioprospecting has been estimated at $21 [^8] to $9177 [^6] per hectare. About 25% (range of 14-40%) of modern pharmaceuticals can be traced to wild sources [^3].
+
+If the indigenous population is not compensated fairly for the use of native organisms, the practice of bioprospecting is sometimes known as biopiracy [^7].
+
+<PricingOfBiosprospectingValueProductionSolution />
+
+## Pearls
+Pearls, mostly produced in mollusks, are used primary for jewelry [^10]. Most pearls today are cultured, or produced in farms, with a minority of expensive pearls (natural) harvested from the wild and some imitation pearls [^9]. Most cultured pearls are currently produced in China [^12].
+
+Pearl cultivation carries several environmental costs and risks, such as a disease that devastated the Japanese pearl industry [^1].
+
+## Horseshoe Crabs
+Horseshoe crabs are a species that lives in coastal waters and often comes to the beach for mating. Chemicals in the blood of horseshoe crabs can be used to manufacture a material known as Limulus amebocyte lysate, which is used in medical settings to detect certain bacteria [^5].
+
+<ArticleImage image={"horseshoe_crab.svg"} width={700} height={180} />
+#### Source: Walls and Berkson [^11].
+
+The loss is a threat both to horseshoe crabs themselves and shorebirds that depend on them. The development of a chemical called recombinant Factor C (rFC) could provide a synthetic alternative to horseshoe crab blood [^5].
+
+<DevelopmentOfRfcSolution />
+
+Larger numbers of horseshoe crabs are killed annually for fishing bait [^2].
+
+[^1]: Akamatsu, S. "Pearl culture and the biological environment". The Ocean Newsletter 86, the Sakakawa Peace Foundation. March 2004.
+
+[^2]: Berkson, J., Shuster, C. "The Horseshoe Crab: The Battle for a True Multiple‐use Resource". Fisheries 24(11), pp. 6-10. 1999.
+
+[^3]: Costello, C., Ward, M. "Search, bioprospecting and biodiversity conservation". Journal of Environmental Economics and Management 52(3), pp. 615-626. November 2006.
+
+[^4]: Lubbe, A., Verpoorte, R. "Cultivation of medicinal and aromatic plants for specialty industrial materials". Industrial Crops and Products 34(1), pp. 785-801. July 2011.
+
+[^5]: Maloney, T., Phelan, R., Simmons, N. "Saving the horseshoe crab: A synthetic alternative to horseshoe crab blood for endotoxin detection". PLoS Biology 16(10): e2006607. October 2018.
+
+[^6]: Rausser, G., Small, A. "Valuing Research leads: Bioprospecting and the Conservation of Genetic Resources". https://www.journals.uchicago.edu/doi/abs/10.1086/262115. February 2000.
+
+[^7]: Sandhu, H. "Bioprospecting: Pros and Cons". Punjab Agricultural University. May 2012.
+
+[^8]: Simpson, D., Sedjo, R., Reid, J. "Valuing Biodiversity for Use in Pharmaceutical Research". The Journal of Political Economy 104(1), pp. 163-185. February 1996.
+
+[^9]: The Pearl Source. "Natural Pearls VS Cultured Pearls: Benefits & Differences". June 2021.
+
+[^10]: The Tiffany and Co. Foundation. "Uses of pearls". Accessed May 31, 2022.
+
+[^11]: Walls, E., Berkson, J. "Effects of blood extraction on horseshoe crabs (Limulus polyphemus)". 2003.
+
+[^12]: Zhu, C., Southgate, P. C., Li, T. Production of Pearls. In: Smaal, A., Ferreira, J., Grant, J., Petersen, J., Strand, Ø. (eds) Goods and Services of Marine Bivalves. Springer, Cham. 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

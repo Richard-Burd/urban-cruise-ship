@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Environmental Impacts of Fossil Fuels and Industrial Crops";
+export const solution = "Low-impact Crops Should be Promoted";
+
+We propose that national governments impose fees on development to account for the loss of bioprospecting value.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

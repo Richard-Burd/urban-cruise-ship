@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Harmful Production of Materials";
+export const solution = "Eco-friendly and Ethical Materials Production";
+
+Many materials such as leather use animal products that require resources and produce emissions. We propose funding research and or incentives into plant-based alternatives.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

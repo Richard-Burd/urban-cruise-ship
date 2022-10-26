@@ -1,0 +1,80 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "nonfood";
+
+import ArticleImage from "/components/ArticleImage.js";
+import EcoFriendlyAndEthicalMaterialsProductionSolution from "/solutions/eco-friendly-and-ethical-materials-production.mdx"
+import LowImpactCropsShouldBePromotedSolution from "/solutions/low-impact-crops-should-be-promoted.mdx"
+import SyntheticRubberSolution from "/solutions/synthetic-rubber.mdx"
+
+# Fibers, Polymers, and Building Material
+
+Some fibers, such as jute, kenaf, and flax, have the potential to save resources, as do synthetic alternatives for products such as rubber.
+
+## Fiber Crops
+The life cycle implications of three plants for producing fiber crops are as follows.
+
+<ArticleImage image={"fiber.svg"} width={750} height={430} />
+#### Source: La Rosa and Grammatikos [^4].
+
+Flax fibers can be a substitute for glass fibers, saving overall environmental impact.
+
+<ArticleImage image={"natural_synthetic_fiber.svg"} width={670} height={180} />
+#### Source: van Dam and Bos [^9]. Impacts are measured in thousands of a 'point' (millipoints, or mPt), a measure that aggregates several environmental impacts into a single figure.
+
+<EcoFriendlyAndEthicalMaterialsProductionSolution />
+
+## Textile Fiber
+Among fibers commonly used for clothing, silk generally has the greatest environmental impact.
+
+<ArticleImage image={"fiber_lca_comp.svg"} width={1100} height={900} />
+#### Source: [^5]. Reported figures are the range across several life cycle assessments for producing the various fibers. Above, 'rayon' and 'other plastics' are the aggregations of several other categories.
+
+Organic cotton generally has lesser impacts than conventional cotton.
+
+## Rubber
+Rubber, most commonly harvested from the plant Hevea brasiliensis [^6], is a widely used polymer, about half of which is used for tires [^3]. The life cycle impacts of producing rubber have been estimated as follows.
+
+<ArticleImage image={"organic_cotton.svg"} width={750} height={400} />
+#### Source: Thylmann et al. [^8].
+
+<LowImpactCropsShouldBePromotedSolution />
+
+## Rubber
+Rubber, most commonly harvested from the plant Hevea brasiliensis [^6], is a widely used polymer, about half of which is used for tires [^3]. The life cycle impacts of producing rubber have been estimated as follows.
+
+<ArticleImage image={"rubber_lca.svg"} width={750} height={400} />
+#### Sources: [^1] and [^7].
+
+Synthetic (vulcanized) rubber is not used today for truck tires, due to its inferior abrasion properties, but this may change with newly discovered techniques [^2].
+
+<SyntheticRubberSolution />
+
+[^1]: Chiarelli, D., Rosa, L., Rulli, M., D'Odorico, P. "The water-land-food nexus of natural rubber production". Journal of Cleaner Production 172, pp. 1739-1747. January 2018.
+
+[^2]: Fraunhofer-Gesellschaft. "Synthetic rubber outperforms natural rubber". phys.org. April 2019.
+
+[^3]: Hoffmann, U. "Joint Workshop of the Secretariat of the United Nations Conference on Trade and Development and the International Rubber Study Group on Rubber and the Environment". United Nations Conference on Trade and Development. 1998.
+
+[^4]: La Rosa, A., Grammatikos, S. "Comparative Life Cycle Assessment of Cotton and Other Natural Fibers for Textile Applications". Fibers 7(12), 101. November 2019.
+
+[^5]: Munasinghe, P., Druckman, A., Dissanayake, D. G. K. "A systematic review of the life cycle inventory of clothing". Journal of Cleaner Production 320: 128852. October 2021.
+
+[^6]: Rainforest Alliance. "Rubber Tree: Hevea brasiliensis". September 2012.
+
+[^7]: Soratana, K., Rasutis, D., Azarabadi, H., Eranki, P., Landis, A. "Guayule as an alternative source of natural rubber: A comparative life cycle assessment with Hevea and synthetic rubber". Journal of Cleaner Production 159, pp. 271-280. August 2017.
+
+[^8]: Thylmann, D., Deimling, S., D’Souza, F. "The Life Cycle Assessment of Organic Cotton Fiber - A Global Average". Prepared by PE International, for Textile Exchange. November 2014.
+
+[^9]: van Dam, J., Bos, H. "The Environmental Impact of Fibre Crops in Industrial Applications". Hintergrundpapier zu. 2004.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Reliance on Horshoe Crabs";
+export const solution = "Development of rFC";
+
+We propose an R&D program, perhaps led by the U. S. Department of Agriculture, to commercialize rFC.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
