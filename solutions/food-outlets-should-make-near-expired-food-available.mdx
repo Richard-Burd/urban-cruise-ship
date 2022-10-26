@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Food Waste";
+export const solution = "Food Outlets Should Make Near-Expired Food Available";
+
+Grocery stores and restauarants throw out much perfectly good food that is near its expiration date, and often times are legally prevented from donating the food. Doing so should be allowed and encouraged.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Food Waste";
+export const solution = "Restrict Restaurant Meal Size";
+
+We propose regulations to restrict the meal portion size as restaurants, both to improve health and reduce food waste.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

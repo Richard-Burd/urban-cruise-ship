@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Costs of Traditional Biomass for Cooking";
+export const solution = "Modern Cooking Fuels";
+
+It should be a priority of development agencies to increase the spread of modern cooking fuels, especially electricity and natural gas.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,18 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Postharvest Losses";
+export const solution = "Better Storage Silos";
+
+Storage bags and silos, when better sealed against pests, can dramatically reduce food losses in the storage phase [^"8"]. The World Food Programme's Post-Harvest Loss Reduction program shows up to 98% reduction in losses in storage. We advocate that this program be expanded [^"11"].
+
+[^"8"]: Sugri, I., Abubakari, M., Owusu, R. K., Bidzakin, J. K. "Postharvest losses and mitigating technologies: evidence from Upper East Region of Ghana". Sustainable Futures 3: 100048. 2021.
+
+[^"11"]: World Food Programme. "Post-Harvest Loss Reduction". Accessed October 8, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

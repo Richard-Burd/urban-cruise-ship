@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Preharvest Losses";
+export const solution = "Plant Breeding";
+
+We advocate additional research, to be conducted by the U.S. Department of Agriculture, into plant breeding to reduce preharvest and postharvest losses.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

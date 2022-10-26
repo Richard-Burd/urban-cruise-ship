@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Agricultural Emissions";
+export const solution = "Food Trade";
+
+As the food system's emissions are much greater in the growing phase than in the transportation phase, we propose that countries retain freedom of food trade. Restrictions on food trade will generally increase growing emissions by more than they will decrease transportation emissions.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
