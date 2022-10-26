@@ -353,5 +353,3 @@ The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Verc
 The visualization below is available [here](https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing)
 
 ![an image of the package.json file](https://imgur.com/XmKqMk7.png)
-
-.test update
