@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost From Mandated Parking";
+export const solution = "Remove Parking Minimums";
+
+As noted above, parking can be quite expensive, both in terms of the capital cost of parking structures and the opportunity cost of land. This is especially true in urban areas where land prices are at a premium. Additionally, a parking space adds an estimated 12.5% to the cost of an affordable housing unit, and two spaces add 25% [^"25"]. Therefore, parking minimums, which force developers to provide more parking than they otherwise would want to, can be very costly.
+
+Parking minimums have been found to be binding in Los Angeles [^"10"]; Buffalo, New York [^"22"]; and Seattle [^"12"], meaning that developers provide much more parking under the rules than they would otherwise. The repeal of the parking minimum in Seattle led to developers providing 40% less parking, at a savings of 18,000 spaces and $537 million [^"12"].
+
+The planning and activist communities are turning against parking minimums, and many cities throughout the United States and Canada have relaxed their rules [^"21"]. The main purpose of parking minimums is that, absent sufficient off-street parking, motorists will cruise for an on-street parking spot, creating congestion as an externality [^"5"]. However, this problem can also be dealt with by cities not providing free on-street parking [^"19"].
+
+[^"5"]: Brueckner, J. K., Franco, S. F. ["Parking and Urban Form"](https://academic.oup.com/joeg/article-abstract/17/1/95/2930541). Journal of Economic Geography 17(1), pp. 95-127. January 2017.
+
+[^"10"]: Cutter, W. B., Franco, S. F. ["Do parking requirements significantly increase the area dedicated to parking? A test of the effect of parking requirements values in Los Angeles County"](https://www.sciencedirect.com/science/article/abs/pii/S0965856412000304). Transportation Research Part A: Policy and Practice 46(6), pp. 901-925. July 2012.
+
+[^"12"]: Gabbe, C. J., Pierce, G., Clowers, G. ["Parking policy: The effects of residential minimum parking requirements in Seattle"](https://www.sciencedirect.com/science/article/abs/pii/S0264837718312870). Land Use Policy 91: 104053. February 2020.
+
+[^"19"]: Hamilton, E. ["Government-Created Parking Externalities"](https://marketurbanism.com/2017/04/27/government-created-parking-externalities/). Market Urbanism. April 2017.
+
+[^"21"]: Herriges, D. ["Announcing a New and Improved Map of Cities That Have Removed Parking Minimums"](https://www.strongtowns.org/journal/2021/11/22/announcing-a-new-and-improved-map-of-cities-that-have-removed-parking-minimums). Strong Towns. November 2021.
+
+[^"22"]: Hess, D. B., Rehler, J. ["Minus Minimums: Development Response to the Removal of Minimum Parking Requirements in Buffalo (NY)"](https://www.tandfonline.com/doi/pdf/10.1080/01944363.2020.1864225). Journal of the American Planning Association 87(3), pp. 396-408. March 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

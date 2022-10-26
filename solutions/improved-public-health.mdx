@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Drawbacks of Density";
+export const solution = "Improved Public Health";
+
+Cities should upgrade public health, particularly responses to pandemic risks such as COVID-19.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

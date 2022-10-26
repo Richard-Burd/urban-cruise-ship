@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Housing Affordability";
+export const solution = "Zoning Should Meet Market Needs";
+
+Insofar as cities regulate housing unit size through zoning, they should allow for greater numbers of smaller units to meet unmet market demand.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

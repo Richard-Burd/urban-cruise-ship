@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Restricted Housing Supply";
+export const solution = "Street-Level Zoning";
+
+To make negotiations around development more tractable, street-level zoning, whereby residents on a single street or city block can vote on development decisions [^"26"]. Elements of this plan have been implemented in parking districts, business improvement districts, and homeonwers' associations [^"26"].
+
+[^"26"]: Myers, J. ["Hyperlocal Zoning: Enabling Growth by Block and by Street"](https://www.manhattan-institute.org/hyperlocal-zoning-enabling-growth-block-and-street). Manhattan Institute. February 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

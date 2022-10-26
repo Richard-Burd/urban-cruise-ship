@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Land Use";
+export const solution = "Incorporate ESV Into Urban Development";
+
+We propose that cities assess fees on land conversion commensurate with their ecosystem values.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

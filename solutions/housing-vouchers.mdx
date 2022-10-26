@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Housing Affordability";
+export const solution = "Housing Vouchers";
+
+Insofar as they seek to address housing affordability for low-income residents, we propose that cities, states, and the federal government do so with vouchers, as opposed to rent control, public housing, and other tools.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

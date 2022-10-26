@@ -1,0 +1,20 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Financial Cost of Urban Sprawl";
+export const solution = "Development Fees Should Include Infrastructure and Service";
+
+Cities typically assess fees on new development. Those fees should reflect the marginal cost of providing infrastructure and services. Many cities charge differential fees based on density; for example, Cudahy, California charges more per unit for single family buildings than multifamily buildings, and for commercial, office, and industrial development, charges by area rather than per facility [^"5"]. Sunnyvale, California charges greater per-unit fees for lower density development [^"2"].
+
+We propose a much more comprehensive approach to the calculation of development fees. Cities should estimate the marginal hook-up and annual costs of providing a proposed development electrical, sewer, garbage, police, fire, education, and other infrastructure and services and set fees equal to the marginal cost.
+
+[^"2"]: City of Sunnyvale. ["Development Impact Fees"](https://www.sunnyvale.ca.gov/home/showpublisheddocument/1632/637820855201870000). August 2022.
+
+[^"5"]: Willdan Financial Services. ["City of Cudahy Development Impact Fee Study"](https://www.cityofcudahy.com/DocumentCenter/View/774/Development-Impact-Fees). April 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

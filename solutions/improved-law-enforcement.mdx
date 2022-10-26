@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Drawbacks of Density";
+export const solution = "Improved Law Enforcement";
+
+To response to a drawback of high density, cities should ensure public safety though improve law enforcement.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
