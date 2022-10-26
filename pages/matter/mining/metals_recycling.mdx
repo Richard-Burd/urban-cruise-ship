@@ -1,12 +1,22 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "mining";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Metals Recycling
 
 ## Recycling Rates
 Recycling rates vary widely by metals, but for most metals, including those critical for a renewable energy transition, recycling rates are low.
 
+<ArticleImage image={"metals_recycling.jpg"} width={900} height={430} />
 #### Source: UNEP [^2].
 
 The International Energy Agency has also compiled some recycling rates by metal, which are a bit lower than the figures reported by UNEP above. For most metals, reliable figures are difficult to ascertain.
 
+<ArticleImage image={"metals_recycling2.svg"} width={630} height={330} />
 #### Source: IEA [^3].
 
 The optimal recycling rate for a given metal is likely less than 100%, because the last few uses of a metal tend to be very diffuse and energy-intensive to recover [^4].
@@ -14,11 +24,13 @@ The optimal recycling rate for a given metal is likely less than 100%, because t
 ## Use of Recycled Metals
 With overall growth in mineral demand, the rate of use of recycled metals (secondary production) is less than the recycling rate, but it is substantial.
 
+<ArticleImage image={"secondary_metal.svg"} width={670} height={180} />
 #### Source: IEA [^3].
 
 ## E-Waste
 E-waste refers to appliances, computer equipment, and other electronics that have reached the end of their useful lives. As electronics are a major use of metals, e-waste is a major issue in metals recycling, and it is also a significant health concern. E-waste recycling rates remain low.
 
+<ArticleImage image={"ewaste.svg"} width={500} height={330} />
 #### Source: Forti et al. [^1].
 
 As retiring electric cars become more common, recycling and reuse of EV batteries will become more important [^3].
@@ -30,3 +42,12 @@ As retiring electric cars become more common, recycling and reuse of EV batterie
 [^3]: International Energy Agency. ["The Role of Critical World Energy Outlook Special Report Minerals in Clean Energy Transitions"](https://www.iea.org/reports/the-role-of-critical-minerals-in-clean-energy-transitions). May 2021.
 
 [^4]: Norgate, T. ["Metal recycling: The need for a life cycle approach"](https://publications.csiro.au/rpr/download?pid=csiro:EP135565&dsid=DS2). CSIRO: Minerals Down Under Flagship. May 2013.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

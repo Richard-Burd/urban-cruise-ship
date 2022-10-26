@@ -1,38 +1,61 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "mining";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Mining Overview
 
 ## Production Overview
 Sand and gravel are by far the most widely mined materials by mass. The world produced the following minerals.
 
+<ArticleImage image={"mineral_production.svg"} width={700} height={600} />
 #### Minerals for which world production is above one million tons per year in 2020, according to the U. S. Geological Survey [^4]. Sand and gravel figures from the Visual Capitalist [^3].
 
 Metal production in the world is as follows.
 
+<ArticleImage image={"base_metal_production.svg"} width={600} height={320} />
 #### Leading nonferrous (i.e. not iron) metal production in the world as of 2020 [^4].
 
 Precious metal production is much less than the bulk commodities above, but these metals drive both disproportionate economic value and environmental impact.
 
+<ArticleImage image={"precious_metal_production.svg"} width={520} height={350} />
 #### Production of select precious metals worldwide in 2020 [^4].
 
 ## Production Growth
 The demand for minerals could grow considerably in coming years, especially minerals that are needed for clean energy technology.
 
+<ArticleImage image={"mineral_growth.svg"} width={660} height={220} />
 #### Expected demand for select minerals in 2040, relative to 2020 demand, under the IEA's Sustainable Development Scenario, which envisions rapid growth in low-carbon energy technology. Source: IEA [^2].
 
 In monetary terms, the demand for clean energy minerals is likely to overtake the demand for coal in the 2030s [^2].
 
 There is no threat of long-term shortage of minerals, but due to long lead times--up to 20 years from the discovery of mineral deposits to production--rapid growth may result in short-term supply crunches.
 
+<ArticleImage image={"lead_time.svg"} width={700} height={250} />
 #### Source: IEA [^2].
 
 ## Mining Techniques
 Mining can generally be divided into two techniques: surface mining and underground (or sub-surface) mining. In the United States, surface mining is predominately used.
 
+<ArticleImage image={"mining_techniques.svg"} width={620} height={160} />
 #### Surface mining is the primary method used in the United States. Source: [^1].
 
-[^1]: Hartmann, H. Introductory Mining Engineering. Chapter 1.
+[^1]: Hartmann, H. [*Introductory Mining Engineering*](https://media.wiley.com/product_data/excerpt/11/04713485/0471348511.pdf). Chapter 1.
 
 [^2]: International Energy Agency. ["The Role of Critical World Energy Outlook Special Report Minerals in Clean Energy Transitions"](https://www.iea.org/reports/the-role-of-critical-minerals-in-clean-energy-transitions). May 2021.
 
 [^3]: LePan, N. ["All the World’s Metals and Minerals in One Visualization"](https://www.visualcapitalist.com/all-the-worlds-metals-and-minerals-in-one-visualization/). Visual Capitalist. March 2020.
 
 [^4]: United States Geological Survey. ["Mineral Commodity Summary 2021"](https://www.usgs.gov/centers/nmic/mineral-commodity-summaries). 2021.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
