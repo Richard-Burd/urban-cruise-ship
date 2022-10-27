@@ -30,6 +30,17 @@ h1 {
 h2 {
   @apply standard-font-1 px-4 text-3xl text-zinc-800;
 }
+h2 a {
+  @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
+}
+
+/* Article Sub-section Title */
+h3 {
+  @apply standard-font-1 px-4 text-xl text-zinc-800;
+}
+h3 a {
+  @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
+}
 
 /* Article Main Body Text */
 p {

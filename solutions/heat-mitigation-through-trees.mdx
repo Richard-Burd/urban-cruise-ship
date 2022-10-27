@@ -1,0 +1,33 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Urban Heat Island";
+export const solution = "Heat Mitigation Through Trees";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+We propose that cities plant trees to mitigate the urban heat island effect and for other benefits. A study of five cities in the United States found that tree planting has a positive cost-benefit ratio in all five cases.
+
+<ArticleImage image={"trees_uhi.svg"} width={400} height={300} />
+#### Source: [^"9"]. Costs and benefits are CPI-adjusted to 2020.
+
+Evapotranspiration and shading provided by trees have been found to reduce peak summer temperatures by 1-5 °C, or 2-9 °F. [^"14"].
+
+To maximize the value of tree planting investments, cities should identify which neighborhoods are most devoid of trees and which have the highest summertime temperatures [^"12"], as well as have disproportionately socially vulnerable residents [^"11"].
+
+[^"9"]: McPherson, E. G., Simpson, J. R., Peper, P. J., Maco, S. E., Xiao, Q. "Municipal forest benefits and costs in five U.S. cities". Journal of Forestry 103(8), pp. 411.416. 2005.
+
+[^"11"]: Rigg, M. C. "Tree Mitigation Strategies to Reduce the Effect of Urban Heat Islands in Center Township, IN". Submitted to the faculty of the University Graduate School in partial fulfillment of the requirements for the degree Master of Science in the Department of Geography, Indiana University. May 2012.
+
+[^"14"]: United States Environmental Protection Agency. "Using Trees and Vegetation to Reduce Heat Islands". July 2022.
+
+[^"12"]: Romero, D. "Tree Canopy Coverage and Reducing the Heat Island Effect: Mitigation Strategies for the City of San Francisco". A Planning Report Presented to The Faculty of the Department of Urban and Regional Planning San José State University In Partial Fulfillment Of the Requirements for the Degree Master of Urban Planning. May 2020.
+
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
