@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Transportation Emissions";
+export const solution = "Concentrate Development in the CBD";
+
+While a degree of polycentric development is inevitable and necessary for large cities, we propose that cities concentrate development and investment in their central business districts.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

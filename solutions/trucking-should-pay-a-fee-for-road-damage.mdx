@@ -1,0 +1,32 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Road Damage";
+export const solution = "Trucking Should Pay a Fee for Road Damage";
+
+Total public road maintenance spending in the United States was, as of 2018, $187 billion, or $572 per capita [^"17"]. The disparity in road damage by vehicle weight calls for an evaluation of how this maintenance bill is paid. Although large trucks do at least 99% of road damage, they pay only 35% of maintenance costs, suggesting a subsidy for trucking [^"15"]. Mileage fees are a way to rectify this imbalance. An appropriate per-km fee (in 2020 USD) for Ontario, Canada has been estimated at 0.8 ¢/km on freeways and 92 ¢/km on local roads [^"7"].
+
+The most widely cited data on road damage by vehicle comes from a 1958 test conducted by the American Association of State Highway Officials [^"9"]. However, the trucking industry has disputed these figures [^"3"]. We propose that the Department of Transportation undertake new tests of road damage, but we expect that they will affirm the conclusion that the vast majority of road damage is caused by heavy trucks.
+
+Oregon and Utah both operate road usage charges (RUCs), and several states have conducted pilot programs [^"10"]. Internationally, New Zealand is a pioneer in developing an RUC, with current rates (in U.S. currency) of 7¢/mile for light duty vehicles and 11-39¢/mile for heavy trucks [^"10"].
+
+With a RUC established, the tool can be used to achieve other goals, such as air pollution reduction and congestion pricing [^"10"].
+
+[^"3"]: Bradley, A., Thiam, P. ["Analysis of car and truck pavement impacts"](https://www.trucking.org/sites/default/files/2020-02/Analysis%20of%20car%20and%20truck%20pavement%20impacts-FINAL.pdf). FPInnovations. October 2018.
+
+[^"7"]: Hajek, J. J., Tighe, H. L., Hutchinson, B. G. ["Allocation of Pavement Damage Due to Trucks Using a Marginal Cost Method"](https://journals.sagepub.com/doi/abs/10.3141/1613-07). Transportation Research Record: Journal of the Transportation Research Board 1613(1). January 1998.
+
+[^"9"]: Highway Research Board. ["The AASHO Road Test"](http://onlinepubs.trb.org/Onlinepubs/sr/sr61g/61g.pdf). Report 7, Summary Report. Special Report 61g. National Academy of Sciences - National Research Council. 1962.
+
+[^"10"]: Kroes, S., Reichard, P., Teigen, S., Collard, C., Keating, M. ["Measuring the Miles: Road Usage Charges in Utah"](https://www.utahfoundation.org/reports/rucreport/). Utah Foundation. March 2021.
+
+[^"15"]: True Cost. ["The Hidden Trucking Industry Subsidy"](https://truecostblog.com/2009/06/02/the-hidden-trucking-industry-subsidy/). June 2009.
+
+[^"17"]: Urban Institute. ["Highway and Road Expenditures"](https://www.urban.org/policy-centers/cross-center-initiatives/state-and-local-finance-initiative/state-and-local-backgrounders/highway-and-road-expenditures). State and Local Finance Initiative. Accessed July 11, 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

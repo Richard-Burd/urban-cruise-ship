@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost of Density Restrictions";
+export const solution = "Loosen Minimum Lot Size Rules";
+
+One of the most widespread zoning regulations is a minimum lot size, which requires that for every home, a minimum area is required. Such rules restrict the available amount of housing in a city and raise prices [^"8"], [^"17"], [^"36"].
+
+By lowering population density below what it would otherwise be, minimum lot size regulations contribute to urban sprawl and resulting environmental costs, such as traffic congestion and land use impacts [^"3"]. In Connecticut, homes in towns with the largest lots are associated with 36.1% more transportation CO2 emissions and 18.3% housing emissions than homes in the other towns [^"2"].
+
+Many classes of zoning regulations, including minimum lot sizes, have been upheld by the Supreme Court, and there is little reason to expect a reversal of prior rulings. However, the disprate impact clause under the Fair Housing Act, whereby minimum lot sizes can be shown to disproportionately harm disadvantaged racial minority groups, is one possible avenue for a legal challenge [^"3"]. Relaxing minimum lot size regulations will benefit racial minorities [^"30"].
+
+[^"2"]: Blanco, K., Bronin, S. ["Small Lots in Smart Places: A Right-Sized Solution for CT"](https://static1.squarespace.com/static/5ee8c6c9681b6f2799a4883a/t/61ea028879710056b2a90fe9/1642726053008/Issue+Brief+-+Minimum+Lot+Sizes.pdf). DesegregateCT, Regional Plan Association. 2022.
+
+[^"3"]: Boudreaux, P. ["Lotting Large: The Phenomenon of Minimum Lot Size Laws"](https://digitalcommons.mainelaw.maine.edu/cgi/viewcontent.cgi?article=1017&context=mlr). Maine Law Review 68(1). January 2016.
+
+[^"8"]: Bucovetsky, S. ["On the effects of minimum-lot-size zoning"](https://www.sciencedirect.com/science/article/abs/pii/016517658490065X). Economic Letters 15(1-2), pp. 189-193. 1984.
+
+[^"17"]: Glaeser, E., Schuetz, J., Ward, B. ["How large lot zoning and other town regulations are driving up home prices"](https://commonwealthmagazine.org/uncategorized/how-large-lot-zoning-and-other-town-regulations-are-driving-up-home-prices/). CommonWealth Magazine. January 2006.
+
+[^"30"]: Song, J. ["The Effects of Residential Zoning in U.S. Housing Markets"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3996483). Available at SSRN. November 2021.
+
+[^"36"]: Zabel, J., Dalton, M. ["The impact of minimum lot size regulations on house prices in Eastern Massachusetts"](https://www.sciencedirect.com/science/article/pii/S016604621100072X). Regional Science and Urban Economics 41(6), pp. 571-583. November 2011.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

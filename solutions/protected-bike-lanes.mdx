@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Bicycle Safety";
+export const solution = "Protected Bike Lanes";
+
+Protected bike lanes consist of physical barriers, such as planters, between lanes for cars and for bicycles. Such lanes offer the greatest safety for cyclists, encouraging cycling and protecting life, and cities should favor these kinds of lanes in urban design wherever possible [^"21"].
+
+[^"21"]: Soulliere, J. "Lanes and Sharrows and Buffers…Oh My! Four Types of Bike Lanes Explained". Smart Cities Dive. Accessed October 12, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

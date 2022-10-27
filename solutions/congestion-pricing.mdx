@@ -1,0 +1,43 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Induced Demand from Driving";
+export const solution = "Congestion Pricing";
+
+Americans lose tens of billions of dollars to congestion every year [^"16"], [^"17"]. The congestion that one driver imposes on others is an external cost that can be internalized through a charge to use roadways, called a congestion price [^"22"].
+
+There are several ways that congestion pricing could be implemented [^"28"].
+
+- Cordon Pricing: A charge is assessed to drive in and/or out of a designated zone, such as in Singapore's Electronic Road Pricing system [^"35"].
+- Area Pricing: A per-kilometer charge is assessed to drive in a designated zone.
+- Roadway Pricing: A charge is assessed to drive on certain roads or bridges.
+- Vehicle-mile fee: A fee is charged for every mile driven.
+
+Proposed prices include $9.18 to drive and out of Manhattan [^"19"], $4 to enter highly congested roads in Los Angeles [^"11"], and $10-12 to drive into downtown San Francisco [^"6"].
+
+The social aspects politics of congestion pricing can be quite challenging. In practice, congestion pricing has been generall regressive [^"29"]. Nevertheless, congestion pricing is usually well accepted once it becomes established [^"29"]. Due to the complexity of a system, tolls must be collected through an electronic system [^"7"].
+
+[^"6"]: Creger, H. ["An Equity-First Approach to Congestion Pricing"](https://greenlining.org/blog-category/2020/equity-congestion-pricing/). The Greenlining Institute. November 2020.
+
+[^"7"]: de Palma, A., Lindsey, R. ["Traffic congestion pricing methodologies and technologies"](https://www.sciencedirect.com/science/article/abs/pii/S0968090X11000362). Transportation Research Part C: Emerging Technologies 19(6), pp. 1377-1399. December 2011.
+
+[^"11"]: Gribbin, D. J. ["Congestion pricing is all around us. Why is it taboo on our roads?"](https://www.brookings.edu/blog/the-avenue/2019/10/16/congestion-pricing-is-all-around-us-why-is-it-taboo-on-our-roads/). Brookings. October 2019.
+
+[^"16"]: INRIX. ["2021 INRIX Global Traffic Scorecard"](https://inrix.com/scorecard/). 2022.
+
+[^"19"]: Kuntzman, G. ["Report Shows Why the Congestion Pricing Fee Must Be Really High"](https://nyc.streetsblog.org/2019/09/17/report-shows-why-the-congestion-pricing-fee-must-be-really-high/). StreetsBlog NYC. September 2019.
+
+[^"22"]: Lindsey, C. R., Verhoef, E. T. ["Traffic Congestion and Congestion Pricing"](https://www.econstor.eu/bitstream/10419/85524/1/00101.pdf). Tinbergen Institute Discussion Paper, No. 00-101/3, Tinbergen Institute, Amsterdam and Rotterdam. 2000.
+
+[^"28"]: Oregon Metro. ["Regional congestion pricing study"](https://www.oregonmetro.gov/regional-congestion-pricing-study). September 2021.
+
+[^"29"]: Organisation for Economic Co-operation and Development, International Transport Forum. ["The Social Impacts of Road Pricing: Summary and Conclusions"](https://www.itf-oecd.org/sites/default/files/docs/social-impacts-road-pricing.pdf). 2018.
+
+[^"35"]: Theseira, W. ["Congestion control in Singapore"](https://www.econstor.eu/handle/10419/245842). International Transport Forum Discussion Paper No. 2020/10. 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

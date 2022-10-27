@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Motorized Transportation";
+export const solution = "Development Set Patterns";
+
+The use of development sets as an urban planning methodology may greatly reduce the need for motorized transportation, including driving, buses, and rail. The concept is also known as the 15 minute city.
+
+A development set design should seek to provide six basic functions within a 15 minute walk or bike ride from each dwelling: living, working, commerce, health care, education, and entertainment [^"16"]. Tools such as online shopping and remote work create an opportunity for less automobile-dependent cities [^"16"].
+
+Designing a city by a development set methodology requires long-term planning, such as has been embarked by Singapore [^"14"], several cities in China [^"15"], Paris [^"27"], Melbourne [^"4"], and other cities.
+
+A smaller-scale implementation of development set concepts is that of the mixed-used development.
+
+[^"4"]: City of Melbourne. ["Plan Melbourne 2017 - 2050"](https://www.planning.vic.gov.au/policy-and-strategy/planning-for-melbourne/plan-melbourne). Accessed September 12, 2022.
+
+[^"14"]: Land Transport Authority. ["Land Transport Master Plan 2040"](https://www.lta.gov.sg/content/ltagov/en/who_we_are/our_work/land_transport_master_plan_2040.html). Singapore Government. Accessed September 12, 2022.
+
+[^"15"]: Lulu, H., Yungang, L. ["Life Circle Construction in China under the Idea of Collaborative Governance: A Comparative Study of Beijing, Shanghai and Guangzhou"](https://www.jstage.jst.go.jp/article/geogrevjapanb/90/1/90_900103/_article). Geographical review of Japan series B 90(1), pp. 2-16. 2017.
+
+[^"16"]: Moreno, C., Allam, Z., Chabaud, D., Gall, C., Pratlong, F. ["Introducing the "15-Minute City": Sustainability, Resilience and Place Identity in Future Post-Pandemic Cities"](https://www.mdpi.com/2624-6511/4/1/6/htm). Smart Cities 4(1), pp. 93-111. January 2021.
+
+[^"27"]: TUMI Management. ["The 15-Minute City"](https://www.transformative-mobility.org/assets/publications/TUMI_The-15-Minute-City_2021-07.pdf). June 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

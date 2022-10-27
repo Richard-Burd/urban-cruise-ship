@@ -1,0 +1,28 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost of Density Restrictions";
+export const solution = "Loosen Floor-Area Ratio Rules";
+
+There are several reasons that cities might choose to limit floor-area ratio (FAR), such as to manage congestion [^"7"], [^"33"]. However, such rules come at the cost of limiting floor space and driving up costs through scarcity.
+
+FAR rules tend to be most stringent where land values are high and there is great demand for living and office space, such as Manhattan and Washington, DC [^"6"]. Hence in these areas, there is a significant loss of floor space as a result of regulation.
+
+Although more building space can create more traffic congestion in an area, more building space near a city center can reduce congestion by reducing the amount of distance people need to travel and hence the amount of driving. For this reason, maximum FAR rules make most sense around the city fringe, while there is a case for minimum FAR rules near a city center [^"24"].
+
+[^"6"]: Brueckner, J. K., Singh, R. ["Stringency of land-use regulation: Building heights in US cities"](https://www.sciencedirect.com/science/article/abs/pii/S0094119020300103). Journal of Urban Economics 116: 103239. March 2020.
+
+[^"7"]: Brueckner, J., Fu, S., Gu, Y., Zhang, J. ["Measuring the Stringency of Land-Use Regulation and Its Determinants: The Case of China’s Building-Height Limits"](https://www.semanticscholar.org/paper/Measuring-the-Stringency-of-Land-Use-Regulation-and-Brueckner-Fu/c31f9c68b035d1c5b4bf1f935229cdb5b8164973). American Economic Association. 2015.
+
+[^"24"]: Joshi, K. K., Kono, T. ["Optimization of floor area ratio regulation in a growing city"](https://www.sciencedirect.com/science/article/abs/pii/S0166046209000155). Regional Science and Urban Economics 39(4), pp. 502-511. July 2009.
+
+[^"33"]: Terasaki, T. ["The Impact of Raising the Maximum Floor Area Ratio on Commuting Congestion"](https://www.rieti.go.jp/en/publications/summary/05040001.html). Research Institute of Trade, Economy and Industry. April 2005.
+
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

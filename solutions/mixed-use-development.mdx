@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Motorized Transportation";
+export const solution = "Mixed Use Development";
+
+The need for driving and mass transit can be reduced, and the convenience to citizens enhanced, by conducting urban development more along mixed use principles. One way this could be done is for cities to relax zoning rules that keep different uses, such as housing, shopping, offices, and light industry, highly segregated.
+
+A well-designed mixed use development insures the safety and convenience of non-motorized forms of transportation and that the retail meets the needs of nearby residents [^"2"]. Outside of an urban core, "missing middle" housing forms, such as rowhouses, duplexes, or cottage housing, may be the most appropriate [^"13"]. Mixed-use development often works best when built around major transit hubs, in which case it is termed transit-oriented development [^"14"]. The State of Oregon has developed model legislation [^"19"].
+
+Rents tend to be higher in mixed use development than comparable alternatives, suggesting a demand for proximity to offices and retail [^"9"]. Consequently, efforts to promote mixed use development might be paired with regulatory efforts to reduce rents [^"17"]. However, we expect that with sufficient supply of mixed use development, the cost premium will disappear.
+
+[^"2"]: City of Antioch. "Mixed-use design guidelines". Accessed September 12, 2022.
+
+[^"9"]: Kim, D., Jin, J. "The Effect of Land Use on Housing Price and Rent: Empirical Evidence of Job Accessibility and Mixed Land Use". Sustainability 11(3): 938. February 2019.
+
+[^"13"]: MRSC. "Missing Middle Housing". Accessed September 12, 2022.
+
+[^"14"]: MRSC. "Transit-Oriented Development". Accessed September 12, 2022.
+
+[^"17"]: Office of Policy Development and Research. "Regulatory Barriers Clearinghouse". U. S. Department of Housing and Urban Development. Accessed September 12, 2022.
+
+[^"19"]: Oregon Transportation and Growth Management Program. "Commercial and Mixed Use Development Code Handbook". Accessed September 12, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

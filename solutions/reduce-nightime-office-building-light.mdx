@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Light Pollution";
+export const solution = "Reduce Nightime Office Building Light";
+
+We propose municipal regulations to turn off office lights at night, when offices are not in use.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

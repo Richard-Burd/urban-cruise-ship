@@ -1,0 +1,26 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Induced Demand from Driving";
+export const solution = "Mass Transit Should Be Accompanied by Upzoning";
+
+The U. S. federal government spent nearly $30 billion on rail and transit in 2021 [^"36"]. However, as noted above, transit spending in and of itself doesn't necessarily lead to increased density or insure that transit is used effectively. Therefore, the federal government should tie transit spending with upzoning.
+
+Several recent pieces of federal legislation are intended to address the limitations of federal transit funding. The Build More Housing Near Transit Act [^"30"] would forbid federal transit funds for cities with certain zoning restrictions, and the Prosper Act [^"27"] would forbid all federal funding to cities with certain restrictions. The Yes In My Backyard Act [^"38"] and the Housing, Opportunity, Mobility, and Equity Act [^"5"] would require local governments to demonstrate zoning reform to receive Community Development Block Grants.
+
+[^"5"]: Clyburn, J. E. ["Housing, Opportunity, Mobility, and Equity Act of 2019"](https://www.congress.gov/bill/116th-congress/house-bill/4808/text). Congress.gov, 116h Congress, 2019-2020. October 2019.
+
+[^"27"]: Ocasio-Cortez, A. ["H.R.5072 - A Just Society: A Place to Prosper Act of 2019"](https://www.congress.gov/bill/116th-congress/house-bill/5072/text). Congress.gov. 116h Congress, 2019-2020. November 2019.
+
+[^"30"]: Peters, S. H. ["H.R.4307 - Build More Housing Near Transit Act"](https://www.congress.gov/bill/116th-congress/house-bill/4307/text). Congress.gov. 116th Congress, 2019-2020. September 2019.
+
+[^"36"]: USA Facts. ["What does America spend on transportation and infrastructure? Is transportation infrastructure improving?​"](https://usafacts.org/state-of-the-union/transportation-infrastructure/). Accessed April 9, 2022.
+
+[^"38"]: Young, T. ["Yes In My Backyard Act"](https://www.congress.gov/bill/116th-congress/senate-bill/1919/text). Congress.gov, 116th Congress, 2019-2020. June 2019.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
