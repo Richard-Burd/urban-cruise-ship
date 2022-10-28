@@ -322,7 +322,7 @@ See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#foo
 ------
 
 ## Creating Tables
-Tables are created using the [standard Markdown syntax](<div className="table-wrapper">) and wrapped in a `<div>` container with the class `table-container`.  Here is an example of a table:
+Tables are created using the [standard Markdown syntax](<div className="table-wrapper">) and are then wrapped in a `<div>` container with the className label: `table-container`.  Here is an example of how to make a table for this project:
 
 ```markdown
 <div className="table-wrapper">
@@ -347,7 +347,7 @@ This will render the following:
 
 </div>
 
-The `<div>` container is necessary to make the table scrollable on mobile devices.  The `table-wrapper` class is defined in the `./styles/tailwind-styles.css` file.
+The `<div>` container is necessary to make the table scrollable on mobile devices.  The `table-wrapper` class is defined in the `./styles/tailwind-styles.css` file and uses TailwindCSS classes that only work on a `<div>` container, and will not work on a `<table>` container.
 
 ------
 
