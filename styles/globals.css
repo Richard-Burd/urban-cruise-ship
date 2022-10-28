@@ -911,10 +911,6 @@ video {
   overflow: visible;
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -1561,6 +1557,16 @@ ul li a:focus {
 
 /* This section styles the tables */
 
+.table-wrapper {
+  overflow-x: scroll;
+}
+
+@media (min-width: 640px) {
+  .table-wrapper {
+    overflow: auto;
+  }
+}
+
 table {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -2091,10 +2097,6 @@ td a:focus {
 
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:overflow-auto {
-    overflow: auto;
   }
 
   .sm\:pb-0 {
