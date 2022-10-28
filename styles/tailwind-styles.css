@@ -83,11 +83,11 @@ ul li a{
 
 /* This section styles the tables */
 .table-wrapper {
-  @apply overflow-x-scroll sm:overflow-auto;
+  @apply overflow-x-scroll sm:overflow-auto flex justify-center;
 }
 
 table {
-  @apply border-2 border-zinc-800 p-1 text-center mx-4;
+  @apply border-2 border-zinc-800 p-1 text-center mx-4  bg-zinc-50 bg-opacity-50;
 }
 
 td, th {

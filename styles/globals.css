@@ -753,10 +753,6 @@ video {
   display: flex;
 }
 
-.table {
-  display: table;
-}
-
 .grid {
   display: grid;
 }
@@ -1558,6 +1554,8 @@ ul li a:focus {
 /* This section styles the tables */
 
 .table-wrapper {
+  display: flex;
+  justify-content: center;
   overflow-x: scroll;
 }
 
@@ -1573,6 +1571,8 @@ table {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(39 39 42 / var(--tw-border-opacity));
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
   padding: 0.25rem;
   text-align: center;
 }
