@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_socioeconomics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Trends
 
 ## Urbanization
@@ -25,20 +33,29 @@ The United States today is predominantly a nation of detached, single-family hom
 
 #### Average household area for select countries, reported by Wilson [^9], and household form in the United States by population, reported by the Residential Energy Consumption Survey [^7].
 
-[^1]: Angel, S. et al. Atlas of Urban Expansion. 2016.
+[^1]: Angel, S. et al. [*Atlas of Urban Expansion.*](http://www.atlasofurbanexpansion.org/) 2016.
 
-[^2]: Eurostat. "An extensive range of statistics on consumers". June 2009.
+[^2]: Eurostat. ["An extensive range of statistics on consumers"](http://europa.eu/rapid/press-release_STAT-09-95_en.htm?locale=en). June 2009.
 
-[^3]: Kozhenova, S. "Quality of the Living Space". Accessed October 17, 2018.
+[^3]: Kozhenova, S. ["Quality of the Living Space"](http://www.hdm.lth.se/fileadmin/hdm/Education/Undergrad/ABAN05_2010/Kozhenova_Svetlana_-_Quality_of_the_Living_Space.pdf). Accessed October 17, 2018.
 
-[^4]: Mahendra, A., Seto, K. C. "Upward and Outward Growth: Managing Urban Expansion for More Equitable Cities in the Global South". World Resources Institute. January 2019.
+[^4]: Mahendra, A., Seto, K. C. ["Upward and Outward Growth: Managing Urban Expansion for More Equitable Cities in the Global South"](https://www.wri.org/research/upward-and-outward-growth-managing-urban-expansion-more-equitable-cities-global-south). World Resources Institute. January 2019.
 
-[^5]: Moura, M., Smith, S., Belzer, D. "120 Years of U.S. Residential Housing Stock and Floor Space". PLoS ONE 10(8): e0134135. August 2015.
+[^5]: Moura, M., Smith, S., Belzer, D. ["120 Years of U.S. Residential Housing Stock and Floor Space"](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134135). PLoS ONE 10(8): e0134135. August 2015.
 
-[^6]: OECD. "Housing". Better Life Index. Accessed June 28, 2021.
+[^6]: OECD. ["Housing"](https://www.oecdbetterlifeindex.org/topics/housing/). Better Life Index. Accessed June 28, 2021.
 
-[^7]: U. S. Energy Information Administration. "2015 Residential Energy Consumption Survey". 2017.
+[^7]: U. S. Energy Information Administration. ["2015 Residential Energy Consumption Survey"](https://www.eia.gov/consumption/residential/). 2017.
 
-[^8]: United Nations Population Division. World Urbanization Prospects: The 2018 Revision, Online Edition. 2018.
+[^8]: United Nations Population Division. [*World Urbanization Prospects: The 2018 Revision, Online Edition.*](https://population.un.org/wup/) 2018.
 
-[^9]: Wilson, L. "How big is a house? Average house size by country". Shrink That Footprint. July 2013.
+[^9]: Wilson, L. ["How big is a house? Average house size by country"](http://shrinkthatfootprint.com/how-big-is-a-house). Shrink That Footprint. July 2013.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

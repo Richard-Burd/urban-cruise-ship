@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_land_use";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Density, Energy, and Emissions
 
 Urban density is one of the most important tools available to save [energy in buildings](http://urbancruiseship.org/solution/energy/building_energy), particularly [heating and cooling energy](http://urbancruiseship.org/solution/energy/heating). Density, together with [other efficient urban designs](http://urbancruiseship.org/solution/cities/urban_form), is one of the most effective tools to save energy from [transportation](http://urbancruiseship.org/solution/energy/transpo_energy). Furthermore, urban density, along with agricultural intensification, is one of the few options available to reduce the human land footprint that encroaches on biodiversity. Building dense cities is especially important in the rapidly growing and urbanizing developing countries.
@@ -79,3 +87,12 @@ The tallest residential building in the world is 432 Park Avenue, part of "Billi
 [^17]: United States Census Bureau. ["Characteristics of New Housing"](https://www.census.gov/construction/chars/microdata.html). 2017 Microdata. Accessed October 11, 2018.
 
 [^18]: United States Census Bureau. ["Population Projections"](https://www.census.gov/programs-surveys/popproj.html). Accessed January 16, 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

@@ -1,3 +1,13 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_socioeconomics";
+
+import ArticleImage from "/components/ArticleImage.js";
+import IncreasePermittedHousingConstructionSolution from "/solutions/increase-permitted-housing-construction.mdx";
+import HousingVouchersSolution from "/solutions/housing-vouchers.mdx";
+
 # Housing
 
 Housing affordability is a severe problem in the United States.
@@ -29,94 +39,107 @@ Economists also consider the price elasticity of housing, which is the value of 
 
 #### Sources: [^5], [^7], [^8], [^20], [^24].
 
+<IncreasePermittedHousingConstructionSolution />
+
 ## Other Policies
 Aside from increasing the housing stock, there are several other approaches to deal with high housing costs, a few of which we examine below.
 
-## Rent Control
+<HousingVouchersSolution />
+
+### Rent Control
 Rent control is a policy that implements price controls on rents and creates protection against eviction. Such policies help reduce rents in controlled units and increase the length of residence in a rental [^10], [^26], but they tend to reduce the number of rental units available [^6], [^10], [^14], raise rents overall [^6], and cause the quality of the rental stock to deteriorate [^18]. For these reasons, most economists view rent control as a bad policy [^11], [^34].
 
-## Eviction Restrictions
+### Eviction Restrictions
 Many cities have adopted restrictions on the ability for landlord to evict tenants or "Right to Counsel" regulations, which entitle tenants facing eviction with legal representation. These rules tend to drive up rents to the point where they have a net negative effect on social welfare and increase homelessness [^1]. Rental assistance tends to increase welfare and reduce the likelihood that renters will face eviction in the first place [^1].
 
-## Public Housing
+### Public Housing
 Public housing (owned and operated by the government) or social housing (owned and operated by the government or non-profit organizations) is sometimes proposed as a way of reaching people who will not be adequately served by the private market. However, land use and zoning constraints apply to public housing just as much as they to do market housing, and thus these challenges still need to be resolved [^31].
 
-## Vacancy Tax
+### Vacancy Tax
 A vacancy tax is a higher tax rate on properties that are left vacant, implemented with the goal of incentivizing developers to lease properties, reduce blight, and increase housing or commercial real estate supply. Such taxes, such as the vacancy tax that was implemented in Vancouver, British Columbia, have had small effects on the supply of housing or commercial real estate [^32], [^33], and they are not an adequate replacement for increasing overall housing supply [^22].
 
-## Speculation
+### Speculation
 Speculation can play a role in housing price volatility [^9]--both on the upside and the downside--but the role of speculation in chronically high prices has been exaggerated. For example, most of the run-up in housing prices in the United States in the early-to-mid 2000s can be explained by supply constraints and low interest rates, rather than the speculative bubble that is often the narrative [^13]. Furthermore, measures to reduce speculation generally have little effect on prices [^25], [^28], [^29]. Speculation is more likely to occur in markets facing supply constraints, suggesting that overly restrictive zoning may contribute to speculation [^19].
 
-[^1]: Abramson, B. "The Welfare Effects of Eviction and Homelessness Policies". December 2021.
+[^1]: Abramson, B. ["The Welfare Effects of Eviction and Homelessness Policies"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4112426). December 2021.
 
-[^2]: Accessory Dwellings. "ADU Legislative Initiatives- History in the Making (Part I)". 2019.
+[^2]: Accessory Dwellings. ["ADU Legislative Initiatives- History in the Making (Part I)"](https://accessorydwellings.org/2019/07/08/adu-legislative-initiatives-history-in-the-making/). 2019.
 
-[^3]: Adkins, T. G. "Governor Newsom Signs Senate Leader Atkins’ SB 9 – the California HOME Act – Into Law". California State Senate. September 2021.
+[^3]: Adkins, T. G. ["Governor Newsom Signs Senate Leader Atkins’ SB 9 – the California HOME Act – Into Law"](https://sd39.senate.ca.gov/news/20210916-governor-newsom-signs-senate-leader-atkins%E2%80%99-sb-9-%E2%80%93-california-home-act-%E2%80%93-law). California State Senate. September 2021.
 
-[^4]: Bratu, C., Harjunen, O., Saarimaa, T. "City-wide effects of new housing supply: Evidence from moving chains". VATT Institute for Economic Research Working Papers 146. August 2021.
+[^4]: Bratu, C., Harjunen, O., Saarimaa, T. ["City-wide effects of new housing supply: Evidence from moving chains"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3929243). VATT Institute for Economic Research Working Papers 146. August 2021.
 
-[^5]: California Center for Jobs & the Economy, California Business Roundtable. "Regulation & Housing: Effects on Housing Supply, Costs & Poverty". 2017.
+[^5]: California Center for Jobs & the Economy, California Business Roundtable. ["Regulation & Housing: Effects on Housing Supply, Costs & Poverty"](https://centerforjobs.org/ca/special-reports/regulation-housing-effects-on-housing-supply-costs-poverty). 2017.
 
-[^6]: Diamond, R., McQuade, T., Qian, F. "The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco". American Economic Review 109(9), pp. 3365-3394. September 2019.
+[^6]: Diamond, R., McQuade, T., Qian, F. ["The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco"](https://www.aeaweb.org/articles?id=10.1257/aer.20181289). American Economic Review 109(9), pp. 3365-3394. September 2019.
 
-[^7]: Egan, T. "The Economics of San Francisco Housing". Chief Economist, City and County of San Francisco. October 2014.
+[^7]: Egan, T. ["The Economics of San Francisco Housing"](https://housingactioncoalition.org/wp-content/uploads/2014/11/Ted-Egan-Presentation.pdf). Chief Economist, City and County of San Francisco. October 2014.
 
-[^8]: Fischer, E. "Employment, construction, and the cost of San Francisco apartments". Experimental Geography. May 2016.
+[^8]: Fischer, E. ["Employment, construction, and the cost of San Francisco apartments"](https://experimental-geography.blogspot.com/2016/05/employment-construction-and-cost-of-san.html). Experimental Geography. May 2016.
 
-[^9]: Gao, Z., Sockin, M., Xiong, W. "Economic Consequences of Housing Speculation". The Review of Financial Studies 33(11), pp. 5248-5287. November 2020.
+[^9]: Gao, Z., Sockin, M., Xiong, W. ["Economic Consequences of Housing Speculation"](https://wxiong.mycpanel.princeton.edu/papers/Speculation.pdf). The Review of Financial Studies 33(11), pp. 5248-5287. November 2020.
 
-[^10]: Heskin, A. D., Levine, N., Garrett, M. "The Effects of Vacancy Control". Journal of the American Planning Association 66(2), pp. 162-176. 2000.
+[^10]: Heskin, A. D., Levine, N., Garrett, M. ["The Effects of Vacancy Control"](https://www.tandfonline.com/doi/abs/10.1080/01944360008976096). Journal of the American Planning Association 66(2), pp. 162-176. 2000.
 
-[^11]: Jenkins, B. "Rent Control: Do Economists Agree?". Econ Journal Watch 6(1), pp. 73-112. January 2009.
+[^11]: Jenkins, B. ["Rent Control: Do Economists Agree?"](https://econpapers.repec.org/article/ejwjournl/v_3a6_3ay_3a2009_3ai_3a1_3ap_3a73-112.htm). Econ Journal Watch 6(1), pp. 73-112. January 2009.
 
-[^12]: Joint Center for Housing Studies of Harvard University. "The State of the Nation's Housing 2019". 2019.
+[^12]: Joint Center for Housing Studies of Harvard University. ["The State of the Nation's Housing 2019"](https://www.jchs.harvard.edu/state-nations-housing-2019). 2019.
 
-[^13]: Lee, T. B. "The 2000s housing bubble was greatly exaggerated". Full Stack Economics. November 2021.
+[^13]: Lee, T. B. ["The 2000s housing bubble was greatly exaggerated"](https://fullstackeconomics.com/the-2000s-housing-bubble-was-greatly-exaggerated/). Full Stack Economics. November 2021.
 
-[^14]: Levine, N. "The Effects of Local Growth Controls on Regional Housing Production and Population Redistribution in California". Urban Studies 36(12), pp. 2047-2068. November 1999.
+[^14]: Levine, N. ["The Effects of Local Growth Controls on Regional Housing Production and Population Redistribution in California"](https://journals.sagepub.com/doi/10.1080/0042098992539). Urban Studies 36(12), pp. 2047-2068. November 1999.
 
-[^15]: Local Housing Solutions. "Streamlined permitting processes". September 13, 2022.
+[^15]: Local Housing Solutions. ["Streamlined permitting processes"](https://localhousingsolutions.org/housing-policy-library/streamlined-permitting-processes/). September 13, 2022.
 
-[^16]: Lui, J. "The top 10 cities turning old office buildings into apartments-take a look inside". CNBC Make It. November 2021.
+[^16]: Lui, J. ["The top 10 cities turning old office buildings into apartments-take a look inside"](https://www.cnbc.com/2021/11/26/the-top-10-cities-turning-old-office-buildings-into-apartments.html). CNBC Make It. November 2021.
 
-[^17]: Mast, E. "JUE Insight: The effect of new market-rate housing construction on the low-income housing market". Journal of Urban Economics: 103383. July 2021.
+[^17]: Mast, E. ["JUE Insight: The effect of new market-rate housing construction on the low-income housing market"](https://www.sciencedirect.com/science/article/abs/pii/S0094119021000656). Journal of Urban Economics: 103383. July 2021.
 
-[^18]: Moon, C., Stotsky, J. G. "The Effect of Rent Control on Housing Quality Change: A Longitudinal Analysis". Journal of Political Economy 101(6), pp. 1114-1148. December 1993.
+[^18]: Moon, C., Stotsky, J. G. ["The Effect of Rent Control on Housing Quality Change: A Longitudinal Analysis"](https://www.jstor.org/stable/2138574). Journal of Political Economy 101(6), pp. 1114-1148. December 1993.
 
-[^19]: Nathanson, C. G., Zwick, E. "Arrested Development: Theory and Evidence of Supply-Side Speculation in the Housing Market". The Journal of Finance 73(6), pp. 2587-2633. December 2018.
+[^19]: Nathanson, C. G., Zwick, E. ["Arrested Development: Theory and Evidence of Supply-Side Speculation in the Housing Market"](https://scholar.harvard.edu/files/zwick/files/jmp_111213.pdf). The Journal of Finance 73(6), pp. 2587-2633. December 2018.
 
-[^20]: Nickelsburg, J. "September 2017 Economic Outlook". UCLA Anderson School of Management. 2017.
+[^20]: Nickelsburg, J. ["September 2017 Economic Outlook"](https://www.anderson.ucla.edu/Documents/areas/ctr/forecast/reports/uclaforecast_Sept2017_Nickelsburg.pdf). UCLA Anderson School of Management. 2017.
 
-[^21]: OECD. "Building for a better tomorrow: Policies to make housing more affordable". Employment, Labour and Social Affairs Policy Briefs, OECD, Paris. 2021.
+[^21]: OECD. ["Building for a better tomorrow: Policies to make housing more affordable"](http://oe.cd/affordable-housing-2021). Employment, Labour and Social Affairs Policy Briefs, OECD, Paris. 2021.
 
-[^22]: Ogmundson, B. "Estimating the Impacts of the Speculation and Vacancy Tax". British Columbia Real Estate Association. March 2020.
+[^22]: Ogmundson, B. ["Estimating the Impacts of the Speculation and Vacancy Tax"](https://www.bcrea.bc.ca/economics/estimating-the-impacts-of-the-speculation-and-vacancy-tax/). British Columbia Real Estate Association. March 2020.
 
-[^23]: Organisation for Economic Co-operation and Development. "OECD Affordable Housing Database". Accessed June 28, 2021.
+[^23]: Organisation for Economic Co-operation and Development. ["OECD Affordable Housing Database"](https://www.oecd.org/housing/data/affordable-housing-database/). Accessed June 28, 2021.
 
-[^24]: Paciorek, A. "Essays on Housing Supply and House Price Volatility". Publicly Accessible Penn Dissertations 320. Spring 2011.
+[^24]: Paciorek, A. ["Essays on Housing Supply and House Price Volatility"](https://repository.upenn.edu/cgi/viewcontent.cgi?article=1460&context=edissertations). Publicly Accessible Penn Dissertations 320. Spring 2011.
 
-[^25]: Park, D., Xiao, Q. "Housing Prices and the Role of Speculation: The Case of Seoul". Asian Development Bank, ADB Economics Working Paper Series No. 146. January 2009.
+[^25]: Park, D., Xiao, Q. ["Housing Prices and the Role of Speculation: The Case of Seoul"](https://www.adb.org/sites/default/files/publication/28239/economics-wp146.pdf). Asian Development Bank, ADB Economics Working Paper Series No. 146. January 2009.
 
-[^26]: Pastor, M., Carter, V., Abood, M. "Rent Matters: What are the Impacts of Rent Stabilization Measures?". USC Dornsife Program for Environmental and Regional Equity. October 2018.
+[^26]: Pastor, M., Carter, V., Abood, M. ["Rent Matters: What are the Impacts of Rent Stabilization Measures?"](https://dornsife.usc.edu/pere/rent-matters). USC Dornsife Program for Environmental and Regional Equity. October 2018.
 
-[^27]: Potter, B. "Construction Costs Around the World: How Does the US Compare?". Construction Physics. December 2020.
+[^27]: Potter, B. ["Construction Costs Around the World: How Does the US Compare?"](https://constructionphysics.substack.com/p/construction-costs-around-the-world). Construction Physics. December 2020.
 
-[^28]: Rauf, M. A., Weber, O. "Housing Sustainability: The Effects of Speculation and Property Taxes on House Prices within and beyond the Jurisdiction". Sustainability 14(12): 7496. June 2022.
+[^28]: Rauf, M. A., Weber, O. ["Housing Sustainability: The Effects of Speculation and Property Taxes on House Prices within and beyond the Jurisdiction"](https://www.mdpi.com/2071-1050/14/12/7496). Sustainability 14(12): 7496. June 2022.
 
-[^29]: Rongxuan, Z. "How Do Anti-Speculation Meaures Affect House Price Differently by Location: Evidence from the zBeijing Secondary Housing Market". ScholarBank@NUS Repository. December 2017.
+[^29]: Rongxuan, Z. ["How Do Anti-Speculation Meaures Affect House Price Differently by Location: Evidence from the zBeijing Secondary Housing Market"](https://scholarbank.nus.edu.sg/handle/10635/220544). ScholarBank@NUS Repository. December 2017.
 
-[^30]: Schubert, G. "House Price Contagion and US City Migration Networks". Joint Center for Housing Studies of Harvard University. March 2021.
+[^30]: Schubert, G. ["House Price Contagion and US City Migration Networks"](https://www.jchs.harvard.edu/research-areas/working-papers/house-price-contagion-and-us-city-migration-networks). Joint Center for Housing Studies of Harvard University. March 2021.
 
-[^31]: Schuetz, J. "Four reasons why more public housing isn’t the solution to affordability concerns". The Brookings Institute. January 2021.
+[^31]: Schuetz, J. ["Four reasons why more public housing isn’t the solution to affordability concerns"](https://www.brookings.edu/blog/the-avenue/2021/01/14/four-reasons-why-more-public-housing-isnt-the-solution-to-affordability-concerns/). The Brookings Institute. January 2021.
 
-[^32]: Segú, M. "The impact of taxing vacancy on housing markets: Evidence from France". Journal of Public Economics 185: 104079. May 2020.
+[^32]: Segú, M. ["The impact of taxing vacancy on housing markets: Evidence from France"](https://www.sciencedirect.com/science/article/abs/pii/S0047272719301409). Journal of Public Economics 185: 104079. May 2020.
 
-[^33]: Swallow, D. "No Vacancy Examining Vancouver's Empty Homes Tax as a Strategy for Affordable Rental Housing". School of Urban Planning, McGill University. February 2020.
+[^33]: Swallow, D. ["No Vacancy Examining Vancouver's Empty Homes Tax as a Strategy for Affordable Rental Housing"](https://escholarship.mcgill.ca/concern/papers/4j03cz990). School of Urban Planning, McGill University. February 2020.
 
-[^34]: Tatian, P. A. "Is Rent Control Good Policy?". Urban Institute. January 2013.
+[^34]: Tatian, P. A. ["Is Rent Control Good Policy?"](https://www.urban.org/urban-wire/rent-control-good-policy). Urban Institute. January 2013.
 
-[^35]: U. S. Energy Information Administration. "Consumption and Efficiency". Accessed October 8, 2018.
+[^35]: U. S. Energy Information Administration. ["Consumption and Efficiency"](https://www.eia.gov/consumption/). Accessed October 8, 2018.
 
-[^36]: Woetzel, J., Ram, S., Mischke, J., Garemo, N., Sankhe, S. "Tackling the world’s affordable housing challenge". McKinsey Global Institute. October 2014.
+[^36]: Woetzel, J., Ram, S., Mischke, J., Garemo, N., Sankhe, S. ["Tackling the world’s affordable housing challenge"](https://www.mckinsey.com/featured-insights/urbanization/tackling-the-worlds-affordable-housing-challenge). McKinsey Global Institute. October 2014.
 
-[^37]: Zucker, P. C., Storchheim, B., Persico, M. "Development and Permitting Process Improvement Study". Zucker Systems, prepared for the City of Lincoln, Nebraska. July 2013.
+[^37]: Zucker, P. C., Storchheim, B., Persico, M. ["Development and Permitting Process Improvement Study"](https://www.yumpu.com/en/document/view/17821978/development-and-permitting-process-improvement-study). Zucker Systems, prepared for the City of Lincoln, Nebraska. July 2013.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

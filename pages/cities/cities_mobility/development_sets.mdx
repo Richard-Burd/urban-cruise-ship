@@ -1,3 +1,12 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_mobility";
+
+import ArticleImage from "/components/ArticleImage.js";
+import DevelopmentSetPatternsSolution from "/solutions/development-set-patterns.mdx";
+
 # Development Sets
 
 "Development sets" is our term for a type of mixed use development that seeks to maximize the number of useful businesses within walking distance, and thus minimize the amount of motorized transportation (cars or mass transit) necessary. The concept is also known as the "15 minute city" and variations thereof.
@@ -51,6 +60,8 @@ We estimate the following routine needs of the general population.
 </div>
 
 #### The number of businesses of a given type, per capita, is calculated by dividing the U.S. population [^25] by the number of businesses. The number supported in a neighborhood is determined by dividing the neighborhood population, as reported above, by the number of people served by a business, rounding down.
+
+<DevelopmentSetPatternsSolution />
 
 ## Advantages
 A 15 minute city design improves health [^28].
@@ -113,3 +124,12 @@ Employment can be a challenge in a self-contained neighborhood. Alain Bertaud do
 [^27]: TUMI Management. ["The 15-Minute City"](https://www.transformative-mobility.org/assets/publications/TUMI_The-15-Minute-City_2021-07.pdf). June 2021.
 
 [^28]: Weng, M., Ding, N., Li, J., Jin, X., Xiao, H., He, Z., Su, S. ["The 15-minute walkable neighborhoods: Measurement, social inequalities and implications for building healthy communities in urban China"](https://www.sciencedirect.com/science/article/abs/pii/S2214140518305103). Journal of Transport & Health 13, pp. 259-273. June 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

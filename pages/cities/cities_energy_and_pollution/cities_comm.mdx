@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_energy_and_pollution";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Communications
 
 Information technology has several important impacts on environmental and health outcomes. See also our analysis of energy in information technology.
@@ -107,3 +115,12 @@ Virtual travel is not yet a full substitute for physical travel. For example, in
 [^27]: Vogels, E. ["59% of U.S. parents with lower incomes say their child may face digital obstacles in schoolwork"](https://www.pewresearch.org/fact-tank/2020/09/10/59-of-u-s-parents-with-lower-incomes-say-their-child-may-face-digital-obstacles-in-schoolwork/). Pew Research Center. September 2020.
 
 [^28]: Winslow, J. ["America’s Digital Divide"](https://www.pewtrusts.org/en/trust/archive/summer-2019/americas-digital-divide). Pew Trust Magazine. July 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

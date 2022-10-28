@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_land_use";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # New Cities
 
 Today the world is near the [all-time peak](http://urbancruiseship.org/solution/cities/cities_trends) of the growth of urban population. These conditions stimulate interest in the [growth of existing cities](http://urbancruiseship.org/solution/cities/cities_size) and in the building of new cities, some possibilities of which are outlined below.
@@ -35,3 +43,12 @@ There is significant interest in building new cities or research facilities, par
 [^11]: Ros, T. ["Underwater Hotels - Unique Concept, But Are They Profitable?"](https://gulfbusiness.com/underwater-hotels-unique-concept-but-are-they-profitable/). Gulf Business. July 2013.
 
 [^12]: Zhao, S. ["Government's ambitious 2030 land reclamation plan to cost HK$400 billion, group says"](https://www.scmp.com/news/hong-kong/health-environment/article/2051509/governments-ambitious-2030-land-reclamation-plan). South China Morning Post. December 2016.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

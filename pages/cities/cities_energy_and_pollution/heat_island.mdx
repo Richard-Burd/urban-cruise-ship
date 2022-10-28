@@ -1,3 +1,12 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_energy_and_pollution";
+
+import ArticleImage from "/components/ArticleImage.js";
+import HeatMitigationThroughTreesSolution from "/solutions/heat-mitigation-through-trees.mdx";
+
 # Urban Heat Island
 
 Urban heat islands are regions around cities that experience higher temperatures as a result of energy use, lack of convection or evaporation due to loss of vegetation, and features such as roofs and pavement that absorb more heat than natural land.
@@ -22,6 +31,8 @@ Urban heat islands have been linked with fish deaths [^13], among other ecologic
 
 ## Mitigation
 The urban heat island effect can be mitigated by increasing a city's reflectivity, such as through white roofs, and by planting more vegetation. Both strategies were found to have benefit-cost ratios greater than 1 in Austria [^7]. Such strategies were also found to save lives through reducing the severity of heat waves in Washington, D. C. [^8].
+
+<HeatMitigationThroughTreesSolution />
 
 [^1]: AECOM Australia Pty Ltd. ["Economic Assessment of the Urban Heat Island Effect"](https://www.melbourne.vic.gov.au/SiteCollectionDocuments/eco-assessment-of-urban-heat-island-effect.pdf). Prepared for City of Melbourne. November 2012.
 

@@ -1,3 +1,13 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_socioeconomics";
+
+import ArticleImage from "/components/ArticleImage.js";
+import ImprovedLawEnforcementSolution from "/solutions/improved-law-enforcement.mdx";
+import ImprovedPublicHealthSolution from "/solutions/improved-public-health.mdx";
+
 # Size
 
 As cities grow, an increased population has both positive and negative effects on quality of life. The most important effects are reviewed below.
@@ -18,6 +28,10 @@ Better transportation, together with telecommunications, have been found to help
 
 ## Drawbacks of Big Cities
 To reap the environmental and economic benefits that come with density, it is necessary to mitigate the drawbacks. Larger and denser cities tend to have higher traffic congestion [^6], crime [^11], and infectious disease [^15]. [Light pollution](http://urbancruiseship.org/solution/cities/light), [noise pollution](http://urbancruiseship.org/solution/cities/noise), and the [urban heat island effect](http://urbancruiseship.org/solution/cities/heat_island) are challenges that grow with density; see our analyses of these topics and proposals to mitigate them.
+
+<ImprovedLawEnforcementSolution />
+
+<ImprovedPublicHealthSolution />
 
 [^1]: Agrawal, A., Cockburn, I., McHale, J. ["Gone but not forgotten: knowledge flows, labor mobility, and enduring social relationships"](https://academic.oup.com/joeg/article-abstract/6/5/571/904501). Journal of Economic Geography 6(5), pp. 571-591. November 2006.
 
@@ -52,3 +66,12 @@ To reap the environmental and economic benefits that come with density, it is ne
 [^16]: Roche, M. P. ["Taking Innovation to the Streets: Microgeography, Physical Structure, and Innovation"](https://direct.mit.edu/rest/article-abstract/102/5/912/96766/Taking-Innovation-to-the-Streets-Microgeography?redirectedFrom=fulltext). The Review of Economics and Statistics 102(5), pp. 912-928. December 2020.
 
 [^17]: Schläpfer, M., Bettencourt, L. M. A., Grauwin, S., Raschke, M., Claxton, R., Smoreda, Z., West, G. B., Ratti, C. ["The scaling of human interactions with city size"](https://royalsocietypublishing.org/doi/10.1098/rsif.2013.0789). Journal of the Royal Society Interface 11(98). September 2014.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

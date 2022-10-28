@@ -1,3 +1,17 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_land_use";
+
+import ArticleImage from "/components/ArticleImage.js";
+import StreetLevelZoningSolution from "/solutions/street-level-zoning.mdx";
+import ZoningShouldMeetMarketNeedsSolution from "/solutions/zoning-should-meet-market-needs.mdx";
+import RemoveParkingMinimumsSolution from "/solutions/remove-parking-minimums.mdx";
+import EndPublicProvidedFreeParkingSolution from "/solutions/end-public-provided-free-parking.mdx";
+import LoosenFloorAreaRatioRulesSolution from "/solutions/loosen-floor-area-ratio-rules.mdx";
+import LoosenMinimumLotSizeRulesSolution from "/solutions/loosen-minimum-lot-size-rules.mdx";
+
 # Zoning
 
 Cities adopt a range of zoning and other policies that prevent density and the environmental and economic benefits that density provides. Zoning is a major contributor in high housing costs [^16], and by preventing people from being able to move to highly productive cities, zoning restrictions are estimated to cost the American economy from $400 billion to $1.7 trillion per year [^15], [^20], [^23].
@@ -16,12 +30,16 @@ Zoning regulations impose considerable cost on homebuyers and the economy.
 ## Property Rights
 Zoning attempts to balance two concerns in urban development: the need and economic value of new develop with the external costs of development, including traffic congestion. In principle, if property rights are fully delineated, then property owners should be able to negotiate an economically efficient system of development [^9]. In practice, transaction costs associated with negotiation among many, even thousands, of property owners in intractibly complicated [^27].
 
+<StreetLevelZoningSolution />
+
 ## Unit Size
 Most cities place severe restrictions or outright bans [^11] on the construction of small housing units, such as microapartments (typically less than 300 square feet) or single-room occupancy units. Allowing small units can create affordable options for singles that would otherwise not be available, as well as take pressure off the market for larger units. In cities with a high cost of living, there is strong evidence for unmet demand for small units [^35].
 
 The following shows how a given building with 67,100 gross square feet can accomodate more people through small unit sizes.
 
 #### Allowing smaller units can increase the housing stock in a given building envelope. Source: Stern and Yager [^31].
+
+<ZoningShouldMeetMarketNeedsSolution />
 
 ## Parking Minimum
 Most cities require new developments to provide parking. These requirements often exceed the actual need for parking, adding to the cost of new development and consuming space that could otherwise be used more productively.
@@ -30,8 +48,16 @@ Most cities require new developments to provide parking. These requirements ofte
 
 The cost of excessive parking spaces is borne by the developer, who must in turn pass it on to the renters, homebuyers, or businesses. Including access roads, one acre holds 125 parking space [^25], preventing the construction of 5 single family homes with median lot size, 22 walk-up apartment units, or 72 midrise apartment units. The reduction in the housing stock raises the cost of living throughout the city [^1].
 
+<RemoveParkingMinimumsSolution />
+
+<EndPublicProvidedFreeParkingSolution />
+
 ## Density Restrictions
 Cities often require a minimum lot size for new single-family homes. These rules lower population density and increase the cost of housing. In the Greater Boston Area, for instance, an increase of the minimum lot requirement by a quarter acre causes an estimated 10% decrease in the housing supply and 3.3% increase in price [^17]. The reduction of supply in one town raises prices in neighboring towns [^36].
+
+<LoosenFloorAreaRatioRulesSolution />
+
+<LoosenMinimumLotSizeRulesSolution />
 
 Similarly, restrictions on the height of buildings, or on the floor-area ratio (the ratio between the total building floor space and the area of the lot) reduce a city's supply of valuable floor space that is close to the urban core.
 
@@ -106,3 +132,12 @@ Similarly, restrictions on the height of buildings, or on the floor-area ratio (
 [^35]: Urban Land Institute. ["The Macro View on Micro Units"](http://uli.org/report/uli-multifamily-product-councils-publish-new-research-micro-units/). 2014.
 
 [^36]: Zabel, J., Dalton, M. ["The impact of minimum lot size regulations on house prices in Eastern Massachusetts"](https://www.sciencedirect.com/science/article/pii/S016604621100072X). Regional Science and Urban Economics 41(6), pp. 571-583. November 2011.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

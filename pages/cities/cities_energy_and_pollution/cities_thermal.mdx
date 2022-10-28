@@ -1,3 +1,12 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_energy_and_pollution";
+
+import ArticleImage from "/components/ArticleImage.js";
+import DistrictEnergySolution from "/solutions/district-energy.mdx";
+
 # Thermal Transfer
 
 District heating and cooling, enabled by [high density](http://urbancruiseship.org/solution/cities/cities_high_density), is one of the most effective ways to save energy on [heating and cooling](http://urbancruiseship.org/solution/energy/heating). See our analysis of heating and cooling for solutions in other areas.
@@ -6,6 +15,8 @@ District heating and cooling, enabled by [high density](http://urbancruiseship.o
 [Dense development](http://urbancruiseship.org/solution/cities/cities_density) allow a district heating system, or a district heating and cooling system, to be economically viable. District systems typically save energy, especially if powered by what would otherwise be waste heat. Conversely, building a district heating and/or cooling system can assist denser development, by allowing future buildings to save on dedicated HVAC infrastructure.
 
 #### Energy requirements and viability of district heating and cooling. Sources: Population density threshholds for viability of DHC are estimated from Möller and Werner [^3]. Energy for district heating is estimated from Gudmundsson [^1] and for district cooling is estimated from Stellar Energy [^4].
+
+<DistrictEnergySolution />
 
 ## Sweden: District Heating and Cooling Success Story
 Sweden is a world leader in the use of district heating, which provides over 50% of the country's residential and commercial heating needs [^8]. Only 3% of heating demand was met by district systems in 1960 [^8], but in the following decades, the Swedish government saw district heating as a solution to achieve several goals--reduce dependence on oil, spur the construction of new homes, and reduce CO2 emissions--and invested accordingly [^8].
@@ -29,3 +40,12 @@ Today, Stockholm is developing the Open District Heating concept, which would cr
 [^7]: Weiss, W., Spörk-Dür, M. ["Solar Heat Worldwide"](https://www.iea-shc.org/Data/Sites/1/publications/Solar-Heat-Worldwide-2021.pdf). Solar Heating & Cooling Program, International Energy Agency. 2021.
 
 [^8]: Werner, S. ["District heating and cooling in Sweden"](https://www.sciencedirect.com/science/article/pii/S0360544217304140). Energy 126(1), pp. 419-429. May 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

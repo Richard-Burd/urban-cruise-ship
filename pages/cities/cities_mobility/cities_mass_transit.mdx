@@ -1,3 +1,11 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_mobility";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Mass Transit
 
 Mass transit requires sufficient population density to be financially viable; otherwise, it doesn't tend to help cities much. See also our analysis of [energy used in mass transit](http://urbancruiseship.org/solution/energy/transpo_transit).
@@ -35,3 +43,12 @@ Two-page handout illustrating light rail systems and population density (PDF)
 [^9]: Transit Costs Project. ["About"](https://transitcosts.com/about/). Accessed May 8, 2021.
 
 [^10]: Twin Cities Metropolitan Council. ["Density & Activity Near Transit: Local Planning Handbook"](https://metrocouncil.org/Handbook/Files/Resources/Fact-Sheet/LAND-USE/Density-and-Activity-Near-Transit.aspx). January 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

@@ -1,7 +1,24 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_material_consumption";
+
+import ArticleImage from "/components/ArticleImage.js";
+
 # Consumer Materials
 
 Just as denser housing construction [saves embodied energy in the construction phase](http://urbancruiseship.org/solution/cities/cities_construction), it also saves energy throughout the building's life in the form of consumer goods.
 
 #### Urban homes are 90 m2 apartments near downtown Brussels, and suburban homes are 130 m2 detached single family homes in the suburbs of Brussels. Source: [^1]. 'Normal' homes refer to "a standard new construction built according to the minimal energy efficiency requirements based on the Energy Performance of Buildings Directive" of the EU. A 'Low Energy' house is one with "reinforced insulation and low space heating energy demand but with standard heat delivery systems". A passive home is "an extremely insulated and airtight passive house equipped with mechanical ventilation and a heat recovery system".
 
-[^1]: Stephan, A., Crawford, R. H., de Myttenaere, K. "Towards a more holistic approach to reducing the energy demand of dwellings". Procedia Engineering 21, pp. 1033-1041. 2011.
+[^1]: Stephan, A., Crawford, R. H., de Myttenaere, K. ["Towards a more holistic approach to reducing the energy demand of dwellings"](https://www.sciencedirect.com/science/article/pii/S1877705811049435). Procedia Engineering 21, pp. 1033-1041. 2011.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
