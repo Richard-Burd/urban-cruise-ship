@@ -1,7 +1,30 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "waste";
+export const focusAreaUrl = "waste_economics";
+
+import ArticleImage from "/components/ArticleImage.js";
+import RecycledContentMandatesSolution from "/solutions/recycled-content-mandates.mdx";
+import RecycledContentProcurementSolution from "/solutions/recycled-content-procurement.mdx";
+
 # Demand for Recycling
 
 There must be sufficient demand for recycled material to advance recycling. Manufacturers cite quality and contamination, as well as price, as a limiting factor in the use of recycled plastic [^2]. Recycled paper is more often used for paperboard and corrugated products, but not as such for high quality products such as office paper and magazines [^1].
 
+<RecycledContentMandatesSolution />
+
+<RecycledContentProcurementSolution />
+
 [^1]: Felton, D. "Recycled Content Mandates: Pros and Cons". Packaging World. October 2020.
 
 [^2]: More Recycling. "End Market Demand for Recycled Plastic". October 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

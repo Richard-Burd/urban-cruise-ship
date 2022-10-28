@@ -1,3 +1,13 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "waste";
+export const focusAreaUrl = "hazardous_waste";
+
+import ArticleImage from "/components/ArticleImage.js";
+import ImproveRecyclingSolution from "/solutions/improve-recycling.mdx";
+import ExtendedProducerResponsibilityForDiscardedBladesSolution from "/solutions/extended-producer-responsibility-for-discarded-blades.mdx";
+
 # E-Waste
 
 In this section, we examine the problem of electronic waste and some solutions.
@@ -5,6 +15,7 @@ In this section, we examine the problem of electronic waste and some solutions.
 ## Trends
 The generation of e-waste is growing rapidly with the proliferation of consumer electronics, but recycling rates are increasing slowly.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Source: [^6]. Recycling rates only count formal collection, and do not count informal recycling, which can result in severe health and environmental problems.
 
 The growth of solar panels and batteries will further contribute to the growth of e-waste as these technologies start to be decomissioned in large quantities.
@@ -12,18 +23,23 @@ The growth of solar panels and batteries will further contribute to the growth o
 ## Impacts
 Improperly disposed e-waste causes significant harm.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Sources: the Global E-Waste Monitor [^6] and Boardman et al. [^2]. Health damages are assessed per-tonne for e-waste recycling in Guiyu, southern China, where standards of health and safety are not well followed. The majority of the damage is from lead exposure, with additional costs from other toxic materials in e-waste.
 
 Lead, cadmium, mercury, and other pollutants released by improper e-waste management do substantial harm to the air and soil, but monetized damages of those are not included above.
 
 Failing to recycle e-waste also results in the loss of valuable minerals. The value of the minerals in e-waste is estimated at $62.5 billion per year [^13].
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Value of minerals in e-waste estimated by [^5], [^6], [^10].
 
 ## Recycling Options
 E-waste generally costs a bit over $1000/tonne to recycle.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Sources: [^3], [^10], [^17], [^18].
+
+<ImproveRecyclingSolution />
 
 As of 2018, 24 states apply extended producer responsibility, where manufacturers of certain products are required to provide for their proper disposal. The products covered vary by state. Additionally, California charges a fee, which is used to run a recycling program itself, and Colorado bans the disposal of electronic devices at solid waste landfills [^11].
 
@@ -45,6 +61,8 @@ As more solar photovoltaics reach the end of their lives, they will significantl
 
 ## Wind Turbine Blade Disposal
 About 80-85% of wind turbines can be recycled [^16], but they are mostly landfilled because turbine blades are generally made of a thermoset plastic that is difficult to recycle [^7]. Recycling blades should require no more than 2% of the energy they create over the lifetime of the wind turbine (assuming a 30% capacity factor) [^4].
+
+<ExtendedProducerResponsibilityForDiscardedBladesSolution />
 
 [^1]: Beauson, J., Laurent, A., Rudolph, D. P., Jensen, J. P. ["The complex end-of-life of wind turbine blades: A review of the European context"](https://www.sciencedirect.com/science/article/pii/S136403212101114X). Renewable and Sustainable Energy Reviews 155: 111847. March 2022.
 
@@ -81,3 +99,12 @@ About 80-85% of wind turbines can be recycled [^16], but they are mostly landfil
 [^17]: Yang, W., Sun, Q., Ni, H. ["Cost-benefit analysis of metal recovery from e-waste: Implications for international policy"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X21000349#!). Waste Management 123, pp. 42-47. March 2021.
 
 [^18]: Zeng, X., Mathews, J. A., Li, J. ["Urban Mining of E-Waste is Becoming More Cost-Effective Than Virgin Mining"](https://pubs.acs.org/doi/10.1021/acs.est.7b04909). Environmental Science & Technology 52(8), pp. 4835-4841. April 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

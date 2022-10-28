@@ -1,9 +1,20 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "waste";
+export const focusAreaUrl = "hazardous_waste";
+
+import ArticleImage from "/components/ArticleImage.js";
+import WastePricingOnCoalBurningSolution from "/solutions/waste-pricing-on-coal-burning.mdx";
+
 # Industrial Waste
 
 ## Coal Ash
 Coal ash is the byproduct of burning coal, including fly ash, bottom ash, boiler slag, and flue gas desulfurization material [^6]. Coal ash contains harmful materials, such as arsenic, cadmium, and mercury, and it can cause water and air pollution [^6]. Burning one ton of coal produces about 0.15 tons of ash [^4].
 
 Following spills at Kingston, Tennessee, where at least 30 clean-up workers have died from illnesses suspected to be linked to the spill [^3], and at Eden, North Carolina [^5], the U. S. EPA has instituted regulations on coal ash disposal. The rules requires liners to control water pollution and other safeguards, but it may be inadequate [^1].
+
+<WastePricingOnCoalBurningSolution />
 
 [^1]: Clements, K. ["The Coal Ash Rule Trilogy Spanning Obama, Trump, and the D.C. Circuit"](https://eelp.law.harvard.edu/2020/01/the-coal-ash-rule-trilogy-spanning-obama-trump-and-the-d-c-circuit/). Energy & Environmental Law Program, Harvard Law School. January 2020.
 
@@ -20,3 +31,12 @@ Following spills at Kingston, Tennessee, where at least 30 clean-up workers have
 [^7]: Wang, L., Watanabe, T., Xu, Z. ["Monetization of External Costs Using Lifecycle Analysis—A Comparative Case Study of Coal-Fired and Biomass Power Plants in Northeast China"](https://www.mdpi.com/1996-1073/8/2/1440). Energies 8(2), pp. 1440-1467. February 2015.
 
 [^8]: World Nuclear Association. ["Economics of Nuclear Power"](https://world-nuclear.org/information-library/economic-aspects/economics-of-nuclear-power.aspx). Accessed April 30, 2022.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

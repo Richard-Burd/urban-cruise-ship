@@ -1,15 +1,38 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "waste";
+export const focusAreaUrl = "waste_society";
+
+import ArticleImage from "/components/ArticleImage.js";
+import NationwideRecyclingMandatesSolution from "/solutions/nationwide-recycling-mandates.mdx"
+
 # Recycling Overview
 
 Recycling rates of municipal solid waste (MSW) grew rapidly in the late 1980s and 1990s, and since 2000 are showing stagnation.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Recycling rates in the United States from 1960 to 2015. Source: EPA [^1].
 
 Rates of combustion of solid waste are likewise stagnant.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Combustion rates in the United States from 1960 to 2015. Source: EPA [^1].
 
 There is room to increase recycling rates for all major commodities in MSW.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Recycling in the United States by commodity. Source: EPA [^1].
 
+<NationwideRecyclingMandatesSolution />
+
 [^1]: U.S. Environmental Protection Agency. ["Advancing Sustainable Materials Management: 2015 Tables and Figures"](https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/advancing-sustainable-materials-management). July 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

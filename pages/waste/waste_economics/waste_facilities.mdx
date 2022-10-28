@@ -1,3 +1,15 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "waste";
+export const focusAreaUrl = "waste_economics";
+
+import ArticleImage from "/components/ArticleImage.js";
+import WetDryCollectionSolution from "/solutions/wet-dry-collection.mdx";
+import FranchiseCollectionSolution from "/solutions/franchise-collection.mdx";
+import CompostMandateSolution from "/solutions/compost-mandate.mdx";
+import RecoveryFacilitiesSolution from "/solutions/recovery-facilities.mdx";
+
 # Recovery Facilities
 
 Almost all material can be recycled or pyrolyzed, as discussed below.
@@ -5,6 +17,7 @@ Almost all material can be recycled or pyrolyzed, as discussed below.
 ## Material Recovery Facilities
 Since waste management is typically either publicly run or highly regulated, the industry might not respond efficiently to market signals. Cities can invest directly in single stream or mixed waste material recovery facilities (MRF), which collect and sort mixed waste, diverting economically useful materials for reprocessing.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### All cost figures are CPI-adjusted to 2020 and assess the total capital, operating, and infrastructure cost of running a MRF. Sources: [^5], [^9], [^11], [^17], [^18], [^19]. Other studies confirm this price range [^13], [^24].
 
 With prices of recycled commodities [highly variable](https://www.theguardian.com/environment/2015/jun/27/recycling-unprofitable-oil-china-dollar), municipalities should evaluate whether investment in an advanced MRF makes sense, taking externalities into account.
@@ -12,19 +25,25 @@ With prices of recycled commodities [highly variable](https://www.theguardian.co
 ## Material Collection
 The way in which material is sorted and collected can have a major effect both on the public's participation in recycling and the amount of material ultimately recycled. The debate is generally between single stream recycling, which puts all recyclable material in a single bin to be sorted by the MRF, and dual stream recycling, which separates recyclables into two categories (often organic and inorganic material) at the consumer level [^14]. Source-separate recycling, which uses a larger number of categories, is also done.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Source: [^8]. Total material recycled accounts both for the amount that is collected and the portion of material collected that is lost due to contamination. Single-stream recycling generally collections more material, but a larger portion is lost to contamination, resulting in less material recycled overall. In the scenarios considered, all glass is assumed to be landfilled.
 
 Other studies confirm that single stream recycling is generally more expensive to sort [^16] and that contamination rates are higher [^12].
 
+<WetDryCollectionSolution />
+
 ## Value of Recycled Materials
 The cost of a material recovery facility can be partially offset by the sale of recovered materials. The following prices were observed in 2018.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Commodity prices are reported in a 2018 presentation and fluctuate over time. The value of the commodity on a per-ton basis and the value contained in one ton of typical MSW are reported. MSW commodities by mass do not add to 100% due to incomplete characterization. Source: [^23].
 
 ## Other Recycling Options
 The city of San Jose, California has achieved a 74% recycling rate through a [franchise system](https://www.epa.gov/transforming-waste-tool/less-waste-case-study-san-jose-ca), under which the city offers exclusive waste handling contracts with mandates or incentives for high recycling rates. Bidding for franchises is open to the public.
 
 Deposit-return systems are effective tools for recovering high-value beverage containers. The system works by adding a charge on the price of beverage containers, which is refunded when the container is returned. In the United States, recovery of bottles and cans was 82% in 2002 in the state of Oregon, which has a deposit-return program. The figure is only 30% in states without such a program [^21].
+
+<FranchiseCollectionSolution />
 
 ## Use of Recycled Materials
 Here we consider the prospects for reusing material recovered from municipal solid waste.
@@ -33,9 +52,12 @@ Here we consider the prospects for reusing material recovered from municipal sol
 
 There will almost certainly be market demand for any amount of compost that would feasibly be produced.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Source: [^1]. Souces of compost assessed include municipal solid waste, biosolids (products from wastewater treatment), horticultural and silvicultural (forestry) waste, and agricultural waste. Although the study is old, we expect the basic conclusion, that there is sufficient demand for any amount of compost that could reasonably be produced, remains true.
 
 The average American [generates](http://urbancruiseship.org/solution/waste/waste_composition) almost a third of a ton of yard and food waste per year. Of 94 facilities examined in a recent survey, 17 composted fewer than 5000 tons of organic matter per year [^10], and so a compost facility can be viable serving as few as 15,000 residents, though larger facilities tend to have lower per-ton costs [^3].
+
+<CompostMandateSolution />
 
 **Injection Molding**
 
@@ -51,9 +73,12 @@ Construction aggregates refer to a range of particulate construction material, i
 
 Waste-to-energy, particularly incineration, generally does not perform as well environmentally as recycling. However, waste-to-energy may be preferable to landfilling. Emerging waste-to-energy, such as pyrolysis applied to municipal solid waste, is generally preferable to incineration.
 
+<ArticleImage image={"---"} width={750} height={400} />
 #### Source: [^15]. Environmental metrics are reported for processing of one ton of mixed plastic, based on the average products in the European Union. Although pyrolysis is found to perform better than other waste-to-energy options on greenhouse gas emissions, the performance is worse on some other metrics.
 
 Pyrolysis can be applied to many types of organic matter, including wood; organic waste; argicultural, forestry, and pulping residue; paper; cloth; plastics; and food and yard waste [^4]. Pyrolysis can make char, liquid synthetic fuel, or biogas [^4].
+
+<RecoveryFacilitiesSolution />
 
 ## Exotic Approaches
 A fusion torch is a hypothetical device that would use superheating plasma from a nuclear fusion device to break apart waste materials and sort them by chemical element [^7]. Such a process would require a yet-unbuilt fusion generator, perhaps an aneutronic device [^6], and would be highly energy intensive [^22]. There has been little recent development.
@@ -113,3 +138,12 @@ A fusion torch is a hypothetical device that would use superheating plasma from 
 [^27]: Vassallo, C., Rochman, A., Refalo, P. ["The impact of polymer selection and recycling on the sustainability of injection moulded parts"](https://www.sciencedirect.com/science/article/pii/S2212827120302894). Procedia CRIP 90, pp. 504-509. 2020.
 
 [^28]: Zhang, Y., Duan, C., Bokka, S. K., He, Z., Ni, Y. ["Molded Fiber and Pulp Products as Green and Sustainable Alternatives to Plastics: A Mini Review"](https://www.sciencedirect.com/science/article/pii/S2369969821000803). Journal of Bioresoures and Bioproducts, in Press. October 2021.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
