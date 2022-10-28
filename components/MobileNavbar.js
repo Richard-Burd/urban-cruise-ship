@@ -41,8 +41,8 @@ const MobileNavbar = () => {
               animate="open"
               exit="collapsed"
               variants={{
-                open: { height: "auto", y: 0, transition: { duration: 0.6 } },
-                collapsed: { height: 0, transition: { duration: 0.6 } }, // https://www.framer.com/developers/guides/auto-sizing/
+                open: { height: "auto", y: 0, transition: { duration: 0.3 } },
+                collapsed: { height: 0, transition: { duration: 0.3 } }, // https://www.framer.com/developers/guides/auto-sizing/
               }}
               className="overflow-hidden"
             >

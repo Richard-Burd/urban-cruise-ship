@@ -14,6 +14,7 @@ Urban heat islands are regions around cities that experience higher temperatures
 ## Extent
 On average, heat islands add several degrees Celsius to large cities.
 
+<ArticleImage image={"---"} width={950} height={400} />
 #### Sources: heat island effect in world cities by Estrada et al. [^3], US cities estimated by Imhoff et al. [^5], and humid and dry cities by Zhao et al. [^16].
 
 The urban heat island effect tends to be greater in larger, more compact, and more circular (as opposed to elongated) cities [^17].
@@ -23,6 +24,7 @@ The urban heat island effect is responsible for 2-4% of observed global warming,
 ## Impact
 About 166,000 people die every year from heat waves [^15], which cause health problems including respitory issues, heat stroke, and others [^13]. Estimates for how many of these deaths can be attributed to urban heat islands varies considerably.
 
+<ArticleImage image={"---"} width={950} height={400} />
 #### Sources: [^2], [^4].
 
 The urban heat island effect has been estimated to cause about $270 million (2020 US dollars) of net present value damage in Melbourne, Australia [^1]. Worldwide, it may cost about 3.4% of GDP in 2100 [^3]. The effect costs 14 large cities an estimated 0.068% of GDP in extra air conditioning costs alone [^10].
@@ -67,3 +69,12 @@ The urban heat island effect can be mitigated by increasing a city's reflectivit
 [^16]: Zhao, L., Lee, X., Smith, R. B., Oleson, K. ["Strong contributions of local background climate to urban heat islands"](https://www.nature.com/articles/nature13462). Nature 511, pp. 216-219. July 2014.
 
 [^17]: Zhou, B., Rybski, D., Kropp, J. P. ["The role of city size and urban form in the surface urban heat island"](https://www.nature.com/articles/s41598-017-04242-2). Scientific Reports 7: 4791. July 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
