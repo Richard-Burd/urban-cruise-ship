@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Recycling Rates";
+export const solution = "Franchise Collection";
+
+We propose that cities adopt a franchise system for waste collection, as has worked well in San Jose, California.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

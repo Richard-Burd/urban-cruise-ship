@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Recycling Rates";
+export const solution = "Wet/Dry Collection";
+
+We propose a dual stream collection with separate streams for decomposable (wet) and inert (dry) materials as the solution that best optimizes participation rates, collection costs, and contamination rates.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

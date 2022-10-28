@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Lack of Composting Infrastructure";
+export const solution = "Compost Mandate";
+
+In order to efficiently facilitate composting and the use of compost we recommend requiring all grocery stores and restaurants to collect compost. Incentivizing new composing facilities, and require local farms to purchase and use the compost product.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

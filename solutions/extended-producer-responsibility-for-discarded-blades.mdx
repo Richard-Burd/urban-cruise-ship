@@ -1,0 +1,33 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Waste From Decommissioned Wind Turbines";
+export const solution = "Extended Producer Responsibility for Discarded Blades";
+
+We proposed that extended producer responsibility rules (EPR) be adopted for wind turbine blades. Such rules would require manufacturers of wind turbines, or utilities that install them, to recycle the blades after they are decommissioned from use. One form such rules might take are mandates to achieve a given recycling rate, where the rate increases as fast as recycling facilities can practically be scaled up [^"1"].
+
+An EPR mandate would help facilitate any number of possible uses for recycled turbine blades, such as:
+
+- Powerline structures [^"7"],
+- Pedestrian bridges for greenways [^"7"],
+- 3D printing feedstock, [^"14"],
+- New composite materials [^"9"].
+
+An EPR mandate may facilitate recycling in other ways, such as spurring the adoption of more recyclable blade material [^"12"].
+
+[^"1"]: Beauson, J., Laurent, A., Rudolph, D. P., Jensen, J. P. ["The complex end-of-life of wind turbine blades: A review of the European context"](https://www.sciencedirect.com/science/article/pii/S136403212101114X). Renewable and Sustainable Energy Reviews 155: 111847. March 2022.
+
+[^"7"]: Gignac, J. ["Wind Turbine Blades Don’t Have To End Up In Landfills"](https://blog.ucsusa.org/james-gignac/wind-turbine-blades-recycling/). Union of Concerned Scientists. October 2020.
+
+[^"9"]: Mamanpush, S. H., Li, H., Englund, K., Tabatabaei, A. T. ["Recycled wind turbine blades as a feedstock for second generation composites"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X18301399?via%3Dihub). Waste Management 76, pp. 708-714. June 2018.
+
+[^"12"]: National Renewable Energy Laboratory. ["NREL Explores Innovative Manufacturing Approach for Next-Generation Wind Turbine Blades"](https://www.nrel.gov/news/program/2021/manufacturing-next-generation-wind-turbines.html). November 2021.
+
+[^"14"]: Rahimizadeh, A., Kalman, J., Henri, R., Fayazbakhsh, K., Lessard, L. ["Recycled Glass Fiber Composites from Wind Turbine Waste for 3D Printing Feedstock: Effects of Fiber Content and Interface on Mechanical Performance"](https://www.mdpi.com/1996-1944/12/23/3929). Materials 12(23). November 2019.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

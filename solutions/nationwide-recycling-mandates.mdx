@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "No Nationwide Recycling Regulation";
+export const solution = "Nationwide Recycling Mandates";
+
+While certain states and cities have recycling regulations, there is no nationwide minimum standard for recycling. We propose that all commercial and industrial businesses nationwide be required to recycle specified materials.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

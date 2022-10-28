@@ -1,0 +1,20 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Unfunded Reclamation From Bankrupticies";
+export const solution = "End Self-Bonding";
+
+Coal miners are required to post a bond to pay for the eventual reclamation of the land they disturb. Three types of bonds are surety bonds, which are guaranteed by a third party; collateralized bonds; and self-bonds, which are based on a strong bond rating by a miner. Of $10.2 billion outstanding bonds as of 2018, about 12%, or $1.2 billion, were self-bonds [^"7"].
+
+However, the decline of the coal industry has caused an increase in bankruptcies and non-performance of self-bonds, leaving the rest of society on the hook for reclamation [^"7"]. Therefore, we propose that self-bonds no longer be accepted, and that all reclamation bonds be surety or collateralized. Wyoming has greatly restricted self-bonding in recent years [^"5"].
+
+[^"5"]: Funk, J. ["First-of-its-kind approach to coal reclamation bonding in the works"](https://wyofile.com/first-of-its-kind-approach-to-coal-reclamation-bonding-in-the-works/). WyoFile. July 2021.
+
+[^"7"]: Larson, L. N. ["Reclamation of Coal Mining Operations: Select Issues and Legislation"](https://crsreports.congress.gov/product/pdf/R/R46610). Congressional Research Service. November 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

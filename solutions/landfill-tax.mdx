@@ -1,0 +1,24 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Low Recycling Rates";
+export const solution = "Landfill Tax";
+import ArticleImage from "/components/ArticleImage.js";
+
+We propose a tax on landfills to account for the environmental damage outlined above, on the order of $100 per ton. Several countries have adopted landfill taxes.
+
+<ArticleImage image={"landfill_tax_examples.svg"} width={800} height={500} />
+#### Sources: [^"2"], [^"8"], [^"9"].
+
+[^"2"]: ECOTEC Research & Consulting. ["Study on the Economic and Environmental Implications of the Use of Environmental Taxes and Charges in the European Union and its Member States"](https://ec.europa.eu/environment/enveco/taxation/pdf/ch10_landfill.pdf). Chapter 10: Landfill Taxes. 
+
+[^"8"]: Peck, M., Chipman, R. ["Industrial energy and material efficiency: What role for policies?"](http://www.un.org/esa/sustdev/publications/industrial_development/3_2.pdf). 2007.
+
+[^"9"]: politics.co.uk. ["Landfill - How Does it Work? What is the Landfill Tax?"](https://www.politics.co.uk/reference/landfill-tax/). 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

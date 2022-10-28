@@ -1,0 +1,18 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Low Recycling Rates";
+export const solution = "Recovery Facilities";
+
+We propose the construction of reuse facilities, including compost, injection molding with recycled materials, aggregates, and pyrolysis.
+
+With proper collection and landfill taxation, the private sector should produce most of the needed reuse facilities. However, to kickstart markets for recycled goods, it may be approrpiate for the federal government to help finance reuse facilities through below-market-rate loans, as the Environmental Protection Agency now does with wastewater treatment facilities [^"26"].
+
+[^"26"]: U. S. Environmental Protection Agency. ["2019 Annual Report: Building the Project Pipeline, Clean Water State Revolving Fund"](https://www.epa.gov/sites/default/files/2020-10/documents/2019_cwsrf_annual_report_9-10.pdf). September 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

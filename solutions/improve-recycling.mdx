@@ -1,0 +1,22 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "E-Waste";
+export const solution = "Improve Recycling";
+import ArticleImage from "/components/ArticleImage.js";
+
+We propose public funding for collection of e-waste. With proper collection, economics should support higher recycling rates.
+
+Recycling plants have the potential to be profitable, before accounting for environmental benefits, as has been shown for a hypothetical model in Egypt.
+
+<ArticleImage image={"egypt_ewaste.svg"} width={700} height={400} />
+#### Source: [^"10"]. Figures for Year 5 are presented and rounded to the nearest $1000, so total profit is not exactly equal to the sum of all revenues and expenses.
+
+[^"10"]: Mostafa, T. M., Sarhan, S. ["Economic Feasibility Study of E-Waste Recycling Facility in Egypt"](https://www.researchgate.net/publication/326226096_Economic_Feasibility_Study_of_E-Waste_Recycling_Facility_in_Egypt). Joint Journal of Novel Carbon Resource Sciences & Green Asia Strategy 5(2), pp. 26-35. June 2018.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
