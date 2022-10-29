@@ -30,6 +30,8 @@ The presence of small debris requires that satellites install shields, which add
 
 <EndAsatTestsSolution />
 
+Atmospheric drag and other factors will cause satellite orbits to decay, with faster decay rates at lower orbits. SpaceX Starlink satellites have an altitude of about 550 kilometers and, if ignored, fall into the atmosphere in about five years [^30].
+
 ## Kessler Syndrome
 If a satellite is struck by a piece of debris, the explosion creates new debris, which in turn increases the risk of collision. Kessler Syndrom is a scenario in which this process becomes an uncontrollable cascade [^11]. The prediction market Metaculus indicates (as of August 18, 2021) a 15% chance of Kessler Syndrome by 2050, formally defined as the loss of at least 10% of satellites due to collisions with debris in one year [^16]. Another estimate is that in 200 years, there could be a catastrophic collision every 5-9 years, like the 2009 satellite collision [^12].
 
@@ -131,6 +133,8 @@ At present, no ADR occurs, though there are many possible methods [^15]. A demon
 [^28]: Weeden, B. ["2009 Iridium-Cosmos Collision Fact Sheet"](https://swfound.org/media/6575/swf_iridium_cosmos_collision_fact_sheet_updated_2012.pdf). Secure World Foundation. November 2010.
 
 [^29]: Wright, D. ["Space Debris from Anti-Satellite Weapons"](https://www.ucsusa.org/sites/default/files/2019-09/debris-in-brief-factsheet.pdf). Union of Concerned Scientists. April 2008.
+
+[^30]: Kurkowski, S. ["SpaceX calls on FCC to lower standard for satellite orbit life"](https://spaceexplored.com/2022/02/23/spacex-calls-on-fcc-to-lower-standard-for-satellite-orbit-life/). Space Explored. February 2022.
 
 export default ({ children }) => 
   <Article 
