@@ -1,4 +1,4 @@
-import FocusArea from "../../../components/FocusArea";
+import FocusArea2 from "../../../components/FocusArea2";
 import FocusAreaArticleLink from "../../../components/FocusAreaArticleLink";
 
 const siteConfig = require("../site_config.json");
@@ -24,7 +24,7 @@ const focusAreaDescription = <p></p>;
 const ZeroWaste = () => {
   return (
     <>
-      <FocusArea
+      <FocusArea2
         site={site}
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
