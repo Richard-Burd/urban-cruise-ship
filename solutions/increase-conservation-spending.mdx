@@ -1,0 +1,28 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Extinction";
+export const solution = "Increase Conservation Spending";
+import ArticleImage from "/components/ArticleImage.js";
+
+As the benefits of conservation greatly outweigh the cost, there is a case to increase public and philanthropic conservation spending.
+
+Current spending on conservation falls short of what is needed to protect all biodiversity.
+
+<ArticleImage image={"cons_finance.svg"} width={650} height={420} />
+#### Sources: [^"12"], [^"19"].
+
+Conservation spending, in inflation-adjusted terms, from the U.S. Department of Agriculture has remained flat in recent years, and there is a strong case for increasing that spending [^"15"].
+
+[^"12"]: Credit Suisse, World Wildlife Fund, McKinsey & Company. ["Conservation Finance: Moving beyond donor funding toward an investor-driven approach"](https://www.cbd.int/financial/privatesector/g-private-wwf.pdf). 2014.
+
+[^"15"]: Economic Research Service, U. S. Department of Agriculture. ["Conservation spending remained roughly level in recent years, a trend projected to continue through 2023"](https://www.ers.usda.gov/data-products/chart-gallery/gallery/chart-detail/?chartId=99510). October 2020.
+
+[^"19"]: Global Canopy Program. [*The Little Biodiversity Finance Book.*](https://www.globalcanopy.org/insights/publication/the-little-biodiversity-finance-book-3rd-edition-2012/) 3rd Edition. 2012.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,34 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Damages From Lead Exposure";
+export const solution = "Phase Out Lead Usage";
+
+The world has made progress in phasing out the use of lead, such as in leaded gasoline and lead paint. However, lead remains the leading source of chemical pollution.
+
+In the 1970s, with discoveries of the health and environmental problems caused by leaded gasoline, including damage to newly mandated catalytic converters, the United States Environmental Protection Agency began setting limits on the amount of lead that refiners could blend into the gasoline supply. Due to the cost of compliance, the EPA did not institute a total ban immediately, but rather set increasingly strict standards through the 1980s. Once the standards were set, new cars were designed to use little or no lead, reducing the cost of compliance to the point where a complete ban was instituted in 1996. To reduce the cost of compliance, the EPA established a system of tradeable, bankable lead blending credits ["^8"]. The health environmental benefits of phasing lead out of gasoline were found to exceed the costs by a factor of five to ten ["^2"], and in 2021, Algeria became the final country to ban lead in gasoline ["^1"].
+
+Many countries currently do not have restrictions on lead in paint, and among those that do, restrictions are mostly limits on lead concentration rather than outright bans ["^9"]. A complete elimination of lead in paint is infeasible, since lead contamination in many ingredients is unavoidable, but a standard of 90 parts per million or less, such as is recommended by the Lead Paint Alliance ["^13"], is achievable and has already been implemented by many countries ["^14"].
+
+Likewise, there are alternatives to the use of lead in lead acid batteries ["^11"] and ammunition ["^12"]. We propose that in all present uses, national governments establish limits on lead contents, with the intention of reducing these limits to zero or the minimum achievable value.
+
+["^1"]: Choi, J. ["UN praises 'official end' of leaded gasoline in cars after Algeria halts sales"](https://thehill.com/policy/energy-environment/570023-un-praises-official-end-of-leaded-gasoline-in-cars-after-algeria/). The Hill. August 2021.
+
+["^2"]: de Larderel, J. A., Radka, M., Karmali, A., Visser R., Short, J., Sigman, R., Wiederkehr, P. ["Phasing Lead out of Gasoline: An Examination of Policy Approaches in Different Countries"](https://www.oecd.org/env/ehs/risk-management/1937036.pdf). Organization for Economic Co-operation and Development, United Nations Environment Programme. 1999.
+
+["^8"]: Newell, R., Rogers, K. ["The U.S. Experience with the Phasedown of Lead in Gasoline"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.649.6577). Resources for the Future. June 2003.
+
+["^9"]: Rukikaire, K. ["New guidelines to support SMEs to phase out lead from paint manufacturing"](https://www.unep.org/news-and-stories/press-release/new-guidelines-support-smes-phase-out-lead-paint-manufacturing). United Nations Environment Programme. May 2022.
+
+["^11"]: United Nations Environment Programme. ["Alternatives to Lead-Acid Batteries"](https://wedocs.unep.org/bitstream/handle/20.500.11822/27402/ALAB.pdf?sequence=1&isAllowed=y). Accessed September 13, 2022.
+
+["^13"]: United Nations Environment Programme. ["Model Law and Guidance for Regulating Lead Paint"](https://www.unep.org/resources/publication/model-law-and-guidance-regulating-lead-paint). July 2018.
+
+["^14"]: World Health Organization, United Nations Environment Programme. ["Global elimination of lead paint: why and how countries should take action - Policy brief"](https://www.who.int/publications/i/item/9789240005167). August 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,32 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Risk of Uncontrolled Warming";
+export const solution = "Research Solar Geoengineering";
+
+Due to great uncertainty in the level of risk posed by global warming, it is worth investing in small scale trial research into stratospheric aerosol injection and other forms of solar geoengineering, or solar radiation management. We do not endorse large-scale solar geoengineering at this time due to unknown risk, such as with unforeseen weather consequences [^"19"].
+
+Solar radiation management also raises several governance concerns that are not raised by most other global warming mitigation measures: how will nations, with different ideas of how the climate should be managed, resolve conflict; and how will liability be determined if SRM results in a destructive weather event [^"19"]. Before large scale deployment begins, nations should, through treaty, agree to the Oxford Principles for Geoengineering or something similar [^"13"]:
+
+- Geoengineering to be regulated as a public good
+- Public participation in geoengineering decision-making
+- Disclosure of geoengineering research and open publication of results
+- Independent assessment of impacts
+- Governance before deployment
+
+SRM may reduce warming for low cost, but they do not address some other aspects of CO<sub>2</sub> emissions, such as ocean acidification. Therefore, SRM is not a substitute for reduction of net emissions [^"14"].
+
+Much objection to any geoengineering method, and SRM in particular, revolves around the fear that such a solution for global warming could foreclose the possibility of responding to the problem with deeper political or social changes [^"14"].
+
+[^"13"]: Oxford Martin School. ["Oxford Principles of Geoengineering"](http://www.geoengineering.ox.ac.uk/www.geoengineering.ox.ac.uk/oxford-principles/principles/). 2018.
+
+[^"14"]: Preston, C. J. ["Ethics and Geoengineering: Reviewing the Moral Issues Raised by Solar Radiation Management and Carbon Dioxide Removal"](https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcc.198). Wiley Interdisciplinary Reviews: Climate Change 4(1), pp. 23-37. January 2013.
+
+[^"19"]: Solar Radiation Management Governance Initiative. ["Solar radiation management: the governance of research"](https://royalsociety.org/~/media/royal_society_content/policy/projects/solar-radiation-governance/des2391_srmgi%20report_web.pdf). Environmental Defense Fund, The Royal Society, TWAS. March 2011.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

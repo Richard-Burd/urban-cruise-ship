@@ -1,0 +1,28 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Climate Change Adaption";
+export const solution = "Increased Investment in adaptation";
+
+Increasing Earth's forest cover, whether through reducing deforestation or active afforestation, will sequester carbon, though the exact amount is highly uncertain.
+
+Estimates of the carbon sequstration potential of tree planting vary widely, ranging from 113 [^"22"] to 564 billion tons CO2e [^"1"], or 3-14 years of emissions at present rates. We suspect the true figure is closer to the low estimate of Veldman et al., as it better accounts for practical limitations such as cost, land ownership and land use conflicts, and the loss of planted forests due to human activity or wildfire [^"23"].
+
+At a cost of $20-50 per removed ton of CO2 and a social cost of carbon of $50/ton, there a potential for as much as $3.4 trillion of value in tree planting under Veldman et al.'s more conservative estimate.
+
+Several pieces of legislation introduced in the United States Congress would promote tree planting [^"11"]. General approaches including subsidies for tree planting, modeled after the 45Q program for carbon capture and sequestration or renewable energy production tax credits; and federal funding for tree planting on public lands, modeled after other forms of infrastructure investment [^"11"].
+
+[^"1"]: Bastin, J., Finegold, Y., Garcia, C., Millicone, D., Rezende, M., Routh, D., Zohner, C., Crowther, T. ["The global tree restoration potential"](https://science.sciencemag.org/content/365/6448/76.abstract). Science 365(6448). July 2019.
+
+[^"11"]: Neuberger, J., Rudee, A., Leslie-Bole , H. ["7 Policy Proposals to Restore US Trees: How Do They Compare?"](https://www.wri.org/insights/us-policy-trees-natural-infrastructure). World Resources Institute. May 2021.
+
+[^"22"]: Veldman, J. et al. ["Comment on "The global tree restoration potential"](https://science.sciencemag.org/content/366/6463/eaay7976). Science 366(6463). October 2019.
+
+[^"23"]: Waring, B., Neumann, M., Prentice, I. C., Adams, M., Smith, P., Siegert, M. ["Forests and Decarbonization – Roles of Natural and Planted Forests"](https://www.frontiersin.org/articles/10.3389/ffgc.2020.00058/full). Frontiers in Forests and Global Change. May 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

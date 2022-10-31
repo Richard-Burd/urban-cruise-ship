@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Life Satisfaction";
+export const solution = "More Resources Into Mental Health";
+
+While job creation is a high priority for governments, mental health often is not, despite its importance as a factor in life satisfaction.
+
+In addition to being one of the most important factors in wellbeing, mental illness is common. Surveys have found that 21% of American adults suffer a mental illness, and 5.6 suffer a serious mental illness [^"14"]. In 2020, there were 45,979 suicides in the United States, nearly twice as many as the number of homicides [^"13"], and 1.2 million suicide attempts [^"1"].
+
+This could be improved by, for instance, mandating that mental health services be covered by health insurance at parity with physical health, such as would be done by legislation introduced in the U.S. Congress in 2022 [^"15"]. While full cost-benefit results are unclear, earlier research found that mental health parity was less expensive than expected [^"9"],[^"11"].
+
+[^"1"]: American Foundation for Suicide Prevention. ["Suicide statistics"](https://afsp.org/suicide-statistics/). February 2022.
+
+[^"9"]: Kirschstein, R. L. ["Insurance Parity for Mental Health: Cost, Access, and Quality Final Report to Congress by the National Advisory Mental Health Council"](https://www.nimh.nih.gov/about/advisory-boards-and-groups/namhc/reports/insurance-parity-for-mental-health-cost-access-and-quality-final-report-to-congress-by-the-national-advisory-mental-health-council). National Institute of Mental Healths. 2000.
+
+[^"11"]: Melek, S. ["The Costs of Mental Health Parity"](https://www.soa.org/globalassets/assets/library/newsletters/health-section-news/2005/march/hsn-2005-iss49-melek-b.pdf). Society of Actuaries 49. March 2005.
+
+[^"13"]: National Center for Health Statistics. ["Assault or Homicide"](https://www.cdc.gov/nchs/fastats/homicide.htm). Centers for Disease Control and Prevention. Accessed September 14, 2022.
+
+[^"14"]: National Institute of Mental Health. ["Mental Illness"](https://www.nimh.nih.gov/health/statistics/mental-illness). January 2022.
+
+[^"15"]: Porter, K. ["H.R.7254 - Mental Health Justice and Parity Act of 2022"](https://www.congress.gov/bill/117th-congress/house-bill/7254/text?r=2&s=1). Congress.gov. Accessed September 14, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

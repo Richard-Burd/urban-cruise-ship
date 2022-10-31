@@ -1,0 +1,27 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Ozone Depletion";
+export const solution = "Monitor Unaccounted Sources of Ozone Depletion";
+
+While the ozone hole continues to recover, the recovery may be threatened by unreported increases in CFC-11 emissions. We propose a two-part approach to addressing the problem
+
+First, better monitoring of ozone depleting is necessary. Such a metric would rely on emission strength and time-integrated ozone depletion potential [^"7"].
+
+Second, a better response to black market trade in ozone depleting chemicals is needed [^"9"]. A driver of black market trade is that certain chemicals, such as HFCs that are regulated under the 2019 Kigali agreement, are legal in some countries and illegal in others, creating the potential for legal manufacture [^"1"]. It is necessary to move to agreements to ban ozone-depleting substances worldwide, without exceptions for some countries. Stronger enforcement, including under the Montreal Protocol, is also needed [^"4"].
+
+[^"1"]: Environmental Investigation Agency. ["Illegal Trade in Refrigerants"](https://eia-international.org/climate/illegal-trade-in-refrigerants/). Accessed September 13, 2022.
+
+[^"4"]: Landers, F. P. "The Black Market Trade in Chlorofluorocarbons: The Montreal Protocol Makes Banned Refrigeratants a Hot Commodity". https://heinonline.org/HOL/LandingPage?handle=hein.journals/gjicl26&div=36&id=&page=. 1996.
+
+[^"7"]: Pyle, J. A., Keeble, J., Abraham, N. J., Chipperfield, M. P., Griffiths , P. T. ["Integrated ozone depletion as a metric for ozone recovery"](https://www.nature.com/articles/s41586-022-04968-8). Nature 608, pp. 719-723. August 2022.
+
+[^"9"]: United Nations Environment Programme. ["Illicit trade in ozone-depleting substances (ODS) from East Asia to the world"](https://www.unodc.org/documents/toc/Reports/TOCTA-EA-Pacific/TOCTA_EAP_c10.pdf). Accessed September 13, 2022.
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

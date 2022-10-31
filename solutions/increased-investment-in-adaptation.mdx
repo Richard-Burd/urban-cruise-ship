@@ -1,0 +1,26 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Climate Change Adaption";
+export const solution = "Increased Investment in adaptation";
+import ArticleImage from "/components/ArticleImage.js";
+
+Climate change is already occurring, and under any plausible emissions scenario, it will continue to intensify for at least several decades. Therefore, there is a need to invest in adaptation, and many investments could be made with positive cost/benefit structures. The following costs and benefits for select projects have been found.
+
+<ArticleImage image={"adaptation_cba.svg"} width={650} height={420} />
+#### Source: [^"8"].
+
+At the 2009 Copenhagen summit, wealthy countries pledged $100 billion per year by 2020 to help poorer countries with adaptation, but by 2019, spending was only at $80 billion per year, much of which was in the form of loans rather than grants [^"2"], [^"25"].
+
+[^"2"]: Bhattacharya, A., Calland, R., Averchenkova, A., Gonzalez, L., Martinez-Diaz, L., Van Rooij, J. ["Delivering on the $100 Billion Climate Finance Commitment and Transforming Climate Finance"](https://www.g24.org/wp-content/uploads/2021/03/Richard-Calland-and-Amar-Bhattacharya_Independent-Expert-Group-on-CF-MARCH-2021.pdf). Independent Expert Group on Climate Finance. March 2021.
+
+[^"8"]: Global Commision on Adaptation. ["Adapt Now: A Global Call for Leadership on Climate Resilience"](https://reliefweb.int/report/world/adapt-now-global-call-leadership-climate-resilience). September 2019.
+
+[^"25"]: Timperley, J. ["The broken $100-billion promise of climate finance — and how to fix it"](https://www.nature.com/articles/d41586-021-02846-3). Nature. October 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

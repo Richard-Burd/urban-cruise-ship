@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Indoor Air Pollution";
+export const solution = "Indoor Air Pollution Standards";
+
+We propose that the U.S. Environmental Protection Agency establish standards for indoor air pollution, similar to what is currently imposed for outdoor air pollution.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

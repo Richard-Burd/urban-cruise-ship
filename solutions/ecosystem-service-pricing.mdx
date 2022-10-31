@@ -1,0 +1,40 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Impacts of Land Use";
+export const solution = "Ecosystem Service Pricing";
+
+We propose a tax on land use, such as real estate development and agriculture, to internalize the environmental impacts described above. Such a tax would be based on ecosystem services that wild land provides.
+
+While it is very difficult to price ecosystem services comprehensively, there are several instances of limited implementations.
+
+- Costa Rica's Payment for Ecosystem Services program paid the equivalent of $210/hectare for forest conservation, $327/hectare for sustainable forest management, and $537 for reforestation (2001 currency) [^"22"]. Rates of deforestation were dramatically reduced after the payments began [^"22"].
+- Norway has paid Indonesia up to $1 billion (2010 currency) for conservation of rainforests for their carbon sequestration ecosystem services [^"21"].
+- Mexico has paid landowners to conserve forests for their ecosystem services of watershed protection and aquifer recharge. The funding source for these payments are fees from water users [^"25"].
+
+To develop more comprehensive ecosystem pricing, it is necessary to further develop financial tools, such as the Natural Capital Project's InVEST (Integrated Valuation of Environmental Services and Tradeoffs) [^"32"] or the Planetary Health Alliance [^"27"]. The estimates of Costanza et al. [^"6"] are useful for conceptual purposes, but they are too uncertain and too broad in their focus to be of use for specific decision-making [^"14"].
+
+Ecosystem service pricing focuses on the value of conservation for human purposes, and it should not be considered a replacement for valuation of nature and conservation for its own sake [^"30"].
+
+[^"6"]: Costanza, R., de Groot, R., Sutton, P., van der Ploeg, S., Anderson, S., Kubiszewski, I., Farber, S., Turner, R. ["Changes in the global value of ecosystem services"](https://www.sciencedirect.com/science/article/abs/pii/S0959378014000685?via%3Dihub). Global Environmental Change 26, pp. 152-158. May 2014.
+
+[^"14"]: Holzman D. C. ["Accounting for Nature's Benefits: The Dollar Value of Ecosystem Services"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3339477/). Environmental Health Perspectives 120(4), pp. a152–a157. April 2012.
+
+[^"21"]: Mackenzie, C., Clarke, M., Suntana, A. ["Real-Time Evaluation of Norway’s International Climate and Forest Initiative"](https://www.regjeringen.no/globalassets/upload/md/2011/vedlegg/klima/klima_skogprosjektet/evalueringsrapportene/report_16_2010_indonesia_web.pdf). Norwegian Agency for Development Cooperation. March 2011.
+
+[^"22"]: Malavasi, E. O., Kellenberg, J. ["Program of Payments for Ecological Services in Costa Rica"](https://www.cbd.int/financial/pes/costarica-pesprogram.pdf). January 2002.
+
+[^"25"]: Muñoz-Piña, C., Guevara, A., Torres, J. M., Braña, J. ["Paying for the hydrological services of Mexico's forests: Analysis, negotiations and results"](https://www.sciencedirect.com/science/article/abs/pii/S0921800907004247). Ecological Economics 4(1), pp. 725-736. May 2008.
+
+[^"27"]: Planetary Health Alliance. ["About the PHA"](https://www.planetaryhealthalliance.org/about-the-pha). Accessed September 14, 2022.
+
+[^"30"]: Simpson, R. D. ["Putting a Price on Ecosystem Services"](https://issues.org/putting-a-price-on-ecosystem-services/). Issues in Science and Technology, Vol. XXXII. No. 4. Summer 2016.
+
+[^"32"]: Stanford University. ["Natural Capital Project"](https://naturalcapitalproject.stanford.edu/). Accessed September 14, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,26 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Nitrogen Pollution";
+export const solution = "Tax Fertilizer Usage";
+
+Fertilizers are critical to modern agriculture, but excessive and careless use of fertilizers results in runoff and harmful nitrogen pollution. Taxation to account for this damage will ensure that fertilizers are used appropriately.
+
+As nitrogen runoff is a diffuse (nonpoint) source of pollution, regulatory approaches are challenging, and taxation to internalize the otherwise external costs of runoff are appropriate [^"9"].
+
+Sweden taxed nitrogen fertilizers from 1984 to 2009 and cadmium fertilizers from 1994 to 2009, though the taxes were revoked in the face of the financial crisis [^"1"]. The taxes amounted to about 10% of the cost of fertilizers and reduced nitrogen runoff by an etimated 6% [^"1"]. Taxes were also found to reduce fertilizer use in The Netherlands, Denmark, and Austria [^"9"].
+
+Despite their costs, fertilizer is critical to the functioning of modern agriculture, and bans such as was instituted in Sri Lanka are not appropriate [^"5"].
+
+[^"1"]: Andersen, M. S. "Fertilizer tax in Sweden". Aarhus University. December 2016.
+
+[^"5"]: Kataria, A., Manur, A., Pradhan, S. "Sri Lanka’s Economic Crisis". Takshashila Institution. August 2022.
+
+[^"9"]: Pearce, D., Koundouri, P. "Fertilizer and Pesticide Taxes for Controlling Non-point Agricultural Pollution". Agricultural and Rural Development, World Bank. 2003.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

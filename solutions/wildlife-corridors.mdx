@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Threat to Biodiversity From Roads";
+export const solution = "Wildlife Corridors";
+
+We propose that states and the federal government make greater investments into wildlife corridors. The exact ideal parameters for wildlife corridors are highly dependent on specific geography and can be difficult to calculate [^"31"], but generally wildlife overpasses or underpasses work better than odors, ultrasound, or lighting [^"2"]. The ideal size of a corridor varies by species but is often about 20 meters, with smaller culverts for small animals also appropriate [^"2"]. Corridors should be accompanied by roadside fences to keep wildlife away from the road.
+
+As of 2008 and over 4 million miles of road, wildlife collisions are estimated to cause 26,000 injuries, 200 fatalities, and almost $9.8 billion (2020 dollars) of damage annually [^"16"]. A combination of fencing and wildlife overpasses or underpasses could reduce these damages by 97% [^"1"].
+
+Federal [^"17"] and state [^"19"] legislation is designed to set standards and provide funding for wildlife corridors.
+
+[^"1"]: Ament, R., Jacobson, S., Callahan, R., Brocki, M. ["Highway Crossing Structures for Wildlife: Opportunities for Improving Driver and Animal Safety"](https://largelandscapes.org/wp-content/uploads/2021/06/Highway-Crossing-Structures-for-Wildlife-Opportunities-for-Improving-Driver-and-Animal-Safety.pdf). Forest Service, United States Department of Agriculture, General Technical Report PSW-GTR-271. May 2021.
+
+[^"2"]: Bank, F. et al. ["Wildlife Habitat Connectivity Across European Highways"](https://trid.trb.org/view/719133). Prepared for the Office of International Programs, Office of Policy, Federal Highway Administration, U.S. Department of Transportation. August 2002.
+
+[^"16"]: Huijser, M.P., McGowen, P., Fuller, J., Hardy, A., Kociolek, A., Clevenger, A.P., Smith, D., Ament, R. [*Wildlife-vehicle collision reduction study.*](https://www.fhwa.dot.gov/publications/research/safety/08034/) Report to Congress. No. FHWA-HRT- 08-034. Washington D.C.: U.S. Department of Transportation, Federal Highway Administration. 232 p. August 2008.
+
+[^"17"]: International Fund for Animal Welfare, Inc. ["landmark legislation to protect wildlife corridors passes U.S. House of Representatives"](https://www.ifaw.org/news/wildlife-corridor-legislation). July 2021.
+
+[^"19"]: Legislative Policy and Research Office. ["Wildlife Corridors: Background Brief"](https://www.oregonlegislature.gov/lpro/Publications/Background-Brief-Wildlife-Corridor.pdf). State of Oregon. July 2021.
+
+[^"31"]: St John, R., T´oth, S. F., Zabinsky, Z. B. ["Optimizing the Geometry of Wildlife Corridors in Conservation Reserve Design"](https://pubsonline.informs.org/doi/abs/10.1287/opre.2018.1758). Operations Research 66(6), pp. 1471-1485. November 2018.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
