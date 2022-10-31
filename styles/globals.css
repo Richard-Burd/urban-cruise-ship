@@ -572,6 +572,40 @@ video {
 
 /* tailwind directive */
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 /* tailwind directive */
 
 .visible {
@@ -1555,12 +1589,13 @@ ul li a:focus {
 
 .table-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   overflow-x: scroll;
 }
 
 @media (min-width: 640px) {
   .table-wrapper {
+    justify-content: center;
     overflow: auto;
   }
 }
