@@ -25,7 +25,7 @@ const focusAreaDescription = (
     non-fossil fuel options are not yet readily available--and for major
     commodities such as iron and steel, chemicals and plastics, aluminum, paper
     and pulp, and cement. We review methods for capture, storage, and utilizing
-    CO2 and energy efficiency potential in design of industrial systems.
+    CO<sub>2</sub> and energy efficiency potential in design of industrial systems.
     Recycling, and to a lesser extent material reduction, are readily available
     tools to reduce the impacts of major commodities.
   </p>
