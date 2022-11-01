@@ -1,0 +1,64 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "habitat";
+export const focusAreaUrl = "ethics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Conservation Ethics
+
+See also our analysis of broader [environmental ethics](http://urbancruiseship.org/solution/habitat/ethics) and discussion of [planetary protection](http://urbancruiseship.org/solution/habitat/ethics) for conservation away from Earth. Here we consider several ethical issues around conservation.
+
+## Instrumental Versus Intrinsic Value
+Since at least as far back as the Muir/Pinchot debate [^7], conservation has had an instrumental branch--which seeks to conserve nature for resources and other human uses--and an intrinsic branch--which seeks to preserve nature for its own sake. The two sides have much in common, but they differ in some areas, such as what activities are permitted on conserved lands [^9]. Few conservationists fall strictly into only one category.
+
+#### Sources: [^2], [^6], [^9], [^15].
+
+## Naturalism
+
+In this context, naturalism is the idea that nature should be conserved in a way that is as close to its state, before any human intervention, as possible. Exponents of this views include Plumwood [^12]. Naturalism is an element of several debates in conservation, such as whether to use assisted evolution in marine conservation [^5], the use of genetic engineering or gene drives (such as the eradication of a harmful mosquito species via genetic manipulation) of invasive species [^14], or the relocation of animal and plant populations in response to climate change [^10].
+
+The distinction between human civilization and non-human nature itself may be an inappropriate dualism [^11].
+
+## Trophy Hunting
+Trophy hunting is the hunting of species, typically endangered in the wild, for some trophy that can be a mark of pride. The practice is controversial and elicits some negative reactions, but many conservationists have supported trophy hunting from a consequentiallist perspective: that trophy hunting provides a revenue stream for conservation that might otherwise be lacking [^3], [^4], [^8], [^13]. Trophy hunting is harder to justify from a biocentric perspective [^1].
+
+[^1]: Batavia, C., Nelson, M., Darimont, C., Paquet, P., Ripple, W., Wallach, A. ["The elephant (head) in the room: A critical look at trophy hunting"](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12565). Conservation Letters 12(1):e12565. January 2019.
+
+[^2]: Callicott, J. ["Whither Conservation Ethics?"](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/j.1523-1739.1990.tb00261.x). Conservation Biology 4(1), pp. 15-20. March 1990.
+
+[^3]: Capecchi, C., Rogers, K. ["Killer of Cecil the lion finds out that he is a target now, of internet vigilantism"](https://www.nytimes.com/2015/07/30/us/cecil-the-lion-walter-palmer.html). New York Times. July 2015.
+
+[^4]: De Minin, E., Leader-Williams, N., Bradshaw, C. ["Banning Trophy Hunting Will Exacerbate Biodiversity Loss"](https://www.sciencedirect.com/science/article/abs/pii/S0169534715003031). Trends in Ecology & Evolution 31(2), pp. 99-102. February 2016.
+
+[^5]: Filbee-Dexter, K., Smajdor, A. ["Ethics of Assisted Evolution in Marine Conservation"](https://www.frontiersin.org/articles/10.3389/fmars.2019.00020/full). Frontiers in Marine Science 6, 20 pp. January 2019.
+
+[^6]: Hampicke, U. ["Ethics and economics of conservation"](https://www.sciencedirect.com/science/article/abs/pii/0006320794906130). Biological Conservation 67(3), pp. 219-231. 1994.
+
+[^7]: Keel, L. ["Frenemies John Muir and Gifford Pinchot: Have their differences been overstated?"](https://www.neh.gov/article/frenemies-john-muir-and-gifford-pinchot). Humanities 41(1). Winter 2020.
+
+[^8]: Lindsay, P. A., Alexander, R., Frank, L. G., Mathieson, A., Romañach, S. S. "Potential of trophy hunting to create incentives for wildlife conservation in Africa where alternative wildlife‐based land uses may not be viable". https://zslpublications.onlinelibrary.wiley.com/doi/full/10.1111/j.1469-1795.2006.00034.x. August 2006.
+
+[^9]: Miller, T., Minteer, B., Malan, L. ["The new conservation debate: The view from practical ethics"](https://www.sciencedirect.com/science/article/abs/pii/S0006320710001448). Biological Conservation 144(3), pp. 948-957. March 2011.
+
+[^10]: Minteer, B., Collins, J. ["Move it or lose it? The ecological ethics of relocating species under climate change"](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/10-0318.1). Ecological Applications 20(7), pp. 1801-1804. October 2010.
+
+[^11]: Paterson, B. ["Ethics for Wildlife Conservation: Overcoming the Human–Nature Dualism"](https://academic.oup.com/bioscience/article/56/2/144/274023?login=true). BioScience 56(2), pp. 144-150. February 2006.
+
+[^12]: Plumwood, V. ["Nature as Agency and the Prospects for a Progressive Naturalism"](https://www.tandfonline.com/doi/abs/10.1080/104557501101245225?journalCode=rcns20). Capitalism Nature Socialism 12(4), pp. 3-32. December 2001.
+
+[^13]: Rust, N., Verissimo, D. ["Why killing lions like Cecil may actually be good for conservation"](https://theconversation.com/why-killing-lions-like-cecil-may-actually-be-good-for-conservation-45400). The Conversation. July 2015.
+
+[^14]: Sandler, R. ["The ethics of genetic engineering and gene drives in conservation"](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13407). Conservation Biology 34(2), pp. 378-385. April 2020.
+
+[^15]: Wilson, E. O. [*The Future of Life.*](https://www.amazon.com/Future-Life-Edward-Wilson/dp/0679768114) ISBN-13 : 978-0679768111. 2002.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

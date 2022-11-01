@@ -1,0 +1,65 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "habitat";
+export const focusAreaUrl = "economy";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Decoupling
+
+Some environmental impacts are increasing over time, in absolute, per capita, and per dollar GDP bases, while others are decreasing, and some are increasing by some metrics and decreasing by others.
+
+<ArticleImage image={"---"} width={950} height={320} />
+#### Evolution of major environmental impacts over time. For comparison, population figures are taken from the UN [^14] and GDP figures from the World Bank [^16]. The purchasing power parity is used for GDP after 1990, and the exchange rate is used before 1990. World primary energy is from BP [^1], municipal solid waste from Chen et al. [^2], land use figures and nitrogen fertilizer from FAOSTAT [^5], lead production from the International Lead Association [^6], biomass, metal, and mineral figures from Krausmann et al. [^7], CO<sub>2</sub> emissions from Le Quéré et al.[^8], air pollution in the OECD from the OECD [^9], access to clean water from Ritchie and Roser [^10], extreme poverty rates from Roser and Ortiz-Ospina [^11], methane from the World Bank [^13], ozone-depleting emissions from the World Meteorological Organization [^15], water withdrawal from Worldometer [^17], and mercury emissions from Zhang et al. [^19].
+
+#### All impact figures are worldwide except for NOx, CO, SOx, and VOC figures, which are reported for OECD countries. A portion of the decline of these impacts may be explained by offshoring of industry.
+
+Some environmental impacts tend to grow, peak, and decline with rising national per-capita income. This phenomenon is known as an environmental Kuznets curve. Water pollution and localized air pollution tend to show an eventual peak of impact by wealth [^3], [^12], [^18], but for CO<sub>2</sub>, municipal solid waste, and biodiversity and land use, the evidence for a Kuznets curve is inconclusive [^4].
+
+[^1]: BP. ["Statistical Review of World Energy 2020"](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html). 2020.
+
+[^2]: Chen, D., Bodirsky, B., Krueger, T., Mishra, A., Popp, A. ["The world's growing municipal solid waste: trends and impacts"](https://iopscience.iop.org/article/10.1088/1748-9326/ab8659). Environmental Research Letters 15(7). April 2020.
+
+[^3]: Cole, M. A., Rayner, A. J., Bates, J. M. ["The environmental Kuznets curve: an empirical analysis"](https://www.jstor.org/stable/44379185?seq=1). Environment and Development Economics 2(4), pp. 401-416. October 1997.
+
+[^4]: Destek, M., Ulucak, R., Dogan, E. ["Analyzing the environmental Kuznets curve for the EU countries: the role of ecological footprint"](https://link.springer.com/article/10.1007/s11356-018-2911-4). Environmental Science and Pollution Research volume 25, pp. 29387–29396. August 2018.
+
+[^5]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](http://www.fao.org/faostat/en/#data).
+
+[^6]: International Lead Association. ["Lead Production & Statistics"](https://www.ila-lead.org/lead-facts/lead-production--statistics). Accessed July 2, 2020.
+
+[^7]: Krausmann, F., Gingrich, S., Eisenmenger, N., Erb, K. H., Haberl, H., Fischer-Kowalski, M. ["Growth in global materials use, GDP and population during the 20th century"](https://elearning.ec.unipi.it/pluginfile.php/134768/mod_page/content/35/EE-Krausmann_etal_MatsGDPPop_20thC-2009.pdf). Ecological Economics 68, pp. 2696-2705. 2009.
+
+[^8]: Le Quéré et al. ["Global Carbon Budget 2018"](https://www.icos-cp.eu/GCP/2018). ICOS Carbon Portal. 2018.
+
+[^9]: OECD. ["Air and GHG emissions (indicator)"](https://data.oecd.org/air/air-and-ghg-emissions.htm). Accessed July 2, 2020.
+
+[^10]: Ritchie, H., Roser, M. ["Clean Water"](https://ourworldindata.org/water-access). Our World in Data. Accessed July 3, 2020.
+
+[^11]: Roser, M., Ortiz-Ospina, E. ["Global Extreme Poverty"](https://ourworldindata.org/extreme-poverty). Our World in Data. Accessed July 3, 2020.
+
+[^12]: Shahbaz, M., Sinha, A. ["Environmental Kuznets curve for CO<sub>2</sub> emissions: a literature survey"](https://www.emerald.com/insight/content/doi/10.1108/JES-09-2017-0249/full/html). Journal of Economic Studies 46(1). January 2019.
+
+[^13]: The World Bank. ["Methane emissions (kt of CO<sub>2</sub> equivalent)"](https://data.worldbank.org/indicator/EN.ATM.METH.KT.CE). Accessed July 2, 2020.
+
+[^14]: United Nations, Department of Economic and Social Affairs, Population Division, Population Estimates and Projections Section. ["World Population Prospects 2019"](https://population.un.org/wpp/). Accessed June 29, 2020.
+
+[^15]: WMO (World Meteorological Organization). [*Scientific Assessment of Ozone Depletion: 2018.*](https://www.esrl.noaa.gov/csl/assessments/ozone/2018/) Global Ozone Research and Monitoring Project–Report No. 58, 588 pp., Geneva, Switzerland. 2018.
+
+[^16]: World Bank. ["GDP, PPP (constant 2017 international $)"](https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD). Accessed June 29, 2020.
+
+[^17]: Worldometer. ["Global Water Use"](https://www.worldometers.info/water/). Accessed July 2, 2020.
+
+[^18]: Yandle, B., Bhattarai, M., Vijayaraghavan, M. ["Environmental Kuznets Curves: A Review of Findings, Methods, and Policy Implications"](https://www.researchgate.net/profile/Bruce_Yandle/publication/242758524_Environmental_Kuznets_Curves_A_Review_of_Findings_Methods_and_Policy_Implications/links/0f317533d2c635d626000000.pdf). PERC, Bozeman, MT. January 2004.
+
+[^19]: Zhang, Y., Jacob, D., Horowitz, H., Chen, L., Amos, H., Krabbenhoft, D., Slemr, F., St. Louis, V., Sunderland, E. ["Observed decrease in atmospheric mercury explained by global decline in anthropogenic emissions"](https://www.pnas.org/content/113/3/526). Proceedings of the National Academy of Sciences of the United States of America 113(3) pp. 526-531. January 2016.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

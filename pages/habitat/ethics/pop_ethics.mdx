@@ -1,0 +1,54 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "habitat";
+export const focusAreaUrl = "ethics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Population Ethics
+
+One's views on population policy may be influenced by choice of ethical framework. See also our analysis of determinants of fertility and environmental impacts of population.
+
+## Average Versus Total Well-Being
+Following are major ethical frameworks in population ethics.
+
+#### A totalism view would generally be more pronatalist than an average utility view. Sources: Hardin [^4], Tännsjö [^10]. Totalism is more commonly held among philosophers [^3].
+
+An ethic centered on totalism may call for raising the population to the Earth's carrying capacity, even if this diminishes the average well-being of all people, a situation that Derek Parfit calls mere addition, or the repugnant conclusion [^6]. Averagism suffers from an opposite paradox, where a member of a group, whose life is good but not as good as the group's average, would cause harm to the group by bringing down the average [^6].
+
+## Value of Existence
+While it is generally agreed that a person with high well-being is preferable to a person with low well-being, all else being equal, a challenge for most philosophical systems is the incomparability between nonexistence and existence at any level of well-being. Several attempts to make this comparison are as follows.
+
+#### Source: [^1].
+
+This situation is related to the nonidentity problem, that an action can be bad only if it harms an existing person [^8]. Building from the asymmetric person-affecting view, David Benatar argues a strong antinatalist view and that it would be best for humanity to come to extinction via non-reproduction [^2], a view that has prompted disagreement [^5], [^7], [^9].
+
+[^1]: Beckstead, N. ["On the overwhelming importance of shaping the far future"](https://rucore.libraries.rutgers.edu/rutgers-lib/40469/). Rutgers University Library, Ph. D. thesis. May 2013.
+
+[^2]: Benatar, D. [*Better Never to Have Been: The Harm of Coming Into Existence.*](https://books.google.com/books?hl=en&lr=&id=paoVDAAAQBAJ&oi=fnd&pg=PR9&dq=david+benatar&ots=OfPrCA9ADt&sig=P7fHlC7xq-GGUYCcvZsCrX24Tko#v=onepage&q=david%20benatar&f=false) Oxford University Press. 2008.
+
+[^3]: Greaves, H. ["Population axiology"](https://onlinelibrary.wiley.com/doi/abs/10.1111/phc3.12442). Philosophy Compass 12(11), e12442. November 2017.
+
+[^4]: Hardin, G. ["The Tragedy of the Commons"](https://science.sciencemag.org/content/162/3859/1243/tab-article-info). Science 162(3859), pp. 1243-1248. December 1968.
+
+[^5]: Palazzi, F. ["A Set of Objections to David Benatar's Anti-Natalism"](https://d1wqtxts1xzle7.cloudfront.net/37606541/Updated-81.pdf?1431383647=&response-content-disposition=inline%3B+filename%3DA_Set_of_Objections_to_David_Benatars_An.pdf&Expires=1612085511&Signature=aZ550gS3rtokZqMivmFYE14mI1Tc5Q63QdqffLdG0Caf81mKIxNb8VpMS9RzckO~6acoUe5rdytQ8exD6bOpc5lRlBmqCqykZ0opJloceFmHYlNx1VxFPI9qa4HwjLvRpWRT1pg68ex9UcYuPjaaTLA3ZqXBe5ELFwuHHmOE47f70Vy079J0YfwPMez2g-Kll9EhKH95g2Flow2Wcnx0tskKPDr03RmQqx8xRM0lJiAgKdISvm8gDCpY7DRPcscNlQyWK-PEkBX8MizRRT5tfraonGfgz7Raf0xy0MVaLJy9E8L0NsBe1AchMx~nOCeYYA4nqMthwO08s0cCvS7U4g__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=22). British Journal of Undergraduate Philosophy 8(1), pp. 12-36. Autumn 2014.
+
+[^6]: Parfit, D. ["Reasons and Persons"](https://www.amazon.com/Reasons-Persons-Derek-Parfit/dp/019824908X). Oxford University Press, USA, ISBN-13 : 978-0198249085. 1986.
+
+[^7]: Peterson, J. ["Is Coming into Existence Always a Harm? Qoheleth in Dialogue with David Benatar"](https://philpapers.org/rec/PETICI). Harvard Theological Review 112(1), pp. 33-54. 2019.
+
+[^8]: Roberts, M. A. ["The Nonidentity Problem"](https://plato.stanford.edu/archives/sum2019/entries/nonidentity-problem/). The Stanford Encyclopedia of Philosophy (Summer 2019 Edition), Edward N. Zalta (ed.). Summer 2019.
+
+[^9]: Trisel, B. A. ["How Human Life Matters in the Universe: A Reply to David Benatar"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3409759). Journal of Philosophy of Life 9(1), pp. 1-15. June 2019.
+
+[^10]: Tännsjö, T. ["Why We Ought To Accept The Repugnant Conclusion"](https://link.springer.com/chapter/10.1007/978-1-4020-2473-3_12). In: Tännsjö T., Ryberg J. (eds) The Repugnant Conclusion. Library Of Ethics And Applied Philosophy, vol 15. Springer, Dordrecht. 2004.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

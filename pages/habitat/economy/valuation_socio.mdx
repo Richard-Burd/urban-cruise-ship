@@ -1,0 +1,60 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "habitat";
+export const focusAreaUrl = "economy";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Environmental Valuation
+
+An important principle is that adding market prices to what would otherwise be externalities to decision-making improves how businesses make decisions. There are many important ways in which the environmental costs of actions are put upon the public and therefore should be internalized through pricing.
+
+## Ecosystem Services
+Estimated world values of ecosystem services are approximately equal to world gross domestic product.
+
+#### Values by biome are presented by Costanza et al. [^1] in terms of dollars (2020) per hectare per year. Values by biome are gross global totals, estimated by de Groot et al. [^2]. Valuations differ slightly between the two sources.
+
+In using ecosystem service valuation, several points need to be kept in mind. Valuations by biome are global averages across studies reported in the Ecosystem Services Partnership [^10], and even for the same biome estimates can vary widely depending on location and study methodology. Local use of habitat valuation should be based on local measurements, rather than global averages. Valuations are based on instrumental value of ecosystems for human needs and do not take into account a conservationist ethic.
+
+See our [analysis of land use](http://urbancruiseship.org/solution/habitat/land_use_socio) for more information on ecosystem service pricing.
+
+## Social Cost of Carbon
+The social cost of carbon is an attempt to monetize future damages from greenhouse gas emissions. Following are select estimates of damages.
+
+#### Select estimates of the social cost of carbon, assessed per ton of CO2, 2019 USD. Sources: Interagency Working Group on Social Cost of Carbon [^4], Moore and Diaz [^5], Nordhaus [^6], and Wang et al. [^11]. A major source of variation in SCC estimates is the discount rate, or the extent to which future economic damage should be valued less than present costs. Rennert and Kingdon [^7] illustrate how an SCC estimate can vary by discount rate.
+
+Major damages in climate economic modeling include rising sea level, severe weather, wider range of tropical disease, direct impact of heat, and increased cooling costs. Models generally take into account the benefits of lower heating costs and CO2 fertilization of crops [^3]. Most countries will be harmed by climate change, with India hit particularly hard, though Russia, Canada, and Scandinavian countries could benefit [^8].
+
+Throughout Urban Cruise Ship, unless stated otherwise, we use a social cost of carbon of $50/ton CO2e. This translates to 45 ¢/gallon for gasoline [^9]. See our analysis of energy pricing for more information on carbon pricing.
+
+[^1]: Costanza, R., de Groot, R., Sutton, P., van der Ploeg, S., Anderson, S., Kubiszewski, I., Farber, S., Turner, R. ["Changes in the global value of ecosystem services"](https://www.sciencedirect.com/science/article/abs/pii/S0959378014000685?via%3Dihub). Global Environmental Change 26, pp. 152-158. May 2014.
+
+[^2]: de Groot, R. et al. ["Global estimates of the value of ecosystems and their services in monetary units"](https://www.sciencedirect.com/science/article/pii/S2212041612000101#t0010). Ecosystem Services 1(1), pp. 50-61. July 2012.
+
+[^3]: Diaz, D., Moore, F. ["Quantifying the economic risks of climate change"](https://www.nature.com/articles/nclimate3411). Nature Climate Change 7, pp. 774–782. 2017.
+
+[^4]: Interagency Working Group on Social Cost of Carbon. ["Technical Support Document: Technical Update of the Social Cost of Carbon for Regulatory Impact Analysis"](https://19january2017snapshot.epa.gov/sites/production/files/2016-12/documents/sc_co2_tsd_august_2016.pdf). Under Executive Order 12866, United States Government. August 2016.
+
+[^5]: Moore, F., Diaz, D. ["Temperature impacts on economic growth warrant stringent mitigation policy"](http://www.nature.com/nclimate/journal/v5/n2/full/nclimate2481.html). Nature Climate Change 5, 127-131. 2015.
+
+[^6]: Nordhaus, W. ["Revisiting the social cost of carbon"](https://www.pnas.org/content/114/7/1518). Proceedings of the National Academy of Sciences of the United States of America 114(7), pp. 1518-1523. January 2017.
+
+[^7]: Rennert, K., Kingdon, C. ["Social Cost of Carbon 101"](https://www.rff.org/publications/explainers/social-cost-carbon-101/). Resources for the Future. August 2019.
+
+[^8]: Ricke, K., Drouet, L., Caldeira, K., Tavoni, M. ["Country-level social cost of carbon"](https://www.nature.com/articles/s41558-018-0282-y). Nature Climate Change 8, pp. 895-900. 2018.
+
+[^9]: U.S. Energy Information Administration. ["How much carbon dioxide is produced from U.S. gasoline and diesel fuel consumption?"](https://www.eia.gov/tools/faqs/faq.php?id=307&t=11). U.S. Department of Energy. May 2019.
+
+[^10]: Van der Ploeg, S., de Groot R. S. ["The TEEB Valuation Database - a searchable database of 1310 estimates of monetary values of ecosystem services"](https://www.es-partnership.org/services/data-knowledge-sharing/ecosystem-service-valuation-database/). Foundation for Sustainable Development, Wageningen, the Netherlands. 2010.
+
+[^11]: Wang, P., Deng, X., Zhou, H., Yu, S. ["Estimates of the social cost of carbon: A review based on meta-analysis"](https://www.sciencedirect.com/science/article/pii/S0959652618334589?via%3Dihub). Journal of Cleaner Production 209, pp. 1494-1507. February 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

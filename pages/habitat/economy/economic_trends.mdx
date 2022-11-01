@@ -1,0 +1,39 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "habitat";
+export const focusAreaUrl = "economy";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Economic Trends
+
+In this section, we consider major broad economic trends. Economic trends inform our expectations of environmental impacts to be expected in the future.
+
+## Technological Advancement
+There is evidence that the pace of technological progress is slowing down. For example, Bloom et al. [^3] find that research productivity is falling with semiconductors (Moore's law), agricultural yields, life expectancy, and general technological development. This means that more researchers--41 times more since the 1930s--are required over time to make the same gains. Similar results have been found with machine learning [^2], and in China and Germany [^4] and Japan [^6].
+
+One reason this is happening may be that, as knowledge advances, it becomes more difficult to operate at the frontier of knowledge [^5].
+
+Artificial intelligence may again accelerate the rate of advancement [^1].
+
+[^1]: Agrawal, A., McHale, J., Oettl, A. ["Finding Needles in Haystacks: Artificial Intelligence and Recombinant Growth"](https://www.nber.org/papers/w24541). National Bureau of Economic Research, in The Economics of Artificial Intelligence: An Agenda. April 2018.
+
+[^2]: Besiroglu, T. ["Are models getting harder to find?"](https://static1.squarespace.com/static/5fb98ea9a787c521ab066091/t/5fba5c3ddb275d51d91825eb/1606048834827/AreModels.pdf). Master of Philosophy in Economics, Faculty of Economics, University of Cambridge. August 2020.
+
+[^3]: Bloom, N., Jones, C., Ven Reenen, J., Webb, M. ["Are Ideas Getting Harder to Find?"](https://www.aeaweb.org/articles?id=10.1257/aer.20180338). American Economic Review 110(4), pp. 1104-1144. April 2020.
+
+[^4]: Boeing, P., Hünermund, P. ["A global decline in research productivity? Evidence from China and Germany"](https://www.sciencedirect.com/science/article/abs/pii/S0165176520304067). Economics Letters 197: 109646. December 2020.
+
+[^5]: Jones, B. F. ["The Burden of Knowledge and the “Death of the Renaissance Man”: Is Innovation Getting Harder?"](https://academic.oup.com/restud/article-abstract/76/1/283/1577537). The Review of Economic Studies 76(1), pp. 283-317. January 2009.
+
+[^6]: Miyagawa, T., Ishikawa, T. ["On the Decline of R&D Efficiency"](https://ideas.repec.org/p/eti/dpaper/19052.html). Discussion papers 19052, Research Institute of Economy, Trade and Industry (RIETI). July 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
