@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Risk From Artificial Intelligence";
+export const solution = "AI Risk Study and Reductrion";
+
+Artificial intelligence is advancing rapidly, and it is conceivable that in the 21st century, AI will have developed to the point of being able to set and execute complex sets of goals autonomously. If the goals are not aligned with human values, then the result could be very dangerous; this is called the "alignment problem". On the level of an individual or non-governmental organization, a response is to invest effort into AI safety [^"10"].
+
+[^"10"]: Hilton, B. ["Preventing an AI-related catastrophe"](https://80000hours.org/problem-profiles/artificial-intelligence/). 80,000 Hours. August 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
