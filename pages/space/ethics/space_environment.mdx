@@ -6,6 +6,7 @@ export const focusAreaUrl = "ethics";
 
 import ArticleImage from "/components/ArticleImage.js";
 import LowDepletionRocketFuelsSolution from "/solutions/low-depletion-rocket-fuels.mdx"
+import SatelliteLight from "/solutions/satellite-light.mdx"
 
 # Environmental Impacts
 In addition to extraterrestrial environmental impacts, such as orbital debris and the effect on possible extraterrestrial life, current and possible future space activities have several significant impacts on Earth.
@@ -42,7 +43,7 @@ Rockets consume energy and release carbon dioxide emissions, but they have a muc
 
 Other research suggests that an expansion of the spaceflight industry to 100,000 launches per day would cause between -0.01 and +0.08 W/m2 of warming [^9]. As with ozone depletion, there is great uncertainty and limited knowledge in this area.
 
-# Energy and Emissions
+## Energy and Emissions
 We estimate the energy consumption and resulting greenhouse gas emissions of rocket launch as follows.
 
 <ArticleImage image={"launch_energy.svg"} width={1000} height={400} />
@@ -54,6 +55,14 @@ From 2016 to 2018, launch destinations were as follows.
 #### Source: Kyle [^8].
 
 Assuming all rockets have the same energy to liftoff payload mass ratio as the Falcon Heavy, launches consumed about 336 terajoules of primary energy in 2020, or about 0.000055% of world total [^8]. This supports a commercial satellite market worth $2.5 billion in 2019 and projected to grow to $4.7 billion in 2025 [^4]. Actual energy needs are higher when embodied energy--the energy required to manufacture rockets and other upstream costs--are included, but we expect that the figure will remain a miniscule share of world energy.
+
+## Satellites and Light Pollution
+
+Low-earth satellites, especially the Internet collections such as Starlink that are now under development, raise concerns about light pollution that could interfere with ground-based astronomy [^22].
+
+<SatelliteLight />
+
+As present, some but not all U.S. Federal agencies apply the National Environmental Policy Act (NEPA) to orbital impacts. It is considered to legislatively mandate that this always happens [^22].
 
 ## Other Effects
 In an environmental impact statement conducted for Space Shuttle activities at the Kennedy Space Center (KSC) [^5], NASA observed that the KSC is located at an ecologically sensitive area and is home to more endangered and threatened species than any other federal facility. Heavy metals and other soil pollutants were found immediately by the launch pads, and some animals, though no threatened or endangered animals, died in the blasts resulting from launch. Fast ecological recovery was noted after the end of the space shuttle program and in the lull following the Challenger disaster.
@@ -101,6 +110,8 @@ See also our review of [energy generation](http://urbancruiseship.org/solution/s
 [^20]: Smith, T. W., Edwards, J. R., Pilson, D. ["Summary of the Impact of Launch Vehicle Exhaust and Deorbiting Space and Meteorite Debris on Stratospheric Ozone"](https://apps.dtic.mil/sti/pdfs/ADA414306.pdf). Prepared for U.S. Air Force Space and Missile Systems Center, Environmental Management Branch, SMC/AXFV. September 1999.
 
 [^21]: Spaceflight 101. ["Falcon Heavy"](http://spaceflight101.com/spacerockets/falcon-heavy/). Accessed November 7, 2019.
+
+[^22]: NOIRLab. ["Satellite Constellations 2 Workshop"](https://noirlab.edu/satcon2). July 12-16, 2021.
 
 export default ({ children }) => 
   <Article 
