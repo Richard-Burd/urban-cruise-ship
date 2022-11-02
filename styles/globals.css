@@ -803,6 +803,10 @@ video {
   max-width: 24rem;
 }
 
+.shrink {
+  flex-shrink: 1;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -1586,6 +1590,19 @@ ul li a:focus {
 }
 
 /* This section styles the tables */
+
+.table-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
+  font-family: "Roboto", sans-serif;
+}
 
 .table-wrapper {
   display: flex;

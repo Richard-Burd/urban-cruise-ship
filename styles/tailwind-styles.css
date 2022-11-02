@@ -82,6 +82,10 @@ ul li a{
 }
 
 /* This section styles the tables */
+.table-title {
+  @apply font-semibold flex justify-center standard-font-3 text-2xl pb-1  text-zinc-800 tracking-wide;
+}
+
 .table-wrapper {
   @apply overflow-x-scroll sm:overflow-auto flex justify-start sm:justify-center;
 }

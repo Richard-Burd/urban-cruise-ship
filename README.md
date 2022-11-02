@@ -349,6 +349,24 @@ This will render the following:
 
 The `<div>` container is necessary to make the table scrollable on mobile devices.  The `table-wrapper` class is defined in the `./styles/tailwind-styles.css` file and uses TailwindCSS classes that only work on a `<div>` container, and will not work on a `<table>` container.
 
+Tables that have a title will look like this:
+
+```markdown
+<div className="table-title"> The Title of the Table Will Go Here </div>
+
+<div className="table-wrapper">
+
+| Title-1 | Title-2 | Title-3 |
+| --- | --- | --- |
+| Name | Age | DOB |
+| Name | Age | DOB |
+
+</div>
+
+```
+
+Note that the table title goes above the wrapper, not inside it.
+
 ------
 
 <br></br> <br></br> <br></br>
