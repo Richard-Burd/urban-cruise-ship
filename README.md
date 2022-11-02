@@ -217,6 +217,15 @@ export default ({ children }) =>
 
 NOTE: The `<h4>` Markdown symbol: `####` is used to create a small subtitle under the image.  This is a custom feature of the `<ArticleImage />` component and this UCS Website project.  Normally, any text following a `#` would be *larger* than the standard text size, not smaller, but in our case we are using the `####` symbol for the smaller sized *'sub-text`* that goes under each image.
 
+Also, within the current configuration of the UCS Website, the maximum ***width*** of an image is 1000 pixels which would look like this:
+
+
+```jsx
+<ArticleImage image={"image_name.svg"} width={1000} height={400} />
+```
+
+There is no maximum on the height as web browsers scroll from top to bottom.  You will want to size the width and heights of each image such that there is no dead-space so that the image displays at maximum width on mobile. The `<ArticleImage />` tag uses the Next.js `<Image>` tag and technical data on sizing these is available [here](https://nextjs.org/docs/api-reference/next/image#width).
+
 The project is setup to pull `"image_name.svg"` directly from the [UCS Images Repo](https://github.com/Richard-Burd/ucs-images/). The `.env.local` file in the main directory contains a variable specifying a path to this repo:
 
 ```
@@ -353,7 +362,6 @@ Tables that have a title will look like this:
 
 ```markdown
 <div className="table-title"> The Title of the Table Will Go Here </div>
-
 <div className="table-wrapper">
 
 | Title-1 | Title-2 | Title-3 |
@@ -365,7 +373,7 @@ Tables that have a title will look like this:
 
 ```
 
-Note that the table title goes above the wrapper, not inside it.
+Note that the table title goes above the wrapper, not inside it.  The opening (`<div>`) and closing (`</div>`) ***div*** tags are also on the same line for the table title, as opposed to separate lines for the table wrapper.
 
 ------
 
