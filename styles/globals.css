@@ -1518,12 +1518,23 @@ h4 a:focus {
           text-decoration-line: underline;
 }
 
-/* This styling effects the footnote container at the bottom of the articles */
+/* This section styles the footnotes at the bottom of the articles */
 
-#footnote-label {
+/* This styling effects the footnote container */
+
+.footnotes {
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-top-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(30 41 59 / var(--tw-border-opacity));
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+
+/* This styling effects the footnote title at the bottom of the articles */
+
+#footnote-label {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -1532,6 +1543,8 @@ h4 a:focus {
 
 ol li {
   margin-left: 2rem;
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   list-style-type: decimal;
 }
 

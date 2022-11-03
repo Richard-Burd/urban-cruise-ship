@@ -56,13 +56,21 @@ p a {
 h4 a {
   @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
 }
-/* This styling effects the footnote container at the bottom of the articles */
+
+/* This section styles the footnotes at the bottom of the articles */
+
+/* This styling effects the footnote container */
+.footnotes {
+  @apply border-slate-400 border-t-2 mx-4;
+}
+
+/* This styling effects the footnote title at the bottom of the articles */
 #footnote-label {
-  @apply border-slate-800 border-t-2 pt-4 pb-4;
+  @apply pt-4 pb-4 -translate-x-4;
 }
 /* This styling effects the individual footnotes at the bottom of the articles */
 ol li {
-  @apply list-decimal ml-8;
+  @apply list-decimal ml-8 -translate-x-4;
 }
 
 /* This section styles items inside of Solutions dropdown boxes */
