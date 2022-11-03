@@ -11,7 +11,8 @@
        { "article_title": "Orbital Debris", "article_url": "orbital_debris" },
        { "article_title": "Planetary Protection", "article_url": "planetary_protection" },
        { "article_title": "Environmental Impacts", "article_url": "space_environment" },
-       { "article_title": "Energy", "article_url": "space_energy" }
+       { "article_title": "Energy", "article_url": "space_energy" },
+	   { "article_title": "Light and Astronomy", "article_url": "space_light" }
      ]
   },
   {
