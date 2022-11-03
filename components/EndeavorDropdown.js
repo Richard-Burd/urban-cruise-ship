@@ -1,0 +1,65 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const EndeavorDropdown = ({ title, children }) => {
+  const [isVisible, setVisible] = useState(false);
+  return (
+    <>
+      <div className="endeavor-dropdown pb-12">
+        <div className="overflow-hidden pb-8">
+          <motion.div onTap={() => setVisible(!isVisible)}>
+            <div className="endeavor-dropdown-color cursor-pointer endeavor-dropdown-elliptical-geometry relative endeavor-dropdown-shadow-geometry mx-16 standard-font-3 text-center hover:text-gray-100 transition text-xl z-20">
+              <div className="endeavor-dropdown-elliptical-geometry">
+                <div className="sm:grid sm:grid-cols-3 lg:grid-cols-6 gap-3 px-8 md:px-8 py-3 lg:py-1">
+                  <div className="sm:col-start-1 lg:col-start-2 col-end-4 lg:col-end-7 text-left pb-8 sm:pb-0">
+                    {title}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+        <AnimatePresence>
+          {isVisible && (
+            <motion.div
+              key="content"
+              initial="collapsed"
+              animate="open"
+              exit="collapsed"
+              variants={{
+                open: { height: "auto", y: 0 },
+                collapsed: { height: 0, y: "any-prefer-fixed" }, // https://www.framer.com/developers/guides/auto-sizing/
+              }}
+              transition={{
+                duration: 0.2,
+              }}
+            >
+              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-200 border border-slate-900 mx-16 endeavor-dropdown-elliptical-geometry endeavor-dropdown-shadow-geometry -translate-y-24">
+                <div className="pt-20">{children}</div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      <style jsx>{`
+        .endeavor-dropdown-elliptical-geometry {
+          border-bottom-left-radius: 84px 38px;
+          border-bottom-right-radius: 84px 38px;
+          border-top-left-radius: 84px 38px;
+          border-top-right-radius: 84px 38px;
+        }
+        .endeavor-dropdown-shadow-geometry {
+          box-shadow: 4px 6px 6px #86888f;
+        }
+        .endeavor-dropdown-color {
+          background-color: #bfc4cdff;
+        }
+        .endeavor-dropdown-color:hover {
+          background-color: #374151;
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default EndeavorDropdown;
