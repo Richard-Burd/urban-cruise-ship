@@ -8,14 +8,8 @@ const EndeavorDropdown = ({ title, children }) => {
       <div className="endeavor-dropdown pb-12">
         <div className="overflow-hidden pb-8">
           <motion.div onTap={() => setVisible(!isVisible)}>
-            <div className="endeavor-dropdown-color cursor-pointer endeavor-dropdown-elliptical-geometry relative endeavor-dropdown-shadow-geometry mx-16 standard-font-3 text-center hover:text-gray-100 transition text-xl z-20">
-              <div className="endeavor-dropdown-elliptical-geometry">
-                <div className="sm:grid sm:grid-cols-3 lg:grid-cols-6 gap-3 px-8 md:px-8 py-3 lg:py-1">
-                  <div className="sm:col-start-1 lg:col-start-2 col-end-4 lg:col-end-7 text-left pb-8 sm:pb-0">
-                    {title}
-                  </div>
-                </div>
-              </div>
+            <div className="endeavor-dropdown-color cursor-pointer endeavor-dropdown-elliptical-geometry font-bold relative endeavor-dropdown-shadow-geometry mx-16 standard-font-3 text-center hover:text-gray-100 tracking-wider transition text-3xl z-20">
+              <div className="p-4">{title}</div>
             </div>
           </motion.div>
         </div>
@@ -43,10 +37,10 @@ const EndeavorDropdown = ({ title, children }) => {
       </div>
       <style jsx>{`
         .endeavor-dropdown-elliptical-geometry {
-          border-bottom-left-radius: 84px 38px;
-          border-bottom-right-radius: 84px 38px;
-          border-top-left-radius: 84px 38px;
-          border-top-right-radius: 84px 38px;
+          border-bottom-left-radius: 110px 46px;
+          border-bottom-right-radius: 110px 46px;
+          border-top-left-radius: 110px 46px;
+          border-top-right-radius: 110px 46px;
         }
         .endeavor-dropdown-shadow-geometry {
           box-shadow: 4px 6px 6px #86888f;
