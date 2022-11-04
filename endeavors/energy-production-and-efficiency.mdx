@@ -1,0 +1,26 @@
+import EndeavorDropdown from '/components/EndeavorDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+export const title = "Energy Production & Efficiency";
+
+Total efficiency for these endeavors is as follows:
+<ArticleImage image={"energy_production_efficiency1.svg"} width={1000} height={310} />
+
+<br></br><br></br><br></br>
+
+Net returns on investment (ROI) for these endeavors is as follows:
+<ArticleImage image={"energy_production_efficiency2.svg"} width={1000} height={260} />
+
+<br></br><br></br><br></br>
+
+Costs and efficiencies for these endeavors is as follows:
+<ArticleImage image={"energy_production_efficiency3.svg"} width={1000} height={300} />
+
+<br></br><br></br><br></br>
+
+export default ({ children }) => 
+  <EndeavorDropdown 
+    title={title} 
+  >
+    {children}
+  </EndeavorDropdown>

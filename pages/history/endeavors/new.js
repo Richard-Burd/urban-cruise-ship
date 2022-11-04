@@ -1,5 +1,12 @@
 import FocusArea2 from "../../../components/FocusArea2";
-import EcologyAndEnvironment from "./ecology-and-environment.mdx";
+import EcologyAndEnvironment from "/endeavors/ecology-and-environment.mdx";
+import EnergyProductionAndEfficiency from "/endeavors/energy-production-and-efficiency.mdx";
+import PollutionRegulations from "/endeavors/pollution-regulations.mdx";
+import PublicHealthCampaigns from "/endeavors/public-health-campaigns.mdx";
+import PublicHealthProjects from "/endeavors/public-health-projects.mdx";
+import ResearchAndDevelopment from "/endeavors/research-and-development.mdx";
+import TransportationInfrastructure from "/endeavors/transportation-infrastructure.mdx";
+import Miscellaneous from "/endeavors/miscellaneous.mdx";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -34,6 +41,13 @@ const HistoryEndeavors = () => {
       <div className={`article-wrap ${site}-background-gradient pb-12`}>
         <div className={`pt-20`}>
           <EcologyAndEnvironment />
+          <EnergyProductionAndEfficiency />
+          <PollutionRegulations />
+          <PublicHealthCampaigns />
+          <PublicHealthProjects />
+          <ResearchAndDevelopment />
+          <TransportationInfrastructure />
+          <Miscellaneous />
         </div>
       </div>
     </>

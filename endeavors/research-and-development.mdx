@@ -1,0 +1,24 @@
+import EndeavorDropdown from '/components/EndeavorDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+export const title = "Research and Development";
+
+Total efficiency for these endeavors is as follows:
+<ArticleImage image={"research_and_development1.svg"} width={1000} height={420} />
+
+<br></br><br></br><br></br>
+
+Net returns on investment (ROI) for these endeavors is as follows:
+<ArticleImage image={"research_and_development2.svg"} width={1000} height={400} />
+
+<br></br><br></br><br></br>
+
+Costs and efficiencies for these endeavors is as follows:
+<ArticleImage image={"research_and_development3.svg"} width={1000} height={440} />
+
+export default ({ children }) => 
+  <EndeavorDropdown 
+    title={title} 
+  >
+    {children}
+  </EndeavorDropdown>
