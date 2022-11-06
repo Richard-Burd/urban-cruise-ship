@@ -58,7 +58,7 @@ const Accomplishments = () => {
         </div>
         <div className="pb-6">
           <b>2018-Present:</b>&nbsp;Approximately 600 graphic exhibits have been
-          constructed, with data and analysis sufficient to identify 156
+          constructed, with data and analysis sufficient to identify over 200
           problem-solution sets, for which Urban Cruise Ship believes it can
           calculate cost, benefit; and environmental impact estimates sufficient
           to properly prioritize them. Calculations for these remain under
