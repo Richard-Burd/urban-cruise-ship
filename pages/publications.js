@@ -96,7 +96,7 @@ const Publications = () => {
               <b>Opportunities</b>
             </div>
             <a
-              href="https://drive.google.com/uc?export=view&id=1oTeIJSdehMiTL-B5ok7_eQYZcH7DH9Jf"
+              href="https://drive.google.com/uc?export=view&id=1aKcXXDssLtD3UD8-uKmu4xpWHJiq8hmp"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
