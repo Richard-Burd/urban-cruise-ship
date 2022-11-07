@@ -1,0 +1,38 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "habitat";
+export const focusAreaUrl = "economy";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Discount Rate
+
+## Discounting and Intergenerational Ethics
+Discounting refers to the practice of devaluing money in the future by a percentage, typically 3-7%. At a discount rate of 5%, $5.92 today is worth $1000 100 years from now. Discounting is typically done because it is possible to invest money and expect a long-term return. However, it is also reasonable to value the well-being of a person in the far future equally to a person today.
+
+Harmonizing these two concerns is a difficult problem for which there is no consensus on a solution [^5]. Discounting can make it difficult to deal with long-term environmental challenges, such as climate change.
+
+<ArticleImage image={"c_price_discount.svg"} width={800} height={250} />
+#### Discount rates can have a large effect on the current valuation of damages done by carbon dioxide, and hence on how much we should be willing to spend to mitigate CO<sub>2</sub> emissions. Sources: [^2], [^19], [^24]. See also David Roberts' review of discount rates [^20].
+
+Intergenerational ethics call for all policies, not just environmental policies, to be evaulated with low discount rates for the far future. This may mean, for instance, that a higher premium is called for on policies that raise the long-term rate of economic growth and scientific progress [^5].
+
+[^5]: Cowen, T. ["Caring about the Distant Future: Why It Matters and What It Means"](https://heinonline.org/HOL/LandingPage?handle=hein.journals/uclr74&div=9&id=&page=). The University of Chicago Law Review 74(5). 2007.
+
+[^24]: Stern, N. ["The Economics of Climate Change"](https://www.cambridge.org/core/books/economics-of-climate-change/A1E0BBF2F0ED8E2E4142A9C878052204). Cabinet Office - HM Treasury, Cambridge University Press. October 2006.
+
+[^19]: Nordhaus, W. ["Economic Approaches to Greenhouse Warming"](http://ciesin.columbia.edu/docs/003-311/003-311.html). In Global warming: Economic policy approaches, ed. R. D. Dornbush and J. M. Poterba, 33-68. Cambridge, MA: MIT Press. 1991.
+
+[^2]: Archer, D., Kite, E., Lusk, G. ["The ultimate cost of carbon"](https://link.springer.com/article/10.1007/s10584-020-02785-4). Climatic Change 162, pp. 2069-2086. July 2020.
+
+[^20]: Roberts, D. ["Discount rates: A boring thing you should know about (with otters!)"](https://grist.org/article/discount-rates-a-boring-thing-you-should-know-about-with-otters/). Grist. September 2012.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
