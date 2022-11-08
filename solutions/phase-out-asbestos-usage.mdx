@@ -1,0 +1,22 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Damages From Abestos Exposure";
+export const solution = "Phase Out Asbestos Usage";
+
+Although asbestos is now highly regulated in the United States, it is still used in a number of products, particularly in automotive parts and construction materials [^1]. We propose that a complete ban on asbestos products and mining be instituted by Congress [^2].
+
+Asbestos is fire-resistant, has high tensile strength, is a good thermal insulator, and is relatively cheap [^3]. More work is needed to develop materials with these properties but without the health hazards posed by asbestos.
+
+[^1]: Lahav, J. ["How Does Legislation Regulate Asbestos in the U.S.?"](https://www.asbestos.com/mesothelioma-lawyer/legislation/). The Mesotheliomia Center. October 2022.
+
+[^2]: King. D. ["Asbestos Products"](https://www.asbestos.com/products/). The Mesotheliomia Center. September 2022.
+
+[^3]: McCoy Mart. ["What are the Advantages and Disadvantages of Asbestos?"](https://mccoymart.com/post/advantages-disadvantages-asbestos/). October 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
