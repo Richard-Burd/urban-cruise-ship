@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Damages From Radon Exposure";
+export const solution = "Low Income Outreach";
+
+Radon is the second leading cause of lung cancer in the United States, after smoking, and is responsible for 21,000 deaths per year in the U.S. We propose greater monitoring at outreach toward low-income homeowners and renters, groups whose homes are less likely to be protected from radon [^1].
+
+[^1]: United States Environmental Protectin Agency. ["National Radon Action Plan 2021-2025"](https://www.epa.gov/radon/national-radon-action-plan-strategy-saving-lives). January 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
