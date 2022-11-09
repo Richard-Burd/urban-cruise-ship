@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Damages From Arsenic Exposure";
+export const solution = "Treatment of Contaminated Water";
+
+Many, primarily rural, areas of the United States have drinking water with arsenic levels exceeding the EPA's standards of 10 micrograms per liter (μg/L). Where this is found to be the case through testing, we propose public support for arsenic-reducing solutions, including point-of-use reverse reverse osmosic and dual-tank point-of-entry systems [^1]. Such interventions have been shown to greatly reduce the incidence of skin cancer [^1].
+
+[^1]: Yang, Q., Flanagan, S. V., Chillrud, S., Ross, J., Zeng, W., Culbertson, C., Spayd, S., Backer, L., Smith, A. E., Zheng, Y. ["Reduction in drinking water arsenic exposure and health risk through arsenic treatment among private well households in Maine and New Jersey, USA"](https://pubmed.ncbi.nlm.nih.gov/32535281/). The Science of the Total Environment 738:139683. October 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
