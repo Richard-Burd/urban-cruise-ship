@@ -5,6 +5,7 @@ export const site = "matter";
 export const focusAreaUrl = "practices";
 
 import ArticleImage from "/components/ArticleImage.js";
+import ConservationGeneralFundSolution from "/solutions/conservation-general-fund.mdx";
 
 # Meat and Animal Products
 
@@ -70,10 +71,12 @@ It is unclear if emerging meat alternatives, such as cultured meat, will be bett
 
 It has been found that a 10% reduction in the cost of plant-based meat should reduce U. S. cattle production by 0.15%, suggesting that a market-driven shift toward plant-based meat will not be sufficient to displace meat significantly [^16].
 
-## For Further Reading
-*National Geographic* goes into greater detail on the outlook for aquaculture.
+## Hunting
 
-*Modern Farmer* explains how animal products generally have greater environmental impacts than plant products and circumstances under which the reverse can be true.
+Hunting is a small but nontrivial share of food intake, even in wealthy countries. In Michigan, for instance, hunted venison comprised about 1% of all animal products consumed [^23]. There is a misconception that conservation in the United States is funded mostly by hunting activity. Of federal and philanthropic conservation funding, 6.1% (about $1.3 billion of $21 billion) is estimated to come from hunters [^24]. At the state level, about an additional $800 million is raised through hunting license fees, and this also goes mostly to conservation [^25]. The dependence of state conservation on hunting--an activity which is in a state of decline--jeopardizes conservation funds [^26].
+
+<ConservationGeneralFundSolution />
+
 
 [^1]: Alexander, P., Brown, C., Arneth, A., Dias, C., Finnigan, J., Moran, D., Rounsevell, M. ["Could consumption of insects, cultured meat or imitation meat reduce global agricultural land use?"](https://www.sciencedirect.com/science/article/pii/S2211912417300056?via%3Dihub). Global Food Security 15, pp. 22-32. December 2017.
 
@@ -118,6 +121,14 @@ It has been found that a 10% reduction in the cost of plant-based meat should re
 [^21]: van Huis, A., Oonincx, D. ["The environmental sustainability of insects as food and feed. A review"](https://link.springer.com/article/10.1007/s13593-017-0452-8#Sec10). Agronomy for Sustainable Development 37:43. October 2017.
 
 [^22]: Xu, X., Sharma, P., Shu, S., Lin, T., Ciais, P., Tubiello, F. N., Smith, P., Campbell, N., Jain, A. K. ["Global greenhouse gas emissions from animal-based foods are twice those of plant-based foods"](https://www.nature.com/articles/s43016-021-00358-x). Nature Food 2, pp. 724-732. September 2021.
+
+[^23]: Goguen, A. D., Riley, S. J., Organ, J. F. ["Wild-harvested venison yields and sharing by Michigan deer hunters"](https://pubs.er.usgs.gov/publication/70195186). Human Dimensions of Wildlife 23(3), pp. 197-212. 2018.
+
+[^24]: Smith, M., Molde, D. A. ["Wildlife Conservation and Management Funding in the U.S."](https://mountainlion.org/2015/05/21/wildlife-conservation-and-management-funding-in-the-u-s/). Mountain Lion Foundation. May 2015.
+
+[^25]: Mahoney, S. ["Hunting is by far the largest funding mechanism for wildlife, and the economic benefits go far beyond conservation."](https://www.conservationforce.org/hunting-is-by-far-the-largest-funding-me). Conservation Force. Accessed November 15, 2022.
+
+[^26]: Moore, A. ["Decline in Hunting Threatens Conservation Funding"](https://cnr.ncsu.edu/news/2021/01/decline-in-hunting-threatens-conservation-funding/). NC State University, College of Natural Resources News. January 2021.
 
 export default ({ children }) => 
   <Article 
