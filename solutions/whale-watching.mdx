@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Commercial Whaling";
+export const solution = "Whale Watching";
+
+Whale watching generated over $2 billion of economic activity in 2009 [^1]. A thriving whale watching industry has the potential to foster greater public concern for the welfare of whales, as well as to create economic value for conserved whales over hunted whales [^1].
+
+[^1]: International Whaling Commission. ["The Benefits and Impacts of Whale Watching"](https://wwhandbook.iwc.int/en/responsible-management/benefits-and-impacts-of-whale-watching). Accessed November 28, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
