@@ -1,0 +1,44 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "waste";
+export const focusAreaUrl = "hazardous_waste";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Medical Waste
+
+Medical waste, due to the risk of carrying infectious disease, is more dangerous and costlier to dispose of than conventional municipal solid waste.
+
+Wealthy countries generate up to 0.5 kilograms per hospital bed per day [^1], and alternatively, it is estimated that the United States generates 15 kilograms per bed per day, for a total of 5.9 million tons per year from hospitals, with an additional amount from dental offices, veterinarians, and other medical facilities [^2].
+
+In 1990, it was estimated that sharps (used syringes) caused up to 1-4 HIV infections and 80-160 hepatitus C infections per year [^3].
+
+## Pharmaceuticals
+
+Unused drugs should be disposed of through incineration [^4], but most are thrown out with ordinary trash or flushed into the sewer system [^5]. Improper disposal of pharmaceuticals causes toxicity to wildlife and humans, if the drugs get back into public water supply, and contribute to antibacterial resistance [^6]. It is estimated that 16,000 tons of pharamceuticals are disposed of per year in Germany, of which 9600-12,8000 are disposed of improperly, and that the medical cause of pharmaceutical pollution in the United Kingdom is $100-300 million per year [^7].
+
+
+
+[^1]: Padmanabhan K. K., Barik D. ["Health hazards of medical waste and its disposal"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152398/). Energy from Toxic Organic Waste for Heat and Power Generation, pp. 99-118. Woodhead Publishing. January 2019.
+
+[^2]: Overstreet, S. ["INFOGRAPHIC: 10 Things to Know About Medical Waste Compliance"](https://blog.sharpsinc.com/10-things-to-know-about-medical-waste-compliance). Sharps Compliance, Inc. January 2018.
+
+[^3]: Centers for Disease Control. ["Perspectives in Disease Prevention and Health Promotion Summary of the Agency for Toxic Substances and Disease Registry Report to Congress: The Public Health Implications of Medical Waste"](https://www.cdc.gov/mmwr/preview/mmwrhtml/00001835.htm). Morbidity and Mortality Weekly Report 39(45), pp. 822-824. November 1990.
+
+[^4]: Nyaga, M. N.; Nyagah, D. M.; Njagi, A. ["Pharmaceutical Waste: Overview, Management, and Impact of Improper Disposal"](https://www.preprints.org/manuscript/202010.0245/v1). Preprints, 2020100245. October 2020.
+
+[^5]: Rogowska J, Zimmermann A. ["Household Pharmaceutical Waste Disposal as a Global Problem—A Review"](https://www.mdpi.com/1660-4601/19/23/15798). International Journal of Environmental Research and Public Health 19(23):15798. November 2022.
+
+[^6]: Chamberlain, M. ["Consequences of Improperly Disposed Pharmaceuticals"](https://www.danielshealth.com/knowledge-center/pharmaceutical-improper-disposal-consequences). Daniels Health. June 2019.
+
+[^7]: Thomas F. ["Pharmaceutical waste in the environment: a cultural perspective"](https://www.euro.who.int/__data/assets/pdf_file/0010/334396/10-Pharmaseutical-waste-environment.pdf). Public health panorama 3(01), pp. 127-132.  World Health Organization. 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

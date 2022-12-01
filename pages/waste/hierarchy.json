@@ -39,6 +39,7 @@
 		 { "article_title": "E-Waste", "article_url": "ewaste" },
 		 { "article_title": "Industrial Waste", "article_url": "industrial_waste" },
 		 { "article_title": "Mining Waste", "article_url": "mining_waste2" },
+		 { "article_title": "Medical Waste", "article_url": "medical_waste" },
 		 { "article_title": "Nuclear Waste", "article_url": "nuclear_waste" }
 	 ]
   }
