@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "RECs Not Always Transparent";
+export const solution = "RECs Should Include Load Balancing";
+
+If a particular electricity consumer attains "100% renewable energy" by purchasing RECs, it is not necessary for that consumer to handle energy storage or other load balancing tools that would be required in a truly 100% renewable electric grid. We propose extensions to RECs that would account for the need for load balancing.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

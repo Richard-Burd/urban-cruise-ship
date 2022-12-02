@@ -1,0 +1,149 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_socioeconomics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import CarbonPricingSolution from "/solutions/carbon-pricing.mdx";
+import RemoveSubsidiesSolution from "/solutions/remove-subsidies.mdx";
+import MoreStringentMonitoringOfOffsets from "/solutions/more-stringent-monitoring-of-offsets.mdx";
+import RecsShouldIncludeLoadBalancing from "/solutions/recs-should-include-load-balancing.mdx";
+
+# Energy Pricing
+There are several ways in which energy is over- or under-priced.
+
+## Social Cost of Carbon
+Greenhouse gas emissions, primarily from energy, have harmful impacts on the future climate that are generally externalized from the emitter. Imposing a tax at the point of emission internalizes those costs. Following are select estimates of damages.
+
+<ArticleImage image={"scc.svg"} width={800} height={600} />
+#### Select estimates of the social cost of carbon, assessed per ton of CO<sub>2</sub>, 2019 USD. Sources: Hänsel et al. [^16], Interagency Working Group on Social Cost of Carbon [^17], Moore and Diaz [^21], Nordhaus [^22], Ricke et al [^25], and Wang et al. [^33]. A major source of variation in SCC estimates is the discount rate, or the extent to which future economic damage should be valued less than present costs. Rennert and Kingdon [^24] illustrate how an SCC estimate can vary by discount rate.
+
+Major damages in climate economic modeling include rising sea level, severe weather, wider range of tropical disease, direct impact of heat, and increased cooling costs. Models generally take into account the benefits of lower heating costs and CO2 fertilization of crops [^7]. Most countries will be harmed by climate change, with India hit particularly hard, though Russia, Canada, and Scandinavian countries could benefit [^25].
+
+Throughout Urban Cruise Ship, unless stated otherwise, we use a social cost of carbon of $50/ton CO2e. This translates to 45 ¢/gallon for gasoline [^31].
+
+## Carbon Pricing Policies
+A carbon price typically imposes near-term economic costs with long-term climate benefits and more immediate health benefits by reducing other forms of pollution. Recent modeling has found the following costs, climate benefits, and health benefits from recent carbon pricing proposals in the United States Congress.
+
+<ArticleImage image={"carbon_plan.svg"} width={950} height={500} />
+#### Analysis of carbon pricing proposals. A carbon price of $52/ton CO<sub>2</sub>e is assumed. Source: Hafstead [^13]. The proposals analyzed are the Climate Action Rebate Act (Coons) [^5], the Energy Innovation and Carbon Dividend Act (Deutch) [^6], the America's Clean Future Fund Act (Durbin) [^8], the MARKET CHOICE Act (Fitzpatrick) [^10], the America Wins Act (Larson) [^18], the Raise Wages, Cut Carbon Act (Lipinski) [^19], the SWAP Act (Rooney) [^27], the Healthy Climate and Family Security Act (van Hollen) [^32], and the American Opportunity Carbon Fee Act (Whitehouse) [^34].
+
+<CarbonPricingSolution />
+
+## Fossil Fuel Subsidies
+The International Monetary Fund has released several reports detailed energy subsidies and unpriced externalities. The 2019 values are as follows.
+
+<ArticleImage image={"energy_subsidies.svg"} width={600} height={400} />
+#### Energy subsidies and unpriced externalities, as estimated by the IMF [^4].
+
+Direct subsidies include tax breaks or direct payments, often to consumers. "Other Externalities" include externalities related to traffic, such as congestion. While we believe that such externalities should be internalized, such as through congestion pricing, it is debatable whether they could be termed energy subsidies when they apply regardless of how a car is powered.
+
+<RemoveSubsidiesSolution />
+
+## Clean Energy Subsidies
+In our deployment section, we note that technology deployment has social value via the learning-by-doing effect. We estimate the learning-by-doing value as follows.
+
+<ArticleImage image={"clean_energy_subsidy.svg"} width={600} height={220} />
+#### Estimated learning-by-doing value for clean energy technologies.
+
+Not all of the value estimated here is necessarily an appropriate subsidy, as the developer of the energy system will capture some of the learning benefits.
+
+## Carbon Offsets
+Sometimes it is too expensive or infeasible to reduce onsite emissions, and in that case one may purchase carbon offsets to reduce emissions elsewhere. Such purchases may be done voluntarily or to comply with a cap-and-trade law. As of January-March 2018, the prevailing price for carbon offsets was $3-6 [^15].
+
+Among certified offsets, forestry and land use projects are currently the most popular.
+
+<ArticleImage image={"carbon_offsets.svg"} width={750} height={300} />
+#### Certified carbon offsets in the first quarter, 2018, by type of projects. Source: [^15]
+
+Carbon offsets have come under considerable criticism for failing to deliver the promised emissions reductions [^9], [^11], [^12], [^23], [^30]. An estimated 85% of forestry projects under the Clean Development Mechanism, one of the main certifications of carbon offsets, are estimated to overstate emissions reductions [^3]. It may be the case that many of Clean Development Mechanism's wind power projects would have been built without the offsets, and thus they do not reduce emissions [^2]. Independently, it is estimated that 37% of REDD+ projects (deforestation and land use projects) and 24% of ARR (Afforestation, Reforestation and Revegetation) projects overlap areas that are already protected [^29]. Carbon offsets have also been criticized for obstructing deep decarbonization of sectors such as transportation [^14]. However, offsets in California have been observed to reduce emissions [^1].
+
+<MoreStringentMonitoringOfOffsets />
+
+At prices below the social cost of carbon (about $50/ton), an estimated 3-13 billion tons per year of carbon offsets may be available [^28]. This contrasts to world emissions of about 40 billion tons annually.
+
+## Corporate and Municipal Clean Energy
+A Renewable Energy Certificate (REC) is similar in concept to a carbon offset, in that one REC represents a megawatt-hour of renewable energy generation. Typically, when corporations such as Google or Apple announce that they run on "100% renewable energy", it means that they purchased enough RECs to cover their full usage portfolio [^20].
+
+RECs are useful to renewable energy generators in that they represent an additional revenue stream. However, the price of RECs has fallen to 97 ¢/MWh in the West to $64/MWh in the Northeast, in most the country too low a price to meaningfully incentivize new renewable energy generation [^26].
+
+<RecsShouldIncludeLoadBalancing />
+
+[^1]: Anderson, C., Field, C., Mach, K. ["Forest offsets partner climate‐change mitigation with conservation"](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/fee.1515). Frontiers in Ecology and the Environment 15(7). September 2017.
+
+[^2]: Calel, R., Colmer, J., Dechezleprêtre, A., Glachant, M. ["Do Carbon Offsets Offset Carbon?"](https://www.cesifo.org/DocDL/cesifo1_wp9368.pdf). CESifo Working Papers. October 2021.
+
+[^3]: Cames, M., Harthan, R., Füssler, J., Lazarus, M., Lee, C., Erickson, P., Spalding-Fecher, R. ["How additional is the Clean Development Mechanism?"](https://www.researchgate.net/publication/316216473_How_additional_is_the_Clean_Development_Mechanism_Analysis_of_the_application_of_current_tools_and_proposed_alternatives_Study_prepared_for_DG_CLIMA). Institute for Applied Ecology, Berlin. Study prepared for DG CLIMA. March 2016.
+
+[^4]: Coady, D., Parry, I., Le, N., Shang, B. ["Global Fossil Fuel Subsidies Remain Large: An Update Based on Country-Level Estimates"](https://www.imf.org/en/Publications/WP/Issues/2019/05/02/Global-Fossil-Fuel-Subsidies-Remain-Large-An-Update-Based-on-Country-Level-Estimates-46509). International Monetary Fund Working Paper WP/19/89. May 2019.
+
+[^5]: Coons, C. ["S.2284 - Climate Action Rebate Act of 2019"](https://www.congress.gov/bill/116th-congress/senate-bill/2284). Congress.gov. July 2019.
+
+[^6]: Deutch, T. ["H.R.763 - Energy Innovation and Carbon Dividend Act of 2019"](https://www.congress.gov/bill/116th-congress/house-bill/763). Congress.gov. January 2019.
+
+[^7]: Diaz, D., Moore, F. ["Quantifying the economic risks of climate change"](https://www.nature.com/articles/nclimate3411). Nature Climate Change 7, pp. 774–782. 2017.
+
+[^8]: Durbin, D. ["Durbin Introduces Bill To Fund A Clean Climate Future"](https://www.durbin.senate.gov/newsroom/press-releases/durbin-introduces-bill-to-fund-a-clean-climate-future). Press Release, Dick Durbin. August 2020.
+
+[^9]: Elgin, B. ["These Trees Are Not What They Seem"](https://www.bloomberg.com/features/2020-nature-conservancy-carbon-offsets-trees/). Bloomberg Green. December 2020.
+
+[^10]: Fitzpatrick, B. ["H.R.4520 - Modernizing America with Rebuilding to Kickstart the Economy of the Twenty-first Century with a Historic Infrastructure-Centered Expansion Act"](https://www.congress.gov/bill/116th-congress/house-bill/4520). Congress.gov. September 2019.
+
+[^11]: Foss, P. ["The Office of the Auditor General of Norway’s investigation of Norway’s International Climate and Forest Initiative"](https://www.eurosai.org/en/databases/audits/The-Office-of-the-Auditor-General-of-Norways-investigation-of-Norways-International-Climate-and-Forest-Initiative/). The Auditor General of Norway, Document 3(10). 2018.
+
+[^12]: Gorte, R., Ramseur, J. ["Forest Carbon Markets: Potential and Drawbacks"](https://digital.library.unt.edu/ark:/67531/metadc462667/). Congressional Research Service. July 2008.
+
+[^13]: Hafstead, M. ["Carbon Pricing Calculator"](https://www.rff.org/publications/data-tools/carbon-pricing-calculator/). Resources for the Future. August 2020.
+
+[^14]: Hagelberg, N. ["Carbon offsets are not our get-out-of-jail free card"](https://www.unenvironment.org/news-and-stories/story/carbon-offsets-are-not-our-get-out-jail-free-card). UN Environment Programme. June 2019.
+
+[^15]: Hamrick, K., Gallant, G., Donofrio, S., Thiel, A., Yoshimoto, E. ["Voluntary Carbon Markets Outlooks and Trends: January to March 2018"](https://www.forest-trends.org/publications/voluntary-carbon-markets/). EcosystemMarketplace. Sponsors: 3Degrees, BP Target Neutral, Cool Effect. August 2018.
+
+[^16]: Hänsel, M., Drupp, M., Johansson, D., Nesje, F., Azar, C., Freeman, M., Groom, B., Sterner, T. ["Climate economics support for the UN climate targets"](https://www.nature.com/articles/s41558-020-0833-x). Nature Climate Change 10, pp. 781-789. July 2020.
+
+[^17]: Interagency Working Group on Social Cost of Carbon. ["Technical Support Document: Technical Update of the Social Cost of Carbon for Regulatory Impact Analysis"](https://19january2017snapshot.epa.gov/sites/production/files/2016-12/documents/sc_co2_tsd_august_2016.pdf). Under Executive Order 12866, United States Government. August 2016.
+
+[^18]: Larson, J. ["H.R.4142 - America Wins Act"](https://www.congress.gov/bill/116th-congress/house-bill/4142). Congress.gov. August 2019.
+
+[^19]: Lipinski, D. ["H.R.3966 - Raise Wages, Cut Carbon Act of 2019"](https://www.congress.gov/bill/116th-congress/house-bill/3966). Congress.gov. July 2019.
+
+[^20]: Mathi, S. ["What It Really Means When Google and Apple Say They Run on 100% Renewable Energy"](https://onezero.medium.com/what-it-really-means-when-google-and-apple-say-they-run-on-100-renewable-energy-f6d1719fd865). Medium. April 2020.
+
+[^21]: Moore, F., Diaz, D. ["Temperature impacts on economic growth warrant stringent mitigation policy"](http://www.nature.com/nclimate/journal/v5/n2/full/nclimate2481.html). Nature Climate Change 5, 127-131. 2015.
+
+[^22]: Nordhaus, W. ["Revisiting the social cost of carbon"](https://www.pnas.org/content/114/7/1518). Proceedings of the National Academy of Sciences of the United States of America 114(7), pp. 1518-1523. January 2017.
+
+[^23]: Peach, S. ["'Are carbon offsets a scam?'"](https://yaleclimateconnections.org/2019/05/are-carbon-offsets-a-scam/). Yale Climate Connections. May 2019.
+
+[^24]: Rennert, K., Kingdon, C. ["Social Cost of Carbon 101"](https://www.rff.org/publications/explainers/social-cost-carbon-101/). Resources for the Future. August 2019.
+
+[^25]: Ricke, K., Drouet, L., Caldeira, K., Tavoni, M. ["Country-level social cost of carbon"](https://www.nature.com/articles/s41558-018-0282-y). Nature Climate Change 8, pp. 895-900. 2018.
+
+[^26]: Roberts, D. ["RECs, which put the "green" in green electricity, explained"](https://www.vox.com/2015/11/9/9696820/renewable-energy-certificates). Vox. November 2015.
+
+[^27]: Rooney, F. ["H.R.4058 - SWAP Act"](https://www.congress.gov/bill/116th-congress/house-bill/4058). Congress.gov. July 2019.
+
+[^28]: Rossetti, P. ["Economic and Environmental Potential of Carbon Offsets May be Underestimated"](https://www.rstreet.org/wp-content/uploads/2021/10/RSTREET243.pdf). R Street. October 2021.
+
+[^29]: Simonet, G., Karsenty, A., Newton, P., de Perthuis, C., Schaap, B., Seyller, C. ["REDD+ projects in 2014: an overview based on a new database and typology"](https://www.chaireeconomieduclimat.org/en/publications-en/information-debates/id-32-redd-projects-in-2014-an-overview-based-on-a-new-database-and-typology/). Les Cahiers de la Chaire Economie du Climat. July 2015.
+
+[^30]: Song, L. ["An Even More Inconvenient Truth: Why Carbon Credits For Forest Preservation May Be Worse Than Nothing"](https://features.propublica.org/brazil-carbon-offsets/inconvenient-truth-carbon-credits-dont-work-deforestation-redd-acre-cambodia/). ProPublica. May 2019.
+
+[^31]: U.S. Energy Information Administration. ["How much carbon dioxide is produced from U.S. gasoline and diesel fuel consumption?"](https://www.eia.gov/tools/faqs/faq.php?id=307&t=11). U.S. Department of Energy. May 2019.
+
+[^32]: Van Hollen, C. ["S.940 - Healthy Climate and Family Security Act of 2019"](https://www.congress.gov/bill/116th-congress/senate-bill/940). Congress.gov. March 2019.
+
+[^33]: Wang, P., Deng, X., Zhou, H., Yu, S. ["Estimates of the social cost of carbon: A review based on meta-analysis"](https://www.sciencedirect.com/science/article/pii/S0959652618334589?via%3Dihub). Journal of Cleaner Production 209, pp. 1494-1507. February 2019.
+
+[^34]: Whitehouse, S. ["S.1128 - American Opportunity Carbon Fee Act of 2019"](https://www.congress.gov/bill/116th-congress/senate-bill/1128). Congress.gov. April 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

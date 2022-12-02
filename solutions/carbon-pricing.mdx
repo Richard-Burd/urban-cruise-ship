@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Unpriced Externalities of CO₂ Emissions";
+export const solution = "Carbon Pricing";
+
+We recommend that an economy-wide carbon price be implemented, such as along the lines of one of the pieces of proposed legislation described above.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
