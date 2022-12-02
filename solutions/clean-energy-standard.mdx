@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Clean Electricity";
+export const solution = "Clean Energy Standard";
+
+Renewable portfolio standards are mandates that a utility procures a certain percentage of its electricity from particular sources. Such policies are meant to aid the development of the targeted technologies, including solar power. We advocate instead a Clean Energy Standard, which would mandate energy generation technologies based on their characteristics (e.g. low carbon emissions) without specifying technologies [^"4"]. A clean energy standard would aid development of a range of clean energy sources: solar, wind, geothermal, and nuclear.
+
+[^"4"]: Bipartisan Policy Center. ["Pathways to Decarbonization: A National Clean Energy Standard"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2020/03/BPC_Energy_Clean-Energy-StandardV2.pdf). March 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

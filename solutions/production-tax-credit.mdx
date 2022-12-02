@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Clean Electricity";
+export const solution = "Production Tax Credit";
+
+The Production Tax Credit [^"21"], which subsidizes certain clean energy generation on a per-kilowatt-hour basis, should be extended.
+
+[^"21"]: Sherlock, M. F. ["The Renewable Electricity Production Tax Credit: In Brief"](https://sgp.fas.org/crs/misc/R43453.pdf). Congressional Research Service. April 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

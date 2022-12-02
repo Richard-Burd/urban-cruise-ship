@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Clean Electricity";
+export const solution = "Investment Tax Credit";
+
+The Investment Tax Credit [^"18"], which subsidizes certain clean energy investments at 30% of investment costs, should be extended.
+
+[^"18"]: Office of Energy Efficiency & Renewable Energy. ["Residential and Commercial ITC Factsheets"](https://www.energy.gov/eere/solar/articles/residential-and-commercial-itc-factsheets). U.S. Department of Energy. September 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
