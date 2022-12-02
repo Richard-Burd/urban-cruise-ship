@@ -1,0 +1,18 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Clean Electricity";
+export const solution = "The Department of Energy Should Increase Energy R&D";
+
+The Department of Energy should fully fund research and development efforts to insure that every research endeavor, with expected benefit exceeding cost, is funded.
+
+How best to do R&D depends greatly on the area. A balanced research program by the Department of Energy will consist of full funding for the national laboratories, ARPA-E for high-risk, high-reward projects, the Energy Frontier Research Centers for basic science, energy innovation hubs for collaboration with industry, and the National Network for Manufacturing Innovation for advances based on manufacturing capacity [^"12"]
+
+[^"12"]: Townsend, B., Smith, E. ["U.S. Energy R&D Architecture: Discreet Roles of Major Innovation Institutions"](https://www.ourenergypolicy.org/resources/u-s-energy-rd-architecture-discreet-roles-of-major-innovation-institutions/). American Energy Innovation Council, Bipartisan Policy Center. March 2016.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
