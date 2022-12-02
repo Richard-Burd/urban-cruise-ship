@@ -1,0 +1,102 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_socioeconomics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Outlook
+## Energy
+
+<ArticleImage image={"energy1.svg"} width={1000} height={1000} />
+
+<ArticleImage image={"energy2.svg"} width={1000} height={1119} />
+#### Data sources: [^1]
+
+## Electricity
+Based on past trends, we project the following development of energy generation.
+
+<ArticleImage image={"electricity1.svg"} width={1000} height={1020} />
+
+<ArticleImage image={"electricity2.svg"} width={1000} height={1040} />
+#### Data sources: [^2]
+
+In 2022, Resources for the Future [^17] summarized the projections of several major energy scenarios. A brief overview of their conclusions is as follows.
+
+<ArticleImage image={"projection_summary.svg"} width={750} height={550} />
+#### The scenarios, detailed below, can be divided into four categories. "Reference" scenarios assume no additional effort at greenhouse gas mitigation. "Evolving Policy" scenarios assume some additional policy effort but no specific warming target. The "1.5°C Warming Scenario" and "2°C Warming Scenario" are crafted to roughly achieve a total warming target.
+
+World primary energy consumption is expected to grow through at least midcentury except under some aggressive climate change mitigation scenarios. Fossil fuel usage may decline, but it is not expected to disappear even under aggressive mitigation. Renewable energy is expected to continue growing strongly.
+
+<ArticleImage image={"primary_energy_scenarios.svg"} width={850} height={700} />
+#### Source: RFF [^17].
+
+Electricity is expected to grow, both in absolute terms and as a share of total energy, in most scenarios as more energy usages are electrified. Fossil fuels are expected to disappear from electricity production only under aggressive decarbonization. Wind and solar power are expected to grow significantly, and renewables used less widely today, such as geothermal and wave, might also become significant.
+
+<ArticleImage image={"electricity_scenarios.svg"} width={850} height={700} />
+#### Source: RFF [^17].
+
+Without concerted decarbonization effort, world emissions may continue to increase to 2050.
+
+<ArticleImage image={"co2_scenarios.svg"} width={750} height={550} />
+#### Source: RFF [^17].
+
+Carbon capture and sequestration might play a much larger role, allowing continued burning of fossil fuels with fewer emissions.
+
+<ArticleImage image={"ccs_scenarios.svg"} width={730} height={340} />
+#### Source: RFF [^17], with present values from Statista [^19].
+
+The scenarios considered are as follows.
+
+<div className="table-wrapper">
+
+| Class | Scenario |
+| --- | --- |
+| Reference | U.S. EIA Equinor Rivalry IRENA PES OPEC Shell Islands  |
+| Evolving Policies | Equinor Reform IEA APS IEA STEPS Shell Waves |
+| 2°C Warming Scenario |  Equinor Rebalance IEA SDS BNEF Green BNEF Grey BNEF Red |
+| 1.5° Warming Scenario | IEA NZE IRENA 1.5 Shell Sky1.5 |
+
+</div>
+
+#### Source: RFF [^17], with present values from the IEA [^5]. Scenarios considered are from Equinor [^3], Bloomberg New Energy Finance [^4], the International Energy Agency [^6], the International Renewable Energy Agency [^9], the Organization of Petroleum Exporting Countries [^12], Shell plc [^18], and the U. S. Energy Information Administration [^20].
+
+[^1]: Urban Cruise Ship. [*Energy Production Forecast*](https://drive.google.com/uc?export=view&id=1GA3ys7FT6Z1ypRAKyS6YPAka5ydFhc27).
+
+[^2]: Urban Cruise Ship. [*Electricity Production Forecast*](https://drive.google.com/uc?export=view&id=1wnnDiXssh28NEW7uor97UMeRf7K3TuO7).
+
+[^3]: Equinor. ["Energy Perspectives"](https://www.equinor.com/sustainability/energy-perspectives). 2021.
+
+[^5]: International Energy Agency. ["World Energy Balances: Overview"](https://www.iea.org/reports/world-energy-balances-overview). August 2021.
+
+[^6]: International Energy Agency. ["World Energy Model"](https://www.iea.org/reports/world-energy-model). October 2021.
+
+[^9]: International Renewable Energy Agency. ["Global Renewables Outlook"](https://www.irena.org/publications/2020/Apr/Global-Renewables-Outlook-2020). April 2020.
+
+[^12]: Organization of the Petroleum Exporting Countries. ["World Oil Outlook"](https://www.opec.org/opec_web/en/publications/340.htm). 2021.
+
+[^13]: Our World in Data. ["GDP per capita, 2020"](https://ourworldindata.org/grapher/gdp-per-capita-worldbank). Accessed October 7, 2022.
+
+[^14]: Our World in Data. ["Global direct primary energy consumption"](https://ourworldindata.org/grapher/global-primary-energy). Accessed October 7, 2022.
+
+[^15]: Our World in Data. ["Gross Domestic Product (GDP), 2020"](https://ourworldindata.org/grapher/gross-domestic-product). Accessed October 7, 2022.
+
+[^16]: Previsic, M., Contributing Authors: Epler, J., Hand, M., Heimiller, D., Short, W., and Eurek, K. ["The Future Potential of Wave Power in the United States"](http://www.re-vision.net/documents/The%20Future%20of%20Wave%20Power%20MP%209-20-12%20V2.pdf). Prepared by RE Vision Consulting on behalf of the U.S. Department of Energy. August 2012.
+
+[^17]: Raimi, D., Campbell, E., Newell, R., Prest, B., Villanueva, S., Wingenroth, J. ["Global Energy Outlook 2022: Turning Points and Tension in the Energy Transition"](https://www.rff.org/publications/reports/global-energy-outlook-2022/). Resources for the Future. April 2022.
+
+[^18]: Shell plc. ["Shell Scenarios"](https://www.shell.com/energy-and-innovation/the-energy-future/scenarios.html). Accessed May 21, 2022.
+
+[^19]: Statista. ["Capacity of operational large-scale carbon capture and storage (CCS) facilities worldwide from 2012 to 2021"](https://www.statista.com/statistics/726634/large-scale-carbon-capture-and-storage-projects-worldwide-capacity/). Accessed May 21, 2022.
+
+[^20]: U. S. Energy Information Administration. ["International Energy Outlook 2021"](https://www.eia.gov/outlooks/ieo/). October 2021.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
