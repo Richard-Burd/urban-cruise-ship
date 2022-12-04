@@ -1,0 +1,91 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_socioeconomics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import BorderAdjustment from "/solutions/border-adjustment.mdx";
+
+# Macroeconomics of Energy
+The availabilty of affordable, abundant energy plays a key role in economic growth.
+
+## Economic Impact of Energy Prices
+The demand for energy tends to be relatively inelastic, meaning that a large price increase will have only a small effect on overall demand.
+
+<ArticleImage image={"elasticity.svg"} width={750} height={400} />
+#### Sources: International Monetary Fund [^10], Hamilton [^7], Bernstein and Griffin [^2].
+
+The converse can hold as well. The IMF estimates that a 17% shortfall in oil production over 20 years would cause a 200% increase in price and 3% reduction in world GDP, compared to the baseline [^10]. Historically, high energy prices are well correlated with economic recessions [^6].
+
+Energy consumption also tends to increase with income.
+
+<ArticleImage image={"income_elasticity.svg"} width={750} height={150} />
+#### Estimated increase in energy consumption with a 10% increase in income. Source: IMF [^10].
+
+## Energy and Economic Growth
+Energy plays an important role in long-term economic growth. Ayres and Warr [^1] demonstrated that, as of 1998 (their last year of data), a 1% increase in available exergy (the capacity of energy to do useful work), correlates with a nearly 0.7% increase in GDP.
+
+<ArticleImage image={"henryadams.png"} width={1000} height={500} />
+#### The Henry Adams curve, showing 7% growth in energy consumption in the United States and other industrialized countries, held roughly steady until around 1970, at which time energy consumption has generally stagnated. Source: John Storrs Hall [^16] via Robin Hanson [^8]. The stagnation of energy consumption may be related to the stagnation of general economic productivity in the United States since the 1970s [^5].
+
+It is not clear whether exergy drives economic growth, or whether economic growth drives an increase in exergy, or both. Stern argues [^15] that, up to a point, energy is a strong constraint on economic growth. Beyond that point, an expansion of the energy supply does not generate much more growth.
+
+## Trade
+With international trade, statistics on national environmental impacts can be misleading, since the impacts of national consumption might be "embodied" in imports and attributed to the country of origin of the imports.
+
+<ArticleImage image={"trade_emissions.svg"} width={820} height={300} />
+#### Emissions for select countries and the EU (including the UK) in 2015, based on production and consumption. Countries such as the United States "export" emissions by importing carbon-intensive products, and thus the full emissions required to support American lifestyles are not typically fully attributed to the United States. Source: OECD [^12].
+
+In addition to shifting around environmental impacts, trade can increase impacts by shifting production from more to less efficient countries. This effect accounts for an estimated 18% of world CO2 emissions growth from 1995 to 2007 [^9], or an additional 1.46 billion tons per year by 2007 [^4]. A similar effect has increased global usage of biomass, metals, non-metallic minerals, and fossil fuels [^13].
+
+Environmental regulation, such as carbon pricing, can cause "leakage", whereby imports from less regulated or taxed countries increase as a result. A solution is a border adjustment tax, whereby imports are taxed in accordance to their embodied environmental impacts, if the exporting country does not do so [^11].
+
+<BorderAdjustment />
+
+## Energy Efficiency
+Energy efficiency refers to any deliberate policy to get the same services (lumens of lighting, vehicle-miles traveled, GDP, etc.) out of a lesser amount of energy. Beyond the externalities of energy itself, such as climate change and air pollution, there are several externalities that justify deliberate policies to improve energy efficiency beyond proper energy pricing. Such externalities include misplaced incentives, imperfect information, decisions influenced by habit and nonperfect substitutability, bounded rationality,uncertainty, transaction costs, and lack of access to financing [^14].
+
+The cost of energy efficiency measures varies by the specifics of the measures. In the United States and Western Europe, the cost is estimated at 1-6 cents per kilowatt-hour saved, generally less than the cost of electricity [^3].
+
+[^1]: Ayres, R., Warr, B. ["Accounting for Growth: The Role of Physical Work"](http://www.sciencedirect.com/science/article/pii/S0954349X03000778). Structural Change and Economic Dynamics, 16(2), pp. 181-209. June 2005.
+
+[^2]: Bernstein, M., Griffin, J. ["Regional Differences in the Price-Elasticity of Demand for Energy"](http://www.nrel.gov/docs/fy06osti/39512.pdf). National Renewable Energy Laboratory, prepared by the RAND Corporation. February 2006.
+
+[^3]: Boza-Kiss, B., Moles-Grueso, S., Urge-Vorsatz, D. ["Evaluating policy instruments to foster energy efficiency for the sustainable transformation of buildings"](https://www.sciencedirect.com/science/article/abs/pii/S1877343513000341). Current Opinion in Environmental Sustainability 5(2), pp. 163-176. June 2013.
+
+[^4]: BP. ["Statistical Review of World Energy 2020"](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html). 2020.
+
+[^5]: Focus Economics. ["23 economic experts weigh in: Why is productivity growth so low?"](https://www.focus-economics.com/blog/why-is-productivity-growth-so-low-23-economic-experts-weigh-in). April 2017.
+
+[^6]: Hamilton, J. ["Historical Oil Shocks"](http://econweb.ucsd.edu/~jhamilto/oil_history.pdf). February 2011.
+
+[^7]: Hamilton, J. ["Understanding Crude Oil Prices"](http://econweb.ucsd.edu/~jhamilto/understand_oil.pdf). Energy Journal 30(2), pp. 179-206. 2009.
+
+[^8]: Hanson, R. ["Elois Ate Your Flying Car"](https://www.overcomingbias.com/2020/09/elois-ate-your-flying-car.html). Overcoming Bias. September 2020.
+
+[^9]: Hoekstra, R., Michel, B., Suh, S. ["The emission cost of international sourcing: using structural decomposition analysis to calculate the contribution of international sourcing to CO2-emission growth"](https://escholarship.org/uc/item/4jr1029c). Journal of Economic Research 28(2), pp. 151-167. April 2016.
+
+[^10]: International Monetary Fund. ["World Economic Outlook"](http://www.imf.org/external/pubs/ft/weo/2011/01/pdf/text.pdf). April 2011.
+
+[^11]: Kortum, S., Weisbach, D. ["Border Adjustments for Carbon Emissions: Basic Concepts and Design"](https://www.rff.org/publications/working-papers/border-adjustments-for-carbon-emissions-basic-concepts-and-design/). Resources For the Future, RFF Discussion Paper 16-09. March 2016.
+
+[^12]: OECD. ["Trade in Embodied CO₂ Database (TECO₂)"](https://www.oecd.org/sti/ind/carbondioxideemissionsembodiedininternationaltrade.htm). April 2019.
+
+[^13]: Plank, B., Eisenmenger, N., Schaffartzik, A., Wiedenhofer, D. ["International Trade Drives Global Resource Use: A Structural Decomposition Analysis of Raw Material Consumption from 1990-2010"](https://pubs.acs.org/doi/abs/10.1021/acs.est.7b06133). Environmental Science & Technology 52(7), pp. 4910-4918. March 2018.
+
+[^14]: Saunders, H. D. et al. ["Energy Efficiency: What Has Research Delivered in the Last 40 Years?"](https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-012320-084937). Annual Review of Environment and Resources 46, pp. 135-165. October 2021.
+
+[^15]: Stern, D. ["The Role of Energy in Economic Growth"](http://ccep.anu.edu.au/data/2010/pdf/wpaper/CCEP-3-10.pdf). Centre for Climate & Economics Policy, Working Paper 3.10. October 2010.
+
+[^16]: Storrs Hall, J. Where Is My Flying Car?: A Memoir of Future Past. July 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
