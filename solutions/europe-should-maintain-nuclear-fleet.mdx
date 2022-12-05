@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Vulnerability to Gas Disruptions";
+export const solution = "Europe Should Maintain Nuclear Fleet";
+
+As part of its *Energiewende*, Germany has shut down its nuclear reactors. The rest of Western Europe should continue operating nuclear reactors at least as long as coal and imported natural gas remain major parts of the energy mix.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
