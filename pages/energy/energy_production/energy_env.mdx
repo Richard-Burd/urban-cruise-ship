@@ -1,0 +1,124 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_production";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Environmental Impacts of Energy
+
+In this section, we compare environmental impacts for methods of producing electricity and liquid fuels from primary energy. Most energy today is used for electricity, liquid fuels, or heat, and we separately analyze production of [residential, commercial](http://urbancruiseship.org/solution/energy/heating), and [industrial](http://urbancruiseship.org/solution/energy/industrial_heat) heat.
+
+## Electricity
+Coal and biomass have significantly higher externalized costs, aside from greenhouse gas emissions, than other options.
+
+<ArticleImage image={"img2019_06_11_elec_external.svg"} width={840} height={600} />
+#### Most costs measured are air pollution damages, both at the power plant and from upstream processes. Figures also include an estimated visual disamenity cost for wind power of 0.68 ¢/kWh (onshore) and 0.27 ¢/kWh (offshore), as well as a 0.54 ¢/kWh cost resulting from the risk of nuclear accidents--both of which are highly debated. Costs are generally highly variable, depending on factors such as the location of the plant and pollution controls. Sources: [^3], [^4], [^6].
+
+## Electricity and Greenhouse Gases
+Following are ranges of estimates of the greenhouse gas impacts of electricity generation.
+
+<ArticleImage image={"img2019_06_11_elec_ghg.svg"} width={1000} height={780} />
+#### Fossil fuel generally have higher greenhouse gas emissions than other electricity options, though hydropower and biomass can be highly variable depending on the local ecology around the dam or the manner in which biomass is sourced. Source: IPCC [^2].
+
+## Electricity, Pollution, and Health
+Perhaps contrary to expectation, coal power is responsible for the greatest radiation impact.
+
+<ArticleImage image={"radiation_elec.svg"} width={680} height={460} />
+#### Source: [^14].
+
+Coal is also responsible for the greatest amount of toxicity, though concentrated solar power also carries heavy carcinogenic (cancer-causing) toxicity impacts.
+
+<ArticleImage image={"toxicity_elec.svg"} width={720} height={660} />
+#### Source: [^14].
+
+Coal also exerts the greatest human health impact.
+
+<ArticleImage image={"health_elec.svg"} width={650} height={430} />
+#### Source: [^14].
+
+## Electricity and Land Use
+The following portrays the land use requirements to produce power from different sources.
+
+<ArticleImage image={"img2019_06_11_elec_land.svg"} width={670} height={520} />
+#### Generally, biomass and hydropower are the most land-intensive, though with variation depending on how biomass is sourced, and fossil fuels and nuclear are the most compact. Note that hydroelectric dams often have multiple functions, such as irrigation and flood control, and consequently land use figures might not be directly comparable to plants that are strictly for power production. The value for Wind power assesses the full landscape land use; the direct footprint is much lower and is compatible with other uses. Sources: Geothermal and solar thermal from [^10], transmission from [^8], and others from [^15].
+
+## Electricity and Water
+The following portrays the water requirements to produce power.
+
+<ArticleImage image={"img2019_06_11_elec_water.svg"} width={720} height={320} />
+#### With the except of hydropower, most water is used for thermal cooling, and thus non-thermal plants generally have low water needs. Note that the hydropower figures are not necessarily directly comparable to other power sources, due to the secondary uses of dams for such purposes as irrigation and flood control. Estimates on water intensity of thermal generation and hydropower are taken from Tidwell and Moreland [^9], while estimates of the water intensity of wind and solar, and of fuel preparation, are from Spang et al. [^7].
+
+Coal is responsible for much more water eutrophication than other electricity sources.
+
+<ArticleImage image={"eutroph_by_elec.svg"} width={670} height={350} />
+#### Source: [^14].
+
+## Electricity and Materials
+Generally, renewable sources require more physical material than nonrenewable sources.
+
+<ArticleImage image={"img2019_06_11_elec_material.svg"} width={830} height={350} />
+#### Source: Department of Energy [^12].
+
+Considering higher impact materials (excluding steel, aluminum, and glass), renewable energy generally requires more material than fossil fuel energy, while electric cars require more material than internal combustion cars. However, renewables and electric cars still have lower lifecycle greenhouse gas impacts than their conventional counterparts.
+
+<ArticleImage image={"energy_car_material.svg"} width={840} height={350} />
+#### Source: Materials assessed include copper, lithium, nickel, manganese, cobalt, graphite, chromium, molybdenum, zinc, rare earths, silicon, and "other" (which makes a negligible contribution in all cases). IEA [^5].
+
+## Liquid Fuels
+Lifecycle greenhouse gas emissions of different means of producing liquid fuels--petroleum and biomass--are estimated as follows.
+
+<ArticleImage image={"img2019_06_11_liquid_ghg.svg"} width={740} height={530} />
+#### Sources: Tu et al. [^11] for algal biodiesel, EPA [^13] for the others.
+
+Biofuels have much greater land use requirements than petroleum-based fuels.
+
+<ArticleImage image={"img2019_06_11_liquid_land.svg"} width={670} height={450} />
+#### For fuel derived from petroleum, land disturbed is measured over the life of the oil field. For biofuels, land disturbed assumes 50 years of production. Sources: [^1], [^16].
+
+Biofuels also have far greater water needs than petroleum-based fuels, mostly for growing crops.
+
+<ArticleImage image={"img2019_06_11_liquid_water.svg"} width={670} height={450} />
+#### Sources: Tu et al. [^11] for algal biodiesel, Spang et al. [^7] for other options.
+
+[^1]: Atabani, A., Silitonga, A., Badruddin, I., Mahlia, T., Masjuki, H., Mekhilef, H. ["A comprehensive review on biodiesel as an alternative energy resource and its characteristic"](http://www.sciencedirect.com/science/article/pii/S1364032112000044). Renewable and Sustainable Energy Reviews, 16(4), pp. 2070-2093. May 2012.
+
+[^2]: Bruckner T., I.A. Bashmakov, Y. Mulugetta, H. Chum, A. de la Vega Navarro, J. Edmonds, A. Faaij, B. Fungtammasan, A. Garg, E. Hertwich, D. Honnery, D. Infield, M. Kainuma, S. Khennas, S. Kim, H.B. Nimir, K. Riahi, N. Strachan, R. Wiser, X. Zhang. [*2014: Energy Systems*](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_chapter7.pdf). In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [^Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]:. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^3]: Dones, R. et al. ["ExternE-Pol Externalities of Energy: Extension of Accounting Framework and Policy Applications"](http://www.externe.info/externe_2006/expolwp6.pdf). July 2005.
+
+[^4]: Grausz, S. ["The Social Cost of Coal: Implications for the World Bank"](https://www.climateadvisers.com/wp-content/uploads/2014/01/2011-10-The-Social-Cost-of-Coal.pdf). Climate Advisors. October 2011.
+
+[^5]: International Energy Agency. ["The Role of Critical World Energy Outlook Special Report Minerals in Clean Energy Transitions"](https://www.iea.org/reports/the-role-of-critical-minerals-in-clean-energy-transitions). May 2021.
+
+[^6]: Samadi, S. ["The Social Costs of Electricity Generation-Categorising Different Types of Costs and Evaluating Their Respective Relevance"](https://www.mdpi.com/1996-1073/10/3/356). Energies 10(3), pp. 356. 2017.
+
+[^7]: Spang, E., Moomaw, W., Gallagher, K., Kirshen, P., Marks, D. ["The water consumption of energy production: an international comparison"](https://iopscience.iop.org/article/10.1088/1748-9326/9/10/105002). Environmental Research Letters 9(10). October 2014.
+
+[^8]: Stevens, L., Anderson, B., Cowan, C., Colton, K., Johnson, D. ["The Footprint of Energy: Land Use of U.S. Electricity Production"](https://www.strata.org/footprints/). Strata. June 2017.
+
+[^9]: Tidwell, V., Moreland, B. ["Mapping water consumption for energy production around the Pacific Rim"](https://www.osti.gov/biblio/1333540). Environmental Research Letters 11(9). September 2016.
+
+[^10]: Trainor, A., McDonald, R., Fargione, J. ["Energy Sprawl Is the Largest Driver of Land Use Change in United States"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5015902/). PLoS One 11(9), article e0162269. September 2016.
+
+[^11]: Tu, Q., Eckelman, M., Zimmerman, J. ["Harmonized algal biofuel life cycle assessment studies enable direct process train comparison"](https://www.sciencedirect.com/science/article/pii/S0306261918306287). Applied Energy 224, pp. 494-509. August 2018.
+
+[^12]: U.S. Department of Energy. ["Quadrennial Technology Review 2015"](https://www.energy.gov/quadrennial-technology-review-2015). 2015.
+
+[^13]: U.S. Environmental Protection Agency. ["Lifecycle Greenhouse Gas Results"](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/lifecycle-greenhouse-gas-results). Accessed June 11, 2019.
+
+[^14]: United Nations Economic Commission for Europe. ["Carbon Neutrality in the UNECE Region: Integrated Life-cycle Assessment of Electricity Sources"](https://unece.org/sites/default/files/2022-04/LCA_3_FINAL%20March%202022.pdf). 2021.
+
+[^15]: van Zalk, J., Behrens, P. ["The spatial extent of renewable and non-renewable power generation: A review and meta-analysis of power densities and their application in the U.S."](https://www.sciencedirect.com/science/article/pii/S0301421518305512). Energy Policy 123, pp. 83-91. December 2018.
+
+[^16]: Yeh, S., Jordaan, S., Brandt, A., Turetsky, M., Spatari, S., Keith, D. ["Land Use Greenhouse Gas Emissions from Conventional Oil Production and Oil Sands"](https://pubs.acs.org/doi/abs/10.1021/es1013278). Environ. Sci. Technol., 44(22), pp. 8766-8772. October 2010.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
