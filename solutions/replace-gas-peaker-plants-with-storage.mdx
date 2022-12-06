@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Greenhouse Gas Emissions From Natural Gas";
+export const solution = "Replace Gas Peaker Plants With Storage";
+
+Natural gas is fairly inexpensive in North America, has half the lifecycle greenhouse gas emissions of coal, and relatively little other forms of air pollution. It is more difficult to make a case for replacing all gas with low-carbon sources. Peaker plants are designed to be able to ramp up and down quickly, and they tend to be less efficient and more expensive than more common combined cycle plants.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

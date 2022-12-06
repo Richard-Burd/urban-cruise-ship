@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Natural Gas Leaks";
+export const solution = "Tighter Regulation on Leakage Rates";
+
+We propose stricter federal legislation on the rate of natural gas leakage.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

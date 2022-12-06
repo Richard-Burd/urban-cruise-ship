@@ -1,0 +1,105 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_production";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import TighterRegulationOnLeakageRatesSolution from "/solutions/tighter-regulation-on-leakage-rates.mdx"
+import ReplaceGasPeakerPlantsWithStorageSolution from "/solutions/replace-gas-peaker-plants-with-storage.mdx"
+
+# Natural Gas
+
+After coal, natural gas is the largest source of energy for electricity and is also growing rapidly. This is particularly so in North America, where natural gas supply has expanded due to development of shale gas. This is likely to continue well into the future. Due to its range of uses, the replacement of natural gas with lower carbon energy sources is a multi-faceted challenge. See also our review of methane hydrates in the context of [ocean energy](http://urbancruiseship.org/topic/oceans/ocean_energy).
+
+## Cost
+Advances in drilling technology have made natural gas one of the least expensive electricity sources, with modern combined cycle plants costing about 5-7 ¢/kWh.
+
+<ArticleImage image={"Cost of Gas Power.jpg"} width={900} height={375} />
+#### Sources: Electric Power Research Institute [^6], Kost et al. [^11], Lazard [^12], Logan et al. [^14], OpenEI [^15], Energy Information Administration [^20].
+
+Combustion turbines and gas peaker plants, though more expensive, serve important ramping functions that keep the power grid stable [^11], [^12], [^15], [^20]. Adding carbon capture and sequestration (CCS) to remove most of the CO₂ emissions from the plant would add an estimated additional 2 ¢/kWh to the plant's cost [^6], [^14], [^20].
+
+## Efficiency
+The following portrays the efficiency of current and possible future gas-fired power plants.
+
+<ArticleImage image={"gas_efficiency.svg"} width={750} height={400} />
+#### The dominant natural gas technology today is combined cycle. Carbon capture and sequestration options, including pre-combustion capture, post-combustion capture, and oxyfuel combustion, reduce emissions at a cost to efficiency. Combined heat and power achieved a high efficiency by using heat for useful purposes. Sources: Industrial Efficiency Technology Database [^7], International Energy Agency [^9], Leung et al. [^13], World Energy Council [^23].
+
+## Pollution
+Following are estimates of the externalized costs of natural gas electricity.
+
+<ArticleImage image={"gas_external.svg"} width={670} height={580} />
+#### Sources: methane leaks from Alvarez et al. [^1], greenhouse gas emissions from Bruckner et al. [^2] assuming damages of $50 per ton of CO₂ emissions [^8], volatile organic compound (VOC) emissions from Phillips [^16], and other air pollution damages from Samadi [^19]. Some costs, such as induced earthquakes from hydraulic facturing, are not quantified.
+
+Air pollution damages can vary by technology and location. In the United States, estimates range from 0.06 ¢ to 1.14 ¢/kWh, though should decrease as pollution controls improve [^5]. Drilling and extraction adds additional costs, such as water contamination and pollution. Hydraulic fracturing in particular can cause groundwater contamination, small earthquakes, and the release of volatile organic compounds [^10]. The U. S. Environmental Protection Agency has not found widespread water pollution from hydraulic fracturing, though more research is needed [^21].
+
+Recent research has estimated the rate of methane leakage from U.S. natural gas to be 2.3%, in contrast to the EPA's estimate of 1.4% [^1]. If the larger value holds and the gas is burned in a power plant with 60% efficiency, then the leakage has the global warming potential of 77-99 grams CO2 equivalent per kilowatt-hour [^22], [^24], on top of a median estimate of about 450 gCO₂e.
+
+<TighterRegulationOnLeakageRatesSolution />
+<ReplaceGasPeakerPlantsWithStorageSolution />
+
+## Carbon Capture and Sequestration
+The CO₂ abatement cost of natural gas carbon capture and sequestration has been estimated between $58 and $121 per ton [^3], [^4], [^18]. The efficiency penalty of CCS on a natural gas plant has been estimated at about 7 percentage points [^17], thereby increasing the amount of gas required to produce a given amount of power.
+
+
+
+
+
+[^1]: Alvarez et al. ["Assessment of methane emissions from the U.S. oil and gas supply chain"](https://science.sciencemag.org/content/361/6398/186). Science 361 (6398), pp. 186-188. July 2018.
+
+[^2]: Bruckner T., I.A. Bashmakov, Y. Mulugetta, H. Chum, A. de la Vega Navarro, J. Edmonds, A. Faaij, B. Fungtammasan, A. Garg, E. Hertwich, D. Honnery, D. Infield, M. Kainuma, S. Khennas, S. Kim, H.B. Nimir, K. Riahi, N. Strachan, R. Wiser, X. Zhang. [*2014: Energy Systems*](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_chapter7.pdf). In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [^Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]:. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^3]: Budinis, S., Krevor, S., Mac Dowell, M,. Brandon, N., Hawkes, A. ["An assessment of CCS costs, barriers and potential"](https://www.sciencedirect.com/science/article/pii/S2211467X18300634). Energy Strategy Reviews 22, pp. 61-81. November 2018.
+
+[^4]: Clean Air Task Force. ["Comparison of CO₂ Abatement Costs in the United States for Various Low and No Carbon Resources"](https://www.catf.us/resource/comparison-of-co2-abatement-costs-in-the-united-states-for-various-low-and-no-carbon-resources/). 2019.
+
+[^5]: Committee on Health, Environmental, and Other External Costs and Benefits of Energy Production and Consumption. [*Hidden Costs of Energy: Unpriced Consequences of Energy Production and Use*](http://www.nap.edu/catalog.php?record_id=12794). National Research Council of the National Academy of Sciences, The National Academies Press, Washington, DC. 2010.
+
+[^6]: Electric Power Research Institute. ["Australian Power Generation Technology Report"](http://www.co2crc.com.au/wp-content/uploads/2016/04/LCOE_Report_final_web.pdf). 2015.
+
+[^7]: Industrial Efficiency Technology Database. ["Combined Heat and Power (CHP) Generation"](http://ietd.iipnetwork.org/content/combined-heat-and-power-chp-generation). A project of The Institute for Industrial Productivity. Accessed June 22, 2019.
+
+[^8]: Interagency Working Group on Social Cost of Carbon. ["Technical Support Document: Technical Update of the Social Cost of Carbon for Regulatory Impact Analysis"](https://19january2017snapshot.epa.gov/sites/production/files/2016-12/documents/sc_co2_tsd_august_2016.pdf). Under Executive Order 12866, United States Government. August 2016.
+
+[^9]: International Energy Agency. ["Tracking Progress: Natural gas-fired power"](https://www.iea.org/etp/tracking2017/naturalgas-firedpower/). May 2017.
+
+[^10]: Jackson, R., et al. ["The Environmental Costs and Benefits of Fracking"](https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-031113-144051). Annual Review of Environment and Resources 39, pp. 327-362. October 2014.
+
+[^11]: Kost, C., Shammugam, S., Jülch, V., Nguyen, H., Schlegl, T. ["Levelized Cost of Electricity: Renewable Energy Technologies"](https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/EN2018_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies.pdf). Fraunhofer Institute for Solar Energy Systems ISE. March 2018.
+
+[^12]: Lazard. ["Lazard's Levelized Cost of Energy Analysis - Version 12.0"](https://www.lazard.com/media/450784/lazards-levelized-cost-of-energy-version-120-vfinal.pdf). November 2018.
+
+[^13]: Leung, D., Caramanna, G., Maroto-Valer, M. ["An overview of current status of carbon dioxide capture and storage technologies"](https://www.sciencedirect.com/science/article/pii/S1364032114005450). Renewable and Sustainable Energy Systems 39, pp. 426-443. November 2014.
+
+[^14]: Logan, J. et al. ["Electricity Generation Baseline Report"](https://www.nrel.gov/docs/fy17osti/67645.pdf). National Renewable Energy Laboratory. January 2017.
+
+[^15]: OpenEI. ["Transparent Cost Database"](https://openei.org/apps/TCDB/). Accessed May 11, 2019.
+
+[^16]: Phillips, K. ["What is the True Cost of Hydraulic Fracturing? Incorporating Negative Externalities into the Cost of America’s Latest Energy Alternative"](https://pdfs.semanticscholar.org/1f82/17d07c8d1a20f529ba5c0d9d2a17f6bb2445.pdf). Journal of Environmental Sciences Program 2(1). Spring 2012.
+
+[^17]: Popa, A. ["CCGT with CCS - integration options"](https://ieaghg.org/docs/General_Docs/PCCC1/Abstracts_Final/pccc1Abstract00055.pdf). 1st Post Combustion Capture Conference.
+
+[^18]: Rubin, E., Davison, J., Herzog, H. ["The cost of CO₂ capture and storage"](https://www.sciencedirect.com/science/article/abs/pii/S1750583615001814). International Journal of Greenhouse Gas Control 40, pp. 378-400. September 2015.
+
+[^19]: Samadi, S. ["The Social Costs of Electricity Generation-Categorising Different Types of Costs and Evaluating Their Respective Relevance"](https://www.mdpi.com/1996-1073/10/3/356). Energies 10(3), pp. 356. 2017.
+
+[^20]: U.S. Energy Information Administration. ["Levelized Cost and Levelized Avoided Cost of New Generation"](https://www.eia.gov/outlooks/aeo/pdf/electricity_generation.pdf). February 2019.
+
+[^21]: U.S. Environmental Protection Agency. ["Assessment of the Potential Impacts of Hydraulic Fracturing for Oil and Gas on Drinking Water Resources (External Review Draft)"](http://cfpub.epa.gov/ncea/hfstudy/recordisplay.cfm?deid=244651). U.S. Environmental Protection Agency, Washington, DC, EPA/600/R-15/047. 2015.
+
+[^22]: United States Environmental Protection Agency. ["Understanding Global Warming Potentials"](https://www.epa.gov/ghgemissions/understanding-global-warming-potentials). Accessed June 23, 2019.
+
+[^23]: World Energy Council. ["Energy Efficiency Indicators"](https://www.worldenergy.org/data/efficiency-indicators/). Accessed June 22, 2019.
+
+[^24]: World Nuclear Assocation. ["Heat Values of Various Fuels"](http://www.world-nuclear.org/information-library/facts-and-figures/heat-values-of-various-fuels.aspx). August 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
