@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost of Dam Removal";
+export const solution = "Dam Decommissioning Fund";
+
+We propose that Congress establish a Dam Decommissioning Fund, to finance dam removal projects where economically and environmentally justified, financed by a construction by a fee on new dam construction. The fee would be equal to an estimated discounted cost of eventually decomissioning the new dam.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

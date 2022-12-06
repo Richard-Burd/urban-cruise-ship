@@ -1,0 +1,131 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_production";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import DamDecommissioningFundSolution from "/solutions/dam-decommissioning-fund.mdx"
+
+# Hydropower
+
+Hydroelectric power harnesses the kinetic energy of falling water in a river for electricity production. In this section we focus specifically on dammed rivers.
+
+## Economics and Future Potential
+The cost of hydroelectric power is highly variable and site specific.
+
+<ArticleImage image={"Cost of Hydro Power.jpg"} width={840} height={450} />
+#### The threshold between small and large hydro varies by source and is typically between 10 and 50 megawatts of capacity. Source: International Renewable Energy Agency ([^14] and [^15]), Logan et al. [^19], OpenEI, [^22], Salvatore et al. [^23], Energy Information Administration [^27].
+
+Hydropower is highly capital intensive, with operations and maintenance comprising only 2-2.5% of the total cost [^14]. Generally, projects in remote areas or that otherwise have logistical challenges are more expensive, as are smaller projects. Cost estimates are complicated by the fact that dams often have additional economic functions, such as irrigation and flood control, which can be worth 4-100% of the electricity the dam produces [^12].
+
+As a mature technology, there are no clear pathways for significant cost reduction in hydropower other than general improvements in civil engineering [^14]. Despite their maturity, the American and world hydro industries still have potential to grow.
+
+<ArticleImage image={"hydro_potential.svg"} width={900} height={280} />
+#### Current, economic, and technical potential for hydropower in the United States and in the world. Technical potential is the maximum amount of hydropower that can be extracted with current technology; economic potential the maximum feasible production that is economically viable under current conditions. Sources: Deng et al. [^6], International Energy Agency [^11], World Energy Council [^28].
+
+A more recent estimate is that there are 3600 TWh of annual hydropower capacity in the world can produced at a levelized cost of less than 10 cents/kWh [^9].
+
+In the United States and globally, pumped hydro comprises 13-20% of all hydro installation.
+
+<ArticleImage image={"hydro_by_type.svg"} width={870} height={240} />
+#### Hydropower can be used for pumping water as energy storage or as energy production. Sources: Department of Energy [^26] for the United States, International Hydropower Association [^13] for the world.
+
+## Environmental and Social Impact
+Like the economic impact, the environmental and social impacts of hydroelectricity are highly site specific, and it is difficult to generalize to all projects. Major impacts include the following:
+
+- loss of biodiversity [^8],
+- damage to local ecology, particularly by impeding the flow of a river,
+- climate impacts of the construction and operation of a dam,
+- displacement of communities and agriculture through flooding,
+- loss of archeological heritage [^29],
+- risk of a catastrophic failure.
+
+The following internal and external costs of hydropower are estimated.
+
+<ArticleImage image={"hydro_external.svg"} width={940} height={660} />
+#### Sources: Sheridan [^24], Tajziehchi et al. [^25], Bruckner et al. [^4], Kumar et al. [^18], Mattmann et al. [^20].
+
+Small hydro generally has higher environmental costs per-kWh than large hydro [^2], [^16], [^17], [^21]. Run-of-river hydropower, which operates with little or no energy storage in the form of a reservoir, tends to have lower environmental impacts but still disrupts riverine ecosystems [^1].
+
+The biodiversity impact of hydropower varies widely. The most impactful economic sites that are not yet developed have over 1.4 million times the impact as the least impactful sites [^7]. Of the remaining potential, 0.3% accounts for 25% of the terrestrial ecosystem impact, and 3.9% of the potential accounts for 51% of the ecosystem impact.
+
+## Dam Removal
+As of 2011, less than 1% of dams in the United States were under consideration for removal [^5]. The economic value of a dam decreases over time as the reservoir becomes silted, and sometimes removal is deemed to be a more sensible option than further maintenance, especially when the biodiversity costs of dams are considered [^5].
+
+Fish ladders, which allow fish to travel past a dam, are a partial solution.
+
+<ArticleImage image={"ladder_effectiveness.svg"} width={670} height={250} />
+#### Source: [^10].
+
+For some species, fish ladders do not work very well; less than 3% of American shad successfully pass from the first dam to spawning grounds on three large rivers on the Atlantic coast [^3].
+
+<DamDecommissioningFundSolution />
+
+[^1]: Anderson, D., Moggridge, H., Warren, P., Shucksmith, J. ["The impacts of ‘run‐of‐river’ hydropower on the physical and ecological condition of rivers"](https://onlinelibrary.wiley.com/doi/full/10.1111/wej.12101). Water and Environment Journal 29(2), pp. 268-276. June 2015.
+
+[^2]: Bakken, T., Sundt, H., Ruud, A., Harby, A. ["Development of Small Versus Large Hydropower in Norway– Comparison of Environmental Impacts"](https://www.sciencedirect.com/science/article/pii/S1876610212007497). Energy Procedia 20, pp. 185-199. 2012.
+
+[^3]: Brown, J. J., Limburg, K. E., Waldman, J. R., Stephenson, K., Glenn, E. P., Juanes, F., Jordaan, A. ["Fish and hydropower on the U.S. Atlantic coast: failed fisheries policies from half-way technologies"](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12000). Conservation Letters 6(4), pp. 280-286. July/August 2013.
+
+[^4]: Bruckner T., I.A. Bashmakov, Y. Mulugetta, H. Chum, A. de la Vega Navarro, J. Edmonds, A. Faaij, B. Fungtammasan, A. Garg, E. Hertwich, D. Honnery, D. Infield, M. Kainuma, S. Khennas, S. Kim, H.B. Nimir, K. Riahi, N. Strachan, R. Wiser, X. Zhang. [*2014: Energy Systems*](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_chapter7.pdf). In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^5]: Cho, R. ["Removing Dams and Restoring Rivers"](https://news.climate.columbia.edu/2011/08/29/removing-dams-and-restoring-rivers/). Columbia Climate School. August 2011.
+
+[^6]: Deng, Y. et al. ["Quantifying a realistic, worldwide wind and solar electricity supply"](https://www.sciencedirect.com/science/article/pii/S0959378015000072). Global Environmental Change 31, pp. 239-252. March 2015.
+
+[^7]: Dorber, M., Arvesen, A., Gernaat, D., Verones , F. ["Controlling biodiversity impacts of future global hydropower reservoirs by strategic site selection"](https://www.nature.com/articles/s41598-020-78444-6). Scientific Reports 10: 21777. December 2020.
+
+[^8]: Gasparatos, A., Doll, C., Esteban, M., Ahmed, A., Olang, T. ["Renewable energy and biodiversity: Implications for transitioning to a Green Economy"](https://www.sciencedirect.com/science/article/pii/S1364032116304622). Renewable and Sustainable Energy Systems 70, pp. 161-184. April 2017.
+
+[^9]: Gernaat, D. E. H. J., Bogaart, P. W., van Vuuren, D. P., Biemans, H., Niessink, R. ["High-resolution assessment of global technical and economic hydropower potential"](https://www.nature.com/articles/s41560-017-0006-y). Nature Energy 2, pp. 821-828. September 2017.
+
+[^10]: Hershey, H. ["Updating the consensus on fishway efficiency: A meta-analysis"](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12547). Fish and Fisheries 22(4), pp. 735-748. March 2021.
+
+[^11]: International Energy Agency. ["Renewable Energy Essentials: Hydropower, 2010"](http://www.iea.org/publications/freepublications/hydropower_essentials.pdf).
+
+[^12]: International Finance Corporation. ["Hydroelectric Power: A Guide for Developers and Investors"](https://www.ifc.org/wps/wcm/connect/topics_ext_content/ifc_external_corporate_site/sustainability-at-ifc/publications/hydroelectric_power_a_guide_for_developers_and_investors). World Bank Group. February 2015.
+
+[^13]: International Hydropower Association. ["2019 Hydropower Status Report"](https://www.hydropower.org/status2019). May 2019.
+
+[^14]: International Renewable Energy Agency. ["Hydropower"](http://www.irena.org/DocumentDownloads/Publications/RE_Technologies_Cost_Analysis-HYDROPOWER.pdf). Renewable Energy Technologies: Cost Analysis Series, Volume 1: Power Sector. June 2012.
+
+[^15]: International Renewable Energy Agency. ["Renewable Power Generation Costs in 2017"](https://www.irena.org/publications/2018/Jan/Renewable-power-generation-costs-in-2017). January 2018.
+
+[^16]: Kibler, K., Tullos, D. ["Cumulative biophysical impact of small and large hydropower development in Nu River, China"](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/wrcr.20243). Water Resources Research 49(6), pp. 3104-3118. April 2013.
+
+[^17]: Kuby, M., Fagan, W., ReVelle, C., Graf, W. ["A multiobjective optimization model for dam removal: an example trading off salmon passage with hydropower and water storage in the Willamette basin"](https://www.sciencedirect.com/science/article/pii/S0309170805000370). Advanced in Water Resources 28(8), pp. 845-855. August 2005.
+
+[^18]: Kumar, A., T. Schei, A. Ahenkorah, R. Caceres Rodriguez, J.-M. Devernay, M. Freitas, D. Hall, Å. Killingtveit, Z. Liu,. "2011: Hydropower". IPCC Special Report on Renewable Energy Sources and Climate Change Mitigation [O. Edenhofer, R. Pichs-Madruga, Y. Sokona, K. Seyboth, P. Matschoss, S. Kadner, T. Zwickel, P. Eickemeier, G. Hansen, S. Schlömer, C. von Stechow (eds)], Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.
+
+[^19]: Logan, J. et al. ["Electricity Generation Baseline Report"](https://www.nrel.gov/docs/fy17osti/67645.pdf). National Renewable Energy Laboratory. January 2017.
+
+[^20]: Mattmann, M., Logar, I., Brouwer, R. ["Hydropower externalities: A meta-analysis"](https://www.sciencedirect.com/science/article/pii/S0140988316300950). Energy Economics 57, pp. 66-77. June 2016.
+
+[^21]: Mayor, B., Rodríguez-Muñoz, I., Villarroya, F., Montero, E., López-Gunn, E. ["The Role of Large and Small Scale Hydropower for Energy and Water Security in the Spanish Duero Basin"](https://www.mdpi.com/2071-1050/9/10/1807). Sustainability 9(10), 1807. October 2017.
+
+[^22]: OpenEI. ["Transparent Cost Database"](https://openei.org/apps/TCDB/). Accessed May 11, 2019.
+
+[^23]: Salvatore, J. et al. ["Cost of Energy Technologies"](https://www.worldenergy.org/wp-content/uploads/2013/09/WEC_J1143_CostofTECHNOLOGIES_021013_WEB_Final.pdf). World Energy Council, with Bloomberg New Energy Finance. 2013.
+
+[^24]: Sheridan, B. ["Social cost of electricity generation: a quantification and comparison between energy sources within PJM interconnection"](http://udspace.udel.edu/handle/19716/12630). Masters Thesis, University of Delaware, Department of Marine Studies. 2013.
+
+[^25]: Tajziehchi, S., Monavari, S. M., Karbassi, A. R., Shariat, S. M., Khorasani, N. "Quantification of Social Impacts of Large Hydropower Dams- a case study of Alborz Dam in Mazandaran Province, Northern Iran". Int. J. Environ. Res., 7(2): 377-382. Spring 2013.
+
+[^26]: U.S. Department of Energy. ["Hydropower Vision"](http://energy.gov/eere/water/new-vision-united-states-hydropower). July 2016.
+
+[^27]: U.S. Energy Information Administration. ["Levelized Cost and Levelized Avoided Cost of New Generation"](https://www.eia.gov/outlooks/aeo/pdf/electricity_generation.pdf). February 2019.
+
+[^28]: World Energy Council. ["World Energy Resources, 2013 Survey"](http://www.worldenergy.org/publications/2013/world-energy-resources-2013-survey/). 2013.
+
+[^29]: Égré, D., Senécal, P. ["Social impact assessments of large dams throughout the world: lessons learned over two decades"](https://www.tandfonline.com/doi/abs/10.3152/147154603781766310). Impact Assessment and Project Appraisal 21(3), pp. 215-224. February 2012.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
