@@ -5,6 +5,7 @@ export const site = "matter";
 export const focusAreaUrl = "mining";
 
 import ArticleImage from "/components/ArticleImage.js";
+import ConventionASMSolution from "/solutions/convention-asm.mdx"
 
 # Mining Overview
 
@@ -52,7 +53,9 @@ Artisanal mining (ASM), as opposed to industrial mining, is small scale mining c
 
 ASM is most often an income supplement to small-scale agriculture, usually conducted in low-income countries and by hand [^5].
 
-ASM, particularly for gold mining, is the largest source of mercury pollution worldwide, and other health hazards of ASM are exposure to lead, cobalt, cyanide, arsenic, cadmium, as well as noise and dust exposure and other impacts [^6]. ASM also contributes to deforestation and over-stripping of overburden [^7].
+ASM, particularly for gold mining, is the largest source of mercury pollution worldwide, and other health hazards of ASM are exposure to lead, cobalt, cyanide, arsenic, cadmium, as well as noise and dust exposure and other impacts [^6]. ASM also contributes to deforestation and over-stripping of overburden [^7], water and soil pollution, and long-term damage through a lack of reclamation [^8].
+
+<ConventionASMSolution />
 
 [^1]: Hartmann, H. [*Introductory Mining Engineering*](https://media.wiley.com/product_data/excerpt/11/04713485/0471348511.pdf). Chapter 1.
 
@@ -67,6 +70,8 @@ ASM, particularly for gold mining, is the largest source of mercury pollution wo
 [^6]: Landrigan, P. et al. ["Reducing disease and death from Artisanal and Small-Scale Mining (ASM) - the urgent need for responsible mining in the context of growing global demand for minerals and metals for climate change mitigation"](https://ehjournal.biomedcentral.com/articles/10.1186/s12940-022-00877-5). Environmental Health 21: 78. August 2022.
 
 [^7]: Ncube-Phiri S., Mucherera B., Ncube A. ["Artisanal small-scale mining: Potential ecological disaster in Mzingwane District, Zimbabwe"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6014108/). Jàmbá: Journal of Disaster Risk Studies 7(1):158. January 2015.
+
+[^8]: Kinyondo A., Huggins C. ["State-led efforts to reduce environmental impacts of artisanal and small-scale mining in Tanzania: Implications for fulfilment of the sustainable development goals"](https://www.sciencedirect.com/science/article/abs/pii/S1462901121000629). Environmental Science & Policy 120, pp. 157-165. June 2021.
 
 export default ({ children }) => 
   <Article 
