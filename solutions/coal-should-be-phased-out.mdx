@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Environmental Impacts of Coal";
+export const solution = "Coal Should Be Phased Out";
+
+As demonstrated in our review of environmental impacts of energy, coal emits significantly more greenhouse gases and other air pollutants, per kilowatt-hour, than any other major power source. For this reason, new coal plants should not be built, and existing coal plants should have the highest priority to be replaced with less polluting power sources.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
