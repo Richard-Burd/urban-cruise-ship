@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Possible Benefits From Algal Biodiesel";
+export const solution = "Research and Development Into Algae";
+
+We propose further investment of R&D into algal biodiesel, in particular to lower the cost.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

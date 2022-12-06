@@ -1,0 +1,164 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_production";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import CornEthanolMandatesSubsidiesSolution from "/solutions/corn-ethanol-mandates-and-subsidies.mdx"
+import ResearchAndDevelopmentIntoAlgae from "/solutions/research-and-development-into-algae.mdx"
+
+# Biomass and Biofuels
+
+Biomass power is derived from the combustion of living or recently living organic material, while biofuels are derived from biomass. Here, we examine the economic and environmental implications of biomass power and biofuels.
+
+## Economics of Biomass Power
+
+The price of electricity from biomass and waste is highly variable, depending on the local price of feedstock, but generally high.
+
+<ArticleImage image={"Cost of Biomass Power.jpg"} width={900} height={642} />
+#### Sources: Chandel et al. [^4], Kost et al. [^16], Logan et al. [^18], OpenEI [^23], Salvatore et al. [^26], Thi et al. [^34], Energy Information Administration [^37].
+
+Through improved technology and logistics, there is the potential for a cost reduction of about 10-20% for biomass power [^14], [^25]. Even with these cost reductions, biomass power in a competitive and unsubsidized electricity market is likely to play only a niche role. Biomass power also suffers from a diseconomy of scale: a significant expansion would create economic competition for feedstock and increases feedstock prices.
+
+## Waste to Energy
+Waste-to-energy, or the burning of municipal solid waste (MSW) to produce electricity, is particularly inefficient. In addition to the high cost, waste incineration forecloses the possibility of recycling, a substantial opportunity cost. Conservatively valuing the economic value of recycling MSW at 10 ¢ per kilogram, the feedstock of a waste-to-energy plant has an opportunity cost of 3.6-5.6 ¢/kWh. A [2001 study](http://www.epa.gov/osw/conserve/tools/rmd/rei-rw/result.htm) commissioned by the U. S. EPA found that all recycling industries had an average gross revenue of $1.66 per kilogram of recycled material. The pollution externalities of waste to energy are estimated at $75/ton of MSW burnt, or about 3.3 ¢/kWh [^9].
+
+## Environmental Impact of Biomass Power
+We estimate the following average internal and external costs of dedicated biomass power as follows.
+
+<ArticleImage image={"biomass_external.svg"} width={820} height={440} />
+#### Sources: Schlömer et al. [^29], Interagency Working Group on the Social Cost of Carbon [^12], Samadi [^27].
+
+Like internal costs, the external costs of biomass power, including impact on the carbon cycle, are highly dependent on technology and location. Studies have found biomass externalities of 0 to 4 ¢/kWh in Europe [^8], and 0.012 ¢/kWh for biomass power in Northeast China [^39]. The greenhouse gas impact of power from woody biomass can, depending on circumstances, be negative or greater than coal [^32].
+
+## Biofuel Prices
+The following are estimates of prices of ethanol, gasoline, or diesel produced through several processes.
+
+<ArticleImage image={"biofuel_prices.svg"} width={900} height={600} />
+#### Sources: de Jong et al. [^6], IEA [^13], Johnson [^15], Moyo et al. [^20], Office of Energy Efficiency and Renewable Energy [^22], Soleymani and Rosentrater [^30], EIA [^36].
+
+## Biofuel Environmental Impacts
+The high [land and water requirements](http://urbancruiseship.org/solution/energy/energy_env) of crop-based biofuels make them unsuitable as a full replacement for petroleum-based fuel.
+
+<ArticleImage image={"img2019_06_11_liquid_ghg.svg"} width={700} height={480} />
+#### Sources: Tu et al. [^35] for algal biodiesel, EPA [^38] for the others.
+
+
+
+<ArticleImage image={"img2019_06_11_liquid_land.svg"} width={620} height={400} />
+#### For fuel derived from petroleum, land disturbed is measured over the life of the oil field. For biofuels, land disturbed assumes 50 years of production. Sources: [^1], [^40].
+
+<ArticleImage image={"img2019_06_11_liquid_water.svg"} width={620} height={470} />
+#### Sources: Tu et al. [^35] for algal biodiesel, Spang et al. [^31] for other options.
+
+The International Energy Agency calls for 32 exajoules from biofuels by 2050, which would be less than 5% of world primary energy demand [^24]. Providing 32 EJ from sugarcane would require 786 km3 water each year, in contrast to today's annual withdrawal of about 4000 km³. It would also require 271 million hectares of land, compared to the 2000 Mha crop land in the world today.
+
+The land requirements of biofuels put limits on how much energy can be derived from them.
+
+<ArticleImage image={"biofuel_potential.svg"} width={680} height={270} />
+#### Source: IEA [^2]. Biofuel limits compare to about 600 EJ of primary energy used worldwide today [^3].
+
+<CornEthanolMandatesSubsidiesSolution />
+
+## Algae
+The advantages of algae for biodiesel are the higher oil content--30% to 70%, compared to 20% for plant crops--and a growing time of 5-7 days rather than months or years for plants [^1]. Algal biodiesel production must still undergo significant R&D before it is cost competitive with petroleum-based fuel. The National Alliance for Advanced Biofuels and BioProducts has brought the cost of algal biodiesel down to $7.50/gallon [^21]. To bring the price of algal biodiesel down to $3/gallon to compete with petroleum-based diesel, process improvements and a reduction in CO₂ prices are needed [^17].
+
+Algal biodiesel generall has lifecycle greenhouse gas emissions comparable with petroleum diesel.
+
+<ArticleImage image={"algae_ghg.svg"} width={760} height={450} />
+#### Greenhouse gas emissions of diesel compared to several algal biodiesel production methods. Sources: Frank [^11], Sander and Murthi [^28], Tu et al. [^35], EPA [^38]. The filter press drying method might not be feasible [^28].
+
+Compared to other biofuel options, algae biodiesel conserves land but has major climate impact from the fossil fuel inputs into the growing and conversion processes. The high water requirements may also be a showstopper.
+
+<ResearchAndDevelopmentIntoAlgae />
+
+[^1]: Atabani, A., Silitonga, A., Badruddin, I., Mahlia, T., Masjuki, H., Mekhilef, H. ["A comprehensive review on biodiesel as an alternative energy resource and its characteristic"](http://www.sciencedirect.com/science/article/pii/S1364032112000044). Renewable and Sustainable Energy Reviews, 16(4), pp. 2070-2093. May 2012.
+
+[^2]: Bacovsky, D., et al. ["The Role of Renewable Transport Fuels in Decarbonizing Road Transport"](https://www.ieabioenergy.com/blog/publications/new-publication-the-role-of-renewable-transport-fuels-in-decarbonizing-road-transport/). International Energy Agency. November 2020.
+
+[^3]: BP. ["Statistical Review of World Energy 2021"](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html). 2021.
+
+[^4]: Chandel, M., Kwok, G., Jackson, R., Pratson, L. ["The potential of waste-to-energy in reducing GHG emissions"](https://pdfs.semanticscholar.org/9997/56e83efaca3d0b94c59b6837189d3614170f.pdf). Carbon Management 3(2), pp. 133-144. 2012.
+
+[^5]: Daly, M., Pitt, D. ["EPA lowers ethanol requirements, citing reduced demand"](https://abcnews.go.com/Business/wireStory/epa-lowers-ethanol-requirements-citing-reduced-demand-81612040). ABC News. December 2021.
+
+[^6]: de Jong, S., Hoefnagles, R., Wetterlund, E., Pettersson, K., Faaij, A., Junginger, M. ["Cost optimization of biofuel production - The impact of scale, integration, transport and supply chain configurations"](https://www.sciencedirect.com/science/article/pii/S0306261917303513). Applied Energy 195, pp. 1055-1070. June 2017.
+
+[^7]: De La Torre Ugarte, D., and English, B. ["10-Year Review of the Renewable Fuels Standard"](https://www.researchgate.net/publication/288667070_10-YEAR_REVIEW_OF_THE_RENEWABLE_FUELS_STANDARD_IMPACTS_TO_THE_ENVIRONMENT_THE_ECONOMY_AND_ADVANCED_BIOFUELS_DEVELOPMENT). University of Tennessee, Institute of Agriculture. October 2015.
+
+[^8]: European Commission. ["External Costs: Research results on socio-environmental damages due to electricity and transport"](http://ec.europa.eu/research/energy/pdf/externe_en.pdf). 2003.
+
+[^9]: European Commissions, DG Environment. [*A Study on the Economic Valuation of Environmental Externalities from Landfill Disposal and Incineration of Waste*](http://ec.europa.eu/environment/enveco/waste/pdf/cowi_ext_from_landfill.pdf). October 2000.
+
+[^10]: Feinstein, D. ["S.2385 - Corn Ethanol Mandate Elimination Act of 2021"](https://www.congress.gov/bill/117th-congress/senate-bill/2385/text?r=20&s=1). Congress.gov, 117th Congress, 2021-2022. July 2021.
+
+[^11]: Frank, E. ["Life Cycle Analysis of Algal Biofuels"](http://www.istc.illinois.edu/about/SustainabilitySeminar20111102.cfm). Presentation to the Illinois Sustainable Technology Center. November 2011.
+
+[^12]: Interagency Working Group on Social Cost of Carbon. ["Technical Support Document: Technical Update of the Social Cost of Carbon for Regulatory Impact Analysis"](https://19january2017snapshot.epa.gov/sites/production/files/2016-12/documents/sc_co2_tsd_august_2016.pdf). Under Executive Order 12866, United States Government. August 2016.
+
+[^13]: International Energy Agency. ["How competitive is biofuel production in Brazil and the United States?"](https://www.iea.org/newsroom/news/2019/march/how-competitive-is-biofuel-production-in-brazil-and-the-united-states.html). From Renewables 2018. March 2019.
+
+[^14]: International Renewable Energy Agency. ["Biomass for Power Generation"](https://www.irena.org/DocumentDownloads/Publications/RE_Technologies_Cost_Analysis-BIOMASS.pdf). Renewable Energy Technologies: Cost Analysis Series, Volume 1: Power Sector. June 2012.
+
+[^15]: Johnson, E. ["Integrated enzyme production lowers the cost of cellulosic ethanol"](https://onlinelibrary.wiley.com/doi/full/10.1002/bbb.1634). Biofuels, Bioproducts & Biorefining. 2016.
+
+[^16]: Kost, C., Shammugam, S., Jülch, V., Nguyen, H., Schlegl, T. ["Levelized Cost of Electricity: Renewable Energy Technologies"](https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/EN2018_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies.pdf). Fraunhofer Institute for Solar Energy Systems ISE. March 2018.
+
+[^17]: Lane, J. ["Where are we with algae biofuels?"](http://www.biofuelsdigest.com/bdigest/2014/10/14/where-are-we-with-algae-biofuels-part-ii/). BiofuelsDigest. October 2014.
+
+[^18]: Logan, J. et al. ["Electricity Generation Baseline Report"](https://www.nrel.gov/docs/fy17osti/67645.pdf). National Renewable Energy Laboratory. January 2017.
+
+[^19]: Loris, N. ["Ethanol and Biofuel Policies"](https://www.downsizinggovernment.org/ethanol-and-biofuel-policies). Downsizing the Federal Government. February 2017.
+
+[^20]: Moyo, P., Moyo, M., Dube, D., Rusinga, O. ["Biofuel Policy as a Key Driver for Sustainable Development in the Biofuel Sector: The Missing Ingredient in Zimbabwe’s Biofuel Pursuit"](http://www.ccsenet.org/journal/index.php/mas/article/view/31773). Modern Applied Science 8(1), pp. 36-58. December 2013.
+
+[^21]: National Alliance for Advanced Biofuels and Bio-products. ["Synopsis of the NAABB Full Final Report"](http://energy.gov/sites/prod/files/2014/07/f18/naabb_synopsis_report_0.pdf).
+
+[^22]: Office of Energy Efficiency and Renewable Energy. ["Advanced Biofuels Cost of Production"](https://www.energy.gov/sites/prod/files/2014/03/f14/aviation_biofuels_haq.pdf). U.S. Department of Energy. October 2012.
+
+[^23]: OpenEI. ["Transparent Cost Database"](https://openei.org/apps/TCDB/). Accessed May 11, 2019.
+
+[^24]: Organization for Economic Cooperation and Development, International Energy Agency. ["Technology Roadmap: Biofuels for Transport, 2011"](http://www.iea.org/publications/freepublications/publication/technology-roadmap-biofuels-for-transport.html).
+
+[^25]: Södra, Sveaskog, and Vattenfall. ["Biomass for Heat and Power: Opportunity and Economics"](http://www.europeanclimate.org/documents/Biomass_report_-_Final.pdf). 2010.
+
+[^26]: Salvatore, J. et al. ["Cost of Energy Technologies"](https://www.worldenergy.org/wp-content/uploads/2013/09/WEC_J1143_CostofTECHNOLOGIES_021013_WEB_Final.pdf). World Energy Council, with Bloomberg New Energy Finance. 2013.
+
+[^27]: Samadi, S. ["The Social Costs of Electricity Generation-Categorising Different Types of Costs and Evaluating Their Respective Relevance"](https://www.mdpi.com/1996-1073/10/3/356). Energies 10(3), pp. 356. 2017.
+
+[^28]: Sander, K., Murthi, G. ["Life cycle analysis of algae biodiesel"](http://link.springer.com/article/10.1007%2Fs11367-010-0194-1). Int J Life Cycle Assess 15, pp. 704-714. 2010.
+
+[^29]: Schlömer S., T. Bruckner, L. Fulton, E. Hertwich, A. McKinnon, D. Perczyk, J. Roy, R. Schaeffer, R. Sims, P. Smith, and R. Wiser. [*Annex III: Technology-specific cost and performance parameters*](http://www.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_annex-iii.pdf). In Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^30]: Soleymani, M., Rosentrater, K. ["Techno-Economic Analysis of Biofuel Production from Macroalgae (Seaweed)"](https://www.mdpi.com/2306-5354/4/4/92). Bioengineering 4(4), 92. 2017.
+
+[^31]: Spang, E., Moomaw, W., Gallagher, K., Kirshen, P., Marks, D. ["The water consumption of energy production: an international comparison"](https://iopscience.iop.org/article/10.1088/1748-9326/9/10/105002). Environmental Research Letters 9(10). October 2014.
+
+[^32]: Stephenson, A., MacKey, D. ["Scenarios for Assessing the Greenhouse Gas Impacts and Energy Input Requirements of Using North American Woody Biomass for Electricity Generation in the UK"](https://www.gov.uk/government/publications/life-cycle-impacts-of-biomass-electricity-in-2020). Department of Energy & Climate Change. July 2014.
+
+[^33]: Taxpayers for Common Sense. ["Understanding U.S. Corn Ethanol and Other Corn-Based Biofuels Subsidies"](https://www.taxpayer.net/energy-natural-resources/understanding-u-s-corn-ethanol-and-other-corn-based-biofuels-subsidies/). May 2021.
+
+[^34]: Thi, N., Lin, C., Kumar, G. ["Electricity generation comparison of food waste-based bioenergy with wind and solar powers: A mini review"](https://www.ourenergypolicy.org/wp-content/uploads/2016/08/Food-Waste.pdf). Sustainable Environment Research, pp. 1-6. 2016.
+
+[^35]: Tu, Q., Eckelman, M., Zimmerman, J. ["Harmonized algal biofuel life cycle assessment studies enable direct process train comparison"](https://www.sciencedirect.com/science/article/pii/S0306261918306287). Applied Energy 224, pp. 494-509. August 2018.
+
+[^36]: U.S. Energy Information Administration. ["Daily Prices"](https://www.eia.gov/todayinenergy/prices.php). Accessed June 29, 2019.
+
+[^37]: U.S. Energy Information Administration. ["Levelized Cost and Levelized Avoided Cost of New Generation"](https://www.eia.gov/outlooks/aeo/pdf/electricity_generation.pdf). February 2019.
+
+[^38]: U.S. Environmental Protection Agency. ["Lifecycle Greenhouse Gas Results"](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/lifecycle-greenhouse-gas-results). Accessed June 11, 2019.
+
+[^39]: Wang, L., Watanabe, T., Xu, Z. ["Monetization of External Costs Using Lifecycle Analysis - A Comparative Case Study of Coal-Fired and Biomass Power Plants in Northeast China"](http://www.mdpi.com/1996-1073/8/2/1440). Energies 8(2), pp. 1440-1467. 2015.
+
+[^40]: Yeh, S., Jordaan, S., Brandt, A., Turetsky, M., Spatari, S., Keith, D. ["Land Use Greenhouse Gas Emissions from Conventional Oil Production and Oil Sands"](https://pubs.acs.org/doi/abs/10.1021/es1013278). Environ. Sci. Technol., 44(22), pp. 8766-8772. October 2010.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
