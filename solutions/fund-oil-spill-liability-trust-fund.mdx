@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Oil Spills";
+export const solution = "Fund Oil Spill Liability Trust Fund";
+
+The Oil Spill Liability Trust Fund (OSLTF) is an important tool to insure that oil spill cleanup costs are financed with responsibility operators are not able to do so. However, the oil production excise tax, which is the primary source of revenue for the OSLTF, has been extended intermittently [^"13"]. We propose that the excise tax be kept in place.
+
+[^"13"]: Ramseur, J. L. ["The Oil Spill Liability Trust Fund Tax: Background and Reauthorization Issues in the 116th Congress"](https://crsreports.congress.gov/product/details?prodcode=IF11160). Congressional Research Service. April 2019.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
