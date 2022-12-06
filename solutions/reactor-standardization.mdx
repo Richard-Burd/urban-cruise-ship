@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "High Cost of Nuclear Power";
+export const solution = "Reactor Standardization";
+
+Countries that have been able to achieve relatively low nuclear capital costs, such as South Korea and historically France, have done so in part through standardization of reactor designs.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

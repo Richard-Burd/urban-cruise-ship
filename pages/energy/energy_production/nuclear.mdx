@@ -1,0 +1,171 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_production";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import ReactorStandardizationSolution from "/solutions/reactor-standardization.mdx";
+import SmallModularReactorRndSolution from "/solutions/small-modular-reactor-rnd.mdx";
+import AdvancedReactorRndSolution from "/solutions/advanced-reactor-rnd.mdx";
+
+# Nuclear Fission
+
+Nuclear power is the extraction of energy from fission of heavy atomic nuclei, as opposed to [fusion](http://urbancruiseship.org/solution/energy/fusion). Here we assess the economic and environmental impact of today's nuclear technology and consider the prospects of future forms.
+
+We recommend further [research and development](http://urbancruiseship.org/solution/energy/rd) into advanced reactors and small modular reactors, discussed below.
+
+## Today's Nuclear Economics
+The following portrays estimates of the cost of today's nuclear technology and possible future technologies.
+
+<ArticleImage image={"Cost of Nuclear Power.jpg"} width={980} height={830} />
+#### Data sources: Abdulla and Azevedo [^1], Bowen [^3], Bustreo [^5], Electric Power Research Institute [^8], Energy Innovation Reform Project [^9], Enter et al. [^10], European Fusion Development Agreement [^11], IEA et al. [^23], Lazard [^24], OpenEI[^30], Rochau [^33], Rosner and Goldberg [^34], Rothwell and Ganda [^35], Rubio and Tricot [^36], EIA [^41]. Contemporary new nuclear construction tends to be expensive relative to other options, though depreciated nuclear--keeping existing plants open--costs an estimated 2.8 ¢/kWh. Cost estimates for nuclear technologies under development, especially fusion, should be regarded as highly uncertain.
+
+Factors that affect the costs of nuclear power include management issues, safety regulation, and commodity prices [^42]. The long construction times, risk of [cost overruns](http://www.businessinsider.com/americas-new-nuclear-plants-are-costing-billions-more-than-expected-2012-7), and high capital costs make nuclear a particularly difficult power source to finance. Nuclear costs also vary considerably by country.
+
+<ArticleImage image={"nuclear_capital_costs.svg"} width={720} height={320} />
+#### Observed capital costs of nuclear power in China, the United States, Japan, Korea, and Europe. Most of the cost of nuclear electricity is capital cost. Sources: IEA [^22] and IEA et al. [^23].
+
+The cost breakdown of a typical nuclear plant is estimated as follows.
+
+<ArticleImage image={"nuclear_plant_cost.svg"} width={730} height={300} />
+#### The figures assume a capital cost of $5000/kW (amortized over 50 years at a 7% discount rate and seven year construction time). Sources: World Nuclear Association ([^42] and [^43]).
+
+Under today's conditions, nuclear plants require some form of revenue certainty to be economically competitive [^42]. A capacity market, which would pay operators for dispatchable capacity to insure grid reliability, would also help nuclear economics [^42], but the industry's long-term viability requires cost reduction.
+
+<ReactorStandardizationSolution />
+
+## Uranium and Thorium Mining
+While there is no apparent prospect of a shortage of terrestrial uranium reserves on the horizon, the possibility of recovering uranium from seawater would serve as a backstop against major price increases and insure sufficient supply in the event of an expansion of nuclear power.
+
+<ArticleImage image={"uranium_mining.jpg"} width={1000} height={260} />
+#### Cost of providing uranium or thorium (on a uranium-equivalency basis), in per-kilogram and per-kWh generated bases. Sources: thorium data from IAEA [^20], seawater extraction from Parker et al. [^32], uranium price peaks from Frisby [^13], recent uranium prices from TradeTech [^40], and translation of per-kg to per-kWh prices from the World Nuclear Association [^42].
+
+The development of fast breeder reactors, which use uranium fuel much more efficiently, or thorium reactors, could allow an expansion of nuclear power without pressuring reserves [^29]. However, uranium would have to reach a price of about $400/kg for the thorium cycle to be cost-competitive [^20].
+
+## Health, Environmental, and Social Impact
+Nuclear power has the following estimated externalized health and environmental costs. See also our analysis of disposal of [nuclear waste](http://urbancruiseship.org/solution/waste/nuclear_waste).
+
+<ArticleImage image={"nuclear_external.svg"} width={700} height={500} />
+#### Greenhouse gas emissions are from Schlömer et al. [^38], plant operation from Dones et al. [^7], mining, enrichment, and disposal (non-greenhouse gas) from estimated by the OECD and NEA [^31], and accident risks are quantified by Samadi [^37]. It should be noted that the proper valuation of accident risk is highly contested. Non-accident external costs are generally confirmed by ExternE [^12] and the OECD and NEA [^31]. The mining, enrichment, and disposal costs here are also significantly less than those of Dones et al. [^7].
+
+Experts are divided on the risk of nuclear weapons proliferation that may result from nuclear power. It is difficult, though not impossible, to repurpose civilian enrichment facilities for weapons production [^39]. Historically, states with civilian nuclear programs have not been more likely to develop weapons than those without [^25].
+
+## Small Modular Reactors
+Small modular reactors (SMR) are typically defined to have under 300 MW electrical capacity, in contrast to the typical 1000 MW or more of modern nuclear power plants, and they may allow components to be mass-produced and assembled onsite. While SMRs do not offer a clear advantage on cost of electricity, they may reduce construction time, capital risk, and be more attractive for smaller grids [^27]. Through reduced need for backup power supply, improved seismic capability, and large underground pool storage for spent fuel, the risk of the type of failure seen at Fukushima Daiichi would be reduced [^34].
+
+The International Atomic Energy Agency has tracked 55 ongoing SMR projects, of which 19 have the following projected commercialization dates.
+
+<ArticleImage image={"smr_timeline.svg"} width={810} height={300} />
+#### Source: IAEA [^28].
+
+<SmallModularReactorRndSolution />
+
+## Advanced Nuclear
+The nuclear industry is developing a set of new reactor designs which collectively are known as Generation IV. They are expected to be commercially available after 2030. The Generation IV Forum has identified six leading reactor candidates [^17]. The following shows the main rationale [^4], [^14], [^15], [^16], [^19], [^21], current status of research projects [^2], and estimated Technology Readiness Level (TRL) [^18]. The TRL is measured on a scale from 1, indicating a technology that is only at a conceptual stage, to 9, indicating a technology that is commercially deployed in its final form.
+
+<ArticleImage image={"advanced_nuclear.svg"} width={1000} height={1000} />
+#### Rationales are given by Brookhaven National Laboratory et al. [^4], the Gen IV International Forum ([^14], [^15], [^16]), and the IAEA ([^19], [^21]); current status reported by the Advanced Reactors Information System [^2]; and Technological Readiness Level estimated by Gouger et al. [^18].
+
+The Breakthrough Institute has identified safety, modularity, thermal efficiency, and technological readiness as the main criteria for reactor designs. They have determined high-temperature gas-cooled reactors--particularly for thermal applications--sodium-cooled and lead-cooled factor reactors, and molten salt reactors as most promising, and gas-cooled fast reactors and supercritical water reactors less promising [^26].
+
+<AdvancedReactorRndSolution />
+
+## For Further Reading
+The Economist's [overview of the Generation IV Roadmap](http://www.economist.com/node/15048703).
+
+[^1]: Abdulla, A. and Azevedo, I. ["Developing a range of levelized cost estimates for integral light water small modular reactors"](https://docplayer.net/4589266-Developing-a-range-of-levelized-cost-estimates-for-integral-light-water-small-modular-reactors.html).
+
+[^2]: Advanced Reactors Information System(ARIS). ["Technical Data"](https://aris.iaea.org/sites/general.html). International Atomic Energy Agency. Accessed July 9, 2019.
+
+[^3]: Bowen, M. ["Enabling Nuclear Innovation: Leading on SMRs"](https://www.uamps.com/file/b5110bfa-d567-46c9-b20d-3c4a4546a7ed). Nuclear Innovation Alliance. October 2017.
+
+[^4]: Brookhaven National Laboratory et al. ["The Use of Thorium in Nuclear Power Reactors"](https://energyfromthorium.com/pdf/WASH-1097.pdf). Prepared for the Division of Reactor Development & Technology, U. S. Atomic Energy Commission. June 1969.
+
+[^5]: Bustreo, C. ["Fusion energy economics"](https://www.euro-fusion.org/fileadmin/user_upload/Archive/wp-content/uploads/2015/02/Bustreo_Fusion-Economics.pdf). EFDA-TIMES and ETSAP-TIAM Workshop. November 2013.
+
+[^6]: Deutch, J., Greenstone, M., Jackson, S., Madia, W., Meserve, R., Reicher, D., Rempe, J., Samore, G., Sell, C., Sharp, P., Turnage, J. ["Final Report of the Task Force on the Future of Nuclear Power"](https://www.energy.gov/seab/downloads/final-report-task-force-future-nuclear-power). Task Force on the Future of Nuclear Power, U. S. Department of Energy. September 2016.
+
+[^7]: Dones, R. et al. ["ExternE-Pol Externalities of Energy: Extension of Accounting Framework and Policy Applications"](http://www.externe.info/externe_2006/expolwp6.pdf). July 2005.
+
+[^8]: Electric Power Research Institute. ["Australian Power Generation Technology Report"](http://www.co2crc.com.au/wp-content/uploads/2016/04/LCOE_Report_final_web.pdf). 2015.
+
+[^9]: Energy Innovation Reform Project. ["What Will Advanced Nuclear Plants Cost? A Standardized Cost Analysis of Advanced Nuclear Technologies in Commercial Development"](https://www.eenews.net/assets/2017/07/25/document_gw_07.pdf). 2017.
+
+[^10]: Entler, S., Horacek, J., Dlouhy, T., Dostal, V. ["Approximation of the economy of fusion energy"](https://www.sciencedirect.com/science/article/pii/S0360544218305395). Energy 152(1), pp. 489-497. June 2018.
+
+[^11]: European Fusion Development Agreement. ["Fusion Electricity: A roadmap to the realisation of fusion energy"](http://fire.pppl.gov/EU_Fusion_Roadmap_2013.pdf). November 2012.
+
+[^12]: ExternE. ["Externalities of Energy, Vol. 5: Nuclear"](http://www.externe.info/externe_d7/sites/default/files/vol5.pdf). European Commission, prepared by CEPN, FR. 1995.
+
+[^13]: Frisby, D. ["It’s only a matter of time before this hated metal makes a comeback"](https://moneyweek.com/490011/uranium-yellow-cake-ipo/). MoneyWeek. June 2018.
+
+[^14]: Gen IV International Forum. ["Gas-Cooled Fast Reactor (GFR)"](https://www.gen-4.org/gif/jcms/c_42148/gas-cooled-fast-reactor-gfr). Accessed July 9, 2019.
+
+[^15]: Gen IV International Forum. ["Lead-Cooled Fast Reactor (LFR)"](https://www.gen-4.org/gif/jcms/c_42149/lead-cooled-fast-reactor-lfr). Accessed July 9, 2019.
+
+[^16]: Gen IV International Forum. ["Sodium-Cooled Fast Reactor (SFR)"](https://www.gen-4.org/gif/jcms/c_42152/sodium-cooled-fast-reactor-sfr). Accessed July 9, 2019.
+
+[^17]: Gen IV International Forum. ["Technology Roadmap Update for Generation IV Nuclear Energy Systems"](https://www.gen-4.org/gif/jcms/c_60729/technology-roadmap-update-2013). January 2014.
+
+[^18]: Gouger, H. D., Bari, R. A., Kim, T. K., Sowinski, T. E., Worrall, A. ["Assessment of the Technical Maturity of Generation IV Concepts for Test or Demonstration Reactor Applications"](https://www.osti.gov/biblio/1236803). Idaho National Laboratory, INL/EXT-15-36427, Revision 2. October 2015.
+
+[^19]: International Atomic Energy Agency. ["Advances in Nuclear Power Process Heat Applications"](http://www-pub.iaea.org/books/IAEABooks/8692/Advances-in-Nuclear-Power-Process-Heat-Applications). 2012.
+
+[^20]: International Atomic Energy Agency. ["Role of Thorium to Supplement Fuel Cycles of Future Nuclear Energy Systems"](http://www-pub.iaea.org/MTCD/Publications/PDF/Pub1540_web.pdf). IAEA Nuclear Energy Series NF-T-2.4. 2012.
+
+[^21]: International Atomic Energy Agency. ["Status of Research and Technology Development for Supercritical Water Cooled Reactors"](https://www.iaea.org/publications/13485/status-of-research-and-technology-development-for-supercritical-water-cooled-reactors). IAEA TECDOC Series. 2019.
+
+[^22]: International Energy Agency. ["Technology Roadmap - Nuclear Energy, 2015 Edition"](https://www.oecd-nea.org/pub/techroadmap/techroadmap-2015.pdf).
+
+[^23]: International Energy Agency, Nuclear Energy Agency, Organization for Economic Co-Operation and Development. ["Projected Costs of Generating Electricity: 2015 Edition"](https://www.oecd-nea.org/ndd/pubs/2015/7057-proj-costs-electricity-2015.pdf). September 2015.
+
+[^24]: Lazard. ["Lazard's Levelized Cost of Energy Analysis - Version 12.0"](https://www.lazard.com/media/450784/lazards-levelized-cost-of-energy-version-120-vfinal.pdf). November 2018.
+
+[^25]: Miller, N. ["Why Nuclear Energy Programs Rarely Lead to Proliferation"](https://www.mitpressjournals.org/doi/full/10.1162/ISEC_a_00293). International Security 42(2), pp. 40-77. November 2017.
+
+[^26]: Nordhaus, T., Lovering, J. ["How to Make Nuclear Cheap"](http://thebreakthrough.org/images/pdfs/ewline%20Breakthrough_Institute_How_to_Make_Nuclear_Cheap.pdf). The Breakthrough Institute, Version 2.0. Updated June 2014.
+
+[^27]: Nuclear Energy Agency, Organization for Economic Co-operation and Development. ["Small Modular Reactors: Nuclear Energy Market Potential for Near-term Deployment"](https://www.oecd.org/publications/small-modular-reactors-9789264266865-en.htm). October 2016.
+
+[^28]: Nuclear Power Technology Development Section. ["Advances in Small Modular Reactor Technology Developments"](https://aris.iaea.org/Publications/SMR-Book_2018.pdf). Division of Nuclear Power of the IAEA Department of Nuclear Energy. 2018.
+
+[^29]: OECD Nuclear Energy Agency and the International Atomic Energy Agency. [*Uranium 2014: Resources, Production and Demand*](https://www.iaea.org/OurWork/ST/NE/NEFW/Technical-Areas/NFC/uranium-production-cycle-redbook.html). English, 504 pages, NEA#7209. September 2014.
+
+[^30]: OpenEI. ["Transparent Cost Database"](https://openei.org/apps/TCDB/). Accessed May 11, 2019.
+
+[^31]: Organization for Economic Co-Operation and Development Nuclear Energy Agency. ["Nuclear Electricity Generation: What Are the External Costs?"](https://www.oecd-nea.org/ndd/reports/2003/nea4372-generation.pdf). 2003.
+
+[^32]: Parker, B., Zhang, Z., Rao, L., Arnold, J. ["An overview and recent progress in the chemistry of uranium extraction from seawater"](https://pubs.rsc.org/en/content/articlelanding/2018/dt/c7dt04058j). Dalton Transactions 3, Royal Society of Chemistry.
+
+[^33]: Rochau, G. ["SNL Small Modular Reactor Program"](https://www.osti.gov/biblio/1327234). 2015.
+
+[^34]: Rosner, R., Goldberg, S. ["Small Modular Reactors – Key to Future Nuclear Power Generation in the U.S."](https://www.energy.gov/ne/downloads/small-modular-reactors-key-future-nuclear-power-generation-us). Energy Policy Institute at Chicago, The Harris School of Public Policy Studies. November 2011.
+
+[^35]: Rothwell G. and Ganda F. ["Electricity Generating Portfolios with Small Modular Reactors"](http://www.energy.gov/sites/prod/files/2014/06/f16/Electricity%20Generating%20Portfolios%20with%20SMRs.pdf). Nuclear Engineering Division, Argonne National Laboratory, Argonne, IL 60439-4814. May 2014.
+
+[^36]: Rubio, G., Tricot, A. ["SMR Techno-Economic Assessment"](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/665197/TEA_Project_1_Vol_1_-_Comprehensive_Analysis_and_Assessment_SMRs.pdf). Department of Energy and Climate Change. July 2016.
+
+[^37]: Samadi, S. ["The Social Costs of Electricity Generation-Categorising Different Types of Costs and Evaluating Their Respective Relevance"](https://www.mdpi.com/1996-1073/10/3/356). Energies 10(3), pp. 356. 2017.
+
+[^38]: Schlömer S., T. Bruckner, L. Fulton, E. Hertwich, A. McKinnon, D. Perczyk, J. Roy, R. Schaeffer, R. Sims, P. Smith, and R. Wiser. [*Annex III: Technology-specific cost and performance parameters*](http://www.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_annex-iii.pdf). In Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^39]: Squassoni, S. ["Proliferation risks from nuclear power infrastructure"](https://aip.scitation.org/doi/10.1063/1.5009228). AIP Conference Proceedings 1898, 040005. November 2017.
+
+[^40]: TradeTech. ["Uranium Prices"](https://www.uranium.info/daily_u3o8_spot_price_indicator.php). Accessed July 7, 2019.
+
+[^41]: U.S. Energy Information Administration. ["Levelized Cost and Levelized Avoided Cost of New Generation"](https://www.eia.gov/outlooks/aeo/pdf/electricity_generation.pdf). February 2019.
+
+[^42]: World Nuclear Association. ["Economics of Nuclear Power"](http://www.world-nuclear.org/information-library/economic-aspects/economics-of-nuclear-power.aspx). Accessed July 5, 2019.
+
+[^43]: World Nuclear Association. ["Nuclear Power Economics and Project Structuring: 2017 Edition"](http://www.world-nuclear.org/our-association/publications/online-reports/nuclear-power-economics-and-project-structuring.aspx). 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
