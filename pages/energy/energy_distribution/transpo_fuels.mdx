@@ -1,0 +1,56 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_distribution";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Transportation Fuels
+
+In this section, we compare several commonly-used and proposed transportation fuels.
+
+## Energy Density
+
+Particularly for transportation fuels, high energy density is important, as a vehicle's fuel should take as little space and weight as possible. No commonly explored option is superior to petroleum-derived fuels--gasoline and diesel--in both gravimetric (by weight) and volumetric (by volume) density, which poses a major challenge in developing alternative fuel vehicles.
+
+The following are estimates of the gravimetric and volumetric density of common and proposed transportation fuels. We consider both the energy content of the fuel itself (pre-combustion) and the useful work which the fuel can provide (post-combustion).
+
+<ArticleImage image={"fuel_density.svg"} width={1000} height={800} />
+#### Gravimetric (by weight) and volumetric (by volume) density for common and proposed transportation fuels. Sources: Dana et al. [^1], Elert [^2], fueleconomy.gov ([^3] and [^12]), Gibson et al. [^4], Hydrogenics [^5], Iclodean et al. [^6], Lutsey [^7], Schlachter [^8], The Engineering Toolbox [^9], Energy Information Administration [^10], Valera-Medina et al. [^11].
+
+## Additional Considerations
+Several other factors need to be considered in assessing the merits of transportation fuels. Such factors include health and safety risks, ease of transporting and handling fuels, compatibility with existing infrastructure, costs of engines or fuels cells, and pollutants released upon combustion.
+
+[^1]: Dana, A., Elishav, O., Bardow, A., Shter, G., Grader, G. ["Nitrogen‐Based Fuels: A Power‐to‐Fuel‐to‐Power Analysis"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5089635/). Angewandte Chemie (International Ed. in English) 55(31), pp. 8798–8805. July 2016.
+
+[^2]: Elert, G. ["The Physics Factbook"](https://hypertextbook.com/facts/). Accessed September 11, 2019.
+
+[^3]: fueleconomy.gov. ["Where the Energy Goes: Gasoline Vehicles"](https://www.fueleconomy.gov/feg/atv.shtml). Office of Energy Efficiency and Renewable Energy, U.S. Environmental Protection Agency. Accessed September 3, 2019.
+
+[^4]: Gibson, C., Polk, A., Shoemaker, N., Srinivasan, K., Krishnan, S. ["Comparison of Propane and Methane Performance and Emissions in a Turbocharged Direct Injection Dual Fuel Engine"](https://www.osti.gov/biblio/1079582). Journal of Engineering for Gas Turbines and Power 133(9). January 2011.
+
+[^5]: Hydrogenics. ["Fuel Cells"](https://www.hydrogenics.com/technology-resources/hydrogen-technology/fuel-cells/). Accessed September 11, 2019.
+
+[^6]: Iclodean, C., Varga, B., Burnete, N., Cimerdean, D., Jurchiș, B. ["Comparison of Different Battery Types for Electric Vehicles"](https://iopscience.iop.org/article/10.1088/1757-899X/252/1/012058/meta). IOP Conf. Series: Materials Science and Engineering 252 012058. 2017.
+
+[^7]: Lutsey, N. ["The ever-improving efficiency of the diesel engine"](https://theicct.org/blogs/staff/ever-improving-efficiency-diesel-engine). The International Council on Clean Transportation. August 2015.
+
+[^8]: Schlachter, F. ["Has the Battery Bubble Burst?"](https://www.aps.org/publications/apsnews/201208/backpage.cfm). American Physical Society 21(8). August/September 2012.
+
+[^9]: The Engineering Toolbox. ["Fossil and Alternative Fuels - Energy Content"](https://www.engineeringtoolbox.com/fossil-fuels-energy-content-d_1298.html). Accessed September 11, 2019.
+
+[^10]: U.S. Energy Information Administration. ["Few transportation fuels surpass the energy densities of gasoline and diesel"](https://www.eia.gov/todayinenergy/detail.php?id=9991). February 2013.
+
+[^11]: Valera-Medina, A., Xiao, H., Owen-Jones, M., David, W., Bowen, P. ["Ammonia for power"](https://www.sciencedirect.com/science/article/pii/S0360128517302320). Progress in Energy and Combustion Science 69, pp. 63-102. November 2018.
+
+[^12]: www.fueleconomy.gov. ["All-Electric Vehicles"](https://www.fueleconomy.gov/feg/evtech.shtml). U.S. Environmental Protection Agency, Office of Energy Efficiency and Renewable Energy. Accessed September 11, 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
