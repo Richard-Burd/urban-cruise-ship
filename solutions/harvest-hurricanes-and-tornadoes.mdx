@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Limitations of Wind Power";
+export const solution = "Harvest Hurricanes and Tornadoes";
+
+We propose research and development into wind power generators that are able to harvest energy from hurricanes and tornados.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

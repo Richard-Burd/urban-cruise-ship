@@ -1,0 +1,24 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Limitations of Wind Power";
+export const solution = "Research and Development Into Drivetrains";
+
+We recommend R&D into new drivetrains for wind turbines. In 2007, the National Renewable Energy Laboratory established the Drivetrain Reliability Collaborative to bring together government and industry to improve drivetrain lifespan and reduce wind turbine maintainence needs [^"25"]. The Gearbox Reliability Collaborative, focusing on gearboxes, was also established [^"25"]. Such efforts should continue to be fully funded.
+
+Monitoring has been, and will continue to be, an important part of these efforts [^"46"].
+
+Wind power has advanced considerably in recent years, both in terms of market share and technology, but further development is necessary for wind to achieve its full potential. Drivetrains are one of several areas in which research is needed; others include a better understanding of atmospheric physics, aerodynamics of larger turbines, and better integration into the grid [^"54"].
+
+[^"25"]: Keller, J., Sheng, S., Cotrell, J., Greco, A. ["Wind Turbine Drivetrain Reliability Collaborative Workshop"](https://www.nrel.gov/docs/fy16osti/66593.pdf). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. February 2016.
+
+[^"46"]: Sheng, S. ["NREL's Wind Turbine Drivetrain Condition Monitoring and Wind Plant Operation and Maintenance Research During the 2010s: A US Land-Based Perspective"](https://www.osti.gov/pages/biblio/1774831). National Renewable Energy Laboratory. March 2021.
+
+[^"54"]: Veer, P. et al. ["Grand challenges in the science of wind energy"](https://www.science.org/doi/10.1126/science.aau2027). Science 366(6464). October 2019.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

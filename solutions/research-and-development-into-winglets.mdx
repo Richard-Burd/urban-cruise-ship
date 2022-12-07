@@ -1,0 +1,22 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Limitations of Wind Power";
+export const solution = "Research and Development Into Winglets";
+
+We recommend research, development, and deployment into winglets for wind turbines.
+
+The energy production benefits of winglets are well-established. While there is still value for conducting additional research to optimize winglets, there are only marginal gains remaining for doing so [^"23"]. More effort should be invested on deployment than on research.
+
+It is possible to retrofit existing turbines with winglets, and not necessary to build entirely new turbines [^"30"]. To aid in retrofitting, the Department of Energy could provide grants or low interest loans to utilities for retrofitting.
+
+[^"23"]: Johnson, N., Bortolotti, P., Dykes, K., Barter, G., Moriarty, P., Carron, S., Wendt, F., Veers, P., Paquette, J., Kelly, C., Ennis, B. ["Investigation of Innovative Rotor Concepts for the Big Adaptive Rotor Project"](https://www.osti.gov/biblio/1563139). National Renewable Energy Laboratory. September 2019.
+
+[^"30"]: Matheswaran, V. ["Retrofit Winglets for Wind Turbines"](https://soar.wichita.edu/handle/10057/13488). Bachelor of Technology, Manipal Institute of Technology. December 2016.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
