@@ -1,0 +1,24 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost of Concentrated Solar";
+export const solution = "Concentrated Solar R&D";
+
+We estimated the expected benefit of a concentrated solar research program to be $66 billion and the cost to be $8 billion. The ultimate cost of concentrated solar is estimated to reach 5 ¢/kWh, and we estimate that it will have the same life cycle greenhouse gas emissions and other externalities to conventional solar. Based on research done by the Department of Energy [^"34"]. we estimate that a CSP research program will take 10 years to bear fruit, and the cost is the same $830 million per year that a [wave energy](http://urbancruiseship.org/solution/energy/mhk) research program would require. See our [research and development](http://urbancruiseship.org/solution/energy/rd) analysis for more information.
+
+The Department of Energy has set a goal of bringing the cost of CSP to 5¢/kWh by 2030 [^"46"], bringing the cost in line with photovoltaic costs today. CSP has the advantage that it can be used directly for low-grade industrial heat or desalination.
+
+Keys areas of research include improving the efficiency and reduce the cost of the collector field and improving the performance of the power block, particularly by substituting the steam Rankine cycle with a supercritical CO2 Brayton cycle [^"47"].
+
+[^"34"]: Office of Renewable Energy & Energy Efficiency. ["Concentrating Solar-Thermal Power"](https://www.energy.gov/eere/solar/concentrating-solar-thermal-power). U. S. Department of Energy. January 2019.
+
+[^"46"]: Solar Energy Technologies Office. ["Concentrating Solar-Thermal Power"](https://www.energy.gov/eere/solar/concentrating-solar-thermal-power). Office of Energy Efficiency and Renewable Energy, U.S. Department of Energy. Accessed September 14, 2022.
+
+[^"47"]: Solar Energy Technologies Office, National Renewable Energy Laboratory. ["Solar Futures Study"](https://www.energy.gov/eere/solar/solar-futures-study). U.S. Department of Energy. September 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "High Cost of Rooftop Solar";
+export const solution = "Regulatory Reform";
+
+Rooftop solar, though not a replacement for centralized power grids, can have value for the consumer. We therefore recommend steamlining of regulations that cause rooftop solar to be artificially expensive or artificially difficult.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

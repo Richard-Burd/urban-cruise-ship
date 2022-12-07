@@ -1,0 +1,18 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost of Concentrating PV";
+export const solution = "Concentrating PV R&D";
+
+We estimate the expected benefit of a concentrated PV research program to be about $54 billion and the cost to be about $4 billion. As the technology has already been commercialized on a limited scale, we estimate that only five years of research would be required, and the cost is estimated to be the same $830 million annually as a [wave energy](http://urbancruiseship.org/solution/energy/mhk) research program. We estimate the final price of such a research program to be 7 ¢/kWh, with the same greenhouse gas and other external costs as other forms of solar. See our [research and development](http://urbancruiseship.org/solution/energy/rd) analysis for more details.
+
+Interesting in concentrating PV has dimishined somewhat in recent years, but the technology may be ideal for use in greenhouses [^"24"], insuring that it remains an important part of the solar energy portfolio.
+
+[^"24"]: Kumar, M., Haillot, D., Gibout, S. ["Survey and evaluation of solar technologies for agricultural greenhouse application"](https://www.sciencedirect.com/science/article/abs/pii/S0038092X21010823). Solar Energy 232, pp. 18-34. January 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

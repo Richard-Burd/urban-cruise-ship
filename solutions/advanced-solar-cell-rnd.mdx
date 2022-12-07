@@ -1,0 +1,22 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cost of Advanced Solar Cells";
+export const solution = "Advanced Solar Cell R&D";
+
+We estimate that a research program into advanced solar cells has an expected benefit of about $125 billion and a cost of about $8 billion. We estimate the eventual cost to be 4 ¢/kWh, with the same greenhouse gas and pollution costs as other forms of solar, and that it will take 10 years to commercialize new technology, with spending at the same $830 million per year as suggested by a [wave energy](http://urbancruiseship.org/solution/energy/mhk) program. See our analysis of [research and development](http://urbancruiseship.org/solution/energy/rd) for more information.
+
+The U.S. Department of Energy considers next generation solar cells to be necessary to achieve their goal of reducing solar PV capital costs from $1.30 per watt in 2020 to $0.50/W in 2050, to reduce O&M costs from $15.70/kW/year to $6.10/kW/year from 2020 to 2050, and to increase the capacity factor from 28% to 35% from 2020 to 2050 [^"47"].
+
+Beyond conducting its own research, the Department of Energy should continue to support university research to advance solar cell technology, such as the 2022 Princeton University development of a perovskite solar cell with a 30 year lifespan [^"29"].
+
+[^"29"]: Lyon, S. ["Once seen as fleeting, a new solar tech proves its lasting power"](https://www.princeton.edu/news/2022/06/29/once-seen-fleeting-new-solar-tech-proves-its-lasting-power). Princeton University. June 2022.
+
+[^"47"]: Solar Energy Technologies Office, National Renewable Energy Laboratory. ["Solar Futures Study"](https://www.energy.gov/eere/solar/solar-futures-study). U.S. Department of Energy. September 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
