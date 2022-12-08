@@ -1,0 +1,21 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions From Methanol Production";
+export const solution = "Low-Carbon Methanol Plants";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Carbon capture and sequestration has a relatively low carbon abatement cost. Methanol from electrolysis, though it reduced emissions more, has greater carbon abatement costs due to the high price of electrolysis.
+
+<ArticleImage image={"methanol_costs.svg"} width={630} height={300} />
+#### Costs, at $50/ton carbon emissions, and carbon abatement costs of alternatives to unsequestered steam methane reforming. A plant size of one million tons of methanol per year is assumed, as given by Turaga [^"24"].
+
+[^"24"]: Turaga, U. ["Small-scale methanol technologies offer flexibility, cost effectiveness"](http://www.gasprocessingnews.com/features/201510/small-scale-methanol-technologies-offer-flexibility,-cost-effectiveness.aspx). Gas Processing & LNG. October 2015.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

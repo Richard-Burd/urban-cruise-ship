@@ -1,0 +1,21 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Negative Impacts of Gasoline";
+export const solution = "Replacing Gasoline with Methanol";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+For high methanol blends, as high as M-100 (100% methanol fuel), it is necessary to upgrade the engines of automobiles to use them, similar to flex-fuel engines for high ethanol blends. The cost of doing so, CP-adjusted to 2020, is estimated from [^"22"]. Though not as favorable as a low blend in the broader gasoline supply, a dedicated methanol fleet of cars shows a positive return on investment.
+
+<ArticleImage image={"methanol_blending2.svg"} width={760} height={270} />
+#### Estimated costs and benefits of a 1000 car fleet using pure methanol fuel. Most costs and benefits are as in the above methanol blending estimate, with the costs of engine upgrades estimated by Sheehy et al. [^"22"].
+
+Due to the lower [energy density](http://urbancruiseship.org/solution/energy/transpo_energy) of methanol, it may make more sense to deploy a methanol fleet among cars that will make frequent, short trips, such as mail trucks, taxis, or delivery vehicles.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

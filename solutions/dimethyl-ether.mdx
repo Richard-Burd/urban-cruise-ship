@@ -1,0 +1,31 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions From Diesel";
+export const solution = "Dimethyl Ether";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Methanol can be easily refined to form dimethyl ether, a fuel that is an effective substitute for diesel. We estimate the following costs and benefits of upgrading a fleet of trucks to use dimethyl ether instead of diesel.
+
+<ArticleImage image={"dme.svg"} width={790} height={400} />
+#### Sources: Mevawala et al. [^"14"], EIA [^"27"], Szybist et al. [^"23"], Al-Breiki and Bicer [^"1"], EPA [^"28"]. Not quantified are the costs of upgrading truck engines for DME and lower energy density, or the benefit of DME in reducing air pollution [^"21"].
+
+DME can also be an effective substitute for other diesel applications, such as shipping [^"1"].
+
+[^"1"]: Al-Breiki, M., Bicer, Y. ["Comparative life cycle assessment of sustainable energy carriers including production, storage, overseas transport and utilization"](https://www.sciencedirect.com/science/article/pii/S0959652620335265). Journal of Cleaner Production 279: 123481. January 2021.
+
+[^"14"]: Mevawala, C., Jiang, Y., Bhattacharyya, D. ["Techno-economic optimization of shale gas to dimethyl ether production processes via direct and indirect synthesis routes"](https://www.sciencedirect.com/science/article/abs/pii/S0306261919300455). Applied Energy 238, pp. 119-134. March 2019.
+
+[^"21"]: Semelsberger, T. A., Borup, R. L., Greene, H. L. ["Dimethyl ether (DME) as an alternative fuel"](https://www.sciencedirect.com/science/article/abs/pii/S0378775305007846). Journal of Power Sources 156(2), pp. 497-511. June 2006.
+
+[^"23"]: Szybist, J., McLaughlin, S., Iyer, S. ["Emissions and Performance Benchmarking of a Prototype Dimethyl Ether Fueled Heavy-Duty Truck"](https://www.osti.gov/biblio/1150879). Oak Ridge National Laboratory. January 2014.
+
+[^"28"]: U.S. Environmental Protection Agency. ["Lifecycle Greenhouse Gas Results"](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/lifecycle-greenhouse-gas-results). Accessed June 11, 2019.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
