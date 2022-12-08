@@ -1,0 +1,111 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_distribution";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import ElectrofuelsForAviationSolution from "/solutions/electrofuels-for-aviation.mdx";
+
+# Synthetic Fuels
+
+There are several pathways for producing hydrocarbon fuels from non-petroleum sources, such as electricity. However, we find that electrofuels, or synthetic fuels from electricity, are cost prohibitive at this time.
+
+## Environmental Impacts
+The following compares greenhouse gas emissions from several methods of producing complex hydrocarbons.
+
+<ArticleImage image={"synfuel_ghg.svg"} width={860} height={460} />
+#### Sources: Lattanzio [^11], Steele et al. [^18], Tu et al. [^21], EPA [^23]. Electrofuels, also known as power-to-fuel, are hydrocarbons that are produced from electrolyzed hydrogen. For these, the emissions intensity of electricity is taken from Schlömer et al. [^17] and a conversion efficiency of 40-50% is applied, as estimated by Malins [^12]. No emissions other than those from electricity are assumed, though additional emissions should be attributed if the CO₂ source is from a flue gas and would otherwise be sequestered [^12]. Carbon capture and sequestration might also reduce emissions from coal- and gas-to-liquids [^10].
+
+Despite the low efficiency of electrofuel production, corn ethanol requires far more land per unit energy.
+
+<ArticleImage image={"synfuel_landuse.svg"} width={850} height={650} />
+#### The land use estimate of algal biodiesel is estimated from Atabani et al. [^1]. Yeh et al. [^25] report land use from oil production. Data from Building Energy Codes Program [^4] is used to estimate the primary energy behind electricity, Malins [^12] gives the conversion efficiency, and Ong et al. [^15] give the land use of solar power. Efficiency on gas-to-liquids is from Steynberg and Dry [^20], and for coal-to-liquids from Höök and Aleklett [^7]. Additional land use estimates are taken from General Electric [^6], Stevens et al. [^19], World Energy Council [^24].
+
+## Energy Requirements
+As an energy carrier, liquid fuels require more primary energy input to produce than energy they contain. The conversion efficiency of primary energy into usable fuel varies by production method.
+
+<ArticleImage image={"synfuel_primary.svg"} width={730} height={380} />
+#### Sources: Höök and Aleklett [^7] for coal-to-liquids and Steynberg and Dry [^20] for gas-to-liquids. The low efficiency of electrofuels stem from two conversion processes: from a primary energy source into electricity, with efficiency about 32% (Building Energy Codes Program [^4]); and then from electricity into hydrocarbons, with efficiency 40-50% (Malins [^12]).
+
+In cars, electrofuels are a much less efficient use of electricity than direct use in an electric vehicle, and also less efficient than hydrogen.
+
+<ArticleImage image={"electricity_fuel_eff.svg"} width={570} height={320} />
+#### Source: Malins [^12]. The low efficiency of electrofuels stems from additional losses from the internal combustion engine, which has an efficiency of about 30% in modern cars (fueleconomy.gov [^5]).
+
+## Economics of Synthetic Fuels
+With the exception of sugarcane ethanol, most alternatives to petroleum-based gasoline are more expensive and not widely used without policy support.
+
+<ArticleImage image={"synfuel_price.svg"} width={680} height={460} />
+#### Sources: Biofuels and Emerging Technologies Team [^2] for gas-to-liquids, Brynolf et al. [^3] for electrofuels, Mantripragada and Rubin [^13] for coal-to-liquids, Moyo et al. [^14] for biofuels, and the EIA [^22] for wholesale gasoline as of June 2019. Electrofuels are especially expensive due to energy losses in the production processes. Prices are highly dependent on the price of feedstock.
+
+The conversion of coal and natural gas into liquid fuels carry heavy greenhouse gas and other environmental costs, and they are not likely to ever be economically attractive options [^8], [^16]. Aside from sugarcane, [biofuels](http://urbancruiseship.org/solution/energy/bio) are also unlikely to be economically sound, and they carry major land use impacts. Electrofuels can be an acceptable option only with a low-cost and low-impact electricity source, and even then their use is likely to be confined to sectors that are difficult to electrify directly, such as aviation and long-distance trucking [^12].
+
+Carbon abatement costs of electrofuels are as follows.
+
+<ArticleImage image={"synfuel_cost.svg"} width={700} height={220} />
+#### Cost of synthetic fuels, with a carbon cost of $50/ton, and estimated carbon abatement cost. A plant size of 50,000 barrels per day is assumed, as per [^9].
+
+With such high carbon abatement costs, it does not make sense for a private developer to build a synfuel plant.
+
+<ElectrofuelsForAviationSolution />
+
+[^1]: Atabani, A., Silitonga, A., Badruddin, I., Mahlia, T., Masjuki, H., Mekhilef, H. ["A comprehensive review on biodiesel as an alternative energy resource and its characteristic"](http://www.sciencedirect.com/science/article/pii/S1364032112000044). Renewable and Sustainable Energy Reviews, 16(4), pp. 2070-2093. May 2012.
+
+[^2]: Biofuels and Emerging Technologies Team. ["Gas-To-Liquid (GTL) Technology Assessment in support of AEO2013"](https://www.eia.gov/outlooks/documentation/workshops/pdf/AEO2013_GTL_Assessment.pdf). Energy Information Administration, U.S. Department of Energy. January 2013.
+
+[^3]: Brynolf, S., Taljegard, M., Grahn, M,. Hansson, J. ["Electrofuels for the transport sector: A review of production costs"](https://www.sciencedirect.com/science/article/pii/S1364032117309358). Renewable and Sustainable Energy Systems 81(2), pp. 1887-1905. January 2018.
+
+[^4]: Building Energy Codes Program. ["Prototype Building Models High-rise Apartment"](https://www.energycodes.gov/901-prototype-building-models-high-rise-apartment). Building Technologies Office, Office of Energy Efficiency and Renewable Energy, U. S. Department of Energy. April 2011.
+
+[^5]: fueleconomy.gov. ["Where the Energy Goes: Gasoline Vehicles"](https://www.fueleconomy.gov/feg/atv.shtml). Office of Energy Efficiency and Renewable Energy, U.S. Environmental Protection Agency. Accessed September 3, 2019.
+
+[^6]: General Electric. ["GE Global Power Plant Efficiency Analysis"](https://www.ge.com/reports/wp-content/themes/ge-reports/ge-power-plant/dist/pdf/GE%20Global%20Power%20Plant%20Efficiency%20Analysis.pdf). Accessed June 22, 2019.
+
+[^7]: Höök, M., Aleklett, K. ["A review on coal to liquid fuels and its coal consumption"](https://onlinelibrary.wiley.com/doi/abs/10.1002/er.1596). International Journal of Energy Research 34(10), pp. 848-864. October 2010.
+
+[^8]: Höök, M., Fantazzini, D., Angelantoni, A., Snowden, S. ["Hydrocarbon liquefaction: viability as a peak oil mitigation strategy"](https://royalsocietypublishing.org/doi/10.1098/rsta.2012.0319). Philosophical Transactions. Series A: Mathematical, physical, and engineering science, 372(2006). January 2014.
+
+[^9]: Industrial Environmental Research Laboratory. ["Environmental Aspects of Synfuel Utilization"](https://nepis.epa.gov/Exe/ZyNET.exe/91007HFE.TXT?ZyActionD=ZyDocument&Client=EPA&Index=1981+Thru+1985&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5Czyfiles%5CIndex%20Data%5C81thru85%5CTxt%5C00000015%5C91007HFE.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=1&SeekPage=x&ZyPURL). March 1981.
+
+[^10]: Jaramillo, P., Griffin, M., Matthews, S. ["Comparative Analysis of the Production Costs and Life-Cycle GHG Emissions of FT Liquid Fuels from Coal and Natural Gas"](https://pubs.acs.org/doi/abs/10.1021/es8002074). Environmental Science & Technology 42(20), pp. 7559-7565. 2008.
+
+[^11]: Lattanzio, R. ["Canadian Oil Sands: Life-Cycle Assessments of Greenhouse Gas Emissions"](https://digital.library.unt.edu/ark:/67531/metadc85434/). Congressional Research Service. May 2012.
+
+[^12]: Malins, C. ["What role is there for electrofuel technologies in European transport’s low carbon future?"](https://trid.trb.org/view/1502488). Cerulogy. November 2017.
+
+[^13]: Mantripragada, H., Rubin, E. ["Performance, cost and emissions of coal-to-liquids (CTLs) plants using low-quality coals under carbon constraints"](https://www.sciencedirect.com/science/article/pii/S001623611200751X). Fuel 103, pp. 805-813. October 2012.
+
+[^14]: Moyo, P., Moyo, M., Dube, D., Rusinga, O. ["Biofuel Policy as a Key Driver for Sustainable Development in the Biofuel Sector: The Missing Ingredient in Zimbabwe’s Biofuel Pursuit"](http://www.ccsenet.org/journal/index.php/mas/article/view/31773). Modern Applied Science 8(1), pp. 36-58. December 2013.
+
+[^15]: Ong, S., Campbell, C., Denholm, P., Margolis R., Heath, G. ["Land-Use Requirements for Solar Power Plants in the United States"](http://www.nrel.gov/docs/fy13osti/56290.pdf). June 2013.
+
+[^16]: Ramberg, D., Chen, Y., Paltsev, S., Parsons, J. ["The economic viability of gas-to-liquids technology and the crude oil–natural gas price relationship"](https://www.sciencedirect.com/science/article/pii/S0140988317300270). Energy Economics 63, pp. 13-21. March 2017.
+
+[^17]: Schlömer S., T. Bruckner, L. Fulton, E. Hertwich, A. McKinnon, D. Perczyk, J. Roy, R. Schaeffer, R. Sims, P. Smith, and R. Wiser. [*Annex III: Technology-specific cost and performance parameters*](http://www.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_annex-iii.pdf). In Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^18]: Steele, P., Puettmann, M., Penmetsa, V., Cooper, J. ["Life-Cycle Assessment of Pyrolysis Bio-Oil Production"](https://forestprodjournals.org/doi/abs/10.13073/FPJ-D-12-00016.1). Forest Products Journal 62(4), pp. 326-334. 2012.
+
+[^19]: Stevens, L., Anderson, B., Cowan, C., Colton, K., Johnson, D. ["The Footprint of Energy: Land Use of U.S. Electricity Production"](https://www.strata.org/footprints/). Strata. June 2017.
+
+[^20]: Steynberg, A., Dry, M. [*Fischer-Tropsch Technology*](https://www.elsevier.com/books/fischer-tropsch-technology/steynberg/978-0-444-51354-0). Elsevier Science, Volume 152, 1st Edition, Hardcover ISBN: 9780444513540, eBook ISBN: 9780080472799. October 2004.
+
+[^21]: Tu, Q., Eckelman, M., Zimmerman, J. ["Harmonized algal biofuel life cycle assessment studies enable direct process train comparison"](https://www.sciencedirect.com/science/article/pii/S0306261918306287). Applied Energy 224, pp. 494-509. August 2018.
+
+[^22]: U.S. Energy Information Administration. ["Daily Prices"](https://www.eia.gov/todayinenergy/prices.php). Accessed June 29, 2019.
+
+[^23]: U.S. Environmental Protection Agency. ["Lifecycle Greenhouse Gas Results"](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/lifecycle-greenhouse-gas-results). Accessed June 11, 2019.
+
+[^24]: World Energy Council. ["Energy Efficiency Indicators"](https://www.worldenergy.org/data/efficiency-indicators/). Accessed June 22, 2019.
+
+[^25]: Yeh, S., Jordaan, S., Brandt, A., Turetsky, M., Spatari, S., Keith, D. ["Land Use Greenhouse Gas Emissions from Conventional Oil Production and Oil Sands"](https://pubs.acs.org/doi/abs/10.1021/es1013278). Environ. Sci. Technol., 44(22), pp. 8766-8772. October 2010.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
