@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Load Balancing";
+export const solution = "Ancillary Service Market";
+
+We recommend that utilities establish markets for ancillary services, such as ramping ability and frequency and voltage regulation.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
