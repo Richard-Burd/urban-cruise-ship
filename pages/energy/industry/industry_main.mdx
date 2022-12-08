@@ -1,0 +1,36 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "industry";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Industry Overview
+
+Industry is responsible for nearly 40% of energy usage worldwide as follows.
+
+<ArticleImage image={"industry_energy.svg"} width={670} height={470} />
+#### Energy use in world industry. Overall figures and figures by sector derived from the IEA Sankey diagrams [^2] and primary energy conversion factors [^1].
+
+Worldwide, we estimate the following potential energy and greenhouse gas savings through various methods in industry.
+
+<ArticleImage image={"industry_overview.svg"} width={870} height={670} />
+#### Major energy and greenhouse gas savings opportunities in energy. Source: World Bank [^3]. See also our analyses of [industrial heat](http://urbancruiseship.org/solution/energy/industrial_heat), [chemicals](http://urbancruiseship.org/solution/energy/chemicals) and other [major industrial commodities](http://urbancruiseship.org/solution/energy/major_commodities), [carbon capture and sequestration](http://urbancruiseship.org/solution/energy/ccs), [recycling](http://urbancruiseship.org/solution/energy/recycling), [industrial systems](http://urbancruiseship.org/solution/energy/industrial_systems), and [material reduction](http://urbancruiseship.org/solution/energy/material_reduction).
+
+Reducing carbon dioxide emissions and pollution from industry is a major challenge, both due to the scale of industrial energy and the lack of economical substitutes for fossil fuels in [process heat](http://urbancruiseship.org/solution/energy/industrial_heat) and [chemical feedstocks](http://urbancruiseship.org/solution/energy/major_commodities). Emissions can be reduced through more aggressive efficiency and technology efforts, such as in commodities and [motor and steam systems](http://urbancruiseship.org/solution/energy/industrial_systems), [recycling](http://urbancruiseship.org/solution/energy/recycling), and [material reduction](http://urbancruiseship.org/solution/energy/material_reduction), but the greatest near term potential might lie in [carbon capture and sequestration](http://urbancruiseship.org/solution/energy/ccs). However, CCS necessarily requires policy support, such as carbon pricing or regulation. The solutions with the largest potential impacts--CCS and electricity or hydrogen for [industrial heat](http://urbancruiseship.org/solution/energy/industrial_heat)--come at substantial energy costs and will require additional development of clean energy sources.
+
+[^1]: Building Energy Codes Program. ["Prototype Building Models High-rise Apartment"](https://www.energycodes.gov/901-prototype-building-models-high-rise-apartment). Building Technologies Office, Office of Energy Efficiency and Renewable Energy, U. S. Department of Energy. April 2011.
+
+[^2]: International Energy Agency. ["Sankey Diagram"](https://www.iea.org/Sankey/). Accessed April 18, 2019.
+
+[^3]: Kaza, S., Yao, L., Bhada-Tata, P., Van Woerden, F. [*What a Waste 2.0 : A Global Snapshot of Solid Waste Management to 2050*](https://openknowledge.worldbank.org/handle/10986/30317). Urban Development. Washington, DC: World Bank. © World Bank. License: CC BY 3.0 IGO. September 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
