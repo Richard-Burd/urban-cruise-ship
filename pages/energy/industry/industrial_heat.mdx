@@ -1,0 +1,115 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "industry";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import RndIntoSolarHeatSolution from "/solutions/rnd-into-solar-heat.mdx";
+import RndIntoNuclearHeatSolution from "/solutions/rnd-into-nuclear-heat.mdx";
+import RndIntoGeothermalHeatSolution from "/solutions/rnd-into-geothermal-heat.mdx";
+
+# Industrial Heat
+
+## Demand for Industrial Heat
+While largely invisible to the public, industrial heat is a major consumer of world energy.
+
+<ArticleImage image={"industrial_heat_context.svg"} width={890} height={420} />
+#### Industrial heat as a share of total industrial and total world energy consumption. Source: IEA [^8].
+
+Industry requires heat in a variety of temperature ranges, in some cases over 1500 °C. Most industrial heat is supplied from fossil sources. Of the renewable heat, most is biomass for low temperature processes.
+
+<ArticleImage image={"industrial_heat5.svg"} width={840} height={330} />
+#### Source: IEA [^7].
+
+## Heating Options
+For low temperature processes, solar and geothermal heating are options. High temperature heat can in principle be supplied by biomass, but generally requires either fossil fuels, nuclear options that have not yet been developed, or electricity or hydrogen that is currently prohibitively expensive for most cases. Following are the temperature ranges and theoretical market shares for several heating sources.
+
+<ArticleImage image={"industrial_heat3.svg"} width={1000} height={570} />
+#### Potential market shares for most heating options are estimated by what portion of the United States industrial heat demand, as estimated by McMillan et al. [^12], is at a temperature at or below what the heat source can generate. Hydrogen is estimated to potentially provide 75% of industrial heat demand in the United Kingdom [^4]. Maximum temperatures for nuclear heat sources are taken from the World Nuclear Association [^17], solar sources from the International Renewable Energy Association [^9], geothermal from the EPA [^16], and biomass and fossil from the maximum temperature for which they are applied in McMillan et al.
+
+## Cost
+The following portrays estimated costs of providing industrial heat from various sources.
+
+<ArticleImage image={"industrial_heat1.svg"} width={800} height={790} />
+#### Sources: Beckers et al. [^1], Bruckner et al. [^2], Deason et al. [^5], International Renewable Energy Agency ([^9] and [^10]), EIA [^14], Department of Energy [^15].
+
+Advanced geothermal and solar heat have the potential to be competitive for low temperature heat demand. For temperatures up to 950 °C, nuclear heat may be a good option, but the necessary reactors have not been developed yet. For higher temperatures, there are no options on the horizon that might be competitive with fossil fuels.
+
+## Environmental Impacts
+Following are estimates of the lifecycle greenhouse gas emissions associated with industrial heat.
+
+<ArticleImage image={"industrial_heat2.svg"} width={900} height={480} />
+#### We lack data specific to heat, and so the following are estimated as the [emissions](http://urbancruiseship.org/solution/energy/energy_env) from producing electricity from equivalent amounts of primary energy. Emissions from electricity assume the average U.S. mix.
+
+Following are estimates of non-greenhouse gas external impacts of industrial heat.
+
+<ArticleImage image={"industrial_heat4.svg"} width={630} height={300} />
+#### As with greenhouse gas impacts above, absent data specific to heat, the following are estimated as the [impacts](http://urbancruiseship.org/solution/energy/energy_env) of producing electricity from an equivalent amount of primary energy. Impacts of heat from electricity again assume the average U.S. mix.
+
+## Electrification of Heat
+Per unit of onsite energy, producing heat from electricity tends to be more expensive, both in terms of money and environmental impact, than burning fossil fuels directly if the electricity is produced from fossil fuels. However, this higher cost may be partially or completely offset by the fact that an electric heating option may require less onsite energy for the same job as a direct combustion option.
+
+<ArticleImage image={"electric_heat.svg"} width={770} height={330} />
+#### Estimated onsite energy savings for electric heat relative to the leading fossil-based option for select industrial products. Source: Lord et al. [^11].
+
+The efficiency advantage of electric heat is greatest for temperatures below 160 °C, for which heat pumps can be used [^11].
+
+## Solar Heat
+Costs of solar heat can be reduced by improving the solar collection technology and by designing industrial processes to be integrated with solar heat. Barriers to expansion of solar heating in industry are lack of industry experience and the need to customize installations to particular enterprises [^9]. The solar thermal economic potential in 2030 is estimated at 15 exajoules [^9]. Promising industrial sectors for solar heat include textiles, food, metals, chemicals, and rubber [^3].
+
+<RndIntoSolarHeatSolution />
+
+## Nuclear Heat
+[High temperature gas reactors](http://urbancruiseship.org/solution/energy/nuclear) (HTGR) are a potential source for high-grade process heat [^6]. With an outlet temperature as high as 950 °C, HTGR would be suitable for thermochemical production of hydrogen, and this process is estimated to be competitive with conventional technologies, even without taking into account the emissions reductions of using HTGR. Desalinated water produced from HTGR heat should be economically feasible at a water price about $1 /m3, which is exceeded in some regions. Other promising applications include district heating, enhanced oil recovery, and high-temperature process heat in the chemical industry [^6].
+
+<RndIntoNuclearHeatSolution />
+
+## Geothermal Heat
+[Geothermal heat](http://urbancruiseship.org/solution/energy/geothermal) may also be used for industrial purposes. Enhanced geothermal systems (EGS), which tap into deep sources that are not naturally permeable, have the potential to provide large quantities of baseload electricity and overcome the geographical limitations of conventional geothermal energy. However, EGS requires advanced drilling technology and is [still under development](http://urbancruiseship.org/solution/energy/geothermal). EGS is more likely to be valuable as a source of direct heat. A study of the Habanero EGS project at Cooper Basin in Australia found that it could produce heat that would be competitive with natural gas at $6.50 to $8.20 per GJ. Thus direct heat production should be economically competitive, even though electricity production is not, from the Habanero site [^13].
+
+<RndIntoGeothermalHeatSolution />
+
+[^1]: Beckers, K., Lukawski, M., Anderson, B., Moore, M., Tester, J. ["Levelized costs of electricity and direct-use heat from Enhanced Geothermal Systems"](https://aip.scitation.org/doi/abs/10.1063/1.4865575?journalCode=rse). Journal of Renewable and Sustainable Energy 6(1). January 2014.
+
+[^2]: Bruckner, T., H. Chum, A. Jäger-Waldau, Å. Killingtveit, L. Gutiérrez-Negrín, J. Nyboer, W. Musial, A. Verbruggen, R. Wiser. ["Annex III: Cost Table"](http://www.ipcc-wg3.de/report/IPCC_SRREN_Annex_III.pdf). In IPCC Special Report on Renewable Energy Sources and Climate Change Mitigation [O. Edenhofer, R. Pichs-Madruga, Y. Sokona, K. Seyboth, P. Matschoss, S. Kadner, T. Zwickel, P. Eickemeier, G. Hansen, S. Schlömer, C. von Stechow (eds)], Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2011.
+
+[^3]: Brunner, C. ["Solar Heat for Industrial Production Processes - Latest Research and Large Scale Installations"](http://task49.iea-shc.org/data/sites/1/publications/SHC-2014--Brunner--Solar-Heat-for-Industrial-Processes.pdf). AEE Institute for Sustainable Technologies. October 2014.
+
+[^4]: Committee on Climate Change. ["Hydrogen in a low-carbon economy"](https://www.theccc.org.uk/publication/hydrogen-in-a-low-carbon-economy/). November 2018.
+
+[^5]: Deason, J., Wei, M., Leventis, G., Smith, S., Schwartz, L. ["Electrification of buildings and industry in the United States: Drivers, barriers, prospects, and policy approaches"](http://eta-publications.lbl.gov/sites/default/files/electrification_of_buildings_and_industry_final_0.pdf). Energy Analysis and Environmental Impacts Division, Lawrence Berkeley National Laboratory, Electricity Markets and Policy Group. March 2018.
+
+[^6]: International Atomic Energy Agency. ["Advances in Nuclear Power Process Heat Applications"](http://www-pub.iaea.org/books/IAEABooks/8692/Advances-in-Nuclear-Power-Process-Heat-Applications). 2012.
+
+[^7]: International Energy Agency. ["Renewable Heat for Energy"](https://www.iea.org/publications/insights/insightpublications/renewable-energy-for-industry.html). 2017.
+
+[^8]: International Energy Agency. ["Sankey Diagram"](https://www.iea.org/Sankey/). Accessed April 18, 2019.
+
+[^9]: International Energy Agency - Energy Technology Systems Analysis Programme and International Renewable Energy Agency. ["Solar Heat for Industrial Processes: Technology Brief"](http://www.irena.org/DocumentDownloads/Publications/IRENA_ETSAP_Tech_Brief_E21_Solar_Heat_Industrial_2015.pdf). January 2015.
+
+[^10]: International Renewable Energy Agency. ["Hydrogen from Renewable Power: Technology Outlook for the Energy Transition"](https://www.irena.org/publications/2018/Sep/Hydrogen-from-renewable-power). September 2018.
+
+[^11]: Lord, M. et al. ["Zero Carbon Industry Plan: Electrifying Industry"](https://bze.org.au/wp-content/uploads/electrifying-industry-bze-report-2018.pdf). Beyond Zero Emissions. September 2018.
+
+[^12]: McMillan, C., Boardman, R., McKellar, M., Sabharwall, P., Ruth, M., Bragg-Sitton, S. ["Generation and Use of Thermal Energy in the U.S. Industrial Sector and Opportunities to Reduce its Carbon Emissions"](https://www.osti.gov/biblio/1334495/). Idaho National Lab. (INL), Idaho Falls, ID (United States); National Renewable Energy Lab. (NREL), Golden, CO (United States). 2016.
+
+[^13]: Mills, T. ["Habanero Geothermal Project Field Development Plan"](http://www.geodynamics.com.au/Geodynamics/media/GDY-PDF/Announcements%202014/COM-FN-OT-PLN-01166-1-0-HGP-Field-Development-Plan-for-General-Distribution.pdf). Geodynamics Limited. October 2014.
+
+[^14]: U. S. Energy Information Administration. ["Coal Prices and Outlook"](https://www.eia.gov/energyexplained/index.php?page=coal_prices). Accessed June 19, 2019.
+
+[^15]: U.S. Department of Energy. ["Quadrennial Technology Review 2015"](https://www.energy.gov/quadrennial-technology-review-2015). 2015.
+
+[^16]: U.S. Environmental Protection Agency. ["Industrial Process Heat Technologies and Applications: Text Version of the Diagram"](https://www.epa.gov/rhc/industrial-process-heat-technologies-and-applications-text-version-diagram). Accessed June 19, 2019.
+
+[^17]: World Nuclear Association. ["Nuclear Process Heat for Industry"](http://www.world-nuclear.org/information-library/non-power-nuclear-applications/industry/nuclear-process-heat-for-industry.aspx). Accessed June 19, 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

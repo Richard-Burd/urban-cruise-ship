@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions From Industrial Heat";
+export const solution = "R&D Into Geothermal Heat";
+
+We propose research and development into heating with enhanced geothermal systems, which could provide a cost-effective solution for various low-temperature heating needs.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

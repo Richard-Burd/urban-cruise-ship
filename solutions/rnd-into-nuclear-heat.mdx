@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions From Industrial Heat";
+export const solution = "R&D Into Nuclear Heat";
+
+We propose research and development into high temperature gas reactors, which could provide a cost-effective solution for water desalination, thermochemical production of hydrogen, and other applications.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions From Industrial Heat";
+export const solution = "R&D Into Solar Heat";
+
+We propose research and development into solar heating technologies, which could provide a cost-effective solution for various low-temperature heating needs detailed above.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
