@@ -1,0 +1,43 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_distribution";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Transportation of Fossil Fuels
+
+In comparing several methods of transporting oil and natural gas, we find that pipelines generally perform better than trucking, shipping, or train transportation.
+
+## Transportion of Oil
+For overland transportation of oil, pipelines are generally the safest, cleanest, and cheapest [^2] mode of transportation available.
+
+<ArticleImage image={"oil_transport_externality.svg"} width={760} height={330} />
+#### Source: Clay et al. [^1].
+
+<ArticleImage image={"oil_spill.svg"} width={700} height={240} />
+#### Source: Frittelli et al. [^2].
+
+## Transportation of Natural Gas
+The two main methods of transporting natural gas are by pipeline and by shipping in the form of liquified natural gas (LNG). These methods consume energy, as a share of the gas being transported, as follows.
+
+<ArticleImage image={"gas_transport_efficiency.svg"} width={680} height={240} />
+#### Energy lost in transporting natural gas. Sources: Interstate Natural Gas Association of America [^3] for pipelines, Nagi et al. [^4] for LNG.
+
+[^1]: Clay, K., Jha, A., Muller, N., Walsh, R. ["The External Costs of Transporting Petroleum Products by Pipelines and Rail: Evidence From Shipments of Crude Oil from North Dakota"](https://www.nber.org/papers/w23852). NBER Working Paper No. 23852. September 2017.
+
+[^2]: Frittelli, J., Andrews, A., Parfomak, P., Pirog, R., Ramseur, J., Ratner, M. ["U.S. Rail Transportation of Crude Oil: Background and Issues for Congress"](https://digital.library.unt.edu/ark:/67531/metadc276861/). Congressional Research Service R43390. December 2014.
+
+[^3]: Interstate Natural Gas Association of America. ["Interstate Natural Gas Pipeline Efficiency"](https://www.ingaa.org/file.aspx?id=10929). October 2010.
+
+[^4]: Nagi, C., Appah, D., Chukwu, G. ["Comparative Economic Analysis of Gas to Liquid and Liquefied Natural Gas Technologies"](https://www.ijser.org/researchpaper/Comparative-Economic-Analysis-of-Gas-to-Liquid-and-Liquefied-Natural-Gas-Technologies.pdf). International Journal of Scientific & Engineering Research 7(6). June 2016.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
