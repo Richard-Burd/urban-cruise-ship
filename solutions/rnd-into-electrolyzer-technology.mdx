@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Electrolyzer Costs";
+export const solution = "R&D Into Electrolyzer Technology";
+
+Regardless of how much a broader hydrogen economy advances, there is a need for low-carbon hydrogen for existing uses, and this entails research and development into electrolyzers
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
