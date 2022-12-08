@@ -83,7 +83,8 @@
    "articles":[
      { "article_title": "Mining Overview", "article_url": "mining_overview" },
      { "article_title": "Metals Recycling", "article_url": "metals_recycling" },
-     { "article_title": "Environmental Impacts", "article_url": "mining_waste" }
+     { "article_title": "Environmental Impacts", "article_url": "mining_waste" },
+	 { "article_title": "Mineral Trade", "article_url": "mineral_trade" }
    ]
   }
 ]
