@@ -1,0 +1,20 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Seasonal Electricity Storage";
+export const solution = "Ammonia As Storage";
+
+Ammonia may be the most promising solution for long-term (multiple weeks) or seasonal energy storage [^"7"], [^"14"]. Although less efficient than hydrogen, ammonia is much easier to store and transport than hydrogen, and the facilities to do so are already well established. Ammonia is also not geographically constrained as pumped hydro is.
+
+Seasonal ammonia storage will struggle to take off without support, either as a carbon price or some other incentive [^"14"].
+
+[^"7"]: Dias, V., Pochet, M., Contino, F., Jeanmart, H. ["Energy and Economic Costs of Chemical Storage"](https://www.frontiersin.org/articles/10.3389/fmech.2020.00021/full). Frontiers in Mechanical Engineering 6. May 2020.
+
+[^"14"]: Patonia, A., Poudineh, R. ["Ammonia as a storage solution for future decarbonized energy systems"](https://www.oxfordenergy.org/wpcms/wp-content/uploads/2020/11/Ammonia-as-a-storage-solution-for-future-decarbonized-systems-EL-42.pdf). The Oxford Institute for Energy Studies. November 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

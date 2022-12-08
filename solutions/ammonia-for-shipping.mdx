@@ -1,0 +1,31 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions and Pollution From Shipping";
+export const solution = "Ammonia for Shipping";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Ammonia is considered an attractive [long-term substitute](http://urbancruiseship.org/solution/energy/transpo_freight) for heavy fuel oil for shipping. At present, the most effective carbon mitigation option is shipping with ammonia produced from steam methane reforming, which is the most common method of producing ammonia today. Further emissions reductions are possible through carbon capture and sequestration or electrolysis. Following are estimated costs and benefits of building a new 2500 twenty-foot unit equivalent (TEU) container ship with an engine to consume ammonia instead of HFO.
+
+<ArticleImage image={"ammonia_shipping_cost.svg"} width={700} height={760} />
+#### Costs of ammonia fuel are about $246/ton for steam methane reforming without carbon capture and sequestration, as given by Al-Breiki and Bicer [^"2"], $420/ton for SMR with CCS, as noted above, and $830/ton for ammonia from electrolysis with low-carbon electricity, as given by Kim et al. [^"12"]. A distribution cost for ammonia of about $7/ton is assumed [^"20"]. Capital investment (CAPEX) and operations and management (O&M) costs are as in Kim et al., except the incremental costs of an ammonia engine are given by TNO [^"20"]. Emissions factors for heavy fuel oil, ammonia with CCS, and electrolyzed ammonia are from Kim et al., and emissions from SMR ammonia without CCS is assumed to be about 2.4 times greater than those of electrolyzed ammonia, as above for ammonia from solar PV.
+
+Compared to heavy fuel oil, ammonia eliminates SOₓ and particulate emissions, and reduces NOₓ and N₂O emissions [^"21"]. In 2018, the International Maritime Organization, the agency of the UN that governs, set a goal of reducing shipping's emissions by 50% in 2050 relative to 2008 levels [^"21"], and ammonia is one fuel, alongside methanol and synthetic methane, most likely to achieve this goal [^"8"].
+
+[^"2"]: Al-Breiki, M., Bicer, Y. ["Comparative cost assessment of sustainable energy carriers produced from natural gas accounting for boil-off gas and social cost of carbon"](https://www.sciencedirect.com/science/article/pii/S2352484720312312). Energy Reports 6, pp. 1897-1909. November 2020.
+
+[^"8"]: DNV GL. ["Energy Transition Outlook 2019: Maritime Forecast to 2050"](https://eto.dnv.com/2019/Maritime/#maritime-top). September 2019.
+
+[^"12"]: Kim, K., Roh, G., Kim, W., Chun, K. ["A Preliminary Study on an Alternative Ship Propulsion System Fueled by Ammonia: Environmental and Economic Assessments"](https://www.mdpi.com/2077-1312/8/3/183/htm). Journal of Marine Science and Engineering 8(3):183. March 2020.
+
+[^"20"]: TNO. ["Power-2-Fuel Cost Analysis"](https://smartport.nl/wp-content/uploads/2020/09/Cost-Analysis-Power-2-Fuel_def_2020.pdf). Prepared for SmartPort. September 2020.
+
+[^"21"]: Valera-Median, A., Amer-Hatem, F., Azaz, A. K., Dedoussi, I. C., de Joannon, M., Fernandes, R. X., Glarborg, P., Hashemi, H., He, X., Mashruk. S., McGowan, J., Mounaim-Rouselle, C., Ortiz-Prado, A., Rossetti, I., Shu, B., Yehia, M., Xiao, H., Costa, M. ["Review on Ammonia as a Potential Fuel: From Synthesis to Economics"](https://pubs.acs.org/doi/10.1021/acs.energyfuels.0c03685). Energy and Fuels. February 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
