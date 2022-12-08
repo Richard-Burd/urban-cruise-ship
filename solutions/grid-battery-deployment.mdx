@@ -1,0 +1,27 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Need for Load Balancing";
+export const solution = "Grid Battery Deployment";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Following are recent estimates of the costs and benefits of batteries for the grid.
+
+<ArticleImage image={"storage_cba.svg"} width={900} height={370} />
+#### Sources: Xi et al. [^"15"], Ouyang et al. [^"17"], and Sidhu et al. [^"21"].
+
+Individual utilities should study whether grid batteries make sense in their context, and if so, build them.
+
+[^"15"]: Li, X., Chalvatzis, K., Stephanides, P. ["Innovative Energy Islands: Life-Cycle Cost-Benefit Analysis for Battery Energy Storage"](https://www.mdpi.com/2071-1050/10/10/3371). Sustainability 10(10). September 2018.
+
+[^"17"]: Ouyang, J., Mantegna, G., Li, V., Mullen, D., Patel, K., Olson, A. ["Minnesota Energy Storage Cost-Benefit Analysis"](https://mn.gov/commerce/policy-data-reports/energy-data-reports/?id=17-415938). Prepared For: Prepared for: Minnesota Department of Commerce, Division of Energy Resources. Prepared By: Energy and Environmental Economics, Inc. (E3). December 2019.
+
+[^"21"]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study"](https://www.sciencedirect.com/science/article/pii/S0306261917318068). Applied Energy 212, pp. 881-894. February 2018.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
