@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Transmission Losses";
+export const solution = "Aging Power Grids Should Be Upgraded";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Several aspects of power grids can be upgraded to reduce transmission losses. The possibilities include reconductoring (installing new conductor wires), reactive power compensation, expanding use of high voltage direct current (HVDC), and voltage optimization, among other tools [^"8"].
+
+While it is generally not cost-effective to replace existing equipment prematurely, it is often cost-effective to replace equipment at the end of its life with equipment designed to higher efficiency standards [^"8"].
+
+<ArticleImage image={"transformer_standards.svg"} width={700} height={300} />
+#### Estimate of 30 year energy savings total from existing and stronger efficiency standards on transformers in the United States. Source: [^"17"].
+
+The cost of electricity savings, per kilowatt-hour of saved electricity, in Australia has been estimated as follows.
+
+<ArticleImage image={"grid_loss_cost.svg"} width={700} height={300} />
+#### Costs have been converted to U. S. Dollars and CPI-adjusted to 2020. Source: [^"8"].
+
+[^"8"]: Jackson, R., Onar, O. C., Kirkham, H., Fisher, E., Burkes, K., Starke, M., Mohammed, O., Weeks, G. ["Opportunities for Energy Efficiency Improvements in the U.S. Electricity Transmission and Distribution System"](https://www.energy.gov/sites/prod/files/2015/04/f22/QER%20Analysis%20-%20Opportunities%20for%20Energy%20Efficiency%20Improvements%20in%20the%20US%20Electricity%20Transmission%20and%20Distribution%20System_0.pdf). Oak Ridge National Laboratory, managed by UT-Batelle for the U. S. Department of Energy. April 2015.
+
+[^"17"]: National Association of Clean Air Agencies. ["Reduce Losses in the Transmission and Distribution System"](https://www.4cleanair.org/wp-content/uploads/Documents/Chapter_10.pdf). Accessed March 15, 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

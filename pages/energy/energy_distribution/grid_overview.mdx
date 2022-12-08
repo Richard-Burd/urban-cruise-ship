@@ -6,7 +6,80 @@ export const focusAreaUrl = "energy_distribution";
 
 import ArticleImage from "/components/ArticleImage.js";
 
+import GridOperatorsShouldValueReliabilitySolution from "/solutions/grid-operators-should-value-reliability.mdx";
+import AgingPowerGridsShouldBeUpgradedSolution from "/solutions/aging-power-grids-should-be-upgraded.mdx";
+import ReduceFGasEmissionsFromTransformersSolution from "/solutions/reduce-f-gas-emissions-from-transformers.mdx";
+
 # Grid Overview
+
+Electricity is the most versatile form of energy available. All forms of primary energy can be transformed into electricity, and electricity can, at least in principle, provide almost all the energy needed by the economy. In this section we give a brief overview of how the electric grid is powered and how it can be managed.
+
+World electricity production is growing both in absolute terms and as a share of total energy, nearly tripling since 1985.
+
+<ArticleImage image={"world_electricity.svg"} width={600} height={350} />
+#### Source: BP [^2].
+
+The grid is a major component in the cost of electricity. Grid operators purchase electricity from power plants on the wholesale market, while end-use customers purchase electricity from the grid through utilities in the retail market. In the United States, the wholesale price of electricity [comprises only 35%](http://callmepower.com/faq/electricity-prices/difference-wholesale-retail) of a typical customer's bill, while delivery costs are 45%. These figures vary widely by region.
+
+See also our detailed analysis of [electrification](http://urbancruiseship.org/solution/energy/electrification) in the United States.
+
+## Expanded Electricity Demand
+In a broad clean energy system, electricity is likely to play a greatly expanded role.
+
+<ArticleImage image={"electrification.svg"} width={1000} height={460} />
+#### Potential new demands for electricity if electricity is used to replace fossil fuels or bioenergy in other portions of the economy, to substitute for land use in agriculture, remove atmospheric carbon dioxide via direct air capture, or desalinate water. For potential electricity demand from transportation, see our analysis of energy demand in [transportation](http://urbancruiseship.org/solution/energy/transpo_ghg) and [agriculture](http://urbancruiseship.org/solution/energy/ag_env) and replacement with [electric vehicles](http://urbancruiseship.org/solution/energy/transpo_cars), [hydrogen](http://urbancruiseship.org/solution/energy/hydrogen), [ammonia](http://urbancruiseship.org/solution/energy/ammonia), or [synthetic jet fuel](http://urbancruiseship.org/solution/energy/synfuels). See also our analyses of the [chemical industry](http://urbancruiseship.org/solution/energy/chemicals), [industrial heat](http://urbancruiseship.org/solution/energy/industrial_heat), [residential and commercial heat](http://urbancruiseship.org/solution/energy/heating), [intensive farming](http://urbancruiseship.org/solution/energy/ag_options) for discussion of cultured meat, power-to-food, and greenhosues, and [water usage](http://urbancruiseship.org/solution/energy/water_consumption) and [provision](http://urbancruiseship.org/solution/energy/water_treatment) for desalination. See Realmonte et al. [^12] for discussion of direct air capture.
+
+#### Note the following assumptions in our estimates. All direct use of fossil fuels and bioenergy in the residential and commercial sectors, as reported by the IEA [^7], is assumed to be used for heat such that each unit of fuel burnt provides 0.8 useful units of heat. It is assumed to be replaced by heat pumps with a coefficient of performance of 2.5 (high energy case) or 4.0 (low energy case). Based on Lord et al. [^15], electrification is assumed to save 20% onsite industrial heat energy. For electrification of the chemical industry, current electricity needs are assumed to be 80% of the needs in 2030 as reported by Kätelhön et al. [^12]. Efficiency of hydrogen electrolysis is estimated at 66.8% in the high energy scenario and 80% in the low energy scenario.
+
+#### Most, but not all, uses of fossil fuels and anthropogenic emissions sources are covered by this analysis. Not covered are about 25% of emissions from chemicals, lubricants, crops other than cereals, soy, and tomatoes, and sources of fluorinated gas emissions.
+
+## Sources of Electricity
+Fossil fuels provide nearly two-thirds of world electricity.
+
+<ArticleImage image={"Sources of Electricity.svg"} width={550} height={440} />
+#### Source: IEA [^6].
+
+With electricity demand growing rapidly, particularly with a potential shift toward electricity to power heavy industry and automobiles, there is an urgent need to shift the [generation](http://urbancruiseship.org/topic/energy/energy_production) toward less polluting sources.
+
+## Integrating Renewables
+Some renewable energy sources, particularly wind and solar, produce power in ways that are highly variable and often unpredictable. This necessitates grid designs that can handle intermittency. There are many strategies for doing so.
+
+The following are estimates of the costs of three strategies to enable the United States to supply 80% of electricity from wind and solar. The strategies are to overbuild renewables and [curtail](http://urbancruiseship.org/solution/energy/load_balancing) the excess, [high voltage](http://urbancruiseship.org/solution/energy/grid_design) [direct current](http://urbancruiseship.org/solution/energy/grid_design) cables to connect regional grids, and [energy storage](http://urbancruiseship.org/solution/energy/grid_storage).
+
+<ArticleImage image={"integration_strategies.svg"} width={1000} height={400} />
+#### Leading strategies to enable an 80% variable renewable electric grid in the United States, expressed in overall costs and as a contribution to the per-kWh cost of electricity. US electricity is reported by the EIA [^28]. The Cost estimate of the overbuild strategy is given by Perez et al. [^20]; for the HVDC strategy, the amount of cable needed is estimated by Shaner et al. [^25] and the cost of cable is estimated by MacDonald et al. [^16]. For the storage strategy, storage needs are estimated by Shaner et al. [^25] and the cost of storage is estimated by Fu et al. [^5] and Lazard [^13].
+
+## Power Outages
+A loss of electrical power, especially an unexpected loss, is a disruptive and costly event. The following costs for some major historic blackouts have been estimated.
+
+<ArticleImage image={"blackout_cost.svg"} width={840} height={630} />
+#### Sources: Adibi and Martins [^1], Electricity Consumers Resource Council [^4], Koran [^11], Oseni and Pollitt [^18], Schmidthaler and Reichl [^23].
+
+As shown above and confirmed by other sources (e.g. [^24]), the damages wrought by a blackout are on the order of $10/kWh, though they vary widely and tend to be lesser in lower-income countries [^18].
+
+In the United States, public utilities generally show 1-4 hours of blackout per customer per year on average, investor-owned utilities show 3-8 hours, and coopertive utilities show 4-10 hours [^27].
+
+<GridOperatorsShouldValueReliabilitySolution />
+
+## Transmission Losses
+A fraction of electricity generated by power plants is lost in transmission. Factors that contribute to losses include high voltage, distance of transmission, poor workmanship, and variable loads [^19].
+
+<ArticleImage image={"transmission_losses.svg"} width={510} height={370} />
+#### Source: World Bank [^26].
+
+If world grid losses were brought to German levels, it would save 960 TWh per year, more than 4% of all electricity generation.
+
+<AgingPowerGridsShouldBeUpgradedSolution />
+
+## F-gases
+F-gases (fluourinated gases) contibute to global warming, and grid infrastructure is a major source of them. One in particular, sulfur hexafluoride (SF₆), is used as an insulating gas in electrical transformers [^29].
+
+Several alternatives to SF₆ have been proposed, but none are ready to be widely deployed.
+
+<ArticleImage image={"f_gas_gwp.svg"} width={800} height={600} />
+#### Source: [^21].
+
+<ReduceFGasEmissionsFromTransformersSolution />
 
 [^1]: Adibi, M. M., Martins, N. ["Impact of Power System Blackouts"](https://ieeexplore.ieee.org/document/7286025/). 2015 IEEE Power & Energy Society General Meeting. July 2015.
 
