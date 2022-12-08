@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Global Warming From Methane";
+export const solution = "Methane Capture From Waste";
+
+We propose to capture methane from waste water and landfills. Though we advocate mostly eliminating landfilling as a practice with better recycling, they are not likely to disappear entirely.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

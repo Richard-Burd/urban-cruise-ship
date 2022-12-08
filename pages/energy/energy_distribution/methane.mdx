@@ -1,0 +1,92 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_distribution";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import MethaneCaptureFromWasteSolution from "/solutions/methane-capture-from-waste.mdx";
+
+# Methane
+
+Most methane used today is mined as natural gas, but there are other possible production methods, outlined below.
+
+## Environmental Impacts
+Following are estimates of the greenhouse gas impacts of three methane production pathways.
+
+<ArticleImage image={"methane_emissions.svg"} width={770} height={250} />
+#### Biomethane and natural gas are reported by the Union of Concerned Scientists [^14], and electromethane, or methane produced from electrolyzed hydrogen, from Malins [^7]. Electromethane reduces emissions relative to natural gas only if the electricity comes from a low carbon source.
+
+About two megajoules of electricity are needed to create one megajoule of electromethane [^7].
+
+The environmental benefits of biomethane are greatest when captured methane, a potent greenhouse gas, is prevented from being released into the atmosphere.
+
+## Economics
+Due to the current low price of natural gas in the United States, alternative methods of producing methane are not cost competitive.
+
+<ArticleImage image={"methane_price.svg"} width={710} height={310} />
+#### Price of methane from several pathways. Sources: Jalalzadeh-Azar [^5] for biomethane, Malins [^7] for electromethane, and Nasdaq [^8] for natural gas as of September 2019.
+
+Following are estimates of the cost and the cost of carbon abatement for two types of synthetic methane plants in the United States. Due to the low price of natural gas, the economics of such plants are very challenging.
+
+<ArticleImage image={"methane_cost.svg"} width={640} height={320} />
+#### Cost of biomethane and electromethane plants relative to natural gas and cost of carbon abatement. These calculations are based on a plant that produces 54 billion cubic feet of natural gas each year, as does the Great Plains Synfuels Plant [^9].
+
+## Biomethane
+Biomethane is produced primarily from waste products: wastewater, landfills, manure, and other organic wastes; additional production would be possible from dedicated crops but would be more expensive. World potential is estimated as follows.
+
+<ArticleImage image={"biomethane_potential.svg"} width={730} height={385} />
+#### Biomethane production potential, compared to world natural gas. Source: IEA [^4], with total natural gas production from BP [^1].
+
+From waste products, the biomethane potential in the United States is almost 8 million tons per year [^10], less than 1% of total natural gas production [^13].
+
+<MethaneCaptureFromWasteSolution />
+
+## Coal-to-Gas
+There is a single coal-to-gas plant, the Great Plains Synfuels Plant, operating in the United States. In addition to synthetic natural gas, the plant produces CO₂ for enhanced oil recovery and gas-derived products. Although the plant operates profitably, another probably would not be built due to the low cost of natural gas [^9].
+
+In East Asia, where natural gas is more expensive, gasifiers are of increasing popularity. Coal is the technology most commonly used [^3].
+
+## Methane as Shipping Fuel
+Liquified natural gas (LNG) comprises a small but growing share of the shipping fuel market [^2]. LNG eliminates most SOx, NOx, and particulate pollution relative to diesel fuels [^12], but it may have higher life cycle greenhouse gas emissions.
+
+<ArticleImage image={"lng_emissions.svg"} width={730} height={220} />
+#### LNG has higher lifecycle greenhouse gas emissions, or at best slightly lower emissions, than more common diesel fuels when methane leakage is taken into account. The [standard scenario](http://urbancruiseship.org/solution/energy/gas) assumes a leakage rate of 1.4%, and the high leakage scenario assumes a rate of 2.3%. Several other studies give somewhat lower emissions for LNG but do not take leakage into account or do so to a smaller degree [^6]. Source: [^11].
+
+[^1]: BP. ["Statistical Review of World Energy 2019"](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html). 2019.
+
+[^2]: DNV GL. ["Energy Transition Outlook 2019: Maritime Forecast to 2050"](https://eto.dnv.com/2019/Maritime/#maritime-top). September 2019.
+
+[^3]: Global Syngas Technologies Council. ["The Gasification Industry"](https://www.globalsyngas.org/resources/the-gasification-industry/). Accessed December 11, 2020.
+
+[^4]: International Energy Agency. ["Outlook for biogas and biomethane: Prospects for organic growth"](https://www.iea.org/reports/outlook-for-biogas-and-biomethane-prospects-for-organic-growth). March 2020.
+
+[^5]: Jalalzadeh-Azar, A. ["A Technoeconomic Analysis of Biomethane Production from Biogas and Pipeline Delivery"](https://www.nrel.gov/docs/fy11osti/49629.pdf). National Renewable Energy Laboratory, Renewable Resources for Fuel Cells Workshop San Antonio, TX. October 2010.
+
+[^6]: Lindstad, E., Rialland, A. ["LNG and Cruise Ships, an Easy Way to Fulfil Regulations—Versus the Need for Reducing GHG Emissions"](https://www.mdpi.com/2071-1050/12/5/2080/htm). Sustainability 12March 2020.
+
+[^7]: Malins, C. ["What role for electromethane and electroammonia technologies in European transport’s low carbon future?"](https://www.transportenvironment.org/sites/te/files/publications/2018_06_Cerulogy_What-role-electromethane-and-electroammonia_June2018.pdf). Cerulogy, Addendum to *What role for electrofuel technologies in European transport’s low carbon future?*. June 2018.
+
+[^8]: Nasdaq. ["NG:NMX Natural Gas"](https://www.nasdaq.com/market-activity/commodities/ng%3Anmx). Accessed September 13, 2019.
+
+[^9]: National Energy Technologies Lab. ["Great Plains Synfuel Plant"](https://netl.doe.gov/research/Coal/energy-systems/gasification/gasifipedia/great-plains). U.S. Department of Energy. Accessed December 11, 2020.
+
+[^10]: National Renewable Energy Laboratory. ["Biogas Potential in the United States"](https://www.nrel.gov/docs/fy14osti/60178.pdf). October 2013.
+
+[^11]: Pavlenko, N., Comer, B., Zhou, Y., Clark, N., Rutherford, D. ["The climate implications of using LNG as a marine fuel"](https://theicct.org/publications/climate-impacts-LNG-marine-fuel-2020). International Council on Clean Transportation, Working Paper 2020-02. January 2020.
+
+[^12]: Sphera. ["Life Cycle GHG Emission Study on the Use of LNG as Marine Fuel"](https://sphera.com/research/life-cycle-ghg-emission-study-on-the-use-of-lng-as-marine-fuel/). January 2020.
+
+[^13]: U.S. Energy Informatin Administration. ["The U.S. leads global petroleum and natural gas production with record growth in 2018"](https://www.eia.gov/todayinenergy/detail.php?id=40973). August 2019.
+
+[^14]: Union of Concerned Scientists. ["The Promises and Limits of Biomethane as a Transportation Fuel (2017)"](https://www.ucsusa.org/biomethane-transportation). 2017.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
