@@ -1,0 +1,25 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Industrial Energy and Pollution";
+export const solution = "Benchmarking";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Benchmarking can have short paybacks and high returns for companies. The following financial benefits of participating in the Superior Energy Performance program have been identified.
+
+<ArticleImage image={"benchmarking_cba.svg"} width={800} height={250} />
+#### Cost estimates for a company to participate in the SEP are estimated by Therkelsen et al. [^"14"], while benefits are derived from Therkelsen et al. and reported by Maldonado [^"12"].
+
+Although costs are study averages, larger firms tend to show higher costs and smaller firms show smaller costs.
+
+[^"12"]: Maldonado, D. ["Industrial Energy Consumption, Benchmarking, and Analysis in the United States"](https://scholarworks.uark.edu/meeguht/48/). Mechanical Engineering Undergraduate Honors Theses, University of Arkansas, Fayetteville. December 2015.
+
+[^"14"]: Peter Therkelsen, Ridah Sabouni, Aimee McKane, and Paul Scheihing. "Assessing the Costs and Benefits of the Superior Energy Performance Program". 2013 ACEEE Summer Study on Energy Efficiency in Industry, Niagara Falls, NY. 2013.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

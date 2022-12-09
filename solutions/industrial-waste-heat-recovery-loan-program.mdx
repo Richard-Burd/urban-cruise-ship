@@ -1,0 +1,44 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Elergy Lost to Waste Heat";
+export const solution = "Industrial Waste Heat Recovery Loan Program";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+The Department of Energy Loan Programs Office [^"17"] should explore low interest loans to companies wishing to build infrastructure to recycle industrial heat. Many firms already exist to build this infrastructure, and they offer consulting and assessment [^"5"]. In the U.S., there is enough industrial waste heat to generate 6000-8000 megawatts of electricity [^"18"], and about 557 MW are currently recycled [^"15"] in what is expected to be a 10.5 billion dollar industry [^"6"]. Following are some barriers to further recycling:
+- The process is not perceived as 'green' and therefore lacks the social capital of solar & wind initiatives.
+- Companies might not have room for heat recycling equipment on their premises [^"23"].
+- Installing heat recycling equipment may involve a temporary halt in production, which affects productivity reporting and shareholder concerns.
+- There are risks associated with installing any new equipment at a facility, and managers fear mishaps & accidents.
+- Payback periods can range from 3 to 36 months [^"13"], [^"15"], while average employee tenures in the U.S. are below 5 years [^"2"]. Thus fewer individual leaders are incentivised to advocate for programs with longer paybacks [^"23"].
+
+Loans could be structured so as to eliminate the payback period only, and not necessarily cover the total cost of the heat recycling equipment installation. To be sure, the IRS currently awards a 30% tax credit for waste energy recovery expenditures, but only for facilities recycling heat into electricity [^"16"].
+
+(5) WASTE ENERGY RECOVERY PROPERTY.— (A) IN GENERAL.—The term 'waste energy recovery property' means property that generates electricity solely from heat from buildings or equipment if the primary purpose of such building or equipment is not the generation of electricity.
+
+This excludes recycling of heat into a ventilation system for office or factory-floor spaces. Below is a diagram illustrating the optimal configuration of a loan from an incentivization perspective.
+
+<ArticleImage image={"heat_recycling.png"} width={1000} height={650} />
+<ArticleImage image={"waste_heat_recovery.svg"} width={1000} height={570} />
+
+[^"2"]: Bureau of Labor Statistics. ["Employee Tenure in 2020"](https://www.bls.gov/news.release/pdf/tenure.pdf). U. S. Department of Labor. September 2020.
+
+[^"5"]: Genalta Power. ["Waste Heat to Power"](https://www.genaltapower.com/waste-heat-to-power). Accessed April 3, 2021.
+
+[^"6"]: Grand View Research. ["Waste Heat Recovery System Market Size, Share & Trends Analysis Report By Application (Preheating, Power & Steam Generation), By End User (Petroleum Refinery, Power, Metal Production), And Segment Forecasts, 2020 - 2027"](https://www.grandviewresearch.com/industry-analysis/waste-heat-recovery-system-market). Report ID: GVR-4-68038-466-6. May 2020.
+
+[^"15"]: Sengupta, P., Dutta, S. K., Choudhury, B. K. ["Waste Heat Recovery Policy"](https://link.springer.com/chapter/10.1007/978-981-10-7509-4_11). In: Gautam A., De S., Dhar A., Gupta J., Pandey A. (eds) Sustainable Energy and Transportation. Energy, Environment, and Sustainability. Springer, Singapore. December 2017.
+
+[^"17"]: U. S. Department of Energy. ["Loan Programs Office"](https://www.energy.gov/lpo/loan-programs-office). Accessed April 3, 2021.
+
+[^"18"]: U. S. EPA, Combined Heat and Power Partnership. ["Waste Heat to Power Systems"](https://www.epa.gov/sites/production/files/2015-07/documents/waste_heat_to_power_systems.pdf). May 2012.
+
+[^"23"]: Xu, Z. Y., Wang, R. Z., Yang, C. ["Perspectives for low-temperature waste heat recovery"](https://www.sciencedirect.com/science/article/pii/S0360544219306140?via%3Dihub). Energy 176, pp. 1037-1043. June 2019.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
