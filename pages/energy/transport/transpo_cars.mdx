@@ -1,0 +1,69 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "transport";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Automobiles
+
+
+
+
+[^1]: Argonne National Laboratory. ["GREET Model"](https://greet.es.anl.gov/). Accessed June 22, 2019.
+
+[^2]: Balali, Y., Stegen, S. ["Review of energy storage systems for vehicles based on technology, environmental impacts, and costs"](https://www.sciencedirect.com/science/article/pii/S1364032120304755). Renewable and Sustainable Energy Reviews 135: 110185. January 2021.
+
+[^3]: Chen, Y., Gonder, J., Young, S., Wood, E. ["Quantifying autonomous vehicles national fuel consumption impacts: A data-rich approach"](https://www.osti.gov/biblio/1409303). National Renewable Energy Laboratory. November 2017.
+
+[^4]: Del Poro, F., Delogu, M., Pierini, M. ["Life Cycle Assessment in the automotive sector: a comparative case study of Internal Combustion Engine (ICE) and electric car"](https://www.sciencedirect.com/science/article/pii/S2452321618301690). Procedia Structural Integrity 12, pp. 521-537. 2018.
+
+[^5]: Edmunds. ["Electric Vehicle Tax Credits: What You Need to Know"](https://www.edmunds.com/fuel-economy/the-ins-and-outs-of-electric-vehicle-tax-credits.html). April 2021.
+
+[^6]: fueleconomy.gov. ["Fuel Economy Guide: Model Year 2019"](https://www.fueleconomy.gov/feg/pdfs/guides/FEG2019.pdf). U.S. Department of Energy, Office of Renewable Energy and Energy Efficiency, U.S. Environmental Protection Agency. Accessed May 23, 2019.
+
+[^7]: Harto, C. ["Electric Vehicle Ownership Costs: Today's Electric Vehicles Offer Big Savings for Consumers"](https://advocacy.consumerreports.org/wp-content/uploads/2020/10/EV-Ownership-Cost-Final-Report-1.pdf). Consumer Reports. October 2020.
+
+[^8]: Henao, A., Marshall, W. ["The impact of ride-hailing on vehicle miles traveled"](https://doi.org/10.1007/s11116-018-9923-2). Transportation, pp. 1-22. September 2018.
+
+[^9]: International Energy Agency. ["Fuel Economy in Major Car Markets"](https://www.iea.org/reports/fuel-economy-in-major-car-markets). March 2019.
+
+[^10]: Joseck, F., Elgowainy, A. ["Well-to-Wheels Greenhouse Gas Emissions for Methanol to Hydrogen Pathways"](https://www.hydrogen.energy.gov/pdfs/16001_wtw_ghg_methanol_h2_pathways.pdf). DOE Hydrogen and Fuel Cells Program Record. January 2016.
+
+[^11]: Knittel, C. ["Automobiles on Steroids: Product Attribute Trade-Offs and Technological Progress in the Automobile Sector"](https://www.aeaweb.org/articles?id=10.1257/aer.101.7.3368). American Economic Review 101(7), pp. 3368-99. December 2011.
+
+[^12]: Kukreja, B. ["Life Cycle Analysis of Electric Vehicles: Quantifying the Impact"](https://sustain.ubc.ca/sites/default/files/2018-63%20Lifecycle%20Analysis%20of%20Electric%20Vehicles_Kukreja.pdf). Prepared for Adrian Cheng, Equipment Services, City of Vancouver. August 2018.
+
+[^13]: Lipman, T. ["Emerging Technologies for Higher Fuel Economy Automobile Standards"](https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-110615-085844). Annual Review of Environment and Resources 42, pp. 267-288. October 2017.
+
+[^14]: Lorentzen, E., Haugneland, P., Bu, C., Hauge, E. ["Charging infrastructure experiences in Norway - the worlds most advanced EV market"](https://elbil.no/wp-content/uploads/2016/08/EVS30-Charging-infrastrucure-experiences-in-Norway-paper.pdf). EVS30 Symposium, Stuttgart, Germany. October 9-11, 2017.
+
+[^15]: Mersky, A. C., Sprei, F., Samaras, C., Qian, Z. ["Effectiveness of incentives on electric vehicle adoption in Norway"](https://www.sciencedirect.com/science/article/abs/pii/S1361920916000407). Transportation Research Part D: Transport and Environment 46, pp. 56-68. July 2016.
+
+[^16]: Messagie, M. ["Life Cycle Analysis of the Climate Impact of Electric Vehicles"](https://www.transportenvironment.org/publications/electric-vehicle-life-cycle-analysis-and-raw-material-availability). Transport & Environment. October 2017.
+
+[^17]: Middleton, R., Harihara Gupta, O., Chang, H., Lavoie, G., Martz, J. ["Fuel Efficiency Estimates for Future Light Duty Vehicles, Part B: Powertrain Technology and Drive Cycle Fuel Economy"](https://www.sae.org/publications/technical-papers/content/2016-01-0905/). SAE 2016 World Congress and Exhibition. April 2016.
+
+[^18]: Minn, M. ["Contested Power: American Long-Distance Passenger Rail and the Ambiguities of Energy Intensity Analysis"](https://www.mdpi.com/2071-1050/11/4/1200/pdf). Sustainability. February 2019.
+
+[^19]: Patterson, J. ["Understanding the life cycle GHG emissions for different vehicle types and powertrain technologies"](https://www.lowcvp.org.uk/assets/reports/LowCVP-LCA_Study-Final_Report.pdf). Low Carbon Vehicle Partnership. August 2018.
+
+[^20]: Road Traffic Information Council. ["Bilsalget i desember og hele 2020 (Car sales in December and throughout 2020)"](https://ofv.no/bilsalget/bilsalget-i-desember-2020). In Norwegian. Accessed May 5, 2021.
+
+[^21]: Scott Institute for Energy Innovation. ["Power Sector Carbon Index"](https://emissionsindex.org/). Carnegie Mellon University. Accessed December 9, 2019.
+
+[^22]: Tulumba, C. ["Automotive Sales Data & Statistics"](https://www.goodcarbadcar.net/usa-auto-industry-total-sales-figures/). Good Car, Bad Car. Accessed May 5, 2021.
+
+[^23]: U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy. ["Using Natural Gas for Vehicles: Comparing Three Technologies"](https://www.nrel.gov/docs/fy16osti/64267.pdf). December 2015.
+
+[^24]: U.S. Environmental Protection Agency. ["Automotive Trends Report"](https://www.epa.gov/automotive-trends/download-automotive-trends-report). 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

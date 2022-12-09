@@ -1,0 +1,49 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "transport";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Short Range Transportation
+
+
+[^1]: Building Energy Codes Program. ["Prototype Building Models High-rise Apartment"](https://www.energycodes.gov/901-prototype-building-models-high-rise-apartment). Building Technologies Office, Office of Energy Efficiency and Renewable Energy, U. S. Department of Energy. April 2011.
+
+[^2]: Canning, P., Charles, A., Huang, S., Polenske, K., Waters, A. ["Energy Use in the U.S. Food System"](http://web.mit.edu/dusp/dusp_extension_unsec/reports/polenske_ag_energy.pdf). United States Department of Agriculture, Economic Research Report Number 94. March 2010.
+
+[^3]: ChooseMyPlate.gov. ["How Many Calories Does Physical Activitiy Use (Burn)?"](https://www.choosemyplate.gov/resources/physical-activity-calories-burn). United States Department of Agriculture. Accessed May 24, 2019.
+
+[^4]: Elektroroller Aktuell. ["Electric scooter cost"](http://www.elektroroller-aktuell.com/electric-scooter-cost.html). Accessed May 24, 2019.
+
+[^5]: Energy Efficiency Emerging Technology (E3T) Proram. ["Energy Efficient Escalators"](http://e3tnw.org/ItemDetail.aspx?id=546). Washington State University, Bonneville Power Administration. Accessed November 6, 2019.
+
+[^6]: Federal Transit Administration. ["National Transit Database"](https://www.nationaltransitdatabase.org/). Accessed May 24, 2019.
+
+[^7]: Freedhoff, Y. ["Climbing Stairs Isn't About Burning Calories"](http://www.weightymatters.ca/2015/04/climbing-stairs-isnt-about-burning.html). April 2015.
+
+[^8]: Halvorson, B. ["Toyota i-Road Electric City Car: Here's How It Leans"](https://www2.greencarreports.com/news/1095168_toyota-i-road-electric-city-car-heres-how-it-leans). Green Car Reports. October 2014.
+
+[^9]: International Energy Agency. ["The Future of Rail"](https://www.iea.org/futureofrail/). January 2019.
+
+[^10]: KONE. ["Planning Guide for KONE Escalators & Autowalks"](https://www.kone.se/Images/8201_Escalator%20planning%20guide_lr_spreads_tcm27-31324.pdf). 2016.
+
+[^11]: McCarran, T., Carpenter, N. ["Electric Bikes: Survey and Energy Efficiency Analysis"](https://www.efficiencyvermont.com/Media/Default/docs/white-papers/efficiency-vermont-electric-bike-white-paper.pdf). Efficiency Vermont, DSS Tech Demo Report: 000-053. March 2018.
+
+[^12]: Patrão, C., Fong, J., Rivet, L., de Almeida, A. ["Energy efficient elevators and escalators"](https://www.eceee.org/static/media/uploads/site-2/library/conference_proceedings/eceee_Summer_Studies/2009/Panel_4/4.037/paper.pdf). European Council for an Energy Efficient Economy. Summer 2009.
+
+[^13]: Peng, H. ["Mcity Driverless Shuttle: A Case Study"](https://mcity.umich.edu/wp-content/uploads/2018/09/mcity-driverless-shuttle-case-study.pdf). September 2018.
+
+[^14]: Salmeron-Manzano, E., Manzano-Agugliaro, F. ["The Electric Bicycle: Worldwide Research Trends"](https://doi.org/10.3390/en11071894). Energies 11(7), 1894. 2018.
+
+[^15]: Saxena, S., Gopal, A., Phadke, A. ["Electrical consumption of two-, three- and four-wheel light-duty electric vehicles in India"](https://ies.lbl.gov/publications/electrical-consumption-two-three-and). Applied Energy 115, pp. 582-590. November 2013.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

@@ -1,0 +1,33 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "transport";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Passenger Rail
+
+
+[^1]: Bureau of Transportation Statistics. ["Table 4-20: Energy Intensity of Passenger Modes (Btu per passenger-mile)"](https://www.bts.gov/archive/publications/national_transportation_statistics/table_04_20). Accessed May 23, 2019.
+
+[^2]: EV World Staff. ["Japan Commits to World's Longest Maglev Train System"](http://evworld.com/focus.cfm?cid=122). EV World. February 2013.
+
+[^3]: Goeverden, K., Janic, M., Milakis, D. ["Is Hyperloop helpful in relieving the environmental burden of long-distance travel?"](https://www.iip.kit.edu/downloads/WCTR_SIGf2_2018_BookOfAbstracts.pdf#page=21). Proceedings of the International Conference: Transport, Climate Change and Clean Air. June 2018.
+
+[^4]: Hoffrichter, A. ["Hydrogen as an Energy Carrier for Railway Traction"](https://etheses.bham.ac.uk/id/eprint/4345/). A thesis submitted to the University of Birmingham for the degree of doctor of philosophy. April 2013.
+
+[^5]: MacKay, D. ["Sustainable Energy - Without the Hot Air"](https://www.withouthotair.com/c20/page_134.shtml). UIT Cambridge, ISBN 978-0-9544529-3-3. Available free online from www.withouthotair.com. 2008.
+
+[^6]: Minn, M. ["Contested Power: American Long-Distance Passenger Rail and the Ambiguities of Energy Intensity Analysis"](https://www.mdpi.com/2071-1050/11/4/1200/pdf). Sustainability. February 2019.
+
+[^7]: Ziemke, D. ["Comparison of High-Speed Rail Systems in the United States"](https://smartech.gatech.edu/bitstream/handle/1853/37286/ziemke_dominik_201012_mast.pdf). Thesis, Master of Science in Civil Engineering in the School of Civil and Environmental Engineering, Georgia Institute of Technology. December 2010.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

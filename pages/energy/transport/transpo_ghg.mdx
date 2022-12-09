@@ -1,0 +1,52 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "transport";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Energy and Emissions in Transportation
+
+[^1]: Bureau of Transportation Statistics. ["Table 4-20: Energy Intensity of Passenger Modes (Btu per passenger-mile)"](https://www.bts.gov/archive/publications/national_transportation_statistics/table_04_20). Accessed May 23, 2019.
+
+[^2]: Chester M. ["Passenger Transportation LCA Database"](http://www.transportationlca.org/tlcadb-passenger.php). Accessed December 6, 2019.
+
+[^3]: Chester, M., Horvath, A. ["Environmental Assessment of Passenger Transportation Should Include Infrastructure and Supply Chains"](http://dx.doi.org/10.1088/1748-9326/4/2/024008). Environmental Research Letters 4June 2009.
+
+[^4]: Chester, M., Horvath, A. ["High-speed Rail with Emerging Automobiles and Aircraft Can Reduce Environmental Impacts in California's Future"](http://dx.doi.org/10.1088/1748-9326/7/3/034012). Environmental Research Letters 7(3). July 2012.
+
+[^5]: Fridleifsson, I., Bertani, R., Huenges, E., Lund, J. ["The possible role and contribution of geothermal energy to the mitigation of climate change"](https://www.researchgate.net/publication/284685252_The_possible_role_and_contribution_of_geothermal_energy_to_the_mitigation_of_climate_change). IPCC Scoping Meeting on Renewable Energy Sources, Proceedings, pp. 59-80. January 2008.
+
+[^6]: Hanova, J., Dowlatabadi, H. ["Strategic GHG reduction through the use of ground source heat pump technology"](https://iopscience.iop.org/article/10.1088/1748-9326/2/4/044001). Environmental Research Letters 2(4). November 2007.
+
+[^7]: International Energy Agency. ["Sankey Diagram"](https://www.iea.org/Sankey/). Accessed April 18, 2019.
+
+[^8]: International Energy Agency. ["Transport"](https://www.iea.org/tcep/transport/). Tracking Clean Energy Progress. Accessed October 22, 2019.
+
+[^9]: John Dunham & Associates. ["Motorcoach Census"](https://buses.org/assets/images/uploads/pdf/Motorcoach_Census_2014.pdf). Prepared for the American Bus Association Foundation. February 2016.
+
+[^10]: M.J. Bradley & Associates. ["Comparison of Energy Use & CO₂ Emissions From Different Transportation Modes"](https://jamesrivertrans.com/wp-content/uploads/2012/05/ComparativeEnergy.pdf). Prepared for American Bus Association. May 2007.
+
+[^11]: Mason, J., Fulton, L., McDonald, Z. ["A Global High Shift Cycling Scenario: The Potential for Dramatically Increasing Bicycle and E-bike Use in Cities Around the World, with Estimated Energy, CO2, and Cost Impacts"](https://steps.ucdavis.edu/wp-content/uploads/2017/05/2015-UCD-ITS-RP-15-29.pdf). Institute for Transportation & Development Policy and the University of California, Davis. Commissioned by the Union Cycliste Internationale (UCI), the European Cyclists’ Federation (ECF), and the Bicycle Product Suppliers Association (BPSA). November 2015.
+
+[^12]: Minn, M. ["Contested Power: American Long-Distance Passenger Rail and the Ambiguities of Energy Intensity Analysis"](https://www.mdpi.com/2071-1050/11/4/1200/pdf). Sustainability. February 2019.
+
+[^13]: Staffell, I. ["Guest post: Ten charts show how the world is progressing on clean energy"](https://www.carbonbrief.org/guest-post-ten-charts-show-how-the-world-is-progressing-on-clean-energy). CarbonBrief. November 2018.
+
+[^14]: U. S. Energy Information Administration. ["Annual Energy Outlook"](https://www.eia.gov/outlooks/ieo/excel/appl_tables.xlsx). 2017.
+
+[^15]: U. S. Energy Information Administration. ["Global Transportation Energy Consumption: Examination of Scenarios to 2040 using ITEDD"](https://www.eia.gov/analysis/studies/transportation/scenarios/). September 2017.
+
+[^16]: U. S. Environmental Protection Agency. ["Global Greenhouse Gas Emissions Data"](https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data). Accessed March 2, 2019.
+
+[^17]: U.S. Environmental Protection Agency. ["Lifecycle Greenhouse Gas Results"](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/lifecycle-greenhouse-gas-results). Accessed June 11, 2019.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
