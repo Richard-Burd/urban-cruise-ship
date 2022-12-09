@@ -1,0 +1,60 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "cities";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Cities Overview
+
+Compact cities are a leading tool for energy savings, and they are the only significant option available to reduce the land use impact of cities. We review the benefits of density and how it can be effectively achieved. We review other important tools for saving energy, including efficiency in heating, cooling, lighting, and appliances.
+
+## Energy Savings Potential
+On a worldwide basis, meeting future needs for urbanization with compact cities is one of the greatest energy savings tools available.
+
+<ArticleImage image={"Potential Urban Energy Demand and Savings.svg"} width={980} height={370} />
+#### World urban energy demand will almost grow through midcentury, but the growth rate can be reduced through compact cities. The greatest potential for savings is in the developing cities of Asia, Africa, and the Middle East. Source: Creutzig et al. [^3].
+
+The following estimates primary energy savings potential in the United States for different tools that can be applied by cities, taking into account practical constraints on how widely they can be deployed.
+
+<ArticleImage image={"Urban Energy Savings Potential.svg"} width={890} height={410} />
+#### Potential energy savings in cities in the United States. See our analyses of [heating and cooling](http://urbancruiseship.org/solution/energy/heating), [distributed solar](http://urbancruiseship.org/solution/energy/solar), [energy in buildings](http://urbancruiseship.org/solution/energy/building_energy), urban [density](http://urbancruiseship.org/solution/energy/density) and [form](http://urbancruiseship.org/solution/energy/urban_form), and [recycling](http://urbancruiseship.org/solution/energy/recycling_energy).
+
+Density saves on overall [heating, cooling](http://urbancruiseship.org/solution/energy/heating), and [transportation](http://urbancruiseship.org/solution/energy/transpo_systems) energy demand, and dense develoment enables district heating and cooling systems, the most energy efficient heating and cooling tools. Achieving the full benefits of urban density require an efficient [urban form](http://urbancruiseship.org/solution/energy/urban_form), characterized by a centralized city, mixed use development, and effective transportation alternatives to driving. Shifting [housing development](http://urbancruiseship.org/solution/energy/housing) toward more compact forms, especially apartments, is critical. Some [practical steps](http://urbancruiseship.org/topic/cities/policy) that cities can take include setting tax levels to account for costs of development and setting zoning regulations that enable density, especially tall apartments buildings with small units.
+
+Major energy saving opportunities are available through upgrading HVAC and building envelopes, as well as developing more efficient heating and cooling technology. Lesser but significant energy savings opportunities are available with [enabling distributed solar power](http://urbancruiseship.org/solution/energy/solar), [recycling](http://urbancruiseship.org/solution/energy/recycling_energy), and accelerating the usage of LED lighting.
+
+## Trends in Urban Land Use
+Most of the world's population growth and urbanization in the 21st century will occur in what today are developing countries. The manner in which this development occurs will have a profound impact on the world's future [energy](http://urbancruiseship.org/solution/energy/building_energy) and land consumption.
+
+The world is becoming more urbanized. The trend toward greater urbanization is expected to continue in each major country income group.
+
+<ArticleImage image={"Urban Percentage.svg"} width={610} height={460} />
+#### Projected trends in urbanization. Source: United Nations Population Divsion [^5]
+
+Agriculture is humans' [largest land use](http://urbancruiseship.org/solution/habitat/land_use_socio), but cities are rapidly growing in their contribution. The urbanized portion of the Earth's land area has been estimated at 0.47% in 2000 [^2] and 0.65% in 2010 [^4]. Most of the opportunity for saving energy and land is in the rapidly growing cities of the developing world, particularly Asia and Africa [^3].
+
+<ArticleImage image={"Expansion of Cities.svg"} width={670} height={300} />
+#### If urban population densities decrease by 1% per year, built-up area could reach 1.5% of total land area by 2050 [^2]. The recent trend is a population density decline of 1.4% per year [^1]. By contrast, if urban density increases after 2020 at half the rate of urban population growth, the rate of urban expansion would be greatly slowed. Source: Angel et al. [^2].
+
+Urban growth might be met by [new cities](http://urbancruiseship.org/solution/cities/new_cities), as well as expansion of existing cities, though building new cities can be economically challenging.
+
+[^1]: Angel, S. et al. [*Atlas of Urban Expansion*](http://www.atlasofurbanexpansion.org/). 2016.
+
+[^2]: Angel, S. et al. ["Making Room for a Planet of Cities"](http://www.lincolninst.edu/pubs/1880_Making-Room-for-a-Planet-of-Cities-urban-expansion). Lincoln Institute of Land Policy. January 2011.
+
+[^3]: Creutzig, F., Baiocchi, G., Bierkandt, R., Pichler, P., Seto, K. ["Global typology of urban energy use and potentials for an urbanization mitigation wedge"](http://www.pnas.org/content/112/20/6283.full). Proceedings of the National Academy of Sciences. May 2015.
+
+[^4]: Lui, Z., He, C., Zhou, Y., Wu, J. ["How much of the world’s land has been urbanized, really? A hierarchical framework for avoiding confusion"](https://link.springer.com/article/10.1007/s10980-014-0034-y). Landscape Ecology 29(5), pp. 763-771. May 2014.
+
+[^5]: United Nations Population Division. [*World Urbanization Prospects: The 2018 Revision, Online Edition*](https://population.un.org/wup/). 2018.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
