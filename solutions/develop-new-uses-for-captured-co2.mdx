@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "CO₂ Emissions From Fossil Fuels";
+export const solution = "Develop New Uses for Captured CO₂";
+
+For CCS to grow, and not to rely heavily on enhanced oil recovery, it is necessary to develop new uses for captured carbon dioxide.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
