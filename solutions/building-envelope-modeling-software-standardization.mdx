@@ -1,0 +1,69 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Energy Use in Buildings";
+export const solution = "Building Envelope Modeling Software Standardization";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Thermal bridges make it difficult to assess the true energy efficiency of a proposed building design [^"1"], [^"8"] and stakeholders have identified this problem in proposed building code amendments [^"4"]. Today’s architects have software designed to analyse building envelopes, but different state agencies and design firms use different software applications, and they don't communicate well. This often causes buildings to not be compliant with state energy efficiency standards, which is discovered late in a design process, incentivizing architects to fudge data to obtain a building permit and avoid cost overruns. Additionally, algorithms in different program can interpret design features differently, meaning that there is no single source of truth, and bad designs can slip through the building permit approval process [^"3"].
+
+Architects need an 'analyze-as-you-design' approach to catch problems early in the design process [^"14"], and government oversight bodies have a need to accurately assess building design performance before they issue building permits. These conditions can be achieved as follows.
+
+**Step 1:** The U.S. Department of Energy should develop an application programming interface (API) that will take data from their EnergyPlus [^"10"] software application and transfer it to the DOE’s REScheck and COMcheck applications [^"11"].
+
+**Step 2:** The U.S. Department of Energy should mandate that building permit-issuing authorities in all 50 U.S. states allow for the use of REScheck and COMcheck to submit evidence of compliance with energy efficiency regulations. Individual states can still have their own standards, but architects must have the option to evaluate their designs against those standards using REScheck and COMcheck. States can still allow architects to use other programs in lieu of REScheck and COMcheck, but states must give the option to use REScheck and COMcheck when evaluating a design for purposes of issuing a building permit.
+
+**Step 3:** Once the DOE implements step 1 and mandates step 2, companies like Trimble and GraphiSoft (see image above) will be incentivised to make their BIM programs compatible with the DOE’s Energy Plus, which to date has not happened due to technical hurdles [^"9"]. This translates to a network-effect in which the industry can turn to for a single point of truth.
+
+<ArticleImage image={"be_modeling.svg"} width={800} height={220} />
+#### We estimate a development cost of $500,000 to $3 million for building energy modeling software based on the DOE's spending on Spawn [^"15"]. Benefits are estimated as 1% of the total potential energy savings in building envelope energy, as given by the International Energy Agency [^"6"], assuming that all energy is in the form of natural gas, and rounded down to $1 billion.
+
+Following is a schematic of how such software might work.
+
+<ArticleImage image={"bim.png"} width={800} height={550} />
+
+If all the energy saved is natural gas, then the annual greenhouse gas savings are about 449 millon tons of CO₂.
+
+[^"1"]: BC Housing. ["Video 1 – Introduction to the Building Envelope Thermal Bridging Guide"](https://www.youtube.com/watch?v=IM_dphE-WDY). October 2018.
+
+[^"2"]: Boustani, A., Sahni, S., Gutowski, T., Graves. S. ["Appliance Remanufacturing and Energy Savings"](http://web.mit.edu/ebm/www/Publications/MITEI-1-a-2010.pdf). Environmentally Benign Manufacturing Laboratory, MIT Sloan School of Management. January 2010.
+
+[^"3"]: Carlucci, S., Hamdy, M., Moazami, A. ["Challenges in the Modeling and Simulation of Green Buildings"](https://link.springer.com/referenceworkentry/10.1007%2F978-3-662-49120-1_50). Handbook of Energy Systems in Green Buildings, pp. 3-34. May 2018.
+
+[^"4"]: Christie, M., TRC. ["Multifamily High Performance Envelope - Reduced Thermal Bridging"](https://title24stakeholders.com/wp-content/uploads/2019/06/Reduced-Thermal-Bridging-Submeasure-Summary.pdf). California Energy Codes & Standards. August 2019.
+
+[^"5"]: Goetzler, W., Guernsey, Young, J. ["Research & Development Roadmap for Emerging HVAC Technologies"](https://www.energy.gov/eere/buildings/downloads/research-development-roadmap-emerging-hvac-technologies). U.S. Department of Energy, Energy Efficiency & Renewable Energy, Building Technologies Office. Prepared by Navigant Consulting, Inc. October 2014.
+
+[^"6"]: International Energy Agency. ["Technology Roadmap: Energy efficient building envelopes"](https://webstore.iea.org/technology-roadmap-energy-efficient-building-envelopes). 2013.
+
+[^"7"]: International Energy Agency. ["Transition to Sustainable Buildings"](https://www.iea.org/etp/buildings/). 2013.
+
+[^"8"]: Lawton, M. ["The Myths and Realities of Thermal Bridging" with Mark Lawton"](https://www.youtube.com/watch?v=FPpU3dc0BcU). University of Toronto - Daniels. March 2013.
+
+[^"9"]: Moon, H. J., Choi, M. S., Kim, S. K., Ryu, S. H. ["Case Studies for the Evaluation of Interoperability Between a BIM Based Architectural Model and Building Performance Analysis Programs"](http://ibpsa.org/proceedings/BS2011/P_1510.pdf). Proceedings of Building Simulation 2011: 12th Conference of International Building Performance Simulation Association, Sydney. November 2011.
+
+[^"10"]: Office of Energy Efficency & Renewable Energy. ["Building Energy Modeling"](https://www.energy.gov/eere/buildings/building-energy-modeling). U. S. Department of Energy. Accessed March 22, 2021.
+
+[^"11"]: Office of Energy Efficiency & Renewable Energy. ["Building Energy Codes Program"](https://www.energycodes.gov/software-and-web-tools). U. S. Department of Energy. Accessed March 22, 2021.
+
+[^"12"]: Penning, J., Stober, K., Taylor, V., Yamada, M. ["Energy Savings Forecast of Solid-State Lighting in General Illumination Applications"](https://www.energy.gov/eere/ssl/downloads/2016-ssl-forecast-report). Prepared by Navigant Consulting, Inc., prepared for Solid-State Lighting Program, Building Technologies Office, Energy Efficiency and Renewable Energy, U.S. Department of Energy. September 2016.
+
+[^"13"]: Rockefeller Foundation, DB Climate Change Advisors. ["United States Building Energy Efficiency Retrofits"](https://www.rockefellerfoundation.org/report/united-states-building-energy-efficiency-retrofits/). March 2012.
+
+[^"14"]: Roth, A. ["Autodesk Upgrades Insight360 with EnergyPlus Annual Energy Simulations"](https://www.energy.gov/eere/buildings/articles/autodesk-upgrades-insight360-energyplus-annual-energy-simulations). Office of Energy Efficiency & Renewable Energy, Department of Energy. October 2016.
+
+[^"15"]: U. S. Department of Energy. ["Spawn-of-EnergyPlus (Spawn)"](https://www.energy.gov/eere/buildings/downloads/spawn-energyplus-spawn). October 2014.
+
+[^"16"]: U. S. Energy Information Administration. ["2012 Commercial Buildings Energy Consumption Survey"](https://www.eia.gov/consumption/commercial/). 2015.
+
+[^"17"]: U. S. Energy Information Administration. ["2015 Residential Energy Consumption Survey"](https://www.eia.gov/consumption/residential/). 2017.
+
+[^"18"]: U.S. Energy Information Administration. ["Total Energy"](https://www.eia.gov/totalenergy/data/annual/). Accessed October 24, 2018.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
