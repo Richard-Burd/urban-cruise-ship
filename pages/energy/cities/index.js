@@ -1,4 +1,4 @@
-import FocusArea from "../../../components/FocusArea";
+import FocusArea2 from "../../../components/FocusArea2";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -34,7 +34,7 @@ const focusAreaDescription = (
 const CitiesEnergy = () => {
   return (
     <>
-      <FocusArea
+      <FocusArea2
         site={site}
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}

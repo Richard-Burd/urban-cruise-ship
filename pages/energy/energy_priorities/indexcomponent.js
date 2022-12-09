@@ -1,4 +1,4 @@
-import FocusArea from "../../../components/FocusArea";
+import FocusArea2 from "../../../components/FocusArea";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -21,7 +21,7 @@ const focusAreaName = findFocusAreaName(focusAreaUrl);
 const EnergyPriorities = () => {
   return (
     <>
-      <FocusArea
+      <FocusArea2
         site={site}
         focusAreaName={focusAreaName}
         focusAreaUrl={focusAreaUrl}
