@@ -27,6 +27,7 @@
      { "article_title": "Energy", "article_url": "ocean_mhk" },
      { "article_title": "Manufacturing", "article_url": "ocean_industry" },
      { "article_title": "Seafood", "article_url": "seafood" },
+	 { "article_title": "Resources", "article_url": "ocean_resources" },
      { "article_title": "Deep Sea Mining", "article_url": "exotic_mining" }
    ]
   }
