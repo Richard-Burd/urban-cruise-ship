@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions From Aluminum Production";
+export const solution = "Deployment of Inert Anodes";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Today there are several inert anodes in use in aluminum foundaries. We propose that the industry accelerate their use.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

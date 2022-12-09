@@ -1,0 +1,49 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "industry";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Chemicals
+
+In 2016, the world chemical and petrochemical industries consumed 66 exajoules of primary energy [^2]. There are thousands of industrial chemical products on the market, though four classes--Olefins (ethylene and propylene, key precursors to plastics), [ammonia](http://urbancruiseship.org/solution/energy/ammonia), BTX aromatics (benzene, toluene, xylene), and [methanol](http://urbancruiseship.org/solution/energy/methanol)--account for about half of the energy usage [^4]. See also our analysis of [hazardous chemical exposure](http://urbancruiseship.org/solution/habitat/chemical_socio).
+
+## Environmental Performance
+Following are estimates of energy that might saved through new catalytic processes, bringing the world chemical industry to best practices, and maximal plastic recycling.
+
+<ArticleImage image={"chemical_energy_savings.svg"} width={660} height={400} />
+#### Energy savings potential from new catalytic processes estimated by the IEA et al. [^4]. Savings from best practices are estimated from Saygin et al. [^8], with the IEA Sankey diagram [^2] used to estimate primary energy savings. Savings potential from plastics recycling is estimated by taking savings per ton, given by Hopewell et al. [^1], and applying to total plastics usage worldwide, given by PlasticsEurope [^7], minus the portion already recycling, estimated by the IEA [^3].
+
+The use of engineered organisms in manufacturing may reduce energy and financial costs and make biomaterial usage more viable [^6]. Recycling also brings significant savings in water consumption and greenhouse gas emissions [^1].
+
+As with [ammonia](http://urbancruiseship.org/solution/energy/ammonia) and [methanol](http://urbancruiseship.org/solution/energy/methanol), the fossil fuel feedstock for high value chemicals, such as olefins and BTX, can be be replaced by biomass or electrolyzed hydrogen. However, electrolysis can reduce greenhouse gas emissions only if the electricity is generated from a low carbon source [^3]. The electrolysis route for the chemical industry is technically possible but economically infeasible at present.
+
+<ArticleImage image={"chemical_electrolysis.svg"} width={800} height={320} />
+#### In 2030, it would take almost all world electricity to replace the leading 20 chemicals--representing 75% of world greenhouse gas emissions--with electrolyzed alternatives with established technology, and more than half with technologies that are under development but not yet commercalized. Source: Kätelhön et al. [^5].
+
+[^1]: Hopewell, J., Dvorak, R., Kosior, E. ["Plastics recycling: challenges and opportunities"](http://rstb.royalsocietypublishing.org/content/364/1526/2115). Philosophical Transactions B of the Royal Society 364 (1526). July 2009.
+
+[^2]: International Energy Agency. ["Sankey Diagram"](https://www.iea.org/Sankey/). Accessed April 18, 2019.
+
+[^3]: International Energy Agency. ["The Future of Petrochemicals"](https://www.iea.org/petrochemicals/). 2018.
+
+[^4]: International Energy Agency, International Council of Chemical Associations, DECHEMA. ["Technology Roadmap: Energy and GHG Reductions in the Chemical Industry via Catalytic Processes"](https://www.iea.org/publications/freepublications/publication/Chemical_Roadmap_2013_Final_WEB.pdf). 2013.
+
+[^5]: Kätelhön, A., Meys, R., Deutz, S., Suh, S., Bardow. A. ["Climate change mitigation potential of carbon capture and utilization in the chemical industry"](https://www.pnas.org/content/116/23/11187). Proceedings of the National Academies of Sciences of the United States of America 116(23), pp. 11187-11194. June 2019.
+
+[^6]: National Research Council. ["Industrialization of Biology: A Roadmap to Accelerate the Advanced Manufacturing of Chemicals"](http://www.nap.edu/catalog/19001/industrialization-of-biology-a-roadmap-to-accelerate-the-advanced-manufacturing). Committee on Industrialization of Biology: A Roadmap to Accelerate the Advanced Manufacturing of Chemicals; Board on Chemical Sciences and Technology; Board on Life Sciences; Division on Earth and Life Studies. 2015.
+
+[^7]: PlasticsEurope. ["Plastics - the Facts 2018"](https://www.plasticseurope.org/application/files/6315/4510/9658/Plastics_the_facts_2018_AF_web.pdf). 2018.
+
+[^8]: Saygin, D., Patel, M., Worrell, E., Tam, C., Gielen, D. ["Potential of best practice technology to improve energy efficiency in the global chemical and petrochemical sector"](https://www.sciencedirect.com/science/article/abs/pii/S0360544211003446). Energy 36(9), pp. 5779-5790. September 2011.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

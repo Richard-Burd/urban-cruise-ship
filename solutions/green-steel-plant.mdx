@@ -1,0 +1,23 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions from Steelmaking";
+export const solution = "Green Steel Plant";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+Green steel can have several meanings, but often refers to steel that is produced with hydrogen, produced by clean energy electrolysis, rather than coal as most steel is produced today. Green steel is generally too expensive to produce widely today, except where electricity is cheap and low-carbon. The price of green steel is likely to fall in coming years relative to alternatives [^"6"].
+
+<ArticleImage image={"green_steel.svg"} width={900} height={600} />
+#### Sources: price data from [^"27"], emissions data as above.
+
+[^"6"]: Hoffmann, C., Van Hoey, M., Zeumer, B. ["Decarbonization challenge for steel: Hydrogen as a solution in Europe"](https://www.mckinsey.com/industries/metals-and-mining/our-insights/decarbonization-challenge-for-steel). McKinsey & Company. April 2020.
+
+[^"27"]: Whalen, C. ["The extra costs of decarbonised steel"](https://www.carboncommentary.com/blog/2020/1/14/the-extra-costs-of-decarbonised-steel). Carbon Commentary. January 2020.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

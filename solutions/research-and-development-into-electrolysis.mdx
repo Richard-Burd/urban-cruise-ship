@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions from Steelmaking";
+export const solution = "Research and Development Into Electrolysis";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+At present, electrowinnowing for steel is not cost-effective, but it may eventually be a superior solution to hydrogen.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

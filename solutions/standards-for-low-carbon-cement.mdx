@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Challenging of Implementing New Cement";
+export const solution = "Standards for Low-Carbon Cement";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+We propose that the construction industry develop standards on the use of geopolymer cement and other low-carbon forms of cement.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
