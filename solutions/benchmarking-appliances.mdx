@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Energy Requirements of Appliances";
+export const solution = "Benchmarking";
+
+Benchmarking of appliances, where the most efficient appliances today are set as an energy efficiency standards for the next generation, can accelerate progress in energy efficiency.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
