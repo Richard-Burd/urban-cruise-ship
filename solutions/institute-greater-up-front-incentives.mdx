@@ -1,0 +1,42 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Electric Vehicles Advancing Slowly";
+export const solution = "Congress Should Institute Greater Up-Front Incentives";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+**Description:** We recommend that Congress increase up-front incentives for electric vehicles purchases to at least $14000 per car, up from the present level of $2500-7500 per car [^"5"].
+
+<ArticleImage image={"electric_incentives.svg"} width={800} height={400} />
+
+**Calculations:** To estimate the costs and benefits of a single electric car, we use the cost figures of Balali and Stegen [^"2"], which are based on average costs for light duty vehicles, and the maintenance and fuel costs reported by Consumer Reports [^"7"].
+
+Reported lifecycle greenhouse gas emissions are as above and include those in manufacturing the vehicle, transporting the vehicle to the consumer, fuel, and disposal. For the EV scenario, emissions assume the vehicle is fueled with average electricity in the U. S. grid. Costs and benefits are not discounted. We assume the vehicles are driven 150,000 kilometers (about 90,000 miles) over their lifetimes. Monetization of some factors, such as vehicle size, weight, and range, is not estimated.
+
+Overall benefits are estimated by multiplying the benefit of a single vehicle by the number of vehicles likely to be sold under enhanced policies. Almost 70% of new cars sold in Norway are now electric vehicles [^"20"]. We estimate 50% annual EV sales in the United States out of about 17 million total cars sold [^"22"].
+
+**Implementation:** Norway offers a variety of subsidies for electric vehicles, ranging an estimated $14,000 to $24,000 (2020 USD) in value [^"15"]. The most important of these subsidies have been measures to reduce up-front costs of EVs, such as exemptions from the value-added tax and purchases taxes [^"14"].
+
+Some tax breaks that Norway has offered, we would not recommend, as they would conflict with efforts to reduce car dependency in general. Such breaks include exemption from tolling (or congestion pricing), access to bus lanes, and free municipal parking. Aside from tolling exemptions, these breaks have minor effects on consumer decisions to purchase EVs [^"14"]. For this reason, we estimate the market potential from policy for EVs in the United States is 50%, less than rate achieved by Norway.
+
+[^"2"]: Balali, Y., Stegen, S. ["Review of energy storage systems for vehicles based on technology, environmental impacts, and costs"](https://www.sciencedirect.com/science/article/pii/S1364032120304755). Renewable and Sustainable Energy Reviews 135: 110185. January 2021.
+
+[^"5"]: Edmunds. ["Electric Vehicle Tax Credits: What You Need to Know"](https://www.edmunds.com/fuel-economy/the-ins-and-outs-of-electric-vehicle-tax-credits.html). April 2021.
+
+[^"7"]: Harto, C. ["Electric Vehicle Ownership Costs: Today's Electric Vehicles Offer Big Savings for Consumers"](https://advocacy.consumerreports.org/wp-content/uploads/2020/10/EV-Ownership-Cost-Final-Report-1.pdf). Consumer Reports. October 2020.
+
+[^"14"]: Lorentzen, E., Haugneland, P., Bu, C., Hauge, E. ["Charging infrastructure experiences in Norway - the worlds most advanced EV market"](https://elbil.no/wp-content/uploads/2016/08/EVS30-Charging-infrastrucure-experiences-in-Norway-paper.pdf). EVS30 Symposium, Stuttgart, Germany. October 9-11, 2017.
+
+[^"15"]: Mersky, A. C., Sprei, F., Samaras, C., Qian, Z. ["Effectiveness of incentives on electric vehicle adoption in Norway"](https://www.sciencedirect.com/science/article/abs/pii/S1361920916000407). Transportation Research Part D: Transport and Environment 46, pp. 56-68. July 2016.
+
+[^"20"]: Road Traffic Information Council. ["Bilsalget i desember og hele 2020 (Car sales in December and throughout 2020)"](https://ofv.no/bilsalget/bilsalget-i-desember-2020). In Norwegian. Accessed May 5, 2021.
+
+[^"22"]: Tulumba, C. ["Automotive Sales Data & Statistics"](https://www.goodcarbadcar.net/usa-auto-industry-total-sales-figures/). Good Car, Bad Car. Accessed May 5, 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Energy and Pollution in Transportation";
+export const solution = "Virtual Travel";
+
+Intercity and international travel is growing rapidly and will not go away, but there is a role to replace some long-distance trips with virtual travel, such as videoconferencing and telepresence.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

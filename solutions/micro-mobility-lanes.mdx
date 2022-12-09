@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Space and Energy of Driving";
+export const solution = "Micro-Mobility Lanes";
+
+Cities should add dedicated micromobility lanes, for motorized scooters, e-bikes, and microcars, in high density areas.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

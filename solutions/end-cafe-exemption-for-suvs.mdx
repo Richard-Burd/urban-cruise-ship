@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Energy and Pollution From Cars";
+export const solution = "End CAFE Exemption for SUVs";
+
+Sports Utility Vehicles (SUVs) are now treatly separately for fuel economy standards. We propose that this differential treatment is ended.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Space and Pollution From Last Mile Delivery";
+export const solution = "E-Bikes";
+
+More widespread of e-bikes for package delivery in high density areas can help conserve badly needed real estate and reduce pollution.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

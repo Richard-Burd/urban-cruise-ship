@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Energy and Pollution From Cars";
+export const solution = "Higher CAFE Standards";
+
+We propose an increase on CAFE standards, including equal treatment of sedans and light trucks.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

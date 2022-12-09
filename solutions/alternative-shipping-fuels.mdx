@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions From Shipping";
+export const solution = "Alternative Shipping Fuels";
+
+Methanol, ammonia, and alcohol are the most promising low-carbon shipping fuels.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

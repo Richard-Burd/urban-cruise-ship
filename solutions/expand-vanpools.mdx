@@ -1,0 +1,14 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Energy and Pollution From Transportation";
+export const solution = "Expand Vanpools";
+
+Many mass transit routes, served by buses and rail, are nearly empty. Such routes could be more efficiently served by on-demand vanpools, using mapping technology that has recently been developed by ridehailing services.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
