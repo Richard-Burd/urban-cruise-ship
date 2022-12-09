@@ -1,0 +1,30 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Heating Energy Needs and Pollution";
+export const solution = "Heat Pump Mandate";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+The following assesses costs and benefits of if the state of North Carolina were to mandate the use of heat pumps in future residential construction.
+
+<ArticleImage image={"nc_hp_mandate.svg"} width={800} height={210} />
+#### Source: [^"5"].
+
+Tankless water heaters are generally less energy efficient than heat pumps and more energy efficient than resistance heating [^"15"]. Though not quantified, requiring the pipe hookups for both tanked and tankless water heaters in new construction will not add much to the cost of construction, will allow future homeowners flexibility on their heating system, and will cost far less than retrofitting existing construction for new pipes.
+
+<ArticleImage image={"tankless.png"} width={900} height={670} />
+#### The cost of requiring fixtures for both tanked and tankless water heaters would be less than 0.05% of total construction costs if done as part of the initial construction, whereas a retrofit upgrade (after construction is already complete) would be substantially more expensive, and may dissuade a homeowner from installing such a tankless water heater even if doing so might have a payback over several years.
+
+A heat pump mandate in North Carolina would save 44.1 million tons of CO₂ per year [^"5"].
+
+[^"5"]: Carroll, Z., Couzo, E. ["Should North Carolina require more efficient water heaters in homes? A cost-benefit analysis"](https://www.sciencedirect.com/science/article/abs/pii/S0301421520308247). Energy Policy 150: 112113. March 2021.
+
+[^"15"]: PV Heating & Air. ["Who Wins the Tank vs Tankless Water Heaters Contest?"](https://www.pvhvac.com/blog/tank-vs-tankless-water-heaters). Accessed March 12, 2021.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

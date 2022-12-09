@@ -1,0 +1,95 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "cities";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import HeatPumpMandateSolution from "/solutions/heat-pump-mandate.mdx"
+
+# Heating and Cooling
+
+The majority of [residential and commercial energy consumption](http://urbancruiseship.org/solution/energy/building_energy) is used for heating and cooling. Most heating and cooling energy can be saved through better equipment, compact buildings with shared walls, and more efficient energy sources such as a [district heating and cooling system](http://urbancruiseship.org/solution/cities/cities_thermal).
+
+## Energy Savings Potential
+The following portrays the potential for selected tools to save energy on heating and cooling. The savings from housing forms (attached housing and apartments) portray savings relative to detached houses.
+
+<ArticleImage image={"Heating and Cooling Potential Energy Savings.svg"} width={1000} height={1200} />
+#### Sources: Adaptive thermal comfort from Barbadilla-Martín et al. [^2], personal comfort devices from Carmichael et al. [^4], emerging HVAC technology from Goetzler et al. [^8], non-vapor cooling from Goetzler et al. [^9], building envelopes from the IEA [^10], passive cooling from Kamal [^11], district heating and cooling from Lubinski [^12] and Stellar Energy [^16], smart thermostats from Nest Labs [^13], and solar cooling from the UN Environment Programme [^21]. Additional information on thermal comfort available from Yang et al. [^24]. Energy savings for apartments and attached housing is estimated from the Residential Energy Consumption Survey [^19]. Upgrades to building envelopes should save cooling energy as well as heating energy, but we lack reliable estimates on the magnitude of savings.
+
+## Heating Source
+
+The following portrays the energy, economic, and environmental characteristics of heating fuel options for space heating, water heating, cooking, and clothes drying for a typical new home.
+
+<ArticleImage image={"Heating Source Consumption and Emissions.svg"} width={900} height={650} />
+#### Data sources: Brennan [^3] for coal, the Committee on Climate Change [^6] for hydrogen, Fischer and Madani [^7] for geothermal and air-source heat pumps, Lubinski [^12] and Werner [^23] for district heating, the Department of Energy [^18] for wood, Vineyard et al. [^22] for gas heat pumps, and the remaining heat sources from the American Gas Association [^1]. Additionally, the AGA is used to estimate the heating energy demand for a typical new home. Data from the EPA [^20] is used to estimate emissions factors. For electricity-based heating sources, emissions factors and primary energy are based on the average US electricity mix in 2018. The energy and environmental performance of a district heating system is highly dependent on the energy source. The primary energy estimate for district heating is based on European Union standards [^12] and the greenhouse gas estimate from world performance [^23].
+
+Air-source heat pumps work best in moderate climates, and the high performance figures might not be achievable in cold climates [^17].
+
+Despite the current enthusiasm for heat humps, the technology struggled to retain market share in the 2010s.
+
+<ArticleImage image={"heating_source_growth.svg"} width={700} height={400} />
+#### Source: [^14].
+
+## Heating Efficiency
+Even if a common fuel source is used, such as electricity, efficiencies between different heating systems can vary significantly, such as between heat pumps and electric resistance heating. Construction codes that mandate higher efficiency options can be good investments.
+
+<HeatPumpMandateSolution />
+
+[^1]: American Gas Association. ["A Comparison of Energy Use, Operation Costs, and Carbon Dioxide Emissions of Home Appliances, 2016 Update"](https://www.aga.org/sites/default/files/ea_2017-03_appliance_cost_and_emissions_comparison_2016_0.pdf). July 2017.
+
+[^2]: Barbadilla-Martín, E., Guadix Martín, J., Manuel Salmerón Lissénb J., Sánchez Ramos, J., Álvarez Domínguez, S. ["Assessment of thermal comfort and energy savings in a field study on adaptive comfort with application for mixed mode offices"](https://www.sciencedirect.com/science/article/pii/S0378778817330293). Energy and Buildings 167, pp. 281-289. May 2018.
+
+[^3]: Brennan, J. ["What Is the Typical Efficiency of a Coal Boiler?"](https://homesteady.com/info-12149447-typical-efficiency-coal-boiler.html). September 2017.
+
+[^4]: Carmichael, S., et al. ["Annual Energy Savings and Thermal Comfort of Autonomously Heated and Cooled Office Chairs"](https://www.nrel.gov/docs/fy16osti/66431.pdf). National Renewable Energy Laboratory, Office of Energy Efficiency & Renewable Energy, U. S. Department of Energy. July 2016.
+
+[^5]: Carroll, Z., Couzo, E. ["Should North Carolina require more efficient water heaters in homes? A cost-benefit analysis"](https://www.sciencedirect.com/science/article/abs/pii/S0301421520308247). Energy Policy 150: 112113. March 2021.
+
+[^6]: Committee on Climate Change. ["Hydrogen in a low-carbon economy"](https://www.theccc.org.uk/publication/hydrogen-in-a-low-carbon-economy/). 2018.
+
+[^7]: Fischer, D., Madani, H. ["On heat pumps in smart grids: A review"](https://www.sciencedirect.com/science/article/pii/S1364032116309418). Renewable and Sustainable Energy Systems 70, pp. 342-357. April 2017.
+
+[^8]: Goetzler, W., Guernsey, Young, J. ["Research & Development Roadmap for Emerging HVAC Technologies"](https://www.energy.gov/eere/buildings/downloads/research-development-roadmap-emerging-hvac-technologies). U.S. Department of Energy, Energy Efficiency & Renewable Energy, Building Technologies Office. Prepared by Navigant Consulting, Inc. October 2014.
+
+[^9]: Goetzler, W., Zogg, R., Young, J., Johnson, C. ["Energy Savings Potential and RD&D Opportunities for Non-Vapor-Compression HVAC Technologies"](https://www.energy.gov/sites/prod/files/2014/03/f12/Non-Vapor%20Compression%20HVAC%20Report.pdf). U.S. Department of Energy, Energy Efficiency & Renewable Energy, Building Technologies Office. Prepared by Navigant Consulting, Inc. March 2014.
+
+[^10]: International Energy Agency. ["Technology Roadmap: Energy efficient building envelopes"](https://webstore.iea.org/technology-roadmap-energy-efficient-building-envelopes). 2013.
+
+[^11]: Kamal, M. ["An Overview of Passive Cooling Techniques in Buildings: Design Concepts and Architectural Interventions"](https://www.researchgate.net/publication/312432251_An_overview_of_passive_cooling_techniques_in_buildings_Design_concepts_and_architectural_interventions). Acta Technica Napocensis: Civil Engineering & Architecture 55(1), pp. 84-97. 2012.
+
+[^12]: Lubinski, B. ["District Heating and Cooling + EPBD: Implementation via standardization"](http://www.ehpcongress.org/archive-2015/wp-content/uploads/2015/04/63_Boris_LUBINSKI.pdf). 2015.
+
+[^13]: Nest Labs. ["Energy Savings from the Nest Learning Thermostat: Energy Bill Analysis Results"](https://nest.com/thermostats/real-savings/). February 2015.
+
+[^14]: O'Brien, B. ["Energy Insights: New Construction vs. New Market Share Growth"](https://www.aga.org/globalassets/news--publications/fois/public/aga_energyinsight_nov21.pdf). American Gas Association. November 2021.
+
+[^15]: PV Heating & Air. ["Who Wins the Tank vs Tankless Water Heaters Contest?"](https://www.pvhvac.com/blog/tank-vs-tankless-water-heaters). Accessed March 12, 2021.
+
+[^16]: Stellar Energy. ["District Cooling"](http://www.stellar-energy.net/what-we-do/solutions/district-cooling.aspx). Accessed February 16, 2019.
+
+[^17]: U. S. Department of Energy. ["Heat Pump Systems"](https://www.energy.gov/energysaver/heat-and-cool/heat-pump-systems). Accessed November 14, 2018.
+
+[^18]: U. S. Department of Energy. ["Wood and Pellet Heating"](https://www.energy.gov/energysaver/home-heating-systems/wood-and-pellet-heating). Accessed November 14, 2018.
+
+[^19]: U. S. Energy Information Administration. ["2015 Residential Energy Consumption Survey"](https://www.eia.gov/consumption/residential/). 2017.
+
+[^20]: U. S. Environmental Protection Agency. ["Emission Factors for Greenhouse Gas Inventories"](https://www.epa.gov/sites/production/files/2015-07/documents/emission-factors_2014.pdf). April 2014.
+
+[^21]: United Nations Environment Programme. ["Assessment on the Commercial Viability of Solar Cooling Technologies and Applications in the Arab Region"](https://www.solarthermalworld.org/sites/gstec/files/story/2016-04-05/solar_cooling_in_arab_region_0.pdf). 2014.
+
+[^22]: Vineyard, E., Abu-Heiba, A., Mahderekal, I. ["Design and development of a residential gas-fired heat pump"](http://hpc2017.org/wp-content/uploads/2017/05/O.4.7.1-Design-and-Development-of-Residential-Gas-Fired-Heat-Pump.pdf). 12th IEA Heat Pump Conference 2017. 2017.
+
+[^23]: Werner, S. ["International review of district heating and cooling"](https://www.sciencedirect.com/science/article/pii/S036054421730614X). Energy 137, pp. 617-631. October 2017.
+
+[^24]: Yang, L., Yan, H., Lam, J. ["Thermal comfort and building energy consumption implications - A review"](https://www.sciencedirect.com/science/article/pii/S0306261913008921). Applied Energy 115, pp. 164-173. February 2014.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
