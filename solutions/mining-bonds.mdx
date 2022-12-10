@@ -1,0 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Abandoned Mines";
+export const solution = "Effective Reclamation Bonds";
+
+Mine operators are required to post bonds for eventual reclamation of the site, but this requirement is not generally adequate [^1]. We propose that bonds be increased to reflect the expected cost of cleanup.
+
+[^1]: Buck, S., Gerard, D. ["Cleaning Up Mining Waste"](https://www.perc.org/wp-content/uploads/old/rs01_1.pdf). Political Economy Research Center, Research Study 01-1. November 2001.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
