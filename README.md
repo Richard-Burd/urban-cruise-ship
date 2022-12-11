@@ -326,7 +326,7 @@ Article Footnote looks like this: [^1]
 Solution Footnote looks like this: [^"1"]
 ```
 
-See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, footnotes are imported from the legacy site and retain the name numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render footnotes.  This will re-number the footnotes (when rendered to the browser) so that the first footnote to me mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the footnotes in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically.
+See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, footnotes are imported from the legacy site and retain the same numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render footnotes.  This will re-number the footnotes (when rendered to the browser) so that the first footnote to me mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the footnotes in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically.
 
 ------
 
