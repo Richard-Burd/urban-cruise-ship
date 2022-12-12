@@ -1,0 +1,74 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_distribution";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Electrification
+
+Most low-carbon energy is used to produce electricity, and thus a high rate of electrification--the share of total energy that comes from electricity--is almost certainly critical to any decarbonization plan. Here we look specifically at electrification in the United States and factors driving that. Unless otherwise noted, all data is derived from the U. S. Energy Information Administration's Open Data [^3]. See also our [GitHub repository](https://github.com/michael-k-goff/ucsdata/tree/main/electrification).
+
+Electrification has generally been increasing in the United States.
+
+<ArticleImage image={"us_elec.svg"} width={1000} height={571} />
+#### Electrification is calculated by dividing total electricity sales by total energy consumption. A primary energy factor of 2.5 is used for electricity.
+
+While electrification has been steadily advancing, the rate must increase to achieve a low-carbon energy system this century. Furthermore, the apparent slowdown since around 2010 is worrying.
+
+<ArticleImage image={"us_elec100.svg"} width={1000} height={571} />
+
+## Electrification by State
+The 50 U. S. states, together with the District of Columbia, show significant variance in total electrification.
+
+<ArticleImage image={"us_elec_states.svg"} width={1000} height={571} />
+#### The thick black line is the national electrification trends. The other lines represents the 50 states and DC, which counts as a state for the purposes of EIA data.
+
+The outliers include DC (56.1%) and Florida (46.9%) on the high end, and Alaska (8.0%) and Louisiana (18.5%) on the low end.
+
+## Electrification by Sector
+There are four major sectors to consider: residential, commercial, industrial, and transportation. The former two show higher rates of electrification than the latter two.
+
+<ArticleImage image={"elec_by_sector.svg"} width={1000} height={571} />
+#### Electrification rates by the four major sectors over time. The EIA reports a fifth sector, electric power, but that sector does not contribute to the reported total energy consumption, nor does it use reported exteran electricity, and so it is omitted.
+
+Using a structural decomposition analysis [^2], we find that about 70% of the increase in electrification rates from 1960 to 2019 can be explained by increasing electrification within the four sectors, and about 30% can be explained by a shift in the American economy toward the residential and commercial sectors.
+
+We also find that about 66% of the variance of electrification in states is a result of differing level of electrification within the four sectors. About 34% of the variance is a result of different relative sizes of the sectors.
+
+## Drivers of Electrification
+Of several factors that might account for the growth in electrification over time and the variance among states, the relative prices of electricity and energy as a whole appears to be the strongest explanation.
+
+<ArticleImage image={"us_elec_price.svg"} width={1000} height={571} />
+#### Ratio of average electricity price to average overall energy price on a per-BTU basis.
+
+Granger causality [^1] is a technique to determine if one time series yields information that can help predict another time series at a later time. Consider a 15-year lag between the price ratio above and electrification, we find that low electricity prices Granger cause electrification after 10 or more years, but not less than 10 years. This should make intuitive sense, as it takes time for changes in energy prices to result in changes in energy infrastructure.
+
+The price ratio also explains differences in electrification rates between states.
+
+<ArticleImage image={"elec_elec_price_state.svg"} width={1000} height={571} />
+
+The relationship between the price ratio and electrification is significant, with the price ratio explaining about 44% of the variance between states.
+
+We considered two other hypotheses. The first is that there is a significant relationship between the GDP per capita of a state and electrification, on the grounds that a wealthier state has greater ability and willingness to invest in clean energy technologies, including electrification. The second is that there is a significant correlation between the overall growth of energy consumption in the last 10 years and electrification, on the grounds that it is easier to build new electric capital than to replace non-electric capital in a more stagnant economy. However, in both cases we did not find a statistically significant relationship.
+
+## Conclusion
+Electrification has been steadily increasing in the United States for decades, though the rate of increase must increase substantially to meet emission reduction targets. While some electrification can be understood as a shift of the American economy away from heavy industry, most is due to electrification within individual sectors. We hope this will continue, and in particular that we will see significant electrification in transportation as electric cars become more commonplace.
+
+The factor that seems to be most associated with electrification is the relative prices of electricity and other forms of energy. Thus affordable electricity will be critical to insuring that electrification continues.
+
+[^1]: Glen, S. ["Granger Causality: Definition, Running the Test"](https://www.statisticshowto.com/granger-causality/). From StatisticsHowTo.com: Elementary Statistics for the rest of us!. December 2016.
+
+[^2]: Rørmose, P. ["Structural Decomposition Analysis Sense and Sensitivity"](https://circabc.europa.eu/sd/a/01283b06-6c5c-4728-b640-19e2a39b7673/09%20DK%20247%20SDA.pdf). Statistics Denmark. 2010.
+
+[^3]: U. S. Energy Information Administration. ["Open Data"](https://www.eia.gov/opendata/). U. S. Department of Energy. Accessed January 4, 2022.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
