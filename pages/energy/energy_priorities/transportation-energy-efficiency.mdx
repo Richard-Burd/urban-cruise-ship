@@ -1,0 +1,27 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_priorities";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Transportation Energy Efficiency
+
+## Per-mile energy requirements of transportation ([PDF](https://drive.google.com/uc?export=download&id=1TJFwEVHix9s3W9oDIGXJ5GFsFq78jB8N))
+
+There is wide variation of energy consumption both between and within different modes of transportation [^1]. No particular option is necessarily "the best" in general.
+
+<ArticleImage image={"passenger-transportation-mode-eff-comp.svg"} width={1000} height={750} />
+#### Source: [^1]
+
+[^1]: M.J. Bradley & Associates. ["Comparison of Energy Use & CO₂ Emissions From Different Transportation Modes"](https://jamesrivertrans.com/wp-content/uploads/2012/05/ComparativeEnergy.pdf). Prepared for American Bus Association. May 2007.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
