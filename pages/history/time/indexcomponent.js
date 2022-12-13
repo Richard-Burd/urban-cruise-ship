@@ -35,13 +35,6 @@ const HistoryTime = () => {
         hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
-      <div className={`${site}-background-gradient`}>
-        <FocusAreaArticleLink
-          site={site}
-          text={`Our legacy site has a series of timelines`}
-          urlPath={`${process.env.NEXT_PUBLIC_LEGACY_UCS_WEBSITE_URL}/solution/history/deeptime`}
-        />
-      </div>
     </>
   );
 };
