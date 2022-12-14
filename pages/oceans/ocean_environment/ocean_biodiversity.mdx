@@ -8,6 +8,7 @@ import ArticleImage from "/components/ArticleImage.js";
 import WhaleWatching from "/solutions/whale-watching.mdx";
 
 import MarinePreserveSolution from "/solutions/marine-preserves.mdx";
+import ShippingNoiseSolution from "/solutions/shipping-noise.mdx";
 
 # Biodiversity
 
@@ -43,6 +44,17 @@ As on land, invasive species in the oceans cause significant ecosystem harm and 
 
 Of the sources of invasive species, ship biofouling is estimated to cause 55.5-69.2% of the invasions [^is3]. Several design modifications to ships and seaports can reduce biofouling [^is3].
 
+## Noise
+
+The importance of noise for ocean ecosystem health is great and has only recently come to be appreciated [^{ 3 }].
+
+<ArticleImage image={"underwater_noise.svg"} width={900} height={520} />
+#### Source: Hildebrand [^h]. Energy figures are those estimated to be the total released from the given sources as acoustic energy. Underwater nuclear weapons testing is banned under the Comprehensive Test Ban Treaty; while the treaty is not in force, underwater testing has not occurred since it was signed in 1996. The figure assumes one device is detonated every 20 years, as geopolitical circumstances may evolve toward additional testing in the future.
+
+<ShippingNoiseSolution />
+
+Although more expensive, marine vibrators to replace airguns for offshore oil and gas exploration, with the coal of reducing noise, are under development [^n1]. Bubble curtains are a tool to reduce ambient noise from pile driving in underwater construction [^n2].
+
 ## Biodiversity and Carbon Content
 A restored marine ecosystem will sequester carbon, countering the effects of climate change. The possible amount sequestered is not well understood [^{ 2 }]. The potential for seaweed growth has been estimated at 0.6 billion tons of carbon [^{ 1 }], or the equivalent of about 1.7 billion tons of CO<sub>2</sub>, about 4% of annual world emissions today.
 
@@ -50,6 +62,10 @@ A restored marine ecosystem will sequester carbon, countering the effects of cli
 #### Source: NOAA [^4].
 
 Ecosystem restoration could be done by removing the negative pressures on marine ecosystems, including plastic pollution and bottom trawling [^{ 2 }].
+
+[^n1]: PGS. ["Marine Vibrators Get Closer to Reality"](https://www.pgs.com/company/resources/feature-stories/marine-vibrators/). December 2017.
+
+[^n2]: Wursig, B., Greene, C.R., and Jefferson T.A. ["Development of an air bubble curtain to reduce underwater noise of percussive piling"](https://www.frogenvironmental.co.uk/research-paper/using-bubble-curtains-to-reduce-underwater-noise-of-piling/). Marine Environmental Research 49 pp. 79-93. 2000
 
 [^is1]: Carlton, J. T., Ruiz, G. M. ["Vector science and integrated vector management in bioinvasion ecology: conceptual frameworks"](https://www.cabdirect.org/cabdirect/abstract/20053159004). From Invasive alien species: a new synthesis. 2005.
 
@@ -76,5 +92,7 @@ Ecosystem restoration could be done by removing the negative pressures on marine
 [^9]: Whale Facts. ["Commercial Whaling | Facts and Information"](https://www.whalefacts.org/commercial-whaling/). Accessed November 28, 2022.
 
 [^10]: New Bedford Whaling. ["Whale Products"](https://www.nps.gov/nebe/learn/historyculture/whaleproducts.htm). National Park Service. Accessed November 28, 2022.
+
+[^h]: Hildebrand, J. ["Sources of Anthropogenic Sound in the Marine Environment"](https://www.mmc.gov/wp-content/uploads/hildebrand.pdf). In Report to the policy on sound and marine mammals: an international workshop. US Marine Mammal Commission and Joint Nature Conservation Committee, UK. London, England. September 2004.
 
 export default ({ children }) => <Article focusAreaUrl={focusAreaUrl} hierarchy={hierarchy} site={site}>{children}</Article>
