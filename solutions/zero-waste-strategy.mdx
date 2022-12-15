@@ -26,4 +26,10 @@ Other examples of Pigouvian taxes for environmental policy in the United States 
 
 [^{"mansur-p-2015"}]: Masur, J., Posner, E. ["Toward a Pigouvian State"](https://heinonline.org/HOL/LandingPage?handle=hein.journals/pnlr164&div=5&id=&page=). 164 University of Pennsylvania Law Review 93. 2015.
 
-export default ({ children }) => <SolutionDropdown meta={meta} problem={problem} solution={solution}>{children}</SolutionDropdown>
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

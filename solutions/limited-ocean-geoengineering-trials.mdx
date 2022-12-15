@@ -6,4 +6,10 @@ export const solution = "Limited Ocean Geoengineering Trials";
 
 As shown below, each major proposed method of ocean geoengineering is either too expensive for use on a large scale, carries high risk, or both. Limited field trials may, however, resolve risk and lower costs.
 
-export default ({ children }) => <SolutionDropdown problem={problem} solution={solution}>{children}</SolutionDropdown>
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

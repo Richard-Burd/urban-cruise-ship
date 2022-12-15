@@ -33,5 +33,10 @@ Floating platforms, such as in VLFS (very large floating platforms), have the po
 
 [^{ schillingdr2013 }]: Schilling, D. R. ["The World’s Largest Floating Airport, Tokyo Bay’s Megafloat"](https://www.industrytap.com/worlds-largest-floating-airport-in-tokyo-bay/3684). Industry Tap. May 2013.
 
-export default ({ children }) => <SolutionDropdown meta={meta} problem={problem} solution={solution}>{children}</SolutionDropdown>
-
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
