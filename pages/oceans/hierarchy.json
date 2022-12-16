@@ -10,7 +10,7 @@
      "articles":[
        { "article_title": "Biodiversity", "article_url": "ocean_biodiversity" },
        { "article_title": "Ocean Chemistry", "article_url": "ocean_acid" },
-       { "article_title": "Plastic Pollution", "article_url": "ocean_plastics" },
+       { "article_title": "Pollution", "article_url": "ocean_plastics" },
 	   { "article_title": "Sea Level", "article_url": "sea_level" },
        { "article_title": "Geoengineering", "article_url": "ocean_geoeng" }
      ]
