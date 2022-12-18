@@ -113,7 +113,7 @@ Next we would navigate to the OCEAN Site's `hierarchy.json` file located here:
      { "article_title": "Energy", "article_url": "ocean_mhk" },
      { "article_title": "Manufacturing", "article_url": "ocean_industry" },
      { "article_title": "Seafood", "article_url": "seafood" },
-     { "article_title": "Deep Sea Mining", "article_url": "exotic_mining" }
+     { "article_title": "Deep Sea Mining", "article_url": "exotic_mining" },
      { "article_title": "Lobster", "article_url": "lobster" }
    ]
   }
@@ -269,14 +269,17 @@ This means that if you want the image to retain its original proportions, you wi
 <br></br><br></br><br></br>
 
 ### Placeholders for Future Images (Dashboard Graphics)
-Sometimes you will want to put images on the website that are still on the [dashboard](https://docs.google.com/document/d/1loCxU9D7uR4SbcVHAXHbUdjDwFNakZ0k8CbpVkDwGUE/edit?usp=sharing) and have not been created yet.  In order to do this, you will copy & paste the following code plock into the correct article file:
+Sometimes you will want to put images on the website that are still on the [dashboard](https://docs.google.com/document/d/1loCxU9D7uR4SbcVHAXHbUdjDwFNakZ0k8CbpVkDwGUE/edit?usp=sharing) and have not been created yet.  In order to do this, you will copy & paste the following code block into the correct article file:
 ```mdx
 {/* This image is on Lee's dashboard and is not done yet */}
 {/* <ArticleImage  image={"new_image.svg"}  width={100}  height={100} /> */}
 {/* #### image markdown footnotes. */}
 ```
-Replace `new_image` with the correct image name and then add in the correct footnotes.  The comments wrapper:`{/* */}`will hide all of this information from the reader visiting the UCS website.  When the image is complete and has been uploaded to the image repository, you can go in and uncomment this block and then size the image according to the instructions above.
-
+Replace `new_image` with the correct image name and then add in the correct footnotes.  Everything within these comments wrappers: "`{/* */}`" will be hidden to the reader visiting our UCS website.  This will only be visible in the code repository. When the image is complete and it has been uploaded to the image repository, you can go in and uncomment this block and then size the image according to the instructions above so that it will look something like this:
+```mdx
+<ArticleImage  image={"new_image.svg"}  width={700}  height={400} />
+#### image markdown footnotes.
+```
 <br></br><br></br><br></br>
 
 ## Solutions
