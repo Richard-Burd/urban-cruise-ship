@@ -95,12 +95,14 @@ If we wanted to create a new Article called `lobster.mdx` in the OCEANS Site's *
 ..............etc..............
 ```
 
-Next we would navigate to the OCEAN Site's `hierarchy.json` file and add in the new article so that the components in the `./components/` directory know to render it:
+Next we would navigate to the OCEAN Site's `hierarchy.json` file located here:
+
+`./pages/oceans/hierarchy.json`
+
+...and add in the new article so that the components in the `./components/` directory know to render it:
 
 ```JSON
-./pages/oceans/hierarchy.json
-
-]
+[
 
 // other content
 
@@ -259,6 +261,9 @@ This means that if you want the image to retain its original proportions, you wi
 3. **Vector Sizing** A vector image will always retain its original proportions regardless of the width and height you specify.  The vector image will automatically ***fit*** into whatever space you specify with the `<ArticleImage />` component, and will not stretch in the vertical or horizontal axis. This means that  if you have an SVG file that is 200 millimeters wide by 100 millimeters tall, and you drop it into the code like this: 
 `<ArticleImage image={"new_image.svg"} width={100} height={100} />`
 ...The width of the image will display at 100 pixels on the website and the height will display at 50 pixels. This is because the image only has a 100x100 pixel window within which to appear, and keeping its original proportions necessitates a height of 50 pixels.  The width on the other hand will stretch to its maximum allowable dimension of 100 pixels.  The same rules apply for a portrait image where the height exceeds the width.
+
+<br></br>
+
 ![image of an example showing image sizing](https://raw.githubusercontent.com/Richard-Burd/ucs-images/503f20df5cc47314fd95af47065f2b8efb6052a7/sizing_images.png)
 
 <br></br><br></br><br></br>
