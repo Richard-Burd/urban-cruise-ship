@@ -239,6 +239,41 @@ This path is then passed into the `<ArticleImage />` component located at: `./co
 
 <br></br><br></br><br></br>
 
+### Sizing Images
+**NOTE:** This section applies to images in both articles as well as solutions.
+When placing images into the project, we want to maintain these three standards:
+- Image titles should have the same font size as an article sub-section heading, i.e. the headings that start with the: **##** in markdown language, are are found in the ***article*** files.  Ignore those in ***solution*** files for now as they are too small.
+
+- The titles in different images should thus be similar in size and...
+
+- The UCS logos in different images should roughly be the same size as well.
+
+This makes the images appear standardized across the site.  If the image font is unreadable whenever following these rules, the rules should be broken to make the images readable.  
+
+There has never been a branding or graphic-standard guideline for UCS website graphics, and as a result, each image has a unique width respective to the website's viewport width.  This means that the width & height of each new image must be independently specified.
+
+Images are imported with the `ArticleImage.js` React component which in turn uses the [Next.js `<Image />` component.](https://nextjs.org/docs/api-reference/next/image) and (via [props](https://reactjs.org/docs/components-and-props.html)) passes in the image's width and height as measured in pixels. The `<Image />` tag will then render the image according to one of these two formulas:
+1. **Raster Sizing:**  Any raster image will get stretched to the exact width and height (in pixels) you specify inside the `<ArticleImage />` component, regardless of the image's original size.  In example, the following will render an image at 100 pixels by 100 pixels, regardless of the original image sizing or proportions:
+`<ArticleImage image={"new_image.jpg"} width={100} height={100} />`
+This means that if you want the image to retain its original proportions, you will have to look at the original image's width & height, then do some [proportional math](https://www.calculatorsoup.com/calculators/math/fractionssolvex.php) to figure out what the image width & height should be inside the `<ArticleImage />` component. You could also just *"eyeball"* it.
+3. **Vector Sizing** A vector image will always retain its original proportions regardless of the width and height you specify.  The vector image will automatically ***fit*** into whatever space you specify with the `<ArticleImage />` component, and will not stretch in the vertical or horizontal axis. This means that  if you have an SVG file that is 200 millimeters wide by 100 millimeters tall, and you drop it into the code like this: 
+`<ArticleImage image={"new_image.svg"} width={100} height={100} />`
+...The width of the image will display at 100 pixels on the website and the height will display at 50 pixels. This is because the image only has a 100x100 pixel window within which to appear, and keeping its original proportions necessitates a height of 50 pixels.  The width on the other hand will stretch to its maximum allowable dimension of 100 pixels.  The same rules apply for a portrait image where the height exceeds the width.
+![image of an example showing image sizing](https://raw.githubusercontent.com/Richard-Burd/ucs-images/503f20df5cc47314fd95af47065f2b8efb6052a7/sizing_images.png)
+
+<br></br><br></br><br></br>
+
+### Placeholders for Future Images (Dashboard Graphics)
+Sometimes you will want to put images on the website that are still on the [dashboard](https://docs.google.com/document/d/1loCxU9D7uR4SbcVHAXHbUdjDwFNakZ0k8CbpVkDwGUE/edit?usp=sharing) and have not been created yet.  In order to do this, you will copy & paste the following code plock into the correct article file:
+```mdx
+{/* This image is on Lee's dashboard and is not done yet */}
+{/* <ArticleImage  image={"new_image.svg"}  width={100}  height={100} /> */}
+{/* #### image markdown footnotes. */}
+```
+Replace `new_image` with the correct image name and then add in the correct footnotes.  The comments wrapper:`{/* */}`will hide all of this information from the reader visiting the UCS website.  When the image is complete and has been uploaded to the image repository, you can go in and uncomment this block and then size the image according to the instructions above.
+
+<br></br><br></br><br></br>
+
 ## Solutions
 Solutions for all specialized sites are located in a single `./solutions/` directory:
 
