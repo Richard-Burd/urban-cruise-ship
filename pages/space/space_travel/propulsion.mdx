@@ -9,15 +9,62 @@ import ArticleImage from "/components/ArticleImage.js";
 # Propulsion
 Following are select methods, currently in use and proposed, for propelling spacecraft that are already in space.
 
-<ArticleImage image={"sp_present.jpg"} width={900} height={410} />
+<div className="table-title"> Present Day Space Propulsion </div>
+<div className="table-wrapper">
 
-<ArticleImage image={"sp_development.jpg"} width={900} height={410} />
+| Method | Energy Source | Use Case | Example Project | Exhaust Velocity (if applicable) | Rationale | Challenges |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chemical Rocket | Chemical Reaction | Launch, upper stages | Widely used | Up to 4.5 km/s | Established technology |   |
+| Hydrazine | Chemical Reaction | Satellite Maneuvering | Widely used | 2.3 km/s | Easily used as a monopropellant | Highly toxic |
+| Gravity Assist | Gravitational Potential Energy | Interplanetary Travel | Voyager, many other interplanetary missions | Depends on circumstances. Galileo gained 18.3 km/s from a Venus-Earth-Earth assist. | Save propellant | May require slow, indirect routes |
+| Pulsed Plasma Thruster | Electricity (solar, radioisotope) | Small Satellite Maneuvering | Earth Observing 1 satellite | 5-60 km/s | Simple design | Less efficient than other electric options |
+| Ion Drive | Electricity | Satellites, low-mass robotic probes | Dawn | 20-50 km/s | High impulse | Low thrust. Thrust may increase with next generation Hall thruster. |
 
-<ArticleImage image={"sp_speculative.jpg"} width={900} height={300} />
+</div>
 
-<ArticleImage image={"sp_theoretical.jpg"} width={900} height={410} />
+<br></br>
 
-<ArticleImage image={"sp_sources.jpg"} width={900} height={300} />
+<div className="table-title"> Space Propulsions in Development </div>
+<div className="table-wrapper">
+
+| Method | Energy Source | Use Case | Example Project | Exhaust Velocity (if applicable) | Rationale | Challenges |
+| --- | --- | --- | --- | --- | --- | --- |
+| Nuclear Thermal Rocket | Nuclear Fission | Crewed Mission to Mars | NERVA | 8.3 km/s | Most promising near-term option for large, high-impulse craft | Safety may preclude use as a booster stage |
+| Magnetoplasmadynamic Thruster | Electricity, most likely from fission | Large interplanetary spacecraft | Space Flyer Unit | 15-60 km/s | High impulse and thrust | High power needed, likely necessitating a new reactor design, degradation of cathodes limits lifespan. |
+| Variable Specific Impulse Magnetoplasma Rocket | Fission | Crewed interplanetary missions | Ad Astra Rocket Company | 50 km/s | Balance between low thrust, high impulse and high thrust, low impulse designs | Required power system might not be feasible. |
+| Solar Sail | Solar Power | Interplanetary transport of goods, deorbiting satellites | IKAROS | c (propellantless) | Low cost, propellantless craft, faster travel to outer Solar System | Cannot operate in Earth orbit below 800 km. |
+| Direct Fusion Drive | Nuclear Fusion | Interplanetary travel | Princeton Satellite Systems | 100 km/s | High thrust and exhaust velocity | Much R&D required on the fusion generator |
+
+</div>
+
+<br></br>
+
+<div className="table-title"> Speculative Space Propulsion </div>
+<div className="table-wrapper">
+
+| Method | Energy Source | Use Case | Example Project | Exhaust Velocity (if applicable) | Rationale | Challenges |
+| --- | --- | --- | --- | --- | --- | --- |
+| Beamed Propulsion | Laser | Interstellar Probe | Breakthrough Starshot | c (Propellantless) | Nearest term possibility for interstellar mission | Keeping laser focused on the craft is extremely challenging. |
+| Magnetic Sail | Stellar Wind | Low cost interplanetary travel, interstellar travel | --- | --- | Reduce need for propellant, onboard energy | --- |
+| Nuclear Pulse Propulsion | Nuclear explosions or inertial confinement fusion | Interplanetary, Interstellar Travel | Project Orion, Project Daedalus | 10,000 km/s | Very high exhaust velocity and thrust | Safety, craft is necessarily very large |
+
+</div>
+
+<br></br>
+
+<div className="table-title"> Theoretical Space Propulsion </div>
+<div className="table-wrapper">
+
+| Method | Energy Source | Use Case | Example Project | Exhaust Velocity (if applicable) | Rationale | Challenges |
+| --- | --- | --- | --- | --- | --- | --- |
+| Antimatter-catalyzed nuclear pulse propulsion | Primarily fusion | Interplanetary, interstellar travel | --- | 8,000 km/s | More compact than nuclear pulse rocket | Difficulty in producing and storing antimatter |
+| Antimatter | Matter-Antimatter Reaction | Interstellar Travel | Project Valkyrie | 100,000 km/s | Exhaust velocity and thrust near theoretical maximum | Difficulty in producing and storing antimatter |
+| Black Hole | Hawking Radiation | Interstellar Travel | --- | c | Pure mass to energy conversion | Physics are highly uncertain. |
+| Wormhole, Warp Field, Reactionless Drive, etc. | ??? | ??? | EmDrive | ??? | ??? | Not permitted under established physics. |
+
+</div>
+
+<br></br>
 
 #### Data sources are as follows: chemical rockets (see above), hydrazine [^7], [^13], gravity assist [^5], pulsed plasma thruster [^11], ion drives [^3][^14], nuclear thermal rockets [^6], magnetoplasmadynamic thruster [^3], [^9], VASIMR [^1], [^12], solar sail [^19], Direct Fusion Drive [^18], beamed propulsion [^15], magnetic sails [^2], nuclear pulse propulsion [^17], ACNP [^16], antimatter rocket [^8], and black hole drive [^4], [^10].
 
