@@ -123,10 +123,10 @@ In our example, we will be creating the following Lobster Article at `./pages/oc
 
 ```markdown
 # Lobsters
-Lobsters are cool
+lobsters are cool
 
 ## A Subtitle
-Subtitles are cool
+subtitles are cool
 ```
 <br></br>
 
@@ -142,13 +142,13 @@ export const site = "oceans";
 export const focusAreaUrl = "ocean_industry";
 
 # Lobsters
-Lobsters are cool
+lobsters are cool
 
 ## A Subtitle
-Subtitles are cool
+subtitles are cool
 
 ## Final Subtitle
-Bottom most text block within the article.
+bottom most text block within the article.
 
 export default ({ children }) => 
   <Article 
@@ -205,17 +205,17 @@ export const focusAreaUrl = "ocean_industry";
 import ArticleImage from "/components/ArticleImage.js";
 
 # Lobsters
-Lobsters are cool
+lobsters are cool
 
 ## A Subtitle
-Subtitles are cool
+subtitles are cool
 
 // This is an image placed in the middle of the article
 <ArticleImage image={"article_image_name.svg"} width={750} height={400} />
 #### some small markdown text that goes under the image
 
 ## Final Subtitle
-Bottom most text block within the article.
+bottom most text block within the article.
 
 export default ({ children }) => 
   <Article 
@@ -328,19 +328,19 @@ export const solution = "Ban Lobster Hunts";
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Cost Calculation
-This causes mass damage to the lobsters!
+causes mass damage to the lobsters!
 
 <ArticleImage image={"solution_image_name.svg"} width={750} height={400} />
 #### some small markdown text that goes under the image
 
 ## Benefit Calculations
-The lobsters will be happier.
+lobsters will be happier.
 
 ## Implementation
-Eat more fish, insects, and tofu!
+eat more fish, insects, and tofu!
 
 ## Credits
-Thank the lobster hunters for cooperating.
+thank the lobster hunters for cooperating.
 
 
 export default ({ children }) => 
@@ -367,23 +367,20 @@ import ArticleImage from "/components/ArticleImage.js";
 // import the solution MDX file and give it an UpperCamelCase name
 import LobsterSolution from "/solutions/lobster_solution.mdx"
 
-## Description
-Lobster hunting is a bad idea.
-
 <ArticleImage image={"article_image_name.svg"} width={750} height={400} />
 #### some small markdown text that goes under the image
 
 # Lobsters
-Lobsters are cool
+lobsters are cool
 
 ## A Subtitle
-Subtitles are cool
+subtitles are cool
 
 // place the solution where you want it to appear in the article
 <LobsterSolution />
 
 ## Final Subtitle
-Bottom most text block within the article.
+bottom most text block within the article.
 
 export default ({ children }) => 
   <Article 
