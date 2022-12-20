@@ -147,6 +147,9 @@ Lobsters are cool
 ## A Subtitle
 Subtitles are cool
 
+## Final Subtitle
+Bottom most text block within the article.
+
 export default ({ children }) => 
   <Article 
     focusAreaUrl={focusAreaUrl} 
@@ -198,16 +201,21 @@ import hierarchy from "../hierarchy.json";
 export const site = "oceans";
 export const focusAreaUrl = "ocean_industry";
 
+// This statement imports the <ArticleImage /> image component
 import ArticleImage from "/components/ArticleImage.js";
 
 # Lobsters
 Lobsters are cool
 
-<ArticleImage image={"image_name.svg"} width={750} height={400} />
-#### some small markdown text that goes under the image
-
 ## A Subtitle
 Subtitles are cool
+
+// This is an image placed in the middle of the article
+<ArticleImage image={"article_image_name.svg"} width={750} height={400} />
+#### some small markdown text that goes under the image
+
+## Final Subtitle
+Bottom most text block within the article.
 
 export default ({ children }) => 
   <Article 
@@ -317,11 +325,13 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Lobsters are Dying";
 export const solution = "Ban Lobster Hunts";
 
-## Description
-Lobster hunting is a bad idea.
+import ArticleImage from "/components/ArticleImage.js";
 
 ## Cost Calculation
-This causes millions of dollars in damage to the lobsters!
+This causes mass damage to the lobsters!
+
+<ArticleImage image={"solution_image_name.svg"} width={750} height={400} />
+#### some small markdown text that goes under the image
 
 ## Benefit Calculations
 The lobsters will be happier.
@@ -330,7 +340,7 @@ The lobsters will be happier.
 Eat more fish, insects, and tofu!
 
 ## Credits
-Thank the lobster hunters for making this possible.
+Thank the lobster hunters for cooperating.
 
 
 export default ({ children }) => 
@@ -360,23 +370,20 @@ import LobsterSolution from "/solutions/lobster_solution.mdx"
 ## Description
 Lobster hunting is a bad idea.
 
-<ArticleImage image={"image_name.svg"} width={750} height={400} />
+<ArticleImage image={"article_image_name.svg"} width={750} height={400} />
 #### some small markdown text that goes under the image
 
-## Cost Calculation
-This causes millions of dollars in damage to the lobsters!
+# Lobsters
+Lobsters are cool
 
-## Benefit Calculations
-The lobsters will be happier.
-
-## Implementation
-Eat more fish, insects, and tofu!
-
-## Credits
-Thank the lobster hunters for making this possible.
+## A Subtitle
+Subtitles are cool
 
 // place the solution where you want it to appear in the article
 <LobsterSolution />
+
+## Final Subtitle
+Bottom most text block within the article.
 
 export default ({ children }) => 
   <Article 
