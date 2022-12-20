@@ -133,7 +133,7 @@ Subtitles are cool
 ### Article Structure
 Articles are written in MDX Markdown and then wrapped in an `<Article />` component.  The `<Article />` component is located in the `/components/Article.js` directory and is imported into the article `.mdx` file.  Articles are also made aware of the hierarchy so they can display the correct focus area navbar and article navbar between the actual article and the top two navbars of the whole UCS Website.  The final product looks like this:
 
-```markdown
+```jsx
 // This is an example of an article wrapped in an <Article /> component
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
@@ -162,7 +162,7 @@ export default ({ children }) =>
 
 The `./components/Article.js` file wraps the article with this code:
 
-```markdown
+```jsx
 import Article from '/components/Article.js'
 
       // other elements go here
@@ -179,21 +179,21 @@ export default ({ children }) =>
 
 In the example above, the markdown text is saved as the `{children}` object and injected into the `<Article />` component where it is styled.  The `<Article />` component passes `focusAreaUrl`, `hierarchy`, and `site` data through the component tree so the application renders the correct focus area navbar and article navbar. The article's specialized site (OCEANS) and focus area (Industry) are specified here:
 
-```markdown
+```jsx
 export const site = "oceans";
 export const focusAreaUrl = "ocean_industry";
 ```
 
 The lines above make the article aware of its place within the UCS Website hierarchy.  This single line below lets the article know how the hierarchy is constructed:
 
-```markdown
+```jsx
 import hierarchy from "../hierarchy.json";
 ```
 
 ### Adding Images
 Images are wrapped in the <ArticleImage /> component.  Here is how we would import an image into the middle of our Lobster article:
 
-```markdown
+```jsx
 // This is an example of an article wrapped in an <Article /> component
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
@@ -232,7 +232,7 @@ NOTE: The `<h4>` Markdown symbol: `####` is used to create a small subtitle unde
 Also, within the current configuration of the UCS Website, the maximum ***width*** of an image is 1000 pixels which would look like this:
 
 
-```markdown
+```jsx
 <ArticleImage image={"image_name.svg"} width={1000} height={400} />
 ```
 
@@ -318,7 +318,7 @@ Eat more fish.
 
 Solutions are wrapped in a `<Solution />` component located in the `/components/Solution.js` directory.  Solutions must define the ***Problem:*** and ***Solution:*** values for our `<Solution />` component to display. Our Solution will look like this:
 
-```markdown
+```jsx
 // This is an example of a solution wrapped in a <SolutionDropdown /> component
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
@@ -354,7 +354,7 @@ export default ({ children }) =>
 
 Images are added to solutions in the same way as they are added to articles.  Here is how we would import our lobster solution into our Lobster article:
 
-```markdown
+```jsx
 // This is an example of an article wrapped in an <Article /> component
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
