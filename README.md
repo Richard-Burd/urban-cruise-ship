@@ -134,6 +134,7 @@ Subtitles are cool
 Articles are written in MDX Markdown and then wrapped in an `<Article />` component.  The `<Article />` component is located in the `/components/Article.js` directory and is imported into the article `.mdx` file.  Articles are also made aware of the hierarchy so they can display the correct focus area navbar and article navbar between the actual article and the top two navbars of the whole UCS Website.  The final product looks like this:
 
 ```jsx
+// This is an example of an article wrapped in an <Article /> component
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
 
@@ -190,6 +191,7 @@ import hierarchy from "../hierarchy.json";
 Images are wrapped in the <ArticleImage /> component.  Here is how we would import an image into the middle of our Lobster article:
 
 ```jsx
+// This is an example of an article wrapped in an <Article /> component
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
 
@@ -309,13 +311,27 @@ Eat more fish.
 Solutions are wrapped in a `<Solution />` component located in the `/components/Solution.js` directory.  Solutions must define the ***Problem:*** and ***Solution:*** values for our `<Solution />` component to display. Our Solution will look like this:
 
 ```jsx
+// This is an example of a solution wrapped in a <SolutionDropdown /> component
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Lobsters are Dying";
 export const solution = "Ban Lobster Hunts";
 
+## Description
 Lobster hunting is a bad idea.
-Eat more fish.
+
+## Cost Calculation
+This causes millions of dollars in damage to the lobsters!
+
+## Benefit Calculations
+The lobsters will be happier.
+
+## Implementation
+Eat more fish, insects, and tofu!
+
+## Credits
+Thank the lobster hunters for making this possible.
+
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -329,6 +345,7 @@ export default ({ children }) =>
 Images are added to solutions in the same way as they are added to articles.  Here is how we would import our lobster solution into our Lobster article:
 
 ```jsx
+// This is an example of an article wrapped in an <Article /> component
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
 
@@ -340,13 +357,23 @@ import ArticleImage from "/components/ArticleImage.js";
 // import the solution MDX file and give it an UpperCamelCase name
 import LobsterSolution from "/solutions/lobster_solution.mdx"
 
-# Lobsters
-Lobsters are cool
+## Description
+Lobster hunting is a bad idea.
 
 <ArticleImage image={"image_name.svg"} width={750} height={400} />
+#### some small markdown text that goes under the image
 
-## A Subtitle
-Subtitles are cool
+## Cost Calculation
+This causes millions of dollars in damage to the lobsters!
+
+## Benefit Calculations
+The lobsters will be happier.
+
+## Implementation
+Eat more fish, insects, and tofu!
+
+## Credits
+Thank the lobster hunters for making this possible.
 
 // place the solution where you want it to appear in the article
 <LobsterSolution />
@@ -446,9 +473,3 @@ The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Verc
 4. run: `npm run build` to build out a production version of the site
 
 ---
-
-### Schematic Overview
-
-The visualization below is available [here](https://drive.google.com/file/d/1buYF1jcbG2O6Q1f8SU8huDZSPb-u3QAg/view?usp=sharing)
-
-![an image of the package.json file](https://imgur.com/XmKqMk7.png)
