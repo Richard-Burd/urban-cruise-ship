@@ -327,21 +327,26 @@ export const solution = "Ban Lobster Hunts";
 
 import ArticleImage from "/components/ArticleImage.js";
 
+## Description
+lobsters are being hunted to extinction.
+
 ## Cost Calculation
 causes mass damage to the lobsters!
+
+## Background
+humans discovered how delicious lobsters are!
 
 <ArticleImage image={"solution_image_name.svg"} width={750} height={400} />
 #### some small markdown text that goes under the image
 
-## Benefit Calculations
-lobsters will be happier.
+## Estimates
+lobster population down by twenty-three percent.
+
+## Calculations
+we think we could reduce that to ten percent.
 
 ## Implementation
-eat more fish, insects, and tofu!
-
-## Credits
 thank the lobster hunters for cooperating.
-
 
 export default ({ children }) => 
   <SolutionDropdown 
