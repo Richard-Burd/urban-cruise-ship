@@ -5,6 +5,10 @@ import Image from "next/image";
 // ...but this app uses TailwindCSS instead.
 import HomepageSpecializedSiteButton from "../components/HomepageSpecializedSiteButton";
 
+// This tracks how many visitors come to the webpage
+// https://vercel.com/docs/concepts/analytics/audiences/quickstart
+import { Analytics } from '@vercel/analytics/react';
+
 export default function Home() {
   return (
     <>
@@ -58,6 +62,7 @@ export default function Home() {
         <HomepageSpecializedSiteButton site="costs" />
         <HomepageSpecializedSiteButton site="history" />
       </div>
+      <Analytics />
     </>
   );
 }

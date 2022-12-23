@@ -13,6 +13,7 @@
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
     "@next/mdx": "^12.3.1",
+    "@vercel/analytics": "^0.1.6",
     "framer-motion": "^7.3.6",
     "next": "12.3.0",
     "react": "18.2.0",
