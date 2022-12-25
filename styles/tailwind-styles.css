@@ -183,9 +183,6 @@ td a{
 .energy-site-focus-area-button-border-n-font-color {
   color: #19120c;
 }
-.energy-focus-area-title-color {
-  background-color: rgba(242, 187, 86, 0.82);
-}
 
 /* Matter Site */
 .matter-background-gradient {
@@ -209,9 +206,6 @@ td a{
 .matter-site-focus-area-button-border-n-font-color {
   color: #090b08;
 }
-.matter-focus-area-title-color {
-  background-color: rgba(173, 235, 72, 0.807);
-}
 
 /* Habitat Site */
 .habitat-background-gradient {
@@ -234,9 +228,6 @@ td a{
 }
 .habitat-site-focus-area-button-border-n-font-color {
   color: #0c0d0d;
-}
-.habitat-focus-area-title-color {
-  background-color: rgba(142, 232, 207, 0.834);
 }
 
 /* Cities Site */
@@ -262,9 +253,6 @@ td a{
 .cities-site-focus-area-button-border-n-font-color {
   color: #110e0e;
 }
-.cities-focus-area-title-color {
-  background-color: rgba(255, 180, 180, 0.82);
-}
 
 /* Waste Site */
 .waste-background-gradient {
@@ -287,9 +275,6 @@ td a{
 }
 .waste-site-focus-area-button-border-n-font-color {
   color: #191613;
-}
-.waste-focus-area-title-color {
-  background-color: rgba(193, 182, 152, 0.82);
 }
 
 /* Oceans Site */
@@ -314,9 +299,6 @@ td a{
 .oceans-site-focus-area-button-border-n-font-color {
   color: #dfe4f1;
 }
-.oceans-focus-area-title-color {
-  background-color: rgba(100, 127, 236, 0.827);
-}
 
 /* Space Site */
 .space-background-gradient {
@@ -339,9 +321,6 @@ td a{
 }
 .space-site-focus-area-button-border-n-font-color {
   color: #e5e5e5;
-}
-.space-focus-area-title-color {
-  background-color: rgba(51, 51, 51, 0.793);
 }
 
 /* Costs Site */
@@ -366,9 +345,6 @@ td a{
 .costs-site-focus-area-button-border-n-font-color {
   color: #252228;
 }
-.costs-focus-area-title-color {
-  background-color: rgba(185, 152, 214, 0.834);
-}
 
 /* History Site */
 .history-background-gradient {
@@ -391,9 +367,6 @@ td a{
 }
 .history-site-focus-area-button-border-n-font-color {
   color: #222222;
-}
-.history-focus-area-title-color {
-  background-color: rgba(190, 208, 216, 0.793);
 }
 
 /* This is the css setup by Chris Bloom */

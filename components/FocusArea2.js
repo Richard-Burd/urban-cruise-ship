@@ -40,7 +40,7 @@ const FocusArea2 = (props) => {
         <Logos site={props.site} />
         <div className="scale-50 lg:scale-100 -translate-x-16 lg:-translate-x-0">
           <span
-            className={`border-current ${props.site}-focus-area-title-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 lg:ml-10 standard-font-1 text-5xl whitespace-nowrap`}
+            className={`border-current ${props.site}-site-button-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 lg:ml-10 standard-font-1 text-5xl whitespace-nowrap`}
           >
             {props.focusAreaName}
           </span>
