@@ -397,15 +397,15 @@ export default ({ children }) =>
   </Article>
 ```
 
-## Footnotes (References)
-The footnotes inside solutions should be different than those inside the articles so the two don't accidentally cross-reference each other. The easiest way to do this is to use quotation marks in the solutions so each footnote is a string like so:
+## References (Footnotes)
+The references inside solutions should be different than those inside the articles so the two don't accidentally cross-reference each other. The easiest way to do this is to use quotation marks in the solutions so each reference is a string like so:
 
 ```markdown
-Article Footnote looks like this: [^1]
-Solution Footnote looks like this: [^"1"]
+Article reference looks like this: [^1]
+Solution reference looks like this: [^"1"]
 ```
 
-See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, footnotes are imported from the legacy site and retain the same numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render footnotes.  This will re-number the footnotes (when rendered to the browser) so that the first footnote to be mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the footnotes in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically.
+See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, reference are imported from the legacy site and retain the same numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render references.  This will re-number the references (when rendered to the browser) so that the first footnote to be mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the references in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically. NOTE: by default, [remarkGfm](https://github.com/remarkjs/remark-gfm) [and other modules we use in the project] render references as *Footnotes* but we change this title to say 'References' instead.
 
 ------
 
@@ -456,9 +456,79 @@ Note that the table title goes above the wrapper, not inside it.  The opening (`
 
 ------
 
+## Special MDX Markdown Features
+
+This project uses several NodeJS libraries and dependencies to generate [MDX Markdown](https://mdxjs.com/) for article and solution files.  These enable the wrapping [discussed above](#article-structure) as well as using [references](#references-footnotes).
+
+### Entry Point Into The Project
+The [next.config.mjs](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/next.config.mjs) file is responsible for generating MDX Markdown and its commensurate features.  This is where all relevant NodeJS libraries (used to generate MDX Markdown) are introduced.
+
+### Changing 'Footnotes' to say 'References'
+Citations at the bottom of an MDX Markdown page are referred to by default as `'Footnotes'` in the myriad of NodeJS libraries we use (as dependencies) for the [@mdx-js/mdx](https://github.com/mdx-js/mdx) library.  Several of our NodeJS libraries (and their dependencies) are capable of generating footnotes depending on a given project structure. Since this is a [Next.js](https://nextjs.org/) project, we are using the following file to generate our footnotes:
+```
+node_modules/mdast-util-to-hast/lib/index.js
+```
+It's dependency chain looks like this:
+```javascript
+@mdx-js/mdx
+└── remark-rehype
+    └── mdast-util-to-hast
+```
+The `mdast-util-to-hast` dependency contains the line of code that must be altered:
+```
+h.footnoteLabel = settings.footnoteLabel || 'Footnotes'
+```
+
+
+
+In order to alter our `mdast-util-to-hast` dependency, we must access it via the [remark-rehype API](https://github.com/remarkjs/remark-rehype#unifieduseremarkrehype-destination-options); and in order to access that API within our project, we must utilize the [`options.rehypePlugins`](https://mdxjs.com/docs/extending-mdx/#using-plugins)  inside the `createMDX()` function located in the [next.config.mjs](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/next.config.mjs) file.  This is achieved with the following line of code in that file:
+```
+[remarkRehype, {footnoteLabel: 'References'}]
+```
+
+### Autolink Headings
+If you hover your mouse on the ***Autolink  Headings*** title above, a small chain icon will appear on the right of it, and if you click on *that* icon, you will automatically get a link to this subsection of this README file!  These are called ***Autolinks*** (or internal links) and they are a nifty way to point someone to a specific subsection in a Markdown page. 
+
+
+ This UCS Website project uses Autolinks for article subsections so you can generate links to specific subsections within those articles.  In order to achieve this, we utilize two libraries: [`rehype-autolink-headings`](https://github.com/rehypejs/rehype-autolink-headings) and [`rehype-slug`](https://github.com/rehypejs/rehype-slug).  The latter is passed into [`options.rehypePlugins`](https://mdxjs.com/docs/extending-mdx/#using-plugins)  inside the `createMDX()` function located in the [next.config.mjs](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/next.config.mjs) file and takes in no additional options.  We then pass the [former's API](https://github.com/rehypejs/rehype-autolink-headings#api) into the same place right below with options for `behavior` (which we must define) and `ariaHidden`:
+ ```javascript
+const behaviors = [...'append'...]
+
+const withMDX = createMDX({
+  ...
+  options: {
+    ...
+      ...
+      [rehypeSlug],
+      [rehypeAutolinkHeadings, 
+        {behaviors: 'append', properties: {ariaHidden: false} }]
+    ],
+  },
+});
+
+export  default withMDX(nextConfig);
+```
+If you navigate to the *[ENERGY / Transportation / Energy and Emissions in Transportation](https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg)* article, you will see a subsection at the bottom entitled: *Transportation Energy Efficiency.*  If you inspect this title with something like [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/open/) you will see that our code generates the following HTML:
+
+
+```HTML
+<h2 id="transportation-energy-efficiency">
+  <a href="#transportation-energy-efficiency">
+    <span class="icon icon-link"></span>
+  </a>Transportation Energy Efficiency
+</h2>
+```
+The Title is slugged to say: `transportation-energy-efficiency` in both the `<id>` and`<href>` tags which enable this link below to take you directly to this subsection:
+[
+https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation-energy-efficiency
+](https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation-energy-efficiency)
+
+
+------
+
 <br></br> <br></br> <br></br>
 
-# Project Architecture
+## Project Architecture
 This static site uses the following:
 
 1. **NPM/Node.js** - for package management

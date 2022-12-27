@@ -31,7 +31,7 @@ const nextConfig = {
 
 // These are all of the possible behaviors for inserting a link icon next to each heading
 // We may want to implement this in the future (or not)
-const behaviors = ['prepend', 'append', 'wrap', 'before', 'after']
+const behaviors = ['prepend', 'append', 'wrap', 'before', 'after'] // only 'append' is called in the code below
 
 // How to insert a link icon next to each heading in the future:
 // https://daily-dev-tips.com/posts/modifying-rehype-autolink-headings/#modify-the-rehype-autolink-headings-plugin
