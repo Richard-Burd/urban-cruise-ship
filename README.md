@@ -453,6 +453,8 @@ Note that the table title goes above the wrapper, not inside it.  The opening (`
 
 ------
 
+# Misc. Notes on the Project
+
 ## Special MDX Markdown Features
 
 This project uses several NodeJS libraries and dependencies to generate [MDX Markdown](https://mdxjs.com/) for article and solution files.  These enable the wrapping [discussed above](#article-structure) as well as using [references](#references-footnotes).
@@ -512,7 +514,8 @@ If you navigate to the *[ENERGY / Transportation / Energy and Emissions in Trans
 <h2 id="transportation-energy-efficiency">
   <a href="#transportation-energy-efficiency">
     <span class="icon icon-link"></span>
-  </a>Transportation Energy Efficiency
+  </a>
+  Transportation Energy Efficiency
 </h2>
 ```
 The Title is slugged to say: `transportation-energy-efficiency` in both the `<id>` and`<href>` tags which enable this link below to take you directly to this subsection:
