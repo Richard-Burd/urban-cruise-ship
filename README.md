@@ -453,16 +453,14 @@ Note that the table title goes above the wrapper, not inside it.  The opening (`
 
 ------
 
-## Misc. Notes on the Project
-
-### Special MDX Markdown Features
+## Special MDX Markdown Features
 
 This project uses several NodeJS libraries and dependencies to generate [MDX Markdown](https://mdxjs.com/) for article and solution files.  These enable the wrapping [discussed above](#article-structure) as well as using [references](#references-footnotes).
 
-#### Entry Point Into The Project
+### Entry Point Into The Project
 The [next.config.mjs](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/next.config.mjs) file is responsible for generating MDX Markdown and its commensurate features.  This is where all relevant NodeJS libraries (used to generate MDX Markdown) are introduced.
 
-#### Changing 'Footnotes' to say 'References'
+### Changing 'Footnotes' to say 'References'
 Citations at the bottom of an MDX Markdown page are referred to by default as `'Footnotes'` in the myriad of NodeJS libraries we use (as dependencies) for the [@mdx-js/mdx](https://github.com/mdx-js/mdx) library.  Several of our NodeJS libraries (and their dependencies) are capable of generating footnotes depending on a given project structure. Since this is a [Next.js](https://nextjs.org/) project, we are using the following file to generate our footnotes:
 ```
 node_modules/mdast-util-to-hast/lib/index.js
@@ -485,7 +483,7 @@ In order to alter our `mdast-util-to-hast` dependency, we must access it via the
 [remarkRehype, {footnoteLabel: 'References'}]
 ```
 
-#### Autolink Headings
+### Autolink Headings
 If you hover your mouse on the ***Autolink  Headings*** title above, a small chain icon will appear on the right of it, and if you click on *that* icon, you will automatically get a link to this subsection of this README file!  These are called ***Autolinks*** (or internal links) and they are a nifty way to point someone to a specific subsection in a Markdown page. 
 
 
