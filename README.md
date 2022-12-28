@@ -528,27 +528,26 @@ https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation
 
 <br></br> <br></br> <br></br>
 
-## Project Architecture
+# Project Build
 This static site uses the following:
 
 1. **NPM/Node.js** - for package management
 2. **Next.js** - a production grade React application for static site generation
 3. **Tailwind-CSS** - CSS styling library
-4. **Framer Motion** - a production-ready animation library
-5. **Contentful** - a headless content management system
-6. **Algolia** - a site-search & discovery engine powered by AI
+4. **MDX** - a Markdown-based syntax for writing JSX components
+5. **Algolia** - a site-search & discovery engine powered by AI (Planned Future Addition)
 
-### Availability
+## Availability
 
 The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Vercel.
 
 ---
 
-### Installation instructions (Bash commands):
+## Installation Instructions (Bash Commands):
 
 1. run: `npm install` to install the node module dependencies
 2. run: `npm run dev` to run the development server
-3. run: `npm run build-css` to build out any necessary TailwindCSS classes (if you add any)
+3. run: `npm run build-css` to build out any necessary TailwindCSS classes (if you add or change any)
 4. run: `npm run build` to build out a production version of the site
 
 ---
