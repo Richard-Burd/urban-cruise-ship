@@ -5,24 +5,28 @@ export const solution = "Building Envelope Modeling Software Standardization";
 
 import ArticleImage from "/components/ArticleImage.js";
 
+## Description
+Architects need an 'analyze-as-you-design' approach to catch problems early in the design process [^"14"], and government oversight bodies have a need to accurately assess building design performance before they issue building permits.
+
+## Background
 Thermal bridges make it difficult to assess the true energy efficiency of a proposed building design [^"1"], [^"8"] and stakeholders have identified this problem in proposed building code amendments [^"4"]. Today’s architects have software designed to analyse building envelopes, but different state agencies and design firms use different software applications, and they don't communicate well. This often causes buildings to not be compliant with state energy efficiency standards, which is discovered late in a design process, incentivizing architects to fudge data to obtain a building permit and avoid cost overruns. Additionally, algorithms in different program can interpret design features differently, meaning that there is no single source of truth, and bad designs can slip through the building permit approval process [^"3"].
 
-Architects need an 'analyze-as-you-design' approach to catch problems early in the design process [^"14"], and government oversight bodies have a need to accurately assess building design performance before they issue building permits. These conditions can be achieved as follows.
+## Estimates
+<ArticleImage image={"be_modeling.svg"} width={750} height={500} />
 
+## Implementation
 **Step 1:** The U.S. Department of Energy should develop an application programming interface (API) that will take data from their EnergyPlus [^"10"] software application and transfer it to the DOE’s REScheck and COMcheck applications [^"11"].
 
 **Step 2:** The U.S. Department of Energy should mandate that building permit-issuing authorities in all 50 U.S. states allow for the use of REScheck and COMcheck to submit evidence of compliance with energy efficiency regulations. Individual states can still have their own standards, but architects must have the option to evaluate their designs against those standards using REScheck and COMcheck. States can still allow architects to use other programs in lieu of REScheck and COMcheck, but states must give the option to use REScheck and COMcheck when evaluating a design for purposes of issuing a building permit.
 
 **Step 3:** Once the DOE implements step 1 and mandates step 2, companies like Trimble and GraphiSoft (see image above) will be incentivised to make their BIM programs compatible with the DOE’s Energy Plus, which to date has not happened due to technical hurdles [^"9"]. This translates to a network-effect in which the industry can turn to for a single point of truth.
 
-<ArticleImage image={"be_modeling.svg"} width={800} height={220} />
-#### We estimate a development cost of $500,000 to $3 million for building energy modeling software based on the DOE's spending on Spawn [^"15"]. Benefits are estimated as 1% of the total potential energy savings in building envelope energy, as given by the International Energy Agency [^"6"], assuming that all energy is in the form of natural gas, and rounded down to $1 billion.
-
-Following is a schematic of how such software might work.
-
 <ArticleImage image={"bim.png"} width={800} height={550} />
 
-If all the energy saved is natural gas, then the annual greenhouse gas savings are about 449 millon tons of CO₂.
+<br></br>
+
+## Calculations
+We estimate a development cost of $500,000 to $3 million for building energy modeling software based on the DOE's spending on Spawn [^"15"]. Benefits are estimated as 1% of the total potential energy savings in building envelope energy, as given by the International Energy Agency [^"6"], assuming that all energy is in the form of natural gas, and rounded down to $1 billion. If all the energy saved is natural gas, then the annual greenhouse gas savings are about 449 millon tons of CO₂.
 
 [^"1"]: BC Housing. ["Video 1 – Introduction to the Building Envelope Thermal Bridging Guide"](https://www.youtube.com/watch?v=IM_dphE-WDY). October 2018.
 
