@@ -3,7 +3,7 @@ import SpecializedSiteNavbarButton from "./SpecializedSiteNavbarButton";
 
 const SpecializedSiteNavbar = () => {
   return (
-    <div className="border-b-2 border-gray-300 grid grid-cols-3 gap-4 content-start lg:grid:ignore lg:flex lg:justify-between px-4 pt-5 pb-5">
+    <div className="border-b-2 border-gray-300 grid grid-cols-3 content-start lg:grid:ignore lg:flex lg:justify-between py-3 lg:py-0">
       <SpecializedSiteNavbarButton site={"energy"} />
       <SpecializedSiteNavbarButton site={"matter"} />
       <SpecializedSiteNavbarButton site={"habitat"} />

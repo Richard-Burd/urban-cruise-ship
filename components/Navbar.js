@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
           <style jsx>{`
             .top-navbar-shadow {
-              box-shadow: 8px 8px 4px rgb(150, 150, 150);
+              box-shadow: 8px 8px 4px rgb(0, 0, 0, 0.45);
             }
           `}</style>
         </div>

@@ -16,7 +16,9 @@ const Layout = ({ children }) => {
         <div className="relative pr-2.5 z-10">
           <MobileNavbar />
         </div>
-        <Navbar />
+        <div className="relative z-10">
+          <Navbar />
+        </div>
         <div className="relative z-0">
         <SpecializedSiteNavbar />
         </div>

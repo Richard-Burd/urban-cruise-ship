@@ -51,7 +51,7 @@ const SpecializedSiteNavbarButton = (props) => {
               }
             }
           > */}
-          <div className={router.pathname.startsWith(`/${props.site}`) ? `this-is-where-the-background-color-will-go` : ``}>
+          <div className={router.pathname.startsWith(`/${props.site}`) ? `bg-neutral-700 px-2 py-2 lg:py-5` : `px-2 py-2 lg:py-5`}>
             <button
               className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color lg:px-3 lg:py-0.5 specialized-site-navbar-shadow standard-font-1 text-lg tracking-wide transition hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 uppercase w-full`}
             >
@@ -63,7 +63,7 @@ const SpecializedSiteNavbarButton = (props) => {
       </Link>
       <style jsx>{`
         .specialized-site-navbar-shadow {
-          box-shadow: 5px 6px 4px rgb(140, 140, 140);
+          box-shadow: 5px 6px 4px rgb(0, 0, 0, 0.45);
         }
         .elliptical-geometry {
           border-bottom-left-radius: 26px 10px;
