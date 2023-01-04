@@ -1,6 +1,9 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion"; // currently not in use
+import { useRouter } from "next/router";
 
 const FocusAreaNavbarButton = (props) => {
+  const router = useRouter();
+
   return (
     <>
       {/* <motion.div
@@ -18,11 +21,13 @@ const FocusAreaNavbarButton = (props) => {
         }}
         transition={{ duration: 0.5, type: "spring" }}
       > */}
+      <div className={router.pathname.startsWith(`/${props.site}/${props.focusAreaURL}`) ? `this-is-where-the-background-color-will-go` : ``}>
         <button
           className={`focus-area-navbar-border-width border-current ${props.site}-site-button-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-navbar-elliptical-geometry focus-area-navbar-shadow px-3.5 mx-2.5 my-2 standard-font-1 hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 tracking-wide`}
         >
           {props.focusAreaName}
         </button>
+      </div>
       {/* </motion.div> */}
       <style jsx>{`
         .focus-area-navbar-border-width {

@@ -1,11 +1,11 @@
 import Link from "next/link";
-// import { useRouter } from "next/router";              // currently not in use
+import { useRouter } from "next/router";
 // import { useState } from "react";                     // currently not in use
 import { motion /* useScroll */ } from "framer-motion"; // useScroll() currently not in use
 
 const SpecializedSiteNavbarButton = (props) => {
   // We are using the router to see what the current page is
-  // const router = useRouter();
+  const router = useRouter();
 
   // if the current page matches the site passed down in the props,
   // we get "true"
@@ -51,11 +51,13 @@ const SpecializedSiteNavbarButton = (props) => {
               }
             }
           > */}
+          <div className={router.pathname.startsWith(`/${props.site}`) ? `this-is-where-the-background-color-will-go` : ``}>
             <button
               className={`elliptical-geometry ${props.site}-site-button-color ${props.site}-site-button-font-color lg:px-3 lg:py-0.5 specialized-site-navbar-shadow standard-font-1 text-lg tracking-wide transition hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 uppercase w-full`}
             >
               {props.site}
             </button>
+          </div>
           {/* </motion.div> */}
         </a>
       </Link>

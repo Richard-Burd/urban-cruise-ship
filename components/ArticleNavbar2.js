@@ -20,7 +20,9 @@ const ArticleNavbar2 = (props) => {
             <a key={article.article_url} rel="noreferrer">
               <ArticleNavbarButton
                 site={props.site}
+                focusAreaUrl={props.focusAreaUrl}
                 articleTitle={article.article_title}
+                articleUrl={article.article_url}
               />
             </a>
           </Link>

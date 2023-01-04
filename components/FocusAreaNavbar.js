@@ -15,6 +15,7 @@ const FocusAreasNavbar = (props) => {
               <FocusAreaNavbarButton
                 site={props.site}
                 focusAreaName={focusArea.focus_area_name}
+                focusAreaURL={focusArea.focus_area_url}
               />
             </a>
           </Link>
