@@ -79,16 +79,18 @@ const ArticleNavbarButton = (props) => {
       {/* </motion.div> */}
       <style jsx>{`
         .article-navbar-height {
-          height: 55px;
+          height: 47px;
+          line-height: .95rem;
+          padding-bottom: 6px
         }
         .article-navbar-shadow {
           box-shadow: 5px 6px 4px rgb(0, 0, 0, 0.45);
         }
         .article-navbar-elliptical-geometry {
-          border-bottom-left-radius: 33px 14px;
-          border-bottom-right-radius: 33px 14px;
-          border-top-left-radius: 33px 14px;
-          border-top-right-radius: 33px 14px;
+          border-bottom-left-radius: 30px 10px;
+          border-bottom-right-radius: 30px 10px;
+          border-top-left-radius: 30px 10px;
+          border-top-right-radius: 30px 10px;
         }
       `}</style>
     </>
