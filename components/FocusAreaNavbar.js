@@ -5,7 +5,7 @@ const FocusAreasNavbar = (props) => {
   const focusAreas = props.focusAreas;
   return (
     <>
-      <nav className="bg-white border-b-2 border-gray-300 flex flex-wrap pb-3 pt-1.5 px-2.5">
+      <nav className="bg-white border-b-2 border-gray-300 flex flex-wrap px-2.5">
         {focusAreas.map((focusArea) => (
           <Link
             href={`/${props.site}/${focusArea.focus_area_url}`}

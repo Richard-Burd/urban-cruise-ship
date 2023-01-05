@@ -21,9 +21,25 @@ const FocusAreaNavbarButton = (props) => {
         }}
         transition={{ duration: 0.5, type: "spring" }}
       > */}
-      <div className={router.pathname.startsWith(`/${props.site}/${props.focusAreaURL}`) ? `this-is-where-the-background-color-will-go` : ``}>
+      <div className={router.pathname.startsWith(`/${props.site}/${props.focusAreaURL}`) ? `bg-neutral-700 py-1` : `py-1`}>
         <button
-          className={`focus-area-navbar-border-width border-current ${props.site}-site-button-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-navbar-elliptical-geometry focus-area-navbar-shadow px-3.5 mx-2.5 my-2 standard-font-1 hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100 tracking-wide`}
+          className={`
+            focus-area-navbar-border-width 
+            border-current 
+            ${props.site}-site-button-color 
+            ${props.site}-site-focus-area-button-border-n-font-color 
+            focus-area-navbar-elliptical-geometry 
+            focus-area-navbar-shadow 
+            px-3.5 
+            mx-2.5 
+            my-2 
+            standard-font-1 
+            hover:-translate-y-1 
+            hover:scale-110 
+            duration-100 
+            active:scale-100 
+            tracking-wide
+          `}
         >
           {props.focusAreaName}
         </button>
@@ -34,7 +50,7 @@ const FocusAreaNavbarButton = (props) => {
           border-width: 1.6px;
         }
         .focus-area-navbar-shadow {
-          box-shadow: 5px 6px 4px rgb(150, 150, 150);
+          box-shadow: 5px 6px 4px rgb(0, 0, 0, 0.45);
         }
         .focus-area-navbar-elliptical-geometry {
           border-bottom-left-radius: 33px 14px;

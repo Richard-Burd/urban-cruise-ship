@@ -4,7 +4,43 @@ import { useRouter } from "next/router";
 const ArticleNavbarButton = (props) => {
   const router = useRouter();
 
-  const longClasses = `article-navbar-elliptical-geometry article-navbar-height article-navbar-shadow ${props.site}-article-button-background-color ${props.site}-article-button-font-color p-1 standard-font-1 text-xs md:text-base text-center hover:-translate-y-1 hover:scale-110 my-1 duration-100 active:scale-100 lg:tracking-wide w-full`;
+  const longClasses = `
+    article-navbar-elliptical-geometry 
+    article-navbar-height article-navbar-shadow 
+    ${props.site}-article-button-background-color 
+    ${props.site}-article-button-font-color 
+    p-1 
+    standard-font-1 
+    text-xs 
+    md:text-base 
+    text-center 
+    hover:-translate-y-1 
+    hover:scale-110 
+    my-1 
+    duration-100 
+    active:scale-100 
+    lg:tracking-wide 
+    w-full
+  `;
+
+  const longClassesSelected = `
+    article-navbar-elliptical-geometry 
+    article-navbar-height article-navbar-shadow 
+    bg-neutral-700
+    text-neutral-100
+    p-1 
+    standard-font-1 
+    text-xs 
+    md:text-base 
+    text-center 
+    hover:-translate-y-1 
+    hover:scale-110 
+    my-1 
+    duration-100 
+    active:scale-100 
+    lg:tracking-wide 
+    w-full
+  `;
   
   return (
     <>
@@ -23,9 +59,21 @@ const ArticleNavbarButton = (props) => {
         }}
         transition={{ duration: 0.5, type: "spring" }}
       > */}
-      <div className={router.pathname.startsWith(`/${props.site}/${props.focusAreaUrl}/${props.articleUrl}`) ? `this-is-where-the-background-color-will-go` : ``}>
+      <div className={
+        router.pathname.startsWith(
+          `/${props.site}/${props.focusAreaUrl}/${props.articleUrl}`
+        ) ? 
+          `this-is-where-the-'bg-neutral-700'-background-color-would-go` 
+          : ``
+      }>
         <div className="pb-1.5">
-          <button className={longClasses}>{props.articleTitle}</button>
+          <button className={
+            router.pathname.startsWith(
+              `/${props.site}/${props.focusAreaUrl}/${props.articleUrl}`
+            ) ? longClassesSelected : longClasses
+          }>
+            {props.articleTitle}
+          </button>
         </div>
       </div>
       {/* </motion.div> */}
@@ -34,7 +82,7 @@ const ArticleNavbarButton = (props) => {
           height: 55px;
         }
         .article-navbar-shadow {
-          box-shadow: 5px 6px 4px rgb(150, 150, 150);
+          box-shadow: 5px 6px 4px rgb(0, 0, 0, 0.45);
         }
         .article-navbar-elliptical-geometry {
           border-bottom-left-radius: 33px 14px;
