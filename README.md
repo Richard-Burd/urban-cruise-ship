@@ -127,6 +127,9 @@ lobsters are cool
 
 ## A Subtitle
 subtitles are cool
+
+## Final Subtitle
+bottom most text block within the article.
 ```
 <br></br>
 
@@ -290,9 +293,11 @@ Replace `new_image` with the correct image name and then add in the correct foot
 <ArticleImage  image={"new_image.svg"}  width={700}  height={400} />
 #### image markdown footnotes.
 ```
-<br></br><br></br><br></br>
+<br></br><br></br>
 
-### Solutions
+---
+
+### Solutions (Markdown Coding)
 Solutions for all specialized sites are located in a single `./solutions/` directory:
 
 ```
@@ -312,6 +317,7 @@ To create a new solution, we would create a new file MXD in the `/solutions` dir
 Our solution will have the following body content at `./solutions/lobster_solution.mdx` :
 
 ```markdown
+# Lobsters
 Lobster hunting is a bad idea.
 Eat more fish.
 ```
@@ -319,7 +325,6 @@ Eat more fish.
 Solutions are wrapped in a `<Solution />` component located in the `/components/Solution.js` directory.  Solutions must define the ***Problem:*** and ***Solution:*** values for our `<Solution />` component to display. Our Solution will look like this:
 
 ```jsx
-// This is an example of a solution wrapped in a <SolutionDropdown /> component
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Lobsters are Dying";
@@ -327,23 +332,9 @@ export const solution = "Ban Lobster Hunts";
 
 import ArticleImage from "/components/ArticleImage.js";
 
-## Description
-lobsters are being hunted to extinction.
-
-## Background
-humans discovered how delicious lobsters are!
-
-## Estimates
-lobster population down by twenty-three percent.
-
-<ArticleImage image={"solution_image_name.svg"} width={750} height={400} />
-#### some small markdown text that goes under the image
-
-## Calculations
-we think we could reduce that to ten percent.
-
-## Implementation
-thank the lobster hunters for cooperating.
+# Lobsters
+Lobster hunting is a bad idea.
+Eat more fish.
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -403,6 +394,32 @@ Solution reference looks like this: [^"1"]
 ```
 
 See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, reference are imported from the legacy site and retain the same numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render references.  This will re-number the references (when rendered to the browser) so that the first footnote to be mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the references in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically. NOTE: by default, [remarkGfm](https://github.com/remarkjs/remark-gfm) [and other modules we use in the project] render references as *Footnotes* but we change this title to say 'References' instead.
+
+### Solutions (Content Structure)
+Solutions generally have the following four subsections:
+1. Description
+2. Background
+3. Estimates
+4. Calculations
+5. Implementation
+
+***Description*** is a required subsection that describes the problem being solved.
+***Background*** is also required unless the parent article (encapsulating the solution) gives ample background information in the paragraph that preceeds the actual solution itself.  If such background is present in the article, then the solution does not need to have a background subsection.
+***Estimates*** is a required subsection that contains, at minimum, an image for the metrics of the solution.  If there is no introductory paragraph(s) present in this subsection, the actual `## Estimates` header should not be typed out, but instead will be implied.
+***Calculations*** is a required subsection that details how the estimates in the preceeding subsection were determined to be correct.
+***Implementation*** is a required subsection that describes how the solution can be converted from an idea into a reality.
+
+Below is an illustration of what a solution should look like:
+
+<br></br>
+
+![image of what a solution looks like](https://raw.githubusercontent.com/Richard-Burd/ucs-images/master/solution_example.svg)
+
+<br></br>
+
+Not all solutions will conform to this standard structure but the structure is a good starting point.
+
+<br></br><br></br><br></br>
 
 ------
 
