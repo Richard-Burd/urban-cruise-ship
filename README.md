@@ -407,7 +407,11 @@ Below is an illustration of what a solution should look like:
 
 <br></br>
 
-Not all solutions will conform to this standard structure but the structure is a good starting point.
+Not all solutions will conform to this standard structure but the structure is a good starting point.  Whernever possible, we should make the effort to consult with experts in the follwoing fields:
+1. Academia
+2. Industry
+3. Government
+These would be experts with specialized knowledge in the solution topic.
 
 <br></br><br></br><br></br>
 
