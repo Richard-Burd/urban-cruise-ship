@@ -385,16 +385,6 @@ export default ({ children }) =>
   </Article>
 ```
 
-### References (Footnotes)
-The references inside solutions should be different than those inside the articles so the two don't accidentally cross-reference each other. The easiest way to do this is to use quotation marks in the solutions so each reference is a string like so:
-
-```markdown
-Article reference looks like this: [^1]
-Solution reference looks like this: [^"1"]
-```
-
-See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, reference are imported from the legacy site and retain the same numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render references.  This will re-number the references (when rendered to the browser) so that the first footnote to be mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the references in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically. NOTE: by default, [remarkGfm](https://github.com/remarkjs/remark-gfm) [and other modules we use in the project] render references as *Footnotes* but we change this title to say 'References' instead.
-
 ### Solutions (Content Structure)
 Solutions generally have the following four subsections:
 1. Description
@@ -413,13 +403,23 @@ Below is an illustration of what a solution should look like:
 
 <br></br>
 
-![image of what a solution looks like](https://raw.githubusercontent.com/Richard-Burd/ucs-images/master/solution_example.svg)
+![under construction; image of what a solution looks like](https://raw.githubusercontent.com/Richard-Burd/ucs-images/master/solution_example.svg)
 
 <br></br>
 
 Not all solutions will conform to this standard structure but the structure is a good starting point.
 
 <br></br><br></br><br></br>
+
+### References (Footnotes)
+The references inside solutions should be different than those inside the articles so the two don't accidentally cross-reference each other. The easiest way to do this is to use quotation marks in the solutions so each reference is a string like so:
+
+```markdown
+Article reference looks like this: [^1]
+Solution reference looks like this: [^"1"]
+```
+
+See [How to create footnotes](https://www.markdownguide.org/extended-syntax/#footnotes) for more information. In the UCS Website, reference are imported from the legacy site and retain the same numbers they had on the legacy site.  This project uses the [remarkGfm](https://github.com/remarkjs/remark-gfm) plugin to render references.  This will re-number the references (when rendered to the browser) so that the first footnote to be mentioned in a text will be at the top, and the second will be below it, and so on.  This orders the references in order of their appearance in the text.  The legacy UCS Website ordered references alphabetically. NOTE: by default, [remarkGfm](https://github.com/remarkjs/remark-gfm) [and other modules we use in the project] render references as *Footnotes* but we change this title to say 'References' instead.
 
 ------
 
