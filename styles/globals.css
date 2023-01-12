@@ -1018,6 +1018,11 @@ video {
   background-color: rgb(254 243 199 / var(--tw-bg-opacity));
 }
 
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1199,10 +1204,6 @@ video {
 
 .text-justify {
   text-align: justify;
-}
-
-.align-\[4px\] {
-  vertical-align: 4px;
 }
 
 .text-lg {
