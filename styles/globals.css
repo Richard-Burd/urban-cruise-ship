@@ -855,6 +855,10 @@ video {
   cursor: pointer;
 }
 
+.resize {
+  resize: both;
+}
+
 .columns-1 {
   -moz-columns: 1;
        columns: 1;
@@ -1545,12 +1549,24 @@ h4 a:focus {
 
 /* This styling effects the footnote container */
 
-.footnotes {
+/* This styling puts the line above the References (footnotes) in the articles & Endeavors */
+
+.article-wrap > .footnotes {
   margin-left: 1rem;
   margin-right: 1rem;
   border-top-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+
+/* This styling puts the line above the References (footnotes) in the solutions dropdowns */
+
+/* This is a custom John rule that eliminates the line above the solution footnotes */
+
+.solution-dropdown > .footnotes {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top-width: 0px;
 }
 
 /* This styling effects the footnote title at the bottom of the articles */
@@ -1569,6 +1585,12 @@ ol li {
   --tw-translate-x: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   list-style-type: decimal;
+}
+
+/* This is a custom John rule that decreases the (remark-gfm) spaceing between footnotes */
+
+li[id^="user-content-fn-"] p {
+  padding-bottom: 1.2rem;
 }
 
 /* This section styles items inside of Solutions dropdown boxes */
