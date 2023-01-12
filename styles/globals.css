@@ -2139,6 +2139,11 @@ td a:focus {
     margin-right: 2rem;
   }
 
+  .sm\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .sm\:grid {
     display: grid;
   }

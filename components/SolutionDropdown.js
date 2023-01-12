@@ -8,7 +8,7 @@ const SolutionDropdown = ({ problem, solution, children }) => {
       <div className="solution-dropdown pb-12">
         <div className="overflow-hidden pb-8">
           <motion.div onTap={() => setVisible(!isVisible)}>
-            <div className="solution-dropdown-color cursor-pointer solution-dropdown-elliptical-geometry relative solution-dropdown-shadow-geometry mx-16 standard-font-3 text-center hover:text-gray-100 transition text-xl z-20">
+            <div className="solution-dropdown-color cursor-pointer solution-dropdown-elliptical-geometry relative solution-dropdown-shadow-geometry mx-2 sm:mx-16 standard-font-3 text-center hover:text-gray-100 transition text-xl z-20">
               <div className="solution-dropdown-elliptical-geometry">
                 <div className="sm:grid sm:grid-cols-3 lg:grid-cols-6 gap-3 px-8 md:px-8 py-3 lg:py-1">
                   <div className="sm:col-end-1 lg:col-end-2 font-semibold text-left sm:text-right">
@@ -44,7 +44,7 @@ const SolutionDropdown = ({ problem, solution, children }) => {
                 duration: 0.2,
               }}
             >
-              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-100 border border-slate-900 mx-16 solution-dropdown-elliptical-geometry solution-dropdown-shadow-geometry -translate-y-24">
+              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-100 border border-slate-900 mx-2 sm:mx-16 solution-dropdown-elliptical-geometry solution-dropdown-shadow-geometry -translate-y-24">
                 <div className="pt-20">{children}</div>
               </div>
             </motion.div>
