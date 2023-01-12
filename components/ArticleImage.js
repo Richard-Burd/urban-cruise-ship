@@ -4,7 +4,7 @@ export const path = `${process.env.NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH}`;
 const ArticleImage = (props) => {
   return (
     <>
-      <div className="flex justify-center px-8">
+      <div className="flex justify-center px-4">
         <Image
           src={`${path}/${props.image}`}
           alt={`The image: "${props.image}" cannot be found!`}
