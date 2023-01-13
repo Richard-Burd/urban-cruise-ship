@@ -4,9 +4,17 @@ import { useState, useEffect } from "react";
 // This is where the images are stored on the ucs-images repository
 export const path = `${process.env.NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH}`;
 
-const MobileDesktopImageContainer = ({ mobileSrc, desktopSrc, mobileHeight, mobileWidth, desktopHeight, desktopWidth, }) => {
+const MobileDesktopImageContainer = ({
+  mobileSrc,
+  desktopSrc,
+  mobileHeight,
+  mobileWidth,
+  desktopHeight,
+  desktopWidth,
+}) => {
   const [width, setWidth] = useState(window.innerWidth);
-  const [imageSrc, setImageSrc] = React.useState(src);
+  // const [imageSrc, setImageSrc] = React.useState(src);
+  const [image, setImage] = useState(desktopSrc);
 
   useEffect(() => {
     function handleResize() {
@@ -25,22 +33,22 @@ const MobileDesktopImageContainer = ({ mobileSrc, desktopSrc, mobileHeight, mobi
     <>
       <div className="flex justify-center px-4">
         {width < 768 ? (
-          <Image 
-            src={mobileSrc} 
+          <Image
+            src={`${path}/${mobileSrc}`}
             alt={`The image: "${mobileSrc}" cannot be found!`}
             height={mobileHeight}
             width={mobileWidth}
           />
         ) : (
-          <Image 
-            src={desktopSrc} 
+          <Image
+            src={`${path}/${image}`}
             alt={`The image: "${desktopSrc}" cannot be found!`}
             height={desktopHeight}
             width={desktopWidth}
             onError={() => {
-              imageSrc = mobileSrc;
-              setImageSrc(mobileSrc)
-            }} 
+              setImage(mobileSrc)
+              
+            }}
           />
         )}
       </div>
