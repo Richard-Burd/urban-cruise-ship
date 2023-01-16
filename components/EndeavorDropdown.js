@@ -8,7 +8,7 @@ const EndeavorDropdown = ({ title, children }) => {
       <div className="endeavor-dropdown">
         <div className="overflow-hidden pb-8">
           <motion.div onTap={() => setVisible(!isVisible)}>
-            <div className="endeavor-dropdown-color cursor-pointer endeavor-dropdown-elliptical-geometry font-bold relative endeavor-dropdown-shadow-geometry mx-16 standard-font-3 text-center hover:text-gray-100 tracking-wider transition text-3xl z-20">
+            <div className="endeavor-dropdown-color cursor-pointer endeavor-dropdown-elliptical-geometry font-bold relative endeavor-dropdown-shadow-geometry mx-2 sm:mx-16 standard-font-3 text-center hover:text-gray-100 tracking-wider transition text-3xl z-20">
               <div className="p-4">{title}</div>
             </div>
           </motion.div>
@@ -28,7 +28,7 @@ const EndeavorDropdown = ({ title, children }) => {
                 duration: 0.2,
               }}
             >
-              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-200 border border-slate-900 mx-16 endeavor-dropdown-elliptical-geometry endeavor-dropdown-shadow-geometry -translate-y-24">
+              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-200 border border-slate-900 mx-2 sm:mx-16 endeavor-dropdown-elliptical-geometry endeavor-dropdown-shadow-geometry -translate-y-24">
                 <div className="pt-20">{children}</div>
               </div>
             </motion.div>

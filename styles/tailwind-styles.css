@@ -61,28 +61,29 @@ h4 a {
 
 /* This styling effects the footnote container */
 
-/* This styling puts the line above the References (footnotes) in the articles & Endeavors */
-.article-wrap > .footnotes {
+/* This styling puts the line above the References (footnotes) in the articles */
+.article-wrap .footnotes, .endeavor-dropdown .footnotes {
   @apply border-slate-400 border-t-2 mx-4;
 }
 
-/* This styling puts the line above the References (footnotes) in the solutions dropdowns */
+
+/* This styling ensures there is no line above the References (footnotes) in the solutions dropdowns */
 /* This is a custom John rule that eliminates the line above the solution footnotes */
 .solution-dropdown > .footnotes {
   @apply border-t-2 mx-4;
   border-top-width: 0px;
 }
 
-/* This styling effects the footnote title at the bottom of the articles */
+/* This styling effects the reference title at the bottom of the articles and endeavors */
 #footnote-label {
   @apply pt-4 pb-4 -translate-x-4;
 }
-/* This styling effects the individual footnotes at the bottom of the articles */
+/* This styling effects the individual references at the bottom of the articles and endeavors */
 ol li {
   @apply list-decimal ml-8 -translate-x-4;
 }
 
-/* This is a custom John rule that decreases the (remark-gfm) spaceing between footnotes */
+/* This is a custom John rule that decreases the (remark-gfm) spaceing between references */
 li[id^="user-content-fn-"] p {
   padding-bottom: 1.2rem;
 }

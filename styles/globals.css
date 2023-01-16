@@ -1549,9 +1549,9 @@ h4 a:focus {
 
 /* This styling effects the footnote container */
 
-/* This styling puts the line above the References (footnotes) in the articles & Endeavors */
+/* This styling puts the line above the References (footnotes) in the articles */
 
-.article-wrap > .footnotes {
+.article-wrap .footnotes,  .endeavor-dropdown .footnotes {
   margin-left: 1rem;
   margin-right: 1rem;
   border-top-width: 2px;
@@ -1559,7 +1559,7 @@ h4 a:focus {
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
 }
 
-/* This styling puts the line above the References (footnotes) in the solutions dropdowns */
+/* This styling ensures there is no line above the References (footnotes) in the solutions dropdowns */
 
 /* This is a custom John rule that eliminates the line above the solution footnotes */
 
@@ -1569,7 +1569,7 @@ h4 a:focus {
   border-top-width: 0px;
 }
 
-/* This styling effects the footnote title at the bottom of the articles */
+/* This styling effects the reference title at the bottom of the articles and endeavors */
 
 #footnote-label {
   --tw-translate-x: -1rem;
@@ -1578,7 +1578,7 @@ h4 a:focus {
   padding-bottom: 1rem;
 }
 
-/* This styling effects the individual footnotes at the bottom of the articles */
+/* This styling effects the individual references at the bottom of the articles and endeavors */
 
 ol li {
   margin-left: 2rem;
@@ -1587,7 +1587,7 @@ ol li {
   list-style-type: decimal;
 }
 
-/* This is a custom John rule that decreases the (remark-gfm) spaceing between footnotes */
+/* This is a custom John rule that decreases the (remark-gfm) spaceing between references */
 
 li[id^="user-content-fn-"] p {
   padding-bottom: 1.2rem;
