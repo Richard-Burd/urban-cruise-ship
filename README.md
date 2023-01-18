@@ -335,10 +335,7 @@ Lobster hunting is a bad idea.
 Eat more fish.
 
 <SolutionImages 
-  // This is the image that will be displayed on mobile viewports
   mobileSrc={"lobster_metrics_mobile.svg"}
-
-  // This is the image that will be displayed on desktop viewports
   desktopSrc={"lobster_metrics_desktop.svg"}
 />
 #### some small markdown text that goes under the image
@@ -351,10 +348,32 @@ export default ({ children }) =>
     {children}
   </SolutionDropdown>
 ```
-Images in solutions are wrapped in the `<SolutionImages />` component.  We provide a desktop and mobile version for these images. By default, the metrics images (showing the cost, benefit, and enviromental impacts) are the following sizes:
+Images in solutions are wrapped in this `<SolutionImages />` component as shown above:
+
+```jsx
+<SolutionImages 
+  mobileSrc={"lobster_metrics_mobile.svg"}
+  desktopSrc={"lobster_metrics_desktop.svg"}
+/>
+#### some small markdown text that goes under the image
+```
+
+
+We provide this component with both a desktop and a mobile version for these images. Since mobile images can be read on desktop (while desktop images are hard to read on mobile) we have the option to only pass in the mobile version like this:
+
+```jsx
+<SolutionImages 
+  mobileSrc={"lobster_metrics_mobile.svg"}
+/>
+```
+
+If we do so the mobile version will display in the desktop viewport. Generally speaking, both versions should be provided for all solutions.
+
+By default the *'metrics-images'* are the following sizes:
 - **340** pixels wide by 500 pixels tall on **mobile**
 - **900** pixels wide by 320 pixels tall on **desktop**
-...these images do not require any specifications for height and/or width if they match what is shown above. In most cases, all solution images should use the default widths.  If you have a mobile image that was 340 pixels wide and 1000 pixels tall, you would specify the height like so:
+
+*'metrics-images'* are the images that show the cost, benefit, and enviromental impacts for a given solution. These images do not require any specifications for height and/or width if they have the commensurate heights & widths shown above. In most cases, all solution images should use the default widths.  If you have a mobile image that was 340 pixels wide and 1000 pixels tall, you would specify the height like this:
 
 ```jsx
 <SolutionImages 
@@ -365,6 +384,8 @@ Images in solutions are wrapped in the `<SolutionImages />` component.  We provi
 #### some small markdown text that goes under the image
 ```
 NOTE: you only specify a width or height whenever they are not the same as the default width or height.
+
+---
 
 Here is how we would import our lobster solution into our Lobster article:
 
