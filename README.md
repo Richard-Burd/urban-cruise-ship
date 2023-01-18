@@ -330,6 +330,8 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Lobsters are Dying";
 export const solution = "Ban Lobster Hunts";
 
+import SolutionImages from "/components/SolutionImages.js";
+
 # Lobsters
 Lobster hunting is a bad idea.
 Eat more fish.
@@ -348,6 +350,7 @@ export default ({ children }) =>
     {children}
   </SolutionDropdown>
 ```
+
 Images in solutions are wrapped in this `<SolutionImages />` component as shown above:
 
 ```jsx
@@ -356,7 +359,6 @@ Images in solutions are wrapped in this `<SolutionImages />` component as shown 
   desktopSrc={"lobster_metrics_desktop.svg"}
 />
 ```
-
 
 We provide this component with both a desktop and a mobile version for these images. Since mobile images can be read on desktop (while desktop images are hard to read on mobile) we have the option to only pass in the mobile version like this:
 
