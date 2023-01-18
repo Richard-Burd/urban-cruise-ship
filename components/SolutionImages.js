@@ -39,7 +39,7 @@ const SolutionImages = ({
   // If there is no desktop image, use the mobile image in desktop view
   return (
     <>
-      <div className="flex justify-center px-4">
+      <div className="flex justify-center px-4 pb-7">
         {width < 768 ? (
           <Image
             src={`${path}/${mobileSrc}`}
