@@ -52,4 +52,12 @@ This may need to come after, or in conjunction with an informational advocacy ca
 
 [^"10"]: Office of Management and Budget [“Costs and Benefits of U.S. Government Regulations”](https://www.thoughtco.com/costs-and-benefits-of-government-regulations-4068946). Accessed 1/14/2023
 
-[^"11"]: Bloomberg [“U.S. Land Use”](https://www.bloomberg.com/graphics/2018-us-land-use/#xj4y7vzkg). Accessed 1/14/2023  
+[^"11"]: Bloomberg [“U.S. Land Use”](https://www.bloomberg.com/graphics/2018-us-land-use/#xj4y7vzkg). Accessed 1/14/2023
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
