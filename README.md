@@ -355,7 +355,6 @@ Images in solutions are wrapped in this `<SolutionImages />` component as shown 
   mobileSrc={"lobster_metrics_mobile.svg"}
   desktopSrc={"lobster_metrics_desktop.svg"}
 />
-#### some small markdown text that goes under the image
 ```
 
 
