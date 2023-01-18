@@ -193,8 +193,8 @@ The lines above make the article aware of its place within the UCS Website hiera
 import hierarchy from "../hierarchy.json";
 ```
 
-### Adding Images
-Images are wrapped in the <ArticleImage /> component.  Here is how we would import an image into the middle of our Lobster article:
+### Adding Images to Articles
+Images in articles are wrapped in the `<ArticleImage />` component.  Here is how we would import an image into the middle of our Lobster article:
 
 ```jsx
 // This is an example of an article wrapped in an <Article /> component
@@ -316,7 +316,7 @@ To create a new solution, we would create a new file MXD in the `/solutions` dir
 
 Our solution will have the following body content at `./solutions/lobster_solution.mdx` :
 
-```markdown
+```jsx
 # Lobsters
 Lobster hunting is a bad idea.
 Eat more fish.
@@ -330,11 +330,18 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Lobsters are Dying";
 export const solution = "Ban Lobster Hunts";
 
-import ArticleImage from "/components/ArticleImage.js";
-
 # Lobsters
 Lobster hunting is a bad idea.
 Eat more fish.
+
+<SolutionImages 
+  // This is the image that will be displayed on mobile viewports
+  mobileSrc={"lobster_metrics_mobile.svg"}
+
+  // This is the image that will be displayed on desktop viewports
+  desktopSrc={"lobster_metrics_desktop.svg"}
+/>
+#### some small markdown text that goes under the image
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -344,8 +351,22 @@ export default ({ children }) =>
     {children}
   </SolutionDropdown>
 ```
+Images in solutions are wrapped in the `<SolutionImages />` component.  We provide a desktop and mobile version for these images. By default, the metrics images (showing the cost, benefit, and enviromental impacts) are the following sizes:
+- **340** pixels wide by 500 pixels tall on **mobile**
+- **900** pixels wide by 320 pixels tall on **desktop**
+...these images do not require any specifications for height and/or width if they match what is shown above. In most cases, all solution images should use the default widths.  If you have a mobile image that was 340 pixels wide and 1000 pixels tall, you would specify the height like so:
 
-Images are added to solutions in the same way as they are added to articles.  Here is how we would import our lobster solution into our Lobster article:
+```jsx
+<SolutionImages 
+  mobileSrc={"lobster_metrics_mobile.svg"}
+  desktopSrc={"lobster_metrics_desktop.svg"}
+  mobileHeight={1000}
+/>
+#### some small markdown text that goes under the image
+```
+NOTE: you only specify a width or height whenever they are not the same as the default width or height.
+
+Here is how we would import our lobster solution into our Lobster article:
 
 ```jsx
 // This is an example of an article wrapped in an <Article /> component
