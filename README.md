@@ -381,9 +381,19 @@ By default the *'metrics-images'* are the following sizes:
   desktopSrc={"lobster_metrics_desktop.svg"}
   mobileHeight={1000}
 />
-#### some small markdown text that goes under the image
 ```
-NOTE: you only specify a width or height whenever they are not the same as the default width or height.
+NOTE: you only specify a width or height whenever they are not the same as the default width or height.  Here is how you would specify all four dimensions for both mobile and desktop images if you had to for some reason:
+
+```jsx
+<SolutionImages 
+  mobileSrc={"lobster_metrics_mobile.svg"}
+  desktopSrc={"lobster_metrics_desktop.svg"}
+  mobileHeight={735}
+  mobileWidth={362}
+  desktopHeight={495}
+  desktopWidth={694}
+/>
+```
 
 ---
 
