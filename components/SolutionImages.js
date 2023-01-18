@@ -1,4 +1,8 @@
+// Next.js image container
 import Image from "next/image";
+
+// We need to track what viewport the user has (useState)
+// We also need to render the correct image on re-render (useEffect)
 import { useState, useEffect } from "react";
 
 // This is where the images are stored on the ucs-images repository
@@ -7,13 +11,17 @@ export const path = `${process.env.NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH}`;
 const SolutionImages = ({
   mobileSrc,
   desktopSrc,
-  mobileHeight,
+  mobileHeight = 500,  // Default height for mobile 'metrics-graphic'
   mobileWidth = 340,
-  desktopHeight,
+  desktopHeight = 320, // Default height for desktop 'metrics-graphic'
   desktopWidth = 900,
 }) => {
+  // React useState hook to track the user's viewport width
   const [width, setWidth] = useState(window.innerWidth);
-  // const [imageSrc, setImageSrc] = React.useState(src);
+
+  // React useState hook to track if there's a desktop image or not
+  // this whole thing crashes if there's no mobile image since we
+  // should take a mobile-first approach
   const [image, setImage] = useState(desktopSrc);
 
   useEffect(() => {
