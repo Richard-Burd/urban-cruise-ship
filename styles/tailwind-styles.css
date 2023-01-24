@@ -156,6 +156,15 @@ td a{
   font-family: "Roboto", sans-serif;
 }
 
+/* This is the standard font used in Solution images */
+/* it is similar to the "Calibri" font (owned by Microsoft) that is used in our article images */
+/* John wants the Solution images to match the look of Article images */
+/* Calibri much be purchased for use and not all devices have it so if we use it */
+/* ...some of our text may display improperly and overlap shapes */
+.standard-font-4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* NOTE: Standard font colors are subject to be changed per John's tastes  */
 
 /* This is the standard font color for titles & subtitles  */
