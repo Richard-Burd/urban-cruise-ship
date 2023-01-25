@@ -147,7 +147,29 @@ In this case, the only file being changes is `lobsters.mdx` which is located in 
 
 `$ git add .`
 
-After you do this, you can run `git status` again and now you should see the files you intend to update (and ***only*** those files) highlighted in green.  Next you will want to commit your changes with the following command:
+After you do this, nothing will appear in your command prompt and you will see something like this: 
+
+```bash
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main ✗) $ git add .
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main) $ 
+```
+
+Next, you can run `git status` again and now you should see the files you intend to update (and ***only*** those files) highlighted in green. It should look something like this:
+
+```bash
+@Richard-Burd ➜ /workspaces/urban-cruise-ship (main) $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pages/energy/industry/lobsters.mdx
+
+@Richard-Burd ➜ /workspaces/urban-cruise-ship (main) $ 
+```
+
+
+Next you will want to commit your changes with the following command:
 
 `$ git commit -m "your commit message here"`
 
