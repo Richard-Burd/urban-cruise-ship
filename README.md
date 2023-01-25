@@ -51,10 +51,9 @@ This process will be discussed in more detail in the sections detailing the site
 
 ...the `<ArticleImage />` component will look for the [`zero-waste.svg`](https://github.com/Richard-Burd/ucs-images/blob/master/zero_waste.svg) image that is located [in this repository](https://github.com/Richard-Burd/ucs-images/) and display it accordingly.
 
----
-
 <br></br> <br></br> <br></br>
 
+---
 ## Instructions for Uploading Article or Solution Content to The UCS Website
 
 ### GitHub Codespaces
@@ -145,7 +144,9 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 In this case, the only file being changes is `lobsters.mdx` which is located in the `energy` specialized site's `industry` focus area.  If you see files that you did not intend to change, then you've made a mistake somewhere.  If you only see the files you intended to change, then you're ready to stage your're changes with the following command:
 
-`$ git add .`
+`$ git add .` 
+
+NOTE:  don't forget the space and the period at the end of the command.
 
 After you do this, nothing will appear in your command prompt and you will see something like this: 
 
@@ -165,7 +166,7 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   pages/energy/industry/lobsters.mdx
 
-@Richard-Burd ➜ /workspaces/urban-cruise-ship (main) $ 
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main) $ 
 ```
 
 
@@ -177,13 +178,47 @@ NOTE: You will need to replace the text "your commit message here" with a messag
 
 `$ git commit -m "added lobster article"`
 
+After running the command above, you should see something like this in your command prompt:
+
+```bash
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main) $ git commit -m "added lobster article"
+[main d195578] Git Bash Commands added
+ 1 file changed, 107 insertions(+)
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main ✗) $ 
+```
+
+
 Finally, you will want to push your changes to the GitHub repository with the following command:
 
 `$ git push`
 
+After you run the command, you should see something like this in your command prompt:
+
+```bash
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main) $ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.69 KiB | 917.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/Richard-Burd/urban-cruise-ship
+   3241116..8fbc88a  main -> main
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main) $ 
+```
+At this point, your changes have been pushed to ***this*** GitHub repository and if everything is working properly, those changes should appear on http://urbancruiseship.org within 5 minutes or so.
+
+### Git Commands Summary
+1. `$ git pull`
+2. `$ git status`
+3. `$ git add .`
+4. `$ git commit -m "your commit message here"`
+5. `$ git push`
 
 <br></br> <br></br> <br></br>
 
+---
 ## Instructions for Creating & Editing Article & Solution Markdown Files
 
 ### Prerequisites
