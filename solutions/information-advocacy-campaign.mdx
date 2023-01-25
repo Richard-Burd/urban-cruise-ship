@@ -1,9 +1,43 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Feeding Future Population";
-export const solution = "Information Advocacy Campaign";
+export const solution = "Plant-based Informational Advocacy Campaign";
 
-As we have established in various areas of this website, a plant-based diet is superior in terms of using less resources to produce the same amount of calories and nutrients from animal sources. We propose to fund an informational campaign to advocate plant-based diets.
+import SolutionImages from "/components/SolutionImages.js";
+
+## Description
+A plant-based diet uses fewer resources to produce the same calories and nutrients as from animal sources. We propose to fund an informational campaign to advocate plant-based diets.
+
+<SolutionImages 
+  mobileSrc={"plant_info_ad_cba_mobile.svg"}
+  desktopSrc={"plant_info_ad_cba_desktop.svg"}
+/>
+
+## Calculations
+Comparing the efficacy of a federally funded antismoking campaign [^"1"] to an antimeat ad campaign, we estimate that as general knowledge of the harm to the environment and health becomes mainstream, there will be a 6.1% reduction in meat consumption [^"2"]. This would lead to 88 million tons of CO2e reduced per year [^"3"], 131.8 billion MJ of electricity saved [^"4"], [^"5"], and 37 billion cubic meters of water saved [^"4"], [^"6"], [^"7"] per year. The annual cost would be $48 million [^"1"].
+
+A reduction of meat consumption within this range would reduce diet-related healthcare costs by 12.5% [^"8"], or $6.25 billion out of $50 billion in overall diet-related health costs [^"9"].
+
+## Implementation
+A petition with lobbying may be necessary to fund the campaign federally. It could also be crowdfunded or independently funded.
+
+[^"1"]: Xu, Xin et al. [“A cost-effectiveness analysis of the first federally funded antismoking campaign.”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4603744/) American journal of preventive medicine vol. 48,3: 318-25. 2015
+
+[^"2"]: Kuck, G. and G. Schnitkey. ["An Overview of Meat Consumption in the United States"](https://farmdocdaily.illinois.edu/2021/05/an-overview-of-meat-consumption-in-the-united-states.html). Farmdoc Daily (11):76, Department of Agricultural and Consumer Economics, University of Illinois at Urbana-Champaign, May 12, 2021.
+
+[^"3"]: Our World In Data [“The carbon footprint of foods: are differences explained by the impacts of methane?”](https://ourworldindata.org/carbon-footprint-food-methane) Accessed 1/22/2023
+
+[^"4"]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](http://www.fao.org/faostat/en/#data) Accessed 1/22/2023
+
+[^"5"]: Clark, M., Tilman, D. ["Comparative analysis of environmental impacts of agricultural production systems, agricultural input efficiency, and food choice"](https://iopscience.iop.org/article/10.1088/1748-9326/aa6cd5) Environmental Research Letters 12(6). June 2017.
+
+[^"6"]: Mekonnen, M., Hoekstra, A. ["The green, blue and grey water footprint of crops and derived products"](https://waterfootprint.org/media/downloads/Report47-WaterFootprintCrops-Vol1.pdf) Value of Water Research Report Series No. 47, UNESCO-IHE, Delft, the Netherlands. December 2010.
+
+[^"7"]: Mekonnen, M., Hoekstra, A. ["The green, blue and grey water footprint of farm animals and animal products"](https://research.utwente.nl/en/publications/the-green-blue-and-grey-water-footprint-of-farm-animals-and-anima) Value of Water Research Report Series No. 48, UNESCO-IHE, Delft, the Netherlands. December 2010.
+
+[^"8"]: Springmann M, Mason-D’Croz D, Robinson S, Wiebe K, Godfray HCJ, Rayner M, et al. [“Health-motivated taxes on red and processed meat: A modelling study on optimal tax levels and associated health impacts”](https://doi.org/10.1371/journal.pone.0204139) PLoS ONE 13(11): e0204139. 2018
+
+[^"9"]: Jardim TV, Mozaffarian D, Abrahams-Gessel S, Sy S, Lee Y, Liu J, et al. [“Cardiometabolic disease costs associated with suboptimal diet in the United States: A cost analysis based on a microsimulation model”](https://doi.org/10.1371/journal.pmed.1002981) PLoS Med 16(12): e1002981. 2019
 
 export default ({ children }) => 
   <SolutionDropdown 
