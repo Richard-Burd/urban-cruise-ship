@@ -55,6 +55,113 @@ This process will be discussed in more detail in the sections detailing the site
 
 <br></br> <br></br> <br></br>
 
+## Instructions for Uploading Article or Solution Content to The UCS Website
+
+### GitHub Codespaces
+GitHub Codespaces is the easiest way to both update the UCS Website and validate that those updates will properly integrate into the existing codebase.
+
+### Git Commands
+When you first open your Codespace (or local environment if you're doing that instead) you will want to `pull` in any recent changes that another team member has made to the site since the last time your codespace (or local environment) was opened.  Do this by running the following command in your command terminal at the bottom of your screen:
+
+`$ git pull`
+
+You should see something like this in your command terminal if you have successfully pulled in the latest changes not yet present in your local codespace (or local environment):
+
+```bash
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main) $ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 4 (delta 3), reused 4 (delta 3), pack-reused 0
+Unpacking objects: 100% (4/4), 608 bytes | 60.00 KiB/s, done.
+From https://github.com/Richard-Burd/urban-cruise-ship
+   83113a2..3241116  main       -> origin/main
+Updating 83113a2..3241116
+Fast-forward
+ solutions/development-set-patterns.mdx | 2 ++
+ 1 file changed, 2 insertions(+)
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main ✗) $ 
+```
+
+Now if you run that same command again, you should receive the following message:
+
+```
+Already up to date. 
+```
+This is because you have already pulled in the latest changes and there's nothing new to add. 
+
+At this point you're ready to make changes to the article or solution markdown file(s) of your choice.  The articles are located in the `./pages` directory (folder) and are organized hierarchically according to the websites **site / focus area / article** structure. Solutions on the other hand are all located in the `./solutions` directory (folder) without any subcategorization.
+
+Once you are done making changes to articles and/or solutions go ahead and spin up a local development server to view those changes in your browser with this command:
+
+`$ npm run dev`
+
+You should see the following appear in your terminal:
+
+```bash
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main ✗) $ npm run dev
+
+> urban-cruise-ship@0.1.0 dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+```
+
+You can Ctrl+MouseClick on the `http://localhost:3000` link to open the website in your browser. You should also see a link appear, follow you can also follow it to your web browser as well, then navigate to the ***site / focus area / article*** where your changes are located. If you don't see your changes, then you've made a mistake somewhere.  If you do see your changes, then you're ready to "build" a new version of the website.  First, shutdown the server with the following command:
+
+***Ctrl+C***
+
+You should see the following in your command prompt:
+
+```bash
+...
+info  - automatically enabled Fast Refresh for 1 custom loader
+event - compiled client and server successfully in 2s (588 modules)
+wait  - compiling / (client and server)...
+event - compiled client and server successfully in 241 ms (595 modules)
+^C
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main ✗) $ 
+```
+
+Next, run the following command to make sure you've only made changes to the files you intended to change:
+
+`$ git status`
+
+You should see a list of changed files that you've made that looks like this:
+
+```bash
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main ✗) $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pages/energy/industry/lobsters.mdx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+@Lee-Nelson-UCS ➜ /workspaces/urban-cruise-ship (main ✗) $ 
+```
+
+In this case, the only file being changes is `lobsters.mdx` which is located in the `energy` specialized site's `industry` focus area.  If you see files that you did not intend to change, then you've made a mistake somewhere.  If you only see the files you intended to change, then you're ready to stage your're changes with the following command:
+
+`$ git add .`
+
+After you do this, you can run `git status` again and now you should see the files you intend to update (and ***only*** those files) highlighted in green.  Next you will want to commit your changes with the following command:
+
+`$ git commit -m "your commit message here"`
+
+NOTE: You will need to replace the text "your commit message here" with a message that describes the changes you've made.  For example, if you've added a new lobster article, then your commit message might look like this:
+
+`$ git commit -m "added lobster article"`
+
+Finally, you will want to push your changes to the GitHub repository with the following command:
+
+`$ git push`
+
+
+<br></br> <br></br> <br></br>
+
 ## Instructions for Creating & Editing Article & Solution Markdown Files
 
 ### Prerequisites
