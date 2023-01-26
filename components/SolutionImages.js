@@ -13,7 +13,7 @@ const SolutionImages = ({
   desktopSrc,
   mobileHeight = 500,  // Default height for mobile 'metrics-graphic'
   mobileWidth = 340,
-  desktopHeight = 320, // Default height for desktop 'metrics-graphic'
+  desktopHeight = 300, // Default height for desktop 'metrics-graphic'
   desktopWidth = 900,
 }) => {
   // React useState hook to track the user's viewport width
