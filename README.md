@@ -469,7 +469,7 @@ Solutions for all specialized sites are located in a single `./solutions/` direc
 │   ├── solutions
 .........etc.........
 ```
-To create a new solution, we would create a new file MXD in the `/solutions` directory like so:
+To create a new solution, we would create a new MDX file in the `/solutions` directory like so:
 
 ```
 ├── urban-cruise-ship
