@@ -99,6 +99,11 @@ ul li {
   @apply list-disc mx-14 lg:mx-24 -translate-y-5
 }
 
+/* numbered lists inside of Solutions boxes and article files */
+ol li {
+  @apply list-decimal mx-14 lg:mx-24 -translate-y-5
+}
+
 /* links for bullet points inside of Solutions boxes and article files */
 ul li a{
   @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline
