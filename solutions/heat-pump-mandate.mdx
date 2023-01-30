@@ -6,26 +6,23 @@ export const solution = "Heat Pump Mandate";
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
-Tankless water heaters are generally less energy efficient than heat pumps and more energy efficient than resistance heating [^"2"], [^"5"], [^"6"].
+Building codes should require that new homes are constructed with electric heap pump water heaters and also include the option to easily replace these water heaters with tankless water heaters if doing so would reduce energy consumption.
 
 ## Background
-Though not quantified, requiring the pipe hookups for both tanked and tankless water heaters in new construction will not add much to the cost of construction, will allow future homeowners flexibility on their heating system, and will cost far less than retrofitting existing construction for new pipes.
-
-## Estimates
-The cost of requiring fixtures for both tanked and tankless water heaters would be less than 0.05% of total construction costs if done as part of the initial construction, whereas a retrofit upgrade (after construction is already complete) would be substantially more expensive, and may dissuade a homeowner from installing such a tankless water heater even if doing so might have a payback over several years.
+Almost all new homes are built using traditional gas & electric resistance (ER) water heaters.  These cost less that electric heat pump water heaters but consume more energy [^"2"], [^"5"], [^"6"]. Tankless water heaters are more efficient than electric heat pump water heaters for households that consume less water.  We believe building codes should require optionality of homeowners so they can easily install the water heater of their choice because they will be incentivized to choose the most efficient solution which is almost always the solution that produces the smallest carbon footprint.
 
 <SolutionImages 
   mobileSrc={"nc_hp_mandate_mobile.svg"}
   desktopSrc={"nc_hp_mandate_desktop.svg"}
 />
 
-#### Sources: [^"1"], [^"3"], [^"4"].
+#### Source: [^"1"].
 
 ## Calculations
-A heat pump mandate in North Carolina would save 44.1 million tons of CO₂ per year [^"1"].
+One study looked at requiring heat pump water heaters for new construction in the state of North Carolina and found such a policy would incur an up front cost of $29.5 million and return a savings of $108.7 million over the course of a 10 year period and reduce CO₂ emissions in that state by 441,000 metric tons [^"1"]. We estimate the additional costs of installing ductwork & fixtures described below to be negligent in new construction (0.05%) and expect bids to be unaffected.  The extra space for the tankless water heater is likewise negligent given that most water heaters double as a closet with room for storage. 
 
 ## Implementation
-Building codes should require all new housing units to install electric heat pump (HP) water heaters in lieu of traditional gas & electric resistance (ER) water heaters.  The same building codes should require builders to additionally install all of the appropriate plumbing fixtures & ventilation necessary for the homeowner to install a tankless water heater if they choose to do so at some later point in the lifetime of the home.
+In addition to requiring heat pump water heaters in new home construction, building codes should also require enough room in water heater closets for both a heat pump and a tankless water to be installed simultaneously.  This gives new homeowners optionality when they move in to use either one left behind by the previous owner if the previous owner installed a tankless water heater. The code should also require electricity & gas lines to both locations with shutoff valves already installed in each line as well as both in-and-out airway (HVAC) ducts to service the water heater closet [^"3"], [^"4"].  This greatly reduces the cost of installation and provides the home owner with further optionality in reducing their energy consumption.
 
 <SolutionImages 
   mobileSrc={"tankless_mobile.svg"}
@@ -63,9 +60,9 @@ In the diagram above, we have the following elements:
 
 [^"4"]: Family DIY TV ["Vent your Rheem or AO Smith Hyrbid Water Heater or Don’t vent – That’s the question!"](https://www.youtube.com/watch?v=SHJLvfgpJWg). Accessed January 29, 2023.
 
-[^"5"]: Franco, Victor; Lekov, Alex; Meyers, Steve & Letschert, Virginie. Heat Pump Water Heaters and American Homes: A Good Fit?, article, May 14, 2010; Berkeley, California. (https://digital.library.unt.edu/ark:/67531/metadc830471/: accessed January 29, 2023), University of North Texas Libraries, UNT Digital Library, https://digital.library.unt.edu; crediting UNT Libraries Government Documents Department.
+[^"5"]: Franco, Victor; Lekov, Alex; Meyers, Steve & Letschert, Virginie. ["Heat Pump Water Heaters and American Homes: A Good Fit?"](https://digital.library.unt.edu/ark:/67531/metadc830471/), article, May 14, 2010; Berkeley, California, University of North Texas Libraries, [UNT Digital Library](https://digital.library.unt.edu); crediting UNT Libraries Government Documents Department. Accessed January 29, 2023
 
-[^"6"]: Anna M. Brockway, Pierre Delforge, Emissions reduction potential from electric heat pumps in California homes, The Electricity Journal, Volume 31, Issue 9, 2018, Pages 44-53, ISSN 1040-6190, https://doi.org/10.1016/j.tej.2018.10.012. (https://www.sciencedirect.com/science/article/pii/S1040619018302331)
+[^"6"]: Anna M. Brockway, Pierre Delforge, ["Emissions reduction potential from electric heat pumps in California homes"](https://www.sciencedirect.com/science/article/pii/S1040619018302331), The Electricity Journal, Volume 31, Issue 9, 2018, Pages 44-53, ISSN 1040-6190. Accessed January 30, 2023.
 
 export default ({ children }) => 
   <SolutionDropdown 
