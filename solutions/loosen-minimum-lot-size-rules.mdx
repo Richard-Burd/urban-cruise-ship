@@ -3,17 +3,45 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Cost of Density Restrictions";
 export const solution = "Loosen Minimum Lot Size Rules";
 
-One of the most widespread zoning regulations is a minimum lot size, which requires that for every home, a minimum area is required. Such rules restrict the available amount of housing in a city and raise prices [^"8"], [^"17"], [^"36"].
+<b>Description:</b> One of the most widespread zoning regulations is a minimum lot size, which requires that for every home, a minimum area is required. Such rules restrict the available amount of housing in a city and raise prices [^"8"], [^"17"], [^"36"]. It has been demonstrated that minimum lot size rules force larger developments than would otherwise be supplied by the market [^"6"]. We propose that these rules be eliminated.
 
-By lowering population density below what it would otherwise be, minimum lot size regulations contribute to urban sprawl and resulting environmental costs, such as traffic congestion and land use impacts [^"3"]. In Connecticut, homes in towns with the largest lots are associated with 36.1% more transportation CO<sub>2</sub> emissions and 18.3% housing emissions than homes in the other towns [^"2"].
+We consider a scenario in which legislation across the United States results in the reduction of lot sizes for 10% of single family homes. Costs and benefits are assessed on a yearly basis, after the redevelopment has had time to occur. For those homes affected, current lot sizes are estimated to be 19% larger than they would be absent regulation [^"2"]. It is assumed that commercial, institutional, and transportation land use would shrink in the same proportions as residential land.
 
-Many classes of zoning regulations, including minimum lot sizes, have been upheld by the Supreme Court, and there is little reason to expect a reversal of prior rulings. However, the disprate impact clause under the Fair Housing Act, whereby minimum lot sizes can be shown to disproportionately harm disadvantaged racial minority groups, is one possible avenue for a legal challenge [^"3"]. Relaxing minimum lot size regulations will benefit racial minorities [^"30"].
+<b>Benefits:</b> Under our assumptions, 2456 km<sup>2</sup> of land would be saved nationwide, resulting in a 1.6% increase in population density in single family zones.
 
-[^"2"]: Blanco, K., Bronin, S. ["Small Lots in Smart Places: A Right-Sized Solution for CT"](https://static1.squarespace.com/static/5ee8c6c9681b6f2799a4883a/t/61ea028879710056b2a90fe9/1642726053008/Issue+Brief+-+Minimum+Lot+Sizes.pdf). DesegregateCT, Regional Plan Association. 2022.
+We estimate that the average person living in a single family zone drives 28.8 miles per day [^"9"], that 60% of such residents drive, that the average cars has an economy of 24.4 miles per gallon [^"7"], and that a gallon of gasoline emits 8887 grams of CO<sub>2</sub> upon combustion [^"10"]. We estimate that the average driver would reduce driving by 0.8% to account for shorter distances between destinations. This would save 4.5 million tons of CO<sub>2</sub> emissions per year, valued at $224 million if CO<sub>2</sub> is priced at $50/ton.
+
+By increasing the number of people able to live in metropolitan areas, minimum lot size rollbacks would have significant agglomeration benefits. Smaller lots would make room for housing to accomodate 3.9 million people and create an agglomeration benefit of $16.4 billion per year.
+
+We expect that a minimum lot size reduction will cause substantial improvement in consumer welfare, as well as induce a redistribution from homeowners to renters and first-time buyers, but these effects are not quantified.
+
+<b>Costs:</b> By reducing available road space, traffic congestion, if not mitigated by other means, would be a significant cost to a minimum lot size rollback. Traffic congestion cost the United States $87 billion in 2018. If the increase in costs is proportional to the increase in traffic density resulting from less road space and less driving, then the congestion costs are $703 million per year.
+
+Other potential costs, such as perceived loss of neighborhood preference, are not quantified [^"5"].
+
+<b>Implementation:</b> Many classes of zoning regulations, including minimum lot sizes, have been upheld by the Supreme Court, and there is little reason to expect a reversal of prior rulings. However, the disprate impact clause under the Fair Housing Act, whereby minimum lot sizes can be shown to disproportionately harm disadvantaged racial minority groups, is one possible avenue for a legal challenge [^"3"]. Relaxing minimum lot size regulations will benefit racial minorities [^"30"].
+
+Rollback of minimum lot size could be done legislatively by cities. It may be necessary for state governments to intervene, such as has been suggested with New York's minimum lot size rules [^"1"].
+
+[^"1"]: Gray, N. ["Rightsizing Lot-Size Rules in Metropolitan New York City"](https://www.manhattan-institute.org/gray-rightsizing-lot-size-rules-new-york-city). Manhattan Institute. September 2021.
+
+[^"2"]: Kulka, A. ["Sorting into Neighborhoods: The Role of Minimum Lot Sizes"](https://drive.google.com/file/d/1Wr8T687wz-jVVMEVWoZCQXB53pxCM5hK/view). Conference paper, APPAM 41st Annual Fall Research Conference, Denver, CO. 2019.
 
 [^"3"]: Boudreaux, P. ["Lotting Large: The Phenomenon of Minimum Lot Size Laws"](https://digitalcommons.mainelaw.maine.edu/cgi/viewcontent.cgi?article=1017&context=mlr). Maine Law Review 68(1). January 2016.
 
+[^"4"]: INRIX. ["INRIX: Congestion Costs Each American 97 hours, $1,348 A Year"](https://inrix.com/press-releases/scorecard-2018-us/). February 2019.
+
+[^"5"]: American Planning Association. ["Minimum Requirements for Lot and Building Size"](https://www.planning.org/pas/reports/report37.htm). Information Report No. 37. April 1952.
+
+[^"6"]: Furth, S., Gray, N. ["Do Minimum-Lot-Size Regulations Limit Housing Supply in Texas?"](https://www.mercatus.org/students/research/research-papers/do-minimum-lot-size-regulations-limit-housing-supply-texas). Mercatus Center, George Mason University. May 2019.
+
+[^"7"]: Alternative Fuels Data Center. ["Average Fuel Economy by Major Vehicle Category"](https://afdc.energy.gov/data/10310). Accessed January 23, 2023.
+
 [^"8"]: Bucovetsky, S. ["On the effects of minimum-lot-size zoning"](https://www.sciencedirect.com/science/article/abs/pii/016517658490065X). Economic Letters 15(1-2), pp. 189-193. 1984.
+
+[^"9"]: City of Eugene. ["Cost-Benefit Analysis: Redeveloping the Downtown Riverfront Site"](https://eugene-or.gov/DocumentCenter/View/41336/Downtown-Riverfront-Cost-Benefit-Analysis-July-3-2018-?bidId=). July 2018.
+
+[^"10"]: United States Environmental Protection Agency. ["Greenhouse Gas Emissions from a Typical Passenger Vehicle"](https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle). June 2022.
 
 [^"17"]: Glaeser, E., Schuetz, J., Ward, B. ["How large lot zoning and other town regulations are driving up home prices"](https://commonwealthmagazine.org/uncategorized/how-large-lot-zoning-and-other-town-regulations-are-driving-up-home-prices/). CommonWealth Magazine. January 2006.
 
