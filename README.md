@@ -419,8 +419,9 @@ This path is then passed into the `<ArticleImage />` component located at: `./co
 <br></br><br></br><br></br>
 
 ### Sizing Images
-**NOTE:** This section applies to images in both articles as well as solutions.
-When placing images into the project, we want to maintain these three standards:
+**NOTE:** This section applies to article images and not Solution images.  Solution images are being sorted out at the time of this writing.
+
+The maximum width of an article image is **992pixels**.  When placing images into the project, we want to maintain these three standards:
 - Image titles should have the same font size as an article sub-section heading, i.e. the headings that start with the: **##** in markdown language, are are found in the ***article*** files.  Ignore those in ***solution*** files for now as they are too small.
 
 - The titles in different images should thus be similar in size and...
