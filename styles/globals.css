@@ -1569,36 +1569,26 @@ li[id^="user-content-fn-"] p {
 
 /* bullet points inside of Solutions boxes and article files */
 
+/* on 2.2.2023 John requested the bullet indentations to be removed */
+
+/* ...so here the "lg:mx-24" is commented out  */
+
 ul li {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   --tw-translate-y: -1.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   list-style-type: disc;
 }
 
-@media (min-width: 1024px) {
-  ul li {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-}
-
 /* numbered lists inside of Solutions boxes and article files */
 
 ol li {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   --tw-translate-y: -1.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   list-style-type: decimal;
-}
-
-@media (min-width: 1024px) {
-  ol li {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
 }
 
 /* links for bullet points inside of Solutions boxes and article files */

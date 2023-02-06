@@ -95,13 +95,15 @@ li[id^="user-content-fn-"] p {
 }
 
 /* bullet points inside of Solutions boxes and article files */
+/* on 2.2.2023 John requested the bullet indentations to be removed */
+/* ...so here the "lg:mx-24" is commented out  */
 ul li {
-  @apply list-disc mx-14 lg:mx-24 -translate-y-5
+  @apply list-disc mx-8 /*lg:mx-24*/ -translate-y-5
 }
 
 /* numbered lists inside of Solutions boxes and article files */
 ol li {
-  @apply list-decimal mx-14 lg:mx-24 -translate-y-5
+  @apply list-decimal mx-8 /*lg:mx-24*/ -translate-y-5
 }
 
 /* links for bullet points inside of Solutions boxes and article files */
