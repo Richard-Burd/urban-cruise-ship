@@ -396,13 +396,6 @@ export default ({ children }) =>
 
 NOTE: The `<h4>` Markdown symbol: `####` is used to create a small subtitle under the image.  This is a custom feature of the `<ArticleImage />` component and this UCS Website project.  Normally, any text following a `#` would be *larger* than the standard text size, not smaller, but in our case we are using the `####` symbol for the smaller sized *'sub-text`* that goes under each image.
 
-Also, within the current configuration of the UCS Website, the maximum ***width*** of an image is 1000 pixels which would look like this:
-
-
-```jsx
-<ArticleImage image={"image_name.svg"} width={1000} height={400} />
-```
-
 There is no maximum on the height as web browsers scroll from top to bottom.  You will want to size the width and heights of each image such that there is no dead-space so that the image displays at maximum width on mobile. The `<ArticleImage />` tag uses the Next.js `<Image>` tag and technical data on sizing these is available [here](https://nextjs.org/docs/api-reference/next/image#width).
 
 The project is setup to pull `"image_name.svg"` directly from the [UCS Images Repo](https://github.com/Richard-Burd/ucs-images/). The `.env.local` file in the main directory contains a variable specifying a path to this repo:
@@ -418,7 +411,8 @@ This path is then passed into the `<ArticleImage />` component located at: `./co
 
 <br></br><br></br><br></br>
 
-### Sizing Images
+### Sizing Images from the Original UCS Website
+
 **NOTE:** This section applies to article images and not Solution images.  Solution images are being sorted out at the time of this writing.
 
 The maximum width of an article image is **992pixels**.  When placing images into the project, we want to maintain these three standards:
@@ -443,6 +437,31 @@ This means that if you want the image to retain its original proportions, you wi
 <br></br>
 
 ![image of an example showing image sizing](https://raw.githubusercontent.com/Richard-Burd/ucs-images/503f20df5cc47314fd95af47065f2b8efb6052a7/sizing_images.png)
+
+
+### Sizing New Images for the New UCS Website
+
+Within the current configuration of the UCS Website, the maximum ***width*** of an article image when viewed in the Desktop viewport is 992 pixels which would look like this:
+
+```jsx
+<ArticleImage image={"image_name.svg"} width={992} height={400} />
+```
+
+Assuming the user had a mobile device with a 390 pixel width (which at one time was the average pixel width of a mobile device), the maximum image ***width*** would be 358 pixels and would look like this:
+
+```jsx
+<ArticleImage image={"image_name.svg"} width={358} height={400} />
+```
+
+Currently, we do not display mobile-specific images in articles but if you wanted to know how much width you had available to you, the answer would be 358 pixels.
+
+The Solutions images discussed below have the following maximum widths:
+- 900 pixels in the desktop viewport
+- 340 pixels in the mobile viewport
+
+The Solutions images are imported using the `<SolutionImages />` React component instead of the `<ArticleImage />` React component as discussed below.  The `<SolutionImages />` component is designed to import both a mobile and desktop image with default widths & heights defined for each one.
+
+Both the the `<ArticleImage />` and `<SolutionImages />` components are located in the `./components` directory and use the Next.js `<Image />` component to render the images. This Next.js `<Image />` component is responsible for the **Raster Sizing** and **Vector Sizing** rules discussed in the above section.
 
 <br></br><br></br><br></br>
 
