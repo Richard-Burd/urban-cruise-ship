@@ -36,7 +36,7 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations
         </div>
         <div className="pb-6">
-          <b>2023-Present:</b>&nbsp;Broadness of both topic and solution coverage has reached the point where Urban Cruise Ship&apos;s web site is the best starting point we know of for students and counselors to use to select majors and research topics in environmental fields.
+          <b>2023:</b>&nbsp;Broadness of both topic and solution coverage has reached the point where Urban Cruise Ship&apos;s web site is the best starting point we know of for students, counselors, and school administrators to use to select majors, curricula, and research topics in environmental fields.
         </div>
         <div className="pb-6">
           <b>2021-Present:</b>&nbsp;As of January 29, 2023, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are $1.453 trillion U.S. dollars per year in costs, $2.546 trillion U.S. dollars per year in benefits, 1.086 billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and 78.34 million square kilometers of habitat preserved.
