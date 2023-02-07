@@ -1529,9 +1529,23 @@ h4 a:focus {
   border-top-width: 0px;
 }
 
-/* This styling effects the reference title at the bottom of the articles and endeavors */
+/* This styling effects the reference title at the bottom of the solutions */
+
+/* This has no padding on the top so the References H2 title has the same */
+
+/* spacing as the other <h2> (##) elements in the solution */
 
 #footnote-label {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  padding-bottom: 1rem;
+}
+
+/* This styling effects the reference title at the bottom of the articles */
+
+/* This has padding between it and the line above it */
+
+#footnote-label:not(.solution-dropdown #footnote-label) {
   --tw-translate-x: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   padding-top: 1rem;

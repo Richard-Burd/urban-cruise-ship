@@ -74,10 +74,19 @@ h4 a {
   border-top-width: 0px;
 }
 
-/* This styling effects the reference title at the bottom of the articles and endeavors */
+/* This styling effects the reference title at the bottom of the solutions */
+/* This has no padding on the top so the References H2 title has the same */
+/* spacing as the other <h2> (##) elements in the solution */
 #footnote-label {
+  @apply pb-4 -translate-x-4;
+}
+
+/* This styling effects the reference title at the bottom of the articles */
+/* This has padding between it and the line above it */
+#footnote-label:not(.solution-dropdown #footnote-label) {
   @apply pt-4 pb-4 -translate-x-4;
 }
+
 /* This styling effects the individual references at the bottom of the articles and endeavors */
 ol li {
   @apply list-decimal ml-8 -translate-x-4;
