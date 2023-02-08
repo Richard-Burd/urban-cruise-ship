@@ -3,9 +3,57 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Bicycle Safety";
 export const solution = "Protected Bike Lanes";
 
-Protected bike lanes consist of physical barriers, such as planters, between lanes for cars and for bicycles. Such lanes offer the greatest safety for cyclists, encouraging cycling and protecting life, and cities should favor these kinds of lanes in urban design wherever possible [^"21"].
+## Description
+We recommend local government officials, city council members, and planning departments construct bike lane infrastructure. We recommend additional studies be conducted on the state of bike-friendly infrastructure in major cities so that their impact can be better assessed.
 
-[^"21"]: Soulliere, J. "Lanes and Sharrows and Buffers…Oh My! Four Types of Bike Lanes Explained". Smart Cities Dive. Accessed October 12, 2022.
+## Background
+
+Globally, 63,693 cyclists died in 2019 due to road accidents. [^"15"]
+- Shared lanes consist of markings on the street surface indicating that bicycles share the road space. [^"2"]
+- Bike lanes are marked with solid or dotted lines on a street. [^"1"]
+- Protected bike lanes (cycle tracks) consist of physical barriers, such as planters, between lanes for cars and for bicycles. [^"1"]
+
+Benefits of bike lanes include
+- Reduced cyclist injury  [^"2"]
+- Increased cycling due to perceived safety (77% reported they would begin cycling if there were a separated bike lane) [^"3"]
+- Improving equity amongst race, ethnicity, and class [^"5"]
+- Health benefits to riders [^"6"]
+- Health benefits to non-riders due to reduced air pollution  [^"7"]
+- Increased spending and employment in local businesses [^"8"]
+- Decreased pedestrian injury due to bicycle collisions [^"9"]
+
+
+Protected bike lanes can range between $133,170 to $536,680 per mile. [^"11"]
+
+## Implementation
+Speed limits can serve as a model for assessing different streets for their infrastructure needs. Roads with higher traffic speeds need higher levels of protection. A model based on the infrastructure of Copenhagen is as follows:
+
+Less than 15 mph: No separation needed
+Up to 25 mph: Painted lanes separating bike traffic
+Beyond 25 mph: Protected lanes
+[^"14"]
+
+Methods to create a physical separation include recycled tires for dividers. [^"12"] 
+
+Some studies indicate a higher number of crashes in protected bike lanes, but fewer fatalities and serious crashes. Most of these incidents occur at intersections, either with turning vehicles or with pedestrians entering the lanes. These can be mitigated by placing protected bike lanes where there are fewer intersections, implementing raised cycle crossings, and taking measures to prevent pedestrians from entering lanes. [^"13"]
+
+[^"1"]: Soulliere, J ["Lanes and Sharrows and Buffers…Oh My! Four Types of Bike Lanes Explained"](https://www.smartcitiesdive.com/ex/sustainablecitiescollective/lanes-and-sharrows-and-buffers-oh-my-four-types-bike-lanes-explained/1200740/). Dive Wire. 2021.
+[^"2"]: Teschke K, Harris MA, Reynolds CCO, Winters M, Babul S, Chipman M, et al. [Route Infrastructure and the Risk of Injuries to Bicyclists: A Case-Crossover Study | AJPH | Vol. 102 Issue 12](https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2012.300762). American Journal of Public Health.. 2012.
+[^"3"]: McNeil N, Monsere CM, Dill J. [Influence of Bike Lane Buffer Types on Perceived Comfort and Safety of Bicyclists and Potential Bicyclists](https://journals.sagepub.com/doi/abs/10.3141/2520-15?journalCode=trra). Transportation Research Record: Journal of the Transportation Research Board. 2015.
+[^"4"]: Dill, J, Goddard, T, Monsere, C, and McNeil, N. [Can Protected Bike Lanes Help Close the Gender Gap in Cycling? Lessons from Five Cities](https://pdxscholar.library.pdx.edu/usp_fac/123/). Urban Studies and Planning Faculty Publications and Presentations.. 2014.
+[^"5"]: Anderson M, Hall M L. [Race, ethnicity, class, and protected bike lanes: An idea book for fairer cities](https://bikeleague.org/sites/default/files/equityreport2015.pdf). People for Bikes and Alliance for Biking & Walking. 2015.
+[^"6"]: Young DR et al. [Creating Built Environments That Expand Active Transportation and Active Living Across the United States: A Policy Statement From the American Heart Association](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000878). American Heart Association. 2020.
+[^"7"]: Gu J, Mohit B, Muennig PA. [The cost-effectiveness of bike lanes in New York City](https://pubmed.ncbi.nlm.nih.gov/27613434/). National Library of Medicine: National Center for Biotechnology Information. 2016.
+[^"8"]: Swordfisk K. [Bike lanes provide positive economic impact -- ScienceDaily](https://www.sciencedaily.com/releases/2020/04/200422151318.htm). Portland State University. 2020.
+[^"9"]: Tuckel P, Milczarski W, Maisel R. [Pedestrian injuries due to collisions with bicycles in New York and California - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0022437514000814). Journal of Safety Research. 2014.
+[^"10"]: Gössling S, Choi AS. Transport transitions in Copenhagen: Comparing the cost of cars and bicycles. Ecological Economics [Internet]. 2015 May;113:106–13. Available from: http://dx.doi.org/10.1016/j.ecolecon.2015.03.006 [Transport transitions in Copenhagen: Comparing the cost of cars and bicycles.](http://dx.doi.org/10.1016/j.ecolecon.2015.03.006). Ecological Economics. 2015.
+[^"11"]: Bushell M, Poole B, Rodriguez D, Zegeer C. [Costs for Pedestrian and Bicyclist Infrastructure Improvements](https://www.pedbikeinfo.org/cms/downloads/Countermeasure_Costs_Summary_Oct2013.pdf). Walking Info. 2013.
+[^"12"]: Wilson K. [Protected Bike Lanes that Any City Can Afford – Streetsblog USA](https://usa.streetsblog.org/2020/07/29/meet-the-protected-bike-lane-that-any-city-can-afford-to-build/). Streets Blog USA. 2020.
+[^"13"]: Cicchino JB, et al. [Some protected bike lanes leave cyclists vulnerable to injury](https://www.iihs.org/news/detail/some-protected-bike-lanes-leave-cyclists-vulnerable-to-injury). IIHS. 2019.
+
+[^"14"]: Colville-Andersen M. [The Copenhagenize Bicycle Planning Guide](http://www.copenhagenize.com/2013/04/the-copenhagenize-bicycle-planning-guide.html). Copenhagenize. 2013.
+[^"15"]: [Motor vehicle, motorcyclist, cyclist and pedestrian deaths, World, 1990 to 2019](https://ourworldindata.org/grapher/road-deaths-by-type). Our World in Data. Accessed February 2023.
+
 
 export default ({ children }) => 
   <SolutionDropdown 
