@@ -34,7 +34,7 @@ const SolutionImages = ({
     };
   }, []);
 
-  // If there is a mobile image, us it in mobile view
+  // If there is a mobile image, use it in mobile view
   // If there is a desktop image, use it in desktop view
   // If there is no desktop image, use the mobile image in desktop view
   return (
