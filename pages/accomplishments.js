@@ -1,6 +1,8 @@
 import Head from "next/head";
 import AccomplishmentsTitleBlock from "../components/AccomplishmentsTitleBlock";
 
+// these are conveniently located in a file in the main directory
+// and then imported here to update the Solutions metrics 
 import { 
   totalCostInTrillions, 
   totalBenefitInTrillions, 
@@ -8,9 +10,16 @@ import {
   totalHabitatPreservedMillionsKm2 
 } from "../solutionMetrics.js";
 
-console.log(totalCostInTrillions)
-
 const Accomplishments = () => {
+
+  // this automatically displays the current date in the text below
+  const date = new Date();
+  const formattedDate = date.toLocaleDateString('default', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  });
+
   return (
     <>
       <Head>
@@ -48,7 +57,7 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations
         </div>
         <div className="pb-6">
-          <b>2021-Present:</b>&nbsp;As of January 29, 2023, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are 
+          <b>2021-Present:</b>&nbsp;As of { formattedDate }, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are 
           ${ totalCostInTrillions } trillion U.S. dollars per year in costs, ${ totalBenefitInTrillions } trillion U.S. dollars per year in benefits, { totalMTCO2eInMillions } billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and { totalHabitatPreservedMillionsKm2 } million square kilometers of habitat preserved.
         </div>
         <div className="pb-6">
