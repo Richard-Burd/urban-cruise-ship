@@ -22,6 +22,9 @@ const Accomplishments = () => {
       <div className="presentations-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1"></div>
       <div className="my-2 standard-font-3 standard-font-color-1 p-4 lg:p-0 text-justify text-lg">
         <div className="pb-6">
+          <b>2023:</b>&nbsp;Broadness of both topic and solution coverage has reached the point where Urban Cruise Ship&apos;s web site is the best starting point we know of for students, counselors, and school administrators to use to select majors, curricula, and research topics in environmental fields.
+        </div>
+        <div className="pb-6">
           <b>2022:</b>&nbsp;Produced nine exemplary handouts, which employ data
           presented graphically, and use no opinionated messaging in text form
           apart from labels and titles.
@@ -34,9 +37,6 @@ const Accomplishments = () => {
           achievability rationale (and accompanying puzzlingly wide variations)
           associated with forecast (or scenario)-based presentations used
           extensively previously by numerous other organizations
-        </div>
-        <div className="pb-6">
-          <b>2023:</b>&nbsp;Broadness of both topic and solution coverage has reached the point where Urban Cruise Ship&apos;s web site is the best starting point we know of for students, counselors, and school administrators to use to select majors, curricula, and research topics in environmental fields.
         </div>
         <div className="pb-6">
           <b>2021-Present:</b>&nbsp;As of January 29, 2023, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are $1.453 trillion U.S. dollars per year in costs, $2.546 trillion U.S. dollars per year in benefits, 1.086 billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and 78.34 million square kilometers of habitat preserved.
