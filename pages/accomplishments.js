@@ -1,6 +1,12 @@
 import Head from "next/head";
 import AccomplishmentsTitleBlock from "../components/AccomplishmentsTitleBlock";
 
+// Change these values here to update the text:
+const totalCostInTrillions = "1.453";    // Cost of all our solutions (trillions)
+const totalBenefitInTrillions = "2.546"; // Benefit of all our solutions (trillions)
+const totalMTCO2eInMillions = "1.086";   // MTCO₂e Avoided (Millions)        
+const totalHabitatPreservedMillionsKm2 = "78.34"; // Habitat Saved (Millions Km²)
+
 const Accomplishments = () => {
   return (
     <>
@@ -39,7 +45,8 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations
         </div>
         <div className="pb-6">
-          <b>2021-Present:</b>&nbsp;As of January 29, 2023, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are $1.453 trillion U.S. dollars per year in costs, $2.546 trillion U.S. dollars per year in benefits, 1.086 billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and 78.34 million square kilometers of habitat preserved.
+          <b>2021-Present:</b>&nbsp;As of January 29, 2023, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are 
+          ${ totalCostInTrillions } trillion U.S. dollars per year in costs, ${ totalBenefitInTrillions } trillion U.S. dollars per year in benefits, { totalMTCO2eInMillions } billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and { totalHabitatPreservedMillionsKm2 } million square kilometers of habitat preserved.
         </div>
         <div className="pb-6">
           <b>2020-Present:</b>&nbsp;Invented and developed
