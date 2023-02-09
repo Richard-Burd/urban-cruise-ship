@@ -12,3 +12,6 @@ export const totalMTCO2eInMillions = 1.086;
 
 // Habitat Saved (Millions Km²)
 export const totalHabitatPreservedMillionsKm2 = 78.34;
+
+// Date of last change to this file in "parentheses"
+export const dateOfLastChange = "February 8, 2023"

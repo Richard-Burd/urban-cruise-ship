@@ -7,18 +7,20 @@ import {
   totalCostInTrillions, 
   totalBenefitInTrillions, 
   totalMTCO2eInMillions, 
-  totalHabitatPreservedMillionsKm2 
+  totalHabitatPreservedMillionsKm2,
+  dateOfLastChange 
 } from "../solutionMetrics.js";
 
 const Accomplishments = () => {
 
-  // this automatically displays the current date in the text below
-  const date = new Date();
-  const formattedDate = date.toLocaleDateString('default', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-  });
+  // // this automatically displays the current date in the text below,
+  // // currently, this is not being used, but it could be so we'll leave it here
+  // const date = new Date();
+  // const formattedDate = date.toLocaleDateString('default', {
+  //   month: 'long',
+  //   day: 'numeric',
+  //   year: 'numeric'
+  // });
 
   return (
     <>
@@ -57,7 +59,7 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations
         </div>
         <div className="pb-6">
-          <b>2021-Present:</b>&nbsp;As of { formattedDate }, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are 
+          <b>2021-Present:</b>&nbsp;As of { dateOfLastChange }, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are 
           ${ totalCostInTrillions } trillion U.S. dollars per year in costs, ${ totalBenefitInTrillions } trillion U.S. dollars per year in benefits, { totalMTCO2eInMillions } billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and { totalHabitatPreservedMillionsKm2 } million square kilometers of habitat preserved.
         </div>
         <div className="pb-6">
