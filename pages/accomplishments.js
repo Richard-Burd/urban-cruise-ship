@@ -1,11 +1,14 @@
 import Head from "next/head";
 import AccomplishmentsTitleBlock from "../components/AccomplishmentsTitleBlock";
 
-// Change these values here to update the text:
-const totalCostInTrillions = "1.453";    // Cost of all our solutions (trillions)
-const totalBenefitInTrillions = "2.546"; // Benefit of all our solutions (trillions)
-const totalMTCO2eInMillions = "1.086";   // MTCO₂e Avoided (Millions)        
-const totalHabitatPreservedMillionsKm2 = "78.34"; // Habitat Saved (Millions Km²)
+import { 
+  totalCostInTrillions, 
+  totalBenefitInTrillions, 
+  totalMTCO2eInMillions, 
+  totalHabitatPreservedMillionsKm2 
+} from "../solutionMetrics.js";
+
+console.log(totalCostInTrillions)
 
 const Accomplishments = () => {
   return (

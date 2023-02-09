@@ -1,17 +1,17 @@
 # Urban Cruise Ship Homepage
 
 ## Instructions for Changing the Metrics on the Accomplishments Page to Match the Solutions Tracker
-Open the following file:
-`./pages/accomplishments.js`
+Open the following file in the main directory of this repo:
+`solutionMetrics.js`
 
-and change the values in lines 5 through 9:
+and change the following numbers:
 ```javascript
-const totalCostInTrillions = "1.453";   
-const totalBenefitInTrillions = "2.546"; 
-const totalMTCO2eInMillions = "1.086";      
-const totalHabitatPreservedMillionsKm2 = "78.34";
+const totalBenefitInTrillions = 2.461; 
+const totalCostInTrillions = 1.452;   
+const totalMTCO2eInMillions = 1.086;      
+const totalHabitatPreservedMillionsKm2 = 78.34;
 ```
-The commensurate paragraph will automatically update.  Later on we can pull this directly from the Google Sheet, but this involves making the sheet itself public, and open to anybody with a link on the internet.  We would call `getStaticProps()` on it in the `accomplishments.js` file, and then use the data from the sheet to update the values whenever the (Google Sheet) solutions tracker was updated.  This could break or cause other problems, so we may want to just update this repo directly.
+The commensurate paragraph will automatically update.  Later on we can pull this directly from the Google Sheet, but this involves making the sheet itself public, and open to anybody with a link on the internet.  We would call `getStaticProps()` on it in the `accomplishments.js` file, and then use the data from the sheet to update the values whenever the (Google Sheet) solutions tracker was updated.  This could break or cause other problems. We must setup some stuff on the Google Sheet itself to make this work.
 
 ## Instructions for Uploading Images to The UCS Website
 About 98% of all images on the [UCS Website](http://urbancruiseship.org/) are in the SVG (`.svg`) vector file format.  The instructions below detail how to prepare and upload SVG images to the internet so they can be used on any page within the [UCS Website](http://urbancruiseship.org/).  All images for the [UCS Website](http://urbancruiseship.org/) are currently stored in [this public GitHub repository](https://github.com/Richard-Burd/ucs-images/) and are referenced in the article (and solution) markdown `.mdx` files of the [UCS Website's](http://urbancruiseship.org/) code base. That code base is located [here](https://github.com/Richard-Burd/urban-cruise-ship/) in a private repository. You will need to be granted access in order to view or edit it. Images not part of an article or solution are stored in that private repository and are not discussed in this section below.
