@@ -1,5 +1,5 @@
 import Head from "next/head";
-import NavbarTitleBlock from "../components/NavbarTitleBlock";
+import AccomplishmentsTitleBlock from "../components/AccomplishmentsTitleBlock";
 
 const Accomplishments = () => {
   return (
@@ -12,7 +12,7 @@ const Accomplishments = () => {
         />
       </Head>
       <div>
-        <NavbarTitleBlock
+        <AccomplishmentsTitleBlock
           title={"Accomplishments"}
           subtitle={
             ""
