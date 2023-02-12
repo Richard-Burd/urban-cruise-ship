@@ -6,6 +6,7 @@ export const focusAreaUrl = "ocean_environment";
 
 import ArticleImage from "/components/ArticleImage.js";
 import WhaleWatching from "/solutions/whale-watching.mdx";
+import WhaleBan from "/solutions/whale-ban.mdx";
 
 import MarinePreserveSolution from "/solutions/marine-preserves.mdx";
 import ShippingNoiseSolution from "/solutions/shipping-noise.mdx";
@@ -36,6 +37,7 @@ Major reasons for the decline include the establishment of the International Con
 
 Most commercial whaling today is conducted for whale meat [^9]. Historically, whaling was also done for whale oil and spermiceti for lighting, baleen (whalebone) to stiffen corsets and other fashion uses, and ambergris for perfumes. These uses have now mostly disappeared [^10].
 
+<WhaleBan />
 <WhaleWatching />
 
 ## Invasive Species
@@ -96,10 +98,10 @@ Ecosystem restoration could be done by removing the negative pressures on marine
 
 [^h]: Hildebrand, J. ["Sources of Anthropogenic Sound in the Marine Environment"](https://www.mmc.gov/wp-content/uploads/hildebrand.pdf). In Report to the policy on sound and marine mammals: an international workshop. US Marine Mammal Commission and Joint Nature Conservation Committee, UK. London, England. September 2004.
 
-export default ({ children }) => 
-  <Article 
-    focusAreaUrl={focusAreaUrl} 
-    hierarchy={hierarchy} 
+export default ({ children }) =>
+  <Article
+    focusAreaUrl={focusAreaUrl}
+    hierarchy={hierarchy}
     site={site}
   >
     {children}
