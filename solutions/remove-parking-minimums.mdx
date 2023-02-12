@@ -3,15 +3,35 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Cost From Mandated Parking";
 export const solution = "Remove Parking Minimums";
 
-As noted above, parking can be quite expensive, both in terms of the capital cost of parking structures and the opportunity cost of land. This is especially true in urban areas where land prices are at a premium. Additionally, a parking space adds an estimated 12.5% to the cost of an affordable housing unit, and two spaces add 25% [^"25"]. Therefore, parking minimums, which force developers to provide more parking than they otherwise would want to, can be very costly.
+<b>Description:</b> As discussed above, parking is expensive in terms of the both parking structures and the opportunity cost of land. This is especially true in urban areas where land prices are at a premium. Additionally, a parking space adds an estimated 12.5% to the cost of an affordable housing unit, and two spaces add 25% [^"25"]. We propose that cities eliminate parking minimum requirements.
 
-Parking minimums have been found to be binding in Los Angeles [^"10"]; Buffalo, New York [^"22"]; and Seattle [^"12"], meaning that developers provide much more parking under the rules than they would otherwise. The repeal of the parking minimum in Seattle led to developers providing 40% less parking, at a savings of 18,000 spaces and $537 million [^"12"].
+<b>Benefits:</b> Parking minimums have been found to be binding in Los Angeles [^"10"]; Buffalo, New York [^"22"]; and Seattle [^"12"], meaning that developers provide much more parking under the rules than they would otherwise. The repeal of the parking minimum in Seattle led to developers providing 40% less parking, at a savings of 18,000 spaces and $537 million [^"12"]. Our calculations are based on applying the Seattle ordinance nationwide. The Seattle ordinance focused on parking minimums around heavily commercial districts and near transit stops, the highest value areas for eliminating parking minimums. The full potential of this policy is greater than estimated here, though the marginal benefit may be less, and political difficulty greater, than what has already been done.
 
-The planning and activist communities are turning against parking minimums, and many cities throughout the United States and Canada have relaxed their rules [^"21"]. The main purpose of parking minimums is that, absent sufficient off-street parking, motorists will cruise for an on-street parking spot, creating congestion as an externality [^"5"]. However, this problem can also be dealt with by cities not providing free on-street parking [^"19"].
+We estimate that eliminating parking minimums would be applicable to half of the United States, and of those areas for which it is applicable, in half would it be feasible and has not already been done. At the rate of reduced parking found by the Seattle study, that yields just over two million fewer parking spaces.
+
+A typical parking space is just under 30 square meters [^"1"], and so about 220,000 people could be housed with the parking area saved with duplexes, accounting for residential and commercial needs. If this new housing in turn displaces median lot size single family homes elsewhere in the city, then 139 square kilometers of land would be saved.
+
+Using an elasticity of 0.06 (0.06% gain of per capita GDP for 1% gain of population in a city), the agglomeration benefit of reducing parking minimums is estimated at $929 million per year.
+
+We estimate that the average person living in a single family zone drives 28.8 miles per day [^"9"], that 60% of such residents drive, that the average cars has an economy of 24.4 miles per gallon [^"7"], and that a gallon of gasoline emits 8887 grams of CO<sub>2</sub> upon combustion [^"11"]. We estimate that the average driver would reduce driving by a small amount due to shorter distances between destinations, which would save 1900 tons of CO<sub>2</sub> emissions per year, valued at $94 thousand if CO<sub>2</sub> is priced at $50/ton.
+
+<b>Costs:</b> Assume no action is taken to mitigate congestion, we estimate that the increased density will result is $44 million per year of congestion costs. This estimate is based on a total traffic congestion cost of $87 billion per year in the United States [^"2"] and the hypothesis that congestion costs scale linearly with traffic density (traffic volume divided by road area).
+
+<b>Implementation:</b> Many cities throughout the United States and Canada have relaxed parking minimum rules rules [^"21"]. The main purpose of these rules is that, absent sufficient off-street parking, motorists will cruise for an on-street parking spot, creating a congestion externality [^"5"]. However, this problem can also be dealt with by cities not providing free on-street parking [^"19"].
+
+[^"1"]: Franklin Street. ["How Large is a Parking Space?"](https://franklinst.com/how-large-is-a-parking-space/). April 2019.
+
+[^"2"]: INRIX. ["INRIX: Congestion Costs Each American 97 hours, $1,348 A Year"](https://inrix.com/press-releases/scorecard-2018-us/). February 2019.
 
 [^"5"]: Brueckner, J. K., Franco, S. F. ["Parking and Urban Form"](https://academic.oup.com/joeg/article-abstract/17/1/95/2930541). Journal of Economic Geography 17(1), pp. 95-127. January 2017.
 
+[^"7"]: Alternative Fuels Data Center. ["Average Fuel Economy by Major Vehicle Category"](https://afdc.energy.gov/data/10310). Accessed January 23, 2023.
+
+[^"9"]: City of Eugene. ["Cost-Benefit Analysis: Redeveloping the Downtown Riverfront Site"](https://eugene-or.gov/DocumentCenter/View/41336/Downtown-Riverfront-Cost-Benefit-Analysis-July-3-2018-?bidId=). July 2018.
+
 [^"10"]: Cutter, W. B., Franco, S. F. ["Do parking requirements significantly increase the area dedicated to parking? A test of the effect of parking requirements values in Los Angeles County"](https://www.sciencedirect.com/science/article/abs/pii/S0965856412000304). Transportation Research Part A: Policy and Practice 46(6), pp. 901-925. July 2012.
+
+[^"11"]: United States Environmental Protection Agency. ["Greenhouse Gas Emissions from a Typical Passenger Vehicle"](https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle). June 2022.
 
 [^"12"]: Gabbe, C. J., Pierce, G., Clowers, G. ["Parking policy: The effects of residential minimum parking requirements in Seattle"](https://www.sciencedirect.com/science/article/abs/pii/S0264837718312870). Land Use Policy 91: 104053. February 2020.
 
@@ -20,6 +40,8 @@ The planning and activist communities are turning against parking minimums, and 
 [^"21"]: Herriges, D. ["Announcing a New and Improved Map of Cities That Have Removed Parking Minimums"](https://www.strongtowns.org/journal/2021/11/22/announcing-a-new-and-improved-map-of-cities-that-have-removed-parking-minimums). Strong Towns. November 2021.
 
 [^"22"]: Hess, D. B., Rehler, J. ["Minus Minimums: Development Response to the Removal of Minimum Parking Requirements in Buffalo (NY)"](https://www.tandfonline.com/doi/pdf/10.1080/01944363.2020.1864225). Journal of the American Planning Association 87(3), pp. 396-408. March 2021.
+
+[^"25"]: Litman, T. ["Parking Requirement Impacts on Housing Affordability"](http://www.vtpi.org/park-hou.pdf). Victoria Transport Policy Institute. August 2016.
 
 export default ({ children }) => 
   <SolutionDropdown 
