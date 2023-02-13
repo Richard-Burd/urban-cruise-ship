@@ -1,5 +1,8 @@
 // This controls the way the logo, title, and subtitle are displayed
-// on the Accomplishments page.
+// on the Accomplishments page.  The Accomplishments page is the oddball
+// among the other pages listed in the site's top yellow navbar because
+// the font size and location are slightly different.  All of the other
+// pages use the <NavbarTitleBlock.js /> component.
 import Image from "next/image";
 
 const AccomplishmentsTitleBlock = (props) => {
@@ -29,7 +32,10 @@ const AccomplishmentsTitleBlock = (props) => {
 
       <div
         id="desktop-version"
-        className="lg:pt-16 lg:pb-11 lg:grid grid-cols-2 gap-20 items-center"
+
+        // the "gap" in this line below controls the space between the logo
+        // and the "Accomplishments" title.
+        className="lg:pt-16 lg:pb-11 lg:grid grid-cols-2 items-center"
       >
         <div className="hidden lg:inline">
           <Image
@@ -42,7 +48,7 @@ const AccomplishmentsTitleBlock = (props) => {
           />
         </div>
         <div className="hidden lg:inline">
-          <div className="standard-font-1 standard-font-color-1 text-5xl">
+          <div className="standard-font-1 standard-font-color-1 accomplishments-title-block">
             {props.title}
           </div>
           <div className="standard-font-2 standard-font-color-1 text-2xl">
@@ -50,6 +56,12 @@ const AccomplishmentsTitleBlock = (props) => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .accomplishments-title-block {
+          font-size: 3.75rem;
+          transform: translateX(-0.4rem)
+        }
+      `}</style>
     </>
   );
 };
