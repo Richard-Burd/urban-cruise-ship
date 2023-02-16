@@ -1,126 +1,16 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-
 export const problem = "Shipping Noise";
-export const solution = "Set Ship Speed Limits";
 
+export const solution = "Guidelines to Reduce Noise";
 
-import SolutionImages from "/components/SolutionImages.js";
+We recommend that countries adopt the International Maritime Organization's Guidelines for the Reduction of Underwater Noise from Commercial Shipping to Address Adverse Impacts on Marine Life to reduce noise from shipping [^"1"].
 
+[^"1"]: International Maritime Organization. ["Guidelines for the Reduction of Underwater Noise from Commercial Shipping to Address Adverse Impacts on Marine Life"](https://cetsound.noaa.gov/Assets/cetsound/documents/MEPC.1-Circ%20883%20Noise%20Guidelines%20April%202014.pdf). April 2014.
 
-
-
-## Description
-We recommend world governments form an international agreement implementing “Blue Speeds”, a marine vessel speed reduction, in order to reduce underwater noise levels.
-
-
-## Background
-
-Marine species rely upon sound for:
-- Finding a mate [^"4"]
-- Finding offspring [^"4"]
-- Finding food [^"5"]
-- Avoiding predators [^"5"]
-- Navigation [^"5"]
-
-
-Underwater noise pollution is drowning out natural ocean sounds for marine life. [^"1"]
-- Sound travels 4 times faster in water than in air [^"5"]
-- Many sources of underwater noise pollution exist including military sonar, seismic airguns, and explosives. [^"11"] But commercial shipping is the most pervasive source of ocean noise. [^"1"]
-- An average cargo vessel traveling at 16 knots emits over 190 dB of sound [^"6"], more than the amount needed to cause eardrum rupture in humans (150dB) [^"7"]
-- There are few areas of the ocean that are not impacted by shipping noise [^"5"]
-- Shipping noise is doubling every decade [^"5"]
-
-
-Ship noise has been shown to increase stress in North Atlantic right whales [^"8"], reduce Orca foraging [^"9"], negatively impact seagrass health and cause many other deleterious effects. [^"5"]
-- Blue whales’ communication range, which could once span entire ocean basins, has shrunk by 90% [^"1"]
-- Ship noise produces sound in a low frequency which overlaps with the frequency for communication in baleen whales, fish, seals, sea lions, and dolphins [^"11"]
- 
-Ship designs can be made quieter. [^"1"]
-- 85% of underwater noise is due to propeller design [^"1"]
-- Certain vessels such as warships and research vessels are typically designed to operate quietly at lower speeds (below 15 knots) [^"3"]
-- Merchant ships are not designed for quiet operation, and propeller noise increases with speed on a logarithmic scale [^"3"]
-- New ships could be fitted with reduced noise propellers for 1-5% of the total cost of the vessel, however, retrofitting a quiet propeller onto existing vessels will result in greater costs. [^"12"] 
-- Worldwide enforcement for propeller design would be very challenging, and retrofitting all existing vessels would be far more difficult. [^"1"]
-
-
-Ship speed limits would effectively decrease ship noise and provide other benefits:
-- Require less energy  [^"2"]
-- Reduce fuel consumption by 36% [^"2"]
-- Generate less greenhouse gas emissions [^"2"]
-- Reduce ship-strikes with whales [^"2"]
-
-
-<SolutionImages
- mobileSrc={"ship_speed_limits_estimate_mobile.svg"}
- desktopSrc={"ship_speed_limits_estimate_desktop.svg"}
- mobileHeight={1250}
- desktopHeight={460}
-/>
-#### Estimates for worldwide implementation of “Blue Speeds” based on scaling the EU fleet to global vessel numbers [^"2"] [^"17"]
-
-
-<SolutionImages
- mobileSrc={"ship_speed_limits_benefit_calc_mobile.svg"}
- desktopSrc={"ship_speed_limits_benefit_calc_desktop.svg"}
- mobileHeight={410}
- desktopHeight={250}
-/>
-#### *Saved shadow cost of emissions  †European Union Emissions Trading System applied only to current EU participants [^"2"] [^"17"]
-
-<SolutionImages
- mobileSrc={"ship_speed_limits_cost_calc_mobile.svg"}
- desktopSrc={"ship_speed_limits_cost_calc_desktop.svg"}
- mobileHeight={380}
- desktopHeight={210}
-/>
-#### *Operations & Maintenance  †Inventory costs increase due to increase voyage time  ‡Increased CO2 emissions from steel production needed for new ships divided over a 30-year period [^"2"] [^"17"]
-
-
-## Implementation
-
-
-Speed Reduction to 75% of ship design speed
-- Speeds would be based on the type of ship. The speed limit would set a vessel at 75% of its maximum design speed by its category [^"2"]
-Adjustments would need to be made to accommodate outliers and ensure ship safety [^"2"]
-
-
-Involving Stakeholders
-- There is industrial support for ship speed limits [^"14"]
-- Efforts should be made to assist shipping companies due to the increased inventory costs associated with a slow-down [^"16"]
-- Increases in inventory costs can outweigh fuel savings [^"16"]
-- Slower speeds mean a vessel is more likely to arrive on time [^"16"]
-
-
-Additional Solutions
-- Working on improving communication between ships can help prevent waiting times for ships attempting to dock [^"15"]
-- Incentivizing quiet ships: Ports of Vancouver and Prince Rupert gave discounted harbor fees to ships that met low-noise criteria [^"18"]
-
-
-#### Lead Researcher: Jye Art 2023
-
-[^"1"]: Livermore S, Downes A. [Slow and Steady Saves the Race: We need to regulate underwater noise pollution to protect marine wildlife](https://www.oecd-forum.org/posts/slow-and-steady-saves-the-race-we-need-to-regulate-underwater-noise-pollution-to-protect-marine-wildlife). The OECD Forum Network. December 2022. 
-[^"2"]: Nelissen D, Király J, Meijer C. [Blue Speeds for shipping. Economic analysis and legal framework to achieve environmental benefits - CE Delft - EN](https://cedelft.eu/publications/blue-speeds-for-shipping/). CE Delift. July 2022. 
-[^"3"]:  [The multi-issue mitigation potential of reducing ship speeds](https://seas-at-risk.org/wp-content/uploads/2021/03/2019.6.11.-Mitigation-ship-speeds.pdf). GL Reynolds. November 2019. 
-[^"4"]: Ahmed Z. [Effects of Noise Pollution from Ships on Marine Life](https://www.marineinsight.com/environment/effects-of-noise-pollution-from-ships-on-marine-life/). Marine Insight. Accessed February 2023. 
-[^"5"]: Nelon R. [Why All the Concern About Underwater Ship Noise? | NRDC](https://www.nrdc.org/experts/regan-nelson/why-all-concern-about-underwater-ship-noise). The National Resources Defense Council. Accessed February 2023. 
-[^"6"]: Hildebrand J.  [Anthropogenic and natural sources of ambient noise in the ocean](https://www.int-res.com/articles/theme/m395p005.pdf). Marine Ecology Progress Series. December 2009. 
-[^"7"]:  [Noise Comparisons](https://www.chem.purdue.edu/chemsafety/Training/PPETrain/dblevels.htm). Purdue University. February 2000. 
-[^"8"]: Rolland et al [Evidence that ship noise increases stress in right whales](https://pubmed.ncbi.nlm.nih.gov/22319129/). Proceedings of the Royal Society B: Biological Sciences. February 2012. 
-[^"9"]: Holt et al. Vessels and their sounds reduce prey capture effort by endangered killer whales (Orcinus orca). Marine Environmental Research [Internet]. 2021 Aug;170:105429. Available from: http://dx.doi.org/10.1016/j.marenvres.2021.105429 [Vessels and their sounds reduce prey capture effort by endangered killer whales (Orcinus orca)](https://www.researchgate.net/publication/353433786_Vessels_and_their_sounds_reduce_prey_capture_effort_by_endangered_killer_whales_Orcinus_orca). Marine Environmental Research. August 2021. 
-[^"10"]: Ellis L. [The Impacts of Noise Pollution in the Ocean | Earth.Org](https://earth.org/noise-pollution-in-the-ocean/). Earth.Org. February 2022. 
-[^"11"]:  [Ocean Noise](https://awionline.org/content/ocean-noise). Animal Welfare Institute. Accessed February 2023. 
-[^"12"]: Spence JH, Fischer RW in , vol. 42, no. 2, pp. 388-398, April 2017, doi: 10.1109/JOE.2016.2578198. ["Requirements for Reducing Underwater Noise From Ships,"](https://ieeexplore.ieee.org/document/7600360?part=1). IEEE Journal of Oceanic Engineering. April 2017. 
-[^"13"]: Nelson R. [Reimagining What it Means to be a Zero-Emission Ship | NRDC](https://www.nrdc.org/experts/regan-nelson/reimagining-what-if-means-be-zero-emission-ship). The National Resources Defense Council. April 2022. 
-[^"14"]:  [110 shipping companies support speed limit](https://shippingwatch.com/carriers/article11348749.ece). Shipping Watch. April 2019. 
-[^"15"]: Xing H, Spence S, Chen H. [A comprehensive review on countermeasures for CO2 emissions from ships](http://dx.doi.org/10.1016/j.rser.2020.110222). Renewable and Sustainable Energy Reviews. December 2020. 
-[^"16"]:  [Is Slow Steaming Good for the Supply Chain? - Inbound Logistics](https://www.inboundlogistics.com/articles/is-slow-steaming-good-for-the-supply-chain/). Inbound Logistics. April 2013. 
-[^"17"]:  [Merchant fleet](https://hbs.unctad.org/merchant-fleet/). United Nations Conference on Trade and Development Handbook of Statistics 2022. 2022. 
-[^"18"]:  [Big Ships Asked To Slow Down To Reduce Noise For Iconic Whales | Northwest News Network](https://www.nwnewsnetwork.org/environment-and-planning/2017-06-29/big-ships-asked-to-slow-down-to-reduce-noise-for-iconic-whales). nw news network. June 2017. 
-
-export default ({ children }) =>
-  <SolutionDropdown
-    problem={problem}
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
     solution={solution}
   >
     {children}
