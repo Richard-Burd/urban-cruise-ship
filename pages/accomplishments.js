@@ -52,7 +52,34 @@ const Accomplishments = () => {
         <div className="pb-6">
           <b>2022:</b>&nbsp;Produced the first trajectory-styled projection of
           progress toward producing energy without the use of fossil fuels (see
-          Electricity Production Forecast and Energy Production Forecast
+          <a
+            href="https://drive.google.com/uc?export=view&id=1wnnDiXssh28NEW7uor97UMeRf7K3TuO7"
+            className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            target="_blank"
+            rel="noreferrer"
+          >
+            &nbsp;
+            <b>
+              <i>Electricity Production Forecast</i>
+            </b>
+            &nbsp;
+          </a>
+
+          and
+
+          <a
+            href="https://drive.google.com/uc?export=view&id=1GA3ys7FT6Z1ypRAKyS6YPAka5ydFhc27"
+            className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            target="_blank"
+            rel="noreferrer"
+          >
+            &nbsp;
+            <b>
+              <i>Energy Production Forecast</i>
+            </b>
+            &nbsp;
+          </a> 
+          
           handouts). This lessens the distractive clutter and lack of
           achievability rationale (and accompanying puzzlingly wide variations)
           associated with forecast (or scenario)-based presentations used
