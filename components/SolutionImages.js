@@ -11,9 +11,9 @@ export const path = `${process.env.NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH}`;
 const SolutionImages = ({
   mobileSrc,
   desktopSrc,
-  mobileHeight = 200,  // Default height for mobile 'metrics-graphic'
+  mobileHeight = 350,  // Default height for mobile 'metrics-graphic'
   mobileWidth = 340,
-  desktopHeight = 200, // Default height for desktop 'metrics-graphic'
+  desktopHeight = 340, // Default height for desktop 'metrics-graphic'
   desktopWidth = 900,
 }) => {
   // React useState hook to track the user's viewport width
