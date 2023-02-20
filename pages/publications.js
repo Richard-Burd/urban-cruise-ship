@@ -26,23 +26,19 @@ const Publications = () => {
         </div>
         <div className="my-2 standard-font-3 standard-font-color-1 text-lg">
           <div className="pb-6">
-            <b>Handouts</b>, 2022.&nbsp;
-            <b>
-              <i>
+            Handouts, 2022.&nbsp;
                 A series of handouts published by the Urban Cruise Ship Crew
-              </i>
-            </b>
           </div>
           <div className="pb-6">
             <div>
-              <b>Health</b>
+            <font size="+2">Health</font>
             </div>
             <a
               href="https://drive.google.com/uc?export=view&id=16Or2FPdUrkPRouD9dZSv_A6JlpXjAkTk"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Human Population</i>
+                <b><i>Human Population</i></b>
               </div>
             </a>
             <a
@@ -50,7 +46,7 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Diet Choices - Environmental Impacts</i>
+                <b><i>Diet Choices - Environmental Impacts</i></b>
               </div>
             </a>
             <a
@@ -58,20 +54,20 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Diet Choices - Ethical Impacts</i>
+                <b><i>Diet Choices - Ethical Impacts</i></b>
               </div>
             </a>
           </div>
           <div className="pb-6">
             <div>
-              <b>Access</b>
+            <font size="+2">Access</font>
             </div>
             <a
               href="https://drive.google.com/uc?export=view&id=17kWlKkQ98RwHGSzx1BDGgzlQC2_8YbLF"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Residential Sprawl Impacts</i>
+                <b><i>Residential Sprawl Impacts</i></b>
               </div>
             </a>
             <a
@@ -79,7 +75,7 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Transportation Choice Impacts</i>
+                <b><i>Transportation Choice Impacts</i></b>
               </div>
             </a>
             <a
@@ -87,20 +83,20 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Transportation System Impacts</i>
+                <b><i>Transportation Option Impacts</i></b>
               </div>
             </a>
           </div>
           <div className="pb-6">
             <div>
-              <b>Opportunities</b>
+            <font size="+2">Opportunities</font>
             </div>
             <a
               href="https://drive.google.com/uc?export=view&id=1wnnDiXssh28NEW7uor97UMeRf7K3TuO7"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Electricity Production Forecast</i>
+                <b><i>Electricity Production Forecast</i></b>
               </div>
             </a>
             <a
@@ -108,7 +104,7 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Energy Production Forecast</i>
+                <b><i>Energy Production Forecast</i></b>
               </div>
             </a>
             <a
@@ -116,7 +112,7 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <i>Historical Timelines</i>
+                <b><i>Historical Timelines</i></b>
               </div>
             </a>
           </div>
