@@ -22,7 +22,7 @@ const Presentations = () => {
 
       <div className="px-4 lg:px-0">
         <div className="presentations-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
-          Presentations
+          
         </div>
         <div className="my-2 standard-font-3 standard-font-color-1 text-justify text-lg">
           <div className="pb-6">

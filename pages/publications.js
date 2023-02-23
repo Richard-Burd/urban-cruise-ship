@@ -22,17 +22,15 @@ const Publications = () => {
 
       <div className="px-4 lg:px-0">
         <div className="publications-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
-          Publications
+          
         </div>
         <div className="my-2 standard-font-3 standard-font-color-1 text-lg">
           <div className="pb-6">
-            Handouts, 2022.&nbsp;
-                A series of handouts published by the Urban Cruise Ship Crew
+            <b>Handouts</b>, 2022.&nbsp;
+                A series of handouts published by the Urban Cruise Ship Crew:
           </div>
           <div className="pb-6">
-            <div>
-            <font size="+2">Health</font>
-            </div>
+            <div>Health</div>
             <a
               href="https://drive.google.com/uc?export=view&id=16Or2FPdUrkPRouD9dZSv_A6JlpXjAkTk"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
@@ -59,9 +57,7 @@ const Publications = () => {
             </a>
           </div>
           <div className="pb-6">
-            <div>
-            <font size="+2">Access</font>
-            </div>
+            <div>Access</div>
             <a
               href="https://drive.google.com/uc?export=view&id=17kWlKkQ98RwHGSzx1BDGgzlQC2_8YbLF"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
@@ -88,9 +84,7 @@ const Publications = () => {
             </a>
           </div>
           <div className="pb-6">
-            <div>
-            <font size="+2">Opportunities</font>
-            </div>
+            <div>Opportunities</div>
             <a
               href="https://drive.google.com/uc?export=view&id=1wnnDiXssh28NEW7uor97UMeRf7K3TuO7"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
