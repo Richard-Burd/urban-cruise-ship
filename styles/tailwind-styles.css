@@ -19,11 +19,11 @@ NOTE: standard styling for all components in this project are done in the:
 
 /* Article Title */
 .article-wrap {
-  @apply border-t-2 border-gray-300 pt-8
+  @apply border-t-2 border-gray-300 pt-3
 }
 
 h1 {
-  @apply standard-font-1 px-4 text-5xl text-zinc-700 pb-8;
+  @apply standard-font-1 px-4 text-5xl text-zinc-700 pb-2;
 }
 
 /* Article Section Title */
@@ -44,7 +44,7 @@ h3 a {
 
 /* Article Main Body Text */
 p {
-  @apply standard-font-3 px-4 pb-8 text-base text-zinc-900;
+  @apply standard-font-3 px-4 pb-4 text-base text-zinc-900;
 }
 /* This is the smaller text underneath images in the articles */
 h4 {
@@ -62,9 +62,10 @@ h4 a {
 /* This styling effects the footnote container */
 
 /* This styling puts the line above the References (footnotes) in the articles */
-.article-wrap .footnotes, .endeavor-dropdown .footnotes {
+/* This was removed on 2.23.2023 per John's request on a 2.9.2023 phone call w/Richard */
+/* .article-wrap .footnotes, .endeavor-dropdown .footnotes {
   @apply border-slate-400 border-t-2 mx-4;
-}
+} */
 
 
 /* This styling ensures there is no line above the References (footnotes) in the solutions dropdowns */

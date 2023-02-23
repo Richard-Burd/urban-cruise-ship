@@ -17,7 +17,7 @@ const Article = ({ children, focusAreaUrl, site, hierarchy }) => {
         articles={findArticles(searchValue, hierarchy)}
         focusAreaUrl={focusAreaUrl}
       />
-      <div className={`article-wrap ${site}-background-gradient pb-12`}>
+      <div className={`article-wrap ${site}-background-gradient`}>
         {children}
       </div>
     </>

@@ -32,7 +32,7 @@ const FocusAreaNavbarButton = (props) => {
             focus-area-navbar-shadow 
             px-3.5 
             mx-2.5 
-            my-2 
+            my-1
             standard-font-1 
             hover:-translate-y-1 
             hover:scale-110 

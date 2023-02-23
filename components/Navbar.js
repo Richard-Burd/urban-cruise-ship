@@ -2,7 +2,7 @@ import Link from "next/link";
 import { motion /* useScroll */ } from "framer-motion"; // useScroll is not currently in use but might be brought back
 
 const navBarStyles =
-  "duration-100 hover:bg-gray-700 hover:text-gray-100 px-3 pt-2 pb-3 active:bg-gray-900 active:text-gray-200";
+  "duration-100 hover:bg-gray-700 hover:text-gray-100 px-3 pt-1 pb-2 active:bg-gray-900 active:text-gray-200";
 
 const Navbar = () => {
   // const { scrollYProgress } = useScroll(); // this is not currently in use but might be brought back
@@ -16,7 +16,7 @@ const Navbar = () => {
       >
         <div className="bg-amber-200 hidden lg:flex justify-between standard-font-1 text-yellow-900 text-lg top-navbar-shadow">
           <Link href="/">
-            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-2 pb-3 active:bg-gray-900 active:text-gray-200">
+            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-1 pb-2 active:bg-gray-900 active:text-gray-200">
               Home
             </a>
           </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
           </Link>
 
           <Link href="/accomplishments">
-            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-2 pb-3 active:bg-gray-900 active:text-gray-200">
+            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-1 pb-2 active:bg-gray-900 active:text-gray-200">
               Accomplishments
             </a>
           </Link>

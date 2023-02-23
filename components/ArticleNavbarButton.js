@@ -66,7 +66,7 @@ const ArticleNavbarButton = (props) => {
           `this-is-where-the-'bg-neutral-700'-background-color-would-go` 
           : ``
       }>
-        <div className="pb-1.5">
+        <div className="pb-1">
           <button className={
             router.pathname.startsWith(
               `/${props.site}/${props.focusAreaUrl}/${props.articleUrl}`
