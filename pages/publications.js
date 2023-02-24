@@ -71,7 +71,7 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <b><i>Transportation Choice Impacts</i></b>
+                <b><i>Transportation Option Impacts</i></b>
               </div>
             </a>
             <a
@@ -79,7 +79,7 @@ const Publications = () => {
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <b><i>Transportation Option Impacts</i></b>
+                <b><i>Transportation System Impacts</i></b>
               </div>
             </a>
           </div>
