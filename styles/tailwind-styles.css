@@ -46,10 +46,17 @@ h3 a {
 p {
   @apply standard-font-3 px-4 pb-4 text-base text-zinc-900;
 }
+
 /* This is the smaller text underneath images in the articles */
 h4 {
   @apply standard-font-3 text-center px-4 text-sm md:px-32 lg:px-44 pb-14 text-zinc-800;
 }
+
+/* This is the "Lead researcher:" tag that goes at the bottom of every solution */
+h5 {
+  @apply font-semibold standard-font-3 text-center px-4 text-base md:px-32 lg:px-44 pb-14 text-zinc-800;
+}
+
 p a {
   @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
 }

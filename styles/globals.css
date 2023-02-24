@@ -1499,6 +1499,35 @@ h4 {
   }
 }
 
+/* This is the "Lead researcher:" tag that goes at the bottom of every solution */
+
+h5 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h5 {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
+
 p a {
   font-weight: 600;
   --tw-text-opacity: 1;
