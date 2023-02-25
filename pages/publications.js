@@ -31,24 +31,24 @@ const Publications = () => {
           </div>
           <div className="pb-6">
             <div>Health</div>
-            <a
-              href="https://drive.google.com/uc?export=view&id=16Or2FPdUrkPRouD9dZSv_A6JlpXjAkTk"
+            <a 
+              href="https://drive.google.com/uc?export=view&id=1S4Z-GoAg_kjnQrMelPXk50aPggTe9NWc"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
                 <b><i>Human Population</i></b>
               </div>
             </a>
-            <a
-              href="https://drive.google.com/uc?export=view&id=1SJqsjDSDJnZm4g4vbV24hKhVbdK7Lm9N"
+            <a 
+              href="https://drive.google.com/uc?export=view&id=1yXCVRfFiujWwwXYb8f-u2N5LpriPQl6q"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
                 <b><i>Diet Choices - Environmental Impacts</i></b>
               </div>
             </a>
-            <a
-              href="https://drive.google.com/uc?export=view&id=1r-Z8e3U7TeGwxznlRgfNEHKTBtkmY_WI"
+            <a 
+              href="https://drive.google.com/uc?export=view&id=1ZO5owlxiToeCKYjyXhEvcbhw_xfhJt_o"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
@@ -58,24 +58,24 @@ const Publications = () => {
           </div>
           <div className="pb-6">
             <div>Access</div>
-            <a
-              href="https://drive.google.com/uc?export=view&id=17kWlKkQ98RwHGSzx1BDGgzlQC2_8YbLF"
+            <a 
+              href="https://drive.google.com/uc?export=view&id=1c7NpnBkKoIN_dOVw066ePihQKHjzua7X"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
                 <b><i>Residential Sprawl Impacts</i></b>
               </div>
             </a>
-            <a
-              href="https://drive.google.com/uc?export=view&id=1qDqH6ydR5BZoRsBWvMpH5AdqZFcM2hcz"
+            <a 
+              href="https://drive.google.com/uc?export=view&id=15ab9Y6zSL_yUQllWoVq8LaCbiZMaDSEq"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
                 <b><i>Transportation Option Impacts</i></b>
               </div>
             </a>
-            <a
-              href="https://drive.google.com/uc?export=view&id=1MToTkO5V0RVZXf9ZRgqUpp16rXi0BXZO"
+            <a 
+              href="https://drive.google.com/uc?export=view&id=1WnFPppfjmXq6fbIvjameM-eddro43ayX"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
@@ -86,7 +86,7 @@ const Publications = () => {
           <div className="pb-6">
             <div>Opportunities</div>
             <a
-              href="https://drive.google.com/uc?export=view&id=1wnnDiXssh28NEW7uor97UMeRf7K3TuO7"
+              href="https://drive.google.com/uc?export=view&id=1-m5pMehD1Tk9r66o1CxKkqCgVuGJERkr"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
@@ -94,7 +94,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=1GA3ys7FT6Z1ypRAKyS6YPAka5ydFhc27"
+              href="https://drive.google.com/uc?export=view&id=1lHyhqRrBRHH0ShIQCrn3AQ7xqRlA9ejz"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
@@ -102,7 +102,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=1C4GKdOgmMyw3cvFsmpsufMzb-eDnBSu1"
+              href="https://drive.google.com/uc?export=view&id=1qsTrTzIfaRrJOZq-s52eRBrJaLoeZ80z"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
