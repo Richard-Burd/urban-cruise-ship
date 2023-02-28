@@ -5,13 +5,20 @@ export const solution = "Construct an HVDC Grid in the U.S.";
 
 import ArticleImage from "/components/ArticleImage.js";
 
+import SolutionImages from "/components/SolutionImages.js";
+
 **Description:** We recommend that the U. S. Department of Energy, led by an appropriation from Congress, lead the construction of an HVDC grid in the United States.
 
-<ArticleImage image={"hvdc_grid_construction.svg"} width={900} height={270} />
+<SolutionImages 
+  mobileSrc={"hvdc_grid_construction_mobile.svg"}
+  desktopSrc={"hvdc_grid_construction_desktop.svg"}
+   mobileHeight={390}
+  desktopHeight={340}
+/>
 
 **Calculations:** Cost and benefit estimates are given by MacDonald et al. [^"9"]; they provide figures on an annual basis and we estimate a 7% discount rate.
 
-Greenhouse gas reduction estimates are based on the assumption of 4000 TWh per year of total electricity in the United States; that 50% renewable energy penetration would be feasible without the HVDC grid; 80% would be feasible with it; and that the renewable energy that would be enabled by the grid would have a greenhouse gas impact of 50 grams/kWh CO₂e and would displace natural gas at 450 g/kWh.
+Greenhouse gas reduction estimates are based on the assumption of 4,000 TWh per year of total electricity in the United States; that 50% renewable energy penetration would be feasible without the HVDC grid; 80% would be feasible with it; and that the renewable energy that would be enabled by the grid would have a greenhouse gas impact of 50 grams/kWh CO₂e and would displace natural gas at 450 g/kWh.
 
 **Implementation:** Due to the scale of a national HVDC grid, funding would likely have to be a dedicated appropriation by Congress, perhaps as part of an infrastructure bill. Development may also require revising the National Environmental Policy Act (NEPA) to facilitate the land acquisition that will be necessary for the grid.
 
