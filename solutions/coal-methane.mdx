@@ -1,0 +1,34 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Methane Leaks";
+export const solution = "Methane Control on Coal Mines";
+
+## Description
+
+We propose international agreement to control leakage from coal mines and coal infrastructure.
+
+## Details
+
+World emissions of methane are 356 million tons per year [^"1"], which, using a 100-year global warming potential for methane [^"2"], is the equivalent of 10 billion tons of carbon dioxide. Of these, 42 million tons are associated with coal mines and infrastructure.
+
+## Calculations
+
+According to the International Energy Agency, 21 million tons of methane from coal can feasibly be reduced, at an annual cost of $3.3 billion. Valuing CO<sub>2</sub> emissions at $50/ton, we estimate the value of these reductions at $31 billion. The implicit carbon mitigation cost is $5.45 per ton, well below most estimates of the social cost of carbon.
+
+## Implementation
+
+Many of the methane mitigation projects tracked by the IEA have negative cost, meaning that with the projects should yield economic value, even without any greenhouse gas reduction benefit accounted for. The most expensive projects tracked by the IEA have a mitigation cost of $800 per gigajoule, a carbon mitigation cost of nearly $1600/ton. Thus the cost/benefit ratio could be more favorable, but with a smaller overall benefit, by excluding expensive projects from consideration.
+
+Methane reduction could be accomplished through international agreement at the United Nations Framework Convention on Climate Change Conference of Paries (CoP).
+
+[^"1"]: International Energy Agency ["Methane Tracker"](https://www.iea.org/data-and-statistics/data-tools/methane-tracker). February 2023.
+
+[^"2"]: United States Environmental Protection Agency. ["Understanding Global Warming Potentials"](https://www.epa.gov/ghgemissions/understanding-global-warming-potentials). May 2022.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
