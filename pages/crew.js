@@ -176,7 +176,7 @@ const Crew = () => {
         </div>
         <center className="link-icon-set">
           <a
-            href="mailto:john@urbancruiseship.org"
+            href={`/snail-mail`}
             target="_blank"
             rel="noreferrer"
           >
