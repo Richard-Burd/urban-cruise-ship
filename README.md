@@ -6,7 +6,7 @@
 2. run: `npm run dev` to run the development server (to see what your changes look like)
 3. run: `npm run build-css` to build out any necessary TailwindCSS classes (if you add or change any)
 4. run: `npm run build` to build out a production version of the site that is all static HTML files
-5. run `npm start` to serve up those HTML files and see how they look; it should all look the same as development server unless there's a bug somewhere.
+5. run: `npm start` to serve up those HTML files and see how they look; it should all look the same as development server unless there's a bug somewhere.
 
 ---
 
