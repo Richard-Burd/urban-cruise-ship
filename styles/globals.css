@@ -1488,7 +1488,7 @@ h4 {
 h5 {
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 1rem;
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1578,7 +1578,8 @@ h4 a:focus {
 
 /* spacing as the other <h2> (##) elements in the solution */
 
-#footnote-label {
+.solution-dropdown #footnote-label {
+  margin-top: 2.5rem;
   --tw-translate-x: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   padding-bottom: 1rem;
@@ -1588,23 +1589,49 @@ h4 a:focus {
 
 /* This has padding between it and the line above it */
 
-#footnote-label:not(.solution-dropdown #footnote-label) {
+#footnote-label:not(.solution-dropdown #footnote-label, .endeavor-dropdown #footnote-label) {
+  margin-bottom: 0.25rem;
   --tw-translate-x: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-/* This styling effects the individual references at the bottom of the articles and endeavors */
+/* This styling effects the reference title at the bottom of the endeavors */
 
-ol li {
+/* This has padding between it and the line above it */
+
+.endeavor-dropdown #footnote-label {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* This styling effects the individual references at the bottom of the articles */
+
+ol li:not(.endeavor-dropdown ol li, .solution-dropdown ol li ) {
   margin-left: 2rem;
   --tw-translate-x: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   list-style-type: decimal;
 }
 
-/* This is a custom John rule that decreases the (remark-gfm) spaceing between references */
+/* This styling effects the individual references at the bottom of the solutions */
+
+.solution-dropdown ol li:not(.endeavor-dropdown ol li) {
+  margin-left: 2rem;
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  list-style-type: decimal;
+}
+
+/* This styling effects the individual reference numbers at the bottom of the endeavors */
+
+.endeavor-dropdown ol li {
+  margin-left: 2rem;
+  list-style-type: decimal;
+}
+
+/* This is a custom John rule that decreases the (remark-gfm) spacing between references */
 
 li[id^="user-content-fn-"] p {
   padding-bottom: 1.2rem;

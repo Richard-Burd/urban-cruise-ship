@@ -54,7 +54,7 @@ h4 {
 
 /* This is the "Lead researcher:" tag that goes at the bottom of every solution */
 h5 {
-  @apply font-semibold standard-font-3 text-center px-4 text-base md:px-32 lg:px-44 pb-14 text-zinc-800;
+  @apply font-semibold standard-font-3 text-center px-4 text-base md:px-32 lg:px-44 pb-4 text-zinc-800;
 }
 
 p a {
@@ -85,22 +85,38 @@ h4 a {
 /* This styling effects the reference title at the bottom of the solutions */
 /* This has no padding on the top so the References H2 title has the same */
 /* spacing as the other <h2> (##) elements in the solution */
-#footnote-label {
-  @apply pb-4 -translate-x-4;
+.solution-dropdown #footnote-label {
+  @apply pb-4 mt-10 -translate-x-4;
 }
 
 /* This styling effects the reference title at the bottom of the articles */
 /* This has padding between it and the line above it */
-#footnote-label:not(.solution-dropdown #footnote-label) {
-  @apply pt-4 pb-4 -translate-x-4;
+#footnote-label:not(.solution-dropdown #footnote-label, .endeavor-dropdown #footnote-label) {
+  @apply pt-4 pb-4 mb-1 -translate-x-4;
 }
 
-/* This styling effects the individual references at the bottom of the articles and endeavors */
-ol li {
+/* This styling effects the reference title at the bottom of the endeavors */
+/* This has padding between it and the line above it */
+.endeavor-dropdown #footnote-label {
+  @apply pt-4 pb-4;
+}
+
+/* This styling effects the individual references at the bottom of the articles */
+ol li:not(.endeavor-dropdown ol li, .solution-dropdown ol li ) {
   @apply list-decimal ml-8 -translate-x-4;
 }
 
-/* This is a custom John rule that decreases the (remark-gfm) spaceing between references */
+/* This styling effects the individual references at the bottom of the solutions */
+.solution-dropdown ol li:not(.endeavor-dropdown ol li) {
+  @apply list-decimal ml-8 -translate-x-4;
+}
+
+/* This styling effects the individual reference numbers at the bottom of the endeavors */
+.endeavor-dropdown ol li {
+  @apply list-decimal ml-8;
+}
+
+/* This is a custom John rule that decreases the (remark-gfm) spacing between references */
 li[id^="user-content-fn-"] p {
   padding-bottom: 1.2rem;
 }
