@@ -21,7 +21,7 @@ const FocusAreaNavbarButton = (props) => {
         }}
         transition={{ duration: 0.5, type: "spring" }}
       > */}
-      <div className={router.pathname.startsWith(`/${props.site}/${props.focusAreaURL}`) ? `bg-neutral-700 pt-1 pb-2` : `pt-1 pb-2`}>
+      <div className={router.pathname.endsWith(`/${props.site}/${props.focusAreaURL}`) ? `bg-neutral-700 pt-1 pb-2` : `pt-1 pb-2`}>
         <button
           className={`
             focus-area-navbar-border-width 
