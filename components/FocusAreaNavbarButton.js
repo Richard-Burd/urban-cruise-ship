@@ -21,7 +21,22 @@ const FocusAreaNavbarButton = (props) => {
         }}
         transition={{ duration: 0.5, type: "spring" }}
       > */}
-      <div className={router.pathname.endsWith(`/${props.site}/${props.focusAreaURL}`) ? `bg-neutral-700 pt-1 pb-2` : `pt-1 pb-2`}>
+      <div className={
+
+        // urbancruiseship.org/habitat/wellbeing/social_wellbeing
+        // --------URL--------/-site--/focusArea/-----article----
+        // in this case, we are on a focus area page, and not an article,
+        // so we want to highlight the focus area button
+        router.pathname.startsWith(`/${props.site}/${props.focusAreaURL}/`) 
+
+        ||
+
+        // urbancruiseship.org/history/solutions-and-endeavors
+        // urbancruiseship.org/history/solutions
+        // we have both these routes listed above in our project,
+        // so we need to check if the path ends with the focus area URL
+        router.pathname.endsWith(`/${props.site}/${props.focusAreaURL}`)
+        ? `bg-neutral-700 pt-1 pb-2` : `pt-1 pb-2`}>
         <button
           className={`
             focus-area-navbar-border-width 
