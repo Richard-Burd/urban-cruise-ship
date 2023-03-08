@@ -1,5 +1,15 @@
 # Urban Cruise Ship Homepage
 
+## Installation Instructions (Bash Commands):
+
+1. run: `npm install` to install the node module dependencies
+2. run: `npm run dev` to run the development server (to see what your changes look like)
+3. run: `npm run build-css` to build out any necessary TailwindCSS classes (if you add or change any)
+4. run: `npm run build` to build out a production version of the site that is all static HTML files
+5. run `npm start` to serve up those HTML files and see how they look; it should all look the same as development server unless there's a bug somewhere.
+
+---
+
 ## Instructions for Changing the Metrics on the Accomplishments Page to Match the Solutions Tracker
 Open the following file in the main directory of this repo:
 `solutionMetrics.js`
@@ -19,14 +29,14 @@ About 98% of all images on the [UCS Website](http://urbancruiseship.org/) are in
 
 <br></br>
 
-**UPDATE**: Right now we are storing our images on Jye's server because this solution with GitHub was not working.  We may do something later but as of now, send all images to Jye that you want uploaded to the site.
-
-<br></br>
-
 ### Step-1 Setup Access to a GitHub Repository (Only Do This One Time)
 ~~You will need a [GitHub](https://github.com/) account in order to do all of this. When you create an account, make sure to add a picture of yourself in your profile section so you can follow instructions below. Once you have an account, the easiest way to get started is to use [GitHub Desktop](https://desktop.github.com/) to upload images. From [GitHub Desktop](https://desktop.github.com/), go to `file > Clone repository...` which brings up the **Clone Repository** window; in that window select the **URL** option and enter in the URL of the UCS Images Repository: 
 `https://github.com/Richard-Burd/ucs-images/`
 For the **Local Path** option, enter the folder on your computer where you want to store the repository. When you open up this folder, you should see a list of SVG images in that folder along with a `README.md` file, and possible a hidden `.git` file if your computer is set to show hidden files. the list of images should match what is in the [actual repository in the cloud](https://github.com/Richard-Burd/ucs-images/).~~
+
+<br></br>
+
+**UPDATE**: Right now we are storing our images on Jye's server because this solution with GitHub stopped working in February of 2023; we are not sure why as the problems we were expierencing were intermittent and hard to track down.  We may do something later but as of now, send all images to Jye that you want uploaded to the site.
 
 <br></br>
 
@@ -819,14 +829,5 @@ This static site uses the following:
 ### Availability
 
 The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Vercel.
-
----
-
-### Installation Instructions (Bash Commands):
-
-1. run: `npm install` to install the node module dependencies
-2. run: `npm run dev` to run the development server
-3. run: `npm run build-css` to build out any necessary TailwindCSS classes (if you add or change any)
-4. run: `npm run build` to build out a production version of the site
 
 ---
