@@ -8,10 +8,10 @@ export const totalBenefitInTrillions = 4.491;
 export const totalCostInTrillions = 3.179;
 
 // MTCO₂e Avoided (Millions)
-export const totalMTCO2eInMillions = 2704;
+export const totalMTCO2eInMillions = 2709;
 
 // Habitat Saved (Millions Km²)
-export const totalHabitatPreservedMillionsKm2 = 78.34;
+export const totalHabitatPreservedMillionsKm2 = 79;
 
 // Date of last change to this file in "parentheses"
-export const dateOfLastChange = "March 3, 2023"
+export const dateOfLastChange = "March 8, 2023"

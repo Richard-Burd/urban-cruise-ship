@@ -83,10 +83,10 @@ const Accomplishments = () => {
           handouts). This lessens the distractive clutter and lack of
           achievability rationale (and accompanying puzzlingly wide variations)
           associated with forecast (or scenario)-based presentations used
-          extensively previously by numerous other organizations
+          extensively previously by numerous other organizations.
         </div>
         <div className="pb-6">
-          <b>2021-Present:</b>&nbsp;As of { dateOfLastChange }, 10 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  Totals for all of these combined are 
+          <b>2021-Present:</b>&nbsp;As of { dateOfLastChange }, 22 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  The combined totals are 
           ${ totalCostInTrillions } trillion U.S. dollars per year in costs, ${ totalBenefitInTrillions } trillion U.S. dollars per year in benefits, { totalMTCO2eInMillions } billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and { totalHabitatPreservedMillionsKm2 } million square kilometers of habitat preserved.
         </div>
         <div className="pb-6">
@@ -118,7 +118,7 @@ const Accomplishments = () => {
           to properly prioritize them. Calculations for these remain under
           development. By presenting this data, along with analysis and
           tentative problem-solution sets, others can use this to independently
-          more easily develop high-quality solutions if they wish, in
+          develop high-quality solutions easier if they wish, in
           competition with Urban Cruise Ship&apos;s own solution development.
           Such competition should improve collective quality.
         </div>
