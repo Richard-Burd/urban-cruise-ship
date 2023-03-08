@@ -92,7 +92,7 @@ h4 a {
 /* This styling effects the reference title at the bottom of the articles */
 /* This has padding between it and the line above it */
 #footnote-label:not(.solution-dropdown #footnote-label, .endeavor-dropdown #footnote-label) {
-  @apply pt-4 pb-4 mb-1 -translate-x-4;
+  @apply pt-4 pb-4 mb-1;
 }
 
 /* This styling effects the reference title at the bottom of the endeavors */
@@ -103,7 +103,7 @@ h4 a {
 
 /* This styling effects the individual references at the bottom of the articles */
 ol li:not(.endeavor-dropdown ol li, .solution-dropdown ol li ) {
-  @apply list-decimal ml-8 -translate-x-4;
+  @apply list-decimal ml-8;
 }
 
 /* This styling effects the individual references at the bottom of the solutions */
