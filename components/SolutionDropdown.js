@@ -4,16 +4,17 @@ import { motion, AnimatePresence } from "framer-motion";
 const SolutionDropdown = ({ problem, solution, children }) => {
   const [isVisible, setVisible] = useState(false);
 
-  function convertToSlug(text) {
-    return text
+  function convertToUrlSlug(text) {
+    return encodeURIComponent(text
       .toLowerCase()
       .replace(/[^a-zA-Z0-9]+/g, "-")
-      .replace(/(^-|-$)+/g, "");
+      .replace(/(^-|-$)+/g, "")
+    );
   }
 
   return (
     <>
-      <div className="solution-dropdown" id={convertToSlug(solution)}>
+      <div className="solution-dropdown" id={convertToUrlSlug(solution)}>
         <div className="overflow-hidden pb-8">
           <motion.div onTap={() => setVisible(!isVisible)}>
             <div className="solution-dropdown-color cursor-pointer solution-dropdown-elliptical-geometry relative solution-dropdown-shadow-geometry mx-2 sm:mx-16 standard-font-3 text-center hover:text-gray-100 transition text-xl z-20">
