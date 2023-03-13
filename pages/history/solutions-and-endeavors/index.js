@@ -1,5 +1,11 @@
 import FocusArea2 from "../../../components/FocusArea2";
 
+//place any drop down elements here
+
+//This is the document that includes the images and tables for the main content of the page. one table, mixing solutions and endeavors
+
+import FullSetOfSolutionsAndEndeavors from "/endeavors/full-set-of-solutions-and-endeavors.mdx";
+
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
 
@@ -31,8 +37,9 @@ const SolutionsAndEndeavors = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="mx-4 my-16">
-        <h2>This page is under construction</h2>
-        <p>...please check back later in order to view this content</p>
+        <h2></h2>
+        <p></p>
+        <FullSetOfSolutionsAndEndeavors />
       </div>
     </>
   );
