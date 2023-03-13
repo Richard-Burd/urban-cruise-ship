@@ -19,7 +19,7 @@ const SnailMail = () => {
             Letters to John can be sent to the following address:
           </h2>
           <div className="address-set text-2xl ml-4 sm:ml-20 tracking-wide">
-            <div>To minimize resource consumption, including time, please send only respectful , personal communication to:</div>
+            <div>To minimize resource consumption, including time, please send only respectful, personal communication to:</div>
             <div className="ml-6 mt-4 p-4 bg-slate-200 inline-block max-w-max">
               <div><b>Mailing address:</b></div>
               <div>John van der Harst</div>
