@@ -1,5 +1,12 @@
 import FocusArea2 from "../../../components/FocusArea2";
 
+//place any drop down elements breaking solutions into categories here
+
+//This is the document that includes the images and tables for the main content of the page. 5 images, multiple tables.
+
+import FullSetOfSolutions from "/solutions/full-set-of-solutions.mdx";
+
+
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
 
@@ -31,8 +38,7 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="mx-4 my-16">
-        <h2>This page is under construction</h2>
-        <p>...please check back later in order to view this content</p>
+        <FullSetOfSolutions />
       </div>
     </>
   );
