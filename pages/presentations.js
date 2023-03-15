@@ -51,9 +51,6 @@ const Presentations = () => {
             length/population comparisons at a public hearing and subsequent
             committee and full meetings of the Metropolitan Council of Nashville
             and Davidson County on a light rail plan tax referendum.
-            &nbsp;presented an overview of current and forecasted world energy
-            production at the Santa Fe Institute, as part of their
-            Sustainability Summer School program.
           </div>
         </div>
       </div>
