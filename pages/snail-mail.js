@@ -24,7 +24,7 @@ const SnailMail = () => {
         />
       </center> */}
       <div>
-        <div className="text-set pb-80">
+        <div className="text-set pb-80 md:ml-0 mx-4 md:mr-80">
           <div className="address-set text-2xl tracking-wide">
             <div>
               To minimize resource consumption, including time, please send only

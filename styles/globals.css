@@ -2263,6 +2263,14 @@ td a:focus {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:mr-80 {
+    margin-right: 20rem;
+  }
+
   .md\:grid {
     display: grid;
   }
