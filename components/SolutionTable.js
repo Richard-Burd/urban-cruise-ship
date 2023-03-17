@@ -25,7 +25,8 @@ const tableData = [
     benefit: "nifce",
     co2: "57",
     habitat: "MI",
-    sources: "55"
+    sources: "55",
+    "Specialized Site" : "matter"
   },
   {
     solution: "Lee",
@@ -42,10 +43,10 @@ const tableData = [
     co2: "57",
     habitat: "MI",
     sources: "55"
-
-    
   },
 ];
+
+
 
 function SolutionTable() {
   const columns = React.useMemo(
