@@ -8,7 +8,12 @@
      "focus_area_name":"Solutions",
      "focus_area_url":"solutions",
      "articles": [
-      { "article_title": "This is a new Article Title", "article_url": "new" }
+      { "article_title": "Benefit / Cost", "article_url": "benefitover" },
+      { "article_title": "Benefit - Cost", "article_url": "benefitminus" },
+      { "article_title": "Cost Efficiency", "article_url": "efficiency" },
+      { "article_title": "Efficiency Comparison", "article_url": "comparison" },
+      { "article_title": "CO2 Reduction", "article_url": "co2" },
+      { "article_title": "Habitat Preservation", "habitat": "efficiency" }
      ]
   },
   {
