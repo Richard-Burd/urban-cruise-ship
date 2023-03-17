@@ -20,21 +20,30 @@ import { useTable, useSortBy } from "react-table";
 
 const tableData = [
   {
-    Name: "Jye",
-    Age: 20,
-    State: "TN",
-    "Specialized Site": "energy",
+    solution: "Lee",
+    cost: "40",
+    benefit: "nifce",
+    co2: "57",
+    habitat: "MI",
+    sources: "55"
   },
   {
-    Name: "Rick",
-    Age: 30,
-    State: "OR",
-    "Specialized Site": "matter",
+    solution: "Lee",
+    cost: "40",
+    benefit: "nifce",
+    co2: "57",
+    habitat: "MI",
+    sources: "55"
   },
   {
-    Name: "Lee",
-    Age: 40,
-    State: "MI",
+    solution: "Lee",
+    cost: "40",
+    benefit: "nifce",
+    co2: "57",
+    habitat: "MI",
+    sources: "55"
+
+    
   },
 ];
 
@@ -42,16 +51,28 @@ function SolutionTable() {
   const columns = React.useMemo(
     () => [
       {
-        Header: "Name",
-        accessor: "Name",
+        Header: "Solution / Endeavor",
+        accessor: "solution",
       },
       {
-        Header: "Age",
-        accessor: "Age",
+        Header: "Cost (Billion USD/yr)",
+        accessor: "cost",
       },
       {
-        Header: "State",
-        accessor: "State",
+        Header: "Benefit (Billion USD/yr)",
+        accessor: "benefit",
+      },
+      {
+        Header: "CO² Reduction megaTon/yr",
+        accessor: "co2",
+      },
+      {
+        Header: "Habitat Preservation (km²)",
+        accessor: "habitat",
+      },
+      {
+        Header: "Sources",
+        accessor: "sources",
       },
     ],
     []
