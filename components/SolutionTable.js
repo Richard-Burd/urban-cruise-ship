@@ -1,42 +1,41 @@
 // defined state (the table described in JSON format)
-    // column that specifies the specialized site
-    // ...that the solution belongs to IOT color it
+// column that specifies the specialized site
+// ...that the solution belongs to IOT color it
 // Jye and anyone else can edit this
 
 // state hooks [useState()]
 
 // logic to handle button clicks below
-    // "preventDefault" and re-render
+// "preventDefault" and re-render
 
 // logic to handle the background coloring
-    // based on which specialized site the solution belongs to
+// based on which specialized site the solution belongs to
 // functional component
-    // button(s) to select arrangement order
-    // the table displayed according to the correct arrangement
+// button(s) to select arrangement order
+// the table displayed according to the correct arrangement
 // <style> tag in this component ".js" file to handle any custom logic
-
 
 import React, { useState } from "react";
 import { useTable, useSortBy } from "react-table";
 
 const tableData = [
   {
-    "Name": "Jye",
-    "Age": 20,
-    "State": "TN",
-    "Specialized Site": "energy"
+    Name: "Jye",
+    Age: 20,
+    State: "TN",
+    "Specialized Site": "energy",
   },
   {
-    "Name": "Rick",
-    "Age": 30,
-    "State": "OR",
-    "Specialized Site": "matter"
+    Name: "Rick",
+    Age: 30,
+    State: "OR",
+    "Specialized Site": "matter",
   },
   {
-    "Name": "Lee",
-    "Age": 40,
-    "State": "MI"
-  }
+    Name: "Lee",
+    Age: 40,
+    State: "MI",
+  },
 ];
 
 function SolutionTable() {
@@ -44,16 +43,16 @@ function SolutionTable() {
     () => [
       {
         Header: "Name",
-        accessor: "Name"
+        accessor: "Name",
       },
       {
         Header: "Age",
-        accessor: "Age"
+        accessor: "Age",
       },
       {
         Header: "State",
-        accessor: "State"
-      }
+        accessor: "State",
+      },
     ],
     []
   );
@@ -67,9 +66,9 @@ function SolutionTable() {
   return (
     <table {...getTableProps()}>
       <thead>
-        {headerGroups.map((headerGroup) => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map((column) => (
+        {headerGroups.map((headerGroup, hgIndex) => (
+          <tr {...headerGroup.getHeaderGroupProps()} key={`hg-${hgIndex}`}>
+            {headerGroup.headers.map((column, colIndex) => (
               <th
                 {...column.getHeaderProps(column.getSortByToggleProps())}
                 className={
@@ -79,6 +78,7 @@ function SolutionTable() {
                       : "sort-asc"
                     : ""
                 }
+                key={`col-${colIndex}`}
               >
                 {column.render("Header")}
               </th>
@@ -87,13 +87,19 @@ function SolutionTable() {
         ))}
       </thead>
       <tbody {...getTableBodyProps()}>
-        {rows.map((row) => {
+        {rows.map((row, rowIndex) => {
           prepareRow(row);
           return (
-            <tr {...row.getRowProps()} style={rowStyle(row.original)}>
-              {row.cells.map((cell) => {
+            <tr
+              {...row.getRowProps()}
+              style={rowStyle(row.original)}
+              key={`row-${rowIndex}`}
+            >
+              {row.cells.map((cell, cellIndex) => {
                 return (
-                  <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                  <td {...cell.getCellProps()} key={`cell-${cellIndex}`}>
+                    {cell.render("Cell")}
+                  </td>
                 );
               })}
             </tr>
