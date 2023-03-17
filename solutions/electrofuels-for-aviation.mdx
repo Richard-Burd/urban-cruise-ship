@@ -3,7 +3,45 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Emissions From Aviation";
 export const solution = "Electrofuels for Aviation";
 
-Although electrofuels are not generally cost-competitive with other low-carbon fuel options, with aviation, the need for high fuel density precludes electrification, ammonia, or methanol for long-distance flights. For these, electrofuels may be the best low-carbon option.
+## Description
+
+We propose blending 50% electrofuel into the jet fuel supply.
+
+## Details
+
+To 2050, aircraft are expected to continue to become more efficient, but this efficiency gain will more than be offset by the growth in air travel. Given the importance of aviation to the global economy, reducing demand simply by foregoing air travel is not a realistic option.
+
+Although electrofuels are not generally cost-competitive with other low-carbon fuel options, with aviation, the need for high fuel density precludes electrification, ammonia, or methanol for long-distance flights. For these, electrofuels may be the best low-carbon option. Furthermore, due to the long capital lifespan of aircraft and the logistical difficulty of providing multiple types of fuel, drop-in options are necessary to make a transition to lower carbon fuels [^"1"].
+
+Kerosene, typically used as jet fuel today, contains aromatics that electrofuels do not, without which modern jet engines might not function properly [^"1"]. Although we see no insurmountable barrier to 100% electrofuel, current regulation allows for blends up to 50%, a value modeled hereafter.
+
+## Calculations
+
+In the following calculations, we model a 2050 demand for jet fuel at 29 quadrillion BTUs [^"2"], equivalent to 713 million tons. One ton of kerosene costs roughly $650/ton at recent prices [^"3"], while a ton of electofuel is projected to cost $1720/ton in 2050 in current dollars [^"1"]. Thus replacing 357 million tons of kerosene with electrofuel should cost $381 billion per year.
+
+Excluding transportation costs, combustion of one ton of kerosene emits 3.16 tons of carbon dioxide [^"4"]. We assume that electrofuels are carbon neutral. We also assume that electrofuels can mitigate half of the contrail formation relative to kerosene [^"5"], and that contrails contribute twice as much to warming as does carbon dioxide release [^"6"]. Thus the contrail reduction effect is taken to be equal to the carbon dioxide reduction effect. We estimate the social cost of carbon to be $245 per ton in 2050 in today's money [^"7"], the lower end of the IPCC's estimated range. Thus the total global warming reductin benefit can be valued at $552 billion per year.
+
+## Implementation
+
+A blending agreement could be implemented through international agreement by the International Civil Aviation Organization, an agency of the United Nations that regulates air travel. Significant cost reductions for electrofuel are necessary for the blending proposal described here to be feasible [^"1"]. This could be done through military procurement, which tend to be less cost-sensitive than civil aviation and for which logistical challenges can make conventional jet fuel usage less attractive [^"8"],[^"9"].
+
+[^"1"]: Scheelhaase, J., Maertens, S., Grimme, W. ["Synthetic fuels in aviation – Current barriers and potential political measures"](https://www.sciencedirect.com/science/article/pii/S2352146519305824). Transportation Research Procedia <b>43</b>, pp. 21-30, ISSN 2352-1465. 2019.
+
+[^"2"]: F&L Daily. ["Global demand for jet fuel to continue to rise through 2050"](https://www.fuelsandlubes.com/global-demand-jet-fuel-continue-rise-2050/). November 2019.
+
+[^"3"]: Y Charts. ["US Gulf Coast Kerosene-Type Jet Fuel Spot Price (I:USGCKTJF)"](https://ycharts.com/indicators/gulf_coast_jet_fuel_spot_price). Accessed March 16, 2023.
+
+[^"4"]: Carbon Offset Guide. ["CO2 Emissions"](https://www.offsetguide.org/understanding-carbon-offsets/air-travel-climate/climate-impacts-from-aviation/co2-emissions/). Accessed March 16, 2023.
+
+[^"5"]: Voigt C., Kleine J., Sauer D., Moore R.H., Bräuer T., Le Clercq P., Kaufmann S., Scheibe M., Jurkat-Witschas T., Aigner M., Bauder U. ["Cleaner burning aviation fuels can reduce contrail cloudiness"](https://www.nature.com/articles/s43247-021-00174-y). Communications Earth & Environment 2(1): 114. June 2021.
+
+[^"6"]: Transport & Environment. ["Airline contrails warm the planet twice as much as CO2, EU study finds"](https://www.transportenvironment.org/discover/airline-contrails-warm-planet-twice-much-co2-eu-study-finds/). November 2020.
+
+[^"7"]: de Coninck, H., A. Revi, M. Babiker, P. Bertoldi, M. Buckeridge, A. Cartwright, W. Dong, J. Ford, S. Fuss, J.-C. Hourcade, D. Ley, R. Mechler, P. Newman, A. Revokatova, S. Schultz, L. Steg, and T. Sugiyama, ["2018: Strengthening and Implementing the Global Response. In: Global Warming of 1.5°C. An IPCC Special Report on the impacts of global warming of 1.5°C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty"](https://www.ipcc.ch/site/assets/uploads/sites/2/2019/05/SR15_Chapter4_High_Res.pdf) [MassonDelmotte,V., P. Zhai, H.-O. Pörtner, D. Roberts, J. Skea, P.R. Shukla, A. Pirani, W. Moufouma-Okia, C. Péan, R. Pidcock, S. Connors, J.B.R. Matthews, Y. Chen, X. Zhou, M.I. Gomis, E. Lonnoy, T. Maycock, M. Tignor, and T. Waterfield (eds.)]. In Press. 2018.
+
+[^"8"]: Defense Innovation Unit. ["Department of Defense To Prototype Use of Synthetic Fuels for Contested Environments"](https://www.diu.mil/latest/department-of-defense-to-prototype-use-of-synthetic-fuels-for-contested). U. S. Department of Defense. February 2003.
+
+[^"9"]: Poland, C. ["The Air Force partners with Twelve, proves it’s possible to make jet fuel out of thin air"](https://www.af.mil/News/Article-Display/Article/2819999/the-air-force-partners-with-twelve-proves-its-possible-to-make-jet-fuel-out-of/). U. S. Air Force. October 2021.
 
 export default ({ children }) => 
   <SolutionDropdown 
