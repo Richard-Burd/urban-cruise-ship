@@ -1,0 +1,24 @@
+[
+  {
+     "focus_area_name":"Endeavors",
+     "focus_area_url":"endeavors",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Solutions",
+     "focus_area_url":"solutions",
+     "articles": [
+      { "article_title": "This is a new Article Title", "article_url": "new" }
+     ]
+  },
+  {
+     "focus_area_name":"Solutions & Endeavors",
+     "focus_area_url":"solutions-and-endeavors",
+     "articles": []
+  },
+  {
+     "focus_area_name":"Time",
+     "focus_area_url":"time",
+     "articles": []
+  }
+]

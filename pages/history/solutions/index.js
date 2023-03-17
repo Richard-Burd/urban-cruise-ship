@@ -12,6 +12,7 @@ const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
 
 const hierarchy = require("../hierarchy.json");
+// const hierarchy = require("../newhierarchy.json");
 function findFocusAreaName(searchValue) {
   return hierarchy.find(({ focus_area_url }) => {
     return focus_area_url === searchValue;

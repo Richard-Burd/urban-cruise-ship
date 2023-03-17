@@ -17,6 +17,7 @@
 
 import React, { useState } from "react";
 
+// this spells out the data that will be displayed in the table
 const tableData = [
     {
       "Name": "Jye",
@@ -38,8 +39,11 @@ const tableData = [
   ];
   
   function SolutionTable() {
+
+    // converts the tableData object into an actual table
     const [data, setData] = useState(tableData);
   
+    // logic controlling the background colors of rows
     const rowStyle = (specializedSite) => {
       if (specializedSite === "energy") {
         return { backgroundColor: "orange" };
@@ -50,6 +54,7 @@ const tableData = [
       }
     };
   
+    // the rendered table:
     return (
       <table>
         <thead>
@@ -60,6 +65,7 @@ const tableData = [
           </tr>
         </thead>
         <tbody>
+          {/* This iterates over each item in the tableData object and generates a table row */}
           {data.map((row, index) => (
             <tr key={index} style={rowStyle(row["Specialized Site"])}>
               <td>{row.Name}</td>
