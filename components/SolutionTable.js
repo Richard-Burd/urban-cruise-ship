@@ -15,67 +15,103 @@
     // the table displayed according to the correct arrangement
 // <style> tag in this component ".js" file to handle any custom logic
 
+
 import React, { useState } from "react";
+import { useTable, useSortBy } from "react-table";
 
-// this spells out the data that will be displayed in the table
 const tableData = [
-    {
-      "Name": "Jye",
-      "Age": 20,
-      "State": "TN",
-      "Specialized Site": "energy"
-    },
-    {
-      "Name": "Rick",
-      "Age": 30,
-      "State": "OR",
-      "Specialized Site": "matter"
-    },
-    {
-      "Name": "Lee",
-      "Age": 40,
-      "State": "MI"
-    }
-  ];
-  
-  function SolutionTable() {
-
-    // converts the tableData object into an actual table
-    const [data, setData] = useState(tableData);
-  
-    // logic controlling the background colors of rows
-    const rowStyle = (specializedSite) => {
-      if (specializedSite === "energy") {
-        return { backgroundColor: "orange" };
-      } else if (specializedSite === "matter") {
-        return { backgroundColor: "green" };
-      } else {
-        return {};
-      }
-    };
-  
-    // the rendered table:
-    return (
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>State</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* This iterates over each item in the tableData object and generates a table row */}
-          {data.map((row, index) => (
-            <tr key={index} style={rowStyle(row["Specialized Site"])}>
-              <td>{row.Name}</td>
-              <td>{row.Age}</td>
-              <td>{row.State}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    );
+  {
+    "Name": "Jye",
+    "Age": 20,
+    "State": "TN",
+    "Specialized Site": "energy"
+  },
+  {
+    "Name": "Rick",
+    "Age": 30,
+    "State": "OR",
+    "Specialized Site": "matter"
+  },
+  {
+    "Name": "Lee",
+    "Age": 40,
+    "State": "MI"
   }
-  
-  export default SolutionTable;
+];
+
+function SolutionTable() {
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: "Name",
+        accessor: "Name"
+      },
+      {
+        Header: "Age",
+        accessor: "Age"
+      },
+      {
+        Header: "State",
+        accessor: "State"
+      }
+    ],
+    []
+  );
+
+  const [data, setData] = useState(tableData);
+  const tableInstance = useTable({ columns, data }, useSortBy);
+
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    tableInstance;
+
+  return (
+    <table {...getTableProps()}>
+      <thead>
+        {headerGroups.map((headerGroup) => (
+          <tr {...headerGroup.getHeaderGroupProps()}>
+            {headerGroup.headers.map((column) => (
+              <th
+                {...column.getHeaderProps(column.getSortByToggleProps())}
+                className={
+                  column.isSorted
+                    ? column.isSortedDesc
+                      ? "sort-desc"
+                      : "sort-asc"
+                    : ""
+                }
+              >
+                {column.render("Header")}
+              </th>
+            ))}
+          </tr>
+        ))}
+      </thead>
+      <tbody {...getTableBodyProps()}>
+        {rows.map((row) => {
+          prepareRow(row);
+          return (
+            <tr {...row.getRowProps()} style={rowStyle(row.original)}>
+              {row.cells.map((cell) => {
+                return (
+                  <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                );
+              })}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}
+
+function rowStyle(row) {
+  if (row["Specialized Site"] === "energy") {
+    return { backgroundColor: "orange" };
+  } else if (row["Specialized Site"] === "matter") {
+    return { backgroundColor: "green" };
+  } else {
+    return {};
+  }
+}
+
+export default SolutionTable;

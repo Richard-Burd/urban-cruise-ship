@@ -43,7 +43,7 @@ const Solutions = () => {
         <FullSetOfSolutions />
 
         <br></br><br></br>
-        {/* <SolutionTable /> */}
+        <SolutionTable />
       </div>
     </>
   );
