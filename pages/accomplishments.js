@@ -86,8 +86,8 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations.
         </div>
         <div className="pb-6">
-          <b>2021-Present:</b>&nbsp;As of { dateOfLastChange }, 22 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  The combined totals are 
-          ${ totalCostInTrillions } trillion U.S. dollars per year in costs, ${ totalBenefitInTrillions } trillion U.S. dollars per year in benefits, { totalMTCO2eInMillions } &nbsp; million tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and { totalHabitatPreservedMillionsKm2 } million square kilometers of habitat preserved.
+          <b>2021-Present:</b>&nbsp;As of { dateOfLastChange }, 23 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  The combined totals are 
+          ${ totalCostInTrillions } trillion U.S. dollars per year in costs, ${ totalBenefitInTrillions } trillion U.S. dollars per year in benefits, { totalMTCO2eInMillions } &nbsp; billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and { totalHabitatPreservedMillionsKm2 } million square kilometers of habitat preserved.
         </div>
         <div className="pb-6">
           <b>2020-Present:</b>&nbsp;Invented and developed

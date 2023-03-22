@@ -2,16 +2,16 @@
 // Solutions Metrics on the Accomplishments Page:
 
 // Benefit of all our solutions (trillions)
-export const totalBenefitInTrillions = 4.491;
+export const totalBenefitInTrillions = 6.193;
 
 // Cost of all our solutions (trillions)
-export const totalCostInTrillions = 3.179;
+export const totalCostInTrillions = 8.279;
 
-// MTCO₂e Avoided (Millions)
-export const totalMTCO2eInMillions = 2709;
+// MTCO₂e Avoided (Billions)
+export const totalMTCO2eInMillions = 19.7;
 
 // Habitat Saved (Millions Km²)
 export const totalHabitatPreservedMillionsKm2 = 79;
 
 // Date of last change to this file in "parentheses"
-export const dateOfLastChange = "March 8, 2023"
+export const dateOfLastChange = "March 22, 2023"
