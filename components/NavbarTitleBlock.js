@@ -31,7 +31,7 @@ const NavbarTitleBlock = (props) => {
 
       <div
         id="desktop-version"
-        className="lg:pt-16 lg:pb-11 lg:grid grid-cols-2 gap-20 items-center"
+        className="lg:pt-10 lg:pb-7 lg:grid grid-cols-2 gap-20 items-center"
       >
         <div className="hidden lg:inline">
           <Image

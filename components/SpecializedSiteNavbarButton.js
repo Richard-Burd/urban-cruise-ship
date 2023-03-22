@@ -51,7 +51,7 @@ const SpecializedSiteNavbarButton = (props) => {
               }
             }
           > */}
-          <div className={router.pathname.startsWith(`/${props.site}`) ? `bg-neutral-700 px-2 py-2 lg:py-4` : `px-2 py-2 lg:py-4`}>
+          <div className={router.pathname.startsWith(`/${props.site}`) ? `bg-neutral-700 px-2 py-2 lg:py-3.5` : `px-2 py-2 lg:py-3.5`}>
             <button
               className={`
                 elliptical-geometry 

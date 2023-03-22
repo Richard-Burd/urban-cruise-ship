@@ -2442,17 +2442,30 @@ td a:focus {
     padding-bottom: 0.25rem;
   }
 
-  .lg\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .lg\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
   }
 
   .lg\:pb-11 {
     padding-bottom: 2.75rem;
   }
 
+  .lg\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
   .lg\:pl-0 {
     padding-left: 0px;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:pt-16 {

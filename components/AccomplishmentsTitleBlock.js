@@ -35,7 +35,7 @@ const AccomplishmentsTitleBlock = (props) => {
 
         // the "gap" in this line below controls the space between the logo
         // and the "Accomplishments" title.
-        className="lg:pt-16 lg:pb-11 lg:grid grid-cols-2 items-center"
+        className="lg:pt-10 lg:pb-7 lg:grid grid-cols-2 items-center"
       >
         <div className="hidden lg:inline">
           <Image
