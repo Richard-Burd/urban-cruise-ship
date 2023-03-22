@@ -74,7 +74,8 @@ const SnailMail = () => {
       </div>
       <style jsx>{`
         .john-contact-title-block {
-          font-size: 3.48em;
+          font-size: 2.4rem;
+          transform: translateX(5.0rem)
         }
       `}</style>
     </div>
