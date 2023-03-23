@@ -45,7 +45,12 @@ function SolutionTable() {
     () => [
       {
         Header: "Solution / Endeavor",
-        accessor: "solution",
+        accessor: (row) => ({ solution: row.solution, link: row.link }),
+        Cell: ({ value }) => (
+          <a href={value.link} target="_blank" rel="noopener noreferrer">
+            {value.solution}
+          </a>
+        ),
       },
       {
         Header: "Cost (Billion USD/yr)",
