@@ -2,10 +2,10 @@
 // Solutions Metrics on the Accomplishments Page:
 
 // Benefit of all our solutions (trillions)
-export const totalBenefitInTrillions = 6.193;
+export const totalBenefitInTrillions = 9.593;
 
 // Cost of all our solutions (trillions)
-export const totalCostInTrillions = 8.279;
+export const totalCostInTrillions = 4.879;
 
 // MTCO₂e Avoided (Billions)
 export const totalMTCO2eInMillions = 19.7;
