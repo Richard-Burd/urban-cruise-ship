@@ -1,48 +1,40 @@
-// defined state (the table described in JSON format)
-// column that specifies the specialized site
-// ...that the solution belongs to IOT color it
-// Jye and anyone else can edit this
-
-// state hooks [useState()]
-
-// logic to handle button clicks below
-// "preventDefault" and re-render
-
-// logic to handle the background coloring
-// based on which specialized site the solution belongs to
-// functional component
-// button(s) to select arrangement order
-// the table displayed according to the correct arrangement
-// <style> tag in this component ".js" file to handle any custom logic
+// We need logic to import the correct background colors for each 
+// ...specialized site from our style sheet
+// We need a way to render links to the solutions themselves
 
 import React, { useState } from "react";
 import { useTable, useSortBy } from "react-table";
 
 const tableData = [
   {
-    solution: "Under",
-    cost: "1",
-    benefit: "nifce",
-    co2: "57",
-    habitat: "MI",
-    sources: "55",
-    "Specialized Site" : "matter"
+    solution: "5% Methanol in Gasoline - U.S.",
+    link: "https://www.urbancruiseship.org/energy/energy_distribution/methanol#blend-5-methanol-into-the-us-gas-supply",
+    site : "energy",
+    cost: 11.2,
+    benefit: 13.2,
+    co2: 11,
+    habitat: null,
+    sources: null
   },
   {
-    solution: "Construction",
-    cost: "2",
-    benefit: "nifce",
-    co2: "57",
-    habitat: "MI",
-    sources: "12"
+    solution: "Ban Bottom Trawling - E.U.",
+    link: "https://www.urbancruiseship.org/oceans/ocean_industry/seafood#ban-bottom-trawling-on-the-high-seas",
+    site : "oceans",
+    cost: 0.335,
+    benefit: 2.42,
+    co2: 5,
+    habitat: 162000,
+    sources: null
   },
   {
-    solution: "Please Return",
-    cost: "3",
-    benefit: "nifce",
-    co2: "57",
-    habitat: "MI",
-    sources: "23"
+    solution: "Building Envelope Modeling Software Standardization - U.S.",
+    link: "https://www.urbancruiseship.org/energy/cities/building_energy#building-envelope-modeling-software-standardization",
+    site : "energy",
+    cost: 0.002,
+    benefit: 1,
+    co2: 12,
+    habitat: null,
+    sources: null
   },
 ];
 
@@ -58,10 +50,12 @@ function SolutionTable() {
       {
         Header: "Cost (Billion USD/yr)",
         accessor: "cost",
+        Cell: ({ value }) => (value !== null ? `$${Intl.NumberFormat().format(value)}` : null),
       },
       {
         Header: "Benefit (Billion USD/yr)",
         accessor: "benefit",
+        Cell: ({ value }) => (value !== null ? `$${Intl.NumberFormat().format(value)}` : null),
       },
       {
         Header: "CO² Reduction megaTon/yr",
@@ -70,6 +64,7 @@ function SolutionTable() {
       {
         Header: "Habitat Preservation (km²)",
         accessor: "habitat",
+        Cell: ({ value }) => (value !== null ? `${Intl.NumberFormat().format(value)}km²` : null),
       },
       {
         Header: "Sources",
