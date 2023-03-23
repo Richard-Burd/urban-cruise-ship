@@ -20,8 +20,8 @@ import { useTable, useSortBy } from "react-table";
 
 const tableData = [
   {
-    solution: "Lee",
-    cost: "40",
+    solution: "Under",
+    cost: "1",
     benefit: "nifce",
     co2: "57",
     habitat: "MI",
@@ -29,20 +29,20 @@ const tableData = [
     "Specialized Site" : "matter"
   },
   {
-    solution: "Lee",
-    cost: "40",
+    solution: "Construction",
+    cost: "2",
     benefit: "nifce",
     co2: "57",
     habitat: "MI",
-    sources: "55"
+    sources: "12"
   },
   {
-    solution: "Lee",
-    cost: "40",
+    solution: "Please Return",
+    cost: "3",
     benefit: "nifce",
     co2: "57",
     habitat: "MI",
-    sources: "55"
+    sources: "23"
   },
 ];
 
