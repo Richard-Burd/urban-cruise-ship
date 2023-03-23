@@ -1,14 +1,11 @@
-// We need logic to import the correct background colors for each 
-// ...specialized site from our style sheet
-// We need a way to render links to the solutions themselves
-
 import React, { useState } from "react";
+import Link from 'next/link';
 import { useTable, useSortBy } from "react-table";
 
 const tableData = [
   {
     solution: "5% Methanol in Gasoline - U.S.",
-    link: "https://www.urbancruiseship.org/energy/energy_distribution/methanol#blend-5-methanol-into-the-us-gas-supply",
+    link: "/energy/energy_distribution/methanol#blend-5-methanol-into-the-us-gas-supply",
     site : "energy",
     cost: 11.2,
     benefit: 13.2,
@@ -18,7 +15,7 @@ const tableData = [
   },
   {
     solution: "Ban Bottom Trawling - E.U.",
-    link: "https://www.urbancruiseship.org/oceans/ocean_industry/seafood#ban-bottom-trawling-on-the-high-seas",
+    link: "/oceans/ocean_industry/seafood#ban-bottom-trawling-on-the-high-seas",
     site : "oceans",
     cost: 0.335,
     benefit: 2.42,
@@ -28,7 +25,7 @@ const tableData = [
   },
   {
     solution: "Building Envelope Modeling Software Standardization - U.S.",
-    link: "https://www.urbancruiseship.org/energy/cities/building_energy#building-envelope-modeling-software-standardization",
+    link: "/energy/cities/building_energy#building-envelope-modeling-software-standardization",
     site : "energy",
     cost: 0.002,
     benefit: 1,
@@ -38,7 +35,7 @@ const tableData = [
   },
   {
     solution: "Clean Energy Standard - U.S.",
-    link: "https://www.urbancruiseship.org/energy/energy_socioeconomics/policy_se#clean-energy-standard",
+    link: "/energy/energy_socioeconomics/policy_se#clean-energy-standard",
     site : "energy",
     cost: 36.7,
     benefit: 58.9,
@@ -48,7 +45,7 @@ const tableData = [
   },
   {
     solution: "Coal Phase Out - World",
-    link: "https://www.urbancruiseship.org/energy/energy_production/coal#coal-should-be-phased-out",
+    link: "/energy/energy_production/coal#coal-should-be-phased-out",
     site : "energy",
     cost: 1700,
     benefit: 5100,
@@ -68,7 +65,7 @@ const tableData = [
   },
   {
     solution: "Dam Decommissioning Fund - U.S.",
-    link: "https://www.urbancruiseship.org/energy/energy_production/hydro#dam-decommissioning-fund",
+    link: "/energy/energy_production/hydro#dam-decommissioning-fund",
     site : "energy",
     cost: 0.114,
     benefit: 0.23,
@@ -78,7 +75,7 @@ const tableData = [
   },
   {
     solution: "Development Set Patterns - U.S.",
-    link: "https://www.urbancruiseship.org/cities/cities_mobility/development_sets#development-set-patterns",
+    link: "/cities/cities_mobility/development_sets#development-set-patterns",
     site : "cities",
     cost: 1540,
     benefit: 1633.06,
@@ -88,7 +85,7 @@ const tableData = [
   },
   {
     solution: "Fund Wave Energy Research - U.S.",
-    link: "https://www.urbancruiseship.org/energy/energy_production/mhk#fund-wave-energy-r-d-at-8-3-billion-over-10-years",
+    link: "/energy/energy_production/mhk#fund-wave-energy-r-d-at-8-3-billion-over-10-years",
     site : "energy",
     cost: 0.0083,
     benefit: 0.0198,
@@ -98,7 +95,7 @@ const tableData = [
   },
   {
     solution: "Greater Up-front Incentives for Electric Vehicles - U.S.",
-    link: "https://www.urbancruiseship.org/energy/transport/transpo_cars#congress-should-institute-greater-up-front-incentives",
+    link: "/energy/transport/transpo_cars#congress-should-institute-greater-up-front-incentives",
     site : "energy",
     cost: 373,
     benefit: 435,
@@ -108,7 +105,7 @@ const tableData = [
   },
   {
     solution: "Heat Pump Mandate - U.S.",
-    link: "https://www.urbancruiseship.org/energy/cities/heating#heat-pump-water-heater-mandate-for-new-home-construction",
+    link: "/energy/cities/heating#heat-pump-water-heater-mandate-for-new-home-construction",
     site : "energy",
     cost: 0.03,
     benefit: 0.11,
@@ -118,7 +115,7 @@ const tableData = [
   },
   {
     solution: "Heat Recovery Loan Program - U.S",
-    link: "https://www.urbancruiseship.org/energy/industry/industrial_systems#industrial-waste-heat-recovery-loan-program",
+    link: "/energy/industry/industrial_systems#industrial-waste-heat-recovery-loan-program",
     site: "energy",
     cost: 1.1,
     benefit: 2,
@@ -128,7 +125,7 @@ const tableData = [
   },
   {
     solution: "Increase Marine Protected Areas from 8% to 30% of the Ocean - World",
-    link: "https://www.urbancruiseship.org/oceans/ocean_environment/ocean_biodiversity#increase-marine-protected-areas-from-8-to-30-of-the-ocean",
+    link: "/oceans/ocean_environment/ocean_biodiversity#increase-marine-protected-areas-from-8-to-30-of-the-ocean",
     site: "oceans",
     cost: 835,
     benefit: 1274,
@@ -138,7 +135,7 @@ const tableData = [
   },
   {
     solution: "Loosen Floor Area Ratio Rules for Residential - U.S.",
-    link: "https://www.urbancruiseship.org/cities/cities_land_use/cities_zoning_rules#loosen-floor-area-ratio-rules",
+    link: "/cities/cities_land_use/cities_zoning_rules#loosen-floor-area-ratio-rules",
     site: "cities",
     cost: 139.084,
     benefit: 274,
@@ -148,7 +145,7 @@ const tableData = [
   },
   {
     solution: "Loosen Minimum Parking Lot Size Rules - U.S.",
-    link: "https://www.urbancruiseship.org/cities/cities_land_use/cities_zoning_rules#loosen-minimum-lot-size-rules",
+    link: "/cities/cities_land_use/cities_zoning_rules#loosen-minimum-lot-size-rules",
     site: "cities",
     cost: 0.703,
     benefit: 16.4,
@@ -158,7 +155,7 @@ const tableData = [
   },
   {
     solution: "Meat Tax - U.S.",
-    link: "https://www.urbancruiseship.org/matter/diet/diet_fw#u-s-meat-tax",
+    link: "/matter/diet/diet_fw#u-s-meat-tax",
     site: "matter",
     cost: 0.027,
     benefit: 26.3,
@@ -168,7 +165,7 @@ const tableData = [
   },
   {
     solution: "Modular Island Desalination - Mediterranean Islands",
-    link: "https://www.urbancruiseship.org/matter/water/water_provision#modular-desalination-plant-powered-by-renewable-energy",
+    link: "/matter/water/water_provision#renewable-energy-powered-desalinization-expansion-prioritization",
     site: "matter",
     cost: 0.004,
     benefit: 0.037,
@@ -178,7 +175,7 @@ const tableData = [
   },
   {
     solution: "Plant-based Inf. Advocacy Campaign - U.S.",
-    link: "https://www.urbancruiseship.org/matter/diet/diet_fw#plant-based-informational-advocacy-campaign",
+    link: "/matter/diet/diet_fw#plant-based-informational-advocacy-campaign",
     site: "matter",
     cost: 0.48,
     benefit: 10.65,
@@ -188,7 +185,7 @@ const tableData = [
   },
   {
     solution: "Remove Parking Minimums - U.S.",
-    link: "https://www.urbancruiseship.org/cities/cities_land_use/cities_zoning_rules#remove-parking-minimums",
+    link: "/cities/cities_land_use/cities_zoning_rules#remove-parking-minimums",
     site: "cities",
     cost: 0.044,
     benefit: 0.929,
@@ -198,7 +195,7 @@ const tableData = [
   },
   {
     solution: "School Lunch Meat Removal - U.S.",
-    link: "https://www.urbancruiseship.org/matter/diet/diet_fw#school-lunch-meat-removal",
+    link: "/matter/diet/diet_fw#school-lunch-meat-removal",
     site: "matter",
     cost: 0.013,
     benefit: 7.65,
@@ -208,7 +205,7 @@ const tableData = [
   },
   {
     solution: "Scientific Whaling Ban - World",
-    link: "https://www.urbancruiseship.org/oceans/ocean_industry/seafood#ban-scientific-whaling",
+    link: "/oceans/ocean_industry/seafood#ban-scientific-whaling",
     site: "oceans",
     cost: 0.31,
     benefit: 1.456,
@@ -218,7 +215,7 @@ const tableData = [
   },
   {
     solution: "Set Ship Speed Limits - World",
-    link: "https://www.urbancruiseship.org/oceans/ocean_industry/shipping#set-ship-speed-limits",
+    link: "/oceans/ocean_industry/shipping#set-ship-speed-limits",
     site: "oceans",
     cost: 16.5,
     benefit: 55.4,
@@ -228,7 +225,7 @@ const tableData = [
   },
   {
     solution: "Wildlife Corridors - U.S.",
-    link: "https://www.urbancruiseship.org/matter/biodiversity/land_corridors#wildlife-corridors",
+    link: "/matter/biodiversity/land_corridors#wildlife-corridors",
     site: "matter",
     cost: 4.8,
     benefit: 9.4,
@@ -238,8 +235,6 @@ const tableData = [
   },
 ];
 
-
-
 function SolutionTable() {
   const columns = React.useMemo(
     () => [
@@ -247,20 +242,32 @@ function SolutionTable() {
         Header: "Solution / Endeavor",
         accessor: (row) => ({ solution: row.solution, link: row.link }),
         Cell: ({ value }) => (
-          <a href={value.link} target="_blank" rel="noopener noreferrer">
-            {value.solution}
-          </a>
+          <Link href={value.link}>
+            <a target="_blank" rel="noopener noreferrer">
+              {value.solution}
+            </a>
+          </Link>
         ),
       },
       {
         Header: "Cost (Billion USD/yr)",
         accessor: "cost",
-        Cell: ({ value }) => (value !== null ? `$${Intl.NumberFormat().format(value)}` : null),
+        Cell: ({ value }) =>
+        value !== null
+          ? `$${Intl.NumberFormat(undefined, {
+              minimumFractionDigits: 0,
+            }).format(value)}`
+          : null,
       },
       {
         Header: "Benefit (Billion USD/yr)",
         accessor: "benefit",
-        Cell: ({ value }) => (value !== null ? `$${Intl.NumberFormat().format(value)}` : null),
+        Cell: ({ value }) =>
+        value !== null
+          ? `$${Intl.NumberFormat(undefined, {
+              minimumFractionDigits: 0,
+            }).format(value)}`
+          : null,
       },
       {
         Header: "CO² Reduction megaTon/yr",
