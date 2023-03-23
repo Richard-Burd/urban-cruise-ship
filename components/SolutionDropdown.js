@@ -53,7 +53,7 @@ const SolutionDropdown = ({ problem, solution, children }) => {
                 duration: 0.2,
               }}
             >
-              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-100 border border-slate-900 mx-2 sm:mx-16 solution-dropdown-elliptical-geometry solution-dropdown-shadow-geometry -translate-y-24">
+              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-100 border border-slate-900 mx-2 sm:mx-16 solution-dropdown-elliptical-geometry solution-dropdown-shadow-geometry -translate-y-20">
                 <div className="solution-dropdown pt-20">{children}</div>
               </div>
             </motion.div>
@@ -68,7 +68,7 @@ const SolutionDropdown = ({ problem, solution, children }) => {
           border-top-right-radius: 84px 38px;
         }
         .solution-dropdown-shadow-geometry {
-          box-shadow: 4px 6px 6px #86888f;
+          box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.5);
         }
         .solution-dropdown-color {
           background-color: #bfc4cdff;
