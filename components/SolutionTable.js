@@ -36,6 +36,206 @@ const tableData = [
     habitat: null,
     sources: null
   },
+  {
+    solution: "Clean Energy Standard - U.S.",
+    link: "https://www.urbancruiseship.org/energy/energy_socioeconomics/policy_se#clean-energy-standard",
+    site : "energy",
+    cost: 36.7,
+    benefit: 58.9,
+    co2: 1000,
+    habitat: null,
+    sources: null
+  },
+  {
+    solution: "Coal Phase Out - World",
+    link: "https://www.urbancruiseship.org/energy/energy_production/coal#coal-should-be-phased-out",
+    site : "energy",
+    cost: 1700,
+    benefit: 5100,
+    co2: 17000,
+    habitat: null,
+    sources: null
+  },
+  {
+    solution: "Construct a High-Voltage-Direct-Current Grid - U.S.",
+    link: "https://urban-cruise-ship.vercel.app/energy/energy_distribution/grid_design",
+    site : "energy",
+    cost: 220,
+    benefit: 671,
+    co2: 480,
+    habitat: null,
+    sources: null
+  },
+  {
+    solution: "Dam Decommissioning Fund - U.S.",
+    link: "https://www.urbancruiseship.org/energy/energy_production/hydro#dam-decommissioning-fund",
+    site : "energy",
+    cost: 0.114,
+    benefit: 0.23,
+    co2: null,
+    habitat: null,
+    sources: null
+  },
+  {
+    solution: "Development Set Patterns - U.S.",
+    link: "https://www.urbancruiseship.org/cities/cities_mobility/development_sets#development-set-patterns",
+    site : "cities",
+    cost: 1540,
+    benefit: 1633.06,
+    co2: 21,
+    habitat: 42000,
+    sources: null
+  },
+  {
+    solution: "Fund Wave Energy Research - U.S.",
+    link: "https://www.urbancruiseship.org/energy/energy_production/mhk#fund-wave-energy-r-d-at-8-3-billion-over-10-years",
+    site : "energy",
+    cost: 0.0083,
+    benefit: 0.0198,
+    co2: 3,
+    habitat: null,
+    sources: null
+  },
+  {
+    solution: "Greater Up-front Incentives for Electric Vehicles - U.S.",
+    link: "https://www.urbancruiseship.org/energy/transport/transpo_cars#congress-should-institute-greater-up-front-incentives",
+    site : "energy",
+    cost: 373,
+    benefit: 435,
+    co2: 130,
+    habitat: null,
+    sources: null
+  },
+  {
+    solution: "Heat Pump Mandate - U.S.",
+    link: "https://www.urbancruiseship.org/energy/cities/heating#heat-pump-water-heater-mandate-for-new-home-construction",
+    site : "energy",
+    cost: 0.03,
+    benefit: 0.11,
+    co2: 0,
+    habitat: null,
+    sources: null
+  },
+  {
+    solution: "Heat Recovery Loan Program - U.S",
+    link: "https://www.urbancruiseship.org/energy/industry/industrial_systems#industrial-waste-heat-recovery-loan-program",
+    site: "energy",
+    cost: 1.1,
+    benefit: 2,
+    co2: 15,
+    habitat: null,
+    sources: null,
+  },
+  {
+    solution: "Increase Marine Protected Areas from 8% to 30% of the Ocean - World",
+    link: "https://www.urbancruiseship.org/oceans/ocean_environment/ocean_biodiversity#increase-marine-protected-areas-from-8-to-30-of-the-ocean",
+    site: "oceans",
+    cost: 835,
+    benefit: 1274,
+    co2: 680,
+    habitat: 78000000,
+    sources: null,
+  },
+  {
+    solution: "Loosen Floor Area Ratio Rules for Residential - U.S.",
+    link: "https://www.urbancruiseship.org/cities/cities_land_use/cities_zoning_rules#loosen-floor-area-ratio-rules",
+    site: "cities",
+    cost: 139.084,
+    benefit: 274,
+    co2: 3,
+    habitat: 7947,
+    sources: null,
+  },
+  {
+    solution: "Loosen Minimum Parking Lot Size Rules - U.S.",
+    link: "https://www.urbancruiseship.org/cities/cities_land_use/cities_zoning_rules#loosen-minimum-lot-size-rules",
+    site: "cities",
+    cost: 0.703,
+    benefit: 16.4,
+    co2: 5,
+    habitat: 2456,
+    sources: null,
+  },
+  {
+    solution: "Meat Tax - U.S.",
+    link: "https://www.urbancruiseship.org/matter/diet/diet_fw#u-s-meat-tax",
+    site: "matter",
+    cost: 0.027,
+    benefit: 26.3,
+    co2: 135,
+    habitat: 341000,
+    sources: null,
+  },
+  {
+    solution: "Modular Island Desalination - Mediterranean Islands",
+    link: "https://www.urbancruiseship.org/matter/water/water_provision#modular-desalination-plant-powered-by-renewable-energy",
+    site: "matter",
+    cost: 0.004,
+    benefit: 0.037,
+    co2: 0,
+    habitat: null,
+    sources: null,
+  },
+  {
+    solution: "Plant-based Inf. Advocacy Campaign - U.S.",
+    link: "https://www.urbancruiseship.org/matter/diet/diet_fw#plant-based-informational-advocacy-campaign",
+    site: "matter",
+    cost: 0.48,
+    benefit: 10.65,
+    co2: 88,
+    habitat: null,
+    sources: null,
+  },
+  {
+    solution: "Remove Parking Minimums - U.S.",
+    link: "https://www.urbancruiseship.org/cities/cities_land_use/cities_zoning_rules#remove-parking-minimums",
+    site: "cities",
+    cost: 0.044,
+    benefit: 0.929,
+    co2: null,
+    habitat: 139,
+    sources: null,
+  },
+  {
+    solution: "School Lunch Meat Removal - U.S.",
+    link: "https://www.urbancruiseship.org/matter/diet/diet_fw#school-lunch-meat-removal",
+    site: "matter",
+    cost: 0.013,
+    benefit: 7.65,
+    co2: 28,
+    habitat: null,
+    sources: null,
+  },
+  {
+    solution: "Scientific Whaling Ban - World",
+    link: "https://www.urbancruiseship.org/oceans/ocean_industry/seafood#ban-scientific-whaling",
+    site: "oceans",
+    cost: 0.31,
+    benefit: 1.456,
+    co2: null,
+    habitat: null,
+    sources: null,
+  },
+  {
+    solution: "Set Ship Speed Limits - World",
+    link: "https://www.urbancruiseship.org/oceans/ocean_industry/shipping#set-ship-speed-limits",
+    site: "oceans",
+    cost: 16.5,
+    benefit: 55.4,
+    co2: 	93,
+    habitat: null,
+    sources: null,
+  },
+  {
+    solution: "Wildlife Corridors - U.S.",
+    link: "https://www.urbancruiseship.org/matter/biodiversity/land_corridors#wildlife-corridors",
+    site: "matter",
+    cost: 4.8,
+    benefit: 9.4,
+    co2: 1,
+    habitat: null,
+    sources: null,
+  },
 ];
 
 
@@ -114,7 +314,7 @@ function SolutionTable() {
           return (
             <tr
               {...row.getRowProps()}
-              style={rowStyle(row.original)}
+              className={rowStyle(row.original)}
               key={`row-${rowIndex}`}
             >
               {row.cells.map((cell, cellIndex) => {
@@ -133,13 +333,8 @@ function SolutionTable() {
 }
 
 function rowStyle(row) {
-  if (row["Specialized Site"] === "energy") {
-    return { backgroundColor: "orange" };
-  } else if (row["Specialized Site"] === "matter") {
-    return { backgroundColor: "green" };
-  } else {
-    return {};
-  }
+  return `${row.site}-article-button-background-color`;
+  // return `${row.site}-site-button-color`;
 }
 
 export default SolutionTable;
