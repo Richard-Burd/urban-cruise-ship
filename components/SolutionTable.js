@@ -275,6 +275,7 @@ function SolutionTable() {
         value !== null
           ? `$${Intl.NumberFormat(undefined, {
               minimumFractionDigits: 0,
+              maximumFractionDigits: 4,
             }).format(value)}`
           : null,
       },
@@ -286,6 +287,7 @@ function SolutionTable() {
         value !== null
           ? `$${Intl.NumberFormat(undefined, {
               minimumFractionDigits: 0,
+              maximumFractionDigits: 4,
             }).format(value)}`
           : null,
       },
@@ -327,7 +329,7 @@ function SolutionTable() {
 
   // This is the actual JSX that gets rendered
   return (
-    <table {...getTableProps()}>
+    <table className="solution-table dynamic-table" {...getTableProps()}>
       <thead>
         {headerGroups.map((headerGroup, hgIndex) => (
           <tr {...headerGroup.getHeaderGroupProps()} key={`hg-${hgIndex}`}>

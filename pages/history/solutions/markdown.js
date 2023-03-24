@@ -33,15 +33,18 @@ const MyComponent = () => {
   This is a paragraph with **bold** text and a reference.[^1]
 
   ## Purpose
-  This page is just a test page to show how markdown in injected
+  This page is just a test page to show how markdown is injected
   directly into a React component.  We need this feature to do all
   the things we want to do with the solution table.  So far, we have
   been wrapping MDX markdown in components but that will not work for
-  our solution table.
+  our solution table specifically, because we need markdown inside one
+  of the columns, not just above, or below, the react component that
+  renders the actual solution table.
 
   ## Plan
   This page will eventually get deleted.  It is here as an archetypal 
   guide for how to use the "react-markdown" and "remark-footnotes" libraries
+  and get them to do all of the things we (currently) think they must do
   so that later on, we can use these libraries on the solution table.
 
   [^1]: This is a footnote.

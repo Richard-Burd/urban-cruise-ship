@@ -144,7 +144,7 @@ ul li a{
   @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline
 }
 
-/* This section styles the tables */
+/* This section styles all of the tables in this project */
 .table-title {
   @apply font-semibold flex justify-center standard-font-3 text-2xl pb-1  text-zinc-800 tracking-wide;
 }
@@ -173,6 +173,15 @@ td a{
   @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
 }
 
+/* This section styles *only* those tables that are dynamic */
+/* These dynamic tables are the ones created with the 'React Table' library */
+/* Nothing below will effect anything  */
+.dynamic-table th:hover {
+
+  /* Richard just put s.thing here as a temp placeholder */
+  /* Jye can replace the line below with a line(s) that are way cooler! */
+  background-color: rgba(0, 0, 0, 0.50); 
+}
 
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */

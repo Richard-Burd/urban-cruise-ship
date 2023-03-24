@@ -1720,7 +1720,7 @@ ul li a:focus {
   text-decoration-line: underline;
 }
 
-/* This section styles the tables */
+/* This section styles all of the tables in this project */
 
 .table-title {
   display: flex;
@@ -1799,6 +1799,14 @@ td a:focus {
   --tw-text-opacity: 1;
   color: rgb(127 29 29 / var(--tw-text-opacity));
   text-decoration-line: underline;
+}
+
+/* This section styles *only* those tables that are dynamic */
+
+/* These dynamic tables are created with the 'React Table' library */
+
+.dynamic-table th:hover {
+  background-color: rgba(0, 0, 0, 0.50);
 }
 
 /* This is the primary branding font used by UCS */
