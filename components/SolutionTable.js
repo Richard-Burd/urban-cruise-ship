@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import Link from 'next/link';
 import { useTable, useSortBy } from "react-table";
 
-const tableData = [
+// this is raw data for our solutions
+// We can move this to a separate file if we want
+// We will import this data onto the "Solutions & Endeavors" page...
+// ...thus the "export" statement below.
+export const tableData = [
   {
     solution: "5% Methanol in Gasoline - U.S.",
     link: "/energy/energy_distribution/methanol#blend-5-methanol-into-the-us-gas-supply",
@@ -235,12 +239,23 @@ const tableData = [
   },
 ];
 
+// This function grabs the data above and translates it into data for the table
 function SolutionTable() {
+  // It uses the React "useMemo" hook that allows you to memoize the result of a function
   const columns = React.useMemo(
     () => [
       {
+        // Creates a column with the title: "Solution / Endeavor"
         Header: "Solution / Endeavor",
+        
+        // React Table uses the "accessor" property to determine what data to display
+        // In our case we want the "solution" property from the data above for our title
+        // ...we also want the "link" property so we can inject it into each row
         accessor: (row) => ({ solution: row.solution, link: row.link }),
+
+        // The first column in the table has both a title as well as a link,
+        // ...therefore both the title (solution) and link (link) are passed into the
+        // ... "Cell" property 
         Cell: ({ value }) => (
           <Link href={value.link}>
             <a target="_blank" rel="noopener noreferrer">
@@ -250,6 +265,10 @@ function SolutionTable() {
         ),
       },
       {
+        // We want to display a number like this in out data: "1000"
+        // ...like this in our table: "1,000"
+        // We also want to keep our decimals when specified.
+        // ...so we use .format() & other code below
         Header: "Cost (Billion USD/yr)",
         accessor: "cost",
         Cell: ({ value }) =>
@@ -260,6 +279,7 @@ function SolutionTable() {
           : null,
       },
       {
+        // Same as above re: number formatting
         Header: "Benefit (Billion USD/yr)",
         accessor: "benefit",
         Cell: ({ value }) =>
@@ -270,10 +290,18 @@ function SolutionTable() {
           : null,
       },
       {
+        // Same as above re: number formatting without the $ sign
         Header: "CO² Reduction megaTon/yr",
         accessor: "co2",
+        Cell: ({ value }) =>
+        value !== null
+          ? `${Intl.NumberFormat(undefined, {
+              minimumFractionDigits: 0,
+            }).format(value)}`
+          : null,
       },
       {
+        // no formatting here. We don't care about sub-sections of square kilometers
         Header: "Habitat Preservation (km²)",
         accessor: "habitat",
         Cell: ({ value }) => (value !== null ? `${Intl.NumberFormat().format(value)}km²` : null),
@@ -286,12 +314,18 @@ function SolutionTable() {
     []
   );
 
+  // In functional React components, useState is used to define state
   const [data, setData] = useState(tableData);
+
+  // This creates an instance of the React table
   const tableInstance = useTable({ columns, data }, useSortBy);
 
+  // This line destructures the table instance to extract properties & methods 
+  // ...to prepare rows for rendering.
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     tableInstance;
 
+  // This is the actual JSX that gets rendered
   return (
     <table {...getTableProps()}>
       <thead>
@@ -340,7 +374,11 @@ function SolutionTable() {
 }
 
 function rowStyle(row) {
+  // These are the colors of the article buttons which are lighter versions of the site buttons 
   return `${row.site}-article-button-background-color`;
+
+  // These are the colors of the site buttons, we can use them instead if we want
+  // ...show John both options...we can also use custom colors if we want
   // return `${row.site}-site-button-color`;
 }
 
