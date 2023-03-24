@@ -3,7 +3,49 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Vulnerability to Gas Disruptions";
 export const solution = "Europe Should Maintain Nuclear Fleet";
 
-As part of its *Energiewende*, Germany has shut down its nuclear reactors. The rest of Western Europe should continue operating nuclear reactors at least as long as coal and imported natural gas remain major parts of the energy mix.
+## Description
+
+We propose that the European Union cease shutdown of its current nuclear power plant fleet.
+
+## Background
+
+As of 2021, Europe generated 25% of its electrcity from nuclear power. Fears of accidents and waste disposal have motivated a political movement to shut down these plants, despite concerns about climate change. As part of its *Energiewende*, Germany had planned to shut down its nuclear reactors in 2022, though delayed this plan due to that year's energy crisis [^"7"]. Belgium has also extended a planned shutdown due concerns about energy security raised by the Russo-Ukrainian War [^"6"].
+
+Despite promises that the shuttered nuclear power plants would be replaced with renewable energy, in 2022 Germany reactivated coal-fired plants to address the energy shortfall [^"8"]. In 2019, a separate study estimated the cost of Germany's nuclear phaseout to be 36.2 million tons of CO<sub>2</sub> and 1100 deaths due to air pollution per year [^"9"].
+
+## Calculations
+
+We estimate the cost of avoiding a nuclear shutdown as 2.9 cents per kilowatt-hour of generated electricity [^"1"], the cost of depreciated nuclear power as estimated by Lazard, multiplied by an EU nuclear electricity generation of 696 TWh per year as of 2021 [^"2"]. This cost is about $20 billion per year.
+
+The benefits of avoiding shutdown assumed that the nuclear electricity would be replaced by electricity at wholesale price. Here, "wholesale price" is determined as the average over the 12 month period from March 2022 to February 2023 of the cheapest wholesale price in the EU for that month [^"3"]. This benefit is about $60 billion per year.
+
+The greenhouse gas benefit, per kWh of nuclear electricity, of avoiding a shutdown is determined by subtracting an average estimate of the carbon intensity of nuclear electricity--32.5 grams per kWh [^"4"]--from the average EU electricity carbon intensity of about 280 g/KWh [^"5"]. Total greenhouse benefits are determined by multiplying this number by the total amount of nuclear electricity. We estimate the benefit at 172 million tons per year, which would be valued at $8.6 billion if CO<sub>2</sub> emissions are valued at $50/ton.
+
+Other externalities of electricity, such as pollution from coal-fired power plants that might replace nuclear plants, are not considered in these calculations.
+
+## Implementation
+
+The nuclear shutdowns in Europe, as well as proposed and actual shutdowns in South Korea, Taiwan, and elsewhere, have been motivated more by misperceptions about safety than by genuine technical considerations. Reversing the shutdown trend will require strong pro-nuclear advocacy to balance what has traditionally been an anti-nuclear stance of environmentalists [^"10"].
+
+[^"1"]: Lazard. ["Levelized Cost Of Energy, Levelized Cost Of Storage, and Levelized Cost Of Hydrogen 2021"](https://www.lazard.com/research-insights/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen-2021/). October 2021.
+
+[^"2"]: Eurostat. ["Electricity production, consumption and market overview"](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_production,_consumption_and_market_overview). February 2023.
+
+[^"3"]: Ember. ["Wholesale electricity prices in Europe"](https://ember-climate.org/data/data-tools/europe-power-prices/). Accessed March 23, 2023.
+
+[^"4"]: Serin, E. ["What is the role of nuclear in the energy mix and in reducing greenhouse gas emissions?"](https://www.lse.ac.uk/granthaminstitute/explainers/role-nuclear-power-energy-mix-reducing-greenhouse-gas-emissions/). The London School of Economics and Political Science. December 2022.
+
+[^"5"]: European Environment Agency. ["Greenhouse gas emission intensity of electricity generation in Europe"](https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1). Accessed March 23, 2023.
+
+[^"6"]: World Nuclear News. [Extended operation of two Belgian reactors approved](https://www.world-nuclear-news.org/Articles/Extended-operation-of-two-Belgian-reactors-approve). March 2022.
+
+[^"7"]: Wehrmann, B. ["Further runtime extension for German nuclear plants no longer possible – EnBW"](https://www.cleanenergywire.org/news/further-runtime-extension-german-nuclear-plants-no-longer-possible-enbw). Journalism for the energy transition. December 2022.
+
+[^"8"]: Connolly, K. ["Germany to reactivate coal power plants as Russia curbs gas flow"](https://www.theguardian.com/world/2022/jul/08/germany-reactivate-coal-power-plants-russia-curbs-gas-flow). The Guardian. July 2022.
+
+[^"9"]: Jarvis, S., Deschenes, O., Jha, A. ["The Private and External Costs of Germany's Nuclear Phase-Out"](https://www.nber.org/system/files/working_papers/w26598/w26598.pdf). National Bureau of Economic Research. Cambridge, MA: w26598. December 2019.
+
+[^"10"]: MAC Projects International. ["What is the pro-nuclear movement?"](https://www.mac-projects.com/what-is-the-pro-nuclear-movement/). November 2022.
 
 export default ({ children }) => 
   <SolutionDropdown 
