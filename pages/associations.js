@@ -62,7 +62,7 @@ const Associations = () => {
           </div>
           <center>
             <a
-              href="mailto:john@urbancruiseship.org"
+              href={`/snail-mail`}
               target="_blank"
               rel="noreferrer"
             >
