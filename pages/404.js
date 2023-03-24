@@ -7,10 +7,15 @@ const NotFound = () => {
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       router.push('/');
     }, 3000);
-  }, []);
+    
+    // Clear the timer upon component unmounting or dependency changes to
+    // prevent memory leaks and avoid navigation attempts after component unmount.
+    return () => clearTimeout(timer);
+
+  }, [router]);
 
   return (
     <div className="not-found mt-20 mb-60">

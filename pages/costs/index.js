@@ -10,14 +10,19 @@ const siteConfig = require("./site_config.json");
 const Costs = () => {
   const router = useRouter();
   // Since there's nothing else in the costs page, 
-  // ...we are redirecting to the priorities page
+  // ...we are redirecting to the priorities page located at:
+  // "./costs/economy"
   useEffect(() => {
-    // Perform client-side navigation to the /about/team route
+    // Perform client-side navigation to the "./costs/economy" route
     router.replace('/costs/economy');
-  }, []);
+  }, [router]);
 
   return null;
   
+  // If we ever expand the costs page, such that we have another focus area
+  // besides just the "Priorities" one (located at "./costs/economy") we can
+  // go ahead and uncomment the following code: 
+
   // return (
   //   <>
   //     <Head>
