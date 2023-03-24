@@ -62,8 +62,8 @@ const SnailMail = () => {
                 className="duration-500 ease-in-out mx-2 sm:mx-8 opacity-40 transition"
                 src={`/images/external-link-icons/email.svg`}
                 alt={"Email icon"}
-                height={50}
-                width={100}
+                height={90}
+                width={90}
               />
             </center>
           </div>
