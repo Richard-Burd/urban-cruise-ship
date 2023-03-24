@@ -27,8 +27,22 @@ const MyComponent = () => {
   //   },
   // ], []);
   const markdownText = `
-  # This is a heading
-  This is a paragraph with **bold** text.[^1]
+  # This is a Markdown Heading
+
+  ## This is a Markdown Subheading
+  This is a paragraph with **bold** text and a reference.[^1]
+
+  ## Purpose
+  This page is just a test page to show how markdown in injected
+  directly into a React component.  We need this feature to do all
+  the things we want to do with the solution table.  So far, we have
+  been wrapping MDX markdown in components but that will not work for
+  our solution table.
+
+  ## Plan
+  This page will eventually get deleted.  It is here as an archetypal 
+  guide for how to use the "react-markdown" and "remark-footnotes" libraries
+  so that later on, we can use these libraries on the solution table.
 
   [^1]: This is a footnote.
   `;
