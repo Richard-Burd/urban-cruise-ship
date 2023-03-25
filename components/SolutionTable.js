@@ -319,6 +319,8 @@ function SolutionTable() {
   // In functional React components, useState is used to define state
   const [data, setData] = useState(tableData);
 
+
+
   // This creates an instance of the React table
   const tableInstance = useTable({ columns, data }, useSortBy);
 
@@ -333,41 +335,49 @@ function SolutionTable() {
       <thead>
         {headerGroups.map((headerGroup, hgIndex) => (
           <tr {...headerGroup.getHeaderGroupProps()} key={`hg-${hgIndex}`}>
-            {headerGroup.headers.map((column, colIndex) => (
+{headerGroup.headers.map((column, colIndex) => {
+  // This is the modified sorting that should limit the options to asc or desc
+            const isSorted = column.isSorted;
+            const isSortedDesc = column.isSortedDesc;
+            const sortClass = isSorted ? (isSortedDesc ? "sort-desc" : "sort-asc") : "";
+            const sortTitle = isSorted ? (isSortedDesc ? "Sorted Descending" : "Sorted Ascending") : "Not Sorted";
+            const toggleSort = () => {
+              const sortDesc = isSorted ? !isSortedDesc : false;
+              tableInstance.setSortBy([{ id: column.id, desc: sortDesc }]);
+            };
+            return (
               <th
-                {...column.getHeaderProps(column.getSortByToggleProps())}
-                className={
-                  column.isSorted
-                    ? column.isSortedDesc
-                      ? "sort-desc"
-                      : "sort-asc"
-                    : ""
-                }
+                {...column.getHeaderProps({
+                  className: `sortable ${sortClass}`,
+                  onClick: toggleSort,
+                  title: sortTitle,
+                })}
                 key={`col-${colIndex}`}
               >
                 {column.render("Header")}
               </th>
-            ))}
+            );
+          })}
+        </tr>
+      ))}
+    </thead>
+    <tbody {...getTableBodyProps()}>
+      {rows.map((row, rowIndex) => {
+        prepareRow(row);
+        return (
+          <tr
+            {...row.getRowProps()}
+            className={rowStyle(row.original)}
+            key={`row-${rowIndex}`}
+          >
+            {row.cells.map((cell, cellIndex) => {
+              return (
+                <td {...cell.getCellProps()} key={`cell-${cellIndex}`}>
+                  {cell.render("Cell")}
+                </td>
+              );
+            })}
           </tr>
-        ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
-        {rows.map((row, rowIndex) => {
-          prepareRow(row);
-          return (
-            <tr
-              {...row.getRowProps()}
-              className={rowStyle(row.original)}
-              key={`row-${rowIndex}`}
-            >
-              {row.cells.map((cell, cellIndex) => {
-                return (
-                  <td {...cell.getCellProps()} key={`cell-${cellIndex}`}>
-                    {cell.render("Cell")}
-                  </td>
-                );
-              })}
-            </tr>
           );
         })}
       </tbody>
