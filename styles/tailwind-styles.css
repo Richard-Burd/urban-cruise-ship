@@ -175,13 +175,22 @@ td a{
 
 /* This section styles *only* those tables that are dynamic */
 /* These dynamic tables are the ones created with the 'React Table' library */
-/* Nothing below will effect anything  */
-.dynamic-table th:hover {
+/* Nothing below will affect anything  */
 
-  /* Richard just put s.thing here as a temp placeholder */
-  /* Jye can replace the line below with a line(s) that are way cooler! */
-  background-color: rgba(0, 0, 0, 0.50); 
+.dynamic-table th{
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* set the transition */
 }
+
+.dynamic-table th:hover {
+    /* Richard just put s.thing here as a temp placeholder */
+  /* Jye can replace the line below with a line(s) that are way cooler! */
+  background-color: #d5f6ff; /* set the background color on hover */
+  color: #093348; /* set the font color on hover */
+}
+
+
+
+
 
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
