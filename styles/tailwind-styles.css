@@ -182,8 +182,6 @@ td a{
 }
 
 .dynamic-table th:hover {
-    /* Richard just put s.thing here as a temp placeholder */
-  /* Jye can replace the line below with a line(s) that are way cooler! */
   background-color: #d5f6ff; /* set the background color on hover */
   color: #093348; /* set the font color on hover */
 }

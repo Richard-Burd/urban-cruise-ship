@@ -1,5 +1,6 @@
 import FocusArea2 from "../../../components/FocusArea2";
 import SolutionTable from "../../../components/SolutionTable";
+import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
 
 //place any drop down elements breaking solutions into categories here
 
@@ -44,6 +45,8 @@ const Solutions = () => {
 
         <br></br><br></br>
         <SolutionTable />
+        <br></br><br></br>
+        <SolutionEndeavorTable />
       </div>
     </>
   );
