@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useTable, useSortBy } from "react-table";
 import ReactMarkdown from "react-markdown";
-import remarkFootnotes from "remark-footnotes";
-import { Footnotes } from "react-markdown";
+// import remarkFootnotes from "remark-footnotes";
+// import { Footnotes } from "react-markdown";
 
 const CustomLink = ({ node, ...props }) => (
   <a {...props} target="_blank" rel="noopener noreferrer">
@@ -26,7 +26,7 @@ function renderFootnotes(data) {
           footnotes.push(
             <div key={`footnote-${footnoteNumber}`} id={`fn-${footnoteNumber}`} style={{ display: 'block' }}>
               <span style={{ display: 'inline-flex', alignItems: 'baseline' }}>
-                {footnoteNumber}. <ReactMarkdown components={{a: CustomLink}} children={footnoteContent.trim()} />
+                {footnoteNumber}. <ReactMarkdown components={{a: CustomLink}}>{footnoteContent.trim()}</ReactMarkdown>
                 <a href={`#fnref-${footnoteNumber}`} className="footnote-backref" style={{ marginLeft: '8px' }}>
                   ↩
                 </a>
@@ -45,6 +45,7 @@ function renderFootnotes(data) {
     </div>
   );
 }
+
 
 // this is raw data for our solutions
 // We can move this to a separate file if we want
