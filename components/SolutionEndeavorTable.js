@@ -849,6 +849,183 @@ export const endeavorTableData = [
 
     ],
   },
+  {
+    solution: "Energy Crops in Urban Parks, Poland (20-Year Model)",
+    link: "/history/endeavors#transportation-infrastructure",
+    site: "history",
+    cost: 0.00393,
+    benefit: 0.00484,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^69]: Sikorska, D., Macegoniuk, S., Łaszkiewicz, E., Sikorska, P. ["Energy crops in urban parks as a promising alternative to traditional lawns - Perceptions and a cost-benefit analysis"](https://www.sciencedirect.com/science/article/pii/S1618866719304455). Urban Forestry & Urban Greening 49, 126579. March 2020.`,
+
+    ],
+  },
+  {
+    solution: "Large Hadron Collider, World (1998-2025)",
+    link: "/history/endeavors#research-and-development",
+    site: "history",
+    cost: 19.37,
+    benefit: 23.53,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^70]: Florio, M., Forte, S., Sirtori, E. ["Forecasting the socio-economic impact of the Large Hadron Collider: A cost–benefit analysis to 2025 and beyond"](https://www.sciencedirect.com/science/article/abs/pii/S0040162516000731). Technological Forecasting and Social Change 112, pp. 38-53. November 2016.`,
+
+    ],
+  },
+  {
+    solution: "Grid-Scale Electrical Energy Storage, G.B. (2017-2020)",
+    link: "/history/endeavors#energy-production-efficiency",
+    site: "history",
+    cost: 0.01784,
+    benefit: 0.02152,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^71]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study"](https://www.sciencedirect.com/science/article/pii/S0306261917318068). Applied Energy 212, pp. 881-894. February 2018.`,
+
+    ],
+  },
+  {
+    solution: "Treatment of Juvenile Males, U.S. (Annual)",
+    link: "/history/endeavors#energy-production-efficiency",
+    site: "history",
+    cost: 0.000325,
+    benefit: 0.000391,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^72]: Caldwell, M., Vitacco, M., Van Rybroek, G. ["Are Violent Delinquents Worth Treating? A Cost–Benefit Analysis"](https://journals.sagepub.com/doi/abs/10.1177/0022427805280053). Journal of Research in Crime and Delinquency 43(2), pp. 148-168. May 2006.`,
+
+    ],
+  },
+  {
+    solution: "Bovine Viral Diarrhoea Eradication, Austria (1998-2004)",
+    link: "/history/endeavors#energy-production-efficiency",
+    site: "history",
+    cost: 0.00183,
+    benefit: 0.00216,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^73]: Marshik, T., Obritzhauser, W., Wagner, P., Richter, T., Mayerhofer, M., Egger-Danner, C., Käsbohrer, A., Pinior, B. ["A cost-benefit analysis and the potential trade effects of the bovine viral diarrhoea eradication programme in Styria, Austria"](https://www.sciencedirect.com/science/article/pii/S1090023317302289). The Veterinary Journal 231, pp. 19-29. January 2018.`,
+
+    ],
+  },
+  {
+    solution: "15% Meat Tax, Netherlands (2020-2050)",
+    link: "/history/endeavors#public-health-campaigns",
+    site: "history",
+    cost: 25.64,
+    benefit: 29.34,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
+
+    ],
+  },
+  {
+    solution: "High-Speed Rail, Hong Kong to China (2010 to indefinite future)",
+    link: "/history/endeavors#transportation-infrastructure",
+    site: "history",
+    cost: 22.95,
+    benefit: 25.38,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^74]: Tao, R., Liu, S., Tam, C. ["Cost-Benefit Analysis of High-Speed Rail Link between Hong Kong and Mainland China"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.397.4747). Journal of Engineering, Project, and Production Management 1(1), pp. 36-45. June 2011.`,
+
+    ],
+  },
+  {
+    solution: "30% Meat Tax, Netherlands (2020-2050)",
+    link: "/history/endeavors#public-health-campaigns",
+    site: "history",
+    cost: 49.26,
+    benefit: 54.15,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
+
+    ],
+  },
+  {
+    solution: "Recycling Pig Manure, Taiwan per kiloton",
+    link: "/history/endeavors#ecology-environment",
+    site: "history",
+    cost: 0.00015,
+    benefit: 0.000162,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^47]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
+
+    ],
+  },
+  {
+    solution: "London Olympics, U.K. (2012)",
+    link: "/history/endeavors#miscellaneous",
+    site: "history",
+    cost: 12.58,
+    benefit: 7.36,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^75]: Baade, R., Matheson, V. "Going for the Gold: The Economics of the Olympics". Journal of Economic Perspectives 30(2), pp. 201-218. Spring 2016.`,
+    ],
+  },
+  {
+    solution: "Shale and Gas Exploration, Romania (2017-2047)",
+    link: "/history/endeavors#energy-production-efficiency",
+    site: "history",
+    cost: 147.5,
+    benefit: 83.55,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^76]: Grecu, E., Aceleanu, M. I., Albulescu, C. T. ["The economic, social and environmental impact of shale gas exploitation in Romania: A cost-benefit analysis"](https://www.sciencedirect.com/science/article/abs/pii/S1364032118303721). Renewable and Sustainable Energy Reviews 93, pp. 691-700. October 2018.`,
+    ],
+  },
+  {
+    solution: "Repairing Existing Road Network, Albania (25-Year Model)",
+    link: "/history/endeavors#transportation-infrastructure",
+    site: "history",
+    cost: 0.06439,
+    benefit: 0.0198,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^77]: Xiong, J., Alegre, X. E. ["Climate Resilient Road Assets in Albania"](https://openknowledge.worldbank.org/bitstream/handle/10986/31616/Climate-Resilient-Road-Assets-in-Albania.pdf?sequence=1&isAllowed=y). World Bank Group Transport, Global Facility for Disaster Reduction and Recovery. February 2019.`,
+    ],
+  },
+  {
+    solution: "Lear's Macaw Species Preservation, Brazil (1992-2017)",
+    link: "/history/endeavors#ecology-environment",
+    site: "history",
+    cost: 0.00385,
+    benefit: 0.000368,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^78]: Barbosa, A., Tella, J. ["How much does it cost to save a species from extinction? Costs and rewards of conserving the Lear's macaw"](https://royalsocietypublishing.org/doi/10.1098/rsos.190190). Royal Society open science 6(7): article 190190. July 2019.`,
+    ],
+  },
+  {
+    solution: "COVID-19 Lockdown, U.K. (June 2020 to August 2020)",
+    link: "/history/endeavors#public-health-projects",
+    site: "history",
+    cost: 116,
+    benefit: 9.6,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^79]: Miles, D., Stedman, M., Heald, A. ["Stay at Home, Protect the National Health Service, Save Lives”](https://onlinelibrary.wiley.com/doi/full/10.1111/ijcp.13674): A cost benefit analysis of the lockdown in the United Kingdom". International Journal of Clinical Practice 75(3), e13674. August 2020.`,
+    ],
+  },
 ];
 
 endeavorTableData.sort((a, b) => {
