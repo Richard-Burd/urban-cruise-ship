@@ -294,6 +294,7 @@ function SolutionTable() {
         // ...so we use .format() & other code below
         Header: "Cost (Billion USD/yr)",
         accessor: "cost",
+        sortType: 'number',
         Cell: ({ value }) =>
           value !== null
             ? `$${Intl.NumberFormat(undefined, {
@@ -306,6 +307,7 @@ function SolutionTable() {
         // Same as above re: number formatting
         Header: "Benefit (Billion USD/yr)",
         accessor: "benefit",
+        sortType: 'number',
         Cell: ({ value }) =>
           value !== null
             ? `$${Intl.NumberFormat(undefined, {
@@ -318,6 +320,7 @@ function SolutionTable() {
         // Same as above re: number formatting without the $ sign
         Header: "CO² Reduction megaTon/yr",
         accessor: "co2",
+        sortType: 'number',
         Cell: ({ value }) =>
           value !== null
             ? `${Intl.NumberFormat(undefined, {
@@ -329,6 +332,7 @@ function SolutionTable() {
         // no formatting here. We don't care about sub-sections of square kilometers
         Header: "Habitat Preservation (km²)",
         accessor: "habitat",
+        sortType: 'number',
         Cell: ({ value }) =>
           value !== null ? `${Intl.NumberFormat().format(value)}km²` : null,
       },

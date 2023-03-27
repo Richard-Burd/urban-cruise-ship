@@ -1,7 +1,7 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Food Waste";
-export const solution = "Food Outlets Should Make Near-Expired Food Available";
+export const problem = "Food Waste Due to Label Confusion - U.S.";
+export const solution = "Standardized Food Labeling - U.S.";
 
 import SolutionImages from "/components/SolutionImages.js";
 
@@ -9,28 +9,42 @@ import SolutionImages from "/components/SolutionImages.js";
 ## Description
 
 
-We recommend Congress pass legislation establishing a mandatory national date labeling system so that food is not discarded prior to its true expiration due to confusing labeling.
+
+
+We recommend Congress pass legislation establishing a mandatory national date labeling system in order to reduce food waste due to confusion over food safety.
+
+
 
 
 ## Background
 
 
-The US wastes 40% of its food and costs the economy more than 1% of the annual GDP. [^"7"]
 
 
-Contributing to this food waste, date labeling on food packaging in the United States is inconsistent and confusing. 41 states and the District of Columbia require date labels on various foods, and these dates are largely determined by the manufacturer. These states have differing regulations and different foods included in the regulation. Of those, 20 states restrict the sale or donation of foods past the date labels. [^"5"] There is no federal oversight of labeling, and this increases the burden on suppliers to meet state-specific laws. [^"7"] Current date labels include “production” or “pack”, “sell by”, “best if used by”, “use by”, “freeze by”, and “enjoy by”. None of these terms are officially defined and the meaning varies by manufacturer. [^"6"]
+The US wastes 40% of its food and costs the economy more than 1% of the annual GDP.[^"7"]
 
 
-Historically, the industrialization of the West led to more consumers purchasing processed or packaged foods as opposed to growing them locally. [^"4"] Manufacturers originally used symbols and numerical codes that were not decipherable to consumers to date mark their goods. [^"4"] In the 1970’s Consumers began to grow concerned regarding the freshness of packaged foods and products began to be labeled with an “open date” which was clear and easy for consumers to read. [^"4"] Congress discussed creating federal standards for date labeling during this time, but nothing was passed. [^"4"] Various states created a wide range of date requirement regulations, leading to an inconsistent and patchwork system. Manufacturers started printing them on everything, regardless of the requirement, creating their own dating system. [^"3"]
+
+
+Contributing to this food waste, date labeling on food packaging in the United States is inconsistent and confusing. 41 states and the District of Columbia require date labels on various foods. Of those, 20 states restrict the sale or donation of foods past the date labels.[^"5"] There is no federal oversight of labeling, and this increases the burden on suppliers to meet state-specific laws.[^"7"] Current date labels include “production” or “pack”, “sell by”, “best if used by”, “use by”, “freeze by”, and “enjoy by”. None of these terms are officially defined and the meaning varies by manufacturer.[^"6"]
+
+
+
+
+Historically, the industrialization of the West led to more consumers purchasing processed or packaged foods as opposed to growing them locally.[^"4"] Manufacturers originally used symbols and numerical codes that were not decipherable to consumers to date mark their goods.[^"4"] In the 1970’s Consumers began to grow concerned regarding the freshness of packaged foods and products began to be labeled with an “open date” which was clear and easy for consumers to read.[^"4"] Congress discussed creating federal standards for date labeling during this time, but nothing was passed.[^"4"] Various states created a wide range of date requirement regulations, leading to an inconsistent and patchwork system. Manufacturers started printing them on everything, regardless of the requirement, creating their own dating system.[^"3"]
+
+
 
 
 Current Regulations and Facts on Date Labels
-- The USDA does not require any food except for infant formula to be dated [^"2"]
-- Date labels are determined by manufacturers and retailers [^"2"] [^"3"] [^"4"]
-- Dates are not an indicator of product safety and are not required by law. [^"2"]
-- Products that have passed the expiration date are typically still safe to consume until it is evident that they have spoiled [^"2"]
-- States have widely varying regulations. For example, many states restrict the sale or donation of past-date food products, even though these dates are not grounded in food safety. [^"4"]
--  Date label confusion costs consumers $29 billion per year. [^"7"]
+- The USDA does not require any food except for infant formula to be dated[^"2"]
+- Date labels are determined by manufacturers and retailers[^"2"] [^"3"][^"4"]
+- Dates are not an indicator of product safety and are not required by law[^"2"]
+- Products that have passed the expiration date are typically still safe to consume until it is evident that they have spoiled[^"2"]
+- States have widely varying regulations. For example, many states restrict the sale or donation of past-date food products, even though these dates are not grounded in food safety[^"4"]
+-  Date label confusion costs consumers $29 billion per year[^"7"]
+
+
 
 
 <SolutionImages
@@ -39,53 +53,70 @@ Current Regulations and Facts on Date Labels
  mobileHeight={470}
  desktopHeight={370}
 />
-#### Source. [^"10"] [^"7"]  [^"9"] 
+#### Source.[^"10"][^"7"] [^"9"]
+
+
 
 
 ## Benefit Calculations
 
 
-Confusion over date label meaning accounts for 20% of household food waste equaling $29 Billion USD of wasted spending each year. Standardized labeling is expected to reduce this by 5-10%, a conservative average of 6.25% is used here by taking the 7.5% midpoint estimated and then taking the midpoint between 7.5% and 5%. [^"9"] [^"7"]
 
 
-MMTCO2e reductions are calculated by multiplying tonnage of saved food by estimated greenhouse gas emissions of 4.4 metric tons per ton of food waste produced, which includes emissions associated with landfills, and the global warming potential of methane. [^"10"] [^"7"]
+Confusion over date label meaning accounts for 20% of household food waste equaling $29 Billion USD of wasted spending each year. Standardized labeling is expected to reduce this by 5-10%, a conservative average of 6.25% is used here by taking the 7.5% midpoint estimated and then taking the midpoint between 7.5% and 5%.[^"9"][^"7"]
 
 
-## Cost Calculations 
 
 
-We use the FDA estimation on the annual cost of Nutritional Food labeling to give an estimate of the cost of a federal system. Due to the decreased complexity of a date label as opposed to nutritional facts, we use the low end of the range of cost estimates. These costs include relabeling, recordkeeping, and additional labeling. [^"12"] 
+CO₂ reductions are calculated by multiplying the tonnage of saved food by estimated greenhouse gas emissions of 4.4 metric tons per ton of food waste produced, which includes emissions associated with landfills, and the global warming potential of methane.[^"10"][^"7"]
+
+
+
+
+## Cost Calculations
+
+
+
+
+We use the FDA estimation of the annual cost of Nutritional Food labeling to give an estimate of the cost of a federal system. Due to the decreased complexity of a date label as opposed to nutritional facts, we use the low end of the range of cost estimates. These costs include relabeling, recordkeeping, and additional labeling.[^"12"]
+
+
+
 
 
 
 ## Implementation
 
-For manufacturers and retailers who choose to affix date labels, they should have the choice of selecting a quality label, a discard label, or none of the above. This system would still allow manufacturers to determine dates, which would decrease the cost of implementing the system since such determinations would be made locally. [^"7"]
+
+Manufacturers and retailers who choose to affix date labels should have the choice of selecting a quality label, a discard label, or none of the above. This system would still allow manufacturers to determine dates.[^"7"]
+
 
 Language would be restricted for the label type.
-- Quality would use the wording “Best If Used By” [^"7"]
-- Discard labels would use the wording “Use By” [^"7"]
+- Quality labels (indicating peak freshness) would use the wording “Best If Used By”[^"7"]
+- Discard labels (indicating food safety) would use the wording “Use By”[^"7"]
 
-Federal legislation should also prevent states from restricting the sale or donation of food that is past its “Best If Used By” date. [^"7"]
 
-Public education campaigns would also help inform consumers about the meanings of food labels, which will help reduce food waste that is past-date, but still safe for consumption. [^"7"]
+Federal legislation should also prevent states from restricting the sale or donation of food past its “Best If Used By” date.[^"7"]
+
+
+Public education campaigns would also help inform consumers about the meanings of food labels, which will help reduce food waste that is past-date, but still safe for consumption.[^"7"]
 
 
 
 ##### Lead researcher: jye - Last updated Mar 24, 2023
 
-[^"1"]:  [Retail Survey 2021-22 | WRAP](https://wrap.org.uk/resources/report/retail-survey-2021-22#download-file). . . 
-[^"2"]:  [Food Product Dating | Food Safety and Inspection Service](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/food-product-dating). . . 
-[^"3"]:  [“Sell By” And “Best By” Dates on Food Are Basically Made Up—But Hard to Get Rid Of | Smart News](https://www.smithsonianmag.com/smart-news/sell-and-best-dates-food-are-basically-made-hard-get-rid-180950304/). . . 
-[^"4"]:  [Dating Game Report](https://www.nrdc.org/sites/default/files/dating-game-report.pdf). . . 
-[^"5"]:  [Uniform Date Labeling of Food May Address Food Waste](https://crsreports.congress.gov/product/pdf/IF/IF10398). . . 
-[^"6"]:  [Are Food Date Labels a Waste of Food and Money? - FoodPrint](https://foodprint.org/blog/food-date-labels/). . . 
-[^"7"]:  [DATE LABELS:](https://chlpi.org/wp-content/uploads/2013/12/date-labels-issue-brief_June-2019.pdf). . . 
-[^"8"]:  [Waste Reduction Model (WARM)](archive.epa.gov/epawaste/conserve/tools/warm/pdfs/Plastics.pdf). EPA. 2015. 
-[^"9"]:  [A ROADMAP TO REDUCE U.S. FOOD WASTE BY 20 PERCENT](https://refed.org/downloads/ReFED_Report_2016.pdf). . . 
-[^"10"]:  [Household Food Waste in the UK, 2015](https://refreshcoe.org/wp-content/uploads/2017/08/Household_food_waste_in_the_UK_2015_Report.pdf). . . 
-[^"11"]:  [Consumer insight: date labels and storage guidance](https://wrap.org.uk/sites/default/files/2020-12/Consumer-insight-date-labels-and-storage-guidance.pdf). . . 
-[^"12"]:  [2017 Draft Report to Congress on the Benefits and Costs of Federal Regulations and Agency Compliance with the Unfunded Mandates Reform Act](https://www.whitehouse.gov/wp-content/uploads/2017/12/draft_2017_cost_benefit_report.pdf). . . 
+[^"1"]:  [Retail Survey 2021-22 | WRAP](https://wrap.org.uk/resources/report/retail-survey-2021-22#download-file). 2022.
+[^"2"]:  [Food Product Dating | Food Safety and Inspection Service](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/food-product-dating). U.S.D.A.Accessd March 2022.
+[^"3"]:  [“Sell By” And “Best By” Dates on Food Are Basically Made Up—But Hard to Get Rid Of | Smart News](https://www.smithsonianmag.com/smart-news/sell-and-best-dates-food-are-basically-made-hard-get-rid-180950304/). March 2014.
+[^"4"]: Leib E. [Dating Game Report](https://www.nrdc.org/sites/default/files/dating-game-report.pdf). Harvard Food Law and Policy Clinic, Natural Resources Defense Council.2013.
+[^"5"]:  [Uniform Date Labeling of Food May Address Food Waste](https://crsreports.congress.gov/product/pdf/IF/IF10398). Congressional Research Service2016.
+[^"6"]: Hunt, Chris [Are Food Date Labels a Waste of Food and Money? - FoodPrint](https://foodprint.org/blog/food-date-labels/). May 2022.
+[^"7"]:  [DATE LABELS:](https://chlpi.org/wp-content/uploads/2013/12/date-labels-issue-brief_June-2019.pdf). Harvard Food Law and Policy Clinic. 2019.
+[^"8"]:  [Waste Reduction Model (WARM)](archive.epa.gov/epawaste/conserve/tools/warm/pdfs/Plastics.pdf). Environmental Protection Agency.2015.
+[^"9"]:  [A ROADMAP TO REDUCE U.S. FOOD WASTE BY 20 PERCENT](https://refed.org/downloads/ReFED_Report_2016.pdf). 2016.
+[^"10"]:  [Household Food Waste in the UK, 2015](https://refreshcoe.org/wp-content/uploads/2017/08/Household_food_waste_in_the_UK_2015_Report.pdf). 
+[^"11"]:  [Consumer insight: date labels and storage guidance](https://wrap.org.uk/sites/default/files/2020-12/Consumer-insight-date-labels-and-storage-guidance.pdf). The Waste and Resources Action Programme.2011.
+[^"12"]:  [2017 Draft Report to Congress on the Benefits and Costs of Federal Regulations and Agency Compliance with the Unfunded Mandates Reform Act](https://www.whitehouse.gov/wp-content/uploads/2017/12/draft_2017_cost_benefit_report.pdf). 
 
 
 export default ({ children }) => 
