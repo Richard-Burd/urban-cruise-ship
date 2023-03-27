@@ -3,9 +3,18 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const EndeavorDropdown = ({ title, children }) => {
   const [isVisible, setVisible] = useState(false);
+
+  function convertToUrlSlug(text) {
+    return encodeURIComponent(text
+      .toLowerCase()
+      .replace(/[^a-zA-Z0-9]+/g, "-")
+      .replace(/(^-|-$)+/g, "")
+    );
+  }
+
   return (
     <>
-      <div className="endeavor-dropdown">
+      <div className="endeavor-dropdown" id={convertToUrlSlug(title)}>
         <div className="overflow-hidden pb-8">
           <motion.div onTap={() => setVisible(!isVisible)}>
             <div className="endeavor-dropdown-color cursor-pointer endeavor-dropdown-elliptical-geometry font-bold relative endeavor-dropdown-shadow-geometry mx-2 sm:mx-16 standard-font-3 text-center hover:text-gray-100 tracking-wider transition text-3xl z-20">

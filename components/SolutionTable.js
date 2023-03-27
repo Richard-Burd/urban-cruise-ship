@@ -18,7 +18,7 @@ const siteOrder = {
 // We can move this to a separate file if we want
 // We will import this data onto the "Solutions & Endeavors" page...
 // ...thus the "export" statement below.
-export const tableData = [
+export const solutionTableData = [
   {
     solution: "5% Methanol in Gasoline - U.S.",
     link: "/energy/energy_distribution/methanol#blend-5-methanol-into-the-us-gas-supply",
@@ -252,7 +252,7 @@ export const tableData = [
   },
 ];
 
-tableData.sort((a, b) => {
+solutionTableData.sort((a, b) => {
   if (siteOrder[a.site] === siteOrder[b.site]) {
     // If sites are the same, sort alphabetically by solution
     return a.solution.localeCompare(b.solution);
@@ -347,7 +347,7 @@ function SolutionTable() {
   );
 
   // In functional React components, useState is used to define state
-  const [data, setData] = useState(tableData);
+  const [data, setData] = useState(solutionTableData);
 
   // This creates an instance of the React table
   const tableInstance = useTable({ columns, data }, useSortBy);
