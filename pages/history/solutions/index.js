@@ -1,12 +1,12 @@
 import FocusArea2 from "../../../components/FocusArea2";
 import SolutionTable from "../../../components/SolutionTable";
-import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
 
 //place any drop down elements breaking solutions into categories here
 
 //This is the document that includes the images and tables for the main content of the page. 5 images, multiple tables.
 
-import FullSetOfSolutions from "/solutions/full-set-of-solutions.mdx";
+// This is replaced by the component below, delete in future refactoring
+// import FullSetOfSolutions from "/solutions/full-set-of-solutions.mdx";
 
 
 const siteConfig = require("../site_config.json");
@@ -41,12 +41,11 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="mx-4 my-16">
-        <FullSetOfSolutions />
+        
+        {/* This is replaced by the component below, delete in future refactoring */}
+        {/* <FullSetOfSolutions /> */}
 
-        <br></br><br></br>
         <SolutionTable />
-        <br></br><br></br>
-        <SolutionEndeavorTable />
       </div>
     </>
   );

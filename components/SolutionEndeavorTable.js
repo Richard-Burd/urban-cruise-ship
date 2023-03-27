@@ -41,7 +41,7 @@ function renderFootnotes(data) {
   const footnotes = sortedKeys.map((key) => footnotesObj[key]);
 
   return (
-    <div className="footnotes">
+    <div className="solution-endeavor-footnotes">
       <h2>References:</h2>
       {footnotes}
     </div>
