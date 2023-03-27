@@ -1916,6 +1916,10 @@ td a:focus {
   background-color: #f2bb56ff;
 }
 
+.energy-table-background-color {
+  background-color: rgb(231, 201, 145);
+}
+
 .energy-site-button-font-color {
   color: #1d140f;
 }
@@ -1944,6 +1948,10 @@ td a:focus {
 
 .matter-site-button-color {
   background-color: #adeb48ff;
+}
+
+.matter-table-background-color {
+  background-color: rgb(200, 234, 114);
 }
 
 .matter-site-button-font-color {
@@ -1976,6 +1984,10 @@ td a:focus {
   background-color: #8ee8ceff;
 }
 
+.habitat-table-background-color {
+  background-color: #b7ebe0;
+}
+
 .habitat-site-button-font-color {
   color: #0e1819;
 }
@@ -2004,6 +2016,10 @@ td a:focus {
 
 .cities-site-button-color {
   background-color: #ffb4b4ff;
+}
+
+.cities-table-background-color {
+  background-color: #ebb7b7;
 }
 
 .cities-site-button-font-color {
@@ -2036,6 +2052,10 @@ td a:focus {
   background-color: #c1b698ff;
 }
 
+.waste-table-background-color {
+  background-color: #ebe2b7;
+}
+
 .waste-site-button-font-color {
   color: #120f0d;
 }
@@ -2064,6 +2084,10 @@ td a:focus {
 
 .oceans-site-button-color {
   background-color: #647fecff;
+}
+
+.oceans-table-background-color {
+  background-color: #b7cdeb;
 }
 
 .oceans-site-button-font-color {
@@ -2096,6 +2120,10 @@ td a:focus {
   background-color: #333333ff;
 }
 
+.space-table-background-color {
+  background-color: #d6d6d6;
+}
+
 .space-site-button-font-color {
   color: #d9d9d9;
 }
@@ -2126,6 +2154,10 @@ td a:focus {
   background-color: #b998d6ff;
 }
 
+.costs-table-background-color {
+  background-color: #ddb7eb;
+}
+
 .costs-site-button-font-color {
   color: #090911;
 }
@@ -2154,6 +2186,10 @@ td a:focus {
 
 .history-site-button-color {
   background-color: #bed0d8ff;
+}
+
+.history-table-background-color {
+  background-color: #c8d9e7;
 }
 
 .history-site-button-font-color {

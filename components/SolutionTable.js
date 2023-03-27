@@ -423,7 +423,7 @@ function SolutionTable() {
 
 function rowStyle(row) {
   // These are the colors of the article buttons which are lighter versions of the site buttons
-  return `${row.site}-article-button-background-color`;
+  return `${row.site}-table-background-color`;
 
   // These are the colors of the site buttons, we can use them instead if we want
   // ...show John both options...we can also use custom colors if we want
