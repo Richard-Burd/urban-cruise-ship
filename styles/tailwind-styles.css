@@ -175,8 +175,7 @@ td a{
 
 /* This section styles *only* those tables that are dynamic */
 /* These dynamic tables are the ones created with the 'React Table' library */
-/* Nothing below will affect anything  */
-
+/* Nothing below will affect anything in the Article or Solution tables  */
 .dynamic-table th{
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* set the transition */
 }
@@ -184,6 +183,7 @@ td a{
 .dynamic-table th:hover {
   background-color: #d5f6ff; /* set the background color on hover */
   color: #093348; /* set the font color on hover */
+  cursor: pointer;
 }
 
 

@@ -782,6 +782,10 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .table {
   display: table;
 }
@@ -1805,7 +1809,7 @@ td a:focus {
 
 /* These dynamic tables are the ones created with the 'React Table' library */
 
-/* Nothing below will effect anything  */
+/* Nothing below will affect anything in the Article or Solution tables  */
 
 .dynamic-table th{
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -1813,12 +1817,11 @@ td a:focus {
 }
 
 .dynamic-table th:hover {
-  /* Richard just put s.thing here as a temp placeholder */
-  /* Jye can replace the line below with a line(s) that are way cooler! */
   background-color: #d5f6ff;
   /* set the background color on hover */
   color: #093348;
   /* set the font color on hover */
+  cursor: pointer;
 }
 
 /* This is the primary branding font used by UCS */
