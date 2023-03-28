@@ -39,13 +39,24 @@ const SolutionsAndEndeavors = () => {
         hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
-      <div className="mx-4 my-16">
+      <div className="custom-background">
         <h2></h2>
         <p></p>
         {/* This is replaced by the component below, delete in future refactoring */}
         {/* <FullSetOfSolutionsAndEndeavors /> */}
+
+        <br></br><br></br>
         <SolutionEndeavorTable />
+        <br></br><br></br>
+        <br></br><br></br>
       </div>
+      <style>
+        {`
+          .custom-background {
+            background-image: linear-gradient(90deg, #fff, #aed1d7);;
+          }
+        `}
+      </style>
     </>
   );
 };

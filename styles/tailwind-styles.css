@@ -121,6 +121,16 @@ li[id^="user-content-fn-"] p {
   padding-bottom: 1.2rem;
 }
 
+/* This styles the footnotes at the bottom of the Solutions & Endeavors */
+/* dynamic table that is made with the React Table library */
+.solution-endeavor-footnotes #footnote-label {
+  @apply mt-8 mb-4;
+}
+
+.solution-endeavor-footnotes span {
+  @apply mx-4;
+}
+
 /* This section styles items inside of Solutions dropdown boxes */
 /* Article Section Title */
 .solution-dropdown h2 {

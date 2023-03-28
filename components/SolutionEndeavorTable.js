@@ -42,7 +42,7 @@ function renderFootnotes(data) {
 
   return (
     <div className="solution-endeavor-footnotes">
-      <h2>References:</h2>
+      <h2 id="footnote-label">References:</h2>
       {footnotes}
     </div>
   );
