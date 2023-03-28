@@ -3,15 +3,15 @@ import Link from "next/link";
 import { useTable, useSortBy } from "react-table";
 
 const siteOrder = {
-  "energy": 1,
-  "matter": 2,
-  "habitat": 3,
-  "cities": 4,
-  "waste": 5,
-  "oceans": 6,
-  "space": 7,
-  "costs": 8,
-  "history": 9,
+  energy: 1,
+  matter: 2,
+  habitat: 3,
+  cities: 4,
+  waste: 5,
+  oceans: 6,
+  space: 7,
+  costs: 8,
+  history: 9,
 };
 
 // this is raw data for our solutions
@@ -279,13 +279,24 @@ function SolutionTable() {
         // The first column in the table has both a title as well as a link,
         // ...therefore both the title (solution) and link (link) are passed into the
         // ... "Cell" property
-        Cell: ({ value }) => (
-          <Link href={value.link}>
-            <a target="_blank" rel="noopener noreferrer">
-              {value.solution}
-            </a>
-          </Link>
-        ),
+        Cell: ({ value, row }) => {
+          // Get the text color class based on the row's site property
+          const textColorClass =
+            row.original.site === "oceans" || row.original.site === "space"
+              ? "light-text-for-colored-tables"
+              : "";
+          return (
+            <Link href={value.link}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={textColorClass}
+              >
+                {value.solution}
+              </a>
+            </Link>
+          );
+        },
       },
       {
         // We want to display a number like this in out data: "1000"
@@ -294,7 +305,7 @@ function SolutionTable() {
         // ...so we use .format() & other code below
         Header: "Cost (Billion USD/yr)",
         accessor: "cost",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null
             ? `$${Intl.NumberFormat(undefined, {
@@ -307,7 +318,7 @@ function SolutionTable() {
         // Same as above re: number formatting
         Header: "Benefit (Billion USD/yr)",
         accessor: "benefit",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null
             ? `$${Intl.NumberFormat(undefined, {
@@ -320,7 +331,7 @@ function SolutionTable() {
         // Same as above re: number formatting without the $ sign
         Header: "CO² Reduction megaTon/yr",
         accessor: "co2",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null
             ? `${Intl.NumberFormat(undefined, {
@@ -332,7 +343,7 @@ function SolutionTable() {
         // no formatting here. We don't care about sub-sections of square kilometers
         Header: "Habitat Preservation (km²)",
         accessor: "habitat",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null ? `${Intl.NumberFormat().format(value)}km²` : null,
       },
@@ -407,8 +418,20 @@ function SolutionTable() {
               key={`row-${rowIndex}`}
             >
               {row.cells.map((cell, cellIndex) => {
+                // Get the text color class based on the row's site property
+                const textColorClass =
+                  row.original.site === "oceans" ||
+                  row.original.site === "space"
+                    ? "light-text-for-colored-tables"
+                    : "";
+                // Apply the textColorClass to the <td> element only if it's not the first column (Solution column)
+                const cellClass = cellIndex === 0 ? "" : textColorClass;
                 return (
-                  <td {...cell.getCellProps()} key={`cell-${cellIndex}`}>
+                  <td
+                    {...cell.getCellProps()}
+                    className={cellClass}
+                    key={`cell-${cellIndex}`}
+                  >
                     {cell.render("Cell")}
                   </td>
                 );
