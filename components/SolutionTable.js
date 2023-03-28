@@ -222,7 +222,7 @@ export const solutionTableData = [
   },
   {
     solution: "Scientific Whaling Ban - World",
-    link: "/oceans/ocean_industry/seafood#ban-scientific-whaling",
+    link: "/oceans/ocean_environment/ocean_biodiversity#ban-whaling-for-scientific-research",
     site: "oceans",
     cost: 0.31,
     benefit: 1.456,
@@ -232,7 +232,7 @@ export const solutionTableData = [
   },
   {
     solution: "Set Ship Speed Limits - World",
-    link: "/oceans/ocean_industry/shipping#set-ship-speed-limits",
+    link: "/oceans/ocean_environment/ocean_biodiversity#set-ship-speed-limits",
     site: "oceans",
     cost: 16.5,
     benefit: 55.4,

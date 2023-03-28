@@ -131,6 +131,19 @@ li[id^="user-content-fn-"] p {
   @apply mx-4;
 }
 
+/* Jye: this is the style that makes the text for "oceans" and "space" text white */
+/* on the dynamic tables we build (with the React Table Library) for the endeavors & solutions tables */
+/* go ahead and comment it out and make the color whatever you want when you and John experiment with */
+/* the darker colors for the endeavor and solution tables. */
+
+/* .light-text-for-colored-tables {
+  @apply text-zinc-100;
+} */
+
+
+
+
+
 /* This section styles items inside of Solutions dropdown boxes */
 /* Article Section Title */
 .solution-dropdown h2 {

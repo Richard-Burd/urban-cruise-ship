@@ -23,10 +23,21 @@ function renderFootnotes(data) {
 
         if (!footnotesObj[footnoteNumber]) {
           footnotesObj[footnoteNumber] = (
-            <div key={`footnote-${footnoteNumber}`} id={`fn-${footnoteNumber}`} style={{ display: 'block' }}>
-              <span style={{ display: 'inline-flex', alignItems: 'baseline' }}>
-                {footnoteNumber}. <ReactMarkdown components={{a: CustomLink}}>{footnoteContent.trim()}</ReactMarkdown>
-                <a href={`#fnref-${footnoteNumber}`} className="footnote-backref" style={{ marginLeft: '8px' }}>
+            <div
+              key={`footnote-${footnoteNumber}`}
+              id={`fn-${footnoteNumber}`}
+              style={{ display: "block" }}
+            >
+              <span style={{ display: "inline-flex", alignItems: "baseline" }}>
+                {footnoteNumber}.{" "}
+                <ReactMarkdown components={{ a: CustomLink }}>
+                  {footnoteContent.trim()}
+                </ReactMarkdown>
+                <a
+                  href={`#fnref-${footnoteNumber}`}
+                  className="footnote-backref"
+                  style={{ marginLeft: "8px" }}
+                >
                   ↩
                 </a>
               </span>
@@ -37,7 +48,9 @@ function renderFootnotes(data) {
     }
   });
 
-  const sortedKeys = Object.keys(footnotesObj).sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+  const sortedKeys = Object.keys(footnotesObj).sort(
+    (a, b) => parseInt(a, 10) - parseInt(b, 10)
+  );
   const footnotes = sortedKeys.map((key) => footnotesObj[key]);
 
   return (
@@ -48,17 +61,16 @@ function renderFootnotes(data) {
   );
 }
 
-
 const siteOrder = {
-  "energy": 1,
-  "matter": 2,
-  "habitat": 3,
-  "cities": 4,
-  "waste": 5,
-  "oceans": 6,
-  "space": 7,
-  "costs": 8,
-  "history": 9,
+  energy: 1,
+  matter: 2,
+  habitat: 3,
+  cities: 4,
+  waste: 5,
+  oceans: 6,
+  space: 7,
+  costs: 8,
+  history: 9,
 };
 
 export const endeavorTableData = [
@@ -71,7 +83,7 @@ export const endeavorTableData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^1]: Thompson, K., Tebbens, R. ["Retrospective cost-effectiveness analyses for polio vaccination in the United States"](https://doi.org/10.1111/j.1539-6924.2006.00831.x). Risk Analysis 26(6), pp. 1423-1440. December 2006.`
+      `[^1]: Thompson, K., Tebbens, R. ["Retrospective cost-effectiveness analyses for polio vaccination in the United States"](https://doi.org/10.1111/j.1539-6924.2006.00831.x). Risk Analysis 26(6), pp. 1423-1440. December 2006.`,
     ],
   },
   {
@@ -461,7 +473,8 @@ export const endeavorTableData = [
     ],
   },
   {
-    solution: "Efficient Water Heater Requirement for New Homes, U.S. (10-Year Model)",
+    solution:
+      "Efficient Water Heater Requirement for New Homes, U.S. (10-Year Model)",
     link: "/history/endeavors#energy-production-efficiency",
     site: "history",
     cost: 0.02924,
@@ -545,7 +558,8 @@ export const endeavorTableData = [
     ],
   },
   {
-    solution: "Mercury Reduction, Australia (All future benefits/costs after ratification.)",
+    solution:
+      "Mercury Reduction, Australia (All future benefits/costs after ratification.)",
     link: "/history/endeavors#pollution-regulations",
     site: "history",
     cost: 0.14529,
@@ -807,7 +821,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^65]: Zhang, J., Jiang, H., Zhang, W., Ma, G., Wang, Y., Lu, Y., Hu, X., Zhou, J., Peng, F., Bi, J., Wang, J. ["Cost-benefit analysis of China’s Action Plan for Air Pollution Prevention and Control"](https://link.springer.com/article/10.1007/s42524-019-0074-8). Frontiers of Engineering Management 6, pp. 524-537. November 2019.`,
-
     ],
   },
   {
@@ -820,7 +833,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^66]: Lavee, D. ["A cost-benefit analysis of a deposit–refund program for beverage containers in Israel"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X09003808). Waste Management 30(2), pp. 338-345. February 2010.`,
-
     ],
   },
   {
@@ -833,7 +845,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^67]: Zhou, C., Gong, Z., Hu, J., Cao, A., Liang, H. ["A cost-benefit analysis of landfill mining and material recycling in China"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X14004516). Waste Management 35, pp. 191-198. January 2015.`,
-
     ],
   },
   {
@@ -846,12 +857,11 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^68]: Regional Transportation Commission of Southern Nevada. ["I-11 & Intermountain West Corridor Study"](http://i11study.com/). Accessed March 3, 2021.`,
-
     ],
   },
   {
     solution: "Energy Crops in Urban Parks, Poland (20-Year Model)",
-    link: "/history/endeavors#transportation-infrastructure",
+    link: "/history/endeavors#energy-production-efficiency",
     site: "history",
     cost: 0.00393,
     benefit: 0.00484,
@@ -859,7 +869,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^69]: Sikorska, D., Macegoniuk, S., Łaszkiewicz, E., Sikorska, P. ["Energy crops in urban parks as a promising alternative to traditional lawns - Perceptions and a cost-benefit analysis"](https://www.sciencedirect.com/science/article/pii/S1618866719304455). Urban Forestry & Urban Greening 49, 126579. March 2020.`,
-
     ],
   },
   {
@@ -872,7 +881,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^70]: Florio, M., Forte, S., Sirtori, E. ["Forecasting the socio-economic impact of the Large Hadron Collider: A cost–benefit analysis to 2025 and beyond"](https://www.sciencedirect.com/science/article/abs/pii/S0040162516000731). Technological Forecasting and Social Change 112, pp. 38-53. November 2016.`,
-
     ],
   },
   {
@@ -885,7 +893,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^71]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study"](https://www.sciencedirect.com/science/article/pii/S0306261917318068). Applied Energy 212, pp. 881-894. February 2018.`,
-
     ],
   },
   {
@@ -898,7 +905,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^72]: Caldwell, M., Vitacco, M., Van Rybroek, G. ["Are Violent Delinquents Worth Treating? A Cost–Benefit Analysis"](https://journals.sagepub.com/doi/abs/10.1177/0022427805280053). Journal of Research in Crime and Delinquency 43(2), pp. 148-168. May 2006.`,
-
     ],
   },
   {
@@ -911,7 +917,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^73]: Marshik, T., Obritzhauser, W., Wagner, P., Richter, T., Mayerhofer, M., Egger-Danner, C., Käsbohrer, A., Pinior, B. ["A cost-benefit analysis and the potential trade effects of the bovine viral diarrhoea eradication programme in Styria, Austria"](https://www.sciencedirect.com/science/article/pii/S1090023317302289). The Veterinary Journal 231, pp. 19-29. January 2018.`,
-
     ],
   },
   {
@@ -924,7 +929,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
-
     ],
   },
   {
@@ -937,7 +941,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^74]: Tao, R., Liu, S., Tam, C. ["Cost-Benefit Analysis of High-Speed Rail Link between Hong Kong and Mainland China"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.397.4747). Journal of Engineering, Project, and Production Management 1(1), pp. 36-45. June 2011.`,
-
     ],
   },
   {
@@ -950,7 +953,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
-
     ],
   },
   {
@@ -963,7 +965,6 @@ export const endeavorTableData = [
     habitat: null,
     sources: [
       `[^47]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
-
     ],
   },
   {
@@ -1055,9 +1056,17 @@ function SolutionEndeavorTable() {
         // The first column in the table has both a title as well as a link,
         // ...therefore both the title (solution) and link (link) are passed into the
         // ... "Cell" property
-        Cell: ({ value }) => (
+        Cell: ({ value, row }) => (
           <Link href={value.link}>
-            <a target="_blank" rel="noopener noreferrer">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                row.original.site === "oceans" || row.original.site === "space"
+                  ? "light-text-for-colored-tables"
+                  : ""
+              }
+            >
               {value.solution}
             </a>
           </Link>
@@ -1070,7 +1079,7 @@ function SolutionEndeavorTable() {
         // ...so we use .format() & other code below
         Header: "Cost (Billion USD/yr)",
         accessor: "cost",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null
             ? `$${Intl.NumberFormat(undefined, {
@@ -1083,7 +1092,7 @@ function SolutionEndeavorTable() {
         // Same as above re: number formatting
         Header: "Benefit (Billion USD/yr)",
         accessor: "benefit",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null
             ? `$${Intl.NumberFormat(undefined, {
@@ -1096,7 +1105,7 @@ function SolutionEndeavorTable() {
         // Same as above re: number formatting without the $ sign
         Header: "CO² Reduction megaTon/yr",
         accessor: "co2",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null
             ? `${Intl.NumberFormat(undefined, {
@@ -1108,7 +1117,7 @@ function SolutionEndeavorTable() {
         // no formatting here. We don't care about sub-sections of square kilometers
         Header: "Habitat Preservation (km²)",
         accessor: "habitat",
-        sortType: 'number',
+        sortType: "number",
         Cell: ({ value }) =>
           value !== null ? `${Intl.NumberFormat().format(value)}km²` : null,
       },
@@ -1138,7 +1147,7 @@ function SolutionEndeavorTable() {
     ],
     []
   );
- 
+
   // This combines the data from the two tables into one array
   const combinedData = solutionTableData.concat(endeavorTableData);
 
@@ -1204,8 +1213,20 @@ function SolutionEndeavorTable() {
                 key={`row-${rowIndex}`}
               >
                 {row.cells.map((cell, cellIndex) => {
+                  // Get the text color class based on the row's site property
+                  const textColorClass =
+                    row.original.site === "oceans" ||
+                    row.original.site === "space"
+                      ? "light-text-for-colored-tables"
+                      : "";
+                  // Apply the textColorClass to the <td> element only if it's not the first column (Solution column)
+                  const cellClass = cellIndex === 0 ? "" : textColorClass;
                   return (
-                    <td {...cell.getCellProps()} key={`cell-${cellIndex}`}>
+                    <td
+                      {...cell.getCellProps()}
+                      className={cellClass}
+                      key={`cell-${cellIndex}`}
+                    >
                       {cell.render("Cell")}
                     </td>
                   );

@@ -1305,11 +1305,6 @@ video {
   color: rgb(245 245 245 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(113 63 18 / var(--tw-text-opacity));
@@ -1678,6 +1673,10 @@ li[id^="user-content-fn-"] p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+/* .light-text-for-colored-tables {
+  @apply text-zinc-100;
+} */
 
 /* This section styles items inside of Solutions dropdown boxes */
 
