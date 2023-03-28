@@ -1674,10 +1674,6 @@ li[id^="user-content-fn-"] p {
   margin-right: 1rem;
 }
 
-/* .light-text-for-colored-tables {
-  @apply text-zinc-100;
-} */
-
 /* This section styles items inside of Solutions dropdown boxes */
 
 /* Article Section Title */
@@ -1837,6 +1833,18 @@ td a:focus {
   cursor: pointer;
 }
 
+/* Jye: this is the style that makes the text for "oceans" and "space" text white */
+
+/* on the dynamic tables we build (with the React Table Library) for the endeavors & solutions tables */
+
+/* go ahead and comment it out and make the color whatever you want when you and John experiment with */
+
+/* the darker colors for the endeavor and solution tables. */
+
+/* .light-text-for-colored-tables {
+  @apply text-zinc-100;
+} */
+
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */
@@ -1930,7 +1938,7 @@ td a:focus {
 }
 
 .energy-table-background-color {
-  background-color: rgb(231, 201, 145);
+  background-color: rgb(243, 207, 139);
 }
 
 .energy-site-button-font-color {
@@ -2032,7 +2040,7 @@ td a:focus {
 }
 
 .cities-table-background-color {
-  background-color: #ebb7b7;
+  background-color: #f8a9a9;
 }
 
 .cities-site-button-font-color {
@@ -2100,7 +2108,7 @@ td a:focus {
 }
 
 .oceans-table-background-color {
-  background-color: #b7cdeb;
+  background-color: #98baea;
 }
 
 .oceans-site-button-font-color {
@@ -2202,7 +2210,7 @@ td a:focus {
 }
 
 .history-table-background-color {
-  background-color: #c8d9e7;
+  background-color: rgb(230, 236, 238);
 }
 
 .history-site-button-font-color {

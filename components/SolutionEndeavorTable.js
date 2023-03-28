@@ -1242,7 +1242,7 @@ function SolutionEndeavorTable() {
 }
 
 function rowStyle(row) {
-  return row.site + "-article-button-background-color";
+  return row.site + "-table-background-color";
 }
 
 export default SolutionEndeavorTable;
