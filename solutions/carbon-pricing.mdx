@@ -3,7 +3,43 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Unpriced Externalities of CO₂ Emissions";
 export const solution = "Carbon Pricing";
 
+## Description
+
 We recommend that an economy-wide carbon price be implemented, such as along the lines of one of the pieces of proposed legislation described above.
+
+## Background
+
+Externalities are those effects, either positive or negative, that are not directly reflected in the price of a good. Pollution, and carbon dioxide emissions in particular, are a classic and particularly severe externality. Because the cost of emissions is not generally reflected in energy use, the level of emissions is greater than the social optimum. The theory of carbon pricing, as with pricing of externalities more generally, can be traced to Arthur Cecil Pigou's modeling [^"4"]. The goal is to internalize these externalities, so that economic agents take the damage done by pollution into account in their decisions.
+
+As of 2022, 23% of world CO<sub>2</sub> emissions were covered by a carbon price [^"6"]. These prices can take the form of a direct carbon tax or of a cap-and-trade scheme. The average price was $6/ton in 2022 [^"5"], ranging from less than $1/ton to over $100/ton across jurisdictions [^"6"]. Most of these prices are well below our estimate of the social cost of carbon.
+
+## Calculations
+
+These calculations model a carbon tax in the United States that starts at $50 per ton of carbon dioxide and rises at a rate of 1% per year thereafter.
+
+This policy is estimated to reduce CO<sub>2</sub> emissions by 1.6 billion tons per year after 15 years [^"1"], valued at $80 billion/year if carbon is valued at $50/ton.
+
+Mainly by inducing closure of coal-fired power plants, the carbon price is estimated to prevent 3500-8000 (midpoint: 5750) premature deaths per year [^"1"]. Valued at $10 million each [^"2"], the total value is $57.5 billion per year.
+
+Researchers from the Tax Foundation estimated the cost of a $50 carbon tax to be 0.4% of GDP [^"3"]. As the United States had a GDP of about $23.32 trillion in 2021, this cost is estimated at $93.28 billion per year.
+
+## Implementation
+
+A carbon tax works best if levied at the point of combustion and release of CO<sub>2</sub> into the atmosphere. About 76% of anthropogenic global warming is caused by carbon dioxide from fossil fuels; the rest is caused by methane, nitrous oxide, fluorinated gases, and carbon dioxide from other sources such as land use change [^"3"]. We advocate that all emissions that contribute to global warming be covered by pricing so as to maximize the opportunity for emissions reductions. Most emissions reductions are expected to occur in electricity production [^"1"], as it is in this sector that fossil fuels are most economical to replace.
+
+Carbon leakage is a problem associated with carbon pricing. This is the phenomenon whereby, due to the higher prices caused by carbon pricing, a jurisdiction increases exports from areas that do not have such pricing. This problem can be combatted with a border adjustment, which would levy a tariff on imports equal to the difference between the carbon price on the good if it was manufactured domestically and the carbon price at its actual source [^"3"].
+
+[^"1"]: Barron, A. R., Hafstead, M. A. C., Morris, A. C. ["Policy Insignts from Comparing Carbon Pricing Modeling Scenarios"](https://www.brookings.edu/wp-content/uploads/2019/05/ES_20190507_Morris_CarbonPricing.pdf). The Brookings Institute, the Climate and Energy Economics Project. May 2019.
+
+[^"2"]: Kniesner, T. J., Viscusi, W. K. ["The Value of a Statistical Life"](https://law.vanderbilt.edu/phd/faculty/w-kip-viscusi/368_Value_of_Statistical_Life_Oxford.pdf). Oxford Research Encyclopedia of Economics and Finance, Vanderbilt Law Research Paper. April 2019.
+
+[^"3"]: Pomerleau, K., Asen, E. ["Carbon Tax and Revenue Recycling: Revenue, Economic, and Distributional Implications"](https://taxfoundation.org/carbon-tax/). Tax Foundation. November 2019.
+
+[^"4"]: Pigou, A. C. ["The Economics of Welfare"](https://oll.libertyfund.org/title/pigou-the-economics-of-welfare). Macmillan. 1920.
+
+[^"5"]: Black, S., Parry, I., Zhunussova, K. ["More Countries Are Pricing Carbon, but Emissions Are Still Too Cheap"](https://www.imf.org/en/Blogs/Articles/2022/07/21/blog-more-countries-are-pricing-carbon-but-emissions-are-still-too-cheap). International Monetary Fund Blog. July 2022.
+
+[^"6"]: International Bank for Reconstruction and Development, World Bank. ["State and Trends of Carbon Pricing 2022"](https://openknowledge.worldbank.org/entities/publication/a1abead2-de91-5992-bb7a-73d8aaaf767f). 2022.
 
 export default ({ children }) => 
   <SolutionDropdown 
