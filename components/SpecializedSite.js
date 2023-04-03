@@ -12,7 +12,7 @@ const SpecializedSite = (props) => {
     <>
       <FocusAreaNavbar focusAreas={focusAreas} site={props.site} />
       <div className={`${props.site}-background-gradient pb-8`}>
-        <div className="italic p-8 standard-font-3 text-zinc-800 tracking-wide text-6xl">
+        <div className="italic p-1 standard-font-3 text-zinc-800 tracking-wide text-6xl">
           <SiteDescriptions siteDescription={props.siteDescription} />
         </div>
         <Logos site={props.site} />

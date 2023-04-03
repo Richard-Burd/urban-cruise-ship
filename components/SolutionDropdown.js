@@ -53,8 +53,8 @@ const SolutionDropdown = ({ problem, solution, children }) => {
                 duration: 0.2,
               }}
             >
-              <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-100 border border-slate-900 mx-2 sm:mx-16 solution-dropdown-elliptical-geometry solution-dropdown-shadow-geometry -translate-y-20">
-                <div className="solution-dropdown pt-20">{children}</div>
+              <div className="-mt-16 this-is-the-dropdown-that-needs-to-be-style bg-slate-100 border border-slate-900 mx-2 sm:mx-16 solution-dropdown-elliptical-geometry solution-dropdown-shadow-geometry -translate-y-4">
+                <div className="solution-dropdown pt-24">{children}</div>
               </div>
             </motion.div>
           )}

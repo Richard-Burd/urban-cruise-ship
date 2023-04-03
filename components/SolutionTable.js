@@ -242,8 +242,8 @@ export const solutionTableData = [
   },
   {
     solution: "Wildlife Corridors - U.S.",
-    link: "/matter/biodiversity/land_corridors#wildlife-corridors",
-    site: "matter",
+    link: "/habitat/environment/land_use_socio#wildlife-corridors",
+    site: "habitat",
     cost: 4.8,
     benefit: 9.4,
     co2: 1,
