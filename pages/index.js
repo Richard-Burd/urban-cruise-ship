@@ -52,7 +52,7 @@ export default function Home() {
       {/* else if th viewport is less than 1025px, render tablet option */}
       {/* finally, if neither of those conditions are met, render desktop option */}
       <div className={"grid grid-cols-1 pl-4 lg:pl-0 md:grid-cols-2 lg:grid-cols-3 gap-x-2"}>
-        <HomepageSpecializedSiteButton site="energy" />
+        <HomepageSpecializedSiteButton site="history" />        <HomepageSpecializedSiteButton site="energy" />
         <HomepageSpecializedSiteButton site="matter" />
         <HomepageSpecializedSiteButton site="habitat" />
         <HomepageSpecializedSiteButton site="cities" />
@@ -60,7 +60,7 @@ export default function Home() {
         <HomepageSpecializedSiteButton site="oceans" />
         <HomepageSpecializedSiteButton site="space" />
         <HomepageSpecializedSiteButton site="costs" />
-        <HomepageSpecializedSiteButton site="history" />
+
       </div>
       <Analytics />
     </>
