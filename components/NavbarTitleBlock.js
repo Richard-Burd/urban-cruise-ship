@@ -44,7 +44,7 @@ const NavbarTitleBlock = (props) => {
           />
         </div>
         <div className="hidden lg:inline">
-          <div className="standard-font-1 standard-font-color-1 text-6xl">
+          <div className="standard-font-1 standard-font-color-1 text-6xl pb-2.5">
             {props.title}
           </div>
           <div className="standard-font-2 standard-font-color-1 text-2xl">

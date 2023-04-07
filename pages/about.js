@@ -13,7 +13,7 @@ const About = () => {
         <NavbarTitleBlock
           title={"About Us"}
           subtitle={
-            "Founded in 2014, Urban Cruise Ship presents environmental solutions."
+            "Founded in 2014, Urban Cruise Ship presents environmental solutions:"
           }
         />
       </div>

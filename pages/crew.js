@@ -19,7 +19,7 @@ const Crew = () => {
         <NavbarTitleBlock
           title={"The Crew"}
           subtitle={
-            "Urban Cruise Ship is comprised of the following current and past crewmembers."
+            "Urban Cruise Ship is comprised of the following current and past crewmembers:"
           }
         />
       </div>
@@ -175,11 +175,7 @@ const Crew = () => {
           </div>
         </div>
         <center className="link-icon-set">
-          <a
-            href={`/snail-mail`}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={`/snail-mail`} target="_blank" rel="noreferrer">
             <Image
               className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
               src={`/images/external-link-icons/email.svg`}

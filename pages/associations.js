@@ -19,7 +19,7 @@ const Associations = () => {
         <NavbarTitleBlock
           title={"Associations"}
           subtitle={
-            "Our connections with others are important parts of our history"
+            "Our connections with others are important parts of our history:"
           }
         />
       </div>
@@ -61,11 +61,7 @@ const Associations = () => {
             <b>John van der Harst</b>, 2017-present.
           </div>
           <center>
-            <a
-              href={`/snail-mail`}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={`/snail-mail`} target="_blank" rel="noreferrer">
               <Image
                 className={externalLinkIconStyles}
                 src={`/images/external-link-icons/email.svg`}
