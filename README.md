@@ -10,19 +10,57 @@
 
 ---
 
-## Instructions for Changing the Metrics on the Accomplishments Page to Match the Solutions Tracker
-Open the following file in the main directory of this repo:
-`solutionMetrics.js`
+## Instructions for Creating New Handouts & Hosting them on this Website
 
-and change the following numbers:
-```javascript
-const totalBenefitInTrillions = 2.461; 
-const totalCostInTrillions = 1.452;   
-const totalMTCO2eInMillions = 1.086;      
-const totalHabitatPreservedMillionsKm2 = 78.34;
-const dateOfLastChange = "February 8, 2023"
+### Hosting Handouts on This Website
+
+Our handouts are setup so that our site visitors can download them from our website and view them in their local internet browser (e.g. Chrome) or a local PDF viewer such as Adobe Acrobat Reader.  The visitor would not view our handouts as part of our site, and so the handouts are not included in our code repo on GitHub.  Instead, the repo has code that provides a link to a publicly available handout on our Google Shared drive that automatically downloads the handout, rather than displaying it in the Google-Drive default browser previewer.  Follow these steps for adding a new handout to our existing collection:
+
+First, go to the original handout PDF file on Google Drive and find the file's ID.  In an example, the ***Human Population*** handout is located in [this directory here](https://drive.google.com/drive/folders/19tryIaoeLHmw0Y9rsUtGRrPpRg-PzHJW?usp=sharing).  If you right-click on the file and select **get link** you will get the following path: `https://drive.google.com/file/d/1S4Z-GoAg_kjnQrMelPXk50aPggTe9NWc/view?usp=share_link` ...now the part of this link that is unique to the ***Human Population*** handout is this one right here: `1S4Z-GoAg_kjnQrMelPXk50aPggTe9NWc`.  This is the **file-id** number.  Note that it comes right after the : `/d/` part of the link and precedes the  `view?usp=share_link` part of the link at the very end. Copy and paste this file-id as we will use it in future steps
+
+Next, In this very GitHub repo, go to this directory: `"./pages/publications.js"` - this is where we display the handouts in the following three different sections:
+- *Health*
+- *Access*
+- *Opportunities*
+
+The ***Human Population*** handout (located in the *Health* section) is represented by the following code:
+```jsx
+<a
+  href="https://drive.google.com/uc?export=view&id=1S4Z-GoAg_kjnQrMelPXk50aPggTe9NWc"
+  className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+>
+  <div>
+     <b><i>Human Population</i></b>
+  </div>
+</a>
 ```
-The commensurate paragraph will automatically update.
+Notice that the `href` contains a different link path that starts with `https://drive.google.com/uc?export` ...this is the format we must use in order that our viewer will *download* our handout when they click on it rather then get taken to a google-drive preview window.  When you add a new handout, you will copy and paste the code above and replace the `1S4Z-GoAg_kjnQrMelPXk50aPggTe9NWc` with the file-id for the new handout so that it will look something like this:
+```jsx
+<a
+  href="https://drive.google.com/uc?export=view&id=8675309"
+  className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+>
+  <div>
+     <b><i>My Handout Title</i></b>
+  </div>
+</a>
+```
+In our case, the `8675309` above is a stand-in for our new handout's **file-id** which is a random list of letters, numbers, and dashes.  The code snippet looks confusing so here is a breakdown:
+
+```jsx
+<a href="changes" className="does-not-change">
+  <div>
+     <b>
+       <i>My Handout Title</i>
+     </b>
+  </div>
+</a>
+```
+Note that you do not need to change any of the [TailwindCSS](https://tailwindcss.com/) styling in the 	`className`, you just need to change the `href`
+
+<br></br><br></br>
+----
+<br></br><br></br>
 
 ## Instructions for Uploading Images to The UCS Website
 About 98% of all images on the [UCS Website](http://urbancruiseship.org/) are in the SVG (`.svg`) vector file format.  The instructions below detail how to prepare and upload SVG images to the internet so they can be used on any page within the [UCS Website](http://urbancruiseship.org/).  ~~All images for the [UCS Website](http://urbancruiseship.org/) are currently stored in [this public GitHub repository](https://github.com/Richard-Burd/ucs-images/) and are referenced in the article (and solution) markdown `.mdx` files of the [UCS Website's](http://urbancruiseship.org/) code base. That code base is located [here](https://github.com/Richard-Burd/urban-cruise-ship/) in a private repository. You will need to be granted access in order to view or edit it. Images not part of an article or solution are stored in that private repository and are not discussed in this section below.~~
