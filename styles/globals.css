@@ -1612,7 +1612,10 @@ h4 a:focus {
 
 /* This has padding between it and the line above it */
 
-#footnote-label:not(.solution-dropdown #footnote-label, .endeavor-dropdown #footnote-label) {
+#footnote-label:not(
+    .solution-dropdown #footnote-label,
+    .endeavor-dropdown #footnote-label
+  ) {
   margin-bottom: 0.25rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1629,7 +1632,7 @@ h4 a:focus {
 
 /* This styling effects the individual references at the bottom of the articles */
 
-ol li:not(.endeavor-dropdown ol li, .solution-dropdown ol li ) {
+ol li:not(.endeavor-dropdown ol li, .solution-dropdown ol li) {
   margin-left: 2rem;
   list-style-type: decimal;
 }
@@ -1769,7 +1772,8 @@ table {
   text-align: center;
 }
 
-td, th {
+td,
+th {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(39 39 42 / var(--tw-border-opacity));
@@ -1816,7 +1820,7 @@ td a:focus {
 
 /* Nothing below will affect anything in the Article or Solution tables  */
 
-.dynamic-table th{
+.dynamic-table th {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   /* set the transition */
 }
@@ -1829,6 +1833,22 @@ td a:focus {
   cursor: pointer;
 }
 
+.dynamic-table a:not(.light-text-for-colored-tables) {
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+.dynamic-table a:not(.light-text-for-colored-tables):hover {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.dynamic-table a:not(.light-text-for-colored-tables):focus {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
 /* Jye: this is the style that makes the text for "oceans" and "space" text white */
 
 /* on the dynamic tables we build (with the React Table Library) for the endeavors & solutions tables */
@@ -1837,9 +1857,22 @@ td a:focus {
 
 /* the darker colors for the endeavor and solution tables. */
 
-/* .light-text-for-colored-tables {
-  @apply text-zinc-100;
-} */
+.light-text-for-colored-tables {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
+
+.light-text-for-colored-tables:hover {
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.light-text-for-colored-tables:focus {
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
 
 /* This is the primary branding font used by UCS */
 
@@ -1884,7 +1917,7 @@ td a:focus {
 /* ...some of our text may display improperly and overlap shapes */
 
 .standard-font-4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* NOTE: Standard font colors are subject to be changed per John's tastes  */

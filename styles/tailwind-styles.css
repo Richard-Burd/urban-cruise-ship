@@ -19,7 +19,7 @@ NOTE: standard styling for all components in this project are done in the:
 
 /* Article Title */
 .article-wrap {
-  @apply border-t-2 border-gray-300 pt-3
+  @apply border-t-2 border-gray-300 pt-3;
 }
 
 h1 {
@@ -74,7 +74,6 @@ h4 a {
   @apply border-slate-400 border-t-2 mx-4;
 } */
 
-
 /* This styling ensures there is no line above the References (footnotes) in the solutions dropdowns */
 /* This is a custom John rule that eliminates the line above the solution footnotes */
 .solution-dropdown > .footnotes {
@@ -91,7 +90,10 @@ h4 a {
 
 /* This styling effects the reference title at the bottom of the articles */
 /* This has padding between it and the line above it */
-#footnote-label:not(.solution-dropdown #footnote-label, .endeavor-dropdown #footnote-label) {
+#footnote-label:not(
+    .solution-dropdown #footnote-label,
+    .endeavor-dropdown #footnote-label
+  ) {
   @apply pt-4 pb-4 mb-1;
 }
 
@@ -102,7 +104,7 @@ h4 a {
 }
 
 /* This styling effects the individual references at the bottom of the articles */
-ol li:not(.endeavor-dropdown ol li, .solution-dropdown ol li ) {
+ol li:not(.endeavor-dropdown ol li, .solution-dropdown ol li) {
   @apply list-decimal ml-8;
 }
 
@@ -141,17 +143,17 @@ li[id^="user-content-fn-"] p {
 /* on 2.2.2023 John requested the bullet indentations to be removed */
 /* ...so here the "lg:mx-24" is commented out  */
 ul li {
-  @apply list-disc mx-8 /*lg:mx-24*/ -translate-y-5
+  @apply list-disc mx-8 /*lg:mx-24*/ -translate-y-5;
 }
 
 /* numbered lists inside of Solutions boxes and article files */
 ol li {
-  @apply list-decimal mx-8 /*lg:mx-24*/ -translate-y-5
+  @apply list-decimal mx-8 /*lg:mx-24*/ -translate-y-5;
 }
 
 /* links for bullet points inside of Solutions boxes and article files */
-ul li a{
-  @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline
+ul li a {
+  @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
 }
 
 /* This section styles all of the tables in this project */
@@ -167,7 +169,8 @@ table {
   @apply border-2 border-zinc-800 p-1 text-center mx-4 bg-zinc-50 bg-opacity-50;
 }
 
-td, th {
+td,
+th {
   @apply border border-zinc-800 p-1;
 }
 
@@ -179,14 +182,14 @@ td {
   @apply text-zinc-900;
 }
 
-td a{
+td a {
   @apply font-semibold text-blue-900 duration-200 hover:text-red-900 hover:underline focus:text-red-900 focus:underline;
 }
 
 /* This section styles *only* those tables that are dynamic */
 /* These dynamic tables are the ones created with the 'React Table' library */
 /* Nothing below will affect anything in the Article or Solution tables  */
-.dynamic-table th{
+.dynamic-table th {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* set the transition */
 }
 
@@ -196,17 +199,18 @@ td a{
   cursor: pointer;
 }
 
+.dynamic-table a:not(.light-text-for-colored-tables) {
+  @apply text-zinc-900 hover:text-red-900 hover:underline focus:text-red-900;
+}
+
 /* Jye: this is the style that makes the text for "oceans" and "space" text white */
 /* on the dynamic tables we build (with the React Table Library) for the endeavors & solutions tables */
 /* go ahead and comment it out and make the color whatever you want when you and John experiment with */
 /* the darker colors for the endeavor and solution tables. */
 
-/* .light-text-for-colored-tables {
-  @apply text-zinc-100;
-} */
-
-
-
+.light-text-for-colored-tables {
+  @apply text-zinc-100 hover:text-zinc-900 hover:underline focus:text-zinc-900 focus:underline;
+}
 
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
@@ -236,7 +240,7 @@ td a{
 /* Calibri much be purchased for use and not all devices have it so if we use it */
 /* ...some of our text may display improperly and overlap shapes */
 .standard-font-4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* NOTE: Standard font colors are subject to be changed per John's tastes  */
