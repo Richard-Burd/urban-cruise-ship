@@ -1862,18 +1862,6 @@ td a:focus {
   color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
-.light-text-for-colored-tables:hover {
-  --tw-text-opacity: 1;
-  color: rgb(24 24 27 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-}
-
-.light-text-for-colored-tables:focus {
-  --tw-text-opacity: 1;
-  color: rgb(24 24 27 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-}
-
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */
@@ -2137,7 +2125,7 @@ td a:focus {
 }
 
 .oceans-table-background-color {
-  background-color: #98baea;
+  background-color: rgb(107, 128, 214);
 }
 
 .oceans-site-button-font-color {
@@ -2171,7 +2159,7 @@ td a:focus {
 }
 
 .space-table-background-color {
-  background-color: #d6d6d6;
+  background-color: #282936;
 }
 
 .space-site-button-font-color {

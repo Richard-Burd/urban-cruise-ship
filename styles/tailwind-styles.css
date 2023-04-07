@@ -209,7 +209,7 @@ td a {
 /* the darker colors for the endeavor and solution tables. */
 
 .light-text-for-colored-tables {
-  @apply text-zinc-100 hover:text-zinc-900 hover:underline focus:text-zinc-900 focus:underline;
+  @apply text-zinc-100;
 }
 
 /* This is the primary branding font used by UCS */
@@ -411,7 +411,7 @@ td a {
   background-color: #647fecff;
 }
 .oceans-table-background-color {
-  background-color: #98baea;
+  background-color: rgb(107, 128, 214);
 }
 .oceans-site-button-font-color {
   color: #dfe1ee;
@@ -437,7 +437,7 @@ td a {
   background-color: #333333ff;
 }
 .space-table-background-color {
-  background-color: #d6d6d6;
+  background-color: #282936;
 }
 .space-site-button-font-color {
   color: #d9d9d9;
