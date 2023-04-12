@@ -271,7 +271,9 @@ const Crew = () => {
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
-            Richard Burd is an assistant researcher at Urban Cruise Ship.
+            Richard Burd is an assistant researcher and software developer at
+            Urban Cruise Ship. He is the current webmaster and buit our current
+            website with the design consultation of John van der Harst.
           </div>
           <div className="my-4"></div>
           <div>
@@ -295,9 +297,10 @@ const Crew = () => {
           <div>
             Richard&apos;s volunteer work includes assisting Kurdish militias in
             northern Iraq during their war with the Islamic State (ISIS) in 2016
-            where he served as an interpreter and drone pilot. His interests
-            include rapid prototyping, (software/hardware) unmanned aviation,
-            and social psychology
+            where he served as an interpreter and drone pilot. More recently
+            Richard has been coordinating medical relief efforts in southeastern
+            Ukraine. His interests include rapid prototyping,
+            (software/hardware) unmanned aviation, and social psychology
           </div>
         </div>
         <center className="link-icon-set">
