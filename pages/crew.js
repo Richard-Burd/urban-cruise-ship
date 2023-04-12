@@ -299,8 +299,8 @@ const Crew = () => {
             northern Iraq during their war with the Islamic State (ISIS) in 2016
             where he served as an interpreter and drone pilot. More recently
             Richard has been coordinating medical relief efforts in southeastern
-            Ukraine. His interests include rapid prototyping,
-            (software/hardware) unmanned aviation, and social psychology
+            Ukraine. His interests include rapid prototyping, blockchain
+            technology, aviation, evolutionary psychology, and persuasion.
           </div>
         </div>
         <center className="link-icon-set">
