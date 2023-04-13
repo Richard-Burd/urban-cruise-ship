@@ -8,10 +8,10 @@
      "focus_area_name":"Solutions",
      "focus_area_url":"solutions",
      "articles": [
-      { "article_title": "Efficiency Benefit / Cost", "article_url": "benefit-over-cost" },
-      { "article_title": "Efficiency Benefit - Cost", "article_url": "benefit-minus-cost" },
+      { "article_title": "(Benefit / Cost) Efficiency ", "article_url": "benefit-over-cost" },
+      { "article_title": "(Benefit - Cost) Net Benefit ", "article_url": "benefit-minus-cost" },
       { "article_title": "Cost & Efficiency Comparison", "article_url": "cost-efficiency-comparison" },
-      { "article_title": "CO2 Reduction", "article_url": "co2-reduction" },
+      { "article_title": "Greenhouse Gas Reduction", "article_url": "co2-reduction" },
       { "article_title": "Habitat Preservation", "article_url": "habitat-preservation" }
      ]
   },
