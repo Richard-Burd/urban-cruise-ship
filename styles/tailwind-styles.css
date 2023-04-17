@@ -221,7 +221,7 @@ td a {
 /* This is the secondary branding font used by UCS  */
 /* it is imported into this project here: ./pages/_document.js */
 .standard-font-2 {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif; /* this was changed from "Arial" on 4.17.2023 */
   font-weight: 400; /* does nothing, included for templating only */
   font-style: normal; /* ibid. */
 }
