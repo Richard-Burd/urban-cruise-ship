@@ -328,6 +328,20 @@ function SolutionTable() {
             : null,
       },
       {
+        Header: "Efficiency (Benefit / Cost)",
+        accessor: (row) => row.benefit / row.cost,
+        Cell: ({ value }) => {
+          return value ? `${value.toFixed(1)}` : null;
+        },
+      },
+      {
+        Header: "Net Benefit (Billions)",
+        accessor: (row) => row.benefit - row.cost,
+        Cell: ({ value }) => {
+          return value ? `${value.toFixed(1)}` : null;
+        },
+      },
+      {
         // Same as above re: number formatting without the $ sign
         Header: "CO² Reduction megaTon/yr",
         accessor: "co2",
