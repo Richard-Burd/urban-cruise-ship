@@ -1109,7 +1109,7 @@ function SolutionEndeavorTable() {
         },
       },
       {
-        Header: "Net Benefit (Billions)",
+        Header: "Net Benefit (Benefit - Cost)",
         accessor: (row) => row.benefit - row.cost,
         Cell: ({ value }) => {
           return value ? `${value.toFixed(1)}` : null;
