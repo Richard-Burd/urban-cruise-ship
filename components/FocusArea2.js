@@ -56,6 +56,7 @@ const FocusArea2 = (props) => {
                     <ArticleButton
                       site={props.site}
                       articleTitle={article.article_title}
+                      articleTitleTwo={article.article_title_two}
                     />
                   </a>
                 </Link>

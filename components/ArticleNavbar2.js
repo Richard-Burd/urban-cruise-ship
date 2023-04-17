@@ -22,6 +22,7 @@ const ArticleNavbar2 = (props) => {
                 site={props.site}
                 focusAreaUrl={props.focusAreaUrl}
                 articleTitle={article.article_title}
+                articleTitleTwo={article.article_title_two}
                 articleUrl={article.article_url}
               />
             </a>

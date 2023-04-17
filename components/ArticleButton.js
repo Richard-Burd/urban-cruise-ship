@@ -22,6 +22,7 @@ const ArticleButton = (props) => {
           className={`${props.site}-article-button-background-color ${props.site}-article-button-font-color article-button-shadow m-4 px-4 py-2 rounded-2xl standard-font-1 text-3xl text-center hover:-translate-y-1 hover:scale-110 duration-100 active:scale-100`}
         >
           {props.articleTitle}
+          {props.articleTitleTwo && <div>{props.articleTitleTwo}</div>}
         </button>
       {/* </motion.div> */}
       <style jsx>{`
