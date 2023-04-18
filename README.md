@@ -749,14 +749,6 @@ Solutions generally have the following four subsections:
 **_Calculations_** is a required subsection that details how the estimates in the preceeding subsection were determined to be correct.
 **_Implementation_** is a required subsection that describes how the solution can be converted from an idea into a reality.
 
-Below is an illustration of what a solution should look like:
-
-<br></br>
-
-![under construction; image of what a solution looks like](https://raw.githubusercontent.com/Richard-Burd/ucs-images/master/solution_example.svg)
-
-<br></br>
-
 Not all solutions will conform to this standard structure but the structure is a good starting point. Whernever possible, we should make the effort to consult with experts in the follwoing fields:
 
 1. Academia
