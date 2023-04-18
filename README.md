@@ -536,7 +536,7 @@ Images are imported with the `ArticleImage.js` React component which in turn use
 
 <br></br>
 
-![image of an example showing image sizing](https://raw.githubusercontent.com/Richard-Burd/ucs-images/503f20df5cc47314fd95af47065f2b8efb6052a7/sizing_images.png)
+![image of an example showing image sizing](https://web-cyber.jyeartstudio.com/ucs-images/sizing_images.png)
 
 ### Sizing New Images for the New UCS Website
 
@@ -900,6 +900,44 @@ The Title is slugged to say: `transportation-energy-efficiency` in both the `<id
 [
 https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation-energy-efficiency
 ](https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation-energy-efficiency)
+
+---
+
+## Instructions for Creating Article Buttons with Top and Bottom Defined Text
+Some of our article buttons have a unique requirement to display a specified text on the top line of text with a specified text on the bottom line of text.  below is one such button from the [HISTORY/Solutions](https://www.urbancruiseship.org/history/solutions) section:
+
+![image of the Net Benefit button](https://web-cyber.jyeartstudio.com/ucs-images/top_n_bottom_text_button.jpg)
+
+NOTE: the ***Net Benefit*** is defined as the 'top' line and the ***(Benefit - Cost)*** is defined as the bottom line.  We do not our  text to be arbitrarily wrapped as it is elsewhere throughout the site but instead want it defined by humans.  This is achieved by adding an extra key & value pair to the `hierarchy.json` file in the specialized site [in our case HISTORY] you wish to modify.  Below there is a `"article_title_two": "(Benefit / Cost)"` line that indicates the text that should be displayed on the bottom line of the button.  The `article_title_two` key is optional and if it is not present, the text will be displayed on a single line as it is elsewhere on the site.  The `article_title_two` key is only used for the top and bottom text buttons.  The `article_title` key is used for all other buttons.  Below is an example of the `hierarchy.json` file for the HISTORY section:
+
+```json
+[
+    {
+     "focus_area_name":"Solutions",
+     "focus_area_url":"solutions",
+     "articles": [
+      { 
+        "article_title": "Efficiency", 
+        "article_title_two": "(Benefit / Cost)", 
+        "article_url": "benefit-over-cost" 
+      },
+      { 
+        "article_title": "Net Benefit", 
+        "article_title_two": "(Benefit - Cost)", 
+        "article_url": "benefit-minus-cost" 
+      }
+     ]
+  },
+]
+```
+This gets past down via `props` to the `ArticleButton` & `ArticleNavbarButton` components which then use the `article_title_two` key to display the text on this line:
+
+```jsx
+{props.articleTitle}
+{props.articleTitleTwo && <div>{props.articleTitleTwo}</div>}
+```
+
+The code above essentially says: if the `article_title_two` key is present, display the text on the bottom line of the button.  If it is not present, display the text on a single line as it is elsewhere on the site.
 
 ---
 
