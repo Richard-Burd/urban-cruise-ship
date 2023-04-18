@@ -72,7 +72,8 @@ const ArticleNavbarButton = (props) => {
               `/${props.site}/${props.focusAreaUrl}/${props.articleUrl}`
             ) ? longClassesSelected : longClasses
           }>
-            {props.articleTitle}
+            <div>{props.articleTitle}</div>
+            {props.articleTitleTwo && <div>{props.articleTitleTwo}</div>}
           </button>
         </div>
       </div>

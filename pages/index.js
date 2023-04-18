@@ -52,7 +52,7 @@ export default function Home() {
           "grid grid-cols-1 pl-4 lg:pl-0 md:grid-cols-2 lg:grid-cols-3 gap-x-2 mt-1 -translate-y-14"
         }
       >
-        <HomepageSpecializedSiteButton site="history" />{" "}
+        <HomepageSpecializedSiteButton site="history" />
         <HomepageSpecializedSiteButton site="energy" />
         <HomepageSpecializedSiteButton site="matter" />
         <HomepageSpecializedSiteButton site="habitat" />

@@ -969,6 +969,10 @@ video {
   white-space: nowrap;
 }
 
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1887,7 +1891,8 @@ td a:focus {
 /* it is imported into this project here: ./pages/_document.js */
 
 .standard-font-2 {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* this was changed from "Arial" on 4.17.2023 */
   font-weight: 400;
   /* does nothing, included for templating only */
   font-style: normal;
@@ -2377,11 +2382,6 @@ td a:focus {
   .sm\:text-right {
     text-align: right;
   }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -2581,11 +2581,6 @@ td a:focus {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .lg\:tracking-wide {
