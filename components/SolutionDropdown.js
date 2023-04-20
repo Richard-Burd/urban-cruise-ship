@@ -46,12 +46,15 @@ const SolutionDropdown = ({ problem, solution, children }) => {
               animate="open"
               exit="collapsed"
               variants={{
-                open: { height: "auto", y: 0 },
-                collapsed: { height: 0, y: "any-prefer-fixed" }, // https://www.framer.com/developers/guides/auto-sizing/
+                open: { scaleY: 1, opacity: 1 },
+                collapsed: { scaleY: 0, opacity: 0 },
+                
               }}
               transition={{
-                duration: 0.2,
+                duration: 0.4,
+                ease: "easeInOut",
               }}
+              style={{ originY: 0 }} // Set the transform origin to the top
             >
               <div className="-mt-16 this-is-the-dropdown-that-needs-to-be-style bg-slate-100 border border-slate-900 mx-2 sm:mx-16 solution-dropdown-elliptical-geometry solution-dropdown-shadow-geometry -translate-y-4">
                 <div className="solution-dropdown pt-24">{children}</div>
