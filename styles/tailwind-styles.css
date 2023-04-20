@@ -49,7 +49,7 @@ p {
 
 /* This is the smaller text underneath images in the articles */
 h4 {
-  @apply standard-font-3 text-center px-4 text-sm md:px-32 lg:px-44 pb-14 text-zinc-800;
+  @apply standard-font-3 text-center px-4 text-sm md:px-32 lg:px-44 pb-4 text-zinc-800;
 }
 
 /* This is the "Lead researcher:" tag that goes at the bottom of every solution */
