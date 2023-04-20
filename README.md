@@ -509,21 +509,21 @@ This path is then passed into the `<ArticleImage />` component located at: `./co
 
 <br></br><br></br><br></br>
 
-### Sizing Images from the Original UCS Website
+~~### Sizing Images from the Original UCS Website~~
 
-**NOTE:** This section applies to article images and not Solution images. Solution images are being sorted out at the time of this writing.
+~~**NOTE:** This section applies to article images and not Solution images. Solution images are being sorted out at the time of this writing.~~
 
-The maximum width of an article image is **992pixels**. When placing images into the project, we want to maintain these three standards:
+~~The maximum width of an article image is **992pixels**. When placing images into the project, we want to maintain these three standards:~~
 
-- Image titles should have the same font size as an article sub-section heading, i.e. the headings that start with the: **##** in markdown language, are are found in the **_article_** files. Ignore those in **_solution_** files for now as they are too small.
+~~- Image titles should have the same font size as an article sub-section heading, i.e. the headings that start with the: **##** in markdown language, are are found in the **_article_** files. Ignore those in **_solution_** files for now as they are too small.~~
 
-- The titles in different images should thus be similar in size and...
+~~- The titles in different images should thus be similar in size and...~~
 
-- The UCS logos in different images should roughly be the same size as well.
+~~- The UCS logos in different images should roughly be the same size as well.~~
 
-This makes the images appear standardized across the site. If the image font is unreadable whenever following these rules, the rules should be broken to make the images readable.
+~~This makes the images appear standardized across the site. If the image font is unreadable whenever following these rules, the rules should be broken to make the images readable.~~
 
-There has never been a branding or graphic-standard guideline for UCS website graphics, and as a result, each image has a unique width respective to the website's viewport width. This means that the width & height of each new image must be independently specified.
+~~There has never been a branding or graphic-standard guideline for UCS website graphics, and as a result, each image has a unique width respective to the website's viewport width. This means that the width & height of each new image must be independently specified.~~
 
 Images are imported with the `ArticleImage.js` React component which in turn uses the [Next.js `<Image />` component.](https://nextjs.org/docs/api-reference/next/image) and (via [props](https://reactjs.org/docs/components-and-props.html)) passes in the image's width and height as measured in pixels. The `<Image />` tag will then render the image according to one of these two formulas:
 
@@ -535,6 +535,8 @@ Images are imported with the `ArticleImage.js` React component which in turn use
    ...The width of the image will display at 100 pixels on the website and the height will display at 50 pixels. This is because the image only has a 100x100 pixel window within which to appear, and keeping its original proportions necessitates a height of 50 pixels. The width on the other hand will stretch to its maximum allowable dimension of 100 pixels. The same rules apply for a portrait image where the height exceeds the width.
 
 <br></br>
+
+**NOTE: The image below is slated for removal as it is no longer relevant**
 
 ![image of an example showing image sizing](https://web-cyber.jyeartstudio.com/ucs-images/sizing_images.png)
 
@@ -580,6 +582,14 @@ Replace `new_image` with the correct image name and then add in the correct foot
 ```mdx
 <ArticleImage image={"new_image.svg"} width={700} height={400} />
 #### image markdown footnotes.
+```
+
+### Image Sizing for both Articles and Solutions Using the Graphics Template (20% Reduction Rule of Thumb)
+
+As of 4/20/2023, we are using a file called [***coal_phase_out_cba_desktopO.svg***](https://drive.google.com/file/d/1T1CQq6UM91lkyLWuKzMnQ-ouLTS6ZCkK/view?usp=share_link) as our template for both solution and article graphics.  NOTE: this SVG is already 900pixels wide, and its graphical elements are already sized properly for the solution dropdown boxes.  We are using this same [file](https://drive.google.com/file/d/1T1CQq6UM91lkyLWuKzMnQ-ouLTS6ZCkK/view?usp=share_link) as a template for our article images as well, so in theory it would be dropped right into an article at full size, given that articles can handle images that are 992pixels wide.  The problem here is that if we do this, our new article images will no match the older generation of article images because the new article images will have larger text, bars, and logos than those found in the older article images.  To remedy this, we use the following rule of thumb: ***when you import a new article image, reduce its width & height by 20%.***  Doing this makes the text, bars, and logos in the new article images match the older generation of article images. In example, if you had an SVG image that was originally 900pixels wide and 420pixels tall, you would make it 720pixels wide and 336pixels tall like this:
+
+```
+<ArticleImage image={"new_article _image.svg"} width={720} height={336} />
 ```
 
 <br></br><br></br>
