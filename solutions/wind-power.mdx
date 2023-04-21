@@ -1,6 +1,6 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Fossil Fuel Power Plants";
+export const problem = "Need to Achieve Net Zero Emissions";
 export const solution = "Investment into Wind Energy";
 
 import SolutionImages from "/components/SolutionImages.js";
@@ -23,12 +23,17 @@ Current investments in wind energy will need to triple to meet net-zero climate 
 Wind is the leading new renewable technology, and is on track to outpace hydroelectric generation, generating 1870 terawatt hours (TWh) of electricity in 2021.[^"2"] 
 
 
-There are some predictions that offshore wind will become less expensive than onshore.[^"20"] 
+<SolutionImages
+ mobileSrc={"wind_production_needs_mobile.svg"}
+ desktopSrc={"wind_production_needs_desktop.svg"}
+/>
+#### Solid bars indicate current data, open bars are the projections used throughout this solution for determining costs[^"26"]
+
 
 
 Average new power plant costs ($USD per kilowatt hour)[^"21"]:
 - Onshore wind: $1,363[^"21"]
-- Offshore wind: $4,000[^"21"]
+- Offshore wind: $4,000[^"21"] (There are some predictions that offshore wind will eventually become less expensive than onshore)[^"20"]
 - Nuclear: $11,200[^"21"]
 - Natural Gas: $975[^"21"]
 - Coal: $4,987[^"21"]
@@ -37,48 +42,31 @@ Average new power plant costs ($USD per kilowatt hour)[^"21"]:
 Wind power, unlike dispatchable energy sources such as coal, is affected by many factors such as seasons, temperature, and weather, and thus fluctuates in its power output. Wind prediction and modeling will become more critical as more of the grid relies upon this energy source, and machine learning is being employed in this field to help with planning wind farm locations.[^"13"] The intermittency of wind power means that power plant grid connection will be more expensive than conventional power plants, and the grid will have to be adapted.[^"22"] Energy storage systems will play a key role in addressing these issues.[^"14"] 
 
 
-DRAWBACK: 
+
+<SolutionImages
+ mobileSrc={"wind_production_cba_mobile.svg"}
+ desktopSrc={"wind_production_cba_desktop.svg"}
+/>
+#### We set a target of 85 exajoules (23,700 terrawatt hours) of wind-based energy power by 2050[^"26"], based upon a mix of 83.5%[^"17"] onshore power with a capacity factor of 33.5%[^"18"] and 16.5%[^"17"] offshore power with a capacity factor of 41.5%.[^"18"] We use Lazard’s levelized cost of energy (LCOE) based on an unsubsidized analysis to determine power generation costs[^"21"], and apply a decline in LCOE totaling 37% by 2050, based upon a prediction of a 37% to 49% decline[^"7"], with annual growth rates starting high to meet near-future goals[^"2"] and gradually declining,[^"7"] 
+
+<SolutionImages
+ mobileSrc={"wind_production_calculation_benefits_mobile.svg"}
+ desktopSrc={"wind_production_calculation_benefits_desktop.svg"}
+/>
+#### Benefits in terms of avoided costs for an equal amount of generation from Natural Gas and Coal in addition to avoided Social Carbon Costs[^"26"] [^"17"] [^"18"] [^"17"] [^"18"] [^"21"] [^"7"] [^"2"] [^"7"] 
 
 
-COST-BENEFIT
+<SolutionImages
+ mobileSrc={"wind_production_calculation_costs_mobile.svg"}
+ desktopSrc={"wind_production_calculation_costs_desktop.svg"}
+/>
+#### Source [^"26"] [^"17"] [^"18"] [^"17"] [^"18"] [^"21"] [^"7"] [^"2"] [^"7"] 
 
-
-Costs of Wind Production: $673 B annual
-Onshore grid: $206
-Offshore grid: $56
-
-
-Vs
-
-
-Cost of Fossil Fuel Production counterfactual: $773
-Social Carbon Costs: $104 B
-CO2: 2084 MMTCO2e
-Gas Grid: $0.18
-Coal Grid Costs: $0.22
-
-
-{/* <SolutionImages 
-  mobileSrc={"meat_tax_bb_mobile"}
-  desktopSrc={"meat_tax_bb_desktop"}
-   mobileHeight={xx}
-  desktopHeight={xx}
-/> */}
-
-Benefit:
-Avoided counterfactual costs
-Avoided scc
-Avoided coal and gas grid costs
-
-
-
-CALCULATION of Wind Energy: We set a target of 85 exajoules (23,700 terrawatt hours)[^"26"] of wind-based energy power by 2050, based upon a mix of 83.5%[^"17"] onshore power with a capacity factor of 33.5%[^"18"] and 16.5%[^"17"] offshore power with a capacity factor of 41.5%.[^"18"] We use Lazard’s levelized cost of energy (LCOE) based on an unsubsidized analysis to determine power generation costs[^"21"], and apply a decline in LCOE totaling 37% by 2050, based upon a prediction of a 37% to 49% decline[^"7"], with annual growth rates starting high to meet near-future goals[^"2"] and gradually declining,[^"7"] Grid system costs are averaged across studies from 6 countries at a penetration level of 30%[^"22"], and are broken down into four areas:
+Grid system costs are averaged across studies from 6 countries at a penetration level (the amount of energy provided in relation to other energy sources) of 30%[^"22"], and are broken down into four areas:
 - Back-up: system resilience in the face of fluctuating demand, supply, outages, and retirement of facilities[^"22"]
 - Balancing: minute by minute adaptability of the system to supply and demand uncertainty[^"22"]
 - Grid connection: equipment and infrastructure needed to interconnect the facility to the grid including grid modifications that may be needed[^"22"]
 - Grid reinforcement and extension: expanding or upgrading existing grid infrastructure to accommodate new wind energy sources[^"22"]
-
-
 
 
 
@@ -92,34 +80,34 @@ Developing countries spend a large portion of their budgets on fossil-fuel-based
 The high seas have some of the best wind energy resources. Floating offshore wind farms have been constructed as far as 180km from shore[^"25"],  however, there are regulatory issues regarding the deployment of wind turbines in international waters. The United Nations Convention on the Law of the Sea (LOSC) or a new international authority could give permission to countries to build turbines in these areas or designate areas where turbines can be built so that they do not disrupt other ocean activities. The environmental impact of high-seas turbines should also be studied prior to deployment.[^"15"]
 
 
-##### Lead researcher: jye - Last updated 4/17/2023
+##### Lead researcher: jye - Last updated 4/21/2023
 
-[^"1"]:  [Global Wind Report 2022](https://gwec.net/global-wind-report-2022/).   
-[^"2"]:  [Wind Electricity – Analysis - IEA](https://www.iea.org/reports/wind-electricity).   
-[^"3"]:  [Renewable Power Generation Costs in 2020](https://www.irena.org/publications/2021/Jun/Renewable-Power-Costs-in-2020).   
-[^"4"]:  [APCAG Executive Briefing | One Earth](https://www.oneearth.org/apcag-executive-briefing/).   
-[^"5"]:  [Renewable Power Generation Costs in 2021 - Executive Summary](https://www.irena.org/publications/2022/Jul/-/media/Files/IRENA/Agency/Publication/2022/Jul/IRENA_Power_Generation_Costs_2021_Summary.pdf?la=en&hash=C0C810E72185BB4132AC5EA07FA26C669D3AFBFC).   
-[^"6"]:  [Achieving the Paris Climate Agreement Goals](https://link.springer.com/book/10.1007/978-3-030-05843-2).   
-[^"7"]:  [Expert elicitation survey predicts 37% to 49% declines in wind energy costs by 2050](https://eta-publications.lbl.gov/sites/default/files/wind_lcoe_elicitation_ne_pre-print_april2021.pdf).   
-[^"8"]:  [Scaling up energy transition investments to meet the 1.5°C goa](https://www.irena.org/Digital-content/Digital-Story/2023/Mar/Scaling-up-energy-transition-investments-to-meet-the-1-point-5-degrees-celsius-goal/detail).   
-[^"9"]:  [Global wind energy investments 2011-2021](https://www.statista.com/statistics/186821/global-investment-in-wind-technology-since-2004/#:~:text=Global%20investments%20in%20wind%20energy,considerably%20over%20the%20past%20decade.).   
+[^"1"]:  [Global Wind Report 2022](https://gwec.net/global-wind-report-2022/). Global Wind Energy Council. 2022. 
+[^"2"]:  [Wind Electricity – Analysis - IEA](https://www.iea.org/reports/wind-electricity). International Energy Agency. Sep 2022. 
+[^"3"]:  [Renewable Power Generation Costs in 2020](https://www.irena.org/publications/2021/Jun/Renewable-Power-Costs-in-2020). International Renewable Energy Agency. Jun 2021. 
+[^"4"]:  [APCAG Executive Briefing | One Earth](https://www.oneearth.org/apcag-executive-briefing/). One Earth. Jan 2021. 
+[^"5"]:  [Renewable Power Generation Costs in 2021 - Executive Summary](https://www.irena.org/publications/2022/Jul/-/media/Files/IRENA/Agency/Publication/2022/Jul/IRENA_Power_Generation_Costs_2021_Summary.pdf?la=en&hash=C0C810E72185BB4132AC5EA07FA26C669D3AFBFC). International Renewable Energy Agency. 2022. 
+[^"6"]: Ed: Teske S. [Achieving the Paris Climate Agreement Goals](https://link.springer.com/book/10.1007/978-3-030-05843-2). Book. 2019 
+[^"7"]: Wiser R, Rand J, Seel J, Beiter P, Baker E, Lantz E, et al.  [Expert elicitation survey predicts 37% to 49% declines in wind energy costs by 2050](https://www.nature.com/articles/s41560-021-00810-z). Nature Energy. Apr 2021. 
+[^"8"]:  [Scaling up energy transition investments to meet the 1.5°C goa](https://www.irena.org/Digital-content/Digital-Story/2023/Mar/Scaling-up-energy-transition-investments-to-meet-the-1-point-5-degrees-celsius-goal/detail). International Renewable Energy Agency. Accessed Apr 2023. 
+[^"9"]: Fernández L. [Global wind energy investments 2011-2021](https://www.statista.com/statistics/186821/global-investment-in-wind-technology-since-2004/#:~:text=Global%20investments%20in%20wind%20energy,considerably%20over%20the%20past%20decade.). Statista. Feb 2023. 
 [^"10"]:  [Coal Cost Crossover 3.0: Local Renewables Plus Storage Create New Opportunities For Customer Savings And Community Reinvestment - Energy Innovation: Policy and Technology](https://energyinnovation.org/publication/coal-cost-crossover-3-0-local-renewables-plus-storage-create-new-opportunities-for-customer-savings-and-community-reinvestment/).  Jan 2023. 
-[^"11"]:  [Majority of New Renewables Undercut Cheapest Fossil Fuel on Cost](https://www.irena.org/news/pressreleases/2021/Jun/Majority-of-New-Renewables-Undercut-Cheapest-Fossil-Fuel-on-Cost).   
+[^"11"]:  [Majority of New Renewables Undercut Cheapest Fossil Fuel on Cost](https://www.irena.org/news/pressreleases/2021/Jun/Majority-of-New-Renewables-Undercut-Cheapest-Fossil-Fuel-on-Cost). International Renewable Energy Agency. Jun 2021. 
 [^"12"]: Mustafa S, Zhang W, Sohail MT, Rana S, Long Y.  [A moderated mediation model to predict the adoption intention of renewable wind energy in developing countries | PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0281963). PLOS ONE. Mar 2023. 
-[^"13"]:  [A Short-Term Prediction Model of Wind Power with Outliers: An Integration of Long Short-Term Memory, Ensemble Empirical Mode Decomposition, and Sample Entropy](https://www.mdpi.com/2071-1050/15/7/6285).   
-[^"14"]:  [Grid Integration Challenges of Wind Energy: A Review | IEEE Journals & Magazine](https://ieeexplore.ieee.org/abstract/document/8952713).   
+[^"13"]: Du Y. [A Short-Term Prediction Model of Wind Power with Outliers: An Integration of Long Short-Term Memory, Ensemble Empirical Mode Decomposition, and Sample Entropy](https://www.mdpi.com/2071-1050/15/7/6285). Sustainability. 2023. 
+[^"14"]: Ahmed et al. [Grid Integration Challenges of Wind Energy: A Review | IEEE Journals & Magazine](https://ieeexplore.ieee.org/abstract/document/8952713). IEEE Access. 2020. 
 [^"15"]: Herrera Anchustegui I, Radovich VS. [Wind Energy on the High Seas: Regulatory Challenges for a Science Fiction Future](https://www.mdpi.com/1996-1073/15/23/9157). Energies. Dec 2022. 
-[^"16"]:  [Net Zero by 2050 – Analysis - IEA](https://www.iea.org/reports/net-zero-by-2050).   
-[^"17"]:  [Future of wind](https://www.irena.org/publications/2019/Oct/Future-of-wind).   
-[^"18"]:  [Average annual capacity factors by technology, 2018 – Charts – Data & Statistics - IEA](https://www.iea.org/data-and-statistics/charts/average-annual-capacity-factors-by-technology-2018).   
-[^"19"]:  [Why did renewables become so cheap so fast? - Our World in Data](https://ourworldindata.org/cheap-renewables-growth).   
-[^"20"]:  [https://www.gov.uk/government/publications/beis-electricity-generation-costs-2020](https://www.gov.uk/government/publications/beis-electricity-generation-costs-2020).   
-[^"21"]:  [2023 Levelized Cost Of Energy+ | Lazard](https://www.lazard.com/research-insights/2023-levelized-cost-of-energyplus/).   
-[^"22"]:  [Nuclear Energy and Renewables – Executive Summary](https://www.oecd-nea.org/jcms/pl_14772).   
-[^"23"]:  [GHG Emission Factors Hub | US EPA](https://www.epa.gov/climateleadership/ghg-emission-factors-hub).   
-[^"24"]:  [Greenhouse Gas Equivalencies Calculator | US EPA](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator#results).   
-[^"25"]:  [First power from Hywind Tampen - Equinor](https://www.equinor.com/news/20221114-first-power-from-hywind-tampen).   
-[^"26"]:  [World Energy Outlook 2022 – Analysis - IEA](https://www.iea.org/reports/world-energy-outlook-2022).   
+[^"16"]:  [Net Zero by 2050 – Analysis - IEA](https://www.iea.org/reports/net-zero-by-2050). International Energy Agency. May 2021. 
+[^"17"]:  [Future of wind](https://www.irena.org/publications/2019/Oct/Future-of-wind). International Renewable Energy Agency. Oct 2019. 
+[^"18"]:  [Average annual capacity factors by technology, 2018 – Charts – Data & Statistics - IEA](https://www.iea.org/data-and-statistics/charts/average-annual-capacity-factors-by-technology-2018). International Energy Agency. Oct 2022. 
+[^"19"]:  [Why did renewables become so cheap so fast? - Our World in Data](https://ourworldindata.org/cheap-renewables-growth). Our World in Data. Dec 2020. 
+[^"20"]:  [https://www.gov.uk/government/publications/beis-electricity-generation-costs-2020](https://www.gov.uk/government/publications/beis-electricity-generation-costs-2020).  Aug 2020. 
+[^"21"]:  [2023 Levelized Cost Of Energy+ | Lazard](https://www.lazard.com/research-insights/2023-levelized-cost-of-energyplus/).  Apr 2023 
+[^"22"]:  [Nuclear Energy and Renewables – Executive Summary](https://www.oecd-nea.org/jcms/pl_14772). Nuclear Energy Agency: Nuclear Energy and Renewables 2012. 
+[^"23"]:  [GHG Emission Factors Hub | US EPA](https://www.epa.gov/climateleadership/ghg-emission-factors-hub). United States Envrionmental Protection Agency. Accessed Apr 2023. 
+[^"24"]:  [Greenhouse Gas Equivalencies Calculator | US EPA](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator#results). United States Envrionmental Protection Agency. Accessed Apr 2023. 
+[^"25"]:  [First power from Hywind Tampen - Equinor](https://www.equinor.com/news/20221114-first-power-from-hywind-tampen).  Nov 2022. 
+[^"26"]:  [World Energy Outlook 2022 – Analysis - IEA](https://www.iea.org/reports/world-energy-outlook-2022). International Energy Agency. Accessed Apr 2023. 
 
 export default ({ children }) => 
   <SolutionDropdown 

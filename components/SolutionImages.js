@@ -30,7 +30,7 @@ const SolutionImages = ({ mobileSrc, desktopSrc }) => {
   const currentSrc = isMobile ? mobileSrc : desktopSrc;
 
   return (
-    <div className="flex justify-center px-4 pb-7">
+    <div className="flex justify-center px-4 pb-4">
       <img src={`${path}/${currentSrc}`} alt={`The image: "${currentSrc}" cannot be found!`} style={{ width: "100%", height: "auto" }} />
     </div>
   );
