@@ -76,8 +76,8 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations.
         </div>
         <div className="pb-6">
-          <b>2021-Present:</b>&nbsp;As of March 22, 2023, 28 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  The combined totals are 
-          $5.29 trillion U.S. dollars per year in costs, $10.33 trillion U.S. dollars per year in benefits, 24.53 billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and 79 million square kilometers of habitat preserved.
+          <b>2021-Present:</b>&nbsp;As of March 22, 2023, 31 of our over-200 solutions contain at-least-mostly-full sets of estimates.&nbsp;  The combined totals are 
+          $5.34 trillion U.S. dollars per year in costs, $10.41 trillion U.S. dollars per year in benefits, 25.14 billion tons of carbon dioxide-equivalents per year of greenhouse gas reduction, and 79 million square kilometers of habitat preserved.
         </div>
         <div className="pb-6">
           <b>2020-Present:</b>&nbsp;Invented and developed

@@ -108,7 +108,7 @@ const Crew = () => {
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
             John van der Harst manages research aims, graphic and language
-            standards, human resources, and development for Urban Cruise Ship.
+            standards, human resources, and development for Urban Cruise Ship. Like most of Michael&apos;s and some of Lee&apos;s and Richard&apos;s work, virtually all of John&apos;s is seen but not credited, like the name, logo, most yellow navbar content, editing, and styling.
           </div>
           <div className="my-4"></div>
           <div>
@@ -195,7 +195,7 @@ const Crew = () => {
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
             Lee Nelson is an Exhibit Producer and Researcher with Urban Cruise
-            Ship.
+            Ship. Lee also manages several internal structural matters.
           </div>
           <div className="my-4"></div>
           <div>
@@ -209,7 +209,7 @@ const Crew = () => {
           </div>
           <div className="my-4"></div>
           <div>
-            Lee currently lives in Lansing Michigan with his wife and son. He
+            Lee currently lives in Lansing Michigan with his wife and two sons. He
             has been an ethical vegan since January 2014. In February of 2019
             Lee was elected to serve on the Board of Trustees of the Unity
             Spiritual Center of Lansing. In the fall of 2020 Lee graduated from
@@ -272,7 +272,7 @@ const Crew = () => {
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
             Richard Burd is an assistant researcher and software developer at
-            Urban Cruise Ship. He is the current webmaster and buit our current
+            Urban Cruise Ship. He is the current webmaster and built our current
             website with the design consultation of John van der Harst.
           </div>
           <div className="my-4"></div>
