@@ -1,0 +1,38 @@
+import Article from '/components/Article.js';
+import hierarchy from "../hierarchy.json";
+
+{/* these are the drop-down elements that break down endeavors into categories */}
+import EcologyAndEnvironment from "/endeavors/ecology-and-environment.mdx";
+import EnergyProductionAndEfficiency from "/endeavors/energy-production-and-efficiency.mdx";
+import PollutionRegulations from "/endeavors/pollution-regulations.mdx";
+import PublicHealthCampaigns from "/endeavors/public-health-campaigns.mdx";
+import PublicHealthProjects from "/endeavors/public-health-projects.mdx";
+import ResearchAndDevelopment from "/endeavors/research-and-development.mdx";
+import TransportationInfrastructure from "/endeavors/transportation-infrastructure.mdx";
+import Miscellaneous from "/endeavors/miscellaneous.mdx";
+
+export const site = "history";
+export const focusAreaUrl = "endeavors";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+## Endeavor Subsets
+ Our endeavors are broken down into the following categories:
+
+<EcologyAndEnvironment />
+<EnergyProductionAndEfficiency />
+<PollutionRegulations />
+<PublicHealthCampaigns />
+<PublicHealthProjects />
+<ResearchAndDevelopment />
+<TransportationInfrastructure />
+<Miscellaneous />
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
