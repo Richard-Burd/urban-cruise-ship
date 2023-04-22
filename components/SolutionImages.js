@@ -38,6 +38,8 @@ const SolutionImages = ({ mobileSrc, desktopSrc }) => {
 
 export default SolutionImages;
 
+
+// /* This is the old version of the code to be used in case the above ever breaks due to us using HTML as opposed to the react Image. It generates an error with the above code, but suits our needs better. If this breaks, we will need to add custom heights to the images again. */
 // // Next.js image container
 // import Image from "next/image";
 
