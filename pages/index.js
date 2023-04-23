@@ -24,7 +24,7 @@ export default function Home() {
         <div className="hidden lg:block mt-8">
           <Image
             className=""
-            src={`${path}/${"swoosh_6_optimized.svg"}`}
+            src={`${path}/${"swoosh_8_optimized.svg"}`}
             alt={"UCS Logo"}
             height={440}
             width={1024}
