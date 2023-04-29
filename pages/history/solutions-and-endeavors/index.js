@@ -1,4 +1,5 @@
 import FocusArea2 from "../../../components/FocusArea2";
+import dynamic from 'next/dynamic';
 
 // place any drop down elements here
 
@@ -11,6 +12,8 @@ import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
+
+const TestBarChart = dynamic(() => import("../../../components/TestBarChart"), { ssr: false });
 
 const hierarchy = require("../hierarchy.json");
 function findFocusAreaName(searchValue) {
@@ -49,6 +52,7 @@ const SolutionsAndEndeavors = () => {
         <SolutionEndeavorTable />
         <br></br><br></br>
         <br></br><br></br>
+        <TestBarChart />
       </div>
       <style>
         {`
