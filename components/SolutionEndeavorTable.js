@@ -5,6 +5,14 @@ import ReactMarkdown from "react-markdown";
 import { solutionData } from '../data/solutionData';
 import { endeavorData } from '../data/endeavorData';
 
+// This allows us to combine endeavors & solutions into one table
+const endeavorDataWithSolutionKey = endeavorData.map(item => {
+  return {
+    ...item,
+    solution: item.endeavor
+  };
+});
+
 
 const CustomLink = ({ node, ...props }) => (
   <a {...props} target="_blank" rel="noopener noreferrer">
@@ -75,7 +83,7 @@ const siteOrder = {
   history: 9,
 };
 
-endeavorData.sort((a, b) => {
+endeavorDataWithSolutionKey.sort((a, b) => {
   if (siteOrder[a.site] === siteOrder[b.site]) {
     // If sites are the same, sort alphabetically by solution
     return a.solution.localeCompare(b.solution);
@@ -209,7 +217,7 @@ function SolutionEndeavorTable() {
   );
 
   // This combines the data from the two tables into one array
-  const combinedData = solutionData.concat(endeavorData);
+  const combinedData = solutionData.concat(endeavorDataWithSolutionKey);
 
   // In functional React components, useState is used to define state
   const [data, setData] = useState(combinedData);
