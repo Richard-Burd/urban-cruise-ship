@@ -1,3 +1,16 @@
+// TODO:
+// 1. change the names of the keys in the fake data to match the keys in the real data
+
+// 2. Find all the parameters that change the sizing of the chart and make them accessable
+//    to the rest of the team by declaring them up fromt
+
+// 3. create an initial prop that either accempt bar-chart values that are positive...or
+//    negative; the negative values at the bottom will be in a seperate bat chart
+
+// 4. create a function that imports both solution & endeavor data depending on prop values
+
+// 5. look at creating seperate files for these components
+
 import React, { useState } from 'react';
 
 import Link from "next/link";
