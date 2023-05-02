@@ -54,13 +54,34 @@ const SolutionsAndEndeavors = () => {
         <br></br><br></br>
         <br></br><br></br>
         <TestBarChart
+          barChartTitle={"This chart is a test under construction"}
+          scale={"positive"}
           barHeight={200}
           rightSide={100}
-          leftSide={300}
-          totalHeight={400} 
-          totalWidth={1000} 
-          labelText={10} // -10 for a negative bar chart
-          labelAnchor={"start"} // "end" for a negative bar chart
+          leftSide={400}
+          totalHeight={180} 
+          totalWidth={1000}
+          solutionBackgroundWidth={400}
+          solutionBackgroundOffset={-395}
+          labelText={10} // -10 for a negative bar chart, 10 for a positive bar chart
+          labelAnchor={"start"} // "end" for a negative bar chart "start" for a positive bar chart
+          titleText={0} // {460} for negative values, {0} for positive values
+          titleAnchor={"end"} // "start" for a negative bar chart "end" for a positive bar chart
+        />
+        <TestBarChart
+          barChartTitle={null}
+          scale={"negative"}
+          barHeight={120}
+          rightSide={500}
+          leftSide={0}
+          totalHeight={190} 
+          totalWidth={1000}
+          solutionBackgroundWidth={400}
+          solutionBackgroundOffset={-395}
+          labelText={-10} // -10 for a negative bar chart, 10 for a positive bar chart
+          labelAnchor={"end"} // "end" for a negative bar chart "start" for a positive bar chart
+          titleText={460} // {460} for negative values, {0} for positive values
+          titleAnchor={"start"} // "start" for a negative bar chart "end" for a positive bar chart
         />
         {/* <TestDualBarChart /> */}
       </div>
