@@ -1,8 +1,4 @@
 // TODO:
-// 1. change the names of the keys in the fake data to match the keys in the real data
-
-// 2. Find all the parameters that change the sizing of the chart and make them accessable
-//    to the rest of the team by declaring them up fromt
 
 // 3. create an initial prop that either accempt bar-chart values that are positive...or
 //    negative; the negative values at the bottom will be in a seperate bat chart
@@ -11,28 +7,25 @@
 
 // 5. look at creating seperate files for these components
 
-import React, { useState } from 'react';
+// 6. create another table that has 2 bars
+
+import React, { useState } from "react";
 
 import Link from "next/link";
 
-import {
-  Bar,
-  LabelList,
-  Tooltip,
-  XAxis,
-  YAxis,
-  BarChart,
-} from "recharts";
+import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 
 const data = [
   {
     name: "High Speed Rail, Hong Kong to China (2010 - 2060)",
+    link: "/history/endeavors#public-health-projects",
     barlength: 4000,
     displayedValue: "Three Hundred",
     site: "energy",
   },
   {
     name: "Test Row B",
+    link: "/history/endeavors#public-health-projects",
     barlength: 1200,
     displayedValue: "One Thousand Two Hundred",
     backgroundColor: "#FCD34D",
@@ -40,24 +33,45 @@ const data = [
   },
   {
     name: "Test Row C Links to a Place!",
+    link: "/history/endeavors#public-health-projects",
     barlength: 300,
     displayedValue: "Three Hundred and forty",
-    link: "/history/endeavors#public-health-projects",
+    link: "/history/endeavors",
     site: "habitat",
   },
-  { name: "From the OCEANS Site", barlength: 120, displayedValue: "One Hundred Twenty", backgroundColor: "#0f4085", site: "oceans" },
-  { name: "Test Row E", barlength: 90, displayedValue: "Ninety", site: "cities" },
+  {
+    name: "From the OCEANS Site",
+    link: "/history/endeavors#public-health-projects",
+    barlength: 120,
+    displayedValue: "One Hundred Twenty",
+    backgroundColor: "#0f4085",
+    site: "oceans",
+  },
+  {
+    name: "Test Row E",
+    link: "/history/endeavors",
+    barlength: 90,
+    displayedValue: "Ninety",
+    site: "cities",
+  },
+  {
+    name: "Negative Nancy",
+    link: "/history",
+    barlength: 1,
+    displayedValue: "Negative One Twenty",
+    site: "habitat",
+  },
 ];
 
 const customLabelRenderer = (props) => {
-  const { x, y, width, value } = props;
+  const { x, y, width, value, labelText, labelAnchor } = props;
   const noWrapValue = value.replace(/\n|\r| /g, " ");
 
   return (
     <text
-      x={x + width + 10}
+      x={x + width + props.labelText} // {-10} for negative values (labelText)
       y={y + 10}
-      textAnchor="start"
+      textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
       fill="black"
       fontFamily="Roboto"
       fontSize="14px"
@@ -92,7 +106,7 @@ const CustomYAxisTick = ({ x, y, payload, backgroundColor, link }) => {
       <rect
         x={-300}
         y={-10}
-        width={300}
+        width={305}
         height={20}
         fill={backgroundColor || "transparent"}
       />
@@ -140,23 +154,28 @@ const CustomYAxisTick = ({ x, y, payload, backgroundColor, link }) => {
   );
 };
 
-
-
-const TestBarChart = () => {
-
+const TestBarChart = ({
+  totalHeight,
+  barHeight,
+  rightSide,
+  leftSide,
+  totalWidth = 1000,
+  labelText, 
+  labelAnchor
+}) => {
   return (
     <>
       <h2>This chart is a test under construction</h2>
-      <div style={{ width: "100%", height: 400 }}>
+      <div style={{ width: "100%", height: totalHeight }}>
         <BarChart
-          width={1000}
-          height={400}
+          width={totalWidth}
+          height={barHeight}
           data={data}
           layout="vertical"
           margin={{
             top: 20,
-            right: 120,
-            left: 0,
+            right: rightSide,
+            left: leftSide,
             bottom: 5,
           }}
         >
@@ -164,7 +183,7 @@ const TestBarChart = () => {
           <YAxis
             type="category"
             dataKey="name"
-            width={300}
+            // width={300} // left side of graphic (duplicate)
             tickLine={false}
             axisLine={false}
             tick={(props) => {
@@ -185,7 +204,13 @@ const TestBarChart = () => {
             <LabelList
               dataKey="displayedValue"
               position="right"
-              content={customLabelRenderer}
+              content={(props) =>
+                customLabelRenderer({
+                  ...props,
+                  labelText: labelText,
+                  labelAnchor: labelAnchor,
+                })
+              }
             />
           </Bar>
         </BarChart>
