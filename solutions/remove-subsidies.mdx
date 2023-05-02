@@ -1,9 +1,33 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Negative Impacts of Fossil Fuel Subsidies";
-export const solution = "Remove Subsidies";
+export const solution = "Replace Subsidies with Neutral Cash Payments";
 
-Most fossil fuel subsidies, as identified by the IMF, are in the form of unpriced externalities. Of more direct subsidies, most are in the form of payments to consumers, such as subsidizing of gasoline or heating oil. We propose that consumer subsidies be replaced by neutral cash payments.
+## Description
+
+We propose that implicit consumer subsidies be replaced by neutral cash payments.
+
+## Background
+
+8% of subsides undercharge for production costs, and 92% undercharge for environmental costs and consumption taxes. In 2020, $47.2 billion USD went to subsidizing fossil fuels in the form of explicit subsidies (directly reducing production costs due to tax credits or other direct governmental supports)[^"1"] This leaves less room in the budget for public spending on health, education, infrastructure, or social safety nets.[^"3"]
+
+Fuel subsidies are intended to protect consumers from high fuel costs, but the majority of the benefit from subsidies go to higher income groups who use more energy.[^"3"]
+
+Any increase in fuel prices has an enormous impact on low-income households, with half of the impact arising from higher prices of other goods and services affected by higher fuel prices.[^"2"] Households in the poorest countries spend up to 10% of their income on energy.[^"3"] Subsidy reform must be coupled with cash payments to those who will be adversely affected.[^"3"]
+
+## Implementation
+
+Direct cash payments to offset increased fuel prices comes with many challenges. The system must be fraud-resistant yet accessible to beneficiaries. India has devised such programs in attempts to reform LPG fuel subsidies.[^"4"] The program, which is the largest cash payment transfer of its kind, has been successful overall in expanding access to LPG for the poor. Work still needs to be done to ensure that the payments go to those who truly need it and not affluent households, but it may serve as a starting place. The program relies upon a national ID, that some have raised privacy concerns over.[^"5"]
+
+
+
+[^"1"]: [Still Not Getting Energy Prices Right: A Global and Country Update of Fossil Fuel Subsidies](https://www.imf.org/en/Publications/WP/Issues/2021/09/23/Still-Not-Getting-Energy-Prices-Right-A-Global-and-Country-Update-of-Fossil-Fuel-Subsidies-466004). . .
+[^"2"]: [The Unequal Benefits of Fuel Subsidies: A Review of Evidence forDeveloping Countries](https://www.imf.org/external/pubs/ft/wp/2010/wp10202.pdf). . .
+[^"3"]: [Reducing Energy Subsidies without Hurting the Poor? | Center For Global Development](https://www.cgdev.org/blog/reducing-energy-subsidies-without-hurting-poor). . .
+[^"4"]: [Aadhaar – India - CASE STUDY](https://www.oecd.org/gov/innovative-government/India-case-study-UAE-report-2018.pdf). . .
+[^"5"]: [Fuel Subsidy Reform in Developing Countries: Direct Benefit Transfer of LPG Cooking Gas Subsidy in India](https://www.cgdev.org/sites/default/files/fuel-subsidy-reform-developing-countries-india.pdf). . .
+
+
 
 export default ({ children }) => 
   <SolutionDropdown 
