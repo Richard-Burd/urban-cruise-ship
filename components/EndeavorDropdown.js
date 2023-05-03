@@ -1,14 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+
+const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m.AnimatePresence), {
+  ssr: false,
+});
 
 const EndeavorDropdown = ({ title, children }) => {
   const [isVisible, setVisible] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath.includes(`#${convertToUrlSlug(title)}`)) {
+      setVisible(true);
+    }
+  }, [router.asPath, title]);
 
   function convertToUrlSlug(text) {
-    return encodeURIComponent(text
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9]+/g, "-")
-      .replace(/(^-|-$)+/g, "")
+    return encodeURIComponent(
+      text.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "-").replace(/(^-|-$)+/g, "")
     );
   }
 
@@ -22,8 +33,8 @@ const EndeavorDropdown = ({ title, children }) => {
             </div>
           </motion.div>
         </div>
-        <AnimatePresence>
-          {isVisible && (
+        <NoSsrAnimatePresence>
+          {(isVisible || router.asPath.includes(`#${convertToUrlSlug(title)}`)) && (
             <motion.div
               key="content"
               initial="collapsed"
@@ -31,7 +42,7 @@ const EndeavorDropdown = ({ title, children }) => {
               exit="collapsed"
               variants={{
                 open: { height: "auto", y: 0 },
-                collapsed: { height: 0, y: "any-prefer-fixed" }, // https://www.framer.com/developers/guides/auto-sizing/
+                collapsed: { height: 0, y: "any-prefer-fixed" },
               }}
               transition={{
                 duration: 0.2,
@@ -42,7 +53,7 @@ const EndeavorDropdown = ({ title, children }) => {
               </div>
             </motion.div>
           )}
-        </AnimatePresence>
+        </NoSsrAnimatePresence>
       </div>
       <style jsx>{`
         .endeavor-dropdown-elliptical-geometry {
