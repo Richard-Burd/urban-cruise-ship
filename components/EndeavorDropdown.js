@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
@@ -23,18 +23,22 @@ const EndeavorDropdown = ({ title, children }) => {
     );
   }
 
+  const handleDropdownClick = () => {
+    setVisible((prevVisible) => !prevVisible);
+  };
+
   return (
     <>
       <div className="endeavor-dropdown" id={convertToUrlSlug(title)}>
         <div className="overflow-hidden pb-8">
-          <motion.div onTap={() => setVisible(!isVisible)}>
+          <motion.div onClick={handleDropdownClick}>
             <div className="endeavor-dropdown-color cursor-pointer endeavor-dropdown-elliptical-geometry font-bold relative endeavor-dropdown-shadow-geometry mx-2 sm:mx-16 standard-font-3 text-center hover:text-gray-100 tracking-wider transition text-3xl z-20">
               <div className="p-4">{title}</div>
             </div>
           </motion.div>
         </div>
         <NoSsrAnimatePresence>
-          {(isVisible || router.asPath.includes(`#${convertToUrlSlug(title)}`)) && (
+          {isVisible && (
             <motion.div
               key="content"
               initial="collapsed"
