@@ -1,7 +1,7 @@
 export const endeavorData = [
     {
       endeavor: "Polio Vaccination Campaign, U.S. (1955-2005)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 0.01239,
       benefit: 2.37,
@@ -13,7 +13,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Anti-Malaria Campaign, China (2005-2019)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 0.01239,
       benefit: 2.37,
@@ -25,7 +25,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Smallpox Eradication, World (1959-1977)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 1.48,
       benefit: 234.37,
@@ -37,7 +37,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Human Genome Project, World (1990-2010)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 6.67,
       benefit: 947.66,
@@ -49,7 +49,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Antibiotics Conservation, Canada (2005)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 0.0047,
       benefit: 0.36,
@@ -61,7 +61,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Acid Rain Program, U.S. (2010)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 4.58,
       benefit: 186.45,
@@ -73,7 +73,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Fruit & Vegetable Subsidy, Netherlands (2020-2050)",
-      link: "/history/endeavors#public-health-campaigns",
+      link: "/history/endeavors/subsets#public-health-campaigns",
       site: "history",
       cost: 0.12,
       benefit: 2.227,
@@ -85,7 +85,7 @@ export const endeavorData = [
     },
     {
       endeavor: "MDMA Therapy for PTSD, U.S. (2021-2051)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 0.007,
       benefit: 0.111,
@@ -97,7 +97,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Phaseout of Lead in Gasoline, U.S. (1983 - 1986)",
-      link: "/history/endeavors#pollution-regulations",
+      link: "/history/endeavors/subsets#pollution-regulations",
       site: "history",
       cost: 4.73,
       benefit: 64.58,
@@ -109,7 +109,7 @@ export const endeavorData = [
     },
     {
       endeavor: "River Restoration, Switzerland (35-Year Model)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.06346,
       benefit: 0.86253,
@@ -121,7 +121,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Weather Forecasting, U.S. (Annual)",
-      link: "/history/endeavors#miscellaneous",
+      link: "/history/endeavors/subsets#miscellaneous",
       site: "history",
       cost: 6.23,
       benefit: 67.7,
@@ -133,7 +133,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Violence Against Women Act, U.S. (1994-1999)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 2.86,
       benefit: 29.3,
@@ -145,7 +145,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Renewable Portfolio Standards, U.S. (2015-2050)",
-      link: "/history/endeavors#pollution-regulations",
+      link: "/history/endeavors/subsets#pollution-regulations",
       site: "history",
       cost: 33.76,
       benefit: 280.93,
@@ -157,7 +157,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Interstate Corridor Extension, Central U.S. (20-Year Model)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 2.18,
       benefit: 14.76,
@@ -169,7 +169,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Montreal Protocol on Ozone, World (1987-2060)",
-      link: "/history/endeavors#pollution-regulations",
+      link: "/history/endeavors/subsets#pollution-regulations",
       site: "history",
       cost: 381.04,
       benefit: 2540,
@@ -182,7 +182,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Building Energy Efficiency, Qatar (Annual)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 2.05,
       benefit: 13.4,
@@ -194,7 +194,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Interstate Highway System, U.S. (1950-1989)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 549.69,
       benefit: 3300,
@@ -207,7 +207,7 @@ export const endeavorData = [
     },
     {
       endeavor: "truth® Anti-smoking Campaign, U.S. (2000-2002)",
-      link: "/history/endeavors#public-health-campaigns",
+      link: "/history/endeavors/subsets#public-health-campaigns",
       site: "history",
       cost: 0.391,
       benefit: 2.29,
@@ -219,7 +219,7 @@ export const endeavorData = [
     },
     {
       endeavor: "NASA Life Sciences R&D, select projects (1959-2002)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 0.42,
       benefit: 2.39,
@@ -231,7 +231,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Industrial Energy Efficiency, U.S. (Annual)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 0.09,
       benefit: 0.51,
@@ -243,7 +243,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Combustion Engine R&D, USDOE (1986-2007)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 0.53,
       benefit: 2.823,
@@ -255,7 +255,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Wind Energy R&D, USDOE (1976-2008)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 1.72,
       benefit: 8.72,
@@ -267,7 +267,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Geothermal R&D, USDOE, (1980-2008)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 2.03,
       benefit: 9.87,
@@ -279,7 +279,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Path Network (Cycle & Walk), Norway (25-Year Model)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 0.157,
       benefit: 0.756,
@@ -291,7 +291,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Manure Digester Bags, Vietnam (10-Year Model) per kiloton",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.000424,
       benefit: 0.00195,
@@ -303,7 +303,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Universal Preschool, Spain (Annual)",
-      link: "/history/endeavors#miscellaneous",
+      link: "/history/endeavors/subsets#miscellaneous",
       site: "history",
       cost: 13.56,
       benefit: 58.42,
@@ -315,7 +315,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Building Technology R&D, U.S. (1976-2015)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 0.36,
       benefit: 1.531,
@@ -327,7 +327,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Irrigation Modernization, Spain (25-Year Model)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 1.43,
       benefit: 5.84,
@@ -339,7 +339,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Government Compensation for Kidney Donors, U.S. (Annual)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 18.3,
       benefit: 74,
@@ -351,7 +351,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Anti-Bullying Campaign, Netherlands (2012-2014)",
-      link: "/history/endeavors#public-health-campaigns",
+      link: "/history/endeavors/subsets#public-health-campaigns",
       site: "history",
       cost: 0.000000241,
       benefit: 0.00000097,
@@ -363,7 +363,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Rural Broadband Service, U.S. (2018-2038)",
-      link: "/history/endeavors#miscellaneous",
+      link: "/history/endeavors/subsets#miscellaneous",
       site: "history",
       cost: 0.19422,
       benefit: 0.76872,
@@ -375,7 +375,7 @@ export const endeavorData = [
     },
     {
       endeavor: "National Parks, U.S. (Annual)",
-      link: "/history/endeavors#miscellaneous",
+      link: "/history/endeavors/subsets#miscellaneous",
       site: "history",
       cost: 3.62,
       benefit: 14.07,
@@ -387,7 +387,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Summer Reading Program, U.S. (Annual)",
-      link: "/history/endeavors#miscellaneous",
+      link: "/history/endeavors/subsets#miscellaneous",
       site: "history",
       cost: 0.0182,
       benefit: 0.07,
@@ -400,7 +400,7 @@ export const endeavorData = [
     {
       endeavor:
         "Efficient Water Heater Requirement for New Homes, U.S. (10-Year Model)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 0.02924,
       benefit: 0.10776,
@@ -412,7 +412,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Earthquake Risk Mitigation for Schools, World (50-Year Model)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 238.62,
       benefit: 876.48,
@@ -424,7 +424,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Hybrid + Electric Vehicle R&D, USDOE (1992-2012)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 1.11,
       benefit: 4.01,
@@ -436,7 +436,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Sunscreen Campaign, Australia (2006-2013)",
-      link: "/history/endeavors#public-health-campaigns",
+      link: "/history/endeavors/subsets#public-health-campaigns",
       site: "history",
       cost: 0.0167,
       benefit: 0.06,
@@ -448,7 +448,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Smoking Cessation, U.S. (Annual)",
-      link: "/history/endeavors#public-health-campaigns",
+      link: "/history/endeavors/subsets#public-health-campaigns",
       site: "history",
       cost: 0.19,
       benefit: 0.66,
@@ -460,7 +460,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Airport Runway Extension, Malaysia (2019-2030)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 0.0058,
       benefit: 0.01964,
@@ -472,7 +472,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Erie Canal, U.S. (1817-1880)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 1.78,
       benefit: 5.5,
@@ -485,7 +485,7 @@ export const endeavorData = [
     {
       endeavor:
         "Mercury Reduction, Australia (All future benefits/costs after ratification.)",
-      link: "/history/endeavors#pollution-regulations",
+      link: "/history/endeavors/subsets#pollution-regulations",
       site: "history",
       cost: 0.14529,
       benefit: 0.441,
@@ -497,7 +497,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Energy Efficiency Regulation, USDOE (Annual)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 10.07,
       benefit: 29.31,
@@ -509,7 +509,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Driverless Metro, Italy (35-Year Model)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 1,
       benefit: 2.7,
@@ -521,7 +521,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Recycling Hen & Cattle Dung, Taiwan per kiloton",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.000162,
       benefit: 0.000437,
@@ -533,7 +533,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Congestion Pricing, Sweeden (Annual)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 0.91,
       benefit: 2.33,
@@ -545,7 +545,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Transportation Safety Regulations, U.S. (2006-2015)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 11.86,
       benefit: 29.02,
@@ -557,7 +557,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Flood Risk Reduction w/Afforestation, U.K. (75 Year Model)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.00167,
       benefit: 0.004,
@@ -569,7 +569,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Bicycle Commuting Route, Spain (2006-2032)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 0.05583,
       benefit: 0.12872,
@@ -581,7 +581,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Panama Canal, Global Commerce (1903-1937)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 11.56,
       benefit: 22.76,
@@ -593,7 +593,7 @@ export const endeavorData = [
     },
     {
       endeavor: "New Western Sydney Airport, Australia (2015-2075)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 4.96,
       benefit: 9.48,
@@ -605,7 +605,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Intelligent Connected Vehicles (ICV), China (2015-2050)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 2270,
       benefit: 4210,
@@ -617,7 +617,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Supervised Injection Facility, U.S. (Annual)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 0.00278,
       benefit: 0.00513,
@@ -629,7 +629,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Solar Photovoltaic R&D, USDOE (1975-2008)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 4.53,
       benefit: 8.3,
@@ -641,7 +641,7 @@ export const endeavorData = [
     },
     {
       endeavor: "COVID-19 Lockdown, U.S. (March 2020 to July 2020)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 331.5,
       benefit: 605.9,
@@ -653,7 +653,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Airport Runway Extension, U.K. (2014-2050)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 41.6,
       benefit: 73.66,
@@ -665,7 +665,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Vehicle Exhaust Catalyst Mandate, U.K. (1993-2005)",
-      link: "/history/endeavors#pollution-regulations",
+      link: "/history/endeavors/subsets#pollution-regulations",
       site: "history",
       cost: 3.65,
       benefit: 6.32,
@@ -677,7 +677,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Wastewater Treatment, Serbia (2015-2044)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.01512,
       benefit: 0.02472,
@@ -689,7 +689,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Airport Expansion, New Zealand (2016-2059)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 0.99,
       benefit: 1.61,
@@ -701,7 +701,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Coastal Flooding Management, U.K. (2007-2017)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.154,
       benefit: 0.244,
@@ -713,7 +713,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Three Gorges Dam, China (1993-2100)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 124.39,
       benefit: 192.22,
@@ -725,7 +725,7 @@ export const endeavorData = [
     },
     {
       endeavor: "National Institutes of Health, U.S. (2020)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 41.7,
       benefit: 61.3,
@@ -738,7 +738,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Air Pollution Control, China (2013-2017)",
-      link: "/history/endeavors#pollution-regulations",
+      link: "/history/endeavors/subsets#pollution-regulations",
       site: "history",
       cost: 240,
       benefit: 342,
@@ -750,7 +750,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Bottle Deposit Program, Israel (Annual)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.0363,
       benefit: 0.05,
@@ -762,7 +762,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Landfill Recycling, China (3-Year Model)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.007,
       benefit: 0.00932,
@@ -774,7 +774,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Interstate Corridor Extension, Southwest U.S. (2024-2054)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 7.51,
       benefit: 9.39,
@@ -786,7 +786,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Energy Crops in Urban Parks, Poland (20-Year Model)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 0.00393,
       benefit: 0.00484,
@@ -798,7 +798,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Large Hadron Collider, World (1998-2025)",
-      link: "/history/endeavors#research-and-development",
+      link: "/history/endeavors/subsets#research-and-development",
       site: "history",
       cost: 19.37,
       benefit: 23.53,
@@ -810,7 +810,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Grid-Scale Electrical Energy Storage, G.B. (2017-2020)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 0.01784,
       benefit: 0.02152,
@@ -822,7 +822,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Treatment of Juvenile Males, U.S. (Annual)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 0.000325,
       benefit: 0.000391,
@@ -834,7 +834,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Bovine Viral Diarrhoea Eradication, Austria (1998-2004)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 0.00183,
       benefit: 0.00216,
@@ -846,7 +846,7 @@ export const endeavorData = [
     },
     {
       endeavor: "15% Meat Tax, Netherlands (2020-2050)",
-      link: "/history/endeavors#public-health-campaigns",
+      link: "/history/endeavors/subsets#public-health-campaigns",
       site: "history",
       cost: 25.64,
       benefit: 29.34,
@@ -858,7 +858,7 @@ export const endeavorData = [
     },
     {
       endeavor: "High-Speed Rail, Hong Kong to China (2010 to indefinite future)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 22.95,
       benefit: 25.38,
@@ -870,7 +870,7 @@ export const endeavorData = [
     },
     {
       endeavor: "30% Meat Tax, Netherlands (2020-2050)",
-      link: "/history/endeavors#public-health-campaigns",
+      link: "/history/endeavors/subsets#public-health-campaigns",
       site: "history",
       cost: 49.26,
       benefit: 54.15,
@@ -882,7 +882,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Recycling Pig Manure, Taiwan per kiloton",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.00015,
       benefit: 0.000162,
@@ -894,7 +894,7 @@ export const endeavorData = [
     },
     {
       endeavor: "London Olympics, U.K. (2012)",
-      link: "/history/endeavors#miscellaneous",
+      link: "/history/endeavors/subsets#miscellaneous",
       site: "history",
       cost: 12.58,
       benefit: 7.36,
@@ -906,7 +906,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Shale and Gas Exploration, Romania (2017-2047)",
-      link: "/history/endeavors#energy-production-efficiency",
+      link: "/history/endeavors/subsets#energy-production-efficiency",
       site: "history",
       cost: 147.5,
       benefit: 83.55,
@@ -918,7 +918,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Repairing Existing Road Network, Albania (25-Year Model)",
-      link: "/history/endeavors#transportation-infrastructure",
+      link: "/history/endeavors/subsets#transportation-infrastructure",
       site: "history",
       cost: 0.06439,
       benefit: 0.0198,
@@ -930,7 +930,7 @@ export const endeavorData = [
     },
     {
       endeavor: "Lear's Macaw Species Preservation, Brazil (1992-2017)",
-      link: "/history/endeavors#ecology-environment",
+      link: "/history/endeavors/subsets#ecology-environment",
       site: "history",
       cost: 0.00385,
       benefit: 0.000368,
@@ -942,7 +942,7 @@ export const endeavorData = [
     },
     {
       endeavor: "COVID-19 Lockdown, U.K. (June 2020 to August 2020)",
-      link: "/history/endeavors#public-health-projects",
+      link: "/history/endeavors/subsets#public-health-projects",
       site: "history",
       cost: 116,
       benefit: 9.6,
