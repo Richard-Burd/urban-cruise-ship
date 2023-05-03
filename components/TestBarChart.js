@@ -48,10 +48,10 @@ const data = [
     site: "oceans",
   },
   {
-    name: "Test Row E",
+    name: "Test Row E - Only the border shows",
     link: "/history/endeavors",
-    barlength: 90,
-    displayedValue: "Ninety",
+    barlength: 0.003,
+    displayedValue: "Very very small value (0.003)",
     site: "cities",
   },
   {
@@ -72,7 +72,7 @@ const data = [
     name: "This row is just negative ten",
     link: "/history",
     barlength: -10,
-    displayedValue: "Negative decda!",
+    displayedValue: "Negative ten (10)",
     site: "habitat",
   },
 ];
@@ -145,7 +145,7 @@ const CustomYAxisTick = ({
             dy={5}
             textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
             fontFamily="Roboto"
-            fontSize="15px"
+            fontSize="16px"
             fontWeight="bold"
             fill={hovered ? "#e34b4b" : defaultTextColor}
             textDecoration={hovered ? "underline" : "none"}
@@ -241,7 +241,13 @@ const TestBarChart = ({
               </div>
             )}
           />
-          <Bar dataKey="barlength" fill="#171717" barSize={12}>
+          <Bar 
+            dataKey="barlength" 
+            fill="#171717" 
+            barSize={11}
+            stroke="#1a1a1a"
+            strokeWidth={2}
+          >
             <LabelList
               dataKey="displayedValue"
               position="right"
