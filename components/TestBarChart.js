@@ -57,7 +57,7 @@ const data = [
   {
     name: "This is a negative-value entry",
     link: "/history",
-    barlength: -231,
+    barlength: -260,
     displayedValue: "Negative Two Thirty One",
     site: "habitat",
   },
@@ -176,14 +176,21 @@ const TestBarChart = ({
   titleText,
   titleAnchor,
 }) => {
-
-  const filteredData = data.filter(
-    (item) => scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
+  const filteredData = data.filter((item) =>
+    scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
 
   return (
     <>
-      {barChartTitle && <h2>{barChartTitle}</h2>}
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        {barChartTitle && <h2>{barChartTitle}</h2>}
+      </div>
       <div style={{ width: "100%", height: totalHeight }}>
         <BarChart
           width={totalWidth}
@@ -191,7 +198,7 @@ const TestBarChart = ({
           data={filteredData}
           layout="vertical"
           margin={{
-            top: 20,
+            top: 0,
             right: rightSide,
             left: leftSide,
             bottom: 5,
@@ -221,7 +228,19 @@ const TestBarChart = ({
               );
             }}
           />
-          <Tooltip />
+          <Tooltip
+            content={({ label }) => (
+              <div
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  border: "1px solid transparent",
+                  padding: "5px",
+                }}
+              >
+                <span>{label}</span>
+              </div>
+            )}
+          />
           <Bar dataKey="barlength" fill="#171717" barSize={12}>
             <LabelList
               dataKey="displayedValue"
