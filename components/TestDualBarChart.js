@@ -226,7 +226,13 @@ const TestDualBarChart = ({
               </div>
             )}
           />
-          <Bar dataKey="barlength" fill="#171717" barSize={7}>
+          <Bar 
+            dataKey="barlength" 
+            fill="#171717" 
+            barSize={7}
+            stroke="#1a1a1a"
+            strokeWidth={2}
+          >
             <LabelList
               dataKey="displayedValue"
               position="right"
@@ -241,7 +247,7 @@ const TestDualBarChart = ({
           </Bar>
           <Bar dataKey="" fill="transparent" barSize={-1}></Bar>
           <Bar
-            dataKey="barlength"
+            dataKey="barlengthTwo"
             fill="#d9d9d9"
             barSize={7}
             stroke="#1a1a1a"
