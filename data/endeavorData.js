@@ -1108,4 +1108,18 @@ export const endeavorData = [
       `[^79]: Miles, D., Stedman, M., Heald, A. ["Stay at Home, Protect the National Health Service, Save Lives”](https://onlinelibrary.wiley.com/doi/full/10.1111/ijcp.13674): A cost benefit analysis of the lockdown in the United Kingdom". International Journal of Clinical Practice 75(3), e13674. August 2020.`,
     ],
   },
+  {
+    endeavor: `U.S. Invasion & Occupation of Iraq (2003-2011)`,
+    link: `/history/endeavors/subsets#miscellaneous`,
+    site: `history`,
+    cost: 6400,
+    costExplanation: `U.S. Government spending on military and diplomatic programs`,
+    benefit: 72.9,
+    benefitExplanation: `Total losses in economic value and human life`,
+    co2: null,
+    habitat: null,
+    sources: [
+      `[^80]: Hausken, K. ["Cost benefit analysis of war"](https://www.emerald.com/insight/content/doi/10.1108/IJCMA-04-2015-0023/full/html?fullSc=1). International Journal of Conflict Management 27(4), ISSN: 1044-4068. October 2016.`,
+    ],
+  },
 ];

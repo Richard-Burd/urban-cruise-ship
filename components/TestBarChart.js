@@ -189,7 +189,7 @@ const TestBarChart = ({
           justifyContent: "center",
         }}
       >
-        {barChartTitle && <h2>{barChartTitle}</h2>}
+        {barChartTitle && <h2 id="bar-chart">{barChartTitle}</h2>}
       </div>
       <div style={{ width: "100%", height: totalHeight }}>
         <BarChart

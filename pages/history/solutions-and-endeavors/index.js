@@ -15,6 +15,7 @@ const site = siteConfig.specialized_site_name;
 
 const TestBarChart = dynamic(() => import("../../../components/TestBarChart"), { ssr: false });
 const TestDualBarChart = dynamic(() => import("../../../components/TestDualBarChart"), { ssr: false });
+const DynamicSingleBarChart = dynamic(() => import("../../../components/DynamicSingleBarChart"), { ssr: false });
 
 const hierarchy = require("../hierarchy.json");
 function findFocusAreaName(searchValue) {
@@ -98,6 +99,7 @@ const SolutionsAndEndeavors = () => {
           titleText={0} // {460} for negative values, {0} for positive values
           titleAnchor={"end"} // "start" for a negative bar chart "end" for a positive bar chart
         />
+        <DynamicSingleBarChart />
       </div>
       <style>
         {`
