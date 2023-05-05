@@ -112,6 +112,7 @@ const CustomYAxisTick = ({
 
 const DynamicSingleBarChart = ({
   barChartTitle,
+  barChartSubTitle,
   scale,
   totalHeight,
   barHeight,
@@ -162,7 +163,7 @@ const DynamicSingleBarChart = ({
             paddingRight: "30px",
           }}
         >
-          cost shown are billions - 2020 U.S. Dollars
+          {barChartSubTitle}
         </div>
       )}
       <div style={{ width: "100%", height: totalHeight }}>
