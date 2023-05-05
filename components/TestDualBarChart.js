@@ -19,26 +19,26 @@ import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 
 const data = [
   {
-    name: "High Speed Rail, Hong Kong to China (2010 - 2060)",
+    name: "This is some placeholder text to see how it looks",
     link: "/history/endeavors#public-health-projects",
     barlength: 4000,
     barlengthTwo: 3500,
-    displayedValue: "Three Hundred",
+    displayedValue: "4-Thousand",
     displayedValueTwo: "Another value",
     site: "energy",
   },
   {
-    name: "Test Row B",
+    name: "These bars don't refer to anything",
     link: "/history/endeavors#public-health-projects",
     barlength: 1200,
     barlengthTwo: 1400,
-    displayedValue: "One Thousand Two Hundred",
-    displayedValueTwo: "qwerty",
+    displayedValue: "Twelve - Hundred",
+    displayedValueTwo: "Fourteen - Hundred",
     backgroundColor: "#FCD34D",
     site: "otter",
   },
   {
-    name: "Test Row C Links to a Place!",
+    name: "These bars will eventualy display Cost & Efficiency Comparison",
     link: "/history/endeavors#public-health-projects",
     barlength: 300,
     barlengthTwo: 132,
@@ -48,7 +48,7 @@ const data = [
     site: "zaza",
   },
   {
-    name: "From the OCEANS Site",
+    name: "solutions on our OCEANS site will look like this",
     link: "/history/endeavors#public-health-projects",
     barlength: 120,
     barlengthTwo: 90,

@@ -6,8 +6,6 @@ import Link from "next/link";
 
 import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 
-import { solutionEndeavorBenefitOverCost } from "../lib/solutionEndeavorProc";
-
 const customLabelRenderer = (props) => {
   const { x, y, width, value, labelText, labelAnchor } = props;
   const noWrapValue = value.replace(/\n|\r| /g, " ");
@@ -126,17 +124,18 @@ const DynamicSingleBarChart = ({
   labelAnchor,
   titleText,
   titleAnchor,
+  fetchDataFunc,
 }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const fetchedData = await solutionEndeavorBenefitOverCost();
+      const fetchedData = await fetchDataFunc();
       setData(fetchedData);
     }
 
     fetchData();
-  }, []);
+  }, [fetchDataFunc]);
 
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0

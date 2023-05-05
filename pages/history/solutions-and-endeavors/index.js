@@ -84,7 +84,7 @@ const SolutionsAndEndeavors = () => {
           titleText={290} // {460} for negative values, {0} for positive values
           titleAnchor={"start"} // "start" for a negative bar chart "end" for a positive bar chart
         /> */}
-        <DynamicSingleBarChart
+        {/* <DynamicSingleBarChart
           barChartTitle={"Solution & Endeavor Net Benefit - Benefit minus Cost"}
           scale={"positive"}
           barHeight={4002}
@@ -113,10 +113,10 @@ const SolutionsAndEndeavors = () => {
           labelAnchor={"end"} // "end" for a negative bar chart "start" for a positive bar chart
           titleText={495} // {460} for negative values, {0} for positive values
           titleAnchor={"start"} // "start" for a negative bar chart "end" for a positive bar chart
-        />
+        /> */}
         <br></br><br></br>
         <br></br><br></br>
-        <TestDualBarChart
+        {/* <TestDualBarChart
           barChartTitle={"Cost & Efficiency Comparison Chart under Construction"}
           scale={"positive"}
           barHeight={230}
@@ -130,7 +130,7 @@ const SolutionsAndEndeavors = () => {
           labelAnchor={"start"} // "end" for a negative bar chart "start" for a positive bar chart
           titleText={0} // {460} for negative values, {0} for positive values
           titleAnchor={"end"} // "start" for a negative bar chart "end" for a positive bar chart
-        />
+        /> */}
         
       </div>
       <style>
