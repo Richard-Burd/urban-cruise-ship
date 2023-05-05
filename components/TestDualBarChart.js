@@ -11,7 +11,7 @@
 
 import { getCSSPropertyValue } from "../utils";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Link from "next/link";
 
@@ -96,6 +96,18 @@ const CustomYAxisTick = ({
   solutionBackgroundOffset,
 }) => {
   const [hovered, setHovered] = useState(false);
+  const [bgColor, setBgColor] = useState("transparent");
+
+  useEffect(() => {
+    const entry = data.find((e) => e.name === payload.value);
+    if (entry && entry.site) {
+      const backgroundColor = getCSSPropertyValue(
+        `${entry.site}-site-button-color`,
+        "background-color"
+      );
+      setBgColor(backgroundColor);
+    }
+  }, [payload.value]);
 
   const handleMouseEnter = () => {
     setHovered(true);
