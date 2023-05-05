@@ -9,6 +9,8 @@
 
 // 6. create another table that has 2 bars
 
+import { getCSSPropertyValue } from "../utils";
+
 import React, { useState } from "react";
 
 import Link from "next/link";
@@ -29,7 +31,6 @@ const data = [
     barlength: 1200,
     displayedValue: "One Thousand Two Hundred",
     backgroundColor: "#FCD34D",
-    site: "matter",
   },
   {
     name: "Test Row C Links to a Place!",
@@ -45,7 +46,7 @@ const data = [
     barlength: 120,
     displayedValue: "One Hundred Twenty",
     backgroundColor: "#0f4085",
-    site: "oceans",
+    site: "awesome",
   },
   {
     name: "Test Row E - Only the border shows",
@@ -59,21 +60,20 @@ const data = [
     link: "/history",
     barlength: -260,
     displayedValue: "Negative Two Thirty One",
-    site: "habitat",
   },
   {
     name: "This row is also negative",
     link: "/history",
     barlength: -170,
     displayedValue: "Negative One-Seventy",
-    site: "habitat",
+    site: "bozo",
   },
   {
     name: "This row is just negative ten",
     link: "/history",
     barlength: -10,
     displayedValue: "Negative ten (10)",
-    site: "habitat",
+    site: "gozer",
   },
 ];
 
@@ -99,7 +99,6 @@ const CustomYAxisTick = ({
   x,
   y,
   payload,
-  backgroundColor,
   link,
   titleText,
   titleAnchor,
@@ -118,6 +117,10 @@ const CustomYAxisTick = ({
 
   // Update defaultTextColor based on the 'site' value of the entry
   const entry = data.find((e) => e.name === payload.value);
+  const backgroundColor =
+    entry && entry.site
+      ? getCSSPropertyValue(`${entry.site}-site-button-color`, "background-color")
+      : "transparent";
   const defaultTextColor =
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
