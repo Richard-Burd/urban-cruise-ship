@@ -54,7 +54,7 @@ const SolutionsAndEndeavors = () => {
         <SolutionEndeavorTable />
         <br></br><br></br>
         <br></br><br></br>
-        <TestBarChart
+        {/* <TestBarChart
           barChartTitle={"This is a Standard Test Bar Chart Under Construction"}
           scale={"positive"}
           barHeight={200}
@@ -83,7 +83,39 @@ const SolutionsAndEndeavors = () => {
           labelAnchor={"end"} // "end" for a negative bar chart "start" for a positive bar chart
           titleText={290} // {460} for negative values, {0} for positive values
           titleAnchor={"start"} // "start" for a negative bar chart "end" for a positive bar chart
+        /> */}
+        <DynamicSingleBarChart
+          barChartTitle={"Solution & Endeavor Net Benefit - Benefit minus Cost"}
+          scale={"positive"}
+          barHeight={4002}
+          rightSide={55}
+          leftSide={455}
+          totalHeight={4000} 
+          totalWidth={1000}
+          solutionBackgroundWidth={610}
+          solutionBackgroundOffset={-605}
+          labelText={10} // -10 for a negative bar chart, 10 for a positive bar chart
+          labelAnchor={"start"} // "end" for a negative bar chart "start" for a positive bar chart
+          titleText={0} // {460} for negative values, {0} for positive values
+          titleAnchor={"end"} // "start" for a negative bar chart "end" for a positive bar chart
         />
+        <DynamicSingleBarChart
+          barChartTitle={""}
+          scale={"negative"}
+          barHeight={238}
+          rightSide={485}
+          leftSide={-20}
+          totalHeight={500} 
+          totalWidth={1000}
+          solutionBackgroundWidth={610}
+          solutionBackgroundOffset={605}
+          labelText={-10} // -10 for a negative bar chart, 10 for a positive bar chart
+          labelAnchor={"end"} // "end" for a negative bar chart "start" for a positive bar chart
+          titleText={495} // {460} for negative values, {0} for positive values
+          titleAnchor={"start"} // "start" for a negative bar chart "end" for a positive bar chart
+        />
+        <br></br><br></br>
+        <br></br><br></br>
         <TestDualBarChart
           barChartTitle={"Cost & Efficiency Comparison Chart under Construction"}
           scale={"positive"}
@@ -99,7 +131,7 @@ const SolutionsAndEndeavors = () => {
           titleText={0} // {460} for negative values, {0} for positive values
           titleAnchor={"end"} // "start" for a negative bar chart "end" for a positive bar chart
         />
-        <DynamicSingleBarChart />
+        
       </div>
       <style>
         {`
