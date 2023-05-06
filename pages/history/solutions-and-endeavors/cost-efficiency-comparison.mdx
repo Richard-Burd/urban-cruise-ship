@@ -1,0 +1,45 @@
+import Article from '/components/Article.js';
+import hierarchy from "../hierarchy.json";
+import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
+
+import dynamic from "next/dynamic";
+
+export const site = "history";
+export const focusAreaUrl = "solutions-and-endeavors";
+
+## This page is under construction
+Please check back soon as will have this content updated shortly!
+
+<br></br><br></br><br></br><br></br>
+
+export const TestDualBarChart = dynamic(
+  () => import("../../../components/TestDualBarChart"),
+  { ssr: false }
+);
+
+<TestDualBarChart
+  barChartTitle={"Cost & Efficiency Comparison Chart under Construction"}
+  scale={"positive"}
+  barHeight={230}
+  rightSide={100}
+  leftSide={400}
+  totalHeight={230} 
+  totalWidth={1000}
+  solutionBackgroundWidth={400}
+  solutionBackgroundOffset={-395}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0} 
+  titleAnchor={"end"}
+/>
+
+<SolutionEndeavorTable />
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

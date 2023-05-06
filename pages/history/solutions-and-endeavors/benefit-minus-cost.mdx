@@ -1,0 +1,61 @@
+import Article from "/components/Article.js";
+import hierarchy from "../hierarchy.json";
+import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
+import { solutionEndeavorBenefitMinusCost } from "../../../lib/solutionEndeavorProc";
+
+import dynamic from "next/dynamic";
+
+export const site = "history";
+export const focusAreaUrl = "solutions-and-endeavors";
+
+export const DynamicSingleBarChart = dynamic(
+  () => import("../../../components/DynamicSingleBarChart"),
+  { ssr: false }
+);
+
+<DynamicSingleBarChart
+  barChartTitle={"Solution & Endeavor Net Benefit - Benefit minus Cost"}
+  barChartSubTitle={"cost shown are billions - 2020 U.S. Dollars"}
+  scale={"positive"}
+  barHeight={4002}
+  rightSide={55}
+  leftSide={455}
+  totalHeight={4000}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={solutionEndeavorBenefitMinusCost}
+/>
+<DynamicSingleBarChart
+  barChartTitle={""}
+  scale={"negative"}
+  barHeight={238}
+  rightSide={485}
+  leftSide={-20}
+  totalHeight={300}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={605}
+  labelText={-10}
+  labelAnchor={"end"}
+  titleText={495}
+  titleAnchor={"start"}
+  fetchDataFunc={solutionEndeavorBenefitMinusCost}
+/>
+
+<SolutionEndeavorTable />
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article
+
+>
