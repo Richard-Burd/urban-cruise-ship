@@ -8,14 +8,14 @@ import dynamic from 'next/dynamic';
 // This is replaced by the component below, delete in future refactoring
 // import FullSetOfSolutionsAndEndeavors from "/endeavors/full-set-of-solutions-and-endeavors.mdx";
 
-import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
+// import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
 
-const TestBarChart = dynamic(() => import("../../../components/TestBarChart"), { ssr: false });
-const TestDualBarChart = dynamic(() => import("../../../components/TestDualBarChart"), { ssr: false });
-const DynamicSingleBarChart = dynamic(() => import("../../../components/DynamicSingleBarChart"), { ssr: false });
+// const TestBarChart = dynamic(() => import("../../../components/TestBarChart"), { ssr: false });
+// const TestDualBarChart = dynamic(() => import("../../../components/TestDualBarChart"), { ssr: false });
+// const DynamicSingleBarChart = dynamic(() => import("../../../components/DynamicSingleBarChart"), { ssr: false });
 
 const hierarchy = require("../hierarchy.json");
 function findFocusAreaName(searchValue) {
@@ -51,7 +51,7 @@ const SolutionsAndEndeavors = () => {
         {/* <FullSetOfSolutionsAndEndeavors /> */}
 
         <br></br><br></br>
-        <SolutionEndeavorTable />
+        {/* <SolutionEndeavorTable /> */}
         <br></br><br></br>
         <br></br><br></br>
         {/* <TestBarChart

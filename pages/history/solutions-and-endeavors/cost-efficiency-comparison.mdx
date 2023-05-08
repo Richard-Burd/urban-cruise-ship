@@ -1,36 +1,34 @@
-import Article from '/components/Article.js';
+import Article from "/components/Article.js";
 import hierarchy from "../hierarchy.json";
 import SolutionEndeavorTable from "../../../components/SolutionEndeavorTable";
+import { solutionEndeavorCostEfficiencyComparison } from "../../../lib/solutionEndeavorProc";
 
 import dynamic from "next/dynamic";
 
 export const site = "history";
 export const focusAreaUrl = "solutions-and-endeavors";
 
-## This page is under construction
-Please check back soon as will have this content updated shortly!
-
-<br></br><br></br><br></br><br></br>
-
-export const TestDualBarChart = dynamic(
-  () => import("../../../components/TestDualBarChart"),
+export const DynamicDoubleBarChart = dynamic(
+  () => import("../../../components/DynamicDoubleBarChart"),
   { ssr: false }
 );
 
-<TestDualBarChart
-  barChartTitle={"Cost & Efficiency Comparison Chart under Construction"}
+<DynamicDoubleBarChart
+  barChartTitle={"Solution & Endeavor Cost & Efficiency Comparison"}
+  barChartSubTitle={"top value is cost in billions (2020 U.S. Dollars) bottom value is Benefit/Cost Ratio"}
   scale={"positive"}
-  barHeight={230}
-  rightSide={100}
-  leftSide={400}
-  totalHeight={230} 
+  barHeight={4500}
+  rightSide={-40}
+  leftSide={455}
+  totalHeight={4500}
   totalWidth={1000}
-  solutionBackgroundWidth={400}
-  solutionBackgroundOffset={-395}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
   labelText={10}
   labelAnchor={"start"}
-  titleText={0} 
+  titleText={0}
   titleAnchor={"end"}
+  fetchDataFunc={solutionEndeavorCostEfficiencyComparison}
 />
 
 <SolutionEndeavorTable />
@@ -42,4 +40,5 @@ export default ({ children }) =>
     site={site}
   >
     {children}
-  </Article>
+  </Article
+>
