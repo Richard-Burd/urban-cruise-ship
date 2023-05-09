@@ -51,7 +51,7 @@ export const solutionData = [
   },
   {
     solution: `Construct a High-Voltage-Direct-Current Grid - U.S.`,
-    link: `https://urban-cruise-ship.vercel.app/energy/energy_distribution/grid_design`,
+    link: `https://urban-cruise-ship.vercel.app/energy/energy_distribution/grid_design#construct-an-hvdc-grid-in-the-u-s`,
     site: `energy`,
     cost: 220,
     benefit: 671,
