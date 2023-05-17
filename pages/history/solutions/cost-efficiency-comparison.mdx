@@ -1,13 +1,35 @@
 import Article from '/components/Article.js';
 import hierarchy from "../hierarchy.json";
 import SolutionTable from "../../../components/SolutionTable";
+import { solutionCostEfficiencyComparison } from "../../../lib/dynamicBarCharts/solutionProc";
+
+import dynamic from "next/dynamic";
 
 export const site = "history";
 export const focusAreaUrl = "solutions";
 
-import ArticleImage from "/components/ArticleImage.js";
+export const DynamicDoubleBarChart = dynamic(
+  () => import("../../../components/DynamicDoubleBarChart"),
+  { ssr: false }
+);
 
-<ArticleImage image={"solution_cost_comparison_desktop.svg"} width={950} height={680} />
+<DynamicDoubleBarChart
+  barChartTitle={"Solution & Endeavor Cost & Efficiency Comparison"}
+  barChartSubTitle={"top value is cost in billions (2020 U.S. Dollars) bottom value is Benefit/Cost Ratio"}
+  scale={"positive"}
+  barHeight={1050}
+  rightSide={26}
+  leftSide={455}
+  totalHeight={1100}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={solutionCostEfficiencyComparison}
+/>
 
 <SolutionTable />
 

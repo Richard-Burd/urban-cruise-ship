@@ -1,13 +1,51 @@
 import Article from '/components/Article.js';
 import hierarchy from "../hierarchy.json";
 import SolutionTable from "../../../components/SolutionTable";
+import { solutionBenefitOverCost } from "../../../lib/dynamicBarCharts/solutionProc";
+
+import dynamic from "next/dynamic";
 
 export const site = "history";
 export const focusAreaUrl = "solutions";
 
-import ArticleImage from "/components/ArticleImage.js";
+export const DynamicSingleBarChart = dynamic(
+  () => import("../../../components/DynamicSingleBarChart"),
+  { ssr: false }
+);
 
-<ArticleImage image={"solution_efficiency_desktop.svg"} width={950} height={680} />
+<DynamicSingleBarChart
+  barChartTitle={"Solution & Endeavor Net Benefit - Benefit minus Cost"}
+  barChartSubTitle={"cost shown are billions (benefit - cost) - 2020 U.S. Dollars"}
+  scale={"positive"}
+  barHeight={1050}
+  rightSide={55}
+  leftSide={455}
+  totalHeight={1052}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={solutionBenefitOverCost}
+/>
+<DynamicSingleBarChart
+  barChartTitle={""}
+  scale={"negative"}
+  barHeight={80}
+  rightSide={485}
+  leftSide={-20}
+  totalHeight={82}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={605}
+  labelText={-10}
+  labelAnchor={"end"}
+  titleText={495}
+  titleAnchor={"start"}
+  fetchDataFunc={solutionBenefitOverCost}
+/>
 
 <SolutionTable />
 
