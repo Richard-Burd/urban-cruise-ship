@@ -1,15 +1,52 @@
-import Article from '/components/Article.js';
+import Article from "/components/Article.js";
 import hierarchy from "../hierarchy.json";
 import SolutionTable from "../../../components/SolutionTable";
+import { endeavorCostEfficiencyComparison } from "../../../lib/dynamicBarCharts/endeavorProc";
+
+import dynamic from "next/dynamic";
 
 export const site = "history";
 export const focusAreaUrl = "endeavors";
 
 import FullSetOfEndeavorReferences from "/endeavors/endeavor-references.mdx";
 
-import ArticleImage from "/components/ArticleImage.js";
+export const DynamicDoubleBarChart = dynamic(
+  () => import("../../../components/DynamicDoubleBarChart"),
+  { ssr: false }
+);
 
-<ArticleImage image={"endeavors_ce_comparison.svg"} width={1530} height={3027} />
+<DynamicDoubleBarChart
+  barChartTitle={"Solution & Endeavor Cost & Efficiency Comparison"}
+  barChartSubTitle={
+    "top value is cost in billions (2020 U.S. Dollars) bottom value is Benefit/Cost Ratio"
+  }
+  scale={"positive"}
+  barHeight={3500}
+  rightSide={-40}
+  leftSide={455}
+  totalHeight={3502}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={
+    /* 
+      This "30" input value below is the number times the lower bar
+      (that represents the benefit / cost ratio) is multiplied by its
+      length.  The input value is determined by the longest benefit / cost
+      bar such that this bar does not exceed the width of the chart.  If 
+      you add a new endeavor to the endeavorData.js file, and it has a 
+      benefit / cost ratio that is longer than the longest benefit / cost
+      ratio in the endeavorData.js file, then you will need to decrease this
+      input value below so that the lower bar does not exceed the width of
+      the chart.
+    */
+    () => endeavorCostEfficiencyComparison(30)
+  }
+/>
 
 <FullSetOfEndeavorReferences />
 
@@ -20,4 +57,6 @@ export default ({ children }) =>
     site={site}
   >
     {children}
-  </Article>
+  </Article
+
+>

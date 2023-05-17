@@ -28,7 +28,20 @@ export const DynamicDoubleBarChart = dynamic(
   labelAnchor={"start"}
   titleText={0}
   titleAnchor={"end"}
-  fetchDataFunc={solutionCostEfficiencyComparison}
+  fetchDataFunc={
+    /* 
+      This "30" input value below is the number times the lower bar
+      (that represents the benefit / cost ratio) is multiplied by its
+      length.  The input value is determined by the longest benefit / cost
+      bar such that this bar does not exceed the width of the chart.  If 
+      you add a new endeavor to the endeavorData.js file, and it has a 
+      benefit / cost ratio that is longer than the longest benefit / cost
+      ratio in the endeavorData.js file, then you will need to decrease this
+      input value below so that the lower bar does not exceed the width of
+      the chart.
+    */
+    () => solutionCostEfficiencyComparison(1.7)
+  }
 />
 
 <SolutionTable />
