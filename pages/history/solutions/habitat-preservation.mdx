@@ -1,13 +1,35 @@
 import Article from '/components/Article.js';
 import hierarchy from "../hierarchy.json";
 import SolutionTable from "../../../components/SolutionTable";
+import { solutionHabitatPreservation } from "../../../lib/dynamicBarCharts/solutionProc";
+
+import dynamic from "next/dynamic";
 
 export const site = "history";
 export const focusAreaUrl = "solutions";
 
-import ArticleImage from "/components/ArticleImage.js";
+export const DynamicSingleBarChart = dynamic(
+  () => import("../../../components/DynamicSingleBarChart"),
+  { ssr: false }
+);
 
-<ArticleImage image={"solution_habitat_preservation_desktop.svg"} width={950} height={290} />
+<DynamicSingleBarChart
+  barChartTitle={"Solution Habitat Preservation"}
+  barChartSubTitle={"values shown are in square kilometers"}
+  scale={"positive"}
+  barHeight={330}
+  rightSide={80}
+  leftSide={455}
+  totalHeight={400}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={solutionHabitatPreservation}
+/>
 
 <SolutionTable />
 

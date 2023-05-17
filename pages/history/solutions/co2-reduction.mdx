@@ -1,13 +1,35 @@
 import Article from '/components/Article.js';
 import hierarchy from "../hierarchy.json";
 import SolutionTable from "../../../components/SolutionTable";
+import { solutionGreenhouseGasReduction } from "../../../lib/dynamicBarCharts/solutionProc";
+
+import dynamic from "next/dynamic";
 
 export const site = "history";
 export const focusAreaUrl = "solutions";
 
-import ArticleImage from "/components/ArticleImage.js";
+export const DynamicSingleBarChart = dynamic(
+  () => import("../../../components/DynamicSingleBarChart"),
+  { ssr: false }
+);
 
-<ArticleImage image={"solution_ghg_reduction_desktop.svg"} width={950} height={680} />
+<DynamicSingleBarChart
+  barChartTitle={"Solution Greenhouse Gas Reduction"}
+  barChartSubTitle={"cost shown are mega tons of Carbon Dioxide (or equivalent) per year"}
+  scale={"positive"}
+  barHeight={1050}
+  rightSide={55}
+  leftSide={455}
+  totalHeight={1100}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={solutionGreenhouseGasReduction}
+/>
 
 <SolutionTable />
 
