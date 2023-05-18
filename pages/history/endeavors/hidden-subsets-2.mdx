@@ -1,0 +1,141 @@
+import Article from "/components/Article.js";
+import hierarchy from "../hierarchy.json";
+import {
+  endeavorBenefitMinusCost,
+  endeavorBenefitOverCost,
+  endeavorCostEfficiencyComparison,
+} from "../../../lib/dynamicBarCharts/endeavorProc";
+
+import dynamic from "next/dynamic";
+
+export const DynamicSingleBarChart = dynamic(
+  () => import("../../../components/DynamicSingleBarChart"),
+  { ssr: false }
+);
+
+export const DynamicDoubleBarChart = dynamic(
+  () => import("../../../components/DynamicDoubleBarChart"),
+  { ssr: false }
+);
+
+export const site = "history";
+export const focusAreaUrl = "endeavors";
+
+# 2. Energy Production & Efficiency
+
+<DynamicSingleBarChart
+  barChartTitle={`Ecology and Environment Endeavors - Benefit Over Cost Ratio`}
+  barChartSubTitle={"values shown below are ratios of benefit over cost"}
+  scale={"positive"}
+  barHeight={300}
+  rightSide={-130}
+  leftSide={500}
+  totalHeight={300}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={() => endeavorBenefitOverCost(`/history/endeavors/subsets#energy-production-efficiency`)}
+/>
+<DynamicSingleBarChart
+  barChartTitle={""}
+  scale={"negative"}
+  barHeight={46}
+  rightSide={700}
+  leftSide={239}
+  totalHeight={46}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={605}
+  labelText={-10}
+  labelAnchor={"end"}
+  titleText={20}
+  titleAnchor={"start"}
+  fetchDataFunc={() => endeavorBenefitOverCost(`/history/endeavors/subsets#energy-production-efficiency`)}
+/>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<DynamicSingleBarChart
+  barChartTitle={`Ecology and Environment Endeavors - Benefit minus Cost`}
+  barChartSubTitle={"cost shown are billions (benefit - cost) - 2020 U.S. Dollars"}
+  scale={"positive"}
+  barHeight={270}
+  rightSide={-10}
+  leftSide={500}
+  totalHeight={270}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={() => endeavorBenefitMinusCost(`/history/endeavors/subsets#energy-production-efficiency`)}
+/>
+<DynamicSingleBarChart
+  barChartTitle={""}
+  scale={"negative"}
+  barHeight={46}
+  rightSide={350}
+  leftSide={-20}
+  totalHeight={200}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={605}
+  labelText={-10}
+  labelAnchor={"end"}
+  titleText={630}
+  titleAnchor={"start"}
+  fetchDataFunc={() => endeavorBenefitMinusCost(`/history/endeavors/subsets#energy-production-efficiency`)}
+/>
+
+<DynamicDoubleBarChart
+  barChartTitle={"Ecology and Environment Endeavors - Cost and Efficiency"}
+  barChartSubTitle={
+    "top value is cost in billions (2020 U.S. Dollars) bottom value is benefit / cost Ratio"
+  }
+  scale={"positive"}
+  barHeight={400}
+  rightSide={1}
+  leftSide={455}
+  totalHeight={500}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={
+    /* 
+      This "30" input value below is the number times the lower bar
+      (that represents the benefit / cost ratio) is multiplied by its
+      length.  The input value is determined by the longest benefit / cost
+      bar such that this bar does not exceed the width of the chart.  If 
+      you add a new endeavor to the endeavorData.js file, and it has a 
+      benefit / cost ratio that is longer than the longest benefit / cost
+      ratio in the endeavorData.js file, then you will need to decrease this
+      input value below so that the lower bar does not exceed the width of
+      the chart.
+    */
+    () => endeavorCostEfficiencyComparison(0.08, `/history/endeavors/subsets#energy-production-efficiency`)
+  }
+/>
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    <div style={{ backgroundColor: 'rgb(226, 232, 240)' }}>
+      {children}
+    </div>
+  </Article>
