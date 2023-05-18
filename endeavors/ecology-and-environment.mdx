@@ -1,7 +1,17 @@
 import EndeavorDropdown from '/components/EndeavorDropdown.js'
 import ArticleImage from "/components/ArticleImage.js";
+import { endeavorBenefitMinusCost } from "/lib/dynamicBarCharts/endeavorProc";
+
+import dynamic from "next/dynamic";
 
 export const title = "Ecology & Environment";
+
+export let subsetLink = "/history/endeavors/subsets#ecology-environment";
+
+export const DynamicSingleBarChart = dynamic(
+  () => import("/components/DynamicSingleBarChart"),
+  { ssr: false }
+);
 
 Total efficiency for these endeavors is as follows:
 <ArticleImage image={"ecology_environment1.svg"} width={1000} height={310} />
@@ -9,11 +19,13 @@ Total efficiency for these endeavors is as follows:
 <br></br><br></br><br></br>
 
 Net returns on investment (ROI) for these endeavors is as follows:
+
 <ArticleImage image={"ecology_environment2.svg"} width={1000} height={330} />
 
 <br></br><br></br><br></br>
 
 Costs and efficiencies for these endeavors is as follows:
+
 <ArticleImage image={"ecology_environment3.svg"} width={1000} height={440} />
 
 <br></br><br></br><br></br>
