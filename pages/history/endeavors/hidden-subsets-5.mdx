@@ -37,13 +37,8 @@ export const endeavorTitle = "Public Health Projects";
   scale={"positive"}
   rightSide={12}
   leftSide={420}
-  totalWidth={1000}
-  solutionBackgroundWidth={610}
   solutionBackgroundOffset={-605}
-  labelText={10}
-  labelAnchor={"start"}
   titleText={0}
-  titleAnchor={"end"}
   fetchDataFunc={() => endeavorBenefitOverCost(endeavorSubsetUrl)}
 />
 
@@ -58,13 +53,8 @@ export const endeavorTitle = "Public Health Projects";
   scale={"positive"}
   rightSide={50}
   leftSide={430}
-  totalWidth={1000}
-  solutionBackgroundWidth={610}
   solutionBackgroundOffset={-605}
-  labelText={10}
-  labelAnchor={"start"}
   titleText={0}
-  titleAnchor={"end"}
   fetchDataFunc={() => endeavorBenefitMinusCost(endeavorSubsetUrl)}
 />
 <DynamicSingleBarChart
@@ -72,13 +62,8 @@ export const endeavorTitle = "Public Health Projects";
   scale={"negative"}
   rightSide={650}
   leftSide={200}
-  totalWidth={1000}
-  solutionBackgroundWidth={610}
   solutionBackgroundOffset={605}
-  labelText={-10}
-  labelAnchor={"end"}
   titleText={130}
-  titleAnchor={"start"}
   fetchDataFunc={() => endeavorBenefitMinusCost(endeavorSubsetUrl)}
 />
 
@@ -95,13 +80,8 @@ export const endeavorTitle = "Public Health Projects";
   scale={"positive"}
   rightSide={10}
   leftSide={500}
-  totalWidth={1000}
-  solutionBackgroundWidth={610}
   solutionBackgroundOffset={-605}
-  labelText={10}
-  labelAnchor={"start"}
   titleText={0}
-  titleAnchor={"end"}
   fetchDataFunc={
     /* 
       This "25" input value below is the number times the lower bar

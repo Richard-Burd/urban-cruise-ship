@@ -31,7 +31,6 @@ const CustomYAxisTick = ({
   link,
   titleText,
   titleAnchor,
-  solutionBackgroundWidth,
   solutionBackgroundOffset,
   data,
 }) => {
@@ -77,7 +76,7 @@ const CustomYAxisTick = ({
       <rect
         x={solutionBackgroundOffset}
         y={-10}
-        width={solutionBackgroundWidth}
+        width={610}
         height={20}
         fill={backgroundColor || "transparent"}
       />
@@ -116,13 +115,7 @@ const DynamicSingleBarChart = ({
   scale,
   rightSide,
   leftSide,
-  totalWidth = 1000,
-  solutionBackgroundWidth,
-  solutionBackgroundOffset,
-  labelText,
-  labelAnchor,
   titleText,
-  titleAnchor,
   fetchDataFunc,
 }) => {
   const [data, setData] = useState([]);
@@ -136,12 +129,35 @@ const DynamicSingleBarChart = ({
     fetchData();
   }, [fetchDataFunc]);
 
+  let labelText;
+  if (scale === "positive") {
+    labelText = 10;
+  } else if (scale === "negative") {
+    labelText = -10;
+  }
+
+  let labelAnchor, titleAnchor;
+  if (scale === "positive") {
+    labelAnchor = "start";
+    titleAnchor = "end";
+  } else if (scale === "negative") {
+    labelAnchor = "end";
+    titleAnchor = "start";
+  }
+
+  let solutionBackgroundOffset;
+  if (scale === "positive") {
+    solutionBackgroundOffset = -605;
+  } else if (scale === "negative") {
+    solutionBackgroundOffset = 605;
+  }
+
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
 
   const barHeight = 44;
-  const totalChartHeight = filteredData.length * barHeight
+  const totalChartHeight = filteredData.length * barHeight;
 
   return (
     <>
@@ -152,7 +168,19 @@ const DynamicSingleBarChart = ({
           justifyContent: "center",
         }}
       >
-        {barChartTitle && <h2 id="bar-chart">{barChartTitle}</h2>}
+        {barChartTitle && (
+          <h2
+            id="bar-chart"
+            style={{
+              fontFamily: "Roboto",
+              fontSize: "32px",
+              fontWeight: 600,
+              paddingTop: "20px",
+            }}
+          >
+            {barChartTitle}
+          </h2>
+        )}
       </div>
       {barChartTitle && (
         <div
@@ -167,9 +195,9 @@ const DynamicSingleBarChart = ({
           {barChartSubTitle}
         </div>
       )}
-      <div style={{ width: "100%", height: totalChartHeight  }}>
+      <div style={{ width: "100%", height: totalChartHeight }}>
         <BarChart
-          width={totalWidth}
+          width={1000}
           height={totalChartHeight}
           data={filteredData}
           layout="vertical"
@@ -200,7 +228,6 @@ const DynamicSingleBarChart = ({
                   link={entry ? entry.link : null}
                   titleText={titleText}
                   titleAnchor={titleAnchor}
-                  solutionBackgroundWidth={solutionBackgroundWidth}
                   solutionBackgroundOffset={solutionBackgroundOffset}
                 />
               );
