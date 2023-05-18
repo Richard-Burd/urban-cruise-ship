@@ -21,7 +21,116 @@ export const DynamicDoubleBarChart = dynamic(
 export const site = "history";
 export const focusAreaUrl = "endeavors";
 
+export const endeavorSubsetUrl = "/history/endeavors/subsets#miscellaneous";
+export const endeavorTitle = "Miscellaneous";
+
 # 8. Miscellaneous
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<DynamicSingleBarChart
+  barChartTitle={`${endeavorTitle} Endeavors - Benefit Over Cost Ratio`}
+  barChartSubTitle={"values shown below are ratios of benefit over cost"}
+  scale={"positive"}
+  rightSide={-12}
+  leftSide={320}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={() => endeavorBenefitOverCost(endeavorSubsetUrl)}
+/>
+<DynamicSingleBarChart
+  barChartTitle={""}
+  scale={"negative"}
+  rightSide={700}
+  leftSide={239}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={605}
+  labelText={-10}
+  labelAnchor={"end"}
+  titleText={20}
+  titleAnchor={"start"}
+  fetchDataFunc={() => endeavorBenefitOverCost(endeavorSubsetUrl)}
+/>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<DynamicSingleBarChart
+  barChartTitle={`${endeavorTitle} Endeavors - Benefit minus Cost`}
+  barChartSubTitle={"cost shown are billions (benefit - cost) - 2020 U.S. Dollars"}
+  scale={"positive"}
+  rightSide={-120}
+  leftSide={280}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={() => endeavorBenefitMinusCost(endeavorSubsetUrl)}
+/>
+<DynamicSingleBarChart
+  barChartTitle={""}
+  scale={"negative"}
+  rightSide={380}
+  leftSide={-50}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={605}
+  labelText={-10}
+  labelAnchor={"end"}
+  titleText={630}
+  titleAnchor={"start"}
+  fetchDataFunc={() => endeavorBenefitMinusCost(endeavorSubsetUrl)}
+/>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<DynamicDoubleBarChart
+  barChartTitle={`${endeavorTitle} Endeavors - Cost and Efficiency`}
+  barChartSubTitle={
+    "top value is cost in billions (2020 U.S. Dollars) bottom value is benefit / cost Ratio"
+  }
+  scale={"positive"}
+  rightSide={-50}
+  leftSide={320}
+  totalWidth={1000}
+  solutionBackgroundWidth={610}
+  solutionBackgroundOffset={-605}
+  labelText={10}
+  labelAnchor={"start"}
+  titleText={0}
+  titleAnchor={"end"}
+  fetchDataFunc={
+    /* 
+      This "550" input value below is the number times the lower bar
+      (that represents the benefit / cost ratio) is multiplied by its
+      length.  The input value is determined by the longest benefit / cost
+      bar such that this bar does not exceed the width of the chart.  If 
+      you add a new endeavor to the endeavorData.js file, and it has a 
+      benefit / cost ratio that is longer than the longest benefit / cost
+      ratio in the endeavorData.js file, then you will need to decrease this
+      input value below so that the lower bar does not exceed the width of
+      the chart.
+    */
+    () => endeavorCostEfficiencyComparison(550, endeavorSubsetUrl)
+  }
+/>
 
 export default ({ children }) => 
   <Article 
@@ -33,3 +142,5 @@ export default ({ children }) =>
       {children}
     </div>
   </Article>
+
+
