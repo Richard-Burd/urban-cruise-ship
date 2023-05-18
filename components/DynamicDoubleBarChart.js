@@ -114,8 +114,6 @@ const DynamicSingleBarChart = ({
   barChartTitle,
   barChartSubTitle,
   scale,
-  totalHeight,
-  barHeight,
   rightSide,
   leftSide,
   totalWidth = 1000,
@@ -142,6 +140,9 @@ const DynamicSingleBarChart = ({
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
 
+  const barHeight = 44;
+  const totalChartHeight = filteredData.length * barHeight
+
   return (
     <>
       <div
@@ -166,10 +167,10 @@ const DynamicSingleBarChart = ({
           {barChartSubTitle}
         </div>
       )}
-      <div style={{ width: "100%", height: totalHeight }}>
+      <div style={{ width: "100%", height: totalChartHeight  }}>
         <BarChart
           width={totalWidth}
-          height={barHeight}
+          height={totalChartHeight}
           data={filteredData}
           layout="vertical"
           margin={{
