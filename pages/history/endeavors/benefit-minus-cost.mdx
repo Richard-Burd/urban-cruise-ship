@@ -1,6 +1,6 @@
 import Article from '/components/Article.js';
 import hierarchy from "../hierarchy.json";
-import SolutionTable from "../../../components/SolutionTable";
+import EndeavorTable from "../../../components/EndeavorTable";
 import { endeavorBenefitMinusCost } from "../../../lib/dynamicBarCharts/endeavorProc";
 
 import dynamic from "next/dynamic";
@@ -19,10 +19,10 @@ export const DynamicSingleBarChart = dynamic(
   barChartTitle={"Endeavor Net Benefit - Benefit minus Cost"}
   barChartSubTitle={"cost shown are billions (benefit - cost) - 2020 U.S. Dollars"}
   scale={"positive"}
-  barHeight={3500}
+
   rightSide={55}
   leftSide={455}
-  totalHeight={3496}
+
   totalWidth={1000}
   solutionBackgroundWidth={610}
   solutionBackgroundOffset={-605}
@@ -48,6 +48,8 @@ export const DynamicSingleBarChart = dynamic(
   titleAnchor={"start"}
   fetchDataFunc={endeavorBenefitMinusCost}
 />
+
+<EndeavorTable />
 
 <FullSetOfEndeavorReferences />
 

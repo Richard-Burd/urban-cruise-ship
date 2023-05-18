@@ -1,6 +1,6 @@
 import Article from '/components/Article.js';
 import hierarchy from "../hierarchy.json";
-import SolutionTable from "../../../components/SolutionTable";
+import EndeavorTable from "../../../components/EndeavorTable";
 import { endeavorBenefitOverCost } from "../../../lib/dynamicBarCharts/endeavorProc";
 
 import dynamic from "next/dynamic";
@@ -48,6 +48,8 @@ export const DynamicSingleBarChart = dynamic(
   titleAnchor={"start"}
   fetchDataFunc={endeavorBenefitOverCost}
 />
+
+<EndeavorTable />
 
 <FullSetOfEndeavorReferences />
 
