@@ -10,12 +10,12 @@ export const focusAreaUrl = "endeavors";
 
 import FullSetOfEndeavorReferences from "/endeavors/endeavor-references.mdx";
 
-export const DynamicSingleBarChart = dynamic(
-  () => import("../../../components/DynamicSingleBarChart"),
+export const DynamicSingleBarChart2 = dynamic(
+  () => import("../../../components/DynamicSingleBarChart2"),
   { ssr: false }
 );
 
-<DynamicSingleBarChart
+<DynamicSingleBarChart2
   barChartTitle={"Endeavor Net Benefit - Benefit minus Cost"}
   barChartSubTitle={"cost shown are billions (benefit - cost) - 2020 U.S. Dollars"}
   scale={"positive"}
@@ -26,7 +26,7 @@ export const DynamicSingleBarChart = dynamic(
   titleText={0}
   fetchDataFunc={endeavorBenefitMinusCost}
 />
-<DynamicSingleBarChart
+<DynamicSingleBarChart2
   barChartTitle={""}
   scale={"negative"}
   rightSide={485}

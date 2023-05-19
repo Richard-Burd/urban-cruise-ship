@@ -8,12 +8,12 @@ import dynamic from "next/dynamic";
 export const site = "history";
 export const focusAreaUrl = "solutions-and-endeavors";
 
-export const DynamicDoubleBarChart = dynamic(
-  () => import("../../../components/DynamicDoubleBarChart"),
+export const DynamicDoubleBarChart2 = dynamic(
+  () => import("../../../components/DynamicDoubleBarChart2"),
   { ssr: false }
 );
 
-<DynamicDoubleBarChart
+<DynamicDoubleBarChart2
   barChartTitle={"Solution & Endeavor Cost and Efficiency Comparison"}
   barChartSubTitle={"top value is cost in billions (2020 U.S. Dollars) bottom value is benefit / cost Ratio"}
   scale={"positive"}

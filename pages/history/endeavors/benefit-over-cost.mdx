@@ -10,12 +10,12 @@ export const focusAreaUrl = "endeavors";
 
 import FullSetOfEndeavorReferences from "/endeavors/endeavor-references.mdx";
 
-export const DynamicSingleBarChart = dynamic(
-  () => import("../../../components/DynamicSingleBarChart"),
+export const DynamicSingleBarChart2 = dynamic(
+  () => import("../../../components/DynamicSingleBarChart2"),
   { ssr: false }
 );
 
-<DynamicSingleBarChart
+<DynamicSingleBarChart2
   barChartTitle={"Endeavor Efficiency - Benefit Over Cost Ratio"}
   barChartSubTitle={"values shown below are ratios of benefit over cost"}
   scale={"positive"}
