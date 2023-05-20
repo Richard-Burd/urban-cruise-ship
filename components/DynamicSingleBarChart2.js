@@ -192,7 +192,7 @@ const DynamicSingleBarChart = ({
             justifyContent: "center",
             fontStyle: "bold",
             fontWeight: "bold",
-            paddingLeft: "2px",
+            paddingLeft: "210px",
             paddingBottom: "10px",
           }}
         >
