@@ -18,6 +18,7 @@ const customLabelRenderer = (props) => {
       fill="black"
       fontFamily="Roboto"
       fontSize="14px"
+      fontWeight="bold"
     >
       {noWrapValue}
     </text>
@@ -76,14 +77,15 @@ const CustomYAxisTick = ({
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
       : "#1a1a1a";
-
+//This area controls the color highlight for solutions
   return (
     <g transform={`translate(${x},${y})`}>
       <rect
         x={-textWidth - 6}
         y={-15}
         width={textWidth + 9}
-        height={29}
+        height={29.1}
+        // using a +0.1 height to ensure no spacing visible when rendering
         fill={backgroundColor || "transparent"}
       />
       <Link href={link}>
@@ -155,7 +157,7 @@ const DynamicSingleBarChart = ({
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
 
-  const barHeight = 29;
+  const barHeight = 29; //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
   const totalChartHeight = filteredData.length * barHeight;
 
   return (
@@ -175,6 +177,7 @@ const DynamicSingleBarChart = ({
               fontSize: "32px",
               fontWeight: 600,
               paddingTop: "20px",
+              paddingBottom: "10px",
             }}
           >
             {barChartTitle}
@@ -186,9 +189,11 @@ const DynamicSingleBarChart = ({
           style={{
             width: "100%",
             display: "flex",
-            justifyContent: "right",
-            fontStyle: "italic",
-            paddingRight: "30px",
+            justifyContent: "center",
+            fontStyle: "bold",
+            fontWeight: "bold",
+            paddingLeft: "2px",
+            paddingBottom: "10px",
           }}
         >
           {barChartSubTitle}
@@ -230,12 +235,13 @@ const DynamicSingleBarChart = ({
               );
             }}
           />
+          {/* this area defines the bar, bar size is the y axis thickness. stroke width creates a line around the bar. In effect, this makes a minimum size for the bars */}
           <Bar
             dataKey="barlength"
             fill="#171717"
             barSize={8}
             stroke="#1a1a1a"
-            strokeWidth={1}
+            strokeWidth={.1}
           >
             <LabelList
               dataKey="displayedValue"
