@@ -121,8 +121,8 @@ const DynamicSingleBarChart = ({
   barChartTitle,
   barChartSubTitle,
   scale,
-  rightSide,
-  leftSide,
+  rightSide, //increasing this will provide more room to the right side of the bar for numbers
+  leftSide, //decreasing this will push the bar start to the left
   titleText,
   fetchDataFunc,
 }) => {
