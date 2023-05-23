@@ -84,8 +84,7 @@ const CustomYAxisTick = ({
         x={-textWidth - 6}
         y={-15}
         width={textWidth + 9}
-        height={29.1}
-        // using a +0.1 height to ensure no spacing visible when rendering
+        height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
         fill={backgroundColor || "transparent"}
       />
       <Link href={link}>
@@ -177,7 +176,7 @@ const DynamicSingleBarChart = ({
               fontSize: "32px",
               fontWeight: 600,
               paddingTop: "20px",
-              paddingBottom: "10px",
+              paddingBottom: "20px",
             }}
           >
             {barChartTitle}
@@ -189,11 +188,8 @@ const DynamicSingleBarChart = ({
           style={{
             width: "100%",
             display: "flex",
-            justifyContent: "center",
-            fontStyle: "bold",
-            fontWeight: "bold",
-            paddingLeft: "210px",
-            paddingBottom: "10px",
+            justifyContent: "left",
+            paddingLeft: "600px",
           }}
         >
           {barChartSubTitle}

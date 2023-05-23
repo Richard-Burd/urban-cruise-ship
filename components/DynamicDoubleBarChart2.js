@@ -18,6 +18,7 @@ const customLabelRenderer = (props) => {
       fill="black"
       fontFamily="Roboto"
       fontSize="14px"
+      fontWeight="bold"
     >
       {noWrapValue}
     </text>
@@ -81,7 +82,7 @@ const CustomYAxisTick = ({
         x={-textWidth - 6}
         y={-15}
         width={textWidth + 9}
-        height={29}
+        height={31.1 } // using a +0.1 height to ensure no spacing visible when rendering, also larger for double bar due to rechart constraints on barHeight
         fill={backgroundColor || "transparent"}
       />
       <Link href={link}>
@@ -153,7 +154,7 @@ const DynamicSingleBarChart = ({
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
 
-  const barHeight = 40;
+  const barHeight = 31;
   const totalChartHeight = filteredData.length * barHeight;
 
   return (
@@ -173,6 +174,7 @@ const DynamicSingleBarChart = ({
               fontSize: "32px",
               fontWeight: 600,
               paddingTop: "20px",
+              paddingBottom: "10px",
             }}
           >
             {barChartTitle}
@@ -184,9 +186,10 @@ const DynamicSingleBarChart = ({
           style={{
             width: "100%",
             display: "flex",
-            justifyContent: "right",
-            fontStyle: "italic",
-            paddingRight: "30px",
+            justifyContent: "left",
+
+            paddingLeft: "600px",
+            paddingBottom: "10px",
           }}
         >
           {barChartSubTitle}
