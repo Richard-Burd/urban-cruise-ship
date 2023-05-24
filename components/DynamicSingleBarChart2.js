@@ -38,12 +38,21 @@ const CustomYAxisTick = ({
   const [hovered, setHovered] = useState(false);
   const [bgColor, setBgColor] = useState("transparent");
 
-  const textLength = payload.value.length;
+/*   const textLength = payload.value.length;
 
   let approxCharWidth = 7
 
-  const textWidth = textLength * approxCharWidth;
+  const textWidth = textLength * approxCharWidth; */
 
+
+ //text measurement tool for the highlighting function
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
+  context.font = '14px Roboto'; // Set the font and size to be analyzed
+  const metrics = context.measureText(payload.value);
+  const textWidth = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
+
+  
   useEffect(() => {
     const entry = data.find((e) => e.name === payload.value);
     if (entry && entry.site) {
