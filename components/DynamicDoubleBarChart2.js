@@ -15,7 +15,7 @@ const customLabelRenderer = (props) => {
       x={x + width + labelText} // {-10} for negative values (labelText)
       y={y + 10}
       textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
-      fill="black"
+      fill="#212121"
       fontFamily="Roboto"
       fontSize="14px"
       fontWeight="bold"
@@ -234,7 +234,7 @@ const DynamicSingleBarChart = ({
           />
           <Bar
             dataKey="barlength"
-            fill="#171717"
+            fill="#212121"
             barSize={7}
             stroke="#1a1a1a"
             strokeWidth={2}

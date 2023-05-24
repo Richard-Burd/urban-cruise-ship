@@ -14,11 +14,11 @@ const customLabelRenderer = (props) => {
   return (
     <text
       x={x + width + labelText} // {-10} for negative values (labelText)
-      y={y + 8} // controls vertical placement of string to right of bar
+      y={y + 10} // controls vertical placement of string to right of bar
       textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
-      fill="#313131"
+      fill="#212121"
       fontFamily="Roboto"
-      fontSize="14px"
+      fontSize="18px"
       fontWeight="bold"
     >
       {noWrapValue}
@@ -88,7 +88,18 @@ const CustomYAxisTick = ({
         height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
         fill={backgroundColor || "transparent"}
       />
-      <Link href={link}>
+      <text //controls the insert of the title to the bar, (payload)
+            x={titleText - 1} // {460} for negative values, {0} for positive values
+            y={-1}
+            dy={5}
+            textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
+            fontFamily="Roboto"
+            fontSize="20px"
+            fontWeight="bold"
+          >
+            {payload.value}
+          </text>
+{/*       <Link href={link}> //commented out this clickable link functionality for the titles -jye
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -101,7 +112,7 @@ const CustomYAxisTick = ({
             dy={5}
             textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
             fontFamily="Roboto"
-            fontSize="14px"
+            fontSize="20px"
             fontWeight="bold"
             fill={hovered ? "blue" : defaultTextColor}
             textDecoration={hovered ? "underline" : "none"}
@@ -112,7 +123,7 @@ const CustomYAxisTick = ({
             {payload.value}
           </text>
         </a>
-      </Link>
+      </Link> */}
     </g>
   );
 };
@@ -124,7 +135,7 @@ const DynamicSingleBarChart = ({
   rightSide, //increasing this will provide more room to the right side of the bar for numbers
   leftSide, //decreasing this will push the bar start to the left
   titleText,
-  staticData, // New prop
+  staticData, // New prop for handling direct data entry inside of solution mdx file
 }) => {
   const [data, setData] = useState([]);
 
@@ -170,7 +181,7 @@ const DynamicSingleBarChart = ({
             id="bar-chart"
             style={{
               fontFamily: "Roboto",
-              fontSize: "32px",
+              fontSize: "36px",
               fontWeight: 600,
               paddingTop: "20px",
               paddingBottom: "20px",
@@ -231,8 +242,8 @@ const DynamicSingleBarChart = ({
           {/* this area defines the bar, barSize is the y axis thickness. strokeWidth creates a line around the bar. In effect, this makes a minimum size for the bars */}
           <Bar
             dataKey="barlength"
-            fill="#313131"
-            barSize={6}
+            fill="#212121"
+            barSize={10}
             stroke="#313131"
             strokeWidth={.1}
           >

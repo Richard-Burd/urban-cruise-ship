@@ -1,0 +1,62 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const problem = "Experiment";
+export const solution = "Under Construction";
+export const DynamicSingleBarChart2 = dynamic(
+  () => import("../components/DynamicSingleBarChartSolution"),
+  { ssr: false }
+);
+
+
+import SolutionImages from "/components/SolutionImages.js";
+
+## Description
+
+hello
+
+<DynamicSingleBarChart2
+  barChartTitle={"Wind Energy Production to Achieve Net Zero - World"}
+  barChartSubTitle={""}
+  scale={"positive"}
+  rightSide={100}
+  leftSide={100}
+  titleText={0}
+  fetchDataFunc={endeavorBenefitMinusCost}
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: 1492,
+      displayedValue: "$1,492",
+      link: "", //unused
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 893,
+      displayedValue: "$893.8 Billions USD/year",
+      link: "", //unused
+      site: "null",
+    },
+  ]}
+/>
+
+<SolutionImages
+ mobileSrc={"wind_production_cba_mobile.svg"}
+ desktopSrc={"wind_production_cba_desktop2.svg"}
+/>
+#### We set a target of 23,700 terawatt hours of wind-based energy power by 2050, based upon a mix of 83.5% onshore power and 16.5% offshore power.[^"26"] We use a levelized cost of energy (LCOE) based on an unsubsidized analysis to determine power generation costs[^"21"], and apply a decline in LCOE totaling 37% by 2050, based upon the low range of the prediction of a 37% to 49% decline[^"7"], with annual growth rates starting high to meet near-future goals[^"2"] and gradually declining,[^"7"]
+
+<SolutionImages
+ mobileSrc={"wind_production_cba_mobile.svg"}
+ desktopSrc={"wind_production_cba_desktop.svg"}
+/>
+#### We set a target of 23,700 terawatt hours of wind-based energy power by 2050, based upon a mix of 83.5% onshore power and 16.5% offshore power.[^"26"] We use a levelized cost of energy (LCOE) based on an unsubsidized analysis to determine power generation costs[^"21"], and apply a decline in LCOE totaling 37% by 2050, based upon the low range of the prediction of a 37% to 49% decline[^"7"], with annual growth rates starting high to meet near-future goals[^"2"] and gradually declining,[^"7"]
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

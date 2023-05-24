@@ -15,7 +15,7 @@ const customLabelRenderer = (props) => {
       x={x + width + labelText} // {-10} for negative values (labelText)
       y={y + 8} // controls vertical placement of string to right of bar
       textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
-      fill="#313131"
+      fill="#212121"
       fontFamily="Roboto"
       fontSize="14px"
       fontWeight="bold"
@@ -243,7 +243,7 @@ const DynamicSingleBarChart = ({
           {/* this area defines the bar, barSize is the y axis thickness. strokeWidth creates a line around the bar. In effect, this makes a minimum size for the bars */}
           <Bar
             dataKey="barlength"
-            fill="#313131"
+            fill="#212121"
             barSize={6}
             stroke="#313131"
             strokeWidth={.1}
