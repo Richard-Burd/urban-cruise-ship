@@ -230,17 +230,7 @@ export const solutionData = [
     sources: null,
   },
   {
-    solution: `Natural Gas Plants with Carbon Capture - World`, //need to add links -jye
-    link: ``,
-    site: `energy`,
-    cost: 22.1,
-    benefit: 22.7,
-    co2: 100,
-    habitat: null,
-    sources: null,
-  },
-  {
-    solution: `Accelerate Investment into Solar Energy - World`,
+    solution: `Accelerate Investment into Solar Energy - World`, //need to add links
     link: ``,
     site: `energy`,
     cost: 1105.3,
