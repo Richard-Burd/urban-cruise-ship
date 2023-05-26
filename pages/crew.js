@@ -360,6 +360,79 @@ const Crew = () => {
         <br></br>
         <br></br>
         <br></br>
+
+        <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
+          jye
+        </div>
+        <div className="my-7 standard-font-3 text-justify text-lg">
+          <div>
+            jye serves as a researcher, assistant webmaster, software developer, and design consultant at Urban Cruise Ship
+          </div>
+          <div className="my-4"></div>
+          <div>
+            jye is an artist, performer, environmentalist, yoga student
+          </div>
+          <div className="my-4"></div>
+          <div>
+            more bio is coming soon
+          </div>
+        </div>
+        <center className="link-icon-set">
+          <a
+            href="https://jyeartstudio.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              src={`/images/external-link-icons/home.svg`}
+              alt={"Home icon"}
+              height={50}
+              width={100}
+            />
+          </a>
+          <a
+            href="mailto:jye.art.studio@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              src={`/images/external-link-icons/email.svg`}
+              alt={"Email icon"}
+              height={50}
+              width={100}
+            />
+          </a>
+        </center>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
+          Roseanne Morgan
+        </div>
+        <div className="my-7 standard-font-3 text-justify text-lg">
+          <div>
+            Roseanne Morgan is a new member of Urban Cruise Ship, her bio is coming soon.
+          </div>
+          <div className="my-4"></div>
+          <div>
+            
+          </div>
+          <div className="my-4"></div>
+          <div>
+        
+          </div>
+        </div>
+        <center className="link-icon-set">
+ 
+        </center>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>
