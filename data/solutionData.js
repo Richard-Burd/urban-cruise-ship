@@ -272,7 +272,7 @@ export const solutionData = [
   {
     solution: `Carbon Pricing`,
     link: ``,
-    site: `matter`,
+    site: `energy`,
     cost: 93.3,
     benefit: 137.5,
     co2: 1600,
@@ -329,7 +329,16 @@ export const solutionData = [
     habitat: null,
     sources: null,
   },
-
+  {
+    solution: `Standardized Food Labeling - U.S.`,
+    link: ``,
+    site: `Matter`,
+    cost: 381,
+    benefit: 552,
+    co2: 2253,
+    habitat: null,
+    sources: null,
+  },
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
     solution: `Sell Certain Types of Produce Loose - U.S.`,
     link: ``,
