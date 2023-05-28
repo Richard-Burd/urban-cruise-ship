@@ -76,7 +76,7 @@ const CustomYAxisTick = ({
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
       : "#1a1a1a";
-//This area controls the color highlight for solutions
+  //This area controls the color highlight for solutions
   return (
     <g transform={`translate(${x},${y})`}>
       <rect
@@ -87,17 +87,17 @@ const CustomYAxisTick = ({
         fill={backgroundColor || "transparent"}
       />
       <text //controls the insert of the title to the bar, (payload)
-            x={titleText - 1} // {460} for negative values, {0} for positive values
-            y={-1}
-            dy={5}
-            textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
-            fontFamily="Roboto"
-            fontSize="20px"
-            fontWeight="bold"
-          >
-            {payload.value}
-          </text>
-{/*       <Link href={link}> //commented out this clickable link functionality for the titles -jye
+        x={titleText - 1} // {460} for negative values, {0} for positive values
+        y={-1}
+        dy={5}
+        textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
+        fontFamily="Roboto"
+        fontSize="20px"
+        fontWeight="bold"
+      >
+        {payload.value}
+      </text>
+      {/*       <Link href={link}> //commented out this clickable link functionality for the titles -jye
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -144,15 +144,13 @@ const DynamicSolutionGraphic = ({
   fetchDataFunc,
 }) => {
   const [data, setData] = useState([]);
-  
+
   useEffect(() => {
     console.log(staticData);
     setData(staticData);
-}, [staticData]);
+  }, [staticData]);
 
-    
-
-      // Do something with these props
+  // Do something with these props
   console.log(barChartTitle);
   console.log(barChartTitle2);
   console.log(rightSide);
@@ -180,7 +178,7 @@ const DynamicSolutionGraphic = ({
     titleAnchor = "start";
   }
 
- let imageSrc;
+  let imageSrc;
   switch (chartType) {
     case "downArrow":
       imageSrc = "/images/tag_arrow_down.svg";
@@ -190,7 +188,7 @@ const DynamicSolutionGraphic = ({
       break;
     default:
       imageSrc = "/images/tag_arrow_down.svg";
-  } 
+  }
 
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
@@ -201,45 +199,45 @@ const DynamicSolutionGraphic = ({
 
   return (
     <>
- <div
-  style={{
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-    alignItems: "center",
-  }}
->
-  {barChartTitle && (
-    <h2
-      id="bar-chart"
-      style={{
-        fontFamily: "Roboto",
-        fontSize: "36px",
-        fontWeight: 600,
-        paddingTop: "20px",
-        paddingBottom: "15px",
-      }}
-    >
-      {barChartTitle}
-    </h2>
-  )}
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        {barChartTitle && (
+          <h2
+            id="bar-chart"
+            style={{
+              fontFamily: "Roboto",
+              fontSize: "36px",
+              fontWeight: 600,
+              paddingTop: "20px",
+              paddingBottom: "15px",
+            }}
+          >
+            {barChartTitle}
+          </h2>
+        )}
 
-  {barChartTitle2 && (
-    <h2
-      id="bar-chart-2"
-      style={{
-        fontFamily: "Roboto",
-        fontSize: "36px",
-        fontWeight: 600,
-        paddingTop: "0px",
-        paddingBottom: "15px",
-      }}
-    >
-      {barChartTitle2}
-    </h2>
-  )}
-</div>
+        {barChartTitle2 && (
+          <h2
+            id="bar-chart-2"
+            style={{
+              fontFamily: "Roboto",
+              fontSize: "36px",
+              fontWeight: 600,
+              paddingTop: "0px",
+              paddingBottom: "15px",
+            }}
+          >
+            {barChartTitle2}
+          </h2>
+        )}
+      </div>
       <div style={{ width: "100%", height: totalChartHeight }}>
         <BarChart
           width={895}
@@ -263,7 +261,7 @@ const DynamicSolutionGraphic = ({
             tick={(props) => {
               const entry = data.find((e) => e.name === props.payload.value);
               return (
-                <CustomYAxisTick 
+                <CustomYAxisTick
                   {...props}
                   data={data}
                   backgroundColor={
@@ -282,7 +280,7 @@ const DynamicSolutionGraphic = ({
             fill="#212121"
             barSize={10}
             stroke="#212121"
-            strokeWidth={.1}
+            strokeWidth={0.1}
           >
             <LabelList
               dataKey="displayedValue"
@@ -296,144 +294,153 @@ const DynamicSolutionGraphic = ({
               }
             />
           </Bar>
-          
         </BarChart>
       </div>
       {imageSrc && (
-  <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
-    <object type="image/svg+xml" width="895" height="231">
-      {/* SVG image */}
-<Image src={imageSrc} alt="SVG Image" style={{ position: "relative", zIndex: 0}} layout="fill"/>
-
-      {/* Text elements */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="100%"
-        height="100%"
-        viewBox="0 0 895 213"
-        style={{ position: "absolute", top: 0, left: 0, zIndex: 2 }}
-      >
-        {/* First line of text */}
-        <foreignObject x="198" y="60" width="195" height="32">
         <div
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            fontFamily: "Roboto",
-            fontSize: "22px",
-            fontWeight: "bold",
-            color: "#212121",
-            border: "none",
+            position: "relative",
           }}
         >
-          {arrowText1}
-        </div>
-      </foreignObject>
+          <object type="image/svg" width="895" height="231">
+            {/* SVG image */}
+            <Image
+              src={imageSrc}
+              alt="SVG Image"
+              style={{ position: "relative", zIndex: 0 }}
+              layout="fill"
+            />
 
- {/* Second text box */}
- <foreignObject x="198" y="92" width="195" height="32">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            fontFamily: "Roboto",
-            fontSize: "22px",
-            fontWeight: "bold",
-            color: "#212121",
-            border: "none",
-          }}
-        >
-          {arrowText2}
-        </div>
-      </foreignObject>
+            {/* Text elements */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 895 213"
+              style={{ position: "absolute", top: 0, left: 0, zIndex: 2 }}
+            >
+              {/* First line of text */}
+              <foreignObject x="198" y="60" width="195" height="32">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "100%",
+                    fontFamily: "Roboto",
+                    fontSize: "22px",
+                    fontWeight: "bold",
+                    color: "#212121",
+                    border: "none",
+                  }}
+                >
+                  {arrowText1}
+                </div>
+              </foreignObject>
 
-      {/* Third text box */}
-      <foreignObject x="198" y="124" width="195" height="32">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            fontFamily: "Roboto",
-            fontSize: "22px",
-            fontWeight: "bold",
-            color: "#212121",
-            border: "none",
-          }}
-        >
-          {arrowText3}
-        </div>
-      </foreignObject>
-      
-        {/* Masthead exhibit tag Line 1*/}
-        <foreignObject x="580" y="110" width="195" height="24">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "left",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            fontFamily: "Roboto",
-            fontSize: "18px",
-            color: "#212121",
-            border: "none",
-          }}
-        >
-          {mastheadText1}
-        </div>
-      </foreignObject>
+              {/* Second text box */}
+              <foreignObject x="198" y="92" width="195" height="32">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "100%",
+                    fontFamily: "Roboto",
+                    fontSize: "22px",
+                    fontWeight: "bold",
+                    color: "#212121",
+                    border: "none",
+                  }}
+                >
+                  {arrowText2}
+                </div>
+              </foreignObject>
 
- {/* Masthead line 2*/}
- <foreignObject x="580" y="134" width="195" height="24">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "left",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            fontFamily: "Roboto",
-            fontSize: "18px",
-            color: "#212121",
-            border: "none",
-          }}
-        >
-          {mastheadText2}
-        </div>
-      </foreignObject>
+              {/* Third text box */}
+              <foreignObject x="198" y="124" width="195" height="32">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "100%",
+                    fontFamily: "Roboto",
+                    fontSize: "22px",
+                    fontWeight: "bold",
+                    color: "#212121",
+                    border: "none",
+                  }}
+                >
+                  {arrowText3}
+                </div>
+              </foreignObject>
 
-      {/* Masthead line 3*/}
-      <foreignObject x="580" y="158" width="195" height="24">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "left",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            fontFamily: "Roboto",
-            fontSize: "18px",
-            color: "#212121",
-            border: "none",
-          }}
-        >
-          {mastheadText3}
-        </div>
-      </foreignObject>
-      </svg>
-    </object>
-  </div>
-)}
+              {/* Masthead exhibit tag Line 1*/}
+              <foreignObject x="580" y="110" width="195" height="24">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "left",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "100%",
+                    fontFamily: "Roboto",
+                    fontSize: "18px",
+                    color: "#212121",
+                    border: "none",
+                  }}
+                >
+                  {mastheadText1}
+                </div>
+              </foreignObject>
 
+              {/* Masthead line 2*/}
+              <foreignObject x="580" y="134" width="195" height="24">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "left",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "100%",
+                    fontFamily: "Roboto",
+                    fontSize: "18px",
+                    color: "#212121",
+                    border: "none",
+                  }}
+                >
+                  {mastheadText2}
+                </div>
+              </foreignObject>
+
+              {/* Masthead line 3*/}
+              <foreignObject x="580" y="158" width="195" height="24">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "left",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "100%",
+                    fontFamily: "Roboto",
+                    fontSize: "18px",
+                    color: "#212121",
+                    border: "none",
+                  }}
+                >
+                  {mastheadText3}
+                </div>
+              </foreignObject>
+            </svg>
+          </object>
+        </div>
+      )}
     </>
   );
 };
