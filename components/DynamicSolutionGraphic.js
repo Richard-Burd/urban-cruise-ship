@@ -144,15 +144,13 @@ const DynamicSolutionGraphic = ({
   fetchDataFunc,
 }) => {
   const [data, setData] = useState([]);
-
+  
   useEffect(() => {
-    async function fetchData() {
-      const fetchedData = await fetchDataFunc();
-      setData(fetchedData);
-    }
+    console.log(staticData);
+    setData(staticData);
+}, [staticData]);
 
-    fetchData();
-  }, [fetchDataFunc]);
+    
 
       // Do something with these props
   console.log(barChartTitle);
