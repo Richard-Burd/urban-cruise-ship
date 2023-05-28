@@ -1,5 +1,13 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import dynamic from "next/dynamic";
+
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
 export const problem = "Greenhouse Gas Emissions From Natural Gas";
 export const solution = "Replace Gas Peaker Plants With Storage";
 
