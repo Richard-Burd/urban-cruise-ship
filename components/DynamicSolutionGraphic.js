@@ -134,7 +134,6 @@ const DynamicSolutionGraphic = ({
   leftSide, //decreasing this will push the bar start to the left
   titleText,
   staticData, // New prop for handling direct data entry inside of solution mdx file
-  imageSrc = "/images/tag_arrow_down.svg",
   arrowText1,
   arrowText2,
   arrowText3,
@@ -142,12 +141,18 @@ const DynamicSolutionGraphic = ({
   mastheadText2 = "Exhibit constructed by",
   mastheadText3,
   chartType, // Prop for chart type, downArrow, mastheadOnly
+  fetchDataFunc,
 }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-      setData(staticData);
-    }, [staticData]); // Use staticData as a dependency
+    async function fetchData() {
+      const fetchedData = await fetchDataFunc();
+      setData(fetchedData);
+    }
+
+    fetchData();
+  }, [fetchDataFunc]);
 
       // Do something with these props
   console.log(barChartTitle);
@@ -177,8 +182,7 @@ const DynamicSolutionGraphic = ({
     titleAnchor = "start";
   }
 
-  //commented out to see if this is breaking things
-/*   let imageSrc;
+ let imageSrc;
   switch (chartType) {
     case "downArrow":
       imageSrc = "/images/tag_arrow_down.svg";
@@ -188,7 +192,7 @@ const DynamicSolutionGraphic = ({
       break;
     default:
       imageSrc = "/images/tag_arrow_down.svg";
-  } */ 
+  } 
 
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
@@ -261,7 +265,7 @@ const DynamicSolutionGraphic = ({
             tick={(props) => {
               const entry = data.find((e) => e.name === props.payload.value);
               return (
-                <CustomYAxisTick
+                <CustomYAxisTick 
                   {...props}
                   data={data}
                   backgroundColor={
@@ -299,9 +303,9 @@ const DynamicSolutionGraphic = ({
       </div>
       {imageSrc && (
   <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
-    <object type="image/svg+xml" width="895" height="210">
+    <object type="image/svg+xml" width="895" height="231">
       {/* SVG image */}
-
+<Image src={imageSrc} alt="SVG Image" style={{ position: "relative", zIndex: 0}} layout="fill"/>
 
       {/* Text elements */}
       <svg
