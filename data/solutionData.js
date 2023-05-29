@@ -231,7 +231,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Investment into Solar Energy - World`, //need to add links
-    link: ``,
+    link: `/energy/energy_production/solar`,
     site: `energy`,
     cost: 1105.3,
     benefit: 1591.2,
@@ -241,7 +241,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Investment into Wind Energy - World`,
-    link: ``,
+    link: `/energy/energy_production/wind`,
     site: `energy`,
     cost: 893.86,
     benefit: 1492.38,
@@ -251,7 +251,7 @@ export const solutionData = [
   },
   {
     solution: `Natural Gas Plants with Carbon Capture - World`,
-    link: ``,
+    link: `/energy/energy_production/gas`,
     site: `energy`,
     cost: 22.1,
     benefit: 22.7,
@@ -261,7 +261,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Development and Deployment of Geothermal - World`,
-    link: ``,
+    link: `/energy/energy_production/geothermal`,
     site: `energy`,
     cost: 23.6,
     benefit: 28.3,
@@ -271,7 +271,7 @@ export const solutionData = [
   },
   {
     solution: `Carbon Pricing`,
-    link: ``,
+    link: `/energy/`,
     site: `energy`,
     cost: 93.3,
     benefit: 137.5,
@@ -281,7 +281,7 @@ export const solutionData = [
   },
   {
     solution: `Europe Should Maintain Nuclear Fleet`,
-    link: ``,
+    link: `/energy/energy_production/nuclear`,
     site: `energy`,
     cost: 20,
     benefit: 60,
@@ -291,7 +291,7 @@ export const solutionData = [
   },
   {
     solution: `Methane Control on Coal Mines`,
-    link: ``,
+    link: `/energy/energy_production/coal`,
     site: `energy`,
     cost: 3.3,
     benefit: 31,
@@ -301,7 +301,7 @@ export const solutionData = [
   },
   {
     solution: `Natural Gas - Tighter Regulation on Leakage`,
-    link: ``,
+    link: `/energy/energy_production/gas`,
     site: `energy`,
     cost: 0.285,
     benefit: 40,
@@ -311,7 +311,7 @@ export const solutionData = [
   },
   {
     solution: `Methane Control on Oil Wells`,
-    link: ``,
+    link: `/energy/energy_production/oil`,
     site: `energy`,
     cost: 0.633,
     benefit: 49,
@@ -321,7 +321,7 @@ export const solutionData = [
   },
   {
     solution: `Electrofuels for Aviation`,
-    link: ``,
+    link: `/energy`,
     site: `energy`,
     cost: 381,
     benefit: 552,
@@ -331,7 +331,7 @@ export const solutionData = [
   },
   {
     solution: `Standardized Food Labeling - U.S.`,
-    link: ``,
+    link: `/matter/ag_dist/food_waste`,
     site: `Matter`,
     cost: 381,
     benefit: 552,
@@ -349,4 +349,14 @@ export const solutionData = [
     habitat: null,
     sources: null,
   }, */
+  {
+    solution: `Replace Peaker Plants with Storage - U.S.`,
+    link: `/energy/energy_production/gas#replace-gas-peaker-plants-with-storage.mdx`,
+    site: `Energy`,
+    cost: 17.22,
+    benefit: 27,
+    co2: 63.3,
+    habitat: null,
+    sources: null,
+  },
 ]
