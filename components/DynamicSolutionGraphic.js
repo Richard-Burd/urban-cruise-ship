@@ -6,6 +6,7 @@ import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 import Image from "next/image";
 
 // mobile responsive code
+
 const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(0);
   
@@ -22,6 +23,8 @@ const useWindowWidth = () => {
 
   return windowWidth;
 };
+
+
 
 const customLabelRenderer = (props) => {
   const { x, y, width, value, labelText, labelAnchor } = props;
@@ -61,9 +64,9 @@ const CustomYAxisTick = ({
  //text measurement tool for the highlighting function
  const canvas = document.createElement('canvas');
  const context = canvas.getContext('2d');
- context.font = '14px Roboto'; // Set the font and size to be analyzed
+ context.font = '20px Roboto'; // Set the font and size to be analyzed
  const metrics = context.measureText(payload.value);
- const textWidth = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
+ const textWidthLeft = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
 
 
 
@@ -101,20 +104,32 @@ const CustomYAxisTick = ({
       ? "white"
       : "#1a1a1a";
 
-      
+      const windowWidthThreshold = 635; // triggers the responsive changeover
       const windowWidth = useWindowWidth();
       const fontSize = windowWidth <= 600 ? (20 * windowWidth / 600) : 20;  // change these values to suit your design
 
   //This area controls the color highlight for solutions as well as the text to the left of the bar
   return (
+    
     <g transform={`translate(${x},${y})`}>
+      {windowWidth > windowWidthThreshold ? ( // check window width here
       <rect
-        x={-textWidth - 6}
+        x={-textWidthLeft - 6}
         y={-15}
-        width={textWidth + 9}
+        width={textWidthLeft + 9}
         height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
         fill={backgroundColor || "transparent"}
       />
+      ) : (
+        <rect
+        x={-textWidthLeft - 6}
+        y={-15}
+        width={textWidthLeft + 9}
+        height={60} // using a +0.1 height to ensure no spacing visible when rendering
+        fill={backgroundColor || "transparent"}
+      />
+      )}
+      {windowWidth > windowWidthThreshold ? ( // check window width here
       <text //controls the insert of the title to the bar, (payload)
         x={titleText - 1} // {460} for negative values, {0} for positive values
         y={-1}
@@ -126,6 +141,19 @@ const CustomYAxisTick = ({
       >
         {payload.value}
       </text>
+      ) : (
+        <text //controls the insert of the title to the bar, (payload)
+        x={textWidthLeft} // {460} for negative values, {0} for positive values
+        y={-20}
+        dy={5}
+        textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
+        fontFamily="Roboto"
+        fontSize={`20px`}  // Use the dynamic font size {`${fontSize}px`}
+        fontWeight="bold"
+      >
+        {payload.value}
+      </text>
+      )}
       {/*       <Link href={link}> //commented out this clickable link functionality for the titles -jye
         <a
           target="_blank"
@@ -161,7 +189,7 @@ const DynamicSolutionGraphic = ({
   barChartTitle2, // title lines defined separately for maximum control of line breaks
   scale = "positive", //this only provides positive number functionality atm
   rightSide, //increasing this will provide more room to the right side of the bar for numbers
-  leftSide, //decreasing this will push the bar start to the left
+  leftSide = textWidthLeft, //decreasing this will push the bar start to the left
   titleText,
   staticData, // New prop for handling direct data entry inside of solution mdx file
   arrowText1, // each of these lines are defined separately for maximum control of line breaks
@@ -214,8 +242,13 @@ const DynamicSolutionGraphic = ({
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
-
-  const barHeight = 29; //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
+  const barHeight = 29;
+  {windowWidth > 600 ? ( // check window width here
+    barHeight = barHeight 
+  ) : (
+    barHeight = 58 
+    )}
+    //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
   const totalChartHeight = filteredData.length * barHeight;
 /* responsive code for resizing NOTE: this seems to provide good responsiveness at a sizing of 410 - 635px width. The range between 635 and 895 hangs off, and below 410 breaks*/
   const windowWidth = useWindowWidth();
@@ -277,6 +310,7 @@ const DynamicSolutionGraphic = ({
             left: leftSide,
             bottom: 0,
           }}
+          minPointSize={2} // Set the desired minimum width for the bar
         >
           <XAxis type="number" hide={true} />
           <YAxis
@@ -288,6 +322,7 @@ const DynamicSolutionGraphic = ({
             tick={(props) => {
               const entry = data.find((e) => e.name === props.payload.value);
               return (
+                
                 <CustomYAxisTick
                   {...props}
                   data={data}
@@ -297,7 +332,7 @@ const DynamicSolutionGraphic = ({
                   link={entry ? entry.link : null}
                   titleText={titleText}
                   titleAnchor={titleAnchor}
-                  scale={windowWidth / 895} // scale based on the ratio of the current width to the original width
+                  scale={windowWidth / maxWindowWidth} // scale based on the ratio of the current width to the original width
                 />
               );
             }}
