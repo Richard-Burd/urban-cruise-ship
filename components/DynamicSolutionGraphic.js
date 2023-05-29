@@ -1,9 +1,27 @@
 import { getCSSPropertyValue } from "../utils";
-import React, { useState, useEffect } from "react";
+import React, { useLayoutEffect, useState, useEffect } from "react";
 import Link from "next/link";
 import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 
 import Image from "next/image";
+
+// mobile responsive code
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+  
+  useLayoutEffect(() => {
+    const updateWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    
+    window.addEventListener('resize', updateWidth);
+    updateWidth();
+    
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
+  return windowWidth;
+};
 
 const customLabelRenderer = (props) => {
   const { x, y, width, value, labelText, labelAnchor } = props;
@@ -47,6 +65,8 @@ const CustomYAxisTick = ({
  const metrics = context.measureText(payload.value);
  const textWidth = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
 
+
+
   useEffect(() => {
     const entry = data.find((e) => e.name === payload.value);
     if (entry && entry.site) {
@@ -80,7 +100,12 @@ const CustomYAxisTick = ({
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
       : "#1a1a1a";
-  //This area controls the color highlight for solutions
+
+      
+      const windowWidth = useWindowWidth();
+      const fontSize = windowWidth <= 600 ? (20 * windowWidth / 600) : 20;  // change these values to suit your design
+
+  //This area controls the color highlight for solutions as well as the text to the left of the bar
   return (
     <g transform={`translate(${x},${y})`}>
       <rect
@@ -96,7 +121,7 @@ const CustomYAxisTick = ({
         dy={5}
         textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
         fontFamily="Roboto"
-        fontSize="20px"
+        fontSize={`${fontSize}px`}  // Use the dynamic font size
         fontWeight="bold"
       >
         {payload.value}
@@ -131,14 +156,15 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSolutionGraphic = ({
-  barChartTitle,
-  barChartTitle2,
-  scale = "positive",
+  maxWindowWidth = 895, //sets the max width, this is set for solution dropdown box
+  barChartTitle, // title lines defined separately for maximum control of line breaks
+  barChartTitle2, // title lines defined separately for maximum control of line breaks
+  scale = "positive", //this only provides positive number functionality atm
   rightSide, //increasing this will provide more room to the right side of the bar for numbers
   leftSide, //decreasing this will push the bar start to the left
   titleText,
   staticData, // New prop for handling direct data entry inside of solution mdx file
-  arrowText1,
+  arrowText1, // each of these lines are defined separately for maximum control of line breaks
   arrowText2,
   arrowText3,
   arrowText4,
@@ -155,17 +181,7 @@ const DynamicSolutionGraphic = ({
     setData(staticData);
   }, [staticData]);
 
-  // Do something with these props
-  console.log(barChartTitle);
-  console.log(barChartTitle2);
-  console.log(rightSide);
-  console.log(leftSide);
-  console.log(chartType);
-  console.log(arrowText1);
-  console.log(arrowText2);
-  console.log(arrowText3);
-  console.log(mastheadText3);
-  console.log(data);
+
 
   let labelText;
   if (scale === "positive") {
@@ -201,6 +217,12 @@ const DynamicSolutionGraphic = ({
 
   const barHeight = 29; //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
   const totalChartHeight = filteredData.length * barHeight;
+/* responsive code for resizing NOTE: this seems to provide good responsiveness at a sizing of 410 - 635px width. The range between 635 and 895 hangs off, and below 410 breaks*/
+  const windowWidth = useWindowWidth();
+  const barChartWidth = Math.min(windowWidth, maxWindowWidth);
+
+  rightSide = windowWidth < maxWindowWidth ? Math.max(rightSide*(maxWindowWidth/windowWidth), 1) : rightSide;
+  leftSide = windowWidth < maxWindowWidth ? Math.max(leftSide*(windowWidth/maxWindowWidth), 1) : leftSide;;
 
   return (
     <>
@@ -245,7 +267,7 @@ const DynamicSolutionGraphic = ({
       </div>
       <div style={{ width: "100%", height: totalChartHeight }}>
         <BarChart
-          width={895}
+          width={barChartWidth}
           height={totalChartHeight}
           data={filteredData}
           layout="vertical"
@@ -275,6 +297,7 @@ const DynamicSolutionGraphic = ({
                   link={entry ? entry.link : null}
                   titleText={titleText}
                   titleAnchor={titleAnchor}
+                  scale={windowWidth / 895} // scale based on the ratio of the current width to the original width
                 />
               );
             }}
@@ -304,7 +327,8 @@ const DynamicSolutionGraphic = ({
       
 
 {/* this div allows you to put multiple elements side by side */}
-<div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "baseline" }}>
+<div style={{ display: "flex",   justifyContent: window.innerWidth <= 768 ? 'center' : 'space-evenly',
+  alignItems: window.innerWidth <= 768 ? 'center' : 'baseline', flexDirection: window.innerWidth <= 768 ? 'column' : 'row', flexWrap: 'wrap'}}>
   {/* this is the down arrow code which will presently hide itself if chartType says hide*/}
   {imageSrc && chartType !== "hide" &&(
   <object style={{ display: "flex", justifyContent: "left", position: "relative", top: 0, left: 0,
