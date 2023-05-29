@@ -189,7 +189,7 @@ const DynamicSolutionGraphic = ({
   barChartTitle2, // title lines defined separately for maximum control of line breaks
   scale = "positive", //this only provides positive number functionality atm
   rightSide, //increasing this will provide more room to the right side of the bar for numbers
-  leftSide = textWidthLeft, //decreasing this will push the bar start to the left
+  leftSide , //decreasing this will push the bar start to the left
   titleText,
   staticData, // New prop for handling direct data entry inside of solution mdx file
   arrowText1, // each of these lines are defined separately for maximum control of line breaks
@@ -254,8 +254,11 @@ const DynamicSolutionGraphic = ({
   const windowWidth = useWindowWidth();
   const barChartWidth = Math.min(windowWidth, maxWindowWidth);
 
+
+  
   rightSide = windowWidth < maxWindowWidth ? Math.max(rightSide*(maxWindowWidth/windowWidth), 1) : rightSide;
-  leftSide = windowWidth < maxWindowWidth ? Math.max(leftSide*(windowWidth/maxWindowWidth), 1) : leftSide;;
+  //TODO get the left side value reading a textWidth to auto resize. also check the font sizes.
+  leftSide = windowWidth < maxWindowWidth ? Math.max(leftSide*(windowWidth/maxWindowWidth), 1) -120 : leftSide;
 
   return (
     <>
