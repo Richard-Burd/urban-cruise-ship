@@ -76,7 +76,7 @@ const CustomYAxisTick = ({
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
       : "#1a1a1a";
-//This area controls the color highlight for solutions
+  //This area controls the color highlight for solutions
   return (
     <g transform={`translate(${x},${y})`}>
       <rect
@@ -87,17 +87,17 @@ const CustomYAxisTick = ({
         fill={backgroundColor || "transparent"}
       />
       <text //controls the insert of the title to the bar, (payload)
-            x={titleText - 1} // {460} for negative values, {0} for positive values
-            y={-1}
-            dy={5}
-            textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
-            fontFamily="Roboto"
-            fontSize="20px"
-            fontWeight="bold"
-          >
-            {payload.value}
-          </text>
-{/*       <Link href={link}> //commented out this clickable link functionality for the titles -jye
+        x={titleText - 1} // {460} for negative values, {0} for positive values
+        y={-1}
+        dy={5}
+        textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
+        fontFamily="Roboto"
+        fontSize="20px"
+        fontWeight="bold"
+      >
+        {payload.value}
+      </text>
+      {/*       <Link href={link}> //commented out this clickable link functionality for the titles -jye
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -145,15 +145,13 @@ const DynamicSolutionGraphic = ({
   fetchDataFunc,
 }) => {
   const [data, setData] = useState([]);
-  
+
   useEffect(() => {
     console.log(staticData);
     setData(staticData);
-}, [staticData]);
+  }, [staticData]);
 
-    
-
-      // Do something with these props
+  // Do something with these props
   console.log(barChartTitle);
   console.log(barChartTitle2);
   console.log(rightSide);
@@ -181,7 +179,7 @@ const DynamicSolutionGraphic = ({
     titleAnchor = "start";
   }
 
- let imageSrc;
+  let imageSrc;
   switch (chartType) {
     case "downArrow":
       imageSrc = "/images/tag_arrow_down.svg";
@@ -191,7 +189,7 @@ const DynamicSolutionGraphic = ({
       break;
     default:
       imageSrc = "/images/tag_arrow_down.svg";
-  } 
+  }
 
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
@@ -202,45 +200,45 @@ const DynamicSolutionGraphic = ({
 
   return (
     <>
- <div
-  style={{
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-    alignItems: "center",
-  }}
->
-  {barChartTitle && (
-    <h2
-      id="bar-chart"
-      style={{
-        fontFamily: "Roboto",
-        fontSize: "36px",
-        fontWeight: 600,
-        paddingTop: "20px",
-        paddingBottom: "15px",
-      }}
-    >
-      {barChartTitle}
-    </h2>
-  )}
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        {barChartTitle && (
+          <h2
+            id="bar-chart"
+            style={{
+              fontFamily: "Roboto",
+              fontSize: "36px",
+              fontWeight: 600,
+              paddingTop: "20px",
+              paddingBottom: "15px",
+            }}
+          >
+            {barChartTitle}
+          </h2>
+        )}
 
-  {barChartTitle2 && (
-    <h2
-      id="bar-chart-2"
-      style={{
-        fontFamily: "Roboto",
-        fontSize: "36px",
-        fontWeight: 600,
-        paddingTop: "0px",
-        paddingBottom: "15px",
-      }}
-    >
-      {barChartTitle2}
-    </h2>
-  )}
-</div>
+        {barChartTitle2 && (
+          <h2
+            id="bar-chart-2"
+            style={{
+              fontFamily: "Roboto",
+              fontSize: "36px",
+              fontWeight: 600,
+              paddingTop: "0px",
+              paddingBottom: "15px",
+            }}
+          >
+            {barChartTitle2}
+          </h2>
+        )}
+      </div>
       <div style={{ width: "100%", height: totalChartHeight }}>
         <BarChart
           width={895}
@@ -264,7 +262,7 @@ const DynamicSolutionGraphic = ({
             tick={(props) => {
               const entry = data.find((e) => e.name === props.payload.value);
               return (
-                <CustomYAxisTick 
+                <CustomYAxisTick
                   {...props}
                   data={data}
                   backgroundColor={
@@ -283,7 +281,7 @@ const DynamicSolutionGraphic = ({
             fill="#212121"
             barSize={10}
             stroke="#212121"
-            strokeWidth={.1}
+            strokeWidth={0.1}
           >
             <LabelList
               dataKey="displayedValue"
@@ -297,7 +295,6 @@ const DynamicSolutionGraphic = ({
               }
             />
           </Bar>
-          
         </BarChart>
       </div>
       
