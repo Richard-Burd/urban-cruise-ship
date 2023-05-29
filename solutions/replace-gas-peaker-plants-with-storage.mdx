@@ -1,5 +1,5 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
-
+import SolutionImages from "/components/SolutionImages.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -14,38 +14,102 @@ export const problem = "Greenhouse Gas Emissions From Natural Gas";
 export const solution = "Replace Gas Peaker Plants With Storage";
 
 
+## Description
+We recommend replacing fossil fuel based peaker plants with battery storage systems.
+
+## Background
+
+Natural gas is fairly inexpensive in North America, has half the lifecycle greenhouse gas emissions of coal, and relatively little other forms of air pollution. It is more difficult to make a case for replacing all gas with low-carbon sources. Peaker plants are designed to be able to ramp up and down quickly, and they tend to be less efficient and more expensive than more common combined cycle plants.
+
+Peaker plants are power plants that operate during periods of high electricity demand. Typically powered by oil or natural gas, they provide a crucial service in maintaining grid reliability, however, they also emit more CO2 when compared to base load plants. [^"1"]
+
+
+In the United States, two-thirds of peaker plants are situated in low-income communities. When the days are hot and air quality is already impacted, peakers are needed to meet increased energy demands, thereby worsening air quality.[^"3"]
+
+
+Battery storage systems store electricity from the grid when demand is low and release it when demand is high. They can be charged by any energy source, including renewable power.[^"1"] 
+- Can be charged by any energy source, including renewable energy[^"1"]
+- Less power is wasted[^"1"]
+- Response time is faster than peaker plants[^"1"]
 
 
 <DynamicSolutionGraphic
-  barChartTitle={"Replace Peaker Plants with Storage"}
+  barChartTitle={"Replace Peaker Plants with Storage - U.S."}
   barChartTitle2={""}
   rightSide={140}
   leftSide={100}
-  chartType={"downArrow"}
-  arrowText1={"319 million tons"}
-  arrowText2={"CO₂eq reduction"}
-  arrowText3={"annually"}
+  chartType={""}
+  arrowText1={"63.3 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
   mastheadText3={"jye 5-27-2023"}
-  fetchDataFunc={endeavorBenefitMinusCost}
- 
+  
+  
   staticData={[
     {
       name: "Benefit",
-      barlength: 118.4,
-      displayedValue: "$118.47",
+      barlength: 27,
+      displayedValue: "$27",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: 73.9,
-      displayedValue: "$73.97 Billions USD/year",
+      barlength: 17.22,
+      displayedValue: "$17.22 Billions USD/year",
       site: "null",
     },
   ]}
 />
 
 
-Natural gas is fairly inexpensive in North America, has half the lifecycle greenhouse gas emissions of coal, and relatively little other forms of air pollution. It is more difficult to make a case for replacing all gas with low-carbon sources. Peaker plants are designed to be able to ramp up and down quickly, and they tend to be less efficient and more expensive than more common combined cycle plants.
+#### Source. [^"6"] [^"8"]
+
+We restrict the scope to the US for the calculations here. Avoided CO2 emissions are the sum total of emissions annually from US peaker plants [^"8"]. We calculated the amount of power produced by these plants to determine how much would be needed in terms of PV plus storage[^"6"] to replace their capacity. [^"8"]
+
+<DynamicSolutionGraphic
+ barChartTitle={"Replace Peaker Plants with Storage - U.S."}
+  barChartTitle2={"Benefit Calculations"}
+  rightSide={100}
+  leftSide={300}
+  chartType={"hide"}
+  mastheadText3={"jye 5-27-2023"}
+  
+
+  staticData={[
+    {
+      name: "Avoided Peaker Energy Costs",
+      barlength: 23.86,
+      displayedValue: "$23.86",
+      link: "", //unused
+      site: "null",
+    },
+    {
+      name: "Social Carbon Costs",
+      barlength: 3.16,
+      displayedValue: "$3.16 Billions USD/year",
+      link: "", //unused
+      site: "null",
+    },
+  ]}
+/>
+
+We use the LCOE for peakers from lazard, and calculate the [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e). Battery storage systems are calculated for their emission totals which are subtracted from the avoided emission totals.
+
+
+
+
+[^"1"]:  [California Peaker Power Plants](https://www.psehealthyenergy.org/wp-content/uploads/2020/05/California.pdf). 
+[^"2"]:  [2023 Levelized Cost Of Energy+ | Lazard](https://www.lazard.com/research-insights/2023-levelized-cost-of-energyplus/). 
+[^"3"]:  [Mapping the Inequities of Fossil Peaker Power Plants - Clean Energy Group](https://www.cleanegroup.org/mapping-the-inequities-of-fossil-peaker-power-plants/). 
+[^"4"]:  [What is a Peaker Power Plant? - Clean Energy Group](https://www.cleanegroup.org/publication/what-is-a-peaker-power-plant/). 
+[^"5"]:  [America's Electricity Generating Capacity | American Public Power Association](https://www.publicpower.org/resource/americas-electricity-generating-capacity). 
+[^"6"]:  [2023 Levelized Cost Of Energy+ | Lazard](2023 Levelized Cost Of Energy+ | Lazard). 
+[^"7"]:  [Should lower-income countries build open cycle or combined cycle gas turbines? - Energy For Growth](https://www.energyforgrowth.org/memo/should-lower-income-countries-build-open-cycle-or-combined-cycle-gas-turbines/#:~:text=Emissions%20implications%20of%20OCGTs&text=A%20modern%20CCGT%20emits%20about,per%20MWh%20for%20an%20OCGT.). 
+[^"8"]:  [Peaker Plant Maps - Clean Energy Group](https://www.cleanegroup.org/initiatives/phase-out-peakers/maps/). 
+
+
+
 
 export default ({ children }) => 
   <SolutionDropdown 

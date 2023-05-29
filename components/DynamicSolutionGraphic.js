@@ -137,6 +137,7 @@ const DynamicSolutionGraphic = ({
   arrowText1,
   arrowText2,
   arrowText3,
+  arrowText4,
   mastheadText1 = "urbancruiseship.org",
   mastheadText2 = "Exhibit constructed by",
   mastheadText3,
@@ -299,22 +300,30 @@ const DynamicSolutionGraphic = ({
           
         </BarChart>
       </div>
-      {imageSrc && (
-  <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
-    <object type="image/svg+xml" width="895" height="231">
-      {/* SVG image */}
-<Image src={imageSrc} alt="SVG Image" style={{ position: "relative", zIndex: 0}} layout="fill"/>
+      
 
-      {/* Text elements */}
+{/* this div allows you to put multiple elements side by side */}
+<div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "baseline" }}>
+  {/* this is the down arrow code which will presently hide itself if chartType says hide*/}
+  {imageSrc && chartType !== "hide" &&(
+  <object style={{ display: "flex", justifyContent: "left", position: "relative", top: 0, left: 0,
+  flexDirection: "row",
+  alignItems: "center"}}>
+    <img src={"/images/tag_arrow_down.svg"} alt="SVG Image" style={{ zIndex: 0}} />
+    
+      {/* SVG image */}
+
+      {/* Text elements*/}
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="100%"
-        height="100%"
-        viewBox="0 0 895 213"
-        style={{ position: "absolute", top: 0, left: 0, zIndex: 2 }}
+        width="330"
+        height="180"
+        viewBox="0 0 330 180"
+        style={{ position: "absolute", top: 0, left: 0 }}
       >
-        {/* First line of text */}
-        <foreignObject x="198" y="60" width="195" height="32">
+
+        {/* First line of text, like a text box*/}
+        <foreignObject x="90" y="30" width="152" height="24">
         <div
           style={{
             display: "flex",
@@ -323,10 +332,10 @@ const DynamicSolutionGraphic = ({
             width: "100%",
             height: "100%",
             fontFamily: "Roboto",
-            fontSize: "22px",
+            fontSize: "20px",
             fontWeight: "bold",
             color: "#212121",
-            border: "none",
+            border: "",
           }}
         >
           {arrowText1}
@@ -334,7 +343,7 @@ const DynamicSolutionGraphic = ({
       </foreignObject>
 
  {/* Second text box */}
- <foreignObject x="198" y="92" width="195" height="32">
+ <foreignObject x="90" y="55" width="152" height="24">
         <div
           style={{
             display: "flex",
@@ -343,10 +352,10 @@ const DynamicSolutionGraphic = ({
             width: "100%",
             height: "100%",
             fontFamily: "Roboto",
-            fontSize: "22px",
+            fontSize: "20px",
             fontWeight: "bold",
             color: "#212121",
-            border: "none",
+            border: "",
           }}
         >
           {arrowText2}
@@ -354,7 +363,7 @@ const DynamicSolutionGraphic = ({
       </foreignObject>
 
       {/* Third text box */}
-      <foreignObject x="198" y="124" width="195" height="32">
+      <foreignObject x="90" y="80" width="152" height="24">
         <div
           style={{
             display: "flex",
@@ -363,18 +372,60 @@ const DynamicSolutionGraphic = ({
             width: "100%",
             height: "100%",
             fontFamily: "Roboto",
-            fontSize: "22px",
+            fontSize: "20px",
             fontWeight: "bold",
             color: "#212121",
-            border: "none",
+            border: "",
           }}
         >
           {arrowText3}
         </div>
       </foreignObject>
+            {/* Fourth text box */}
+            <foreignObject x="90" y="105" width="152" height="24">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            height: "100%",
+            fontFamily: "Roboto",
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#212121",
+            border: "",
+          }}
+        >
+          {arrowText4}
+        </div>
+      </foreignObject>
+      
+      </svg>
+    
+  </object> 
+  )}
+  
+{/* Masthead, contains logo and 3 lines. Adjust right: to move the element*/}
+  {imageSrc && (
+  <object style={{ display: "flex", justifyContent: "right", position: "relative", top: 0, right: 0,
+  flexDirection: "row",
+  alignItems: "center"}}>
+    <img src={"/images/masthead_only.svg"} alt="SVG Image" style={{ zIndex: 0}} />
+    
+      {/* SVG image */}
+
+      {/* Text elements */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="220"
+        height="180"
+        viewBox="0 0 220 180"
+        style={{ position: "absolute", top: 0, left: 0 }}
+      >
       
         {/* Masthead exhibit tag Line 1*/}
-        <foreignObject x="580" y="110" width="195" height="24">
+        <foreignObject x="20" y="95" width="200" height="24">
         <div
           style={{
             display: "flex",
@@ -384,8 +435,9 @@ const DynamicSolutionGraphic = ({
             height: "100%",
             fontFamily: "Roboto",
             fontSize: "18px",
+            fontWeight: "",
             color: "#212121",
-            border: "none",
+            border: "",
           }}
         >
           {mastheadText1}
@@ -393,7 +445,7 @@ const DynamicSolutionGraphic = ({
       </foreignObject>
 
  {/* Masthead line 2*/}
- <foreignObject x="580" y="134" width="195" height="24">
+ <foreignObject x="20" y="115" width="200" height="24">
         <div
           style={{
             display: "flex",
@@ -403,8 +455,9 @@ const DynamicSolutionGraphic = ({
             height: "100%",
             fontFamily: "Roboto",
             fontSize: "18px",
+            fontWeight: "",
             color: "#212121",
-            border: "none",
+            border: "",
           }}
         >
           {mastheadText2}
@@ -412,7 +465,7 @@ const DynamicSolutionGraphic = ({
       </foreignObject>
 
       {/* Masthead line 3*/}
-      <foreignObject x="580" y="158" width="195" height="24">
+      <foreignObject x="20" y="135" width="200" height="24">
         <div
           style={{
             display: "flex",
@@ -422,18 +475,19 @@ const DynamicSolutionGraphic = ({
             height: "100%",
             fontFamily: "Roboto",
             fontSize: "18px",
+            fontWeight: "",
             color: "#212121",
-            border: "none",
+            border: "",
           }}
         >
           {mastheadText3}
         </div>
       </foreignObject>
       </svg>
-    </object>
-  </div>
-)}
-
+    
+  </object> 
+  )}
+</div>
     </>
   );
 };
