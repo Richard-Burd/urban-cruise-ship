@@ -19,10 +19,9 @@ We recommend replacing fossil fuel based peaker plants with battery storage syst
 
 ## Background
 
-Natural gas is fairly inexpensive in North America, has half the lifecycle greenhouse gas emissions of coal, and relatively little other forms of air pollution. It is more difficult to make a case for replacing all gas with low-carbon sources. Peaker plants are designed to be able to ramp up and down quickly, and they tend to be less efficient and more expensive than more common combined cycle plants.
+Natural gas is fairly inexpensive in North America, has half the lifecycle greenhouse gas emissions of coal, and relatively little other forms of air pollution. Peaker plants are designed to be able to ramp up and down quickly, and they tend to be less efficient and more expensive than the more common combined cycle plants.
 
 Peaker plants are power plants that operate during periods of high electricity demand. Typically powered by oil or natural gas, they provide a crucial service in maintaining grid reliability, however, they also emit more CO2 when compared to base load plants. [^"1"]
-
 
 In the United States, two-thirds of peaker plants are situated in low-income communities. When the days are hot and air quality is already impacted, peakers are needed to meet increased energy demands, thereby worsening air quality.[^"3"]
 
@@ -32,6 +31,12 @@ Battery storage systems store electricity from the grid when demand is low and r
 - Less power is wasted[^"1"]
 - Response time is faster than peaker plants[^"1"]
 
+It is important to examine the embedded emissions of battery storage systems. Batteries come with their own set of environmental impacts.
+- Extraction involves intensive mining [^"9"]
+-- Open-pit mining clears away vegetation, increases erosion, and can contaminate local areas posing health hazards to surrounding plants, animals, and people[^"9"]
+-- Brine extraction is a water intensive process using between anywhere between 400 and 2 million liters of water per kilo of lithium[^"11"], and the toxic chemicals used in the processing of lithium can leach into the surrounding area[^"9"]
+
+Embedded emissions can also range widely due to the energy source, location, and other factors, ranging from 104 to 407 kg per MWh. [^"6"] In our scenario, we pair the storage system with Solar Photovoltaic energy source, and we reccomend renewable energy sources in all cases. Efficient battery storage systems can have the effect of increasing emissions if high-emitting plants are used to charge them.[^"6"]
 
 <DynamicSolutionGraphic
   barChartTitle={"Replace Peaker Plants with Storage - U.S."}
@@ -63,9 +68,9 @@ Battery storage systems store electricity from the grid when demand is low and r
 />
 
 
-#### Source. [^"6"] [^"8"]
+#### Source. [^"2"] [^"8"] [^"6"]
 
-We restrict the scope to the US for the calculations here. Avoided CO2 emissions are the sum total of emissions annually from US peaker plants [^"8"]. We calculated the amount of power produced by these plants to determine how much would be needed in terms of PV plus storage[^"6"] to replace their capacity. [^"8"]
+We calculate costs using a Levelized Cost of Energy (LCOE) of Battery Storage with Solar Photovoltaic[^"2"] mulitplied by the reported annual TWh of all peaker plants in the U.S.[^"8"] 
 
 <DynamicSolutionGraphic
  barChartTitle={"Replace Peaker Plants with Storage - U.S."}
@@ -94,7 +99,14 @@ We restrict the scope to the US for the calculations here. Avoided CO2 emissions
   ]}
 />
 
-We use the LCOE for peakers from lazard, and calculate the [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e). Battery storage systems are calculated for their emission totals which are subtracted from the avoided emission totals.
+#### Source. [^"2"] [^"8"] [^"6"]
+
+Benefits come in the form of avoided expendiatures on natural gas peaker energy costs, which range from $115 to $221 per megawatt hour (MWh)[^"2"]. This is compared to a combination of solar PV power plus battery storage, ranging from $110 to $131 per MWh[^"2"]
+Avoided CO₂ emissions are the reported total of peaker emissions annually[^"8"] minus the average embedded emissions of battery storage.[^"6"]
+
+## Implementation
+
+Battery storage is a neccesary part of reducing emissions, however, the technology itself has a significant human and environmental impact. The E.U. has implemented policies for battery collection, however this could incentivise companies to return batteries prior to their end of life. More effort is needed on reuse and recycling prior to production, so that batteries are designed in a way that the materials can be salvaged.[^"12"] 
 
 
 
@@ -104,11 +116,13 @@ We use the LCOE for peakers from lazard, and calculate the [social carbon cost](
 [^"3"]:  [Mapping the Inequities of Fossil Peaker Power Plants - Clean Energy Group](https://www.cleanegroup.org/mapping-the-inequities-of-fossil-peaker-power-plants/). 
 [^"4"]:  [What is a Peaker Power Plant? - Clean Energy Group](https://www.cleanegroup.org/publication/what-is-a-peaker-power-plant/). 
 [^"5"]:  [America's Electricity Generating Capacity | American Public Power Association](https://www.publicpower.org/resource/americas-electricity-generating-capacity). 
-[^"6"]:  [2023 Levelized Cost Of Energy+ | Lazard](2023 Levelized Cost Of Energy+ | Lazard). 
+[^"6"]:  [Bulk energy storage increases United States electricity system emissions](https://pubmed.ncbi.nlm.nih.gov/25629631/). 
 [^"7"]:  [Should lower-income countries build open cycle or combined cycle gas turbines? - Energy For Growth](https://www.energyforgrowth.org/memo/should-lower-income-countries-build-open-cycle-or-combined-cycle-gas-turbines/#:~:text=Emissions%20implications%20of%20OCGTs&text=A%20modern%20CCGT%20emits%20about,per%20MWh%20for%20an%20OCGT.). 
 [^"8"]:  [Peaker Plant Maps - Clean Energy Group](https://www.cleanegroup.org/initiatives/phase-out-peakers/maps/). 
-
-
+[^"9"]:  [Environmental Impacts of Lithium-ion Batteries | UL Research Institutes](https://ul.org/research/electrochemical-safety/getting-started-electrochemical-safety/environmental-impacts). 
+[^"10"]:  [The Environmental Impact of Battery Production for Electric Vehicles | Earth.Org](https://earth.org/environmental-impact-of-battery-production/). 
+[^"11"]:  [How much water is used to make the world’s batteries? - Danwatch](https://danwatch.dk/en/undersoegelse/how-much-water-is-used-to-make-the-worlds-batteries/). 
+[^"12"]:  [Lithium-ion batteries need to be greener and more ethical](https://www.nature.com/articles/d41586-021-01735-z). 
 
 
 export default ({ children }) => 
