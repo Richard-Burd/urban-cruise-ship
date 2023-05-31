@@ -67,7 +67,7 @@ const CustomYAxisTick = ({
  context.font = '20px Roboto'; // Set the font and size to be analyzed
  const metrics = context.measureText(payload.value);
  const textWidthLeft = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
-
+ 
 
 
   useEffect(() => {
@@ -184,29 +184,62 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSolutionGraphic = ({
-  maxWindowWidth = 895, //sets the max width, this is set for solution dropdown box
-  barChartTitle, // title lines defined separately for maximum control of line breaks
-  barChartTitle2, // title lines defined separately for maximum control of line breaks
-  scale = "positive", //this only provides positive number functionality atm
-  rightSide, //increasing this will provide more room to the right side of the bar for numbers
-  leftSide , //decreasing this will push the bar start to the left
+  maxWindowWidth = 895,
+  barChartTitle,
+  barChartTitle2,
+  scale = "positive",
+  leftSideProp,  // renamed to avoid confusion with state variable
+  rightSideProp, // renamed to avoid confusion with state variable
+  leftSideAdd,
+  rightSideAdd,
   titleText,
-  staticData, // New prop for handling direct data entry inside of solution mdx file
-  arrowText1, // each of these lines are defined separately for maximum control of line breaks
+  staticData,
+  arrowText1,
   arrowText2,
   arrowText3,
   arrowText4,
   mastheadText1 = "urbancruiseship.org",
   mastheadText2 = "Exhibit constructed by",
   mastheadText3,
-  chartType, // Prop for chart type, downArrow, mastheadOnly
+  chartType,
   fetchDataFunc,
 }) => {
   const [data, setData] = useState([]);
 
+  //dynamically sized left and right sides. TODO mobile friendly  
+  const [leftSide, setLeftSide] = useState(0);  // state variable
+  const [rightSide, setRightSide] = useState(0);  // state variable
+
   useEffect(() => {
-    console.log(staticData);
     setData(staticData);
+
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    context.font = '20px Roboto'; //measures for characters at this size
+    
+    let maxLeftSide = 0;
+    let maxRightSide = 0;
+
+    for (let i = 0; i < staticData.length; i++) {
+      const item = staticData[i];
+      //Computes the largest title to the left to make room
+      const metricsName = context.measureText(item.name);
+      const itemLeftSide = metricsName.width * 1.04;
+      if (itemLeftSide > maxLeftSide) {
+        maxLeftSide = itemLeftSide + 60;
+      }
+  
+      // Only computes the right side for the first item
+      if (i === 0) {
+        const metricsValue = context.measureText(item.displayedValue);
+        const itemRightSide = metricsValue.width * 1.04 ;
+        maxRightSide = itemRightSide + 120;
+      }
+    }
+    
+
+    setLeftSide(maxLeftSide);
+    setRightSide(maxRightSide);
   }, [staticData]);
 
 
