@@ -1,0 +1,156 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionImages from "/components/SolutionImages.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
+export const problem = "Disease Caused by Poor Water and Sanitation";
+export const solution = "Ultrafiltration Membrane Technology";
+
+
+## Description
+
+We examine ultrafiltration (UF) membrane technology for water treatment systems as part of a strategy to improve water quality, public health, and reduce bottled water consumption.
+
+## Background
+
+The UF membrane system is a water treatment technology that is capable Investments in water treatment technologies have been increasing globally. One such technology is the UF membrane system, which has been studied extensively.[^"1"]​
+
+UF membranes are capable of reducing water bourne pathogens under EPA reccomendations by a factor of 300. They also enhance the water's appearance, taste, and odor significantly. Health-wise, UF membranes effectively removed harmful pathogens, reducing the disease burden.[^"1"]
+
+In the United States, the burden of waterborne diseases is significant. It was estimated in 2014 that waterborne illnesses resulted in total direct healthcare costs of $3.33 billion.​[^"2"] 
+
+High quality tap water could improve consumer confidence and reduce reliance on bottled water.[^"9"] In the United States, 15.3 billion gallons of bottled water are sold annually.[^"5"] At 2.54 kg of carbon footprint per bottle, and assuming 100 billion 16.9 ounce bottles, the total carbon footprint is at least 2.5 MMTonsCO₂eq.[^"6"] The bottled water creates an environmental 1,400 to 3,500 times that of tap water.[^"7"]
+
+We estimate that increased perception of tapwater safety could reduce bottled water consumption by 20%.[^"9"]
+
+
+<DynamicSolutionGraphic
+  barChartTitle={"Install Ultrafine Membrane Water Treatment Technology"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"0.5 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye 5-27-2023"}
+  
+  
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: 10.9,
+      displayedValue: "$10.94",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0.65,
+      displayedValue: "$7.89 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+
+#### Source. [^"1"] [^"5"] [^"6"] [^"10"] [^"9"]
+
+Calculated average over a 20-year period by determining a per capita cost in the case study and multiplying by the US population projections for 2023.[^"10"] Plastic bottle reduction estimated as a 20% decrease.[^"9"]
+The aesthetic and health-related benefits of using UF membranes in water treatment were also analyzed. The mean annual value of these benefits was calculated to be 0.80 and 0.17 million Euros, respectively. 
+
+
+<DynamicSolutionGraphic
+  barChartTitle={"Install Ultrafine Membrane Water Treatment Technology"}
+  barChartTitle2={"Benefit Calculations"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"0.5 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye 5-27-2023"}
+  
+  
+  staticData={[
+    {
+      name: "Aesthetic",
+      barlength: 9.02,
+      displayedValue: "$9.02",
+      site: "null",
+    },
+    {
+      name: "Health",
+      barlength: 1.91,
+      displayedValue: "$1.91 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+
+#### Source. [^"1"] [^"5"] [^"6"] [^"10"] [^"9"]
+
+
+We find a per capita cost for the sweeden case and extrapolate this to the projected US population for 2023.[^"10"]
+
+This is calculated over a period of 20 years. There is a significant timeframe until there is a payoff, however, and only due to the aesthetic appeal. It is not until year thirteen that the benefits outweigh the costs. If you factor only the health benefits of improving c
+The aesthetic and health-related benefits of using UF membranes in water treatment were also analyzed. The mean annual value of these benefits was calculated to be 0.80 and 0.17 million Euros, respectively. Aesthetically, the water's appearance, taste, and odor improved significantly with UF membranes. Health-wise, UF membranes effectively removed harmful pathogens, reducing the disease burden.[^"1"]
+
+We calculate costs using a Levelized Cost of Energy (LCOE) of Battery Storage with Solar Photovoltaic[^"2"] mulitplied by the reported annual TWh of all peaker plants in the U.S.[^"8"] 
+
+<DynamicSolutionGraphic
+  barChartTitle={"Install Ultrafine Membrane Water Treatment Technology"}
+  barChartTitle2={"Cost Calculations"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"jye 5-27-2023"}
+  
+  
+  staticData={[
+    {
+      name: "Investment / Capital",
+      barlength: 5.642,
+      displayedValue: "$5.642",
+      site: "null",
+    },
+    {
+      name: "Health",
+      barlength: 2.257,
+      displayedValue: "$2.257 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+
+#### Source. [^"1"] [^"5"] [^"6"] [^"10"] [^"9"]
+
+
+
+## Implementation
+
+The transition to UF membrane technology for water treatment will require investment from the private sector and support from governments. While the initial investment cost might seem high, the long-term benefits in terms of improved water quality and public health are substantial.
+Potential obstacles to this transition could include lack of awareness about UF membrane technology, resistance to change from traditional water treatment methods, lobbyist from bottled water industry and regulatory issues. 
+
+
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
