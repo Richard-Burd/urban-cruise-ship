@@ -131,7 +131,7 @@ const CustomYAxisTick = ({
           dy={5}
           textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
           fontFamily="Roboto"
-          fontSize={`20px`} // Use the dynamic font size? TRASH
+          fontSize={`20px`} // Use the dynamic font size
           fontWeight="bold"
         >
           {payload.value}
@@ -179,7 +179,7 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSolutionGraphic = ({
-  maxWindowWidth = 1023,
+  maxWindowWidth = 1023, // used to trigger the resize responsive
   barChartTitle,
   barChartTitle2,
   scale = "positive",
@@ -213,7 +213,7 @@ const DynamicSolutionGraphic = ({
     context.font = "20px Roboto"; //measures for characters at this size
 
     let maxLeftSide = 0;
-    let maxRightSide = 0;
+    let minRightSide = 0;
 
     for (let i = 0; i < staticData.length; i++) {
       const item = staticData[i];
@@ -227,12 +227,12 @@ const DynamicSolutionGraphic = ({
       // Only computes the right side for the first item
       if (i === 0) {
         const metricsValue = context.measureText(item.displayedValue);
-        const itemRightSide = metricsValue.width * 1.14;
-        maxRightSide = itemRightSide + 120;
+        const itemRightSide = metricsValue.width * 1.04;
+        minRightSide = itemRightSide + 120; //sets normal rightside
       }
     }
     setLeftSide(maxLeftSide);
-    setRightSide(maxRightSide);
+    setRightSide(minRightSide);
   }, [staticData]);
 
   let labelText;
@@ -281,7 +281,7 @@ const DynamicSolutionGraphic = ({
   rightSide =
     windowWidth < maxWindowWidth
       ? Math.min(rightSide * (maxWindowWidth / windowWidth), rightSide)
-      : rightSide;
+      : rightSide+50;
   //TODO get the left side value reading a textWidth to auto resize. also check the font sizes.
   leftSide =
     windowWidth < maxWindowWidth
