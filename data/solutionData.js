@@ -8,6 +8,7 @@ export const solutionData = [
     co2: 11.4,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Ban Bottom Trawling - E.U.`,
@@ -18,6 +19,7 @@ export const solutionData = [
     co2: 5.5,
     habitat: 162000,
     sources: null,
+    subset: "ecology"
   },
   {
     solution: `Building Envelope Modeling Software Standardization - U.S.`,
@@ -28,6 +30,7 @@ export const solutionData = [
     co2: 11.9,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Clean Energy Standard - U.S.`,
@@ -38,6 +41,7 @@ export const solutionData = [
     co2: 1000,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Coal Phase Out - World`,
@@ -48,6 +52,7 @@ export const solutionData = [
     co2: 17000,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Construct a High-Voltage-Direct-Current Grid - U.S.`,
@@ -58,6 +63,7 @@ export const solutionData = [
     co2: 480,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Dam Decommissioning Fund - U.S.`,
@@ -68,6 +74,7 @@ export const solutionData = [
     co2: 0,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Development Set Patterns - U.S.`,
@@ -78,6 +85,7 @@ export const solutionData = [
     co2: 21.2,
     habitat: 42000,
     sources: null,
+    subset: "misc"
   },
   {
     solution: `Fund Wave Energy Research - U.S.`,
@@ -88,6 +96,7 @@ export const solutionData = [
     co2: 2.9,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Greater Up-front Incentives for Electric Vehicles - U.S.`,
@@ -98,6 +107,7 @@ export const solutionData = [
     co2: 130,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Heat Pump Mandate - U.S.`,
@@ -108,6 +118,7 @@ export const solutionData = [
     co2: 0.044,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Heat Recovery Loan Program - U.S`,
@@ -118,6 +129,7 @@ export const solutionData = [
     co2: 14.9,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Increase Marine Protected Areas from 8% to 30% of the Ocean - World`,
@@ -128,6 +140,7 @@ export const solutionData = [
     co2: 680,
     habitat: 78000000,
     sources: null,
+    subset: "ecology"
   },
   {
     solution: `Loosen Floor Area Ratio Rules for Residential - U.S.`,
@@ -138,6 +151,7 @@ export const solutionData = [
     co2: 2.6,
     habitat: 7947,
     sources: null,
+    subset: "misc"
   },
   {
     solution: `Loosen Minimum Parking Lot Size Rules - U.S.`,
@@ -148,6 +162,7 @@ export const solutionData = [
     co2: 4.5,
     habitat: 2456,
     sources: null,
+    subset: "misc"
   },
   {
     solution: `Meat Tax - U.S.`,
@@ -158,6 +173,7 @@ export const solutionData = [
     co2: 135,
     habitat: 341000,
     sources: null,
+    subset: "healthCampaigns"
   },
   {
     solution: `Modular Island Desalination - Mediterranean Islands`,
@@ -168,6 +184,7 @@ export const solutionData = [
     co2: 0.050,
     habitat: null,
     sources: null,
+    subset: "misc"
   },
   {
     solution: `Plant-based Inf. Advocacy Campaign - U.S.`,
@@ -178,6 +195,7 @@ export const solutionData = [
     co2: 88,
     habitat: null,
     sources: null,
+    subset: "misc"
   },
   {
     solution: `Remove Parking Minimums - U.S.`,
@@ -188,6 +206,7 @@ export const solutionData = [
     co2: 0.001,
     habitat: 139,
     sources: null,
+    subset: "misc"
   },
   {
     solution: `School Lunch Meat Removal - U.S.`,
@@ -198,6 +217,7 @@ export const solutionData = [
     co2: 27.8,
     habitat: null,
     sources: null,
+    subset: "healthCampaigns"
   },
   {
     solution: `Scientific Whaling Ban - World`,
@@ -208,6 +228,7 @@ export const solutionData = [
     co2: 0.240,
     habitat: null,
     sources: null,
+    subset: "ecology"
   },
   {
     solution: `Set Ship Speed Limits - World`,
@@ -218,6 +239,7 @@ export const solutionData = [
     co2: 93.2,
     habitat: null,
     sources: null,
+    subset: "ecology"
   },
   {
     solution: `Wildlife Corridors - U.S.`,
@@ -228,6 +250,7 @@ export const solutionData = [
     co2: 0,
     habitat: null,
     sources: null,
+    subset: "ecology"
   },
   {
     solution: `Accelerate Investment into Solar Energy - World`, //need to add links
@@ -238,6 +261,7 @@ export const solutionData = [
     co2: 8770.0,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Accelerate Investment into Wind Energy - World`,
@@ -248,6 +272,7 @@ export const solutionData = [
     co2: 8225.0,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Natural Gas Plants with Carbon Capture - World`,
@@ -258,6 +283,7 @@ export const solutionData = [
     co2: 100,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Accelerate Development and Deployment of Geothermal - World`,
@@ -268,6 +294,7 @@ export const solutionData = [
     co2: 16.0,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Carbon Pricing`,
@@ -278,6 +305,7 @@ export const solutionData = [
     co2: 1600,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Europe Should Maintain Nuclear Fleet`,
@@ -288,6 +316,7 @@ export const solutionData = [
     co2: 172,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Methane Control on Coal Mines`,
@@ -298,6 +327,7 @@ export const solutionData = [
     co2: 620,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Natural Gas - Tighter Regulation on Leakage`,
@@ -308,6 +338,7 @@ export const solutionData = [
     co2: 800,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Methane Control on Oil Wells`,
@@ -318,6 +349,7 @@ export const solutionData = [
     co2: 980,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Electrofuels for Aviation`,
@@ -328,6 +360,7 @@ export const solutionData = [
     co2: 2253,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
   {
     solution: `Standardized Food Labeling - U.S.`,
@@ -338,6 +371,7 @@ export const solutionData = [
     co2: 2253,
     habitat: null,
     sources: null,
+    subset: "misc"
   },
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
     solution: `Sell Certain Types of Produce Loose - U.S.`,
@@ -348,6 +382,7 @@ export const solutionData = [
     co2: 0.6,
     habitat: null,
     sources: null,
+    subset: "misc"
   }, */
   {
     solution: `Replace Peaker Plants with Storage - U.S.`,
@@ -358,5 +393,6 @@ export const solutionData = [
     co2: 63.3,
     habitat: null,
     sources: null,
+    subset: "energy"
   },
 ]

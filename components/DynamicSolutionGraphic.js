@@ -100,9 +100,9 @@ const CustomYAxisTick = ({
       ? "white"
       : "#1a1a1a";
 
-  const windowWidthThreshold = 635; // triggers the responsive changeover
+  const windowWidthThreshold = 1023; // triggers the responsive changeover
   const windowWidth = useWindowWidth();
-  const fontSize = windowWidth <= 600 ? (20 * windowWidth) / 600 : 20; // change these values to suit your design
+  //const fontSize = windowWidth <= 600 ? (20 * windowWidth) / 600 : 20; // change these values to suit your design
 
   //This area controls the color highlight for solutions as well as the text to the left of the bar
   return (
@@ -131,7 +131,7 @@ const CustomYAxisTick = ({
           dy={5}
           textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
           fontFamily="Roboto"
-          fontSize={`${fontSize}px`} // Use the dynamic font size
+          fontSize={`20px`} // Use the dynamic font size? TRASH
           fontWeight="bold"
         >
           {payload.value}
@@ -179,7 +179,7 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSolutionGraphic = ({
-  maxWindowWidth = 895,
+  maxWindowWidth = 1023,
   barChartTitle,
   barChartTitle2,
   scale = "positive",
@@ -227,7 +227,7 @@ const DynamicSolutionGraphic = ({
       // Only computes the right side for the first item
       if (i === 0) {
         const metricsValue = context.measureText(item.displayedValue);
-        const itemRightSide = metricsValue.width * 1.04;
+        const itemRightSide = metricsValue.width * 1.14;
         maxRightSide = itemRightSide + 120;
       }
     }
@@ -280,12 +280,12 @@ const DynamicSolutionGraphic = ({
 
   rightSide =
     windowWidth < maxWindowWidth
-      ? Math.max(rightSide * (maxWindowWidth / windowWidth), 1)
+      ? Math.min(rightSide * (maxWindowWidth / windowWidth), rightSide)
       : rightSide;
   //TODO get the left side value reading a textWidth to auto resize. also check the font sizes.
   leftSide =
     windowWidth < maxWindowWidth
-      ? Math.max(leftSide * (windowWidth / maxWindowWidth), 1) - 120
+      ? -50
       : leftSide;
 
   return (
