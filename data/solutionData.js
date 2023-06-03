@@ -365,7 +365,7 @@ export const solutionData = [
   {
     solution: `Standardized Food Labeling - U.S.`,
     link: `/matter/ag_dist/food_waste`,
-    site: `Matter`,
+    site: `matter`,
     cost: 381,
     benefit: 552,
     co2: 2253,
@@ -373,6 +373,21 @@ export const solutionData = [
     sources: null,
     subset: "misc"
   },
+
+  {
+    solution: `Replace Peaker Plants with Storage - U.S.`,
+    link: `/energy/energy_production/gas#replace-gas-peaker-plants-with-storage.mdx`,
+    site: `energy`,
+    cost: 17.22,
+    benefit: 27,
+    co2: 63.3,
+    habitat: null,
+    sources: null,
+    subset: "energy"
+  },
+  
+]
+
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
     solution: `Sell Certain Types of Produce Loose - U.S.`,
     link: ``,
@@ -384,15 +399,3 @@ export const solutionData = [
     sources: null,
     subset: "misc"
   }, */
-  {
-    solution: `Replace Peaker Plants with Storage - U.S.`,
-    link: `/energy/energy_production/gas#replace-gas-peaker-plants-with-storage.mdx`,
-    site: `Energy`,
-    cost: 17.22,
-    benefit: 27,
-    co2: 63.3,
-    habitat: null,
-    sources: null,
-    subset: "energy"
-  },
-]
