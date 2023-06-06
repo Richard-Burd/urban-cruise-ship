@@ -254,7 +254,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Investment into Solar Energy - World`, //need to add links
-    link: `/energy/energy_production/solar`,
+    link: `/energy/energy_production/solar#solar-power`,
     site: `energy`,
     cost: 1105.3,
     benefit: 1591.2,
@@ -265,7 +265,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Investment into Wind Energy - World`,
-    link: `/energy/energy_production/wind`,
+    link: `/energy/energy_production/wind#wind-power`,
     site: `energy`,
     cost: 893.86,
     benefit: 1492.38,
@@ -276,7 +276,7 @@ export const solutionData = [
   },
   {
     solution: `Natural Gas Plants with Carbon Capture - World`,
-    link: `/energy/energy_production/gas`,
+    link: `/energy/energy_production/gas#gas-power`,
     site: `energy`,
     cost: 22.1,
     benefit: 22.7,
@@ -287,7 +287,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Development and Deployment of Geothermal - World`,
-    link: `/energy/energy_production/geothermal`,
+    link: `/energy/energy_production/geothermal#geothermal-power`,
     site: `energy`,
     cost: 23.6,
     benefit: 28.3,
@@ -298,7 +298,7 @@ export const solutionData = [
   },
   {
     solution: `Carbon Pricing`,
-    link: `/energy/`,
+    link: `/energy/energy_socioeconomics/carbon_pricing_e#carbon-pricing`,
     site: `energy`,
     cost: 93.3,
     benefit: 137.5,
@@ -309,7 +309,7 @@ export const solutionData = [
   },
   {
     solution: `Europe Should Maintain Nuclear Fleet`,
-    link: `/energy/energy_production/nuclear`,
+    link: `/energy/energy_production/nuclear#europe-should-maintain-nuclear-fleet`,
     site: `energy`,
     cost: 20,
     benefit: 60,
@@ -320,7 +320,7 @@ export const solutionData = [
   },
   {
     solution: `Methane Control on Coal Mines`,
-    link: `/energy/energy_production/coal`,
+    link: `/energy/energy_production/coal#coal-methane`,
     site: `energy`,
     cost: 3.3,
     benefit: 31,
@@ -331,7 +331,7 @@ export const solutionData = [
   },
   {
     solution: `Natural Gas - Tighter Regulation on Leakage`,
-    link: `/energy/energy_production/gas`,
+    link: `/energy/energy_production/gas#tighter-regulation-on-leakage-rates`,
     site: `energy`,
     cost: 0.285,
     benefit: 40,
@@ -342,7 +342,7 @@ export const solutionData = [
   },
   {
     solution: `Methane Control on Oil Wells`,
-    link: `/energy/energy_production/oil`,
+    link: `/energy/energy_production/oil#methane-oil`,
     site: `energy`,
     cost: 0.633,
     benefit: 49,
@@ -353,7 +353,7 @@ export const solutionData = [
   },
   {
     solution: `Electrofuels for Aviation`,
-    link: `/energy`,
+    link: `/energy/energy_distribution/synfuels#electrofuels-for-aviation`,
     site: `energy`,
     cost: 381,
     benefit: 552,
@@ -364,7 +364,7 @@ export const solutionData = [
   },
   {
     solution: `Standardized Food Labeling - U.S.`,
-    link: `/matter/ag_dist/food_waste`,
+    link: `/matter/ag_dist/food_waste#food-waste-sell-loose-us`,
     site: `matter`,
     cost: 381,
     benefit: 552,
