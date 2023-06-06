@@ -376,7 +376,7 @@ export const solutionData = [
 
   {
     solution: `Replace Peaker Plants with Storage - U.S.`,
-    link: `/energy/energy_production/gas#replace-gas-peaker-plants-with-storage.mdx`,
+    link: `/energy/energy_production/gas#replace-gas-peaker-plants-with-storage`,
     site: `energy`,
     cost: 17.22,
     benefit: 27,
