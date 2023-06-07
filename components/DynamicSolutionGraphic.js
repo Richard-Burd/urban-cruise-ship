@@ -414,9 +414,11 @@ this div allows you to put multiple elements side by side */}
               alignItems: "center",
             }}
           >
-            <img
-              src={"/images/tag_arrow_down.svg"}
-              alt="SVG Image"
+            <Image
+              src={"/images/tag_arrow_down.png"}
+              alt="PNG Image"
+              width="330"
+              height="180"
               style={{ zIndex: 0 }}
             />
 
@@ -525,9 +527,11 @@ this div allows you to put multiple elements side by side */}
               alignItems: "center",
             }}
           >
-            <img
-              src={"/images/masthead_only.svg"}
+            <Image
+              src={"/images/masthead_only.png"}
               alt="SVG Image"
+              width="220"
+              height="180"
               style={{ zIndex: 0 }}
             />
 
