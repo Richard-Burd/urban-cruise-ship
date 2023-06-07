@@ -7,6 +7,7 @@ import Image from "next/image";
 
 // mobile responsive code
 
+//gets the window width of the whole page, which is usually 1024 if on desktop
 const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(0);
 
@@ -137,14 +138,10 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSolutionGraphic = ({
-  maxWindowWidth = 1023, // used to trigger the resize responsive
+  maxWindowWidth = 1023, // used to trigger the resize of the chart to mobile friendly
   barChartTitle,
   barChartTitle2,
   scale = "positive",
-  leftSideProp, // renamed to avoid confusion with state variable
-  rightSideProp, // renamed to avoid confusion with state variable
-  leftSideAdd,
-  rightSideAdd,
   titleText,
   staticData,
   arrowText1,
@@ -155,7 +152,7 @@ const DynamicSolutionGraphic = ({
   mastheadText2 = "Exhibit constructed by",
   mastheadText3,
   chartType,
-  fetchDataFunc,
+  fetchDataFunc, //data passed as props directly, UNUSED TRASH?
 }) => {
   const [data, setData] = useState([]);
 
@@ -193,6 +190,7 @@ const DynamicSolutionGraphic = ({
     setRightSide(minRightSide);
   }, [staticData]);
 
+  //This is not used, but im leaving it here in case we need to figure out negative numbers
   let labelText;
   if (scale === "positive") {
     labelText = 10;
@@ -224,27 +222,29 @@ const DynamicSolutionGraphic = ({
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
-  const barHeight = 29;
-  {
-    windowWidth > 600 // check window width here
-      ? (barHeight = barHeight)
-      : (barHeight = 58);
-  }
-  //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
-  const totalChartHeight = filteredData.length * barHeight;
-  /* responsive code for resizing NOTE: this seems to provide good responsiveness at a sizing of 410 - 635px width. The range between 635 and 895 hangs off, and below 410 breaks*/
-  const windowWidth = useWindowWidth();
-  const barChartWidth = Math.min(windowWidth, maxWindowWidth);
 
+  //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
+  
+  
+  /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
+  const windowWidth = useWindowWidth();
+  const barChartWidth = 
+    windowWidth > maxWindowWidth // sets mobile or desktop configuration based on windowwidth
+      ? 900 
+      : 340;
+  const barHeight = windowWidth > maxWindowWidth //sets bar height spacing based on window width
+      ? 29 
+      : 58;
+const totalChartHeight = filteredData.length * barHeight; //sets total chart height
   rightSide =
-    windowWidth < maxWindowWidth
-      ? Math.min(rightSide * (maxWindowWidth / windowWidth), rightSide)
-      : rightSide+50;
-  //TODO get the left side value reading a textWidth to auto resize. also check the font sizes.
+    windowWidth < maxWindowWidth // adds spacing for the right side that has already been dynamically calculated or removes it if mobile configuration
+      ? rightSide //desktop
+      : rightSide+50; //mobile
+ 
   leftSide =
-    windowWidth < maxWindowWidth
-      ? -50
-      : leftSide;
+    windowWidth < maxWindowWidth //desktop config or mobile config
+      ? -50 //desktop
+      : leftSide; //mobile
 
   return (
     <>
@@ -320,7 +320,7 @@ const DynamicSolutionGraphic = ({
                   link={entry ? entry.link : null}
                   titleText={titleText}
                   titleAnchor={titleAnchor}
-                  scale={windowWidth / maxWindowWidth} // scale based on the ratio of the current width to the original width
+                  // scale={windowWidth / maxWindowWidth} // TRASH? 
                 />
               );
             }}
@@ -353,9 +353,9 @@ this div allows you to put multiple elements side by side */}
       <div
         style={{
           display: "flex",
-          justifyContent: window.innerWidth <= 768 ? "center" : "space-evenly",
-          alignItems: window.innerWidth <= 768 ? "center" : "baseline",
-          flexDirection: window.innerWidth <= 768 ? "column" : "row",
+          justifyContent: window.innerWidth <= 1024 ? "center" : "space-evenly",
+          alignItems: window.innerWidth <= 1024 ? "center" : "baseline",
+          flexDirection: window.innerWidth <= 1024 ? "column" : "row",
           flexWrap: "wrap",
         }}
       >
