@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import Link from "next/link";
 import { useTable, useSortBy } from "react-table";
 import ReactMarkdown from "react-markdown";
 import { solutionData } from '../data/solutionData';
 import { endeavorData } from '../data/endeavorData';
 
-//PLACEHOLDER UNWORKED
 
 // This allows us to combine endeavors & solutions into one table
 const endeavorDataWithSolutionKey = endeavorData.map(item => {
@@ -96,7 +95,7 @@ endeavorDataWithSolutionKey.sort((a, b) => {
 });
 
 // This function grabs the data above and translates it into data for the table
-function SolutionEndeavorTable() {
+function SolutionEndeavorSubsetTable(props) {
   // It uses the React "useMemo" hook that allows you to memoize the result of a function
   const columns = React.useMemo(
     () => [
@@ -222,8 +221,22 @@ function SolutionEndeavorTable() {
   const combinedData = solutionData.concat(endeavorDataWithSolutionKey);
 
   // In functional React components, useState is used to define state
-  const [data, setData] = useState(combinedData);
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
 
+    // Add a useEffect hook to filter data whenever subsetLink prop changes
+    useEffect(() => {
+      if (props.subset) {
+        const newFilteredData = combinedData.filter(
+          (item) => item.subset === props.subset
+        );
+    
+        setFilteredData(newFilteredData);
+        setData(newFilteredData); // Update the data state as well
+      }
+    }, [props.subset, combinedData]);
+  
+    
   // This creates an instance of the React table
   const tableInstance = useTable({ columns, data }, useSortBy);
 
@@ -315,4 +328,4 @@ function rowStyle(row) {
   return row.site + "-table-background-color";
 }
 
-export default SolutionEndeavorTable;
+export default SolutionEndeavorSubsetTable;
