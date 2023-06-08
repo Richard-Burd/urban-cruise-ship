@@ -1,16 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import convertToUrlSlug from "../lib/convertToUrlSlug";
 
 const SolutionDropdown = ({ problem, solution, children }) => {
   const [isVisible, setVisible] = useState(false);
-
-  function convertToUrlSlug(text) {
-    return encodeURIComponent(text
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9]+/g, "-")
-      .replace(/(^-|-$)+/g, "")
-    );
-  }
 
   return (
     <>

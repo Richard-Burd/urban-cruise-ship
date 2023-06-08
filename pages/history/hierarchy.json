@@ -13,6 +13,7 @@
      "focus_area_name":"Solutions",
      "focus_area_url":"solutions",
      "articles": [
+      { "article_title": "Subsets", "article_url": "subsets" },
       { "article_title": "Efficiency", "article_title_two": "(Benefit / Cost)", "article_url": "benefit-over-cost" },
       { "article_title": "Net Benefit", "article_title_two": "(Benefit - Cost)", "article_url": "benefit-minus-cost" },
       { "article_title": "Cost & Efficiency Comparison", "article_url": "cost-efficiency-comparison" },
@@ -24,6 +25,7 @@
      "focus_area_name":"Solutions & Endeavors",
      "focus_area_url":"solutions-and-endeavors",
      "articles": [
+      { "article_title": "Subsets", "article_url": "subsets" },
       { "article_title": "Efficiency", "article_title_two": "(Benefit / Cost)", "article_url": "benefit-over-cost" },
       { "article_title": "Net Benefit", "article_title_two": "(Benefit - Cost)", "article_url": "benefit-minus-cost" },
       { "article_title": "Cost & Efficiency Comparison", "article_url": "cost-efficiency-comparison" }

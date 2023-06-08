@@ -8,7 +8,7 @@ const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m
   ssr: false,
 });
 
-const EndeavorDropdown = ({ title, children }) => {
+const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
   const [isVisible, setVisible] = useState(false);
   const router = useRouter();
 
@@ -48,7 +48,30 @@ const EndeavorDropdown = ({ title, children }) => {
               }}
             >
               <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-200 border border-slate-900 mx-2 sm:mx-16 endeavor-dropdown-elliptical-geometry endeavor-dropdown-shadow-geometry -translate-y-24">
-                <div className="pt-20">{children}</div>
+                <div className="pt-20">
+                  <center>contents will go here</center>
+                  {/*
+                      Eventually this component will replace the <EndeavorDropdown /> component
+                      This component takes in "focusAreaUrl" as a prop so you can display either
+                      solutions or solutions and endeavors, depending on the parent component.
+
+                      Pseudocode:
+                      - Get data from the ./data directory; either solutions or solutions and endeavors
+                        ...depending on the "focusAreaUrl" value.
+                      - Create a [displayData] array of data you want to display in the components below:
+                          1.) get the right data based on "focusAreaUrl"
+                          2.) solutionData has the subset in the "subset" property
+                          3.) endeavorData also now has the subset in the "subset" property 
+                                if "subset" == this SolutionEndeavorDropdown's "title" prop..
+                                   pull it into the [displayData] array
+                      - Import the bar chart components from the ./components directory
+                          1.) pass in the [displayData] array
+                          2.) render the items in the [displayData] array
+                      - Import the table component from the ./components directory
+                          1.) pass in the [displayData] array
+                          2.) render the items in the [displayData] array
+                  */}
+                </div>
               </div>
             </motion.div>
           )}
@@ -75,4 +98,4 @@ const EndeavorDropdown = ({ title, children }) => {
   );
 };
 
-export default EndeavorDropdown;
+export default SolutionEndeavorDropdown;
