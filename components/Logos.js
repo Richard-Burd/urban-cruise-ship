@@ -21,7 +21,7 @@ const Logos = (props) => {
 
   return (
     <>
-      <nav className="flex justify-between mx-8 overflow-visible">
+      <nav className="md:flex md:justify-between ml-4 mr-2 md:mx-8 md:overflow-visible">
         {isASubDirectory ? (
           <div className="active:scale-100 transition hover:-translate-y-1 hover:scale-105 duration-200">
             <a href={`/${props.site}`}>

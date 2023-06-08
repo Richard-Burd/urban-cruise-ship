@@ -31,7 +31,7 @@ export default function Home() {
             priority // https://nextjs.org/docs/basic-features/image-optimization#priority
           />
         </div>
-        <div className="lg:hidden mx-16">
+        <div className="lg:hidden mx-4 mb-20">
           <Image
             className="opacity-70"
             src={`/images/ucs-logo.svg`}
