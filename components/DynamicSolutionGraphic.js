@@ -27,9 +27,6 @@ const useWindowWidth = () => {
 
 const customLabelRenderer = (props) => {
   const { x, y, width, value, labelText, labelAnchor } = props;
-  console.log("x:", x);
-  console.log("width:", width);
-  console.log("labelText:", labelText);
   const noWrapValue = value.replace(/\n|\r| /g, " ");
 
   return (
@@ -65,7 +62,7 @@ const CustomYAxisTick = ({
   const context = canvas.getContext("2d");
   context.font = "20px Roboto"; // Set the font and size to be analyzed
   const metrics = context.measureText(payload.value);
-  const textWidthLeft = metrics.width * 1.04; //sets the text width and increases by 4% to allow for buffer
+  const textWidthLeft = metrics.width * 1.02; //sets the text width and increases by 4% to allow for buffer
 
   useEffect(() => {
     const entry = data.find((e) => e.name === payload.value);
@@ -122,8 +119,8 @@ const CustomYAxisTick = ({
         </text>
       ) : (
         <text //controls the insert of the title to the bar, (payload)
-          x={textWidthLeft} // {460} for negative values, {0} for positive values
-          y={-20}
+          x={textWidthLeft+9} // {460} for negative values, {0} for positive values
+          y={-17}
           dy={5}
           textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
           fontFamily="Roboto"
@@ -176,14 +173,16 @@ const DynamicSolutionGraphic = ({
       const metricsName = context.measureText(item.name);
       const itemLeftSide = metricsName.width * 1.04;
       if (itemLeftSide > maxLeftSide) {
-        maxLeftSide = itemLeftSide + 60;
+        maxLeftSide = itemLeftSide + 10;
       }
 
       // Only computes the right side for the first item
       if (i === 0) {
         const metricsValue = context.measureText(item.displayedValue);
         const itemRightSide = metricsValue.width * 1.04;
-        minRightSide = itemRightSide + 120; //sets normal rightside
+        minRightSide = itemRightSide ; //sets normal rightside
+        console.log("metric width", metricsValue.width);
+        console.log("item right side", itemRightSide);
       }
     }
     setLeftSide(maxLeftSide);
@@ -238,8 +237,8 @@ const DynamicSolutionGraphic = ({
 const totalChartHeight = filteredData.length * barHeight; //sets total chart height
   rightSide =
     windowWidth < maxWindowWidth // adds spacing for the right side that has already been dynamically calculated or removes it if mobile configuration
-      ? rightSide //desktop
-      : rightSide+50; //mobile
+      ? rightSide //mobile
+      : rightSide+80; //desktop
  
   leftSide =
     windowWidth < maxWindowWidth //desktop config or mobile config
