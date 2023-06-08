@@ -1,19 +1,5 @@
 import FocusArea2 from "../../../components/FocusArea2";
 
-// these are the drop-down elements that break down endeavors into categories
-// NOTE: This file is no longer used and should be slated for deletion.
-// import EcologyAndEnvironment from "/endeavors/ecology-and-environment.mdx";
-// import EnergyProductionAndEfficiency from "/endeavors/energy-production-and-efficiency.mdx";
-// import PollutionRegulations from "/endeavors/pollution-regulations.mdx";
-// import PublicHealthCampaigns from "/endeavors/public-health-campaigns.mdx";
-// import PublicHealthProjects from "/endeavors/public-health-projects.mdx";
-// import ResearchAndDevelopment from "/endeavors/research-and-development.mdx";
-// import TransportationInfrastructure from "/endeavors/transportation-infrastructure.mdx";
-// import Miscellaneous from "/endeavors/miscellaneous.mdx";
-
-// This is the three endeavor images that each include all endeavors
-// import FullSetOfEndeavors from "/endeavors/full-set-of-endeavors.mdx";
-
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
 
@@ -44,19 +30,6 @@ const HistoryEndeavors = () => {
         hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
-      {/* <div className={`article-wrap ${site}-background-gradient pb-12`}>
-        <div className={`pt-20`}>
-          <EcologyAndEnvironment />
-          <EnergyProductionAndEfficiency />
-          <PollutionRegulations />
-          <PublicHealthCampaigns />
-          <PublicHealthProjects />
-          <ResearchAndDevelopment />
-          <TransportationInfrastructure />
-          <Miscellaneous />
-          <FullSetOfEndeavors />
-        </div>
-      </div> */}
     </>
   );
 };
