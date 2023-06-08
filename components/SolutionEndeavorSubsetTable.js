@@ -2,17 +2,19 @@ import React, { useState, useEffect} from "react";
 import Link from "next/link";
 import { useTable, useSortBy } from "react-table";
 import ReactMarkdown from "react-markdown";
-import { solutionData } from '../data/solutionData';
-import { endeavorData } from '../data/endeavorData';
+//import { solutionData } from '../data/solutionData';
+//import { endeavorData } from '../data/endeavorData';
 
+  // In your component
+import { getCombinedData } from '../data/combineDataFunction';
 
-// This allows us to combine endeavors & solutions into one table
+/* // This allows us to combine endeavors & solutions into one table
 const endeavorDataWithSolutionKey = endeavorData.map(item => {
   return {
     ...item,
     solution: item.endeavor
   };
-});
+}); */
 
 
 const CustomLink = ({ node, ...props }) => (
@@ -84,7 +86,7 @@ const siteOrder = {
   history: 9,
 };
 
-endeavorDataWithSolutionKey.sort((a, b) => {
+/* endeavorDataWithSolutionKey.sort((a, b) => {
   if (siteOrder[a.site] === siteOrder[b.site]) {
     // If sites are the same, sort alphabetically by solution
     return a.solution.localeCompare(b.solution);
@@ -92,11 +94,12 @@ endeavorDataWithSolutionKey.sort((a, b) => {
 
   // Sort by site order
   return siteOrder[a.site] - siteOrder[b.site];
-});
+}); */
 
 // This function grabs the data above and translates it into data for the table
 function SolutionEndeavorSubsetTable(props) {
   // It uses the React "useMemo" hook that allows you to memoize the result of a function
+  
   const columns = React.useMemo(
     () => [
       {
@@ -217,26 +220,36 @@ function SolutionEndeavorSubsetTable(props) {
     []
   );
 
+
+
+
+  
+
+
+
   // This combines the data from the two tables into one array
-  const combinedData = solutionData.concat(endeavorDataWithSolutionKey);
+  //const combinedData = solutionData.concat(endeavorDataWithSolutionKey);
 
   // In functional React components, useState is used to define state
-  const [data, setData] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
+  const [data, setData] = useState(getCombinedData());
 
     // Add a useEffect hook to filter data whenever subsetLink prop changes
     useEffect(() => {
       if (props.subset) {
-        const newFilteredData = combinedData.filter(
-          (item) => item.subset === props.subset
+        // Filter combinedData based on subsetLink prop
+        const filteredData = data.filter(
+          item => item.subset === props.subset
         );
-    
-        setFilteredData(newFilteredData);
-        setData(newFilteredData); // Update the data state as well
-      }
-    }, [props.subset, combinedData]);
   
-    
+        // Set the filtered data to state
+        setData(filteredData);
+      } else {
+        // If subsetLink prop is not provided or is removed, set the full combinedData to state
+        setData(data);
+      }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [props.subset]);
+  
   // This creates an instance of the React table
   const tableInstance = useTable({ columns, data }, useSortBy);
 
