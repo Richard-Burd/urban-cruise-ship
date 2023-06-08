@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
+import convertToUrlSlug from "../lib/convertToUrlSlug";
 
 const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m.AnimatePresence), {
   ssr: false,
@@ -16,12 +17,6 @@ const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
       setVisible(true);
     }
   }, [router.asPath, title]);
-
-  function convertToUrlSlug(text) {
-    return encodeURIComponent(
-      text.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "-").replace(/(^-|-$)+/g, "")
-    );
-  }
 
   const handleDropdownClick = () => {
     setVisible((prevVisible) => !prevVisible);
