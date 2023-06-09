@@ -32,7 +32,7 @@ const customLabelRenderer = (props) => {
   return (
     <text
       x={x + width + labelText} // {-10} for negative values (labelText)
-      y={y + 10} // controls vertical placement of string to right of bar
+      y={y +12} // controls vertical placement of string to right of bar
       textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
       fill="#212121"
       fontFamily="Roboto"
@@ -339,6 +339,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
             barSize={10}
             stroke="#212121"
             strokeWidth={0.1}
+            
           >
             <LabelList
               dataKey="displayedValue"
