@@ -45,7 +45,8 @@ const FocusArea2 = (props) => {
             {props.focusAreaName}
           </span>
         </div>
-        <div className="flex flex-wrap ml-8 mt-12 scale-75 lg:scale-100">
+        <div className="flex flex-wrap ml-8 mt-4 lg:mt-12 transform scale-75 lg:scale-100 origin-top">
+
           {findChildren(props.focusAreaUrl).map((article) => {
             return (
               <div key={article.article_url}>
