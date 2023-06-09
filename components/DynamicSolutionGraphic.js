@@ -236,14 +236,14 @@ const DynamicSolutionGraphic = ({
       : 58;
 const totalChartHeight = filteredData.length * barHeight; //sets total chart height
   rightSide =
-    windowWidth < maxWindowWidth // adds spacing for the right side that has already been dynamically calculated or removes it if mobile configuration
-      ? rightSide //mobile
-      : rightSide+80; //desktop
+    windowWidth <= maxWindowWidth // adds spacing for the right side that has already been dynamically calculated or removes it if mobile configuration
+      ? rightSide +120 //mobile
+      : rightSide + 120; //desktop
  
   leftSide =
-    windowWidth < maxWindowWidth //desktop config or mobile config
-      ? -50 //desktop
-      : leftSide; //mobile
+    windowWidth <= maxWindowWidth //desktop config or mobile config
+      ? -50 //mobile
+      : leftSide; //desktop
 
   return (
     <>
@@ -352,9 +352,9 @@ this div allows you to put multiple elements side by side */}
       <div
         style={{
           display: "flex",
-          justifyContent: window.innerWidth <= 1024 ? "center" : "space-evenly",
-          alignItems: window.innerWidth <= 1024 ? "center" : "baseline",
-          flexDirection: window.innerWidth <= 1024 ? "column" : "row",
+          justifyContent: window.innerWidth <= maxWindowWidth ? "center" : "space-evenly",
+          alignItems: window.innerWidth <= maxWindowWidth ? "center" : "baseline",
+          flexDirection: window.innerWidth <= maxWindowWidth ? "column" : "row",
           flexWrap: "wrap",
         }}
       >

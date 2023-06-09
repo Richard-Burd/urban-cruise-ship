@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import convertToUrlSlug from "../lib/convertToUrlSlug";
+import SolutionEndeavorSubsetTable from "/components/SolutionEndeavorSubsetTable.js";
+
 
 const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m.AnimatePresence), {
   ssr: false,
@@ -49,7 +51,9 @@ const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
             >
               <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-200 border border-slate-900 mx-2 sm:mx-16 endeavor-dropdown-elliptical-geometry endeavor-dropdown-shadow-geometry -translate-y-24">
                 <div className="pt-20">
-                  <center>contents will go here</center>
+                  <center>contents will go here
+                  <SolutionEndeavorSubsetTable subset="ecology-environment" />
+                  </center>
                   {/*
                       Eventually this component will replace the <EndeavorDropdown /> component
                       This component takes in "focusAreaUrl" as a prop so you can display either
