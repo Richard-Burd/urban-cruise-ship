@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         <title>Urban Cruise Ship</title>
         <meta name="description" content="Founded in 2014, Urban Cruise Ship presents environmental solutions" />
       </Head>
-      <div className="sm:max-w-screen-md lg:px-0 lg:max-w-screen-lg mx-auto relative">
+      <div className="sm:max-w-screen-lg lg:px-0 lg:max-w-screen-lg mx-auto relative">
         <div className="relative pr-2.5 z-10">
           <MobileNavbar />
         </div>

@@ -135,7 +135,7 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSolutionGraphic = ({
-  maxWindowWidth = 1023, // used to trigger the resize of the chart to mobile friendly
+  maxWindowWidth = 1024, // used to trigger the resize of the chart to mobile friendly
   barChartTitle,
   barChartTitle2,
   scale = "positive",
@@ -228,10 +228,10 @@ const DynamicSolutionGraphic = ({
   /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
   const windowWidth = useWindowWidth();
   const barChartWidth = 
-    windowWidth > maxWindowWidth // sets mobile or desktop configuration based on windowwidth
+    windowWidth >= maxWindowWidth // sets mobile or desktop configuration based on windowwidth
       ? 900 
-      : 340;
-  const barHeight = windowWidth > maxWindowWidth //sets bar height spacing based on window width
+      : windowWidth;
+  const barHeight = windowWidth >= maxWindowWidth //sets bar height spacing based on window width
       ? 29 
       : 58;
 const totalChartHeight = filteredData.length * barHeight; //sets total chart height
@@ -265,7 +265,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
               fontWeight: 600,
               marginTop: "20px",
               lineHeight: 1.4,
-              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             {barChartTitle}
@@ -280,7 +280,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
               fontSize: "36px",
               fontWeight: 600,
               lineHeight: 1.4,
-              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             {barChartTitle2}
@@ -294,7 +294,6 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
         marginTop: "20px",
         }}>
         <BarChart
-          justifyContent= "center"
           width={barChartWidth}
           height={totalChartHeight}
           data={filteredData}
