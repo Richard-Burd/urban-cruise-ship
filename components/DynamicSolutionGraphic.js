@@ -98,7 +98,7 @@ const CustomYAxisTick = ({
       ? "white"
       : "#1a1a1a";
 
-  const windowWidthThreshold = 1023; // triggers the responsive changeover
+  const windowWidthThreshold = 1024; // triggers the responsive changeover. use <=
   const windowWidth = useWindowWidth();
   //const fontSize = windowWidth <= 600 ? (20 * windowWidth) / 600 : 20; // change these values to suit your design
 
@@ -263,8 +263,9 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
               fontFamily: "Roboto",
               fontSize: "36px",
               fontWeight: 600,
-              paddingTop: "20px",
-              paddingBottom: "15px",
+              marginTop: "20px",
+              lineHeight: 1.4,
+              justifyContent: "center",
             }}
           >
             {barChartTitle}
@@ -278,16 +279,22 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
               fontFamily: "Roboto",
               fontSize: "36px",
               fontWeight: 600,
-              paddingTop: "0px",
-              paddingBottom: "15px",
+              lineHeight: 1.4,
+              justifyContent: "center",
             }}
           >
             {barChartTitle2}
           </h2>
         )}
       </div>
-      <div style={{ width: "100%", height: totalChartHeight }}>
+      <div 
+      style={{ 
+        width: "100%", 
+        height: totalChartHeight,
+        marginTop: "20px",
+        }}>
         <BarChart
+          justifyContent= "center"
           width={barChartWidth}
           height={totalChartHeight}
           data={filteredData}
@@ -299,6 +306,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
             bottom: 0,
           }}
           minPointSize={2} // Set the desired minimum width for the bar
+          
         >
           <XAxis type="number" hide={true} />
           <YAxis
