@@ -9,7 +9,6 @@ import Image from "next/image";
 //   path: 'https://res.cloudinary.com/dwd7agrj5/image/upload',
 // },
 
-
 const Ram = () => {
   return (
     <>
@@ -21,7 +20,15 @@ const Ram = () => {
         />
       </Head>
       <div>
-        <div className="first-column">This is the New RAM Website</div>
+        <div 
+          className="first-column" 
+          style={{
+            transform: 'scaleX(1.2)',
+            transformOrigin: 'left',
+            fontSize: '44px',
+          }}>
+            This is the New RAM Website
+        </div>
         <Image
           src="https://res.cloudinary.com/dwd7agrj5/image/upload/v1687545351/ram/RAM_Logo.1_n1vfcq.svg"
           alt="SVG Image"
