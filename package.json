@@ -7,16 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build-css": "tailwindcss build -i styles/tailwind-styles.css -o styles/globals.css",
-    "algolia": "node scripts/importToAlgolia.mjs",
-    "algolia-test": "node scripts/algoliaTest.js"
+    "build-css": "tailwindcss build -i styles/tailwind-styles.css -o styles/globals.css"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
     "@next/mdx": "^12.3.1",
     "@vercel/analytics": "^0.1.6",
-    "algoliasearch": "^4.17.0",
     "dotenv": "^16.0.3",
     "framer-motion": "^7.3.6",
     "gray-matter": "^4.0.3",

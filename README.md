@@ -952,8 +952,9 @@ This static site uses the following:
 1. **NPM/Node.js** - for package management
 2. **Next.js** - a production grade React application for static site generation
 3. **Tailwind-CSS** - CSS styling library
-4. **MDX** - a Markdown-based syntax for writing JSX components
-5. **Algolia** - a site-search & discovery engine powered by AI (Planned Future Addition)
+4. **Framer Motion** - animation library for our dropdown boxes
+5. **MDX** - a Markdown-based syntax for writing JSX components
+6. **Lunr.js** - lightweight, client-side search engine for full-text search (planned for the  future)
 
 ### Availability
 
