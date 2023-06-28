@@ -370,7 +370,7 @@ const Crew = () => {
           </div>
           <div className="my-4"></div>
           <div>
-            jye is an artist, performer, environmentalist, yoga student
+            jye is an artist, performer, environmentalist, and yoga student
           </div>
           <div className="my-4"></div>
           <div>
@@ -392,7 +392,7 @@ const Crew = () => {
             />
           </a>
           <a
-            href="mailto:jye.art.studio@gmail.com"
+            href="mailto:jye@urbancruiseship.com"
             target="_blank"
             rel="noreferrer"
           >
