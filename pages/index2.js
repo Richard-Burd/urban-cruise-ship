@@ -34,7 +34,7 @@ export default function Home() {
               color: '#4c4c4c', // choose appropriate color
               fontFamily: "Arial Rounded MT Bold",
               fontSize: '4em', // adjust as needed
-              fontWeight: 'bold', // optional
+              fontWeight: 'normal', // optional
               zIndex: 2, //higher index to ensure placement above svg
             }}
           >
