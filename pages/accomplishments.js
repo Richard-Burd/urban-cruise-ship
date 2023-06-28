@@ -96,7 +96,7 @@ const Accomplishments = () => {
           - a subfield of Progress Studies, as a tool for improving and
           verifying accuracy of cost-benefit metrics for solutions. This can
           also improve policymakers&apos; funding prioritization. By the end of
-          2020, the number of human endeavors presented stood at 35. By the end
+          2020, the number of historic human endeavors presented stood at 35. By the end
           of 2021, that number had grown to 78, and was broken down into 8
           categories in addition to being presented all together.
         </div>
