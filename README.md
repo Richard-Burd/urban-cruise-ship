@@ -955,6 +955,7 @@ This static site uses the following:
 4. **Framer Motion** - animation library for our dropdown boxes
 5. **MDX** - a Markdown-based syntax for writing JSX components
 6. **Lunr.js** - lightweight, client-side search engine for full-text search (planned for the  future)
+7. **Node v18** - Updated from 16 on 7.10.2023 as v16 is depricated.
 
 ### Availability
 
