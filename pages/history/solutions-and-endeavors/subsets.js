@@ -1,5 +1,5 @@
 import JavaScriptArticlePage from "../../../components/JavaScriptArticlePage";
-import SolutionEndeavorDropdown from "../../../components/SolutionEndeavorDropdown";
+import SolutionEndeavorSubsetDropdown from "../../../components/SolutionEndeavorSubsetDropdown";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -27,15 +27,13 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="custom-background">
-        <h2>This Page is Under Construction</h2>
-        <p>Please check back soon for updates!</p>
-        <SolutionEndeavorDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorDropdown title={"Research and Development"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorDropdown title={"Transportation Infrastructure"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorDropdown title={"Miscellaneous"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorSubsetDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorSubsetDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorSubsetDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorSubsetDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorSubsetDropdown title={"Research and Development"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorSubsetDropdown title={"Transportation Infrastructure"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorSubsetDropdown title={"Miscellaneous"} focusAreaUrl={focusAreaUrl} />
       </div>
       <style>
         {`

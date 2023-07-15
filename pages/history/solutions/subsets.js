@@ -1,5 +1,5 @@
 import JavaScriptArticlePage from "../../../components/JavaScriptArticlePage";
-import SolutionEndeavorDropdown from "../../../components/SolutionEndeavorDropdown";
+import SolutionEndeavorDropdown from "../../../components/SolutionSubsetDropdown";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -15,7 +15,7 @@ function findFocusAreaName(searchValue) {
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 const focusAreaDescription = <p></p>;
-console.log('subset:', subset); // Add this debug statement to check the value of the subset prop
+
 const Solutions = () => {
   return (
     <div>
@@ -27,9 +27,7 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="custom-background">
-        <h2>This Page is Under Construction</h2>
-        <p>Please check back soon for updates!</p>
-        <SolutionEndeavorDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl}  subset={"ecology-environment"}/>
+        <SolutionEndeavorDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl}/>
         <SolutionEndeavorDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
         <SolutionEndeavorDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
         <SolutionEndeavorDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
@@ -49,5 +47,5 @@ const Solutions = () => {
     </div>
   );
 };
-console.log('TOP LEVEL', subset); // Add this debug statement to check the value of the subset prop
+
 export default Solutions;
