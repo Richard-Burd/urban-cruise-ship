@@ -15,7 +15,7 @@ function findFocusAreaName(searchValue) {
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 const focusAreaDescription = <p></p>;
-
+console.log('subset:', subset); // Add this debug statement to check the value of the subset prop
 const Solutions = () => {
   return (
     <div>
@@ -29,7 +29,7 @@ const Solutions = () => {
       <div className="custom-background">
         <h2>This Page is Under Construction</h2>
         <p>Please check back soon for updates!</p>
-        <SolutionEndeavorDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
+        <SolutionEndeavorDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl}  subset={"ecology-environment"}/>
         <SolutionEndeavorDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
         <SolutionEndeavorDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
         <SolutionEndeavorDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
@@ -37,6 +37,8 @@ const Solutions = () => {
         <SolutionEndeavorDropdown title={"Transportation Infrastructure"} focusAreaUrl={focusAreaUrl} />
         <SolutionEndeavorDropdown title={"Miscellaneous"} focusAreaUrl={focusAreaUrl} />
       </div>
+
+
       <style>
         {`
           .custom-background {
@@ -47,5 +49,5 @@ const Solutions = () => {
     </div>
   );
 };
-
+console.log('TOP LEVEL', subset); // Add this debug statement to check the value of the subset prop
 export default Solutions;

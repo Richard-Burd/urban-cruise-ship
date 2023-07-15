@@ -23,7 +23,7 @@ const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
   const handleDropdownClick = () => {
     setVisible((prevVisible) => !prevVisible);
   };
-
+const subsetProp = convertToUrlSlug(title);
   return (
     <>
       <div className="endeavor-dropdown" id={convertToUrlSlug(title)}>
@@ -51,8 +51,8 @@ const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
             >
               <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-200 border border-slate-900 mx-2 sm:mx-16 endeavor-dropdown-elliptical-geometry endeavor-dropdown-shadow-geometry -translate-y-24">
                 <div className="pt-20">
-                  <center>contents will go here
-                  <SolutionEndeavorSubsetTable subset="ecology-environment" />
+                  <center>
+                  <SolutionEndeavorSubsetTable subset={subsetProp} />
                   </center>
                   {/*
                       Eventually this component will replace the <EndeavorDropdown /> component
