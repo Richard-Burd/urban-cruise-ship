@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import convertToUrlSlug from "../lib/convertToUrlSlug";
-import SolutionSubsetTable from "/components/SolutionSubsetTable.js";
+import EndeavorSubsetTable from "/components/EndeavorSubsetTable.js";
 
 
 const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m.AnimatePresence), {
   ssr: false,
 });
 
-const SolutionSubsetDropdown = ({ title, focusAreaUrl }) => {
+const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
   const [isVisible, setVisible] = useState(false);
   const router = useRouter();
 
@@ -54,7 +54,7 @@ const subsetProp = convertToUrlSlug(title);
                   {/* the paddingBottom value here ensures the table does not overhang the edges,
                   this is due to there being no references listed as a footnote on these dropdowns*/}
                   <center>
-                  <SolutionSubsetTable subset={subsetProp} />
+                  <EndeavorSubsetTable subset={subsetProp} />
                   </center>
                   {/*
                       Eventually this component will replace the <EndeavorDropdown /> component
@@ -104,4 +104,4 @@ const subsetProp = convertToUrlSlug(title);
   );
 };
 
-export default SolutionSubsetDropdown;
+export default SolutionEndeavorDropdown;
