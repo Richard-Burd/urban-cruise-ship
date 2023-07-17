@@ -17,7 +17,7 @@ export default function Home() {
         <title>Urban Cruise Ship</title>
         <meta name="keywords" content="homepage, landing page" />
       </Head>
-{/*       <div className="lg:hidden pl-4 pt-1 standard-font-1 standard-font-color-1 text-4xl">
+      {/* <div className="lg:hidden pl-4 pt-1 standard-font-1 standard-font-color-1 text-4xl">
         Welcome!
       </div> */}
       
@@ -29,11 +29,12 @@ export default function Home() {
           <div
             style={{
               position: 'absolute',
-              top: '0.5%', // adjust these values
-              right: '.1%',
+              top: '0%', // adjust these values
+              right: '-0.5%',
               color: '#4c4c4c', // choose appropriate color
               fontFamily: "Arial Rounded MT Bold",
-              fontSize: '4em', // adjust as needed
+              fontSize: '3.95rem', // adjust as needed
+              letterSpacing: '0.02em',
               fontWeight: 'normal', // optional
               zIndex: 2, //higher index to ensure placement above svg
             }}
@@ -43,34 +44,68 @@ export default function Home() {
           <div
             style={{
               position: 'absolute',
-              top: '18.5%', // adjust these values
+              top: '19%', // adjust these values
               left: '66.5%', // adjust these values
               color: '#4c4c4c', // choose appropriate color
               fontFamily: 'Roboto',
-              fontSize: '1.7em', // adjust as needed
-              lineHeight: '1', //controls spacing between word wrapped lines
+              fontSize: '1.5rem', // adjust as needed
+              lineHeight: '1.3', //controls spacing between word wrapped lines
               fontWeight: 'normal', // optional
               zIndex: 2, // higher index to ensure placement above svg
               maxWidth: '39%', // set max-width for text wrapping
               padding: '0px', // optional padding around text
               whiteSpace: 'normal', // ensure text can wrap
               wordWrap: 'break-word', // allow words to be broken if necessary to prevent overflow
+              textAlign: 'justify'
             }}
           >
-            Enabling informed choices through comparative analysis of environmental solutions alongside historic human endeavors 
+            Enabling informed choices through comparative analysis of environmental solutions along-side historic human endeavors   
+          </div>
+          <div className="hidden lg:block"
+            style={{
+              position: 'absolute',
+              top: '-10%', // adjust these values
+              left: '0%', // adjust these values
+            }}       
+          >
+            <Image
+              className="opacity-70"
+              src={`/images/ucs-logo.svg`}
+              alt={"UCS Logo"}
+              height={340}
+              width={620}
+              priority // https://nextjs.org/docs/basic-features/image-optimization#priority
+            />
           </div>
           {/* The SVG Image */}
-          <Image
-            className=""
-            src={"/images/swoosh_19_web.svg"}
-            alt={"UCS Logo"}
-            height={440}
-            width={1024}
-            priority // https://nextjs.org/docs/basic-features/image-optimization#priority
-          />
+          <div className="transform translate-y-10 -translate-x-1">
+            <Image
+              className=""
+              src={"/images/swoosh_29_web.svg"}
+              alt={"UCS Logo"}
+              height={440}
+              width={1024}
+              priority // https://nextjs.org/docs/basic-features/image-optimization#priority
+            />
+          </div>
         </div>
 
-      {/* Here is the code for the mobile version */}
+        <div className="hidden lg:block"
+          style={{
+            position: 'absolute',
+            top: '35.8%', // adjust these values
+            right: '16%',
+            color: '#4c4c4c', // choose appropriate color
+            fontFamily: "Arial Rounded MT Bold",
+            fontSize: '3.6em', // adjust as needed
+            fontWeight: 'normal', // optional
+            zIndex: 2, //higher index to ensure placement above svg
+          }}
+        >
+          Our Specialized Sites:
+        </div>
+
+        {/* Here is the code for the mobile version */}
         <div className="lg:hidden mx-4 mb-20 flex-row justify-center">
           <Image
             className="opacity-70"
@@ -80,36 +115,8 @@ export default function Home() {
             width={320}
             priority // https://nextjs.org/docs/basic-features/image-optimization#priority
           />
-          <div
-            style={{
-              top: '0.5%', // adjust these values
-              right: '.1%',
-              color: '#4c4c4c', // choose appropriate color
-              fontFamily: "Arial Rounded MT Bold",
-              fontSize: '4em', // adjust as needed
-              fontWeight: 'bold', // optional
-              zIndex: 2, //higher index to ensure placement above svg
-            }}
-          >
-            Our Mission
-          </div>
-          <div
-            style={{
-
-              top: '18.5%', // adjust these values
-              left: '66.5%', // adjust these values
-              color: '#4c4c4c', // choose appropriate color
-              fontFamily: 'Roboto',
-              fontSize: '1.7em', // adjust as needed
-              lineHeight: '1', //controls spacing between word wrapped lines
-              fontWeight: 'normal', // optional
-              zIndex: 2, // higher index to ensure placement above svg
-              maxWidth: '100%', // set max-width for text wrapping
-              padding: '0px', // optional padding around text
-              whiteSpace: 'normal', // ensure text can wrap
-              wordWrap: 'break-word', // allow words to be broken if necessary to prevent overflow
-            }}
-          >
+          <div className="standard-font-1 standard-font-color-1 text-5xl sm:text-6xl lg:text-6xl">Our Mission</div>
+          <div className="standard-font-2 text-xl">
             Enabling informed choices through comparative analysis of environmental solutions alongside historic human endeavors 
           </div>
           

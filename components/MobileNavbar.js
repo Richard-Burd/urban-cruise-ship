@@ -59,14 +59,14 @@ const MobileNavbar = () => {
                 <Link href="/associations">
                   <div className={navBarStyles}>Associations</div>
                 </Link>
-                <Link href="/presentations">
-                  <div className={navBarStyles}>Presentations</div>
+                <Link href="/accomplishments">
+                  <div className={navBarStyles}>Accomplishments</div>
                 </Link>
                 <Link href="/publications">
                   <div className={navBarStyles}>Publications</div>
                 </Link>
-                <Link href="/accomplishments">
-                  <div className={navBarStyles}>Accomplishments</div>
+                <Link href="/presentations">
+                  <div className={navBarStyles}>Presentations</div>
                 </Link>
               </div>
             </motion.div>
