@@ -36,18 +36,18 @@ const Navbar = () => {
             <a className={navBarStyles}>Associations</a>
           </Link>
 
-          <Link href="/presentations">
-            <a className={navBarStyles}>Presentations</a>
+          <Link href="/accomplishments">
+            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-1 pb-2 active:bg-gray-900 active:text-gray-200">
+              Accomplishments
+            </a>
           </Link>
 
           <Link href="/publications">
             <a className={navBarStyles}>Publications</a>
           </Link>
-
-          <Link href="/accomplishments">
-            <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-1 pb-2 active:bg-gray-900 active:text-gray-200">
-              Accomplishments
-            </a>
+          
+          <Link href="/presentations">
+            <a className={navBarStyles}>Presentations</a>
           </Link>
           <style jsx>{`
             .top-navbar-shadow {
