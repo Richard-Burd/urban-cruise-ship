@@ -240,7 +240,7 @@ const DynamicSingleBarChart = ({
             dataKey="barlength"
             fill="#212121"
             barSize={6}
-            stroke="#313131"
+            stroke="#212121"
             strokeWidth={.1}
           >
             <LabelList

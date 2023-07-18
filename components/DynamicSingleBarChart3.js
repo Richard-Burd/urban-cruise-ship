@@ -32,12 +32,22 @@ const CustomYAxisTick = ({
   link,
   titleText,
   titleAnchor,
-  solutionBackgroundOffset,
+  scale,
   data,
 }) => {
   const [hovered, setHovered] = useState(false);
   const [bgColor, setBgColor] = useState("transparent");
 
+
+
+ //text measurement tool for the highlighting function
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
+  context.font = '14px Roboto'; // Set the font and size to be analyzed
+  const metrics = context.measureText(payload.value);
+  const textWidth = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
+
+  
   useEffect(() => {
     const entry = data.find((e) => e.name === payload.value);
     if (entry && entry.site) {
@@ -71,14 +81,14 @@ const CustomYAxisTick = ({
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
       : "#1a1a1a";
-
+//This area controls the color highlight for solutions
   return (
     <g transform={`translate(${x},${y})`}>
       <rect
-        x={solutionBackgroundOffset}
-        y={-10}
-        width={610}
-        height={20}
+        x={-textWidth - 6}
+        y={-15}
+        width={textWidth + 9}
+        height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
         fill={backgroundColor || "transparent"}
       />
       <Link href={link}>
@@ -89,14 +99,14 @@ const CustomYAxisTick = ({
           onMouseLeave={handleMouseLeave}
         >
           <text
-            x={titleText} // {460} for negative values, {0} for positive values
-            y={0}
+            x={titleText - 1} // {460} for negative values, {0} for positive values
+            y={-1}
             dy={5}
             textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
             fontFamily="Roboto"
-            fontSize="16px"
+            fontSize="14px"
             fontWeight="bold"
-            fill={hovered ? "#e34b4b" : defaultTextColor}
+            fill={hovered ? "blue" : defaultTextColor}
             textDecoration={hovered ? "underline" : "none"}
             style={{
               cursor: "pointer",
@@ -114,8 +124,8 @@ const DynamicSingleBarChart = ({
   barChartTitle,
   barChartSubTitle,
   scale,
-  rightSide,
-  leftSide,
+  rightSide, //increasing this will provide more room to the right side of the bar for numbers
+  leftSide, //decreasing this will push the bar start to the left
   titleText,
   fetchDataFunc,
 }) => {
@@ -157,7 +167,7 @@ const DynamicSingleBarChart = ({
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
 
-  const barHeight = 40;
+  const barHeight = 29; //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
   const totalChartHeight = filteredData.length * barHeight;
 
   return (
@@ -177,6 +187,7 @@ const DynamicSingleBarChart = ({
               fontSize: "32px",
               fontWeight: 600,
               paddingTop: "20px",
+              paddingBottom: "20px",
             }}
           >
             {barChartTitle}
@@ -188,9 +199,8 @@ const DynamicSingleBarChart = ({
           style={{
             width: "100%",
             display: "flex",
-            justifyContent: "right",
-            fontStyle: "italic",
-            paddingRight: "30px",
+            justifyContent: "left",
+            paddingLeft: "600px",
           }}
         >
           {barChartSubTitle}
@@ -198,7 +208,7 @@ const DynamicSingleBarChart = ({
       )}
       <div style={{ width: "100%", height: totalChartHeight }}>
         <BarChart
-          width={1000}
+          width={860}
           height={totalChartHeight}
           data={filteredData}
           layout="vertical"
@@ -206,7 +216,7 @@ const DynamicSingleBarChart = ({
             top: 0,
             right: rightSide,
             left: leftSide,
-            bottom: 5,
+            bottom: 0,
           }}
         >
           <XAxis type="number" hide={true} />
@@ -228,30 +238,17 @@ const DynamicSingleBarChart = ({
                   link={entry ? entry.link : null}
                   titleText={titleText}
                   titleAnchor={titleAnchor}
-                  solutionBackgroundOffset={solutionBackgroundOffset}
                 />
               );
             }}
           />
-          <Tooltip
-            content={({ label }) => (
-              <div
-                style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  border: "1px solid transparent",
-                  padding: "5px",
-                }}
-              >
-                <span>{label}</span>
-              </div>
-            )}
-          />
+          {/* this area defines the bar, barSize is the y axis thickness. strokeWidth creates a line around the bar. In effect, this makes a minimum size for the bars */}
           <Bar
             dataKey="barlength"
-            fill="#171717"
-            barSize={11}
-            stroke="#1a1a1a"
-            strokeWidth={2}
+            fill="#212121"
+            barSize={6}
+            stroke="#212121"
+            strokeWidth={.1}
           >
             <LabelList
               dataKey="displayedValue"
