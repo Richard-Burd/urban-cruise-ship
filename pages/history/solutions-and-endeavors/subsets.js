@@ -1,5 +1,5 @@
 import JavaScriptArticlePage from "../../../components/JavaScriptArticlePage";
-import SolutionEndeavorSubsetDropdown from "../../../components/SolutionEndeavorSubsetDropdown";
+import SubsetDropdown from "../../../components/SubsetDropdown";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -27,13 +27,13 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="custom-background">
-        <SolutionEndeavorSubsetDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorSubsetDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorSubsetDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorSubsetDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorSubsetDropdown title={"Research and Development"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorSubsetDropdown title={"Transportation Infrastructure"} focusAreaUrl={focusAreaUrl} />
-        <SolutionEndeavorSubsetDropdown title={"Miscellaneous"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown title={"Research and Development"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown title={"Transportation Infrastructure"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown title={"Miscellaneous"} focusAreaUrl={focusAreaUrl} />
       </div>
       <style>
         {`

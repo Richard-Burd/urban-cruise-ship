@@ -21,7 +21,11 @@ const CustomLink = ({ node, ...props }) => (
   </a>
 );
 
-function renderFootnotes(data) {
+let footnoteData = "5"
+
+
+
+function renderFootnotes(data, focusAreaUrl) {
   const footnotesObj = {};
 
   data.forEach((row) => {
@@ -63,13 +67,17 @@ function renderFootnotes(data) {
     (a, b) => parseInt(a, 10) - parseInt(b, 10)
   );
   const footnotes = sortedKeys.map((key) => footnotesObj[key]);
-
+//The following turns off the references section for 'solutions' when that is the focusAreaUrl.
+if (focusAreaUrl != "solutions"){
   return (
     <div className="solution-endeavor-footnotes">
       <h2 id="footnote-label">References:</h2>
       {footnotes}
     </div>
   );
+  
+}
+
 }
 
 const siteOrder = {
@@ -360,7 +368,7 @@ let dataSource;
           })}
         </tbody>
       </table>
-      {renderFootnotes(data)}
+      {renderFootnotes(data, focusAreaUrl)}
     </>
   );
 }
