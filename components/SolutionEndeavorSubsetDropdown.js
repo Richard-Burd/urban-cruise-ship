@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import convertToUrlSlug from "../lib/convertToUrlSlug";
-import SolutionEndeavorSubsetTable from "/components/SolutionEndeavorSubsetTable.js";
+import SubsetTable from "/components/SubsetTable.js";
 
 
 const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m.AnimatePresence), {
@@ -23,7 +23,8 @@ const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
   const handleDropdownClick = () => {
     setVisible((prevVisible) => !prevVisible);
   };
-const subsetProp = convertToUrlSlug(title);
+const subsetProp = convertToUrlSlug(title); //sets the value of the subset so that it can pass this prop to the table to be used for filtering
+
   return (
     <>
       <div className="endeavor-dropdown" id={convertToUrlSlug(title)}>
@@ -52,7 +53,7 @@ const subsetProp = convertToUrlSlug(title);
               <div className="this-is-the-dropdown-that-needs-to-be-style bg-slate-200 border border-slate-900 mx-2 sm:mx-16 endeavor-dropdown-elliptical-geometry endeavor-dropdown-shadow-geometry -translate-y-24">
                 <div className="pt-20">
                   <center>
-                  <SolutionEndeavorSubsetTable subset={subsetProp} />
+                  <SubsetTable subset={subsetProp} focusAreaUrl = {focusAreaUrl} />
                   </center>
                   {/*
                       Eventually this component will replace the <EndeavorDropdown /> component

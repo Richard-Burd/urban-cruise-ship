@@ -97,13 +97,13 @@ const siteOrder = {
 let headerTitle = "Title"; //creates a variable that can change based on the focusAreaUrl
 
 // This function grabs the data above and translates it into data for the table
-function SolutionEndeavorSubsetTable(props) {
+function SubsetTable(props) {
   // It uses the React "useMemo" hook that allows you to memoize the result of a function
   const { focusAreaUrl } = props;  // Destructure focusAreaUrl from props for use in switch statement
   const columns = React.useMemo(
     () => [
       {
-        // Creates a column with the title: "Solution / Endeavor"
+        // Creates a column with the title: determined by headerTitle
         Header: headerTitle,
 
         // React Table uses the "accessor" property to determine what data to display
@@ -369,4 +369,4 @@ function rowStyle(row) {
   return row.site + "-table-background-color";
 }
 
-export default SolutionEndeavorSubsetTable;
+export default SubsetTable;
