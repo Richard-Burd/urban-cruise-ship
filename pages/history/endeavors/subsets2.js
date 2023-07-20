@@ -1,5 +1,5 @@
 import JavaScriptArticlePage from "../../../components/JavaScriptArticlePage";
-import SubsetDropdown from "../../../components/SubsetDropdown";
+import SubsetDropdown from "../../../components/wipSubsetDropdown";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;

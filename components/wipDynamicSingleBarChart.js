@@ -1,10 +1,28 @@
 import { getCSSPropertyValue } from "../utils";
-
-import React, { useState, useEffect } from "react";
-
+import React, { useLayoutEffect, useState, useEffect } from "react";
 import Link from "next/link";
-
 import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
+
+
+// mobile responsive code
+
+//gets the window width of the whole page, which is usually 1024 if on desktop
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useLayoutEffect(() => {
+    const updateWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", updateWidth);
+    updateWidth();
+
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
+  return windowWidth;
+};
 
 const customLabelRenderer = (props) => {
   const { x, y, width, value, labelText, labelAnchor } = props;
@@ -30,7 +48,7 @@ const CustomYAxisTick = ({
   y,
   payload,
   link,
-  titleText,
+  titleText, //removed this to fix NaN
   titleAnchor,
   scale,
   data,
@@ -81,7 +99,12 @@ const CustomYAxisTick = ({
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
       : "#1a1a1a";
-//This area controls the color highlight for solutions
+
+  const windowWidthThreshold = 1024; // triggers the responsive changeover. use <=
+  const windowWidth = useWindowWidth();
+  //const fontSize = windowWidth <= 600 ? (20 * windowWidth) / 600 : 20; // change these values to suit your design
+
+  //This area controls the color highlight for solutions as well as the text to the left of the bar
   return (
     <g transform={`translate(${x},${y})`}>
       <rect
@@ -121,6 +144,9 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSingleBarChart = ({
+  maxWindowWidth = 1024, // used to trigger the resize of the chart to mobile friendly
+
+  barChartTitle2,
   barChartTitle,
   barChartSubTitle,
   scale,
