@@ -57,27 +57,29 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                   {/* the paddingBottom value here ensures the table does not overhang the edges,
                   this is due to there being no references listed as a footnote on these dropdowns*/}
                   <center>
+
+
                   <DynamicSingleBarChart
                     barChartTitle={"Endeavors - Net Benefit (Benefit minus Cost)"}
                     barChartSubTitle={""}
                     scale={"positive"}
-
                     rightSide={75}
-                    leftSide={455}
-
+                    leftSide={425}
                     titleText={0}
                     fetchDataFunc={endeavorBenefitMinusCost}
                   />
                   <DynamicSingleBarChart
                     barChartTitle={""}
                     scale={"negative"}
-                    rightSide={485}
-                    leftSide={-20}
+                    rightSide={295}
+                    leftSide={-50}
                     solutionBackgroundOffset={605}
                     titleText={495}
                     fetchDataFunc={endeavorBenefitMinusCost}
                   />
                   <SubsetTable subset={subsetProp} focusAreaUrl = {focusAreaUrl} />
+
+
                   </center>
                   {/*
                       Eventually this component will replace the <EndeavorDropdown /> component

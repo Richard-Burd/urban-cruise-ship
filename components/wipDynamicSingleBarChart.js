@@ -31,7 +31,7 @@ const customLabelRenderer = (props) => {
   return (
     <text
       x={x + width + labelText} // {-10} for negative values (labelText)
-      y={y + 8} // controls vertical placement of string to right of bar
+      y={y + 12} // controls vertical placement of string to right of bar
       textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
       fill="#212121"
       fontFamily="Roboto"
@@ -63,7 +63,7 @@ const CustomYAxisTick = ({
   const context = canvas.getContext('2d');
   context.font = '14px Roboto'; // Set the font and size to be analyzed
   const metrics = context.measureText(payload.value);
-  const textWidth = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
+  const textWidth = metrics.width*1.02; //sets the text width and increases by 4% to allow for buffer
 
   
   useEffect(() => {
@@ -107,6 +107,8 @@ const CustomYAxisTick = ({
   //This area controls the color highlight for solutions as well as the text to the left of the bar
   return (
     <g transform={`translate(${x},${y})`}>
+
+
       <rect
         x={-textWidth - 6}
         y={-15}
@@ -139,6 +141,8 @@ const CustomYAxisTick = ({
           </text>
         </a>
       </Link>
+
+      
     </g>
   );
 };
@@ -150,8 +154,8 @@ const DynamicSingleBarChart = ({
   barChartTitle,
   barChartSubTitle,
   scale,
-  rightSide, //increasing this will provide more room to the right side of the bar for numbers
-  leftSide, //decreasing this will push the bar start to the left
+  rightSide, //POSITIVE: increasing this will provide more room to the right side of the bar for numbers NEGATIVE: reversed
+  leftSide, //POSITIVE: decreasing this will push the bar start to the left NEGATIVE: reversed
   titleText,
   fetchDataFunc,
 }) => {
@@ -193,8 +197,26 @@ const DynamicSingleBarChart = ({
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
 
-  const barHeight = 29; //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
-  const totalChartHeight = filteredData.length * barHeight;
+
+    /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
+    const windowWidth = useWindowWidth();
+    const barChartWidth = 
+      windowWidth >= maxWindowWidth // sets mobile or desktop configuration based on windowwidth
+        ? 900 
+        : windowWidth;
+    const barHeight = windowWidth >= maxWindowWidth //sets bar height spacing based on window width
+        ? 29 
+        : 58;
+const totalChartHeight = filteredData.length * barHeight; //sets total chart height
+  rightSide =
+    windowWidth <= maxWindowWidth // adds spacing for the right side that has already been dynamically calculated or removes it if mobile configuration
+      ? rightSide +120 //mobile
+      : rightSide + 120; //desktop
+ 
+  leftSide =
+    windowWidth <= maxWindowWidth //desktop config or mobile config
+      ? -50 //mobile
+      : leftSide; //desktop
 
   return (
     <>
@@ -203,6 +225,8 @@ const DynamicSingleBarChart = ({
           width: "100%",
           display: "flex",
           justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         {barChartTitle && (
@@ -234,7 +258,7 @@ const DynamicSingleBarChart = ({
       )}
       <div style={{ width: "100%", height: totalChartHeight }}>
         <BarChart
-          width={860}
+          width={barChartWidth}
           height={totalChartHeight}
           data={filteredData}
           layout="vertical"
@@ -244,6 +268,7 @@ const DynamicSingleBarChart = ({
             left: leftSide,
             bottom: 0,
           }}
+          minPointSize={2} // Set the desired minimum width for the bar
         >
           <XAxis type="number" hide={true} />
           <YAxis
@@ -274,7 +299,7 @@ const DynamicSingleBarChart = ({
             fill="#212121"
             barSize={6}
             stroke="#212121"
-            strokeWidth={.1}
+            strokeWidth={0.1}
           >
             <LabelList
               dataKey="displayedValue"
