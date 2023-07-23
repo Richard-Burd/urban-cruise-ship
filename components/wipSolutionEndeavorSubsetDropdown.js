@@ -81,7 +81,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     rightSide={75}
                     leftSide={425}
                     titleText={0}
-                    fetchDataFunc={solutionBenefitOverCost}
+                    fetchDataFunc={solutionEndeavorBenefitOverCost}
                     subset={subsetProp}
                   />
                   <DynamicSingleBarChart
@@ -91,7 +91,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     rightSide={75}
                     leftSide={425}
                     titleText={0}
-                    fetchDataFunc={solutionBenefitMinusCost}
+                    fetchDataFunc={solutionEndeavorBenefitMinusCost}
 
                     subset={subsetProp}
                   />
@@ -127,7 +127,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                         input value below so that the lower bar does not exceed the width of
                         the chart.
                       */
-                      () => solutionCostEfficiencyComparison(1.7, subsetProp)}
+                      () => solutionEndeavorCostEfficiencyComparison(1.7, subsetProp)}
                     
                   /> 
                   </section>

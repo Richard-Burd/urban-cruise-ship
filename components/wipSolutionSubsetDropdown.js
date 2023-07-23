@@ -28,6 +28,8 @@ const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m
   ssr: false,
 });
 
+/* TODO add bar charts for greenhouse gas reduction and habitat preservation */
+
 const SolutionEndeavorDropdown = ({ title, focusAreaUrl }) => {
   const [isVisible, setVisible] = useState(false);
   const router = useRouter();
