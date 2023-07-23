@@ -1,5 +1,5 @@
 import JavaScriptArticlePage from "../../../components/JavaScriptArticlePage";
-import SubsetDropdown from "../../../components/wipSolutionEndeavorSubsetDropdown";
+import SubsetDropdown from "../../../components/SubsetDropdown";
 
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
@@ -27,10 +27,6 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="custom-background">
-      <center>
-          <h2>{focusAreaName} broken down by category</h2>
-          <h4>Click the bars to expand the section</h4>
-        </center>
         <SubsetDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
         <SubsetDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
         <SubsetDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
