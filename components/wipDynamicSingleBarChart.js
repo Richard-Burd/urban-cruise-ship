@@ -107,42 +107,70 @@ const CustomYAxisTick = ({
   //This area controls the color highlight for solutions as well as the text to the left of the bar
   return (
     <g transform={`translate(${x},${y})`}>
+       {windowWidth > windowWidthThreshold ? ( // check window width here
 
-
-      <rect
-        x={-textWidth - 6}
-        y={-15}
-        width={textWidth + 9}
-        height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
-        fill={backgroundColor || "transparent"}
-      />
-      <Link href={link}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <text
-            x={titleText - 1} // {460} for negative values, {0} for positive values
-            y={-1}
-            dy={5}
-            textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
-            fontFamily="Roboto"
-            fontSize="14px"
-            fontWeight="bold"
-            fill={hovered ? "blue" : defaultTextColor}
-            textDecoration={hovered ? "underline" : "none"}
-            style={{
-              cursor: "pointer",
-            }}
-          >
-            {payload.value}
-          </text>
-        </a>
-      </Link>
-
-
+      <><rect
+          x={-textWidth - 6}
+          y={-15}
+          width={textWidth + 9}
+          height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
+          fill={backgroundColor || "transparent"} /><Link href={link}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <text
+                x={titleText - 1} // {460} for negative values, {0} for positive values
+                y={-1}
+                dy={5}
+                textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
+                fontFamily="Roboto"
+                fontSize="14px"
+                fontWeight="bold"
+                fill={hovered ? "blue" : defaultTextColor}
+                textDecoration={hovered ? "underline" : "none"}
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                {payload.value}
+              </text>
+            </a>
+          </Link></>
+      ) : (
+        <><rect
+            x={0}
+            y={-27}
+            width={textWidth + 7}
+            height={20} // using a +0.1 height to ensure no spacing visible when rendering
+            fill={backgroundColor || "transparent"} /><Link href={link}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <text
+                  x={titleText} // {460} for negative values, {0} for positive values
+                  y={-18}
+                  dy={5}
+                  textAnchor={"start"} // "start" for negative values, "end" for positive values
+                  fontFamily="Roboto"
+                  fontSize="12px" 
+                  fontWeight="bold"
+                  fill={hovered ? "blue" : defaultTextColor}
+                  textDecoration={hovered ? "underline" : "none"}
+                  style={{
+                    cursor: "pointer",
+                  }}
+                >
+                  {payload.value}
+                </text>
+              </a>
+            </Link></>
+      )}
     </g>
   );
 };
