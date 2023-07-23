@@ -71,6 +71,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     titleText={0}
                     fetchDataFunc={endeavorBenefitOverCost}
                     subsetLink="/history/endeavors/subsets#ecology-environment"
+                    subset={subsetProp}
                   />
                   <DynamicSingleBarChart
                     barChartTitle={"Endeavors - Net Benefit (Benefit minus Cost)"}
@@ -81,6 +82,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     titleText={0}
                     fetchDataFunc={endeavorBenefitMinusCost}
                     subsetLink="/history/endeavors/subsets#ecology-environment"
+                    subset={subsetProp}
                   />
                   {/* commented out this negative value TODO get the scale acting right... currently the bar is huge compared to the others. */}
 {/*                   <DynamicSingleBarChart

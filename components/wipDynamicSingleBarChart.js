@@ -147,6 +147,7 @@ const CustomYAxisTick = ({
   );
 };
 
+
 const DynamicSingleBarChart = ({
   maxWindowWidth = 1024, // used to trigger the resize of the chart to mobile friendly
 
@@ -158,18 +159,19 @@ const DynamicSingleBarChart = ({
   leftSide, //POSITIVE: decreasing this will push the bar start to the left NEGATIVE: reversed
   titleText,
   fetchDataFunc,
-  subsetLink
+  subsetLink,
+  subset
 }) => {
   const [data, setData] = useState([]);
-
+  console.log("The value of subset is1:", subset);
   useEffect(() => {
     async function fetchData() {
-      const fetchedData = await fetchDataFunc(subsetLink);
+      const fetchedData = await fetchDataFunc(subset);
       setData(fetchedData);
     }
 
     fetchData();
-  }, [fetchDataFunc, subsetLink]);
+  }, [fetchDataFunc, subset]);
 
   let labelText;
   if (scale === "positive") {
@@ -197,6 +199,7 @@ const DynamicSingleBarChart = ({
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
   );
+
 
 
     /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
