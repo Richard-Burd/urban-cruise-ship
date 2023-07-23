@@ -9,6 +9,7 @@ import HomepageSpecializedSiteButton from "../components/HomepageSpecializedSite
 // https://vercel.com/docs/concepts/analytics/audiences/quickstart
 import { Analytics } from "@vercel/analytics/react";
 export const path = `${process.env.NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH}`;
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -59,7 +60,11 @@ export default function Home() {
               textAlign: 'justify'
             }}
           >
-            Enabling informed choices through comparative analysis of environmental solutions along-side historic human endeavors   
+            Enabling informed choices through <Link href="/history/solutions-and-endeavors/benefit-over-cost"><a> comparative analysis </a></Link> of 
+            <Link href="/history/solutions/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}> environmental solutions</a></Link> 
+            {' '}along-side <Link href="/history/endeavors/benefit-minus-cost"><a> historic human endeavors </a></Link>
+
+              
           </div>
           <div className="hidden lg:block"
             style={{
