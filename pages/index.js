@@ -60,9 +60,9 @@ export default function Home() {
               textAlign: 'justify'
             }}
           >
-            Enabling informed choices through <Link href="/history/solutions-and-endeavors/benefit-over-cost"><a> comparative analysis </a></Link> of 
+            Enabling informed choices through comparative analysis of 
             <Link href="/history/solutions/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}> environmental solutions</a></Link> 
-            {' '}along-side <Link href="/history/endeavors/benefit-minus-cost"><a> historic human endeavors </a></Link>
+            {' '}along-side historic human{' '}<Link href="/history/endeavors/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}>endeavors </a></Link>
 
               
           </div>
