@@ -11,7 +11,18 @@ import {
   endeavorBenefitOverCost,
   endeavorCostEfficiencyComparison,
 } from "/lib/dynamicBarCharts/endeavorProc";
-
+import { 
+  solutionBenefitMinusCost,
+  solutionBenefitOverCost,
+  solutionCostEfficiencyComparison,
+  solutionGreenhouseGasReduction,
+  solutionHabitatPreservation
+ } from "/lib/dynamicBarCharts/solutionProc";
+ import {
+  solutionEndeavorBenefitMinusCost,
+  solutionEndeavorBenefitOverCost,
+  solutionEndeavorCostEfficiencyComparison,
+ } from "/lib/dynamicBarCharts/solutionEndeavorProc"
 
 const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m.AnimatePresence), {
   ssr: false,
@@ -70,8 +81,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     rightSide={75}
                     leftSide={425}
                     titleText={0}
-                    fetchDataFunc={endeavorBenefitOverCost}
-                    
+                    fetchDataFunc={solutionBenefitOverCost}
                     subset={subsetProp}
                   />
                   <DynamicSingleBarChart
@@ -81,7 +91,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     rightSide={75}
                     leftSide={425}
                     titleText={0}
-                    fetchDataFunc={endeavorBenefitMinusCost}
+                    fetchDataFunc={solutionBenefitMinusCost}
 
                     subset={subsetProp}
                   />
@@ -117,7 +127,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                         input value below so that the lower bar does not exceed the width of
                         the chart.
                       */
-                      () => endeavorCostEfficiencyComparison(6.7, subsetProp)}
+                      () => solutionCostEfficiencyComparison(1.7, subsetProp)}
                     
                   /> 
                   </section>

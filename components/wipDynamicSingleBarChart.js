@@ -31,7 +31,7 @@ const customLabelRenderer = (props) => {
   return (
     <text
       x={x + width + labelText} // {-10} for negative values (labelText)
-      y={y + 12} // controls vertical placement of string to right of bar
+      y={y + 9} // controls vertical placement of string to right of bar
       textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
       fill="#212121"
       fontFamily="Roboto"
