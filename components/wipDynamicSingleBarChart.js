@@ -169,7 +169,7 @@ const DynamicSingleBarChart = ({
     }
 
     fetchData();
-  }, [fetchDataFunc]);
+  }, [fetchDataFunc, subsetLink]);
 
   let labelText;
   if (scale === "positive") {
