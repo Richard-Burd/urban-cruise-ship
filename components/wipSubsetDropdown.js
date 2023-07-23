@@ -4,8 +4,13 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import convertToUrlSlug from "../lib/convertToUrlSlug";
 import DynamicSingleBarChart from "/components/wipDynamicSingleBarChart.js";
+import DynamicDoubleBarChart from "/components/wipDynamicDoubleBarChart.js";
 import SubsetTable from "/components/SubsetTable.js";
-import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import {
+  endeavorBenefitMinusCost,
+  endeavorBenefitOverCost,
+  endeavorCostEfficiencyComparison,
+} from "/lib/dynamicBarCharts/endeavorProc";
 
 
 const NoSsrAnimatePresence = dynamic(() => import("framer-motion").then((m) => m.AnimatePresence), {
@@ -57,8 +62,16 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                   {/* the paddingBottom value here ensures the table does not overhang the edges,
                   this is due to there being no references listed as a footnote on these dropdowns*/}
                   <center>
-
-
+{/* there is a problem with the negative ratios showing up as positive. TODO */}
+                  <DynamicSingleBarChart
+                    barChartTitle={`${title} Endeavors - Benefit Over Cost Ratio`}
+                    scale={"positive"}
+                    rightSide={75}
+                    leftSide={425}
+                    titleText={0}
+                    fetchDataFunc={endeavorBenefitOverCost}
+                    subsetLink="/history/endeavors/subsets#ecology-environment"
+                  />
                   <DynamicSingleBarChart
                     barChartTitle={"Endeavors - Net Benefit (Benefit minus Cost)"}
                     barChartSubTitle={""}
@@ -67,8 +80,10 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     leftSide={425}
                     titleText={0}
                     fetchDataFunc={endeavorBenefitMinusCost}
+                    subsetLink="/history/endeavors/subsets#ecology-environment"
                   />
-                  <DynamicSingleBarChart
+                  {/* commented out this negative value TODO get the scale acting right... currently the bar is huge compared to the others. */}
+{/*                   <DynamicSingleBarChart
                     barChartTitle={""}
                     scale={"negative"}
                     rightSide={295}
@@ -76,9 +91,22 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     solutionBackgroundOffset={605}
                     titleText={495}
                     fetchDataFunc={endeavorBenefitMinusCost}
-                  />
+                    subsetLink="/history/endeavors/subsets#ecology-environment"
+                    subset={subsetProp}
+                  /> */}  
+                                    {/* TODO the double bar chart should get worked on once the single is functioning. */}
+{/*                   <DynamicDoubleBarChart
+                    barChartTitle={`${title} Endeavors - Cost and Efficiency`}
+                    barChartSubTitle={""}
+                    scale={"positive"}
+                    rightSide={75}
+                    leftSide={425}
+                    titleText={0}
+                    fetchDataFunc={endeavorBenefitMinusCost}
+                    subsetLink="/history/endeavors/subsets#ecology-environment"
+                  /> */}
                   <SubsetTable subset={subsetProp} focusAreaUrl = {focusAreaUrl} />
-
+                
 
                   </center>
                   {/*
