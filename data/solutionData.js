@@ -187,7 +187,7 @@ export const solutionData = [
     subset: "miscellaneous"
   },
   {
-    solution: `Plant-based Inf. Advocacy Campaign - U.S.`,
+    solution: `Plant-based Info. Advocacy Campaign - U.S.`,
     link: `/matter/diet/diet_fw#plant-based-informational-advocacy-campaign`,
     site: `matter`,
     cost: 0.48,
@@ -195,7 +195,7 @@ export const solutionData = [
     co2: 88,
     habitat: null,
     sources: null,
-    subset: "miscellaneous"
+    subset: "public-health-campaigns"
   },
   {
     solution: `Remove Parking Minimums - U.S.`,
