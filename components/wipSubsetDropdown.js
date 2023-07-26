@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import convertToUrlSlug from "../lib/convertToUrlSlug";
-import DynamicSingleBarChart from "/components/wipDynamicSingleBarChart.js";
-import DynamicDoubleBarChart from "/components/wipDynamicDoubleBarChart.js";
+import DynamicSingleBarChart from "/components/DynamicSingleBarChart.js";
+import DynamicDoubleBarChart from "/components/DynamicDoubleBarChart.js";
 import SubsetTable from "/components/SubsetTable.js";
 import {
   endeavorBenefitMinusCost,
