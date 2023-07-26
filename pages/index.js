@@ -62,7 +62,7 @@ export default function Home() {
           >
             Enabling informed choices through comparative analysis of 
             <Link href="/history/solutions/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}> environmental solutions</a></Link> 
-            {' '}along-side historic human{' '}<Link href="/history/endeavors/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}>endeavors </a></Link>
+            {' '}along-side historic human{' '}<Link href="/history/solutions-and-endeavors/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}>endeavors </a></Link>
 
               
           </div>

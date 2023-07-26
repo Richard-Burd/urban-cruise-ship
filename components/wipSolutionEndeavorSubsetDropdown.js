@@ -6,18 +6,6 @@ import convertToUrlSlug from "../lib/convertToUrlSlug";
 import DynamicSingleBarChart from "/components/DynamicSingleBarChart.js";
 import DynamicDoubleBarChart from "/components/DynamicDoubleBarChart.js";
 import SubsetTable from "/components/SubsetTable.js";
-import {
-  endeavorBenefitMinusCost,
-  endeavorBenefitOverCost,
-  endeavorCostEfficiencyComparison,
-} from "/lib/dynamicBarCharts/endeavorProc";
-import { 
-  solutionBenefitMinusCost,
-  solutionBenefitOverCost,
-  solutionCostEfficiencyComparison,
-  solutionGreenhouseGasReduction,
-  solutionHabitatPreservation
- } from "/lib/dynamicBarCharts/solutionProc";
  import {
   solutionEndeavorBenefitMinusCost,
   solutionEndeavorBenefitOverCost,
@@ -95,18 +83,17 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
 
                     subset={subsetProp}
                   />
-                  {/* commented out this negative value TODO get the scale acting right... currently the bar is huge compared to the others. */}
-{/*                   <DynamicSingleBarChart
+
+                   <DynamicSingleBarChart
                     barChartTitle={""}
                     scale={"negative"}
                     rightSide={295}
                     leftSide={-50}
                     solutionBackgroundOffset={605}
                     titleText={495}
-                    fetchDataFunc={endeavorBenefitMinusCost}
-                    
+                    fetchDataFunc={solutionEndeavorBenefitMinusCost}
                     subset={subsetProp}
-                  /> */}  
+                  />
                                     {/* TODO the double bar chart should get worked on once the single is functioning. */}
                 <DynamicDoubleBarChart
                     barChartTitle={`Cost and Efficiency`}
