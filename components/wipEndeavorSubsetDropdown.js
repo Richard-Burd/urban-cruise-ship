@@ -85,8 +85,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
 
                     subset={subsetProp}
                   />
-                  {/* commented out this negative value TODO get the scale acting right... currently the bar is huge compared to the others. */}
-{/*                   <DynamicSingleBarChart
+                 <DynamicSingleBarChart
                     barChartTitle={""}
                     scale={"negative"}
                     rightSide={295}
@@ -96,7 +95,7 @@ const subsetProp = convertToUrlSlug(title); //sets the value of the subset so th
                     fetchDataFunc={endeavorBenefitMinusCost}
                     
                     subset={subsetProp}
-                  /> */}  
+                  />
                                     {/* TODO the double bar chart should get worked on once the single is functioning. */}
                 <DynamicDoubleBarChart
                     barChartTitle={`Cost and Efficiency`}
