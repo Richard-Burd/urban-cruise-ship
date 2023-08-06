@@ -55,6 +55,14 @@ const Publications = () => {
                 <b><i>Diet Choices - Ethical Impacts</i></b>
               </div>
             </a>
+            <a 
+              href="https://drive.google.com/file/d/17ArBIup8XaKQUWdgTjugTUj9v9TCZOE5/"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            >
+              <div>
+                <b><i>Consumption Trends</i></b>
+              </div>
+            </a>
           </div>
           <div className="pb-6">
             <div>Access</div>
