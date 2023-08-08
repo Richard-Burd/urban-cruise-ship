@@ -55,14 +55,25 @@ const Publications = () => {
                 <b><i>Diet Choices - Ethical Impacts</i></b>
               </div>
             </a>
+{/* https://drive.google.com/file/d/1cZpCwDpGFlAtAt57wlo7bVt1x2CMIX4S/view?usp=sharing */}
             <a 
-              href="https://drive.google.com/file/d/17ArBIup8XaKQUWdgTjugTUj9v9TCZOE5/"
+              href="https://drive.google.com/uc?export=view&id=1gHevtqdUi8b-XYjbh5stPmZhGdXJiQBN"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             >
               <div>
-                <b><i>Consumption Trends</i></b>
+                <b><i>Personal Consumption Trends</i></b>
               </div>
             </a>
+
+            <a 
+              href="https://drive.google.com/uc?export=view&id=1cZpCwDpGFlAtAt57wlo7bVt1x2CMIX4S"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            >
+              <div>
+                <b><i>World Consumption Trends</i></b>
+              </div>
+            </a>
+
           </div>
           <div className="pb-6">
             <div>Access</div>
