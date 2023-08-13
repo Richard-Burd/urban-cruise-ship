@@ -12,26 +12,26 @@ export const solution = "Hermetic Storage Bags";
 
 ## Description
 
+We examine the solution of hermetic storage bags in order to assist the reduction of post harvest loss of maize in Tanzania. 
 
 ## Background
 
-Inadequate storage facilities lead to substantial postharvest grain losses among smallholder farmers in developing countries, resulting in up to 40% of harvests being lost[7]. Contributing factors include insecure storage, damaging traditional practices, and pest exposure[2]. 
+Inadequate storage facilities lead to substantial postharvest grain losses among smallholder farmers in developing countries, resulting in up to 40% of harvests being lost.[^"2"] Contributing factors include insecure storage, damaging traditional practices, and pest exposure.[^"1"] 
 
-In Tanzania, maize is the most stored crop, with farmers facing a 7 month time gap between harvesting periods
+In Tanzania, maize is the most stored crop, with farmers facing a 7 month time gap between harvesting periods. Postharvest losses of maize here are significant, with up to 30-40% of the harvest being lost in some rural areas [^"3"]
 
-In Tanzania, postharvest losses of maize are significant, with up to 30-40% of the harvest being lost in some rural areas https://dr.lib.iastate.edu/entities/publication/88da37e2-d648-49fc-880f-0083fdf324b2 
+- Annual production 6.3 million tons[^"6"]
+- Average of 20% total post-harvest losses were found to occur during storage [^"3"]
+- Storage structures were often ineffective and lead to increased vulnerability to insects, such as large grain borers, grain weevil, and lesser grain borers [^"3"]
+- 75% of maize is stored [^"3"]
 
--20% average of total post-harvest losses were found to occur during storage 
--Storage structures were often ineffective and lead to increased vulnerability to insects, such as large grain borers, grain weevil, and lesser grain borers
--75% of maize is stored
+To address this, the Tanzanian governement has instituted a 10-year plan to increase their food storage capacity.[^"5"]
 
-Annual production 6.3 million tons
-https://knoema.com/atlas/United-Republic-of-Tanzania/topics/Agriculture/Crops-Production-Quantity-tonnes/Maize-production
-
-To address this, hermetic storage bags offer a cost-effective solution, proven to minimize postharvest losses across various crops and regions[1][3].
+While infrastructure is being put into place, hermetic storage bags offer a cost-effective solution, proven to minimize postharvest losses across various crops and regions. [^"7"]
 
 
-Hermetic bags are reusable multi-layer plastic structures. These bags preserve commodities for extended periods by preventing moisture, pests, and fungi without requiring pesticides or refrigeration. Their utilization can lead to postharvest losses as low as 1%–2%. For the purposes of this solution, we assume 3 uses.
+Hermetic bags are reusable multi-layer plastic structures. These bags preserve commodities for extended periods by preventing moisture, pests, and fungi without requiring pesticides or refrigeration. Their utilization can lead to postharvest losses as low as 1%–2%. For the purposes of this solution, we assume 4 uses. [^"7"]
+
 
 <DynamicSolutionGraphic
   barChartTitle={"Post Harvest Storage Loss Prevention - Tanzania"}
@@ -53,12 +53,16 @@ Hermetic bags are reusable multi-layer plastic structures. These bags preserve c
     },
     {
       name: "Cost",
-      barlength: 25.6,
-      displayedValue: "$48.898 Millions USD/year",
+      barlength: 29.9,
+      displayedValue: "$29.956 Millions USD/year",
       site: "null",
     },
   ]}
 />
+
+#### Source. [^"3"] [^"6"] [^"7"]  We estimate a cost of $25.36 per ton of hermetic bag storage. [^"8"]
+
+
 
 <DynamicSolutionGraphic
   barChartTitle={"Post Harvest Storage Loss Prevention"}
@@ -79,32 +83,30 @@ Hermetic bags are reusable multi-layer plastic structures. These bags preserve c
     },
     {
       name: "Avoided Carbon Costs",
-      barlength: 0.8,
+      barlength: 17.3,
       displayedValue: "$17.3 Millions USD/year",
       site: "null",
     },
   ]}
 />
 
+#### Source. [^"2"] [^"8"] [^"6"]
+
 ## Implementation
 
 Implementing hermetic storage bags for all smallholder farmers in developing nations would require a significant investment. This strategic allocation could markedly reduce postharvest grain losses, enhance food security, and augment the incomes of smallholder farmers. Nevertheless, the broader context, including training, local conditions, and distribution mechanisms, must be taken into account before implementation.
 
 
-
-
-
-
-
-## Calculations
-
-
-## Implementation
-
-
 ##### Lead researcher: Jye - last updated 8/13/2023
 
-
+[^"1"]: Kumar D, Kalita P. [Reducing Postharvest Losses during Storage of Grain Crops to Strengthen Food Security in Developing Countries - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5296677/). Foods. Jan 2017.
+[^"2"]:  [Post-Harvest Loss Reduction | WFP Innovation](https://innovation.wfp.org/project/post-harvest-loss-prevention). 
+[^"3"]: Suleiman R. [Current Maize Production, Postharvest Losses and the Risk of Mycotoxins Contamination in Tanzania](https://dr.lib.iastate.edu/entities/publication/88da37e2-d648-49fc-880f-0083fdf324b2). Iowa State University. Jul 2015.
+[^"4"]: Abass AB, Ndunguru G, Mamiro P, Alenkhe B, Mlingi N, Bekunda M. [Post-harvest food losses in a maize-based farming system of semi-arid savannah area of Tanzania - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022474X1300101X#fig3). Journal of Stored Products Research.Apr 2014.
+[^"5"]:  [Tanzania on right track in tackling post-harvest losses | The Citizen](https://www.thecitizen.co.tz/tanzania/news/business/tanzania-on-right-track-in-tackling-post-harvest-losses-3777128). 
+[^"6"]:  [Maize production quantity - United Republic of Tanzania](https://knoema.com/atlas/United-Republic-of-Tanzania/topics/Agriculture/Crops-Production-Quantity-tonnes/Maize-production). 
+[^"7"]: Ndegwa MK, De Groote H, Gitonga ZM, Bruce AY. [Effectiveness and economics of hermetic bags for maize storage: Results of a randomized controlled trial in Kenya - ScienceDirect](http://dx.doi.org/10.1016/j.cropro.2016.08.007).  Crop Protection.Dec 2016.
+[^"8"]:  [GrainPro Hermetic Bag Premium Zipper](https://www.grainpro.com/grainpro-bag-premium-zipper). 
 
 export default ({ children }) => 
   <SolutionDropdown 
