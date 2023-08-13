@@ -1,0 +1,118 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+export const problem = "Post Harvest Losses - Tanzania";
+export const solution = "Hermetic Storage Bags";
+
+## Description
+
+
+## Background
+
+Inadequate storage facilities lead to substantial postharvest grain losses among smallholder farmers in developing countries, resulting in up to 40% of harvests being lost[7]. Contributing factors include insecure storage, damaging traditional practices, and pest exposure[2]. 
+
+In Tanzania, maize is the most stored crop, with farmers facing a 7 month time gap between harvesting periods
+
+In Tanzania, postharvest losses of maize are significant, with up to 30-40% of the harvest being lost in some rural areas https://dr.lib.iastate.edu/entities/publication/88da37e2-d648-49fc-880f-0083fdf324b2 
+
+-20% average of total post-harvest losses were found to occur during storage 
+-Storage structures were often ineffective and lead to increased vulnerability to insects, such as large grain borers, grain weevil, and lesser grain borers
+-75% of maize is stored
+
+Annual production 6.3 million tons
+https://knoema.com/atlas/United-Republic-of-Tanzania/topics/Agriculture/Crops-Production-Quantity-tonnes/Maize-production
+
+To address this, hermetic storage bags offer a cost-effective solution, proven to minimize postharvest losses across various crops and regions[1][3].
+
+
+Hermetic bags are reusable multi-layer plastic structures. These bags preserve commodities for extended periods by preventing moisture, pests, and fungi without requiring pesticides or refrigeration. Their utilization can lead to postharvest losses as low as 1%–2%. For the purposes of this solution, we assume 3 uses.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Post Harvest Storage Loss Prevention - Tanzania"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"0.34 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"Jye 8-13-2023"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 66.2,
+      displayedValue: "$66.216",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 25.6,
+      displayedValue: "$48.898 Millions USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+<DynamicSolutionGraphic
+  barChartTitle={"Post Harvest Storage Loss Prevention"}
+  barChartTitle2={"Benefits Calculation - Tanzania"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye 5-12-2023"}
+  
+  
+  staticData={[
+    {
+      name: "Avoided Gas Energy",
+      barlength: 27.5,
+      displayedValue: "$27.5",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0.8,
+      displayedValue: "$0.8 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+## Implementation
+
+Implementing hermetic storage bags for all smallholder farmers in developing nations would require a significant investment. This strategic allocation could markedly reduce postharvest grain losses, enhance food security, and augment the incomes of smallholder farmers. Nevertheless, the broader context, including training, local conditions, and distribution mechanisms, must be taken into account before implementation.
+
+
+
+
+
+
+
+## Calculations
+
+
+## Implementation
+
+
+##### Lead researcher: Jye - last updated 8/13/2023
+
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
