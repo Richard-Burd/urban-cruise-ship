@@ -122,7 +122,9 @@ export default function Home() {
           />
           <div className="standard-font-1 standard-font-color-1 text-5xl sm:text-6xl lg:text-6xl">Our Mission</div>
           <div className="standard-font-2 text-xl">
-            Enabling informed choices through comparative analysis of environmental solutions alongside historic human endeavors 
+          Enabling informed choices through comparative analysis of 
+            <Link href="/history/solutions/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}> environmental solutions</a></Link> 
+            {' '}along-side historic human{' '}<Link href="/history/solutions-and-endeavors/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}>endeavors </a></Link>
           </div>
           
         </div>
