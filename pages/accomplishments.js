@@ -35,7 +35,7 @@ const Accomplishments = () => {
           <b>2023:</b>&nbsp;Broadness of both topic and solution coverage has reached the point where Urban Cruise Ship&apos;s web site is the best starting point we know of for students, counselors, and school administrators to use to select majors, curricula, and research topics in environmental fields.
         </div>
         <div className="pb-6">
-          <b>2022-Present:</b>&nbsp;Produced nine exemplary handouts, which employ data
+          <b>2022-Present:</b>&nbsp;Produced eleven exemplary handouts, which employ data
           presented graphically, and use no opinionated messaging in text form
           apart from labels and titles.
         </div>
