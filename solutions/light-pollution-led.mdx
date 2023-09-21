@@ -1,0 +1,96 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+export const problem = "Light Pollution";
+export const solution = "Use Lighting That Limits Skyglow";
+
+## Description
+
+We recommend local governments, world governments, and other stakeholders invest in LED lighting with full cut-off shielding or retrofit existing lighting to block unnecessary skyward illumination.
+
+## Background
+
+Light pollution impacts star visibility, but the adverse effects of light pollution extend to human and animal mental and physical health as well as the environment. [^"1"] This form of pollution is often taken less seriously than other forms, as it is often considered an aesthetic issue. Many people living in areas with high levels of light pollution are never able to benefit from the ability to stargaze. [^"3"] However, for many cultures, the loss of starlight has profound detrimental effects, especially those whose traditions are deeply involved with the stars. [^"2"] [^"9"] 
+
+There is no clear link between brightness and increased safety, and in some cases, the opposite has been found. [^"6"] Research has found that the use of artificial light at levels similar to full moon illumination with a warm-white color temperature of 2700K to 2200K is most preferred by survey respondents. While estimating what energy could be saved by reducing the brightness of over-illuminated areas is difficult, the savings would be substantial. [^"4"] 
+
+Artificial light is disruptive to animals and insects especially those who operate nocturnally. LED lights allow for more control over lighting which can help to reduce the impact on ecological systems. [^"11"]
+
+Full cutoff shielding can reduce average city sky glow and can be further enhanced by reducing illumination in over-illuminated areas. By using these practices, research indicates a 42–88% reduction in sky glow. [^"5"] 
+
+Street lighting can represent 40-45% of a municipality's total energy costs. [^"12"]
+
+
+
+## Calculations
+
+Using an estimate of $440 per light for LED with cut-off shielding replacement, we can get a rough idea of the cost it would take to retrofit the worlds lights with ones that reduce sky glow. [^"20"]
+
+Number of streetlights world wide
+352m [^"7"] 
+
+The total cost then would be 154.88 Billion to do retrofitting total
+
+2.2 billion per year wasted light in the US. [^"18"]
+
+We will estimate 55 million street lights in the US [^"19"]
+
+So that would be $40 per light a year per light is wasted due to unnecessary skyward illumination in the US
+
+Extrapolation to a worldwide scale results in 14.08 billion of of energy savings per year due only to the element of wasted skyward illumination. 
+
+
+
+Next I will need to estimate other benefits and monetize them. 
+
+Other Savings due to switching to LEDs, carbon footprint savings. Possible ecological benefits?
+
+
+
+
+## Implementation
+
+Six case studies regarding the transition to LED street lights provide resources for municipalities seeking to transition to LED technologies. [^"15"] In many cities, the process is already underway as more people are realizing the cost savings of this technology, but it must be coupled with environmental considerations. [^"16"]
+
+
+##### Lead researcher: Jye - last updated 9/20/2023
+
+
+[^"1"]:  [Light Pollution and Smart Outdoor Lighting](https://dergipark.org.tr/en/download/article-file/1555622). 
+[^"2"]: Hamacher D. [Whitening the Sky: light pollution as a form of cultural genocide ](https://arxiv.org/ftp/arxiv/papers/2001/2001.11527.pdf). Cornell University.Jan 2020.
+[^"3"]: Lyytimäki J, Rinne J. [Voices for the darkness: online survey on public perceptions on light pollution as an environmental problem](https://www.tandfonline.com/doi/full/10.1080/1943815X.2013.824487). Journal of Integrative Environmental Sciences.Mar 2013
+[^"4"]: Simmons et al. [Optimizing exterior lighting illuminance and spectrum for human, environmental, and economic factors. - IOPscience](https://iopscience.iop.org/article/10.1088/1755-1315/1099/1/012047). IOP Conference Series: Earth and Environmental ScienceNov 2022
+[^"5"]:  [The relation of outdoor lighting characteristics to sky glow from distant cities - DM Duriscoe, CB Luginbuhl, CD Elvidge, 2014](https://journals.sagepub.com/doi/10.1177/1477153513506729). IOP Conf. Ser.: Earth Environ.Feb 2014
+[^"6"]:  [Outdoor lighting at night doesn’t do what you think it does to reduce crime and increase safety](https://darksky.org/resources/what-is-light-pollution/effects/safety/). 
+[^"7"]:  [Global LED & Smart Street Lighting Market (2015-2025)](https://www.prnewswire.com/news-releases/global-led--smart-street-lighting-market-2015-2025-300277486.html). 
+[^"8"]:  [United States Census Bureu](https://www.census.gov/). 
+[^"9"]:  [Light Pollution – Effects on Culture – 1/2.](https://rasc.ca/sites/default/files/LightPollution-EffectsonCulture.pdf). 
+[^"10"]:  [Outdoor lighting at night doesn’t do what you think it does to reduce crime and increase safety](https://darksky.org/resources/what-is-light-pollution/effects/safety/). 
+[^"11"]:  [REVIEW: Reducing the ecological consequences of night‐time light pollution: options and developments - Gaston](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2012.02212.x). 
+[^"12"]:  [Adopting Energy-Efficient Technologies for Street Lighting: Overcoming Challenges for Utilities](https://escholarship.org/content/qt8359x29b/qt8359x29b.pdf?t=p7e214). 
+[^"13"]:  [How Long Do LED Street Lights Last - Olympia Lighting, Inc.](https://olympialighting.com/how-long-do-led-street-lights-last/). 
+[^"14"]:  [Safe Streets: LA Bureau of Street Lighting](https://lalights.lacity.org/residents/safe_streets.html). 
+[^"15"]:  [Proven Delivery Models for LED Public Lighting | Synthesis of Six Case Studies | ESMAP](https://www.esmap.org/node/57252). 
+[^"16"]:  [Cities 'finally waking up' to the benefits of smart streetlights: survey](https://www.smartcitiesdive.com/news/survey-smart-streetlights-LED-northeast-group/577227/). 
+[^"17"]:  [Population Division |](https://www.un.org/development/desa/pd/). 
+[^"18"]:  [The Energy Cost of Light Pollution](https://futurism.com/the-energy-cost-of-light-pollution). 
+[^"19"]:  [Municipalities and streetlights: making the jump to LEDs](https://www.eaton.com/tw/en-us/company/news-insights/lighting-resource/trends/municipalities-and-streetlights-making-the-jump-to-leds.html). 
+[^"20"]:  [How Much do The Street Lights Cost? | ZGSM](https://www.zgsm-china.com/blog/how-much-do-the-street-lights-cost.html). 
+
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
+
+
