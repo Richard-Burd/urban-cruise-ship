@@ -8,11 +8,11 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Light Pollution";
-export const solution = "Use Lighting That Limits Skyglow";
+export const solution = "LED Street Lights With Full Cut-Off Shielding - World";
 
 ## Description
 
-We recommend local governments, world governments, and other stakeholders invest in LED lighting with full cut-off shielding or retrofit existing lighting to block unnecessary skyward illumination.
+We recommend local governments, world governments, and other stakeholders accelerate investment in LED lighting with full cut-off shielding or retrofit existing lighting to block unnecessary skyward illumination.
 
 ## Background
 
@@ -26,32 +26,51 @@ Full cutoff shielding can reduce average city sky glow and can be further enhanc
 
 Street lighting can represent 40-45% of a municipality's total energy costs. [^"12"]
 
+As of this report, half of the world-wide residential lighting market uses LED technology.[^"22"] Total adoption for city illumination is still unclear, however the adoption of these technologies is on the rise. [^"12"]
 
+<DynamicSolutionGraphic
+  barChartTitle={"LED Streetlight Installation - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"1.44 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"Jye 8-13-2023"}
+ staticData={[
+    {
+      name: "Benefit",
+      barlength: 14.08,
+      displayedValue: "$14.08",
+      site: "null",
+    },
+        {
+      name: "Cost",
+      barlength: 15.488,
+      displayedValue: "$15.488 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+#### Source.
 
 ## Calculations
 
-Using an estimate of $440 per light for LED with cut-off shielding replacement, we can get a rough idea of the cost it would take to retrofit the worlds lights with ones that reduce sky glow. [^"20"]
+Using an estimate of $440 per light for LED with cut-off shielding replacement, we can get a rough estimate of $154.88 billion USD to retrofit the worlds lights with ones that reduce sky glow. [^"20"] 
 
-Number of streetlights world wide
-352m [^"7"] 
+It is estimated that the United States wastes 22,000 gigawatt hours ($2.2 billion USD) on skyward illumination per year. [^"18"] We estimate that there are 55 million street lights in the US. [^"19"] This comes to $40 per light per year, and by applying this caluclation to the estimated 352 million streetlights across the world[^"7"], we calculate $14.08 billion USD of energy savings from properly directed light.
 
-The total cost then would be 154.88 Billion to do retrofitting total
+LED lights use approximately 75% less energy than conventional streetlights. [^"21"] For the purposes of this report, we will assume that all streetlights are currently sodium vapor lamps with internal ignitors (SON), even though LED retrofitting is already being carried out, and many areas now use LED streetlights.  [^"24"] Further research is needed to assess the current state of LED retrofitting.
 
-2.2 billion per year wasted light in the US. [^"18"]
+Electricity cost for an LED streetlamp for a year is $140.16 [^"20"]
+Electricity cost for a conventinal high-pressure sodium lamp is $350.14 [^"20"] 
 
-We will estimate 55 million street lights in the US [^"19"]
+Calculations for benefit will present a counterfactual of HPS lamps verses LED lamps worldwide. 
 
-So that would be $40 per light a year per light is wasted due to unnecessary skyward illumination in the US
-
-Extrapolation to a worldwide scale results in 14.08 billion of of energy savings per year due only to the element of wasted skyward illumination. 
-
-
-
-Next I will need to estimate other benefits and monetize them. 
-
-Other Savings due to switching to LEDs, carbon footprint savings. Possible ecological benefits?
-
-
+Left to do: estimate total energy expended on streetlamps, calculate reduction in cost, calculate co2 reductions
 
 
 ## Implementation
@@ -59,7 +78,7 @@ Other Savings due to switching to LEDs, carbon footprint savings. Possible ecolo
 Six case studies regarding the transition to LED street lights provide resources for municipalities seeking to transition to LED technologies. [^"15"] In many cities, the process is already underway as more people are realizing the cost savings of this technology, but it must be coupled with environmental considerations. [^"16"]
 
 
-##### Lead researcherJye - last updated 9/20/2023
+##### Lead researcher: Jye - last updated 9/20/2023
 
 
 [^"1"]:  [Light Pollution and Smart Outdoor Lighting](https://dergipark.org.tr/en/download/article-file/1555622). 
