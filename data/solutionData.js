@@ -409,7 +409,45 @@ export const solutionData = [
     sources: null,
     subset: "public-health-projects"
   },
+
+  {
+    solution: `Pesticide Tax`,
+    link: ``,
+    site: `matter`,
+    cost: 0.02566,
+    benefit: 0.08879,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects"
+  },
+
+  {
+    solution: `Grid Battery Deployment for Load Balancing`,
+    link: ``,
+    site: `energy`,
+    cost: 41.7,
+    benefit: 84.1,
+    co2: 91,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency"
+  },
+
+  {
+    solution: `Composting Infrastructure`,
+    link: ``,
+    site: `waste`,
+    cost: 97.56,
+    benefit: 220.89,
+    co2: 361.1,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
 ]
+
+
 
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
     solution: `Sell Certain Types of Produce Loose - U.S.`,
