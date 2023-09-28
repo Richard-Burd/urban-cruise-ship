@@ -411,8 +411,8 @@ export const solutionData = [
   },
 
   {
-    solution: `Pesticide Tax`,
-    link: `/matter`,
+    solution: `Pesticide Tax - World`,
+    link: `/matter/ag_env/pesticides#pesticide-tax`,
     site: `matter`,
     cost: 0.02566,
     benefit: 0.08879,
@@ -424,7 +424,7 @@ export const solutionData = [
 
   {
     solution: `Grid Battery Deployment for Load Balancing`,
-    link: `/energy`,
+    link: `/energy/energy_distribution/grid_storage#grid-battery-deployment`,
     site: `energy`,
     cost: 41.7,
     benefit: 84.1,
@@ -436,7 +436,7 @@ export const solutionData = [
 
   {
     solution: `Composting Infrastructure`,
-    link: `/waste`,
+    link: `/waste/waste_economics/waste_facilities#compost-mandate`,
     site: `waste`,
     cost: 97.56,
     benefit: 220.89,
