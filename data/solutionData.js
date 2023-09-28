@@ -71,7 +71,7 @@ export const solutionData = [
     site: `energy`,
     cost: 0.11,
     benefit: 0.23,
-    co2: 0,
+    co2: null,
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency"
@@ -247,7 +247,7 @@ export const solutionData = [
     site: `habitat`,
     cost: 4.8,
     benefit: 9.4,
-    co2: 0,
+    co2: null,
     habitat: null,
     sources: null,
     subset: "ecology-environment"
@@ -412,7 +412,7 @@ export const solutionData = [
 
   {
     solution: `Pesticide Tax`,
-    link: ``,
+    link: `/matter`,
     site: `matter`,
     cost: 0.02566,
     benefit: 0.08879,
@@ -424,7 +424,7 @@ export const solutionData = [
 
   {
     solution: `Grid Battery Deployment for Load Balancing`,
-    link: ``,
+    link: `/energy`,
     site: `energy`,
     cost: 41.7,
     benefit: 84.1,
@@ -436,7 +436,7 @@ export const solutionData = [
 
   {
     solution: `Composting Infrastructure`,
-    link: ``,
+    link: `/waste`,
     site: `waste`,
     cost: 97.56,
     benefit: 220.89,
