@@ -1,17 +1,40 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "E-Waste";
-export const solution = "Improve Recycling";
+export const solution = "Establish e-waste collection infrastructure - U.S.";
 import ArticleImage from "/components/ArticleImage.js";
 
-We propose public funding for collection of e-waste. With proper collection, economics should support higher recycling rates.
+## Description
+We propose public funding for the establishment of collection infrastructure of e-waste. With proper collection, economics should support higher recycling rates.
+
+
+## Background
+Electronic waste constitutes 2-5% of the MSW waste stream[^”1”].
+
+More than 70% of retired electronic devices end up in storage for 3-5 years before disposal[^”1”].
 
 Recycling plants have the potential to be profitable, before accounting for environmental benefits, as has been shown for a hypothetical model in Egypt.
 
 <ArticleImage image={"egypt_ewaste.svg"} width={700} height={400} />
-#### Source: [^"10"]. Figures for Year 5 are presented and rounded to the nearest $1000, so total profit is not exactly equal to the sum of all revenues and expenses.
+#### Source: [^"2"]. Figures for Year 5 are presented and rounded to the nearest $1000, so total profit is not exactly equal to the sum of all revenues and expenses.
 
-[^"10"]: Mostafa, T. M., Sarhan, S. ["Economic Feasibility Study of E-Waste Recycling Facility in Egypt"](https://www.researchgate.net/publication/326226096_Economic_Feasibility_Study_of_E-Waste_Recycling_Facility_in_Egypt). Joint Journal of Novel Carbon Resource Sciences & Green Asia Strategy 5(2), pp. 26-35. June 2018.
+
+## Calculations
+Collection and transportation is estimated to represent 80% of the total cost of recycling e-waste[^”1”].
+
+
+## Implementation
+
+
+
+##### Lead researcher: Lee Nelson - Last updated: 10/3/2023
+
+[^”1”]: Kang, H., Schoenung, J. [“Electronic waste recycling: A review of U.S. infrastructure and technology options”] (https://doi.org/10.1016/j.resconrec.2005.06.001) Resources Conservation and Recycling. December 2005
+
+[^"2"]: Mostafa, T. M., Sarhan, S. ["Economic Feasibility Study of E-Waste Recycling Facility in Egypt"](https://www.researchgate.net/publication/326226096_Economic_Feasibility_Study_of_E-Waste_Recycling_Facility_in_Egypt). Joint Journal of Novel Carbon Resource Sciences & Green Asia Strategy 5(2), pp. 26-35. June 2018.
+
+
+
 
 export default ({ children }) => 
   <SolutionDropdown 
