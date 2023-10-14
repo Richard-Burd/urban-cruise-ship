@@ -3,7 +3,28 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "High Cost of Nuclear Power";
 export const solution = "Reactor Standardization";
 
-Countries that have been able to achieve relatively low nuclear capital costs, such as South Korea and historically France, have done so in part through standardization of reactor designs.
+## Description
+We propose to institute worldwide nuclear reactors standardizations to reduce construction costs and build times.
+
+## Background
+Econometric studies attribute construction costs escalation to a lack of standardization, an increase in complexity of new reactors, and safety related regulatory interventions[^”1”].
+
+The average construction time of reactors that started since 2004 is 10 years, twice what is usually announced by nuclear vendors [^”1”].
+
+Upfront construction costs account between 60% and 80% of nuclear power levelized costs[^”1”]. This means that any unexpected increase of those costs can significantly undermine nuclear reactors profitability and can lead to abandon ongoing construction projects[^”1”].
+
+## Calculations
+ ‘Gen III’ nuclear technologies construction costs expectations per kilowatt is $5,579.88[^”1”].
+
+
+## Implementation
+The overnight capitol cost will need to be reduced from $12,748kWe to $3,000kWe in order to be commercially viable[^”2”].
+
+##### Lead researcher: Lee Nelson - Last updated: 10/6/2023
+
+[^”1”]: Berthelemy, M., Rangel, L. [“Nuclear reactors' construction costs: The role of lead-time, standardization and technological progress”](https://doi.org/10.1016/j.enpol.2015.03.015) Energy Policy, July 2015
+
+[^”2”]: Parsi, S. et al. [“Seismic isolation: A pathway to standardized advanced nuclear reactors”]( https://doi.org/10.1016/j.nucengdes.2021.111445) Nuclear Engineering and Design, February 2022
 
 export default ({ children }) => 
   <SolutionDropdown 
