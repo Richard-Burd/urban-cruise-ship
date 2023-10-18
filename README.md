@@ -586,7 +586,7 @@ Replace `new_image` with the correct image name and then add in the correct foot
 
 ### Image Sizing for both Articles and Solutions Using the Graphics Template (20% Reduction Rule of Thumb)
 
-As of 4/20/2023, we are using a file called [***coal_phase_out_cba_desktopO.svg***](https://drive.google.com/file/d/1T1CQq6UM91lkyLWuKzMnQ-ouLTS6ZCkK/view?usp=share_link) as our template for both solution and article graphics.  NOTE: this SVG is already 900pixels wide, and its graphical elements are already sized properly for the solution dropdown boxes.  We are using this same [file](https://drive.google.com/file/d/1T1CQq6UM91lkyLWuKzMnQ-ouLTS6ZCkK/view?usp=share_link) as a template for our article images as well, so in theory it would be dropped right into an article at full size, given that articles can handle images that are 992pixels wide.  The problem here is that if we do this, our new article images will no match the older generation of article images because the new article images will have larger text, bars, and logos than those found in the older article images.  To remedy this, we use the following rule of thumb: ***when you import a new article image, reduce its width & height by 20%.***  Doing this makes the text, bars, and logos in the new article images match the older generation of article images. In example, if you had an SVG image that was originally 900pixels wide and 420pixels tall, you would make it 720pixels wide and 336pixels tall like this:
+As of 4/20/2023, we are using a file called [**_coal_phase_out_cba_desktopO.svg_**](https://drive.google.com/file/d/1T1CQq6UM91lkyLWuKzMnQ-ouLTS6ZCkK/view?usp=share_link) as our template for both solution and article graphics. NOTE: this SVG is already 900pixels wide, and its graphical elements are already sized properly for the solution dropdown boxes. We are using this same [file](https://drive.google.com/file/d/1T1CQq6UM91lkyLWuKzMnQ-ouLTS6ZCkK/view?usp=share_link) as a template for our article images as well, so in theory it would be dropped right into an article at full size, given that articles can handle images that are 992pixels wide. The problem here is that if we do this, our new article images will no match the older generation of article images because the new article images will have larger text, bars, and logos than those found in the older article images. To remedy this, we use the following rule of thumb: **_when you import a new article image, reduce its width & height by 20%._** Doing this makes the text, bars, and logos in the new article images match the older generation of article images. In example, if you had an SVG image that was originally 900pixels wide and 420pixels tall, you would make it 720pixels wide and 336pixels tall like this:
 
 ```
 <ArticleImage image={"new_article _image.svg"} width={720} height={336} />
@@ -742,6 +742,47 @@ export default ({ children }) =>
     {children}
   </Article>
 ```
+
+### Deleting a Solution
+
+If a solution is to be removed from the UCS website, there is a chance it could eventually come back at some future time, so the standard practice is to “comment-out” the solution rather than delete it. “Commenting-out” something means we leave it in the source code, but we turn it into a ‘comment’ that will be visible in the source code itself, but will **_not_** be visible to a viewer that visits the website. To comment out an itenm in an article, we wrap it in these symbols: `{/*  */}` so that the `<LobsterSolution />` solution in the above example would look like this: `{/* <LobsterSolution /> */}` - here it is in context:
+
+```jsx
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "oceans";
+export const focusAreaUrl = "ocean_industry";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+import LobsterSolution from "/solutions/lobster_solution.mdx"
+
+<ArticleImage image={"article_image_name.svg"} width={750} height={400} />
+#### some small markdown text that goes under the image
+
+# Lobsters
+lobsters are cool
+
+## A Subtitle
+subtitles are cool
+
+{/* <LobsterSolution /> */}
+
+## Final Subtitle
+bottom most text block within the article.
+
+export default ({ children }) =>
+  <Article
+    focusAreaUrl={focusAreaUrl}
+    hierarchy={hierarchy}
+    site={site}
+  >
+    {children}
+  </Article>
+```
+
+<br></br>
 
 ### Solutions (Content Structure)
 
@@ -906,40 +947,46 @@ https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation
 ---
 
 ## Instructions for Creating Article Buttons with Top and Bottom Defined Text
-Some of our article buttons have a unique requirement to display a specified text on the top line of text with a specified text on the bottom line of text.  below is one such button from the [HISTORY/Solutions](https://www.urbancruiseship.org/history/solutions) section:
+
+Some of our article buttons have a unique requirement to display a specified text on the top line of text with a specified text on the bottom line of text. below is one such button from the [HISTORY/Solutions](https://www.urbancruiseship.org/history/solutions) section:
 
 ![image of the Net Benefit button](https://web-cyber.jyeartstudio.com/ucs-images/top_n_bottom_text_button.jpg)
 
-NOTE: the ***Net Benefit*** is defined as the 'top' line and the ***(Benefit - Cost)*** is defined as the bottom line.  We do not our  text to be arbitrarily wrapped as it is elsewhere throughout the site but instead want it defined by humans.  This is achieved by adding an extra key & value pair to the `hierarchy.json` file in the specialized site [in our case HISTORY] you wish to modify.  Below there is a `"article_title_two": "(Benefit / Cost)"` line that indicates the text that should be displayed on the bottom line of the button.  The `article_title_two` key is optional and if it is not present, the text will be displayed on a single line as it is elsewhere on the site.  The `article_title_two` key is only used for the top and bottom text buttons.  The `article_title` key is used for all other buttons.  Below is an example of the `hierarchy.json` file for the HISTORY section:
+NOTE: the **_Net Benefit_** is defined as the 'top' line and the **_(Benefit - Cost)_** is defined as the bottom line. We do not our text to be arbitrarily wrapped as it is elsewhere throughout the site but instead want it defined by humans. This is achieved by adding an extra key & value pair to the `hierarchy.json` file in the specialized site [in our case HISTORY] you wish to modify. Below there is a `"article_title_two": "(Benefit / Cost)"` line that indicates the text that should be displayed on the bottom line of the button. The `article_title_two` key is optional and if it is not present, the text will be displayed on a single line as it is elsewhere on the site. The `article_title_two` key is only used for the top and bottom text buttons. The `article_title` key is used for all other buttons. Below is an example of the `hierarchy.json` file for the HISTORY section:
 
 ```json
 [
-    {
-     "focus_area_name":"Solutions",
-     "focus_area_url":"solutions",
-     "articles": [
-      { 
-        "article_title": "Efficiency", 
-        "article_title_two": "(Benefit / Cost)", 
-        "article_url": "benefit-over-cost" 
+  {
+    "focus_area_name": "Solutions",
+    "focus_area_url": "solutions",
+    "articles": [
+      {
+        "article_title": "Efficiency",
+        "article_title_two": "(Benefit / Cost)",
+        "article_url": "benefit-over-cost"
       },
-      { 
-        "article_title": "Net Benefit", 
-        "article_title_two": "(Benefit - Cost)", 
-        "article_url": "benefit-minus-cost" 
+      {
+        "article_title": "Net Benefit",
+        "article_title_two": "(Benefit - Cost)",
+        "article_url": "benefit-minus-cost"
       }
-     ]
-  },
+    ]
+  }
 ]
 ```
+
 This gets past down via `props` to the `ArticleButton` & `ArticleNavbarButton` components which then use the `article_title_two` key to display the text on this line:
 
 ```jsx
-{props.articleTitle}
-{props.articleTitleTwo && <div>{props.articleTitleTwo}</div>}
+{
+  props.articleTitle;
+}
+{
+  props.articleTitleTwo && <div>{props.articleTitleTwo}</div>;
+}
 ```
 
-The code above essentially says: if the `article_title_two` key is present, display the text on the bottom line of the button.  If it is not present, display the text on a single line as it is elsewhere on the site.
+The code above essentially says: if the `article_title_two` key is present, display the text on the bottom line of the button. If it is not present, display the text on a single line as it is elsewhere on the site.
 
 ---
 
@@ -954,7 +1001,7 @@ This static site uses the following:
 3. **Tailwind-CSS** - CSS styling library
 4. **Framer Motion** - animation library for our dropdown boxes
 5. **MDX** - a Markdown-based syntax for writing JSX components
-6. **Lunr.js** - lightweight, client-side search engine for full-text search (planned for the  future)
+6. **Lunr.js** - lightweight, client-side search engine for full-text search (planned for the future)
 7. **Node v18** - Updated from 16 on 7.10.2023 as v16 is depricated.
 
 ### Availability
