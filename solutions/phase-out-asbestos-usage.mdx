@@ -1,3 +1,16 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+export const problem = "Asbestos Exposure Deaths / Disease - World";
+export const solution = "Phase Out Abestos Usage";
+
+
 ## Description
 
 
@@ -71,6 +84,13 @@ International cooperation in the form of a treaty such as the Montreal Protocol 
 
 [^"11"]:  [Learn About Asbestos | US EPA](https://www.epa.gov/asbestos/learn-about-asbestos).
 
+[^"12"]: [The Stockholm Convention on Persistent Organic Pollutants | American Journal of International Law](https://www.cambridge.org/core/journals/american-journal-of-international-law/article/abs/stockholm-convention-on-persistent-organic-pollutants/47E6AE71CC66943C239D5383B2B935C0).
 
-[^"12"]: [^"12"]: [The Stockholm Convention on Persistent Organic Pollutants | American Journal of International Law](https://www.cambridge.org/core/journals/american-journal-of-international-law/article/abs/stockholm-convention-on-persistent-organic-pollutants/47E6AE71CC66943C239D5383B2B935C0).
 
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
