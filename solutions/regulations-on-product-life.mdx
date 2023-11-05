@@ -1,0 +1,66 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Planned Obsolescence";
+export const solution = "Regulations on Product Life";
+
+## Description
+
+We propose that the United States federal and state governments collaborate with industry stakeholders to implement measures inspired by the European Union's Ecodesign Directive. This policy aims to address the shortened lifespans of products, promoting designs that are durable and repairable, with the intention of reducing waste and conserving resources.
+
+## Background
+
+Planned obsolescence is a policy of designing a product with an artificially limited useful life, so that a new version must be purchased. [^"3"] While it is difficult to prove intentional planned obsolescence, there is a profit incentive for companies to keep the product life of certain goods shorter, and Apple has been sued for failing to inform consumers of intentional slowdowns of iPhones with older batteries. [^"8"]
+
+Each year, up to 50 million tons of electronic waste are generated, much of which ends up in waste tips in developing countries, creating a risk to the environment and human health. [^"4"] 
+
+In 2017, the European Parliament approved its Resolution on a longer lifetime for products, which allows users of electronic devices to repair their terminals with any service provider. The directive also includes fiscal incentives for products based on quality, durability, and ease of repair. Additionally, some countries, like France, have implemented their own legal frameworks to combat planned obsolescence. [^"4"]
+
+The Ecodesign Directive is a policy measure by the European Union designed to improve the energy efficiency and environmental impact of products. The directive covers a broad range of products, from household appliances to industrial equipment. By establishing requirements for energy efficiency, the Ecodesign Directive aims to reduce energy consumption and environmental harm while also saving consumers money on energy bills. [^"5"]
+
+However, quantifying the exact costs and benefits of implementing a similar policy in the United States is complex and depends on a range of factors. There are costs involved in developing and enforcing the regulations, as well as potential costs to manufacturers in terms of redesigning products to meet the standards. On the benefit side, the directive can result in significant energy savings, reduced environmental impact, and cost savings for consumers.
+
+According to the European Commission, the Ecodesign Directive is expected to deliver energy savings of around 330 TWh by 2030, which is equivalent to the annual energy consumption of Sweden. These energy savings could translate into financial savings of around €20 billion a year by 2030. [^"5"]
+
+
+## Benefits
+
+Reduced waste: By designing products to last longer and be more easily repaired, we can reduce the amount of waste generated. This can lead to cost savings in waste management and resource extraction.
+
+Conserved resources: Extending the lifespan of products can lead to cost savings for consumers, as they would not need to replace products as frequently. Additionally, by reducing waste and conserving resources, we can decrease the environmental impact of manufacturing and disposal processes.
+
+Regulations could include right-to-repair regulations, enabling consumers to maintain products that are otherwise difficult or impossible to repair. [^"6"]
+
+## Implementation
+
+Implementing the Ecodesign Directive in the US would require collaboration between federal and state governments, as well as engagement with industry stakeholders. Key steps in the implementation process could include:
+
+- Developing a legal framework for the Ecodesign Directive, including specific regulations for different product categories.
+
+- Establishing enforcement and monitoring mechanisms, such as government agencies responsible for ensuring compliance and reporting on progress.
+
+- Providing support and incentives for businesses to adapt their practices, such as tax breaks or grants for research and development of more durable and repairable products.
+
+- Raising awareness among consumers about the benefits of longer-lasting and repairable products, and encouraging them to make more sustainable choices.
+
+##### Lead Researcher: Jye - Last updated 11/01/2023
+
+[^"1"]:  [Submission » Planned Obsolescence: Is It a Trap Set for the Consumer or Is It a Strategy Contributing to Social Development?](https://dergipark.org.tr/en/pub/eab/issue/63461/953538). 
+[^"2"]:  [Stakeholders’ Views on the Ecodesign Directive – CEPS](https://www.ceps.eu/ceps-publications/stakeholders-views-ecodesign-directive/). 
+[^"3"]:  [An Economic Theory of Planned Obsolescence](https://academic.oup.com/qje/article-abstract/101/4/729/1840176?redirectedFrom=fulltext&login=false). 
+[^"4"]:  [The battle against planned obsolescence](https://www.activesustainability.com/sustainable-development/battle-against-planned-obsolescence/?_adin=11551547647). 
+[^"5"]:  [Ecodesign for Sustainable Products Regulation](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products_en). 
+[^"6"]:  [Right to repair: Making repair easier for consumers](https://ec.europa.eu/commission/presscorner/detail/en/ip_23_1794). 
+[^"7"]:  [Monitoring framework - Circular economy - Eurostat](https://ec.europa.eu/eurostat/web/circular-economy/monitoring-framework). 
+[^"8"]:  [Smartphone Performance Settlement](https://www.smartphoneperformancesettlement.com/). 
+
+
+
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
