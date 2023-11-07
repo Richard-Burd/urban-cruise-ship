@@ -1,5 +1,6 @@
 import Head from "next/head";
 import NavbarTitleBlock from "../components/NavbarTitleBlock";
+export const path = `${process.env.NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH}`;
 
 const Publications = () => {
   return (
@@ -25,7 +26,7 @@ const Publications = () => {
           <div className="pb-6">
             <div>Health</div>
             <a
-              href="https://drive.google.com/uc?export=view&id=1S4Z-GoAg_kjnQrMelPXk50aPggTe9NWc"
+              href={`${path}/human_population.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -37,7 +38,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=1yXCVRfFiujWwwXYb8f-u2N5LpriPQl6q"
+              href={`${path}/diet_choices_environmental.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -49,7 +50,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=1ZO5owlxiToeCKYjyXhEvcbhw_xfhJt_o"
+              href={`${path}/diet_choices_ethical.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -62,7 +63,7 @@ const Publications = () => {
             </a>
             {/* https://drive.google.com/file/d/1cZpCwDpGFlAtAt57wlo7bVt1x2CMIX4S/view?usp=sharing */}
             <a
-              href="https://drive.google.com/uc?export=view&id=1gHevtqdUi8b-XYjbh5stPmZhGdXJiQBN"
+              href={`${path}/personal_consumption_trends_8823.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -75,7 +76,7 @@ const Publications = () => {
             </a>
 
             <a
-              href="https://drive.google.com/uc?export=view&id=1cZpCwDpGFlAtAt57wlo7bVt1x2CMIX4S"
+              href={`${path}/world_consumption_trends_8823.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -90,7 +91,7 @@ const Publications = () => {
           <div className="pb-6">
             <div>Access</div>
             <a
-              href="https://drive.google.com/uc?export=view&id=1c7NpnBkKoIN_dOVw066ePihQKHjzua7X"
+              href={`${path}/residential_sprawl_impacts.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -102,7 +103,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=15ab9Y6zSL_yUQllWoVq8LaCbiZMaDSEq"
+              href={`${path}/transportation_option_impacts_vehicle_cargo.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -114,7 +115,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=1WnFPppfjmXq6fbIvjameM-eddro43ayX"
+              href={`${path}/transportation_system_impacts.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -129,7 +130,7 @@ const Publications = () => {
           <div className="pb-6">
             <div>Opportunities</div>
             <a
-              href="https://drive.google.com/uc?export=view&id=1-m5pMehD1Tk9r66o1CxKkqCgVuGJERkr"
+              href={`${path}/electricity_production_forecast.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -141,7 +142,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=1lHyhqRrBRHH0ShIQCrn3AQ7xqRlA9ejz"
+              href={`${path}/energy_production_forecast.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
@@ -153,7 +154,7 @@ const Publications = () => {
               </div>
             </a>
             <a
-              href="https://drive.google.com/uc?export=view&id=1qsTrTzIfaRrJOZq-s52eRBrJaLoeZ80z"
+              href={`${path}/timelines.pdf`}
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
               target="_blank"
               rel="noreferrer"
