@@ -1,53 +1,69 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Space and Pollution From Last Mile Delivery";
-export const solution = "E-Bikes";
+export const solution = "Delivery Drones";
 
 ## Description
 
-We recommend businesses, especially those in the courier and delivery sector, adopt the use of e-bikes for package delivery in high-density areas as a strategy to reduce traffic, reduce pollution, and improve delivery service.
+We recommend businesses, especially those in the courier and delivery sector, integrate drone delivery systems in last-mile logistics, emphasizing the potential for significant reductions in carbon emissions, increased efficiency, and cost savings.
 
 ## Background
 
-The initial investment for an e-bike fleet includes the purchase of the e-bikes, installation of charging stations, and staff training. However, these costs are offset by savings in fuel and maintenance costs associated with traditional delivery trucks. [^"1"] Companies operating in urban areas can save 45% on delivery costs within urban areas. [^"6"]
+Drone delivery systems represent a transformative approach to last-mile logistics, capable of delivering goods directly to consumers' doorsteps. By leveraging unmanned aerial vehicles (UAVs), these systems promise to reduce the reliance on traditional ground transportation, which is often associated with higher carbon footprints and inefficiencies in urban settings. [^"1"]
 
-A study done by the University of Washington compares cargo e-bikes to delivery trucks. [^"5"]
-- Delivery Trucks emit 246 grams of CO2e per Km, verses 7 grams with e-bikes [^"5"]
-- Delivery Trucks are more likely to fail to deliver the package on the first try, requiring reshipment [^"5"]
-- Delivery Trucks are able to make more delivery locations per hour than ebikes, but this does not factor in the walking time required by the drivers, and potential fines for double parking. e-bikes are able to get closer to the final destination with their vehicle [^"5"]
+The global market for delivery drones is growing. In 2020, the global market for delivery drones stood at an estimated $528.6 million and is projected to increase at a compound annual growth rate (CAGR) of 32.4%. [^"6"]
 
-The NYC Department of Transportation has found that cargo e-bikes save 7 tons of CO2 emissions per year per bike. [^"8"]
+The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
 
-E-bikes navigate urban environments more efficiently than trucks, leading to faster delivery times and increased productivity.  [^"1"] A study on cargo bike delivery concept selection suggests that renting cargo bikes from a third-party provider is the most cost-effective solution for e-commerce companies. [^"2"]
 
-Additional benefits include:
+Primary Benefits of Drone Delivery:
+- up to 94% less energy consumption per package verses other vehicles [^"1"]
+- can ease traffic in dense urban areas [^"6"]
+- small quadcopter drones consume approximately 0.08 MJ/km and emit 70 gCO2e/package [^"1"]
 
-Efficiency: E-bikes can navigate through traffic jams.  [^"1"]
-Access: E-bikes can easily access narrow streets, pedestrian zones, and low emission zones.  [^"1"]
-Health Benefits: Physical activity from cycling is beneficial for couriers' health. [^"3"]
+Energy consumption and GHG emissions for different vehicles
+
+|Vehicle class|Fuel GHG emissions (g/km)|Upstream GHG emissions (g/km)|Battery GHG emissions (g/km)|GHG emission (g/package)|
+|:----|:----|:----|:----|:----|
+|Medium-duty diesel truck|762.8|168.7|–|443.6|
+|Small diesel van|339.8|75.2|–|119.2|
+|Medium-duty electric truck|674.3|83.7|24.5|372.6|
+|Small electric van|293.0|36.4|14.1|98.7|
+|Electric cargo bicycle|17.9|2.2|3.3|23.4|
+|Small quadcopter drone|14.4|1.8|1.3|70.1|
+
+#### Source [^"1"]
+
+
+Benefits of Drone Delivery Systems:
+
+- Reduced Carbon Emissions: Drones can operate on electric power, significantly lowering the carbon footprint compared to combustion engine vehicles.
+- Increased Delivery Efficiency: Drones can bypass road traffic and infrastructural constraints, delivering goods faster and with greater predictability.
+- Cost Reduction: Over time, the operational costs of drone deliveries may be lower than traditional vehicle deliveries due to reduced labor and maintenance expenses.
+- Enhanced Accessibility: Drones can reach remote or difficult-to-access areas, providing essential services to underserved communities.
+
 
 
 ## Implementation
 
-Investing in e-bike fleets is more cost-effective in the long run, considering the savings on fuel and maintenance. [^"2"]
 
-Legislation: While legislation in 2019 allowed e-bikes to travel through public parks, there's a need for more uniform e-bike laws across states.[^"9"] The National Institute for Transportation and Communities advise that devices going faster than 20 mph do not belong in bicycle lanes and shared-use paths, and limiting the speeds of electric bikes in these areas is advised. Presently, each state and municipality in the state can have its own local rules, which results in a confusing patchwork. [^"4"]
+Aviation regulations will need to be tailored to delivery drones to ensure safe and operational airspace. [^"6"]
 
+Energy consumption can be reduced by 34% by reducing vertical takeoff. [^"1"]
 
-##### Lead Researcher: Jye - Last updated 11/07/2023
+Embedded GHG emissions are up to 93% higher in regions with a more carbon-intensive grid mix, driving the need for a transition to a renewable power grid. [^"1"]
 
-[^"1"]:  [Design and Operation of an Urban Electric Courier Cargo Bike System | Semantic Scholar](https://www.semanticscholar.org/paper/Design-and-Operation-of-an-Urban-Electric-Courier-Niels-Hof/9258012f46d8d5b6fe4deeda606de22fd8a60998). 
-[^"2"]:  [An Extended AROMAN Method for Cargo Bike Delivery Concept Selection | Semantic Scholar](https://www.semanticscholar.org/paper/An-Extended-AROMAN-Method-for-Cargo-Bike-Delivery-Bo%C5%A1kovi%C4%87-%C5%A0vadlenka/435c340285d2a8437b681fe69626a9544eda2101). 
-[^"3"]:  [Increasing Active Transportation Through E-Bike Use: Pilot Study Comparing the Health Benefits, Attitudes, and Beliefs Surrounding E-Bikes and Conventional Bikes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6293244/). 
-[^"4"]:  [Regulations of E-Bikes in North America](https://ppms.trec.pdx.edu/media/project_files/NITC-RR-564_Regulations_of_E-Bikes_in_North_America_1.pdf). 
-[^"5"]:  [Cargo E-Bike Delivery Pilot Test in Seattle](https://depts.washington.edu/sctlctr/sites/default/files/research_pub_files/Cargo-E-Bike-Delivery-Report.pdf). 
-[^"6"]:  [CycleLogistics – Moving Europe Forward! - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352146516000478?via%3Dihub). 
-[^"7"]:  [Potential for e-cargo bikes to reduce congestion and pollution from vans in cities](https://www.cistoustopou.cz/sites/default/files/article/2020-11/potential-for-e-cargo-bikes-to-reduce-congestion-and-pollution-from-vans-final.pdf). 
-[^"8"]:  [Commercial Cargo Bicycle Pilot | NYC.gov](https://www.nyc.gov/html/dot/downloads/pdf/commercial-cargo-bicycle-pilot-evaluation-report.pdf). 
-[^"9"]:  [eCFR :: 36 CFR 4.30 -- Bicycles.](https://www.ecfr.gov/current/title-36/chapter-I/part-4/section-4.30). 
+Drones can only deliver items to accessible places such as front doors or back yards, however these locations could be problematic in that they could be left unattended. They also are unable to deliver to mailboxes and apartment buildings. More research is needed to develop secure way to ensure delivery. [^"2"]
 
+Privacy, and safety concerns as well as noise levels are challenges to public acceptance. Drones fitted with cameras and other sensors could be used for data collection or surveillance, and regulations should be in place to prevent violations of individual privacy. [^"6"] Data protection and a precautionary approach is recommended to prevent a chilling effect of the implementation of this technology. [^"7"]
 
-
+[^"1"]:  [Drone flight data reveal energy and greenhouse gas emissions savings for very small package delivery: Patterns](https://www.cell.com/patterns/fulltext/S2666-3899(22)00180-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2666389922001805%3Fshowall%3Dtrue). 
+[^"2"]:  [Last-Mile Drone Delivery: Past, Present, and Future | Semantic Scholar](https://www.semanticscholar.org/paper/Last-Mile-Drone-Delivery%3A-Past%2C-Present%2C-and-Future-Eskandaripour-Boldsaikhan/70971f92e7a0357ed3cea5c463ba73781e7b6762). 
+[^"3"]:  [[PDF] Optimizing Drone Delivery in Smart Cities | Semantic Scholar](https://www.semanticscholar.org/paper/Optimizing-Drone-Delivery-in-Smart-Cities-Shahzaad-Alkouz/caea10f4645862c3751be42d798e709869ef1322). 
+[^"4"]:  [A systematic literature review on the main factors for public acceptance of drones](https://www.sciencedirect.com/science/article/abs/pii/S0160791X2200238X?via%3Dihub). 
+[^"5"]:  [Robots in Space: Sharing the Sidewalk with Autonomous Delivery Vehicles](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3347466). 
+[^"6"]:  [Drones as a Medium of Delivery -its Scope and Importance - IJSREM](https://ijsrem.com/download/drones-as-a-medium-of-delivery-its-scope-and-importance/). 
+[^"7"]:  [Responsible Design of Drones and Drone Services - A Synthetic Report](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3096573). 
 
 
 export default ({ children }) => 
