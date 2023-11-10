@@ -3,11 +3,26 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Light Pollution";
 export const solution = "Database of Satellites";
 
-We propose a database, like SatHub, as outlined at the SATCON 2 Workshop [^1]. SatHub is envisioned as a database that includes properties of all satellites in orbit, so that astronomers can more easily correct for their visual impact on observations. SatHub would be funded through a combination of a public source, such as the National Science Foundation or NASA; by the satellite industry; and by the astronomical community.
+## Description
+We propose a database, like SatHub, as outlined at the SATCON 2 Workshop[^”1”] to keep track of satellite positions and reduce interference with observations and experiments.
+
+## Background
+SatHub is envisioned as a database that includes properties of all satellites in orbit, so that astronomers can more easily correct for their visual impact on observations[^”1”].
+The impact of these satellite constellations on astronomy and the night sky depends strongly on the brightness of their constituent satellites, which is a complex function of time, attitude, orbital position, and wavelength[^”2”]. Satellites can reflect enough sunlight to be visible to the unaided eye[^”2”].  This impact extends out to longer wavelengths, with thermal emission at infrared wavelengths, and spurious emission at microwave and radio wavelengths[^”2”].
+
+## Calculations
+
+
+## Implementation
+SatHub would be funded through a combination of a public source, such as the National Science Foundation or NASA; by the satellite industry; and by the astronomical community.
 
 [Reducing artificial light pollution](https://urban-cruise-ship.vercel.app/cities/cities_energy_and_pollution/light#light-pollution-led) on the earth could also reduce reflected light off of satellites.
 
-[^1]: NOIRLab. ["Satellite Constellations 2 Workshop"](https://noirlab.edu/satcon2). July 12-16, 2021.
+##### Lead researcher: Lee Nelson - Last updated: 11/10/2023
+[^”1”]: NOIRLab [“Satellite Constellations 2 Workshop”](https://noirlab.edu/satcon2) July, 2021
+
+[^”2”]: Rawls, M. et al. [“SATCON2 Observations Working Group Report”](https://helda.helsinki.fi/bitstream/handle/10138/338522/report.pdf) HELDA, 2021
+
 
 export default ({ children }) => 
   <SolutionDropdown 
