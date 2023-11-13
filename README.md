@@ -950,7 +950,7 @@ https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation
 
 Some of our article buttons have a unique requirement to display a specified text on the top line of text with a specified text on the bottom line of text. below is one such button from the [HISTORY/Solutions](https://www.urbancruiseship.org/history/solutions) section:
 
-![image of the Net Benefit button](https://web-cyber.jyeartstudio.com/ucs-images/top_n_bottom_text_button.jpg)
+![image of the Net Benefit button](https://jyeartstudio.com/ucs-images/top_n_bottom_text_button.jpg)
 
 NOTE: the **_Net Benefit_** is defined as the 'top' line and the **_(Benefit - Cost)_** is defined as the bottom line. We do not our text to be arbitrarily wrapped as it is elsewhere throughout the site but instead want it defined by humans. This is achieved by adding an extra key & value pair to the `hierarchy.json` file in the specialized site [in our case HISTORY] you wish to modify. Below there is a `"article_title_two": "(Benefit / Cost)"` line that indicates the text that should be displayed on the bottom line of the button. The `article_title_two` key is optional and if it is not present, the text will be displayed on a single line as it is elsewhere on the site. The `article_title_two` key is only used for the top and bottom text buttons. The `article_title` key is used for all other buttons. Below is an example of the `hierarchy.json` file for the HISTORY section:
 

@@ -24,7 +24,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['web-cyber.jyeartstudio.com'],
+    domains: ['jyeartstudio.com'],
   },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 };
