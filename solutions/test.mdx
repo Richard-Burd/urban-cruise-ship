@@ -3,6 +3,14 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Space and Pollution From Last Mile Delivery";
 export const solution = "Delivery Drones";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+import SolutionImages from "/components/SolutionImages.js";
+
 ## Description
 
 We recommend businesses, especially those in the courier and delivery sector, integrate drone delivery systems in last-mile logistics, emphasizing the potential for significant reductions in carbon emissions, increased efficiency, and cost savings.
@@ -14,6 +22,30 @@ Drone delivery systems represent a transformative approach to last-mile logistic
 The global market for delivery drones is growing. In 2020, the global market for delivery drones stood at an estimated $528.6 million and is projected to increase at a compound annual growth rate (CAGR) of 32.4%. [^"6"]
 
 The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
+
+<DynamicSolutionGraphic
+  barChartTitle={"Delivery Drones for Last Mile Delivery"}
+  barChartTitle2={"We do not yet feel that we have sufficient data to present total costs and benefits"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={'off'}
+  mastheadText3={"jye 5-12-2023"}
+  
+  
+  staticData={[
+    {
+      name: " ",
+      barlength: 0,
+      displayedValue: "",
+      site: "null",
+    },
+  ]}
+/>
 
 
 Primary Benefits of Drone Delivery:

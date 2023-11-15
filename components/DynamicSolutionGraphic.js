@@ -149,6 +149,7 @@ const DynamicSolutionGraphic = ({
   mastheadText2 = "Exhibit constructed by",
   mastheadText3,
   chartType,
+  mastheadToggle,
   fetchDataFunc, //data passed as props directly, UNUSED TRASH?
 }) => {
   const [data, setData] = useState([]);
@@ -277,7 +278,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
             id="bar-chart-2"
             style={{
               fontFamily: "Roboto",
-              fontSize: "36px",
+              fontSize: "16px",
               fontWeight: 600,
               lineHeight: 1.4,
               alignItems: "center",
@@ -480,7 +481,7 @@ this div allows you to put multiple elements side by side */}
         )}
 
         {/* Masthead, contains logo and 3 lines. Adjust right: to move the element*/}
-        {imageSrc && (
+        {imageSrc && mastheadToggle !== "off" && (
           <object
             style={{
               display: "flex",
