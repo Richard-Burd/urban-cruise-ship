@@ -278,7 +278,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
             id="bar-chart-2"
             style={{
               fontFamily: "Roboto",
-              fontSize: "16px",
+              fontSize: "24px",
               fontWeight: 600,
               lineHeight: 1.4,
               alignItems: "center",
