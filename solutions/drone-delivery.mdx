@@ -1,13 +1,15 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Space and Pollution From Last Mile Delivery";
-export const solution = "Drone Delivery";
-
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
   () => import("../components/DynamicSolutionGraphic"),
   { ssr: false }
 );
+
+export const problem = "Space and Pollution From Last Mile Delivery";
+export const solution = "Drone Delivery";
+
+
 
 import SolutionImages from "/components/SolutionImages.js";
 
