@@ -3,13 +3,26 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Seasonal Electricity Storage";
 export const solution = "Ammonia As Storage";
 
-Ammonia may be the most promising solution for long-term (multiple weeks) or seasonal energy storage [^"7"], [^"14"]. Although less efficient than hydrogen, ammonia is much easier to store and transport than hydrogen, and the facilities to do so are already well established. Ammonia is also not geographically constrained as pumped hydro is.
+## Description
+We propose using ammonia as a form of long-term seasonal energy storage.
 
-Seasonal ammonia storage will struggle to take off without support, either as a carbon price or some other incentive [^"14"].
+## Background
+Ammonia does not contain carbon, it is not a greenhouse gas, and its flammability region in ambient air is very narrow[^”1”]. NH3 contains a high volume of H2 and can be used as a hydrogen storage molecule[^”1”]. It only needs water, air, and electricity to be produced[^”1”]. It can be stored in a tank and storage and transport is very affordable[^”1”].
+The production of NH3 involves an electrolyser, an ASU and an Haber-Bosch processes[^”1”].  This last technology is not negligible in the final cost but the most expensive process remains the electrolysis[^”1”].
 
-[^"7"]: Dias, V., Pochet, M., Contino, F., Jeanmart, H. ["Energy and Economic Costs of Chemical Storage"](https://www.frontiersin.org/articles/10.3389/fmech.2020.00021/full). Frontiers in Mechanical Engineering 6. May 2020.
+## Calculations
+The global cost of using ammonia is $328.86/MWhNH3 [^”1”].
 
-[^"14"]: Patonia, A., Poudineh, R. ["Ammonia as a storage solution for future decarbonized energy systems"](https://www.oxfordenergy.org/wpcms/wp-content/uploads/2020/11/Ammonia-as-a-storage-solution-for-future-decarbonized-systems-EL-42.pdf). The Oxford Institute for Energy Studies. November 2020.
+
+## Implementation
+There will need to be rigid safety protocols in place as ammonia has significant toxicity by inhalation and is corrosive to several metals[^”1”]. Combustion of NH3 produces NOx emission and can also damage steel combustion appliances[^”1”].
+
+While there is some partial grid infrastructure for using ammonia as storage in the U.S., there is none in Europe or other countries and that will need to be developed for this to be truly viable worldwide[^”1”].
+
+##### Lead researcher: Lee Nelson - Last updated: 11/30/2023
+
+[^”1”]: Dias, V., Pochet, M., Contino, F., Jeanmart, H. ["Energy and Economic Costs of Chemical Storage"](https://www.frontiersin.org/articles/10.3389/fmech.2020.00021/full) Frontiers in Mechanical Engineering 6, May 2020 
+
 
 export default ({ children }) => 
   <SolutionDropdown 
