@@ -3,13 +3,28 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Risk From Artificial Intelligence";
 export const solution = "Explainable AI";
 
-Artifical intelligence, while a powerful technology, is potentially dangerous if misused or abused. Even before full artificial general intelligence is developed, cybercrime and algorithmic biases are serious and growing issue.
+## Description
+We promote the creation of standardized AI safety systems that include transparent explainability.
 
-Machine learning, which seeks to develop patterns from data, is the predominant current method of artificial intelligence. Such systems can fail or behave in unexpected ways when they encounter scenarios different from the data on which they were trained. One approach to reducing the risk under these circumstances is interpretability, or explanability, which requires that a machine learning system provide reasons for the decisions that it makes [^"17"]. Regulation from the European Union requires that an AI system is explainable, and relatedly transparent, under some situations such as when the system is used by doctor, lawyers, or environmentalists [^"1"].
 
-[^"1"]: Bar, G. ["Explainability as a legal requirement for Artificial Intelligence"](https://medium.com/womeninai/explainability-as-a-legal-requirement-for-artificial-intelligence-systems-66da5a0aa693). WomeninAI. Novebmer 2020.
+## Background
+Machine learning, which seeks to develop patterns from data, is the predominant current method of artificial intelligence. Many machine learning systems cannot be deployed without risking the system encountering a previously unknown scenario that causes it to fail[^”1”]. The risk of system failures causing significant harm increases as machine learning becomes more widely used, especially in areas where safety and security are critical[^”1”]. To mitigate this risk, research into “safe” machine learning seeks to identify potential causes of unintended behavior in machine learning systems and develop tools to reduce the likelihood of such behavior occurring[^”1”].
 
-[^"17"]: Rudner, T. G. J., Toner, H. ["Key Concepts in AI Safety: An Overview"](https://cset.georgetown.edu/publication/key-concepts-in-ai-safety-an-overview/). Center for Security and Emerging Technology. March 2021.
+Problems in AI safety can be grouped into three categories: robustness, assurance, and specification[^”1”]. Robustness guarantees that a system continues to operate within safe limits even in unfamiliar settings; assurance seeks to establish that it can be analyzed and understood easily by human operators; and specification is concerned with ensuring that its behavior aligns with the system designer’s intentions[^”1”].
+
+Under assurance, one of the key features that makes autonomous systems trustworthy is transparency. This includes having access to reliable information about the AI model, including information about the training procedure, training data, machine learning algorithms, methods of testing and validating the AI system[^”2”]. Also access to a reliable explanation calibrated for different audiences (from an ordinary citizen to an expert), covering both the technical processes of the AI system and the rationale for decisions or predictions made by the AI system[^”2”].
+
+## Calculations
+
+## Implementation
+Once the explainable AI systems are created they will need to be deployed into existing networks and the operators of those networks will need to be trained to use the systems.
+
+##### Lead researcher: Lee Nelson - Last updated: 12/1/2023
+
+[^”1”]: Rudner, T. G. J., Toner, H. ["Key Concepts in AI Safety: An Overview"](https://cset.georgetown.edu/publication/key-concepts-in-ai-safety-an-overview/) Center for Security and Emerging Technology, March 2021
+
+[^”2”]: Bar, G. ["Explainability as a legal requirement for Artificial Intelligence"](https://medium.com/womeninai/explainability-as-a-legal-requirement-for-artificial-intelligence-systems-66da5a0aa693) WomeninAI, November 2020 
+
 
 export default ({ children }) => 
   <SolutionDropdown 
