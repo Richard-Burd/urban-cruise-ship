@@ -1,7 +1,7 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Space and Pollution From Last Mile Delivery";
-export const solution = "Delivery Drones";
+export const problem = "Land Use";
+export const solution = "Implement Green Roofs into Urban Areas";
 
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
@@ -13,19 +13,32 @@ import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
-We recommend businesses, especially those in the courier and delivery sector, integrate drone delivery systems in last-mile logistics, emphasizing the potential for significant reductions in carbon emissions, increased efficiency, and cost savings.
+We recommend the United States implement legislation that will encourage the use of green roofs in urban areas to improve air quality, stormwater management, energy efficiency, and aesthetic appeal. 
 
 ## Background
 
-Drone delivery systems represent a transformative approach to last-mile logistics, capable of delivering goods directly to consumers' doorsteps. By leveraging unmanned aerial vehicles (UAVs), these systems promise to reduce the reliance on traditional ground transportation, which is often associated with higher carbon footprints and inefficiencies in urban settings. [^"1"]
+A green roof, also known as a living roof, eco-roof, or vegetated roof, is a roof of a building that is partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane. It may also include additional layers such as a root barrier and drainage and irrigation systems[^"13"]. 
 
-The global market for delivery drones is growing. In 2020, the global market for delivery drones stood at an estimated $528.6 million and is projected to increase at a compound annual growth rate (CAGR) of 32.4%. [^"6"]
+They can be categorized into two types: extensive and intensive. Extensive green roofs are thinner, lighter, and less expensive. They require less maintenance and are usually covered with a shallow layer of vegetation. Intensive green roofs, on the other hand, are thicker and can support a wider variety of plants but require more maintenance. Rooftop gardens are an example[^"13"].
 
-The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
+Green roofs provide a range of environmental benefits. They can help reduce the heat island effect in urban areas by absorbing heat and acting as insulators for buildings[^"14"]. They provide habitats for wildlife[^"14"]. Furthermore, green roofs can help prolong the lifespan of a roof by protecting it from weather-related wear and tear[^"14"].
+
+Additional benefits include:
+
+- Air Quality Improvement
+Green roofs can help reduce concentrations of several pollutants that affect air quality, climate, and health. By lowering temperatures and reducing energy use, green roofs can decrease the amount of air pollution associated with heating and electric power generation. They can also absorb existing ozone near the rooftop through plants, improving air quality[^"1"].
+
+- Stormwater Management
+Green roofs can significantly reduce the amount of rainwater that would otherwise run off an impervious roof surface. They capture water when it rains, slowly releasing it through evaporation and plant use. This can effectively reduce peak flows associated with storm events, reduce the total volume of stormwater discharge, and reduce the export of some pollutants often associated with traditional roofs[^"3"] [^"4"].
+
+- Energy Efficiency
+Green roofs can dramatically improve energy efficiency by regulating buildings' internal temperature and reducing building heating and cooling costs. The soil provides insulation and the vegetation shades the roof from solar heat, thereby lowering the temperature of the roof and the air directly above it. This in turn reduces the electricity demand for air conditioning in summer months[^"5"] [^"6"].
+
+
 
 <DynamicSolutionGraphic
-  barChartTitle={"Delivery Drones for Last Mile Delivery"}
-  barChartTitle2={"Energy Requirments Comparison by Delivery Method"}
+  barChartTitle={"Green Roofs - US"}
+  barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={"hide"}
@@ -39,27 +52,15 @@ The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
   
   staticData={[   
      {
-      name: "Small quadcopter drone",
-      barlength: 0.08,
-      displayedValue: "0.8 megajoules / kilometer",
+      name: "Benefits",
+      barlength: 19.08,
+      displayedValue: "$19.08",
       site: "null",
     },
     {
-      name: "Electric Cargo Bicycle ",
-      barlength: 0.1,
-      displayedValue: "0.1",
-      site: "null",
-    },
-    {
-      name: "Medium-duty electric truck",
-      barlength: 3.8,
-      displayedValue: "3.8",
-      site: "null",
-    },
-        {
-      name: "Medium-duty diesel truck ",
-      barlength: 11,
-      displayedValue: "11.0",
+      name: "Costs",
+      barlength: 5.62,
+      displayedValue: "$5.62 Billions USD/year",
       site: "null",
     },
         
@@ -67,10 +68,16 @@ The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
 />
 #### Source [^"1"]
 
+For the purposes of this solution, we will assume that rooftops represent 16%[^"18"] of the surface area of a given city and that 1 percent of this area would be commercial buildings and suitable for green roofs. 
+
+This gives us around 441 million square meters of potential green roofs. 
+
+We will take the net present values, divided over a 40-year time frame to estimate the annual benefits and costs.
+
 
 <DynamicSolutionGraphic
-  barChartTitle={""}
-  barChartTitle2={"Greenhouse Gas Emissions by Delivery Method"}
+  barChartTitle={"Benefits Calculation Green Roofs - US"}
+  barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={"hide"}
@@ -78,73 +85,108 @@ The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadToggle={''}
+  mastheadToggle={'off'}
   mastheadText3={"jye 11-17-2023"}
   
   
   staticData={[   
-    {
-      name: "Electric Cargo Bicycle ",
-      barlength: 23.4,
-      displayedValue: "23.4 grams CO₂e / package",
-      site: "null",
-    },   
-    {
-      name: "Small quadcopter drone",
-      barlength: 70.1,
-      displayedValue: "70.1",
+     {
+      name: "Energy Reduction",
+      barlength: 11.176,
+      displayedValue: "$11.176",
       site: "null",
     },
-
     {
-      name: "Medium-duty electric truck",
-      barlength: 372.6,
-      displayedValue: "372.6",
+      name: "Stormwater Reduction",
+      barlength: 6.768,
+      displayedValue: "$6.768 Billions USD/year",
       site: "null",
     },
         {
-      name: "Medium-duty diesel truck ",
-      barlength: 443.6,
-      displayedValue: "443.6",
+      name: "Aesthetic Benefits",
+      barlength: .811,
+      displayedValue: "$0.811",
+      site: "null",
+    },
+        {
+      name: "Acoustic Insulation",
+      barlength: .319,
+      displayedValue: "$0.319",
+      site: "null",
+    },
+        {
+      name: "Air Quality Improvement",
+      barlength: 0.013,
+      displayedValue: "$0.013",
       site: "null",
     },
         
   ]}
 />
-#### Source [^"1"]
 
+<DynamicSolutionGraphic
+  barChartTitle={"Costs Calculation Green Roofs - US"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={'off'}
+  mastheadText3={"jye 11-17-2023"}
+  
+  
+  staticData={[   
+     {
+      name: "Construction",
+      barlength: 3.058,
+      displayedValue: "$3.058",
+      site: "null",
+    },
+    {
+      name: "Operation / Maintenance",
+      barlength: 2.568,
+      displayedValue: "$2.568 Billions USD/year",
+      site: "null",
+    },
+        
+  ]}
+/>
 
-Drone delivery can also be expected to provide these benefits:
-
-- Reduced Carbon Emissions: Drones can operate on electric power, significantly lowering the carbon footprint compared to combustion engine vehicles [^"1"]
-- Traffic Reduction: Can ease traffic in dense urban areas [^"6"]
-- Increased Delivery Efficiency: Drones can bypass road traffic and infrastructural constraints, delivering goods faster and with greater predictability [^"1"]
-- Cost Reduction: Over time, the operational costs of drone deliveries may be lower than traditional vehicle deliveries due to reduced labor and maintenance expenses [^"1"]
-- Enhanced Accessibility: Drones can reach remote or difficult-to-access areas, providing essential services to underserved communities[^"1"]
-
+The costs for green roofs vary widely depending upon the type, as well as the maturity of the market. In a mature market like Germany, the costs can range from $15 to $45 per square meter for extensive type green roofs. For our calculations, we will use the median of these ranges, assuming that different locations may opt for intensive rooftop gardens, which come with higher costs, but also higher benefits.
 
 
 ## Implementation
 
+In terms of installation, there are modular green roof systems that offer convenience and speed in the installation process. These modules can be fitted into even the most awkward areas and can be used to retrofit products for placement on existing roofs[^"15"]. 
 
-Aviation regulations will need to be tailored to delivery drones to ensure safe and operational airspace. [^"6"]
+There is public support for the use of green roofs, and rooftop gardens with over 80% of respondents in one study supporting green roofs and close to 80% preferring rooftop gardens over farms[^"19"]. 
 
-Energy consumption can be reduced by 34% by reducing vertical takeoff. [^"1"]
+A wide range of existing policy initiatives are available for review for implementation in the states. In Munich, all building roofs whose surface area exceeds 100 square meters are required to be green roofs. Additional policies including direct incentives in Toronto, tax abatements in New York, green roof mandates for all new buildings in Tokyo, and funding assistance in Singapore can be used to direct lawmakers[^"11"].
 
-Embedded GHG emissions are up to 93% higher in regions with a more carbon-intensive grid mix, driving the need for a transition to a renewable power grid. [^"1"]
 
-Drones can only deliver items to accessible places such as front doors or back yards, however these locations could be problematic in that they could be left unattended. They also are unable to deliver to mailboxes and apartment buildings. More research is needed to develop secure way to ensure delivery. [^"2"]
 
-Privacy, and safety concerns as well as noise levels are challenges to public acceptance. Drones fitted with cameras and other sensors could be used for data collection or surveillance, and regulations should be in place to prevent violations of individual privacy. [^"6"] Data protection and a precautionary approach is recommended to prevent a chilling effect of the implementation of this technology. [^"7"]
-
-[^"1"]:  [Drone flight data reveal energy and greenhouse gas emissions savings for very small package delivery: Patterns](https://www.cell.com/patterns/fulltext/S2666-3899(22)00180-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2666389922001805%3Fshowall%3Dtrue). 
-[^"2"]:  [Last-Mile Drone Delivery: Past, Present, and Future | Semantic Scholar](https://www.semanticscholar.org/paper/Last-Mile-Drone-Delivery%3A-Past%2C-Present%2C-and-Future-Eskandaripour-Boldsaikhan/70971f92e7a0357ed3cea5c463ba73781e7b6762). 
-[^"3"]:  [[PDF] Optimizing Drone Delivery in Smart Cities | Semantic Scholar](https://www.semanticscholar.org/paper/Optimizing-Drone-Delivery-in-Smart-Cities-Shahzaad-Alkouz/caea10f4645862c3751be42d798e709869ef1322). 
-[^"4"]:  [A systematic literature review on the main factors for public acceptance of drones](https://www.sciencedirect.com/science/article/abs/pii/S0160791X2200238X?via%3Dihub). 
-[^"5"]:  [Robots in Space: Sharing the Sidewalk with Autonomous Delivery Vehicles](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3347466). 
-[^"6"]:  [Drones as a Medium of Delivery -its Scope and Importance - IJSREM](https://ijsrem.com/download/drones-as-a-medium-of-delivery-its-scope-and-importance/). 
-[^"7"]:  [Responsible Design of Drones and Drone Services - A Synthetic Report](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3096573). 
-
+[^"1"]:  [Estimating the environmental effects of green roofs: A case study in Kansas City, Missouri](https://www.epa.gov/sites/default/files/2018-09/documents/greenroofs_casestudy_kansascity.pdf). 
+[^"2"]:  [Green Roof Heat Transfer and Thermal Performance Analysis](http://www.cmu.edu/environment/campus-green-design/green-roofs/documents/heat-transfer-and-thermal-performance-analysis.pdf). 
+[^"3"]:  [Soak Up the Rain: Green Roofs | US EPA](https://www.epa.gov/soakuptherain/soak-rain-green-roofs). 
+[^"4"]:  [Stormwater Best Management Practice - Green Roofs](https://www.epa.gov/system/files/documents/2021-11/bmp-green-roofs.pdf). 
+[^"5"]:  [Increasing Energy Efficiency: Residential Green Roofs | asla.org](https://www.asla.org/residentialgreenroofs.aspx). 
+[^"6"]:  [Green Roofs and Energy Conservation](https://livingroofs.org/energy-conservation/). 
+[^"7"]:  [Commercial buildings U.S. by year constructed | Statista](https://www.statista.com/statistics/936960/number-of-commercial-buildings-in-the-us-by-year-constructed/). 
+[^"8"]:  [Commercial buildings U.S. by year constructed | Statista](https://www.statista.com/statistics/936960/number-of-commercial-buildings-in-the-us-by-year-constructed/). 
+[^"9"]:  [Green roofs are saving green dollars - Spartan Newsroom](https://news.jrn.msu.edu/2023/10/green-roofs-are-saving-green-dollars/). 
+[^"10"]:  [Sustainable green roofs: a comprehensive review of influential factors | SpringerLink](https://link.springer.com/article/10.1007/s11356-022-23405-x). 
+[^"11"]:  [(PDF) Economic Benefits and Costs of Green Roofs](https://www.researchgate.net/publication/323620867_Economic_Benefits_and_Costs_of_Green_Roofs). 
+[^"12"]:  [Economic and environmental sustainability and public perceptions of rooftop farm versus extensive garden - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0360132318306048). 
+[^"13"]:  [A Review of Green Roof: Definition, History, Evolution and Functions | Semantic Scholar](https://www.semanticscholar.org/paper/A-Review-of-Green-Roof%3A-Definition%2C-History%2C-and-Abass-Ismail/1b0cc7e6583d6aea6a0f5696fc28348730121877). 
+[^"14"]: Shafique M, Kim R, Rafiq M. [Green roof benefits, opportunities and challenges – A review](https://www.sciencedirect.com/science/article/abs/pii/S136403211830217X?via%3Dihub). Renewable and Sustainable Energy Reviews. 2018. 
+[^"15"]: Shushunova NS, Korol EA, Vatin NI. [Modular Green Roofs for the Sustainability of the Built Environment: The Installation Process](https://www.mdpi.com/2071-1050/13/24/13749). Sustainability. 2021. 
+[^"16"]:  [U.S. Cities Factsheet | Center for Sustainable Systems](https://css.umich.edu/publications/factsheets/built-environment/us-cities-factsheet#:~:text=Urban%20land%20area%20is%20106%2C386,more%20than%20double%20by%202060.&text=The%20average%20population%20density%20of,94%20people%20per%20square%20mile.). 
+[^"17"]:  [Analyzing the land cover of an urban environment using high-resolution orthophotos | HEATISLAND](https://dx.doi.org/10.1016/S0169-2046(02)00165-2). 
+[^"18"]:  [Characterizing the Fabric of the Urban Environment: A Case Study of Sacramento, California (Technical Report) | OSTI.GOV](https://www.osti.gov/biblio/764362). 
+[^"19"]:  [Economic and environmental sustainability and public perceptions of rooftop farm versus extensive garden - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0360132318306048). 
 
 export default ({ children }) => 
   <SolutionDropdown 
