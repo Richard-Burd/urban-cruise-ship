@@ -27,7 +27,7 @@ The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
 
 <DynamicSolutionGraphic
   barChartTitle={"Delivery Drones for Last Mile Delivery"}
-  barChartTitle2={"Energy Requirments Comparison by Delivery Method"}
+  barChartTitle2={"Energy Requirements Comparison by Delivery Method"}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={"hide"}
@@ -40,28 +40,28 @@ The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
   
   
   staticData={[   
-     {
-      name: "Small quadcopter drone",
-      barlength: 0.08,
-      displayedValue: "0.8 megajoules / kilometer",
-      site: "null",
-    },
     {
       name: "Electric Cargo Bicycle ",
       barlength: 0.1,
-      displayedValue: "0.1",
+      displayedValue: "0.1 megajoules / package",
+      site: "null",
+    },
+    {
+      name: "Small quadcopter drone",
+      barlength: 0.33,
+      displayedValue: "0.33",
       site: "null",
     },
     {
       name: "Medium-duty electric truck",
-      barlength: 3.8,
-      displayedValue: "3.8",
+      barlength: 1.81,
+      displayedValue: "1.8",
       site: "null",
     },
         {
       name: "Medium-duty diesel truck ",
-      barlength: 11,
-      displayedValue: "11.0",
+      barlength: 5.24,
+      displayedValue: "5.2",
       site: "null",
     },
         
@@ -124,6 +124,10 @@ Drone delivery can also be expected to provide these benefits:
 - Cost Reduction: Over time, the operational costs of drone deliveries may be lower than traditional vehicle deliveries due to reduced labor and maintenance expenses [^"1"]
 - Enhanced Accessibility: Drones can reach remote or difficult-to-access areas, providing essential services to underserved communities[^"1"]
 
+## Calculations
+
+Our calculations are based on a worldwide annual parcel shipping volume of 161 billion parcels, as was determined for 2022 [^"8"].
+
 
 
 ## Implementation
@@ -141,13 +145,15 @@ Privacy, and safety concerns as well as noise levels are challenges to public ac
 
 ##### Lead researcher: Jye - Last updated 11/21/2023
 
-[^"1"]:  [Drone flight data reveal energy and greenhouse gas emissions savings for very small package delivery: Patterns](https://www.cell.com/patterns/fulltext/S2666-3899(22)00180-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2666389922001805%3Fshowall%3Dtrue). 
-[^"2"]:  [Last-Mile Drone Delivery: Past, Present, and Future | Semantic Scholar](https://www.semanticscholar.org/paper/Last-Mile-Drone-Delivery%3A-Past%2C-Present%2C-and-Future-Eskandaripour-Boldsaikhan/70971f92e7a0357ed3cea5c463ba73781e7b6762). 
-[^"3"]:  [[PDF] Optimizing Drone Delivery in Smart Cities | Semantic Scholar](https://www.semanticscholar.org/paper/Optimizing-Drone-Delivery-in-Smart-Cities-Shahzaad-Alkouz/caea10f4645862c3751be42d798e709869ef1322). 
-[^"4"]:  [A systematic literature review on the main factors for public acceptance of drones](https://www.sciencedirect.com/science/article/abs/pii/S0160791X2200238X?via%3Dihub). 
-[^"5"]:  [Robots in Space: Sharing the Sidewalk with Autonomous Delivery Vehicles](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3347466). 
-[^"6"]:  [Drones as a Medium of Delivery -its Scope and Importance - IJSREM](https://ijsrem.com/download/drones-as-a-medium-of-delivery-its-scope-and-importance/). 
-[^"7"]:  [Responsible Design of Drones and Drone Services - A Synthetic Report](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3096573). 
+[^"1"]: Rodrigues, T. A., Patrikar, J., Oliveira, N. L., Matthews, H. S., Scherer, S., Samaras, C. ["Drone flight data reveal energy and greenhouse gas emissions savings for very small package delivery"](https://www.cell.com/patterns/fulltext/S2666-3899(22)00180-5). Patterns 3(8). August 2022.
+[^"2"]: Eskandaripour, H., Boldsaikhan, E.. ["Last-Mile Drone Delivery: Past, Present, and Future"](https://www.mdpi.com/2504-446X/7/2/77). Drones 7(2): 77. January 2023.
+[^"3"]: [[PDF] Optimizing Drone Delivery in Smart Cities | Semantic Scholar](https://www.semanticscholar.org/paper/Optimizing-Drone-Delivery-in-Smart-Cities-Shahzaad-Alkouz/caea10f4645862c3751be42d798e709869ef1322). 
+[^"4"]: [A systematic literature review on the main factors for public acceptance of drones](https://www.sciencedirect.com/science/article/abs/pii/S0160791X2200238X?via%3Dihub). 
+[^"5"]: [Robots in Space: Sharing the Sidewalk with Autonomous Delivery Vehicles](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3347466). 
+[^"6"]: Oleti, Y. N. A., Pawan, A., Shilpa, M. ["Drones as a Medium of Delivery -its Scope and Importance"](https://ijsrem.com/download/drones-as-a-medium-of-delivery-its-scope-and-importance/). International Journal of Scientific Research in Engineering and Management 7(4). April 2023. 
+[^"7"]: Du. H., Heldeweg, M. A. [Responsible Design of Drones and Drone Services - A Synthetic Report](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3096573). Available at SSRN 3096573. October 2017.
+
+[^"8"]: Pitney Bowes. ["Parcel shipping index 2023"](https://www.pitneybowes.com/content/dam/pitneybowes/us/en/shipping-index/23-mktc-03596-2023_global_parcel_shipping_index_ebook-web.pdf). 2023.
 
 
 export default ({ children }) => 
