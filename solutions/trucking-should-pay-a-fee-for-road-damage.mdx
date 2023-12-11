@@ -1,27 +1,35 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Road Damage";
-export const solution = "Trucking Should Pay a Fee for Road Damage";
+export const solution = "Trucking Road Damage Fee - U.S.";
 
-Total public road maintenance spending in the United States was, as of 2018, $187 billion, or $572 per capita [^"17"]. The disparity in road damage by vehicle weight calls for an evaluation of how this maintenance bill is paid. Although large trucks do at least 99% of road damage, they pay only 35% of maintenance costs, suggesting a subsidy for trucking [^"15"]. Mileage fees are a way to rectify this imbalance. An appropriate per-km fee (in 2020 USD) for Ontario, Canada has been estimated at 0.8 ¢/km on freeways and 92 ¢/km on local roads [^"7"].
+## Description
+We propose a Road Use Charge (RUC) on freight trucks to account for the disproportionate amount of road damage caused by these vehicles.
 
-The most widely cited data on road damage by vehicle comes from a 1958 test conducted by the American Association of State Highway Officials [^"9"]. However, the trucking industry has disputed these figures [^"3"]. We propose that the Department of Transportation undertake new tests of road damage, but we expect that they will affirm the conclusion that the vast majority of road damage is caused by heavy trucks.
+## Background
+Spending on highways and roads is roughly split between states (60%) and local governments (40%)[^”1”]. With states typically spending on highways and tollways and local governments spending on local streets and roads[^”1”].
 
-Oregon and Utah both operate road usage charges (RUCs), and several states have conducted pilot programs [^"10"]. Internationally, New Zealand is a pioneer in developing an RUC, with current rates (in U.S. currency) of 7¢/mile for light duty vehicles and 11-39¢/mile for heavy trucks [^"10"].
+In 2020, state and local governments spent $204 billion on highways and roads[^”1”]. 43% of that ($87.7 billion) went toward operational costs, such as maintenance, repair, snow and ice removal, highway and traffic design and operation, and highway safety[^”1”]. The rest going for capital construction of new highways and roads[^”1”]. State and local motor fuel taxes, $53 billion, and construction and repair fees, $22 billion, only account for a portion of the fees with the rest coming from state, local, and federal funds[^”1”].
 
-With a RUC established, the tool can be used to achieve other goals, such as air pollution reduction and congestion pricing [^"10"].
+Freight trucks cause 99% of wear-and-tear on U.S. roads and only pay for 35% of that damage[^”2”].
 
-[^"3"]: Bradley, A., Thiam, P. ["Analysis of car and truck pavement impacts"](https://www.trucking.org/sites/default/files/2020-02/Analysis%20of%20car%20and%20truck%20pavement%20impacts-FINAL.pdf). FPInnovations. October 2018.
+## Calculations
+Freight trucks average a total of 327.48 billion miles annually[^”4”]. In order to pay for the $129 billion gap explained above that would mean a fee of .39¢ per mile, which is reasonable and even less than has been charged elsewhere[^”3”].
 
-[^"7"]: Hajek, J. J., Tighe, H. L., Hutchinson, B. G. ["Allocation of Pavement Damage Due to Trucks Using a Marginal Cost Method"](https://journals.sagepub.com/doi/abs/10.3141/1613-07). Transportation Research Record: Journal of the Transportation Research Board 1613(1). January 1998.
 
-[^"9"]: Highway Research Board. ["The AASHO Road Test"](http://onlinepubs.trb.org/Onlinepubs/sr/sr61g/61g.pdf). Report 7, Summary Report. Special Report 61g. National Academy of Sciences - National Research Council. 1962.
+## Implementation
+This fee will be assessed as a Road Usage Charge (RUC) as has been done in Oregon and Utah[^”3”].
 
-[^"10"]: Kroes, S., Reichard, P., Teigen, S., Collard, C., Keating, M. ["Measuring the Miles: Road Usage Charges in Utah"](https://www.utahfoundation.org/reports/rucreport/). Utah Foundation. March 2021.
+##### Lead researcher: Lee Nelson - Last updated: 12/9/2023
 
-[^"15"]: True Cost. ["The Hidden Trucking Industry Subsidy"](https://truecostblog.com/2009/06/02/the-hidden-trucking-industry-subsidy/). June 2009.
+[^”1”]: Urban Institute. ["Highway and Road Expenditures"](https://www.urban.org/policy-centers/cross-center-initiatives/state-and-local-finance-initiative/state-and-local-backgrounders/highway-and-road-expenditures) State and Local Finance Initiative. Accessed July 11, 2021
 
-[^"17"]: Urban Institute. ["Highway and Road Expenditures"](https://www.urban.org/policy-centers/cross-center-initiatives/state-and-local-finance-initiative/state-and-local-backgrounders/highway-and-road-expenditures). State and Local Finance Initiative. Accessed July 11, 2021.
+[^”2”]: True Cost. ["The Hidden Trucking Industry Subsidy"](https://truecostblog.com/2009/06/02/the-hidden-trucking-industry-subsidy/) June 2009
+
+[^”3”]: Kroes, S., Reichard, P., Teigen, S., Collard, C., Keating, M. ["Measuring the Miles: Road Usage Charges in Utah"](https://www.utahfoundation.org/reports/rucreport/) Utah Foundation, March 2021
+
+[^”4”]: American Trucking Association [“Economics and Industry Data”]( https://www.trucking.org/economics-and-industry-data) Accessed 12/11/2023
+
 
 export default ({ children }) => 
   <SolutionDropdown 
