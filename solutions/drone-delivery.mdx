@@ -15,64 +15,25 @@ import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
-We recommend businesses, especially those in the courier and delivery sector, integrate drone delivery systems in last-mile logistics, emphasizing the potential for significant reductions in carbon emissions, increased efficiency, and cost savings.
+We recommend businesses, especially those in the courier and delivery sector, integrate drone delivery systems in last-mile logistics.
 
 ## Background
 
-Drone delivery systems represent a transformative approach to last-mile logistics, capable of delivering goods directly to consumers' doorsteps. By leveraging unmanned aerial vehicles (UAVs), these systems promise to reduce the reliance on traditional ground transportation, which is often associated with higher carbon footprints and inefficiencies in urban settings. [^"1"]
+In 2020, the global market for delivery drones stood at an estimated $528.6 million and is projected to increase at a compound annual growth rate (CAGR) of 32.4% [^"6"]. In 2022, the number of drone deliveries exceeded 800,000, growing from 6,000 in 2018 [^"10"]. In the same year, the number of parcels delivered worldwide was 161 billion, about 200,000 times greater, and projected to grow to 225 billion by 2028 [^"8"].
 
-The global market for delivery drones is growing. In 2020, the global market for delivery drones stood at an estimated $528.6 million and is projected to increase at a compound annual growth rate (CAGR) of 32.4%. [^"6"]
+Advantages to drone delivery that are unquantified include the easing of traffic in dense urban areas [^"6"] and speed of delivery, especially in areas with high traffic congestion or in remote areas not served well by roads [^"1"].
 
-The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
+The average delivery drone has a range of 10 to 20 kilometers [^"6"].
 
-<DynamicSolutionGraphic
-  barChartTitle={"Delivery Drones for Last Mile Delivery"}
-  barChartTitle2={"Energy Requirements Comparison by Delivery Method"}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={"16 million"}
-  arrowText2={"tons CO₂eq"}
-  arrowText3={"reduction"}
-  arrowText4={"annually"}
-  mastheadToggle={'off'}
-  mastheadText3={"Jye Harrison 11-17-2023"}
-  
-  
-  staticData={[   
-    {
-      name: "Electric Cargo Bicycle ",
-      barlength: 0.1,
-      displayedValue: "0.1 megajoules / package",
-      site: "null",
-    },
-    {
-      name: "Small quadcopter drone",
-      barlength: 0.33,
-      displayedValue: "0.33",
-      site: "null",
-    },
-    {
-      name: "Medium-duty electric truck",
-      barlength: 1.81,
-      displayedValue: "1.8",
-      site: "null",
-    },
-        {
-      name: "Medium-duty diesel truck ",
-      barlength: 5.24,
-      displayedValue: "5.2",
-      site: "null",
-    },
-        
-  ]}
-/>
-#### Source [^"1"]
+The volume of parcel delivery is expected to grow in any circumstances, but the amount of growth is expected to be greater in the presence of widespread drone delivery than without, though the magnitude of this effect is hard to estimate [^"17"].
 
+## Calculations
+
+Our calculations are based on a worldwide annual parcel shipping volume of 161 billion parcels, as was determined for 2022 [^"8"]. It has been estimated [^"9"] that 41% of parcel deliveries are suitable for drone transportation in Paris, France, excluding cross-country deliveries, parcels that are too heavy, parcels that do not go to suitable locations, economic constraints, and adjustments for weather. Per-parcel energy and greenhouse gas benefits are assessed against the counterfactual of parcels being delivered by a diesel-powered delivery truck and estimated from Rodrigues et al. [^"1"], while cost is estimated from Doole et al. [^"9"].
 
 <DynamicSolutionGraphic
   barChartTitle={""}
-  barChartTitle2={"Greenhouse Gas Emissions by Delivery Method"}
+  barChartTitle2={"Drone Delivery, World"}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={"hide"}
@@ -81,67 +42,52 @@ The average delivery drone has a range of 10 to 20 kilometers. [^"6"]
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadToggle={''}
-  mastheadText3={"jye 11-17-2023"}
+  mastheadText3={"MG, Dec. 10, 2023"}
   
   
   staticData={[   
     {
-      name: "Electric Cargo Bicycle ",
-      barlength: 23.4,
-      displayedValue: "23.4 grams CO₂e / package",
+      name: "Financial Benefit",
+      barlength: 213.5385504,
+      displayedValue: "$213 billion/yr",
       site: "null",
     },   
     {
-      name: "Small quadcopter drone",
-      barlength: 70.1,
-      displayedValue: "70.1",
+      name: "Energy Savings",
+      barlength: 320.9668952,
+      displayedValue: "321 PJ/yr",
       site: "null",
     },
 
     {
-      name: "Medium-duty electric truck",
-      barlength: 372.6,
-      displayedValue: "372.6",
-      site: "null",
-    },
-        {
-      name: "Medium-duty diesel truck ",
-      barlength: 443.6,
-      displayedValue: "443.6",
+      name: "Greenhouse Gas Savings",
+      barlength: 24.61624956,
+      displayedValue: "25 million tons CO₂/yr",
       site: "null",
     },
         
   ]}
 />
-#### Source [^"1"]
 
-
-Drone delivery can also be expected to provide these benefits:
-
-- Reduced Carbon Emissions: Drones can operate on electric power, significantly lowering the carbon footprint compared to combustion engine vehicles [^"1"]
-- Traffic Reduction: Can ease traffic in dense urban areas [^"6"]
-- Increased Delivery Efficiency: Drones can bypass road traffic and infrastructural constraints, delivering goods faster and with greater predictability [^"1"]
-- Cost Reduction: Over time, the operational costs of drone deliveries may be lower than traditional vehicle deliveries due to reduced labor and maintenance expenses [^"1"]
-- Enhanced Accessibility: Drones can reach remote or difficult-to-access areas, providing essential services to underserved communities[^"1"]
-
-## Calculations
-
-Our calculations are based on a worldwide annual parcel shipping volume of 161 billion parcels, as was determined for 2022 [^"8"].
+The electricity mix is assumed to be the United States non-baseload average [^"1"].
 
 
 
 ## Implementation
 
 
-Aviation regulations will need to be tailored to delivery drones to ensure safe and operational airspace. [^"6"]
+In the United States, the Federal Aviation Administration requires that all drones meet a light-of-sight requirement for human operators, and the number of drones that can be operated at one moment is highly restricted. In turn, the FAA grants waivers to drone operators. This approach may be too restrictive and slow the growth of the technology [^"11"].
 
-Energy consumption can be reduced by 34% by reducing vertical takeoff. [^"1"]
+Drones can only deliver items to accessible places such as front doors or back yards, however these locations could be problematic in that they could be left unattended. They also are unable to deliver to mailboxes and apartment buildings. More research is needed to develop secure way to ensure delivery [^"2"].
 
-Embedded GHG emissions are up to 93% higher in regions with a more carbon-intensive grid mix, driving the need for a transition to a renewable power grid. [^"1"]
+Safety concerns about widespread drone delivery include the risk of dropping a package and breaking the package or injuring a person during the final delivery phase [^"12"], crashes due to mechanical failures [^"13"], and cybersecurity vulnerabilities [^"14"].
 
-Drones can only deliver items to accessible places such as front doors or back yards, however these locations could be problematic in that they could be left unattended. They also are unable to deliver to mailboxes and apartment buildings. More research is needed to develop secure way to ensure delivery. [^"2"]
+The kinds of drones envisioned for delivery generate noise comparable to that of a leaf blower or lawn mower [^"15"], and efforts are ongoing to develop quieter drones [^"16"].
 
-Privacy, and safety concerns as well as noise levels are challenges to public acceptance. Drones fitted with cameras and other sensors could be used for data collection or surveillance, and regulations should be in place to prevent violations of individual privacy. [^"6"] Data protection and a precautionary approach is recommended to prevent a chilling effect of the implementation of this technology. [^"7"]
+Cameras and other sensors are necessary for navigation, but they could be used for data collection or surveillance, and regulations should be in place to prevent violations of individual privacy [^"6"]. Data protection and a precautionary approach is recommended to prevent a chilling effect of the implementation of this technology [^"7"].
+
+Energy consumption can be reduced by 34% by reducing vertical takeoff [^"1"].
+
 
 ##### Lead researcher: Jye - Last updated 11/21/2023
 
@@ -154,6 +100,15 @@ Privacy, and safety concerns as well as noise levels are challenges to public ac
 [^"7"]: Du. H., Heldeweg, M. A. [Responsible Design of Drones and Drone Services - A Synthetic Report](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3096573). Available at SSRN 3096573. October 2017.
 
 [^"8"]: Pitney Bowes. ["Parcel shipping index 2023"](https://www.pitneybowes.com/content/dam/pitneybowes/us/en/shipping-index/23-mktc-03596-2023_global_parcel_shipping_index_ebook-web.pdf). 2023.
+[^"9"]: Doole, M., Ellerbroek, J., Hoekstra, J. ["Estimation of traffic density from drone-based delivery in very low level urban airspace"](https://www.sciencedirect.com/science/article/pii/S0969699719304004). Journal of Air Transport Management 88: 101862. September 2020.
+[^"10"]: Cornell, A., Mahan, S., Riedel, R. ["Commercial drone deliveries are demonstrating continued momentum in 2023"](https://www.mckinsey.com/industries/aerospace-and-defense/our-insights/future-air-mobility-blog/commercial-drone-deliveries-are-demonstrating-continued-momentum-in-2023). McKinsey & Company. October 2023.
+[^"11"]: Tate, R. ["FAA Standardization Could Help Delivery Drones Take Flight"](https://datainnovation.org/2023/05/faa-standardization-could-help-delivery-drones-take-flight/). Center for Data Innovation. May 2023.
+[^"12"]: Cornell, A., Miller, B., Riedel, R. ["Solving the “last-meter” challenge in drone delivery"](https://www.mckinsey.com/industries/aerospace-and-defense/our-insights/future-air-mobility-blog/solving-the-last-meter-challenge-in-drone-delivery). McKinsey & Company. May 2023.
+[^"13"]: Lum, C. A., Tsukada, D. A. ["UAS Reliability and Risk Analysis"](https://www.aa.washington.edu/sites/aa/files/student/kchen248/publications/UASReliabilityAndRiskAnalysis.pdf). Encyclopedia of Aerospace Engineering. July 2016.
+[^"14"]: Shah, S. A. ["Drone Deliveries Face Cybersecurity Vulnerabilities. Advanced IoT Systems Are Both Their Risk and Their Defense."](https://marketscale.com/industries/industrial-iot/drone-delivery-faces-cybersecurity-threats-but-advanced-iot-systems-can-be-its-resolution/). MarketScale. September 2023.
+[^"15"]: Paine, G. ["Drones to deliver incessant buzzing noise, and packages"](https://theconversation.com/drones-to-deliver-incessant-buzzing-noise-and-packages-116257). The Conversation. May 2019.
+[^"16"]: Thurston, A. ["Delivery Drones and Rotor-Powered Rideshares Sound Great—and Noisy"](https://www.bu.edu/articles/2023/reducing-noise-of-delivery-drones-and-rotor-powered-rideshares/). The Brink, Boston University. March 2023.
+[^"17"]: Kellermann, R., Biehle, T., Fischer, L. ["Drones for parcel and passenger transportation: A literature review"](https://www.sciencedirect.com/science/article/pii/S2590198219300879). Transportation Research Interdisciplinary Perspectives 4: 100088. March 2020.
 
 
 export default ({ children }) => 
