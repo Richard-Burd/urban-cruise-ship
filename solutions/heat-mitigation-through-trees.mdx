@@ -1,28 +1,85 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Urban Heat Island";
-export const solution = "Heat Mitigation Through Trees";
+export const solution = "Heat Mitigation Through Trees - World";
 
 import ArticleImage from "/components/ArticleImage.js";
 
-We propose that cities plant trees to mitigate the urban heat island effect and for other benefits. A study of five cities in the United States found that tree planting has a positive cost-benefit ratio in all five cases.
+## Description
+We propose that cities around the world plant trees for heat mitigation as well as other benefits.
+
+## Background
+Evapotranspiration and shading provided by trees have been found to reduce peak summer temperatures by 1-5 °C, or 2-9 °F[^”1”].
+
+The following benefits have also been found:
+•	Reduced energy use: Trees and vegetation that directly shade buildings decrease demand for air conditioning[^”1”].
+•	Improved air quality and lower greenhouse gas emissions: By reducing energy demand, trees and vegetation decrease the production of associated air pollution and greenhouse gas emissions. They also remove air pollutants and store and sequester carbon dioxide[^”1”].
+•	Enhanced stormwater management and water quality: Vegetation reduces runoff and improves water quality by absorbing and filtering rainwater[^”1”].
+•	Reduced pavement maintenance: Tree shade can slow deterioration of street pavement, decreasing the amount of maintenance needed[^”1”].
+•	Improved quality of life: Trees and vegetation provide aesthetic value, habitat for many species, and can reduce noise[^”1”].
+The primary costs are: purchasing materials, initial planting, and ongoing maintenance activities[^”1”].
+The following is a study of five cities in the U.S. to obtain cost and benefit metrics[^”2”].
 
 <ArticleImage image={"trees_uhi.svg"} width={700} height={300} />
-#### Source: [^"9"]. Costs and benefits are CPI-adjusted to 2020.
+#### Source: [^"2"]. Costs and benefits are CPI-adjusted to 2020.
 
-Evapotranspiration and shading provided by trees have been found to reduce peak summer temperatures by 1-5 °C, or 2-9 °F. [^"14"].
+<DynamicSolutionGraphic
+  barChartTitle={"Planting Trees in Cities - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"25.26 million"}
+  arrowText2={"tons of CO₂"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"Lee Nelson 12-15-2023"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 89.62,
+      displayedValue: "$89.62",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 46.19,
+      displayedValue: "$46.19 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
-To maximize the value of tree planting investments, cities should identify which neighborhoods are most devoid of trees and which have the highest summertime temperatures [^"12"], as well as have disproportionately socially vulnerable residents [^"11"].
+## Calculations
 
-[^"9"]: McPherson, E. G., Simpson, J. R., Peper, P. J., Maco, S. E., Xiao, Q. "Municipal forest benefits and costs in five U.S. cities". Journal of Forestry 103(8), pp. 411.416. 2005.
+By averaging the metrics in the study above we come to a cost of $39.82, and a benefit of $77.26 per tree.
 
-[^"11"]: Rigg, M. C. "Tree Mitigation Strategies to Reduce the Effect of Urban Heat Islands in Center Township, IN". Submitted to the faculty of the University Graduate School in partial fulfillment of the requirements for the degree Master of Science in the Department of Geography, Indiana University. May 2012.
+There are currently 4.4 billion people living in urban areas[^”3”]. The average trees per capita in the studies above was .264[^”2”]. That would mean planting 1.16 billion trees to increase the urban trees per capita rate.
 
-[^"14"]: United States Environmental Protection Agency. "Using Trees and Vegetation to Reduce Heat Islands". July 2022.
-
-[^"12"]: Romero, D. "Tree Canopy Coverage and Reducing the Heat Island Effect: Mitigation Strategies for the City of San Francisco". A Planning Report Presented to The Faculty of the Department of Urban and Regional Planning San José State University In Partial Fulfillment Of the Requirements for the Degree Master of Urban Planning. May 2020.
+A mature tree will absorb mature tree will absorb 48 pounds of carbon dioxide from the atmosphere[^”4”]. That equals 55.68 billion pounds or 25.26 million tons of carbon dioxide reduction.
 
 
+## Implementation
+To maximize the value of planting trees, city planners should identify which neighborhoods are most in need of trees where the urban heat island can be reduced the most. They can also prioritize disproportionately socially vulnerable residents[^”5”].
+
+##### Lead researcher: Lee Nelson - Last updated: 12/15/2023
+
+[^”1”]: United States Environmental Protection Agency. ["Using Trees and Vegetation to Reduce Heat Islands”]( https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands) July 2022
+
+[^”2”]: McPherson, E. G., Simpson, J. R., Peper, P. J., Maco, S. E., Xiao, Q. ["Municipal forest benefits and costs in five U.S. cities"]( https://doi.org/10.1093/jof/103.8.411) Journal of Forestry 103(8), pp. 411.416, 2005
+
+[^”3”]: World Bank [“Urban Development”](https://www.worldbank.org/en/topic/urbandevelopment/overview) April 2023
+
+[^”4”]: U.S. Department of Agriculture [“The Power of One Tree – The Very Air We Breathe”]( https://www.usda.gov/media/blog/2015/03/17/power-one-tree-very-air-we-breathe) March 2015
+
+[^”5”]: Rigg, M. C. ["Tree Mitigation Strategies to Reduce the Effect of Urban Heat Islands in Center Township, IN"](http://dx.doi.org/10.7912/C2/773) Submitted to the faculty of the University Graduate School in partial fulfillment of the requirements for the degree Master of Science in the Department of Geography, Indiana University, May 2012 
 
 export default ({ children }) => 
   <SolutionDropdown 
