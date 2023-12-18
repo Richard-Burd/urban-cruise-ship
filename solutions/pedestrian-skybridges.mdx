@@ -3,7 +3,53 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Need to Promote Active Transportation";
 export const solution = "Pedestrian Skybridges";
 
-Skybridges can be an effective tool to reduce congestion, improve safety, and promote walking in high density areas.
+## Description
+
+We propose that cities with high population densities and high real estate costs invest in networks of pedestrian skyways or tunnels.
+
+## Background
+
+Skybridges are common features in urban areas, but relatively few cities have large networks of connected skybridges that can form an alternate form of transportation through a downtown that is separated from roadways. Some examples include the Minneapolis Skyway System [^"1"], Calgary's Plus 15 Network [^"2"], and Hong Kong's Pedestrian Footbridge System [^"3"]. The objective of such a system is to facilitate pedestrian traffic by creating safer and more comfortable walking routes and to relieve congestion by moving some traffic away from the main, ground-level roadway.
+
+## Calculations
+
+The construction costs of pedestrian skybridges have been estimated at $150-250 per square foot [^"4"], while costs for tunnels have been estimated at $120/sqft [^"5"]. Adjusting for inflation, applying an annual maintenance cost of 4% of the construction cost [^"6"], and taking a 3.5% discount rate [^"7"], we estimate the net present cost of a pedestrian skyway at $410-680 per square foot and tunnels at $330/sqft. Additional costs may include climate control, security, and graffiti removal.
+
+Outside of the most expensive cities, few areas support reliably sufficiently high real estate prices to justify investment in networks of pedestrian walkways. In Portland, Oregon, for instance, the average commerical real estate price for 2018-2022 was $323 per square foot [^"8"]. In New York City, where commericial real estate has consistently cost more than $700 per square foot since 2018 [^"9"], the economic case for a skyway network is much stronger.
+
+## Implementation
+
+Skyways have come under criticism for bifurcating pedestrian traffic and harming the vibrancy of the ground-level city [^"10"], as well as for facilitating automobile traffic by removing conflicts with pedestrians [^"11"]. While such concerns may be overblown, we do advocate that cities insure that skyways are well-connected to the ground level, as has been done in Hong Kong [^"12"] and as Minneapolis envisions going forward [^"13"].
+
+A skyway network is most effective when it functions as a cohesive unit, which entails that the city maintain uniform operating hours and an ultimate planned route, even as individual property owners take responsibility for individual segments [^"12"].
+
+Security, graffiti removal, drainage, lighting, and wheelchair accessability are important concerns that must be considered from the outset of a project [^"5"].
+
+[^"1"]: City of Minneapolis. ["Your Guide to the Minneapolis Skyway System"](https://www.minneapolis.org/map-transportation/minneapolis-skyway-guide/). Accessed December 17, 2023.
+
+[^"2"]: City of Calgary. ["Plus 15 network - Calgary’s Skywalk"](https://www.calgary.ca/bike-walk-roll/plus-15-network.html). Accessed December 17, 2023.
+
+[^"3"]: City of Hong Kong. ["Pedestrian Footbridge System, Central"](https://docomomo.hk/pedestrian-footbridge-system-central/). Accessed December 17, 2023.
+
+[^"4"]: Hogge, P. ["Student Corner: Pedestrian Bridges: Connecting People with Communities"](https://ced.sog.unc.edu/2016/01/pedestrian-bridges-connecting-people-with-communities/). Community and Economic Development in North Carolina and Beyond. January 2016.
+
+[^"5"]: Pedestrian Safety Guide and Countermeasure Selection System. ["Pedestrian Overpasses/Underpasses"](http://www.pedbikesafe.org/pedsafe/countermeasures_detail.cfm?CM_NUM=10). U.S. Department of Transportation, Federal Highway Administration. Accessed December 17, 2023.
+
+[^"6"]: Cook, J. D. ["Maintenance costs"](https://www.johndcook.com/blog/2010/03/31/maintenance-costs/). John D. Cook Consulting. March 2010.
+
+[^"7"]: Designing Buildings. ["Discount rate in the construction industry"](https://www.designingbuildings.co.uk/wiki/Discount_rate_in_the_construction_industry). January 2023.
+
+[^"8"]: CommercialCafe. ["Portland Office Rent Price & Sales Report"](https://www.commercialcafe.com/office-market-trends/us/or/portland/). Accessed December 17, 2023.
+
+[^"9"]: CommercialCafe. ["New York City Office Rent Price & Sales Report"](https://www.commercialcafe.com/office-market-trends/us/ny/new-york-city/). Accessed December 17, 2023.
+
+[^"10"]: Quednau, R. ["Skyways: Helping or hurting downtown?"](https://www.strongtowns.org/journal/2016/6/27/skyways). Strong Towns. June 2016.
+
+[^"11"]: Alpert, D. ["Skybridges don’t make the connection"](https://ggwash.org/view/219/skybridges-dont-make-the-connection). Greater Greater Washington. February 2008.
+
+[^"12"]: Yoos, J., James, V. ["The Multilevel Metropolis"](https://placesjournal.org/article/multilevel-metropolis-urban-skyways/?cn-reloaded=1). Places. May 2016.
+
+[^"13"]: City of Minneapolis. ["Skyways: Improve the Skyway system that connects buildings Downtown"](https://minneapolis2040.com/policies/skyways/). Minneapolis 2040. Accessed December 17, 2023.
 
 export default ({ children }) => 
   <SolutionDropdown 
