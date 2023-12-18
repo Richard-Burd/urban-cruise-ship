@@ -29,47 +29,39 @@ The volume of parcel delivery is expected to grow in any circumstances, but the 
 
 ## Calculations
 
-Our calculations are based on a worldwide annual parcel shipping volume of 161 billion parcels, as was determined for 2022 [^"8"]. It has been estimated [^"9"] that 41% of parcel deliveries are suitable for drone transportation in Paris, France, excluding cross-country deliveries, parcels that are too heavy, parcels that do not go to suitable locations, economic constraints, and adjustments for weather. Per-parcel energy and greenhouse gas benefits are assessed against the counterfactual of parcels being delivered by a diesel-powered delivery truck and estimated from Rodrigues et al. [^"1"], while cost is estimated from Doole et al. [^"9"].
+Our calculations are based on a worldwide annual parcel shipping volume of 161 billion parcels, as was determined for 2022 [^"8"]. It has been estimated [^"9"] that 41% of parcel deliveries are suitable for drone transportation in Paris, France, excluding cross-country deliveries, parcels that are too heavy, parcels that do not go to suitable locations, economic constraints, and adjustments for weather. Per-parcel energy and greenhouse gas benefits are assessed against the counterfactual of parcels being delivered by a diesel-powered delivery truck and estimated from Rodrigues et al. [^"1"], while cost is estimated from Taveres [^"18"].
 
 <DynamicSolutionGraphic
   barChartTitle={""}
   barChartTitle2={"Drone Delivery, World"}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={"16 million"}
-  arrowText2={"tons CO₂eq"}
-  arrowText3={"reduction"}
-  arrowText4={"annually"}
+  chartType={""}
+  arrowText1={"25 MTCO₂eq/yr"}
   mastheadToggle={''}
   mastheadText3={"MG, Dec. 10, 2023"}
   
   
   staticData={[   
     {
-      name: "Financial Benefit",
-      barlength: 213.5385504,
-      displayedValue: "$213 billion/yr",
+      name: "Cost",
+      barlength: 181.102202770944,
+      displayedValue: "$181 billion/yr",
       site: "null",
     },   
-    {
-      name: "Energy Savings",
-      barlength: 320.9668952,
-      displayedValue: "321 PJ/yr",
+	{
+	  name:"Benefit",
+      barlength: 432.94745349928803,
+      displayedValue: "$433 billion/yr",
       site: "null",
-    },
-
-    {
-      name: "Greenhouse Gas Savings",
-      barlength: 24.61624956,
-      displayedValue: "25 million tons CO₂/yr",
-      site: "null",
-    },
+	}
         
   ]}
 />
 
 The electricity mix is assumed to be the United States non-baseload average [^"1"].
+
+Additionally, 321 petajoules per year, or about 0.05% of world primary energy consumption, are estimated to be saved.
 
 
 
@@ -109,6 +101,7 @@ Energy consumption can be reduced by 34% by reducing vertical takeoff [^"1"].
 [^"15"]: Paine, G. ["Drones to deliver incessant buzzing noise, and packages"](https://theconversation.com/drones-to-deliver-incessant-buzzing-noise-and-packages-116257). The Conversation. May 2019.
 [^"16"]: Thurston, A. ["Delivery Drones and Rotor-Powered Rideshares Sound Great—and Noisy"](https://www.bu.edu/articles/2023/reducing-noise-of-delivery-drones-and-rotor-powered-rideshares/). The Brink, Boston University. March 2023.
 [^"17"]: Kellermann, R., Biehle, T., Fischer, L. ["Drones for parcel and passenger transportation: A literature review"](https://www.sciencedirect.com/science/article/pii/S2590198219300879). Transportation Research Interdisciplinary Perspectives 4: 100088. March 2020.
+[^"18"]: Taveres, T. ["Comparing the cost-effectiveness of drones v ground vehicles for medical, food and parcel deliveries"](https://www.unmannedairspace.info/commentary/comparing-the-cost-effectiveness-of-drones-v-ground-vehicles-for-medical-food-and-parcel-deliveries/). Unmanned Airspace. November 2019.
 
 
 export default ({ children }) => 
