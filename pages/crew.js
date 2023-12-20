@@ -65,8 +65,8 @@ const Crew = () => {
           >
             <Image
               className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
-              src={`/images/external-link-icons/twitter.svg`}
-              alt={"Twitter icon"}
+              src={`/images/external-link-icons/x.svg`}
+              alt={"X icon"}
               height={50}
               width={100}
             />
@@ -108,7 +108,11 @@ const Crew = () => {
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
             John van der Harst manages research aims, graphic and language
-            standards, human resources, and development for Urban Cruise Ship. Like most of Michael&apos;s and some of Lee&apos;s and Richard&apos;s work, virtually all of John&apos;s is seen but not credited, like the name, logo, most yellow navbar content, editing, and styling.
+            standards, human resources, and development for Urban Cruise Ship.
+            Like most of Michael&apos;s and some of Lee&apos;s and
+            Richard&apos;s work, virtually all of John&apos;s is seen but not
+            credited, like the name, logo, most yellow navbar content, editing,
+            and styling.
           </div>
           <div className="my-4"></div>
           <div>
@@ -175,6 +179,32 @@ const Crew = () => {
           </div>
         </div>
         <center className="link-icon-set">
+          <a
+            href={`https://ram-website-images-and-documents.s3.us-east-2.amazonaws.com/doc-684.pdf`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              src={`/images/external-link-icons/recycle.svg`}
+              alt={"recycle icon"}
+              height={50}
+              width={100}
+            />
+          </a>
+          <a
+            href={`https://ram-website-images-and-documents.s3.us-east-2.amazonaws.com/doc-685.pdf`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              src={`/images/external-link-icons/doc.svg`}
+              alt={"Document icon"}
+              height={50}
+              width={100}
+            />
+          </a>
           <a href={`/snail-mail`} target="_blank" rel="noreferrer">
             <Image
               className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
@@ -205,19 +235,26 @@ const Crew = () => {
             financial, and wellness committees. He has also volunteered as 4-H
             camp counselor, church camp counselor, Master Gardener (in Tennessee
             and Michigan), garden club leader, Prayer Practitioner, Big Brother,
-            and Vegfest Coordinator. Lee is a certified Holistic Wellness Counselor, Yoga and Tai Chi Instructor, and Reiki Practitioner. He also teaches meditation and dream interpretation based on his own training in metaphysics. Lee has also studied and endeavors continual practice of Non-violent Communication.
+            and Vegfest Coordinator. Lee is a certified Holistic Wellness
+            Counselor, Yoga and Tai Chi Instructor, and Reiki Practitioner. He
+            also teaches meditation and dream interpretation based on his own
+            training in metaphysics. Lee has also studied and endeavors
+            continual practice of Non-violent Communication.
           </div>
           <div className="my-4"></div>
           <div>
-            Lee currently lives in Lansing, Michigan with his wife and two sons. He
-            has been an ethical vegan since January 2014. Lee was recruited by Urban Cruise Ship after his August 2018 presentation at a Vegan Peace meeting in Nashville, Tennessee. In February of 2019 Lee was elected to serve on the Board of Trustees of the Unity
-            Spiritual Center of Lansing. In the fall of 2020 Lee graduated from
-            the Lansing Citizens Academy, a program to learn about local
-            government and the role of citizen involvement. Lee teaches yoga and
-            tai chi at a local YMCA and enjoys seeing his students learn and
-            grow through practice. Lee has always had a love for
-            environmentalism and also enjoys trail running, yoga, tai chi, calisthenics,
-            hiking, gardening, and reading.
+            Lee currently lives in Lansing, Michigan with his wife and two sons.
+            He has been an ethical vegan since January 2014. Lee was recruited
+            by Urban Cruise Ship after his August 2018 presentation at a Vegan
+            Peace meeting in Nashville, Tennessee. In February of 2019 Lee was
+            elected to serve on the Board of Trustees of the Unity Spiritual
+            Center of Lansing. In the fall of 2020 Lee graduated from the
+            Lansing Citizens Academy, a program to learn about local government
+            and the role of citizen involvement. Lee teaches yoga and tai chi at
+            a local YMCA and enjoys seeing his students learn and grow through
+            practice. Lee has always had a love for environmentalism and also
+            enjoys trail running, yoga, tai chi, calisthenics, hiking,
+            gardening, and reading.
           </div>
         </div>
         <center className="link-icon-set">
@@ -304,6 +341,19 @@ const Crew = () => {
         </div>
         <center className="link-icon-set">
           <a
+            href="https://twitter.com/Richard_A_Burd"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
+              src={`/images/external-link-icons/x.svg`}
+              alt={"X icon"}
+              height={50}
+              width={100}
+            />
+          </a>
+          <a
             href="https://www.linkedin.com/in/richardburd/"
             target="_blank"
             rel="noreferrer"
@@ -366,23 +416,18 @@ const Crew = () => {
         </div>
         <div className="my-7 standard-font-3 text-justify text-lg">
           <div>
-            jye serves as a researcher, assistant webmaster, software developer, and design consultant at Urban Cruise Ship
+            jye serves as a researcher, assistant webmaster, software developer,
+            and design consultant at Urban Cruise Ship
           </div>
           <div className="my-4"></div>
           <div>
             jye is an artist, performer, environmentalist, and yoga student
           </div>
           <div className="my-4"></div>
-          <div>
-            more bio is coming soon
-          </div>
+          <div>more bio is coming soon</div>
         </div>
         <center className="link-icon-set">
-          <a
-            href="https://jyeartstudio.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://jyeartstudio.com" target="_blank" rel="noreferrer">
             <Image
               className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
               src={`/images/external-link-icons/home.svg`}
@@ -415,20 +460,15 @@ const Crew = () => {
         </div>
         <div className="my-7 standard-font-3 text-justify text-lg">
           <div>
-            Roseanne Morgan is a new member of Urban Cruise Ship, her bio is coming soon.
+            Roseanne Morgan is a new member of Urban Cruise Ship, her bio is
+            coming soon.
           </div>
           <div className="my-4"></div>
-          <div>
-            
-          </div>
+          <div></div>
           <div className="my-4"></div>
-          <div>
-        
-          </div>
+          <div></div>
         </div>
-        <center className="link-icon-set">
- 
-        </center>
+        <center className="link-icon-set"></center>
         <br></br>
         <br></br>
         <br></br>
