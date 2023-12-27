@@ -1,17 +1,33 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Harms From Coal Ash";
-export const solution = "Waste Pricing on Coal Burning";
+export const problem = "Coal Ash Damages";
+export const solution = "Waste Levy on Coal Burning";
 
-The externalized damage from coal ash has been estimated at about 1/10 of a cent per kilowatt-hour [^"7"], similar to the 1/10 cent/kWh levy that is assessed on nuclear power plants for waste disposal [^"8"].
+## Background
+Coal-fired power generates around 10,400 TWh of electricity annually[^”1”].
 
-The proceeds of the fee would go to a dedicated fund that finances remediation of coal ash disposal sites, similar to how the Abandoned Mine Reclamation Fund finances reclamation of coal refuse [^"2"]. The fund would be administered by the U. S. EPA.
+## Calculations
+The externalized damage from coal ash has been estimated at about 1/10 of a cent per kilowatt-hour[^”2”], similar to the 1/10 cent/kWh levy that is assessed on nuclear power plants for waste disposal[^”3”].
+This levy would raise $10.4 billion annually.
+We use the average cost of passing state legislation ($13,625,000) [^”4”] and add the average cost of federal regulations ($11,714,286) [^”5”] to come up with a guess as to how much it would cost to enact this levy. Compliance costs are estimated to average $13,142,857 per regulation annually[^”5”]. Together this equals $38,482,143, multiplied by 195 countries equals $7.5 billion.
 
-[^"2"]: Federal Register. ["Abandoned Mine Land Reclamation Fee"](https://www.federalregister.gov/documents/2022/01/14/2022-00513/abandoned-mine-land-reclamation-fee). National Archives, pp. 2341-2347. January 2022.
+## Implementation
+The proceeds of the fee would go to a dedicated fund that finances remediation of coal ash disposal sites, similar to how the Abandoned Mine Reclamation Fund finances reclamation of coal refuse[^”6”]. The fund would be administered by the U.S. EPA in the U.S. and similar organizations in other countries.
 
-[^"7"]: Wang, L., Watanabe, T., Xu, Z. ["Monetization of External Costs Using Lifecycle Analysis—A Comparative Case Study of Coal-Fired and Biomass Power Plants in Northeast China"](https://www.mdpi.com/1996-1073/8/2/1440). Energies 8(2), pp. 1440-1467. February 2015.
+##### Lead researcher: Lee Nelson - Last updated: 12/26/2023
 
-[^"8"]: World Nuclear Association. ["Economics of Nuclear Power"](https://world-nuclear.org/information-library/economic-aspects/economics-of-nuclear-power.aspx). Accessed April 30, 2022.
+[^”1”]: IEA [“Coal”](https://www.iea.org/energy-system/fossil-fuels/coal) July 2023
+
+[^”2”]: Wang, L., Watanabe, T., Xu, Z. ["Monetization of External Costs Using Lifecycle Analysis—A Comparative Case Study of Coal-Fired and Biomass Power Plants in Northeast China"](https://www.mdpi.com/1996-1073/8/2/1440) Energies 8(2), pp. 1440-1467. February 2015
+
+[^”3”]: World Nuclear Association. ["Economics of Nuclear Power"](https://world-nuclear.org/information-library/economic-aspects/economics-of-nuclear-power.aspx) Accessed April 30, 2022
+
+[^”4”]: Legislative Service Bureau [“Average Cost of Enacting a New State Law”]( https://www.michigancapitolconfidential.com/enacting-a-new-state-law-costs-272500-on-average) Accessed 12/20/2023
+
+[^”5”]: Office of Management and Budget [“Costs and Benefits of U.S. Government Regulations”]( https://www.thoughtco.com/costs-and-benefits-of-government-regulations-4068946) Accessed 1/14/2023
+
+[^”6”]: Federal Register. ["Abandoned Mine Land Reclamation Fee"](https://www.federalregister.gov/documents/2022/01/14/2022-00513/abandoned-mine-land-reclamation-fee) National Archives, pp. 2341-2347. January 2022 
+
 
 export default ({ children }) => 
   <SolutionDropdown 
