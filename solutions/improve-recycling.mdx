@@ -1,5 +1,12 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "E-Waste";
 export const solution = "Establish e-waste collection and processing infrastructure - World";
 import ArticleImage from "/components/ArticleImage.js";

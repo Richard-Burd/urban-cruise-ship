@@ -1,10 +1,43 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Coal Ash Damages";
-export const solution = "Waste Levy on Coal Burning";
+export const solution = "Waste Levy on Coal Burning - World";
+
+## Description
+We propose a levy on coal burning to account for environmental damages.
 
 ## Background
 Coal-fired power generates around 10,400 TWh of electricity annually[^”1”].
+
+<DynamicSolutionGraphic
+  barChartTitle={"Waste Levy on Coal Burning - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  mastheadText3={"Lee Nelson 1-1-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 10.4,
+      displayedValue: "$10.4",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 7.5,
+      displayedValue: "$7.5 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
 ## Calculations
 The externalized damage from coal ash has been estimated at about 1/10 of a cent per kilowatt-hour[^”2”], similar to the 1/10 cent/kWh levy that is assessed on nuclear power plants for waste disposal[^”3”].
@@ -14,7 +47,7 @@ We use the average cost of passing state legislation ($13,625,000) [^”4”] an
 ## Implementation
 The proceeds of the fee would go to a dedicated fund that finances remediation of coal ash disposal sites, similar to how the Abandoned Mine Reclamation Fund finances reclamation of coal refuse[^”6”]. The fund would be administered by the U.S. EPA in the U.S. and similar organizations in other countries.
 
-##### Lead researcher: Lee Nelson - Last updated: 12/26/2023
+##### Lead researcher: Lee Nelson - Last updated: 1/1/2024
 
 [^”1”]: IEA [“Coal”](https://www.iea.org/energy-system/fossil-fuels/coal) July 2023
 
