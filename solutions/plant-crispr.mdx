@@ -1,0 +1,60 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Harvest Losses";
+export const solution = "CRISPR Genetic Modification";
+
+## Description
+
+We recommend the use of CRISPR technology as a means to prevent pre- and post-harvest losses.
+
+## Background
+
+Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR), is a technology that allows for precise gene editing and differs from traditional genetically modified organisms (GMOs)[^"10"].
+
+CRISPR allows for more precise and targeted modifications in the genome. Traditional GMO methods often involve the random and unpredictable insertion of isolated genes or foreign DNA elements into the plant genome. In contrast, CRISPR can introduce new traits by precisely altering existing genes[^"7"].
+
+Traditional GMO methods increase the risk of transgene crossing, also known as transgene outcrossing, which is the transfer of genes from genetically modified organisms (GMOs) to conventional or wild relatives through natural pollination or hybridization. This process can lead to transgenic traits in non-GMO plants, raising concerns about the potential environmental impact and the unintentional spread of genetically modified traits. The risk of transgene outcrossing is one of the reasons behind the regulations and bans on the cultivation of transgenic crops in certain countries, particularly in Europe[^"5"].
+
+Additional benefits over traditional methods include:
+
+- Speed and Efficiency: CRISPR can reduce the time required to modify target genes compared to traditional GMO methods. This is because it can be applied directly in embryos, bypassing the need for the use of embryonic stem (ES) cells[^"8"].
+
+- No Foreign DNA: CRISPR does not necessarily involve inserting a foreign DNA element into the plant genome from different species. This has led to some CRISPR-edited crops being considered non-GMO by many scientific researchers and under certain regulatory frameworks[^"9"] [^"7"].
+
+Some specific plant traits that CRISPR could address include
+
+- Preventing Pre-harvest Sprouting: can be used to modify crops such as rice, maize, wheat, and barley to make them more resistant to pre-harvest sprouting, a major issue that decreases cereal production worldwide[^"11"].
+
+- Enhancing Resistance to Biotic and Abiotic Stresses: CRISPR can help develop crops more resistant to drought, unexpected rainfall, insects, pests, and diseases, which are major contributors to pre-harvest losses[^"11"].
+
+- Improving Crop Defense Against Parasitic Plants: CRISPR technologies can be utilized to enhance crops' defense against parasitic plants, which can cause substantial reductions in agricultural productivity and complete crop failure[^"12"].
+
+## Implementation
+
+There are ongoing studies and utilization of CRISPR in China. The country has supported agricultural research and breeding, particularly in the seed sector. However, regulatory hurdles still exist[^"6"].
+
+
+
+[^"1"]: [Genome editing for improving nutritional quality, post-harvest shelf life and stress tolerance of fruits, vegetables, and ornamentals](https://www.frontiersin.org/articles/10.3389/fgeed.2023.1094965/full).
+[^"2"]: [Maximizing social, economic, and environmental benefits from genome editing technologies in agriculture](https://innovativegenomics.org/projects/maximizing-social-economic-environmental-benefits-genome-editing-technologies-agriculture/).
+[^"3"]: [A scoping review of interventions for crop postharvest loss reduction in sub-Saharan Africa and South Asia | Nature Sustainability](https://www.nature.com/articles/s41893-020-00622-1).
+[^"4"]: [Maximizing social, economic, and environmental benefits from genome editing technologies in agriculture](https://innovativegenomics.org/projects/maximizing-social-economic-environmental-benefits-genome-editing-technologies-agriculture/).
+[^"5"]: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9688763/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9688763/).
+[^"6"]: [The future of gene-edited crops in China - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9053944/).
+[^"7"]: Ahmad A, Jamil A, Munawar N. [GMOs or non-GMOs? The CRISPR Conundrum - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10591184/). Frontiers in Plant Science. October 2023.
+[^"8"]: Flora A, Welcker J. [CRISPR Genome Engineering: Advantages and Limitations](https://www.taconic.com/taconic-insights/model-generation-solutions/crispr-genome-engineering-advantages-limitations.html). Taconic. February 2017.
+[^"9"]: Meyer A, Dastgheib-Vinarov S. [The Future of Food? CRISPR-Edited Agriculture - Food and Drug Law Institute (FDLI)](https://www.fdli.org/2021/11/the-future-of-food-crispr-edited-agriculture/). Food and Drug Law Institute. Winter 2021.
+[^"10"]: [What is CRISPR? - Explained by Jennifer Doudna & IGI Experts](https://innovativegenomics.org/education/digital-resources/what-is-crispr/). Innovative Genomics. Accessed December 2023.
+[^"11"]: Krishna TPA, Maharajan T, Ceasar SA. [https://openbiotechnologyjournal.com/VOLUME/16/ELOCATOR/e187407072205190/](Application of CRISPR/Cas9 Genome Editing System to Reduce the Pre- and Post-Harvest Yield Losses in Cereals). The Open Biotechnology Journal. February 2022.
+[^"12"]: Jhu MY, Ellison EE, Sinha NR. [CRISPR gene editing to improve crop resistance to parasitic plants](http://dx.doi.org/10.3389/fgeed.2023.1289416). Frontiers in Genome Editing. October 2023.
+
+
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
