@@ -1,21 +1,30 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Pollution from Heating and Cooling";
-export const solution = "District Energy";
+export const solution = "District Systems";
 
-Cities should build district heating and cooling systems as a vital piece of infrastructure, along with roads, waste water treatment, etc., as well as insure zoning rules allow sufficient density to take advantage of district heating and cooling.
+## Description
+We support creating an infrastructure of district heating and cooling that harnesses local sources with efficient distribution.
 
-The U.S. Census Bureau expects the American population to increase by about 67 million people from 2022 to 2060 [^"6"]. If half of this growth is met with district heating and cooling, the expected energy savings would be about 600 petajoules per year by 2060. If this saved energy is from natural gas electricity, then the [environmental benefit](/energy/energy_production/energy_env) is about $3 billion per year in reduced greenhouse gas emissions and other external costs from natural gas.
 
-As detailed below, Sweden achieved rapid growth in the usage of district heat, and it now provides over 50% of residential and commercial heating [^"8"]. Denmark, Russia, and China are also leaders in district heat deployment [^"2"]. To insure the full environmental benefit of district heat, it is necessary that the systems are powered by clean energy sources, such as solar thermal [^"7"].
+## Background
+District heating uses local fuel or heat sources that would otherwise be wasted, to satisfy local customer demands for heating, by using a distribution network of pipes[^”1”]. Heat sources can vary widely and include combined heat and power (CHP) plants, waste to energy (WtE) plants, industrial processes, geothermal wells, solar collectors, and biomass fuels[^”1”]. This ensures that heat recycling and renewable heat sources replaces primary energy as the main supply for heating.
 
-[^"2"]: International Energy Agency. ["District Heating"](https://www.iea.org/reports/district-heating). November 2021.
+In 2022, district heating met only about 9% of the global heating needs in buildings and industry[^”2”]. This offers great potential for efficient, cost-effective and flexible large-scale integration of low-emission energy sources into the heating energy mix.
+90% of current distract heating is powered by fossil fuels[^”2”], these existing networks can be switched over to renewable sources as well.
 
-[^"6"]: United States Census Bureau. ["Population Projections"](https://www.census.gov/programs-surveys/popproj.html). Accessed January 16, 2019.
+## Calculations
 
-[^"7"]: Weiss, W., Spörk-Dür, M. ["Solar Heat Worldwide"](https://www.iea-shc.org/Data/Sites/1/publications/Solar-Heat-Worldwide-2021.pdf). Solar Heating & Cooling Program, International Energy Agency. 2021.
 
-[^"8"]: Werner, S. ["District heating and cooling in Sweden"](https://www.sciencedirect.com/science/article/pii/S0360544217304140). Energy 126(1), pp. 419-429. May 2017.
+## Implementation
+District heating would benefit from fossil fuel taxes and soft regulations based on transparency[^”1”]. This would allow for greater market share and infrastructure buildout.
+
+##### Lead researcher: Lee Nelson - Last updated: 12/8/2023
+
+[^”1”]: Werner, S. ["District heating and cooling in Sweden"](https://www.sciencedirect.com/science/article/pii/S0360544217304140) Energy 126(1), pp. 419-429, May 2017 
+
+[^”2”]: International Energy Agency. ["District Heating"](https://www.iea.org/reports/district-heating) November 2021 
+
 
 export default ({ children }) => 
   <SolutionDropdown 

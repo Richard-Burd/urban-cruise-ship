@@ -1,19 +1,85 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Low Recycling Rates";
 export const solution = "Landfill Tax";
 import ArticleImage from "/components/ArticleImage.js";
 
-We propose a tax on landfills to account for the environmental damage outlined above, on the order of $100 per ton. Several countries have adopted landfill taxes.
+## Description
+We propose a tax on landfills of $100 per ton to account for environmental damages and help increase recycling rates.
+
+## Background
+Here is a list of current landfill taxes.
 
 <ArticleImage image={"landfill_tax_examples.svg"} width={800} height={500} />
-#### Sources: [^"2"], [^"8"], [^"9"].
+#### Sources: [^"1"], [^"2"], [^"3"].
 
-[^"2"]: ECOTEC Research & Consulting. ["Study on the Economic and Environmental Implications of the Use of Environmental Taxes and Charges in the European Union and its Member States"](https://ec.europa.eu/environment/enveco/taxation/pdf/ch10_landfill.pdf). Chapter 10: Landfill Taxes. 
+We are recommending a landfill tax of $100 per ton to account for environmental damages as outlined in the section above “Recommended Taxes on Waste”.
+ 
+<DynamicSolutionGraphic
+  barChartTitle={"Landfill Tax - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"79.68 million"}
+  arrowText2={"tons of CO₂"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"Lee Nelson 12-22-2023"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 62.75,
+      displayedValue: "$62.75",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 7.5,
+      displayedValue: "$7.5 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
-[^"8"]: Peck, M., Chipman, R. ["Industrial energy and material efficiency: What role for policies?"](http://www.un.org/esa/sustdev/publications/industrial_development/3_2.pdf). 2007.
+## Calculations
+The world generates about 2.01 billion tonnes of municipal solid waste annually[^”1”]. 36.6% of that, or 736 million tonnes of that waste goes to landfills[^”1”]. We expect an increase of about 40%[^”3”], or 108.54 million tons, to recycling. That would leave 627.46 million tons per year, with a $100 per ton tax making $62.75 billion a year.
 
-[^"9"]: politics.co.uk. ["Landfill - How Does it Work? What is the Landfill Tax?"](https://www.politics.co.uk/reference/landfill-tax/). 2022.
+Currently there is 199.2 million tons of GHG reduction from recycling compared to landfilling[^”6”], [^”7”]. An increase of 40% would add 79.68 million tons of reduction.
+
+We use the average cost of passing state legislation ($13,625,000) [^”8”] and add the average cost of federal regulations ($11,714,286) [^”9”] to come up with a guess as to how much it would cost to enact this tax. Compliance costs are estimated to average $13,142,857 per regulation annually[^”9”]. Together this equals $38,482,143, multiplied by 195 countries equals $7.5 billion.
+
+
+## Implementation
+More developed nations, such as the U.S., will need to lead the way in implementing a landfill tax. The U.S. Environmental Protection Agency can spearhead the movement and, with the help of the UN, expand it worldwide. Local governments will need to implement and enforce it. There may also need to be strict fines imposed to discourage illegal disposal.
+
+##### Lead researcher: Lee Nelson - Last updated: 12/23/2023
+
+[^”1”]: The World Bank [“What a Waste 2.0”]( https://datatopics.worldbank.org/what-a-waste/trends_in_solid_waste_management.html) Accessed 12/17/2023
+
+[^”2”]: ECOTEC Research & Consulting. ["Study on the Economic and Environmental Implications of the Use of Environmental Taxes and Charges in the European Union and its Member States"](https://ec.europa.eu/environment/enveco/taxation/pdf/ch10_landfill.pdf) Chapter 10: Landfill Taxes
+
+[^”3”]: Peck, M., Chipman, R. ["Industrial energy and material efficiency: What role for policies?"](http://www.un.org/esa/sustdev/publications/industrial_development/3_2.pdf) 2007 
+
+[^”4”]: politics.co.uk. ["Landfill - How Does it Work? What is the Landfill Tax?"](https://www.politics.co.uk/reference/landfill-tax/) 2022 
+
+[^”5”]: Our World in Data [“Greenhouse Gas Emissions”]( https://ourworldindata.org/greenhouse-gas-emissions) Accessed 12/20/2023
+
+[^”6”]: U.S. Environmental Protection Agency. ["Waste Reduction Model, Version 15"](https://www.epa.gov/warm) Excel Spreadsheet. Accessed September 29, 2019 
+
+[^”7”]: U.S. Environmental Protection Agency. ["Advancing Sustainable Materials Management: 2015 Tables and Figures"](https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/advancing-sustainable-materials-management) July 2018 
+
+[^”8”]: Legislative Service Bureau [“Average Cost of Enacting a New State Law”]( https://www.michigancapitolconfidential.com/enacting-a-new-state-law-costs-272500-on-average) Accessed 12/20/2023
+
+[^”9”]: Office of Management and Budget [“Costs and Benefits of U.S. Government Regulations”]( https://www.thoughtco.com/costs-and-benefits-of-government-regulations-4068946) Accessed 1/14/2023
+
 
 export default ({ children }) => 
   <SolutionDropdown 

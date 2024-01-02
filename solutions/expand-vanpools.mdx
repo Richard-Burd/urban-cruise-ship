@@ -1,9 +1,97 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Energy and Pollution From Transportation";
 export const solution = "Expand Vanpools";
 
-Many mass transit routes, served by buses and rail, are nearly empty. Such routes could be more efficiently served by on-demand vanpools, using mapping technology that has recently been developed by ridehailing services.
+## Description
+
+We recommend that transit agencies expand the use of vanpooling.
+
+## Background
+
+A vanpool is a collection of typically 8-15 people traveling by van. They are most commonly used for work commuting.
+
+Many suburban mass transit routes, served by buses and rail, are nearly empty. Such routes could be more efficiently served by on-demand vanpools, using mapping technology that has recently been developed by ridehailing services.
+
+## Costs
+
+Expansion of vanpools to the maximum feasible level will bring the following estimated benefits.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Vanpools, United States"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"18 MTCO₂eq/yr"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Dec. 28, 2023"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 9.577069908930536,
+      displayedValue: "$9.6 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 16.20734907665168,
+      displayedValue: "$16.2 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+There are also unquantified benefits in terms of space savings. By taking cars off the road at rush hour, vanpools will reduce congestion and enable metropolitan areas to grow to a higher density than they otherwise could.
+
+## Calculations
+
+We estimate the potential market share on vanpooling as follows. As of 2017, about 19% of passenger-miles-traveled in the United States were for commuting purposes [^"1"]. An estimated 25% of commutes exceed 20 miles, which is an ideal market for vanpools [^"2"]. With policy changes and aggressive marketing, vanpools have a market potential of 25% of long-distance commutes [^"3"]. In 2020, the United States accounted for 4.95 trillion passenger-miles by car [^"4"].
+
+We make the following estimates: the average occupancy of a vanpool is 8.14 [^"5"] and the average occupancy of a private automobile is, when used for commuting, 1.1 [^"6"]. The average fuel economy of a car is 24.2 miles per gallon, and of a light truck or van, which we use for vanpool vehicles, is 17.5 [^"7"]. The circuity--the ratio between the actual distance traveled of a vehicle and the straight line distance between the origin and destination of a trip--is about twice as great for municipal buses as for private cars [^"8"]; we will take this same ratio between vanpools and cars. With these assumptions, vanpools require 37% of the energy consumption and greenhouse gas emissions of private automobiles. A mid-sized sedan has a greenhouse gas intensity of 449 grams CO<sub>2</sub>e [^"4"], and so the total potential savings is 18 million tons per year. The energy consumption of the sedan is 6.37 megajoules per mile [^"4"], and so the total energy savings potential is 257 petajoules.
+
+Some vanpool expansion will displace suburban bus routes. Municipal buses have greater energy consumption than private cars when the occupancy is low, as is typically the case in suburban settings, but for our calculations we treat all vanpool expansion as displacing private cars [^"4"].
+
+The fuel and maintenance costs of driving are estimated at 27.67¢ per mile [^"9"]. We assume that these costs are saved from vanpooling, while the cost of purchasing a vehicle and of insurance are retained. Vanpools save 61% of private cost relative to driving, and they have a 66% farebox recovery rate (portion of cost that is paid by the user) [^"5"], and so we take the cost of a vanpool to be 16.35¢ for every mile of private driving they displace.
+
+## Implementation
+
+Today, vanpools comprise 1.5% of transit passenger-miles and 0.03% of total passenger-miles traveled [^"10"],[^"11"], a small fraction of their potential. Aggressive marketing and financial incentives will increase these figures [^"5"]. Modern ridehailing technology, such as was employed by Chariot and is under development by start-ups such as MagicBus and Fetii, can also expand vanpool usage. Many cities have demonstrated integration between digital ridesharing tools and municipal transit systems [^"12"].
+
+Vanpools are most effective in suburban settings and for commutes now served by low-occupancy bus routes. They are less effective for commutes to and from a city center.
+
+[^"1"]: Bureau of Transportation Statistics. [Average Annual PMT, VMT Person Trips and Trip Length by Trip Purpose](https://www.bts.gov/content/average-annual-pmt-vmt-person-trips-and-trip-length-trip-purpose). United States Department of Transportation, Bureau of Transportation Statistics, Federal Highway Administration, National Household Travel Survey data. May 2018.
+
+[^"2"]: Torluemke, D. A., Roseman, D. [Vanpools: Pricing and Market Penetration](https://onlinepubs.trb.org/Onlinepubs/trr/1989/1212/1212-010.pdf). Committee on Ridesharing, Transportation Research Record 1212, pp. 83-87. 1988.
+
+[^"3"]: Aumell, J. et al. ["Vanpool Market Action Plan"](https://www.vtpi.org/VanpoolMAPReport.pdf). Washington State Department of Transportation. 2003.
+
+[^"4"]: Center for Sustainable Systems. ["Personal Transportation Factsheet"](https://css.umich.edu/publications/factsheets/mobility/personal-transportation-factsheet). University of Michigan, Pub. No. CSS01-07. 2023.
+
+[^"5"]: Ennis, M. ["Vanpools in the Puget Sound Region"](https://www.washingtonpolicy.org/library/docLib/completevanpoolpb.pdf). Washington Policy Center. January 2010.
+
+[^"6"]: Bureau of Transportation Statistics. ["Daily Passenger Travel"](https://www.bts.gov/archive/publications/highlights_of_the_2001_national_household_travel_survey/section_02). United States Department of Transportation. December 2011.
+
+[^"7"]: Alternative Fuels Data Center. ["Average Fuel Economy by Major Vehicle Category"](https://afdc.energy.gov/data/10310). Office of Energy Efficency & Renewable Energy, United States Department of Energy. February 2020.
+
+[^"8"]: Huang, J., Levinson, D. M. ["Circuity in urban transit networks"](https://conservancy.umn.edu/bitstream/handle/11299/180057/TransitCircuity.pdf;jsessionid=0E52506028B817AAA22D117612D9CAA4?sequence=1). Journal of Transport Geography 48, pp. 145-153. 2015.
+
+[^"9"]: American Automobile Assocation. ["How Much Does it Really Cost to Own a New Car?"](https://newsroom.aaa.com/wp-content/uploads/2022/08/2022-YourDrivingCosts-FactSheet-7-1.pdf). 2022.
+
+[^"10"]: Feigenbaum, B. ["Vanpools: The Forgotten Mode"](https://reason.org/wp-content/uploads/vanpools-the-forgotten-mode.pdf). Reason Foundation. November 2021.
+
+[^"11"]: Bureau of Transportation Statistics. ["Table 1-40: U.S. Passenger-Miles (Millions)"](https://www.bts.gov/archive/publications/national_transportation_statistics/table_01_40). United States Department of Transportation. April 2017.
+
+[^"12"]: Cmar, W. ["How Cities are Integrating Rideshare and Public Transportation"](https://www.govtech.com/dc/articles/how-cities-are-integrating-rideshare-and-public-transportation.html). Governing. Accessed December 28, 2023.
 
 export default ({ children }) => 
   <SolutionDropdown 

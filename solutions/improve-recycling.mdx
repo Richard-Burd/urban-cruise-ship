@@ -1,40 +1,73 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "E-Waste";
-export const solution = "Establish e-waste collection infrastructure - U.S.";
+export const solution = "Establish e-waste collection and processing infrastructure - World";
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Description
-We propose public funding for the establishment of collection infrastructure of e-waste. With proper collection, economics should support higher recycling rates.
-
+We propose public funding for the establishment of collection and processing infrastructure of e-waste.
 
 ## Background
-Electronic waste constitutes 2-5% of the MSW waste stream[^”1”].
-
+Electronic waste constitutes 2-5% of the MSW waste stream[^”1”]. 
 More than 70% of retired electronic devices end up in storage for 3-5 years before disposal[^”1”].
 
-Recycling plants have the potential to be profitable, before accounting for environmental benefits, as has been shown for a hypothetical model in Egypt.
-
-<ArticleImage image={"egypt_ewaste.svg"} width={700} height={400} />
-#### Source: [^"2"]. Figures for Year 5 are presented and rounded to the nearest $1000, so total profit is not exactly equal to the sum of all revenues and expenses.
-
+<DynamicSolutionGraphic
+  barChartTitle={"E-waste Recycling - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"70.8 million"}
+  arrowText2={"tons of CO₂"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"Lee Nelson 12-31-2023"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 55.38,
+      displayedValue: "$55.38",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 32.26,
+      displayedValue: "$32.26 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
 ## Calculations
-Collection and transportation is estimated to represent 80% of the total cost of recycling e-waste[^”1”].
+53.6 million metric tons of e-waste is produced globally every year[^”2”]. 83% of that is not collected for recycling[^”2”], leaving 44.49 million tons that needs to be collected and recycled.
 
+The remaining e-waste is valued at $51.88 billion[^”3”].
+
+The current rate of e-waste recycling prevents 15 million tons of CO₂e[^”4”], that means there is the potential of 70.8 million tons of CO2e reduction from the remaining waste. Valued at $50 per ton, that equals $3.5 billion.
+
+The average cost to recycle e-waste is $725 per ton[^”5”], or $32.26 billion to collect and process the remaining e-waste annually.
 
 ## Implementation
+As well as establishing collection and processing infrastructure, incentives and regulations may be required to realize its full potential[^”2”].
 
+##### Lead researcher: Lee Nelson - Last updated: 12/31/2023
 
+[^”1”]: Kang, H., Schoenung, J. [“Electronic waste recycling: A review of U.S. infrastructure and technology options”] (https://doi.org/10.1016/j.resconrec.2005.06.001) Resources Conservation and Recycling. December 2005
 
-##### Lead researcher: Lee Nelson - Last updated: 10/3/2023
+[^”2”]: World Economic Forum [“The enormous opportunity of e-waste recycling”](https://www.weforum.org/agenda/2023/03/the-enormous-opportunity-of-e-waste-recycling/) March 2023
 
-[^”1”]: Kang, H., Schoenung, J. [“Electronic waste recycling: A review of U.S. infrastructure and technology options”](https://doi.org/10.1016/j.resconrec.2005.06.001) Resources Conservation and Recycling. December 2005
+[^”3”]: Nijman, S. [“UN report: Time to seize opportunity, tackle challenge of e-waste”]( https://www.unep.org/news-and-stories/press-release/un-report-time-seize-opportunity-tackle-challenge-e-waste) United Nations Environment Programme Accessed 12/28/2023
 
-[^"2"]: Mostafa, T. M., Sarhan, S. ["Economic Feasibility Study of E-Waste Recycling Facility in Egypt"](https://www.researchgate.net/publication/326226096_Economic_Feasibility_Study_of_E-Waste_Recycling_Facility_in_Egypt). Joint Journal of Novel Carbon Resource Sciences & Green Asia Strategy 5(2), pp. 26-35. June 2018.
+[^”4”]: Waste Management World [“The growing volume of e-waste is quickly overwhelming the current capacity to recycle it."](https://waste-management-world.com/resource-use/e-waste-recycling/) March 2023
 
-
-
+[^”5”]: Meidl, R. [“Closing the Loop on the World’s Fastest-growing Waste Stream: Electronics”](https://www.bakerinstitute.org/research/closing-loop-worlds-fastest-growing-waste-stream-electronics) Baker Institute: Center for Energy Studies, June 2023
 
 export default ({ children }) => 
   <SolutionDropdown 
