@@ -1,0 +1,29 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Stagnation of Nuclear Power";
+export const solution = "Repeal Nuclear Bans";
+
+## Description
+(Details to come)
+
+## Background
+(Details to come)
+
+## Calculations
+(Details to come)
+
+
+## Implementation
+(Details to come)
+
+[^”1”]: Berthelemy, M., Rangel, L. [“Nuclear reactors' construction costs: The role of lead-time, standardization and technological progress”](https://doi.org/10.1016/j.enpol.2015.03.015) Energy Policy, July 2015
+
+[^”2”]: Parsi, S. et al. [“Seismic isolation: A pathway to standardized advanced nuclear reactors”]( https://doi.org/10.1016/j.nucengdes.2021.111445) Nuclear Engineering and Design, February 2022
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
