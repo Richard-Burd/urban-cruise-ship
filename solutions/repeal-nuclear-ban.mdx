@@ -1,0 +1,35 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Stagnation of Nuclear Power";
+export const solution = "Repeal Nuclear Bans";
+
+## Description
+We recommend that U. S. states repeal bans and restrictions on new nuclear power plants.
+
+## Background
+As of 2023, of the 50 U. S. states, 12 have heavy restrictions or outright bans on new nuclear plants: California, Connecticut, Hawaii, Illinois, Maine, Massachusetts, Minnesota, New Jersey, New York, Oregon, Rhode Island, Vermont [^"1"]. These bans make it nearly impossible to build new nuclear plants in these states. Some, however, have nuclear power plants that predate the bans.
+
+## Calculations
+We estimate that 26 million tons of CO<sub>2</sub> per year could be reduced by repealing the 12 bans.
+
+This figure is estimated as follows. Absent a ban, the amount of new nuclear that would be constructed in each state would be equal to the share of nuclear energy in the United States electricity mix today, which is about 18% [^"3"], except in Vermont, where the electricity mix already has low emissions. The emissions intensity of nuclear power is taken to be 50 grams CO<sub>2</sub>/kWh [^"2"]. The new nuclear is assumed to replace a portfolio of electricity generation that is equal to the state's average intensity [^"4"].
+
+
+## Implementation
+For new nuclear power to play a significant role in the American power grid, more reforms than repealing state-level moratoria are needed. Those reforms are described elsewhere in this section. We do not expect that repealing the moratoria, without addressing other barriers to nuclear power, will result in a significant amount of new nuclear power being built.
+
+[^"1"]: National Conference of State Legislatures. ["States Restrictions on New Nuclear Power Facility Construction"](https://www.ncsl.org/environment-and-natural-resources/states-restrictions-on-new-nuclear-power-facility-construction). September 2023.
+
+[^"2"]: Bruckner T., I.A. Bashmakov, Y. Mulugetta, H. Chum, A. de la Vega Navarro, J. Edmonds, A. Faaij, B. Fungtammasan, A. Garg, E. Hertwich, D. Honnery, D. Infield, M. Kainuma, S. Khennas, S. Kim, H.B. Nimir, K. Riahi, N. Strachan, R. Wiser, X. Zhang. [*2014: Energy Systems*](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_chapter7.pdf). In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [^Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]:. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
+
+[^"3"]: Energy Information Administration. ["What is U.S. electricity generation by energy source?"](https://www.eia.gov/tools/faqs/faq.php?id=427&t=3). United States Department of Energy. October 2023.
+
+[^"4"]: Energy Information Administration. ["Energy-Related CO<sub>2</sub> Emission Data Tables"](https://www.eia.gov/environment/emissions/state/). United States Department of Energy. July 2023.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
