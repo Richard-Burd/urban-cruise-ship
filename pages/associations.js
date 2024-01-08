@@ -30,7 +30,7 @@ const Associations = () => {
         </div>
         <div className="my-2 standard-font-3 standard-font-color-1 text-justify text-lg tracking-wide">
           <div>
-            <b>Nashville Peace and Justice Center</b>, 2015-present.
+            <b>Nashville Peace and Justice Center</b>, 2015-2023.
           </div>
         </div>
         <center className="link-icon-set">
