@@ -1,11 +1,17 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Need to Promote Active Transportation";
-export const solution = "Pedestrian Skybridges";
+export const solution = "Manhattan Pedestrian Skybridge";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 ## Description
 
-We propose that cities with high population densities and high real estate costs invest in networks of pedestrian skyways or tunnels.
+We propose that cities with high population densities and high real estate costs, particularly the City of New York in Manhattan, invest in networks of pedestrian skyways or tunnels.
 
 ## Background
 
@@ -13,9 +19,47 @@ Skybridges are common features in urban areas, but relatively few cities have la
 
 ## Calculations
 
-The construction costs of pedestrian skybridges have been estimated at $150-250 per square foot [^"4"], while costs for tunnels have been estimated at $120/sqft [^"5"]. Adjusting for inflation, applying an annual maintenance cost of 4% of the construction cost [^"6"], and taking a 3.5% discount rate [^"7"], we estimate the net present cost of a pedestrian skyway at $410-680 per square foot and tunnels at $330/sqft. Additional costs may include climate control, security, and graffiti removal.
+Due to the high construction cost of skybridges, they will only have a strong economic case in areas with high real estate costs. The island of Manhattan is one such area, and we analyze the economic benefits of such a network as follows.
 
-Outside of the most expensive cities, few areas support reliably sufficiently high real estate prices to justify investment in networks of pedestrian walkways. In Portland, Oregon, for instance, the average commerical real estate price for 2018-2022 was $323 per square foot [^"8"]. In New York City, where commericial real estate has consistently cost more than $700 per square foot since 2018 [^"9"], the economic case for a skyway network is much stronger.
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"IUU Monitoring and Enforcement"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"2.2"}
+  arrowText2={"square km"}
+  arrowText3={"created"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Jan. 10, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 13.012955208369556,
+      displayedValue: "$13 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 21.544502711471306,
+      displayedValue: "$22 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+The construction costs of pedestrian skybridges have been estimated at $150-250 per square foot [^"4"], while costs for tunnels have been estimated at $120/sqft [^"5"]. Adjusting for inflation, applying an annual maintenance cost of 4% of the construction cost [^"6"], and taking a 3.5% discount rate [^"7"], we estimate the net present cost of a pedestrian skyway at $410-680 per square foot and tunnels at $330/sqft. A cost of $545/sqft is used in these calculations. Additional costs may include climate control, security, and graffiti removal.
+
+To calculate the size of the network, we observe that the Minneapolis Skyway System covers 80 city blocks and traverses 9.5 miles [^"14"], and a typical city block in Minneapolis is 660 by 330 feet [^"15"]. Manhattan consists of 23 square miles of land, so if the same area to length ratio applies to a Manhattan Pedestrian Skybridge, the length would be 347 miles. A typical skybridge might have a width of 4 meters (13 feet) [^"16"], and so the total area of network is about 2.2 square kilometers.
+
+As of the third quarter in 2023, the price of commercial real estate in Manhattan was $896 per square foot [^"17"]. Our calculations assume that the value of the network is thus $896 per square foot.
+
+Benefits in the form of reduced congestion and reduced emissions from facilitating active transportation are not quantified here.
+
+Outside of the most expensive cities, few areas support reliably sufficiently high real estate prices to justify investment in networks of pedestrian walkways. In Portland, Oregon, for instance, the average commerical real estate price for 2018-2022 was $323 per square foot [^"8"].
 
 ## Implementation
 
@@ -50,6 +94,14 @@ Security, graffiti removal, drainage, lighting, and wheelchair accessability are
 [^"12"]: Yoos, J., James, V. ["The Multilevel Metropolis"](https://placesjournal.org/article/multilevel-metropolis-urban-skyways/?cn-reloaded=1). Places. May 2016.
 
 [^"13"]: City of Minneapolis. ["Skyways: Improve the Skyway system that connects buildings Downtown"](https://minneapolis2040.com/policies/skyways/). Minneapolis 2040. Accessed December 17, 2023.
+
+[^"14"]: City of Minneapolis. ["Your Guide to the Minneapolis Skyway System"](https://www.minneapolis.org/map-transportation/minneapolis-skyway-guide/). Accessed January 10, 2024.
+
+[^"15"]: Koshi, M. ["7 Opportunities to Utilize Your Neighborhood Park"](https://mplsparksfoundation.org/7-opportunities-to-utilize-your-neighborhood-park/). Minneapolis Parks Foundation. April 2020.
+
+[^"16"]: Lee, D., Park, C. ["Typology of skybridges in Asia"](https://www.tandfonline.com/doi/full/10.1080/13467581.2021.1941986). Architectural Planning and Design 21(3), pp. 663-676. June 2021.
+
+[^"17"]: PropertyShark. ["Manhattan Office Market Trends"](https://www.propertyshark.com/mason/market-trends/office/nyc/manhattan). Accessed January 10, 2024.
 
 export default ({ children }) => 
   <SolutionDropdown 
