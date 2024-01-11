@@ -3,6 +3,13 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Food Waste";
 export const solution = "Restrict Restaurant Meal Size";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
 ## Description
 
 
@@ -19,7 +26,41 @@ In the United States, subsidies have decreased food prices, and have encouraged 
 Portion size and meal frequency are the primary determiners of caloric intake, and there is a direct association between portion size and obesity.[^"1"] Decreased portion size studies show that reducing portions could be effective in reducing unneeded food consumption.[^"5"] 
 
 
+<DynamicSolutionGraphic
+  barChartTitle={"First In First Out Food Inventory Management- US"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"13 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye 1-10-2024"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Benefits",
+      barlength: 9.03,
+      displayedValue: "$9.03",
+      site: "null",
+    },
+    {
+      name: "Costs",
+      barlength: .044,
+      displayedValue: "$0.44 Billions USD/year",
+      site: "null",
+    },
+       
+  ]}
+/>
+#### Source [^"9"]
 
+Reducing portion sizes are estimated to avert 2.41 million tons of food waste, and save 1.14 trillion gallons of water[^"9"].
+
+The costs primarily come from the work needed to determine appropriate portion sizes along with retraining[^"9"].
 
 ## Implementation
 
@@ -27,16 +68,17 @@ Portion size and meal frequency are the primary determiners of caloric intake, a
 
 A public health campaign highlighting the need for reduced portion size may also be helpful for improving health, and reducing food waste.
 
-##### Lead researcher: jye - Last updated January 8th, 2024
+##### Lead researcher: jye - Last updated 1/11/2024
 
-[^"1"]: Carruba MO, Ragni M, Ruocco C, Aliverti S, Silano M, Amico A, et al. [https://pubmed.ncbi.nlm.nih.gov/36982138/](https://pubmed.ncbi.nlm.nih.gov/36982138/). International Journal of Environmental Research and Public Health.. Mar 2023.
-[^"2"]: Bacon L, Aphramor L.  [https://nutritionj.biomedcentral.com/articles/10.1186/1475-2891-10-9](https://nutritionj.biomedcentral.com/articles/10.1186/1475-2891-10-9). Nutrition Journal. Jan 2011. 
-[^"3"]: Ge L, Almanza B, Behnke C, Tang C-H (Hugo). [Will reduced portion size compromise restaurant customer’s value perception? - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0278431917301986). Ge L, AInternational Journal of Hospitality Management. Mar 2018. 
-[^"4"]: Diliberti N, Bordi PL, Conklin MT, Roe LS, Rolls BJ.  [Increased Portion Size Leads to Increased Energy Intake in a Restaurant Meal - Diliberti - 2004 - Obesity Research - Wiley Online Library](https://onlinelibrary.wiley.com/doi/full/10.1038/oby.2004.64).  Obesity Research. Sep 2012. 
-[^"5"]: Hollands GJ, Cartwright E, Pilling M, Pechey R, Vasiljevic M, Jebb SA, et al. [Impact of reducing portion sizes in worksite cafeterias: a stepped wedge randomised controlled pilot trial](https://ijbnpa.biomedcentral.com/articles/10.1186/s12966-018-0705-1). International Journal of Behavioral Nutrition and Physical Activity. Aug 2018. 
-[^"6"]: Lins M, Puppin Zandonadi R, Raposo A, Ginani VC. [Food Waste on Foodservice: An Overview through the Perspective of Sustainable Dimensions - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8225138/). Foods. Jun 2021. 
-[^"7"]:  [Restaurant Food Waste Action Guide](https://refed.org/downloads/Restaurant_Guide_Web.pdf).
-[^"8"]:  [Why are portions in U.S. restaurants so big? Ask USA TODAY](https://www.usatoday.com/story/opinion/2014/06/02/food-portions-restaurants/9734413/).
+[^"1"]: Carruba MO, Ragni M, Ruocco C, Aliverti S, Silano M, Amico A, et al. [https://pubmed.ncbi.nlm.nih.gov/36982138/](https://pubmed.ncbi.nlm.nih.gov/36982138/). International Journal of Environmental Research and Public Health.. March 2023.. 
+[^"2"]: Bacon L, Aphramor L.  [https://nutritionj.biomedcentral.com/articles/10.1186/1475-2891-10-9](https://nutritionj.biomedcentral.com/articles/10.1186/1475-2891-10-9). Nutrition Journal.. January 2011. 
+[^"3"]: Ge L, Almanza B, Behnke C, Tang C-H (Hugo). [Will reduced portion size compromise restaurant customer’s value perception? - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0278431917301986). Ge L, AInternational Journal of Hospitality Management.. March 2018. 
+[^"4"]: Diliberti N, Bordi PL, Conklin MT, Roe LS, Rolls BJ.  [Increased Portion Size Leads to Increased Energy Intake in a Restaurant Meal - Diliberti - 2004 - Obesity Research - Wiley Online Library](https://onlinelibrary.wiley.com/doi/full/10.1038/oby.2004.64).  Obesity Research.. September 2012. 
+[^"5"]: Hollands GJ, Cartwright E, Pilling M, Pechey R, Vasiljevic M, Jebb SA, et al. [Impact of reducing portion sizes in worksite cafeterias: a stepped wedge randomised controlled pilot trial](https://ijbnpa.biomedcentral.com/articles/10.1186/s12966-018-0705-1). International Journal of Behavioral Nutrition and Physical Activity [Internet]. . August 2018. 
+[^"6"]: Lins M, Puppin Zandonadi R, Raposo A, Ginani VC. [Food Waste on Foodservice: An Overview through the Perspective of Sustainable Dimensions - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8225138/). Foods.. June 2021. 
+[^"7"]: ReFED.  [Restaurant Food Waste Action Guide](https://refed.org/downloads/Restaurant_Guide_Web.pdf). . Accessed January 2024. . 
+[^"8"]: USA Today.  [Why are portions in U.S. restaurants so big? Ask USA TODAY](https://www.usatoday.com/story/opinion/2014/06/02/food-portions-restaurants/9734413/). . Accessed January 2024. . 
+[^"9"]: ReFED.  [Solution database: Portion Sizes](https://insights-engine.refed.org/solution-database/portion-sizes). . Accessed January 2024. . 
 
 export default ({ children }) => 
   <SolutionDropdown 
