@@ -1,22 +1,46 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Reliance on Horshoe Crabs";
-export const solution = "Development of rFC";
+
+export const problem = "Reliance on Horseshoe Crabs";
+export const solution = "Transition to rFC Testing";
+
 
 ## Description
 
-We propose an R&D program, perhaps led by the U. S. Department of Agriculture, to commercialize rFC.
+
+We recommend pharmaceutical and medical companies transition to rFC testing to reduce horseshoe crab blood harvesting.
+## Background
 
 
+The Atlantic horseshoe crab has been identified as a keystone species that has survived an estimated 200 million years. They are an important source of food for shorebirds, sand shrimp, fish, and crabs. They are important predators for benthic invertebrates, and their shells provide a home for a variety of species[^"1"].
 
-[^"1"]: Krisfalusi-Gannon J, Ali W, Dellinger K, Robertson L, Brady TE, Goddard MKM, et al.  [The Role of Horseshoe Crabs in the Biomedical Industry and Recent Trends Impacting Species Sustainability](https://www.frontiersin.org/articles/10.3389/fmars.2018.00185/full). Frontiers in Marine Science. June 2018. 
-[^"2"]: Gorman R.  [Atlantic Horseshoe Crabs and Endotoxin Testing: Perspectives on Alternatives, sustainable Methods, and the 3Rs (Replacement, Reduction, and Refinement) - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7612741/). Frontiers in Marine Science. September 2020. 
-[^"3"]: Bolden J, Knutsen C, Levin J, Milne C, Morris T, Mozier N, et al.  [Currently Available Recombinant Alternatives to Horseshoe Crab Blood Lysates: Are They Comparable for the Detection of Environmental Bacterial Endotoxins? A Review](https://pubmed.ncbi.nlm.nih.gov/32817324/). PDA Journal of Pharmaceutical Science and Technology. August 2020. 
 
-export default ({ children }) => 
-  <SolutionDropdown 
-    problem={problem} 
+Horseshoe crab blood possesses a distinctive ability in that it will react visibly to endotoxins. This has created a demand within the medical industry for testing drugs and medical devices for safety. The blood is used with quality assurance testing[^"1"].
+
+
+Obtaining the blood requires harvesting, bleeding, and returning the crabs. Mortality rates after harvesting range from 10 to 30%. It is unknown what the exact leading cause of death is, but the stress from removing crabs from the water may be a cause, as the crab breaths through gills. This and a sudden decrease in blood supply shock their systems[^"1"]. With 500,000 of these crabs being harvested each year, the effect on their population is significant[^"2"].
+
+
+Recombinant factor C (rFC) provides a synthetic alternative to the crab blood[^"4"]. rFC tests are effective, and potentially superior to traditional testing[^"3"].
+
+
+## Implementation
+
+
+This new method faces challenges within the industry, which has used traditional methods for approximately 40 years. Along with the need to recognize the validity of the tests by all sectors, using new methods would require extensive alteration of current equipment and practices[^"1"].
+
+
+[^"1"]: Krisfalusi-Gannon J, Ali W, Dellinger K, Robertson L, Brady TE, Goddard MKM, et al.  [The Role of Horseshoe Crabs in the Biomedical Industry and Recent Trends Impacting Species Sustainability](https://www.frontiersin.org/articles/10.3389/fmars.2018.00185/full). Frontiers in Marine Science. June 2018.
+[^"2"]: Gorman R.  [Atlantic Horseshoe Crabs and Endotoxin Testing: Perspectives on Alternatives, sustainable Methods, and the 3Rs (Replacement, Reduction, and Refinement) - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7612741/). Frontiers in Marine Science. September 2020.
+[^"3"]: Bolden J, Knutsen C, Levin J, Milne C, Morris T, Mozier N, et al.  [Currently Available Recombinant Alternatives to Horseshoe Crab Blood Lysates: Are They Comparable for the Detection of Environmental Bacterial Endotoxins? A Review](https://pubmed.ncbi.nlm.nih.gov/32817324/). PDA Journal of Pharmaceutical Science and Technology. August 2020.
+[^"4"]: Maloney T, Phelan R, Simmons N. [A synthetic alternative to horseshoe crab blood for endotoxin detection](https://pubmed.ncbi.nlm.nih.gov/30312293/). PLOS Biology [Internet]. October 2018.
+
+
+export default ({ children }) =>
+  <SolutionDropdown
+    problem={problem}
     solution={solution}
   >
     {children}
   </SolutionDropdown>
+
