@@ -455,7 +455,7 @@ export const solutionData = [
     co2: 13,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-campaigns"
   },
 
   {
@@ -467,7 +467,7 @@ export const solutionData = [
     co2: 1.54,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-campaigns"
   },
 
 ]
