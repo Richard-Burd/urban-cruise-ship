@@ -445,7 +445,33 @@ export const solutionData = [
     sources: null,
     subset: "ecology-environment"
   },
+
+  {
+    solution: `Reduce Restaurant Meal Sizes`,
+    link: `/matter/ag_dist/food_waste#reduce-restaurant-meal-size`,
+    site: `matter`,
+    cost: .44,
+    benefit: 9.03,
+    co2: 13,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects"
+  },
+
+  {
+    solution: `First Expired First Out Food Inventory Management- US`,
+    link: `/matter/ag_dist/food_waste#food-waste-fefo`,
+    site: `matter`,
+    cost: .315,
+    benefit: 1.43,
+    co2: 1.54,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects"
+  },
+
 ]
+
 
 
 
