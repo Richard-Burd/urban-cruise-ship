@@ -5,12 +5,24 @@ export const solution = "Low-Carbon Ammonia Plants";
 
 import ArticleImage from "/components/ArticleImage.js";
 
-At 6 ¢/kWh, ammonia electrolysis will struggle to complete with production from coal or gas regardless of the plant's capacity factor. At 3 ¢/kWh, the plant might operate profitably at even less than 50% capacity. We estimate the following costs of carbon mitigation, using above cost estimates and below greenhouse gas estimates.
+## Description
+We promote the strategic use of low-carbon ammonia plants.
+
+## Background
+At 6 ¢/kWh, ammonia electrolysis will struggle to complete with production from coal or gas regardless of the plant's capacity factor. At 3 ¢/kWh, the plant might operate profitably at even less than 50% capacity.
 
 <ArticleImage image={"ammonia_carbon.svg"} width={800} height={300} />
 #### Estimated costs of ammonia plants, with CO2 emissions valued at $50/ton, and cost of mitigated emissions. Estimates are based on a 500 metric ton per day plant, the threshhold between small and large plants given by ThyseenKrupp [^"19"].
 
-[^"19"]: ThyssenKrupp. ["Ammonia Plants"](https://www.thyssenkrupp-industrial-solutions.com/en/products-and-services/fertilizer-plants/ammonia-plants-by-uhde). Accessed December 10, 2020.
+## Calculations
+We estimate the costs of carbon mitigation, using above cost estimates and below greenhouse gas estimates.
+
+## Implementation
+To be cost effective the ammonia plants would only run when electricity prices are cheap. This might mean a seasonal schedule.
+
+##### Lead researcher: Lee Nelson - Last updated: 1/14/2024
+
+[^”1”]: ThyssenKrupp ["Ammonia Plants"](https://www.thyssenkrupp-industrial-solutions.com/en/products-and-services/fertilizer-plants/ammonia-plants-by-uhde) Accessed 1/13/2024
 
 export default ({ children }) => 
   <SolutionDropdown 
