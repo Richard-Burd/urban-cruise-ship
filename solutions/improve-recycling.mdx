@@ -8,15 +8,14 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "E-Waste";
-export const solution = "Establish e-waste collection and processing infrastructure - World";
+export const solution = "E-waste collection and processing infrastructure";
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Description
 We propose public funding for the establishment of collection and processing infrastructure of e-waste.
 
 ## Background
-Electronic waste constitutes 2-5% of the MSW waste stream[^”1”]. 
-More than 70% of retired electronic devices end up in storage for 3-5 years before disposal[^”1”].
+Electronic waste constitutes about 3% of the municipal solid waste stream [^"6"],[^"7"].
 
 <DynamicSolutionGraphic
   barChartTitle={"E-waste Recycling - World"}
@@ -24,50 +23,69 @@ More than 70% of retired electronic devices end up in storage for 3-5 years befo
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
-  arrowText1={"70.8 million"}
-  arrowText2={"tons of CO₂"}
+  arrowText1={"36 million"}
+  arrowText2={"tons CO2"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"Lee Nelson 12-31-2023"}
  staticData={[
     {
      name: "Benefit",
-      barlength: 55.38,
-      displayedValue: "$55.38",
+      barlength: 27.79310344827586,
+      displayedValue: "$28 billion/year",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: 32.26,
-      displayedValue: "$32.26 Billion USD/year",
+      barlength: 11.706239999999998,
+      displayedValue: "$12 billion/year",
       site: "null",
     },
   ]}
 />
 
 ## Calculations
-53.6 million metric tons of e-waste is produced globally every year[^”2”]. 83% of that is not collected for recycling[^”2”], leaving 44.49 million tons that needs to be collected and recycled.
+Of 54 million tonnes of e-waste produced globally every year, 83%, or 44 million tonnes, is not recycled [^"6"]. The total value of world e-waste is reported at $62.5 billion [^"3"], and so we estimate a value of $52 billion for the portion that is not recycled.
 
-The remaining e-waste is valued at $51.88 billion[^”3”].
+The average cost to recycle e-waste is $450-1000 per ton, compared to $150-250/ton to landfill [^”5”], and for our calculations we use a mean additional cost of $525/ton, or $23 billion to collect and process the remaining e-waste annually.
 
-The current rate of e-waste recycling prevents 15 million tons of CO₂e[^”4”], that means there is the potential of 70.8 million tons of CO2e reduction from the remaining waste. Valued at $50 per ton, that equals $3.5 billion.
+The current rate of e-waste recycling prevents 15 million tons of CO<sub>2</sub>e [^”4”], implying an additional potential 71 million tons of CO<sub>2</sub>e reduction from the remaining waste. This is valued at $3.6 billion using a social cost of carbon of $50/ton and included in our calculations.
 
-The average cost to recycle e-waste is $725 per ton[^”5”], or $32.26 billion to collect and process the remaining e-waste annually.
+As e-waste recycling rates increase, we expect that the per-ton cost of additional recycling will increase and the benefit will decrease, placing practical limits on the feasible recycling rate. These cost and benefit curves are difficult to model. As a simplification, we assume that cost and benefits remain constant with increasing recycling rates, and that the maximum feasible recycling rate is 59%, which was recently achieved in Switzerland [^"8"].
+
+Costs to human health from improper recycling are not quantified but are significant [^"10"].
+
+Costs and benefits are rounded to the nearest billion dollars, and CO<sub>2</sub> reduction is rounded to the nearest million tonnes.
 
 ## Implementation
-As well as establishing collection and processing infrastructure, incentives and regulations may be required to realize its full potential[^”2”].
+
+Achieving high rates of e-waste recycling will require a suite of policies. In addition to development of recycling facilities, extended producer responsibility, which is a policy that creates financial liability for producers of electronics to insure they are recycled, will increase recycling rates [^"9"]. Public outreach to insure recycling of electronics among the general population is also needed [^"11"], such as with convenient locations for electronics drop-offs [^"12"].
 
 ##### Lead researcher: Lee Nelson - Last updated: 12/31/2023
 
-[^”1”]: Kang, H., Schoenung, J. [“Electronic waste recycling: A review of U.S. infrastructure and technology options”] (https://doi.org/10.1016/j.resconrec.2005.06.001) Resources Conservation and Recycling. December 2005
+[^”1”]: Kang, H., Schoenung, J. ["Electronic waste recycling: A review of U.S. infrastructure and technology options"](https://doi.org/10.1016/j.resconrec.2005.06.001). Resources Conservation and Recycling. December 2005.
 
-[^”2”]: World Economic Forum [“The enormous opportunity of e-waste recycling”](https://www.weforum.org/agenda/2023/03/the-enormous-opportunity-of-e-waste-recycling/) March 2023
+[^”2”]: World Economic Forum. ["The enormous opportunity of e-waste recycling"](https://www.weforum.org/agenda/2023/03/the-enormous-opportunity-of-e-waste-recycling/). March 2023.
 
-[^”3”]: Nijman, S. [“UN report: Time to seize opportunity, tackle challenge of e-waste”]( https://www.unep.org/news-and-stories/press-release/un-report-time-seize-opportunity-tackle-challenge-e-waste) United Nations Environment Programme Accessed 12/28/2023
+[^"3"]: Nijman, S. ["UN report: Time to seize opportunity, tackle challenge of e-waste"]( https://www.unep.org/news-and-stories/press-release/un-report-time-seize-opportunity-tackle-challenge-e-waste). United Nations Environment Programme. Accessed December 28, 2023.
 
-[^”4”]: Waste Management World [“The growing volume of e-waste is quickly overwhelming the current capacity to recycle it."](https://waste-management-world.com/resource-use/e-waste-recycling/) March 2023
+[^”4”]: Waste Management World. ["The growing volume of e-waste is quickly overwhelming the current capacity to recycle it."](https://waste-management-world.com/resource-use/e-waste-recycling/). March 2023.
 
-[^”5”]: Meidl, R. [“Closing the Loop on the World’s Fastest-growing Waste Stream: Electronics”](https://www.bakerinstitute.org/research/closing-loop-worlds-fastest-growing-waste-stream-electronics) Baker Institute: Center for Energy Studies, June 2023
+[^”5”]: Meidl, R. ["Closing the Loop on the World’s Fastest-growing Waste Stream: Electronics"](https://www.bakerinstitute.org/research/closing-loop-worlds-fastest-growing-waste-stream-electronics). Baker Institute: Center for Energy Studies. June 2023.
+
+[^"6"]: World Health Organization. ["Electronic waste (e-waste)"](https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)). October 2023.
+
+[^"7"]: Kaza, S, Yao, L. C., Bhada-Tata, P., Van Woerden, F. ["What a Waste 2.0: A Global Snapshot of Solid Waste Management to 2050"](https://datatopics.worldbank.org/what-a-waste/trends_in_solid_waste_management.html). Washington, DC: World Bank. September 2018.
+
+[^"8"]: Shah, K. ["A Circular Economy Approach to Improve E-waste Recycling in California: Economic Potential and Policy Options"](https://repository.usfca.edu/cgi/viewcontent.cgi?article=2840&context=capstone). Master's Projects and Capstones. May 2022.
+
+[^"9"]: Zhang, K., Schnoor, J. L., Zeng, E. Y. ["E-Waste Recycling: Where Does It Go from Here?"](https://pubs.acs.org/doi/full/10.1021/es303166s). Environmental Science & Technology 46(20): 10861-10867. September 2012.
+
+[^"10"]: Liu, K., Tan, Q., Yu, J., Wang, M. ["A global perspective on e-waste recycling"](https://www.sciencedirect.com/science/article/pii/S2773167723000055). Circular Economy 2(1): 100028. March 2023.
+
+[^"11"]: Aboelmaged, M. ["E-waste recycling behaviour: An integration of recycling habits into the theory of planned behaviour"](https://www.sciencedirect.com/science/article/abs/pii/S095965262034227X). Journal of Cleaner Production 278: 124182. January 2021.
+
+[^"12"]: Kochan, C. G., Pourreza, S., Tran, H., Prybutok, V. R. ["Determinants and logistics of e-waste recycling"](https://www.emerald.com/insight/content/doi/10.1108/IJLM-02-2014-0021/full/html). The International Journal of Logistics Management 27(1), pp. 52-70. May 2016.
 
 export default ({ children }) => 
   <SolutionDropdown 
