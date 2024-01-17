@@ -1,0 +1,115 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+
+export const problem = "Antibiotic Resistance";
+export const solution = "Tax Livestock Antibiotics";
+
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
+
+
+## Description
+
+
+We propose worldwide taxation of antibiotics for livestock as a policy intervention to mitigate the depletion of antibiotic effectiveness that results from extensive antibiotic usage.
+
+
+## Background
+
+
+The use of antibiotics causes positive effects by limiting the spread of antibiotic-treatable infections, while also causing negative effects by increasing the number of treatment-resistant infections. Treatment-resistant infections cost the United States alone 23,000 lives and $20 Billion annually[^"2"].
+
+
+In 2019, it was estimated that bacterial Antimicrobial resistance (AMR) was associated with 4.95 million deaths, including 1.27 million deaths directly attributed[^"6"]. Animal agriculture is a major contributor to AMR, with 73% of all antimicrobials used being used in food-producing animals[^"1"].
+
+
+The sensitivity of bacteria can be considered a finite natural resource[^"5"].
+
+
+<DynamicSolutionGraphic
+  barChartTitle={"Tax Livestock Antibiotics - Global"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye 1-17-2023"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Development Cost for Novel Antibiotic",
+      barlength: 1.5,
+      displayedValue: "$1.5 (average)",
+      site: "null",
+    },
+         {
+      name: "Tax Revenue",
+      barlength: 1.11,
+      displayedValue: "$1.11 Billions",
+      site: "null",
+    },
+       
+  ]}
+/>
+#### Source [^"1"]
+
+
+## Benefits
+
+
+Reducing antibiotic use in livestock could also have other health benefits, such as reducing the risk of antibiotic-resistant infections in humans who eat meat.
+
+
+Based on the available evidence, the net benefits of taxing antibiotics in livestock are likely to be positive. The potential savings from reduced antibiotic use and the health benefits of mitigating AMR are likely to outweigh the economic costs[^"1"].
+
+
+
+
+
+## Costs
+
+This taxation results in a 50% increase in the cost of antibiotics for food-producing animals. The primary economic cost of taxing antibiotics in livestock is the increase in the cost of production for livestock producers. This cost increase would likely be passed on to consumers in the form of higher meat prices[^"1"].
+
+
+
+
+
+
+
+
+
+## Implementation
+
+
+Target the tax to specific antibiotic classes. This would allow for more targeted reductions in antibiotic use and could focus resources on the most important antibiotic classes to target. Revenue from the tax can support research and development of new antibiotics. Any tax will need to be flexible and allow for modification as more data emerges about the present state of AMR[^"1"].
+
+
+
+
+[^"1"]: Morgan ALK, Moran D, Van Boeckel TP. [Taxation of veterinary antibiotics to reduce antimicrobial resistance](https://www.sciencedirect.com/science/article/pii/S2352771423001702). One Health. December 2023.
+[^"2"]: Albert J.  [Strategic dynamics of antibiotic use and the evolution of antibiotic-resistant infections - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0167718721000527). International Journal of Industrial Organization [Internet]. June 2021.
+[^"3"]: Giubilini A.  [Antibiotic resistance as a tragedy of the commons: An ethical argument for a tax on antibiotic use in humans - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6767468/). Bioethics [Internet]. May 2019.
+[^"4"]: Van Boeckel TP, Glennon EE, Chen D, Gilbert M, Robinson TP, Grenfell BT, et al.  [Reducing antimicrobial use in food animals | Science](https://www.science.org/doi/10.1126/science.aao1495). Science [Internet]. September 2017.
+[^"5"]: Vågsholm I, Höjgård S.  [Antimicrobial sensitivity—A natural resource to be protected by a Pigouvian tax?](https://www.sciencedirect.com/science/article/abs/pii/S0167587710001364). Preventive Veterinary Medicine. August 2010.
+[^"6"]: Murray CJL, Ikuta KS, Sharara F, Swetschinski L, Robles Aguilar G, Gray A, et al.  [Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis - The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext). The Lancet [Internet]. February 2022.
+
+
+export default ({ children }) =>
+  <SolutionDropdown
+    problem={problem}
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
+
