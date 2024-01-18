@@ -1,9 +1,14 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Nuclear Technology Lagging";
 export const solution = "Small Modular Reactor R&D - U.S.";
-
-import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 We promote the research, development, and commercialization of Small Modular Reactors.
@@ -16,7 +21,7 @@ As SMR is closer to commercial viability than advanced reactors, we assume a 10 
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"none"}
+  chartType={"hide"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
