@@ -132,7 +132,7 @@ export const solutionData = [
     subset: "energy-production-efficiency"
   },
   {
-    solution: `Increase Marine Protected Areas from 8% to 30% of the Ocean - World`,
+    solution: `Increase Marine Protected Areas - World`,
     link: `/oceans/ocean_environment/ocean_biodiversity#increase-marine-protected-areas-from-8-to-30-of-the-ocean`,
     site: `oceans`,
     cost: 835,
@@ -399,7 +399,7 @@ export const solutionData = [
   },
 
   {
-    solution: `Post Harvest Storage Loss Prevention - Tanzania`,
+    solution: `Hermetic Storage for Postharvest Loss - Tanzania`,
     link: `/matter/ag_dist/food_waste#post-harvest-loss-tanzania`,
     site: `matter`,
     cost: 59.9,
@@ -468,6 +468,115 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "public-health-campaigns"
+  },
+
+  {
+    solution: `IUU Fishing Global Reporting Requirements`,
+    link: `/oceans/ocean_industry/seafood`,
+    site: `oceans`,
+    cost: 2.4,
+    benefit: 11,
+    co2: 0,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
+  {
+    solution: `Heat Mitigation through Trees - World`,
+    link: `/cities/cities_energy_and_pollution/heat_island`,
+    site: `cities`,
+    cost: 46.19,
+    benefit: 89.62,
+    co2: 25.26,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
+  {
+    solution: `Green Roofs in Urban Planning - US`,
+    link: `/cities/cities_land_use/cities_natural_land`,
+    site: `cities`,
+    cost: 5.56,
+    benefit: 19.08,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
+
+  {
+    solution: `Establish E-waste Infrastructure - US`,
+    link: `/waste/hazardous_waste/ewaste`,
+    site: `waste`,
+    cost: 32.26,
+    benefit: 55.38,
+    co2: 70.8,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
+  {
+    solution: `Landfill Tax - World`,
+    link: `/waste/waste_economics/landfill_tax`,
+    site: `waste`,
+    cost: 7.5,
+    benefit: 62.75,
+    co2: 79.68,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
+  {
+    solution: `LED Street Lights With Full Cut-Off Shielding - World`,
+    link: `/cities/cities_energy_and_pollution/light`,
+    site: `cities`,
+    cost: 20.8,
+    benefit: 15.5,
+    co2: 27.4,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
+  {
+    solution: `Waste Levy on Coal Burning - World`,
+    link: `/waste/hazardous_waste/industrial_waste`,
+    site: `waste`,
+    cost: 7.5,
+    benefit: 10.4,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
+  {
+    solution: `Pedestrian Skybridge - Manhattan`,
+    link: `/energy/transport/transpo_short`,
+    site: `energy`,
+    cost: 13,
+    benefit: 22,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "miscellaneous"
+  },
+
+  {
+    solution: `Agriculture R&D in the Global South`,
+    link: `/matter/diet/ag_overview_fw`,
+    site: `matter`,
+    cost: 1.7,
+    benefit: 60,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "miscellaneous"
   },
 
 ]
