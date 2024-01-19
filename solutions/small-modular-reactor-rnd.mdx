@@ -1,13 +1,56 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Nuclear Technology Lagging";
-export const solution = "Small Modular Reactor R&D";
+export const solution = "Small Modular Reactor R&D - U.S.";
 
-We estimate that a concerted effort on the part of the Department of Energy to commercialize small modular reactors would cost $4.6 billion and have about an expected $60 billion in benefit.
+## Description
+We promote the research, development, and commercialization of Small Modular Reactors.
 
-As SMR is closer to commercial viability than advanced reactors, we assume a 10 year research period, as opposed to the 25 year period for advanced reactors. We estimate the annual cost of an SMR research program to be the same $460 million as the annual cost of an advanced reactor research program, as shown below.
+## Background
+As SMR is closer to commercial viability than advanced reactors, we assume a 10 year research period, as opposed to the 25 year period for advanced reactors.
 
+<DynamicSolutionGraphic
+  barChartTitle={"Small Modular Reactors – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 1-18-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 60,
+      displayedValue: "$60",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 4.6,
+      displayedValue: "$4.6 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+## Calculations
+We estimate the annual cost of an SMR research program to be the same $460 million as the annual cost of an advanced reactor research program, as shown below.
 For benefit, we assume that SMR electricity would cost 9¢/kWh, as in our levelized cost analysis above, would emit 0.285¢/kWh of greenhouse gases, and would have 0.31¢/kWh of other externalities. These figures are as above, but we assume zero cost for meltdown risk from SMR. See our analysis of [research and development](/energy/energy_socioeconomics/rd) for more information.
+
+## Implementation
+The Department of Energy would commercialize Small Modular Reactors.
+
+##### Lead researcher: Michael Goff - Last updated: 1/18/2024
 
 export default ({ children }) => 
   <SolutionDropdown 
