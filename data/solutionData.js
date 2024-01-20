@@ -568,7 +568,7 @@ export const solutionData = [
   },
 
   {
-    solution: `Agriculture R&D in the Global South`,
+    solution: `Research to Improve Agricultural Yields - Global South`,
     link: `/matter/diet/ag_overview_fw`,
     site: `matter`,
     cost: 1.7,
@@ -578,6 +578,20 @@ export const solutionData = [
     sources: null,
     subset: "miscellaneous"
   },
+
+  {
+    solution: `Reverse Osmosis Arsenic Filtration - World`,
+    link: `/habitat/environment/chemical_socio`,
+    site: `habitat`,
+    cost: 2.58,
+    benefit: 2.1,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects"
+  },
+
+
 
 ]
 
