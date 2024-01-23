@@ -8,26 +8,27 @@ import dynamic from "next/dynamic";
 export const site = "history";
 export const focusAreaUrl = "solutions-and-endeavors";
 
-export const DynamicSingleBarChart2 = dynamic(
+export const DynamicSingleBarChart = dynamic(
   () => import("../../../components/DynamicSingleBarChart"),
   { ssr: false }
 );
 
-<DynamicSingleBarChart2
+<DynamicSingleBarChart
   barChartTitle={"Solutions & Endeavors - Net Benefit (Benefit Minus Cost)"}
   barChartSubTitle={""}
   scale={"positive"}
-  rightSide={95}
-  leftSide={415}
+  rightSide={75}
+  leftSide={425}
   titleText={0}
   fetchDataFunc={solutionEndeavorBenefitMinusCost}
 />
-<DynamicSingleBarChart2
+<DynamicSingleBarChart
   barChartTitle={""}
   scale={"negative"}
-  rightSide={527}
-  leftSide={-20}
-  titleText={455}
+  rightSide={295}
+  leftSide={-50}
+  solutionBackgroundOffset={0}
+  titleText={495}
   fetchDataFunc={solutionEndeavorBenefitMinusCost}
 />
 <br/>
