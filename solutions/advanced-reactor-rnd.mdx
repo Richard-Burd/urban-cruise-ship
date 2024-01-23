@@ -1,15 +1,59 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Nuclear Technology Lagging";
-export const solution = "Advanced Reactor R&D";
+export const solution = "Advanced Reactor R&D - U.S.";
 
-We estimate that a concerted effort on the part of the Department of Energy to commercialize an advanced reactor technology would cost $11.5 billion and have about an expected $33 billion in benefit.
+## Description
+We promote the research, development, and commercialization of Advanced Reactor technologies.
 
-Bringing an advanced reactor to market would cost an estimated $5.25 billion public and $6.25 billion private funding, or $11.5 billion today over 25 years [^"6"].
+## Background
+Advanced reactors are assumed to take 25 years to develop and commercialize.
 
-For benefit, we assume that an advanced reactor would cost 6¢/kWh, as in our levelized cost analysis, would emit 0.285¢/kWh of greenhouse gases, and would have 0.31¢/kWh of other externalities. These figures are as above, but we assume zero cost for meltdown risk from an advanced reactor. See our analysis of research and development for more information.
+<DynamicSolutionGraphic
+  barChartTitle={"Advanced Reactor Technology – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"none"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 1-22-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 1.32,
+      displayedValue: "$1.32",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .46,
+      displayedValue: "$.46 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
-[^"6"]: Deutch, J., Greenstone, M., Jackson, S., Madia, W., Meserve, R., Reicher, D., Rempe, J., Samore, G., Sell, C., Sharp, P., Turnage, J. ["Final Report of the Task Force on the Future of Nuclear Power"](https://www.energy.gov/seab/downloads/final-report-task-force-future-nuclear-power). Task Force on the Future of Nuclear Power, U. S. Department of Energy. September 2016.
+## Calculations
+Bringing an advanced reactor to market would cost an estimated $5.25 billion public and $6.25 billion private funding, or $11.5 billion today over 25 years[^”1”].
+For benefit, we assume that an advanced reactor would cost 6¢/kWh, as in our levelized cost analysis, would emit 0.285¢/kWh of greenhouse gases, and would have 0.31¢/kWh of other externalities. These figures are as above, but we assume zero cost for meltdown risk from an advanced reactor. See our analysis of [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) for more information.
+
+## Implementation
+The Department of Energy would commercialize Advanced Reactor technology.
+
+##### Lead researcher: Michael Goff - Last updated: 1/22/2024
+
+[^”1”]: Deutch, J., Greenstone, M., Jackson, S., Madia, W., Meserve, R., Reicher, D., Rempe, J., Samore, G., Sell, C., Sharp, P., Turnage, J. ["Final Report of the Task Force on the Future of Nuclear Power"](https://www.energy.gov/seab/downloads/final-report-task-force-future-nuclear-power) Task Force on the Future of Nuclear Power, U. S. Department of Energy. September 2016 
+
 
 export default ({ children }) => 
   <SolutionDropdown 
