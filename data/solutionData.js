@@ -591,7 +591,17 @@ export const solutionData = [
     subset: "public-health-projects"
   },
 
-
+  {
+    solution: `Improved Prenatal Supplements - Low Income Countries`,
+    link: `/matter/diet/nutrition#improved-prenatal-supplements`,
+    site: `matter`,
+    cost: 0.3,
+    benefit: 5.58,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects"
+  },
 
 ]
 
