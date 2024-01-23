@@ -17,12 +17,20 @@ export const DynamicSingleBarChart = dynamic(
   barChartTitle={"Solutions - Net Benefit (Benefit Minus Cost)"}
   barChartSubTitle={""}
   scale={"positive"}
-  rightSide={55}
-  leftSide={455}
+  rightSide={75}
+  leftSide={425}
   titleText={0}
   fetchDataFunc={solutionBenefitMinusCost}
 />
-
+<DynamicSingleBarChart
+  barChartTitle={""}
+  scale={"negative"}
+  rightSide={295}
+  leftSide={-50}
+  solutionBackgroundOffset={0}
+  titleText={495}
+  fetchDataFunc={solutionBenefitMinusCost}
+/>
 <br/>
 ## Interactive Table
 ### Sort this table by clicking on the black column headings
