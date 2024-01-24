@@ -56,7 +56,15 @@ const CustomYAxisTick = ({
   const [hovered, setHovered] = useState(false);
   const [bgColor, setBgColor] = useState("transparent");
 
-
+  // Determine highlightOffset based on the scale. this will reverse the highlighted color for solutions.
+  let highlightOffset;
+  if (scale === "positive") {
+    highlightOffset = 0; // Adjust this value as needed for positive scale
+  } else if (scale === "negative") {
+    highlightOffset = 765 // Adjust this value to move the highlight for negative scale to the right
+  } else {
+    highlightOffset = 0; // Default value if scale is not defined
+  }
 
  //text measurement tool for the highlighting function
   const canvas = document.createElement('canvas');
@@ -110,7 +118,7 @@ const CustomYAxisTick = ({
        {windowWidth > windowWidthThreshold ? ( // check window width here
 
       <><rect
-          x={-textWidth - 6}
+          x={-textWidth - 6 + highlightOffset}
           y={-15}
           width={textWidth + 9}
           height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
@@ -178,7 +186,6 @@ const CustomYAxisTick = ({
 
 const DynamicSingleBarChart = ({
   maxWindowWidth = 1024, // used to trigger the resize of the chart to mobile friendly
-
   barChartTitle2,
   barChartTitle,
   barChartSubTitle,
@@ -314,6 +321,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
               return (
                 <CustomYAxisTick
                   {...props}
+                  scale={scale} //passes scale prop to customYaxisTick for solution color highlight
                   data={data}
                   backgroundColor={
                     entry ? entry.backgroundColor : "transparent"
