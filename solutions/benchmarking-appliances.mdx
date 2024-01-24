@@ -1,9 +1,76 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Energy Requirements of Appliances";
-export const solution = "Benchmarking";
+export const solution = "Updated Efficiency Standards";
 
-Benchmarking of appliances, where the most efficient appliances today are set as an energy efficiency standards for the next generation, can accelerate progress in energy efficiency.
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
+
+## Description
+
+We examine the newly updated efficiency standards for appliances to enhance energy efficiency in the US.
+
+## Background
+
+The U.S. Department of Energy (DOE) recently announced a significant update to the efficiency standards for appliances to enhance energy efficiency, reduce greenhouse gas emissions, and provide economic benefits to consumers[^"1"].
+
+Efficiency Standards for Residential Refrigerators and Freezers:
+- These standards have been updated for the first time in over a decade[^"1"].
+- Over 30 years, the standards are expected to save 5.6 quadrillion British thermal units (BTUs) of energy, amounting to an 11% reduction relative to current market products[^"1"].
+- Save consumers $36.4 billion over 30 years of shipments[^"1"].
+- Emission reductions of nearly 101 million metric tons of carbon dioxide, equivalent to the emissions of approximately 12.7 million homes[^"1"]​​.
+
+Efficiency Standards for Commercial Fans and Blowers:
+- represents the first federal standard for commercial fans and blowers, building on existing standards in California[^"1"].
+- Estimated to reduce energy costs for American businesses by $3.3 billion annually, with total savings nearing $56 billion over 30 years[^"1"].
+- Expected reduction of carbon dioxide emissions by nearly 318 million metric tons[^"1"].
+
+<DynamicSolutionGraphic
+  barChartTitle={"US Department of Energy Appliance Standards"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"14 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye 1-17-2023"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Total Energy Savings",
+      barlength: 4.51,
+      displayedValue: "$4.51 Billions USD/year",
+      site: "null",
+    },
+         {
+      name: "Residential Savings",
+      barlength: 1.21,
+      displayedValue: "$1.21",
+      site: "null",
+    },
+                {
+      name: "Business Savings",
+      barlength: 3.3,
+      displayedValue: "$3.3",
+      site: "null",
+    },
+  ]}
+/>
+#### Source [^"1"]
+##### Lead Researcher: jye - Last Updated 1/24/2024
+
+[^"1"]:  [DOE Finalizes Efficiency Standards for Residential Refrigerators and Freezers, Closing Out Remarkable Year of Cost-Saving Progress | Department of Energy](https://www.energy.gov/articles/doe-finalizes-efficiency-standards-residential-refrigerators-and-freezers-closing-out). Department of Energy. 12/29/2023
+
+
 
 export default ({ children }) => 
   <SolutionDropdown 

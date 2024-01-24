@@ -603,6 +603,18 @@ export const solutionData = [
     subset: "public-health-projects"
   },
 
+  {
+    solution: `Ban Nontherapeutic Livestock Antibiotics`,
+    link: `/matter/ag_env/ag_risk`,
+    site: `matter`,
+    cost: 0.3,
+    benefit: 5.58,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects"
+  },
+
 ]
 
 
