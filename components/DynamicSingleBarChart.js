@@ -224,12 +224,6 @@ const DynamicSingleBarChart = ({
     titleAnchor = "start";
   }
 
-  let solutionBackgroundOffset;
-  if (scale === "positive") {
-    solutionBackgroundOffset = -605;
-  } else if (scale === "negative") {
-    solutionBackgroundOffset = 605;
-  }
 
   const filteredData = data.filter((item) =>
     scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
