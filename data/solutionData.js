@@ -476,7 +476,7 @@ export const solutionData = [
     site: `oceans`,
     cost: 2.4,
     benefit: 11,
-    co2: 0,
+    co2: null,
     habitat: null,
     sources: null,
     subset: "ecology-environment"
