@@ -669,7 +669,7 @@ export const endeavorData = [
     subset: "ecology-environment"
   },
   {
-    endeavor: `Congestion Pricing, Sweeden (Annual)`,
+    endeavor: `Congestion Pricing, Sweden (Annual)`,
     link: `/history/endeavors/subsets#transportation-infrastructure`,
     site: `history`,
     cost: 0.91,
