@@ -1,13 +1,61 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Cost of Concentrating PV";
 export const solution = "Concentrating PV R&D";
 
-We estimate the expected benefit of a concentrated PV research program to be about $54 billion and the cost to be about $4 billion. As the technology has already been commercialized on a limited scale, we estimate that only five years of research would be required, and the cost is estimated to be the same $830 million annually as a [wave energy](/energy/energy_production/mhk) research program. We estimate the final price of such a research program to be 7 ¢/kWh, with the same greenhouse gas and other external costs as other forms of solar. See our [research and development](/energy/energy_socioeconomics/rd) analysis for more details.
+## Description
+We promote research and development into reducing the cost of building and running concentrated solar power plants.
 
-Interesting in concentrating PV has dimishined somewhat in recent years, but the technology may be ideal for use in greenhouses [^"24"], insuring that it remains an important part of the solar energy portfolio.
+<DynamicSolutionGraphic
+  barChartTitle={"Concentrated Solar R&D – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 1-25-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 6.6,
+      displayedValue: "$6.6",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .83,
+      displayedValue: "$.83 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
-[^"24"]: Kumar, M., Haillot, D., Gibout, S. ["Survey and evaluation of solar technologies for agricultural greenhouse application"](https://www.sciencedirect.com/science/article/abs/pii/S0038092X21010823). Solar Energy 232, pp. 18-34. January 2022.
+## Calculations
+The ultimate cost of concentrated solar is estimated to reach 5 ¢/kWh, and we estimate that it will have the same life cycle greenhouse gas emissions and other externalities to conventional solar. Based on research done by the Department of Energy[^”1”]. We estimate that a CSP research program will take 10 years to maturate, and the cost is the same $830 million per year that a [wave energy](https://www.urbancruiseship.org/energy/energy_production/mhk) research program would require. See our [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) analysis for more information.
+
+## Implementation
+The Department of Energy has set a goal of bringing the cost of CSP to 5¢/kWh by 2030[^”2”], bringing the cost in line with photovoltaic costs today. CSP has the advantage that it can be used directly for low-grade industrial heat or desalination.
+Keys areas of research include improving the efficiency and reducing the cost of the collector field and improving the performance of the power block, particularly by substituting the steam Rankine cycle with a supercritical CO2 Brayton cycle[^”3”].
+
+
+##### Lead researcher: Michael Goff - Last updated: 1/25/2024
+
+[^”1”]: Office of Renewable Energy & Energy Efficiency ["Concentrating Solar-Thermal Power"](https://www.energy.gov/eere/solar/concentrating-solar-thermal-power) U. S. Department of Energy. January 2019
+
+[^”2”]: Solar Energy Technologies Office ["Concentrating Solar-Thermal Power"](https://www.energy.gov/eere/solar/concentrating-solar-thermal-power) Office of Energy Efficiency and Renewable Energy, U.S. Department of Energy. Accessed September 14, 2022
+
+[^”3”]: Solar Energy Technologies Office, National Renewable Energy Laboratory ["Solar Futures Study"](https://www.energy.gov/eere/solar/solar-futures-study) U.S. Department of Energy. September 2021 
+
 
 export default ({ children }) => 
   <SolutionDropdown 
