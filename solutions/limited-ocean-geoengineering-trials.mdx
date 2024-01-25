@@ -4,7 +4,93 @@ import ArticleImage from "/components/ArticleImage.js";
 export const problem = "Climate Change";
 export const solution = "Limited Ocean Geoengineering Trials";
 
-As shown below, each major proposed method of ocean geoengineering is either too expensive for use on a large scale, carries high risk, or both. Limited field trials may, however, resolve risk and lower costs.
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+## Description
+
+We propose public investment into research and small-scale field trials for various methods of ocean geoengineering.
+
+## Background
+
+As discussed below, each proposed method of ocean geoengineering is either too expensive for use on a large scale, carries high risk, or both. Limited field trials may, however, resolve risk and lower costs.
+
+There are several potential approaches to ocean geoengineering, most of which are discussed below in greater detail. The approaches assessed here are ocean fertilization, artificial upwelling and downwelling, seaweed cultivation, ecosystem recovery, ocean alkalinity enhancement, and electrochemical processes. These are the most common approaches to ocean-based geoengineering, but they are not a comprehensive set of proposals.
+
+## Calculations
+
+<DynamicSolutionGraphic
+  barChartTitle={"Ocean Geoengineering Research"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"2500 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"MG 1-25-2024"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Cost",
+      barlength: 1.4075,
+      displayedValue: "$1.4 billion",
+      site: "null",
+    },
+         {
+      name: "Benefit",
+      barlength: 47.5,
+      displayedValue: "$47.5 billion",
+      site: "null",
+    },
+       
+  ]}
+/>
+
+The estimated budget for a full ocean geoengineering program is $1.4 billion [^"1"]. This includes $125 million for overarching research and $1.3 billion total for research in the six specific areas. The total spending may be less if the preliminary research determines that one or more of the focus areas is not a promising area of investment.
+
+<div className="table-title"> Ammonia Uses in a Low-Carbon Energy System </div>
+<div className="table-wrapper">
+
+| Area | Propsed Research Budget |
+| --- | --- |
+| Overarching | $125 million | 
+| Ocean Fertilization | $290 million | 
+| Artificial Upwelling and Downwelling | $25 million | 
+| Seaweed Cultivation | $235 million | 
+| Ecosystem Recovery | $220 million | 
+| Ocean Alkalinity Enhancement | $125-200 million | 
+| Electrochemical Processes | $350 million | 
+
+</div>
+
+It is envisioned that a successful geoengineering program would remove 10 billion tons of CO<sub>2</sub> per year [^"1"]. We attribute 5 billion tons to an ocean program and 5 billion tons to a land and atmosphere program. Once a successful research program is conducted, we use an estimated cost of ocean carbon dioxide removal of $56/ton [^"2"], based on an engineering analysis of electrochemical CO<sub>2</sub> removal, and a median carbon price of $75/ton, with mainstream estimates ranging from $50 to $100 per ton.
+
+Research might uncover show-stopping problems such as too high a price or implacable political opposition, thus prevent any form of ocean geoengineering from occurring at a large scale. We multiply benefits by 0.5 to allow for this possibility.
+
+We must emphasize that there is great uncertainty around the probability of success, the ultimate cost of a geoengineering program, and the amount of CO<sub>2</sub> that would be removed from a large-scale program, and so the actual benefits could differ from our reported benefits by a large margin.
+
+## Implementation
+
+Knowledge gaps that a research program would fill include the magnitude of CO<sub>2</sub> that could be removed by various methods, the most cost-effective ways of doing so, possible risks and conflicts with other ocean uses, and governance and legal challenges [^"1"].
+
+As climate change is a worldwide problem, and any form of geoengineering is necessarily an international effort, research may best be conducted by a consortium of national energy ministries.
+
+Our calculations assume that, if a full research program is conducted, ocean-based geoengineering will follow and remove 5 billion tons of CO<sub>2</sub> per year. It is thus necessary that a research program be commenced with a commitment to follow it through with a full-fledged program.
+
+Any geoengineering program, including an ocean-based research program, is best conducted in accordance with the Oxford Principles: regulate geoengineering as a public good, ensure public participation, openly disclose research, allow independent assessments, and establish governance before deployment [^"3"].
+
+[^"1"]: National Academies of Sciences, Engineering, and Medicine. ["A Research Strategy for Ocean-based Carbon Dioxide Removal and Sequestration"](https://doi.org/10.17226/26278). Washington, DC: The National Academies Press. 2022.
+
+[^"2"]: Kim, S., Nitzsche, M. P., Rufer, S. B., Lake, J. R., Varanasi, K. K., Hatton, T. A. ["Asymmetric chloride-mediated electrochemical process for CO<sub>2</sub> removal from oceanwater"](https://pubs.rsc.org/en/Content/ArticleLanding/2023/EE/D2EE03804H). Energy & Environmental Science 16, pp. 2030-2044. February 2023.
+
+[^"3"]: Oxford Martin School. ["The 'Oxford Principles' are a proposed set of initial guiding principles for the governance of geoengineering"](https://www.geoengineering.ox.ac.uk/www.geoengineering.ox.ac.uk/oxford-principles/principles/). University of Oxford. 2018.
 
 export default ({ children }) => 
   <SolutionDropdown 
