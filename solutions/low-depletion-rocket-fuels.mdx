@@ -3,9 +3,80 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Ozone Depletion";
 export const solution = "Low-depletion rocket fuels";
 
-If the commercial spaceflight industry greatly expands, it could have a severe effect on stratospheric ozone concentrations. An industry-wide agreement to use low-ozone depleting rocket fuels will alleviate this risk. Such an agreement could be modeled after the High Speed Research program, which NASA led in the 1990s to develop commercial supersonic flight that did not result in ozone depletion [^"17"].
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
-Data on the ozone depletion of rocket launches is limited, and the differences vary by more than a factor of 20 by type of booster [^"20"]. Generally, solid rocket fuels emit much more ozone-depleting pollution than liquid fuels [^"15"].
+## Description
+
+We propose a government and industry consortium of launch providers to develop rocket fuel with low ozone-depleting potential.
+
+## Background
+
+If the commercial spaceflight industry greatly expands, it could have a severe effect on stratospheric ozone concentrations. An industry-wide agreement to use low-ozone depleting rocket fuels will alleviate this risk. We model our proposal after the High Speed Civil Transport program, which NASA led in the 1990s to develop commercial supersonic flight with lower ozone depletion [^"17"].
+
+## Calculations
+
+<DynamicSolutionGraphic
+  barChartTitle={"Low-Depletion Rocket Fuel"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"0.6%"}
+  arrowText2={"stratospheric"}
+  arrowText3={"ozone"}
+  arrowText4={"depletion/yr"}
+  mastheadToggle={''}
+  mastheadText3={"MG 1-28-2024"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Cost",
+      barlength: 29.465548150185,
+      displayedValue: "$29 billion",
+      site: "null",
+    },
+         {
+      name: "Benefit",
+      barlength: 52.38805970149253,
+      displayedValue: "$52 billion",
+      site: "null",
+    },
+       
+  ]}
+/>
+
+Data on the ozone depletion of rocket launches is limited, and the differences vary by more than a factor of 20 by type of booster [^"20"]. Generally, solid rocket fuels emit much more ozone-depleting pollution than liquid fuels [^"15"], with a difference of a factor of 66-90, with kerosene fuels a major contributor as well [^"20"]. Alumina (Al<sub>2</sub>O<sub>3</sub>) particles and black carbon are among the emissions that contribute to ozone depletion. Over half of rocket fuel is solid fuel or kerosene [^"1"], and we thus estimate that ozone depletion from rocket fuel can be reduced by 90% with hypergolic fuels.
+
+The monetized benefit of the Montreal Protocol, in 2022 dollars, has been estimated at $3.9 trillion, which includes a reduction in skin cancer and reduced damage to agriculture, fisheries, and materials [^"2"]. The Protocol is estimated to have prevented a reduction of the ozone layer of 67% by 2060 [^"3"]. As shown above, studies have determined wildly different values for the ozone impact of rocket launches. Following the scenario of Ross et al. [^"4"], we estimate that a mature commercial spaceflight industry will yield 1000 launches per year and deplete 1% of stratospheric ozone. This contrasts to 180 successful launches in 2022 [^"5"].
+
+The High Speed Civil Transport cost $1.9 billion in 1997 dollars [^"6"]. Additionally, following the public program, it was estimated that the private sector would need to spend $13-15 billion, in 1998 dollars, to develop new supersonic aircraft [^"7"].
+
+We emphasize great uncertainty in many aspects of our estimation. Published estimates of the ozone-depleting potential of rocket launches differ by orders of magnitude. We do not know how extensive the spaceflight industry will ultimately become. It may not be appropriate to take the monetized cost of ozone depletion as a linear function of the amount depleted.
+
+## Implementation
+
+The High Speed Civil Transport program was supposed to run from fiscal year 1990 to 2002, but it was cancelled in 1999 without commercial supersonic flight advancing beyond the Concorde. It has been assessed that the program was on track to succeed technically, but it was cancelled due to NASA's budget limitations and the weak projected commercial demand for supersonic flight. The success of a low-ozone depletion rocket fuel program depends on the durability of demand for commercial spaceflight [^"8"]. To be successful, the program would require a budgetary commitment at the outset.
+
+[^"1"]: Ryan, R. G., Marais, E. A., Balhatchet, C. J., Eastham, S. D. ["Impact of Rocket Launch and Space Debris Air Pollutant Emissions on Stratospheric Ozone and Global Climate"](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021EF002612). Earth's Future 10(6):e2021EF002612. June 2022.
+
+[^"2"]: Markandya, A., Dale, N. ["The Montreal Protocol and the Green Economy: Assessing the contributions and co-benefits of a Multilateral Environmental Agreement"](https://www.unenvironment.org/ozonaction/resources/publication/montreal-protocol-and-green-economy-assessing-contributions-and-co-benefits). United Nations Environment Programme. 2012.
+
+[^"3"]: Newman, P. A. et al. ["What would have happened to the ozone layer if chlorofluorocarbons (CFCs) had not been regulated?"](https://acp.copernicus.org/articles/9/2113/2009/acp-9-2113-2009.html). Atmospheric Chemistry and Physics 9(6), pp. 2113-2128. March 2009.
+
+[^"4"]: Ross, M., Mills, M., Toohey, D. ["Potential climate impact of black carbon emitted by rockets"](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2010GL044548). Geophysical Research Letters 37(24). December 2010.
+
+[^"5"]: Witze, A. ["2022 was a record year for space launches"](https://www.nature.com/articles/d41586-023-00048-7). Nature. January 2023.
+
+[^"6"]: National Research Council. ["U.S. Supersonic Commercial Aircraft"](https://nap.nationalacademies.org/catalog/5848/us-supersonic-commercial-aircraft-assessing-nasas-high-speed-research-program). Washington, DC: The National Academies Press. 1997.
+
+[^"7"]: Plencner, R. M., Misra, A., Graber, E. J., Shaw, R. J., Seng, G. T. ["Engine Technology Challenges for the High-Speed Civil Transport Plane"](https://ntrs.nasa.gov/api/citations/19990019480/downloads/19990019480.pdf). Prepared for the 20th Advanced Measurement and Ground Testing Technology Conference, sponsored by the American Institute of Aeronautics and Astronautics, Albuquerque, New Mexico, June 15-18, 1998.
+
+[^"8"]: Wilhite, A. W., Shaw, R. J. ["An Overview of NASA's High-Speed Research Program"](https://www.icas.org/ICAS_ARCHIVE/ICAS2000/PAPERS/ICA0112.PDF). ICAS 2000 Congress.
 
 [^"15"]: Ross, M., Danilin, M., Weisenstein, D. K., Ko, M. K. W. ["Ozone depletion caused by NO and H2O emissions from hydrazine-fueled rockets"](https://www.researchgate.net/publication/252071680_Ozone_depletion_caused_by_NO_and_H2O_emissions_from_hydrazine-fueled_rockets). Journal of Geophysical Research Atmospheres 109(21). November 2004.
 
