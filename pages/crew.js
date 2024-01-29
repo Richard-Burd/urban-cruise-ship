@@ -43,7 +43,7 @@ const Crew = () => {
             to improve its recycling program; lobbying with Tennessians for Fair
             Taxation for a state income tax in Tennessee; and active work in the
             Democratic Party in Nashville, Washington County, OR, and Seattle.
-            In 2014, Michael was a fellow in East-West: The Art of Dialogue, a
+            Michael is a 2014 fellow in East-West: The Art of Dialogue, a
             program of the Shafik Gabr Foundation, to foster ties between the
             United States and Egypt.
           </div>
@@ -55,6 +55,10 @@ const Crew = () => {
             where he built a predictive model of usage of New York City&apos;s
             CitiBike program. His hobbies include game programming and urban
             hiking.
+          </div>
+		  <div className="my-4"></div>
+          <div>
+            Michael maintains a <a href="https://goff.substack.com/">weekly blog at Substack</a>, where he writes about environmental and related issues.
           </div>
         </div>
         <center className="link-icon-set">
