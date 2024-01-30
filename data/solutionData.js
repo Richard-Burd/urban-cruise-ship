@@ -617,7 +617,7 @@ export const solutionData = [
 
   {
     solution: `Asteroid Monitoring and Deflection - US`,
-    link: `/space/industrialization/space_predictions#nasa-should-accelerate-monitoring-and-deflection.mdx`,
+    link: `/space/industrialization/space_predictions#nasa-should-accelerate-monitoring-and-deflection`,
     site: `space`,
     cost: 0.25,
     benefit: 8.9,
