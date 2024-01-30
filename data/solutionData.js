@@ -615,6 +615,18 @@ export const solutionData = [
     subset: "public-health-projects"
   },
 
+  {
+    solution: `Asteroid Monitoring and Deflection - US`,
+    link: `/space/industrialization/space_predictions#nasa-should-accelerate-monitoring-and-deflection.mdx`,
+    site: `space`,
+    cost: 0.25,
+    benefit: 8.9,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "miscellaneous"
+  },
+
 ]
 
 

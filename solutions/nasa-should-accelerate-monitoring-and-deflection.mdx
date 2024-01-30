@@ -3,7 +3,96 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Asteroid Impact Risk";
 export const solution = "NASA should accelerate monitoring and deflection";
 
-While many potentially dangerous impactors have been found, there are still civilization-threatening near-Earth asteroids that have not been discovered, and many more dangerous asteroids. Furthermore, few dangerous comets have been discovered. In the event that a dangerous asteroid is found, no deflection mission has yet been demonstrated, though a test, DART, is scheduled to impact a near-Earth asteroid in September 2022. NASA's efforts and budget for planetary protection should be increased.
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+## Description
+
+We reccomend the US government increase annual funding for plantetary defense by $100 million dollars.
+
+## Background
+
+While many potentially dangerous impactors have been found, there are still civilization-threatening near-Earth asteroids that have not been discovered, and many more dangerous asteroids. Furthermore, few dangerous comets have been discovered.  NASA's efforts and budget for planetary protection should be increased.
+
+NASA defines a potentially hazardous asteroid as an asteroid that is at least 140 meters in size with orbits within 7.5 million kilometers of Earth's orbit around the sun[^"9"]. NASA recently approved the Near-Earth Object Surveyor, a satellite space telescope that will use a heat-sensing infrared telescope, for a launch date of 2027[^"12"]. NASA's Double Asteroid Redirection Test (DART) is the first asteroid deflection attempt and successfully altered the trajectory of an asteroid[^"11"].
+
+Benefits of asteroid detection and deflection include:
+
+- Avoidance of Direct Physical Effects: This includes preventing immediate damage caused by the asteroid impact, such as air blasts, thermal radiation, cratering, seismic shocks, and tsunamis, which can result in medical harm and infrastructure damage[^"4"].
+
+- Prevention of Indirect Social Effects: These are consequences that derive from the direct physical effects but occur at a distance. They include broader economic disruption, political reactions, and potential cultural impacts, which could be extensive[^"4"].
+
+- Mitigation of Global Environmental Effects: Large asteroid collisions can have significant global environmental repercussions, like reducing sunlight reaching the Earth's surface, damaging the ozone layer, and causing global firestorms. Preventing such impacts can avert potential global catastrophes[^"4"].
+
+- Avoiding Triggering of Nuclear War: There is a potential risk that asteroid explosions could be misinterpreted as hostile attacks, leading to military conflicts, including nuclear war. Preventing asteroid impacts would reduce this risk[^"4"].
+
+The current program is spending 150 million annually for planetary defense in the US[^"7"]. A 250 million annual budget would allow for a program that would provide survey redundancy and support for a space mission for deflection[^"10"].
+
+
+<DynamicSolutionGraphic
+  barChartTitle={"Increased Planetary Defense Budget - US"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye 1-30-2024"}
+  
+  
+  staticData={[   
+     {
+      name: "Benefits",
+      barlength: 8.9,
+      displayedValue: "$8.9",
+      site: "null",
+    },
+    {
+      name: "Costs",
+      barlength: .250,
+      displayedValue: "$0.25 Billions USD/year",
+      site: "null",
+    }, 
+  ]}
+/>
+
+#### Source [^"15"] [^"16"] [^"17"]
+
+
+
+We can use other common natural disasters to attempt to get an idea of the scale of damage that could be caused by an asteroid[^"14"]. A large asteroid strike capable of killing 1.5 billion people is a probability of 1 in 250,000[^"15"]. Assuming an average lifespan of 72 years[^"16"] and an average global gdp per capita of $20,693[^"17"], this results in an annualized cost of $8.9 Billion in loss of human life alone. The impact of smaller asteroids is still substantial. In 2013, an 18m in diameter meteor over Chelyabinsk Oblast in Russia exploded in an air burst, injuring 1,491 people and causing $33 million in economic losses[^"13"]. The Chelyabinsk meteor falls far below the threshold of a 140m asteroid, and its trajectory for impact was at a glancing angle, reducing the potential damage[^"18"].
+
+
+## Implementation
+
+NASA's Planetary Defense Budget has grown from $4 million a year in 2005 to 2010 to $150 million a year in 2020[^"7"]. Congress can approve a further increase in this budget to assist the program in meeting its goals.
+
+##### Lead Researcher: jye - Last Updated January 30, 2024
+
+[^"1"]:  [Does cost-benefit analysis apply to catastrophic events?](https://www.aeaweb.org/research/does-cost-benefit-apply-catastrophic-events). 
+[^"2"]:  [Asteroid de-spin and deflection strategy using a solar-sail spacecraft with reflectivity control devices - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0094576517314339). 
+[^"3"]:  [Asteroid Risk Assessment: A Probabilistic Approach - Reinhardt - 2016 - Risk Analysis - Wiley Online Library](https://onlinelibrary.wiley.com/doi/abs/10.1111/risa.12453). 
+[^"4"]: Baum S.  [Uncertain Human Consequences in Asteroid Risk Analysis and the Global Catastrophe Threshold](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3218342). Natural Hazards. August 2018. 
+[^"5"]:  [NASA’S First Asteroid Deflection Mission Enters Next Design Phase](https://www.nasa.gov/directorates/smd/nasas-first-asteroid-deflection-mission-enters-next-design-phase/). 
+[^"6"]:  [New Report Assesses Status of Detecting Near-Earth Asteroids](https://www.nasa.gov/solar-system/new-report-assesses-status-of-detecting-near-earth-asteroids/). 
+[^"7"]: Dreier C.  [https://www.planetary.org/articles/nasas-planetary-defense-budget-growth](https://www.planetary.org/articles/nasas-planetary-defense-budget-growth). The Plantetary Society. Accessed January 2023. 
+[^"8"]: Chapman CR, Morrison D.  [Impacts on the Earth by asteroids and comets: assessing the hazard](https://www.nature.com/articles/367033a0). Nature. January 1994.
+[^"9"]:  [Asteroid Watch](https://www.jpl.nasa.gov/asteroid-watch). Jet Propulsion Laboratory. Accessed January 2023. 
+[^"10"]:  [Defending Planet Earth: Near-Earth-Object Surveys and Hazard Mitigation Strategies](https://nap.nationalacademies.org/catalog/12842/defending-planet-earth-near-earth-object-surveys-and-hazard-mitigation).  The National Academies Press. 2010. 
+[^"11"]:  [Planetary Defense - DART](https://science.nasa.gov/planetary-defense-dart/). NASA Science. Accessed January 2023. 
+[^"12"]:  [Near-Earth Object Surveyor](https://www.jpl.nasa.gov/missions/near-earth-object-surveyor). Jet Propulsion Laboratory. Accessed January 2023. 
+[^"13"]:  [February 2013 Global Catastrophe Recap](https://web.archive.org/web/20220423153414/http://thoughtleadership.aon.com/Documents/20130306_if_february_global_recap.pdf). AON Benfield. Accessed January 2023. 
+[^"14"]: Titus T, Robertson D, Sankey JB, Mastin L, Rengers F.  [A review of common natural disasters as analogs for asteroid impact effects and cascading hazards](https://link.springer.com/article/10.1007/s11069-022-05722-z). Natural Hazards [Internet]. February 2023.
+[^"15"]: Walsh B.  [The Right Price for Defending Against Existential Risk of Asteroids: Walsh](https://www.insurancejournal.com/news/national/2017/05/16/451032.htm). Insurance Journal. May 2017. 
+[^"16"]:  [World Life Expectancy 1950-2024](https://www.macrotrends.net/countries/WLD/world/life-expectancy). MacroTrends. Accessed January 2023. 
+[^"17"]:  [GDP per capita, PPP (current international $)](https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD). World Bank. Accessed January 2023. 
+[^"18"]: Mathias DL, Wheeler LF, Dotson JL.  [A probabilistic asteroid impact risk model: assessment of sub-300 m impacts - ScienceDirect](https://doi.org/10.1016/j.icarus.2017.02.009). Icarus. June 2017. 
 
 export default ({ children }) => 
   <SolutionDropdown 
