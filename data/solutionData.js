@@ -627,6 +627,18 @@ export const solutionData = [
     subset: "miscellaneous"
   },
 
+  {
+    solution: `Ocean Geoengineering Research`,
+    link: `/oceans/ocean_environment/ocean_geoeng#limited-ocean-geoengineering-trials`,
+    site: `oceans`,
+    cost: 1.4,
+    benefit: 47.5,
+    co2: 2500,
+    habitat: null,
+    sources: null,
+    subset: "miscellaneous"
+  },
+
 ]
 
 
