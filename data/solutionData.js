@@ -628,7 +628,7 @@ export const solutionData = [
   },
 
   {
-    solution: `Ocean Geoengineering Research`,
+    solution: `Ocean Geoengineering Research - World`,
     link: `/oceans/ocean_environment/ocean_geoeng#limited-ocean-geoengineering-trials`,
     site: `oceans`,
     cost: 1.4,
