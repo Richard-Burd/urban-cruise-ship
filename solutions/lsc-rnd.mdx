@@ -3,20 +3,49 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Cost of Luminescent Solar Concentrator Technology";
 export const solution = "LSC R&D";
 
-## Background
-
-We reccomend a research program for Luminescent Solar Concentrator (LSC) technology.
-
 ## Description
+We recommend a research program for Luminescent Solar Concentrator (LSC) technology.
 
-We estimate the expected benefit of a building-integrated solar (LSC) research program to be about $44 billion and the cost to be $21 billion. The potential LCOE of LSC has been estimated at 3.72 ¢/kWh [^"16"], a remarkably low value that would outcompete most other electricity sources. We estimate that a BIS research program would take 25 years, as the technology is still not well-developed, and the annual cost would be $830 million, the same as a [wave](/energy/energy_production/mhk) research program. See our [research and development](/energy/energy_socioeconomics/rd) analysis for more information.
+## Background
+LSC has an important role in the portfolio of research endeavors because it shows a potential efficiency of greater than 30%, more than other solar technologies[^”1”].
 
-LSC has an important role in the portfolio of research endeavors because it shows a potential efficiency of greater than 30%, more than other solar technologies [^"8"].
+<DynamicSolutionGraphic
+  barChartTitle={“LSC R&D"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 2-3-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 1.76,
+      displayedValue: "$1.76",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .83,
+      displayedValue: "$.83 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+## Calculations
+We estimate the expected benefit of a building-integrated solar (LSC) research program to be about $44 billion and the cost to be $21 billion. The potential LCOE of LSC has been estimated at 3.72 ¢/kWh[^”2”], a remarkably low value that would outcompete most other electricity sources. We estimate that a BIS research program would take 25 years, as the technology is still not well-developed, and the annual cost would be $830 million, the same as a [wave](https://www.urbancruiseship.org/energy/energy_production/mhk) research program. See our [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) analysis for more information.
 
 
-[^"8"]: Eisler, C. A., Parsons, L. E., Nett, Z., Love, C., Schwartzberg, A. M., Alivisatos, A. P. "Photonic Luminescent Solar Concentrator Design for High Efficiency, Low Cost Multijunction Photovoltaics". Frontiers in Photonics. July 2022.
+##### Lead researcher: Michael Goff - Last updated: 2/3/2024
 
-[^"16"]: Haviv, S., Revivo, N., Kruger, N., Manor, A., Khachatryan, B., Shustov, M., Rotschild, C. "Luminescent Solar Power—PV/Thermal Hybrid Electricity Generation for Cost-Effective Dispatchable Solar Energy". ACS Applied Materials & Interfaces 12(32), pp. 36040–36045. July 2020.
+[^”1”]: Eisler, C. A., Parsons, L. E., Nett, Z., Love, C., Schwartzberg, A. M., Alivisatos, A. P. "Photonic Luminescent Solar Concentrator Design for High Efficiency, Low Cost Multijunction Photovoltaics". Frontiers in Photonics. July 2022 
+
+[^”2”]: Haviv, S., Revivo, N., Kruger, N., Manor, A., Khachatryan, B., Shustov, M., Rotschild, C. "Luminescent Solar Power—PV/Thermal Hybrid Electricity Generation for Cost-Effective Dispatchable Solar Energy". ACS Applied Materials & Interfaces 12(32), pp. 36040–36045. July 2020 
+
 
 export default ({ children }) => 
   <SolutionDropdown 
