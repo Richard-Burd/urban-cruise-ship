@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavbarTitleBlock from "../components/NavbarTitleBlock";
 import Image from "next/image";
+export const path = `${process.env.NEXT_PUBLIC_ARTICLE_IMAGES_URI_PATH}`;
 
 const Crew = () => {
   const crewDescriptionTestLayoutStyles =
@@ -56,9 +57,11 @@ const Crew = () => {
             CitiBike program. His hobbies include game programming and urban
             hiking.
           </div>
-		  <div className="my-4"></div>
+          <div className="my-4"></div>
           <div>
-            Michael maintains a <a href="https://goff.substack.com/">weekly blog at Substack</a>, where he writes about environmental and related issues.
+            Michael maintains a{" "}
+            <a href="https://goff.substack.com/">weekly blog at Substack</a>,
+            where he writes about environmental and related issues.
           </div>
         </div>
         <center className="link-icon-set">
@@ -116,7 +119,40 @@ const Crew = () => {
             Like most of Michael&apos;s and some of Lee&apos;s and
             Richard&apos;s work, virtually all of John&apos;s is seen but not
             credited, like the name, logo, most yellow navbar content, editing,
-            and styling.
+            and styling. Some of John&apos; innovations include{" "}
+            <a
+              href="/history"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>Comparative Progress Studies</i>
+              </b>
+            </a>
+            ,{" "}
+            <a
+              href={`${path}/energy_production_forecast.pdf`}
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>trajectory-based energy forecasts</i>
+              </b>
+            </a>
+            , and{" "}
+            <a
+              href="https://www.urbanfootnotes.com"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>Urban Foot Notes</i>
+              </b>
+            </a>
+            .
           </div>
           <div className="my-4"></div>
           <div>
@@ -131,19 +167,24 @@ const Crew = () => {
           </div>
           <div className="my-4"></div>
           <div>
-            Since 1992, John has been president of Recycling Advocates of Middle
-            Tennessee, with accomplishments that include the world&apos;s only
-            voluntary closure of a large, financially-viable waste-to-energy
-            plant with up-to-date air pollution control equipment, banning
-            treated WTE ash as a loose construction fill material in many U.S.
-            states, and establishing the first statewide “soil-based” compost
-            quality standards as an incentive class. Doing so involved economic
-            comparative analysis, risk assessment, conducting four pilot wet/dry
-            source separation/processing systems, and touring over 200
-            facilities across the U.S. and Ontario. John has described how to
-            achieve true zero-waste across entire municipal waste streams,
-            including economic structures which enable this. Those include
-            calculating and internalizing presently externalized disposal costs.
+            After working through other organizations, John has been President
+            of{" "}
+            <a
+              href="https://www.ramtn.org/"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>Recycling Advocates of Middle Tennessee</i>
+              </b>
+            </a>{" "}
+            since 1992. Its website lists 23 significant accomplishments, among
+            them ones unique to the U.S. and world. Achieving zero-waste is
+            described both simply, and more comprehensively. Many handouts are
+            shown. Regulatory and compliance work, often overlooked, but
+            essential, has been extensive. Display of all of those documents
+            currently remains under construction.
           </div>
           <div className="my-4"></div>
           <div>
