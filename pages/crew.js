@@ -119,7 +119,7 @@ const Crew = () => {
             Like most of Michael&apos;s and some of Lee&apos;s and
             Richard&apos;s work, virtually all of John&apos;s is seen but not
             credited, like the name, logo, most yellow navbar content, editing,
-            and styling. Some of John&apos; innovations include{" "}
+            and styling. Some of John&apos;s innovations include{" "}
             <a
               href="/history"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
