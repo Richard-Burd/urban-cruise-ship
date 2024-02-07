@@ -116,43 +116,8 @@ const Crew = () => {
           <div>
             John van der Harst manages research aims, graphic and language
             standards, human resources, and development for Urban Cruise Ship.
-            Like most of Michael&apos;s and some of Lee&apos;s and
-            Richard&apos;s work, virtually all of John&apos;s is seen but not
-            credited, like the name, logo, most yellow navbar content, editing,
-            and styling. Some of John&apos;s innovations include{" "}
-            <a
-              href="/history"
-              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>
-                <i>Comparative Progress Studies</i>
-              </b>
-            </a>
-            ,{" "}
-            <a
-              href={`${path}/energy_production_forecast.pdf`}
-              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>
-                <i>trajectory-based energy forecasts</i>
-              </b>
-            </a>
-            , and{" "}
-            <a
-              href="https://www.urbanfootnotes.com"
-              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>
-                <i>Urban Foot Notes</i>
-              </b>
-            </a>
-            .
+            Unique creations of his include the name, logo, most yellow navbar
+            compositions, button styling.
           </div>
           <div className="my-4"></div>
           <div>
@@ -161,9 +126,8 @@ const Crew = () => {
             engineering and planning, which have included some interior and
             graphic design, and structural, mechanical, plumbing, and electrical
             drawings. Previously, a variety of health-threatening factory work
-            and odd jobs brought gratefulness for often-scarce design work
-            opportunities and sensitivity toward work opportunity and
-            environmental safety.
+            and odd jobs brought gratefulness for often-scarce design work and
+            sensitivity toward work opportunity and environmental safety.
           </div>
           <div className="my-4"></div>
           <div>
@@ -192,8 +156,8 @@ const Crew = () => {
             health care, peace, third party and bioregional politics, mass
             transit, scenery preservation and billboards, economic disparity,
             and human and animal rights. Since 2002, John&apos;s methods,
-            successes, and personal lifestyle led to various published profiles,
-            in two newspapers, two magazines, a 2004 documentary&nbsp;
+            successes, and personal lifestyle led to published profiles in two
+            newspapers and two magazines, a 2004 documentary&nbsp;
             <a
               href="https://www.imdb.com/title/tt1863278/"
               target="_blank"
