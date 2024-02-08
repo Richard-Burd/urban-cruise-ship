@@ -117,7 +117,40 @@ const Crew = () => {
             John van der Harst manages research aims, graphic and language
             standards, human resources, and development for Urban Cruise Ship.
             Unique creations of his include the name, logo, most yellow navbar
-            compositions, button styling.
+            compositions, button styling,{" "}
+            <a
+              href="/history"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>Comparative Progress Studies</i>
+              </b>
+            </a>
+            ,{" "}
+            <a
+              href={`${path}/energy_production_forecast.pdf`}
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>trajectory-based energy forecasts</i>
+              </b>
+            </a>
+            , and{" "}
+            <a
+              href="https://www.urbanfootnotes.com"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>Urban Foot Notes</i>
+              </b>
+            </a>
+            .
           </div>
           <div className="my-4"></div>
           <div>
@@ -125,9 +158,9 @@ const Crew = () => {
             the fields of architecture, landscape architecture, civil
             engineering and planning, which have included some interior and
             graphic design, and structural, mechanical, plumbing, and electrical
-            drawings. Previously, a variety of health-threatening factory work
-            and odd jobs brought gratefulness for often-scarce design work and
-            sensitivity toward work opportunity and environmental safety.
+            drawings. A variety of health-threatening factory work and odd jobs
+            brought sensitivity toward work opportunity and environmental
+            safety.
           </div>
           <div className="my-4"></div>
           <div>
@@ -143,10 +176,30 @@ const Crew = () => {
                 <i>Recycling Advocates of Middle Tennessee</i>
               </b>
             </a>{" "}
-            since 1992. Its website lists 23 significant accomplishments, among
-            them ones unique to the U.S. and world. Achieving zero-waste is
-            described both simply, and more comprehensively. Many handouts are
-            shown. Regulatory and compliance work, often overlooked, but
+            since 1992. Its website lists{" "}
+            <a
+              href="https://www.ramtn.org/successes/longer-history"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>23 significant accomplishments</i>
+              </b>
+            </a>
+            , among them ones unique to the U.S. and world. Achieving zero-waste
+            is described both simply, and more comprehensively. Many{" "}
+            <a
+              href="https://www.ramtn.org/outreach/handouts"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>handouts</i>
+              </b>
+            </a>{" "}
+            are shown. Regulatory and compliance work, often overlooked, but
             essential, has been extensive. Display of all of those documents
             currently remains under construction.
           </div>
@@ -156,8 +209,8 @@ const Crew = () => {
             health care, peace, third party and bioregional politics, mass
             transit, scenery preservation and billboards, economic disparity,
             and human and animal rights. Since 2002, John&apos;s methods,
-            successes, and personal lifestyle led to published profiles in two
-            newspapers and two magazines, a 2004 documentary&nbsp;
+            successes, and personal lifestyle led to profiles in two newspapers,
+            two magazines, a 2004 documentary{" "}
             <a
               href="https://www.imdb.com/title/tt1863278/"
               target="_blank"
@@ -182,9 +235,9 @@ const Crew = () => {
             </a>
             , and listings in Marquis Who&apos;s Who in America, Who&apos;s Who
             in the World, and Who&apos;s Who in Science and Engineering. John is
-            among the 5% of their listees Marquis has given a &quot;Lifetime
-            Achievement Award&quot; to. Hobbies include gardening, cartooning,
-            and triathlons.
+            among the 5% of their listees Marquis has given a “Lifetime
+            Achievement Award” to. Hobbies include gardening, cartooning, and
+            triathlons.
           </div>
         </div>
         <center className="link-icon-set">
