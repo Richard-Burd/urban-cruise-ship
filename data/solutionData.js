@@ -253,7 +253,7 @@ export const solutionData = [
     subset: "ecology-environment"
   },
   {
-    solution: `Accelerate Investment into Solar Energy - World`, //need to add links
+    solution: `Accelerate Investment into Solar Energy - World`,
     link: `/energy/energy_production/solar#solar-power`,
     site: `energy`,
     cost: 1105.3,
@@ -472,7 +472,7 @@ export const solutionData = [
 
   {
     solution: `IUU Fishing Global Reporting Requirements`,
-    link: `/oceans/ocean_industry/seafood`,
+    link: `/oceans/ocean_industry/seafood#iuusimp`,
     site: `oceans`,
     cost: 2.4,
     benefit: 11,
@@ -484,7 +484,7 @@ export const solutionData = [
 
   {
     solution: `Heat Mitigation through Trees - World`,
-    link: `/cities/cities_energy_and_pollution/heat_island`,
+    link: `/cities/cities_energy_and_pollution/heat_island#heat-mitigation-through-trees`,
     site: `cities`,
     cost: 46.19,
     benefit: 89.62,
@@ -496,7 +496,7 @@ export const solutionData = [
 
   {
     solution: `Green Roofs in Urban Planning - US`,
-    link: `/cities/cities_land_use/cities_natural_land`,
+    link: `/cities/cities_land_use/cities_natural_land#green-roofs`,
     site: `cities`,
     cost: 5.56,
     benefit: 19.08,
@@ -506,10 +506,9 @@ export const solutionData = [
     subset: "ecology-environment"
   },
 
-
   {
     solution: `Establish E-waste Infrastructure - US`,
-    link: `/waste/hazardous_waste/ewaste`,
+    link: `/waste/hazardous_waste/ewaste#improve-recycling`,
     site: `waste`,
     cost: 32.26,
     benefit: 55.38,
@@ -521,7 +520,7 @@ export const solutionData = [
 
   {
     solution: `Landfill Tax - World`,
-    link: `/waste/waste_economics/landfill_tax`,
+    link: `/waste/waste_economics/landfill_tax#landfill-tax`,
     site: `waste`,
     cost: 7.5,
     benefit: 62.75,
@@ -533,7 +532,7 @@ export const solutionData = [
 
   {
     solution: `LED Street Lights With Full Cut-Off Shielding - World`,
-    link: `/cities/cities_energy_and_pollution/light`,
+    link: `/cities/cities_energy_and_pollution/light#light-pollution-led`,
     site: `cities`,
     cost: 15.5,
     benefit: 20.8,
@@ -545,7 +544,7 @@ export const solutionData = [
 
   {
     solution: `Waste Levy on Coal Burning - World`,
-    link: `/waste/hazardous_waste/industrial_waste`,
+    link: `/waste/hazardous_waste/industrial_waste#waste-pricing-on-coal-burning`,
     site: `waste`,
     cost: 7.5,
     benefit: 10.4,
@@ -557,7 +556,7 @@ export const solutionData = [
 
   {
     solution: `Pedestrian Skybridge - Manhattan`,
-    link: `/energy/transport/transpo_short`,
+    link: `/energy/transport/transpo_short#pedestrian-skybridges`,
     site: `energy`,
     cost: 13,
     benefit: 22,
@@ -569,7 +568,7 @@ export const solutionData = [
 
   {
     solution: `Research to Improve Agricultural Yields - Global South`,
-    link: `/matter/diet/ag_overview_fw`,
+    link: `/matter/diet/ag_overview_fw#research-to-improve-yields`,
     site: `matter`,
     cost: 1.7,
     benefit: 60,
@@ -581,7 +580,7 @@ export const solutionData = [
 
   {
     solution: `Reverse Osmosis Arsenic Filtration - World`,
-    link: `/habitat/environment/chemical_socio`,
+    link: `/habitat/environment/chemical_socio#arsenic-treatment`,
     site: `habitat`,
     cost: 2.58,
     benefit: 2.1,
@@ -605,7 +604,7 @@ export const solutionData = [
 
   {
     solution: `Ban Nontherapeutic Livestock Antibiotics`,
-    link: `/matter/ag_env/ag_risk`,
+    link: `/matter/ag_env/ag_risk#ban-livestock-antibiotics`,
     site: `matter`,
     cost: 0.3,
     benefit: 5.58,
@@ -639,7 +638,92 @@ export const solutionData = [
     subset: "miscellaneous"
   },
 
+  {
+    solution: `Small Modular Reactor R&D – U.S.`,
+    link: `/energy/energy_production/nuclear#small-modular-reactor-rnd `,
+    site: `energy`,
+    cost: .46,
+    benefit: 6,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency "
+  },
+
+  {
+    solution: `Advanced Reactor Technology R&D – U.S.`,
+    link: `/energy/energy_production/nuclear#advanced-reactor-rnd `,
+    site: `energy`,
+    cost: .46,
+    benefit: 1.32,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency "
+  },
+
+  {
+    solution: `Concentrated Solar Power Plants R&D – U.S.`,
+    link: `/energy/energy_production/solar#concentrated-solar-rnd `,
+    site: `energy`,
+    cost: .83,
+    benefit: 6.6,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency "
+  },
+
+  {
+    solution: `Advanced Solar Cell Technology R&D – U.S.`,
+    link: `/energy/energy_production/solar#advanced-solar-cell-rnd `,
+    site: `energy`,
+    cost: .83,
+    benefit: 12.5,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency "
+  },
+
+  {
+    solution: `Concentrating Solar PV R&D – U.S.`,
+    link: `/energy/energy_production/solar#concentrating-pv-rnd `,
+    site: `energy`,
+    cost: .83,
+    benefit: 10.8,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency "
+  },
+
+  {
+    solution: `Luminescent Solar Concentrator Technology R&D – U.S.`,
+    link: `/energy/energy_production/solar#lsc-rnd `,
+    site: `energy`,
+    cost: .83,
+    benefit: 1.76,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency "
+  },
+
+  {
+    solution: `Enhanced Geothermal R&D – U.S.`,
+    link: `/energy/energy_production/geothermal#research-and-development-into-enhanced-geothermal`,
+    site: `energy`,
+    cost: .83,
+    benefit: 4.8,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency "
+  },
+
 ]
+
 
 
 
