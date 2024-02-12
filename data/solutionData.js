@@ -639,6 +639,18 @@ export const solutionData = [
     subset: "miscellaneous"
   },
 
+  {
+    solution: `Plan to End TB - World`,
+    link: `/habitat/wellbeing/health_socio#plan-to-end-tb`,
+    site: `habitat`,
+    cost: 2.6,
+    benefit: 99.6,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects"
+  },
+
 ]
 
 
