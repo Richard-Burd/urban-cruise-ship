@@ -476,17 +476,19 @@ const Crew = () => {
         <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
           jye
         </div>
-        <div className="my-7 standard-font-3 text-justify text-lg">
+        <div className={crewDescriptionTestLayoutStyles}>
           <div>
-            jye serves as a researcher, assistant webmaster, software developer,
-            and design consultant at Urban Cruise Ship
+            jye (lowercase j) serves as a graphic designer, researcher,
+            and design consultant at Urban Cruise Ship. Some notable contributions include dynamic graphic-generating interactive tables on the History site, automated standardized estimates graphics for solutions, and concept distillation and search automation for Urban Foot Notes.
           </div>
           <div className="my-4"></div>
           <div>
-            jye is an artist, performer, environmentalist, and yoga student
+            They are a non-binary artist and performer. Curiously-themed parties are a specialty.  Their friends network includes many societal minorities.  Multiple spectra are represented.  Five years of college served an educational, not credentialing, purpose.  Hobbies include gaming, history, architectural exploration and hiking.  D&D played well.  Trains, castles, cathedrals, old forests, mountains loved.  Fairies too. 
+            
+            
           </div>
           <div className="my-4"></div>
-          <div>more bio is coming soon</div>
+          <div>They consider themselves a yoga student, and enviromentalist. They hope to learn more, to grow, and are always looking for ways to do both. Their webpage is below if you wish to see their art.</div>
         </div>
         <center className="link-icon-set">
           <a href="https://jyeartstudio.com" target="_blank" rel="noreferrer">
