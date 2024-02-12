@@ -1,16 +1,43 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Material Loss";
-export const solution = "Recycled Content Mandates";
+export const solution = "Recycled Plastic Procurement";
 
 ## Description
-We propose that states establish recycled content mandates to the extent that they are financially feasible.
+We propose that states establish recycled content procurement mandates for plastics to the extent that they are financially feasible.
+
+## Background
+
+Plastic recycling in struggling in the United States, having peaked at 9.5% in 2014 across all resins and fallen to 5-6% in 201 [^"6"]. A major reason for this fall was China's Operation National Sword, which banned the importation of most plastic waste [^"7"]. Furthermore, it may be that even the modest peak recycling rate in 2014 is overstated, since the statistics assume that all waste shipped to China is recycled, which may not have necessarily been the case [^"7"].
+
+## Calculations
+
+We estimate potential benefits of plastic markets by modeling a doubling of recycling of two plastic resins: high-density polyethylene (HDPE) and low-density polyethylene (LDPE). In 2019, the United States generated 44 million tons of plastic waste [^"3"]. Of that, about 20% is HDPE and 23% is LDPE [^"4"]. Applying some lifecycle estimates of the benefits of recycling [^"5"], we estimate the following annual benefits of doubling recycling rates of HDPE and LDPE in the United States.
+
+- 108 thousand tons CO<sub>2</sub> reduced,
+- 50 petajoules of energy saved,
+- 1 million cubic meters of water saved.
+
+Due to the high variation in commodity prices, we are not able to produce reliable estimates of the cost of additonal plastic recycling.
 
 ## Implementation
-Manufacturers  typically are against requirements on recycled content as requirements may not be possible to control through internal procedures which can have supply chain implications, or compliance is affected by consumer behavior[^”1”].
+Manufacturers  typically are against requirements on recycled content as requirements may not be possible to control through internal procedures which can have supply chain implications, or compliance is affected by consumer behavior[^"1"].
 
-##### Lead researcher: Lee Nelson - Last updated: 10/2/2023
-[^”1”]: Dalhammar, C. [“Industry attitudes towards ecodesign standards for improved resource efficiency”](https://doi.org/10.1016/j.jclepro.2015.12.035) Journal of Cleaner Production December 2015
+Model legislation calls for, over time, the mandated postconsumer plastic content to be between 20% and 40% for film bags, 15-25% for single-use containers, and 25-75% for durable containers, as well as third party verification [^"2"].
+
+[^"1"]: Dalhammar, C. [“Industry attitudes towards ecodesign standards for improved resource efficiency”](https://doi.org/10.1016/j.jclepro.2015.12.035) Journal of Cleaner Production December 2015.
+
+[^"2"]: Quinn, M. ["Model legislation for postconsumer recycled content in plastic packaging aims to ‘harmonize’ state policy"](https://www.wastedive.com/news/postconsumer-recycled-content-model-legislation-nerc-newmoa/631310/). WasteDive. September 2022.
+
+[^"3"]: Milbrandt, A., Coney, K., Badgett, A., Beckham, G. T. ["Quantification and evaluation of plastic waste in the United States"](https://www.sciencedirect.com/science/article/abs/pii/S0921344922002087). Resources, Conservation and Recycling <b>183</b>: 106363. August 2022.
+
+[^"4"]: Di, J., Reck, B. K., Miatto, A., Graedel, T. E. ["United States plastics: Large flows, short lifetimes, and negligible recycling"](https://www.osti.gov/biblio/1761525). U.S. Department of Energy, Office of Scientific and Technical Information. January 2021.
+
+[^"5"]: Gracida-Alvarez U. R., Benavides P. T., Lee U., Wang M. ["Life-cycle analysis of recycling of post-use plastic to plastic via pyrolysis"](https://www.sciencedirect.com/science/article/pii/S0959652623030251). Journal of Cleaner Production <b>425</b>:138867. November 2023.
+
+[^"6"]: Greenpeace, Inc. ["Circular Claims Fall Flat Again"](https://www.greenpeace.org/usa/reports/circular-claims-fall-flat-again/). October 2022.
+
+[^"7"]: Barone, M. ["U.S. Plastic Recycling Rates Are Even Worse Than We Thought"](https://time.com/6178386/plastic-recycling-rates-overestimated/). Time. May 2022.
 
 export default ({ children }) => 
   <SolutionDropdown 

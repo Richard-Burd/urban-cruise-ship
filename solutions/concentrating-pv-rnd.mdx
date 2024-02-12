@@ -14,10 +14,11 @@ export const solution = "Concentrating PV R&D";
 We promote research into concentrating PV.
 
 ## Background
-Interest in concentrating PV has diminished in recent years, however the technology may be ideal for use in greenhouses[^”1”], insuring that it remains an important part of the solar energy portfolio.
+Concentrating PV systems offer various advantages over flat panel devices. These include: higher electrical conversion efficiency, smaller use of space, ease of recycling constituent materials, and less toxic materials used in the production process[^”1”]. Currently the use of concentrating systems is limited in scale and deploys devices that are considerable in size[^”1”].
+Concentrating PV technology may also be ideal for use in greenhouses[^”2”].
 
 <DynamicSolutionGraphic
-  barChartTitle={"Concentrating Solar R&D"}
+  barChartTitle={"Concentrating Solar PV R&D"}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
@@ -46,11 +47,17 @@ Interest in concentrating PV has diminished in recent years, however the technol
 ## Calculations
 We estimate the expected benefit of a concentrated PV research program to be about $54 billion and the cost to be about $4 billion over a five year period. As the technology has already been commercialized on a limited scale, we estimate that only five years of research would be required, and the cost is estimated to be the same $830 million annually as a [wave energy](https://www.urbancruiseship.org/energy/energy_production/mhk) research program. We estimate the final price of such a research program to be 7 ¢/kWh, with the same greenhouse gas and other external costs as other forms of solar. See our [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) analysis for more details.
 
+## Implementation
+The viability of concentrating PV systems is dependent on their ability to offer a comparative economic advantage over flat panels, whose market prices are decreasing making it harder for concentrating PV to gain a foothold[^”1”]. Currently there are more than 30 companies developing concentrating PV systems. While most of these companies are still in the start-up phase, there is potential for a rapid increase in production[^”1”].
+Another issue with concentrating PV is higher cell temperatures. However there is potential for thermal energy recovery and reuse turning this extra heat into a pathway to improve concentrating PV performance[^”3”].
 
-##### Lead researcher: Michael Goff - Last updated: 1/30/2024
+##### Lead researchers: Lee Nelson (Background and Implementation) and Michael Goff (Calculations) - Last updated: 2/11/2024
 
-[^”1”]: Kumar, M., Haillot, D., Gibout, S. ["Survey and evaluation of solar technologies for agricultural greenhouse application"](https://www.sciencedirect.com/science/article/abs/pii/S0038092X21010823) Solar Energy 232, pp. 18-34. January 2022 
+[^”1”]: Chemisana, D. ["Building Integrated Photovoltaics: A Review"](https://doi.org/10.1016/j.rser.2010.07.017) Renewable and Sustainable Energy Reviews, January 2011
 
+[^”2”]: Kumar, M., Haillot, D., Gibout, S. ["Survey and evaluation of solar technologies for agricultural greenhouse application"](https://www.sciencedirect.com/science/article/abs/pii/S0038092X21010823) Solar Energy 232, pp. 18-34. January 2022
+
+[^”3”]: Hasan, A. et al. ["Concentrated Photovoltaic: A Review of Thermal Aspects, Challenges, and Opportunities"](https://doi.org/10.1016/j.rser.2018.06.014) Renewable and Sustainable Energy Reviews, October 2018
 
 export default ({ children }) => 
   <SolutionDropdown 
