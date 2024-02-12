@@ -501,7 +501,7 @@ const Crew = () => {
             />
           </a>
           <a
-            href="mailto:jye@urbancruiseship.com"
+            href="mailto:jye.art.studio@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
