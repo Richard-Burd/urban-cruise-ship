@@ -488,7 +488,7 @@ const Crew = () => {
             
           </div>
           <div className="my-4"></div>
-          <div>They consider themselves a yoga student, and enviromentalist. They hope to learn more, to grow, and are always looking for ways to do both. Their webpage is below if you wish to see their art.</div>
+          <div>They consider themselves a yoga student, and environmentalist. They hope to learn more, to grow, and are always looking for ways to do both. Their webpage is below if you wish to see a sampling of their art.</div>
         </div>
         <center className="link-icon-set">
           <a href="https://jyeartstudio.com" target="_blank" rel="noreferrer">
