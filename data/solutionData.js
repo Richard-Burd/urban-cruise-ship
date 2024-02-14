@@ -722,8 +722,6 @@ export const solutionData = [
     subset: " energy-production-efficiency "
   },
 
-
-
   {
     solution: `Plan to End TB - World`,
     link: `/habitat/wellbeing/health_socio#plan-to-end-tb`,
@@ -735,6 +733,19 @@ export const solutionData = [
     sources: null,
     subset: "public-health-projects"
   },
+
+  {
+    solution: `Biochar for Carbon Sequestration - China`,
+    link: `/habitat/environment/geoengineering#biochar-for-sequestration`,
+    site: `habitat`,
+    cost: 84.64,
+    benefit: 46,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment"
+  },
+
 
 ]
 
