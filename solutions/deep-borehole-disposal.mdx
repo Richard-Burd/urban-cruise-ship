@@ -1,19 +1,85 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 export const problem = "Nuclear Waste";
 export const solution = "Deep Borehole Disposal";
 
-Although disposing of nuclear waste is inexpective relative to nuclear power, the lack of a permanent solution in the United States serves as a barrier to expansion. Much time and political capital has been expended on the Yucca Mountain site, and permitting there does not look to be resolved in the foreseeable future. Developing and implementing deep borehole disposal (DBD) is another way forward.
+## Description
+
+We propose that the United States develop deep borehole disposal for nuclear waste.
+
+## Background
+
+Although disposing of nuclear waste is inexpensive relative to nuclear power, the lack of a permanent solution in the United States is a barrier to expansion. Much time and political capital has been expended on the Yucca Mountain site [^"7"], and permitting there does not look to be resolved in the foreseeable future. Deep borehole disposal (DBD) is another solution.
+
+At present, six U.S. states legislatively forbid nuclear power until a permanent waste disposal solution can be developed [^"2"]. We do not believe that such bans are necessary, as dry cask storage--the predominant storage solution in the United States today--is safe [^"3"] and has not produced a known radiation leak or safety incident since dry cask storage started in 1986 [^"6"]. We recommend that states [repeal these bans](https://www.urbancruiseship.org/energy/energy_production/nuclear), but barring that, developing the requisite disposal solutions is another approach.
 
 DBD promises to offer fast disposal solutions with high siting flexibility and low financial risk [^"5"]. Due to the greater siting flexibility, DBD has the potential for greater political acceptability than geologic disposal [^"4"].
 
-However, efforts at political acceptance are still needed, as shown by the failure of the Deep Borehole Field Test [^"14"]. To move forward, DBD needs to be proven with a similar field test [^"12"].
+## Calculations
 
-[^"4"]: Cotton, M. "Deep borehole disposal of nuclear waste: trust, cost and social acceptability". Journal of Risk Research, pp. 1-16. July 2021.
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Deep Borehole Disposal"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"17 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Feb. 15, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 0.21616,
+      displayedValue: "$217 million/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 0.8323935326086795,
+      displayedValue: "$833 million/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
 
-[^"5"]: Deep Isolation. "Deep Isolation and ERDO". December 2021.
+The cost of deep borehole disposal is based on annual nuclear electricity generation in the United States of 772 TWh [^"1"], multiplied by the additional cost per kilowatt-hour of deep borehole disposal, relative to the dry cask (near-surface) storage that is typically done in the United States today. Costs for these two options are as portrayed above; a median cost of near-surface storage of 0.012¢/kWh is used.
 
-[^"14"]: Voosen, P. "Protests spur rethink on deep borehole test for nuclear waste". Science 27, pp. 252-253. September 2016.
+The benefit is based on the scenario that if deep borehole disposal is implemented, states that currently have bans on new nuclear power until the waste issue can be resolved will utilize nuclear power at the U.S. national average, which is about 18%. Those states are California, Connecticut, Illinois, Maine, New Jersey, and Oregon [^"2"]. Furthermore, the nuclear electricity added is assumed to displace electricity at the state's average carbon intensity. The reduced CO<sub>2</sub> emissions are valued at $50/ton.
+
+## Implementation
+
+Efforts at political acceptance are still needed, as shown by the failure of the Deep Borehole Field Test [^"14"]. To move forward, DBD needs to be proven with a similar field test [^"12"].
+
+[^"1"]: World Nuclear Association. ["Nuclear Power in the USA"](https://world-nuclear.org/information-library/country-profiles/countries-t-z/usa-nuclear-power.aspx). Updated January 2024.
+
+[^"2"]: National Conference of State Legislatures. ["States Restrictions on New Nuclear Power Facility Construction"](https://www.ncsl.org/environment-and-natural-resources/states-restrictions-on-new-nuclear-power-facility-construction). Updated September 2023.
+
+[^"3"]: Canavan, K., Gregg, B., Karimi, R., Mirsky, S., Stokley, J. ["Probabilistic Risk Assessment (PRA) of Bolted Storage Casks, Updated Quantification and Analysis Report"](https://www.epri.com/research/products/1002877). Electric Power Research Institute. December 2003.
+
+[^"4"]: Cotton, M. ["Deep borehole disposal of nuclear waste: trust, cost and social acceptability"](https://www.tandfonline.com/doi/abs/10.1080/13669877.2021.1957988). Journal of Risk Research, pp. 1-16. July 2021.
+
+[^"5"]: Deep Isolation. ["Deep Isolation and ERDO"](https://www.norskdekommisjonering.no/wp-content/uploads/2021/12/Preliminary-assessment_Deep-Isolation-borehole-repository-as-a-disposal-option-for-nuclear-waste-in-the-ERDO-countries.pdf). December 2021.
+
+[^"6"]: United States Nuclear Regulatory Commission. ["Backgrounder on Dry Cask Storage of Spent Nuclear Fuel"](https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/dry-cask-storage.html). January 2023.
+
+[^"7"]: University of Nevada, Reno. ["Yucca Mountain Research Collection: Yucca Mountain Project Timeline"](https://guides.library.unr.edu/yuccamountain/timelinehome). Accessed February 14, 2024.
+
+[^"12"]: U.S. Nuclear Waste Technical Review Board. ["Deep Borehole Disposal of Spent Nuclear Fuel and High-Level Waste"](https://www.bundestag.de/endlager-archiv/blob/376822/5d128f2fa3aa79a85ab16a4c5c35b6b7/kmat_26-b-data.pdf). Accessed April 15, 2022.
+
+[^"14"]: Voosen, P. ["Protests spur rethink on deep borehole test for nuclear waste"](https://www.science.org/content/article/protests-spur-rethink-deep-borehole-test-nuclear-waste). Science <b>27</b>, pp. 252-253. September 2016.
 
 export default ({ children }) => 
   <SolutionDropdown 
