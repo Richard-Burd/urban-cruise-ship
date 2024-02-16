@@ -664,7 +664,7 @@ export const solutionData = [
 
   {
     solution: `Concentrated Solar Power Plants R&D – U.S.`,
-    link: `/energy/energy_production/solar#concentrated-solar-rnd `,
+    link: `/energy/energy_production/solar#concentrated-solar-r-d-u-s- `,
     site: `energy`,
     cost: .83,
     benefit: 6.6,
@@ -676,7 +676,7 @@ export const solutionData = [
 
   {
     solution: `Advanced Solar Cell Technology R&D – U.S.`,
-    link: `/energy/energy_production/solar#advanced-solar-cell-rnd `,
+    link: `/energy/energy_production/solar#advanced-solar-cell-r-d `,
     site: `energy`,
     cost: .83,
     benefit: 12.5,
