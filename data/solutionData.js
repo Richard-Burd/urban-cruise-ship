@@ -688,7 +688,7 @@ export const solutionData = [
 
   {
     solution: `Concentrating Solar PV R&D – U.S.`,
-    link: `/energy/energy_production/solar#concentrating-pv-rnd `,
+    link: `/energy/energy_production/solar#concentrating-pv-rd `,
     site: `energy`,
     cost: .83,
     benefit: 10.8,
@@ -700,7 +700,7 @@ export const solutionData = [
 
   {
     solution: `Luminescent Solar Concentrator Technology R&D – U.S.`,
-    link: `/energy/energy_production/solar#lsc-rnd `,
+    link: `/energy/energy_production/solar#lsc-rd `,
     site: `energy`,
     cost: .83,
     benefit: 1.76,
