@@ -688,7 +688,7 @@ export const solutionData = [
 
   {
     solution: `Concentrating Solar PV R&D – U.S.`,
-    link: `/energy/energy_production/solar#concentrating-pv-rd `,
+    link: `/energy/energy_production/solar#concentrating-pv-r&d `,
     site: `energy`,
     cost: .83,
     benefit: 10.8,
