@@ -254,7 +254,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Investment into Solar Energy - World`,
-    link: `/energy/energy_production/solar#solar-power`,
+    link: `/energy/energy_production/solar#accelerate-investment-into-solar-energy`,
     site: `energy`,
     cost: 1105.3,
     benefit: 1591.2,
