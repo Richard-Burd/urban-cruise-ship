@@ -34,7 +34,7 @@ export const solutionData = [
   },
   {
     solution: `Clean Energy Standard - U.S.`,
-    link: `/energy/energy_socioeconomics/policy_se#clean-energy-standard`,
+    link: `/energy/energy_socioeconomics/policy_se#clean-energy-standard-u-s`,
     site: `energy`,
     cost: 36.7,
     benefit: 58.9,
@@ -265,7 +265,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Investment into Wind Energy - World`,
-    link: `/energy/energy_production/wind#wind-power`,
+    link: `/energy/energy_production/wind#accelerate-investment-into-wind-energy`,
     site: `energy`,
     cost: 893.86,
     benefit: 1492.38,
@@ -364,7 +364,7 @@ export const solutionData = [
   },
   {
     solution: `Standardized Food Labeling - U.S.`,
-    link: `/matter/ag_dist/food_waste#food-waste-sell-loose-us`,
+    link: `/matter/ag_dist/food_waste#standardized-food-labeling-u-s`,
     site: `matter`,
     cost: 381,
     benefit: 552,
@@ -508,7 +508,7 @@ export const solutionData = [
 
   {
     solution: `Establish E-waste Infrastructure - US`,
-    link: `/waste/hazardous_waste/ewaste#improve-recycling`,
+    link: `/waste/hazardous_waste/ewaste#e-waste-collection-and-processing-infrastructure`,
     site: `waste`,
     cost: 32.26,
     benefit: 55.38,
