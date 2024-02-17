@@ -342,7 +342,7 @@ export const solutionData = [
   },
   {
     solution: `Methane Control on Oil Wells`,
-    link: `/energy/energy_production/petroleum#methanecontrol-on-oil-wells`,
+    link: `/energy/energy_production/petroleum#methane-control-on-oil-wells`,
     site: `energy`,
     cost: 0.633,
     benefit: 49,
