@@ -460,7 +460,7 @@ export const solutionData = [
 
   {
     solution: `First Expired First Out Food Inventory Management- US`,
-    link: `/matter/ag_dist/food_waste#first-expired-first-out-inventory-management-us`,
+    link: `/matter/ag_dist/food_waste#first-expired-first-out-food-inventory-management-us`,
     site: `matter`,
     cost: .315,
     benefit: 1.43,
