@@ -604,7 +604,7 @@ export const solutionData = [
 
   {
     solution: `Ban Nontherapeutic Livestock Antibiotics`,
-    link: `/matter/ag_env/ag_risk#ban-nontheraputic-livestock-antibiotics`,
+    link: `/matter/ag_env/ag_risk#ban-nontherapeutic-livestock-antibiotics`,
     site: `matter`,
     cost: 0.3,
     benefit: 5.58,
