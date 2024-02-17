@@ -664,7 +664,7 @@ export const solutionData = [
 
   {
     solution: `Concentrated Solar Power Plants R&D – U.S.`,
-    link: `/energy/energy_production/solar#concentrated-solar-r-d-u.s. `,
+    link: `/energy/energy_production/solar#concentrated-solar-r-d---us `,
     site: `energy`,
     cost: .83,
     benefit: 6.6,
