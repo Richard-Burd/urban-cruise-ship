@@ -544,7 +544,7 @@ export const solutionData = [
 
   {
     solution: `Waste Levy on Coal Burning - World`,
-    link: `/waste/hazardous_waste/industrial_waste#waste-pricing-on-coal-burning`,
+    link: `/waste/hazardous_waste/industrial_waste#waste-levy-on-coal-burning-world`,
     site: `waste`,
     cost: 7.5,
     benefit: 10.4,
@@ -556,7 +556,7 @@ export const solutionData = [
 
   {
     solution: `Pedestrian Skybridge - Manhattan`,
-    link: `/energy/transport/transpo_short#pedestrian-skybridges`,
+    link: `/energy/transport/transpo_short#manhattan-pedestrian-skybridge`,
     site: `energy`,
     cost: 13,
     benefit: 22,
@@ -580,7 +580,7 @@ export const solutionData = [
 
   {
     solution: `Reverse Osmosis Arsenic Filtration - World`,
-    link: `/habitat/environment/chemical_socio#arsenic-treatment`,
+    link: `/habitat/environment/chemical_socio#reverse-osmosis-filtration-systems`,
     site: `habitat`,
     cost: 2.58,
     benefit: 2.1,
@@ -604,7 +604,7 @@ export const solutionData = [
 
   {
     solution: `Ban Nontherapeutic Livestock Antibiotics`,
-    link: `/matter/ag_env/ag_risk#ban-livestock-antibiotics`,
+    link: `/matter/ag_env/ag_risk#ban-nontheraputic-livestock-antibiotics`,
     site: `matter`,
     cost: 0.3,
     benefit: 5.58,
@@ -640,7 +640,7 @@ export const solutionData = [
 
   {
     solution: `Small Modular Reactor R&D – U.S.`,
-    link: `/energy/energy_production/nuclear#small-modular-reactor-rnd `,
+    link: `/energy/energy_production/nuclear#small-modular-reactor-r-d-us `,
     site: `energy`,
     cost: .46,
     benefit: 6,
@@ -652,7 +652,7 @@ export const solutionData = [
 
   {
     solution: `Advanced Reactor Technology R&D – U.S.`,
-    link: `/energy/energy_production/nuclear#advanced-reactor-rnd `,
+    link: `/energy/energy_production/nuclear#advanced-reactor-r-d-us `,
     site: `energy`,
     cost: .46,
     benefit: 1.32,
@@ -664,7 +664,7 @@ export const solutionData = [
 
   {
     solution: `Concentrated Solar Power Plants R&D – U.S.`,
-    link: `/energy/energy_production/solar#concentrated-solar-r-d-us`,
+    link: `/energy/energy_production/solar#concentrated-solar-r-d `,
     site: `energy`,
     cost: .83,
     benefit: 6.6,
