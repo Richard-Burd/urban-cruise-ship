@@ -210,7 +210,7 @@ export const solutionData = [
   },
   {
     solution: `School Lunch Meat Removal - U.S.`,
-    link: `/matter/diet/diet_fw#school-lunch-meat-removal`,
+    link: `/matter/diet/diet_health#national-school-lunch-program-meat-removal-u-s`,
     site: `matter`,
     cost: 0.013,
     benefit: 7.65,
@@ -309,7 +309,7 @@ export const solutionData = [
   },
   {
     solution: `Europe Should Maintain Nuclear Fleet`,
-    link: `/energy/energy_production/nuclear#europe-should-maintain-nuclear-fleet`,
+    link: `/energy/energy_socioeconomics/geopolitics_se#europe-should-maintain-nuclear-fleet`,
     site: `energy`,
     cost: 20,
     benefit: 60,
@@ -320,7 +320,7 @@ export const solutionData = [
   },
   {
     solution: `Methane Control on Coal Mines`,
-    link: `/energy/energy_production/coal#coal-methane`,
+    link: `/energy/energy_production/coal#methane-control-on-coal-mines`,
     site: `energy`,
     cost: 3.3,
     benefit: 31,
@@ -331,7 +331,7 @@ export const solutionData = [
   },
   {
     solution: `Natural Gas - Tighter Regulation on Leakage`,
-    link: `/energy/energy_production/gas#tighter-regulation-on-leakage-rates`,
+    link: `/energy/energy_production/gas#tighter-regulation-on-leakage`,
     site: `energy`,
     cost: 0.285,
     benefit: 40,
@@ -342,7 +342,7 @@ export const solutionData = [
   },
   {
     solution: `Methane Control on Oil Wells`,
-    link: `/energy/energy_production/oil#methane-oil`,
+    link: `/energy/energy_production/petroleum#methanecontrol-on-oil-wells`,
     site: `energy`,
     cost: 0.633,
     benefit: 49,
@@ -388,7 +388,7 @@ export const solutionData = [
 
   {
     solution: `Ultrafiltration Membrane Technology for Water Filtration - U.S.`,
-    link: `/matter/water/clean_water#water-treatment-ultrafiltration`,
+    link: `/matter/water/clean_water#ultrafiltration-systems-u-s`,
     site: `matter`,
     cost: 7.89,
     benefit: 17.34,
@@ -400,7 +400,7 @@ export const solutionData = [
 
   {
     solution: `Hermetic Storage for Postharvest Loss - Tanzania`,
-    link: `/matter/ag_dist/food_waste#post-harvest-loss-tanzania`,
+    link: `/matter/ag_dist/food_waste#hermetic-storage-bags`,
     site: `matter`,
     cost: 59.9,
     benefit: 276.4,
@@ -436,7 +436,7 @@ export const solutionData = [
 
   {
     solution: `Composting Infrastructure`,
-    link: `/waste/waste_economics/waste_facilities#compost-mandate`,
+    link: `/waste/waste_economics/waste_facilities#composting-infrastructure-and-policy`,
     site: `waste`,
     cost: 97.56,
     benefit: 220.89,
@@ -484,7 +484,7 @@ export const solutionData = [
 
   {
     solution: `Heat Mitigation through Trees - World`,
-    link: `/cities/cities_energy_and_pollution/heat_island#heat-mitigation-through-trees`,
+    link: `/cities/cities_energy_and_pollution/heat_island#heat-mitigation-through-trees-world`,
     site: `cities`,
     cost: 46.19,
     benefit: 89.62,
@@ -496,7 +496,7 @@ export const solutionData = [
 
   {
     solution: `Green Roofs in Urban Planning - US`,
-    link: `/cities/cities_land_use/cities_natural_land#green-roofs`,
+    link: `/cities/cities_land_use/cities_natural_land#implement-green-roofs-into-urban-areas`,
     site: `cities`,
     cost: 5.56,
     benefit: 19.08,
@@ -664,7 +664,7 @@ export const solutionData = [
 
   {
     solution: `Concentrated Solar Power Plants R&D – U.S.`,
-    link: `/energy/energy_production/solar#concentrated-solar-r-d `,
+    link: `/energy/energy_production/solar#concentrated-solar-r-d-u-s `,
     site: `energy`,
     cost: .83,
     benefit: 6.6,
@@ -700,7 +700,7 @@ export const solutionData = [
 
   {
     solution: `Luminescent Solar Concentrator Technology R&D – U.S.`,
-    link: `/energy/energy_production/solar#lsc-rd `,
+    link: `/energy/energy_production/solar#lsc-r-d `,
     site: `energy`,
     cost: .83,
     benefit: 1.76,
@@ -724,7 +724,7 @@ export const solutionData = [
 
   {
     solution: `Plan to End TB - World`,
-    link: `/habitat/wellbeing/health_socio#plan-to-end-tb`,
+    link: `/habitat/wellbeing/health_socio#plan-to-end-tuberculosis-world`,
     site: `habitat`,
     cost: 2.6,
     benefit: 99.6,
