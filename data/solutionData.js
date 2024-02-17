@@ -276,7 +276,7 @@ export const solutionData = [
   },
   {
     solution: `Natural Gas Plants with Carbon Capture - World`,
-    link: `/energy/energy_production/gas#gas-power`,
+    link: `/energy/energy_production/gas#build-gas-fired-power-plants-with-ccus-world`,
     site: `energy`,
     cost: 22.1,
     benefit: 22.7,
@@ -287,7 +287,7 @@ export const solutionData = [
   },
   {
     solution: `Accelerate Development and Deployment of Geothermal - World`,
-    link: `/energy/energy_production/geothermal#geothermal-power`,
+    link: `/energy/energy_production/geothermal#accelerate-development-and-deployment-of-geothermal`,
     site: `energy`,
     cost: 23.6,
     benefit: 28.3,
@@ -532,7 +532,7 @@ export const solutionData = [
 
   {
     solution: `LED Street Lights With Full Cut-Off Shielding - World`,
-    link: `/cities/cities_energy_and_pollution/light#light-pollution-led`,
+    link: `/cities/cities_energy_and_pollution/light#led-street-lights-with-full-cut-off-shielding-world`,
     site: `cities`,
     cost: 15.5,
     benefit: 20.8,
@@ -736,7 +736,7 @@ export const solutionData = [
 
   {
     solution: `Biochar for Carbon Sequestration - China`,
-    link: `/habitat/environment/geoengineering#biochar-for-sequestration`,
+    link: `/habitat/environment/geoengineering#biochar-for-carbon-sequestration-china`,
     site: `habitat`,
     cost: 84.64,
     benefit: 46,
