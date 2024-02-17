@@ -640,7 +640,7 @@ export const solutionData = [
 
   {
     solution: `Small Modular Reactor R&D – U.S.`,
-    link: `/energy/energy_production/nuclear#small-modular-reactor-r-d-us `,
+    link: `/energy/energy_production/nuclear#small-modular-reactor-r-d-u-s `,
     site: `energy`,
     cost: .46,
     benefit: 6,
