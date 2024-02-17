@@ -460,7 +460,7 @@ export const solutionData = [
 
   {
     solution: `First Expired First Out Food Inventory Management- US`,
-    link: `/matter/ag_dist/food_waste#food-waste-fefo`,
+    link: `/matter/ag_dist/food_waste#first-expired-first-out-inventory-management-us`,
     site: `matter`,
     cost: .315,
     benefit: 1.43,
@@ -472,7 +472,7 @@ export const solutionData = [
 
   {
     solution: `IUU Fishing Global Reporting Requirements`,
-    link: `/oceans/ocean_industry/seafood#iuusimp`,
+    link: `/oceans/ocean_industry/seafood#global-report-requirements`,
     site: `oceans`,
     cost: 2.4,
     benefit: 11,
@@ -652,7 +652,7 @@ export const solutionData = [
 
   {
     solution: `Advanced Reactor Technology R&D – U.S.`,
-    link: `/energy/energy_production/nuclear#advanced-reactor-r-d-us `,
+    link: `/energy/energy_production/nuclear#advanced-reactor-r-d-u-s `,
     site: `energy`,
     cost: .46,
     benefit: 1.32,
