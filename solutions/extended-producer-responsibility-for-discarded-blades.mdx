@@ -1,20 +1,87 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 export const problem = "Waste From Decommissioned Wind Turbines";
 export const solution = "Extended Producer Responsibility for Discarded Blades";
 
-We proposed that extended producer responsibility rules (EPR) be adopted for wind turbine blades. Such rules would require manufacturers of wind turbines, or utilities that install them, to recycle the blades after they are decommissioned from use. One form such rules might take are mandates to achieve a given recycling rate, where the rate increases as fast as recycling facilities can practically be scaled up [^"1"].
+## Description
 
-An EPR mandate would help facilitate any number of possible uses for recycled turbine blades, such as:
+We propose that extended producer responsibility rules (EPR) be adopted for wind turbine blades.
 
-- Powerline structures [^"7"],
-- Pedestrian bridges for greenways [^"7"],
-- 3D printing feedstock, [^"14"],
-- New composite materials [^"9"].
+## Background
 
-An EPR mandate may facilitate recycling in other ways, such as spurring the adoption of more recyclable blade material [^"12"].
+Extended producer responsibility would require manufacturers or installers of wind turbines to recycle the blades after they are decommissioned from use. One form such rules might take are mandates to achieve a given recycling rate, where the rate increases as fast as recycling facilities can practically be scaled up [^"1"].
+
+Possible reuses of turbine blades include powerline structures [^"7"], pedestrian bridges for greenways [^"7"], 3D printing feedstock [^"14"], and new composite materials [^"9"].
+
+## Calculations
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Wind Turbine Blade Recycling"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"10 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Feb. 16, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 1.574842105263157,
+      displayedValue: "1.6 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 4.349473684210525,
+      displayedValue: "$4.3 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+To calculate these figures, we estimate that just over 10 million tons of wind turbine blades will be decommissioned annually by 2050. This is based on a project 2.2 million tons of blades decommissioned annually in 2050 in the United States [^"2"] and that the United States comprised about 20% of worldwide wind power generation in 2022 [^"3"].
+
+We estimate per-ton impacts of end-of-life management of turbine blades from Yang et al. [^"4"]. For both greenhouse gas reduction and financial benefit, the best option that Yang et al. assess is mechanical recycling of blades into glass fibers and fine powder, with a small unrecyclable residue landfilled. Mechanical recycling with landfilling of residue has an advantage of 0.97 tons of CO<sub>2</sub> reduced per ton of blades processed, relatively to landfilling, mostly as a result of displacing the need to manufacture new glass fibers.
+
+Per-ton costs and benefits is based on China and derived from Yang et al. [^"4"] and again assesses mechanical recycling with landfilling of unrecyclable residue. Costs include $26/ton for transportation to recycling facilities, $11/ton for handing and shredding, $77/ton for grinding of blades, $6/ton for sorting and classification of recycled material, $14/ton for depreciation of equipment, and $16/ton for transportation of unrecyclable residue to landfills and the tipping fees for those landfills.
+
+Benefits include $26/ton for avoided transportation to a landfill, $11/ton for avoided handling at the landfill, $23/ton for avoided landfill tipping fees, $335/ton for the value of recovered glass fibers, and $19/ton for the value of recovered filler material.
+
+A cost of dismantling the turbines, which is common to all end-of-life options, is not included. Numbers stated here do not add exactly to numbers portrayed in the graphic above due to independent rounding. Note that the numbers presented are assessed for a scenario in China, and they would have to be adapted to find exact cost and benefit figures in other countries.
+
+## Implementation
+
+Wind power at a large scale is relatively new, and consequently an industry to recycle blades is not yet well-developed [^"7"]. Strategies to build a recycling industry include a government-funded competition to develop new recycling techniques [^"5"] and a ban on turbine blades in landfills [^"6"].
+
+An EPR mandate may facilitate recycling by spurring the adoption of more recyclable blade material [^"12"].
+
+##### Lead researcher: Michael Goff - Last updated: February 17, 2024
 
 [^"1"]: Beauson, J., Laurent, A., Rudolph, D. P., Jensen, J. P. ["The complex end-of-life of wind turbine blades: A review of the European context"](https://www.sciencedirect.com/science/article/pii/S136403212101114X). Renewable and Sustainable Energy Reviews 155: 111847. March 2022.
+
+[^"2"]: Cooperman, A., Eberle, A., Lantz, E. ["Wind turbine blade material in the United States: Quantities, costs, and end-of-life options"](https://www.sciencedirect.com/science/article/abs/pii/S092134492100046X?via%3Dihub). Resources, Conservation and Recycling <b>168</b>: 105439. May 2021.
+
+[^"3"]: Energy Institute. ["Statistical Review of World Energy"](https://www.energyinst.org/statistical-review). June 2023.
+
+[^"4"]: Yang, J., Meng, F., Zhang, L., McKechnie, J., Chang, Y., Ma, B., Hao, Y., Li, X., Pender, K., Yang, L., Leeke, G. A. ["Solutions for recycling emerging wind turbine blade waste in China are not yet effective"](https://www.nature.com/articles/s43247-023-01104-w). Communications Earth & Environment <b>4</b>(1): 466. December 2023.
+
+[^"5"]: American Made Challenges, U.S. Department of Energy. ["Wind Turbine Materials Recycling Prize"](https://americanmadechallenges.org/challenges/wind-turbine-materials-recycling). Accessed February 17, 2024.
+
+[^"6"]: WindEurope. ["Wind industry calls for Europe-wide ban on landfilling turbine blades"](https://windeurope.org/newsroom/press-releases/wind-industry-calls-for-europe-wide-ban-on-landfilling-turbine-blades/). June 2021.
 
 [^"7"]: Gignac, J. ["Wind Turbine Blades Don’t Have To End Up In Landfills"](https://blog.ucsusa.org/james-gignac/wind-turbine-blades-recycling/). Union of Concerned Scientists. October 2020.
 
