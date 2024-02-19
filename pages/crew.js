@@ -249,7 +249,7 @@ const Crew = () => {
             Hobbies: gardening, cartooning, and triathlon training. Studies:
             nature, history, perception, and choice. Strengths: circumspection,
             visualization, prioritization, and willingness to change and be
-            unusual. Has: Asperger's syndrome and no car. Is: nocturnal and
+            unusual. Has: Asperger&apos;s syndrome and no car. Is: nocturnal and
             vegan. Likes: compact personal living space, preserving natural
             habitat, appropriate architecture, beauty, kindness, and creating
             unique, useful, and high-quality whatever. Hates: urban sprawl,
