@@ -159,8 +159,7 @@ const Crew = () => {
             engineering and planning, which have included some interior and
             graphic design, and structural, mechanical, plumbing, and electrical
             drawings. A variety of health-threatening factory work and odd jobs
-            brought sensitivity toward work opportunity and environmental
-            safety.
+            brought sensitivity toward work opportunity and safety.
           </div>
           <div className="my-4"></div>
           <div>
@@ -187,8 +186,18 @@ const Crew = () => {
                 <i>23 significant accomplishments</i>
               </b>
             </a>
-            , among them ones unique to the U.S. and world. Achieving zero-waste
-            is described both simply, and more comprehensively. Many{" "}
+            , among them ones unique to the U.S. and world. Achieving{" "}
+            <a
+              href="https://www.ramtn.org/studies/zero-waste"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>
+                <i>zero-waste</i>
+              </b>
+            </a>{" "}
+            is described. Many{" "}
             <a
               href="https://www.ramtn.org/outreach/handouts"
               className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
@@ -198,19 +207,17 @@ const Crew = () => {
               <b>
                 <i>handouts</i>
               </b>
-            </a>{" "}
-            are shown. Regulatory and compliance work, often overlooked, but
-            essential, has been extensive. Display of all of those documents
-            currently remains under construction.
+            </a>
+            . Extensive regulatory and compliance work. Display of all
+            documents, with captions, is not yet complete.
           </div>
           <div className="my-4"></div>
           <div>
-            John&apos;s advocacy has included leadership on issues ranging from
-            health care, peace, third party and bioregional politics, mass
-            transit, scenery preservation and billboards, economic disparity,
-            and human and animal rights. Since 2002, John&apos;s methods,
-            successes, and personal lifestyle led to profiles in two newspapers,
-            two magazines, a 2004 documentary{" "}
+            John&apos;s advocacy has also included health care, peace, third
+            party and bioregional politics, mass transit, scenery preservation
+            and billboards, economic disparity, and human and animal rights. His
+            methods, successes, and personal lifestyle led to profiles in two
+            newspapers, two magazines, a 2004 documentary{" "}
             <a
               href="https://www.imdb.com/title/tt1863278/"
               target="_blank"
@@ -236,8 +243,18 @@ const Crew = () => {
             , and listings in Marquis Who&apos;s Who in America, Who&apos;s Who
             in the World, and Who&apos;s Who in Science and Engineering. John is
             among the 5% of their listees Marquis has given a “Lifetime
-            Achievement Award” to. Hobbies include gardening, cartooning, and
-            triathlons.
+            Achievement Award” to.
+          </div>
+          <div>
+            Hobbies: gardening, cartooning, and triathlon training. Studies:
+            nature, history, perception, and choice. Strengths: circumspection,
+            visualization, prioritization, and willingness to change and be
+            unusual. Has: Asperger's syndrome and no car. Is: nocturnal and
+            vegan. Likes: compact personal living space, preserving natural
+            habitat, appropriate architecture, beauty, kindness, and creating
+            unique, useful, and high-quality whatever. Hates: urban sprawl,
+            waste, dishonesty, hypocrisy, cruelty, and opposition without
+            supporting better viable alternatives.
           </div>
         </div>
         <center className="link-icon-set">
@@ -478,17 +495,29 @@ const Crew = () => {
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
-            jye (lowercase j) serves as a graphic designer, researcher,
-            and design consultant at Urban Cruise Ship. Some notable contributions include dynamic graphic-generating interactive tables on the History site, automated standardized estimates graphics for solutions, and concept distillation and search automation for Urban Foot Notes.
+            jye (lowercase j) serves as a graphic designer, researcher, and
+            design consultant at Urban Cruise Ship. Some notable contributions
+            include dynamic graphic-generating interactive tables on the History
+            site, automated standardized estimates graphics for solutions, and
+            concept distillation and search automation for Urban Foot Notes.
           </div>
           <div className="my-4"></div>
           <div>
-            They are a non-binary artist and performer. Curiously-themed parties are a specialty.  Their friends network includes many societal minorities.  Multiple spectra are represented.  Five years of college served an educational, not credentialing, purpose.  Hobbies include gaming, history, architectural exploration and hiking.  D&D played well.  Trains, castles, cathedrals, old forests, mountains loved.  Fairies too. 
-            
-            
+            They are a non-binary artist and performer. Curiously-themed parties
+            are a specialty. Their friends network includes many societal
+            minorities. Multiple spectra are represented. Five years of college
+            served an educational, not credentialing, purpose. Hobbies include
+            gaming, history, architectural exploration and hiking. D&D played
+            well. Trains, castles, cathedrals, old forests, mountains loved.
+            Fairies too.
           </div>
           <div className="my-4"></div>
-          <div>They consider themselves a yoga student, and environmentalist. They hope to learn more, to grow, and are always looking for ways to do both. Their webpage is below if you wish to see a sampling of their art.</div>
+          <div>
+            They consider themselves a yoga student, and environmentalist. They
+            hope to learn more, to grow, and are always looking for ways to do
+            both. Their webpage is below if you wish to see a sampling of their
+            art.
+          </div>
         </div>
         <center className="link-icon-set">
           <a href="https://jyeartstudio.com" target="_blank" rel="noreferrer">
