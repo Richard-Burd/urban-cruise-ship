@@ -245,6 +245,7 @@ const Crew = () => {
             among the 5% of their listees Marquis has given a “Lifetime
             Achievement Award” to.
           </div>
+          <div className="my-4"></div>
           <div>
             Hobbies: gardening, cartooning, and triathlon training. Studies:
             nature, history, perception, and choice. Strengths: circumspection,
