@@ -1,7 +1,7 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Risk of Uncontrolled Warming";
-export const solution = "Biochar for Carbon Sequestration - China";
+export const problem = "RECs Not Always Transparent";
+export const solution = "Blockchain for RECs";
 
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
@@ -13,69 +13,47 @@ import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
-We examine the use of biochar as a means of carbon sequestration in China.
-
+We propose the use of blockchain to address transparency issues with regards to Renewable Energy Credits.
 
 ## Background
 
-Biochar, a carbon-rich product derived from biomass, acts as a stable carbon storage method. Its application in soils not only sequesters carbon but also improves soil health[^"4"].
 
-Biochar production involves biomass that is heated at 300°C to 700°C in an oxygen-limited environment, producing the biochar, bio-oil and synthetic gas (which can be used in other applications). Resistance to decomposition is a unique feature of biochar from the original biomass that would just decay to release CO2 into the atmosphere within a much shorter period[^"3"].
+Renewable Energy Certificates (RECs) are tradable certificates that represent the environmental attributes or benefits of renewable energy generation. When renewable energy is produced, it is fed into the grid and mixed with energy from other sources, making it difficult to determine which electricity is renewable. RECs solve this problem by allowing the environmental benefits of renewable energy to be separated and traded as a separate commodity[^"4"].
 
-It is then applied to the soil and worked into the ground in a process termed 'amendment'. The stored biochar can then remain for hundreds to thousands of years within the soil. This stability is derived from the fact that the carbon structure of biochar is extremely resistant to the microbial degradation that usually releases CO2 back into the air from organic materials. Biochar enhances the health of the soil through water retention, nutrient availability, and increased microbial activity. All these can lead to more increased plant growth, which will further pull more carbon dioxide from the atmosphere[^"3"].
+Many companies claim to switch to renewable energy through the purchase of cheap clean energy certificates without buying physical wind or solar power. This approach may not encourage the development of new renewable energy projects and could undermine efforts to combat climate change by failing to replace fossil fuel power with clean energy, especially when it is not always clear that the Renewable Energy Credits (RECs) represent actual renewable energy produced[^"3"]. RECs face criticism of not always being transparent about their accounting, and a study published in Nature has found that the mitigation reported is not accurate, and the accounting of RECs needs to be revised[^"2"]. This may give the misleading impression that companies are making more progress towards sustainability targets than they actually are[^"2"].
 
-The agricultural sector produces 5 billion metric tons of waste biomass per year, with over 70% coming from Asia[^"2"]. China expects to produce Negative Emission Technologies (NETs) capable of providing negative emissions of up to 2.91 billion tons of CO2 per year between 2050 and 2060. Biochar has been examined as a NET, which could sustainably provide 0.92 Gigatons of CO2 sequestration annually in China alone[^"1"]. Globally, biochar could sequester 2.5 gigatons per year[^"2"].
+Currently, REC trading platforms are often centralized and can be prone to security breaches, lack transparency, and are not always scalable to handle large volumes of trading[^"5"]. Properly tracing the origin of energy to ensure a credible chain of custody introduces significant administrative burdens, with centralized regulatory bodies being responsible for oversight on the creation, transfer, and cancellation of RECs so that double counting is prevented[^"8"]. 
+.
+One of the key advantages of using blockchain for RECs is its decentralized nature, which eliminates the need for intermediaries and provides greater transparency and accountability in the trading process[^"1"].
+
+Blockchain technology utilizes tokens which are a digital representation of something else. This could be currency, a commodity, an asset, or, in this case, a certain amount of renewable energy. This tokenization simplifies the REC trading process and also addresses significant challenges such as double counting and fraud[^"7"].
 
 
-<DynamicSolutionGraphic
-  barChartTitle={"Biochar for Carbon Sequestration - China"}
-  barChartTitle2={""}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={"920 million"}
-  arrowText2={"tons CO₂eq"}
-  arrowText3={"reduction"}
-  arrowText4={"annually"}
-  mastheadToggle={''}
-  mastheadText3={"jye 2-12-2023"}
-  
-  
-  staticData={[   
-    {
-      name: "Benefits",
-      barlength: 46,
-      displayedValue: "$46*",
-      site: "null",
-    },
-
-        {
-      name: "Costs",
-      barlength: 84.64,
-      displayedValue: "$84.64 Billions USD/year",
-      site: "null",
-    },
-        
-  ]}
-/>
-#### Benefits derived from the [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) only, without factoring in the other expected benefits to crop yields, reductions in fertilizers, water retention, and other benefits[^"1"].
-
-Crop Yield increases ranged from 8% to 15%, depending on the crop[^"1"].
-
-The cost of biochar production is 30% lower than of activated carbon, and is more economical than many other sequestration technologies[^"2"]. However, the cost per ton of CO2 mitigation is still higher than the generally accepted [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) of $50, with a mean figure of $92.
 
 
 ## Implementation
 
-The production, which involves intenstive could increase emissions if the process is left unregulated, and carbon intensive fuels are used in its production[^"2"]. Further research is needed to advance biochar to a mature technology.
+The application of blockchain in renewable energy procurement and the verification of RECs faces challenges, including the need for significant technological and regulatory adaptation to ensure its successful integration into existing energy markets[^"6"].
+
+Blockchain can present an opportunity for democratized energy production. Care must be taken that the system can function in a fair an equitable manner. Regulations, such as California’s Electric Rule 21, require that customers who use energy-generating equipment give access to the equipment to utility providers without providing compensation to the owners of the equipment[^"9"].
+
+Frameworks that address the operational and transactional issues faced by blockchain are critical to the implementation[^"10"]. 
+
+##### Lead Researcher: jye - Last Updated February 19, 2024
+
+[^"1"]: Han CS, Lotfi Ghahroud M, Park MJ, Ghassemi Nejad J. [A new blockchain investment and energy certificate platform. ](https://www.tandfonline.com/doi/full/10.1080/23311916.2023.2260226). Cogent Engineering [Internet]. September 2023.
+[^"2"]: Bjørn A, Lloyd SM, Brander M, Matthews HD. [Renewable energy certificates threaten the integrity of corporate science-based targets. ](https://www.nature.com/articles/s41558-022-01379-5). Nature Climate Change. June 2022.
+[^"3"]: Naik G. [Problematic corporate purchases of clean energy credits threaten net zero goals](https://www.spglobal.com/esg/insights/problematic-corporate-purchases-of-clean-energy-credits-threaten-net-zero-goals). S&P Global. May 2021.
+[^"4"]: Lau C. [Bottom Line on Renewable Energy Certificates](https://www.wri.org/research/bottom-line-renewable-energy-certificates). World Resources Institute. Accessed February 2024.
+[^"5"]: Johnson M. [Establishing a Secure, Transparent, and Autonomous Blockchain of Custody for Renewable Energy Credits and Carbon Credits. ](https://ieeexplore.ieee.org/document/8486626). IEEE Journals. October 2018.
+[^"6"]: Jerry I. [Blockchain for Corporate Renewable Energy Procurement-Potential for Verification of Renewable Energy Certificates](https://www.semanticscholar.org/paper/Blockchain-for-Corporate-Renewable-Energy-for-of-Hsiao/2d4f38d9f17ce1aba378759c923239797f6ded8e). US-China Law Review [Internet]. February 2018.
+[^"7"]: Zuo Y. [Tokenizing Renewable Energy Certificates (RECs)—A Blockchain Approach for REC Issuance and Trading](https://www.semanticscholar.org/paper/Tokenizing-Renewable-Energy-Certificates-(RECs)%E2%80%94A-Zuo/89356474123db591e5593d87f58b055c3c0c8be3). IEEE Access. September 2022.
+[^"8"]: Delardas O, Giannos P. Towards Energy Transition: Use of Blockchain in Renewable Certificates to Support Sustainability Commitments. [Towards Energy Transition: Use of Blockchain in Renewable Certificates to Support Sustainability Commitments](https://www.mdpi.com/2071-1050/15/1/258). Sustainability.December 2023.
+[^"9"]: [Guide to Transactive Energy: What Everyone Needs to Know](https://blockchain.ieee.org/verticals/transactive-energy/topics). IEEE. December 2023.
+[^"10"]: Nepal JP, Yuangyai N, Gyawali S, Yuangyai C. [Blockchain-Based Smart Renewable Energy: Review of Operational and Transactional Challenges](https://www.mdpi.com/1996-1073/15/13/4911). Energies [Internet]. July 2022.
 
 
-##### Lead Researcher: jye - Last Updated February 14, 2023
 
-[^"1"]:  [Exploring negative emission potential of biochar to achieve carbon neutrality goal in China | Nature Communications](https://www.nature.com/articles/s41467-024-45314-y). 
-[^"2"]:  [Challenges and opportunities for biochar to promote circular economy and carbon neutrality - ScienceDirect](https://doi.org/10.1016/j.jenvman.2023.117429). 
-[^"3"]: Lehmann J, Stephen J. [Biochar for Environmental Management]([Book.]). 2015.
-[^"4"]:  [Biochar in climate change mitigation.](https://www.nature.com/articles/s41561-021-00852-8). 
 
 
 
