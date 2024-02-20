@@ -1,0 +1,35 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Housing Affordability";
+export const solution = "Zoning Should Allow for Smaller Housing Units";
+
+## Description
+
+Insofar as cities regulate housing unit size through zoning, they should allow for greater numbers of smaller units to meet unmet market demand.
+
+## Background
+
+The housing market has not adjusted to the global increase in people who live alone. In the United States, single-persons represent at least 40% of all households, and the trend is seen internationally. Many new housing units are designed for nuclear families, and no longer meet the requirements of today's demographics[^"6"].
+
+## Implementation
+
+Local governments should consider relaxing zoning laws to allow for the construction of microunit developments in areas previously zoned exclusively for single-family homes or larger apartment buildings. This adjustment could include reducing minimum lot sizes and easing restrictions on density[^"6"].
+
+To encourage the development of microunits, cities can streamline the approval process for these projects, reducing the time and cost associated with bringing new units to market.
+
+##### Lead Researcher: jye - Last Updated February 20, 2023
+
+[^"1"]:  [https://www.semanticscholar.org/paper/Planning-deregulation-as-solution-to-the-housing-of-Chng-Reades/02ef5edc0b20da8e1d7c84db3a58cd9a45638a02](https://www.semanticscholar.org/paper/Planning-deregulation-as-solution-to-the-housing-of-Chng-Reades/02ef5edc0b20da8e1d7c84db3a58cd9a45638a02). 
+[^"2"]:  [https://www.semanticscholar.org/paper/Valuing-Naturally-Affordable-Housing%3A-Evidence-from-Denney/80dbd31be114686736e302e06b5c46e64c6a0b02](https://www.semanticscholar.org/paper/Valuing-Naturally-Affordable-Housing%3A-Evidence-from-Denney/80dbd31be114686736e302e06b5c46e64c6a0b02). 
+[^"3"]:  [https://www.semanticscholar.org/paper/Accessory-Dwelling-Units-And-Housing-Affordability-Smith/c92d9139b611b57114575ecb1e78b2fc215af7b5](https://www.semanticscholar.org/paper/Accessory-Dwelling-Units-And-Housing-Affordability-Smith/c92d9139b611b57114575ecb1e78b2fc215af7b5). 
+[^"4"]:  [https://www.semanticscholar.org/paper/Accessory-Dwelling-Units-And-Housing-Affordability-Smith/c92d9139b611b57114575ecb1e78b2fc215af7b5](https://www.semanticscholar.org/paper/Accessory-Dwelling-Units-And-Housing-Affordability-Smith/c92d9139b611b57114575ecb1e78b2fc215af7b5). 
+[^"5"]:  [https://www.semanticscholar.org/paper/Affordable-housing-production-for-low-income-groups-Turk/abcd3d3d6d5985daa0aca629d6895c92d59456c2](https://www.semanticscholar.org/paper/Affordable-housing-production-for-low-income-groups-Turk/abcd3d3d6d5985daa0aca629d6895c92d59456c2). 
+[^"6"]: Christensen, Pernille H. et al.  [What are Microunits and can this new Housing Typology Help Solve the Housing Affordability Crisis? A review of the literature.”](https://www.semanticscholar.org/paper/What-are-Microunits-and-can-this-new-Housing-Help-A-Christensen-Warren-Myers/28f3a41e338dc53a30263f7376650e0788a003f4). Semantic Scholar. April 2019.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
