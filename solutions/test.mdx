@@ -1,7 +1,7 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "RECs Not Always Transparent";
-export const solution = "Blockchain for RECs";
+export const problem = "Monoculture Crop Risks";
+export const solution = "Increase Variety in Planting";
 
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
@@ -13,46 +13,41 @@ import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
-We propose the use of blockchain to address transparency issues with regards to Renewable Energy Credits[^"11"].
+We propose that the U. S. Department of Agriculture develop low-cost polyculture techniques and disseminate them through education and outreach.
 
 ## Background
 
+Monoculture is the practice of cultivating a single crop over a wide area and poses significant risks to agriculture, including increased vulnerability to pests and diseases, soil degradation, and reduced biodiversity. To mitigate these risks and promote sustainable agriculture, a variety of strategies have been proposed and studied. This report synthesizes current research on the risks associated with monoculture in agriculture, explores mitigation strategies, and examines the cost-benefit analysis (CBA) of adopting these strategies, drawing from recent studies.
 
-Renewable Energy Certificates (RECs) are tradable certificates that represent the environmental attributes or benefits of renewable energy generation. When renewable energy is produced, it is mixed with energy from other sources, making it difficult to determine which electricity is renewable. RECs solve this problem by allowing the environmental benefits of renewable energy to be separated and traded as a separate commodity[^"4"]. However, RECs face criticism of not always being transparent about their accounting[^"2"]. With many companies claiming to switch to renewable energy through the purchase of cheap clean energy certificates without buying physical wind or solar power[^"3"], it becomes more vital to ensure RECs represent what they claim to. Otherwise, companies will appear to be more progress towards sustainability targets than they actually are[^"2"].
+Some of the drawbacks of monocultural crops include:
 
+- Pest and Disease Vulnerability: Monoculture crops are more susceptible to pests and diseases, leading to higher pesticide use and potential widespread crop failure[^"1"].
+- Soil Degradation: Continuous cultivation of a single crop can deplete soil nutrients, reduce soil fertility, and increase erosion[^"1"].
+- Reduced Biodiversity: Monoculture practices diminish agrobiodiversity, impacting ecosystem services like pollination and natural pest control[^"3"].
+- Increased GHG emissions: a study in Malaysia has shown the increase of greenhouse gas emissions related to the widespread monoculture crops for palm oil[^"4"].
 
-
-REC trading platforms are often centralized and can be prone to security breaches, lack transparency, and are not always scalable to handle large volumes of trading[^"5"]. Properly tracing the origin of energy to ensure a credible chain of custody introduces significant administrative burdens, with centralized regulatory bodies being responsible for oversight on the creation, transfer, and cancellation of RECs so that double counting is prevented[^"8"].
-One of the key advantages of using blockchain for RECs is its decentralized nature, which eliminates the need for intermediaries and provides greater transparency and accountability in the trading process[^"1"].
-
-Blockchain technology utilizes tokens which are a digital representation of something else. This could be currency, a commodity, an asset, or, in this case, a certain amount of renewable energy. This tokenization simplifies the REC trading process and also addresses significant challenges such as double counting and fraud[^"7"].
-
-
-
+Agroecology integrates ecological principles into farming practices, promoting biodiversity, efficient water use, soil health, and effective pest control. This approach includes diversifying crops, implementing crop rotations, and using natural pest control methods[^"5"].
 
 ## Implementation
 
-The application of blockchain in renewable energy procurement and the verification of RECs faces challenges, including the need for significant technological and regulatory adaptation to ensure its successful integration into existing energy markets[^"6"].
+Policy Development and Support
+Incentivize Agroecological Practices: Governments can provide financial incentives for farmers to adopt agroecological practices. This could include subsidies for organic farming, payments for ecosystem services, or tax breaks for sustainable agricultural practices[^"6"].
+.
+Research and Education: Increase funding for agroecological research and incorporate agroecology into agricultural education curricula. This would help in developing new agroecological techniques and training the next generation of farmers[^"6"].
 
-Blockchain can present an opportunity for democratized energy production. Care must be taken that the system can function in a fair an equitable manner. Regulations, such as California’s Electric Rule 21, require that customers who use energy-generating equipment give access to the equipment to utility providers without providing compensation to the owners of the equipment[^"9"].
-
-Frameworks that address the operational and transactional issues faced by blockchain are critical to the implementation[^"10"]. 
+Technical Assistance: Provide farmers with technical support for the transition to agroecology. This could involve extension services that offer advice on crop rotation, soil health, and natural pest control methods[^"7"].
+.
+Regulatory Frameworks: Develop and enforce regulations that limit the use of harmful pesticides and fertilizers, and promote soil and water conservation practices[^"6"].
 
 ##### Lead Researcher: jye - Last Updated February 19, 2024
 
-[^"1"]: Han CS, Lotfi Ghahroud M, Park MJ, Ghassemi Nejad J. [A new blockchain investment and energy certificate platform. ](https://www.tandfonline.com/doi/full/10.1080/23311916.2023.2260226). Cogent Engineering [Internet]. September 2023.
-[^"2"]: Bjørn A, Lloyd SM, Brander M, Matthews HD. [Renewable energy certificates threaten the integrity of corporate science-based targets. ](https://www.nature.com/articles/s41558-022-01379-5). Nature Climate Change. June 2022.
-[^"3"]: Naik G. [Problematic corporate purchases of clean energy credits threaten net zero goals](https://www.spglobal.com/esg/insights/problematic-corporate-purchases-of-clean-energy-credits-threaten-net-zero-goals). S&P Global. May 2021.
-[^"4"]: Lau C. [Bottom Line on Renewable Energy Certificates](https://www.wri.org/research/bottom-line-renewable-energy-certificates). World Resources Institute. Accessed February 2024.
-[^"5"]: Johnson M. [Establishing a Secure, Transparent, and Autonomous Blockchain of Custody for Renewable Energy Credits and Carbon Credits. ](https://ieeexplore.ieee.org/document/8486626). IEEE Journals. October 2018.
-[^"6"]: Jerry I. [Blockchain for Corporate Renewable Energy Procurement-Potential for Verification of Renewable Energy Certificates](https://www.semanticscholar.org/paper/Blockchain-for-Corporate-Renewable-Energy-for-of-Hsiao/2d4f38d9f17ce1aba378759c923239797f6ded8e). US-China Law Review [Internet]. February 2018.
-[^"7"]: Zuo Y. [Tokenizing Renewable Energy Certificates (RECs)—A Blockchain Approach for REC Issuance and Trading](https://www.semanticscholar.org/paper/Tokenizing-Renewable-Energy-Certificates-(RECs)%E2%80%94A-Zuo/89356474123db591e5593d87f58b055c3c0c8be3). IEEE Access. September 2022.
-[^"8"]: Delardas O, Giannos P. Towards Energy Transition: Use of Blockchain in Renewable Certificates to Support Sustainability Commitments. [Towards Energy Transition: Use of Blockchain in Renewable Certificates to Support Sustainability Commitments](https://www.mdpi.com/2071-1050/15/1/258). Sustainability.December 2023.
-[^"9"]: [Guide to Transactive Energy: What Everyone Needs to Know](https://blockchain.ieee.org/verticals/transactive-energy/topics). IEEE. December 2023.
-[^"10"]: Nepal JP, Yuangyai N, Gyawali S, Yuangyai C. [Blockchain-Based Smart Renewable Energy: Review of Operational and Transactional Challenges](https://www.mdpi.com/1996-1073/15/13/4911). Energies [Internet]. July 2022.
-[^"11"]: Moravvej-Hamedani M. personal communication, January 2024. 
-
-
+[^"1"]:  [https://oxfamilibrary.openrepository.com/bitstream/10546/315896/1/bp180-smallholders-at-risk-land-food-latin-america-230414-en.pdf](https://oxfamilibrary.openrepository.com/bitstream/10546/315896/1/bp180-smallholders-at-risk-land-food-latin-america-230414-en.pdf). 
+[^"2"]:  [https://www.ijcmas.com/abstractview.php?ID=5903&vol=6-12-2017&SNo=461](https://www.ijcmas.com/abstractview.php?ID=5903&vol=6-12-2017&SNo=461). 
+[^"3"]:  [https://esajournals.onlinelibrary.wiley.com/doi/10.1890/09-2026.1](https://esajournals.onlinelibrary.wiley.com/doi/10.1890/09-2026.1). 
+[^"4"]:  [https://www.semanticscholar.org/paper/Palm-Oil-%E2%80%93-The-Increasing-Materiality-of-and-Risks-Gopal-Kelly-Fair/b1eda0b6e2da9af7ad7980edec470da6a760cebe](). 
+[^"5"]:  [https://www.semanticscholar.org/paper/AGROECOLOGY%3A-AN-ALTERNATIVE-FOR-FOOD-SECURITY-AND-L%C3%B3pez-Col%C3%B3n-Espaillat-P%C3%A9rez/0b251771cc25edfa83ed8ed8585a65b848e85a4b](). 
+[^"6"]:  [https://www.semanticscholar.org/paper/Policies-for-agroecology-in-France%3A-implementation-Wezel-David/f4a51ee2c1480d3b9cd36cd19949d64ae0d89137](). 
+[^"7"]:  [https://www.semanticscholar.org/paper/Supporting-the-design-activity-of-farmers-in-to-an-Chizallet-Prost/b8ce485fb150584bbfff062a27ad5fd51581afc1](). 
 
 
 
