@@ -3,6 +3,11 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Need for Clean Electricity";
 export const solution = "Clean Energy Standard - U.S.";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 
 import SolutionImages from "/components/SolutionImages.js";
@@ -44,11 +49,46 @@ Environmental impact are based on the social cost of carbon of $50/ton [^"9"].
 
 Other benefits expected by 2030 include a 71% decreased in NOₓ emissions from electricity, a 96% decrease in SO₂ and mercury emissions, and the avoidance of 50,000 annual premature deaths (318 thousand in 2050) and 2 million asmtha attacks (12 million in 2050) [^"9"].
 
-<SolutionImages
- mobileSrc={"clean_energy_standard_program_costs_mobile.svg"}
- desktopSrc={"clean_energy_standard_program_costs_desktop.svg"}
- mobileHeight={500}
- desktopHeight={320}
+<DynamicSolutionGraphic
+  barChartTitle={"Clean Energy Standard Program Costs - U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"14 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye 3-3-2023"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Carbon Capture and Storage",
+      barlength: 0.153,
+      displayedValue: "$0.153 Billions USD/year",
+      site: "null",
+    },
+         {
+      name: "Fuel",
+      barlength: 8.53,
+      displayedValue: "$8.53",
+      site: "null",
+    },
+                {
+      name: "Operations & Maintenance",
+      barlength: 12.8,
+      displayedValue: "$12.8",
+      site: "null",
+    },
+                   {
+      name: "Levelized Capital",
+      barlength: 15.2,
+      displayedValue: "$15.2",
+      site: "null",
+    },
+  ]}
 />
 #### Costs and benefits are averaged over 30 years [^"9"],[^"5"],[^"6"].
 
@@ -68,7 +108,7 @@ The credit banking program could be administered by the Federal Energy Regulator
 Electric vehicle use, though not modeled here, would magnify the air quality benefits despite increasing electric generating emissions [^"5"].
 
 
-##### Lead researcher: jye - Last updated 3/3/2023
+##### Lead researcher: jye - Last updated 2/21/2024
 
 [^"1"]: Congress.gov. [S.20 - Clean Energy Standard Act of 2010](https://www.congress.gov/bill/111th-congress/senate-bill/20). 111th Congress (2009-2010). 2009. 
 [^"2"]: Congress.gov. [S.2146 - Clean Energy Standard Act of 2012](https://www.congress.gov/bill/112th-congress/senate-bill/2146). 112th Congress (2011-2012). 2012. 
