@@ -745,6 +745,32 @@ export const solutionData = [
     sources: null,
     subset: "ecology-environment"
   },
+  
+  {
+    solution: `Deep Borehole Disposal`,
+    link: `/waste/hazardous_waste/nuclear_waste#deep-borehole-disposal`,
+    site: `waste`,
+    cost: 0.21616,
+    benefit: 0.8323935326086795,
+    co2: 17,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency"
+  }
+  
+  {
+    solution: `Extended Producer Responsibility for Discarded Blades`,
+    link: `/waste/hazardous_waste/ewaste#extended-producer-responsibility-for-discarded-blades`,
+    site: `waste`,
+    cost: 1.574842105263157,
+    benefit: 4.349473684210525,
+    co2: 10,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency"
+  }
+  
+  extended-producer-responsibility-for-discarded-blades.mdx
 
 
 ]
