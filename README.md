@@ -946,9 +946,51 @@ https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation
 
 ### How To Add a Solution to the History Site’s Auto Generated Bar Charts & Tables
 
-After you create a solution, you will want to add it to History site's database of solutions that are used to display the various dynamic bar charts and dynamic tables which render both solutions and endeavors programmatically.
+After you create a new solution, you will want to add it to the History site's database of solutions that are used to display the various dynamic bar charts and dynamic tables in that site. To do this, add an entry for the solution into the [solutionData file](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/data/solutionData.js) that looks like this:
 
-Richard is still writing this section (under construction)
+```
+  {
+    solution: `Luminescent Solar Concentrator Technology R&D – U.S.`,
+    link: `/energy/energy_production/solar#lsc-r-d `,
+    site: `energy`,
+    cost: 0.83,
+    benefit: 1.76,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: " energy-production-efficiency ",
+  },
+```
+
+The `solutionData` file is located here: [`/data/solutionData.js`](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/data/solutionData.js) - notice the link above shows the site (`energy`), the subsection (`energy_production`), and then the article (`solar`) followed by a "`#`" symbol. Everything to the left of the "`#`" symbol is the URL pathway to the article (`/energy/energy_production/solar`) and everything to the right of the "`#`" symbol is a a fragment identifier link to the solution on the article page (`lsc-r-d`) - it points to the part of a page where our solution is located. Our website looks at the `solution` property inside each solution `.mdx` file located within our [`solutions/`](https://github.com/Richard-Burd/urban-cruise-ship/tree/main/solutions) directory. In our example, the `solution` property is declared like so:
+
+```
+export const solution = "LSC R&D";
+```
+
+Our website takes this value above (`"LSC R&D"`) and then runs the [`lib/convertToUrlSlug.js`](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/lib/convertToUrlSlug.js) function on it to create the fragment identifier link. This fragment identifier is "slugified" which means it is made all lower case and has words separated by dashes. In this manner, a title like: **War and Peace by Tolstoy** would be slugified to: **war-and-peace-by-tolstoy**. Once a title contains special characters like "&" or "%", there are different slugification methods out there on the internet. The method we use is defined in the `convertToUrlSlug.js` function [here](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/lib/convertToUrlSlug.js) and it automatically deletes the "`&`" (ampersand) symbol in addition to converting the capital letters to lower case letters. **IMPORTANT:** Our website looks at the value of the `solution` property as described above, it does **NOT** look at the file name of the parent `.mdx` file. In our example above, the solution's file is located here: [`solutions/lsc-rnd.mdx`](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/solutions/lsc-rnd.mdx) but the title of this file (lsc-rnd.mdx) it completely ignored by our website when it propagates all of the links to our solutions. If you are a software developer and are interested in how our website does all of this behind the scenes, there is a schematic visualization available [here](https://drive.google.com/uc?export=download&id=1tVr4Djl2sDP9BNKy77VqfqPLVS4KS1NS) to members of our organization.
+
+If you are unsure as to how our `convertToUrlSlug.js` function will slugify a particularly unconventional title, you can copy & paste the function from [here](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/lib/convertToUrlSlug.js) and then open up any internet browser and press `Ctrl+Shift+i` to open the developer tool, then paste the function into the console as shown below.
+
+![image of Google Chrome Dev Tools with convertToUrlSlug function in console](https://jyeartstudio.com/ucs-images/use_code_to_make_slug.jpg)
+
+You will then want to _call_ the function in the console with your title as the function's variable and type `Enter`. After that, you will see the resulting slug that you need to put on the left side of the "`#`" symbol in the `link` property of your new entry in the `solutionData` file is located here: [`/data/solutionData.js`](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/data/solutionData.js).
+<br>
+<br>
+<br>
+
+### How To Find a Solution's Link When Looking at It on Its Parent Article Page
+
+You may be in a situation where you already have a solution up on the site and you just want to find its fragment identifier link. You can find this link by going to an internet browser like Google Chrome and pressing `Ctrl+Shift+i` to open up the developer tools. you will then navigate to the **Elements** tab and press on the **Selector** icon. You then need to hover over the solution lozenge itself and search for the parent `id` property in the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) shown in the dev tools window.
+
+![image of Google Chrome Dev Tools with Selector in Elements Tab](https://jyeartstudio.com/ucs-images/find_solution_id_in_browser.jpg)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ---
 
