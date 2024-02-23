@@ -944,6 +944,12 @@ The Title is slugged to say: `transportation-energy-efficiency` in both the `<id
 https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation-energy-efficiency
 ](https://urban-cruise-ship.vercel.app/energy/transport/transpo_ghg#transportation-energy-efficiency)
 
+### How To Add a Solution to the History Site’s Auto Generated Bar Charts & Tables
+
+After you create a solution, you will want to add it to History site's database of solutions that are used to display the various dynamic bar charts and dynamic tables which render both solutions and endeavors programmatically.
+
+Richard is still writing this section (under construction)
+
 ---
 
 ## Instructions for Creating Article Buttons with Top and Bottom Defined Text
