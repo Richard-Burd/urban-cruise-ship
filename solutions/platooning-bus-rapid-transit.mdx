@@ -1,9 +1,79 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 export const problem = "Cost of Rail";
 export const solution = "Platooning Bus Rapid Transit";
 
-Vehicle platooning is a technology that has been developed for freight trucking, and may be easier to deploy than fully autonomous vehicles. Platooning buses in dedicated lanes can match the low cost and flexibility of BRT with the throughput of metro rail.
+## Description
+
+We recommend that transit agencies conduct trials of bus rapid transit platooning and implement the technology as soon as it is ready to be deployed.
+
+## Background
+
+Vehicle platooning is a system consisting of a lead vehicle and several autonomous vehicles that follow the lead. The technology is also being explored for freight trucking [^"1"], and may be easier to deploy than fully autonomous vehicles. Platooning buses in dedicated lanes can match the low cost and flexibility of BRT with the throughput of metro rail.
+
+## Calculations
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Platooning Bus Rapid Transit"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"260 thousand"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced/yr"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Feb. 23, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 0.37116942492599697,
+      displayedValue: "$371 million/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 7.051698935046,
+      displayedValue: "$7 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+The cost of implementing BRT platooning is based on a capital cost estimate of up to $1 million per mile (2009 dollars) [^"2"] and 5842 kilometers of BRT length worldwide [^"3"].
+
+Benefits are based on reduction of operating expenses and improved safety. Reduced operating expenses are the largest quantified benefit ($6.9 billion) and derived mostly from the reduced need for bus operators to maintain a given throughput of passengers. The savings is estimated at 60¢ per passenger trip [^"4"] and applied to about 32 million daily trips (1.2 billion annual trips) worldwide [^"3"]. We estimate an additional safety benefit of $130 million per year, based on $3600 savings per bus per year in liability [^"4"] and a world network of about 35,000 BRT buses [^"3"].
+
+To estimate the greenhouse gas reduction potential, simulations from Guangzhao, China have found that BRT platooning save an average of around 8% of fuel [^"5"]. Operational (not included factors such as supporting infrastructure and manufacturing of buses) greenhouse gas emissions from BRT are estimated at about 26 grams CO<sub>2</sub> per passenger-kilometer [^"6"], and the average BRT trip is about 11 kilometers [^"6"]. We apply these figures to 1.2 billion annual BRT trips [^"3"].
+
+(TODO: discuss air pollution, increased throughput, replacement of light rail)
+
+## Implementation
+
+(TODO: discuss field trials of platooning BRT)
+
+[^"1"]: Federal Highway Administration. ["Truck Platooning"](https://highways.dot.gov/research/laboratories/saxton-transportation-operations-laboratory/Truck-Platooning). United States Department of Transportation. November 2021.
+
+[^"2"]: Diaz, R. B., Hinebaugh, D. ["Capital costs to implement ITS applications for bus rapid transit (BRT) can vary widely ranging from $100,000 to more than $1,000,000 per mile"](https://www.itskrs.its.dot.gov/2011-sc00234).
+
+[^"3"]: EMBARQ, BRT+CoE. ["Global BRT Data"](https://brtdata.org/). In partnership with the Institute for Transportation and Development Policy. Accessed February 23, 2024.
+
+[^"4"]: Skolrud, S., Danaher, A., Brey, B., Gupta, T., Drayton, J., Shaner, K. E. ["Bus Automation: Cost Effective Solutions for Transit Operators"](https://www.wsp.com/-/media/hubs/us/fact-sheets/bus-automation_white-paper_final.pdf). WSP. June 2021.
+
+[^"5"]: Liu, J., Lin, P., Jin, P. J. ["Modelling and Simulation of Cooperative Control for Bus Rapid Transit Vehicle Platoon in a Connected Vehicle Environment"](https://hrcak.srce.hr/file/264775). Promet Traffic and Transportation <b>29</b>(1), pp. 67-75. February 2017.
+
+[^"6"]: Machado, C. M., de Andrade, C. E. S. ["Estimating CO<sub>2</sub> Emissions for Bus Rapid Transit (BRT) Using Life Cycle Assessment: A Case Study in Rio de Janeiro City"](https://www.lidsen.com/journals/aeer/aeer-04-01-015/aeer.2301015.pdf)
 
 export default ({ children }) => 
   <SolutionDropdown 
