@@ -769,6 +769,18 @@ export const solutionData = [
     sources: null,
     subset: "energy-production-efficiency",
   },
+  
+  {
+    solution: `Platooning Bus Rapid Transit`,
+    link: `/energy/transport/transpo_transit#platooning-bus-rapid-transit`,
+    site: `energy`,
+    cost: 0.37116942492599697,
+    benefit: 7.051698935046,
+    co2: 0.26,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  }
 ];
 
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
