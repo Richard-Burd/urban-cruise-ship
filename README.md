@@ -983,7 +983,7 @@ You will then want to _call_ the function in the console with your title as the 
 
 You may be in a situation where you already have a solution up on the site and you just want to find its fragment identifier link. You can find this link by going to an internet browser like Google Chrome and pressing `Ctrl+Shift+i` to open up the developer tools. you will then navigate to the **Elements** tab and press on the **Selector** icon. You then need to hover over the solution lozenge itself and search for the parent `id` property in the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) shown in the dev tools window.
 
-![image of Google Chrome Dev Tools with Selector in Elements Tab](https://jyeartstudio.com/ucs-images/find_solution_id_in_browser.jpg)
+![image of Google Chrome Dev Tools with Selector in Elements Tab](https://jyeartstudio.com/ucs-images/find_the_solution_id_in_browser.jpg)
 
 <br>
 <br>
