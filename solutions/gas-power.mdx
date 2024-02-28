@@ -3,6 +3,12 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Natural Gas Plant Emissions";
 export const solution = "Build Gas-fired Power Plants with CCUS - World";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
@@ -38,10 +44,35 @@ Costs for unabated gas plants and gas plants with CCUS are taken from Lazard [^"
 
 
 
-<SolutionImages
- mobileSrc={"gas_production_calculation_benefits_mobile.svg"}
- desktopSrc={"gas_production_calculation_benefits_desktop.svg"}
+<DynamicSolutionGraphic
+  barChartTitle={"Gas with CCS Benefits Calculation - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye 5-6-2023"}
+  
+  
+  staticData={[
+    {
+      name: "Avoided Gas Energy",
+      barlength: 17.7,
+      displayedValue: "$17.7",
+      site: "null",
+    },
+    {
+      name: "Avoided Social Carbon Costs",
+      barlength: 5,
+      displayedValue: "$5 Billions USD/Year",
+      site: "null",
+    },
+  ]}
 />
+
 
 ## Implementation
 
@@ -53,7 +84,8 @@ Governments can provide tax credits, subsidies, or regulatory frameworks to deve
 ##### Lead researcher: jye - Last updated 5/6/2023
 
 [^"1"]:  IPCC, 2005: ["IPCC Special Report on Carbon Dioxide Capture and Storage"](https://www.ipcc.ch/report/carbon-dioxide-capture-and-storage/). Prepared by Working Group III of the Intergovernmental Panel on Climate Change [Metz, B., O. Davidson, H. C. de Coninck, M. Loos, and L. A. Meyer (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, 442 pp.
-[^"2"]:  Babaee, S., Loughlin, D.H. ["Exploring the role of natural gas power plants with carbon capture and storage as a bridge to a low-carbon future"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7252577/). Clean technologies and environmental policy <b>20</b>(2), pp. 379-391. March 2018.
+
+[^"2"]: Popa, A. ["CCGT with CCS - integration options"](https://ieaghg.org/docs/General_Docs/PCCC1/Abstracts_Final/pccc1Abstract00055.pdf). 1st Post Combustion Capture Conference.
 [^"3"]: Song, D., Jiang, T., Rao, C. [Review of Policy Framework for the Development of Carbon Capture, Utilization and Storage in China](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9778907/). International Journal of Environmental Research and Public Health <b>19</b>(24): 16853. December 2022.
 [^"4"]:  [CCUS or no CCUS? Societal support for policy frameworks and stakeholder perceptions in France, Spain, and Poland](https://onlinelibrary.wiley.com/doi/10.1002/ghg.2195). 
 [^"5"]: United States Department of Energy. [How Gas Turbine Power Plants Work](https://www.energy.gov/fecm/how-gas-turbine-power-plants-work). Accessed February 26, 2024.
@@ -68,7 +100,7 @@ Governments can provide tax credits, subsidies, or regulatory frameworks to deve
 [^"14"]:  [](). 
 [^"15"]:  [](). 
 [^"16"]:  [Net Zero by 2050 – Analysis - IEA](https://www.iea.org/reports/net-zero-by-2050). International Energy Agency.May 2021.
-[^"17"]:  [](). 
+[^"17"]:  Babaee, S., Loughlin, D.H. ["Exploring the role of natural gas power plants with carbon capture and storage as a bridge to a low-carbon future"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7252577/). Clean technologies and environmental policy <b>20</b>(2), pp. 379-391. March 2018.
 [^"18"]:  [](). 
 [^"19"]:  [](). 
 [^"20"]:  [](). 
