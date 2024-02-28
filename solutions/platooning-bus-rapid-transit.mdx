@@ -1,9 +1,105 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 export const problem = "Cost of Rail";
 export const solution = "Platooning Bus Rapid Transit";
 
-Vehicle platooning is a technology that has been developed for freight trucking, and may be easier to deploy than fully autonomous vehicles. Platooning buses in dedicated lanes can match the low cost and flexibility of BRT with the throughput of metro rail.
+## Description
+
+We recommend that transit agencies conduct trials of bus rapid transit platooning and implement the technology as soon as it is ready to be deployed.
+
+## Background
+
+Vehicle platooning is a system consisting of a lead vehicle and several autonomous vehicles that follow the lead. The technology is also being explored for freight trucking [^"1"] and may be easier to deploy than fully autonomous vehicles. Platooning buses in dedicated lanes can provide the low cost and flexibility of BRT with the throughput of metro rail.
+
+## Calculations
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Platooning Bus Rapid Transit"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"260 thousand"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced/yr"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Feb. 23, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 0.37116942492599697,
+      displayedValue: "$371 million/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 7.051698935046,
+      displayedValue: "$7 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+The cost of implementing BRT platooning is based on a capital cost estimate of up to $1 million per mile (2009 dollars) [^"2"] and 5842 kilometers of BRT length worldwide [^"3"]. A 7% discount rate is applied.
+
+Benefits are based on reduction of operating expenses and improved safety. Reduced operating expenses are the largest quantified benefit ($6.9 billion) and derived mostly from the reduced need for bus operators to maintain a given throughput of passengers. The savings is estimated at 60¢ per passenger trip [^"4"] and applied to about 32 million daily trips (1.2 billion annual trips) worldwide [^"3"]. We estimate an additional safety benefit of $130 million per year, based on $3600 savings per bus per year in liability [^"4"] and a world network of about 35,000 BRT buses [^"3"].
+
+To estimate the greenhouse gas reduction potential, simulations from Guangzhao, China have found that BRT platooning save an average of around 8% of fuel [^"5"]. Operational (not including factors such as supporting infrastructure and manufacturing of buses) greenhouse gas emissions from BRT are estimated at about 26 grams CO<sub>2</sub> per passenger-kilometer [^"6"], and the average BRT trip is about 11 kilometers [^"6"]. We apply these figures to 1.2 billion annual BRT trips [^"3"].
+
+There are several other potential advantages to platooning BRT that are not quantified above. Platooning BRT has been modeled to reduce carbon monoxide polluion by about 7-8% relative to conventional BRT [^"5"]. Compared to conventional BRT, platooning BRT is expected to reduce delays and the number of stops required, thus saving time for passengers [^"5"]. Platooning BRT has been shown to support a much greater passenger throughput on a given bus lane, thereby increasing the value of urban land via agglomeration effects [^"7"], especially in areas that already have high transit demand [^"8"].
+
+Although our financial benefit estimate is based on potential operational cost savings of platooning BRT relative to existing BRT, there is further potential for savings based on building platooning BRT lanes in lieu of light rail [^"10"], as the additional throughput capacity from platooning should make platooning BRT an adequate substitute for light rail in most cases [^"9"].
+
+## Implementation
+
+There are no full-scale platooning BRT systems operating in the world today, but trials are ongoing in Japan [^"11"]; in Munich, Germany [^"12"]; and in New York/New Jersey [^"13"]. The nature of platooning should make the development of platooning BRT simpler than the development of fully independent, autonomous vehicles.
+
+With or without platooning, bus rapid transit and expanded use of buses in general faces a headwind in the form of public preference for rail, shown by the greater ridership for rail in otherwise comparable routes [^"14"]. A major advantage of transit is the ability to support dense, walkable, transit-oriented developments (TOD) [^"15"], and fixed rail transit provides greater certainty in the permanence of transit routes that facilitates investment in TOD [^"16"]. Thus development of any form of BRT with the intention of TOD must come with a credible promise of the route's long-term presence.
+
+
+
+[^"1"]: Federal Highway Administration. ["Truck Platooning"](https://highways.dot.gov/research/laboratories/saxton-transportation-operations-laboratory/Truck-Platooning). United States Department of Transportation. November 2021.
+
+[^"2"]: Diaz, R. B., Hinebaugh, D. ["Capital costs to implement ITS applications for bus rapid transit (BRT) can vary widely ranging from $100,000 to more than $1,000,000 per mile"](https://www.itskrs.its.dot.gov/2011-sc00234).
+
+[^"3"]: EMBARQ, BRT+CoE. ["Global BRT Data"](https://brtdata.org/). In partnership with the Institute for Transportation and Development Policy. Accessed February 23, 2024.
+
+[^"4"]: Skolrud, S., Danaher, A., Brey, B., Gupta, T., Drayton, J., Shaner, K. E. ["Bus Automation: Cost Effective Solutions for Transit Operators"](https://www.wsp.com/-/media/hubs/us/fact-sheets/bus-automation_white-paper_final.pdf). WSP. June 2021.
+
+[^"5"]: Liu, J., Lin, P., Jin, P. J. ["Modelling and Simulation of Cooperative Control for Bus Rapid Transit Vehicle Platoon in a Connected Vehicle Environment"](https://hrcak.srce.hr/file/264775). Promet Traffic and Transportation <b>29</b>(1), pp. 67-75. February 2017.
+
+[^"6"]: Machado, C. M., de Andrade, C. E. S. ["Estimating CO<sub>2</sub> Emissions for Bus Rapid Transit (BRT) Using Life Cycle Assessment: A Case Study in Rio de Janeiro City"](https://www.lidsen.com/journals/aeer/aeer-04-01-015/aeer.2301015.pdf)
+
+[^"7"]: Lutin, J. M., Kornhauser, A. L. ["Application of Autonomous Driving Technology to Transit - Functional Capabilities for Safety and Capacity"](https://pdfs.semanticscholar.org/7e17/b88aab362f9f33236a61aacfda11a24233db.pdf). Presentation to Federal Transit Administration and American Public Transportation Association. June 2013.
+
+[^"8"]: Zhang, W., Jenelius, E., Badia, H. ["Efficiency of Connected Semi-Autonomous Platooning Bus Services in High-Demand Transit Corridors"](https://ieeexplore.ieee.org/abstract/document/9789563). IEEE Open Journal of Intelligent Transportation Systems <b>3</b>, pp. 435-438. June 2022.
+
+[^"9"]: Elkind, E. ["Platooning Electric Buses Could Make Rail Transit Technology Obsolete"](http://www.ethanelkind.com/platooning-electric-buses-could-make-rail-transit-technology-obsolete/). February 2018.
+
+[^"10"]: United States General Accounting Office. ["Bus Rapid Transit Shows Promise"](https://web.archive.org/web/20150430210939/http://www.gao.gov/new.items/d01984.pdf). September 2001.
+
+[^"11"]: Softbank News. ["5G and Autonomous Driving Technologies to Power Japan’s First Bus Platooning Trial on Public Roads"](https://www.softbank.jp/en/sbnews/entry/20230927_01). September 2023.
+
+[^"12"]: Karlsruhe Institute of Technology. ["Platooning – the Future of Munich City Buses"](https://www.kit.edu/kit/english/pi_2021_050_platooning-the-future-of-munich-city-buses.php). June 2021.
+
+[^"13"]: Feller, G. ["Automated Bus Rapid Transit: The Future of Urban Transit is Here"](https://www.metro-magazine.com/10146448/automated-bus-rapid-transit-the-future-of-urban-transit-is-here). Metro Magazine. July 2021.
+
+[^"14"]: Tennyson, E. L. ["Impact on Transit Patronage of Cessation or Inauguration of Rail Service"](https://onlinepubs.trb.org/Onlinepubs/trr/1989/1221/1221-007.pdf). Transportation Research Record <b>1221</b>. 1989.
+
+[^"15"]: Currie, G. ["Bus Transit Oriented Development—Strengths and Challenges Relative to Rail"](https://www.sciencedirect.com/science/article/pii/S1077291X22003393). Journao of Public Transportation <b>9</b>(4), pp. 1-12. October 2006.
+
+[^"16"]: City of Phoenix. ["Transit Oriented Development Strategic Policy Framework"](https://www.phoenix.gov/villagessite/documents/pdd_pz_pdf_00380.pdf). ReinventPHX. 2018.
 
 export default ({ children }) => 
   <SolutionDropdown 

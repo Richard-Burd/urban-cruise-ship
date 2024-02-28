@@ -8,7 +8,7 @@ export const solutionData = [
     co2: 11.4,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Ban Bottom Trawling - E.U.`,
@@ -19,7 +19,7 @@ export const solutionData = [
     co2: 5.5,
     habitat: 162000,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
   {
     solution: `Building Envelope Modeling Software Standardization - U.S.`,
@@ -30,7 +30,7 @@ export const solutionData = [
     co2: 11.9,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Clean Energy Standard - U.S.`,
@@ -41,7 +41,7 @@ export const solutionData = [
     co2: 1000,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Coal Phase Out - World`,
@@ -52,7 +52,7 @@ export const solutionData = [
     co2: 17000,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Construct a High-Voltage-Direct-Current Grid - U.S.`,
@@ -63,7 +63,7 @@ export const solutionData = [
     co2: 480,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Dam Decommissioning Fund - U.S.`,
@@ -74,7 +74,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Development Set Patterns - U.S.`,
@@ -85,7 +85,7 @@ export const solutionData = [
     co2: 21.2,
     habitat: 42000,
     sources: null,
-    subset: "misc"
+    subset: "misc",
   },
   {
     solution: `Fund Wave Energy Research - U.S.`,
@@ -96,7 +96,7 @@ export const solutionData = [
     co2: 2.9,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Greater Up-front Incentives for Electric Vehicles - U.S.`,
@@ -107,7 +107,7 @@ export const solutionData = [
     co2: 130,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Heat Pump Mandate - U.S.`,
@@ -118,7 +118,7 @@ export const solutionData = [
     co2: 0.044,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Heat Recovery Loan Program - U.S`,
@@ -129,7 +129,7 @@ export const solutionData = [
     co2: 14.9,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Increase Marine Protected Areas - World`,
@@ -140,7 +140,7 @@ export const solutionData = [
     co2: 680,
     habitat: 78000000,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
   {
     solution: `Loosen Floor Area Ratio Rules for Residential - U.S.`,
@@ -151,7 +151,7 @@ export const solutionData = [
     co2: 2.6,
     habitat: 7947,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
   {
     solution: `Loosen Minimum Parking Lot Size Rules - U.S.`,
@@ -162,7 +162,7 @@ export const solutionData = [
     co2: 4.5,
     habitat: 2456,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
   {
     solution: `Meat Tax - U.S.`,
@@ -173,7 +173,7 @@ export const solutionData = [
     co2: 135,
     habitat: 341000,
     sources: null,
-    subset: "public-health-campaigns"
+    subset: "public-health-campaigns",
   },
   {
     solution: `Modular Island Desalination - Mediterranean Islands`,
@@ -181,10 +181,10 @@ export const solutionData = [
     site: `matter`,
     cost: 0.004,
     benefit: 0.037,
-    co2: 0.050,
+    co2: 0.05,
     habitat: null,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
   {
     solution: `Plant-based Info. Advocacy Campaign - U.S.`,
@@ -195,7 +195,7 @@ export const solutionData = [
     co2: 88,
     habitat: null,
     sources: null,
-    subset: "public-health-campaigns"
+    subset: "public-health-campaigns",
   },
   {
     solution: `Remove Parking Minimums - U.S.`,
@@ -206,7 +206,7 @@ export const solutionData = [
     co2: 0.001,
     habitat: 139,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
   {
     solution: `School Lunch Meat Removal - U.S.`,
@@ -217,7 +217,7 @@ export const solutionData = [
     co2: 27.8,
     habitat: null,
     sources: null,
-    subset: "public-health-campaigns"
+    subset: "public-health-campaigns",
   },
   {
     solution: `Scientific Whaling Ban - World`,
@@ -225,10 +225,10 @@ export const solutionData = [
     site: `oceans`,
     cost: 0.31,
     benefit: 1.456,
-    co2: 0.240,
+    co2: 0.24,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
   {
     solution: `Set Ship Speed Limits - World`,
@@ -239,7 +239,7 @@ export const solutionData = [
     co2: 93.2,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
   {
     solution: `Wildlife Corridors - U.S.`,
@@ -250,7 +250,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
   {
     solution: `Accelerate Investment into Solar Energy - World`,
@@ -261,7 +261,7 @@ export const solutionData = [
     co2: 8770.0,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Accelerate Investment into Wind Energy - World`,
@@ -272,7 +272,7 @@ export const solutionData = [
     co2: 8225.0,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Natural Gas Plants with Carbon Capture - World`,
@@ -283,7 +283,7 @@ export const solutionData = [
     co2: 100,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Accelerate Development and Deployment of Geothermal - World`,
@@ -294,7 +294,7 @@ export const solutionData = [
     co2: 16.0,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Carbon Pricing`,
@@ -305,7 +305,7 @@ export const solutionData = [
     co2: 1600,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Europe Should Maintain Nuclear Fleet`,
@@ -316,7 +316,7 @@ export const solutionData = [
     co2: 172,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Methane Control on Coal Mines`,
@@ -327,7 +327,7 @@ export const solutionData = [
     co2: 620,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Natural Gas - Tighter Regulation on Leakage`,
@@ -338,7 +338,7 @@ export const solutionData = [
     co2: 800,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Methane Control on Oil Wells`,
@@ -349,7 +349,7 @@ export const solutionData = [
     co2: 980,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Electrofuels for Aviation`,
@@ -360,7 +360,7 @@ export const solutionData = [
     co2: 2253,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
   {
     solution: `Standardized Food Labeling - U.S.`,
@@ -371,7 +371,7 @@ export const solutionData = [
     co2: 2253,
     habitat: null,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
 
   {
@@ -383,7 +383,7 @@ export const solutionData = [
     co2: 63.3,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
 
   {
@@ -392,10 +392,10 @@ export const solutionData = [
     site: `matter`,
     cost: 7.89,
     benefit: 17.34,
-    co2: .25,
+    co2: 0.25,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-projects",
   },
 
   {
@@ -407,7 +407,7 @@ export const solutionData = [
     co2: 1.44,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-projects",
   },
 
   {
@@ -419,7 +419,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-projects",
   },
 
   {
@@ -431,7 +431,7 @@ export const solutionData = [
     co2: 91,
     habitat: null,
     sources: null,
-    subset: "energy-production-efficiency"
+    subset: "energy-production-efficiency",
   },
 
   {
@@ -443,31 +443,31 @@ export const solutionData = [
     co2: 361.1,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
     solution: `Reduce Restaurant Meal Sizes`,
     link: `/matter/ag_dist/food_waste#reduce-restaurant-meal-size`,
     site: `matter`,
-    cost: .44,
+    cost: 0.44,
     benefit: 9.03,
     co2: 13,
     habitat: null,
     sources: null,
-    subset: "public-health-campaigns"
+    subset: "public-health-campaigns",
   },
 
   {
     solution: `First Expired First Out Food Inventory Management- US`,
     link: `/matter/ag_dist/food_waste#first-expired-first-out-food-inventory-management-us`,
     site: `matter`,
-    cost: .315,
+    cost: 0.315,
     benefit: 1.43,
     co2: 1.54,
     habitat: null,
     sources: null,
-    subset: "public-health-campaigns"
+    subset: "public-health-campaigns",
   },
 
   {
@@ -479,7 +479,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
@@ -491,7 +491,7 @@ export const solutionData = [
     co2: 25.26,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
@@ -503,7 +503,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
@@ -515,7 +515,7 @@ export const solutionData = [
     co2: 70.8,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
@@ -527,7 +527,7 @@ export const solutionData = [
     co2: 79.68,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
@@ -539,7 +539,7 @@ export const solutionData = [
     co2: 27.4,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
@@ -551,7 +551,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
   {
@@ -563,7 +563,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
 
   {
@@ -575,7 +575,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
 
   {
@@ -587,7 +587,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-projects",
   },
 
   {
@@ -599,7 +599,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-projects",
   },
 
   {
@@ -611,7 +611,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-projects",
   },
 
   {
@@ -623,7 +623,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
 
   {
@@ -635,91 +635,91 @@ export const solutionData = [
     co2: 2500,
     habitat: null,
     sources: null,
-    subset: "miscellaneous"
+    subset: "miscellaneous",
   },
 
   {
     solution: `Small Modular Reactor R&D – U.S.`,
     link: `/energy/energy_production/nuclear#small-modular-reactor-r-d-u-s `,
     site: `energy`,
-    cost: .46,
+    cost: 0.46,
     benefit: 6,
     co2: null,
     habitat: null,
     sources: null,
-    subset: " energy-production-efficiency "
+    subset: " energy-production-efficiency ",
   },
 
   {
     solution: `Advanced Reactor Technology R&D – U.S.`,
     link: `/energy/energy_production/nuclear#advanced-reactor-r-d-u-s `,
     site: `energy`,
-    cost: .46,
+    cost: 0.46,
     benefit: 1.32,
     co2: null,
     habitat: null,
     sources: null,
-    subset: " energy-production-efficiency "
+    subset: " energy-production-efficiency ",
   },
 
   {
     solution: `Concentrated Solar Power Plants R&D – U.S.`,
     link: `/energy/energy_production/solar#concentrated-solar-r-d-u-s `,
     site: `energy`,
-    cost: .83,
+    cost: 0.83,
     benefit: 6.6,
     co2: null,
     habitat: null,
     sources: null,
-    subset: " energy-production-efficiency "
+    subset: " energy-production-efficiency ",
   },
 
   {
     solution: `Advanced Solar Cell Technology R&D – U.S.`,
     link: `/energy/energy_production/solar#advanced-solar-cell-r-d `,
     site: `energy`,
-    cost: .83,
+    cost: 0.83,
     benefit: 12.5,
     co2: null,
     habitat: null,
     sources: null,
-    subset: " energy-production-efficiency "
+    subset: " energy-production-efficiency ",
   },
 
   {
     solution: `Concentrating Solar PV R&D – U.S.`,
     link: `/energy/energy_production/solar#concentrating-pv-r-d `,
     site: `energy`,
-    cost: .83,
+    cost: 0.83,
     benefit: 10.8,
     co2: null,
     habitat: null,
     sources: null,
-    subset: " energy-production-efficiency "
+    subset: " energy-production-efficiency ",
   },
 
   {
     solution: `Luminescent Solar Concentrator Technology R&D – U.S.`,
     link: `/energy/energy_production/solar#lsc-r-d `,
     site: `energy`,
-    cost: .83,
+    cost: 0.83,
     benefit: 1.76,
     co2: null,
     habitat: null,
     sources: null,
-    subset: " energy-production-efficiency "
+    subset: " energy-production-efficiency ",
   },
 
   {
     solution: `Enhanced Geothermal R&D – U.S.`,
     link: `/energy/energy_production/geothermal#research-and-development-into-enhanced-geothermal`,
     site: `energy`,
-    cost: .83,
+    cost: 0.83,
     benefit: 4.8,
     co2: null,
     habitat: null,
     sources: null,
-    subset: " energy-production-efficiency "
+    subset: " energy-production-efficiency ",
   },
 
   {
@@ -731,7 +731,7 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "public-health-projects"
+    subset: "public-health-projects",
   },
 
   {
@@ -743,14 +743,45 @@ export const solutionData = [
     co2: null,
     habitat: null,
     sources: null,
-    subset: "ecology-environment"
+    subset: "ecology-environment",
   },
 
+  {
+    solution: `Deep Borehole Disposal`,
+    link: `/waste/hazardous_waste/nuclear_waste#deep-borehole-disposal`,
+    site: `waste`,
+    cost: 0.21616,
+    benefit: 0.8323935326086795,
+    co2: 17,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
 
-]
-
-
-
+  {
+    solution: `Extended Producer Responsibility for Discarded Blades`,
+    link: `/waste/hazardous_waste/ewaste#extended-producer-responsibility-for-discarded-blades`,
+    site: `waste`,
+    cost: 1.574842105263157,
+    benefit: 4.349473684210525,
+    co2: 10,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Platooning Bus Rapid Transit`,
+    link: `/energy/transport/transpo_transit#platooning-bus-rapid-transit`,
+    site: `energy`,
+    cost: 0.37116942492599697,
+    benefit: 7.051698935046,
+    co2: 0.26,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  }
+];
 
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
     solution: `Sell Certain Types of Produce Loose - U.S.`,
