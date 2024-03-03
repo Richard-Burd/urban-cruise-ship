@@ -1,17 +1,99 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 export const problem = "Need for Clean Electricity";
 export const solution = "Production Tax Credit - U.S.";
 
 ## Description
 
-We recommend the renewable electricity production tax credit be extended.
+We recommend the renewable electricity production tax credit be extended beyond 2032 for emerging clean energy technologies.
 
 ## Background
 
-The Production Tax Credit subsidizes certain clean energy generation on a per-kilowatt-hour basis. [^"21"]
+The Production Tax Credit subsidies qualifying technologies at 2.75¢ per kilowatt-hour (2023), adjusted for inflation. Both the PTC and the related Investment Tax Credit has decades-long histories of lapse and renewal. Most recently, the PTC and ITC have been extended as part of the Inflation Reduction Act until 2032 [^"3"]. Eligible technologies include solar thermal and photovoltaic, onshore and offshore wind, geothermal, biomass, hydroelectric, municipal solid waste, landfill gas, tidal, wave, and ocean thermal [^"4"].
 
-[^"21"]: Sherlock, M. F. ["The Renewable Electricity Production Tax Credit: In Brief"](https://sgp.fas.org/crs/misc/R43453.pdf). Congressional Research Service. April 2020.
+To manage some downsides of the PTC, we further propose that the credit be restricted to "nascent technologies", defined as those with no more than 3% market penetration [^"7"]. Under this standard, onshore wind and solar PV would no longer be eligible for the PTC [^"7"].
+
+## Calculations
+
+Estimating full costs and benefits of the Production Tax Credit is difficult, and we present a simplified model, with limitations discussed below.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Production Tax Credit"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"95 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Mar. 2, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 4,
+      displayedValue: "$4.0 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 4.7333333333333,
+      displayedValue: "$4.7 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+The cost of the Production Tax Credit is based on average historical expenses of the PTC from 2015-2019; the PTC partially lapsed from 2020-2022 and thus those figures are not included [^"21"]. Greenhouse gas reduction estimates are based on a projection on an extension of the PTC analyzed by Mai et al. [^"1"].
+
+An analysis from the Energy Policy Institute at the University of Chicago and the Rhodium Group [^"2"] found greater costs and benefits to PTC extension, as in the Build Back Better bill that had recently passed in the U. S. House of Representatives, than shown above, but a similar ratio, at a carbon valuation of $51/ton, also assessing costs as the fiscal cost of the program and benefits in terms of CO<sub>2</sub> reduction. Those provisions are similar to the ones that were enacted the following year in the Inflation Reduction Act.
+
+Another analysis finds that the CO<sub>2</sub> reduction from an extended PTC for electricity would only be 0.3% [^"6"], just under 5 million tons per year with the 2021 grid [^"5"]. At this level of CO<sub>2</sub> reduction, carbon valuation would be far from sufficient to justify the cost of the program.
+
+A key policy goal of the PTC is to support early-stage technologies through learning by doing. This benefit has been observed in Texas [^"8"] and is modeled for geothermal power [^"9"], but learning-by-doing effects are not modeled above. Also not modeled are possible distortions to electricity markets that are separate from the federal government's balance sheet [^"10"].
+
+
+## Implementation
+
+At present, the Inflation Reduction Act ensures that the Production Tax Credit and the Investment Tax Credit remain in force until 2032, though qualified energy developers choose one of the credits [^"3"], rather than receive both. The most likely implementation would be an extension beyond 2032 with the limitations on qualifying technologies.
+
+As a tool for reducing emissions, the Product Tax Credit is not ideal. By subsidizing and thus artificially lowering electricity prices, the PTC works against demand-side solutions [^"7"]. A more effective approach would be economy-wide <a href="/energy/energy_socioeconomics/carbon_pricing_e">carbon pricing</a>. However, the PTC has the additional potential benefit of spurring development of nascent technologies such as wave power and enhanced geothermal, and the PTC may be an adequate tool to reduce emissions in light of the political challenges around carbon pricing.
+
+
+
+
+[^"1"]: Mai, T., Cole, W., Lantz, E., Marcy, C., Sigrin, B. ["Impacts of Federal Tax Credit Extensions on Renewable Deployment and Power Sector Emissions"](https://www.energy.gov/eere/analysis/articles/impacts-federal-tax-credit-extensions-renewable-deployment-and-power-sector). National Renewable Energy Laboratory, Office of Energy Efficiency and Renewable Energy, United States Department of Energy. February 2016.
+
+[^"2"]: Greenstone, M., Mukhametkaliev, B., Stolove, J., Larsen, J., King, B., Kolus, H., Herndon, W. ["Assessing the Costs and Benefits of Clean Electricity Tax Credits"](https://epic.uchicago.edu/area-of-focus/assessing-the-costs-and-benefits-of-clean-electricity-tax-credits/). Energy Policy Institute at the University of Chicago, Rhdoium Group. 2021.
+
+[^"3"]: Bartlett, J. ["Beyond Subsidy Levels: The Effects of Tax Credit Choice for Solar and Wind Power in the Inflation Reduction Act"](https://www.rff.org/publications/reports/beyond-subsidy-levels-the-effects-of-tax-credit-choice-for-solar-and-wind-power-in-the-inflation-reduction-act/). Resources for the Future. December 2023.
+
+[^"4"]: Stein, Z. ["Production Tax Credit (PTC)"](https://www.carboncollective.co/sustainable-investing/production-tax-credit-ptc). Carbon Collective. March 2024.
+
+[^"5"]: United States Environmental Protection Agency. ["Sources of Greenhouse Gas Emissions"](https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions). February 2024.
+
+[^"6"]: Nordhaus, W. D., Merrill, S. A., Beaton, P. T. ["Effects of U.S. Tax Policy on Greenhouse Gas Emissions"](https://nap.nationalacademies.org/catalog/18299/effects-of-us-tax-policy-on-greenhouse-gas-emissions). National Research Council; Policy and Global Affairs; Board on Science, Technology, and Economic Policy; Committee on the Effects of Provisions in the Internal Revenue Code on Greenhouse Gas Emissions. 2013.
+
+[^"7"]: Metcalf, G. E. ["Supporting Low-Carbon Energy Through a New Generation of Tax Credits"](https://sites.tufts.edu/cierp/files/2021/09/CPL_Policy_Brief_US_Tax-Credits.pdf). The Center for International Environment & Resource Policy, Climate Policy Lab, The Fletcher School, Tufts University. September 2021.
+
+[^"8"]: Rudolph, M., Damien, P. ["The Impact of Renewable Energy Tax Incentives on Electricity Pricing in Texas"](https://www.mdpi.com/2076-3417/13/14/8532). Applied Sciences <b>13</b>(14): 8532. July 2023.
+
+[^"9"]: Owens, B. ["Economic Valuation of a Geothermal Production Tax Credit"](https://www.osti.gov/biblio/15000422). Office of Scientific and Technical Information, U. S. Department of Energy. April 2002.
+
+[^"10"]: Fisher, T. ["The Inflation Reduction Act Could Turn Electricity Markets into Subsidy Clearinghouses"](https://www.cato.org/blog/inflation-reduction-act-could-turn-electricity-markets-subsidy-clearinghouses). Cato Institute. October 2023.
+
+[^"21"]: Sherlock, M. F. ["The Renewable Electricity Production Tax Credit: In Brief"](https://crsreports.congress.gov/product/details?prodcode=R43453). Congressional Research Service. April 2020.
 
 export default ({ children }) => 
   <SolutionDropdown 
