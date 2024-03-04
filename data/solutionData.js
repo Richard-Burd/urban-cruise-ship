@@ -780,6 +780,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Production Tax Credit`,
+    link: `/energy/energy_socioeconomics/policy_se#production-tax-credit`,
+    site: `energy`,
+    cost: 4,
+    benefit: 4.7333333333333,
+    co2: 95,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
   }
 ];
 
