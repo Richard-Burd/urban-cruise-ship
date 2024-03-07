@@ -3,7 +3,40 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Hydrogen Costs";
 export const solution = "Research and Development Into New Methods";
 
-The Department of Energy should fund R&D into nuclear thermochemical, solar thermochemical, and solar photochemical hydrogen production. Any of these tools has the potential to kickstart a hydrogen economy, is brought to a low enough cost, and even if not, low-cost, low-emission hydrogen is needed for current uses.
+## Description
+
+We recommend further research and development of nuclear hydrogen production.
+
+## Background
+
+Common hydrogen production methods (Steam Methane Reforming) using fossil fuels carry a production cost of US$1.54–US$2.30, and emit 10.6kg CO<sub>2</sub> [^"2"] per kilogram H<sub>2</sub>. 
+
+Nuclear power plants could be modified to generate hydrogen alongside electricity [^"3"]. Estimations of the levelized cost of nuclear hydrogen production have ranged from US$0.69 to US$4.85 per kg of hydrogen depending on the type of production used [^"1"]:
+
+- Low-Temperature Electrolysis (LTE) involves using electrical energy to split water into hydrogen and oxygen at relatively low temperatures. It is commonly used in polymer electrolyte membrane (PEM) electrolyzers. This method is safe and efficient but requires a significant amount of electricity [^"1"]. 
+
+- High-Temperature Steam Electrolysis (HTSE) operates at high temperatures (above 200 °C), using steam instead of liquid water. The high temperature reduces the electrical energy required for water splitting, making the process more efficient than LTE. HTSE takes advantage of the thermal energy available in nuclear reactors to lower the overall energy required for hydrogen production [^"1"].
+
+HTSE resulted in the lease expensive production cost of US$0.69 per kg H<sub>2</sub> [^"1"].
+
+A new type of nuclear reactor with a higher coolant temperature could create a path to inexpensive hydrogen production [^"4"].
+
+##### Lead Researcher: jye - Last Updated March 7, 2024
+
+
+## Implementation
+
+The cost of producing hydrogen from nuclear power is a significant barrier. It is essential to develop and commercialize more effective and economical methods and systems for hydrogen production.
+
+
+
+[^"1"]: Kim J, El-Hameed AA, Soja RJ, Ramadhan HH, Nandutu M, Hyun JH. [Estimation of the Levelized Cost of Nuclear Hydrogen Production from Light Water Reactors in the United States.](http://dx.doi.org/10.3390/pr10081620) Processes [Internet]. 2022 Aug 16;10(8):1620. Available from: August 2022.
+[^"2"]: Alabbadi AA, Obaid OA, AlZahrani AA. [A comparative economic study of nuclear hydrogen production, storage, and transportation.](http://dx.doi.org/10.1016/j.ijhydene.2023.08.225) International Journal of Hydrogen Energy [Internet]. February 2024.
+[^"3"]: El-Emam RS, Ozcan H, Zamfirescu C. [Updates on promising thermochemical cycles for clean hydrogen production using nuclear energy.](http://dx.doi.org/10.1016/j.jclepro.2020.121424) Journal of Cleaner Production [Internet]. July 2020.
+[^"4"]: Şahin S, Şahin HM. [Generation-IV reactors and nuclear hydrogen production.](http://dx.doi.org/10.1016/j.ijhydene.2020.12.182) International Journal of Hydrogen Energy [Internet]. January 2021.
+
+
+
 
 export default ({ children }) => 
   <SolutionDropdown 
