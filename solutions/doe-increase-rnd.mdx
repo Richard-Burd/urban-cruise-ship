@@ -1,15 +1,90 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 export const problem = "Need for Clean Electricity";
 export const solution = "The Department of Energy Should Increase Energy R&D";
 
 ## Description
 
-The Department of Energy should fully fund research and development efforts to insure that every research endeavor, with expected benefit exceeding cost, is funded.
+We proposed that Congress increase the energy research and development budget by $15 billion per year.
+
+## Background
+
+## Calculations
+
+We estimate the following undiscounted costs, benefits, and greenhouse gas removal potential based on six case studies.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Department of Energy R&D"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"411 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Mar. 6, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 15,
+      displayedValue: "$15 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 408.8142754628615,
+      displayedValue: "$253 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+To audit the effectiveness of its work, the U.S. Department of Energy has commissioned several independent studies of the costs and benefits of aspects of their research portfolio [^"1"]. Our calculations are based on a composite of six of those studies. Costs and benefits, and CO<sub>2</sub> reduction are reported on an undiscounted, annual basis and CPI-adjusted to 2024 unless otherwise noted.
+
+| Technology | Annual Cost | Annual Benefit | Annual CO<sub>2</sub> Reduction |
+| --- | --- | --- | --- |
+| Vehicle Combustion Engine, 1986-2007 [^"2"] | $65 million | $4.9 billion | 8.4 million tons |
+| Wind, 1976-2008 [^"3"] | $135 million | $476 million | 2.6 million tons |
+| Geothermal, 1980-2008 [^"4"] | $3.6 million | $461 million | 250,000 tons |
+| Solar Photovoltaic, 1975-2008 [^"5"] | $164 million | $831 million | 33,000 tons |
+| Hybrid and Electric Vehicles, 1999-2022 [^"6"] | $44 million (1999-2012) | $347 million | 483,000 |
+| HVAC, Water Heating, Appliances, 1976-2029 [^"7"] | $19 million (1976-2015) | $249 million (7% discount rate applied) | N/A |
+
+We mostly report undiscounted cost and benefit figures. The measured benefit-cost ratio is significantly smaller if a large discount rate is used, but all six programs show favorable benefit-cost ratios even at a 7% discount rate. Conversely, benefits may be underestimated because they underestimate benefits beyond the study window. In particular, aside from hybrid and electric vehicles and HVAC, water heating, and appliances, no benefits beyond the study window are estimated at all, and those two only estimate energy savings from devices that are deployed at the end of the study window, without considering future devices that would result from the R&D investments. We expect that the financial and greenhouse gas benefits of wind and solar in particular are greatly underestimated for this reason.
+
+All six studies monetize financial benefits--especially in the form of saved energy--and environmental and health benefits, but in all cases, the benefits of greenhouse gas reduction are not monetized and shown separately.
 
 ## Implementation
 
-How best to do R&D depends greatly on the area. A balanced research program by the Department of Energy will consist of full funding for the national laboratories, ARPA-E for high-risk, high-reward projects, the Energy Frontier Research Centers for basic science, energy innovation hubs for collaboration with industry, and the National Network for Manufacturing Innovation for advances based on manufacturing capacity [^"12"]
+How best to do R&D depends greatly on the area. A balanced research program by the Department of Energy will consist of full funding for the national laboratories, ARPA-E for high-risk, high-reward projects, the Energy Frontier Research Centers for basic science, energy innovation hubs for collaboration with industry, and the National Network for Manufacturing Innovation for advances based on manufacturing capacity [^"12"].
+
+
+
+[^"1"]: Dowd, J. ["Aggregate Economic Return on Investment in the U.S. DOE Office of Energy Efficiency and Renewable Energy"](https://www.energy.gov/eere/analysis/articles/aggregate-economic-return-investment-us-doe-office-energy-efficiency-and). Office of Energy Efficiency & Renewable Energy, U. S. Department of Energy. October 2017.
+
+[^"2"]: Link, A. N. ["Retrospective Benefit-Cost Evalulation of U.S. DOE Vehicle Combustion Engine R&D Investments"](https://www.energy.gov/eere/analysis/articles/retrospective-benefit-cost-evaluation-us-doe-vehicle-combustion-engine-rd). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. May 2010.
+
+[^"3"]: Pelsoci, T. M. ["Retrospective Benefit-Cost Evalulation of U.S. DOE Wind Energy R&D Program"](https://www.energy.gov/eere/analysis/articles/retrospective-benefit-cost-evaluation-us-doe-wind-energy-rd-program-impact). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. June 2010.
+
+[^"4"]: Gallaher, M., Rogozhin, A., Petrusa, J. ["Retrospective Benefit-Cost Evalulation of U.S. DOE Geothermal Technologies R&D Program Investments"](https://www.energy.gov/eere/analysis/articles/retrospective-benefit-cost-analysis-us-does-geothermal-technologies-rd). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. August 2010.
+
+[^"5"]: O'Connor, A. C., Loomis, R. J., Braun, F. M. ["Retrospective Benefit-Cost Evalulation of DOE  Investment in Photovoltaic Energy Systems"](https://www.energy.gov/eere/analysis/articles/retrospective-benefit-cost-evaluation-doe-investments-photovoltaic-energy). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. August 2010.
+
+[^"6"]: Link, A. N., O'Connor, Scott, T. J., Casey, S. E., Loomis, R. J., Davis, J. L. ["Benefit-Cost Evaluation of U.S. DOE Investment in Energy Storage Technologies for Hybrid and Electric Cars and Trucks"](https://www.energy.gov/eere/analysis/articles/benefit-cost-evaluation-us-doe-investment-energy-storage-technologies-hybrid). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. December 2013.
+
+[^"7"]: Gallaher, M., Scott, T., Oliver, Z., Clark-Sutton, K., Anderson, B. ["Benefit-Cost Evaluation of U.S. Department of Energy Investment in HVAC, Water Heating, and Appliance Technologies"](https://www.energy.gov/eere/buildings/articles/benefit-cost-evaluation-us-department-energy-investment-hvac-water-heating). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. September 2017.
 
 [^"12"]: Townsend, B., Smith, E. ["U.S. Energy R&D Architecture: Discreet Roles of Major Innovation Institutions"](https://www.ourenergypolicy.org/resources/u-s-energy-rd-architecture-discreet-roles-of-major-innovation-institutions/). American Energy Innovation Council, Bipartisan Policy Center. March 2016.
 
