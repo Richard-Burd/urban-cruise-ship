@@ -1,0 +1,97 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+export const problem = "Damage from Lead Exposure";
+export const solution = "ULAB Site Remediation";
+
+## Description
+
+We propose remediation of all informal used lead acid battery (ULAB) recycling sites worldwide.
+
+## Background
+
+Lead acid batteries are used mainly for conventional cars and industrial applications. Lead acid batteries can theoretically be replaced with other types of batteries, but for the foreseeable future, it is not cost-feasible to do so [^"7"]. Lead acid battery recycling is financially lucrative, and 85% of world lead demand is for lead acid batteries [^"10"]. As with many other informal industries, informal ULAB recycling is most common in poor communities with few other economic prospects [^"1"]. Informal recycling exposes workers to lead pollution and contaminates the soil [^"10"].
+
+Exposure to lead from ULAB recycling is either the greater or second greatest human exposure to lead worldwide, though precise exposure figures are lacking [^"1"]. Studies in the Dominican Republic [^"2"], Vietnam [^"3"], and Bangladesh [^"4"] have shown that remediation of informal ULAB recycling sites is cost effective. Site remediation improves health and longevity, which we measure in terms of disability-adjusted life years (DALYs). One DALY is equivalent to one extra year of life at full health.
+
+## Calculations
+
+We find the following costs and benefits to informal ULAB recycling site remediation.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"ULAB Site Remediation"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"130,000"}
+  arrowText2={"DALYs"}
+  arrowText3={"gained/yr"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Mar. 9, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 0.412029024,
+      displayedValue: "$400 million/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 6.362400000,
+      displayedValue: "$6 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+Our analysis is adapted from that of Bernard and Schukraft [^"1"]. Of several studies of the cost effectiveness of ULAB site remediation, we use the results from the Dominican Republic [^"2"], which offers the clearest estimate of the remediation cost per DALY gained of $392 to $3238. For our calculations, we use the higher figure. Following the guidance of Open Philanthropy, we use a DALY value of $50,000, though a valuation of $100,000 might be justified [^"5"].
+
+The overall health and mortality impact of ULAB recycling worldwide is not known with any precision. Ericson et al. estimate the impact of informal ULAB sites at 127,248 to 1,612,476 DALYs [^"6"], compared to 21.2 million DALYs from lead exposure overall worldwide.
+
+There are several uncertainties, beyond the wide range of estimates in studies from which we derive numbers. Our benefit estimate is based entirely on improvements to health and mortality, even though productivity gains from increased IQ is the largest benefit from lead remediation. It is unclear how representative the Dominican Republic study is of all remediation costs worldwide, and it is reasonable to expect that the marginal cost of remediation would rise as the number of cleaned sites approaches all of them. Formal ULAB recycling may result in soil contamination with lead as well; this effect is not modeled, but we expect it to be much lower [^"8"].
+
+
+## Implementation
+
+Pure Earth is a leading NGO that conducts clean-ups of abandoned ULAB sites, among many other projects, such as a project they have done in Bangladesh [^"9"]. NGOs such as Pure Earth would conduct remediation operations. While our analysis above yields a benefit-cost ratio of around 15:1, this ratio may be better than 100:1 depending on the cost of remediation and whether productivity effects from IQ gains are factored into benefit estimates, making lead remediation one of the most cost-effective projects in low-income countries.
+
+As noted below, remediation of informal recycling sites should be coupled with policies to prevent informal recycling from occurring at all.
+
+
+[^"1"]: Bernard, D. R., Schukraft, J. ["Global lead exposure report"](https://rethinkpriorities.org/publications/global-lead-exposure-report). Rethink Priorities. May 2021.
+
+[^"2"]: Ericson, B., Caravanos, J., Depratt, C., Santos, C., Cabral, M. G., Fuller, R., Taylor, M. P. ["Cost Effectiveness of Environmental Lead Risk Mitigation in Low- and Middle-Income Countries"](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017GH000109). GeoHealth <b>2</b>(2), pp. 87-101. February 2018.
+
+[^"3"]: Ericson, B., Duong, T. T., Keith, J., Nguyen, T. C., Havens, D., Daniell, W., Karr, C. J., Hai, D. N., Tung, L. V., Ha, T. T. N., Wilson, B., Hanrahan, D., Croteau, G., Taylor, M. P. ["Improving human health outcomes with a low-cost intervention to reduce exposures from lead acid battery recycling: Dong Mai, Vietnam"](https://www.sciencedirect.com/science/article/abs/pii/S0013935117315244?via%3Dihub). Environmental Research <b>161</b>, pp. 181-187. February 2018.
+
+[^"4"]: Chowdhury, K. I., Nurunnahar, S., Kabir, M. L., Islam, M. T., Baker, M., Islam, M. S., Rahman, M., Hasan, M. A., Sikder, A., Kwong, L. H., Binkhorst, G. K. ["Child lead exposure near abandoned lead acid battery recycling sites in a residential community in Bangladesh: risk factors and the impact of soil remediation on blood lead levels"](https://www.sciencedirect.com/science/article/pii/S0013935120315887?via%3Dihub). Environmental Research <b>194</b>: 110689. March 2021.
+
+[^"5"]: Favaloro, P., Berger, A. ["Technical Updates to Our Global Health and Wellbeing Cause Prioritization Framework"](https://www.openphilanthropy.org/research/technical-updates-to-our-global-health-and-wellbeing-cause-prioritization-framework/). Open Philanthropy. November 2021.
+
+[^"6"]: Ericson, B., Landrigan, P., Taylor, M.P., Frostad, J., Caravanos, J., Keith, J., Fuller, R. ["The global burden of lead toxicity attributable to informal used lead-acid battery sites"](https://www.sciencedirect.com/science/article/abs/pii/S2214999616307901). Annals of Global Health <b>82</b>(5), pp. 686-699. September 2016.
+
+[^"7"]: United Nations Environment Programme. ["Alternatives to Lead-acid Batteries"](https://wedocs.unep.org/handle/20.500.11822/27402). 2019.
+
+[^"8"]: Gottesfeld, P., Were, F.H., Adogame, L., Gharbi, S., San, D., Nota, M.M., Kuepouo, G. ["Soil contamination from lead battery manufacturing and recycling in seven African countries"](https://www.sciencedirect.com/science/article/abs/pii/S0013935117317243?via%3Dihub). Environmental research <b>161</b>, pp. 609-614. February 2018.
+
+[^"9"]: Pure Earth. ["Children’s Lead Levels Fall 35% Following Cleanup in Kathgora, Bangladesh"](https://www.pureearth.org/childrens-lead-levels-fall-in-kathgora-bangladesh/). September 2019.
+
+[^"10"]: World Health Organization. ["Recycling used lead acid batteries: health considerations"](https://www.who.int/publications/i/item/9789241512855). Geneva, Licence: CC BY-NC-SA 3.0 IGO. January 2017.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
