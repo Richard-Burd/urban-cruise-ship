@@ -792,7 +792,7 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
-  }
+  },
 
   {
     solution: `Precision Agriculture R&D`,
