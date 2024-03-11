@@ -1,9 +1,85 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Impacts of Agriculture";
 export const solution = "Research and Development in Precision Agriculture";
 
-The U. S. Department of Agriculture should develop better techniques for precision agriculuture and disseminate them through education and outreach.
+## Description
+We promote continued research and development into precision agriculture including education and outreach programs to boost adoption of this technology into the industry.
+
+## Background
+Precision agriculture digital technologies include: soil maps, yield monitors, yield maps, variable rate technologies, auto-guidance systems, unmanned aerial vehicles, and satellite imagery[^”1”]. Benefits include: profitability, productivity, sustainability, crop quality, food safety, environmental protection, on-farm quality of life, and rural economic development[^”2”]. While these benefits have been well documented, adoption rates have been slow due to adjustment costs, risk preferences, farm size, and lack of knowledge and training as well as other various reasons[^”1”]. In the U.S. precision agriculture technologies were used in about 40% of corn and soybean acres in 2012[^”3”].
+
+Upcoming technologies that are being worked on to include in precision agriculture are: wireless sensor networks, Internet of Things connectivity, cloud computing, artificial intelligence, and machine learning[^”4”].
+
+<DynamicSolutionGraphic
+  barChartTitle={"Precision Agriculture R&D"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 3-11-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 198.8,
+      displayedValue: "$198.8",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 9.94,
+      displayedValue: "$9.94 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+## Calculations
+The Precision Farming market was valued at 4.1 billion in 2022 and increased to 7.5 billion in 2023, with a projected compound annual growth rate of 8%[^”5”]. 
+
+We recommend the following annual investment diversification.
+
+Public investment through Federal-State partnerships: $7.64 billion (a return to peak-spending of 2002)[^”6”].
+
+Private investment from for profit companies such as Deere and Co.: $2.3 billion[^”7”].
+
+Totaling $9.94 billion in annual investment cost.
+
+The USDA Economic Research service has calculated that for every $1 spend on agricultural R&D that there is $20 in benefit to the economy[^”6”]. This rate would mean a benefit of $198.8 billion annually.
+
+
+## Implementation
+Precision agriculture is information intense and will require continued advances in networking and computer processing power in order to fully realize its potential[^”8”].
+
+##### Lead researcher: Lee Nelson - Last updated: 3/11/2024
+
+[^”1”]: McFadden, J. et al. [“Precision Agriculture in the Digital Era: Recent Adoption on U.S. Farms”](https://www.ers.usda.gov/publications/pub-details/?pubid=105893) USDA: Economic Research Service, February 2023
+
+[^”2”]: Robert, P.C. [“Precision agriculture: a challenge for crop nutrition management”](https://doi.org/10.1007/978-94-017-2789-1_11) Progress in Plant Nutrition pp. 143-149, 2002
+
+[^”3”]: Schimmelpfennig, D. [“Farm Profits and Adoption of Precision Agriculture”]( www.ers.usda.gov/publications/err-economic-research-report/err217) USDA, October 2016
+
+[^”4”]: Shafi, U. et al. [“Precision Agriculture Techniques and Practices: From Considerations to Applications”](https://doi.org/10.3390/s19173796) Sensors, 2019
+
+[^”5”]: Gupta, A. [“Precision Farming Market Research Report”](https://www.marketresearchfuture.com/reports/precision-farming-market-2066) Market Research Future, March 2024
+
+[^”6”]: Nelson, K.P. and Fuglie, K. [“Investment in U.S. Public Agricultural Research and Development Has Fallen by a Third Over Past Two Decades, Lags Major Trade Competitors”](https://www.ers.usda.gov/amber-waves/2022/june/investment-in-u-s-public-agricultural-research-and-development-has-fallen-by-a-third-over-past-two-decades-lags-major-trade-competitors/) USDA: Agricultural Research and Productivity, June 2022
+
+[^”7”]: Hall, A. [“Deere bets the farm on $150bn ‘precision agriculture’ opportunity”]( https://citywire.com/pro-buyer/news/deere-bets-the-farm-on-150bn-precision-agriculture-opportunity/a2408316) New Agriculture and Food Technology, January 2023
+
+[^”8”]: Stafford, J. [“Implementing Precision Agriculture in the 21st Century”](https://doi.org/10.1006/jaer.2000.0577) Journal of Agricultural Engineering Research, July 2000
+
 
 export default ({ children }) => 
   <SolutionDropdown 

@@ -793,6 +793,18 @@ export const solutionData = [
     sources: null,
     subset: "energy-production-efficiency",
   }
+
+  {
+    solution: `Precision Agriculture R&D`,
+    link: `/matter/practices/precision#research-and-development-in-precision-agriculture`,
+    site: `matter`,
+    cost: 9.94,
+    benefit: 198.8,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  }
 ];
 
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
