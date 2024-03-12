@@ -1,33 +1,87 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 
 export const problem = "Damages From Lead Exposure";
 export const solution = "Ban Lead Paint";
 
 ## Description
 
-We propose that all national governments ban the manufacture and use of lead paint.
+We propose that all national governments mandate a maximum of 90 parts per million (ppm) of lead in paint.
 
 ## Background
 
+Lead was widely used as a paint additive to improve a paint's color, moisture resistance, and drying speed [^"2"]. However, growing public awareness of the negative health effects of lead induced the United States to ban lead paint in 1978 [^"2"]. As of January 2024, 48% of countries had legal limits of lead content in paint, though many of those limits are above the 90 ppm level proposed here [^"1"]. By "lead paint", we mean paint for which lead is deliberately used as an additive. A complete elimination of lead in paint is infeasible, since lead contamination in many ingredients is unavoidable [^"13"]. A standard of 90 ppm, such as is recommended by the Lead Paint Alliance, achieves a balance between health needs and technical feasibility [^"13"].
+
+## Calculations
+
+Our analysis is based on an evaulation of an advocacy campaign for a lead paint ban in Malawi [^"3"], with modifications as noted below.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Lead Paint Bans"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"40,000"}
+  arrowText2={"DALYs"}
+  arrowText3={"gained/yr"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Mar. 11, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 5,
+      displayedValue: "$5 million/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 2000,
+      displayedValue: "$2 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+The cost of the program was assessed at $80,000 per year for 5 years for the Lead Exposure Elimination Project, plus $75,000 for 8 years for the government of Malawi to develop, implement, and enforce the regulations. They estimate a cost of $590,000 with a 4% discount rate, but we do not use discounting in our calculations. The benefits are estimated at 8,000 disability-adjusted life years (DALYs) gained, which we value at $50,000 each [^"4"]; see the following analysis of used lead-acid battery recycling site remediation for more details.
+
+Bernard and Schukraft assess that programs such as the Malawi lead paint initiative could absorb at least $5 million per year of additional funding without loss of effectiveness [^"5"], and so we assess a cost of $5 million with the same cost-benefit ratio as the Malawi program. This is approximately the cost of running a similar advocacy campaign in every country that either does not have lead paint regulations or a standard that is far above the 90 ppm standard advocated by the Lead Paint Alliance [^"13"], if the costs of all programs are equal to that of the Malawi program.
+
+We have not assessed the possible cost to paint manufacturers to comply with regulations or loss of consumer surplus that would result from the properties of lead paint. The World Health Organization argues that these costs would be minimal or non-existent [^"6"].
+
+There is much uncertainty in this analysis. Points of uncertaintly include the cost of running advoacy campaigns, as these numbers are extrapolated from a single campaign in Malawi; the receptivity of other governments to lead paint regulations; the extent of harms from lead paint, which are highly uncertain in low to middle income countries [^"3"]; and the market cost of lead paint regulation. We have also assessed only health costs of lead paint, and we expect that the economic costs are much greater, as described above. Nevertheless, we expect that an international campaign to ban lead paint will show highly favorable benefit-cost figures under any reasonable set of assumptions.
+
 ## Implementation
 
-Many countries currently do not have restrictions on lead in paint, and among those that do, restrictions are mostly limits on lead concentration rather than outright bans [^"9"]. A complete elimination of lead in paint is infeasible, since lead contamination in many ingredients is unavoidable, but a standard of 90 parts per million or less, such as is recommended by the Lead Paint Alliance [^"13"], is achievable and has already been implemented by many countries [^"14"].
+We recommend the UN Environment Programme's model legislation for a lead paint ban, which sets a standard of 90 ppm [^"13"]. The Lead Exposure Elimination Project's Malawi campaign entailed advocacy for the legislation and a public education campaign about the harms of lead paint [^"3"].
 
 
 
-[^"1"]: Choi, J. ["UN praises 'official end' of leaded gasoline in cars after Algeria halts sales"](https://thehill.com/policy/energy-environment/570023-un-praises-official-end-of-leaded-gasoline-in-cars-after-algeria/). The Hill. August 2021.
+[^"1"]: World Health Organization. ["Legally-binding controls on lead paint"](https://www.who.int/data/gho/data/themes/topics/indicator-groups/legally-binding-controls-on-lead-paint). Accessed March 11, 2024.
 
-[^"2"]: de Larderel, J. A., Radka, M., Karmali, A., Visser R., Short, J., Sigman, R., Wiederkehr, P. ["Phasing Lead out of Gasoline: An Examination of Policy Approaches in Different Countries"](https://www.oecd.org/env/ehs/risk-management/1937036.pdf). Organization for Economic Co-operation and Development, United Nations Environment Programme. 1999.
+[^"2"]: Shetty, A. ["Why was Lead Used in Paint? It’s Negative effects on Health"](https://omegaindinc.com/why-was-lead-used-in-paint/). Omega Industries. January 2019.
 
-[^"8"]: Newell, R., Rogers, K. ["The U.S. Experience with the Phasedown of Lead in Gasoline"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.649.6577). Resources for the Future. June 2003.
+[^"3"]: Hu, J. ["How Cost-Effective Is LEEP’s Malawi Program?"](https://leadelimination.org/malawi_cost-effectiveness_intro/). Lead Exposure Elimination Project. January 2022.
+
+[^"4"]: Favaloro, P., Berger, A. ["Technical Updates to Our Global Health and Wellbeing Cause Prioritization Framework"](https://www.openphilanthropy.org/research/technical-updates-to-our-global-health-and-wellbeing-cause-prioritization-framework/). Open Philanthropy. November 2021.
+
+[^"5"]: Bernard, D. R., Schukraft, J. ["Global lead exposure report"](https://rethinkpriorities.org/publications/global-lead-exposure-report). Rethink Priorities. May 2021.
+
+[^"6"]: Chemical Safety and Health Unit. ["Global elimination of lead paint: why and how countries should take action - Technical brief"](https://www.who.int/publications/i/item/9789240005143). World Health Organization, United Nations Environment Programme. August 2020.
 
 [^"9"]: Rukikaire, K. ["New guidelines to support SMEs to phase out lead from paint manufacturing"](https://www.unep.org/news-and-stories/press-release/new-guidelines-support-smes-phase-out-lead-paint-manufacturing). United Nations Environment Programme. May 2022.
 
-[^"11"]: United Nations Environment Programme. ["Alternatives to Lead-Acid Batteries"](https://wedocs.unep.org/bitstream/handle/20.500.11822/27402/ALAB.pdf?sequence=1&isAllowed=y). Accessed September 13, 2022.
-
 [^"13"]: United Nations Environment Programme. ["Model Law and Guidance for Regulating Lead Paint"](https://www.unep.org/resources/publication/model-law-and-guidance-regulating-lead-paint). July 2018.
-
-[^"12"]: United Nations Environment Programme. ["Lead in ammunition and hunting"](https://www.unep.org/explore-topics/chemicals-waste/what-we-do/emerging-issues/lead-pollution-through-hunting). Accessed September 13, 2022.
 
 [^"14"]: World Health Organization, United Nations Environment Programme. ["Global elimination of lead paint: why and how countries should take action - Policy brief"](https://www.who.int/publications/i/item/9789240005167). August 2020.
 
