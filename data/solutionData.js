@@ -804,6 +804,54 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Low Depletion Rocket Fuels`,
+    link: `/space/ethics/space_environment#low-depletion-rocket-fuels`,
+    site: `matter`,
+    cost: 29.465548150185,
+    benefit: 52.38805970149253,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
+  
+  {
+    solution: `The Department of Energy Should Increase Energy R&D`,
+    link: `/energy/energy_socioeconomics/rd`,
+    site: `matter`,
+    cost: 15,
+    benefit: 408.8142754628615,
+    co2: 411,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `ULAB Site Remediation`,
+    link: `/habitat/environment/chemical_socio`,
+    site: `matter`,
+    cost: 0.412029024,
+    benefit: 6.362400000,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Ban Lead Paint`,
+    link: `/habitat/environment/chemical_socio`,
+    site: `matter`,
+    cost: 0.005,
+    benefit: 2,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
   }
 ];
 
