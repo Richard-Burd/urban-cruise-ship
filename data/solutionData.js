@@ -819,18 +819,6 @@ export const solutionData = [
   },
   
   {
-    solution: `The Department of Energy Should Increase Energy R&D`,
-    link: `/energy/energy_socioeconomics/rd`,
-    site: `matter`,
-    cost: 15,
-    benefit: 408.8142754628615,
-    co2: 411,
-    habitat: null,
-    sources: null,
-    subset: "energy-production-efficiency",
-  },
-  
-  {
     solution: `ULAB Site Remediation`,
     link: `/habitat/environment/chemical_socio`,
     site: `matter`,
@@ -852,6 +840,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Derelict Fishing Gear Buyback`,
+    link: `/oceans/ocean_environment/ocean_plastics`,
+    site: `oceans`,
+    cost: 0.11861079166666667,
+    benefit: 7.451195700673214,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
   }
 ];
 
