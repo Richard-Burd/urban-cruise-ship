@@ -1,33 +1,125 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 import ArticleImage from "/components/ArticleImage.js";
 
-export const problem = "Plastic Pollution";
-export const solution = "Regulate Fishing Gear";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
-Lost or discarded fishing gear constitutes nearly half of the plastic waste in the Great Pacific Garbage Patch.
+export const problem = "Oceanic Plastic Pollution";
+export const solution = "Derelict Fishing Gear Buyback";
+
+
+
+## Description
+
+We propose an international program to buy back derelict fishing gear.
+
+
+
+## Background
+
+Although there is great uncertainty, lost or discarded fishing gear constitutes an estimated 20% of all plastic waste that enters the oceans. Fishing gear constitutes nearly half of the plastic waste in the Great Pacific Garbage Patch.
 
 <ArticleImage image={"discard_fishing_gear.svg"} width={850} height={300} />
 #### Source: Lebreton et al. [^"9"].
 
-Discarded fishing gear is a particularly insidious form of plastic pollution because the gear can catch sea life even after discard, a phenomenon known as"ghost fishing" [^"13"], which could be responsible for up to 30% of all fish caught by human activity [^"11"].
+Discarded fishing gear is particularly insidious because gear catches sea life even after discard, a phenomenon known as "ghost fishing" [^"13"], which could be responsible for up to 30% of all fish caught by human activity [^"11"].
 
-An approach to the problem is strengthened international agreement. Such an agreement would focus on marking of fishing gear; extended producer responsibility; stronger enforcement against illegal, unreported, and unregulated fishing; and other provisions [^"3"]. Additionally, stronger enforcement of the London Convention [^"6"] and the International Convention for the Prevention of Pollution from Ships [^"7"] would reduce the permissible intentional or accidental loss of equipment at sea [^"16"].
+A buy-back program, such as the program in South Korea that we analyze below, pays fishers a bounty for recovered fishing gear, such as nets and traps [^"1"].
 
-Improved recycling can increase the economic incentive for fishers to avoid loss of equipment [^"5"].
+
+
+## Calculations
+
+We estimate the following costs and benefits from an international buy-back program.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Fishing Gear Buy-Back"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"130,000"}
+  arrowText2={"tons"}
+  arrowText3={"waste"}
+  arrowText4={"removed/yr"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Mar. 14, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 0.11861079166666667,
+      displayedValue: "$120 million/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 7.451195700673214,
+      displayedValue: "$7 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+Costs are estimated from South Korea's buy-back program, which incurred an average annual cost (CPI-adjusted) of about $7 million per year from 2009 to 2012, including the payments to fishers and the cost of administering the program [^"2"]. Over the same period, the program recovered an average of nearly 8,000 tons of fishing gear per year [^"2"].
+
+South Korea provides just over 1% of the world's seafood [^"4"] but is responsible for 6% of discarded fishing nets [^"1"]. We use the latter figure to estimate the impact of a buy-back program as scaled to the full world.
+
+In 2019, Beaumont et al. estimated, based on lost ecosystem services, an impact of $3300-33,000 per ton per year of oceanic plastic [^"8"]. Taking the lower end of this range, CPI-adjusting to 2024, and applying a 7% discount rate, we estimate the value of recovered gear at $58,000 per ton.
+
+The proper valuation of discarded fishing gear is difficult to make with precision. Beaumont et al. make a highly speculative estimate that 1-5% of ocean ecosystem services are lost as a result of plastic pollution, and they value those services based on Costanza et al. [^"10"], which in turn are controversial [^"12"]. Conversely, we note that ghost fishing and risk to ships are two costs particularly associated with discarded fishing gear and are not incorporated into the estimates of Beaumont et al. for general plastic waste. We are also unsure how precisely the performance of the South Korea program can be extrapolated to other countries.
+
+
+
+
+
+## Implementation
+
+Equipment buy-backs are one of several tools to reduce discard of fishing gear at sea. They suffer from the drawback that they avoid the "polluter pays" principle, and in fact a buy-back program is an indirect subsidy for fishing. Furthermore, buy-back programs focus on retrieving equipment after it has been lost, rather than preventing loss from occurring in the first place [^"5"]. We therefore regard buy-back programs as an incomplete solution to the fishing gear discard problem.
+
+Retrieval of fishing gear can also be done directly by governments or by NGOs, such as Healthy Seas [^"14"].
+
+A stronger international agreement would focus on marking of fishing gear; extended producer responsibility; stronger enforcement against illegal, unreported, and unregulated fishing; and other provisions [^"3"]. Additionally, stronger enforcement of the London Convention [^"6"] and the International Convention for the Prevention of Pollution from Ships [^"7"] would reduce the permissible intentional or accidental loss of equipment at sea [^"16"].
+
+
+
+
+
+
+
+
+[^"1"]: Macfadyen, G., Huntington, T., Cappell, R. ["Abandoned, lost or otherwise discarded fishing gear"](https://www.fao.org/documents/card/en?details=b1c2166f-78d5-5c21-b678-fe30cd51b154). FAO Fisheries and Aquaculture Technical Paper Rome, ISBN 9789251061961. 2009.
+
+[^"2"]: United Nations Environment Programme. ["Best Practices in dealing with Marine Litter in Fisheries, Aquaculture and Shipping Sectors in the NOWPAP Region"](https://wedocs.unep.org/20.500.11822/26219). 2015.
 
 [^"3"]: Environmental Investigation Agency. ["Convention on Plastic Pollution - Essential Elements - Fishing Gear"](https://eia-international.org/report/convention-on-plastic-pollution-essential-elements-fishing-gear/). January 2022.
 
-[^"5"]: Chun, Z. ["Five Ways to Tackle Ghost Fishing Gear"](https://www.maritime-executive.com/editorials/five-ways-to-tackle-ghost-fishing-gear). The Maritime Executive. December 2018.
+[^"4"]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](http://www.fao.org/faostat/en/#data). Accessed March 14, 2024.
+
+[^"5"]: Cho, D. ["The incentive program for fishermen to collect marine debris in Korea"](https://www.sciencedirect.com/science/article/abs/pii/S0025326X08004918). Marine Pollution Bulletin. <b>58</b>(3), pp. 415-417. August 2009.
 
 [^"6"]: International Maritime Organization. ["Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter"](https://www.imo.org/en/OurWork/Environment/Pages/London-Convention-Protocol.aspx). Accessed September 1, 2022.
 
 [^"7"]: International Maritime Organization. ["International Convention for the Prevention of Pollution from Ships (MARPOL)"](https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Prevention-of-Pollution-from-Ships-(MARPOL).aspx). Accessed September 1, 2022.
 
+[^"8"]: Beaumont, N., Aanesen, M., Austen, M. C., Börger, T., Clark, J. R., Cole, M., Hooper, T., Lindeque, P. K., Pascoe, C., Wyles, K. J. ["Global ecological, social and economic impacts of marine plastic"](https://www.sciencedirect.com/science/article/pii/S0025326X19302061). Marine Pollution Bulletin <b>142</b>, pp. 189-195. May 2019.
+
 [^"9"]: Lebreton, L., Slat, B., Ferrari, F., Sainte-Rose, B., Aitken, J., Marthouse, R., Hajbane, S., Cunsolo, S., Schwarz, A., Levivier, A., Noble, K., Debeljak, P., Maral, H., Schoeneich-Argent, R., Brambini, R., Reisser, J. ["Evidence that the Great Pacific Garbage Patch is rapidly accumulating plastic"](https://www.nature.com/articles/s41598-018-22939-w). Scientific Reports <b>8</b>(1), pp. 1-5. March 2018.
+
+[^"10"]: Costanza, R., de Groot, R., Sutton, P., van der Ploeg, S., Anderson, S., Kubiszewski, I., Farber, S., Turner, R. ["Changes in the global value of ecosystem services"](https://www.sciencedirect.com/science/article/abs/pii/S0959378014000685?via%3Dihub). Global Environmental Change 26, pp. 152-158. May 2014.
 
 [^"11"]: McCarthy, J. ["The Fishing Industry Has a Clear Solution for One of the Biggest Sources of Ocean Plastic Pollution"](https://www.globalcitizen.org/en/content/blue-ocean-gear-sustainable-fishing/). Global Citizen. September 2020.
 
+[^"12"]: Simpson, R. D. ["Putting a Price on Ecosystem Services"](https://issues.org/putting-a-price-on-ecosystem-services/). Issues in Science and Technology <b>XXII</b>(4). Summer 2016.
+
 [^"13"]: NOAA Marine Debris Program. ["Impact of "Ghost Fishing" via Derelict Fishing Gear"](https://marinedebris.noaa.gov/sites/default/files/publications-files/Ghostfishing_DFG.pdf). National Oceanic and Atmospheric Administration. March 2015.
+
+[^"14"]: Healthy Seas. ["Marine Protection"](https://www.healthyseas.org/marine-protection/). Accessed March 14, 2024.
 
 [^"16"]: Scott, K. ["We have international laws to stop plastic pollution from fishing vessels now. Why are we not enforcing them?"](https://theconversation.com/we-have-international-laws-to-stop-plastic-pollution-from-fishing-vessels-now-why-are-we-not-enforcing-them-185951). The Conversation. July 2022.
 
