@@ -1,5 +1,12 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Transmission Losses";
 export const solution = "Aging Power Grids Should Be Upgraded";
 
@@ -11,21 +18,71 @@ We reccomend the United States upgrade the aging power grid with higher efficien
 
 ## Background
 
-Several aspects of power grids can be upgraded to reduce transmission losses. The possibilities include reconductoring (installing new conductor wires), reactive power compensation, expanding use of high voltage direct current (HVDC), and voltage optimization, among other tools [^"8"].
+Several aspects of power grids can be upgraded to reduce transmission losses. The possibilities include reconductoring (installing new conductor wires), reactive power compensation, expanding use of high voltage direct current (HVDC), and voltage optimization, among other tools [^"1"].
 
-While it is generally not cost-effective to replace existing equipment prematurely, it is often cost-effective to replace equipment at the end of its life with equipment designed to higher efficiency standards [^"8"].
+While it is generally not cost-effective to replace existing equipment prematurely, it is often cost-effective to replace equipment at the end of its life with equipment designed to higher efficiency standards [^"1"].
 
 <ArticleImage image={"transformer_standards.svg"} width={700} height={300} />
-#### Estimate of 30 year energy savings total from existing and stronger efficiency standards on transformers in the United States. Source: [^"17"].
+#### Estimate of 30 year energy savings total from existing and stronger efficiency standards on transformers in the United States. Source: [^"2"].
 
 The cost of electricity savings, per kilowatt-hour of saved electricity, in Australia has been estimated as follows.
 
 <ArticleImage image={"grid_loss_cost.svg"} width={700} height={300} />
-#### Costs have been converted to U. S. Dollars and CPI-adjusted to 2020. Source: [^"8"].
+#### Costs have been converted to U. S. Dollars and CPI-adjusted to 2020. Source: [^"1"].
 
-[^"8"]: Jackson, R., Onar, O. C., Kirkham, H., Fisher, E., Burkes, K., Starke, M., Mohammed, O., Weeks, G. ["Opportunities for Energy Efficiency Improvements in the U.S. Electricity Transmission and Distribution System"](https://www.energy.gov/sites/prod/files/2015/04/f22/QER%20Analysis%20-%20Opportunities%20for%20Energy%20Efficiency%20Improvements%20in%20the%20US%20Electricity%20Transmission%20and%20Distribution%20System_0.pdf). Oak Ridge National Laboratory, managed by UT-Batelle for the U. S. Department of Energy. April 2015.
+The American Society of Civil Engineers (ASCE) gave the U.S. power grid a C- rating with over 70% being at least 25 years old[^”3”]. Extensive infrastructure and transmission upgrades and expansion will be needed to maintain the grid system and prepare for the influx of renewable energy production and transmission.
 
-[^"17"]: National Association of Clean Air Agencies. ["Reduce Losses in the Transmission and Distribution System"](https://www.4cleanair.org/wp-content/uploads/Documents/Chapter_10.pdf). Accessed March 15, 2022.
+The benefits of grid upgrades and expansion include: adding more renewable energy to grid systems, reduction of power bottlenecks, improves reliability and resiliency, and creates jobs and boosts economy[^”4”].
+
+<DynamicSolutionGraphic
+  barChartTitle={"Upgrading Power Grid – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 3-16-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 112,
+      displayedValue: "$112",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 40,
+      displayedValue: "$40 Billions USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+## Calculations
+The ASCE estimates a funding gap of $200 billion over the next 5 years[^”3”], which translates into $40 billion annually.
+
+The Midcontinent Independent System Operator (that manages the power grid of 17 states in the middle of the U.S.) found that benefits of upgrading and expansion of power grids are on average 2.8 times greater than the costs[^”5”]. This would gain a benefit of $112 billion annually if the spending gap above was met.
+
+## Implementation
+Planning, permitting, and carrying out upgrades and expansions can take up to 15 years per project[^”6”]. One major problem currently is sourcing the materials for new transformers, which can be backlogged for up to four years and keep increasing in price due to demand.
+
+##### Lead researcher: Lee Nelson - Last updated: 3/16/2023
+
+[^"1"]: Jackson, R., Onar, O. C., Kirkham, H., Fisher, E., Burkes, K., Starke, M., Mohammed, O., Weeks, G. ["Opportunities for Energy Efficiency Improvements in the U.S. Electricity Transmission and Distribution System"](https://www.energy.gov/sites/prod/files/2015/04/f22/QER%20Analysis%20-%20Opportunities%20for%20Energy%20Efficiency%20Improvements%20in%20the%20US%20Electricity%20Transmission%20and%20Distribution%20System_0.pdf). Oak Ridge National Laboratory, managed by UT-Batelle for the U. S. Department of Energy. April 2015.
+
+[^"2"]: National Association of Clean Air Agencies. ["Reduce Losses in the Transmission and Distribution System"](https://www.4cleanair.org/wp-content/uploads/Documents/Chapter_10.pdf). Accessed March 15, 2022.
+
+[^”3”]: American Society of Civil Engineers [“2013 REPORT CARD FOR AMERICA'S INFRASTRUCTURE”](https://infrastructurereportcard.org/wp-content/uploads/2020/12/Energy-2021.pdf) American Society of Civil Engineers, 2021
+
+[^”4”]: Thorud, D. [“What is the “grid” and why is transmission important?”](https://cleangridalliance.org/blog/187/what-is-the-grid-and-why-is-transmission-important) Clean Grid Alliance, October 2023
+
+[^”5”]: American Clean Power [“Clean Power Annual Market Report | 2022”](https://cleanpower.org/resources/clean-power-annual-market-report-2022/) American Clean Power, 2022
+
+[^”6”]: IEA [“Electricity Grids and Secure Energy Transitions”] (https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions) IEA, October 2023
+
 
 export default ({ children }) => 
   <SolutionDropdown 
