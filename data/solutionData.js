@@ -844,7 +844,7 @@ export const solutionData = [
 
   {
     solution: `Upgrade Power Grid - U.S.`,
-    link: `/energy/energy_distribution/grid_overview`,
+    link: `/energy/energy_distribution/grid_overview#aging_power_grids_should_be_upgraded`,
     site: `energy`,
     cost: 40,
     benefit: 112,
