@@ -46,15 +46,8 @@
       { "article_title": "Communications", "article_url": "cities_comm" },
       { "article_title": "Light Pollution", "article_url": "light" },
       { "article_title": "Noise Pollution", "article_url": "noise" },
-      { "article_title": "Urban Heat Island", "article_url": "heat_island" }
-     ]
-  },
-  {
-     "focus_area_name":"Material Consumption",
-     "focus_area_url":"cities_material_consumption",
-     "articles":[
-      { "article_title": "Construction Materials", "article_url": "cities_construction" },
-      { "article_title": "Consumer Materials", "article_url": "cities_consumer" }
+      { "article_title": "Urban Heat Island", "article_url": "heat_island" },
+	  { "article_title": "Material Consumption", "article_url": "cities_materials"}
      ]
   }
 ]

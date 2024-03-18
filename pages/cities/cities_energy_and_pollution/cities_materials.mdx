@@ -1,0 +1,36 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "cities";
+export const focusAreaUrl = "cities_energy_and_pollution";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Material Consumption
+
+## Construction Materials
+
+High-density homes, particularly apartments, save on construction resources relative to other forms of construction.
+
+<ArticleImage image={"density_embodied.svg"} width={840} height={290} />
+#### "Embodied" energy or emissions are the energy or emissions that were required to make the building material. Energy and emissions are estimated on an annual basis, assuming a 50 year life to the building. High density refers to a 15 story apartment building near downtown Toronto, and low density refers to an average detached house in a Toronto suburb. Source: [^1].
+
+## Consumer Materials
+
+Just as denser housing construction [saves embodied energy in the construction phase](/cities/cities_material_consumption/cities_construction), it also saves energy throughout the building's life in the form of consumer goods.
+
+<ArticleImage image={"density_embodied2.svg"} width={700} height={250} />
+#### Urban homes are 90 m<sup>2</sup> apartments near downtown Brussels, and suburban homes are 130 m<sup>2</sup> detached single family homes in the suburbs of Brussels. Source: [^2]. 'Normal' homes refer to "a standard new construction built according to the minimal energy efficiency requirements based on the Energy Performance of Buildings Directive" of the EU. A 'Low Energy' house is one with "reinforced insulation and low space heating energy demand but with standard heat delivery systems". A passive home is "an extremely insulated and airtight passive house equipped with mechanical ventilation and a heat recovery system".
+
+[^1]: Norman, J., MacLean, H., Kennedy, C. ["Comparing High and Low Residential Density: Life-Cycle Analysis of Energy Use and Greenhouse Gas Emissions"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.602.3394&rep=rep1&type=pdf). Journal of Urban Planning and Development <b>132</b>(1), pp. 10-21. March 2006.
+
+[^2]: Stephan, A., Crawford, R. H., de Myttenaere, K. ["Towards a more holistic approach to reducing the energy demand of dwellings"](https://www.sciencedirect.com/science/article/pii/S1877705811049435). Procedia Engineering <b>21</b>, pp. 1033-1041. 2011.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
