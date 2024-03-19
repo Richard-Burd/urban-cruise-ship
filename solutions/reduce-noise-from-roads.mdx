@@ -1,16 +1,88 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
-
-export const problem = "Noise Pollution";
-export const solution = "Reduce Noise From Roads";
-
 import ArticleImage from "/components/ArticleImage.js";
 
-Cars are the biggest source of noise pollution that most people are exposed to. [Reducing the need for driving](/cities/cities_mobility/development_sets) is a key way to reduce noise pollution. Beyond that, we propose that pavements and noise barriers be used to cut down noise.
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
-<ArticleImage image={"road_noise_reduction.svg"} width={900} height={1080} />
-#### Noise volume is typically measured in decibels. The decibel system is logarithmic, with 10 dB constituting a doubling of the volume of noise. Source: [^"11"].
+export const problem = "Noise Pollution";
+export const solution = "Quieter Pavement";
 
-[^"11"]: National Academies of Sciences, Engineering, and Medicine, Transportation Research Board, National Cooperative Highway Research Program, Rochat, J., McKenna, S., Barrett, D., Cubick, K., Riffle, S., Samples, L., Rasmussen, R., Sohaney, R. "Breaking Barriers: Alternative Approaches to Avoiding and Reducing Highway Traffic Noise Impacts". 2022.
+## Description
+
+We propose the use of quiet pravement on urban highways.
+
+## Background
+
+Cars are the biggest source of noise pollution that most people are exposed to. [Reducing the need for driving](/cities/cities_mobility/development_sets) is the main way to reduce noise pollution. Above, we discuss the effectiveness of some other strategies [^"11"].
+
+## Calculations
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Quieter Asphalt"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"4-10 dB"}
+  arrowText2={"Quieter"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Mar. 19, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 1.3317856815067057,
+      displayedValue: "$1.3 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 1.782917950901472,
+      displayedValue: "$1.8 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+Per-mile costs and benefits are based on an analysis of Segment 3, E11 of I-580 in California, a one-mile eastbound stretch [^"1"]. The adjacent westbound segment, W11, showed similar results. It is unclear how widely applicable this solution is; the same analysis on the neighboring segments W10 and E10 was not found to be cost-feasible.
+
+The study found an additional cost for E11 pavement to have a net present value (we are assuming 2018 currency, the year of the report's publication) of about $1.5 million and a cost-feasibility criterion, which we are taking to be the benefit, of about $2 million.
+
+We take as the applicability of quiet pavement to be the 9046 miles of urban interstate that were judged in 2021 to be congested, and thus due for other forms of treatment. This is nearly half of the urban interstate network in the United States [^"2"]. We acknowledge great uncertainty in this figure. We thus find a net present cost of about $33 billion and a net present benefit of about $45 billion. These figures are presented on an annual basis with a 4% discount rate [^"3"].
+
+All monetary figures are CPI-adjusted to 2024.
+
+The Caltrans report [^"1"] estimated that quieter pavement would reduce noise from that segment of highway by 4-10 decibels.
+
+## Implementation
+
+Several varieties of quiet pavement have been in use and under development for decades [^"4"]. The California Department of Transportation in particular, Caltrans, has been working to develop a cost-effective quieter pavement [^"5"]. Quieter pavements, most often in the form of rubberized asphalt, have seen limited deployment [^"6"].
+
+Not every quiet pavement experiment has been successful. In particular, in Washington State, the allowance of studded tires has led to road damage and degradation of noise-reduction benefits from quiet pavement [^"6"].
+
+##### Lead researcher: Michael Goff. Last updated: March 19, 2024.
+
+
+
+
+[^"1"]: Caltrans. ["Quiet Pavement"](https://dot.ca.gov/programs/environmental-analysis/noise-vibration/quiet-pavement). February 2018.
+
+[^"2"]: Moretti, R. ["America’s Interstate Highway System at 65: Meeting America’s Transportation Needs with a Reliable, Safe & Well-Maintained National Highway Network – June 2021"](https://tripnet.org/reports/americas-interstate-highway-system-at-65-june-2021/). TRIP. June 2021.
+
+[^"3"]: Southwest Concrete Pavement Association. ["OMB Publishes Discount Rate for 2022"](https://swcpa.org/omb-publishes-discount-rate-for-2022/). May 2022.
+
+[^"4"]: Federal Highway Administration. ["Quiet Pavements: Lessons Learned from Europe"](https://www.fhwa.dot.gov/publications/focus/05apr/04.cfm). U.S. Department of Transportation, Publication FHWA-HRT-05-025. April 2005.
+
+[^"5"]: Caltrans. ["Quieter Pavements"](https://dot.ca.gov/programs/maintenance/pavement/concrete-pavement-and-pavement-foundations/quieter-pavement). Accessed March 19, 2024.
+
+[^"6"]: Careless, J. ["Reducing road noise with pavement design"](http://asphaltmagazine.com/turning-the-volume-down/). Asphalt: The Magazine of the Aslphalt Institute. Accessed March 19, 2024.
+
+[^"11"]: National Academies of Sciences, Engineering, and Medicine, Transportation Research Board, National Cooperative Highway Research Program, Rochat, J., McKenna, S., Barrett, D., Cubick, K., Riffle, S., Samples, L., Rasmussen, R., Sohaney, R. ["Breaking Barriers: Alternative Approaches to Avoiding and Reducing Highway Traffic Noise Impacts"](https://nap.nationalacademies.org/catalog/26469/breaking-barriers-alternative-approaches-to-avoiding-and-reducing-highway-traffic-noise-impacts). 2022.
 
 export default ({ children }) => 
   <SolutionDropdown 

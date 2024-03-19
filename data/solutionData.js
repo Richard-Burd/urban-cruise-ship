@@ -864,6 +864,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "ecology-environment",
+  },
+  
+  {
+    solution: `Quieter Pavement`,
+    link: `/cities/cities_energy_and_pollution/noise`,
+    site: `cities`,
+    cost: 1.3317856815067057,
+    benefit: 1.782917950901472,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
   }
 
 ];
