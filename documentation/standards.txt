@@ -1,0 +1,31 @@
+Documentation is optional but highly encouraged. Documentation goes in this (documentation) folder. The purpose is so that can easily reconstruct or modify calculations months after we last thought about them. As Mr. T once said, "I pity the foo' who don't document his code."
+
+If documentation is done, then the following standards are in effect.
+
+- If documenting a specific solution, the file name (but not necessarily the extension) should match the file name for the solution. For example, 'reduce-noise-from-roads.py' is a script that is associated with the solution 'reduce-noise-from-roads.mdx'.
+- Python (.py) is the most preferred form of documention, so that I can run the script and get the numbers out.
+- If any other type of file is used, it should be a type of file that can be read with standard software on either a Windows machine or a Mac. WYSIWYG files (e.g. MS Word) are strongly discouraged. Text files (.txt) and Excel sheets (.xlsx) are acceptable so long as they comform to the standards here.
+- Documentation should include the date created and the date of the last substantial modification. That is, modification to the documentation, not to the file it refers to. It is left to each person's discretion what "substantial" means.
+- For a solution, the following pieces of information should be prominently displayed: yearly costs, yearly benefits, environmental costs and benefits (e.g. greenhouse gas reduction).
+- All numbers that are used to compute final results should be traceable to their sources.
+- Sources can be referred to just by URL. Linking to an HTML file, rather than a PDF, is strongly preferred. We may modify this rule as needed to guard against link rot.
+- All calculations and transformations of data (e.g. CPI adjustment, currency conversion) should be documented.
+- State whatever shortcomings the solution may have so that we can easily see what needs to be done later.
+
+The following standards are in effect for solutions.
+
+- Costs and benefits are assessed on an annual basis. This isn't what I would choose to do, but it is what we have been doing for a long time, so we'll stick with this approach.
+- Whenever a source is cited that uses a discount rate, make clear what the discount rate is.
+- If we cannot determine a discount rate, then we will assume that it is 7%.
+- Currency should be adjusted for inflation to January in whatever the current year is.
+- The base of CPI adjustment is January in the year reported in the source. If we cannot determine that, then we will assume that it is the year the source was published. (E.g. if citing a paper that was published in 2008, and it says 2006 dollars, when we assume it is January 2006. If it doesn't say that year the money is, we assume it is January 2008.)
+- We can forego CPI adjustment if the cited work is recent enough. How recent is "enough" is left to individual judgment, but I think five years is a good rule of thumb.
+- If environmental benefits are reported, then they should not be monetized and included in the primary cost and benefit figures (CONSULT WITH THE GROUP AND MAKE SURE WE ARE ALL ON BOARD WITH THIS).
+- If there are significant sources of uncertainty in the figures, which there almost certainly will be, that should be acknowledged in the write-up.
+- Currency should be converted to US Dollars. It is unnecessary to specify USD in a write-up.
+- It is not necessary to go back through old solutions and bring them up to these standards, but when those solutions are edited, they should be brought into compliance.
+
+General standards
+
+- I am picky about how references are formatted and later will write down some explicit standards. For now, check how I have done it with other things. Journal numbers (not issue numbers) should be bolded; for some reason this did not carry over when we rebuilt the site.
+- Eventually, I want to create libraries for some standard things, including CPI adjustments, currency conversions, social cost of carbon, and energy statistics as shown in the EI Statistical Review of World Energy, so that there will be a common source of truth on commonly used things.
