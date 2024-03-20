@@ -30,6 +30,7 @@ benefit = benefit_per_mile * cpi_adjustor * 2 * miles_urban_highway
 print("NPV Cost   : $",cost/10**9," billion",sep="")
 print("NPV Benefit: $",benefit/10**9," billion",sep="")
 
+# https://swcpa.org/omb-publishes-discount-rate-for-2022/
 discount_rate = 0.04 # Caltrans evidently uses a 4% discount rate, which is controversial, but it's what we have.
 
 # A yearly benefit of $1 at a 4% discount rate is valued at $(1+0.96+0.96**2 + ...), which, by a dark art known as math, is 1/0.04 = 25.
