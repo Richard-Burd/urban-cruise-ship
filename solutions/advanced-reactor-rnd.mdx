@@ -11,20 +11,15 @@ export const problem = "Nuclear Technology Lagging";
 export const solution = "Advanced Reactor R&D - U.S.";
 
 ## Description
-We promote the research, development, and commercialization of advanced reactor technologies.
-
-## Background
-The leading Generation IV advanced reactor energy systems are: Gas-cooled Fast Reactors, Lead-cooled Fast Reactors, Sodium-cooled Fast Reactors, Molten Salt Reactors, Supercritical Water-cooled Reactors, and Very High Temperature Reactors[^”1”]. Currently prototypes are being built in China, U.S., Russia, and France[^”1”].
-
-Current research and development goals are technological innovation in reactor designs, new market design opportunities, design flexibility with thermal efficiency, reduction in volume and toxicity of radioactive waste, and improved sustainability[^”1”].
+We propose that the United States Department of Energy, in parternship with the private sector, conduct research and development into advanced nuclear reactor designs.
 
 <DynamicSolutionGraphic
   barChartTitle={"Advanced Reactor Technology – U.S."}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={""}
+  chartType={"show"}
+  arrowText1={"26 MTCO₂eq/yr"}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
@@ -32,35 +27,73 @@ Current research and development goals are technological innovation in reactor d
  staticData={[
     {
      name: "Benefit",
-      barlength: 1.32,
-      displayedValue: "$1.32 billion/year",
+      barlength: 1.078685700621365,
+      displayedValue: "$1.1 billion/year",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: .46,
-      displayedValue: "$460 million/year",
+      barlength: 0.3850396603793013,
+      displayedValue: "$390 million/year",
       site: "null",
     },
   ]}
 />
 
+## Background
+As discussed above, the leading Generation IV advanced reactor energy systems are gas-cooled fast reactors, lead-cooled fast reactors, sodium-cooled fast reactors, molten salt reactors, supercritical water-cooled reactors, and very high temperature reactors [^"1"]. Currently prototypes are being built in China, U.S., Russia, and France [^"1"].
+
+Current research and development goals are technological innovation in reactor designs, new market design opportunities, design flexibility with thermal efficiency, reduction in volume and toxicity of radioactive waste, and improved sustainability [^"1"].
+
 ## Calculations
-Bringing an advanced reactor to market would cost an estimated $5.25 billion public and $6.25 billion private funding, or $11.5 billion over 25 years [^"2"].
-For benefit, we assume that an advanced reactor would cost 6¢/kWh, as in our levelized cost analysis, would have lifecycle greenhouse gas emissions valued at 0.285¢/kWh at a carbon dioxide valuation of $50/ton, and would have 0.31¢/kWh of other externalities. These figures are as above, but we assume zero cost for meltdown risk from an advanced reactor. See our analysis of [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) for more information.
+Bringing an advanced reactor to market would cost an estimated $5.25 billion public and $6.25 billion private funding, or $11.5 billion over 25 years [^"2"]. We assume this spending is spread evenly over 25 years at a 7% discount rate.
+
+We estimate an eventual cost of 6¢ per kilowatt-hour for advanced reactors [^"2"], and our model forecasts that, after the 25 year research period, advanced reactors will undercut energy sources with a higher levelized cost of electricity. We model 50 years from the commercialization of the technology to its reaching its market potential. Undercutting other energy sources brings about a $1.1 billion/year financial benefit, a reduction of 26 million tons of greenhouse gases, and $1.5 billion benefit from reducing other pollutants and other negative externalities of power generation, all annualized at a 7% discount rate.
+
+These figures are based on a lifecycle carbon intensity of 57 grams/kWh and external costs (excluding greenhouse gas emissions) of 0.31¢/kWh, and they are the same as for other nuclear power, except we assume zero risk of meltdown and radiation release. The levelized cost of other forms of electricity are derived from the U.S. Energy Information Administration [^"r4"], and lifecycle greenhouse gases for existing power plants is taken from Roser [^"r5"]. For non-greenhouse gas external costs of power, see our discussions of other energy sources.
+
+Our deployment model is based on world electricity shares in 2018 [^"r1"] and the 2019 overall generation, derived from the Statistical Review of World Energy [^"r2"]. Overall electricity consumption is expected to rise, as forecast by the U.S. Energy Information Administration's International Energy Outlook [^"r3"].
+
+Based on experience in the pharmaceutical industry [^"r6"], we estimate that an R&D effort has a 4.9% chance of success. Thus our benefits should be taken as expected values.
+
+See our analysis of [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) for more information.
 
 ## Implementation
+
+ThorCon is working to build a molten salt reactor in Indonesia, and they aim for a cost point of 3¢/kWh and walkaway safety in the event of overheating [^"4"].
+
 Advanced reactor technology would be commercialized by private industry with help from the Department of Energy.
 
 All current reactor technologies in the U.S. have been developed with public and private partnerships [^"3"]. Demonstration reactors may need to be built to advance nuclear technology and deployment [^"3"].
 
+Any new kind of nuclear power is likely to experience the same problems as contemporary light water reactors unless problems of poor regulations and industry misincentives are addressed [^"5"].
+
 ##### Lead researchers: Lee Nelson (background and implementation) and Michael Goff (calculations) - Last updated: 3/12/2024
 
-[^”1”]: Zhan, L. et al. [“Development and outlook of advanced nuclear energy technology”](https://doi.org/10.1016/j.esr.2021.100630) Energy Strategy Reviews, March 2021
+
+
+
+[^"r1"]: International Energy Agency. ["World gross electricity production by source, 2019"](https://www.iea.org/data-and-statistics/charts/world-gross-electricity-production-by-source-2019). July 2020.
+
+[^"r2"]: Energy Institute. ["Statistical review of World Energy"](https://www.energyinst.org/statistical-review/resources-and-data-downloads). Accessed July 30, 2023.
+
+[^"r3"]: Capuano, L. ["U.S. Energy Information Administration's International Energy Outlook 2020 (IEO2020)"](https://www.eia.gov/outlooks/ieo/pdf/ieo2020.pdf). U.S. Energy Information Administration. October 2020.
+
+[^"r4"]: U.S. Energy Information Administration. ["Levelized Costs of New Generation Resources in the Annual Energy Outlook 2022"](https://www.eia.gov/outlooks/aeo/pdf/electricity_generation.pdf). March 2022.
+
+[^"r5"]: Roser, M. ["Why did renewables become so cheap so fast?"](https://ourworldindata.org/cheap-renewables-growth). Our World in Data. December 2020.
+
+[^"r6"]: Kimmitt, R., Vieira, M. ["Time and Success Rate of Pharmaceutical R&D"](https://www.knowledgeportalia.org/r-d-time-and-success-rate). Geneva Graduate Institute, Global Health Centre. July 2020.
+
+[^"1"]: Zhan, L. et al. [“Development and outlook of advanced nuclear energy technology”](https://doi.org/10.1016/j.esr.2021.100630) Energy Strategy Reviews, March 2021.
 
 [^"2"]: Deutch, J., Greenstone, M., Jackson, S., Madia, W., Meserve, R., Reicher, D., Rempe, J., Samore, G., Sell, C., Sharp, P., Turnage, J. ["Final Report of the Task Force on the Future of Nuclear Power"](https://www.energy.gov/seab/downloads/final-report-task-force-future-nuclear-power) Task Force on the Future of Nuclear Power, U. S. Department of Energy. September 2016.
 
 [^"3"]: Brown, N. ["Engineering demonstration reactors: A stepping stone on the path to deployment of advanced nuclear energy in the United States"](https://doi.org/10.1016/j.energy.2021.121750) Energy, January 2022.
+
+[^"4"]: ThorCon. ["ThorCon: The Do-able Molten Salt Reactor"](https://thorconpower.com/docs/domsr20180119.pdf). January 2018.
+
+[^"5"]: Devanney, J. ["Why Nuclear Power Has Been a Flop: at Solving the Gordian Knot of Electricity Poverty and Global Warming"](https://gordianknotbook.com/). BookBaby, ISBN-13: 978-1098308964. November 2020.
 
 export default ({ children }) => 
   <SolutionDropdown 

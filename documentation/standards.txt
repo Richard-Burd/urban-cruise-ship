@@ -1,6 +1,6 @@
 Documentation is optional but highly encouraged. Documentation goes in this (documentation) folder. The purpose is so that can easily reconstruct or modify calculations months after we last thought about them. As Mr. T once said, "I pity the foo' who don't document his code."
 
-If documentation is done, then the following standards are in effect.
+the following standards are in effect for documentation.
 
 - If documenting a specific solution, the file name (but not necessarily the extension) should match the file name for the solution. For example, 'reduce-noise-from-roads.py' is a script that is associated with the solution 'reduce-noise-from-roads.mdx'.
 - Python (.py) is the most preferred form of documention, so that I can run the script and get the numbers out.
@@ -14,6 +14,12 @@ If documentation is done, then the following standards are in effect.
 
 The following standards are in effect for solutions.
 
+- All of the following are guidelines, not hard and fast rules. They can be deviated from when appropriate.
+- Each solution should have four sections, denoted by the ## notation in MarkDown. Those sections are, in order, Description, Background, Calculations, Implementation.
+- Description is a one-sentence statement of the proposal. It should identify the 'who' and 'what' of the solution with as much specificity as possible. This statement should be followed by the main graphic showing cost, benefit, and environmental benefit of the solution.
+- The second section is Background, which contains background information about the solution. If the background information does not pertain specifically to the solution, then it probably belongs in the main text.
+- The third section is Calculations, in which it is explained how the cost, benefit, and environmental benefits are derived. All sources used in the calculations should be cited, with the exception of very common things like the BLS's CPI calculator and unit conversions. There should be enough information so that a reader could theoretically reproduce the calculation.
+- The fourth section is Implementation, in which additional information about how the action is to be carried out is supplied and anticipated pitfalls are discussed.
 - Costs and benefits are assessed on an annual basis. This isn't what I would choose to do, but it is what we have been doing for a long time, so we'll stick with this approach.
 - Whenever a source is cited that uses a discount rate, make clear what the discount rate is.
 - If we cannot determine a discount rate, then we will assume that it is 7%.
@@ -24,6 +30,9 @@ The following standards are in effect for solutions.
 - If there are significant sources of uncertainty in the figures, which there almost certainly will be, that should be acknowledged in the write-up.
 - Currency should be converted to US Dollars. It is unnecessary to specify USD in a write-up.
 - It is not necessary to go back through old solutions and bring them up to these standards, but when those solutions are edited, they should be brought into compliance.
+
+The following standards are in effect for graphics
+- ...
 
 General standards
 
