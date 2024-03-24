@@ -1,10 +1,10 @@
-# Created March 21, 2024. Last substantial update: March 21, 2024.
+# Created March 21, 2024. Last substantial update: March 23, 2024.
 # This module supersedes research.py
 
 # Immediate to-do:
 # - Wrappers for each individual solution.
-# - Get GHG savings but not monetized
-# - Only calculate base cost savings.
+# - Revise the success_prob parameter
+# - In the deployment model, account for decreasing GHG intensity of the grid over time.
 
 # This is the main module for the R&D solutions into individual energy technologies.
 # Wrappers are expected for each individual solution.
@@ -13,10 +13,10 @@ import lcoe
 import discount
 import world_elec
 
-parameters = {
-    "success_probability":0.049, # See https://www.knowledgeportalia.org/r-d-time-success
-    "deployment_time": 50 # My guess as to how long it would take for the technology to reach full deployment, after R&D success.
-}
+# Parameters
+success_prob = 0.049 # See https://www.knowledgeportalia.org/r-d-time-success
+deployment_time = 50 # My guess as to how long it would take for the technology to reach full deployment, after R&D success.
+current_year = 2024
 
 # For each electricity technology, the following dictionary is expected.
 # {
@@ -159,47 +159,35 @@ technologies = {
 	}
 }
 
-# Information about the world electricity market.
-# Information about the market, both now and in the future being assessed
-electricity_market = {
-	"shares2020": world_elec.shares2020,
-	"electricity2020":world_elec.electricity2020,
-	"electricity2050":world_elec.electricity2050,
-    "electricity_cost":lcoe.lcoe["electricity_cost"],
-    "base_price":lcoe.lcoe["direct"],
-    "ghg_price":lcoe.lcoe["ghg_cost"],
-    "other_price":lcoe.lcoe["externalities"]
-}
-
 # Display cost and benefit information for a single technology, which is the tech dictionary.
 def cost_benefit(tech):
     cumulative_share = 0
     base_price_share = 0
     ghg_share = 0
     other_share = 0
-    e = electricity_market["electricity2020"]*10**9 # Current overall electricity market in kWh.
+    e = world_elec.forecast(current_year)*10**9 # Current overall electricity market in kWh.
     # The following for loop goes over all electricity sources on the grid now and determines which of them the new source might displace.
     # It then adds the values of doing so, in terms of base LCOE, GHG reduction (monetizes), other externalities, and a total.
-    for share in electricity_market["shares2020"]:
-        if tech["base_price"] < electricity_market["base_price"][share]:
-            s = electricity_market["shares2020"][share] # Share of the given electricity source in the whole market.
-            cumulative_share += s*e*(electricity_market["electricity_cost"][share]-tech["final_price"])
-            base_price_share += s*e*(electricity_market["base_price"][share]-tech["base_price"])
-            ghg_share += s*e*(electricity_market["ghg_price"][share]-tech["ghg_price"])
-            other_share += s*e*(electricity_market["other_price"][share]-tech["other_price"])
+    for share in world_elec.ei_elec:
+        if tech["base_price"] < lcoe.lcoe["direct"][share]:
+            s = world_elec.ei_elec[share] # Share of the given electricity source in the whole market.
+            cumulative_share += s*e*(lcoe.lcoe["electricity_cost"][share]-tech["final_price"])
+            base_price_share += s*e*(lcoe.lcoe["direct"][share]-tech["base_price"])
+            ghg_share += s*e*(lcoe.lcoe["ghg_cost"][share]-tech["ghg_price"])
+            other_share += s*e*(lcoe.lcoe["externalities"][share]-tech["other_price"])
             
 	# To start total_value calculation, we assume a technology deploys over 50 years when ready, adding 2% of the potential per year
 	# The following NPV calculations are made from when deployment begins. Adjusting to begin at present comes later.
     # Forecasts are based on 2024 being the start year.
     value = discount.RevenueStream( # If the ultimate revenue stream would be $1 annually, what would the net present value be?
-        yearly_stream = [i/parameters["deployment_time"]*world_elec.forecast(i+2024+tech["rd_time"])/electricity_market["electricity2020"] for i in range(parameters["deployment_time"])],
-        end_value = 1,
+        yearly_stream = [i/deployment_time*world_elec.growth_percentage(i+current_year+tech["rd_time"], current_year) for i in range(deployment_time)],
+        end_value = world_elec.growth_percentage(deployment_time+current_year+tech["rd_time"], current_year),
         offset = tech["rd_time"]
     ).annualize()
-    total_value = parameters["success_probability"] * tech["share"] * cumulative_share * value
-    base_value = parameters["success_probability"] * tech["share"] * base_price_share * value
-    ghg_value = parameters["success_probability"] * tech["share"] * ghg_share * value
-    other_value = parameters["success_probability"] * tech["share"] * other_share * value
+    total_value = success_prob * tech["share"] * cumulative_share * value
+    base_value = success_prob * tech["share"] * base_price_share * value
+    ghg_value = success_prob * tech["share"] * ghg_share * value
+    other_value = success_prob * tech["share"] * other_share * value
     cost = discount.RevenueStream().spread_value(tech["rd_cost"], tech["rd_time"]).annualize()
     
     print("R&D Cost:",cost,"billion/yr")
@@ -210,4 +198,7 @@ def cost_benefit(tech):
     # Return cost and benefit in billions of dollars.
     return cost, total_value/10**9, base_value/10**9, ghg_value/lcoe.scc/10**6, other_value/10**9
     
-
+if(True):
+    for t in technologies:
+        print(t)
+        cost_benefit(technologies[t])
