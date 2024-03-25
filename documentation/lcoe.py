@@ -48,3 +48,17 @@ lcoe["ghg_cost"] = {k: lcoe["ghg"][k] * scc / 10**6 for k in lcoe["ghg"]}
 # Add the three costs to get a full electricity cost.
 # It's not really a full cost because it doesn't take into account grid integration, which is a very context-dependent cost.
 lcoe["electricity_cost"] = {k: lcoe["direct"][k]+lcoe["ghg_cost"][k]+lcoe["externalities"][k] for k in lcoe["direct"]}
+
+############## Greenhouse gas from electricity projection
+# This is the ratio of greenhouse gas emissions in the project year to the current year.
+# Based on this: https://eneroutlook.enerdata.net/forecast-world-co2-intensity-of-electricity-generation.html
+# They model an 85% reduction of GHG intensity from 2021 to 2050. For these calculations, I linearly interpolate and assume constant GHG intensity after 2050.
+# Obviously, we want something better eventually.
+def projected_ghg(year, current_year):
+    def ratio2021(y):
+        if y < 2021:
+            return 1
+        if y > 2050:
+            return 0.15
+        return 0.15 + 0.85*(2050-y)/29.
+    return ratio2021(year) / ratio2021(current_year)

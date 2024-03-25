@@ -4,7 +4,9 @@
 # Immediate to-do:
 # - Wrappers for each individual solution.
 # - Revise the success_prob parameter
-# - In the deployment model, account for decreasing GHG intensity of the grid over time.
+
+# Longer to-do
+# - Model the benefits (LCOE reduction, externality reduction, GHG reduction) that (better) accounts for changing prices and energy sources over time.
 
 # This is the main module for the R&D solutions into individual energy technologies.
 # Wrappers are expected for each individual solution.
@@ -12,9 +14,10 @@
 import lcoe
 import discount
 import world_elec
+import rd_success
 
 # Parameters
-success_prob = 0.049 # See https://www.knowledgeportalia.org/r-d-time-success
+success_prob = rd_success.success_probability() # This is a single parameter, rather than technology-specific. We eventually want the latter.
 deployment_time = 50 # My guess as to how long it would take for the technology to reach full deployment, after R&D success.
 current_year = 2024
 
@@ -173,7 +176,10 @@ def cost_benefit(tech):
             s = world_elec.ei_elec[share] # Share of the given electricity source in the whole market.
             cumulative_share += s*e*(lcoe.lcoe["electricity_cost"][share]-tech["final_price"])
             base_price_share += s*e*(lcoe.lcoe["direct"][share]-tech["base_price"])
-            ghg_share += s*e*(lcoe.lcoe["ghg_cost"][share]-tech["ghg_price"])
+            # At present, the greenhouse gas reduction benefit is the only one where future evolution of the electric grid is taken into account.
+            # The benefit is assessed at the projected greenhouse gas intensity of when the R&D is done, assuming it starts now.
+            # It is a highly simplified model that could stand to be made better, such as accounting for cleaner sources after R&D is done.
+            ghg_share += s*e*(lcoe.lcoe["ghg_cost"][share]-tech["ghg_price"]) * lcoe.projected_ghg(tech["rd_time"]+current_year, current_year)
             other_share += s*e*(lcoe.lcoe["externalities"][share]-tech["other_price"])
             
 	# To start total_value calculation, we assume a technology deploys over 50 years when ready, adding 2% of the potential per year
@@ -198,7 +204,8 @@ def cost_benefit(tech):
     # Return cost and benefit in billions of dollars.
     return cost, total_value/10**9, base_value/10**9, ghg_value/lcoe.scc/10**6, other_value/10**9
     
-if(True):
+# This snippet of code tests the model for all technologies in the techonlogies dictionary. It should eventually be removed.
+if(False):
     for t in technologies:
         print(t)
         cost_benefit(technologies[t])

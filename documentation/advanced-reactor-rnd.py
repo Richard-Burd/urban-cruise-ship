@@ -1,6 +1,10 @@
 # Created March 21, 2024. Last substantive update: March 21, 2024.
 # Advanced reactors
 
+'''
+To-do
+- Review the R&D time in particular. 25 years seem longer than necessary.
+'''
 import research_elec
 
 params = {
@@ -16,10 +20,3 @@ params = {
 print("\nAdvanced Reactor")
 research_elec.cost_benefit(params)
 
-# Output: 
-# Advanced Reactor
-# R&D Cost: 0.3850396603793013 billion/yr
-# Benefit:  3.9349830198476057 billion/yr
-# Base:     1.078685700621365 billion/yr
-# GHG:      26.495035663087144 milion tons/yr
-# Other:    1.5315455360718844 billion/yr
