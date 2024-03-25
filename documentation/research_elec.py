@@ -164,37 +164,38 @@ technologies = {
 
 # Display cost and benefit information for a single technology, which is the tech dictionary.
 def cost_benefit(tech):
-    cumulative_share = 0
-    base_price_share = 0
-    ghg_share = 0
-    other_share = 0
+    tech["ghg_price"] = tech["ghg"]*lcoe.scc/10**6
+    tech["final_price"] = tech["base_price"]+tech["ghg_price"]+tech["other_price"]
+    
+    cost = discount.RevenueStream().spread_value(tech["rd_cost"], tech["rd_time"]).annualize()
+    total_value = base_value = ghg_value = other_value = 0
     e = world_elec.forecast(current_year)*10**9 # Current overall electricity market in kWh.
-    # The following for loop goes over all electricity sources on the grid now and determines which of them the new source might displace.
-    # It then adds the values of doing so, in terms of base LCOE, GHG reduction (monetizes), other externalities, and a total.
-    for share in world_elec.ei_elec:
-        if tech["base_price"] < lcoe.lcoe["direct"][share]:
-            s = world_elec.ei_elec[share] # Share of the given electricity source in the whole market.
-            cumulative_share += s*e*(lcoe.lcoe["electricity_cost"][share]-tech["final_price"])
-            base_price_share += s*e*(lcoe.lcoe["direct"][share]-tech["base_price"])
-            # At present, the greenhouse gas reduction benefit is the only one where future evolution of the electric grid is taken into account.
-            # The benefit is assessed at the projected greenhouse gas intensity of when the R&D is done, assuming it starts now.
-            # It is a highly simplified model that could stand to be made better, such as accounting for cleaner sources after R&D is done.
-            ghg_share += s*e*(lcoe.lcoe["ghg_cost"][share]-tech["ghg_price"]) * lcoe.projected_ghg(tech["rd_time"]+current_year, current_year)
-            other_share += s*e*(lcoe.lcoe["externalities"][share]-tech["other_price"])
-            
-	# To start total_value calculation, we assume a technology deploys over 50 years when ready, adding 2% of the potential per year
-	# The following NPV calculations are made from when deployment begins. Adjusting to begin at present comes later.
-    # Forecasts are based on 2024 being the start year.
+    
+    '''
+	To start total_value calculation, we assume a technology deploys over 50 years when ready, adding 2% of the potential per year
+	The following NPV calculations are made from present.
+    Forecasts are based on 2024 being the start year.
+    '''
     value = discount.RevenueStream( # If the ultimate revenue stream would be $1 annually, what would the net present value be?
         yearly_stream = [i/deployment_time*world_elec.growth_percentage(i+current_year+tech["rd_time"], current_year) for i in range(deployment_time)],
         end_value = world_elec.growth_percentage(deployment_time+current_year+tech["rd_time"], current_year),
         offset = tech["rd_time"]
     ).annualize()
-    total_value = success_prob * tech["share"] * cumulative_share * value
-    base_value = success_prob * tech["share"] * base_price_share * value
-    ghg_value = success_prob * tech["share"] * ghg_share * value
-    other_value = success_prob * tech["share"] * other_share * value
-    cost = discount.RevenueStream().spread_value(tech["rd_cost"], tech["rd_time"]).annualize()
+    
+    # The following for loop goes over all electricity sources on the grid now and determines which of them the new source might displace.
+    # It then adds the values of doing so, in terms of base LCOE, GHG reduction (monetized), other externalities, and a total.
+    for share in world_elec.ei_elec:
+        if tech["base_price"] < lcoe.lcoe["direct"][share]:
+            s = world_elec.ei_elec[share] # Share of the given electricity source in the whole market.
+            total_value += s*e*(lcoe.lcoe["electricity_cost"][share]-tech["final_price"]) * success_prob * tech["share"] * value
+            base_value += s*e*(lcoe.lcoe["direct"][share]-tech["base_price"]) * success_prob * tech["share"] * value
+            '''
+            At present, the greenhouse gas reduction benefit is the only one where future evolution of the electric grid is taken into account.
+            The benefit is assessed at the projected greenhouse gas intensity of when the R&D is done, assuming it starts now.
+            It is a highly simplified model that could stand to be made better, such as accounting for cleaner sources after R&D is done.
+            '''
+            ghg_value += s*e*(lcoe.lcoe["ghg_cost"][share]-tech["ghg_price"]) * lcoe.projected_ghg(tech["rd_time"]+current_year, current_year) * success_prob * tech["share"] * value
+            other_value += s*e*(lcoe.lcoe["externalities"][share]-tech["other_price"]) * success_prob * tech["share"] * value
     
     print("R&D Cost:",cost,"billion/yr")
     print("Benefit: ",total_value/10**9,"billion/yr")

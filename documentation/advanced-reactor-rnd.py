@@ -4,13 +4,13 @@
 '''
 To-do
 - Review the R&D time in particular. 25 years seem longer than necessary.
+- The 57 g/kWh emissions factor seems high.
 '''
 import research_elec
 
 params = {
     "base_price":0.06,
-	"final_price":0.06+0.00285+0.0031, # 6 cents per kWh forecast,
-    "ghg_price":0.00285,
+    "ghg":57, # g/kWh emissiosn
     "other_price":0.0031,
 	"share":1.,
 	"rd_time":25,
