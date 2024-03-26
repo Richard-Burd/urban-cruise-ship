@@ -1,4 +1,4 @@
-# Created March 21, 2024. Last substantial update: March 23, 2024.
+# Created March 21, 2024. Last substantial update: March 25, 2024.
 # This module supersedes research.py
 
 # Immediate to-do:
@@ -7,6 +7,7 @@
 
 # Longer to-do
 # - Model the benefits (LCOE reduction, externality reduction, GHG reduction) that (better) accounts for changing prices and energy sources over time.
+# - Regional electricity markets rather than a single global market.
 
 # This is the main module for the R&D solutions into individual energy technologies.
 # Wrappers are expected for each individual solution.
@@ -34,24 +35,6 @@ current_year = 2024
 # Many values are filled in with subjective guesses, or taken to be the equal to what seems to be the most similar alternative.
 # Much work is required to bring this up to date and fill in uncertanties.
 technologies = {
-	"Advanced Reactor":{
-        "base_price":0.06,
-		"final_price":0.06+0.00285+0.0031, # 6 cents per kWh forecast,
-        "ghg_price":0.00285,
-        "other_price":0.0031,
-		"share":1.,
-		"rd_time":25,
-		"rd_cost":11.5, # $11.5 billion of R&D money and 25 years.
-	},
-	"Small Modular Reactor":{
-        "base_price":0.09,
-		"final_price":0.09+0.00285+0.0031, # From the LCOE chart
-        "ghg_price":0.00285,
-        "other_price":0.0031,
-		"share":1.,
-		"rd_time":10,
-		"rd_cost":11.5*10/25 # Haven't found figures for the cost, so assuming the same per-year as advanced reactors
-	},
 	"Wave Energy":{
         "base_price":0.06,
 		"final_price":0.06+0.001+0.002, # From the consultant report. Check to see if other sources corroborate this number
@@ -60,15 +43,6 @@ technologies = {
 		"share":0.2, # Coastal is 0.4, assuming half is suitable for wave.
 		"rd_time":10,
 		"rd_cost":8.3
-	},
-	"Concentrated Solar":{
-        "base_price":0.05,
-		"final_price":0.05+0.0018+0.0081, # I had 14 cents before, but changed to 5 cents from this source: https://www.energy.gov/eere/solar/concentrating-solar-thermal-power
-        "ghg_price":0.0018,
-        "other_price":0.0081,
-		"share":0.6, # Hard to say how much of the world is suitable for CSP. This seems optimistic
-		"rd_time":10, # Changed from 5 to 10 years from this source: https://www.energy.gov/eere/solar/concentrating-solar-thermal-power
-		"rd_cost":8.3 # Same cost per year as wave energy
 	},
 	"High Altitude Wind":{
         "base_price":0.09,
@@ -132,24 +106,6 @@ technologies = {
 		"share":1.,
 		"rd_time":40,
 		"rd_cost":65 # Same as fusion
-	},
-	"Advanced Solar Cells":{
-        "base_price":0.04,
-		"final_price":0.04+0.00495+0.0081, # Based on Perovskite from the LCOE plot
-        "ghg_price":0.00495,
-        "other_price":0.0081,
-		"share":1., # Price may vary by location
-		"rd_time":10,
-		"rd_cost":8.3 # Same annual cost as wave energy
-	},
-	"Concentrated PV":{
-        "base_price":0.07,
-		"final_price":0.07+0.00495+0.0081,
-        "ghg_price":0.00495,
-        "other_price":0.0081,
-		"share":0.5, # Wild guess, based on the fact that CPV is a bit fussy about location
-		"rd_time":5,
-		"rd_cost":8.3 * 5 / 10 # Same annual cost as wave energy
 	},
 	"Building Integrated Solar":{
         "base_price":0.0372,
