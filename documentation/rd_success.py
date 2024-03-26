@@ -1,9 +1,11 @@
 # Module created March 25, 2024. Last substantial update: March 25, 2024.
 
-# To-do
-# - Find some energy-specific estimates, or at least estimates in a field closer to energy.
-# - Parameterize the time estimate to depend on the research time and the degree of novelty of the technology.
-# - Account for partial success, rather than a binary success/failure.
+'''
+To-do
+- Find some energy-specific estimates, or at least estimates in a field closer to energy.
+- Parameterize the time estimate to depend on the research time and the degree of novelty of the technology.
+- Account for partial success, rather than a binary success/failure.
+'''
 
 # Research and Development success. Public (or private, for that matter) R&D projects don't always turn out as hoped.
 # The purpose of this module is to capture the probability of success.
