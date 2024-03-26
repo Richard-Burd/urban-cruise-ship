@@ -35,15 +35,6 @@ current_year = 2024
 # Many values are filled in with subjective guesses, or taken to be the equal to what seems to be the most similar alternative.
 # Much work is required to bring this up to date and fill in uncertanties.
 technologies = {
-	"Wave Energy":{
-        "base_price":0.06,
-		"final_price":0.06+0.001+0.002, # From the consultant report. Check to see if other sources corroborate this number
-        "ghg_price":0.001,
-        "other_price":0.002,
-		"share":0.2, # Coastal is 0.4, assuming half is suitable for wave.
-		"rd_time":10,
-		"rd_cost":8.3
-	},
 	"High Altitude Wind":{
         "base_price":0.09,
 		"final_price":0.09+0.001575+0.0009,
@@ -52,15 +43,6 @@ technologies = {
 		"share":1., # Might be lower if access to the gulf stream is needed. There is also ultimate potential
 		"rd_time":25,
 		"rd_cost":8.3*25/10 # Assuming case cost per year as wave
-	},
-	"Enhanced Geothermal":{
-        "base_price":0.06,
-		"final_price":0.06+0.002125+0.005, # For electricity cost, see http://www2.itif.org/2019-budget-geothermal.pdf. Geothermal isn't on the plot for external costs so I'm guessing
-        "ghg_price":0.002125,
-        "other_price":0.005,
-		"share":0.5, # A wild guess, based on Western US being good territory.
-		"rd_time":10,
-		"rd_cost":8.3 # Same cost as wave
 	},
 	"Hydrothermal Sea Vents":{
         "base_price":(7.7+11.1)/200,
@@ -106,15 +88,6 @@ technologies = {
 		"share":1.,
 		"rd_time":40,
 		"rd_cost":65 # Same as fusion
-	},
-	"Building Integrated Solar":{
-        "base_price":0.0372,
-		"final_price":0.0372+0.00495+0.0081, # See notes for LSC. Consider a different value
-        "ghg_price":0.00495,
-        "other_price":0.0081,
-		"share":1., # Price may vary by location
-		"rd_time":25,
-		"rd_cost":8.3*25/10 # Same annual cost as wave energy
 	}
 }
 

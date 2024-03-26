@@ -5,14 +5,39 @@ export const solution = "Fund Wave Energy R&D at $8.3 Billion Over 10 Years";
 
 import ArticleImage from "/components/ArticleImage.js";
 import SolutionImages from "/components/SolutionImages.js";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 **Description:** We recommend that the U. S. Department of Energy invest $8.3 billion over 10 years to support wave energy research and development.
 
-<SolutionImages 
-  mobileSrc={"fund_wave_energy_cba_mobile.svg"}
-  desktopSrc={"fund_wave_energy_cba_desktop.svg"}
-  mobileHeight={432}
-  desktopHeight={340}
+<DynamicSolutionGraphic
+  barChartTitle={"Wave Energy R&D"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"38 MTCO₂eq/yr"}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 2-3-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 2.1054215406492305,
+      displayedValue: "$2.1 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0.42829468504118656,
+      displayedValue: "$430 million/year",
+      site: "null",
+    },
+  ]}
 />
 
 Previsic [^"27"] estimates that a full wave energy R&D program would require $2.5 billion on research, $300 million for early commercialization efforts, and $5.5 billion for subsidies as the industry develops, for a total of $8.3 billion.
