@@ -1,7 +1,13 @@
 # Module created March 21, 2024. Last major update: March 23, 2024.
 
-# Vital stats on world electricity. Use this module if it contains the needed information.
-# This module is created by updating old code, and it needs to be updated.
+'''
+Vital stats on world electricity. Use this module if it contains the needed information.
+This module is created by updating old code, and it needs to be updated.
+
+To-do
+- Ultimately, what we want is an API call that takes a year, country/region, and electricity source and returns the actual or forecast generation.
+We could use the EI dataset for past values. What about the future? 
+'''
 
 electricity_by_year = {
     # EI, 2023

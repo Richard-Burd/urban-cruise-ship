@@ -1,5 +1,10 @@
 # Discount module.
 
+'''
+To-do
+- Allow for different discount rates.
+'''
+
 # Writing this as a function to allow for uses of different discount rates in the future.
 def discount_rate():
     return 0.07

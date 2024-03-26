@@ -1,16 +1,13 @@
 # Created March 21, 2024. Last substantial update: March 25, 2024.
 # This module supersedes research.py
 
-# Immediate to-do:
-# - Wrappers for each individual solution.
-# - Revise the success_prob parameter
-
-# Longer to-do
+'''
+# To-do
 # - Model the benefits (LCOE reduction, externality reduction, GHG reduction) that (better) accounts for changing prices and energy sources over time.
 # - Regional electricity markets rather than a single global market.
+'''
 
-# This is the main module for the R&D solutions into individual energy technologies.
-# Wrappers are expected for each individual solution.
+# This is the main module for the R&D solutions into individual energy technologies. Wrappers are used for each individual solution.
 
 import lcoe
 import discount
@@ -22,74 +19,18 @@ success_prob = rd_success.success_probability() # This is a single parameter, ra
 deployment_time = 50 # My guess as to how long it would take for the technology to reach full deployment, after R&D success.
 current_year = 2024
 
+'''
 # For each electricity technology, the following dictionary is expected.
-# {
-#        "base_price": The LCOE without any externalities taken into account. Note that all prices are expressed in cents/kWh,
-#		"final_price": LCOE with monetized greenhouse gas and other externalities taken into account,
-#        "ghg_price": Monetized greenhouse gas price,
-#        "other_price": Monetizes price of non-GHG externalities,
-#		"share": The share of US electricity market that the technology may be appropriate for. A value of 1.0 means that it could theoretically be used for all electricity,
-#		"rd_time": Number of years that the R&D is expected to take,
-#		"rd_cost": Total undiscounted cost, over all years, expected for R&D.
-#	}
-# Many values are filled in with subjective guesses, or taken to be the equal to what seems to be the most similar alternative.
-# Much work is required to bring this up to date and fill in uncertanties.
-technologies = {
-	"High Altitude Wind":{
-        "base_price":0.09,
-		"final_price":0.09+0.001575+0.0009,
-        "ghg_price":0.001575,
-        "other_price":0.0009,
-		"share":1., # Might be lower if access to the gulf stream is needed. There is also ultimate potential
-		"rd_time":25,
-		"rd_cost":8.3*25/10 # Assuming case cost per year as wave
-	},
-	"Hydrothermal Sea Vents":{
-        "base_price":(7.7+11.1)/200,
-		"final_price":(7.7+11.1)/200 +0.002125+0.005, # Based on the notes. Not a very good figure but that's what I have.
-        "ghg_price":0.002125,
-        "other_price":0.005,
-		"share":0.2, # 0.4 for coast times 0.5 for share accessible by sea vents
-		"rd_time":25,
-		"rd_cost":8.3*25/10 # Same annual cost as wave energy
-	},
-	"Tidal Power":{
-        "base_price":0.10556,
-		"final_price":0.10556+0.001+0.002, # See notes for cost
-        "ghg_price":0.001,
-        "other_price":0.002,
-		"share":0.04, # Based on 1200 TWh potential. See https://energypost.eu/unlocking-the-potential-of-ocean-energy-from-megawatts-to-gigawatts/
-		"rd_time":10,
-		"rd_cost":8.3 # Same annual cost as wave energy
-	},
-	"OTEC":{
-        "base_price":0.13,
-		"final_price":0.13+0.001+0.002,
-        "ghg_price":0.001,
-        "other_price":0.002,
-		"share":0.2, # Guessing 50% of coast is suitable for OTEC
-		"rd_time":25,
-		"rd_cost":8.3*25/10 # Same annual cost as wave energy
-	},
-	"Fusion":{
-        "base_price":0.13,
-		"final_price":0.13+0.00285+0.0031,
-        "ghg_price":0.00285,
-        "other_price":0.0031,
-		"share":1.,
-		"rd_time":40,
-		"rd_cost":65 # https://physicstoday.scitation.org/do/10.1063/PT.6.2.20180416a/full/#:~:text=The%20US%20Department%20of%20Energy,its%20figure%20of%20%2422%20billion.
-	},
-	"Space Solar":{
-        "base_price":0.07,
-		"final_price":0.07+0.0018+0.0081,
-        "ghg_price":0.0018,
-        "other_price":0.0081,
-		"share":1.,
-		"rd_time":40,
-		"rd_cost":65 # Same as fusion
-	}
+{
+    "base_price": The LCOE without any externalities taken into account. Note that all prices are expressed in cents/kWh,
+	"final_price": LCOE with monetized greenhouse gas and other externalities taken into account,
+    "ghg_price": Monetized greenhouse gas price,
+    "other_price": Monetizes price of non-GHG externalities,
+	"share": The share of US electricity market that the technology may be appropriate for. A value of 1.0 means that it could theoretically be used for all electricity,
+	"rd_time": Number of years that the R&D is expected to take,
+	"rd_cost": Total undiscounted cost, over all years, expected for R&D.
 }
+'''
 
 # Display cost and benefit information for a single technology, which is the tech dictionary.
 def cost_benefit(tech):
@@ -133,9 +74,4 @@ def cost_benefit(tech):
     print("Other:   ",other_value/10**9,"billion/yr")
     # Return cost and benefit in billions of dollars.
     return cost, total_value/10**9, base_value/10**9, ghg_value/lcoe.scc/10**6, other_value/10**9
-    
-# This snippet of code tests the model for all technologies in the techonlogies dictionary. It should eventually be removed.
-if(False):
-    for t in technologies:
-        print(t)
-        cost_benefit(technologies[t])
+

@@ -1,6 +1,16 @@
 # Created March 21, 2024. Last substantial update: March 21, 2024.
-# Information on LCOE of various energy generation technologies.
-# This module supersedes data_lcoe.py.
+
+'''
+Information on LCOE of various energy generation technologies.
+This module supersedes data_lcoe.py.
+
+To-do
+- Redo the LCOE analysis from a few years ago, as the numbers are getting oudated. The LCOE numbers here in particular are not good.
+- Different sources for the carbon intensity.
+- The visual disamenity cost for wind seems too high.
+- The nuclear meltdown cost seems too high.
+- Consider whether and how to account for grid integration.
+'''
 
 import social_cost
 scc = social_cost.get_sc("co2")["value"]
