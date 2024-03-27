@@ -784,28 +784,30 @@ export default ({ children }) =>
 
 <br></br>
 
-### Solutions (Content Structure)
+~~### Solutions (Content Structure)~~
 
-Solutions generally have the following four subsections:
+This content will be replaced with revised instructions to be found in the [`documentation`](https://github.com/Richard-Burd/urban-cruise-ship/tree/main/documentation) folder of this repository.
 
-1. Description
-2. Background
-3. Estimates
-4. Calculations
-5. Implementation
+~~Solutions generally have the following four subsections:~~
 
-**_Description_** is a required subsection that describes the problem being solved.
-**_Background_** is also required unless the parent article (encapsulating the solution) gives ample background information in the paragraph that preceeds the actual solution itself. If such background is present in the article, then the solution does not need to have a background subsection.
-**_Estimates_** is a required subsection that contains, at minimum, an image for the metrics of the solution. If there is no introductory paragraph(s) present in this subsection, the actual `## Estimates` header should not be typed out, but instead will be implied.
-**_Calculations_** is a required subsection that details how the estimates in the preceeding subsection were determined to be correct.
-**_Implementation_** is a required subsection that describes how the solution can be converted from an idea into a reality.
+~~1. Description~~
+~~2. Background~~
+~~3. Estimates~~
+~~4. Calculations~~
+~~5. Implementation~~
 
-Not all solutions will conform to this standard structure but the structure is a good starting point. Whernever possible, we should make the effort to consult with experts in the follwoing fields:
+**_~~Description~~_** ~~is a required subsection that describes the problem being solved.~~
+**_~~Background~~_** ~~is also required unless the parent article (encapsulating the solution) gives ample background information in the paragraph that preceeds the actual solution itself. If such background is present in the article, then the solution does not need to have a background subsection.~~
+**_~~Estimates_~~** ~~is a required subsection that contains, at minimum, an image for the metrics of the solution. If there is no introductory paragraph(s) present in this subsection, the actual~~ `## Estimates` ~~header should not be typed out, but instead will be implied.~~
+**_~~Calculations~~_** ~~is a required subsection that details how the estimates in the preceeding subsection were determined to be correct.~~
+**_~~Implementation~~_** ~~is a required subsection that describes how the solution can be converted from an idea into a reality.~~
 
-1. Academia
-2. Industry
-3. Government
-   These would be experts with specialized knowledge in the solution topic.
+~~Not all solutions will conform to this standard structure but the structure is a good starting point. Whernever possible, we should make the effort to consult with experts in the follwoing fields:~~
+
+~~1. Academia~~
+~~2. Industry~~
+~~3. Government~~
+~~These would be experts with specialized knowledge in the solution topic.~~
 
 <br></br><br></br><br></br>
 
