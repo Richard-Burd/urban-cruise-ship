@@ -10,7 +10,7 @@ import research_elec
 
 params = {
     "base_price":0.06,
-    "ghg":57, # g/kWh emissiosn
+    "ghg":57, # g/kWh emissions
     "other_price":0.0031,
 	"share":1.,
 	"rd_time":25,
