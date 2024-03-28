@@ -1,4 +1,4 @@
-# Created March 25, 2024. Last substantive update: March 25, 2024.
+# Created March 25, 2024. Last substantive update: March 27, 2024.
 # Concentrated Solar
 
 '''
@@ -22,3 +22,14 @@ params = {
 print("\nConcenrated Solar")
 research_elec.cost_benefit(params)
 
+#############################################################################
+
+'''
+Carbon intensity from the Ivanpah CSP plant. This is just from the natural gas burning, and does not include other factors such as embedded emissions in materials.
+Figures are for 2014.
+Despite the sources cited, all numbers are really taken from here: https://en.wikipedia.org/wiki/Ivanpah_Solar_Power_Facility
+'''
+ivanpah_co2 = 46084 # Tons CO2 emitted from natural gas in 2014.
+ivanpah_production = 419085 # MWh production in 2014.
+print("Ivanpah emissions intensity from gas combustion:",ivanpah_co2/ivanpah_production*1000,"grams/kWh")
+# Output is 109.96337258551368. I'm calling it 110 g/kWh on the site.
