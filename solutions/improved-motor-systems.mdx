@@ -3,7 +3,66 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Energy Lost to Motor Systems";
 export const solution = "Improved Motor Systems";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+## Description
+
 We propose a public program of research and development to improve motor system efficiencies.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Improved Motor Systems - Energy Savings - World"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"495 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye March 28, 2024"}
+
+   staticData={[
+    {
+      name: "Energy Savings",
+      barlength: 1,
+      displayedValue: "1000 TWh",
+      site: "null",
+    }
+  ]}
+/>
+
+#### Source [^"3"]
+
+## Background
+
+Electric motor systems use 12,100 TWh (53% of global electricity demand) and 6,000 Megatons CO<sub>2</sub>eq emissions per year  [^"3"].Motor system efficiency improvements will help reduce emissions by reducing energy demand [^"3"]. New motor technology possesses much higher efficiencies than traditional induction motors [^"3"].
+
+
+## Implementation
+
+Inefficient electric motor systems remain in operation in many cases due to their long life, at times exceeding 20 years. This remains an obstacle to upgrades to more efficient systems  [^"3"].
+
+Policies to increase the use of more efficient motors:
+
+- Raising Minimum Energy Performance Standards (MEPS)
+- Financial Incentives
+- Energy Audit Programs
+- Awareness and Information Campaigns
+
+In addition to replacing inefficient motors, other measures should be examined to reduce oversizing, implementing advanced sensors, and equipping motors with variable speed/torque control where appropriate [^"3"].
+
+##### Lead Researcher: jye - Last Updated March 28, 2024
+
+
+[^"1"]: Zhang B, Song Z, Liu S, Huang R, Liu C. [Overview of Integrated Electric Motor Drives: Opportunities and Challenges.](http://dx.doi.org/10.3390/en15218299) Energies [Internet]. November 2022.
+[^"2"]: UN Environment - Global Environment Facility, United for Efficiency (U4E). [Accelerating the Global Adoption of Energy-Efficient Electric Motors and Motor Systems.](https://united4efficiency.org/wp-content/uploads/2019/09/U4E_Motor_Model-Regulation_Final_20190920.pdf) U4E Policy Guide Series. July 2019.
+[^"3"]: de Almeida AT, Ferreira FJTE, Fong J. [Perspectives on Electric Motor Market Transformation for a Net Zero Carbon Economy.](http://dx.doi.org/10.3390/en16031248) Energies [Internet]. January 2023.
+
+
 
 export default ({ children }) => 
   <SolutionDropdown 
