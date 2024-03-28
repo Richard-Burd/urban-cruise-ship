@@ -3,7 +3,73 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Recycling Rates";
 export const solution = "Wet/Dry Collection";
 
-We propose a dual stream collection with separate streams for decomposable (wet) and inert (dry) materials as the solution that best optimizes participation rates, collection costs, and contamination rates.
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+## Description
+
+We propose a separate collection stream for decomposable (wet) organic waste as the solution that best optimizes participation rates, collection costs, and contamination rates.
+
+
+<DynamicSolutionGraphic
+  barChartTitle={"Separated Organic Waste Collection"}
+  barChartTitle2={"Benefits Calculation - World"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"518 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye March 28, 2024"}
+  
+  
+  staticData={[
+    {
+      name: "Avoided Carbon Costs",
+      barlength: 0.8,
+      displayedValue: "$25.9 Billions USD /year",
+      site: "null",
+    },
+  ]}
+/>
+
+#### Sources: Cost estimates for global separated organic waste collection could not be produced at this time. Source [^"4"].
+
+## Background
+
+
+The EU produces 75 million tons of organic waste, and global production amounts to 1.3 billion tons per year [^"3"]. Compared to other types of waste, organic waste has a high global warming potential due to its release of methane [^"3"].
+Separation of organic waste has been mandatory in Germany since 2015 [^"2"]. Organic waste is primarily used in agriculture as fertilizer, and in 2020, over 10 million tons of organic waste were collected [^"8"]. Efficient global food waste management could reduce greenhouse gas emissions by up to 518 million tons [^"4"].
+
+Studies in Denmark have showed increased material recovery, and reduced emissions from multistream recycling [^"1"]. A study in France revealed that diverting organic waste from landfills and composting it instead would reduce global warming impacts by 19%. The compost produced in this way can provide an alternative to fertilizers, resulting in reduced eutrophication risks and decreased marine ecotoxicity [^"6"].
+
+
+
+## Implementation
+
+Communities should implement organic waste collection programs in accordance with the needs of their jurisdictions. It is important to begin by assessing the current waste streams, and determining which collection approach is most feasible. It is also recommended to conduct pilot programs that can then follow a phasing-in approach to gradually increase organic waste collection [^"5"]. 
+
+One innovative approach to converting organic waste into useful products is the use of fly larvae, which are capable of converting organic waste faster than anaerobic digestion. Used as a composting agent, the larvae can produce animal feed and fertilizer [^"7"].
+
+
+##### Lead Researcher: jye - Last Updated March 27, 2024
+
+
+[^"1"]: Cimpan C, Rothmann M, Nicholaj Pedersen, Wenzel H. [The effects of Dual-Stream commingled collection of recyclables from households in Sønderborg, Denmark. ](http://rgdoi.net/10.13140/2.1.3699.3926) 2nd International Conference WASTES: Solutions, Treatments and Opportunities January 2013.
+[^"2"]: [The benefits of separate organic waste collection – European Bioplastics e.V.](https://www.european-bioplastics.org/the-benefits-of-separate-organic-waste-collection/)
+[^"3"]: Lizundia E, Luzi F, Puglia D. [Organic waste valorisation towards circular and sustainable biocomposites.](http://dx.doi.org/10.1039/D2GC01668K) Green Chemistry [Internet]. 2022
+[^"4"]: [Global Food Waste Management: An implementation guide for cities](https://www.c40knowledgehub.org/s/article/Global-Food-Waste-Management-An-implementation-guide-for-cities?language=en_US) C40 Cities Climate Leadership Group, World Biogas Association. Accessed March 2024.
+[^"5"]: [How cities can collect residential food waste on the path to zero waste.](https://www.c40knowledgehub.org/s/article/How-cities-can-collect-residential-food-waste-on-the-path-to-zero-waste?language=en_US) C40 Cities Climate Leadership Group, World Biogas Association. Accessed March 2024.
+[^"6"]: DIAZ LP, GUNKEL-GRILLON P, ROTH E. [LIFE CYCLE ANALYSIS FOR THE TREATMENT OF ORGANIC MATTER FROM MUNICIPAL SOLID WASTE: A CASE STUDY OF FRANCE.](http://dx.doi.org/10.2495/EID180071) Environmental Impact IV [Internet]. June 2018.
+[^"7"]: Amrul NF, Kabir Ahmad I, Ahmad Basri NE, Suja F, Abdul Jalil NA, Azman NA. [A Review of Organic Waste Treatment Using Black Soldier Fly (Hermetia illucens). ](http://dx.doi.org/10.3390/su14084565) Sustainability [Internet]. April 2022.
+[^"8"]: [Organic-waste treatment | Umweltbundesamt](https://www.umweltbundesamt.de/en/topics/waste-resources/waste-disposal/organic-waste-treatment) Accessed March 2024.
+
+
+
 
 export default ({ children }) => 
   <SolutionDropdown 
