@@ -11,10 +11,7 @@ export const problem = "Cost of Advanced Solar Cells";
 export const solution = "Advanced Solar Cell R&D";
 
 ## Description
-We propose investing in advanced solar cell technology.
-
-## Background
-The U.S. Department of Energy considers next generation solar cells to be necessary to achieve their goal of reducing solar PV capital costs from $1.30 per watt in 2020 to $0.50/W in 2050, to reduce O&M costs from $15.70/kW/year to $6.10/kW/year from 2020 to 2050, and to increase the capacity factor from 28% to 35% from 2020 to 2050 [^”1”].
+We propose that the U.S. Department of Energy invest in research and development in advanced solar cells, particularly in perovskites.
 
 <DynamicSolutionGraphic
   barChartTitle={"Advanced Solar Cell R&D – U.S."}
@@ -43,21 +40,73 @@ The U.S. Department of Energy considers next generation solar cells to be necess
   ]}
 />
 
+## Background
+
+Crystalline silicon (c-Si) is the dominant solar PV technology today and comprises over 97% of the world market [^"6"], and c-Si is rapidly growing in market size and remains an active area of research [^"7"]. However, the U.S. Department of Energy considers next generation solar cells to be necessary to achieve their goal of reducing solar PV capital costs from $1.30 per watt in 2020 to $0.50/W in 2050, to reduce O&M costs from $15.70/kW/year to $6.10/kW/year from 2020 to 2050, and to increase the capacity factor from 28% to 35% from 2020 to 2050 [^"1"].
+
+Perovskites are a particularly promising, either as alternative or together with c-Si. Perovskite cells have the potential to be cheaper and more efficient than c-Si, especially with tandem cells, or cells with multiple layers that harvest light at different bandgaps. Either two perovskite layers or a perovskite and c-Si layer are under consideration. Such tandem cells have theoretical efficiencies of as much as 50% greater than those of standard c-Si cells, thereby improving land use efficiency [^"8"].
+
+The family of III-V cells, especially gallium arsenide (GaAs) cells but also indium phosphide and gallium antimonide are attractive in offering superior efficiency and durability compared to s-Ci cells. However, their high cost limits GaAs cells to specialized uses in aerospace and concentrating photovoltaics [^"9"].
+
+Aside from reducing costs, flexible solar cell technology may open market spaces in the built environment and in wearable devices [^"3"].
+
 ## Calculations
 We estimate the eventual cost to be 4 ¢/kWh, with the same greenhouse gas and pollution costs as other forms of solar, and that it will take 10 years to commercialize new technology, with spending at the same $830 million per year as suggested by a [wave energy](https://www.urbancruiseship.org/energy/energy_production/mhk) program. See our analysis of [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) for more information.
 
 ## Implementation
-Beyond conducting its own research, the Department of Energy should continue to support university research to advance solar cell technology, such as the 2022 Princeton University development of a perovskite solar cell with a 30-year lifespan [^”2”].
 
-Developing flexible solar cell technology could open up new market spaces in the built environment and wearable devices [^”3”].
+Beyond conducting its own research, the Department of Energy should continue to support university research to advance solar cell technology, such as the 2022 Princeton University development of a perovskite solar cell with a 30-year lifespan [^"2"]. In Fiscal Year 2023, Congress had appropriated $318 million for solar energy R&D, including for supply chain development and R&D for all solar areas [^"5"], and including $20 million for the Advanced Solar Energy Manufacturing Initiative, created with the 2021 Bipartisan Infrastructure Law, in a further DoE program to conduct research, development, demonstration, and commercialization of advanced solar projects [^"4"].
 
-##### Lead researcher: Michael Goff - Last updated: 2/28/2024
+Perovskite cells are not yet (as of March 2024) mainstream commercially. The main research needs are solutions to the degradation problem which presently limits perovskite lifespans; and either better containment and disposal of the lead that is used as a constituent material, or nontoxic alternatives to lead [^"8"].
 
-[^”1”]: Solar Energy Technologies Office, National Renewable Energy Laboratory ["Solar Futures Study"](https://www.energy.gov/eere/solar/solar-futures-study) U.S. Department of Energy, September 2021.
+A bottom-up analysis of the cost of manufacturing GaAs cells suggests that a cost of 40¢ per watt could be achieved [^"10"]. This price point would increase the range of viable applications for GaAs cells and improve the economics of concentrating photovoltaic systems, but it still would not be low enough to allow GaAs cells to displace c-Si for the flat panel market. By contrast, copper-zinc-tin-sulfide (CZTS) cells, not relying on expensive materials, have better potential to be economically competitive [^"11"], particularly as a layer with silicon in a tandem cell [^"12"].
 
-[^”2”]: Lyon, S. ["Once seen as fleeting, a new solar tech proves its lasting power"](https://www.princeton.edu/news/2022/06/29/once-seen-fleeting-new-solar-tech-proves-its-lasting-power) Princeton University, June 2022.
+Copper indium gallium diselenide (CIGS) thin-film cells have seen limited commercialization, and they require further support to improve commercial efficiency and cost to achieve their full potential [^"13"]. This contrasts to cadmium telluride (CdTe), presently the leading thin film PV technology, for which scalable manufacturing techniques to bring together advances in different areas is the greatest R&D need [^"14"].
 
-[^”3”]: Zhu, R. et al. [“Advanced materials for flexible solar cell applications”](https://doi.org/10.1515/ntrev-2019-0040) Nanotechnology Reviews, December 2019.
+Quantum dots could theoretically offer great efficiency improvements over current commercialized cells, but much fundamental research on quantum dots is necessary before they can be commercially viable [^"15"].
+
+Dye-sensitized solar cells are another class of thin film cells, and while the concept is not new, fundamental research to improve their stability and efficiency is needed before they are commercially viable [^"16"].
+
+Organic solar cells are another promising technology due to their low manufacturing cost and potential flexibility, but despite recent advances, efficiency and stability are also a challenge with organic solar cells [^"17"].
+
+##### Lead researcher: Michael Goff - Last updated: March 28, 2024.
+
+
+
+
+[^"1"]: Solar Energy Technologies Office, National Renewable Energy Laboratory ["Solar Futures Study"](https://www.energy.gov/eere/solar/solar-futures-study). U.S. Department of Energy. September 2021.
+
+[^"2"]: Lyon, S. ["Once seen as fleeting, a new solar tech proves its lasting power"](https://www.princeton.edu/news/2022/06/29/once-seen-fleeting-new-solar-tech-proves-its-lasting-power). Princeton University. June 2022.
+
+[^"3"]: Zhu, R., Zwang, Z., Li, Y. ["Advanced materials for flexible solar cell applications"](https://doi.org/10.1515/ntrev-2019-0040). Nanotechnology Reviews **8**(1). December 2019.
+
+[^"4"]: Office of Energy Efficiency & Renewable Energy. ["Advanced Solar Energy Manufacturing Initiative"](https://www.energy.gov/eere/advanced-solar-energy-manufacturing-initiative). March 28, 2024.
+
+[^"5"]: Thomas, W. ["FY23 Budget Outcomes: DOE Applied Energy R&D"](https://ww2.aip.org/fyi/2023/fy23-budget-outcomes-doe-applied-energy-rd). American Institute of Physics. March 2023.
+
+[^"6"]: International Renewable Energy Agency. ["Solar PV"](https://www.iea.org/energy-system/renewables/solar-pv). Accessed March 28, 2024.
+
+[^"7"]: Solar Energy Technologies Office. ["Crystalline Silicon Photovoltaics Research"](https://www.energy.gov/eere/solar/crystalline-silicon-photovoltaics-research). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. Accessed March 28, 2024.
+
+[^"8"]: Hu, Z., Ran, C., Zhang, H., Chao, L., Chen, Y., Huang, W. ["The Current Status and Development Trend of Perovskite Solar Cells"](https://www.sciencedirect.com/science/article/pii/S2095809922008086). Engineering **21**, pp. 15-19. February 2023.
+
+[^"9"]: Papež, N., Dallaev, R., Ţălu, Ş, Kaštyl, J. ["Overview of the Current State of Gallium Arsenide-Based Solar Cells"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8200097/). Materials (Basel) **14**(11): 3075. June 2021.
+
+[^"10"]: Horowitz, K. A. W., Remo, T., Smith, B., Ptak, A. ["A Techno-Economic Analysis and Cost Reduction Roadmap for III-V Solar Cells"](https://www.osti.gov/biblio/1484349). National Renewable Energy Laboratory. November 2018.
+
+[^"11"]: Wang, A., Chang, N. L., Sun, K., Xue, C., Egan, R. J., Li, J., Yan, C., Huang, J., Rong, H., Ramsden, C., Hao, X. ["Analysis of manufacturing cost and market niches for Cu<sub>2</sub>ZnSnS<sub>4</sub> (CZTS) solar cells"](https://pubs.rsc.org/en/content/articlelanding/2021/se/d0se01734e). Sustainable Energy & Fuels **5**(4), pp. 1044-1058. 2021.
+
+[^"12"]: Hao, X. ["Low-cost, high efficiency Copper-Zinc-Tin-Sulphide (CZTS) on silicon multijunction solar cells"](https://arena.gov.au/assets/2021/09/copper-zinc-tin-sulphide-on-silicon-multi-junction-solar-cells-final-report.pdf). September 2021.
+
+[^"13"]: Solar Energy Technologies Office. ["Copper Indium Gallium Diselenide"](https://www.energy.gov/eere/solar/copper-indium-gallium-diselenide). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. Accessed March 28, 2024.
+
+[^"14"]: Scarpulla, M.A., McCandless, B., Phillips, A.B., Yan, Y., Heben, M.J., Wolden, C., Xiong, G., Metzger, W.K., Mao, D., Krasikov, D., Sankin, I. ["CdTe-based thin film photovoltaics: Recent advances, current challenges and future prospects"](https://www.sciencedirect.com/science/article/pii/S0927024823001101). Solar Energy Materials and Solar Cells **255**: 112289. June 2023.
+
+[^"15"]: Semalti, P., Bishnoi, S., Vashishtha, P., Sharma, S. N. ["Advancements in Quantum Dot Solar Cells"](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/materials-science-and-engineering/photovoltaics-and-solar-cells/quantum-dot-solar-cells). Material Matters **15**(2). 2020.
+
+[^"16"]: Sharma, K., Sharma, V., Sharma, S. S. ["Dye-Sensitized Solar Cells: Fundamentals and Current Status"](https://link.springer.com/article/10.1186/s11671-018-2760-6). Nano Review **13**(381). November 2018.
+
+[^"17"]: Chin, L. X. ["Organic Solar Cells: Recent Progress and Challenges"](https://pubs.acs.org/doi/10.1021/acsenergylett.9b02071). ACS Energy Letters **4**(10), pp. 2537-2539. October 2019.
 
 
 export default ({ children }) => 
