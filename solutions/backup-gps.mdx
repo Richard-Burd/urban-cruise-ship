@@ -3,9 +3,57 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Risk of GPS Outage";
 export const solution = "Backup GPS System";
 
-Although a GPS outage is unlikely, an outage would cost an estimate $1 billion of damages per day [^"7"]. It is therefore economical to launch backup GPS satellites to mitigate against the risk of failure or an attack on the system.
+## Description
 
-[^"7"]: O'Connor, A. ["GPS: A $1.4 Trillion Economic Engine"](https://www.rti.org/impact/gps-14-trillion-economic-engine). RTI International. Accessed October 30, 2022.
+A Global Positioning System (GPS) outage would cost an estimate $1 billion of damages per day [^"1"], we recommend a complete backup system. 
+
+
+## Background
+
+GPS has become an integral component of global infrastructure, impacting nearly every aspect of modern life. Initially developed by the United States Department of Defense for military navigation, GPS was later opened up for civilian use in the 1980s. This global navigation satellite system (GNSS) provides geolocation and time information to a GPS receiver anywhere on or near the Earth where there is an unobstructed line of sight to four or more GPS satellites [^"9"].
+
+Importance and Uses of GPS:
+
+- Navigation and Transportation: GPS is foundational for the navigation of aircraft, ships, and vehicles, enabling precise positioning for logistics and transportation industries. It has significantly improved safety and efficiency in these sectors.
+
+- Telecommunications: GPS provides accurate timing for telecommunications networks, including the synchronization of cell phone towers and the management of data flow in networks.
+
+- Financial Services: The financial sector relies on GPS for timestamping transactions in global financial markets, ensuring accuracy and integrity in trading activities.
+
+- Agriculture: Precision agriculture uses GPS technology for mapping fields, monitoring crop health, and precisely deploying water, fertilizers, and pesticides, improving crop yields while reducing costs.
+
+- Emergency Services: GPS is critical for emergency response and disaster management, enabling responders to locate those in need quickly and accurately.
+
+- Science and Environment: Researchers use GPS for a wide range of scientific studies, including monitoring climate change, tracking wildlife, and measuring tectonic movements.
+
+Critical infrastructure, essential services and entire industries have become dependent on global navigation satellite systems (GNSSs). This dependence has emerged in an unplanned and unanticipated manner. GNSSs are vulnerable to disruption, with a risk of serious economic losses, loss of life and threats to national security [^"7"]. Its signals, being relatively weak by the time they reach the Earth's surface, can be disrupted or jammed by natural phenomena (like solar flares), technical malfunctions, or deliberate interference [^"8"]. The consequences of GPS failure can range from minor inconveniences in consumer applications to severe impacts on military operations, emergency services, and critical infrastructure sectors [^"5"] [^"3"] [^"2"].
+
+Potential Backup Systems:
+
+- eLoran (Enhanced Long Range Navigation): An updated version of the old LORAN system, offering better accuracy and reliability, less susceptible to interference [^"10"].
+- Differential GPS (DGPS): Improves the accuracy of GPS by using a network of fixed, ground-based reference stations to broadcast the difference between the positions indicated by the GPS satellites and the known fixed positions [^"10"].
+- Inertial Navigation Systems (INS): Use a combination of accelerometers and gyroscopes to calculate position and orientation based on a known starting point, independent of external signals [^"10"].
+- Ground-Based Augmentation Systems (GBAS): Improve GPS signal quality and reliability within a limited geographical area, useful for applications such as aircraft landing [^"10"].
+
+## Implementation
+
+The U.S. Space Force has announced plans as of February 2024, to award contracts to the private sector for potential GPS backups [^"6"].
+Backup satellites can be part of the solution to GPS vulnerability, but they should be combined with other approaches to enhance reliability.
+
+##### Lead Researcher: jye - Last Updated March 29, 2024.
+
+
+
+[^"1"]: O'Connor, A. ["GPS: A $1.4 Trillion Economic Engine"](https://www.rti.org/impact/gps-14-trillion-economic-engine). RTI International. Accessed October 30, 2022.
+[^"2"]:  [GPS at risk: Those signals are more vulnerable than you realize - CNET](https://www.cnet.com/science/gps-at-risk-those-signals-are-more-vulnerable-than-you-realize/)  Accessed March 2024.
+[^"3"]:  [What Happens If GPS Fails? - The Atlantic](https://www.theatlantic.com/technology/archive/2016/06/what-happens-if-gps-fails/486824/)  Accessed March 2024.
+[^"4"]:  [DOD, Transportation Consider Backups for Vulnerable GPS](https://fedtechmagazine.com/article/2022/05/dod-transportation-consider-backups-vulnerable-gps)  Accessed March 2024.
+[^"5"]:  [Spoof, Jam, Destroy: Why We Need a Backup for GPS](https://www.wired.com/story/spoof-jam-destroy-why-we-need-a-backup-for-gps/)  Accessed March 2024.
+[^"6"]:  [The race to back up vulnerable GPS - SpaceNews](https://spacenews.com/the-race-to-back-up-vulnerable-gps/)  Accessed March 2024.
+[^"7"]:  [Global reliance on GPS creates new risks.](http://dx.doi.org/10.1108/oxan-db241765) Emerald Expert Briefings [Internet]. February 2019.
+[^"8"]: Wang Q, Lu Z, Gao M, Qu G. [Edge Computing based GPS Spoofing Detection Methods.](http://dx.doi.org/10.1109/ICDSP.2018.8631600) 2018 IEEE 23rd International Conference on Digital Signal Processing (DSP) [Internet]. November 2018.
+[^"9"]: John A. Volpe National Transportation Systems Center.  [VULNERABILITY ASSESSMENT OF THE TRANSPORTATION INFRASTRUCTURE RELYING ON THE GLOBAL POSITIONING SYSTEM Final Report](https://rntfnd.org/wp-content/uploads/Vople_vulnerability_assess_2001.pdf) U. S. Department of Transportation August 2001.
+[^"10"]: Fang TH, Kim Y, Park SG, Seo K, Park SH. [GPS and eLoran Integrated Navigation for Marine Applications Using Augmented Measurement Equation Based on Range Domain.](http://dx.doi.org/10.1007/s12555-019-0287-y) International Journal of Control, Automation and Systems [Internet]. 2020 May 18;18(9):2349–59. Available from: http://dx.doi.org/10.1007/s12555-019-0287-y
 
 export default ({ children }) => 
   <SolutionDropdown 
