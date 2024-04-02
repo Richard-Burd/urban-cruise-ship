@@ -876,6 +876,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "ecology-environment",
+  },
+
+  {
+    solution: `Complimentary Feeding Education - LI/LMI Countries`,
+    link: `/matter/diet/nutrition#complimentary-food-education-program`,
+    site: `matter`,
+    cost: 4.513,
+    benefit: 40.148,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-campaigns",
   }
 
 ];

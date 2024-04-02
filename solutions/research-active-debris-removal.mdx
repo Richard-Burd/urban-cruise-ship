@@ -3,13 +3,43 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Damage from Orbital Debris";
 export const solution = "Research Active Debris Removal";
 
-Although it is critical to manage new space junk to avoid adding to the problem, it is also necessary to remove some junk already in orbit. Missions such as ClearSpace-1 are necessary to develop the techniques for doing so.
+## Description
 
-ClearSpace-1 is budgeted for 86 million Euros, or about $100 million at the exchange rate at the time of program announcement [^"10"]. This and several other missions to advance ADR technology, together with the $600 million per year that an active ADR program might cost [^"2"], is a small fraction of the trillions of dollars of value that ADR, together with tighter regulation on the creation of orbital debris, would create in an orbital economy.
+We recommend world space agencies address the issue of orbital debris by launching programs to address the growing amount of space debris.
 
-[^"10"]: European Space Agency. ["N° 26–2020: Call for Media: ESA and ClearSpace SA sign contract for world’s first debris removal mission"](https://www.esa.int/Newsroom/Press_Releases/Call_for_Media_ESA_and_ClearSpace_SA_sign_contract_for_world_s_first_debris_removal_mission). November 2020.
+## Background
+
+
+Orbital debris has become a pressing issue with the advent of satellite constellations and the increasing frequency of space launches. As of now, hundreds of thousands of pieces of space debris orbit the Earth, ranging from defunct satellites to tiny fragments. These objects travel at speeds of up to 28,000 kilometers per hour, making even small pieces capable of causing significant damage to operational satellites and spacecraft. The collision risk not only threatens the sustainability of space operations but also poses a barrier to future space exploration endeavors. [^"4"]
+
+
+
+Active Debris Removal (ADR) refers to the process of identifying, capturing, and either deorbiting or relocating debris objects to mitigate collision risks. ADR is essential for maintaining the long-term sustainability of space operations. Several initiatives and missions are underway to develop and demonstrate ADR technologies. Among these, the ClearSpace-1 mission, led by the European Space Agency (ESA) in collaboration with the Swiss start-up ClearSpace SA, stands out as a pioneering effort.
+
+ClearSpace-1 is budgeted for 86 million Euros, or about $100 million at the exchange rate at the time of program announcement [^"1"]. This and several other missions to advance ADR technology, together with the $600 million per year that an active ADR program might cost [^"2"], is a small fraction of the trillions of dollars of value that ADR, together with tighter regulation on the creation of orbital debris, would create in an orbital economy. The mission plans to capture and deorbit the Vespa upper stage, a defunct rocket part launched in 2013, which remains in orbit alongside millions of other debris pieces.
+
+This mission is significant as it represents the first-ever attempt to remove an existing object from orbit, marking a crucial step towards establishing a sustainable commercial sector for in-orbit services, including debris removal.
+The Economic Rationale for ADR
+
+
+A study by NASA assessed various methods of orbital debris removal and found that some could pay for themselves within a decade by reducing collision risks and the associated costs [^"6"].
+
+## Implementation
+
+Further projects will need to be explored to address the growing need for orbital debris remediation.
+
+##### Lead Researchers: jye & Michael Goff - Last Updated April 1, 2024.
+.
+[^"1"]: European Space Agency. ["N° 26–2020: Call for Media: ESA and ClearSpace SA sign contract for world’s first debris removal mission"](https://www.esa.int/Newsroom/Press_Releases/Call_for_Media_ESA_and_ClearSpace_SA_sign_contract_for_world_s_first_debris_removal_mission). November 2020.
 
 [^"2"]: Braun, V., Schulz, E., Wiedemann, C. ["Cost Estimation for the Active Debris Removal of Multiple Priority Targets"](https://www.researchgate.net/publication/271526167_Cost_Estimation_for_the_Active_Debris_Removal_of_Multiple_Priority_Targets). Conference: 40th COSPAR Scientific Assembly, Moscow. August 2014.
+
+
+[^"3"]: Yamamoto T, Okamoto H, Kawamoto S. [Cost analysis of active debris removal scenarios and system architectures.](). Japan Aerospace Exploration Agency. 2017.
+[^"4"]: [Cost and Benefit Analysis of Orbital Debris Remediation | NASA](https://www.nasa.gov/wp-content/uploads/2023/03/otps_-_cost_and_benefit_analysis_of_orbital_debris_remediation_-_final.pdf).
+[^"5"]: Sharma A et al. [https://www.semanticscholar.org/paper/Dynamics-of-Tethered-Space-Robot-Swarm-for-Active-Sharma-Sinha/b1862557bf24059143dfb2097b482b11c06eb64a](10.1109/AERO53065.2022.9843609). 2022 IEEE Aerospace Conference (AERO)August 2022.
+[^"6"]: [NASA study assesses costs and benefits of orbital debris removal - SpaceNews](https://spacenews.com/nasa-study-assess-costs-and-benefits-of-orbital-debris-removal/). March 2023.
+
 
 export default ({ children }) => 
   <SolutionDropdown 
