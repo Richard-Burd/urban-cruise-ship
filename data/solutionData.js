@@ -807,7 +807,7 @@ export const solutionData = [
   },
   
   {
-    solution: `Low Depletion Rocket Fuels`,
+    solution: `Low Ozone Depletion Rocket Fuels`,
     link: `/space/ethics/space_environment#low-depletion-rocket-fuels`,
     site: `space`,
     cost: 29.465548150185,
