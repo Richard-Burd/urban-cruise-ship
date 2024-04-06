@@ -860,7 +860,7 @@ export const solutionData = [
     site: `energy`,
     cost: 166,
     benefit: 415,
-    co2: 8,280,
+    co2: 8280,
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
