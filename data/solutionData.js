@@ -853,6 +853,18 @@ export const solutionData = [
     sources: null,
     subset: "energy-production-efficiency",
   },
+
+  {
+    solution: `Methane Capture from Waste - World`,
+    link: `/energy/energy_distribution/methane#methane_capture_from_waste`,
+    site: `energy`,
+    cost: 166,
+    benefit: 415,
+    co2: 8,280,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
   
   {
     solution: `Derelict Fishing Gear Buyback`,
