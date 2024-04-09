@@ -173,6 +173,15 @@ def weighted_median(weights):
     return convert_to_co2 * sorted_scc.SCC[cumsum >= cutoff].iloc[0]
 
 def get_scc():
+    # The following gets our estimate of the SCC.
     #print("By recency:",weighted_median(recency**(2021-scc["year"])))
     print("Social cost of carbon estimate: $",99.34363636363635,"per ton, 2010 dollars.")
+    
+    '''
+    The following calculations to into the SCC estimate above.
+    - Based on Richard Tol's paper. Publication dates range from 1980 to 2021. All figures are adjusted to 2010 dollars.
+    - None of the in-built weights are used. Any one of them would significantly decrease the value.
+    - A 10%/year weight penalty is applied to all publications so as to give more weight to recent ones.
+    - A weighted median is used.
+    '''
 get_scc()
