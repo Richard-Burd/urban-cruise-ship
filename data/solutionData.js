@@ -912,6 +912,19 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "public-health-campaigns",
+  },
+
+
+  {
+    solution: `Supplementary Food Program - LI/LMI Countries`,
+    link: `/matter/diet/nutrition#supplementary-food-program`,
+    site: `matter`,
+    cost: 3.248,
+    benefit: 44.515,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-campaigns",
   }
 
 ];
