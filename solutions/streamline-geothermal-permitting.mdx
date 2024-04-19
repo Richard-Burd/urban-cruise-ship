@@ -1,21 +1,109 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Slow Development of Enhanced Geothermal";
-export const solution = "Streamline Geothermal Permitting";
+export const solution = "Categorical Exclusion for Geothermal";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 ## Description
 
-We reccomend the United states reform the geothermal permitting process for efficiency.
+We recommend that the United States adopt a categorical exclusion for geothermal permitting on public lands.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Geothermal Permitting Categorical Exclusion – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"96 MTCO₂eq/yr"}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG, Apr. 18, 2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 19.587103079650223,
+      displayedValue: "$20 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 3.492618142791577,
+      displayedValue: "$3.5 billion/year",
+      site: "null",
+    },
+  ]}
+/>
 
 ## Background
 
-Permitting barriers are a major reason why geothermal energy has failed to gain the traction that wind or solar has gained. Oil and gas projects on federal land, due to their similarity and frequency, typically undergo expedited NEPA review and have dedicated staff at the Bureau of Land Management who are familiar with the details of oil and gas drilling and are able to process permits efficiently. There is no good reason for similar procedures to not be in place for enhanced geothermal, which is similar to oil and gas drilling but comes with greatly reduced environmental cost [^"14"].
+Much of the most promising enhanced geothermal resource in the United States is on publicly owned land in the Western states, which is administered by the Bureau of Land Management. Under the National Environmental Policy Act, extensive environmental reviews are required for activities on public lands that might have an environmental impact, such as exploration and production of geothermal wells [^"2"]. These reviews can take seven to ten years [^"8"].
 
-Expediting permits could double the American geothermal capacity by 2050 [^"15"].
+By contrast, oil and gas projects on federal land, due to their similarity and frequency, typically undergo expedited NEPA review and have dedicated staff at the Bureau of Land Management who are familiar with the details of oil and gas drilling and are able to process permits efficiently, a treatment known as a categorical exclusion [^"3"]. In many ways, enhanced geothermal projects are similar to oil and gas, but they have greatly reduced environmental cost [^"14"].
+
+Expediting permits could more than double the American geothermal capacity by 2050 [^"15"].
+
+
+
+## Calculations
+
+Based on the U.S. Department of Energy's 2019 *GeoVision* report [^"10"], we estimate that the United States could add nearly 7 gigawatts of enhanced geothermal energy more than what would be added without any permitting reform, which would be added over the course of 32 years. We model that the amount of additional EGS electricity on the grid will grow linearly every year for 32 years, until it reaches 6.6 GW of additional electricity, after which the amount remains constant indefinitely. We convert the additional capacity into additional production with a capacity factor of 90% [^"11"].
+
+We value the additional geothermal electicity at 7¢ per kilowatt-hour, as indicated above. The costs of our policy--environmental harm that might be inflicted as a result of the categorical exclusion--to be 12.5¢/kWh [^"12"], which includes a $140 social cost of carbon and lifecycle greenhouse gas emissions of enhanced geothermal at 32 grams CO<sub>2</sub>/kWh [^"13"].
+
+To assess greenhouse gas reduction potential, we model that the additional EGS power would displace electricity in the United States at the average carbon intensity in 2022 of 376 g/kWh [^"16"].
+
+A 7% discount rate is used throughout.
+
+There are several uncertainties in our analysis. Costs and benefits of additional EGS deployment simply consider the value and damages of the EGS power, without assessing what other sources the EGS might displace. Greenhouse gas reduction estimates assume that the additional EGS will displace other sources at a one-for-one rate, and that the carbon intensity of electricity remains constant in the future; in reality, limitations in these assumptions may cause the GHG reduction figure to be overestimated.
+
+
+
+## Implementation
+
+In April 2024, the Bureau of Land Management introduced a categorical exclusion for geothermal exploration [^"1"]. This is an important step, and it should be followed by a categorical exclusion for geothermal production, as well as Congressional legislation to make the changes permanent. While the 2024 geothermal categorical exclusion is administrative, the oil and gas exclusion is statutory [^"9"].
+
+Several such Congressional [^"4"] legislative efforts are in the works, including the Geothermal Energy Optimization Act of 2024 [^"5"] and a more limited House bill [^"6"]. Several measures have been taken or are under consideration at state legislatures and in Europe [^"7"].
+
+
+
+
+
+[^"1"]: Bureau of Land Management. ["BLM adopts categorical exclusions to expedite geothermal energy permitting"](https://www.blm.gov/press-release/blm-adopts-categorical-exclusions-expedite-geothermal-energy-permitting). United States Department of the Interior. April 2024.
+
+[^"2"]: Young, K. R., Witherbee, K., Levine, A., Keller, A., Balu, J., Bennett, M. ["Geothermal Permitting and NEPA Timelines"](https://research-hub.nrel.gov/en/publications/geothermal-permitting-and-nepa-timelines-2). National Renewable Energy Laboratory. Geothermal Resources Council Annual Meeting - Geothermal: A Global Solution, GRC 2014 - Portland, United States. September-October 2014.
+
+[^"3"]: Gaffigan, M. ["Energy Policy Act of 2005: BLM's Use of Section 390 Categorical Exclusions for Oil and Gas Development"](https://www.gao.gov/products/gao-11-941t). United States Government Accountability Office. September 2011.
+
+[^"4"]: Cariaga, C. ["A new bipartisan bill submitted by US senators seeks to expedite the permitting process for geothermal by applying exclusions already in place for oil and gas"](https://www.thinkgeoenergy.com/new-bipartisan-bill-seeks-faster-permitting-for-geothermal-in-us-public-lands/). Think Geoenergy. March 2024.
+
+[^"5"]: Cortez-Masto, C., Heinrich, M., Risch, J., Lee, M. ["Geothermal Energy Optimization (GEO) Act"](https://www.cortezmasto.senate.gov/wp-content/uploads/2024/03/geo_act_text.pdf). 118th Congress. March 2024.
+
+[^"6"]: Steel, M. ["H.R.6474 - To amend the Energy Policy Act of 2005 to expedite geothermal exploration and development in previously studied or developed areas"](https://www.congress.gov/bill/118th-congress/house-bill/6474). Congress.gov. November 2023.
+
+[^"7"]: Cariaga, C. ["Several US policymakers are proposing legislation to create measures to promote and accelerate geothermal deployment, both at the state and federal levels"](https://www.thinkgeoenergy.com/pro-geothermal-policies-being-pushed-in-the-us-at-federal-state-levels/). Think Geoenergy. March 2024.
+
+[^"8"]: Mackenzie, A. ["Geothermal Energy Needs Permitting Reform"](https://ifp.org/geothermal-energy-needs-permitting-reform/). Institute for Progress. August 2023.
+
+[^"9"]: Levine, A., Young, K. R. ["Geothermal Development and the Use of Categorical Exclusions Under the National Environmental Policy Act of 1969"](https://gdr.openei.org/files/1260/GRC%20PAPER%20-%20CX%20-%20FINAL.pdf). National Renewable Energy Laboratory. Geothermal Resources Council Annual Meeting - Geothermal: A Global Solution, GRC 2014 - Portland, United States. September-October 2014.
+
+[^"10"]: Geothermal Technologies Office. ["Permitting for Geothermal Power Development Projects"](https://www.energy.gov/eere/geothermal/permitting-geothermal-power-development-projects). Office of Energy Efficiency & Renewable Energy, United States Department of Energy. Accessed April 18, 2024.
+
+[^"11"]: Geothermal Technologies Office. ["Geothermal FAQs"](https://www.energy.gov/eere/geothermal/geothermal-faqs). Office of Energy Efficiency & Renewable Energy, United States Department of Energy. Accessed April 18, 2024.
+
+[^"12"]: Sovacool, B.K., Kim, J., Yang, M. ["The hidden costs of energy and mobility: A global meta-analysis and research synthesis of electricity and transport externalities"](https://www.sciencedirect.com/science/article/pii/S2214629620304606). Energy Research & Social Science **72**: 101885. February 2021.
+
+[^"13"]: Eberle, A., Heath, G., Nicholson, S., Carpenter, A. ["Systematic Review of Life Cycle Greenhouse Gas Emissions from Geothermal Electricity"](https://www.osti.gov/biblio/1398245). National Renewable Energy Laboratory. September 2017.
 
 [^"14"]: Oberhaus, D., Watney, C. ["Geothermal Everywhere: A New Path For American Renewable Energy Leadership"](https://innovationfrontier.org/geothermal-everywhere-a-new-path-for-american-renewable-energy-leadership/). Innovation Frontier Project. November 2021.
 
 [^"15"]: Office of Energy Efficiency and Renewable Energy. ["GeoVision"](https://apps.openei.org/geovision/). U. S. Department of Energy. 2019.
+
+[^"16"]: United States Energy Information Administration. ["U.S. Energy-Related Carbon Dioxide Emissions, 2022"](https://www.eia.gov/environment/emissions/carbon/). United States Department of Energy. November 2023.
 
 export default ({ children }) => 
   <SolutionDropdown 

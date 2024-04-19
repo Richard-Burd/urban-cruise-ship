@@ -925,6 +925,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "public-health-campaigns",
+  },
+  
+  {
+    solution: `Geothermal Categorical Exclusion - U.S.`,
+    link: `/energy/energy_production/geothermal`,
+    site: `energy`,
+    cost: 3.492618142791577,
+    benefit: 19.587103079650223,
+    co2: 96.27862739197069,
+    habitat: null,
+    sources: null,
+    subset: "public-health-campaigns",
   }
 
 ];
