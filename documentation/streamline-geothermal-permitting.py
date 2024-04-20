@@ -39,6 +39,7 @@ ghg_per_kwh_2022 = 376
 
 benefit_time_series = [value_per_kwh * production_time_series[i] for i in range(len(production_time_series))]
 cost_time_series = [(cost_per_kwh+ghg_cost_per_kwh) * production_time_series[i] for i in range(len(production_time_series))]
+print((cost_per_kwh+ghg_cost_per_kwh))
 ghg_time_series = [(ghg_per_kwh_2022-ghg_per_kwh) / 10**6 * production_time_series[i] for i in range(len(production_time_series))]
 
 ######################################### Convert to single annual values ######################
