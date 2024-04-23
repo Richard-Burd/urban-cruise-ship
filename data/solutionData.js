@@ -937,7 +937,19 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "public-health-campaigns",
-  }
+  },
+
+  {
+    solution: `Increase Plastic Tax - U.K.`,
+    link: `/waste/waste_economics/recycle_demand#increase-plastic-tax-uk`,
+    site: `waste`,
+    cost: 0.13715,
+    benefit: 0.178,
+    co2: 1.8,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
 
 ];
 
