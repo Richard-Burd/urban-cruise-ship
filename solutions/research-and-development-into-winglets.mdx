@@ -1,17 +1,82 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Limitations of Wind Power";
-export const solution = "Research and Development Into Winglets";
+export const solution = "Retrofit Wind Turbines with Winglets";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 ## Description
 
-We recommend research, development, and deployment into winglets for wind turbines.
+We recommend that wind turbine operators retrofit turbines to include winglets.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Wind Turbine Winglets - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"1.1 MTCO₂eq/yr"}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG, Apr. 24, 2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 3.8705198094955757,
+      displayedValue: "$3.9 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 1.4951073998173867,
+      displayedValue: "$1.5 billion/year",
+      site: "null",
+    },
+  ]}
+/>
 
 ## Background
 
-The energy production benefits of winglets are well-established. While there is still value for conducting additional research to optimize winglets, there are only marginal gains remaining for doing so [^"23"]. More effort should be invested on deployment than on research.
+In the context of aircraft, winglets have been used for decades and are well known to improve the aerodynamics and fuel efficiency of aircraft [^"1"]. The energy production benefits of winglets for wind turbines have also been well established, as described above. While there is still value for conducting additional research to optimize winglets, there are only marginal gains remaining for doing so [^"23"]. More effort should be invested on deployment than on research.
 
-It is possible to retrofit existing turbines with winglets, and not necessary to build entirely new turbines [^"30"]. To aid in retrofitting, the Department of Energy could provide grants or low interest loans to utilities for retrofitting.
+
+
+
+
+
+## Calculations
+
+Our calculations are based on an analysis of Matheswaran and Miller [^"2"]. For a 5 megawatt turbine, which produces 21 gigawatt-hours of electricity per year, they examine several scenarios, one of which holds that a winglet retrofit would cost about $15,000 and bring about $40,000 in benefit through additional electricity production. Applying these figures to world wind energy production as of 2022 [^"3"] yields our cost and benefit estimates.
+
+Matheswaran and Miller also estimate that winglets would increase energy production by 1.69%. We therefore estimate that winglets would reduce the greenhouse gas intensity of wind energy by the same amount, which applied to 2022 production [^"3"] and current [greenhouse gas intensity estimates](/energy/energy_production/energy_env) yields our estimated savings.
+
+By reducing the levelized cost of wind electricity, winglets may have significantly greater greenhouse gas reduction benefits by increasing the economically feasible range of wind power and displacing higher emissions energy sources, but this effect is not modeled here.
+
+
+
+
+
+
+## Implementation
+
+Once winglets are well-established, it will be cheaper to build turbines with winglets from the start, but retrofitting is perfectly cost-feasible as well [^"30"]. To aid in retrofitting, the Department of Energy could provide grants or low interest loans to utilities for retrofitting.
+
+Though the benefits of winglets are established, small-scale installations are needed first to prove that the technology is ready to be used on a wide scale [^"2"].
+
+
+
+
+
+
+[^"1"]: National Aeronautics and Space Administration. ["Winglets Save Billions of Dollars in Fuel Costs"](https://spinoff.nasa.gov/Spinoff2010/t_5.html). 2010.
+
+[^"2"]: Matheswaran, V., Miller, L.S. ["Retrofit winglets for wind turbines"](https://soar.wichita.edu/items/eb91c2cb-51e8-45c6-a458-41991c12047e). Wichita State University. February 2018.
+
+[^"3"]: Energy Institute. ["Statistical Review of World Energy"](https://www.energyinst.org/statistical-review). June 2023.
 
 [^"23"]: Johnson, N., Bortolotti, P., Dykes, K., Barter, G., Moriarty, P., Carron, S., Wendt, F., Veers, P., Paquette, J., Kelly, C., Ennis, B. ["Investigation of Innovative Rotor Concepts for the Big Adaptive Rotor Project"](https://www.osti.gov/biblio/1563139). National Renewable Energy Laboratory. September 2019.
 

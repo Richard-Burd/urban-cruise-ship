@@ -950,6 +950,18 @@ export const solutionData = [
     sources: null,
     subset: "ecology-environment",
   },
+  
+  {
+    solution: `Retrofit Wind Turbines with Winglets`,
+    link: `energy/energy_production/wind`,
+    site: `energy`,
+    cost: 1.4951073998173867,
+    benefit: 3.8705198094955757,
+    co2: 1.12049028,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  }
 
 ];
 
