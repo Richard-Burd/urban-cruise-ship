@@ -1,4 +1,11 @@
-# Winglets
+# Winglets. File created April 22, 2024. Last substantive updated on April 23, 2024.
+
+'''
+To-do
+- One approach to GHG reduction is to apply the price elasticity to wind deployment to estimate additional wind, then estimate that this would displace other sources.
+It might require that a different scenario be used, though.
+- Assess costs and benefits with the other scenarios.
+'''
 
 print("Winglets")
 
