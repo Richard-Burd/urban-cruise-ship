@@ -1,0 +1,91 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Stunting and Malnutrition in Low Income Countries";
+export const solution = "Supplementary Food Program";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+import SolutionImages from "/components/SolutionImages.js";
+
+## Description
+
+We advocate for the United Nations, local governments, international organizations, and other stakeholders provide children aged 6–23 months in low and lower-middle-income countries with supplementary food/micronutrients in countries with high levels of stunting.
+
+
+
+
+## Background
+
+Stunting is a condition characterized by low height for age in children, indicating chronic undernutrition. It affects millions of children globally, particularly in low and lower-middle-income countries. The condition is associated with long-term impacts on cognitive development, educational achievement, and economic productivity in adulthood [^"8"].
+
+One proposed solution is the distribution of Small Quantity Lipid-based Nutrient Supplements (SQ-LNS). These supplements are designed to provide essential nutrients that may be missing from the diets of children between the ages of 6 to 23 months. The supplements contain a mix of vitamins, minerals, and calories intended to complement the child's regular diet [^"7"].
+
+The SQ-LNS program has been shown to be effective at improving development and health outcomes in multiple studies [^"2"] [^"3"] [^"4"] [^"5"]. Stunting prevalence is recorded at 41% of the target demographic [^"1"]. This program would provide 100–120 kcal alongside essential micronutrients and proteins per child each day for 18 months, starting at six months of age [^"1"].
+
+The provision of SQ-LNS addresses the risks of mortality, anemia, developmental disorders, stunting, and wasting. This program could reduce moderate and severe stunting by up to 9.1%, potentially alleviating stunting in 1.55 million children [^"1"].
+
+<DynamicSolutionGraphic
+  barChartTitle={"Supplementary Food Program"}
+  barChartTitle2={"Low / Low-Middle Income Countries"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye Apr.15.2023"}
+  
+  
+  staticData={[   
+     {
+      name: "Benefits",
+      barlength:44.515,
+      displayedValue: "$44.5",
+      site: "null",
+    },
+    {
+      name: "Costs",
+      barlength: 3.248,
+      displayedValue: "$3.2 Billions USD/year",
+      site: "null",
+    }, 
+  ]}
+/>
+
+#### Benefits estimated using a 8% discount rate [^"1"]
+
+
+Benefits are calculated in terms of lost lifetime income due to stunting, and averted mortality. Averted stunting is valued as a 30% increase in lifetime income. Averted mortality is valued using the Value of Statistical Life (VSL) at 1.55 times the respective GDP per capita of the target countries with this multiplier rising to 2.9 times per capita in 2090. The program's delivery to children and their caretakers is estimated at US$4.37 per child monthly. This cumulates to an annual expenditure of US$3.25 billion for the target demographic of 41 million children [^"1"].
+
+
+## Implementation
+
+Many mothers perceive stunting or malnutrition as a normative condition, dismissing concerns about inadequate weight gain or suboptimal height in the absence of overt illness symptoms[^"6"]. There can also be a lack of trust in external health interventions, including skepticism about the safety and efficacy of the supplements. Building community trust and awareness is crucial to the program's success [^"6"].
+
+##### Lead Researcher: jye - Last Updated April 15, 2024
+
+
+
+[^"1"]: Larsen B, Hoddinott J, Razvi S. [Investing in Nutrition: A Global Best Investment Case](https://doi.org/10.1017/bca.2023.22). Journal of Benefit-Cost Analysis. June 2023.
+[^"2"]: Baye K. [Prioritizing the Scale-Up of Evidence-Based Nutrition and Health Interventions to Accelerate Stunting Reduction in Ethiopia.](https://doi.org/10.3390/nu11123065) Nutrients. December 2019. 
+[^"3"]: Manoppo MW, Huriah T. Nutrition intervention to prevent stunting in children aged 6-59 months. Jurnal Aisyah : Jurnal Ilmu Kesehatan [Internet]. 2022 Nov 20;7(S2):147–54. Available from: http://dx.doi.org/10.30604/jika.v7is2.1422 [https://www.semanticscholar.org/paper/Nutrition-intervention-to-prevent-stunting-in-aged-Manoppo-Huriah/a7375f590083553fc608bab856b2688eac74da6e]()  
+[^"4"]: Leroy et al.  [Tubaramure, a Food-Assisted Integrated Health and Nutrition Program, Reduces Child Stunting in Burundi: A Cluster-Randomized Controlled Intervention Trial.](https://doi.org/10.1093/jn%2Fnxx063) The Journal of Nutrition. March 2018.
+[^"5"]: Manoppo MW, Huriah T.  [Nutrition intervention to prevent stunting in children aged 6-59 months.](http://dx.doi.org/10.30604/jika.v7is2.1422) Jurnal Aisyah : Jurnal Ilmu Kesehatan [Internet]. November 2022.
+[^"6"]: Lestari PP, Aulia F, Masdiputri RrSN, Sari DK. [Local Wisdom And Social Culture In Family With Stunting Children.](http://dx.doi.org/10.35747/hmj.v6i2.419) Healthy-Mu Journal [Internet]. December 2022.
+[^"7"]: Dewey KG, Stewart CP, Wessells KR, Prado EL, Arnold CD. [Small-quantity lipid-based nutrient supplements for prevention of child malnutrition and promotion of healthy development: Overview of individual participant data meta-analysis and programmatic implications.](http://dx.doi.org/10.1101/2021.02.15.21251449) Healthy-Mu Journal. February 2021.
+[^"8"]: Hadi M. [ASSOCIATION BETWEEN EXCLUSIVE BREASTFEEDING AND STUNTING IN CHILDREN : A SYSTEMATIC REVIEW.](https://doi.org/10.53555/nnmhs.v9i6.1740) Journal of Advance Research in Medical & Health Science. June 2023. 
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

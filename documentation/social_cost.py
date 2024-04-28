@@ -1,4 +1,4 @@
-# Created March 21, 2024, last substantial update March 21, 2024.
+# Created March 21, 2024, last substantial update April 9, 2024.
 
 import pandas as pd
 import numpy as np
@@ -175,7 +175,8 @@ def weighted_median(weights):
 def get_scc():
     # The following gets our estimate of the SCC.
     #print("By recency:",weighted_median(recency**(2021-scc["year"])))
-    print("Social cost of carbon estimate: $",99.34363636363635,"per ton, 2010 dollars.")
+#    print("Social cost of carbon estimate: $",99.34363636363635,"per ton, 2010 dollars.")
+    return 99.34363636363635
     
     '''
     The following calculations to into the SCC estimate above.
@@ -184,4 +185,4 @@ def get_scc():
     - A 10%/year weight penalty is applied to all publications so as to give more weight to recent ones.
     - A weighted median is used.
     '''
-get_scc()
+#get_scc()

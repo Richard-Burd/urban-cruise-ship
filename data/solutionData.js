@@ -924,6 +924,55 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "public-health-campaigns",
+  },
+
+
+  {
+    solution: `Supplementary Food Program - LI/LMI Countries`,
+    link: `/matter/diet/nutrition#supplementary-food-program`,
+    site: `matter`,
+    cost: 3.248,
+    benefit: 44.515,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-campaigns",
+  },
+  
+  {
+    solution: `Geothermal Categorical Exclusion - U.S.`,
+    link: `/energy/energy_production/geothermal`,
+    site: `energy`,
+    cost: 3.492618142791577,
+    benefit: 19.587103079650223,
+    co2: 96.27862739197069,
+    habitat: null,
+    sources: null,
+    subset: "public-health-campaigns",
+  },
+
+  {
+    solution: `Increase Plastic Tax - U.K.`,
+    link: `/waste/waste_economics/recycle_demand#increase-plastic-tax-uk`,
+    site: `waste`,
+    cost: 0.13715,
+    benefit: 0.178,
+    co2: 1.8,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
+  
+  {
+    solution: `Retrofit Wind Turbines with Winglets`,
+    link: `energy/energy_production/wind`,
+    site: `energy`,
+    cost: 1.4951073998173867,
+    benefit: 3.8705198094955757,
+    co2: 1.12049028,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
   }
 
 ];
