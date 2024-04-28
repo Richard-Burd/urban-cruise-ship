@@ -889,6 +889,18 @@ export const solutionData = [
     sources: null,
     subset: "ecology-environment",
   },
+
+  {
+    solution: `Water Desalination`,
+    link: `/matter/water/water_provision#water_desalination`,
+    site: `matter`,
+    cost: 10,
+    benefit: 3.5,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
   
   {
     solution: `Quieter Pavement`,
