@@ -901,6 +901,18 @@ export const solutionData = [
     sources: null,
     subset: "ecology-environment",
   },
+
+  {
+    solution: `Modern Cooking Fuels`,
+    link: `/matter/ag_dist/cooking#modern_cooking_fuels`,
+    site: `matter`,
+    cost: 14.4,
+    benefit: 100,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
   
   {
     solution: `Quieter Pavement`,
