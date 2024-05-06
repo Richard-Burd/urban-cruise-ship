@@ -950,6 +950,18 @@ export const solutionData = [
     sources: null,
     subset: "public-health-campaigns",
   },
+
+  {
+    solution: `Maintenance of Peace - World`,
+    link: `/energy/energy_socioeconomics/geopolitics_se#maintenance-of-peace`,
+    site: `energy`,
+    cost: 6.4,
+    benefit: 25.6,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-campaigns",
+  },
   
   {
     solution: `Geothermal Categorical Exclusion - U.S.`,
