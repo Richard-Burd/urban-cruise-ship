@@ -5,26 +5,46 @@ export const solution = "Fund Oil Spill Liability Trust Fund";
 
 ## Description
 
- We propose that the Oil Spill Liability Trust Fund (OSLTF) excise tax be kept in place.
+We propose that the Oil Spill Liability Trust Fund (OSLTF) excise tax be kept in place.
 
 ## Background 
 
-The OSLTF is an important tool to ensure that oil spill cleanup costs are financed when the responsible operators are not able to do so. However, the oil production excise tax, which is the primary source of revenue for the OSLTF, has been extended intermittently.[^"1"] 
+The OSLTF is an important tool to ensure that oil spill cleanup costs are financed when the responsible operators are not able to do so. However, the oil production excise tax, which is the primary source of revenue for the OSLTF, has been extended intermittently [^"1"]. As of 2024, a fee of 9¢ per barrel of shipped oil is assessed for the OSLTF [^"10"].
 
-The fund has succeeded over the last 40 years, always being capable of responding to oil spills.[^"2"] The only time when the fund encountered limits was in 2010 during the Deepwater Horizon oil well spill, when Congress passed a provision to free up funds. Oil well spills are limited to $1 billion spent on any one incident.[^"2"]
+The fund has succeeded over the last 40 years, always being capable of responding to oil spills [^"2"]. Oil well spills are limited to $1 billion spent on any one incident [^"2"], together with $500 million for natural resource damages [^"9"]. Only in the 2010 Deepwater Horizon oil well spill did the OSLTF reach its limit; then Congress appropriated special funds.
 
+## Calculations
+
+In 2010, a report from Resources for the Future [^"4"] estimated that oil spills cost $16 per gallon to clean up and an additional $2 per gallon for the monetary value of lost oil, a value which is almost $26 per gallon in 2024 dollars. Etkin [^"5"] estimates that just over 15 million gallons were spilled per year from 1980 to 2000. As of 2023, the United States consumed 7.3 billion barrels of oil per year [^"6"]. These figures suggest that private and public clean-up costs are about 5¢ per barrel.
+
+We note some uncertainties in these figures. As the RFF report [^"4"] notes, clean-up costs vary widely across events, with the Exxon Valdez spill costing Exxon $630 (2010 dollars) per gallon, and environmental costs potentially significantly higher. Thus a higher fee than 5¢ per barrel may be appropriate to account for kurtosis risk. On the other hand, we note a generally declining trend of oil spill volumes over time [^"7"],[^"8"], which may hold in the United States.
 
 ## Implementation
 
-Congress could expand the tax to  cover oil-sands-derived crude oils.[^"3"]
+Congress could expand the tax to  cover oil-sands-derived crude oils [^"3"].
 
-##### Lead researcher: jye - Last updated 5/7/2023
+##### Lead researcher: jye - Last updated May 6, 2024.
 
 
 [^"1"]: Ramseur, J. L. ["The Oil Spill Liability Trust Fund Tax: Background and Reauthorization Issues in the 116th Congress"](https://crsreports.congress.gov/product/details?prodcode=IF11160). Congressional Research Service. April 2019.
 
-[^"2"]:  [The Oil Spill Response Fund – Four Decades of Success](https://meridian.allenpress.com/iosc/article/2014/1/2146/198375/The-Oil-Spill-Response-Fund-Four-Decades-of).
-[^"3"]:  [Oil Sands and the Oil Spill Liability Trust Fund: The Definition of “Oil” and Related Issues for Congress | CRS Reports](https://crsreports.congress.gov/product/pdf/R/R43128).
+[^"2"]: Thuring, A. R. [The Oil Spill Response Fund – Four Decades of Success](https://meridian.allenpress.com/iosc/article/2014/1/2146/198375/The-Oil-Spill-Response-Fund-Four-Decades-of). International Oil Spill Conference Proceedings **1**, pp. 2146–2158. May 2014.
+
+[^"3"]: Congressional Research Service. [Oil Sands and the Oil Spill Liability Trust Fund: The Definition of “Oil” and Related Issues for Congress](https://crsreports.congress.gov/product/pdf/R/R43128). February 2017.
+
+[^"4"]: Cohen, M. A. ["A Taxonomy of Oil Spill Costs: What are the Likely Costs of the Deepwater Horizon Spill?"](https://policycommons.net/artifacts/1947722/a-taxonomy-of-oil-spill-costs/2699491/). Resources for the Future. December 2010.
+
+[^"5"]: Etkin, D. S. ["Twenty-Year Trend Analysis of Year Trend Analysis of Oil Spills in EPA Jurisdiction"](https://archive.epa.gov/emergencies/content/fss/web/pdf/etkin_04.pdf). Environmental Research Consulting.
+
+[^"6"]: United States Energy Information Administration. ["How much oil is consumed in the United States?"](https://www.eia.gov/tools/faqs/faq.php?id=33&t=6). United States Department of Energy. September 2023.
+
+[^"7"]: International Tanker Owners Pollution Federation. ["Oil Tanker Spill Statistics 2021"](https://www.itopf.org/knowledge-resources/data-statistics/statistics/). Accessed May 10, 2022.
+
+[^"8"]: Roser, M., Ritchie, H. ["Oil Spills"](https://ourworldindata.org/oil-spills). Our World in Data. Accessed May 10, 2022.
+
+[^"9"]: United States Environmental Protection Agency. ["Oil Spill Liability Trust Fund"](https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/oil-spill-liability-trust-fund). February 2024.
+
+[^"10"]: OPIS. ["Oil Spill Tax and Superfund Supplier List"](https://www.opisnet.com/resources/oil-spill-supplier-tax-list/). January 2024.
 
 export default ({ children }) => 
   <SolutionDropdown 
