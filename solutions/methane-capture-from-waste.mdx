@@ -19,7 +19,7 @@ We propose capturing landfill gas (LFG) from municipal solid waste (MSW).
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
-  arrowText1={"295 million"}
+  arrowText1={"395 million"}
   arrowText2={"tons of CO₂e"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
@@ -27,14 +27,14 @@ We propose capturing landfill gas (LFG) from municipal solid waste (MSW).
  staticData={[
     {
      name: "Benefit",
-      barlength: 14.8,
-      displayedValue: "$14.8 billion/year",
+      barlength: 55.83229824926737,
+      displayedValue: "$56 billion/year",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: 6.3,
-      displayedValue: "$6.3 billion/year",
+      barlength: 11.220480317541707,
+      displayedValue: "$11 billion/year",
       site: "null",
     },
   ]}
@@ -44,14 +44,15 @@ We propose capturing landfill gas (LFG) from municipal solid waste (MSW).
 
 Globally, 2.3 billion tons of municipal solid waste were generated in 2023 [^"1"]. Landfill gas is comprised of approximately 50% methane and 50% CO₂, with trace levels of other compounds, including nitrogen, oxygen, hydrogen, and non-methane organic compounds, such as ammonia and sulfides [^"2"]. Mitigation of LFG has health benefits by reducing these hazardous air pollutants that increase the risk of cancer, cause respiratory issues, and produce strong and unpleasant odors [^"2"].
 
-One ton of methane causes 32 times the global warming than one ton of carbon dioxide (CO₂) over a 100 year period [^"5"]. Captured LFG can be turned into electricity, heat, or vehicle fuels [^"2"].
+One ton of methane causes 32 times the global warming as one ton of carbon dioxide (CO₂) over a 100 year period [^"5"]. Captured LFG can be turned into electricity, heat, or vehicle fuels [^"2"].
 
 On average a LFG project would create 28 jobs [^"2"].
 
 ## Calculations
-Assuming full implementation of current technology (and including composting and recycling mitigation), 295 million tons of CO₂e could be reduced annually [^"3"]. Valued at $50 per ton, the societal benefit is $14.8 billion annually.
 
-Costs are estimated at $21.3 per ton CO₂e abatement [^"3"], equaling $6.3 billion annually.
+Based on analysis from the U.S. Environmental Protection Agency, we estimate that the equivalent of 395 million tons of CO₂e could be reduced annually at a mitigation cost of less than $140 per ton (2024 dollars) [^"3"]. The EPA report estimates worldwide methane capture potential for various carbon-equivalent mitigation costs, and from this we derive costs and benefits, with the latter assessed at our estimate of the social cost of carbon.
+
+Costs incorporate a financial benefit from combustion of captured gas, where that is appropriate. Carbon mitigation costs are negative for 112 million tons CO₂e of emissons, meaning that those projects product financial benefits, even if emissions reductions are not accounted for. There are nearly 200 million tons CO₂e emissions that cannot be mitigated at our social cost of carbon, and an additional nearly 400 million tons that cannot be abated at any cost. Emissions are based on world estimates for 2030.
 
 ## Implementation
 While we advocate for a reduction in landfilling in general, with greater recycling and reuse, the practice of landfilling will not be entirely completely. The average LFG capture efficiency with current technology is around 48% [^"4"], meaning there is a large gap for improvement in the technology. Federal incentives such as tax credits and loans can be helpful in getting LFG projects started and running [^"3"].
@@ -66,7 +67,7 @@ While we advocate for a reduction in landfilling in general, with greater recycl
 
 [^"4"]: Themelis, N., Bourtsalas, A.C. ["Methane Generation and Capture of U.S. Landfills"](http://doi.org/10.17265/2162-5298/2021.06.001) Journal of Environmental Science and Engineering A **10**, pp. 199-206. December 2021.
 
-[^"5"]: IEA ["Methane Tracker 2021"](https://www.iea.org/reports/methane-tracker-2021) IEA Paris 2021
+[^"5"]: International Energy Agency. ["Methane Tracker 2021"](https://www.iea.org/reports/methane-tracker-2021). Paris. January 2021.
 
 
 export default ({ children }) => 
