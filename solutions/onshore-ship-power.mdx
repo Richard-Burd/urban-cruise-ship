@@ -1,0 +1,170 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Emissions from Ships in Port";
+export const solution = "Onshore Power Supply for Ships at Port - Global";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+import SolutionImages from "/components/SolutionImages.js";
+
+## Description
+
+We recommend the implementation of shore to ship power, also known as cold ironing, in the most commonly used ports, and for at least ¼ of the global merchant fleet be retrofitted with the ability to use shore power while in berth to avoid the use of on board fossil fuel generators for electricity.
+
+## Background
+
+Shore power, also known as onshore power supply (OPS) or cold ironing, allows ships to shut down their main and auxiliary engines while at berth and instead connect to an onshore electricity grid [^"1"]. This can result in up to a 90% reduction in air pollutants and a 50% reduction in greenhouse gas emissions compared to running the ship's engines [^"2"]. 
+
+
+The EU provides €1.5 billion in funding to support the development of shore power infrastructure to EU ports [^"4"]. Countries like Norway, the Netherlands, and Italy have also implemented national-level policies and funding programs to drive the adoption of shore power [^"3"]. 
+
+The world’s merchant fleet consist of 105,500 ships of which 56,500 were over 1000  gross tons in cargo handling capacity. For the purposes of this solution, we focus only on ships with over 1000 gross tons, and we will assume 25,000 of them are suitable for cold ironing retrofitting [^"17"]. We recommend  the world's 50 busiest ports build 30 ship berths each [^"21"].
+
+<DynamicSolutionGraphic
+  barChartTitle={"Onshore Power Supply for Ships at Port - Global"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"11.7 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye May.08.2024"}
+  
+  
+  staticData={[   
+     {
+      name: "Benefits",
+      barlength:2.539696714,
+      displayedValue: "$2.54",
+      site: "null",
+    },
+    {
+      name: "Costs",
+      barlength: 1.015,
+      displayedValue: "$1.02 Billions USD/year",
+      site: "null",
+    }, 
+  ]}
+/>
+#### Source [^"16"] [^"19"] [^"20"] [^"18"].
+
+<DynamicSolutionGraphic
+  barChartTitle={"Benefit Calculations"}
+  barChartTitle2={"Onshore Power Supply for Ships at Port - Global"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"11.7 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye May.08.2024"}
+  
+  
+  staticData={[  
+    {
+      name: "Fuel Savings",
+      barlength: 1.384,
+      displayedValue: "$1.384",
+      site: "null",
+    },    
+    {
+      name: "Avoided Carbon Costs",
+      barlength: 1.156,
+      displayedValue: "$1.156 Billions USD/year",
+      site: "null",
+    },
+
+  ]}
+/>
+
+#### Source [^"16"] [^"19"] [^"20"] [^"18"].
+
+Ships spend an average of 22.7 hours berthed, and we assume each ship will make at least 20 port calls to major ports per year [^"18"]. The average ship at port requires 1,600 KW of power, consuming 7.7 tonnes of fuel, over a 24-hour span [^"16"]. Global average price for marine fuels is US$925.50 per ton [^"19"]. Each ton of marine fuel produces 3.206 tons of carbon emissions, and the avoided carbon costs are calculated by accounting for the unspent fuel [^"20"]. It is important to note that the energy source for the electricity is critical for actual emission reductions. Potential emissions due to grid energy sources are not calculated here. We use at shoreside electricity rate of US$0.11 per kilowatt-hour [^"16"].
+
+
+<DynamicSolutionGraphic
+  barChartTitle={"Cost Calculations"}
+  barChartTitle2={"Onshore Power Supply for Ships at Port - Global"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"11.7 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"jye May.08.2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Ship Retrofitting*",
+      barlength: 0.85,
+      displayedValue: "$0.85",
+      site: "null",
+    },      
+    {
+      name: "Port Infrastructure**",
+      barlength: 0.165,
+      displayedValue: "$0.16 Billions USD/year",
+      site: "null",
+    },
+
+  ]}
+/>
+
+#### *Costs calculated for retrofitting 25,000 vessels. **Costs for 1500 berths spread over 50 ports. Source [^"16"].
+
+
+
+## Implementation
+
+
+Progress has been made in this area, with multiple ports and ships using this technology as of 2022 [^"12"]
+There is a need for international standardization to make this realistic. Ships have a wide range of power needs and an international standard [^"7"] is needed so that ships can be reliably powered in various ports [^"4"].
+
+Economic concerns ar one of the main challenges to implementation [^"11"], with financial constraints being cited the primary obstacle for port decarbonization by port stakeholders [^"15"]. If implemented, ships could see a return on investment within 3 years of conversion [^"14"].
+
+As stated earlier, the shore power grid must also be taken into account with regards to the emissions it may be producing. Ideally power would be provided by renewable sources so that emissions are actually reduced instead of transferred.
+
+##### Lead Researcher: jye - Last Updated May 8, 2024
+
+
+[^"1"]: Hsu SH, Tzu FM, Chen YD, Huang CW. [Navigating Safety and Compliance in High-Voltage Shore Connection Systems: A Comprehensive Exploration of IEC/IEEE 80005-1 Standards and the Guidelines of Ship Classification Societies.](http://dx.doi.org/10.3390/jmse12020322) Journal of Marine Science and Engineering [Internet]. February 2024.
+[^"2"]: Grey E. [Shore-side power: a key role to play in greener shipping](https://www.ship-technology.com/features/featureshore-side-power-a-key-role-to-play-in-greener-shipping-4750332/) Ship Technology. January 2016.
+[^"3"]: Power Engineering International. [Advancing sustainability: The EU’s drive for cleaner maritime operations](https://www.powerengineeringint.com/emissions-environment/shore-to-ship-power-systems-eu-drive-for-cleaner-maritime-operations/)  August 2023.
+[^"4"]: Tarnapowicz D, German-Galkin S. [International Standardization in the Design of “Shore to Ship” - Power Supply Systems of Ships in Port.](http://dx.doi.org/10.2478/mspe-2018-0001) Management Systems in Production Engineering [Internet]. January 2018.
+[^"5"]:  [On Estimating the Port Power Demands for Cold Ironing Applications | IEEE Conference Publication]()  
+[^"6"]:  [Multi-agent system-based polymorphic distributed energy management for ships entering and leaving ports considering computing power resources]()  
+[^"7"]: Tarnapowicz D, German-Galkin S. [Energy Optimization of the ‘Shore to Ship’ System—A Universal Power System for Ships at Berth in a Port.](https://doi.org/10.3390/s20143815) Sensors (Basel, Switzerland).  July 2020.
+[^"8"]:  [https://jshippingandtrade.springeropen.com/articles/10.1186/s41072-022-00119-4](https://jshippingandtrade.springeropen.com/articles/10.1186/s41072-022-00119-4)  
+[^"9"]:  [Cold Ironing: Socio-Economic Analysis in the Port of Genoa](https://www.semanticscholar.org/paper/Cold-Ironing%3A-Socio-Economic-Analysis-in-the-Port-Canepa-Ballini/7315b5c8467e6a11856d31c37e4b8f96e36da5bf)  
+[^"10"]:  [(PDF) Comparative study of alternative marine power (cold ironing) application as an air pollution mitigation technology in Nigeria seaports | Chinedum Onyemechi - Academia.edu](https://www.academia.edu/89266332/Comparative_study_of_alternative_marine_power_cold_ironing_application_as_an_air_pollution_mitigation_technology_in_Nigeria_seaports)  
+[^"11"]: Glavinović R, Krčum M, Vukić L, Karin I.  [Cold Ironing Implementation Overview in European Ports—Case Study—Croatian Ports.](http://dx.doi.org/10.3390/su15118472) Sustainability [Internet]. May 2023.
+[^"12"]: APL. [A maritime first: APL ‘cold-irons’ ships in Oakland to clear the air](https://www.apl.com/news/679/a-maritime-first-apl-cold-irons-ships-in-oakland-to-clear-the-air)  May 2011.
+[^"13"]:  [Optimal Configuration and Sizing of Seaport Microgrids including Renewable Energy and Cold Ironing—The Port of Aalborg Case Study](https://www.mdpi.com/1996-1073/15/2/431)  
+[^"14"]: World Cruise Industry Review. [Power play – the use of cold ironing in the cruise industry](https://www.worldcruiseindustryreview.com/features/featurepower-play-the-use-of-cold-ironing-in-the-cruise-industry-4679571/)  September 2015.
+[^"15"]: American Bureau of Shipping.  [Port Decarbonization Survey: Trends and Lessons Learned.](https://ww2.eagle.org/en/publication-flip/ABS-AAPA.html)  Accessed May 2024.
+[^"16"]: Port Technology International.  [https://www.porttechnology.org/technical-papers/the_economics_of_cold_ironing/](https://www.porttechnology.org/technical-papers/the_economics_of_cold_ironing/)  Accessed May 2024.
+[^"17"]: United Nations. [United Nations Handbook of Statistics.](https://hbs.unctad.org/merchant-fleet/)  Accessed May 2024.
+[^"18"]: Port Economics, Management and Policy.  [Distribution of Average Berth-Hours.](https://porteconomicsmanagement.org/pemp/contents/part6/port-efficiency/distribution-average-berth-hours/)  2023.
+[^"19"]: Ship & Bunker. [Global Average Bunker Price](https://shipandbunker.com/prices/av/global/av-glb-global-average-bunker-price)  Accessed May 2024.
+[^"20"]: Krantz G. [CO2 and sulphur emissions from the shipping industry | EGCSA.com](https://www.egcsa.com/wp-content/uploads/CO2-and-sulphur-emissions-from-the-shipping-industry.pdf) Exhaust Gas Cleaning Systems Association.  October 2016.
+[^"21"]: World Shipping Council [Top 50 Ports.](https://www.worldshipping.org/top-50-ports)  Accessed May 2024.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

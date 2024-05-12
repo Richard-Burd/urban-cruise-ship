@@ -997,7 +997,21 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  },
+
+  {
+    solution: `Onshore Power for Ships at Port - Global`,
+    link: `/energy/transport/transpo_freight#onshore-power-supply-for-ships-at-port-global`,
+    site: `energy`,
+    cost: 1.02,
+    benefit: 2.54,
+    co2: 11.7,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
   }
+
+  
 
 ];
 
@@ -1012,3 +1026,5 @@ export const solutionData = [
     sources: null,
     subset: "public-health-projects"
   }, */
+
+
