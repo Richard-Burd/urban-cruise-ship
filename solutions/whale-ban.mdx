@@ -5,6 +5,11 @@ export const solution = "Ban Whaling for Scientific Research";
 
 import SolutionImages from "/components/SolutionImages.js";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 ## Description
 We recommend the International Whaling Commission (IWC) ban special permit whaling for scientific research.
@@ -21,11 +26,33 @@ The whaling industry continues to survive:
 - Norway set a quota of over 900 whales to be hunted in 2022. [^"13"]
 - Much of Iceland's demand for whale meat comes from the tourist industry, where the meat is billed as a traditional dish. [^"19"]
 
-<SolutionImages
- mobileSrc={"ban_whaling_cba_mobile.svg"}
- desktopSrc={"ban_whaling_cba_desktop.svg"}
- mobileHeight={400}
- desktopHeight={225}
+<DynamicSolutionGraphic
+  barChartTitle={"Scientific Whaling Ban"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"24,024 tons"}
+  arrowText2={"CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye February 2, 2023"}
+  
+  
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: 1.456,
+      displayedValue: "$1.456 Billions USD /year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0.031,
+      displayedValue: "$0.031 Billions USD /year",
+      site: "null",
+    },
+  ]}
 />
 #### Source [^"2"] [^"13"] [^"12"] [^"10"]
 
