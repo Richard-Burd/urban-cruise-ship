@@ -639,6 +639,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Trucking Road Usage Charge - U.S.`,
+    link: `/cities/cities_energy_and_pollution/cities_transportation#trucking-road-usage-charge-u-s`,
+    site: `cities`,
+    cost: 13,
+    benefit: 129,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "miscellaneous",
+  },
+
+  {
     solution: `Small Modular Reactor R&D – U.S.`,
     link: `/energy/energy_production/nuclear#small-modular-reactor-r-d-u-s `,
     site: `energy`,
