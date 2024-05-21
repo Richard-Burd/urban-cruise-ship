@@ -3,9 +3,34 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Blackouts";
 export const solution = "Grid Operators Should Value Reliability";
 
+
+## Description
+
+We recommend adopting a reward and penalty scheme for electric distribution utilities that employ load-based reliability indices obtained by the use of advanced metering infrastructure (or smart meters). 
+
 ## Background
 
-Blackouts, such as the 2021 Texas blackout, can cause substantial loss of life and economic damage. To guard against this, utilities should better value reliability, and not just raw production.
+Blackouts, such as the 2021 Texas blackout, can cause substantial loss of life and economic damage [^"1"]. To guard against this, utilities should better value reliability and not just raw production. 
+
+Utilities are incentivized to overinvest in capital projects because their profits are tied to the size of their rate base. This can lead to inefficient allocation of resources and unnecessary infrastructure spending [^"3"]. By focusing on performance metrics like load-based reliability indices, utilities are incentivized to optimize existing infrastructure and invest in projects that directly improve reliability and service quality, rather than merely increasing capital expenditures [^"2"].
+
+Smart metering would allow for the collection of an average system interruption duration index (ASIDI), to better capture the impact of outages based on actual loads. A reward and penalty scheme incorporating these load-based metrics would then regulate utilities' reliability performance [^"2"]. 
+
+- High Reliability: If a utility’s performance exceeds the expected targets, they will receive a monetary reward.
+- Medium Reliability: If performance is within an acceptable range of the targets, then no penalty or reward is applied.
+- Low Reliability: If performance falls short of the targets, the utility incurs a penalty.
+
+
+## Implementation
+
+Utilities need to upgrade their existing metering systems to handle more detailed and frequent data collection. Lawmakers need to develop and implement regulatory guidelines that define the new reward and penalty scheme based on load-based reliability indices [^"2"].
+
+
+##### Lead Researcher: jye - Last Updated May 21, 2024
+
+[^"1"]: Busby JW, Baker K, Bazilian MD, Gilbert AQ, Grubert E, Rai V, et al. [Cascading risks: Understanding the 2021 winter blackout in Texas.](http://dx.doi.org/10.1016/j.erss.2021.102106) Energy Research & Social Science [Internet]. July 2021.
+[^"2"]: Wang B, Camacho JA, Pulliam GM, Etemadi AH, Dehghanian P. [New reward and penalty scheme for electric distribution utilities employing load‐based reliability indices.](http://dx.doi.org/10.1049/iet-gtd.2017.1809) IET Generation, Transmission &amp; Distribution [Internet]. June 2015.
+[^"3"]: Quickonomics. [Averch-Johnson Effect Definition & Examples.](https://quickonomics.com/terms/averch-johnson-effect/)  April 2024.
 
 export default ({ children }) => 
   <SolutionDropdown 
