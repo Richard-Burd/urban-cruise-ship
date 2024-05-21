@@ -143,7 +143,7 @@ def get_sc(pollutant, context=""):
     for i in range(len(p)):
         if p[i]["context"] == context:
             return p[i]
-        if p[i]["default_context"]:
+        if "default_context" in p[i]:
             default_index = i
     if default_index >= 0:
         return p[default_index]

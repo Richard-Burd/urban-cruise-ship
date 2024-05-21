@@ -1,0 +1,107 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+export const problem = "Greenhouse Gas Emissions";
+export const solution = "Department of Energy Support for Offshore Wind";
+
+## Description
+
+We cautiously recommend tax credits, as well as Department of Energy research and develoment support, for offshore wind in the United States.
+
+## Background
+
+In recent years, world offshore wind energy has been growing rapidly, and the United States Department of Energy has set a goal of 30 gigawatts of offshore wind capacity by 2030 and 110 GW capacity by 2050 [^"1"]. However, since 2023, the industry has faced setbacks [^"9"],[^"12"], with 12 gigawatts of projects being cancelled or renegotiated worldwide in 2023 [^"13"].
+
+Nevertheless, offshore wind has great potential, and despite the setbacks, the industry continues to make progress.
+
+## Calculations
+
+We estimate the following costs and benefits to offshore wind support.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Offshore Wind Support"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"34 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, May 20, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 11.634940143546842,
+      displayedValue: "$11.6 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 12.07142527034862,
+      displayedValue: "$12.0 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
+We model that 15 GW of offshore wind will be deployed in the United States by 2035, and 110 GW by 2060. These numbers are based on a 2023 DoE report [^"1"], but we modify them by rejecting the 30 GW target for 2030 as unrealistic [^"4"], taking the 15 GW target of floating offshore wind in 2035 as an estimate of the full industry deployment, and taking the 110 GW target to be achieved in 2060 rather than 2050. The amount of offshore wind is linearly interpolated between 2035 and 2060. We model a 60% capacity factor [^"5"], meaning that, on average, the turbines produce 60% of their theoretical maximum electricity based on capacity.
+
+Two costs are considered. First, we take a levelized cost of electricity of 6.4¢ per kilowatt-hour, as estimated by Shields et al. [^"2"] as the future cost of floating offshore wind turbines. This number is greater than the same study's estimate of future fixed-bottom offshore wind turbines, and less than the 2030 price estimate of offshore wind in a 2024 Department of Energy report [^"3"]. The second cost considered, seperately from the LCOE, is required investment to build an offshore wind supply chain. Based on a 2023 Wood Mackenzie analysis [^"4"], we take an approximate $1.1 billion per GW of capacity, assessed at 2025 and 2050.
+
+Two benefits are considered as well. First, we assess the saved cost of electricity displaced by the offshore wind. To do so, we apply the average levelized cost of electricity across NERC regions of the United States [^"7"], weighted by planned offshore wind capacity [^"6"]. Second, we consider [monetized benefits of greenhouse gas reduction](/energy/energy_socioeconomics/carbon_pricing_e). These are based on an average of greenhouse gas intensity of electricity of various states [^"8"], also weighted by planned offshore wind capacity [^"6"].
+
+All calculations are made at a 7% discount rate. Where possible, currency is expressed in 2024 dollars.
+
+Since our estimated benefits only slightly exceed costs, the results are highly sensitive to input assumptions. Our calculations value carbon dioxide emissions at about $140 per ton; the breakeven price is around $130 per ton. Assumptions on the future evolution of the price and carbon intensity of electricity, as well as the cost of future offshore wind installations, could all affect whether offshore wind is deemed to be a good investment. We therefore also propose several measures to reduce costs, as outlined below.
+
+## Implementation
+
+Many supply chain disruptions that have raised the cost of offshore wind are difficult to control, but one well within the scope of American policy is the Jones Act [^"9"]. This law requires that ships that travel between American ports are built in the United States, fly the American flag, and are owned and operated by Americans. As of May 2024, the United States lacks purpose-built turbine installation vessels, requiring that turbines be installed with barges, despite the fact that installation vessels exist in other parts of the world [^"10"]. Additionally, tax credits under the Inflation Reduction Act require that offshore wind turbines use a certain percentage of American-built inputs [^"11"], raising costs.
+
+The protracted time of environmental permitting and for utilities to secure water rights adds risk and costs to offshore wind projects, leading to a suggestion that rebidding after permits and rights are secured may be appropriate [^"9"]. However, rebidding shifts risk to ratepayers and has frequently been an unpopular option [^"12"].
+
+
+[^"1"]: Brown-Saracino, J., Beiter, P., Pound, H., McKenzie, N., Fu, J., Norton, G., Harker-Klimes, G., Lewandowski, N., Ball, K., Bothwell, C., Page, J., Gilman, P. ["Advancing Offshore Wind Energy in the United States, U.S. Department of Energy Strategic Contributions Toward 30 Gigawatts and Beyond"](https://www.energy.gov/eere/us-department-energys-strategy-advance-offshore-wind-energy-united-states). Office of Energy Efficiency & Renewable Energy, United States Department of Energy. March 2023.
+
+[^"2"]: Shields, M., Beiter, P., Nunemaker, J. ["A Systematic Framework for Projecting the Future Cost of Offshore Wind Energy"](https://www.nrel.gov/docs/fy23osti/81819.pdf). National Renewable Energy Laboratory, United States Department of Energy. December 2022.
+
+[^"3"]: Ury, J., Anders, B., Beiter, P., Brown-Saracino, J., Gilman, P. ["The pathway to: offshore wind Commercial liftoff"](https://liftoff.energy.gov/offshore-wind-liftoff/). United States Department of Energy. April 2024.
+
+[^"4"]: Seiple, C., Lassen, S., Clark, F. ["Cross currents: Charting a sustainable course for offshore wind"](https://www.woodmac.com/horizons/cross-currents-charting-a-sustainable-course-for-offshore-wind/). Wood Mackenzie. August 2023.
+
+[^"5"]: Center for Sustainable Systems. ["Wind Energy Factsheet"](https://css.umich.edu/publications/factsheets/energy/wind-energy-factsheet). University of Michigan, Pub. No. CSS07-09. 2023.
+
+[^"6"]: Musial, W., Spitsen, P., Duffy, P., Beiter, P., Shields, M., Hernando, D. M., Hammond, R., Marquis, M., King, J., Sathish, S. ["Offshore Wind Market Report: 2023 Edition"](https://www.energy.gov/eere/wind/articles/offshore-wind-market-report-2023-edition). Wind Energy Technologies Office, Office of Energy Efficiency & Renewable Energy, United States Department of Energy. August 2023.
+
+[^"7"]: Energy Markets & Policy. ["CapEx, LCOE, and PPA Prices by Region"](https://emp.lbl.gov/capex-lcoe-and-ppa-prices-region). Berkeley Lab. 2023.
+
+[^"8"]: Scott Institute for Energy Innovation. ["Power Sector Carbon Index"](https://emissionsindex.org/). Carnegie Mellon University. Accessed May 20, 2024.
+
+[^"9"]: Niezrecki, C. ["Why US offshore wind power is struggling – the good, the bad and the opportunity"](https://theconversation.com/why-us-offshore-wind-power-is-struggling-the-good-the-bad-and-the-opportunity-228983). The Conversation. May 2024.
+
+[^"10"]: Dominion Energy. ["Charybdis"](https://www.dominionenergy.com/projects-and-facilities/wind-power-facilities-and-projects/charybdis). Accessed May 20, 2024.
+
+[^"11"]: Bond, D. E., Davis, J., Saccomanno, I. ["US Treasury Releases Domestic Content Guidance for Renewable Energy Tax Credits"](https://www.whitecase.com/insight-alert/us-treasury-releases-domestic-content-guidance-renewable-energy-tax-credits). White & Case LLP. May 2023.
+
+[^"12"]: St. John, J. ["The US offshore wind industry faces a moment of reckoning"](https://www.canarymedia.com/articles/wind/the-us-offshore-wind-industry-faces-a-moment-of-reckoning). Canary Media. November 2023.
+
+[^"13"]: Crownheart, C. ["What’s next for offshore wind"](https://www.technologyreview.com/2024/01/10/1086354/whats-next-for-offshore-wind/). MIT Technology Review. January 2024.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
