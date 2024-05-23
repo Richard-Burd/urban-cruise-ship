@@ -17,37 +17,74 @@ export const DynamicSolutionGraphic = dynamic(
 We propose research and development into solar heating technologies, which could provide a cost-effective solution for various low-temperature heating needs detailed above, and we recommend world governments explore options for encouraging the adoption of existing solar heating technologies into the industrial sector.
 
 <DynamicSolutionGraphic
-  barChartTitle={"Industrial Solar Thermal Energy"}
+  barChartTitle={"Industrial Solar Thermal Heat"}
   barChartTitle2={"Adoption of Existing Technology - World"}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
-  arrowText1={"213 million"}
+  arrowText1={"1,180 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadText3={"jye March 28, 2024"}
+  mastheadText3={"jye May 23, 2024"}
   
   
   staticData={[
     {
-      name: "Avoided Carbon Costs",
-      barlength: 0.8,
-      displayedValue: "$10.6 Billions USD /year",
+      name: "Benefit",
+      barlength: 123.5,
+      displayedValue: "$123.50",
       site: "null",
     },
+    {
+      name: "Cost",
+      barlength: 69.9,
+      displayedValue: "$69.9 Billions USD /year",
+      site: "null",
+    }
   ]}
 />
 
-#### Cost estimates for global implementation of solar heat for industry could not be produced at this time. Estimated benefits were produced by scaling the China study of 2% implementation to global industry, and assuming an average of 35% industrial energy demand instead of China's 70%. Source [^"3"] [^"7"].
+#### See [Cost of Industrial Heat by Source](https://www.urbancruiseship.org/energy/industry/industrial_heat). Estimates derived from The International Renewable Energy Association (IRENA) projection [^"14"] [^"7"].
 
 ## Background
 
 The industrial sector utilizes 25% of global heat energy [^"1"], however solar heat only provides 0.02% of industrial heating needs [^"1"]. Over half of the industrial heating needs fall in the temperature range of current technology, with solar concentrating systems capable of providing heat up to 400 °C[^"1"]. Solar energy technologies that directly provide heat have a higher conversion efficiency compared to solar electricity generation, and stand out amongst other forms of renewable energy sources in terms of potential [^"2"]. 
 
-Solar heat for industrial processes (SHIP) has been deployed successfully in many places across the world [^"3"]. A study in Mexico has shown that solar heat deployment could cut greenhouse gas emissions by half in the food and beverage sector for the country [^"4"]. Globally, solar heat has potential in a wide range of industries. Due to the wide range of technologies and sectors to which it could be introduced, it is difficult to calculate a reliable estimate of the total costs, but these technologies have been shown to be feasible economic solutions and would decrease global emissions [^"5"].
+Solar heat for industrial processes (SHIP) has been deployed successfully in many places across the world [^"3"]. A study in Mexico has shown that solar heat deployment could cut greenhouse gas emissions by half in the food and beverage sector for the country [^"4"]. Globally, solar heat has potential in a wide range of industries. Due to the wide range of technologies and sectors to which it could be introduced, it is difficult to calculate a reliable estimate of the total costs, but these technologies have been shown to be feasible economic solutions and would decrease global emissions [^"5"]. Estimates show that current solar heat technology could currently meet 2% of China's industrial heat needs, leading to 98.22 million tons of CO<sub>2</sub> reduction annually [^"3"].
 
-Estimates show that current solar heat technology could easily meet 2% of China's industrial heat needs, leading to 98.22 million tons of CO<sub>2</sub> reduction annually [^"3"]. China's industrial sector represents 70% of their energy consumption [^"3"], whereas other industrialized countries such as the United States have smaller relative industrial sectors[^"7"].
+<DynamicSolutionGraphic
+  barChartTitle={"Benefit Calculations"}
+  barChartTitle2={"Industrial Solar Thermal Heat"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"1,180 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye May 23, 2024"}
+  
+  
+  staticData={[
+    {
+      name: "Avoided Carbon Costs",
+      barlength: 107.29,
+      displayedValue: "$107.29",
+      site: "null",
+    },
+    {
+      name: "Avoided Gas Costs",
+      barlength: 16.21,
+      displayedValue: "$16.21 Billions USD /year",
+      site: "null",
+    }
+  ]}
+/>
+
+#### See [Cost of Industrial Heat by Source](https://www.urbancruiseship.org/energy/industry/industrial_heat). Estimates derived from The International Renewable Energy Association (IRENA) projection [^"14"] [^"7"].
+
+We estimate the median of solar heat costs to be US$16.78 per megawatt hour. Compared to US$3.50 per megawatt hour for natural gas, this underscores the need for further research and development of solar heating technology. Although specific use cases have shown economic gains [^"5"], the majority of the benefit to using solar lies with decreased environmental damage due to emissions.
 
 ## Implementation
 
@@ -56,14 +93,20 @@ Solar heating integration is a complex process often requiring specialized techn
 
 ##### Lead Researcher: jye - Last Updated March 27, 2024
 
-[^"1"]: Nájera-Trejo, M. et al. [Pre-Feasibility Assessment Tool for Solar Industrial Process Heating.](http://dx.doi.org/10.3390/pr11061663) Processes. May 2023.
-[^"2"]: Kumar L, Ahmed J, El Haj Assad M, Hasanuzzaman M. [Prospects and Challenges of Solar Thermal for Process Heating: A Comprehensive Review.](http://dx.doi.org/10.3390/en15228501) Energies [Internet]. November 2022.
-[^"3"]: jia T, Huang J, Li R, He P, Dai Y. [Status and prospect of solar heat for industrial processes in China.](http://dx.doi.org/10.1016/j.rser.2018.03.077) Renewable and Sustainable Energy Reviews [Internet]. July 2018.
+[^"1"]: Nájera-Trejo, M. et al. [Pre-Feasibility Assessment Tool for Solar Industrial Process Heating.](10.3390/pr11061663)  Processes. May 2023.
+[^"2"]: Kumar L, Ahmed J, El Haj Assad M, Hasanuzzaman M. [Prospects and Challenges of Solar Thermal for Process Heating: A Comprehensive Review.](http://dx.doi.org/10.3390/en15228501) Energies [Internet]. November 2022. 
+[^"3"]: jia T, Huang J, Li R, He P, Dai Y.  [Status and prospect of solar heat for industrial processes in China.](http://dx.doi.org/10.1016/j.rser.2018.03.077) Renewable and Sustainable Energy Reviews [Internet]. July 2018.
 [^"4"]: Acosta-Pazmiño IP, Rivera-Solorio CI, Gijón-Rivera M. [Scaling-up the installation of hybrid solar collectors to reduce CO2 emissions in a Mexican industrial sector from now to 2030.](http://dx.doi.org/10.1016/j.apenergy.2021.117202) Applied Energy [Internet]. September 2021.
 [^"5"]: Ravi Kumar K, Krishna Chaitanya NVV, Sendhil Kumar N. [Solar thermal energy technologies and its applications for process heating and power generation – A review.](http://dx.doi.org/10.1016/j.jclepro.2020.125296) Journal of Cleaner Production [Internet]. February 2021.
-[^"6"]: [World Energy Outlook 2023 – Analysis - IEA](https://www.iea.org/reports/world-energy-outlook-2023) Accessed March 2024.
-[^"7"]: [Use of energy in industry - U.S. Energy Information Administration (EIA)](https://www.eia.gov/energyexplained/use-of-energy/industry.php) Accessed March 2024.
-
+[^"6"]:  [World Energy Outlook 2023 – Analysis - IEA](https://www.iea.org/reports/world-energy-outlook-2023)  Accessed March 2024.
+[^"7"]:  [Use of energy in industry - U.S. Energy Information Administration (EIA)](https://www.eia.gov/energyexplained/use-of-energy/industry.php)  Accessed March 2024.
+[^"8"]:  [Integration of Solar Process Heat in Industries: A Review](https://www.mdpi.com/2571-8797/4/1/8)  
+[^"9"]:  [https://www.iea-shc.org/solar-heat-worldwide](https://www.iea-shc.org/solar-heat-worldwide)  
+[^"10"]:  [Solar thermal trapping at 1,000°C and above: Device](https://www.cell.com/device/fulltext/S2666-9986(24)00235-7)  
+[^"11"]: Bellos E, Tzivanidis C. [A Realistic Approach of the Maximum Work Extraction from Solar Thermal Collectors.](http://dx.doi.org/10.3390/asi1010006) Applied System Innovation [Internet]. January 2018.
+[^"12"]: Casati E, Allgoewer L, Steinfeld A.  [Solar thermal trapping at 1,000°C and above.](http://dx.doi.org/10.1016/j.device.2024.100399) Device [Internet]. May 2024.
+[^"13"]: Schmitt B. Classification of Industrial Heat Consumers for Integration of Solar Heat. Energy Procedia [Internet]. 2016 Jun;91:650–60. Available from: http://dx.doi.org/10.1016/j.egypro.2016.06.225 [](https://www.sciencedirect.com/science/article/pii/S187661021630323X)  
+[^"14"]: Schoeneberger CA, McMillan CA, Kurup P, Akar S, Margolis R, Masanet E. [Solar for industrial process heat: A review of technologies, analysis approaches, and potential applications in the United States.](http://dx.doi.org/10.1016/j.energy.2020.118083) Energy [Internet]. September 2020.
 
 
 

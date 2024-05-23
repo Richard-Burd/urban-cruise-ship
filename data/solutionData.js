@@ -1012,7 +1012,7 @@ export const solutionData = [
   },
 
   {
-    solution: `Onshore Power for Ships at Port - Global`,
+    solution: `Onshore Power for Ships at Port - World`,
     link: `/energy/transport/transpo_freight#onshore-power-supply-for-ships-at-port-global`,
     site: `energy`,
     cost: 1.02,
@@ -1021,9 +1021,19 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
-  }
+  },
 
-  
+  {
+    solution: `R&D Into Solar Heat- World`,
+    link: `/energy/industry/industrial_heat#r-d-into-solar-heat`,
+    site: `energy`,
+    cost: 69.9,
+    benefit: 123.5,
+    co2: 1180,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  }
 
 ];
 
