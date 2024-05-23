@@ -1022,6 +1022,18 @@ export const solutionData = [
     sources: null,
     subset: "energy-production-efficiency",
   },
+  
+  {
+    solution: `Department of Energy Support for Offshore Wind`,
+    link: `http://localhost:3000/oceans/ocean_industry/ocean_mhk`,
+    site: `oceans`,
+    cost: 11.634940143546842,
+    benefit: 12.07142527034862,
+    co2: 34.006196,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
 
   {
     solution: `R&D Into Solar Heat- World`,
