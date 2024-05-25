@@ -1,46 +1,83 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Challenging of Implementing New Cement";
-export const solution = "Standards for Low-Carbon Cement";
+export const solution = "Low-Carbon Cement Standards";
 
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Description
+We propose the following low-carbon cement standards with the goal of reducing emissions by 30% annually.
 •	Establish an emissions intensity standard that covers direct and indirect carbon dioxide, methane, and nitrous oxide emissions per unit of clinker and mineral additives, using a default, grid-average emissions factor to calculate indirect emissions[^”1”].
-
 •	Set the standard at an initial stringency marginally lower than the current average emissions intensity to incentivize investment in currently available, cost-effective abatement options[^”1”].
-
 •	Tighten the stringency of the standard annually[^”1”].
-
 •	Include a price floor and ceiling for credits, with the values for each taking into consideration the cost of abatement options and backstop carbon removal technologies[^”1”].
 
+<DynamicSolutionGraphic
+  barChartTitle={"Low-carbon Cement Standards - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"48 million"}
+  arrowText2={"tons of CO²"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"Lee Nelson 5-24-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 7.79,
+      displayedValue: "$7.79",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 2.6,
+      displayedValue: "$2.6 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
 ## Background
-Cement production accounts for 7% of global carbon emissions[^”1”], or 2.8 Gt[^”2”].
+Cement production accounts for 7% of global carbon emissions[^”1”].
+
+Low-carbon cement production options have been shown to reduce carbon emissions by 30%[^”3”], [^”4”].
 
 
 ## Calculations
-Low carbon cement production options have been shown to reduce carbon emissions by 30%[^”4”], [^”5”], or 84 million tons per year.
+Low-carbon clinker substitutions are estimated to save $1 billion, and abate 8% of emissions[^”5”].
+
+Cement production generates 1.6 billion tonnes of CO² annually[^”6”], a 30% reduction target of 48 million tonnes of CO² would have a societal benefit of $6.79 billion at a social cost of carbon of $141.4 per ton.
+
+Carbon capture utilization and storage deployments are estimated to cost $55 per ton of CO² ($2.6 billion in total), and abate 22% of emissions(with potential for 40% or more)[^”5”].
 
 ## Implementation
-A low-carbon cement standard is likely to be added as part of a broader climate change policy portfolio[^”1”].
-
-Decarbonizing the sector as a whole would require complementary policies throughout the supply chain[^”1”].
-
-As the benchmark is lowered over time, the standard can help drive innovation by increasing demand for abatement technologies[^”1”].
+A low-carbon cement standard is likely to be added as part of a broader climate change policy portfolio[^”1”]. Decarbonizing the sector as a whole would require complementary policies throughout the supply chain[^”1”]. As the benchmark is lowered over time, the standard can help drive innovation by increasing demand for abatement technologies[^”1”]. Even with adoption of these standards, it will likely take the industry about 10 years to fully adopt and implement them[^”5”].
 
 The cement industry will bear the abatement costs, and their equilibrium price will increase slightly[^”2”].
 
-##### Lead researcher: Lee Nelson - Last updated: 1/14/2024
+##### Lead researcher: Lee Nelson - Last updated: 5/24/2024
 
 [^”1”]: Fransen, T. et al. [“Toward a Tradable Low-Carbon Cement Standard: Policy Design Considerations for the United States”](https://doi.org/10.46830/wriwp.20.00112) World Resources Institute, March 2021
 
-[^”2”]: IEA ["CO2 Emissions in 2022"](https://www.iea.org/reports/co2-emissions-in-2022) Accessed 1/14/2024
+[^”2”]: Pang, J. et al. [“Analysis on impacts and co-abatement effects of implementing the low carbon cement standard”]( https://doi.org/10.3724/SP.J.1248.2014.041) Advances in Climate Change Research, 2014
 
-[^”3”]: Pang, J. et al. [“Analysis on impacts and co-abatement effects of implementing the low carbon cement standard”]( https://doi.org/10.3724/SP.J.1248.2014.041) Advances in Climate Change Research, 2014
+[^”3”]: Makul, N. [“Principles of Low-Carbon Cement”](https://link.springer.com/chapter/10.1007/978-3-030-69602-3_3) Principles of Cement and Concrete Composites, April 2021
 
-[^”4”]: Makul, N. [“Principles of Low-Carbon Cement”](https://link.springer.com/chapter/10.1007/978-3-030-69602-3_3) Principles of Cement and Concrete Composites, April 2021
+[^”4”]: Vizcaíno-Andrés, L. M. et al. [“Industrial trial to produce a low clinker, low carbon cement”]( https://doi.org/10.3989/mc.2015.00614) Materiales de Construcción, 2015
 
-[^”5”]: Vizcaíno-Andrés, L. M. et al. [“Industrial trial to produce a low clinker, low carbon cement”]( https://doi.org/10.3989/mc.2015.00614) Materiales de Construcción, 2015
+[^”5”]: Goldman, S. et al. [“Pathways to Commercial Liftoff: Low-Carbon Cement”](https://liftoff.energy.gov/wp-content/uploads/2023/09/20230918-Pathways-to-Commercial-Liftoff-Cement.pdf) U.S. Department of Energy, September 2023
+
+[^”6”]: Tiseo, I. [“Carbon dioxide emissions from the manufacture of cement worldwide from 1960 to 2022”](https://www.statista.com/statistics/1299532/carbon-dioxide-emissions-worldwide-cement-manufacturing/) Statista, December 2023
+
 
 
 export default ({ children }) => 

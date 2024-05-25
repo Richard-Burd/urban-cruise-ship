@@ -759,6 +759,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Low-carbon Cement Standards - World`,
+    link: `/energy/industry/majorcommodities#low-carbon-cement-standards`,
+    site: `energy`,
+    cost: 2.6,
+    benefit: 7.79,
+    co2: 48,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
+
+  {
     solution: `Deep Borehole Disposal`,
     link: `/waste/hazardous_waste/nuclear_waste#deep-borehole-disposal`,
     site: `waste`,
