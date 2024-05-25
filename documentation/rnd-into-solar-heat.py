@@ -1,0 +1,1 @@
+# figures are derived by converting the IRENA projection of 15 EJ of heating needs met by solar into megawatt hours multiplied by the midpoint of the LCOH listed in the industrial heat graphic in the article page. Emissions are calculated with natural gas as the counterfactual, with solar heat emission projections subtracted from the gas emission totals.
