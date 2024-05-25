@@ -747,12 +747,12 @@ export const solutionData = [
   },
 
   {
-    solution: `Biochar for Carbon Sequestration - China`,
+    solution: `Biochar for Carbon Sequestration - World`,
     link: `/habitat/environment/geoengineering#biochar-for-carbon-sequestration-china`,
     site: `habitat`,
-    cost: 84.64,
-    benefit: 46,
-    co2: null,
+    cost: 225,
+    benefit: 248.35,
+    co2: 2500,
     habitat: null,
     sources: null,
     subset: "ecology-environment",

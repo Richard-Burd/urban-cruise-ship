@@ -1,7 +1,7 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Risk of Uncontrolled Warming";
-export const solution = "Biochar for Carbon Sequestration - China";
+export const solution = "Biochar for Carbon Sequestration - World";
 
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
@@ -28,41 +28,39 @@ Agriculture produces 5 billion metric tons of waste biomass per year, with over 
 
 
 <DynamicSolutionGraphic
-  barChartTitle={"Biochar for Carbon Sequestration - China"}
+  barChartTitle={"Biochar for Carbon Sequestration - World"}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={"hide"}
-  arrowText1={"920 million"}
+  arrowText1={"2,500 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadToggle={''}
-  mastheadText3={"jye 2-12-2024"}
+  mastheadText3={"jye May 25, 2024"}
   
   
   staticData={[   
     {
       name: "Benefits",
-      barlength: 46,
-      displayedValue: "$46 billion/year",
+      barlength: 248.35,
+      displayedValue: "$248.35 billion/year",
       site: "null",
     },
 
         {
       name: "Costs",
-      barlength: 84.64,
-      displayedValue: "$85 billion/year",
+      barlength: 225,
+      displayedValue: "$225 billion/year",
       site: "null",
     },
         
   ]}
 />
-#### Benefits are derived from the [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) only, without factoring expected benefits to crop yields, reductions in fertilizers, water retention, and other benefits [^"1"].
+#### Benefits are derived from the [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) only, without factoring expected benefits to crop yields, reductions in fertilizers, water retention, and other benefits [^"1"] [^"2"].
 
-Crop yields increase from 8% to 15%, depending on the crop [^"1"].
-
-Biochar production costs 30% less than activated carbon--another frequently used soil amendment for absorption and neutralization [^"5"]--and is more economical than many other sequestration technologies [^"2"]. However, the cost per ton of CO<sub>2</sub> mitigation is still higher than the generally accepted [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) of $50, with a mean figure of $92.
+Crop yields increase from 8% to 15%, depending on the crop [^"1"]. These increases in crop yield are not included in benefit calculations here. Biochar production costs 30% less than activated carbon--another frequently used soil amendment for absorption and neutralization [^"5"]--and is more economical than many other sequestration technologies [^"2"]. Biochar averages at US$90 per ton of carbon sequestration [^"1"].
 
 
 ## Implementation
@@ -70,7 +68,7 @@ Biochar production costs 30% less than activated carbon--another frequently used
 Without regulation, biochar production may result in a net increase of greenhouse gases. Biochar requires energy to create, and where this energy comes from could result in a net increase in CO2[^"2"].
 
 
-##### Lead Researcher: jye - Last Updated February 15, 2024
+##### Lead Researcher: jye - Last Updated May 25, 2024
 
 [^"1"]: Deng, X., Teng, F., Chen, M., Du, Z., Wang, B., Li, R., Wang, P. [Exploring negative emission potential of biochar to achieve carbon neutrality goal in China](https://www.nature.com/articles/s41467-024-45314-y). Nature Communications <b>15</b>: 1085. February 2024. 
 [^"2"]: Kurniawan, T. A., Othman, M. H. D., Liang, X., Goh, H. H., Gikas, P., Chong, K., Chew, K. W. [Challenges and opportunities for biochar to promote circular economy and carbon neutrality](https://doi.org/10.1016/j.jenvman.2023.117429). Journal of Environmental Management <b>332</b>: 117429. April 2023.
