@@ -771,6 +771,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Oil Spill Liability Trust Fund - U.S.`,
+    link: `/energy/energy_production/petroleum#continue-oil-spill-liability-trust-fund`,
+    site: `energy`,
+    cost: .0383,
+    benefit: .5,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
+
+  {
     solution: `Deep Borehole Disposal`,
     link: `/waste/hazardous_waste/nuclear_waste#deep-borehole-disposal`,
     site: `waste`,

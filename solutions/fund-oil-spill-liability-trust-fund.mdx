@@ -1,11 +1,46 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Oil Spills";
-export const solution = "Fund Oil Spill Liability Trust Fund";
+export const solution = "Continue Oil Spill Liability Trust Fund";
 
 ## Description
 
 We propose that the Oil Spill Liability Trust Fund (OSLTF) excise tax be kept in place.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Oil Spill Liability Trust Fund – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"none"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 5-26-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 500,
+      displayedValue: "$500",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 38.3,
+      displayedValue: "$38.3 Million USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
 
 ## Background 
 
@@ -19,11 +54,17 @@ In 2010, a report from Resources for the Future [^"4"] estimated that oil spills
 
 We note some uncertainties in these figures. As the RFF report [^"4"] notes, clean-up costs vary widely across events, with the Exxon Valdez spill costing Exxon $630 (2010 dollars) per gallon, and environmental costs potentially significantly higher. Thus a higher fee than 5¢ per barrel may be appropriate to account for kurtosis risk. On the other hand, we note a generally declining trend of oil spill volumes over time [^"7"],[^"8"], which may hold in the United States.
 
-## Implementation
+The annual allowance for the U.S Coast Guard for operation, maintenance, and processing of claims is $25 million[^"11"].
 
+The average disbursements for pollution incidents (from 2020 and 2021) was $13.3 million[^"12"].
+The tax generates on average $500 million annually[^"3"].
+
+
+## Implementation
+The U.S. Coast Guard should continue to monitor and process oil spill claims and manage the fund.
 Congress could expand the tax to  cover oil-sands-derived crude oils [^"3"].
 
-##### Lead researcher: jye - Last updated May 6, 2024.
+##### Lead researchers: jye and Lee Nelson - Last updated May 26, 2024.
 
 
 [^"1"]: Ramseur, J. L. ["The Oil Spill Liability Trust Fund Tax: Background and Reauthorization Issues in the 116th Congress"](https://crsreports.congress.gov/product/details?prodcode=IF11160). Congressional Research Service. April 2019.
@@ -45,6 +86,11 @@ Congress could expand the tax to  cover oil-sands-derived crude oils [^"3"].
 [^"9"]: United States Environmental Protection Agency. ["Oil Spill Liability Trust Fund"](https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/oil-spill-liability-trust-fund). February 2024.
 
 [^"10"]: OPIS. ["Oil Spill Tax and Superfund Supplier List"](https://www.opisnet.com/resources/oil-spill-supplier-tax-list/). January 2024.
+
+[^"11"]: Jones, S. and Young, C. [“Use of Oil Spill Liability Trust Fund for Administrative Costs of Processing Oil Pollution Act Claims, B-289209, May 31, 2002”](https://www.gao.gov/products/b-289209-2) U.S. Government Accountability Office, May 2002
+
+[^"12"]: Fagan, L. [“Oil Spill Liability Trust Fund Disbursements for FY 2021”](https://www.uscg.mil/Portals/0/NPFC/docs/PDFs/Reports/2022-10-19-Oil-Spill-Liability-Trust-Fund-Disbursement-FY-2021.pdf?ver=ZxZqplF_6BXvrXtt6ekwqA%3D%3D) U.S. Coast Guard, October 2022
+
 
 export default ({ children }) => 
   <SolutionDropdown 
