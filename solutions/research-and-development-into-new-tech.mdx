@@ -1,31 +1,75 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Energy Requirements of Lighting";
-export const solution = "Research and Development Into New Technologies";
+export const solution = "Lighting Technology R&D";
 
 ## Description
 
 We recommend continued research and development of new lighting technologies.
 
+<DynamicSolutionGraphic
+  barChartTitle={"Lighting R&D – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"79 million"}
+  arrowText2={"tons of CO₂"}
+  arrowText3={"annually"}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 5-27-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 31,
+      displayedValue: "$31",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .625,
+      displayedValue: "$.625 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+
 ## Background
 
 The spread of LED lighting has been a great victory for energy efficiency. More progress is possible through development of a next generation of lighting technology such as laser diodes, as well as advancing the state of the art of light emitting diodes (LEDs). 
 
-Laser diodes could be more efficient than LEDs because they don't suffer as much from the efficiency loss which happens in LEDs as the current increases. This droop results in a reduction of luminance achievable per diode [^"1"]. In order to achieve greater luminance, the physical size of the LED must also be greater, whereas laser diodes do not require such drastic increases in size for luminance [^"3"].
+Laser diodes could be more efficient than LEDs because they don't suffer as much from the efficiency loss which happens in LEDs as the current increases. This drop results in a reduction of luminance achievable per diode [^"1"]. In order to achieve greater luminance, the physical size of the LED must also be greater, whereas laser diodes do not require such drastic increases in size for luminance [^"3"].
 
 LED technology can also be improved. The first LEDs were limited in the range of colors they were able to produce. The use of rare earth elements has provided a way for other colors to be produced by LEDs. New advancements in material science may allow for a better range of color emission without the need for rare earth elements [^"2"]. 
+
+## Calculations
+In 2024 the U.S. Department of Energy requested $348 million for R&D into energy reduction in buildings which is mostly lighting technologies[^"4"]. Facilities and infrastructure for the whole Energy Efficiency and Renewable Energy department requested $277 million[^"4"].
+
+Attributed to the DoE Solid-state Lighting Programs LED adoption market model is $20 billion in avoided energy costs annually[^"5"]. It is also estimated to reduce CO₂ emissions by 79 million metric tonnes annually[^"5"], with a social cost of carbon valued at $140.4 per ton that adds $11 billion in annual benefits.
 
 ## Implementation
 
 Further research and development is needed in all lighting areas. Laser diodes must be modified so that they are capable of producing diffuse light [^"3"].
 
-##### Lead Researcher: jye - Last Updated March 19, 2024
+##### Lead Researchers: jye and Lee Nelson - Last Updated May 27, 2024
 
+[^"1"]: Trivellin N, Yushchenko M, Buffolo M, De Santi C, Meneghini M, Meneghesso G, et al. [Laser-Based Lighting: Experimental Analysis and Perspectives.](http://dx.doi.org/10.3390/ma10101166) Materials [Internet]. 2017 Oct 11;10(10):1166. Available from: October 2017
 
+[^"2"]: Ji C, Xu W, Han Q, Zhao T, Deng J, Peng Z. [Light of carbon: Recent advancements of carbon dots for LEDs.](http://dx.doi.org/10.1016/j.nanoen.2023.108623) Nano Energy [Internet]. September 2023
 
-[^"1"]: Trivellin N, Yushchenko M, Buffolo M, De Santi C, Meneghini M, Meneghesso G, et al. [Laser-Based Lighting: Experimental Analysis and Perspectives.](http://dx.doi.org/10.3390/ma10101166) Materials [Internet]. 2017 Oct 11;10(10):1166. Available from: October 2017.
-[^"2"]: Ji C, Xu W, Han Q, Zhao T, Deng J, Peng Z. [Light of carbon: Recent advancements of carbon dots for LEDs.](http://dx.doi.org/10.1016/j.nanoen.2023.108623) Nano Energy [Internet]. September 2023.
-[^"3"]: Schütt F, Zapf M, Signetti S, Strobel J, Krüger H, Röder R, et al. [Conversionless efficient and broadband laser light diffusers for high brightness illumination applications.](http://dx.doi.org/10.1038/s41467-020-14875-z) Nature Communications [Internet]. March 2020.
+[^"3"]: Schütt F, Zapf M, Signetti S, Strobel J, Krüger H, Röder R, et al. [Conversionless efficient and broadband laser light diffusers for high brightness illumination applications.](http://dx.doi.org/10.1038/s41467-020-14875-z) Nature Communications [Internet]. March 2020
+
+[^"4"]: U.S. DOE [“Department of Energy FY 2024 Budget in Brief”](https://www.energy.gov/sites/default/files/2023-03/doe-fy2024-budget-in-brief.pdf) U.S. Department of Energy, March 2023
+
+[^"5"]: Office of Energy Efficiency and Renewable Energy [“About the Solid-State Lighting Program”](https://www.energy.gov/eere/ssl/about-solid-state-lighting-program) Office of Energy Efficiency and Renewable Energy, April 2023
 
 
 

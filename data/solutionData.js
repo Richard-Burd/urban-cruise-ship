@@ -795,6 +795,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Lighting Technology R&D`,
+    link: `/energy/cities/light_app#lighting-technology-r-d`,
+    site: `energy`,
+    cost: 0.625,
+    benefit: 31,
+    co2: 79,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
+
+  {
     solution: `Extended Producer Responsibility for Discarded Blades`,
     link: `/waste/hazardous_waste/ewaste#extended-producer-responsibility-for-discarded-blades`,
     site: `waste`,
