@@ -760,7 +760,7 @@ export const solutionData = [
 
   {
     solution: `Low-carbon Cement Standards - World`,
-    link: `/energy/industry/majorcommodities#low-carbon-cement-standards`,
+    link: `/energy/industry/major_commodities#low-carbon-cement-standards`,
     site: `energy`,
     cost: 2.6,
     benefit: 7.79,
