@@ -3,37 +3,96 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Traditional Elevator Limitations";
 export const solution = "Maglev Elevators";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 ## Description
 
-We recommend further research into the energy efficiency and environmental impact of the use of maglev elevators in buildings.
+We recommend deployment of maglev elevator technology, such as ThyssenKrupp's MULTI elevator.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Maglev Elevators"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"800,000"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"MG, May 31, 2024"}
+  
+  
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: 26.918681721294274,
+      displayedValue: "$27 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 17.894675517893845,
+      displayedValue: "$18 billion/year",
+      site: "null",
+    }
+  ]}
+/>
 
 ## Background
 
+Due to longer travel per-passenger travel distances, necessitating longer elevator shafts and heavier ropes, the proportion of a building devoted to elevators increases as the height of the building grows [^"7"]. In a typical multifloor building, elevators can require 2-10% of the building's power consumption [^"6"], and 17-25% in highrises [^"8"].
 
-A typical skyscraper elevator can weigh 40 tons, and these elevators make up 2-10% of a building’s power consumption. [^"6"] They take up a large amount of floor space, up to 40%. [^"4"]
+In recent years, elevator innovations have improved the economic performance of tall buildings. Such innovations include destination dispatching, carbon fiber rather than steel ropes, efficient AC motors, gearless elevators, space-saving machine room-less designs, regenerative braking, computerized roller guides, and others [^"9"]. Sky lobbies are intermediate lobbies that act as elevator hubs in skyscrapers [^"10"]. These innovations save energy, save space, and increase speed, thereby motivating the construction of supertall (300 or more meters) skyscrapers, of which there were more in the 2010s and early 2020s than in any comparable period [^"11"].
 
-
-Magnetic levitation (maglev) has been used for years as an alternative to combustion engine trains. They work by using magnets to lift and move the elevator car. [^"1"] 
-
-
-Maglev elevators have several advantages over traditional elevators
-- They can increase a building’s usable area by up to 25%, as the shaft infrastructure does not take up as much room, and there is no counterweight.  [^"5"]
-- Reduce power consumption and environmental footprint. Because they use magnetic fields for motion, there is less energy loss due to friction and they have a longer lifespan due to decreased wear and tear[^"5"]
-- Remove the maximum height limitations of a given shaft. Traditional elevators are limited to 1600 feet for a single shaft due to the limitations of cable strength. [^"3"]
-- Are capable of vertical and horizontal movement. This can decrease the need for multiple shafts in buildings that are large enough to require multiple shafts. [^"3"]
+For trains, magnetic levitation (maglev) works by using magnets to lift and move the car [^"1"]. A similar concept is envisioned with ThyssenKrupp's MULTI elevator, currently undergoing testing in Germany [^"5"]. Compared to conventional highrise elevators, MULTI elevators could save energy and enable unlimited height, but the most compelling advantage may be saving on space.
 
 
-However, maglev elevators are estimated at 5 times the cost of a traditional system. [^"3"] Further studies are needed to determine their environmental footprint in relation to traditional elevators, and what future development could do to decrease costs. 
+
+## Calculations
+
+Our calculations are based on the assumption that deployment of MULTI elevators, or another similar technology, will begin in five years. The market is restricted to supertall and megatall (600 or more meters tall) skyscrapers. We model the market at 13 skyscrapers per year, which was approximately the average number built per year worldwide from 2009 to 2023.
+
+Our reference building is the Brooklyn Tower, a mixed used, primarily residential, tower in Brooklyn, New York. Completed in 2023, the tower has about 556,000 square feet of floor area, a height of 325 meters (1067 feet), and 74 floors [^"12"]. We use a rule of thumb that one elevator is needed for every 50,000 square feet of usable floor space [^"13"].
+
+The cost of a conventional elevator is taken at $1.5 million [^"14"]. We do not have reliable estimates of the expected cost of MULTI elevators, and so we model them to be about 40% more expensive then traditonal elevators, based on the cost premium of maglev trains over conventional high speed rail [^"15"].
+
+We estimate that using MULTI elevators, instead of conventional alternatives, would increase a building's usable floor space by 5% for the same envelope. While this figure may be low--the actual increase may be up to 25% [^"5"]--we bear in mind that conventional elevator technology has improved significantly in recent years and is likely to continue improving. We value the space savings by noting that our reference building, the Brooklyn Tower, had a cost of $750 million [^"16"].
+
+To calculate greenhouse gas savings, we observe that a typical skyscraper energy consumption may be about 58 kilowatt-hours per square meter per year [^"17"]. We model 21% of that to be used by elevators [^"8"]. We estimate that half of this energy could be reduced with MULTI [^"18"]. We estimate greenhouse gas reduction by applying the world average emissions intensity of electricity to the saved energy.
+
+A great uncertainty in our calculations is the eventual cost of MULTI. The elevator could possibly be five times the cost of a traditional system [^"1"], significantly greater than the cost used in these calculations, and a cost which would outweigh the benefits of space saving in our reference building.
+
+Our estimate of greenhouse gas savings is based entirely on energy savings from the elevators. More advanced elevators could make tall buildings economical in a wider range of settings, bringing additional transportation emissions savings. However, this possible effect is not modeled.
+
+## Implementation
+
+As noted above, ThyssenKrupp's MULTI elevator is undergoing testing, which is necessary to prove its safety and effectiveness. International building codes, which specify standards for elevators [^"19"], should be revised to allow for novel elevators designs in a safe manner.
 
 
-##### Lead researcher: jye - Last updated Mar 16, 2023
+##### Lead researcher: jye - Last updated May 31, 2024.
 
-[^"1"]:  [World’s First Cable-Free Elevator Zooms Horizontally and Vertically Using Maglev Tech | MIT Technology Review](https://www.technologyreview.com/2017/06/23/4512/worlds-first-cable-free-elevator-zooms-horizontally-and-vertically-using-maglev-tech/) 
+[^"1"]: Condliffe, J. [World’s First Cable-Free Elevator Zooms Horizontally and Vertically Using Maglev Tech](https://www.technologyreview.com/2017/06/23/4512/worlds-first-cable-free-elevator-zooms-horizontally-and-vertically-using-maglev-tech/). MIT Technology Review. June 2017.
 [^"2"]:  [Maglev Goes High Rise? The Potential of Horizontal Maglev Technology for Vertical High-Rise Elevators 2. Journal paper ctbuh.org](https://global.ctbuh.org/resources/papers/download/1235-maglev-goes-high-rise-the-potential-of-horizontal-maglev-technology-for-vertical-high-rise-elevators.pdf) 
-[^"3"]:  [https://www.technologyreview.com/2017/06/23/4512/worlds-first-cable-free-elevator-zooms-horizontally-and-vertically-using-maglev-tech/](https://www.technologyreview.com/2017/06/23/4512/worlds-first-cable-free-elevator-zooms-horizontally-and-vertically-using-maglev-tech/) 
 [^"4"]:  [https://thefutureofthings.com/11485-magnetic-elevators-theyre-not-fainthearted/](https://thefutureofthings.com/11485-magnetic-elevators-theyre-not-fainthearted/) 
-[^"5"]:  [German company creates the world's first maglev elevator - Global Construction Review](https://www.globalconstructionreview.com/germ8an-company-creates-worlds-first-m8agl8ev/) 
-[^"6"]:  [https://www.smithsonianmag.com/innovation/elevators-are-going-green-180968907/#:~:text=The%20taller%20the%20building%2C%20the,of%20a%20building's%20energy%20use.](https://www.smithsonianmag.com/innovation/elevators-are-going-green-180968907/#:~:text=The%20taller%20the%20building%2C%20the,of%20a%20building's%20energy%20use.) 
+[^"5"]: Quirke, J. [German company creates the world's first maglev elevator](https://www.globalconstructionreview.com/germ8an-company-creates-worlds-first-m8agl8ev/). Global Construction Review. June 2015.
+[^"6"]: Bernhard, A. ["Elevators Are Going Green"](https://www.smithsonianmag.com/innovation/elevators-are-going-green-180968907/). Smithsonian Magazine. April 2018.
+
+[^"7"]: Barr, J. M. ["Skyscraper Bottlenecks (Part I): The Elevator"](https://buildingtheskyline.org/skyscraper-bottlenecks-i/). Building the Skyline: The Birth & Growth's of Manhattan's Skyscrapers. February 2020.
+[^"8"]: Makar, M., Pravica, L., Kutija, M. ["Supercapacitor-Based Energy Storage in Elevators to Improve Energy Efficiency of Buildings"](https://www.mdpi.com/2076-3417/12/14/7184). Applied Sciences **12**(14): 7184. Jul 2022.
+[^"9"]: Al-Kodmany, K. ["Tall Buildings and Elevators: A Review of Recent Technological Advances"](https://www.mdpi.com/2075-5309/5/3/1070). Buildings **5**(3), pp. 1070-1104. September 2015.
+[^"10"]: Kim, H., Elnimeiri, M. ["Space Efficiency in Multi-Use Tall Building"](https://www.semanticscholar.org/paper/Space-Efficiency-in-Multi-Use-Tall-Building-Kim-Elnimeiri/b0efc4e9c4722c50eee3dbaf692f2cb172752473). Council on Tall Buildings and Urban Habitat. October 2004.
+[^"11"]: Council on Tall Buildings and Urban Habitat. ["Expore Data"](https://www.skyscrapercenter.com/explore-data). Accessed May 31, 2024.
+[^"12"]: Wikipedia. ["The Brooklyn Tower"](https://en.wikipedia.org/wiki/The_Brooklyn_Tower). Accssed May 31, 2024.
+[^"13"]: ADL Lift Services. ["How Many Elevators Does Your Building Need?"](https://www.adlliftservices.com/how-many-elevators-does-your-building-need). June 2022.
+[^"14"]: Delfar Elevator Co., Ltd. ["How Much Does a Commercial Elevator Cost (Type & Size)"](https://www.delfarelevator.com/commercial-elevator-cost.html). Accessed May 31, 2024.
+[^"15"]: Boardman, J. H. ["Report to Congress: Costs and Benefits of Magnetic Levitation"](https://railroads.dot.gov/sites/fra.dot.gov/files/fra_net/1176/maglev-sep05.pdf). U.S. Department of Transportation, Federal Railroad Administration. September 2005.
+[^"16"]: Williams, A. ["Brooklyn's first supertall skyscraper turns heads with intricate facade"](https://newatlas.com/architecture/brooklyn-tower-shop/). New Atlas. September 2023.
+[^"17"]: Kamal, A., Kadam, S.T., Hou, D., Hassan, I.G., Wang, L.L., Sezer, N., Rahman, M.A.. ["Detailed profiling of high-rise building energy consumption in extremely hot and humid climate"](https://www.sciencedirect.com/science/article/pii/S2772783123000109). Cleaner Energy Systems **4**:100060. April 2023.
+[^"18"]: Appunn, R.,  Frantzheld, J., Jetter, M., Löser, F. ["MULTI® - rope-less elevator demonstrator at test tower Rottweil"](https://journals.eco-vector.com/transsyst/article/view/10429). Transportation systems and technology **4**(3):80-89. November 2018.
+[^"19"]: ICC Digital Codes. ["Chapter 30: Elevators and Conveying Systems"](https://codes.iccsafe.org/content/IBC2018/chapter-30-elevators-and-conveying-systems). 2018 International Building Code. Accessed May 31, 2024.
 
 export default ({ children }) => 
   <SolutionDropdown 

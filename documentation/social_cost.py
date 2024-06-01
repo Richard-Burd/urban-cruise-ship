@@ -172,10 +172,14 @@ def weighted_median(weights):
     cutoff = sorted_scc.weight.sum() / 2.0
     return convert_to_co2 * sorted_scc.SCC[cumsum >= cutoff].iloc[0]
 
-def get_scc():
+def get_scc(year=2010):
     # The following gets our estimate of the SCC.
     #print("By recency:",weighted_median(recency**(2021-scc["year"])))
 #    print("Social cost of carbon estimate: $",99.34363636363635,"per ton, 2010 dollars.")
+
+    # Eventually, I want a more systematic way to deal with CPI adjustment, which will require a separate module.
+    if year == 2024:
+        return 141.40
     return 99.34363636363635
     
     '''
