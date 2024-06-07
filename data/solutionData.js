@@ -1034,6 +1034,18 @@ export const solutionData = [
     sources: null,
     subset: "ecology-environment",
   },
+
+  {
+    solution: `Replace Gasoline with Methanol - Fleet`,
+    link: `/energy/energy_distribution/methanol#replacing-gasoline-with-methanol-in-fleets`,
+    site: `energy`,
+    cost: 0.00058,
+    benefit: 0.00218,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
   
   {
     solution: `Retrofit Wind Turbines with Winglets`,

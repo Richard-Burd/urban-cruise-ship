@@ -1,18 +1,70 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Negative Impacts of Gasoline";
-export const solution = "Replacing Gasoline with Methanol";
+export const solution = "Replacing Gasoline with Methanol in Fleets";
 
 import ArticleImage from "/components/ArticleImage.js";
 
-For high methanol blends, as high as M-100 (100% methanol fuel), it is necessary to upgrade the engines of automobiles to use them, similar to flex-fuel engines for high ethanol blends. The cost of doing so, CP-adjusted to 2020, is estimated from [^"22"]. Though not as favorable as a low blend in the broader gasoline supply, a dedicated methanol fleet of cars shows a positive return on investment.
+## Description
+We propose converting fleets of frequent short-trip vehicles such as mail trucks, taxis, and delivery vehicles to methanol fuel.
 
+<DynamicSolutionGraphic
+  barChartTitle={"Replace Gas with Methanol - Fleet"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 6-7-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 2.18,
+      displayedValue: "$2.18",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .58,
+      displayedValue: "$.58 Million USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+
+## Background
+Due to the lower [energy density](/energy/transport/transpo_ghg#transportation-energy-efficiency) of methanol, it makes more sense to deploy a methanol fleet among cars that will make frequent, short trips, such as mail trucks, taxis, or delivery vehicles.
+For high methanol blends, as high as M-100 (100% methanol fuel), it is necessary to upgrade the engines of automobiles to use them, similar to flex-fuel engines for high ethanol blends. Though not as favorable as a low blend in the broader gasoline supply, a dedicated methanol fleet of cars shows a positive return on investment.
 <ArticleImage image={"methanol_blending2.svg"} width={760} height={270} />
-#### Estimated costs and benefits of a 1000 car fleet using pure methanol fuel. Most costs and benefits are as in the above methanol blending estimate, with the costs of engine upgrades estimated by Sheehy et al. [^"22"].
 
-Due to the lower [energy density](/energy/transport/transpo_ghg#transportation-energy-efficiency) of methanol, it may make more sense to deploy a methanol fleet among cars that will make frequent, short trips, such as mail trucks, taxis, or delivery vehicles.
 
-[^"22"]: Sheehy, P., Law, K., Jackson, M. D. ["Methanol Fuel Blending and Materials Compatibility Report"](https://www.ourenergypolicy.org/wp-content/uploads/2012/04/TIAX-Methanol-Fuel-Blending-Report.pdf). Prepared by TIAX LLC, for the Methanol Institute. October 2010.
+## Calculations
+Engine upgrading costs for a 1,000 car fleet are estimated at $.58 million[^"1"].
+
+Reduction of GHG is estimated to save $.47 million and have $1.71 million in financial benefits.
+
+
+## Implementation
+
+The perception of methanol to policy makers could be a barrier at federal regulatory agencies for widespread adoption, however perceptions have been improving recently and are more favorable.
+
+The most significant issue will be fuel price. As a blend methanol will be priced against ethanol and other fuel additives on a volume basis while as a full fuel it will compete with gasoline and diesel at pump prices on an energy basis[^"1"]. The full fuel option would be the lower price, but if both options go forward the price may settle somewhere in the middle[^"1"]. For full methanol fuel there will need to be some changes or improvements to fueling infrastructure for delivery of methanol fuel[^"1"].
+
+##### Lead researchers: Michael Goff and Lee Nelson - Last updated: 6/7/2024
+
+[^"1"]: Sheehy, P., Law, K., Jackson, M. D. ["Methanol Fuel Blending and Materials Compatibility Report"](https://www.ourenergypolicy.org/wp-content/uploads/2012/04/TIAX-Methanol-Fuel-Blending-Report.pdf). Prepared by TIAX LLC, for the Methanol Institute. October 2010.
+
 
 export default ({ children }) => 
   <SolutionDropdown 
