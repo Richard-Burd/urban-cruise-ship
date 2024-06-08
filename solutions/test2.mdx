@@ -1,0 +1,92 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Deforestation";
+export const solution = "Afforestation and Reforestation - World";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
+
+## Description
+
+We reccomend afforestation, reforestation or preventing new deforestation as a strategy to sequester carbon.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Afforestation and Reforestation - World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"10,280 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye May 29, 2024"}
+  
+  
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: 2391.146689530,
+      displayedValue: "$2391.1 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 87.181628892,
+      displayedValue: "$87.2 billion/year",
+      site: "null",
+    }
+  ]}
+/>
+
+#### Source [^"1"], [^"22"], [^"5"], [^"6"], [^"8"].
+
+## Description
+
+We recommend afforestation or preventing new deforestation as a strategy to sequester carbon.
+
+## Background
+Increasing Earth's forest cover, whether through reducing deforestation or active afforestation, will sequester carbon, though the exact amount is highly uncertain. Tree restoration has the highest potential of any solution or technology to date for carbon sequestration [^"5"].
+
+Estimates of the carbon sequestration potential of tree planting vary widely, ranging from 113 [^"22"] to 564 billion tons CO<sub>2</sub>e [^"1"], or 3-14 years of emissions at present. The main study cited in this solution estimates a total of 205.6 gigatons CO<sub>2</sub>e with an uncertainty range of 133.2 to 276.2 GtC [^"5"].
+
+Reforestation has been examined as a solution for ground-level ozone abatement. Ground-level ozone is estimated to cause 152,000 deaths per year as of 2014. In addition, it is linked to increased respiratory and cardiovascular disease. It also has been shown to reduce crop productivity. Current abatement techniques have focused on economic incentives and technological solutions to reduce pollutants which are responsible for the formation of ozone. [^"9"].
+
+Based on the US case study, our scenario of 899 million hectares of afforestation could reduce ground-level ozone by 22.21 megatons and NO<sub>x</sub> by 4.29 megatons per year [^"9"]. Using a $64,075 per ton average of health benefits (including decreased mortality and quality of life years) for NO<sub>x</sub> reductions, we estimate $274.88 billion/year benefit based upon long-term benefits with a 7 percent discount rate [^"24"]. However, pending further study, we do not include these into the above metric totals.
+
+
+## Calculations
+
+We use a study for US project costs for national forests to estimate project costs of $1,178 per hectare. These could involve financial incentives or subsidies for private landowners or projects to restock potential forest areas [^"6"].
+
+## Implementation
+Several pieces of legislation introduced in the United States Congress would promote tree planting [^"11"]. General approaches including subsidies for tree planting, modeled after the 45Q program for carbon capture and sequestration or renewable energy production tax credits; and federal funding for tree planting on public lands, modeled after other forms of infrastructure investment [^"11"].
+
+Carbon pricing has been studied as a means to incentivize tree planting and may provide a cost-effective solution to drive markets towards increased forest cover [^"8"].
+
+Lead Researcher: jye - Last Updated May 29 2024.
+
+[^"1"]: Bastin, J., Finegold, Y., Garcia, C., Millicone, D., Rezende, M., Routh, D., Zohner, C., Crowther, T. ["The global tree restoration potential"](https://science.sciencemag.org/content/365/6448/76.abstract). Science 365(6448). July 2019.
+[^"11"]: Neuberger, J., Rudee, A., Leslie-Bole , H. ["7 Policy Proposals to Restore US Trees: How Do They Compare?"](https://www.wri.org/insights/us-policy-trees-natural-infrastructure). World Resources Institute. May 2021.
+[^"22"]: Veldman, J. et al. ["Comment on "The global tree restoration potential"](https://science.sciencemag.org/content/366/6463/eaay7976). Science 366(6463). October 2019.
+[^"23"]: Waring, B., Neumann, M., Prentice, I. C., Adams, M., Smith, P., Siegert, M. ["Forests and Decarbonization – Roles of Natural and Planted Forests"](https://www.frontiersin.org/articles/10.3389/ffgc.2020.00058/full). Frontiers in Forests and Global Change. May 2020.
+[^"5"]: Erratum for the Report: “The global tree restoration potential” by J.-F. Bastin, Y. Finegold, C. Garcia, D. Mollicone, M. Rezende, D. Routh, C. M. Zohner, T. W. Crowther and for the Technical Response “Response to Comments on ‘The global tree restoration potential’” by J.-F. Bastin, Y. Finegold, C. Garcia, N. Gellie, A. Lowe, D. Mollicone, M. Rezende, D. Routh, M. Sacande, B. Sparrow, C. M. Zohner, T. W. Crowther | Science []()   
+[^"6"]: Haight et al. [Estimating the Present Value of Carbon Sequestration in U.S. Forests, 2015–2050, for Evaluating Federal Climate Change Mitigation Policies.](Agricultural and Resource Economics Review 49 (2019): 150 - 177.) October 2019. https://doi.org/10.1017/age.2019.20 
+[^"7"]: Zhang X, Busch J, Huang Y, Fleskens L, Qin H, Qiao Z. [Cost of mitigating climate change through reforestation in China.](Frontiers in Forests and Global Change [Internet].) December 2023. http://dx.doi.org/10.3389/ffgc.2023.1229216 
+[^"8"]: Zhang X, Busch J, Huang Y, Fleskens L, Qin H, Qiao Z. [Cost of mitigating climate change through reforestation in China.](Frontiers in Forests and Global Change [Internet].) December 2023. http://dx.doi.org/10.3389/ffgc.2023.1229216 
+[^"9"]: Kroeger T, Escobedo FJ, Hernandez JL, Varela S, Delphin S, Fisher JRB, et al. [Reforestation as a novel abatement and compliance measure for ground-level ozone.](Proceedings of the National Academy of Sciences [Internet].) September 2014. http://dx.doi.org/10.1073/pnas.1409785111 
+[^"10"]: Hubbell BJ, Hallberg A, McCubbin DR, Post E. [Health-Related Benefits of Attaining the 8-Hr Ozone Standard.](Environmental Health Perspectives [Internet].) January 2005 http://dx.doi.org/10.1289/ehp.7186 
+[^"24"]: Environmental Protection Agency. [Benefit per-ton of reducing ozone precursors in 2025. ](BenMAP.) January 17 2023 https://www.epa.gov/benmap/estimating-benefit-ton-reducing-directly-emitted-pm25-pm25-precursors-and-ozone-precursors 
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
