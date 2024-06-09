@@ -1097,7 +1097,7 @@ export const solutionData = [
 
   {
     solution: `Reforestation and Afforestation - World`,
-    link: `/habitat/environment/geoengineering#afforestation-and-reforestation-world`,
+    link: `/habitat/environment/geoengineering#reforestation-and-afforestation-world`,
     site: `habitat`,
     cost: 193.70550377698646,
     benefit: 1773.9926593696562,
