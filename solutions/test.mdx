@@ -1,7 +1,7 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Military Base Emissions";
-export const solution = "Renewable Microgrids - U.S.";
+export const problem = "Deforestation";
+export const solution = "Reforestation and Afforestation - World";
 
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
@@ -13,109 +13,78 @@ export const DynamicSolutionGraphic = dynamic(
 
 ## Description
 
-We recommend the US military implement renewable microgrids into temporary bases that primarily rely on diesel generator power as a way to reduce environmental impact.
+We reccomend afforestation, reforestation or preventing new deforestation as a strategy to sequester carbon.
 
 <DynamicSolutionGraphic
-  barChartTitle={"Renewable Microgrids - US Military"}
+  barChartTitle={"Afforestation and Reforestation - World"}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
-  arrowText1={"57 million"}
+  arrowText1={"7,626 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadText3={"jye June 8, 2024"}
+  mastheadText3={"jye June 9, 2024"}
   
   
   staticData={[
     {
       name: "Benefit",
-      barlength: .073352536,
-      displayedValue: "$73.3 million/year",
+      barlength: 1773.9926593696562,
+      displayedValue: "$1773.9 billion/year",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: .031375972,
-      displayedValue: "$31.4 million/year",
+      barlength: 193.70550377698646,
+      displayedValue: "$193.7 billion/year",
       site: "null",
     }
   ]}
 />
 
-#### Source .
+#### Source [^"1"], [^"22"], [^"5"], [^"6"], [^"8"] [^"12"].
 
+## Description
+
+We recommend afforestation or preventing new deforestation as a strategy to sequester carbon.
 
 ## Background
+Increasing Earth's forest cover, whether through reducing deforestation or active afforestation, will sequester carbon, though the exact amount is highly uncertain. Tree restoration has the highest potential of any solution or technology to date for carbon sequestration [^"5"].
 
-Environmental impact reductions and efficient energy use have been a growing focus of military operations around the world [^"2"]. Renewable microgrids have been examined as a solution to reduce the use of diesel generators on base [^"1"]. The U.S. Department of Defense’s (DoD’s) utility bill is almost $4 billion per year, with over ¼ of this used by military bases [^"6"]. In 2023, the global market for military power generators is expected to account for about 3% to 6% of the worldwide generator sales market. FMI estimates the global generator sales market to reach US$ 32.2 billion in 2023. [^"8"] Currently, diesel generators remain the top-selling category. However, with tightening environmental laws due to increasing air pollution levels, the market is expected to shift to less carbon intensive power solutions [^"9"].
+Estimates of the carbon sequestration potential of tree planting vary widely, ranging from 113 [^"22"] to 564 billion tons CO<sub>2</sub>e [^"1"], or 3-14 years of emissions at present. A study cited in this solution estimates a total of 205.6 gigatons CO<sub>2</sub>e with an uncertainty range of 133.2 to 276.2 GtC [^"5"]. We suspect the true figure is closer to the low estimate of Veldman et al. of 41.6 gigatons, as it better accounts for practical limitations such as cost, land ownership and land use conflicts, and the loss of planted forests due to human activity or wildfire [^"23"].
 
-UN Peacekeeping is noteworthy for the explicit policy consideration given to the minimization of negative environmental impacts. While military forces devoted to warfighting must necessarily prioritize narrow military objectives, the special focus of peacekeeping operations permits, and arguably even requires, a different balance of priorities in what is fundamentally a military enterprise [^"5"].
+Reforestation has been examined as a solution for ground-level ozone abatement. Ground-level ozone is estimated to cause 152,000 deaths per year as of 2014. In addition, it is linked to increased respiratory and cardiovascular disease. It also has been shown to reduce crop productivity. Current abatement techniques have focused on economic incentives and technological solutions to reduce pollutants which are responsible for the formation of ozone. [^"9"].
 
-The SHES components are designed to be packed in standard shipping 20 ft containers. The modularity of the solution, scalable from the base camp for 150 people, is designed according to available on-site renewable sources, allowing for energy optimization of different camp sizes in different climates [^"1"].
+Based on the US case study, our scenario of 899 million hectares of afforestation could reduce ground-level ozone by 22.21 megatons and NO<sub>x</sub> by 4.29 megatons per year [^"9"]. Using a $64,075 per ton average of health benefits (including decreased mortality and quality of life years) for NO<sub>x</sub> reductions, we estimate $274.88 billion/year benefit based upon long-term benefits with a 7 percent discount rate [^"24"]. However, pending further study, we do not include these into the above metric totals.
 
 
+## Calculations
 
-<DynamicSolutionGraphic
-  barChartTitle={"Benefit Calculations"}
-  barChartTitle2={"Renewable Microgrids - US Military"}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={"57 million"}
-  arrowText2={"tons CO₂eq"}
-  arrowText3={"reduction"}
-  arrowText4={"annually"}
-  mastheadText3={"jye May 29, 2024"}
-  
-  
-  staticData={[
-    {
-      name: "Fuel Savings",
-      barlength: 0.033897505,
-      displayedValue: "$33.89 million/year",
-      site: "null",
-    },
-    {
-      name: "Avoided Carbon Costs",
-      barlength: 0.008079058,
-      displayedValue: "$8.08 million/year",
-      site: "null",
-    }
-  ]}
-/>
+We use an average price for per hectare project costs of $6,000 ($2,000 to $10,000 range) [^"12"]. These could involve financial incentives or subsidies for private landowners or projects to restock potential forest areas, which could lower overall costs, as seen in a US study [^"6"].
 
-#### Annual values are calculated using an 8% discount rate and a social cost of carbon of $141.40 per ton. 
+## Implementation
+Several pieces of legislation introduced in the United States Congress would promote tree planting [^"11"]. General approaches including subsidies for tree planting, modeled after the 45Q program for carbon capture and sequestration or renewable energy production tax credits; and federal funding for tree planting on public lands, modeled after other forms of infrastructure investment [^"11"].
 
-While the exact number of forward operating bases, temporary bases, or "lily pad" bases that the US military operates and runs soley on diesel generator power is not known, we estimate 200 such bases would be affected by this solution based upon the available data [^"21"] [^"22"] [^"7"].
+Carbon pricing has been studied as a means to incentivize tree planting and may provide a cost-effective solution to drive markets towards increased forest cover [^"8"].
 
-We calculate the costs of the components needed based on current market prices [^"20"] [^"19"] [^"14"] [^"18"]. 
+While this study highlights the significant potential of trees as a means to sequester carbon, it must be coupled with concerns towards biodiversity. Tree restoration could be beneficial to entire ecoysystems, but simply focusing on carbon reductions can lead to monoculture risks or focusing on fast growing trees that will lock up more carbon immediately, but could result in future problems. We believe the goal should be focused around restoration of forests rather than repurposing areas where forests would not normally grow.
 
-Lead Researcher: jye - Last Updated June 8, 2024.
+##### Lead Researcher: jye & Michael Goff - Last Updated June 9 2024.
 
-[^"1"]: Berardi U, Tomassoni E, Khaled K. [A Smart Hybrid Energy System Grid for Energy Efficiency in Remote Areas for the Army.](http://dx.doi.org/10.3390/en13092279) Energies [Internet]. May 2020.
-[^"2"]: Smaliukiene R, Labutis G, Juozapavicius A. [Pro-Environmental Energy Behavior in the Military: Assessing Behavior Change Factors at a Selected Military Unit.](http://dx.doi.org/10.3390/en13010219) Energies [Internet]. January 2020.
-[^"3"]:  [Energy management in military operational camps: A cost-benefit analysis | IEEE Conference Publication](https://ieeexplore.ieee.org/document/6827013)  
-[^"4"]:  [Cost Benefit Analysis of Integrated COTS Energy- Related Technologies for Army's Force Provider Module](https://typeset.io/papers/cost-benefit-analysis-of-integrated-cots-energy-related-2ie8dwpcpn)  
-[^"5"]:  [Energy and the military: Convergence of security, economic, and environmental decision-making - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2211467X19301026)  
-[^"6"]:  [https://www.pewtrusts.org/~/media/assets/2017/01/ce_power_begins_at_home_assured_energy_for_us_military_bases.pdf#:~:text=URL%3A%20https%3A%2F%2Fwww.pewtrusts.org%2F~%2Fmedia%2Fassets%2F2017%2F01%2Fce_power_begins_at_home_assured_energy_for_us_military_bases.pdf%0AVisible%3A%200%25%20](https://www.pewtrusts.org/~/media/assets/2017/01/ce_power_begins_at_home_assured_energy_for_us_military_bases.pdf#:~:text=URL%3A%20https%3A%2F%2Fwww.pewtrusts.org%2F~%2Fmedia%2Fassets%2F2017%2F01%2Fce_power_begins_at_home_assured_energy_for_us_military_bases.pdf%0AVisible%3A%200%25%20)  
-[^"7"]:  [Bases, Bases, Everywhere... - TomDispatch.com](https://tomdispatch.com/nick-turse-one-down-who-knows-how-many-to-go/#more)  
-[^"8"]:  [Power Generator for Military Market Size & Trends Report 2033](https://www.futuremarketinsights.com/reports/power-generator-for-military-market)  
-[^"9"]:  [The Rising Usage of Power Generators in Military Applications is Driving the Global Market Forward](https://www.globaltrademag.com/the-rising-usage-of-power-generators-in-military-applications-is-driving-the-global-market-forward/)  
-[^"10"]:  [Long-Duration Energy Storage: Resiliency for Military Installations](https://www.nrel.gov/docs/fy24osti/87646.pdf)  
-[^"11"]:  [Reducing Fuel Consumption at a Remote Military Base: Introducing an energy management system | Request PDF](https://www.researchgate.net/publication/260524581_Reducing_Fuel_Consumption_at_a_Remote_Military_Base_Introducing_an_energy_management_system)  
-[^"12"]:  [Diesel genset optimization in remote microgrids - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0306261923004002)  
-[^"13"]:  [Renewable energy and energy storage to offset diesel generators at expeditionary contingency bases](https://web.stanford.edu/group/efmh/jacobson/Articles/Others/21-REforFOBs.pdf)  
-[^"14"]:  [https://www.architecturaldigest.com/reviews/solar/solar-panel-costs](https://www.architecturaldigest.com/reviews/solar/solar-panel-costs)  
-[^"15"]:  [https://www.ncbi.nlm.nih.gov/books/NBK100028/](https://www.ncbi.nlm.nih.gov/books/NBK100028/)  
-[^"16"]:  [https://energystorage.pnnl.gov/pdf/PNNL-28866.pdf]()  
-[^"17"]:  [https://www.energy.gov/energysaver/estimating-cost-and-energy-efficiency-solar-water-heater]()  
-[^"18"]:  [https://typeset.io/pdf/performance-and-cost-assessment-of-a-solar-hdh-desalination-1cf0opfmqk.pdf](https://typeset.io/pdf/performance-and-cost-assessment-of-a-solar-hdh-desalination-1cf0opfmqk.pdf)  
-[^"19"]:  [https://atmosphereac.ca/2023/05/19/average-cost-of-hvac-installation-for-commercial-properties/](https://atmosphereac.ca/2023/05/19/average-cost-of-hvac-installation-for-commercial-properties/)  
-[^"20"]:  [https://www.tankandbarrel.com/stainless-steel-water-cisterns-tanks-tmt300ss-stainless-steel-water-storage-cistern-tank-300-gallon-p-2292.html]()  
-[^"21"]:  [https://worldpopulationreview.com/country-rankings/overseas-military-bases-by-country]()  
-[^"22"]:  [https://www.aljazeera.com/news/2021/9/10/infographic-us-military-presence-around-the-world-interactive]()  
+[^"1"]: Bastin, J., Finegold, Y., Garcia, C., Millicone, D., Rezende, M., Routh, D., Zohner, C., Crowther, T. ["The global tree restoration potential"](https://science.sciencemag.org/content/365/6448/76.abstract). Science 365(6448). July 2019.
+[^"11"]: Neuberger, J., Rudee, A., Leslie-Bole , H. ["7 Policy Proposals to Restore US Trees: How Do They Compare?"](https://www.wri.org/insights/us-policy-trees-natural-infrastructure). World Resources Institute. May 2021.
+[^"22"]: Veldman, J. et al. ["Comment on "The global tree restoration potential"](https://science.sciencemag.org/content/366/6463/eaay7976). Science 366(6463). October 2019.
+[^"23"]: Waring, B., Neumann, M., Prentice, I. C., Adams, M., Smith, P., Siegert, M. ["Forests and Decarbonization – Roles of Natural and Planted Forests"](https://www.frontiersin.org/articles/10.3389/ffgc.2020.00058/full). Frontiers in Forests and Global Change. May 2020.
+[^"5"]: Erratum for the Report: “The global tree restoration potential” by J.-F. Bastin, Y. Finegold, C. Garcia, D. Mollicone, M. Rezende, D. Routh, C. M. Zohner, T. W. Crowther and for the Technical Response “Response to Comments on ‘The global tree restoration potential’” by J.-F. Bastin, Y. Finegold, C. Garcia, N. Gellie, A. Lowe, D. Mollicone, M. Rezende, D. Routh, M. Sacande, B. Sparrow, C. M. Zohner, T. W. Crowther | Science []()   
+[^"6"]: Haight et al. [Estimating the Present Value of Carbon Sequestration in U.S. Forests, 2015–2050, for Evaluating Federal Climate Change Mitigation Policies.](https://doi.org/10.1017/age.2019.20) October 2019. Agricultural and Resource Economics Review 49 (2019): 150 - 177. 
+[^"7"]: Zhang X, Busch J, Huang Y, Fleskens L, Qin H, Qiao Z. [Cost of mitigating climate change through reforestation in China.](http://dx.doi.org/10.3389/ffgc.2023.1229216) December 2023. Frontiers in Forests and Global Change [Internet]. 
+[^"8"]: Zhang X, Busch J, Huang Y, Fleskens L, Qin H, Qiao Z. [Cost of mitigating climate change through reforestation in China.](http://dx.doi.org/10.3389/ffgc.2023.1229216) December 2023. Frontiers in Forests and Global Change [Internet]. 
+[^"9"]: Kroeger T, Escobedo FJ, Hernandez JL, Varela S, Delphin S, Fisher JRB, et al. [Reforestation as a novel abatement and compliance measure for ground-level ozone.](http://dx.doi.org/10.1073/pnas.1409785111) September 2014. Proceedings of the National Academy of Sciences [Internet]. 
+[^"10"]: Hubbell BJ, Hallberg A, McCubbin DR, Post E. [Health-Related Benefits of Attaining the 8-Hr Ozone Standard.](http://dx.doi.org/10.1289/ehp.7186) January 2005 Environmental Health Perspectives [Internet]. 
+[^"24"]: Environmental Protection Agency. [Benefit per-ton of reducing ozone precursors in 2025. ](https://www.epa.gov/benmap/estimating-benefit-ton-reducing-directly-emitted-pm25-pm25-precursors-and-ozone-precursors) January 17 2023 BenMAP. 
+[^"12"]: United Nations. [Reforesting Brazil's Biomes & Facilitating Biodiverse Genomic Flow between Atlantic Rainforest fragments](https://sdgs.un.org/partnerships/reforesting-brazils-biomes-facilitating-biodiverse-genomic-flow-between-atlantic) December 2017. Department of Economic and Social Affairs: Sustainable Development 
 
 export default ({ children }) => 
   <SolutionDropdown 

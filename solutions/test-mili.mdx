@@ -1,0 +1,126 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Military Base Emissions";
+export const solution = "Renewable Microgrids - U.S.";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
+
+## Description
+
+We recommend the US military implement renewable microgrids into temporary bases that primarily rely on diesel generator power as a way to reduce environmental impact.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Renewable Microgrids - US Military"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"57 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye June 8, 2024"}
+  
+  
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: .073352536,
+      displayedValue: "$73.3 million/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .031375972,
+      displayedValue: "$31.4 million/year",
+      site: "null",
+    }
+  ]}
+/>
+
+#### Source .
+
+
+## Background
+
+Environmental impact reductions and efficient energy use have been a growing focus of military operations around the world [^"2"]. Renewable microgrids have been examined as a solution to reduce the use of diesel generators on base [^"1"]. The U.S. Department of Defense’s (DoD’s) utility bill is almost $4 billion per year, with over ¼ of this used by military bases [^"6"]. In 2023, the global market for military power generators is expected to account for about 3% to 6% of the worldwide generator sales market. FMI estimates the global generator sales market to reach US$ 32.2 billion in 2023. [^"8"] Currently, diesel generators remain the top-selling category. However, with tightening environmental laws due to increasing air pollution levels, the market is expected to shift to less carbon intensive power solutions [^"9"].
+
+UN Peacekeeping is noteworthy for the explicit policy consideration given to the minimization of negative environmental impacts. While military forces devoted to warfighting must necessarily prioritize narrow military objectives, the special focus of peacekeeping operations permits, and arguably even requires, a different balance of priorities in what is fundamentally a military enterprise [^"5"].
+
+The SHES components are designed to be packed in standard shipping 20 ft containers. The modularity of the solution, scalable from the base camp for 150 people, is designed according to available on-site renewable sources, allowing for energy optimization of different camp sizes in different climates [^"1"].
+
+
+
+<DynamicSolutionGraphic
+  barChartTitle={"Benefit Calculations"}
+  barChartTitle2={"Renewable Microgrids - US Military"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"57 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadText3={"jye May 29, 2024"}
+  
+  
+  staticData={[
+    {
+      name: "Fuel Savings",
+      barlength: 0.033897505,
+      displayedValue: "$33.89 million/year",
+      site: "null",
+    },
+    {
+      name: "Avoided Carbon Costs",
+      barlength: 0.008079058,
+      displayedValue: "$8.08 million/year",
+      site: "null",
+    }
+  ]}
+/>
+
+#### Annual values are calculated using an 8% discount rate and a social cost of carbon of $141.40 per ton. 
+
+While the exact number of forward operating bases, temporary bases, or "lily pad" bases that the US military operates and runs soley on diesel generator power is not known, we estimate 200 such bases would be affected by this solution based upon the available data [^"21"] [^"22"] [^"7"].
+
+We calculate the costs of the components needed based on current market prices [^"20"] [^"19"] [^"14"] [^"18"]. 
+
+Lead Researcher: jye - Last Updated June 8, 2024.
+
+[^"1"]: Berardi U, Tomassoni E, Khaled K. [A Smart Hybrid Energy System Grid for Energy Efficiency in Remote Areas for the Army.](http://dx.doi.org/10.3390/en13092279) Energies [Internet]. May 2020.
+[^"2"]: Smaliukiene R, Labutis G, Juozapavicius A. [Pro-Environmental Energy Behavior in the Military: Assessing Behavior Change Factors at a Selected Military Unit.](http://dx.doi.org/10.3390/en13010219) Energies [Internet]. January 2020.
+[^"3"]:  [Energy management in military operational camps: A cost-benefit analysis | IEEE Conference Publication](https://ieeexplore.ieee.org/document/6827013)  
+[^"4"]:  [Cost Benefit Analysis of Integrated COTS Energy- Related Technologies for Army's Force Provider Module](https://typeset.io/papers/cost-benefit-analysis-of-integrated-cots-energy-related-2ie8dwpcpn)  
+[^"5"]:  [Energy and the military: Convergence of security, economic, and environmental decision-making - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2211467X19301026)  
+[^"6"]:  [https://www.pewtrusts.org/~/media/assets/2017/01/ce_power_begins_at_home_assured_energy_for_us_military_bases.pdf#:~:text=URL%3A%20https%3A%2F%2Fwww.pewtrusts.org%2F~%2Fmedia%2Fassets%2F2017%2F01%2Fce_power_begins_at_home_assured_energy_for_us_military_bases.pdf%0AVisible%3A%200%25%20](https://www.pewtrusts.org/~/media/assets/2017/01/ce_power_begins_at_home_assured_energy_for_us_military_bases.pdf#:~:text=URL%3A%20https%3A%2F%2Fwww.pewtrusts.org%2F~%2Fmedia%2Fassets%2F2017%2F01%2Fce_power_begins_at_home_assured_energy_for_us_military_bases.pdf%0AVisible%3A%200%25%20)  
+[^"7"]:  [Bases, Bases, Everywhere... - TomDispatch.com](https://tomdispatch.com/nick-turse-one-down-who-knows-how-many-to-go/#more)  
+[^"8"]:  [Power Generator for Military Market Size & Trends Report 2033](https://www.futuremarketinsights.com/reports/power-generator-for-military-market)  
+[^"9"]:  [The Rising Usage of Power Generators in Military Applications is Driving the Global Market Forward](https://www.globaltrademag.com/the-rising-usage-of-power-generators-in-military-applications-is-driving-the-global-market-forward/)  
+[^"10"]:  [Long-Duration Energy Storage: Resiliency for Military Installations](https://www.nrel.gov/docs/fy24osti/87646.pdf)  
+[^"11"]:  [Reducing Fuel Consumption at a Remote Military Base: Introducing an energy management system | Request PDF](https://www.researchgate.net/publication/260524581_Reducing_Fuel_Consumption_at_a_Remote_Military_Base_Introducing_an_energy_management_system)  
+[^"12"]:  [Diesel genset optimization in remote microgrids - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0306261923004002)  
+[^"13"]:  [Renewable energy and energy storage to offset diesel generators at expeditionary contingency bases](https://web.stanford.edu/group/efmh/jacobson/Articles/Others/21-REforFOBs.pdf)  
+[^"14"]:  [https://www.architecturaldigest.com/reviews/solar/solar-panel-costs](https://www.architecturaldigest.com/reviews/solar/solar-panel-costs)  
+[^"15"]:  [https://www.ncbi.nlm.nih.gov/books/NBK100028/](https://www.ncbi.nlm.nih.gov/books/NBK100028/)  
+[^"16"]:  [https://energystorage.pnnl.gov/pdf/PNNL-28866.pdf]()  
+[^"17"]:  [https://www.energy.gov/energysaver/estimating-cost-and-energy-efficiency-solar-water-heater]()  
+[^"18"]:  [https://typeset.io/pdf/performance-and-cost-assessment-of-a-solar-hdh-desalination-1cf0opfmqk.pdf](https://typeset.io/pdf/performance-and-cost-assessment-of-a-solar-hdh-desalination-1cf0opfmqk.pdf)  
+[^"19"]:  [https://atmosphereac.ca/2023/05/19/average-cost-of-hvac-installation-for-commercial-properties/](https://atmosphereac.ca/2023/05/19/average-cost-of-hvac-installation-for-commercial-properties/)  
+[^"20"]:  [https://www.tankandbarrel.com/stainless-steel-water-cisterns-tanks-tmt300ss-stainless-steel-water-storage-cistern-tank-300-gallon-p-2292.html]()  
+[^"21"]:  [https://worldpopulationreview.com/country-rankings/overseas-military-bases-by-country]()  
+[^"22"]:  [https://www.aljazeera.com/news/2021/9/10/infographic-us-military-presence-around-the-world-interactive]()  
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>

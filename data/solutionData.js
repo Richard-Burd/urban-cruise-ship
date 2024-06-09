@@ -1095,17 +1095,17 @@ export const solutionData = [
     subset: "energy-production-efficiency",
   },
 
-/*   {
-    solution: `Afforestation and Reforestation - World`,
+  {
+    solution: `Reforestation and Afforestation - World`,
     link: `/habitat/environment/geoengineering#afforestation-and-reforestation-world`,
     site: `habitat`,
-    cost: 87.181628892,
-    benefit: 2391.14668953,
-    co2: 10280,
-    habitat: 8998000,
+    cost: 193.70550377698646,
+    benefit: 1773.9926593696562,
+    co2: 7626,
+    habitat: 304000,
     sources: null,
     subset: "ecology-environment",
-  }, */
+  },
 
 ];
 
