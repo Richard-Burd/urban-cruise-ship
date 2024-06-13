@@ -1099,25 +1099,29 @@ export const solutionData = [
     solution: `Reforestation and Afforestation - World`,
     link: `/habitat/environment/geoengineering#reforestation-and-afforestation-world`,
     site: `habitat`,
-    cost: 193.70550377698646,
-    benefit: 1773.9926593696562,
+    exact_cost: 193.70550377698646,
+    exact_benefit: 1773.9926593696562,    
+    cost: 190,
+    benefit: 1770,
     co2: 7626,
     habitat: 304000,
     sources: null,
     subset: "ecology-environment",
   },
 
-/*   {
+  {
     solution: `Renewable Microgrids - US Military`,
-    link: ``,
+    link: `/energy/energy_distribution/grid_design#renewable-microgrids-u-s-military`,
     site: `energy`,
-    cost: .031375972,
-    benefit: .073352536,
+    exact_cost: .031375972,
+    exact_benefit: .04197656874865626,
+    cost: .031,
+    benefit: .041,
     co2: 0.0571362,
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
-  }, */
+  },
 
 ];
 
