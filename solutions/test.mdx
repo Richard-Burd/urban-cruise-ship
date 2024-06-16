@@ -1,3 +1,16 @@
+
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Cardiovascular Disease";
+export const solution = "Genetic Testing for Cardiovascular Disease - US";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
 ## Description
 
 We recommend employers incorporate genetic testing as a part of cardiovascular disease screening to better assess disease risk.
@@ -84,3 +97,12 @@ Workplace wellness plans have been shown to improve employee morale and health b
 [^"6"]:  [https://www.myshortlister.com/insights/employee-wellness-statistics]()  
 [^"7"]:  [https://pubmed.ncbi.nlm.nih.gov/22823340/]()  
 [^"8"]:  [https://www.wtwco.com/en-us/insights/2022/06/2022-global-benefits-attitude-survey]()  
+
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
