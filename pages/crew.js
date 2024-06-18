@@ -492,11 +492,11 @@ const Crew = () => {
         <br></br>
 
         <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
-          jye
+          Jye
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
-            jye (lowercase j) serves as a graphic designer, researcher, and
+            Jye serves as a graphic designer, researcher, and
             design consultant at Urban Cruise Ship. Some notable contributions
             include dynamic graphic-generating interactive tables on the History
             site, automated standardized estimates graphics for solutions, and
@@ -521,7 +521,7 @@ const Crew = () => {
           </div>
         </div>
         <center className="link-icon-set">
-          <a href="https://jyeartstudio.com" target="_blank" rel="noreferrer">
+          <a href="https://instagram.com/jye.art.studio/" target="_blank" rel="noreferrer">
             <Image
               className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
               src={`/images/external-link-icons/home.svg`}
