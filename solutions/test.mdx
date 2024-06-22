@@ -13,7 +13,7 @@ export const DynamicSolutionGraphic = dynamic(
 
 ## Description
 
-We recommend employers incorporate genetic testing as a part of cardiovascular disease screening to better assess disease risk.
+We recommend employers who offer workplace cardiovascular health screenings to incorporate genetic testing to better assess disease risk.
 
 <DynamicSolutionGraphic
   barChartTitle={"Genetic Testing for Cardiovascular Disease - US"}
@@ -50,6 +50,8 @@ We recommend employers incorporate genetic testing as a part of cardiovascular d
 
 Cardiovascular diseases, particularly coronary artery disease (CAD), are influenced by both traditional risk factors and genetic predispositions. Standard workplace healthcare programs typically focus on traditional risk factors (e.g., age, blood pressure, cholesterol) without considering genetic predispositions. Polygenic Risk Scores (PRS) analyze genetic makeup to enhance the precision of risk assessments [^"1"]. Integrating CAD-PRS alongside traditional risk factors could improve prevention efforts for CAD [^"4"].
 
+## Calculations
+
 <DynamicSolutionGraphic
   barChartTitle={"Benefit Calculations"}
   barChartTitle2={"Genetic Testing for Cardiovascular Disease - US"}
@@ -79,24 +81,26 @@ Cardiovascular diseases, particularly coronary artery disease (CAD), are influen
   ]}
 />
 
-#### Source *based on a willingness to pay of $50,000 [^"1"], [^"3"], [^"5"].
+#### *based on a willingness to pay of $50,000. Source [^"1"], [^"3"], [^"5"].
 
 Of the 161 million employees in the United States [^"2"], we estimate 94 million employees would be impacted by this enhanced screening [^"3"]. We estimate that half of these employees are offered a workplace health program, based on a statistic that 55% of all companies offer a workplace health program [^"5"]. 
+
+We multiply the base cost of the test and the genetic consultation by the number of potentially affected employees, as well as the expected avoided healthcare costs and quality of life increases. It should also be noted that the intervention would also impact sickleave and other forms of lost productivity. 
 
 ## Implementation
 
 Workplace wellness plans have been shown to improve employee morale and health behaviors [^"7"], and half of employees have stated that they stayed with their current employer due to the healthcare [^"8"]. Genetic testing has been shown to be cost effective at reducing employer cost and unlike some health interventions, the testing has a one-time cost [^"1"].
 
-##### Lead Researcher: jye - Last Updated June 16, 2024.
+##### Lead Researcher: jye - Last Updated June 22, 2024.
 
-[^"1"]:  [https://www.semanticscholar.org/reader/4a8ffddd74ac6c87381efc1e53a0c8a011782497]()  
-[^"2"]:  [https://tradingeconomics.com/united-states/employed-persons](https://tradingeconomics.com/united-states/employed-persons)  
-[^"3"]:  [https://www.bls.gov/cps/cpsaat11b.htm]()  
-[^"4"]:  [https://pubmed.ncbi.nlm.nih.gov/32498804/]()  
-[^"5"]:  [https://www.kff.org/report-section/ehbs-2022-section-12-health-screening-and-health-promotion-and-wellness-programs/]()  
-[^"6"]:  [https://www.myshortlister.com/insights/employee-wellness-statistics]()  
-[^"7"]:  [https://pubmed.ncbi.nlm.nih.gov/22823340/]()  
-[^"8"]:  [https://www.wtwco.com/en-us/insights/2022/06/2022-global-benefits-attitude-survey]()  
+[^"1"]: Mujwara et al. [Cost-effectiveness analysis of implementing polygenic risk score in a workplace cardiovascular disease prevention program.](https://www.semanticscholar.org/reader/4a8ffddd74ac6c87381efc1e53a0c8a011782497) Frontiers in Public Health 11 (2023): n. pag. July 2023.
+[^"2"]: Trading Economics. [United States Employed Persons.](https://tradingeconomics.com/united-states/employed-persons)  Accessed June 2024.
+[^"3"]: U.S. Bureau of Labor Statistics. [Labor Force Statistics from the Current Population Survey.](https://www.bls.gov/cps/cpsaat11b.htm)  Accessed June 2024.
+[^"4"]: Aragam KG, Dobbyn A, Judy R, Chaffin M, Chaudhary K, Hindy G, et al. [Limitations of Contemporary Guidelines for Managing Patients at High Genetic Risk of Coronary Artery Disease.](http://dx.doi.org/10.1016/j.jacc.2020.04.027) Journal of the American College of Cardiology [Internet]. June 2020.
+[^"5"]: KFF. [2022 Employer Health Benefits Survey](https://www.kff.org/report-section/ehbs-2022-section-12-health-screening-and-health-promotion-and-wellness-programs/)  October 2022.
+[^"6"]: Shortlister. [80+ Employee Wellness Statistics Every Employer Should Know in 2024.](https://www.myshortlister.com/insights/employee-wellness-statistics)  Accessed June 2024.
+[^"7"]: LeCheminant JD, Merrill RM. [Improved Health Behaviors Persist Over Two Years for Employees in a Worksite Wellness Program.](http://dx.doi.org/10.1089/pop.2011.0083) Population Health Management [Internet]. October 2012.
+[^"8"]: WTW. [2022 Global Benefits Attitudes Survey.](https://www.wtwco.com/en-us/insights/2022/06/2022-global-benefits-attitude-survey)  Accessed June 2024. 
 
 
 export default ({ children }) => 

@@ -1123,6 +1123,20 @@ export const solutionData = [
     subset: "energy-production-efficiency",
   },
 
+  {
+    solution: `Genetic Screening for Cardiovascular Disease - US Employers`,
+    link: `/habitat/wellbeing/health_socio#genetic-screening-for-cardiovascular-disease-us-employers`,
+    site: `habitat`,
+    exact_cost: 2.5791568165615573,
+    exact_benefit: 3.2124915419011906,
+    cost: 2.5,
+    benefit: 3.2,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects",
+  },
+
 ];
 
 /*   { //I have removed this solution because there were no costs that could be found on it. Perhaps there is some sort of solution that we can come up with, or perhaps there are some hidden costs that I have not found as of yet. Otherwise, we could write into the logic so that this presents a special string such as "No known costs" -jye 5/23/2023
