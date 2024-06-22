@@ -1122,6 +1122,20 @@ export const solutionData = [
     sources: null,
     subset: "energy-production-efficiency",
   },
+  
+  {
+    solution: `Remove Subsidies`,
+    link: `energy/energy_socioeconomics/carbon_pricing_e`,
+    site: `energy`,
+    exact_cost: 0,
+    exact_benefit: 59.86962255999999,
+    cost: 0,
+    benefit: 60,
+    co2: 1250,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  }
 
   {
     solution: `Genetic Screening for Cardiovascular Disease - US Employers`,

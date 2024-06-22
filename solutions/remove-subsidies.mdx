@@ -1,32 +1,81 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Negative Impacts of Fossil Fuel Subsidies";
-export const solution = "Replace Subsidies with Neutral Cash Payments";
+export const solution = "Remove Subsidies";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 ## Description
 
-We propose that implicit consumer subsidies be replaced by neutral cash payments.
+We propose the elimination of fossil fuel subsidies.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Remove Fossil Fuel Subsidies"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"1.25 billion"}
+  arrowText2={"tons CO₂eq/yr"}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG, June 18, 2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 59.86962255999999,
+      displayedValue: "$60 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0,
+      displayedValue: "No Cost",
+      site: "null",
+    },
+  ]}
+/>
 
 ## Background
 
-8% of subsides undercharge for production costs, and 92% undercharge for environmental costs and consumption taxes. In 2020, $47.2 billion USD went to subsidizing fossil fuels in the form of explicit subsidies (directly reducing production costs due to tax credits or other direct governmental supports)[^"1"] This leaves less room in the budget for public spending on health, education, infrastructure, or social safety nets.[^"3"]
+Fossil fuel subsidies can be offered to producers or consumers. While determining the exact level of subsidies is difficult, as many are offered by subnational governments, it is clear that most are offered to consumers. The International Monetary Fund [^"8"] estimates that as of 2023, $53 billion of subsidies were offered to producers and $729 billion to consumers. Consumer subsidies are elevated due to ongoing short-term COVID-19 relief measures, and they are expected to decrease to just over $600 billion later in the decade. Consumer subsidies may take the form of artificially reduced prices for gasoline or heating oil, support for politically favored industries with high energy consumption, and other measures. Subsidies tend to be higher in fossil fuel-producing countries.
 
-Fuel subsidies are intended to protect consumers from high fuel costs, but the majority of the benefit from subsidies go to higher income groups who use more energy.[^"3"]
+The IMF also defines unpriced externalities as subsidies [^"8"]. At $5.7 trillion, these unpriced externalities, which include damages from climate change, air pollution, traffic congestion, and other harmful results of fossil fuel usage, dwarf direct subsidies. Although we advocate addressing these externalities--see our above analysis of carbon pricing--we do not classify them as subsidies for the purposes of this analysis.
 
-Any increase in fuel prices has an enormous impact on low-income households, with half of the impact arising from higher prices of other goods and services affected by higher fuel prices.[^"2"] Households in the poorest countries spend up to 10% of their income on energy.[^"3"] Subsidy reform must be coupled with cash payments to those who will be adversely affected.[^"3"]
+Fuel subsidies tend to be regressive, meaning that they disproportionately help high-income citizens [^"3"], but in some cases they are targetted to low-income citizens, who spend up to 10% of their income [^"3"] on energy-intensive goods and are more sensitive to the price of them [^"6"]. More than half the impact of repealing fossil fuel subsidies would be felt by consumers indirectly in energy-intensive goods, rather than directly on the purchase of energy [^"2"].
+
+## Calculations
+
+Couharde and Mouhoud [^"6"] estimate a deadweight loss of $60 billion (2024 dollars) of fossil fuel subsidies, which is a loss of economic efficiency as a result of price distortion. This figure is distinct from the gross amount spent by governments on subsidies. Several estimates [^"9"],[^"10"],[^"1"],[^"8"] have been made of the greenhouse gas reduction potential from removing subsidies; we use that of Jewell et al. [^"7"] and take their midpoint of 1.25 billion tons of carbon dioxide. The study of Jewell et. al accounts for potential backfiring, where removal of subsidies on natural gas and oil results in an increase in emissions by stimulating the consumption of coal.
+
+We have not estimated a monetary cost to fossil fuel subsidy removal, though given the persistence of subsidies, this is not to imply that subsidy removal is easy or free of drawbacks, as described below.
 
 ## Implementation
 
-Direct cash payments to offset increased fuel prices comes with many challenges. The system must be fraud-resistant yet accessible to beneficiaries. India has devised such programs in attempts to reform LPG fuel subsidies.[^"4"] The program, which is the largest cash payment transfer of its kind, has been successful overall in expanding access to LPG for the poor. Work still needs to be done to ensure that the payments go to those who truly need it and not affluent households, but it may serve as a starting place. The program relies upon a national ID, that some have raised privacy concerns over.[^"5"]
+As with carbon pricing, to gain public acceptance, fossil fuel subsidy removal requires that the expenditures saved by the government be used for other priorities that benefit low-income citizens [^"11"]. Failure to address the needs of lower-income citizens, including those above the poverty line, will likely result in opposition to the subsidy removal and may even threaten the stability of regimes [^"12"]. Addressing the needs of lower-income citizens requires making the benefits of revenue recycling available to a broad base of citizens, including those above the poverty line, especially those most impacted by the subsidy removal, and no later than when the higher energy prices take effect [^"12"].
+
+In 2013, India developed the PaHaL program to limited subsidies for liquified petroleum gas to low-income households [^"4"]. Through a Know Your Customer mechanism, PaHaL reduced subsidies to those who did not need it and thereby reduced air pollution and government expenditures [^"5"].
+
+##### Lead researcher: Michael Goff - Last updated:June 18, 2024.
 
 
 
-[^"1"]: [Still Not Getting Energy Prices Right: A Global and Country Update of Fossil Fuel Subsidies](https://www.imf.org/en/Publications/WP/Issues/2021/09/23/Still-Not-Getting-Energy-Prices-Right-A-Global-and-Country-Update-of-Fossil-Fuel-Subsidies-466004). . .
-[^"2"]: [The Unequal Benefits of Fuel Subsidies: A Review of Evidence forDeveloping Countries](https://www.imf.org/external/pubs/ft/wp/2010/wp10202.pdf). . .
-[^"3"]: [Reducing Energy Subsidies without Hurting the Poor? | Center For Global Development](https://www.cgdev.org/blog/reducing-energy-subsidies-without-hurting-poor). . .
-[^"4"]: [Aadhaar – India - CASE STUDY](https://www.oecd.org/gov/innovative-government/India-case-study-UAE-report-2018.pdf). . .
-[^"5"]: [Fuel Subsidy Reform in Developing Countries: Direct Benefit Transfer of LPG Cooking Gas Subsidy in India](https://www.cgdev.org/sites/default/files/fuel-subsidy-reform-developing-countries-india.pdf). . .
-
+[^"5"]: Mittal, N., Mukherjee, A., Gelb, A. ["Fuel Subsidy Reform in Developing Countries: Direct Benefit Transfer of LPG Cooking Gas Subsidy in India"](https://www.cgdev.org/publication/fuel-subsidy-reform-developing-countries-india). Center for Global Development. December 2017.
+[^"4"]: Berryhill, J. ["Embracing Innovation in Government: Global Trends 2018"](https://oecd-opsi.org/blog/embracing-innovation-in-government-global-trends-2018/). Observatory of Public Sector Innovation, Organisation for Economic Co-operation and Development. February 2018.
+[^"1"]: Kuehl, J., Bassi, A., Gass, P., Pallaske, G. ["Cutting Emissions Through Fossil Fuel Subsidy Reform and Taxation"](https://www.iisd.org/publications/cutting-emissions-fossil-fuel-subsidies-taxation). International Institute for Sustainable Development. July 2021.
+[^"2"]: del Granado, J. A., Coady, D., Gillingham, R. [The Unequal Benefits of Fuel Subsidies: A Review of Evidence for Developing Countries](https://www.sciencedirect.com/science/article/abs/pii/S0305750X12001155). World Development **40**(11), pp. 2234-2248. November 2012.
+[^"3"]: Birdsall, N., Diofasi, A. [Reducing Energy Subsidies without Hurting the Poor?](https://www.cgdev.org/blog/reducing-energy-subsidies-without-hurting-poor). Center for Global Development. July 2015.
+[^"6"]: Couharde, C., Mouhoud, S. ["Fossil fuel subsidies, income inequality and poverty. Evidence from developing countries"](https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12384). Journal of Economic Surveys **34**(5), pp. 981-1006. December 2020.
+[^"7"]: Jewell, J., McCollum, D., Emmerling, J., Bertram, C., Gernaat, D. E. H. J., Krey, V., Paroussos, L., Berger, L., Fragkiadakis, K., Keppo, I., Saadi, N., Tavoni, M., van Vuuren, D., Vinichenko, V., Riahi, K. ["Limited emission reductions from fuel subsidy removal except in energy-exporting regions"](https://www.nature.com/articles/nature25467). Nature **554**, pp. 229-233. February 2018.
+[^"8"]: International Monetary Fund. ["Fossil Fuel Subsidies"](https://www.imf.org/en/Topics/climate-change/energy-subsidies). Accessed June 18, 2024.
+[^"9"]: Schwanitz, V. J., Piontek, F., Bertram, C., Luderer, G. ["Long-term climate policy implications of phasing out fossil fuel subsidies"](https://ideas.repec.org/a/eee/enepol/v67y2014icp882-894.html). Energy Policy **67**, pp. 882-894. April 2014.
+[^"10"]: Burniaux, J-M., Château, J. ["Mitigation Potential of Removing Fossil Fuel Subsidies"](https://www.oecd-ilibrary.org/economics/mitigation-potential-of-removing-fossil-fuel-subsidies_5kgdx1jr2plp-en). Organisation for Economic Co-operation and Development Economics Department Working Papers. April 2011.
+[^"11"]: Harring, N., Jönsson, E., Matti, S., Mundaca, G., Jagers, S. C. ["Public acceptance of fossil fuel subsidy removal can be reinforced with revenue recycling"](https://www.nature.com/articles/s41558-023-01609-4). Nature Climate Change **13**, pp. 214-215. February 2023.
+[^"12"]: Moayed, T., Guggenheim, S., Von Chamier, P. ["From Regressive Subsidies to Progressive Redistribution: The Role of Redistribution and Recognition in Energy Subsidy Reform"](https://cic.nyu.edu/resources/from-regressive-subsidies-to-progressive-redistribution-the-role-of-redistribution-and-recognition-in-energy-subsidy-reform/). NYU Center on International Cooperation. September 2021.
 
 
 export default ({ children }) => 
