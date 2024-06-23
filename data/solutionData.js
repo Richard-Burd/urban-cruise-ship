@@ -1135,7 +1135,7 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
-  }
+  },
 
   {
     solution: `Genetic Screening for Cardiovascular Disease - US Employers`,
