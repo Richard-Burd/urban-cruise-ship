@@ -46,7 +46,7 @@
    "focus_area_url":"ag_dist",
    "articles":[
      { "article_title": "Food System Overview", "article_url": "ag_dist_overall" },
-     { "article_title": "Food Waste", "article_url": "food_waste" },
+     { "article_title": "Food Loss and Waste", "article_url": "food_waste" },
      { "article_title": "Cooking", "article_url": "cooking" }
    ]
   },
