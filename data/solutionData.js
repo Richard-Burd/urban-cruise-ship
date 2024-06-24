@@ -1123,7 +1123,9 @@ export const solutionData = [
     subset: "energy-production-efficiency",
   },
   
-  {
+/*  commented out because costs and benefits must be positive to avoid problems with division by zero
+
+{
     solution: `Remove Subsidies`,
     link: `energy/energy_socioeconomics/carbon_pricing_e`,
     site: `energy`,
@@ -1135,6 +1137,20 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  }, */
+
+  {
+    solution: `Plan to End Tuberculosis - World`,
+    link: `/habitat/wellbeing/health_socio#plan-to-end-tuberculosis-world`,
+    site: `habitat`,
+    exact_cost: 2.66,
+    exact_benefit: 99.6,
+    cost: 2.66,
+    benefit: 99.6,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-projects",
   },
 
   {
