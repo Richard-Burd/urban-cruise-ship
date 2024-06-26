@@ -5,14 +5,77 @@ export const solution = "Agricultural Mechanization";
 
 ## Description
 
+We propose the use of mechanized processes, rather than manual labor, throughout the harvesting and distribution of crops.
+
+We estimate that mechanization will save the equivalent of 79 million tons of carbon dioxide emissions and 120,000 square kilometers of cropland through the reduction of postharvest losses.
+
 
 ## Background
+
+Since before the Industrial Revolution, the share of the world's population engaged in agriculture has fallen dramatically. This number continues to fall, having reached 41% in 1991 and 27% in 2019. However, agricultural employment remains the norm in many countries of sub-Saharan Africa and Southeast Asia [^"14"]. The presence of a labor force, freed from the necessity of agricultural labor by increased productivity, has historically been crucial to industrialization [^"15"] and remains so today for a country's economic development [^"16"].
+
+A series of labor-saving technologies, such as the mechanical combine [^"17"], are responsible for the dramatic rise in productivity that allow a large share of the population to find employment in professions other than farming.
+
+Modeling the full economic implications of farm mechanization and the resulting urbanization is beyond the scope of this analysis, but mechanization also promises significant environmental benefits by reducing losses. One mechanism by which mechanization reduces losses is that, as a result of labor shortages that often arise under manual farming, farmers are unable to harvest, thresh, or dry their crops in a timely manner and thus suffer losses from pests [^"18"].
 
 
 ## Calculations
 
+Lacking reliable data on the extent of agricultural mechanization today, our calculations model 25% of wheat, rye, rice, and maize (corn) being converted from manual to mechanized harvesting. Mechanization is modeled at three stages: harvesting, threshing, and drying. We expect that additional savings are possible with other crops and with other stages of production. All savings are modeled to result from the reduction of postharvest losses, and hence the amount of crop planting required, that are expected to result from mechanization. The diesel and electricity used by mechanical harvesting equipment, as well as embodied energy in mechanical combines, is included in our calculations as well.
+
+To estimate yield improvement, we estimate the reduction in losses from mechanization at each of the three stages. From Hasan et al. [^"1"], we estimate a 4.5% loss reduction for mechanized rice harvesting in Bangladesh. Additional estimates include a 0.5 percentage point loss decrease for mechanization in sugarcane harvesting in Sudan [^"2"] and a 4.9% loss decrease in general for mechanized harvesting [^"3"].
+
+Based on an analysis of rice threshing in Ghana [^"4"], we estimate that mechanized threshing could reduce loss by just over 1%. We estimate that mechanical drying can save about 2.5% losses relative to sun drying, the predominant non-mechanized drying method [^"5"].
+
+We take greenhouse gas intensity of our four crops from Poore and Nemecek [^"7"] via Our World in Data [^"6"]. Overall crop production and land use is derived from FAOSTAT [^"8"]. As noted above, land use and greenhouse gas savings are estimated by assuming that overall production will decrease at the same rate as the decreased loss.
+
+From greenhouse gas savings, we deduct the emissions associated with mechanized equipment. We estimate the energy requirements of a mechanical combine as 1160 megajoules per hectare, the energy needs of a mid-sized combine as estimated by Elsoragaby et al. [^"9"]. These figures include fuel and the embodied energy from manufacturing the combine. We use yield data from FAOSTAT [^"8"] for the four crops to express the combine's energy in terms of crop production. The greenhouse gas intensity of a combine is estimated with the energy consumption of diesel with emissions intensity of 95 grams CO<sub>2</sub> per megajoule [^"10"].
+
+The energy requirements of mechanized threshing is derived from an analysis of a bean thresher [^"11"]. For mechanized drying, we estimate from analysis of a dewatering press with many biomass drying industrial purposes [^"12"]. Mechanized threshing and drying is assumed to be power by electrcity at a carbon intensity of 475 grams CO<sub>2</sub>/kWh, as reported by the International Energy Agency [^"13"]. Although threshing is part of a combine's process, we model threshing's energy demand separately to account for different possible processes in farm mechanization.
+
+Our calculations do not account for saved human for animal draught energy under mechanization, nor do they account for the possibility of equipment being powered by low-carbon energy sources [^"23"].
+
 
 ## Implementation
+
+In the 1960s and 1970s, governments of sub-Saharan African nations pushed to develop their economies through mechanization, which entailed government purchasing of farm equipment and selling the equipment to farmers at subsidized prices. These efforts largely failed, and sub-Saharan Africa is the least mechanized region of the world today [^"23"]. Although equipment sharing among small-holder farmers through cooperatives has struggled, cooperatives potentially have a role to play in making equipment available [^"23"].
+
+Despite the apparently solid business case for investing in labor-saving equipment, farmers in low-income countries face a lack of capital and lack of access to commercial lands as barriers to doing so [^"19"],[^"20"].
+
+Some crops, such as wine grapes [^"21"], require visual inspection and care in handling that makes them less amenable to mechanized harvesting, though developments in robotics may aid mechanization [^"22"].
+
+Mechanization raises the specter of unemployment, particularly rural unemployment. The historical record is mixed on whether mechanization has led to unemployment, with the most severe unemployment occurring where mechanization is driven by subsidies rather than market forces [^"23"].
+
+Environmental concerns, such as cropland expansion, erosion, and monoculture, are raised in response to mechanization [^"23"]. While these concerns are sometimes well-founded, they are better dealt with other methods than by restricting mechanization. Erosion in particular can be nearly eliminated with mechanized conservation agriculture [^"23"].
+
+International agencies, such as USAID, can and do assist mechanization through research and support for labor-saving tools such as irrigation and tractors [^"24"].
+
+
+
+[^"1"]: Hasan, K., Ali, R., Saha, C. K., Alam, M. M., Hossein, M. M. ["Assessment of paddy harvesting practices of Southern Delta Region in Bangladesh"](https://banglajol.info/index.php/PA/article/view/41558). Progressive Agriculture **30**, pp. 57-64. May 2019.
+[^"2"]: Ahmed, A. E., Alam-Eldin, A. O. M. ["An assessment of mechanical vs manual harvesting of the sugarcane in Sudan – The case of Sennar Sugar Factory"](https://www.sciencedirect.com/science/article/pii/S1658077X13000477). Journal of the Saudi Society of Agricultural Sciences **14**(2), pp. 160-166. June 2015.
+[^"3"]: Khan, N-A-M. ["USAID-Funded Mechanization Activity Reduces Food Loss"](https://agrilinks.org/post/usaid-funded-mechanization-activity-reduces-food-loss). AgriLinks, Feed the Future, U.S. Government's Global Hunger & Food Security Initiative. December 2022.
+[^"4"]: Amponsah, S. K., Addo, A., Dzisi, K., Moreira, J., Ndindeng, S. A. ["Comparative evaluation of mechanised and manual threshing options for Amankwatia and AGRA rice varieties in Ghana"](https://www.agroengineering.org/index.php/jae/article/view/684/668). Journal of Agricultural Engineering **48**(4), pp. 181-189. July 2017.
+[^"5"]: Aktar, S., Alam, A., Alam, M. M., Saha, C. K., Roy, J. C. ["Solar Bubble Drying: Alternative to Sun Drying for Reducing Drying Losses"](https://www.researchgate.net/publication/362545643_SOLAR_BUBBLE_DRYER_ALTERNATIVE_TO_SUN_DRYING_FOR_REDUCING_DRYING_LOSSES). Bangladesh Journal of Agricultural Research **47**(1), pp. 1-15. August 2022.
+[^"6"]: Ritchie, H. ["You want to reduce the carbon footprint of your food? Focus on what you eat, not whether your food is local"](https://ourworldindata.org/food-choice-vs-eating-local). Our World in Data. January 2020.
+[^"7"]: Poore, J., Nemecek, T. ["Reducing food's environmental impacts through producers and consumers"](https://www.science.org/doi/10.1126/science.aaq0216). Science **360**(6392). June 2018.
+[^"8"]: FAOSTAT. ["Food and Agricultural Data"](https://www.fao.org/faostat/en/#home). Food and Agriculture Organization of the United Nations. Accessed June 25, 2024.
+[^"9"]: Elsoragaby, S., Yahya, A., Mahadi, M.R., Nawi, N.M., Mairghany, M.. ["Comparative field performances between conventional combine and mid-size combine in wetland rice cultivation"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6446064/). Heliyon **5**(4). April 2019.
+[^"10"]: Energy Vision. ["The Power of Waste: New York City. The Potential for Renewable Natural Gas as a Vehicle Fuel"](https://energy-vision.org/pdf/NYC-RNG-Fact-Sheet.pdf). Accessed June 25, 2024.
+[^"11"]: Wamalwa, P. W., Kanali, C. L., Ronoh, E. K., Kituu, G. M. ["Performance Evaluation of a Portable Common Bean (Phaseolus Vulgaris L) Thresher"](https://kesebae.or.ke/journal/index.php/kesebae/article/view/90). Journal of Engineering in Agriculture and the Environment **8**(2). May 2022.
+[^"12"]: Saalasti. ["Dewatering press – a great energy saving potential: What are the benefits of mechanical drying?"](https://saalasti.com/dewatering-press/). Accessed June 25.
+[^"13"]: International Energy Agency. ["Emissions"](https://www.iea.org/reports/global-energy-co2-status-report-2019/emissions). Accessed June 25, 2024.
+[^"14"]: Roser, M. ["Employment in Agriculture"](https://ourworldindata.org/employment-in-agriculture). Our World in Data, based on the International Labor Organization and the World Bank. Accessed June 25, 2024.
+[^"15"]: Brunt, L., García-Peñalosa, C. ["Urbanisation and the Onset of Modern Economic Growth"](https://academic.oup.com/ej/article-abstract/132/642/512/6311805). The Economic Journal **132**(642), pp. 512-545. February 2022.
+[^"16"]: Di Clementa, R., Strano, E., Batty, M. ["Urbanization and economic complexity"](https://www.nature.com/articles/s41598-021-83238-5). Scientific Reports **11**: 3952. February 2021.
+[^"17"]: Iron Solutions. ["Harvest Equipment: A Brief History of the Combine"](https://ironsolutions.com/a-brief-history-of-the-combine/). May 2020.
+[^"18"]: Grover, D. K., Singh, J. M. ["Post-harvest Losses in Wheat Crop in Punjab: Past and Present"](https://www.indianjournals.com/ijor.aspx?target=ijor:aerr&volume=26&issue=2&article=016). Agricultural Economics Research Review **26**(2), pp. 293-297. 2013.
+[^"19"]: Guo, E., Akudugu, M. A. ["Factors Affecting the Adoption of Agricultural Mechanization Technologies by Women Farmers in the Karaga District of Ghana"](https://www.scirp.org/journal/paperinformation?paperid=127484). Agricultural Sciences **14**(9). September 2023.
+[^"20"]: Huo, Y., Ye, S., Wu, Z., Zhang, F., Mi, G. ["Barriers to the Development of Agricultural Mechanization in the North and Northeast China Plains: A Farmer Survey"](https://www.mdpi.com/2077-0472/12/2/287). Agriculture **12**(2): 287. February 2022.
+[^"21"]: Saldaña, J. L. U. ["Harvesting methods: Manual vs. mechanical"](https://vinoselcielo.com/blogs/contenido/metodos-de-cosecha-manual-vs-mecanica?logged_in_customer_id=&lang=en). El Cielo Valle de Guadalupe. December 2023.
+[^"22"]: Yoshida, T., Onishi, Y., Kawahara, T., Fukao, T. ["Automated harvesting by a dual-arm fruit harvesting robot"](https://robomechjournal.springeropen.com/articles/10.1186/s40648-022-00233-9). ROBOMECH Journal **9**: 19. September 2022.
+[^"23"]: Daum, T., Birner, R. ["African Agricultural Mechanization: Myths, Realities and an Emerging Research Agenda"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3500690). Center for Development Research, University of Bonn. December 2019.
+[^"24"]: USAID. ["Feed the Future Exceeds $215 Million Commitment to Agriculture Innovation Mission for Climate, Continues Advancing Climate Resilient Food Systems with $100 Million in Investments"](https://www.usaid.gov/news-information/press-releases/dec-03-2023-feed-future-exceeds-215-million-commitment-agriculture-innovation-mission). December 2023.
 
 
 export default ({ children }) => 
