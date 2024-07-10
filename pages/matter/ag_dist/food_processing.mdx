@@ -1,0 +1,139 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "ag_dist";
+
+import ArticleImage from "/components/ArticleImage.js";
+import FoodWasteSellLooseUS from "/solutions/food-waste-sell-loose-us.mdx"
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
+# Processing and Packaging
+
+## Packaging
+
+Packaging requires a significant, though not the largest share, of the environmental impact of food. Following is an analysis of packaged falafel in the Netherlands, presented as a representative portrayal of food impacts.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Lifecycle Emissions by Stage, Falafel in the Netherlands"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG July 9, 2024"}
+ staticData={[
+    {
+     name: "Ingredients",
+      barlength: 1088.9,
+      displayedValue: "1089 gCO2/kg",
+      site: "null",
+    },
+    {
+      name: "Processing and Packaging",
+      barlength: 425.2,
+      displayedValue: "425 gCO2/kg",
+      site: "null",
+    },
+	{
+		name: "Distribution and Retail",
+		barlength: 331.9,
+		displayedValue: "332 gCO2/kg",
+		site: "null",
+	},
+	{
+		name: "Consumer",
+		barlength: 406.9,
+		displayedValue: "407 gCO2/kg",
+		site: "null",
+	},
+	{
+		"name":"End of Life",
+		barlength: 7.5,
+		displayedValue:"8 gCO2/kg",
+		site:"null"
+	}
+  ]}
+/>
+
+#### Emissions are assessed on the basis of 1 kilogram of edible falafel. "Processing and Packaging" includes emissions in both the manufacture of the packaging and in the food packaging process. "End of Life" includes end-of-life treatment for both the packaging and any food waste. Source: Boone et al. [^1].
+
+The same study examines overall impacts.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Lifecycle Impacts by Stage, Falafel in the Netherlands"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG July 9, 2024"}
+ staticData={[
+    {
+     name: "Ingredients",
+      barlength: 371.4,
+      displayedValue: "371 μPt/kg",
+      site: "null",
+    },
+    {
+      name: "Processing and Packaging",
+      barlength: 51.8,
+      displayedValue: "52 μPt/kg",
+      site: "null",
+    },
+	{
+		name: "Distribution and Retail",
+		barlength: 24.5,
+		displayedValue: "25 μPt/kg",
+		site: "null",
+	},
+	{
+		name: "Consumer",
+		barlength: 33.2,
+		displayedValue: "33 μPt/kg",
+		site: "null",
+	},
+	{
+		"name":"End of Life",
+		barlength: 0,
+		displayedValue:"-1 μPt/kg",
+		site:"null"
+	}
+  ]}
+/>
+#### Source: Many impacts are aggregated into a single unit, called "points". Negative end-of-life impacts are possible due to resource recovery from recycling. Source: Boone et al. [^1].
+
+Packaging plays an important role in protecting and prolonging the shelf life of food, thereby reducing [food waste](/matter/ag_dist/food_waste), though this role is not usually well-quantified [^3]. In low-income countries especially, appropriate packaging will reduce food waste at most stages of production [^4]. For example, a benficial lifecycle assessment has been found for anti-microbial coatings for milk containers, with the benefits of shelf life extension and waste reduction outweighing the cost of the coatings themselves [^2].
+
+<FoodWasteSellLooseUS />
+
+
+[^1]: Boone, L., Préat, N., Nhu, T. T., Fiordelisi, F., Guillard, V., Blanckaert, M., Dewulf, J. ["Environmental performance of plastic food packaging: Life cycle assessment extended with costs on marine ecosystem services"](https://www.sciencedirect.com/science/article/pii/S0048969723034046). Science of The Total Environment **894**: 164781. October 2023.
+
+[^2]: Manfredi, M., Fantin, V., Vignali, G., Gavara, R. ["Environmental assessment of antimicrobial coatings for packaged fresh milk"](https://www.sciencedirect.com/science/article/abs/pii/S0959652615001614). Journal of Cleaner Production **95**, pp. 291-300. May 2015.
+
+[^3]: Wohner, B., Pauer, E., Heinrich, V., Tacker, M. ["Packaging-related food losses and waste: an overview of drivers and issues"](https://www.mdpi.com/2071-1050/11/1/264). Sustainability **11**(1): 264. January 2019.
+
+[^4]: Manalili, N.M., Dorado, M.A., van Otterdijk, R. ["Appropriate Food Packaging Solutions for Developing Countries"](https://www.fao.org/sustainable-food-value-chains/library/details/en/c/266351/). Food and Agriculture Organization of the United Nations: Rome, Italy, 2014.
+
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
