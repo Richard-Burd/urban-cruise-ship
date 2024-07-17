@@ -1061,7 +1061,7 @@ export const solutionData = [
 
   {
     solution: `Higher CAFE Standards - U.S.`,
-    link: `energy/transport/transpo_cars#higher-cafe-standards`,
+    link: `energy/transport/transpo_cars`,
     site: `energy`,
     cost: 12.58,
     benefit: 14.14,
