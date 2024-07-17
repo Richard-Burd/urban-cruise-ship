@@ -1060,6 +1060,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Higher CAFE Standards - U.S.`,
+    link: `energy/transport/transpo_cars#higher-cafe-standards`,
+    site: `energy`,
+    cost: 12.58,
+    benefit: 14.14,
+    co2: .00186,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
+
+  {
     solution: `Onshore Power for Ships at Port - World`,
     link: `/energy/transport/transpo_freight#onshore-power-supply-for-ships-at-port-global`,
     site: `energy`,
