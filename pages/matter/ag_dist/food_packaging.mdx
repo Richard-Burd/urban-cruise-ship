@@ -1,0 +1,200 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "matter";
+export const focusAreaUrl = "ag_dist";
+
+import ArticleImage from "/components/ArticleImage.js";
+import FoodWasteSellLooseUS from "/solutions/food-waste-sell-loose-us.mdx"
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
+# Food Packaging
+
+## Packaging Impacts
+
+As of 2015, 146 million tons of plastics, or 46% of primary nonfiber plastics produced that year [^9], were used for packaging, of which most are intended as single-use packaging for a full range of products. Following is an analysis of packaged falafel in the Netherlands, presented as a representative portrayal of food impacts.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Lifecycle Emissions by Stage, Falafel in the Netherlands"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG July 9, 2024"}
+ staticData={[
+    {
+     name: "Ingredients",
+      barlength: 1088.9,
+      displayedValue: "1089 gCO2/kg",
+      site: "null",
+    },
+    {
+      name: "Processing and Packaging",
+      barlength: 425.2,
+      displayedValue: "425 gCO2/kg",
+      site: "null",
+    },
+	{
+		name: "Distribution and Retail",
+		barlength: 331.9,
+		displayedValue: "332 gCO2/kg",
+		site: "null",
+	},
+	{
+		name: "Consumer",
+		barlength: 406.9,
+		displayedValue: "407 gCO2/kg",
+		site: "null",
+	},
+	{
+		"name":"End of Life",
+		barlength: 7.5,
+		displayedValue:"8 gCO2/kg",
+		site:"null"
+	}
+  ]}
+/>
+
+#### Emissions are assessed on the basis of 1 kilogram of edible falafel. "Processing and Packaging" includes emissions in both the manufacture of the packaging and in the food packaging process. "End of Life" includes end-of-life treatment for both the packaging and any food waste. Source: Boone et al. [^1].
+
+The same study examines overall impacts.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Lifecycle Impacts by Stage, Falafel in the Netherlands"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG July 9, 2024"}
+ staticData={[
+    {
+     name: "Ingredients",
+      barlength: 371.4,
+      displayedValue: "371 μPt/kg",
+      site: "null",
+    },
+    {
+      name: "Processing and Packaging",
+      barlength: 51.8,
+      displayedValue: "52 μPt/kg",
+      site: "null",
+    },
+	{
+		name: "Distribution and Retail",
+		barlength: 24.5,
+		displayedValue: "25 μPt/kg",
+		site: "null",
+	},
+	{
+		name: "Consumer",
+		barlength: 33.2,
+		displayedValue: "33 μPt/kg",
+		site: "null",
+	},
+	{
+		"name":"End of Life",
+		barlength: 0,
+		displayedValue:"-1 μPt/kg",
+		site:"null"
+	}
+  ]}
+/>
+#### Source: Many impacts are aggregated into a single unit, called "points". Negative end-of-life impacts are possible due to resource recovery from recycling. Source: Boone et al. [^1].
+
+Packaging plays an important role in protecting and prolonging the shelf life of food, thereby reducing [food waste](/matter/ag_dist/food_waste), though this role is not usually well-quantified [^3]. In low-income countries especially, appropriate packaging will reduce food waste at most stages of production [^4]. For example, a benficial lifecycle assessment has been found for anti-microbial coatings for milk containers, with the benefits of shelf life extension and waste reduction outweighing the cost of the coatings themselves [^2].
+
+## Reusable Bags
+
+Due to the environmental impacts of single-use plastics, especially oceanic plastic pollution, replacing disposable, single-use grocery plastic bags with reusable bags is of interest. A 2011 United Kingdom study [^5] found the following number of reuses required for bags so that they have lesser greenhouse gas impacts than single-use plastic bags.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Bag Reuses to Achieve Greenhouse Gas Reductions"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG July 14, 2024"}
+ staticData={[
+    {
+     name: "Paper",
+      barlength: 3,
+      displayedValue: "3",
+      site: "null",
+    },
+    {
+      name: "LDPE Plastic",
+      barlength: 4,
+      displayedValue: "4",
+      site: "null",
+    },
+	{
+		name: "Non-Woven PP Plastic",
+		barlength: 11,
+		displayedValue: "11",
+		site: "null",
+	},
+	{
+		"name":"Cotton",
+		barlength: 131,
+		displayedValue:"131",
+		site:"null"
+	}
+  ]}
+/>
+
+The study assumes that single-use bags are used once and not repurposed for other uses such as garbage liners. If these assumptions are false, then the number of required reuses for reusable bags increases.
+
+A 2018 Danish study [^6] found greater reuses required when considering several impacts, rather than just greenhouse gases: ozone depletion, human toxicity, particulate matter, ionizing radiation, ground-level ozone, particulate matter, acidification, and eutrophication. The study also found that organic cotton bags had greater overall impacts than non-organic cotton bags.
+
+A 2014 study in the United States [^7] found that non-woven polypropolene bags should be resued 21-34 times to have lesser overall environmental than single-use plastic, depending on whether secondary uses of the single-use bags are considered. The study notes that reusable bag ordinances in Los Angeles and San Francisco require that the bags can be used at least 125 times.
+
+<FoodWasteSellLooseUS />
+
+Reusable grocery bags, particularly when used to transport meat or fresh vegetables, have been observed to carry pathogens and should be washed between uses [^8].
+
+
+[^1]: Boone, L., Préat, N., Nhu, T. T., Fiordelisi, F., Guillard, V., Blanckaert, M., Dewulf, J. ["Environmental performance of plastic food packaging: Life cycle assessment extended with costs on marine ecosystem services"](https://www.sciencedirect.com/science/article/pii/S0048969723034046). Science of The Total Environment **894**: 164781. October 2023.
+
+[^2]: Manfredi, M., Fantin, V., Vignali, G., Gavara, R. ["Environmental assessment of antimicrobial coatings for packaged fresh milk"](https://www.sciencedirect.com/science/article/abs/pii/S0959652615001614). Journal of Cleaner Production **95**, pp. 291-300. May 2015.
+
+[^3]: Wohner, B., Pauer, E., Heinrich, V., Tacker, M. ["Packaging-related food losses and waste: an overview of drivers and issues"](https://www.mdpi.com/2071-1050/11/1/264). Sustainability **11**(1): 264. January 2019.
+
+[^4]: Manalili, N.M., Dorado, M.A., van Otterdijk, R. ["Appropriate Food Packaging Solutions for Developing Countries"](https://www.fao.org/sustainable-food-value-chains/library/details/en/c/266351/). Food and Agriculture Organization of the United Nations: Rome, Italy, 2014.
+
+[^5]: Edwards, C., Fry, J. M. ["Life cycle assessment of supermarket carrier bags: a review of the bags available in 2006"](https://www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006). UK Environment Agency. February 2011.
+
+[^6]: Ministry of Environment and Food in Denmark. ["Life Cycle Assessment of grocery carrier bags"](https://www2.mst.dk/Udgiv/publications/2018/02/978-87-93614-73-4.pdf). February 2018.
+
+[^7]: Kimmel, R. M. ["Life Cycle Assessment of Grocery Bags in Common Use in the United States"](https://tigerprints.clemson.edu/cgi/viewcontent.cgi?article=1006&context=cudp_environment). Clemson University Digital Press. 2014.
+
+[^8]: Barbosa, J., Albano, H., Silva, C.P., Teixeira, P. ["Microbiological contamination of reusable plastic bags for food transportation"](https://www.sciencedirect.com/science/article/abs/pii/S0956713518306418). Food Control **99**, pp. 158-163. May 2019.
+
+[^9]: Geyer, R., Jambeck, J.R., Law, K.L. ["Production, use, and fate of all plastics ever made"](https://www.science.org/doi/10.1126/sciadv.1700782). Science advances **3**(7): e1700782. July 2017.
+
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

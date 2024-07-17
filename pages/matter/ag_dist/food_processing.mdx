@@ -14,174 +14,62 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 
-# Processing and Packaging
+# Processing
 
-## Packaging
+Some degree of food processing is necessary to extend shelf life, prevent spoilage, to kill harmful pathogens [^15], and for palatability [^16]. Food process can broadly be divided into three levels.
 
-Packaging requires a significant, though not the largest share, of the environmental impact of food. Following is an analysis of packaged falafel in the Netherlands, presented as a representative portrayal of food impacts.
+| Processing | Examples |
+| --- | --- |
+| Primary | Livestock butchering, grinding wheat into flour [^9], milling [^10], jerky [^11] |
+| Secondary | Fermenting, drying, salting, smoking, canning [^9], bread baking [^10], batter, grape juice, hot dogs [^11] |
+| Tertiary | Ready-to-eat meals [^9], canned soup, frozen dinners [^10], corn chips, frozen pizza, bundled snacks [^11] |
 
-<DynamicSolutionGraphic
-  barChartTitle={"Lifecycle Emissions by Stage, Falafel in the Netherlands"}
-  barChartTitle2={""}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={""}
-  arrowText2={""}
-  arrowText3={""}
-  arrowText4={""}
-  mastheadText3={"MG July 9, 2024"}
- staticData={[
-    {
-     name: "Ingredients",
-      barlength: 1088.9,
-      displayedValue: "1089 gCO2/kg",
-      site: "null",
-    },
-    {
-      name: "Processing and Packaging",
-      barlength: 425.2,
-      displayedValue: "425 gCO2/kg",
-      site: "null",
-    },
-	{
-		name: "Distribution and Retail",
-		barlength: 331.9,
-		displayedValue: "332 gCO2/kg",
-		site: "null",
-	},
-	{
-		name: "Consumer",
-		barlength: 406.9,
-		displayedValue: "407 gCO2/kg",
-		site: "null",
-	},
-	{
-		"name":"End of Life",
-		barlength: 7.5,
-		displayedValue:"8 gCO2/kg",
-		site:"null"
-	}
-  ]}
-/>
+In 2009, Carlos Monteiro proposed the four-level Nova classification of food processing [^12].
 
-#### Emissions are assessed on the basis of 1 kilogram of edible falafel. "Processing and Packaging" includes emissions in both the manufacture of the packaging and in the food packaging process. "End of Life" includes end-of-life treatment for both the packaging and any food waste. Source: Boone et al. [^1].
+| Processing | Examples |
+| --- | --- |
+| Unprocessed / Minimally Processed | Fresh or dried fruit, fresh or pastueurized milk, culinary herbs and spices [^13] |
+| Processed Culinary Ingredients | Vegetable oil, iodized salt [^13] |
+| Processed Foods | Fruit in syrup, canned or bottled vegetables in brine [^13] |
+| Ultra-Processed Foods | Carbonated soda, ready-to-eat frozen meals [^13] |
 
-The same study examines overall impacts.
+There is not a universally agreed-upon definition of "ultra-processed foods", and while more highly processed foods tend to be higher in sodium, sugar, and fat, the level of processing is a highly imperfect proxy for a food's healthiness [^14].
 
-<DynamicSolutionGraphic
-  barChartTitle={"Lifecycle Impacts by Stage, Falafel in the Netherlands"}
-  barChartTitle2={""}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={""}
-  arrowText2={""}
-  arrowText3={""}
-  arrowText4={""}
-  mastheadText3={"MG July 9, 2024"}
- staticData={[
-    {
-     name: "Ingredients",
-      barlength: 371.4,
-      displayedValue: "371 μPt/kg",
-      site: "null",
-    },
-    {
-      name: "Processing and Packaging",
-      barlength: 51.8,
-      displayedValue: "52 μPt/kg",
-      site: "null",
-    },
-	{
-		name: "Distribution and Retail",
-		barlength: 24.5,
-		displayedValue: "25 μPt/kg",
-		site: "null",
-	},
-	{
-		name: "Consumer",
-		barlength: 33.2,
-		displayedValue: "33 μPt/kg",
-		site: "null",
-	},
-	{
-		"name":"End of Life",
-		barlength: 0,
-		displayedValue:"-1 μPt/kg",
-		site:"null"
-	}
-  ]}
-/>
-#### Source: Many impacts are aggregated into a single unit, called "points". Negative end-of-life impacts are possible due to resource recovery from recycling. Source: Boone et al. [^1].
-
-Packaging plays an important role in protecting and prolonging the shelf life of food, thereby reducing [food waste](/matter/ag_dist/food_waste), though this role is not usually well-quantified [^3]. In low-income countries especially, appropriate packaging will reduce food waste at most stages of production [^4]. For example, a benficial lifecycle assessment has been found for anti-microbial coatings for milk containers, with the benefits of shelf life extension and waste reduction outweighing the cost of the coatings themselves [^2].
-
-### Reusable Bags
-
-Due to the environmental impacts of single-use plastics, especially oceanic plastic pollution, replacing disposable, single-use grocery plastic bags with reusable bags is of interest. A 2011 United Kingdom study [^5] found the following number of reuses required for bags so that they have lesser greenhouse gas impacts than single-use plastic bags.
-
-<DynamicSolutionGraphic
-  barChartTitle={"Bag Reuses to Achieve Greenhouse Gas Reductions"}
-  barChartTitle2={""}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={""}
-  arrowText2={""}
-  arrowText3={""}
-  arrowText4={""}
-  mastheadText3={"MG July 14, 2024"}
- staticData={[
-    {
-     name: "Paper",
-      barlength: 3,
-      displayedValue: "3",
-      site: "null",
-    },
-    {
-      name: "LDPE Plastic",
-      barlength: 4,
-      displayedValue: "4",
-      site: "null",
-    },
-	{
-		name: "Non-Woven PP Plastic",
-		barlength: 11,
-		displayedValue: "11",
-		site: "null",
-	},
-	{
-		"name":"Cotton",
-		barlength: 131,
-		displayedValue:"131",
-		site:"null"
-	}
-  ]}
-/>
-
-The study assumes that single-use bags are used once and not repurposed for other uses such as garbage liners. If these assumptions are false, then the number of required reuses for reusable bags increases.
-
-A 2018 Danish study [^6] found greater reuses required when considering several impacts, rather than just greenhouse gases: ozone depletion, human toxicity, particulate matter, ionizing radiation, ground-level ozone, particulate matter, acidification, and eutrophication. The study also found that organic cotton bags had greater overall impacts than non-organic cotton bags.
-
-A 2014 study in the United States [^7] found that non-woven polypropolene bags should be resued 21-34 times to have lesser overall environmental than single-use plastic, depending on whether secondary uses of the single-use bags are considered. The study notes that reusable bag ordinances in Los Angeles and San Francisco require that the bags can be used at least 125 times.
-
-<FoodWasteSellLooseUS />
+| Nutrient | Recommended Daily Intake | Actual Daily Intake for American adults |
+| --- | --- | --- |
+| Sodium | No more than 2300 millgrams, ideally 1500 or less [^17] | 3400 milligrams [^18] |
+| Sugar | For men, 150 calories, and for women, 100 calories [^19] | 270 calories [^20] |
+| Trans Fat | 0 [^21] | 5.6 grams [^22] |
 
 
-[^1]: Boone, L., Préat, N., Nhu, T. T., Fiordelisi, F., Guillard, V., Blanckaert, M., Dewulf, J. ["Environmental performance of plastic food packaging: Life cycle assessment extended with costs on marine ecosystem services"](https://www.sciencedirect.com/science/article/pii/S0048969723034046). Science of The Total Environment **894**: 164781. October 2023.
 
-[^2]: Manfredi, M., Fantin, V., Vignali, G., Gavara, R. ["Environmental assessment of antimicrobial coatings for packaged fresh milk"](https://www.sciencedirect.com/science/article/abs/pii/S0959652615001614). Journal of Cleaner Production **95**, pp. 291-300. May 2015.
+[^9]: Institute of Food Science + Technology. ["IFST Food Processing Knowledge Hub"](https://www.ifst.org/knowledge-hubs/food-processing). Accessed July 16, 2024.
 
-[^3]: Wohner, B., Pauer, E., Heinrich, V., Tacker, M. ["Packaging-related food losses and waste: an overview of drivers and issues"](https://www.mdpi.com/2071-1050/11/1/264). Sustainability **11**(1): 264. January 2019.
+[^10]: Bulk inside. ["Food processing"](https://bulkinside.com/food-processing/). Accessed July 16, 2024.
 
-[^4]: Manalili, N.M., Dorado, M.A., van Otterdijk, R. ["Appropriate Food Packaging Solutions for Developing Countries"](https://www.fao.org/sustainable-food-value-chains/library/details/en/c/266351/). Food and Agriculture Organization of the United Nations: Rome, Italy, 2014.
+[^11]: Food Research Lab. ["Various types and methods involved in food processing"](https://www.foodresearchlab.com/blog/new-food-product-development/various-types-and-methods-involved-in-food-processing/). Accessed July 16, 2024.
 
-[^5]: Edwards, C., Fry, J. M. ["Life cycle assessment of supermarket carrier bags: a review of the bags available in 2006"](https://www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006). UK Environment Agency. February 2011.
+[^12]: Monteiro, C.A. ["Nutrition and health. The issue is not food, nor nutrients, so much as processing."](https://www.cambridge.org/core/journals/public-health-nutrition/article/nutrition-and-health-the-issue-is-not-food-nor-nutrients-so-much-as-processing/0C514FC9DB264538F83D5D34A81BB10A). Public health nutrition **12**(5), pp. 729-731. May 2009.
 
-[^6]: Ministry of Environment and Food in Denmark. ["Life Cycle Assessment of grocery carrier bags"](https://www2.mst.dk/Udgiv/publications/2018/02/978-87-93614-73-4.pdf). February 2018.
+[^13]: Monteiro, C.A., Cannon, G., Levy, R.B., Moubarac, J.C., Louzada, M.L., Rauber, F., Khandpur, N., Cediel, G., Neri, D., Martinez-Steele. E., Baraldi, L.G. ["Ultra-processed foods: what they are and how to identify them"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10260459/). Public health nutrition **22**(5), pp. 936-941. April 2019.
 
-[^7]: Kimmel, R. M. ["Life Cycle Assessment of Grocery Bags in Common Use in the United States"](https://tigerprints.clemson.edu/cgi/viewcontent.cgi?article=1006&context=cudp_environment). Clemson University Digital Press. 2014.
+[^14]: British Nutrition Foundation. ["British Nutrition Foundation position statement on the concept of ultra-processed foods (UPF)"](https://www.nutrition.org.uk/news/position-statement-on-the-concept-of-ultra-processed-foods-upf/). May 2024.
+
+[^15]: Institute of Food Science + Technology. ["Food Preservation"](https://www.ifst.org/sites/default/files/IFST%20Food%20Preservation%20Fact%20Sheet.pdf). Accessed July 16, 2024.
+
+[^16]: Lauden, R. ["In Praise of Fast Food"](https://www.utne.com/Environment/Fast-Food-Culinary-Ethos). Excerpted from *The Gastronomica Reader*, Utne Reader. August 2010.
+
+[^17]: American Heart Association. ["Shaking the Salt Habit to Lower High Blood Pressure"](https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/shaking-the-salt-habit-to-lower-high-blood-pressure). May 2024.
+
+[^18]: U.S. Food and Drug Administration. ["Sodium in Your Diet"](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet). March 2024.
+
+[^19]: American Heart Association. ["How Much Sugar Is Too Much?"](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much). May 2024.
+
+[^20]: T.H. Chan School of Public Health. ["Added Sugar"](https://nutritionsource.hsph.harvard.edu/carbohydrates/added-sugar-in-the-diet/). Harvard University. April 2022.
+
+[^21]: Jones, K. B. ["Trans Fats (Bad Fats)"](https://familydoctor.org/trans-fats/). Family Doctor. August 2023.
+
+[^22]: Monical, A. ["What Are Trans Fats?"](https://www.nwhealth-services.org/what-are-trans-fats/). Northwest Health Services. May 2018.
 
 
 export default ({ children }) => 
