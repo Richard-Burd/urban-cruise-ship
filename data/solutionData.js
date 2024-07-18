@@ -1178,6 +1178,18 @@ export const solutionData = [
     sources: null,
     subset: "public-health-projects",
   },
+  
+  {
+    solution: `Dimethyl Ether for trucks - U.S.`,
+    link: `energy/energy_distribution/methanol`,
+    site: `energy`,
+    cost: 0.31192081836538864,
+    benefit: 0.5400399451661034,
+    co2: 1.5095921274494235,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  }
 
 ];
 
