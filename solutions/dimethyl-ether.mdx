@@ -3,34 +3,75 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Emissions From Diesel";
 export const solution = "Dimethyl Ether";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 ## Description
 We recommend converting fleets of trucks from diesel to dimethyl ether (DME).
 
+<DynamicSolutionGraphic
+  barChartTitle={"Dimethyl Ether For Trucking in the U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"1.5 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"MG July 17, 2024"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Cost",
+      barlength: 311.92081836538864,
+      displayedValue: "$310 million",
+      site: "null",
+    },
+         {
+      name: "Benefit",
+      barlength: 540.0399451661034,
+      displayedValue: "$540 million",
+      site: "null",
+    },
+       
+  ]}
+/>
+
 ## Background
-Methanol can be easily refined to form dimethyl ether, a fuel that is an effective substitute for diesel. DME can also be made from biostock including “black liquor” which is organic refuse produced by the forestry industry[^"9"]. Black liquor is produced as a waste stream from the pulping process thus no foodstocks or farmable acreage is used[^"9"].
 
-Compared to diesel, DME has vastly superior cold starting, is smokeless, quieter combustion, no fuel waxing in cold climates to clog fuel lines, low NOx emissions, requires lower injection pressure in the fuel system, lower well-to-wheel greenhouse gas emissions, and is potentially a CO2 absorber in its production[^"8"]. Because DME fuel produces no soot or smoke, the reduction in air pollution would reduce healthcare costs and increase quality of life[^"10"].
+Dimethyl ether, refined from methanol, substitutes for diesel. The predominant feedstock for DME in the United States is natural gas, and others include coal, biomass [^"21"], and electrolysis [^"20"]. A potential biostock is black liquor, a waste stream from pulping without dedicated foodstocks or farmable acreage [^"9"].
 
-Conversion of a diesel engine to DME does not require modifications to diesel engine internal structures or components, however it does require major modifications to the fuel system[^"8"]. The main challenge in developing engine fuel systems for DME are associated with its low boiling temperature of -24°C and its low critical temperature of 127°C[^"8"]. This can make retrofitting complicated and expensive, so our recommendation is to replace old fleets with new ones specifically designed to run on DME.
+The air pollution advantages of DME, compared to diesel, include superior cold starting, smokelessness, quieter combustion, no fuel waxing in cold climates to clog fuel lines, low NOx emissions, lowerer injection pressure, lower well-to-wheel greenhouse gas emissions, and is potentially a CO<sub>2</sub> absorber [^"8"]. Compared to diesel, DME reduces tailpipe exhaust greenhouse gas emissions by around 11% and well-to-wheel emissions by 70-95%, depending on feedstock [^"9"], [^"10"].
 
-The physical properties of DME are very similar to propane, so the distribution and dispensing infrastructure is assumed to be similar. As long as the fleet is using a steady amount of DME, the supplier will install the refueling infrastructure for the fleet, usually with no extra charge[^"8"]. DME has consistent fueling with no “short-fills” caused by pressure loss and can be stored in the hot sun with no boiling off or venting[^"11"].
 
 ## Calculations
-While DME reduces tailpipe exhaust GHG by around 11%, the total well-to-wheel reduction is around 70-95% depending on the feedstock used[^"9"], [^"10"].
 
-With DME’s cost per diesel equivalent and the cost of the DME truck being competitive or even cheaper than a diesel truck[^"11"], there is very little to no cost in switching fleets over from diesel to DME. The main concern is the fueling infrastructure as the trucks will need to return to the fleet hub for refueling.
+Our cost estimates are based on the cost of manufacturing DME, specifically from sewer sludge [^"12"]. While we do not expect that sewer sludge is sufficient to provide enough DME for all trucking needs, we take these cost estimates as representative. Benefits are based on a replaced diesel price of $3 per gallon, a recent typical price [^"13"]. Greenhouse gas savings estimates are computed based on standard estimates of the greenhouse gas intensity of diesel [^"14"], while no net emissions are modeled for bio-DME [^"15"].
+
+We model about 2.7 trillion ton-miles of freight shipped by truck each year in the United States as of 2022 [^"16"], of which 76% are carried by diesel trucks [^"17"].
+
+Dimethyl ether refined from electrolyzed methanol would yield similar greenhouse gas savings [^"20"] and avoid the feedstock limitations and land use requirements of biofuels, but at present, electrolyzed DME is prohibitively expensive [^"18"].
+
+There is considerable uncertainty in our calculations regarding the cost and greenhouse gas intensity of bio-DME. We have also not quantified costs of retrofitting trucks to use DME, the necessary fueling infrastructure, and air pollution benefits of DME [^"19"].
 
 
 ## Implementation
-DME can also be an effective substitute for other diesel applications, such as shipping [^"1"]. DME has replaced CFC gases (freons) as an environmentally friendly and safe aerosol propellant, can be blended with propane for use in spark-ignited LPG engines, and in the future could be a source of hydrogen for fuel cells[^"7"]. As of 2008, China had 9 million tons of installed DME capacity annually[^"7"].
 
-While initial capital expenditures may be high, the operating cost of DME vehicles is lower due to reduced fuel costs and lower maintenance requirements[^"10"]. Wider adoption of DME vehicles will lead to job creation in DME production and distribution[^"10"].
+Conversion of a diesel engine to DME does not require modifications to internal structures or components, but it does require major modifications to the fuel system [^"8"]. We therefore expect DME introduction will occur through fleet turnover rather than engine retrofits. The distribution and dispensing infrastructure is expected to be similar to that of propane. As long as the fleet is using a steady amount of DME, the supplier will install the refueling infrastructure for the fleet, usually with no extra charge [^"8"]. DME has consistent fueling with no "short-fills" caused by pressure loss and can be stored in the hot sun with no boiling off or venting [^"11"].
 
-DME has about half the energy content of diesel fuel, so a truck would need twice the amount of fueling tanks to keep the same range[^"11"]. This extra fuel would make the trucks heavier and initially it may be advantageous to keep DME trucks on shorter routes[^"11"].
+Beyond trucking applications, DMB is an alternative fuel for shipping [^"1"], a replacement for CFC gases (freons) as an aerosol propellant, can be blended with propane for use in spark-ignited LPG engines, and may be a hydrogen source for fuel cells [^"7"]. As of 2008, China had nine million tons of installed annual DME capacity [^"7"].
 
-##### Lead researcher: Lee Nelson - Last updated: 7/15/2024
+Due to lower energy density, a truck would need twice the fueling tank capacity for a given range [^"11"], increasing weight and perhaps rendering DME trucks optimal for short routes. This effect is not modeled in our calculations.
 
-[^"1"]: Al-Breiki, M., Bicer, Y. ["Comparative life cycle assessment of sustainable energy carriers including production, storage, overseas transport and utilization"](https://www.sciencedirect.com/science/article/pii/S0959652620335265). Journal of Cleaner Production 279: 123481. January 2021.
+##### Lead researcher: Lee Nelson - Last updated: July 15, 2024.
+
+[^"1"]: Al-Breiki, M., Bicer, Y. ["Comparative life cycle assessment of sustainable energy carriers including production, storage, overseas transport and utilization"](https://www.sciencedirect.com/science/article/pii/S0959652620335265). Journal of Cleaner Production **279**: 123481. January 2021.
 
 [^"2"]: Mevawala, C., Jiang, Y., Bhattacharyya, D. ["Techno-economic optimization of shale gas to dimethyl ether production processes via direct and indirect synthesis routes"](https://www.sciencedirect.com/science/article/abs/pii/S0306261919300455). Applied Energy 238, pp. 119-134. March 2019.
 
@@ -42,15 +83,35 @@ DME has about half the energy content of diesel fuel, so a truck would need twic
 
 [^"6"]: U.S. Environmental Protection Agency. ["Lifecycle Greenhouse Gas Results"](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/lifecycle-greenhouse-gas-results). Accessed June 11, 2019.
 
-[^"7"]: Majewski, W. A. [“Dimethyl Ether”]( https://dieselnet.com/tech/fuel_dme.php) DieselNet Technology Guide, September 2017
+[^"7"]: Majewski, W. A. ["Dimethyl Ether"]( https://dieselnet.com/tech/fuel_dme.php) DieselNet Technology Guide, September 2017.
 
-[^"8"]: Kittleson, D. et al. [“Fuel of the Future – DME”](https://merl.umn.edu/cdr/dme) Center for Transportation Studies, University of Minnesota, August 2010
+[^"8"]: Kittleson, D. et al. ["Fuel of the Future – DME"](https://merl.umn.edu/cdr/dme) Center for Transportation Studies, University of Minnesota, August 2010.
 
-[^"9"]: Kilcarr, S. [“DME rebounding as alternative to diesel for trucks and cars”](https://www.fleetowner.com/emissions-efficiency/article/21675385/dme-rebounding-as-alternative-to-diesel-for-trucks-and-cars) Fleet Owner: Emissions and Efficiency, September 2009
+[^"9"]: Kilcarr, S. ["DME rebounding as alternative to diesel for trucks and cars"](https://www.fleetowner.com/emissions-efficiency/article/21675385/dme-rebounding-as-alternative-to-diesel-for-trucks-and-cars) Fleet Owner: Emissions and Efficiency, September 2009.
 
-[^"10"]: FleetWiki [“Dimethyl Ether Vehicles”](https://leangreenfleet.com/fleetwiki_topic.asp?toptopic_id=7&topic_id=122&subtopic_id=268) FleetWiki, Accessed July 2024
+[^"10"]: FleetWiki. ["Dimethyl Ether Vehicles"](https://leangreenfleet.com/fleetwiki_topic.asp?toptopic_id=7&topic_id=122&subtopic_id=268) FleetWiki, Accessed July 2024.
 
-[^"11"]: Berg, T. [“Volvo Thinks the Fuel of the Future is DME – and It’s Almost Here”](https://www.truckinginfo.com/152918/volvo-thinks-the-fuel-of-the-future-is-dme-and-its-almost-here) Fuel Smarts, June 2013
+[^"11"]: Berg, T. ["Volvo Thinks the Fuel of the Future is DME – and It’s Almost Here"](https://www.truckinginfo.com/152918/volvo-thinks-the-fuel-of-the-future-is-dme-and-its-almost-here) Fuel Smarts, June 2013.
+
+[^"12"]: Negri, F., Nova, A., Basso, D., Manenti, F. ["Techno-Economic Analysis of Dimethyl Ether Biofuel Production Plant Based on Sewage Sludge Gasification"](https://www.cetjournal.it/index.php/cet/article/view/12738). Chemical Engineering Transactions **94**, pp. 1087-1092. September 2022.
+
+[^"13"]: U.S. Energy Information Administration. ["Petroleum and Other Liquids"](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=ema_epd2d_pwg_nus_dpg&f=m). U.S. Department of Energy. Accessed July 17, 2024.
+
+[^"14"]: U.S. Environmental Protection Agency. ["Lifecycle Greenhouse Gas Results"](https://www.epa.gov/fuels-registration-reporting-and-compliance-help/lifecycle-greenhouse-gas-results). February 2024.
+
+[^"15"]: Kim, T., Boehman, A. L. ["Life-Cycle Greenhouse Gas Emissions Assessment of Novel Dimethyl Ether–Glycerol Blends for Compression-Ignition Engine Application"](https://pubs.acs.org/doi/pdf/10.1021/acssuschemeng.1c03783). ACS Sustainable Chemistry & Engineering **9**(39), pp. 13196-13205. September 2021.
+
+[^"16"]: Bureau of Transportation Statistics. ["U.S. Ton-Miles of Freight"](https://www.bts.gov/content/us-ton-miles-freight). United States Department of Transportation. Accessed July 17, 2024.
+
+[^"17"]: Mayer, M. ["76% of Commercial Trucks Run on Diesel"](https://www.foodlogistics.com/transportation/trucking/news/22327396/diesel-technology-forum-76-of-commercial-trucks-run-on-diesel). Food Logistics. July 2022.
+
+[^"18"]: Michailos, S., McCord, S., Sick, V., Stokes, G., Styring, P. ["Dimethyl ether synthesis via captured CO2 hydrogenation within the power to liquids concept: A techno-economic assessment"](https://www.sciencedirect.com/science/article/abs/pii/S0196890419300925). Energy Conversion and Management **184**, pp. 262-276. March 2019.
+
+[^"19"]: Soltic, P., Hilfiker, T., Wright, Y., Hardy, G., Fröhlich, B., Klein, D. ["The potential of dimethyl ether (DME) to meet current and future emissions standards in heavy-duty compression-ignition engines"](https://www.sciencedirect.com/science/article/pii/S0016236123019713). Fuel **355**: 129357. January 2024.
+
+[^"20"]: Styring, P., Sanderson, P.W., Gell, I., Skorikova, G., Sánchez-Martínez, C., Garcia-Garcia, G., Sluijter, S.N. ["Carbon footprint of Power-to-X derived dimethyl ether using the sorption enhanced DME synthesis process"](https://www.frontiersin.org/journals/sustainability/articles/10.3389/frsus.2022.1057190/full). Frontiers in Sustainability **3**: 1057190. November 2022.
+
+[^"21"]: Alternative Fuels Data Center. ["Dimethyl Ether"](https://afdc.energy.gov/fuels/emerging-dme). U.S. Department of Energy. Accessed July 17, 2024.
 
 
 export default ({ children }) => 
