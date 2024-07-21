@@ -1036,6 +1036,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Radon Testing for Low-Income Households - U.S.`,
+    link: `/habitat/environment/chemical_socio`,
+    site: `habitat`,
+    cost: 1.08,
+    benefit: 16.4,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "public-health-campaigns",
+  },
+
+  {
     solution: `Increase Plastic Tax - U.K.`,
     link: `/waste/waste_economics/recycle_demand#increase-plastic-tax-uk`,
     site: `waste`,
