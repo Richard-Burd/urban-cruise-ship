@@ -10,15 +10,15 @@ export const problem = "Energy and Pollution From Cars";
 export const solution = "Higher CAFE Standards";
 
 ## Description
-We recommend the United States government proceed with the implementation of increased Corporate Average Fuel Economy (CAFE) standards, as proposed by the U.S. National Highway Traffic Safety Administration (NHTSA).
+We recommend that the United States government increase Corporate Average Fuel Economy (CAFE) standards, as proposed by the U.S. National Highway Traffic Safety Administration (NHTSA).
 
 <DynamicSolutionGraphic
-  barChartTitle={"Higher CAFÉ Standards – U.S."}
+  barChartTitle={"Higher CAFE Standards – U.S."}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
-  arrowText1={"1.86 million"}
+  arrowText1={"45 million"}
   arrowText2={"tons of CO₂e"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
@@ -26,14 +26,14 @@ We recommend the United States government proceed with the implementation of inc
  staticData={[
     {
      name: "Benefit",
-      barlength: 14.14,
-      displayedValue: "$14.14",
+      barlength: 23.313973,
+      displayedValue: "$23 billion/year",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: 12.58,
-      displayedValue: "$12.58 Billion USD/year",
+      barlength: 15.050492,
+      displayedValue: "$15 billion/year",
       site: "null",
     },
   ]}
@@ -41,10 +41,13 @@ We recommend the United States government proceed with the implementation of inc
 
 
 ## Background
-The U.S. National Highway Traffic Safety Administration (NHTSA) has proposed increasing efficiency requirements incrementally from the 2027 through 2032 model years. This plan involves a 2% annual increase for passenger cars and a 4% annual increase for light trucks. Additionally, there is a proposal for a 10% annual increase for heavy-duty trucks and vans from 2030 to 2035. [^"1"]
+
+Congress established the first CAFE standards in 1975, in response to the first oil crisis, and standards were increased under the Energy Independence and Security Act of 2007 [^"10"]. Lasting improvements to fuel economy and fuel-saving technological innovation have been directly attributed to the standards [^"15"]. Retrospective studies have found substantial net present benefits to the CAFE program [^"16"].
+
+NHTSA has proposed increasing efficiency requirements by 2% annually for passenger cars and 4% annually for light trucks for each model year from 2027 through 2032, as well as a 10% annual increase in standards for heavy-duty trucks and vans from 2030 to 2035 [^"1"].
 
 <DynamicSolutionGraphic
-  barChartTitle={"Higher CAFE Standards"}
+  barChartTitle={"Higher CAFE Standards - Per-Vehicle Analysis"}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
@@ -58,51 +61,75 @@ The U.S. National Highway Traffic Safety Administration (NHTSA) has proposed inc
   
   staticData={[   
      {
-      name: "Total Fuel Savings (per Vehicle)",
+      name: "Fuel Savings",
       barlength: 1043,
-      displayedValue: "$1,043 USD",
+      displayedValue: "$1043",
       site: "null",
     },
     {
-      name: "Increased Cost of Vehicle",
+      name: "Manufacturing Cost",
       barlength: 932,
       displayedValue: "$932",
       site: "null",
     },
   ]}
 />
-#### Source [^"1"]
-
-Additional benefits include:
-
-- Emission Reductions: Improved fuel efficiency directly correlates with decreased CO₂ emissions from vehicles, contributing to environmental sustainability.  [^"1"]
-
-- Innovation Stimulation: Historically, stricter CAFE standards have driven technological advancements in the automotive industry. [^"4"]
+#### Per-vehicle costs are based on increased manufacturing costs to comply with higher CAFE standards, while benefits are based on fuel savings. All figures are calculated at a 3% discount rate, and environmental benefits are not included. A positive net present value is expected with a 7% discount rate as well. Source: NHSTA [^"1"].
 
 ## Calculations
-Using an average of 13.5 million new vehicles sold annually[^"6"], we calculate an annual cost of 12.58 billion. Total fuel savings is calculated to 14.08 billion. The average driver in the U.S. drove 13,596 miles in 2022[^"7"]. Also in 2022, new vehicles averaged 337g per mile of CO₂ emissions[^"8"]. With the 3% reduction from the CAFÉ standards that would be 1.86 million tons of CO₂ reduced annually. With a social cost valued at $141.4 per ton that adds $263 million in annual benefits.
+
+We estimate costs and benefits for passenger vehicles by applying the per-vehicle figures above to 16 million vehicles sold annually; this is the number that were sold from July 2023 to June 2024 [^"6"]. The report estimates that 900 million tons of CO<sub>2</sub> will be saved over 20 years as a result of the rule, which we apply with a valuation of $141 per ton. The report further estimates $2.1 billion in costs and $4.3 billion in benefits for the truck and van portion of the rule at a 3% discount rate.
+
+Historically, stricter CAFE standards have driven technological advancements in the automotive industry [^"4"], though this possible effect is not modeled here.
+
+Consumer Reports argues that the rule underestimates net present benefits by failing to fully account for the use of hybrid cars and supports a more stringent ultimate standard of 65-68 miles per gallon [^"9"].
+
+Given positive net present benefits found for higher CAFE standards, it is unclear why consumers do not voluntary choose more efficient vehicles absent regulation. There is evidence that consumers are rationally responsive to gasoline prices in choosing the efficiency for new car purchases [^"12"]. Unquantified in the NHTSA study is consumer preferences for vehicle speed, power, and size [^"11"], and these considerations might explain purchase behavior.
 
 ## Implementation
 
-A Cornell University study predicted that automobile companies would be able to meet the high 2025 fuel economy target by making medium downsizing in cars and minor downsizing in light-duty trucks. [^"4"]
+Wang assesses that meeting the higher standards will entail downsizing in passenger cars and light trucks [^"4"]. Two reforms to the CAFE program are to end the differential treatment of passenger cars and light trucks, further discussed below, and to end the differential treatment of domestic and foreign automakers [^"13"].
 
-##### Lead researchers: jye and Lee Nelson - Last updated July 17 2024
+A rebound effect from higher CAFE efficiency has been found. Estimates of the magnitude of this effect range from zero to 40%, with an average of 8.1% for those studies based on odometer readings [^"17"]. Given additional externalities to driving, such as traffic congestion, safety, and air pollution, CAFE standards are not suitable as a full substitute for fuel taxes or some other kind of pricing [^"14"].
 
-[^"1"]:  [USDOT Proposes Updated Fuel Economy Standards to Strengthen Energy Security, Save Americans Hundreds of Dollars at the Gas Pump | NHTSA](https://www.nhtsa.gov/press-releases/usdot-proposal-updated-cafe-hdpuv-standards).
+##### Lead researchers: jye and Lee Nelson - Last updated July 17, 2024
+
+[^"1"]: National Highway Traffic Safety Administration. ["Corporate Average Fuel Economy Standards for Passenger Cars and Light Trucks for Model Years 2027-2032 and Fuel Efficiency Standards for Heavy-Duty Pickup Trucks and Vans for Model Years 2030-2035"](https://www.federalregister.gov/documents/2023/08/17/2023-16515/corporate-average-fuel-economy-standards-for-passenger-cars-and-light-trucks-for-model-years). Federal Register. August 2023.
 
 [^"2"]:  [US proposes raising vehicle fuel economy standards to 58 miles per gallon by 2032 | Reuters](https://www.reuters.com/business/autos-transportation/us-proposes-hike-vehicle-fuel-economy-standards-58-mpg-by-2032-2023-07-28/). 
 
 [^"3"]:  [https://www.semanticscholar.org/paper/The-Economics-of-Fuel-Economy-Standards-Portney-Parry/434a6718b5de577c9ed910331509e97ffd71c54b](https://www.semanticscholar.org/paper/The-Economics-of-Fuel-Economy-Standards-Portney-Parry/434a6718b5de577c9ed910331509e97ffd71c54b).
 
-[^"4"]:  [Wang Y. ](https://www.semanticscholar.org/paper/ESSAYS-ON-REGULATION-AND-ITS-IMPACT-ON-INDUSTRY-AND-Wang/f5aeab56377c9878a645cc746b6d8ab5b1dcd5e8). Cornell University Library.2017.
+[^"4"]: Wang, Y. [Essays on Regulation and its Impact on Industry and Taxation: Studies on CAFE Standards](https://www.semanticscholar.org/paper/ESSAYS-ON-REGULATION-AND-ITS-IMPACT-ON-INDUSTRY-AND-Wang/f5aeab56377c9878a645cc746b6d8ab5b1dcd5e8). Cornell University. January 2017.
 
 [^"5"]:  [https://www.nhtsa.gov/sites/nhtsa.gov/files/2023-07/CAFE-2027-2032-HDPUV-2030-2035-NPRM-web-version.pdf](https://www.nhtsa.gov/sites/nhtsa.gov/files/2023-07/CAFE-2027-2032-HDPUV-2030-2035-NPRM-web-version.pdf).
 
-[^"6"]:  Moody’s Analytics [“United States - New Vehicle Sales: Total”](https://www.economy.com/united-states/new-vehicle-sales-total/seasonally-adjusted) Economic Indicators: U.S. Bureau of Economic Analysis, June 2024
+[^"6"]:  Moody’s Analytics. ["United States - New Vehicle Sales: Total"](https://www.economy.com/united-states/new-vehicle-sales-total/seasonally-adjusted). Economic Indicators: U.S. Bureau of Economic Analysis. Accessed July 20, 2024.
 
 [^"7"]:  Focareta, D, and Schmitt, K. [“How many miles does the average person drive a year? 2024”](https://www.consumeraffairs.com/automotive/how-many-miles-does-the-average-person-drive-a-year.html) Consumer Affairs, April 2024
 
 [^"8"]:  U.S. EPA [“EPA Automotive Trends Report 2023”](https://www.epa.gov/system/files/documents/2023-12/420s23002.pdf) U.S. EPA, December 2023
+
+[^"9"]: Consumer Reports. [Consumer Reports' Comments on NHTSA’s Proposed Rule "Corporate Average Fuel
+Economy Standards for Passenger Cars and Light Trucks for Model Years 2027–2032
+and Fuel Efficiency Standards for Heavy-Duty Pickup Trucks and Vans for Model Years
+2030–2035"](https://advocacy.consumerreports.org/wp-content/uploads/2023/10/CR-comments-on-NHTSA-CAFE-2027-2032.pdf). October 2023.
+
+[^"10"]: Union of Concerned Scientists. ["A Brief History of US Fuel Efficiency Standards"](https://www.ucsusa.org/resources/brief-history-us-fuel-efficiency). December 2017.
+
+[^"11"]: Morris, J. ["The Effect Of Corporate Average Fuel Economy Standards On Consumers"](https://reason.org/policy-brief/the-effect-of-corporate-average-fuel-economy-standards-on-consumers/). Reason Foundation. April 2018.
+
+[^"12"]: Busse, M. R., Knittel, C. R., Zettelmeyer, F. ["Are Consumers Myopic? Evidence from New and Used Car Purchases"](https://www.aeaweb.org/articles?id=10.1257/aer.103.1.220). American Economic Review **103**(1), pp. 220-256. February 2013.
+
+[^"13"]: Douglas, C. C. ["The Costs and Benefits of CAFE Standards"](https://www.mackinac.org/S2022-06). Mackinac Center for Public Policy. October 2022.
+
+[^"14"]: Gerard, D., Lave, L. ["The economics of CAFE reconsidered: a response to CAFE critics and a case for fuel economy standards"](https://www.researchgate.net/publication/46454372_The_Economics_of_CAFE_Reconsidered_A_Response_to_CAFE_Critics_and_A_Case_for_Fuel_Economy_Standards). AEI-Brookings Joint Center for Regulatory Studies, Regulatory Analysis. September 2003.
+
+[^"15"]: Wang, Y., Miao, Q. ["The impact of the corporate average fuel economy standards on technological changes in automobile fuel efficiency"](https://www.sciencedirect.com/science/article/abs/pii/S0928765520304206). Resource and Energy Economics **63**: 101211. February 2021.
+
+[^"16"]: Greene. D.L., Greenwald, J.M., Ciez, R.E. ["US fuel economy and greenhouse gas standards: What have they achieved and what have we learned?"](https://www.sciencedirect.com/science/article/abs/pii/S0301421520305048?dgcid=coauthor). Energy Policy **146**: 111783. November 2020.
+
+[^"17"]: Gillingham, K. ["The Rebound Effect of Fuel Economy Standards: Comment on the Safer Affordable Fuel-Efficient (SAFE) Vehicles Proposed Rule for Model Years 2021-2026 Passenger Cars and Light Trucks"](https://ww2.arb.ca.gov/resources/documents/rebound-effect-fuel-economy-standards-comment-safer-affordable-fuel-efficient). Yale University. October 2018.
 
 
 export default ({ children }) => 

@@ -52,3 +52,8 @@ fuel_savings = car_longevity * (1/current_fuel_economy - 1/target_fuel_economy) 
 ghg_savings = fuel_savings * 0.08887 # Per car basis, https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references
 annual_ghg_savings = ghg_savings * num_cars
 '''
+
+# Output as of July 20, 2024
+# Cost: $15.050492 billion
+# Benefit: $23.313973 billion
+# GHG Reduction: 45.35 million tons
