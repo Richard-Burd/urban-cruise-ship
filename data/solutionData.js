@@ -1132,6 +1132,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Solar Investment Tax Credit - U.S.`,
+    link: `/energy/energy_socioeconomics/policy_se`,
+    site: `energy`,
+    cost: .64,
+    benefit: .862,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
+
+  {
     solution: `Reforestation and Afforestation - World`,
     link: `/habitat/environment/geoengineering#reforestation-and-afforestation-world`,
     site: `habitat`,

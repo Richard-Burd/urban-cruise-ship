@@ -1,32 +1,73 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Need for Clean Electricity";
-export const solution = "Investment Tax Credit - U.S.";
+export const solution = "Solar Investment Tax Credit - U.S.";
 
 ## Description
-
 We recommend the  federal solar investment tax credit be extended.
+<DynamicSolutionGraphic
+  barChartTitle={"Solar Investment Tax Credit Extension – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 7-23-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: .862,
+      displayedValue: "$.862",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .64,
+      displayedValue: "$.64 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
 
 ## Background
-
-The Federal Solar Investment Tax Credit (ITC) has been pivotal in subsidizing investments in clean energy, offering a 30% reduction in the cost of solar installations[^"18"]. This tax credit is instrumental in promoting sustainable energy solutions, with broad implications for environmental and economic policies [^"1"]. 
-
+The Federal Solar Investment Tax Credit (ITC) has been pivotal in subsidizing investments in clean energy, offering a 30% reduction in the cost of solar installations[^"4"]. This tax credit is instrumental in promoting sustainable energy solutions, with broad implications for environmental and economic policies [^"1"]. 
 The Federal Solar ITC was introduced to lower the financial barriers to solar energy adoption. Over the years, this policy has significantly boosted the installation of solar systems across residential and commercial sectors in the U.S. The current benefits extend beyond environmental impacts, contributing to job creation and technological innovation in renewable energy sectors [^"3"]. Historical data suggest a substantial increase in solar capacity directly linked to this tax credit, which also aligns with federal emissions reduction targets [^"2"].
 
+## Calculations
+New solar installation was $2.12 billion in 2023[^"5"]. 30% covered by the Federal Solar ITC would be $.64 billion, this is counted as both a cost and a benefit.
+There is an estimated $9,000 in energy savings over the lifetime of new systems[^"6"]. With an expected lifetime of 25 years[^"7"], that would be an annual benefit of $360. In 2022, there were 671,596 new residential solar systems installed[^"8"] equaling a total of $242 million in additional benefit.
+
 ## Implementation
+The tax credit would be extended by the U.S. congress.
 
-The tax credit would be extended by the US congress.
-
-##### Lead Researcher: jye - Last Updated April 25, 2024.
-
+##### Lead Researchers: jye and Lee Nelson - Last Updated July 23, 2024.
 
 [^"1"]: Hackman C. [The Role of Federal Tax Credits in U.S. Solar Industry Growth: An Analysis of the Relationship Between the Business Investment Tax Credit and Installed Solar Photovoltaic Capacity in the United States from 1997-2015.](https://repository.library.georgetown.edu/handle/10822/1050883) Georgetown University-Graduate School of Arts & Sciences. 2018.
+
 [^"2"]: Milne JE, Villar M.  [Renewable Electricity and Tax Expenditures: Lessons from Two Countries.](http://dx.doi.org/10.54648/taxi2020034) Intertax [Internet]. April 2020.
+
 [^"3"]: Dwivedi C. [Influence of Production and Investment Tax Credit on Renewable Energy Growth and Power Grid.](10.1109/GREENTECH.2018.00035) 2018 IEEE Green Technologies Conference. 2018.
-[^"18"]: Office of Energy Efficiency & Renewable Energy. ["Residential and Commercial ITC Factsheets"](https://www.energy.gov/eere/solar/articles/residential-and-commercial-itc-factsheets). U.S. Department of Energy. September 2022.
 
+[^"4"]: Office of Energy Efficiency & Renewable Energy. ["Residential and Commercial ITC Factsheets"](https://www.energy.gov/eere/solar/articles/residential-and-commercial-itc-factsheets). U.S. Department of Energy. September 2022.
 
+[^"5"]: [“U.S. Residential Solar PV Market Size, Share & Trends Analysis Report By Construction (Retrofit, New Construction), By State, And Segment Forecasts 2024 – 2030”](https://www.grandviewresearch.com/industry-analysis/us-residential-solar-pv-market-report) Grand View Research, 2023
+
+[^"6"]: [“Solar Investment Tax Credit: What Changed?”](https://www.energy.gov/eere/solar/articles/solar-investment-tax-credit-what-changed) Solar Energy Technologies Office, September 2022
+
+[^"7"]: Glover, E. and Tynan, C. [“How Long Do Solar Panels Last?”](https://www.forbes.com/home-improvement/solar/how-long-do-solar-panels-last/) Forbes, June 2024
+
+[^"8"]: Fernandez, L. [“Newly installed residential solar systems in the United States in 2022, by state”](https://www.statista.com/statistics/1421976/new-residential-solar-systems-us-by-state/) Statista, November 2023
 
 export default ({ children }) => 
   <SolutionDropdown 
