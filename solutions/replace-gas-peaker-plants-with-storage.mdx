@@ -11,25 +11,11 @@ export const DynamicSolutionGraphic = dynamic(
 
 
 export const problem = "Greenhouse Gas Emissions From Natural Gas";
-export const solution = "Replace Gas Peaker Plants With Storage";
+export const solution = "Replace Gas Peaker Plants With Battery Storage - U.S.";
 
 
 ## Description
 We recommend replacing fossil fuel based peaker plants with battery storage systems.
-
-## Background
-
-Natural gas is inexpensive in North America, has half the lifecycle greenhouse gas emissions of coal, and relatively little other forms of air pollution. Peaker plants are designed to ramp up and down quickly, and they tend to be less efficient and more expensive than the more common combined cycle plants.
-
-Peaker plants operate during periods of high electricity demand. Typically powered by oil or natural gas, they provide a crucial service in maintaining grid reliability, but they emit more CO<sub>2</sub> than baseload plants [^"1"].
-
-In the United States, two-thirds of peaker plants are in low-income communities. During hot days with already poor air quality, peakers are needed to meet energy demand, thereby worsening air quality [^"3"].
-
-Batteries store grid electricity when demand is low and release it when demand is high. They can be charged by any energy source, waste less power (due to the low capacity/efficiency of gas peaker plants), and have a faster response time than peaker plants [^"1"].
-
-## Calculations
-
-Embedded emissions vary by the energy source, location, and other factors and range from 104 to 407 grams per kilotwatt-hour of delivered energy [^"6"]. In this scenario, we model a solar photovoltaic energy source. Batteries may increase emissions if charged by high-emitting plants [^"6"].
 
 <DynamicSolutionGraphic
   barChartTitle={"Replace Peaker Plants with Storage - U.S."}
@@ -60,7 +46,19 @@ Embedded emissions vary by the energy source, location, and other factors and ra
   ]}
 />
 
+## Background
 
+Natural gas is inexpensive in North America, has half the lifecycle greenhouse gas emissions of coal, and relatively little other forms of air pollution. Peaker plants are designed to ramp up and down quickly, and they tend to be less efficient and more expensive than the more common combined cycle plants.
+
+Peaker plants operate during periods of high electricity demand. Typically powered by oil or natural gas, they provide a crucial service in maintaining grid reliability, but they emit more CO<sub>2</sub> than baseload plants [^"1"].
+
+In the United States, two-thirds of peaker plants are in low-income communities. During hot days with already poor air quality, peakers are needed to meet energy demand, thereby worsening air quality [^"3"].
+
+Batteries store grid electricity when demand is low and release it when demand is high. They can be charged by any energy source, waste less power (due to the low capacity/efficiency of gas peaker plants), and have a faster response time than peaker plants [^"1"].
+
+## Calculations
+
+Embedded emissions vary by the energy source, location, and other factors and range from 104 to 407 grams per kilotwatt-hour of delivered energy [^"6"]. In this scenario, we model a solar photovoltaic energy source. Batteries may increase emissions if charged by high-emitting plants [^"6"].
 
 
 <DynamicSolutionGraphic
@@ -89,17 +87,15 @@ Embedded emissions vary by the energy source, location, and other factors and ra
     },
   ]}
 />
+
 Costs are based on Lazard's levelized cost of energy of battery storage with solar PV [^"2"] mulitplied by the reported annual generation peaker plants in the United States [^"8"].
 
 Benefits are based on avoided expenditures on natural gas peaker plants, which range from $115 to $221 per megawatt hour (MWh) [^"2"], compared to a battery plus solar cost of $110 to $131 per MWh [^"2"]. Avoided CO₂ emissions are the reported total of peaker emissions annually [^"8"] minus the average embedded emissions of battery storage [^"6"].
 
 ## Implementation
-
 Lithiun-ion batteries bring environmental and health impacts [^"9"] from open-pit mining, a water demand of 400 to 2 million liters of water per kilogram of lithium [^"11"], and toxicity resulting from lithium processing.
 
 The European Union has implemented policies for battery collection, but this can incentivise companies to return batteries prior to their end of life. More effort is needed on reuse and recycling prior to production, so that batteries are designed in a way that the materials can be salvaged [^"12"].
-
-
 
 
 [^"1"]:  [California Peaker Power Plants](https://web.archive.org/web/20230110015843/https://www.psehealthyenergy.org/wp-content/uploads/2020/05/California.pdf). 
