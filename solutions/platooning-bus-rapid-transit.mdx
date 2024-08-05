@@ -8,17 +8,11 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Cost of Rail";
-export const solution = "Platooning Bus Rapid Transit";
+export const solution = "Platooning Bus Rapid Transit - World";
 
 ## Description
 
 We recommend that transit agencies conduct trials of bus rapid transit platooning and implement the technology as soon as it is ready to be deployed.
-
-## Background
-
-Vehicle platooning is a system consisting of a lead vehicle and several autonomous vehicles that follow the lead. The technology is also being explored for freight trucking [^"1"] and may be easier to deploy than fully autonomous vehicles. Platooning buses in dedicated lanes can provide the low cost and flexibility of BRT with the throughput of metro rail.
-
-## Calculations
 
 <DynamicSolutionGraphic
   barChartTitle={""}
@@ -28,28 +22,34 @@ Vehicle platooning is a system consisting of a lead vehicle and several autonomo
   chartType={""}
   arrowText1={"260 thousand"}
   arrowText2={"tons"}
-  arrowText3={"CO2"}
+  arrowText3={"CO₂"}
   arrowText4={"reduced/yr"}
   mastheadToggle={''}
   mastheadText3={"MG, Feb. 23, 2024"}
   
   
-  staticData={[   
+  staticData={[  
+    	{
+	  name:"Benefit",
+      barlength: 7.051698935046,
+      displayedValue: "$7 billion/yr",
+      site: "null",
+	}, 
     {
       name: "Cost",
       barlength: 0.37116942492599697,
       displayedValue: "$371 million/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 7.051698935046,
-      displayedValue: "$7 billion/yr",
-      site: "null",
-	}
+    } 
         
   ]}
 />
+
+## Background
+
+Vehicle platooning is a system consisting of a lead vehicle and several autonomous vehicles that follow the lead. The technology is also being explored for freight trucking [^"1"] and may be easier to deploy than fully autonomous vehicles. Platooning buses in dedicated lanes can provide the low cost and flexibility of BRT with the throughput of metro rail.
+
+## Calculations
 
 The cost of implementing BRT platooning is based on a capital cost estimate of up to $1 million per mile (2009 dollars) [^"2"] and 5842 kilometers of BRT length worldwide [^"3"]. A 7% discount rate is applied.
 

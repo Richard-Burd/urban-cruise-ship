@@ -7,29 +7,13 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Space and Pollution From Last Mile Delivery";
-export const solution = "Drone Delivery";
-
-
+export const solution = "Drone Delivery - World";
 
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
 We recommend businesses, especially those in the courier and delivery sector, integrate drone delivery systems in last-mile logistics.
-
-## Background
-
-In 2020, the global market for delivery drones stood at an estimated $528.6 million and is projected to increase at a compound annual growth rate (CAGR) of 32.4% [^"6"]. In 2022, the number of drone deliveries exceeded 800,000, growing from 6,000 in 2018 [^"10"]. In the same year, the number of parcels delivered worldwide was 161 billion, about 200,000 times greater, and projected to grow to 225 billion by 2028 [^"8"].
-
-Advantages to drone delivery that are unquantified include the easing of traffic in dense urban areas [^"6"] and speed of delivery, especially in areas with high traffic congestion or in remote areas not served well by roads [^"1"].
-
-The average delivery drone has a range of 10 to 20 kilometers [^"6"].
-
-The volume of parcel delivery is expected to grow in any circumstances, but the amount of growth is expected to be greater in the presence of widespread drone delivery than without, though the magnitude of this effect is hard to estimate [^"17"].
-
-## Calculations
-
-Our calculations are based on a worldwide annual parcel shipping volume of 161 billion parcels, as was determined for 2022 [^"8"]. It has been estimated [^"9"] that 41% of parcel deliveries are suitable for drone transportation in Paris, France, excluding cross-country deliveries, parcels that are too heavy, parcels that do not go to suitable locations, economic constraints, and adjustments for weather. Per-parcel energy and greenhouse gas benefits are assessed against the counterfactual of parcels being delivered by a diesel-powered delivery truck and estimated from Rodrigues et al. [^"1"], while cost is estimated from Taveres [^"18"].
 
 <DynamicSolutionGraphic
   barChartTitle={""}
@@ -44,30 +28,38 @@ Our calculations are based on a worldwide annual parcel shipping volume of 161 b
   
   staticData={[   
     {
-      name: "Cost",
-      barlength: 181.102202770944,
-      displayedValue: "$181 billion/yr",
-      site: "null",
-    },   
-	{
 	  name:"Benefit",
       barlength: 432.94745349928803,
       displayedValue: "$433 billion/yr",
       site: "null",
-	}
-        
+	},
+    {
+      name: "Cost",
+      barlength: 181.102202770944,
+      displayedValue: "$181 billion/yr",
+      site: "null",
+    }    
   ]}
 />
+
+## Background
+In 2020, the global market for delivery drones stood at an estimated $528.6 million and is projected to increase at a compound annual growth rate (CAGR) of 32.4% [^"6"]. In 2022, the number of drone deliveries exceeded 800,000, growing from 6,000 in 2018 [^"10"]. In the same year, the number of parcels delivered worldwide was 161 billion, about 200,000 times greater, and projected to grow to 225 billion by 2028 [^"8"].
+
+Advantages to drone delivery that are unquantified include the easing of traffic in dense urban areas [^"6"] and speed of delivery, especially in areas with high traffic congestion or in remote areas not served well by roads [^"1"].
+
+The average delivery drone has a range of 10 to 20 kilometers [^"6"].
+
+The volume of parcel delivery is expected to grow in any circumstances, but the amount of growth is expected to be greater in the presence of widespread drone delivery than without, though the magnitude of this effect is hard to estimate [^"17"].
+
+## Calculations
+Our calculations are based on a worldwide annual parcel shipping volume of 161 billion parcels, as was determined for 2022 [^"8"]. It has been estimated [^"9"] that 41% of parcel deliveries are suitable for drone transportation in Paris, France, excluding cross-country deliveries, parcels that are too heavy, parcels that do not go to suitable locations, economic constraints, and adjustments for weather. Per-parcel energy and greenhouse gas benefits are assessed against the counterfactual of parcels being delivered by a diesel-powered delivery truck and estimated from Rodrigues et al. [^"1"], while cost is estimated from Taveres [^"18"].
 
 The electricity mix is assumed to be the United States non-baseload average [^"1"].
 
 Additionally, 321 petajoules per year, or about 0.05% of world primary energy consumption, are estimated to be saved.
 
 
-
 ## Implementation
-
-
 In the United States, the Federal Aviation Administration requires that all drones meet a light-of-sight requirement for human operators, and the number of drones that can be operated at one moment is highly restricted. In turn, the FAA grants waivers to drone operators. This approach may be too restrictive and slow the growth of the technology [^"11"].
 
 Drones can only deliver items to accessible places such as front doors or back yards, however these locations could be problematic in that they could be left unattended. They also are unable to deliver to mailboxes and apartment buildings. More research is needed to develop secure way to ensure delivery [^"2"].
