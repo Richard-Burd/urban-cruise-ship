@@ -10,16 +10,7 @@ export const problem = "Land Use in Agriculture";
 export const solution = "Research to Improve Yields";
 
 ## Description
-
 We propose an increase in agricultural research and development.
-
-## Background
-
-Research and development is necessary for all industries to advance, but it is particularly important in agriculture, where some R&D is necessary just to maintain yields against factors such as pesticide resistance [^"3"]. Several studies [^"4"], [^"5"], [^"6"], [^"7"] have found very positive returns for investment in agricultural research and development. Our numbers are derived from Rosegrant et al. [^"1"].
-
-## Calculations
-
-Rosegrant et al. [^"1"] calculate the following costs and benefits of agricultural R&D investment in the Global South.
 
 <DynamicSolutionGraphic
   barChartTitle={""}
@@ -33,22 +24,28 @@ Rosegrant et al. [^"1"] calculate the following costs and benefits of agricultur
   mastheadText3={"MG, Jan. 4, 2024"}
   
   
-  staticData={[   
+  staticData={[
+    	{
+	  name:"Benefit",
+      barlength: 60,
+      displayedValue: "$60 billion/yr",
+      site: "null",
+	}, 
     {
       name: "Cost",
       barlength: 1.7428571428571429,
       displayedValue: "$1.7 billion/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 60,
-      displayedValue: "$60 billion/yr",
-      site: "null",
-	}
-        
+    }
+   
   ]}
 />
+
+## Background
+Research and development is necessary for all industries to advance, but it is particularly important in agriculture, where some R&D is necessary just to maintain yields against factors such as pesticide resistance [^"3"]. Several studies [^"4"], [^"5"], [^"6"], [^"7"] have found very positive returns for investment in agricultural research and development. Our numbers are derived from Rosegrant et al. [^"1"].
+
+## Calculations
+Rosegrant et al. [^"1"] calculates the costs and benefits of agricultural R&D investment in the Global South.
 
 An increase in agricultural R&D as envisioned above, compared to the counterfactual of research levels remaining constant, will result in an increase in yield of 10%, reduction of hunger by 35%, reduction of food prices by 16%, and increase in per-capita incomes by 4%. An 8% discount rate is used in these calculations. A higher discount rate will result in a less favorate benefit-cost ratio, while a lower discount rate will result in a more favorable ratio [^"1"].
 

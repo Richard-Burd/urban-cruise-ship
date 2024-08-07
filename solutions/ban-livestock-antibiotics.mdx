@@ -11,26 +11,8 @@ export const DynamicSolutionGraphic = dynamic(
   { ssr: false }
 );
 
-
-
-
 ## Description
-
-
 We propose a ban in the United States on nontherapeutic applications of antibiotics for livestock.
-
-
-## Background
-
-
-The use of antibiotics causes positive effects by limiting the spread of antibiotic-treatable infections, while also causing negative effects by increasing the number of treatment-resistant infections. Treatment-resistant infections cost the United States 23,000 lives and $20 billion annually [^"2"]. In 2019, it was estimated that bacterial antimicrobial resistance (AMR) was associated with 4.95 million deaths, including 1.27 million deaths directly attributed [^"6"].
-
-The sensitivity of bacteria can be considered a finite natural resource [^"5"].
-
-More than 80% of American antibiotic use is for livestock, of which 70% is for nontherapeutic purposes such as growth promotion and disease prevention [^"11"]. Another estimate holds that 73% of antibiotic usage worldwide is for livestock [^"22"].
-
-While ending antibiotic use for therapeutic purposes as well would further curtail the development of antibiotic-resistant bacteria, doing so would have a greater cost than ending nontherapeutic use and would carry a heavy animal welfare toll, and for these reasons we do not propose that [^"12"].
-
 
 <DynamicSolutionGraphic
   barChartTitle={"Nontherapeutic Livestock Antibiotic Ban"}
@@ -46,47 +28,39 @@ While ending antibiotic use for therapeutic purposes as well would further curta
   mastheadText3={"Michael Goff 1-24-2024"}
  
  
-  staticData={[  
-     {
-      name: "Cost",
-      barlength: 3.671805754,
-      displayedValue: "$4 billion",
-      site: "null",
-    },
-         {
+  staticData={[
+      {
       name: "Benefit",
       barlength: 21.248579467499997,
       displayedValue: "$21 billion",
       site: "null",
     },
-       
+     {
+      name: "Cost",
+      barlength: 3.671805754,
+      displayedValue: "$4 billion",
+      site: "null",
+    } 
   ]}
 />
 
+## Background
+The use of antibiotics causes positive effects by limiting the spread of antibiotic-treatable infections, while also causing negative effects by increasing the number of treatment-resistant infections. Treatment-resistant infections cost the United States 23,000 lives and $20 billion annually [^"2"]. In 2019, it was estimated that bacterial antimicrobial resistance (AMR) was associated with 4.95 million deaths, including 1.27 million deaths directly attributed [^"6"].
 
-## Benefits
+The sensitivity of bacteria can be considered a finite natural resource [^"5"].
 
+More than 80% of American antibiotic use is for livestock, of which 70% is for nontherapeutic purposes such as growth promotion and disease prevention [^"11"]. Another estimate holds that 73% of antibiotic usage worldwide is for livestock [^"22"].
+
+While ending antibiotic use for therapeutic purposes as well would further curtail the development of antibiotic-resistant bacteria, doing so would have a greater cost than ending nontherapeutic use and would carry a heavy animal welfare toll, and for these reasons we do not propose that [^"12"].
+
+
+## Calculations
 Estimating benefits of a reduction of antibiotics is difficult because of the great uncertainty in how this will affect the prevalence of disease. In 2015, it was estimated that the incremental cost to the U.S. health care system as a result of antibiotic-resistant microbes was $21-34 billion [^"10"]. The Union of Concerned Scientists has estimated that 70% of antibiotic use is for nontherapeutic use in livestock [^"11"], and so we estimate a benefit as 70% of the mean cost, CPI adjusted to 2020.
-
-
-
-
-
-
-## Costs
 
 We estimate costs from a National Research Council study (see Table 7-1 on p. 185), which finds that ending nontherapeutic antibiotics would raise meat prices by the following: chicken, 1.3 ¢ per pound; turkey, 1.5 ¢/lb; beef, 3 ¢/lb; and pork, 3 ¢/lb [^"7"]. We apply these costs to American meat production in 2021 as reported by FAOSTAT [^"8"]. FAOSTAT does not distinguish between chicken and turkey, but rather classifies both as "poultry" [^"9"], and so we apply the chicken cost to both. The cost is CPI-adjusted to 2020.
 
 
-
-
-
-##### Lead Researchers: jye & Michael Goff - Last Updated 1/24/2024
-
-
-
 ## Implementation
-
 Since 2006, the European Union has banned the use of antibiotics for livestock growth promotion [^"13"], and since 2022, most antibiotic usage for preventive purposes [^"14"].
 
 Consumer pressure, such as through the Consumers Union, for antibiotic-free meat, can create pressure for a ban [^"15"].
@@ -95,7 +69,7 @@ A tax on antibiotics is another option to discourage overuse while maintaining e
 
 Alternatives to antibiotic use include probiotics [^"16"], prebiotics [^"17"], bacteriophages [^"18"], and other methods [^"19"],[^"20"],[^"21"].
 
-
+##### Lead Researchers: jye & Michael Goff - Last Updated 1/24/2024
 
 
 [^"1"]: Morgan ALK, Moran D, Van Boeckel TP. [Taxation of veterinary antibiotics to reduce antimicrobial resistance](https://www.sciencedirect.com/science/article/pii/S2352771423001702). One Health. December 2023.
