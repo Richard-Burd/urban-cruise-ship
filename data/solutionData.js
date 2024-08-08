@@ -1225,6 +1225,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Green Steel`,
+    link: `/energy/industry/major_commodities`,
+    site: `energy`,
+    cost: 953.9675784576,
+    benefit: 959.7435859584,
+    co2: 2179.625472,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
   }
 
 ];

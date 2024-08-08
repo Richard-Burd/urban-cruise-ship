@@ -1,26 +1,115 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Emissions from Steelmaking";
-export const solution = "Green Steel Plant";
+export const solution = "Green Steel";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+## Description
+
+We propose investment into hydrogen direct reduction steel production, or "green" steel, where the hydrogen is sourced from electrolysis from low-carbon electricity sources.
 
 import ArticleImage from "/components/ArticleImage.js";
 
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Green Steel"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"2.2 billion"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Aug. 8, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Cost",
+      barlength: 953.9675784576,
+      displayedValue: "$950 billion/yr",
+      site: "null",
+    },   
+	{
+	  name:"Benefit",
+      barlength: 959.7435859584,
+      displayedValue: "$960 billion/yr",
+      site: "null",
+	}
+        
+  ]}
+/>
+
 ## Background
 
-Green steel can have several meanings, but often refers to steel that is produced with hydrogen, produced by clean energy electrolysis, rather than coal as most steel is produced today. Green steel is generally too expensive to produce widely today, except where electricity is cheap and low-carbon. The price of green steel is likely to fall in coming years relative to alternatives [^"6"].
+Steel is one of the most widely produced and essential industrial commodities, at just under 1.9 billion tons of production in 2023 [^"1"]. Steel is responsible for about 7% of world greenhouse gas emissions [^"3"]. Almost all steel today is produced through two process: the blast furnace-basic oxygen furnace route for virgin steel, and the electric arc furnace for recycling of steel scrap [^"12"].
+
+Steel production requires removing the oxygen in iron ore, a process generally performed with carbon. In the BF-BOF process, as with the Bessemer process before, a material known as coke is used both as a heat source and as the reducing agent. As the reduction process produces carbon dioxide, emissions are inherent to BF-BOF. The use of hydrogen, rather than carbon, avoids these inherent emissions.
+
+"Green" steel has the following properties.
+
+- Hydrogen is the reducing agent,
+- The hydrogen is produced from electrolysis,
+- The electrolysis is powered from low-carbon electricity.
+
+If the first criterion is met, we use the term "hydrogen direct reduction".
+
+As defined above, green steel is not the only pathway to decarbonizing steel production. We discuss molten oxide electrolysis, or electrowinnowing, below, and we mentioned carbon capture above. However, green steel is the pathway that offers deep reductions to steel's greenhouse gas emissions and is most plausibly available soon.
+
+## Calculations
+
+As our estimated costs and benefits are close, the estimated cost-effectiveness of investment in hydrogen direct reduction is highly sensitive to assumptions. As of 2023, world steel production was just under 1.9 billion tons [^"1"], of which 72% was produced through BF-BOF and the remaining 28% through EAF [^"3"]. Hydrogen DR is applicable to virgin steel production, and so we model that hydrogen DR will replace BF-BOF production and that EAF production will remain unaffected.
+
+Recent BF-BOF steel prices have varied considerably due to commodity price fluctuation. A cost of $400-500 per ton has been estimated for recent BF-BOF steel [^"4"]; we use a value of $450/ton for these calculations, discounting elevated costs in 2021 that followed widespread supply chain disruptions. Estimates of lifecycle greenhouse gas emissions vary and include an estimate of 2.1 tons CO<sub>2</sub> per ton of steel [^"5"]. We use a value of 1.8 tons CO<sub>2</sub>/ton of steel as per Bhaskar et al. [^"7"].
+
+It is especially difficult to predict future hydrogen DR steel prices, as there is currently very limited production in the world beyond the pilot phase [^"9"]. For our calculations, we use a value of $672 per ton (range of $622-722 per ton) [^"7"]. We estimate lifecycle emissions for hydrogen DR steel to be 0.2 tons per ton of steel [^"8"].
+
+In all cases, CO<sub>2</sub> emissions are valued at just over $140 per ton.
 
 ## Implementation
 
-A study of a green steel plant in Sweden reveals that, under certain circumstances, total emmissions remain mostly unaffected. This is due to the increased need for energy in the production which may be provided by fossil fuels. Consideration for the source of energy must be taken into account[^"2"].
+Hydrogen DR steel is not necessarily a low-carbon process if the hydrogen production is not low-carbon [^"2"]. Hydrogen DR steel, where the hydrogen is produced from steam methane reforming that is unabated by carbon capture, has lifecycle emissions of about 1.3 tons CO<sub>2</sub> per ton of steel [^"7"],[^"10"], compared to 1.8 tons for today's common BF-BOF process.
+
+About two-thirds to three-fourths of green steel costs are estimated to be operational costs, with most of that the costs of electricity and iron ore [^"7"]. For green steel to be economically viable depends on the materialization of expected cost reductions in renewable energy, particularly wind and solar power, and in hydrogen electrolyzers [^"11"].
+
+A credible, economy-wide [carbon price](energy/energy_socioeconomics/carbon_pricing_e) is the most plausible pathway to widespread investment in green steel.
 
 <ArticleImage image={"green_steel.svg"} width={900} height={600} />
-#### Sources: price data from [^"27"], emissions data as above.
+#### Sources: price data from Whalen [^"27"], emissions data as above.
+
+##### Lead researcher: Michael Goff - Last updated: August 8, 2024.
+
+[^"1"]: Worldsteel. ["Total production of crude steel"](https://worldsteel.org/data/annual-production-steel-data/?ind=P1_crude_steel_total_pub/CHN/IND). March 2024.
+
+[^"2"]: Johansson, P.O., Kriström, B. [Paying a Premium for "Green Steel": Paying for an Illusion?](https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/paying-a-premium-for-green-steel-paying-for-an-illusion/3477D51F1707C072B4FA4B839A814ED6). Journal of Benefit-Cost Analysis **13**(3). November 2022.
+
+[^"3"]: m'barek, B., Hasanbeigi, A., Gray, M. ["Global Steel Production Costs"](https://www.globalefficiencyintel.com/global-steel-production-costs-report). Global Efficiency Intelligence. January 2022.
+
+[^"4"]: Lu, H., Tao, J. Y., Levi, P., Myllyvirta, L., Swalec, C., Zhang, Q., Xiuping, L. ["Global steel production costs"](https://www.transitionzero.org/insights/global-steel-production-costs). TransitionZero. January 2022.
+
+[^"5"]: Backes, J.G., Suer, J., Pauliks, N., Neugebauer, S., Traverso, M. ["Life cycle assessment of an integrated steel mill using primary manufacturing data: actual environmental profile"](https://www.mdpi.com/2071-1050/13/6/3443). Sustainability **13**(6): 3443. March 2021.
 
 [^"6"]: Hoffmann, C., Van Hoey, M., Zeumer, B. ["Decarbonization challenge for steel: Hydrogen as a solution in Europe"](https://www.mckinsey.com/industries/metals-and-mining/our-insights/decarbonization-challenge-for-steel). McKinsey & Company. April 2020.
 
-[^"2"]: Johansson PO, Kriström B. [Paying a Premium for “Green Steel”: Paying for an Illusion?](https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/paying-a-premium-for-green-steel-paying-for-an-illusion/3477D51F1707C072B4FA4B839A814ED6).  Journal of Benefit-Cost Analysis. November 2022. 
+[^"7"]: Bhaskar, A., Abhishek, R., Assadi, M., Somehesaraei, H.N. ["Decarbonizing primary steel production: Techno-economic assessment of a hydrogen based green steel production plant in Norway"](https://www.sciencedirect.com/science/article/pii/S0959652622009659). Journal of Cleaner Production **350**: 131339. May 2022.
 
-[^"27"]: Whalen, C. ["The extra costs of decarbonised steel"](https://www.carboncommentary.com/blog/2020/1/14/the-extra-costs-of-decarbonised-steel). Carbon Commentary. January 2020.
+[^"8"]: Fischedick, M., Marzinkowski, J., Winzer, P., Weigel, M. ["Techno-economic evaluation of innovative steel production technologies"](https://www.sciencedirect.com/science/article/abs/pii/S095965261400540X). Journal of Cleaner Production **84**, pp. 563-580. December 2014.
+
+[^"9"]: Leadership Group for Industry Transition. ["Green Steel Tracker"](https://www.industrytransition.org/green-steel-tracker/). Accessed August 8, 2024.
+
+[^"10"]: Rapier, R. ["Estimating The Carbon Footprint Of Hydrogen Production"](https://www.forbes.com/sites/rrapier/2020/06/06/estimating-the-carbon-footprint-of-hydrogen-production/?sh=3ebf67e524bd). Forbes. June 2020.
+
+[^"11"]: Devlin, A., Kossen, J., Goldie-Jones, H., Yang, A. ["Global green hydrogen-based steel opportunities surrounding high quality renewable energy and iron ore deposits"](https://www.nature.com/articles/s41467-023-38123-2). Nature Communications **14**(1): 2578. May 2023.
+
+[^"12"]: Eurofer. ["What is steel and how is steel made?"](https://www.eurofer.eu/about-steel/learn-about-steel/what-is-steel-and-how-is-steel-made). The European Steel Association. Accessed August 8, 2024.
+
+[^"27"]: Goodall, C. ["The extra costs of decarbonised steel"](https://www.carboncommentary.com/blog/2020/1/14/the-extra-costs-of-decarbonised-steel). Carbon Commentary. January 2020.
 
 export default ({ children }) => 
   <SolutionDropdown 
