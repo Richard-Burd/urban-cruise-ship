@@ -8,21 +8,11 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Damage from Lead Exposure";
-export const solution = "ULAB Site Remediation";
+export const solution = "ULAB Site Remediation - World";
 
 ## Description
 
 We propose remediation of all informal used lead acid battery (ULAB) recycling sites worldwide.
-
-## Background
-
-Lead acid batteries are used mainly for conventional cars and industrial applications. Lead acid batteries can theoretically be replaced with other types of batteries, but for the foreseeable future, it is not cost-feasible to do so [^"7"]. Lead acid battery recycling is financially lucrative, and 85% of world lead demand is for lead acid batteries [^"10"]. As with many other informal industries, informal ULAB recycling is most common in poor communities with few other economic prospects [^"1"]. Informal recycling exposes workers to lead pollution and contaminates the soil [^"10"].
-
-Exposure to lead from ULAB recycling is either the greater or second greatest human exposure to lead worldwide, though precise exposure figures are lacking [^"1"]. Studies in the Dominican Republic [^"2"], Vietnam [^"3"], and Bangladesh [^"4"] have shown that remediation of informal ULAB recycling sites is cost effective. Site remediation improves health and longevity, which we measure in terms of disability-adjusted life years (DALYs). One DALY is equivalent to one extra year of life at full health.
-
-## Calculations
-
-We find the following costs and benefits to informal ULAB recycling site remediation.
 
 <DynamicSolutionGraphic
   barChartTitle={""}
@@ -37,24 +27,30 @@ We find the following costs and benefits to informal ULAB recycling site remedia
   mastheadText3={"MG, Mar. 9, 2024"}
   
   
-  staticData={[   
+  staticData={[
+    	{
+	  name:"Benefit",
+      barlength: 6.362400000,
+      displayedValue: "$6 billion/yr",
+      site: "null",
+	}, 
     {
       name: "Cost",
       barlength: 0.412029024,
       displayedValue: "$400 million/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 6.362400000,
-      displayedValue: "$6 billion/yr",
-      site: "null",
-	}
-        
+    }      
   ]}
 />
 
-Our analysis is adapted from that of Bernard and Schukraft [^"1"]. Of several studies of the cost effectiveness of ULAB site remediation, we use the results from the Dominican Republic [^"2"], which offers the clearest estimate of the remediation cost per DALY gained of $392 to $3238. For our calculations, we use the higher figure. Following the guidance of Open Philanthropy, we use a DALY value of $50,000, though a valuation of $100,000 might be justified [^"5"].
+## Background
+
+Lead acid batteries are used mainly for conventional cars and industrial applications. Lead acid batteries can theoretically be replaced with other types of batteries, but for the foreseeable future, it is not cost-feasible to do so [^"7"]. Lead acid battery recycling is financially lucrative, and 85% of world lead demand is for lead acid batteries [^"10"]. As with many other informal industries, informal ULAB recycling is most common in poor communities with few other economic prospects [^"1"]. Informal recycling exposes workers to lead pollution and contaminates the soil [^"10"].
+
+Exposure to lead from ULAB recycling is either the greater or second greatest human exposure to lead worldwide, though precise exposure figures are lacking [^"1"]. Studies in the Dominican Republic [^"2"], Vietnam [^"3"], and Bangladesh [^"4"] have shown that remediation of informal ULAB recycling sites is cost effective. Site remediation improves health and longevity, which we measure in terms of disability-adjusted life years (DALYs). One DALY is equivalent to one extra year of life at full health.
+
+## Calculations
+Our analysis is adapted from that of Bernard and Schukraft [^"1"]. Of several studies of the cost effectiveness of ULAB site remediation, we use the results from the Dominican Republic [^"2"], which offers the clearest estimate of the remediation cost per DALY gained of $392 to $3,238. For our calculations, we use the higher figure. Following the guidance of Open Philanthropy, we use a DALY value of $50,000, though a valuation of $100,000 might be justified [^"5"].
 
 The overall health and mortality impact of ULAB recycling worldwide is not known with any precision. Ericson et al. estimate the impact of informal ULAB sites at 127,248 to 1,612,476 DALYs [^"6"], compared to 21.2 million DALYs from lead exposure overall worldwide.
 
@@ -66,6 +62,8 @@ There are several uncertainties, beyond the wide range of estimates in studies f
 Pure Earth is a leading NGO that conducts clean-ups of abandoned ULAB sites, among many other projects, such as a project they have done in Bangladesh [^"9"]. NGOs such as Pure Earth would conduct remediation operations. While our analysis above yields a benefit-cost ratio of around 15:1, this ratio may be better than 100:1 depending on the cost of remediation and whether productivity effects from IQ gains are factored into benefit estimates, making lead remediation one of the most cost-effective projects in low-income countries.
 
 As noted below, remediation of informal recycling sites should be coupled with policies to prevent informal recycling from occurring at all.
+
+##### Lead Researcher: Michael Goff - Last Updated August 15, 2024
 
 
 [^"1"]: Bernard, D. R., Schukraft, J. ["Global lead exposure report"](https://rethinkpriorities.org/publications/global-lead-exposure-report). Rethink Priorities. May 2021.
