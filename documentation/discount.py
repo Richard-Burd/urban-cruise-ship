@@ -43,6 +43,9 @@ class RevenueStream:
         
     def annualize(self): # Get the NPV on an annual basis
         return self.value() * self.discount_rate
+        
+def npv_to_annual(val, dr = discount_rate()):
+    return val*dr
     
 # Test
 #r = RevenueStream(yearly_stream = [5,10,15,20,25],annual_value = 3, end_value = 3, offset=10)

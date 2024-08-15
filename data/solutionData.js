@@ -1237,6 +1237,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Inert Anodes`,
+    link: `/energy/industry/major_commodities`,
+    site: `energy`,
+    cost: 9.626756690096308,
+    benefit: 29.03420016,
+    co2: 169.3944,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
   }
 
 ];
