@@ -9,23 +9,15 @@ export const DynamicSolutionGraphic = dynamic(
 
 
 export const problem = "Damages From Lead Exposure";
-export const solution = "Ban Lead Paint";
+export const solution = "Ban Lead Paint - World";
 
 ## Description
 
 We propose that all national governments mandate a maximum of 90 parts per million (ppm) of lead in paint.
 
-## Background
-
-Lead was widely used as a paint additive to improve a paint's color, moisture resistance, and drying speed [^"2"]. However, growing public awareness of the negative health effects of lead induced the United States to ban lead paint in 1978 [^"2"]. As of January 2024, 48% of countries had legal limits of lead content in paint, though many of those limits are above the 90 ppm level proposed here [^"1"]. By "lead paint", we mean paint for which lead is deliberately used as an additive. A complete elimination of lead in paint is infeasible, since lead contamination in many ingredients is unavoidable [^"13"]. A standard of 90 ppm, such as is recommended by the Lead Paint Alliance, achieves a balance between health needs and technical feasibility [^"13"].
-
-## Calculations
-
-Our analysis is based on an evaulation of an advocacy campaign for a lead paint ban in Malawi [^"3"], with modifications as noted below.
-
 <DynamicSolutionGraphic
   barChartTitle={""}
-  barChartTitle2={"Lead Paint Bans"}
+  barChartTitle2={"Lead Paint Bans - World"}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
@@ -36,22 +28,31 @@ Our analysis is based on an evaulation of an advocacy campaign for a lead paint 
   mastheadText3={"MG, Mar. 11, 2024"}
   
   
-  staticData={[   
+  staticData={[  
+    	{
+	  name:"Benefit",
+      barlength: 2000,
+      displayedValue: "$2 billion/yr",
+      site: "null",
+	}, 
     {
       name: "Cost",
       barlength: 5,
       displayedValue: "$5 million/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 2000,
-      displayedValue: "$2 billion/yr",
-      site: "null",
-	}
+    }
         
   ]}
 />
+
+## Background
+
+Lead was widely used as a paint additive to improve a paint's color, moisture resistance, and drying speed [^"2"]. However, growing public awareness of the negative health effects of lead induced the United States to ban lead paint in 1978 [^"2"]. As of January 2024, 48% of countries had legal limits of lead content in paint, though many of those limits are above the 90 ppm level proposed here [^"1"]. By "lead paint", we mean paint for which lead is deliberately used as an additive. A complete elimination of lead in paint is infeasible, since lead contamination in many ingredients is unavoidable [^"13"]. A standard of 90 ppm, such as is recommended by the Lead Paint Alliance, achieves a balance between health needs and technical feasibility [^"13"].
+
+## Calculations
+
+Our analysis is based on an evaulation of an advocacy campaign for a lead paint ban in Malawi [^"3"], with modifications as noted below.
+
 
 The cost of the program was assessed at $80,000 per year for 5 years for the Lead Exposure Elimination Project, plus $75,000 for 8 years for the government of Malawi to develop, implement, and enforce the regulations. They estimate a cost of $590,000 with a 4% discount rate, but we do not use discounting in our calculations. The benefits are estimated at 8,000 disability-adjusted life years (DALYs) gained, which we value at $50,000 each [^"4"]; see the following analysis of used lead-acid battery recycling site remediation for more details.
 

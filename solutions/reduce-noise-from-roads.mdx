@@ -8,21 +8,15 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Noise Pollution";
-export const solution = "Quieter Pavement";
+export const solution = "Quieter Pavement - U.S.";
 
 ## Description
 
-We propose the use of quiet pravement on urban highways.
-
-## Background
-
-Cars are the biggest source of noise pollution that most people are exposed to. [Reducing the need for driving](/cities/cities_mobility/development_sets) is the main way to reduce noise pollution. Above, we discuss the effectiveness of some other strategies [^"11"].
-
-## Calculations
+We propose the use of quiet pravement on urban highways in the United States.
 
 <DynamicSolutionGraphic
   barChartTitle={""}
-  barChartTitle2={"Quieter Asphalt"}
+  barChartTitle2={"Quieter Asphalt - U.S."}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
@@ -32,28 +26,32 @@ Cars are the biggest source of noise pollution that most people are exposed to. 
   mastheadText3={"MG, Mar. 19, 2024"}
   
   
-  staticData={[   
+  staticData={[ 
+    	{
+	  name:"Benefit",
+      barlength: 1.782917950901472,
+      displayedValue: "$1.8 billion/yr",
+      site: "null",
+	}, 
     {
       name: "Cost",
       barlength: 1.3317856815067057,
       displayedValue: "$1.3 billion/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 1.782917950901472,
-      displayedValue: "$1.8 billion/yr",
-      site: "null",
-	}
-        
+    }      
   ]}
 />
 
+## Background
+
+Cars are the biggest source of noise pollution that most people are exposed to. [Reducing the need for driving](/cities/cities_mobility/development_sets) is the main way to reduce noise pollution. Above, we discuss the effectiveness of some other strategies [^"11"].
+
+## Calculations
 Per-mile costs and benefits are based on an analysis of Segment 3, E11 of I-580 in California, a one-mile eastbound stretch [^"1"]. The adjacent westbound segment, W11, showed similar results. It is unclear how widely applicable this solution is; the same analysis on the neighboring segments W10 and E10 was not found to be cost-feasible.
 
 The study found an additional cost for E11 pavement to have a net present value (we are assuming 2018 currency, the year of the report's publication) of about $1.5 million and a cost-feasibility criterion, which we are taking to be the benefit, of about $2 million.
 
-We take as the applicability of quiet pavement to be the 9046 miles of urban interstate that were judged in 2021 to be congested, and thus due for other forms of treatment. This is nearly half of the urban interstate network in the United States [^"2"]. We acknowledge great uncertainty in this figure. We thus find a net present cost of about $33 billion and a net present benefit of about $45 billion. These figures are presented on an annual basis with a 4% discount rate [^"3"].
+We take as the applicability of quiet pavement to be the 9,046 miles of urban interstate that were judged in 2021 to be congested, and thus due for other forms of treatment. This is nearly half of the urban interstate network in the United States [^"2"]. We acknowledge great uncertainty in this figure. We thus find a net present cost of about $33 billion and a net present benefit of about $45 billion. These figures are presented on an annual basis with a 4% discount rate [^"3"].
 
 All monetary figures are CPI-adjusted to 2024.
 
@@ -66,8 +64,6 @@ Several varieties of quiet pavement have been in use and under development for d
 Not every quiet pavement experiment has been successful. In particular, in Washington State, the allowance of studded tires has led to road damage and degradation of noise-reduction benefits from quiet pavement [^"6"].
 
 ##### Lead researcher: Michael Goff. Last updated: March 19, 2024.
-
-
 
 
 [^"1"]: Caltrans. ["Quiet Pavement"](https://dot.ca.gov/programs/environmental-analysis/noise-vibration/quiet-pavement). February 2018.
