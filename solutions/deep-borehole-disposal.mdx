@@ -8,21 +8,11 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Nuclear Waste";
-export const solution = "Deep Borehole Disposal";
+export const solution = "Deep Borehole Disposal - U.S.";
 
 ## Description
 
 We propose that the United States develop deep borehole disposal for nuclear waste.
-
-## Background
-
-Although disposing of nuclear waste is inexpensive relative to nuclear power, the lack of a permanent solution in the United States is a barrier to expansion. Much time and political capital has been expended on the Yucca Mountain site [^"7"], and permitting there does not look to be resolved in the foreseeable future. Deep borehole disposal (DBD) is another solution.
-
-At present, six U.S. states legislatively forbid nuclear power until a permanent waste disposal solution can be developed [^"2"]. We do not believe that such bans are necessary, as dry cask storage--the predominant storage solution in the United States today--is safe [^"3"] and has not produced a known radiation leak or safety incident since dry cask storage started in 1986 [^"6"]. We recommend that states [repeal these bans](https://www.urbancruiseship.org/energy/energy_production/nuclear), but barring that, developing the requisite disposal solutions is another approach.
-
-DBD promises to offer fast disposal solutions with high siting flexibility and low financial risk [^"5"]. Due to the greater siting flexibility, DBD has the potential for greater political acceptability than geologic disposal [^"4"].
-
-## Calculations
 
 <DynamicSolutionGraphic
   barChartTitle={""}
@@ -38,22 +28,32 @@ DBD promises to offer fast disposal solutions with high siting flexibility and l
   mastheadText3={"MG, Feb. 15, 2024"}
   
   
-  staticData={[   
+  staticData={[
+    	{
+	  name:"Benefit",
+      barlength: 0.8323935326086795,
+      displayedValue: "$833 million/yr",
+      site: "null",
+	},
     {
       name: "Cost",
       barlength: 0.21616,
       displayedValue: "$217 million/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 0.8323935326086795,
-      displayedValue: "$833 million/yr",
-      site: "null",
-	}
+    }
         
   ]}
 />
+
+## Background
+
+Although disposing of nuclear waste is inexpensive relative to nuclear power, the lack of a permanent solution in the United States is a barrier to expansion. Much time and political capital has been expended on the Yucca Mountain site [^"7"], and permitting there does not look to be resolved in the foreseeable future. Deep borehole disposal (DBD) is another solution.
+
+At present, six U.S. states legislatively forbid nuclear power until a permanent waste disposal solution can be developed [^"2"]. We do not believe that such bans are necessary, as dry cask storage--the predominant storage solution in the United States today--is safe [^"3"] and has not produced a known radiation leak or safety incident since dry cask storage started in 1986 [^"6"]. We recommend that states [repeal these bans](https://www.urbancruiseship.org/energy/energy_production/nuclear), but barring that, developing the requisite disposal solutions is another approach.
+
+DBD promises to offer fast disposal solutions with high siting flexibility and low financial risk [^"5"]. Due to the greater siting flexibility, DBD has the potential for greater political acceptability than geologic disposal [^"4"].
+
+## Calculations
 
 The cost of deep borehole disposal is based on annual nuclear electricity generation in the United States of 772 TWh [^"1"], multiplied by the additional cost per kilowatt-hour of deep borehole disposal, relative to the dry cask (near-surface) storage that is typically done in the United States today. Costs for these two options are as portrayed above; a median cost of near-surface storage of 0.012¢/kWh is used.
 
@@ -64,8 +64,6 @@ The benefit is based on the scenario that if deep borehole disposal is implement
 Efforts at political acceptance are still needed, as shown by the failure of the Deep Borehole Field Test [^"14"]. To move forward, DBD needs to be proven with a similar field test [^"12"].
 
 ##### Lead researcher: Michael Goff - Last updated: February 15, 2024
-
-
 
 
 [^"1"]: World Nuclear Association. ["Nuclear Power in the USA"](https://world-nuclear.org/information-library/country-profiles/countries-t-z/usa-nuclear-power.aspx). Updated January 2024.
