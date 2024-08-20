@@ -13,12 +13,6 @@ export const DynamicSolutionGraphic = dynamic(
 
 We propose a government and industry consortium of launch providers to develop rocket fuel with low ozone-depleting potential.
 
-## Background
-
-If the commercial spaceflight industry greatly expands, it could have a severe effect on stratospheric ozone concentrations. An industry-wide agreement to use low-ozone depleting rocket fuels will alleviate this risk. We model our proposal after the High Speed Civil Transport program, which NASA led in the 1990s to develop commercial supersonic flight with lower ozone depletion [^"17"].
-
-## Calculations
-
 <DynamicSolutionGraphic
   barChartTitle={"Low-Depletion Rocket Fuel"}
   barChartTitle2={""}
@@ -33,22 +27,27 @@ If the commercial spaceflight industry greatly expands, it could have a severe e
   mastheadText3={"MG 1-28-2024"}
  
  
-  staticData={[  
-     {
-      name: "Cost",
-      barlength: 29.465548150185,
-      displayedValue: "$29 billion",
-      site: "null",
-    },
-         {
+  staticData={[
+      {
       name: "Benefit",
       barlength: 52.38805970149253,
       displayedValue: "$52 billion",
       site: "null",
     },
-       
+     {
+      name: "Cost",
+      barlength: 29.465548150185,
+      displayedValue: "$29 billion",
+      site: "null",
+    }
   ]}
 />
+
+## Background
+
+If the commercial spaceflight industry greatly expands, it could have a severe effect on stratospheric ozone concentrations. An industry-wide agreement to use low-ozone depleting rocket fuels will alleviate this risk. We model our proposal after the High Speed Civil Transport program, which NASA led in the 1990s to develop commercial supersonic flight with lower ozone depletion [^"17"].
+
+## Calculations
 
 Data on the ozone depletion of rocket launches is limited, and the differences vary by more than a factor of 20 by type of booster [^"20"]. Generally, solid rocket fuels emit much more ozone-depleting pollution than liquid fuels [^"15"], with a difference of a factor of 66-90, with kerosene fuels a major contributor as well [^"20"]. Alumina (Al<sub>2</sub>O<sub>3</sub>) particles and black carbon are among the emissions that contribute to ozone depletion. Over half of rocket fuel is solid fuel or kerosene [^"1"], and we thus estimate that ozone depletion from rocket fuel can be reduced by 90% with hypergolic fuels.
 
