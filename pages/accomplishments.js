@@ -71,7 +71,7 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations.
         </div>
         <div className="pb-6" id="metrics">
-          <b>2021-Present:</b>&nbsp;As of August 5, 2024, 110 of our over-220
+          <b>2021-Present:</b>&nbsp;As of August 21, 2024, 110 of our over-220
           solutions contain at-least-mostly-full sets of estimates.&nbsp; The
           combined totals are $7.74 trillion U.S. dollars per year in costs,
           $14.8 trillion U.S. dollars per year in benefits, 45.88 billion tons
