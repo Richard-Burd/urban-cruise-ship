@@ -8,32 +8,10 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Oceanic Plastic Pollution";
-export const solution = "Derelict Fishing Gear Buyback";
-
-
+export const solution = "Derelict Fishing Gear Buyback - World";
 
 ## Description
-
 We propose an international program to buy back derelict fishing gear.
-
-
-
-## Background
-
-Although there is great uncertainty, lost or discarded fishing gear constitutes an estimated 20% of all plastic waste that enters the oceans. Fishing gear constitutes nearly half of the plastic waste in the Great Pacific Garbage Patch.
-
-<ArticleImage image={"discard_fishing_gear.svg"} width={850} height={300} />
-#### Source: Lebreton et al. [^"9"].
-
-Discarded fishing gear is particularly insidious because gear catches sea life even after discard, a phenomenon known as "ghost fishing" [^"13"], which could be responsible for up to 30% of all fish caught by human activity [^"11"].
-
-A buy-back program, such as the program in South Korea that we analyze below, pays fishers a bounty for recovered fishing gear, such as nets and traps [^"1"].
-
-
-
-## Calculations
-
-We estimate the following costs and benefits from an international buy-back program.
 
 <DynamicSolutionGraphic
   barChartTitle={""}
@@ -49,22 +27,35 @@ We estimate the following costs and benefits from an international buy-back prog
   mastheadText3={"MG, Mar. 14, 2024"}
   
   
-  staticData={[   
+  staticData={[ 
+    	{
+	  name:"Benefit",
+      barlength: 7.451195700673214,
+      displayedValue: "$7 billion/yr",
+      site: "null",
+	},  
     {
       name: "Cost",
       barlength: 0.11861079166666667,
       displayedValue: "$120 million/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 7.451195700673214,
-      displayedValue: "$7 billion/yr",
-      site: "null",
-	}
-        
+    }  
   ]}
 />
+
+## Background
+
+Although there is great uncertainty, lost or discarded fishing gear constitutes an estimated 20% of all plastic waste that enters the oceans. Fishing gear constitutes nearly half of the plastic waste in the Great Pacific Garbage Patch.
+
+<ArticleImage image={"discard_fishing_gear.svg"} width={850} height={300} />
+#### Source: Lebreton et al. [^"9"].
+
+Discarded fishing gear is particularly insidious because gear catches sea life even after discard, a phenomenon known as "ghost fishing" [^"13"], which could be responsible for up to 30% of all fish caught by human activity [^"11"].
+
+A buy-back program, such as the program in South Korea that we analyze below, pays fishers a bounty for recovered fishing gear, such as nets and traps [^"1"].
+
+
+## Calculations
 
 Costs are estimated from South Korea's buy-back program, which incurred an average annual cost (CPI-adjusted) of about $7 million per year from 2009 to 2012, including the payments to fishers and the cost of administering the program [^"2"]. Over the same period, the program recovered an average of nearly 8,000 tons of fishing gear per year [^"2"].
 
@@ -73,9 +64,6 @@ South Korea provides just over 1% of the world's seafood [^"4"] but is responsib
 In 2019, Beaumont et al. estimated, based on lost ecosystem services, an impact of $3300-33,000 per ton per year of oceanic plastic [^"8"]. Taking the lower end of this range, CPI-adjusting to 2024, and applying a 7% discount rate, we estimate the value of recovered gear at $58,000 per ton.
 
 The proper valuation of discarded fishing gear is difficult to make with precision. Beaumont et al. make a highly speculative estimate that 1-5% of ocean ecosystem services are lost as a result of plastic pollution, and they value those services based on Costanza et al. [^"10"], which in turn are controversial [^"12"]. Conversely, we note that ghost fishing and risk to ships are two costs particularly associated with discarded fishing gear and are not incorporated into the estimates of Beaumont et al. for general plastic waste. We are also unsure how precisely the performance of the South Korea program can be extrapolated to other countries.
-
-
-
 
 
 ## Implementation
@@ -87,10 +75,6 @@ Retrieval of fishing gear can also be done directly by governments or by NGOs, s
 A stronger international agreement would focus on marking of fishing gear; extended producer responsibility; stronger enforcement against illegal, unreported, and unregulated fishing; and other provisions [^"3"]. Additionally, stronger enforcement of the London Convention [^"6"] and the International Convention for the Prevention of Pollution from Ships [^"7"] would reduce the permissible intentional or accidental loss of equipment at sea [^"16"].
 
 ##### Lead researcher: Michael Goff. Last updated: March 14, 2024.
-
-
-
-
 
 
 [^"1"]: Macfadyen, G., Huntington, T., Cappell, R. ["Abandoned, lost or otherwise discarded fishing gear"](https://www.fao.org/documents/card/en?details=b1c2166f-78d5-5c21-b678-fe30cd51b154). FAO Fisheries and Aquaculture Technical Paper Rome, ISBN 9789251061961. 2009.

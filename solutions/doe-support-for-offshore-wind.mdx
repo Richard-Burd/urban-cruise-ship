@@ -8,21 +8,11 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 export const problem = "Greenhouse Gas Emissions";
-export const solution = "Department of Energy Support for Offshore Wind";
+export const solution = "Department of Energy Support for Offshore Wind - U.S.";
 
 ## Description
 
 We cautiously recommend tax credits, as well as Department of Energy research and develoment support, for offshore wind in the United States.
-
-## Background
-
-In recent years, world offshore wind energy has been growing rapidly, and the United States Department of Energy has set a goal of 30 gigawatts of offshore wind capacity by 2030 and 110 GW capacity by 2050 [^"1"]. However, since 2023, the industry has faced setbacks [^"9"],[^"12"], with 12 gigawatts of projects being cancelled or renegotiated worldwide in 2023 [^"13"].
-
-Nevertheless, offshore wind has great potential, and despite the setbacks, the industry continues to make progress.
-
-## Calculations
-
-We estimate the following costs and benefits to offshore wind support.
 
 <DynamicSolutionGraphic
   barChartTitle={""}
@@ -38,23 +28,30 @@ We estimate the following costs and benefits to offshore wind support.
   mastheadText3={"MG, May 20, 2024"}
   
   
-  staticData={[   
+  staticData={[
+    	{
+	  name:"Benefit",
+      barlength: 12.07142527034862,
+      displayedValue: "$12.0 billion/yr",
+      site: "null",
+	},
     {
       name: "Cost",
       barlength: 11.634940143546842,
       displayedValue: "$11.6 billion/yr",
       site: "null",
-    },   
-	{
-	  name:"Benefit",
-      barlength: 12.07142527034862,
-      displayedValue: "$12.0 billion/yr",
-      site: "null",
-	}
+    }
         
   ]}
 />
 
+## Background
+
+In recent years, world offshore wind energy has been growing rapidly, and the United States Department of Energy has set a goal of 30 gigawatts of offshore wind capacity by 2030 and 110 GW capacity by 2050 [^"1"]. However, since 2023, the industry has faced setbacks [^"9"],[^"12"], with 12 gigawatts of projects being cancelled or renegotiated worldwide in 2023 [^"13"].
+
+Nevertheless, offshore wind has great potential, and despite the setbacks, the industry continues to make progress.
+
+## Calculations
 We model that 15 GW of offshore wind will be deployed in the United States by 2035, and 110 GW by 2060. These numbers are based on a 2023 DoE report [^"1"], but we modify them by rejecting the 30 GW target for 2030 as unrealistic [^"4"], taking the 15 GW target of floating offshore wind in 2035 as an estimate of the full industry deployment, and taking the 110 GW target to be achieved in 2060 rather than 2050. The amount of offshore wind is linearly interpolated between 2035 and 2060. We model a 60% capacity factor [^"5"], meaning that, on average, the turbines produce 60% of their theoretical maximum electricity based on capacity.
 
 Two costs are considered. First, we take a levelized cost of electricity of 6.4¢ per kilowatt-hour, as estimated by Shields et al. [^"2"] as the future cost of floating offshore wind turbines. This number is greater than the same study's estimate of future fixed-bottom offshore wind turbines, and less than the 2030 price estimate of offshore wind in a 2024 Department of Energy report [^"3"]. The second cost considered, seperately from the LCOE, is required investment to build an offshore wind supply chain. Based on a 2023 Wood Mackenzie analysis [^"4"], we take an approximate $1.1 billion per GW of capacity, assessed at 2025 and 2050.
