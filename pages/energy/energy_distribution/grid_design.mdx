@@ -63,16 +63,21 @@ Ancillary services are those services, other that provision of power, that are n
 
 | Service | Duration | Description |
 | --- | --- | --- |
-| Black Start Services | Less than a second | Restart from a blackout. |
-| Frequency and Voltage Regulation | Less than a second to seconds | Ensure the grid's frequency and voltage is in specified ranges. |
-| Spinning Reserves | Seconds or tens of seconds | Retain back-up power in active generators. |
-| Non-spinning Reserves | Tens of seconds to minutes | Retain back-up power in inactive generators. |
-| Peak Shaving | Hours | Respond to daily peaks or troughs in demand. |
-| Firm Power, Avoid Curtailment | Hours to tens of hours | Keep daily demand and supply profile flat. |
-| Seasonal Storage | Days to months | Provide power during summer and winter. |
+| Inertia [^16] | Instantaneous | Slow rate of change of frequency. |
+| Fast Frequency Response [^16] | Milliseconds | Stabilize frequency. |
+| Black Start Services [^5] | Less than a second | Restart from a blackout. |
+| Frequency and Voltage Regulation [^5] | Less than a second to seconds | Ensure the grid's frequency and voltage is in specified ranges. |
+| Primary Frequency Respose [^16] | Seconds | Stabilize frequency. |
+| Spinning Reserves [^5] | Seconds or tens of seconds | Retain back-up power in active generators. |
+| Non-spinning Reserves [^5] | Tens of seconds to minutes | Retain back-up power in inactive generators. |
+| Flexibility Reserves [^16] | 10-15 minutes | For insufficient ramp capability for load forecast |
+| Tertiary Reserves [^16] | 30-60 minutes | Back-up spinning and non-spinning reserves. |
+| Ramping Reserves [^16] | Hours | Respond to large forecasting errors. |
+| Peak Shaving [^5] | Hours | Respond to daily peaks or troughs in demand. |
+| Firm Power, Avoid Curtailment [^5] | Hours to tens of hours | Keep daily demand and supply profile flat. |
+| Seasonal Storage [^5] | Days to months | Provide power during summer and winter. |
 
 </div>
-#### Major ancillary services and their typically time spans. Source: [^5].
 
 The financial value of ancillary services typically comprise only 2-3% of the wholesale value of electricity, but they are of outsized importance [^8]. Markets in ancillary services can be developed by making supply [^1] or demand [^8] more flexible. To date, relatively few ancillary services markets exist, leaving these services not properly priced.
 
@@ -107,6 +112,8 @@ The financial value of ancillary services typically comprise only 2-3% of the wh
 [^14]: Udrea, O., Lazaroiu, G., Ungureanu, G., Violeta, V. ["HVDC Transmission Corridor -- Cost Benefit Analysis"](https://ieeexplore.ieee.org/abstract/document/6934828). In 2014 49th International Universities Power Engineering Conference (UPEC), pp. 1-6, IEEE. September 2014.
 
 [^15]: Union of the Electricity Industry. ["Integrating intermittent renewables sources into the EU electricity system by 2020: challenges and solutions"](http://www.eurelectric.org/media/45254/res_integration_paper_final-2010-030-0492-01-e.pdf). 2010.
+
+[^16]: Electric Power Research Institute. ["Ancillary Services in the United States"](https://www.epri.com/research/products/000000003002015670). June 2019.
 
 export default ({ children }) => 
   <Article 
