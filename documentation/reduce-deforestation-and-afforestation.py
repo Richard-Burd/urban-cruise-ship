@@ -2,10 +2,20 @@
 
 print("\n=========================================\nReforestation solution\n=========================================")
 print("Documentation Created: June 9, 2024")
-print("Last Substantial Update: June 9, 2024")
+print("Last Substantial Update: August 25, 2024")
 
 # https://www.science.org/doi/10.1126/science.aay7976 adjusted ha based upon corrections which removed certain biomes from calculations for restoration. Where there is a 0, the ha of the area has also been removed from the total. value is in ha
+# restoration area includes only the areas specified by veldman to be legitimate: mangroves, mediterranean forests, temperate broadleaf, temperate conifer forests, tropical conifer, tropical dry broadleaf, tropical moist broadleaf. A total of 304 million ha.
+
 restoration_area = 304000000
+# this restoration area is in ha
+
+sqkm_restoration_area= restoration_area/100
+# to get the sq km, DIVIDE ha by 100.
+
+millions_sqkm_restoration_area=sqkm_restoration_area/1000000
+# solutions tracker lists habitat preserved in millions of sq km. to convert to millions of km, divide by 1 million
+
 carbon_gain_gt=41.6
 carbon_gain_tons=carbon_gain_gt*10**9
 carbon_to_co2_multiplier=3.6667
@@ -36,5 +46,8 @@ print("Yearly Cost   : $",annual_cost/10**9," billion",sep="")
 print("Yearly Benefit: $",annual_benefit/10**9," billion",sep="")
 print("Annual CO2 reduction: ",annual_co2_reduction/10**6," megatons",sep="")
 print("Habitat Restored (ha): ",restoration_area," hectares",sep="")
+print("Habitat Restored (sqkm): ",sqkm_restoration_area," square km",sep="")
+print("Habitat Restored (millions sqkm): ",millions_sqkm_restoration_area," million square km",sep="")
+
 
 

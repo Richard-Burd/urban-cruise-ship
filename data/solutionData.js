@@ -1152,7 +1152,7 @@ export const solutionData = [
     cost: 190,
     benefit: 1770,
     co2: 7626,
-    habitat: 304000,
+    habitat: 3040000,
     sources: null,
     subset: "ecology-environment",
   },
