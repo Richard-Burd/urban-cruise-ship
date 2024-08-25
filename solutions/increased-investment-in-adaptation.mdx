@@ -1,26 +1,68 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Need for Climate Change Adaptation";
-export const solution = "Increased Investment in adaptation";
+export const solution = "Increased Adaptation Investment - World";
 import ArticleImage from "/components/ArticleImage.js";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
 
 ## Description
 We propose greater investment into climate adaptation.
 
-## Background
-Climate change is already occurring, and under any plausible emissions scenario, it will continue to intensify for at least several decades. Therefore, there is a need to invest in adaptation, and many investments could be made with positive cost/benefit structures. The following costs and benefits for select projects have been found.
+<DynamicSolutionGraphic
+  barChartTitle={"Increased Adaptation Investment - World "}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 8-25-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 7200,
+      displayedValue: "$7,200",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 1501,
+      displayedValue: "$1,501 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
+## Background
+Climate change is already occurring, including super-charged hurricanes, floods, and wildfires. Under any plausible emissions scenario, it will continue to intensify for at least several decades. Therefore, there is a need to invest in adaptation, and many investments could be made with positive cost/benefit structures. The following costs and benefits for select projects have been found.
+
+## Calculations
 <ArticleImage image={"adaptation_cba.svg"} width={600} height={350} />
-#### Source: [^"8"].
+#### Source: [^"2"].
 
 ## Implementation
-Wealthy countries will need to make more grants available. At the 2009 Copenhagen summit, wealthy countries pledged $100 billion per year by 2020 to help poorer countries with adaptation, but by 2019, spending was only at $80 billion per year, much of which was in the form of loans rather than grants [^"2"], [^"25"].
+Wealthy countries will need to make more grants available. At the 2009 Copenhagen summit, wealthy countries pledged $100 billion per year by 2020 to help poorer countries with adaptation, but by 2019, spending was only at $80 billion per year, much of which was in the form of loans rather than grants [^"1"], [^"3"]. While increasing investment it is important to make sure that competing interests are taken into account during the planning process[^"5"].
+A review of adaptation plans found results suggesting that current adaptation plans are under-developed, showing little consideration for non-climatic factors and neglecting issues of adaptive capacity[^"4"]. This leaves a lot of room for improvement in future adaptation plans.
 
-[^"2"]: Bhattacharya, A., Calland, R., Averchenkova, A., Gonzalez, L., Martinez-Diaz, L., Van Rooij, J. ["Delivering on the $100 Billion Climate Finance Commitment and Transforming Climate Finance"](https://www.g24.org/wp-content/uploads/2021/03/Richard-Calland-and-Amar-Bhattacharya_Independent-Expert-Group-on-CF-MARCH-2021.pdf). Independent Expert Group on Climate Finance. March 2021.
+##### Lead researchers: Lee Nelson and Michael Goff - Last updated: 8/25/2024
 
-[^"8"]: Global Commision on Adaptation. ["Adapt Now: A Global Call for Leadership on Climate Resilience"](https://reliefweb.int/report/world/adapt-now-global-call-leadership-climate-resilience). September 2019.
+[^"1"]: Bhattacharya, A., Calland, R., Averchenkova, A., Gonzalez, L., Martinez-Diaz, L., Van Rooij, J. ["Delivering on the $100 Billion Climate Finance Commitment and Transforming Climate Finance"](https://www.g24.org/wp-content/uploads/2021/03/Richard-Calland-and-Amar-Bhattacharya_Independent-Expert-Group-on-CF-MARCH-2021.pdf). Independent Expert Group on Climate Finance. March 2021.
 
-[^"25"]: Timperley, J. ["The broken $100-billion promise of climate finance — and how to fix it"](https://www.nature.com/articles/d41586-021-02846-3). Nature. October 2021.
+[^"2"]: Global Commission on Adaptation. ["Adapt Now: A Global Call for Leadership on Climate Resilience"](https://reliefweb.int/report/world/adapt-now-global-call-leadership-climate-resilience). September 2019.
+
+[^"3"]: Timperley, J. ["The broken $100-billion promise of climate finance — and how to fix it"](https://www.nature.com/articles/d41586-021-02846-3). Nature. October 2021.
+
+[^"4"]: Preston, B. et al. [“Climate adaptation planning in practice: an evaluation of adaptation plans from three developed nations”](https://link.springer.com/article/10.1007/s11027-010-9270-x) Mitigation and Adaptation Strategies for Global Change, October 2010
+
+[^"5"]: Sovacool, B. et al. [“The political economy of climate adaptation”](https://doi.org/10.1038/nclimate2665) Nature Climate Change, June 2015
+
 
 export default ({ children }) => 
   <SolutionDropdown 
