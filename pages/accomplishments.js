@@ -25,44 +25,29 @@ const Accomplishments = () => {
       </div>
       <div className="presentations-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1"></div>
       <div className="my-2 standard-font-3 standard-font-color-1 p-4 lg:p-0 text-justify text-lg">
-      <div className="pb-6">
-          <b>2023-present:</b>&nbsp;Constructed a web site for 
-          <a
-            href="https://www.ramtn.org/"
-            className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
-            target="_blank"
-            rel="noreferrer"
-          >
-            &nbsp;
-            <b>
-              <i>Recycling Advocates of Middle Tennessee (RAM)</i>
-            </b>
-            &nbsp;
-          </a>
-          , to better utilize RAM&apos;s knowledge and experience in building Urban Cruise Ship&apos;s Waste site.  RAM had the best methodology among environmental groups, but did not have its material online.  Currently, RAM&apos;s web site is about half-complete.  Mostly, it still lacks upgraded graphics and curated submissions.
+        <div className="pb-6">
+          <b>2023-present:</b>&nbsp;Constructed a web site for Recycling
+          Advocates of Middle Tennessee (RAM), to better utilize RAM&apos;s
+          knowledge and experience in building Urban Cruise Ship&apos;s Waste
+          site. RAM had the best methodology among environmental groups, but did
+          not have its material online. Currently, RAM&apos;s web site is about
+          half-complete. Mostly, it still lacks upgraded graphics and curated
+          submissions.
         </div>
         <div className="pb-6">
-          <b>2023-present:</b>&nbsp;Created 
-          <a
-            href="https://www.urbanfootnotes.com/"
-            className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
-            target="_blank"
-            rel="noreferrer"
-          >
-            &nbsp;
-            <b>
-              <i>Urban Foot Notes</i>
-            </b>
-            &nbsp;
-          </a>
-          , a project of Urban Cruise Ship -- a first-of-its-kind comparative quantification of how easily a resident at a given address can live without a car.  After 1 1/2 years of development, it is presently being tested, ranking a variety of addresses.  Soon hopefully it will be used by clients to assess their own addresses&apos; pedestrian friendliness.
+          <b>2023-present:</b>&nbsp;Created Urban Foot Notes, a project of Urban
+          Cruise Ship -- a first-of-its-kind comparative quantification of how
+          easily a resident at a given address can live without a car. After 1
+          1/2 years of development, it is presently being tested, ranking a
+          variety of addresses. Soon hopefully it will be used by clients to
+          assess their own addresses&apos; pedestrian friendliness.
         </div>
         <div className="pb-6">
-          <b>2023-present:</b>&nbsp;Broadness of both topic and solution coverage has
-          reached the point where Urban Cruise Ship&apos;s web site is the best
-          starting point we know of for students, counselors, and school
-          administrators to use to select majors, curricula, and research topics
-          in environmental fields.
+          <b>2023-present:</b>&nbsp;Broadness of both topic and solution
+          coverage has reached the point where Urban Cruise Ship&apos;s web site
+          is the best starting point we know of for students, counselors, and
+          school administrators to use to select majors, curricula, and research
+          topics in environmental fields.
         </div>
         <div className="pb-6">
           <b>2022-Present:</b>&nbsp;Produced eleven exemplary handouts, which
@@ -133,7 +118,12 @@ const Accomplishments = () => {
         </div>
         <div className="pb-6">
           <b>2018-Present:</b>&nbsp;Over 750 graphic exhibits have been
-          constructed, with data and analysis sufficient to identify over 220 problem-solution sets, with details presented in a standardized format, in drop-down boxes. Others can use this to independently develop high-quality solutions easier as well. Such competition with Urban Cruise Ship&apos;s own solution development should improve collective quality.
+          constructed, with data and analysis sufficient to identify over 220
+          problem-solution sets, with details presented in a standardized
+          format, in drop-down boxes. Others can use this to independently
+          develop high-quality solutions easier as well. Such competition with
+          Urban Cruise Ship&apos;s own solution development should improve
+          collective quality.
         </div>
       </div>
     </>
