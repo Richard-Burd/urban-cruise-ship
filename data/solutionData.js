@@ -1158,6 +1158,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Increased Adaptation Investment - World`,
+    link: `/habitat/environment/climate_socio`,
+    site: `habitat`,   
+    cost: 150,
+    benefit: 720,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "ecology-environment",
+  },
+
+  {
     solution: `Renewable Microgrids - US Military`,
     link: `/energy/energy_distribution/grid_design#renewable-microgrids-u-s-military`,
     site: `energy`,

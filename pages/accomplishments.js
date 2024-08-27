@@ -25,8 +25,14 @@ const Accomplishments = () => {
       </div>
       <div className="presentations-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1"></div>
       <div className="my-2 standard-font-3 standard-font-color-1 p-4 lg:p-0 text-justify text-lg">
+      <div className="pb-6">
+          <b>2023-present:</b>&nbsp;Constructed a web site for Recycling Advocates of Middle Tennessee (RAM), to better utilize RAM&apos;s knowledge and experience in building Urban Cruise Ship&apos;s Waste site.  RAM had the best methodology among environmental groups, but did not have its material online.  Currently, RAM&apos;s web site is about half-complete.  Mostly, it still lacks upgraded graphics and curated submissions.
+        </div>
         <div className="pb-6">
-          <b>2023:</b>&nbsp;Broadness of both topic and solution coverage has
+          <b>2023-present:</b>&nbsp;Created Urban Foot Notes, a project of Urban Cruise Ship -- a first-of-its-kind comparative quantification of how easily a resident at a given address can live without a car.  After 1 1/2 years of development, it is presently being tested, ranking a variety of addresses.  Soon hopefully it will be used by clients to assess their own addresses' pedestrian friendliness.
+        </div>
+        <div className="pb-6">
+          <b>2023-present:</b>&nbsp;Broadness of both topic and solution coverage has
           reached the point where Urban Cruise Ship&apos;s web site is the best
           starting point we know of for students, counselors, and school
           administrators to use to select majors, curricula, and research topics
