@@ -101,15 +101,7 @@ const Accomplishments = () => {
         </div>
         <div className="pb-6">
           <b>2018-Present:</b>&nbsp;Over 750 graphic exhibits have been
-          constructed, with data and analysis sufficient to identify over 200
-          problem-solution sets, for which Urban Cruise Ship believes it can
-          calculate cost, benefit; and environmental impact estimates sufficient
-          to properly prioritize them. Calculations for these remain under
-          development. By presenting this data, along with analysis and
-          tentative problem-solution sets, others can use this to independently
-          develop high-quality solutions easier if they wish, in competition
-          with Urban Cruise Ship&apos;s own solution development. Such
-          competition should improve collective quality.
+          constructed, with data and analysis sufficient to identify over 220 problem-solution sets, with details presented in a standardized format, in drop-down boxes. Others can use this to independently develop high-quality solutions easier as well. Such competition with Urban Cruise Ship&apos;s own solution development should improve collective quality.
         </div>
       </div>
     </>
