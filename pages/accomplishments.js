@@ -117,7 +117,7 @@ const Accomplishments = () => {
           combined totals are $7.89 trillion U.S. dollars per year in costs,
           $15.52 trillion U.S. dollars per year in benefits, 45.89 billion tons
           of carbon dioxide-equivalents per year of greenhouse gas reduction,
-          and 82 million square kilometers of habitat preserved.
+          and 82 million square kilometers of habitat preserved. For context, World annual GDP is roughly $100 trillion U.S. dollars per year, humans are likely currently emitting in the vicinity of 55 billion tons of carbon dioxide equivalents per year, and the entire earth&apos;s surface area is slightly more than 510 million square kilometers.
         </div>
         <div className="pb-6">
           <b>2020-Present:</b>&nbsp;Created and developed&nbsp;
