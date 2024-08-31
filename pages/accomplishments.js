@@ -26,7 +26,7 @@ const Accomplishments = () => {
       <div className="presentations-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1"></div>
       <div className="my-2 standard-font-3 standard-font-color-1 p-4 lg:p-0 text-justify text-lg">
         <div className="pb-6">
-          <b>2023-present:</b>&nbsp;Constructed a web site for 
+          <b>2023-present:</b>&nbsp;Constructed a web site for
           <a
             href="https://www.ramtn.org/"
             className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
@@ -38,15 +38,15 @@ const Accomplishments = () => {
               <i>Recycling Advocates of Middle Tennessee (RAM)</i>
             </b>
             &nbsp;
-          </a>, to better utilize RAM&apos;s
-          knowledge and experience in building Urban Cruise Ship&apos;s Waste
-          site. RAM had the best methodology among environmental groups, but did
-          not have its material online. Currently, RAM&apos;s web site is about
-          half-complete. Mostly, it still lacks upgraded graphics and curated
-          submissions.
+          </a>
+          , to better utilize RAM&apos;s knowledge and experience in building
+          Urban Cruise Ship&apos;s Waste site. RAM had the best methodology
+          among environmental groups, but did not have its material online.
+          Currently, RAM&apos;s web site is about half-complete. Mostly, it
+          still lacks upgraded graphics and curated submissions.
         </div>
         <div className="pb-6">
-          <b>2023-present:</b>&nbsp;Created 
+          <b>2023-present:</b>&nbsp;Created
           <a
             href="https://www.urbanfootnotes.com/"
             className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
@@ -58,12 +58,13 @@ const Accomplishments = () => {
               <i>Urban Foot Notes</i>
             </b>
             &nbsp;
-          </a>, a project of Urban
-          Cruise Ship -- a first-of-its-kind comparative quantification of how
-          easily a resident at a given address can live without a car. After 1
-          1/2 years of development, it is presently being tested, ranking a
-          variety of addresses. Soon hopefully it will be used by clients to
-          assess their own addresses&apos; pedestrian friendliness.
+          </a>
+          , a project of Urban Cruise Ship -- a first-of-its-kind comparative
+          quantification of how easily a resident at a given address can live
+          without a car. After 1 1/2 years of development, it is presently being
+          tested, ranking a variety of addresses. Soon hopefully it will be used
+          by clients to assess their own addresses&apos; pedestrian
+          friendliness.
         </div>
         <div className="pb-6">
           <b>2023-present:</b>&nbsp;Broadness of both topic and solution
@@ -119,25 +120,26 @@ const Accomplishments = () => {
           and 82 million square kilometers of habitat preserved.
         </div>
         <div className="pb-6">
-          <b>2020-Present:</b>&nbsp;Invented and developed
+          <b>2020-Present:</b>&nbsp;Created and developed&nbsp;
           <a
             href="/history"
             className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
             target="_blank"
             rel="noreferrer"
           >
-            &nbsp;
             <b>
               <i>Comparative Progress Studies</i>
             </b>
-            &nbsp;
           </a>
-          - a subfield of Progress Studies, as a tool for improving and
-          verifying accuracy of cost-benefit metrics for solutions. This can
-          also improve policymakers&apos; funding prioritization. By the end of
-          2020, the number of historic human endeavors presented stood at 35. By
-          the end of 2021, that number had grown to 78, and was broken down into
-          8 categories in addition to being presented all together.
+          &nbsp;- a subfield of Progress Studies, as a contextual comparison for
+          solutions&apos; cost-benefit metrics. These now-78 historic human
+          endeavors are presented both together, and divided into 8 topical
+          subcategories. They are also presented both alone, as a historical
+          comparative record, and combined with Urban Cruise Ship&apos;s
+          now-over 110 solutions. Each is presented both graphically, and in
+          rankable interactive tables, on our History site. This can aid
+          advocates&apos; choice-making and use of precedent, and
+          policymakers&apos; funding prioritization.
         </div>
         <div className="pb-6">
           <b>2018-Present:</b>&nbsp;Over 750 graphic exhibits have been
