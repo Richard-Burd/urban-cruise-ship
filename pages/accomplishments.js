@@ -76,7 +76,18 @@ const Accomplishments = () => {
         <div className="pb-6">
           <b>2022-Present:</b>&nbsp;Produced eleven exemplary handouts, which
           employ data presented graphically, and use no opinionated messaging in
-          text form apart from labels and titles.
+          text form apart from labels and titles. Our <a
+            href="https://www.urbancruiseship.org/publications"
+            className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            target="_blank"
+            rel="noreferrer"
+          >
+            &nbsp;
+            <b>
+              <i>Publications</i>
+            </b>
+            &nbsp;
+          </a> page has these, grouped, for viewing and/or printing.
         </div>
         <div className="pb-6">
           <b>2022:</b>&nbsp;Produced the first trajectory-styled projection of
