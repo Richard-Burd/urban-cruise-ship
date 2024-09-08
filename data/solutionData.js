@@ -1261,6 +1261,18 @@ export const solutionData = [
     habitat: null,
     sources: null,
     subset: "energy-production-efficiency",
+  },
+  
+  {
+    solution: `Low-Carbon Methanol Plants`,
+    link: `/energy/energy_distribution/methanol`,
+    site: `energy`,
+    cost: 3.607142857142857,
+    benefit: 4.545,
+    co2: 32.14285714285714,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
   }
 
 ];
