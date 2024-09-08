@@ -1,14 +1,91 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Emissions From Methanol Production";
 export const solution = "Low-Carbon Methanol Plants";
 
 import ArticleImage from "/components/ArticleImage.js";
 
-Carbon capture and sequestration has a relatively low carbon abatement cost. Methanol from electrolysis, though it reduced emissions more, has greater carbon abatement costs due to the high price of electrolysis.
+## Description
+
+We propose $38 billion of investment through 2050 in captured carbon as a source for methanol production.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Carbon Capture for Methanol"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"32 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Sep. 8, 2024"}
+  
+  
+  staticData={[
+    	{
+	  name:"Benefit",
+      barlength: 3607.142857142857,
+      displayedValue: "$3.6 billion/yr",
+      site: "null",
+	},
+    {
+      name: "Cost",
+      barlength: 4545,
+      displayedValue: "$4.5 billion/yr",
+      site: "null",
+    }
+        
+  ]}
+/>
+
+## Background
+
+Carbon capture and sequestration has a relatively low carbon abatement cost. Methanol from electrolysis, though with greater emissions reductions, also has greater carbon abatement costs due to the high price of electrolysis. We therefore assess methanol from CCS here.
+
+There are two main routes to producing methanol from carbon dioxide; the more common is a process of direct hydrogenation that reacts CO<sub>2</sub> with hydrogen, without the intermediate step of production carbon monoxide [^"7"].
 
 <ArticleImage image={"methanol_costs.svg"} width={630} height={300} />
 #### Costs, at $50/ton carbon emissions, and carbon abatement costs of alternatives to unsequestered steam methane reforming. A plant size of one million tons of methanol per year is assumed, as given by Turaga [^"24"].
+
+## Calculations
+
+Three scenarios for the deployment are offer in Sick et al. [^"1"]; we use the estimated investment needs and CO<sub>2</sub> use figures of the Baseline scenario. Figures are applied over the period 2022 to 2050.
+
+We include an additional cost of $15 per ton (range $5-25) for transportation of carbon dioxide by pipeline [^"3"]. Costs may be higher for other modes of transportation and are estimated at $14-25 for shipping and $35-60 for rail and truck.
+
+The cost of available CO<sub>2</sub> varies greatly by source. For our calculations, we use a cost of $55/ton, the upper end of the estimated range of costs of CO<sub>2</sub> capture from ethanol plants [^"2"]. Costs may be higher for CO<sub>2</sub> from other sources.
+
+## Implementation
+
+As is the case with other carbon reuse methods, methanol production with captured carbon depends on tax credits for carbon capture [^"1"], and earlier assessments have been less optimistic about the technology's viability [^"6"]. As of 2024, under the Inflation Reduction Act, tax credits for new CO<sub>2</sub> capture facilities for qualifying purposes other than geological sequestration and enhanced oil recovery are up to $60 per ton captured, depending on labor standards met by the facility, with greater credits available for direct air capture [^"8"].
+
+Most industrial CO<sub>2</sub> is transported today by pipeline, and the leading use is enhanced oil recovery [^"4"]. Use of carbon capture, utilization, and sequestration at scale would require a major expansion of CO<sub>2</sub> pipeline capacity, for which permitting and opposition is a challenge [^"5"].
+
+##### Lead researcher: Michael Goff - Last updated: September 8, 2024
+
+[^"1"]: Sick, V., Stokes, G., Mason, F., Yu, Y.S., Van Berkel, A., Daliah, R., Gamez, O., Gee, C., Kaushik, M. ["Implementing CO2 capture and utilization at scale and speed"](https://deepblue.lib.umich.edu/handle/2027.42/174095). University of Michigan. September 2022.
+
+[^"2"]: National Academies of Sciences, Engineering, and Medicine. ["Carbon Utilization Infrastructure, Markets, Research and Development"](https://www.nationalacademies.org/our-work/carbon-utilization-infrastructure-markets-research-and-development). Final Report. August 2024.
+
+[^"3"]: Fahs, R., Jacobson, R., Gilbert, A., Yawitz, D., Clark, C., Capotosto, J., Cunliff, C., McMurtry, B., Lee, U. ["Carbon Management Commercial LiftOff"](https://liftoff.energy.gov/carbon-management/). United States Department of Energy. April 2023.
+
+[^"4"]: Global CCS Institute. ["Transportation CO<sub>2</sub>"](https://www.globalccsinstitute.com/wp-content/uploads/2018/12/Global-CCS-Institute-Fact-Sheet_Transporting-CO2-1.pdf). Fact Sheet. December 2018.
+
+[^"5"]: Parfomak, P. W. ["Siting Challenges for Carbon Dioxide (CO<sub>2</sub>) Pipelines"](https://crsreports.congress.gov/product/pdf/IN/IN12269#:~:text=Other%20groups%20object%20to%20CO,technologies%2C%20such%20as%20renewable%20energy.&text=CO2%20pipeline%20safety%20is%20a%20particular%20concern.). Congressional Research Service. Updated November 2023.
+
+[^"6"]: Pérez-Fortes, M., Schöneberger, J.C., Boulamanti, A., Tzimas, E. ["Methanol synthesis using captured CO<sub>2</sub> as raw material: Techno-economic and environmental assessment"](https://www.sciencedirect.com/science/article/pii/S0306261915009071). Applied energy **161**, pp. 718-732. January 2016.
+
+[^"7"]: Narayanan, P. R. ["Methanol from CO2: a technology and outlook overview"](https://www.digitalrefining.com/article/1002891/methanol-from-co2-a-technology-and-outlook-overview). Digital Refining. April 2023.
+
+[^"8"]: Jones, A. C., Marples, D. J. ["The Section 45Q Tax Credit for Carbon Sequestration"](https://crsreports.congress.gov/product/pdf/IF/IF11455). Congressional Research Service. August 2023.
 
 [^"24"]: Turaga, U. ["Small-scale methanol technologies offer flexibility, cost effectiveness"](http://www.gasprocessingnews.com/features/201510/small-scale-methanol-technologies-offer-flexibility,-cost-effectiveness.aspx). Gas Processing & LNG. October 2015.
 
