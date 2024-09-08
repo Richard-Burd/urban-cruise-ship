@@ -106,7 +106,7 @@ function SolutionTable() {
       },
       {
         // Same as above re: number formatting without the $ sign
-        Header: "CO² Reduction megaTon/yr",
+        Header: "CO₂ Reduction megaTon/yr",
         accessor: "co2",
         sortType: "number",
         Cell: ({ value }) =>
