@@ -1182,6 +1182,18 @@ export const solutionData = [
     sources: null,
     subset: "energy-production-efficiency",
   },
+
+  {
+    solution: `Repeal Nuclear Bans - U.S.`,
+    link: `/energy/energy_production/nuclear`,
+    site: `energy`,
+    cost: .0015,
+    benefit: 3.68,
+    co2: 26,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
   
 /*  commented out because costs and benefits must be positive to avoid problems with division by zero
 
