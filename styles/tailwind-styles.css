@@ -212,6 +212,12 @@ td a {
   @apply text-zinc-100;
 }
 
+/* This is used on a non-dynamic table build with react-table located here: */
+/* https://www.urbancruiseship.org/costs/economy/costs_examples */
+.light-text-for-costs-colored-table {
+  @apply text-zinc-100  hover:text-red-300 hover:underline;
+}
+
 /* This is the primary branding font used by UCS */
 /* it is imported into this project here: ./pages/_document.js */
 .standard-font-1 {
