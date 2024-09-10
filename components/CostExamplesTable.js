@@ -1,5 +1,3 @@
-import { useTable } from "react-table";
-
 const CostExamplesTable = () => {
   return (
     <>
@@ -63,6 +61,20 @@ const CostExamplesTable = () => {
               </a>
             </td>
           </tr>
+          <tr className="matter-table-background-color" id="diet">
+            <td>Diet</td>
+            <td>Environmental costs of meat production</td>
+            <td>Meat tax</td>
+            <td>
+              <a
+                href="/matter/diet/diet_fw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Impacts of Diets
+              </a>
+            </td>
+          </tr>
           <tr
             className="matter-table-background-color"
             id="antibiotic-resistance"
@@ -80,53 +92,6 @@ const CostExamplesTable = () => {
                 rel="noopener noreferrer"
               >
                 Risks in the Agricultural System
-              </a>
-            </td>
-          </tr>
-          <tr className="matter-table-background-color" id="diet">
-            <td>Diet</td>
-            <td>Environmental costs of meat production</td>
-            <td>Meat tax</td>
-            <td>
-              <a
-                href="/matter/diet/diet_fw"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Impacts of Diets
-              </a>
-            </td>
-          </tr>
-          <tr className="matter-table-background-color" id="mining">
-            <td>Mining</td>
-            <td>
-              Environmental costs of mining and clean-up are not reflected in
-              mining costs
-            </td>
-            <td>Mining tax</td>
-            <td>
-              <a
-                href="/matter/mining/mining_waste"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Environmental Impacts of Mining
-              </a>
-            </td>
-          </tr>
-          <tr className="matter-table-background-color" id="traffic-congestion">
-            <td>Traffic Congestion</td>
-            <td>
-              Taking up road space imposes unpriced costs on other motorists
-            </td>
-            <td>Congestion pricing</td>
-            <td>
-              <a
-                href="/cities/cities_mobility/cities_latent"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Latent and Induced Demand
               </a>
             </td>
           </tr>
@@ -164,6 +129,23 @@ const CostExamplesTable = () => {
               </a>
             </td>
           </tr>
+          <tr className="matter-table-background-color" id="mining">
+            <td>Mining</td>
+            <td>
+              Environmental costs of mining and clean-up are not reflected in
+              mining costs
+            </td>
+            <td>Mining tax</td>
+            <td>
+              <a
+                href="/matter/mining/mining_waste"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Environmental Impacts of Mining
+              </a>
+            </td>
+          </tr>
           <tr
             className="habitat-table-background-color"
             id="ecosystem-services"
@@ -198,6 +180,22 @@ const CostExamplesTable = () => {
                 rel="noopener noreferrer"
               >
                 Costs from Sprawl
+              </a>
+            </td>
+          </tr>
+          <tr className="cities-table-background-color" id="traffic-congestion">
+            <td>Traffic Congestion</td>
+            <td>
+              Taking up road space imposes unpriced costs on other motorists
+            </td>
+            <td>Congestion pricing</td>
+            <td>
+              <a
+                href="/cities/cities_mobility/cities_latent"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Latent and Induced Demand
               </a>
             </td>
           </tr>
