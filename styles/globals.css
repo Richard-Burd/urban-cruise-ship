@@ -630,11 +630,6 @@ video {
   margin: 1rem;
 }
 
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -795,10 +790,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.contents {
-  display: contents;
 }
 
 .hidden {
@@ -1192,10 +1183,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
-}
-
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -1226,10 +1213,6 @@ video {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .pt-4 {
@@ -1892,6 +1875,21 @@ td a:focus {
   color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
+/* This is used on a non-dynamic table build with react-table located here: */
+
+/* https://www.urbancruiseship.org/costs/economy/costs_examples */
+
+.light-text-for-costs-colored-table {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
+
+.light-text-for-costs-colored-table:hover {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
 /* This is the primary branding font used by UCS */
 
 /* it is imported into this project here: ./pages/_document.js */
@@ -2395,11 +2393,6 @@ td a:focus {
 
   .sm\:text-right {
     text-align: right;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .sm\:text-6xl {

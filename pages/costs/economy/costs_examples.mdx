@@ -1,31 +1,15 @@
-import Article from '/components/Article.js'
+import Article from "/components/Article.js";
 import hierarchy from "../hierarchy.json";
+import CostExamplesTable from "/components/CostExamplesTable.js";
 
 export const site = "costs";
 export const focusAreaUrl = "economy";
 
 ## Examples
+
 We have proposed a number of strategies to internalize costs or benefits of activities through taxes or subsidies.
 
-<div className="table-wrapper">
-
-| Area | Externalized Cost or Benefit | Proposed Action | See Also |
-| ---- | ---------------------------- | --------------- | -------- |
-| Carbon Dioxide | CO<sub>2</sub> emissions do harm to the environment and future generations | Carbon tax | [Energy Pricing](/energy/energy_socioeconomics/carbon_pricing_e) |
-| Learning By Doing | As a technology is deployed, costs fall, benefiting all producers | Subsidize nascent technology | [Clean Energy Deployment](/energy/energy_socioeconomics/policy_se) |
-| Research and Development | R&D benefits all producers and society | Subsidize or public involvement in R&D | [Research and Development](/energy/energy_socioeconomics/rd) |
-| Water | Economic and environmental costs of providing water often not priced | Water markets | [Water Usage](/matter/water/water_usage) |
-| Wildfires | Cost of firefighting is external to development in wildland-urban-interface | Incorporate firefighting costs into development fees | [Wildfire Management](/matter/forestry/wildfire) |
-| Ecosystem Services | Value of nature is not reflected in markets | Ecosystem service tax for development | [Environmental Valuation](/habitat/economy/valuation_socio) |
-| Infrastructure | Cost of infrastructure is not taken into account well in new development | Development fees should incorporate infrastructure and service cost | [Costs from Sprawl](/cities/cities_land_use/cities_sprawl) |
-| Orbital Congestion | Satellites add an external cost in the form of risk of collision | Orbital Use Fee | [Orbital Debris](/space/ethics/orbital_debris) |
-| Antibiotic Resistance | Use of antibiotics, especially in animal agriculture, creates disease risk | Tax on antibiotics for livestocks | [Risks in the Agricultural System](/matter/ag_env/ag_risk) |
-| Recycling | Unrecycled material is a lost economic opportunity | Tax on landfilling | [Landfill Taxation](/waste/waste_economics/landfill_tax) |
-| Diet | Environmental costs of meat production | Meat tax | [Impacts of Diets](/matter/diet/diet_fw) |
-| Mining | Environmental costs of mining and clean-up are not reflected in mining costs | Mining tax | [Environmental Impacts of Mining](/matter/mining/mining_waste) |
-| Traffic Congestion | Taking up road space imposes unpriced costs on other motorists | Congestion pricing | [Latent and Induced Demand](/cities/cities_mobility/cities_latent) |
-
-</div>
+<CostExamplesTable />
 
 export default ({ children }) => 
   <Article 
@@ -34,4 +18,6 @@ export default ({ children }) =>
     site={site}
   >
     {children}
-  </Article>
+  </Article
+
+>
