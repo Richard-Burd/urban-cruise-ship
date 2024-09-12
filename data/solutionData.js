@@ -1144,6 +1144,18 @@ export const solutionData = [
   },
 
   {
+    solution: `Wind Turbine Drivetrain R&D - U.S.`,
+    link: `/energy/energy_production/wind`,
+    site: `energy`,
+    cost: .0492,
+    benefit: .1968,
+    co2: null,
+    habitat: null,
+    sources: null,
+    subset: "energy-production-efficiency",
+  },
+
+  {
     solution: `Reforestation and Afforestation - World`,
     link: `/habitat/environment/geoengineering#reforestation-and-afforestation-world`,
     site: `habitat`,
