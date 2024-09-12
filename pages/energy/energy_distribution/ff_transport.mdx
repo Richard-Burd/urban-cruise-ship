@@ -6,6 +6,12 @@ export const focusAreaUrl = "energy_distribution";
 
 import ArticleImage from "/components/ArticleImage.js";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 # Transportation of Fossil Fuels
 
 In comparing several methods of transporting oil and natural gas, we find that pipelines generally perform better than trucking, shipping, or train transportation.
@@ -25,6 +31,55 @@ The two main methods of transporting natural gas are by pipeline and by shipping
 <ArticleImage image={"gas_transport_efficiency.svg"} width={680} height={240} />
 #### Energy lost in transporting natural gas. Sources: Interstate Natural Gas Association of America [^3] for pipelines, Nagi et al. [^4] for LNG.
 
+## Transportation of Carbon Dioxide
+
+Under a scenario widespread [carbon capture](/energy/industry/ccs), whether from industrial point sources or from the atmosphere, it will be necessary to transport large volumes of carbon dioxide, and this is most likely to be done by pipeline [^5]. As of 2023, the United States CO<sub>2</sub> pipeline network extended 5385 miles and was sufficient to carry 80 million tons of CO<sub>2</sub> annually [^7], or a bit over 1% of U.S. total emissions. The total length of the American CO<sub>2</sub> pipeline network surpassed 5000 miles in 2013 and has remained mostly flat since then [^10]. For carbon capture and use or sequestration to play a major role in decarbonizing the U.S. economy, the network must expand considerably.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"CO₂ Transportation Costs"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  mastheadToggle={''}
+  chartType={"hide"}
+  mastheadText3={"MG, Sep. 12, 2024"}
+  
+  
+  staticData={[
+    	{
+	  name:"Pipeline",
+      barlength: 15,
+      displayedValue: "$5-25 per ton CO₂",
+      site: "null",
+	},
+    {
+      name: "Ship",
+      barlength: 19.5,
+      displayedValue: "$14-25/ton",
+      site: "null",
+    },
+	{
+	  name: "Truck and Rail",
+	  barlength: 47.5,
+	  displayedValue: "$35-60/ton",
+	  site: "null"
+	}
+        
+  ]}
+/>
+#### Source: U.S. Department of Energy [^6].
+
+On February 22, 2020, a CO<sub>2</sub> pipeline burst near the town of Satartia, Mississippi, causing 200 evaculations, 45 hospitalizations, and 0 fatalities [^8]. The prevailing trend in the years before 2023 has been around 5-6 incidents per year on average, or just over one incident per thousand miles of pipeline per year [^9]. From 2004 to 2021, there were $5.87 million of damages from CO<sub>2</sub> pipeline accidents, over half of which occured in the Satartia incident [^9].
+
+The leakage rate, including both unintentional and intentional releases, is about 0.003% of the CO<sub>2</sub> transported [^10].
+
+The difficulty in permitting CO<sub>2</sub> pipelines has prompted proposals for the federal government to take control over the permitting process [^11]. The difficulty has also spurred interest in rail as an alternative means of transportation, especially for smaller volumes over a shorter distance [^12].
+
+
+
+
+
 [^1]: Clay, K., Jha, A., Muller, N., Walsh, R. ["The External Costs of Transporting Petroleum Products by Pipelines and Rail: Evidence From Shipments of Crude Oil from North Dakota"](https://www.nber.org/papers/w23852). NBER Working Paper No. 23852. September 2017.
 
 [^2]: Frittelli, J., Andrews, A., Parfomak, P., Pirog, R., Ramseur, J., Ratner, M. ["U.S. Rail Transportation of Crude Oil: Background and Issues for Congress"](https://digital.library.unt.edu/ark:/67531/metadc276861/). Congressional Research Service R43390. December 2014.
@@ -32,6 +87,22 @@ The two main methods of transporting natural gas are by pipeline and by shipping
 [^3]: Interstate Natural Gas Association of America. ["Interstate Natural Gas Pipeline Efficiency"](https://www.ingaa.org/file.aspx?id=10929). October 2010.
 
 [^4]: Nagi, C., Appah, D., Chukwu, G. ["Comparative Economic Analysis of Gas to Liquid and Liquefied Natural Gas Technologies"](https://www.ijser.org/researchpaper/Comparative-Economic-Analysis-of-Gas-to-Liquid-and-Liquefied-Natural-Gas-Technologies.pdf). International Journal of Scientific & Engineering Research 7(6). June 2016.
+
+[^5]: Leung, D.Y., Caramanna, G., Maroto-Valer, M.M. ["An overview of current status of carbon dioxide capture and storage technologies"](https://www.sciencedirect.com/science/article/pii/S1364032114005450). Renewable and sustainable energy reviews **39**, pp. 426-443. November 2014.
+
+[^6]: Fahs, R., Jacobson, R., Gilbert, A., Yawitz, D., Clark, C., Capotosto, J., Cunliff, C., McMurtry, B., Lee, U. ["Carbon Management Commercial LiftOff"](https://liftoff.energy.gov/carbon-management/). United States Department of Energy. April 2023.
+
+[^7]: Doucette, P., Vedala, M., Krishnamoorti, R., Radhakrishnan, S., Kever, J., Rossiter, A., Datta, A. ["Carbon Dioxide Pipelines: Role in Responding to Carbon Emissions"](https://uh.edu/uh-energy-innovation/uh-energy/energy-research/white-papers/white-paper-files/co2-pipelines-respond-emissions-white-paper-updated.pdf). University of Houston, UH Energy. 2023.
+
+[^8]: Mathews, W. ["Failure Investigation Report - Denbury Gulf Cost Pipeline"](https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2022-05/Failure%20Investigation%20Report%20-%20Denbury%20Gulf%20Coast%20Pipeline.pdf) Office of Pipeline Safety – Accident Investigation Division, Pipeline and Hazardous Materials Safety Administration, U.S. Department of Transportation. May 2022.
+
+[^9]: Xi, D., Lu, H., Fu, Y., Dong, S., Jiang, X., Matthews, J. ["Carbon dioxide pipelines: A statistical analysis of historical accidents"](https://www.sciencedirect.com/science/article/abs/pii/S0950423023001596). Journal of Loss Prevention in the Process Industries **84**: 105129. September 2023.
+
+[^10]: Krammer, R. ["A Review of the Safety Record of CO2 Pipelines in the United States"](https://www.ourenergypolicy.org/resources/a-review-of-the-safety-record-of-co2-pipelines-in-the-united-states/). Great Plains Institute. August 2024.
+
+[^11]: Moniz, E.J., Brown, J.D., Comello, S.D., Jeong, M., Downey, M., Cohen, M.I., Hezir, J.S., Kenderdine, M.A., Schomburg, M.G., Ellis, D., Moulton, A. ["Turning CCS projects in heavy industry & power into blue chip financial investments"](https://energyfuturesinitiative.org/wp-content/uploads/sites/2/2023/02/20230212-CCS-Final_Full-copy.pdf). Energy Futures Initiative. February 2023.
+
+[^12]: Ho, A. ["The Right Track: Advancing CO2 Transport by Rail"](https://kleinmanenergy.upenn.edu/news-insights/the-right-track-advancing-co2-transport-by-rail/). Kleinman Center for Energy Policy. April 2024.
 
 export default ({ children }) => 
   <Article 
