@@ -6,32 +6,35 @@ export const solution = "Steelmaking Electrolysis R&D";
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Description
-
 We recommend further research and development into electrolysis for steel production.
 
 ## Background
-
-Molten Oxide Electrolysis (MOE) for steel production provides an advancement in the efforts to decarbonize one of the most energy-intensive and CO2-emitting sectors. MOE involves heating iron ore to extremely high temperatures (around 1600 degrees Celsius) using electricity in a liquid solution. This causes the iron ore to separate into iron and oxygen, akin to the standard process of making aluminum from bauxite, but at much higher temperatures​​. [^"1"]
-
-Iron ore is directly put through an electrolysis furnace to produce liquid steel. This contrasts with the multi-step process of DRI that involves pelletizing iron ore, reducing it in a furnace, and then processing the iron in an electric arc furnace to make steel​​. [^"1"]
-
+Molten Oxide Electrolysis (MOE) for steel production provides an advancement in the efforts to decarbonize one of the most energy-intensive and CO2-emitting sectors. MOE involves heating iron ore to extremely high temperatures (around 1600 degrees Celsius) using electricity in a liquid solution. This causes the iron ore to separate into iron and oxygen, akin to the standard process of making aluminum from bauxite, but at much higher temperatures. [^"1"]
+Iron ore is directly put through an electrolysis furnace to produce liquid steel. This contrasts with the multi-step process of DRI that involves pelletizing iron ore, reducing it in a furnace, and then processing the iron in an electric arc furnace to make steel. [^"1"]
 MOE can use iron ore of any grade, unlike DRI which typically requires higher grade ore. [^"1"]
-
 The primary advantage of MOE is its potential to completely decarbonize steel production. By using renewable electricity, the MOE process can convert crude iron ore directly into high-purity molten iron without CO2 emissions. [^"2"]
-
 MOE technology is modular and can be scaled in smaller increments. [^"2"]
 
-Transitioning to zero-carbon production methods like MOE will require significant capital investments in the steel industry, estimated between $215 billion to $278 billion. However, steel made under these new systems could ultimately cost less than current prices​​. [^"3"]
-
-Future Cost Projections: By 2050, steel produced by methods like MOE is projected to cost between $418 to $598 per metric tonne, compared to the five-year average price of crude steel at $726 per metric tonne​​. [^"3"]
+## Calculations
+Transitioning to zero-carbon production methods like MOE will require significant capital investments in the steel industry, estimated between $215 billion to $278 billion. However, steel made under these new systems could ultimately cost less than current prices. [^"3"]
+Future Cost Projections: By 2050, steel produced by methods like MOE is projected to cost between $418 to $598 per metric tonne, compared to the five-year average price of crude steel at $726 per metric tonne. [^"3"] Annual steel production was 1,885 million tonnes in 2022[^"5"]. Even using the higher cost estimate above the savings would be $241 billion at that rate of production.
+Steel sector emissions have been averaging approximately 3.7 billion tonnes of CO2 since 2019[^"4"]. Assuming that MOE will enable zero-carbon production, at a [social cost of carbon](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) of $141.4 per ton, that would be an annual benefit of $523 billion.
 
 ## Implementation
-
 MOE requires a continuous and stable supply of electricity, which could be a challenge in areas with unreliable power grids. The total energy requirement for MOE is around 4 MWh per tonne of steel, slightly higher than the estimated 3.2 MWh for hydrogen-based DRI production. This technology would need to be coupled with low-carbon energy production. [^"3"]
 
+##### Lead researcher: Lee Nelson and jye - Last updated: 9/13/2024
+
 [^"1"]:  [Decarbonising steel: hydrogen or metal oxide electrolysis? | Carbon Commentary](https://www.carboncommentary.com/blog/2023/1/31/decarbonising-steel-hydrogen-or-metal-oxide-electrolysis). 
+
 [^"2"]:  [Zero CO2 Steel by Molten Oxide Electrolysis: A Path to 100% Global Steel Decarbonization - Boston Metal](https://www.bostonmetal.com/blog/zero-co2-steel-by-molten-oxide-electrolysis-a-path-to-100-global-steel-decarbonization/). 
-[^"3"]:  [Green steel transition to cost industry up to $US278b](https://www.afr.com/policy/energy-and-climate/green-steel-transition-to-cost-industry-up-to-us278b-20211201-p59dyt). 
+
+[^"3"]:  [Green steel transition to cost industry up to $US278b](https://www.afr.com/policy/energy-and-climate/green-steel-transition-to-cost-industry-up-to-us278b-20211201-p59dyt).
+
+[^"4"]:  Lempriere, M. ["Steel industry makes ‘pivotal’ shift towards lower-carbon production"](https://www.carbonbrief.org/steel-industry-makes-pivotal-shift-towards-lower-carbon-production/) Carbon Brief: International Policy, July 2023
+
+[^"5"]:  Basson, E. ["World Steel in Figures 2023"](https://worldsteel.org/data/world-steel-in-figures-2023/) World Steel Association, 2023
+
 
 export default ({ children }) => 
   <SolutionDropdown 
