@@ -1,12 +1,14 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Environmental Impacts of Mining";
 export const solution = "Mining Tax";
 
 ## Description
+
 We propose a fee on mining to internalize the environmental impacts outlined above.
 
 ## Background
+
 Mining operations can impose significant externalities on nearby communities[^"2"]. The most critical are associated with depreciation of natural capital and damages to the population's health[^"2"].
 
 It is common for states or countries to impose royalties on mining to account for mineral depletion. However, these taxes are distinct from Pigouvian taxes, which are designed to account for the environmental externalities of mining [^"3"]. Mining taxes should account for both depletion and environmental externalities.
@@ -16,9 +18,11 @@ Mining taxes can be structured to alleviate fiscal deficits, implement redistrib
 Modeling in Brazil has found that if a Pigouvian tax were applied to copper mining, total mining activity would fall [^"2"]. This would also decrease electricity generation and greenhouse gas emissions[^"2"].
 
 ## Calculations
+
 The VATT Institute for Economic Research recommends a Pigouvian Tax of $1,000 per ton of effluent produced[^"5"].
 
 ## Implementation
+
 The Comprehensive Environmental Response, Compensation and Liability Act, or Superfund, receives a minority of its funding from polluters since the expiration in 1995 of a tax on chemicals and petroleum [^"1"]. These taxes were assessed on a per-ton basis, thereby not creating a financial incentive for a miner to produce the materials in a less pollution manner [^"4"].
 
 A stable tax policy should adapt to the mineral price cycle and avoid the need for constant revisions, considers the whole set of applicable mining taxes, and maintains a competitive mining industry[^"2"].
@@ -26,15 +30,10 @@ A stable tax policy should adapt to the mineral price cycle and avoid the need f
 These taxes should improve income distribution but may also increase poverty[^"2"]. Some of the revenue from the tax could be transferred to the poorest households to offset this[^"2"].
 
 [^"1"]: Environment America. ["Superfund Underfunded"](https://environmentamerica.org/resources/superfund-underfunded/). February 2021.
-
 [^"2"]: Mardones, C. ["Pigouvian taxes to internalize environmental damages from Chilean mining−A computable general equilibrium analysis"](https://www.sciencedirect.com/science/article/abs/pii/S0959652622019631). Journal of Cleaner Production 362: 132359. August 2022.
-
 [^"3"]: Muzondo, T. R. ["Mineral Taxation, Market Failure, and the Environment"](https://www.jstor.org/stable/3867380). Staff Papers (International Monetary Fund) 40(1), pp. 152-177. March 1993.
-
 [^"4"]: Bearden, D. M. ["Comprehensive Environmental Response, Compensation, and Liability Act: A Summary of Superfund Cleanup Authorities and Related Provisions of the Act"](https://sgp.fas.org/crs/misc/R41039.pdf). Congressional Research Service. June 2012.
-
 [^"5"]: Huhtala, A, and Ropponen, O. ["Resource and Environmental Policies for the Mining Industry: What Should Governments Do About the Increasing Social and Environmental Risks?"](https://dx.doi.org/10.2139/ssrn.3764595) VATT Institute for Economic Research Working Papers 137, December 2020
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -42,4 +41,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>
