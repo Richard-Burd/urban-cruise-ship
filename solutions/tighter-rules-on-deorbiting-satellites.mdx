@@ -1,9 +1,31 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Damage from Orbital Debris";
-export const solution = "Tighter Rules on Deorbiting Satellites";
+export const solution = "Deorbiting Performance Bonds";
 
-We propose tighter regulations for end-of-life management of commercial satellites, particularly enforcement of deorbiting rules for low-Earth orbit satellites.
+## Description
+We propose the use of satellite deorbiting performance bonds to prevent further satellite debris.
+
+
+## Background
+The historical practice of abandoning satellites, second stages, and even spacecraft at the end of their mission life has allowed over 2 million kg of accumulated debris in orbit[^"1"]. If no countermeasures are taken, the number of debris particles are expected to have a growth rate up to 5% per year[^"1"].
+
+Orbital debris results from the interacting collection of defunct satellites and second stages of rocket launchers[^"2"]. Even millimeter-sized pieces of debris can damage or destroy a satellite which creates more debris and lowers the expected realized value of the satellite[^"2"]. 
+
+According to voluntary guidelines governing orbital space, users are expected to deorbit their satellites within 25 years after the end of the satellite’s useful life, but because there are not adequate incentives, a majority of users do not comply[^"2"].
+
+Deorbiting performance bonds maximize capital recoupment, since satellite operators reacquire their performance bond, plus interest, upon successful deorbiting[^"2"]. An attractive feature of performance bonds is that they can be marketable, and the holder of the bond would have a legal claim to the funds after providing sufficient evidence that the satellite is appropriately deorbited[^"2"].
+
+
+## Implementation
+A regulatory agency would create the bonds and place them in a zero-risk, interest-earning escrow account[^"2"]; and monitor compliance.
+
+##### Lead researcher: Lee Nelson - Last updated: 9/29/2024
+
+[^"1"]: Janovsky, R. ["End-of-Life de -Orbiting Strategies for Satellites"](https://doi.org/10.2514/6.IAC-03-IAA.5.4.05) Aerospace Research Central, November 2012
+
+[^"2"]: Adilov, N. et al. ["The economics of satellite deorbiting performance bonds"](https://doi.org/10.1016/j.econlet.2023.111150) Economics Letters, July 2023
+
 
 export default ({ children }) => 
   <SolutionDropdown 

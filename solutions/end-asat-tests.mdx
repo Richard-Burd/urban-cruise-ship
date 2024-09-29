@@ -3,14 +3,22 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Damage from Orbital Debris";
 export const solution = "End ASAT Tests";
 
+## Description
+We propose a moratorium on destructive Antisatellite testing.
+
+## Background
 Antisatellite tests, such as the 2007 Chinese test and the 2021 Russian test, are a major source of orbital debris and a risk to future orbital activities. As of 2007, the Chinese test alone was responsible for over 10% of the large pieces (at least 10 centimeters) of orbital debris [^"29"].
 
 Experts debate the motivation behind the Chinese test and Chinese ASAT pursuits. Their goal may be to increase the cost and risk for an American defense of Taiwan, should China attack that island, or it may be fear that American space capability will nullify the Chinese nuclear deterrent [^"23"].
 
-The Outer Space Treaty may forbid destructive ASAT testing under the Outer Space Treaty, which requires nations in their space activities to show "due regard to the corresponding interests of all other States Parties to the Treaty" [^"21"]. Nevertheless, the Outer Space Treaty has not been sufficient to stop ASAT testing, and a new agreement is desirable. On possibility is the International Code of Conduct for Outer Space Activities, though negotiations are currently stalled [^"21"].
+The Outer Space Treaty may dissuade destructive ASAT testing, which requires nations in their space activities to show "due regard to the corresponding interests of all other States Parties to the Treaty" [^"21"]. Nevertheless, the Outer Space Treaty has not been sufficient to stop ASAT testing, and a new agreement is desirable. One possibility is the International Code of Conduct for Outer Space Activities, though negotiations are currently stalled [^"21"].
+
+## Implementation
+in April 2022, U.S. Vice President Kamala Harris announced a unilateral moratorium on destructive ASAT testing by the United States and invited other States to join[^"1"]. As of October 2023, 37 States had made similar announcements and, with the support of 155 States, the UN General Assembly passed a resolution [(A/RES/77/41)]( https://undocs.org/Home/Mobile?FinalSymbol=A%2FRES%2F77%2F41&Language=E&DeviceType=Desktop&LangRequested=False) that backed a moratorium on testing direct ascent ASATs[^"1"]. Russia, China, and India, all of whom have tested ASAT technologies in recent years, did not support such a moratorium[^"1"].
 
 If a full legal ban on destructive ASAT testing is infeasible, then an alternative is legally binding limitations on the number of tests, the altitude of tests so as not to create long-lasting debris fields, and notification requirements [^"20"].
 
+##### Lead researchers: Lee Nelson and Michael Goff - Last updated: 9/28/2024
 [^"20"]: Porras, D. ["Towards ASAT Test Guidelines"](https://unidir.org/publication/towards-asat-test-guidelines). United Nations Institute for Disarmament Research. May 2018.
 
 [^"21"]: Raju, N. ["Russia’s anti-satellite test should lead to a multilateral ban"](https://www.sipri.org/commentary/essay/2021/russias-anti-satellite-test-should-lead-multilateral-ban). Stockholm International Peace Research Institute. December 2021.
@@ -18,6 +26,8 @@ If a full legal ban on destructive ASAT testing is infeasible, then an alternati
 [^"23"]: Saunders, P. C., Lutes, C. D. ["China’s ASAT Test: Motivations and Implications"](https://apps.dtic.mil/sti/pdfs/ADA517485.pdf). National Defense University, Institute for National Strategic Studies, 260. 2007.
 
 [^"29"]: Wright, D. ["Space Debris from Anti-Satellite Weapons"](https://www.ucsusa.org/sites/default/files/2019-09/debris-in-brief-factsheet.pdf). Union of Concerned Scientists. April 2008.
+[^"1"]: Borgen, C. ["Russia’s Alleged Nuclear Anti-Satellite Weapon: International Law and Political Rhetoric"](https://lieber.westpoint.edu/russias-nuclear-anti-satellite-weapon-international-law/) Lieber Institute, July 2024
+
 
 export default ({ children }) => 
   <SolutionDropdown 
