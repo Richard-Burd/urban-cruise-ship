@@ -1,28 +1,78 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 import ArticleImage from "/components/ArticleImage.js";
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Industrial Pollution";
-export const solution = "Deep Sea Manufacturing Platforms";
+export const solution = "Deep Sea Manufacturing Platforms - World";
 
 ## Description
 We propose appropriating used oil rigs, retired ships, and other stationary platforms for industrial manufacturing to reduce air pollution damage to humans and the biodiverse environments.
 
+<DynamicSolutionGraphic
+  barChartTitle={"Deep Sea Manufacturing Platforms – World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 10-3-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 503.75,
+      displayedValue: "$503.75",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 18.8,
+      displayedValue: "$18.8 Million USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
+
 ## Background
 If the demand for oil drops as alternatives gain market share, there may be a surplus of offshore oil rigs. These rigs could be appropriated for industrial or other uses[^”1”],[^”2”],[^”3”]. Retired ships, such as the ocean linear Queen Elizabeth 2, can also be repurposed for more stationary uses [^”4”].
-In 2015 there were 1,470 offshore oil rigs around the world[^”2”].
+
+In 2014 there were 395 operational offshore oil rigs, while at the end of 2023 there were 240[^”5”], meaning that there should be at least 155 non-operational offshore oil rigs.
 
 ## Calculations
 It is estimated to cost $65 million per offshore oil platform to fully decommission and return the seafloor to its pre-lease condition[^”2”].
 
+If there are at least 155 non-operational offshore oil rigs (as outlines above) then we propose to convert them over a 20-year period or about 7.75 rigs converted per year. At $65 million per platform to fully decommission (as outlined above), that would be benefit of $503.75 million of avoided cost.
 
-##### Lead researcher: Lee Nelson - Last updated: 11/12/2023
-[^”1”]: Minerals Management Service. ["Final Programmatic Environmental Impact Statement for Alternative Energy Development and Production and Alternate Use of Facilities on the Outer Continental Shelf"](https://tethys.pnnl.gov/publications/final-programmatic-environmental-impact-statement-alternative-energy-development) US Department of the Interior, OCS EIS/EA MMS, October 2007
+Using an Industrial Desalter Plant as an example of what a platform could be turned into the initial cost of investment is estimated to be $16 million with an annual maintenance cost of $2.8 million[^”6”].
 
-[^”2”]: Perry, R. ["Repurposing Offshore Oil Infrastructure to Save the Planet"](https://worldbusiness.org/repurposing-offshore-oil-infrastructure-to-save-the-planet/) World Business Academy. Accessed August 4, 2022
+## Implementation
+Part of the initial investment cost could be paid for through grants, similar to the grants awarded by the Gulf States Marine Fisheries Commission and the National Oceanic and Atmospheric Administration to turn an offshore platform in the Gulf Coast of the U.S. into a fish farm[^”7”].
 
-[^”3”]: Seidler, C. ["Architect Hopes to Revitalize Norwegian City with Oil Platform"](https://www.spiegel.de/international/europe/extreme-recycling-architect-hopes-to-revitalize-norwegian-city-with-oil-platform-a-757973.html) Spiegel International, April 2011
+##### Lead researcher: Lee Nelson - Last updated: 10/3/2024
+
+[^”1”]: Minerals Management Service. ["Final Programmatic Environmental Impact Statement for Alternative Energy Development and Production and Alternate Use of Facilities on the Outer Continental Shelf"](https://tethys.pnnl.gov/publications/final-programmatic-environmental-impact-statement-alternative-energy-development) US Department of the Interior, OCS EIS/EA MMS, October 2007 
+
+[^”2”]: Perry, R. ["Repurposing Offshore Oil Infrastructure to Save the Planet"](https://worldbusiness.org/repurposing-offshore-oil-infrastructure-to-save-the-planet/) World Business Academy. Accessed August 4, 2022 
+
+[^”3”]: Seidler, C. ["Architect Hopes to Revitalize Norwegian City with Oil Platform"](https://www.spiegel.de/international/europe/extreme-recycling-architect-hopes-to-revitalize-norwegian-city-with-oil-platform-a-757973.html) Spiegel International, April 2011 
 
 [^”4”]: Cunard. ["Queen Mary 2 Guests to Be First to Board the QE2 Hotel in Dubai"](https://www.hotelnewsresource.com/article99382.html) Hotel News Resource, April 2018 
+
+[^”5”]: Statista Research Department ["Number of land and offshore oil rigs worldwide at the end of each year from 2010 to 2023"](https://www.statista.com/statistics/1128408/number-of-global-oil-rigs-by-type/) Statista, February 2024
+
+[^”6”]: Leporini, M. et al. ["Reconversion of offshore oil and gas platforms into renewable energy sites production: Assessment of different scenarios"](https://doi.org/10.1016/j.renene.2018.12.073) Renewable Energy, May 2019
+
+[^”7”]: Kulovic, N. ["Creating blueprint for reusing old oil & gas assets in Gulf of Mexico"](https://www.offshore-energy.biz/creating-blueprint-for-reusing-old-oil-gas-assets-in-gulf-of-mexico/) Offshore Energy, December 2021
+
 
 
 export default ({ children }) => 
