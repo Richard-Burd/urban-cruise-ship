@@ -27,48 +27,46 @@ We recommend an orbital use fee to mitigate the cost of collisions.
  staticData={[
     {
      name: "Benefit",
-      barlength: 22.33,
-      displayedValue: "$22.33",
+      barlength: 120,
+      displayedValue: "$120 billion/year",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: 4.8,
-      displayedValue: "$4.8 million USD/year",
+      barlength: 13.63,
+      displayedValue: "$14 billion/year",
       site: "null",
     },
   ]}
 />
 
 ## Background
-Every satellite in orbit creates a risk of collision, which is an external cost unless somehow mitigated. An orbital use fee, which charges satellites a fee per year in orbit, is a way to internalize this cost.
 
-The expected annual cost of satellite collisions with orbital debris for all orbits was $86-103 million in 2020[^"1"].
+As discussed above, the growing prevalence of satellites for communication, climate monitoring, navigation, and other purposes poses a growing risk of collisions. The expected annual cost of satellite collisions with orbital debris for all orbits was $86-103 million in 2020 [^"1"].
 
 ## Calculations
-Rao, Burgess, and Kaffine propose an orbital use fee that would rise to $235,000 per satellite-year in 2040. Such a policy would create a net present value of $2.4 trillion over all future years [^"22"]. In 2019 there were 95 satellites launched[^”6”], assuming this number would be stable that would mean $22.33 million raised annually from the fee.
 
-We estimate the cost of an overseeing body to be similar to the United Nations Office for Outer Space Affairs which has a requested annual budget of $4.8 million[^”5”].
+Rao, Burgess, and Kaffine propose an orbital use fee that would rise to $235,000 per satellite-year by 2040, which they assess would add a net present value of $2.4 trillion to the satellite industry [^"22"]. This value is approximately $120 billion per year in perpetuity at the 5% discount rate that they use. We assess costs based on the $235,000 fee, applied to 58,000 satellites in orbit, an estimate of satellite launches from 2022 to 2030 from the U.S. General Accounting Office [^"2"].
+
+We acknowledge great uncertaintly in projecting the future number of satellites, a figure that might be greatly affected by the fee. We have not considered some design questions such as differential fees by satellite size [^"22"].
 
 ## Implementation
-There are several ways in which an orbital use fee could be instituted. It could be agreed through international negotiations, modeled after the Vessel Day Scheme to establish a price floor on the leasing of fishing rights [^"22"]. It could also be implemented in the context of the Outer Space Treaty and the Convention on International Liability for Damage Caused by Space Objects [^"22"].
-There are still details to establish in an orbital use fee, such as differential rates between large and small satellites [^"22"].
 
-An orbital use fee would have some limitations. It could put developing space programs, that are more cost-sensitive, at a disadvantage [^"4"]. It would also not address legacy debris and debris from anti-satellite tests [^"25"], unless the proceeds from the fee are used to develop and implement debris retrieval.
+An orbital use fee could be negotiated indepdently, similar to the Vessel Day Scheme to establish a price floor on the leasing of fishing rights, or it could also be implemented in the context of the Outer Space Treaty and the Convention on International Liability for Damage Caused by Space Objects [^"22"].
 
-##### Lead researchers: Lee Nelson and Michael Goff - Last updated: 10/3/2024
+An orbital use fee imposes disproportionate costs on space programs in low-income countries [^"4"]. It would also not address legacy debris and debris from anti-satellite tests [^"25"], unless the proceeds from the fee are used to develop and implement debris retrieval.
+
+##### Lead researchers: Lee Nelson and Michael Goff - Last updated on October 4, 2024.
 
 [^"4"]: Davis, I. ["Orbital Use Fees Stifle Developing Space Programs"](https://libraetd.lib.virginia.edu/downloads/br86b4355?filename=Davis_Ian_STS_Research_Paper.pdf). University of Virginia. April 2021.
 
-[^"22"]: Rao, A., Burgess, M. G., Kaffine, D. ["Orbital-use fees could more than quadruple the value of the space industry"](https://www.pnas.org/content/117/23/12756?__cf_chl_jschl_tk__=pmd_cb630375401e06282a44bb1f2d85925a21737c2f-1628230153-0-gqNtZGzNAeKjcnBszQjO). Proceedings of the National Academy of Sciences of the United States of America 117(23), pp. 12756-12762. May 2020.
+[^"22"]: Rao, A., Burgess, M. G., Kaffine, D. ["Orbital-use fees could more than quadruple the value of the space industry"](https://www.pnas.org/doi/10.1073/pnas.1921260117). Proceedings of the National Academy of Sciences of the United States of America **117**(23), pp. 12756-12762. May 2020.
 
 [^"25"]: Stilwell, R. ["Orbital use fees won't solve the space debris problem"](https://www.thespacereview.com/article/3971/1). The Space Review. June 2020.
 
-[^"1"]: Adilov, N. et al. ["An estimate of expected economic losses from satellite collisions with orbital debris"](https://doi.org/10.1016/j.jsse.2023.01.002) Journal of Space Safety Engineering, March 2023
+[^"1"]: Adilov, N., Braun, V., Alexander, P., Cunningham, B. ["An estimate of expected economic losses from satellite collisions with orbital debris"](https://www.sciencedirect.com/science/article/abs/pii/S2468896723000022?via%3Dihub). Journal of Space Safety Engineering **10**(1), pp. 66-69 March 2023.
 
-[^”5”]: UNOOSA ["Proposed programme budget for 2025"](https://www.unoosa.org/oosa/oosadoc/data/documents/2024/a79/a796_sect.6_0.html) United Nations Office for Outer Space Affairs, Accessed September 2024
-
-[^”6”]: Statista ["Number of satellites launched from 1957 to 2019"](https://www.statista.com/statistics/896699/number-of-satellites-launched-by-year/) Statista Research Department, July 2022
+[^"2"]: Howard, K. L., Von Ah, A. ["Large Constellations of Satellites"](https://www.gao.gov/products/gao-22-105166). United States General Accounting Office. September 2022.
 
 
 export default ({ children }) => 
