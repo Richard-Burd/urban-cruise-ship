@@ -1,14 +1,47 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 import ArticleImage from "/components/ArticleImage.js";
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Impact of Fishing";
-export const solution = "Eliminate Fishing Subsidies";
+export const solution = "Eliminate Fishing Subsidies - World";
 
+## Description
 
+We propose elimination of fishing subsidies, both on the high seas and in an EEZ.
 
-## Background
+<DynamicSolutionGraphic
+  barChartTitle={"Eliminate Fishing Subsidies – World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 10-6-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 35,
+      displayedValue: "$35 billion",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: .229,
+      displayedValue: "$229 million USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
-We propose elimination of the subsidies, both on the high seas and in an EEZ.
 
 ## Background
 
@@ -17,17 +50,22 @@ A large portion of fishing on the high seas (outside of any country's exclusive 
 <ArticleImage image={"fishing_subsidy.svg"} width={900} height={600} />
 #### Source: [^"29"].
 
+## Calculations
 Overall, countries gave over $35 billion in fishing subsidies in 2018, including subsidies for fuel consumption and others that encourage overfishing.
 
 <ArticleImage image={"fishing_subsidy2.svg"} width={900} height={600} />
 #### Sources: [^"30"], [^"31"].
+
+The World Trade Organizations budget for 2022 was $229 million[^"1"].
 
 
 ## Implementation
 
 Negotiations at the World Trade Organization to eliminate subsidies progressed in 2022 and are encouraging, but there are more details to agree upon [^"9"].
 
+Informational campaigns may be helpful to gain public and political support for the removal of fishing subsidies.
 
+##### Lead researchers: Lee Nelson and Michael Goff - Last updated: 10/6/2024
 
 [^"9"]: Fitt, E. ["WTO finally nets deal curbing fisheries subsidies, but tables key bits for later"](https://news.mongabay.com/2022/06/wto-finally-nets-deal-curbing-fisheries-subsidies-but-tables-key-bits-for-later/). Mongabay. June 2022.
 
@@ -36,6 +74,9 @@ Negotiations at the World Trade Organization to eliminate subsidies progressed i
 [^"30"]: Schuhbauer, A., Skerritt, D. J., Ebrahim, N., Le Manach, F., Sumaila, U. R. ["The Global Fisheries Subsidies Divide Between Small- and Large-Scale Fisheries"](https://www.frontiersin.org/articles/10.3389/fmars.2020.539214/full). Frontiers in Marine Sciences. September 2020.
 
 [^"31"]: Sumaila, U. R., Ebrahim, N., Schuhbauer, A., Skerritt, D., Li, Y., Kim, H. S., Mallory, T. G., Lam, V. W. L., Pauly, D. ["Updated estimates and analysis of global fisheries subsidies"](https://www.sciencedirect.com/science/article/pii/S0308597X19303677?via%3Dihub). Marine Policy 109: 103695. November 2019.
+
+[^"1"]: Committee on Budget, Finance, and Administration ["Consolidated Budget for 2022"](https://www.wto.org/english/thewto_e/secre_e/budget_e.htm) World Trade Organization, 2022
+
 
 export default ({ children }) => 
   <SolutionDropdown 
