@@ -4,6 +4,12 @@ import hierarchy from "../hierarchy.json";
 export const site = "energy";
 export const focusAreaUrl = "industry";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import ArticleImage from "/components/ArticleImage.js";
 
 import DevelopNewUsesForCapturedCo2Solution from "/solutions/develop-new-uses-for-captured-co2.mdx";
@@ -51,6 +57,65 @@ Potential future uses of captured CO₂ include [methanol](/energy/energy_distri
 If CO₂ is captured from fossil fuels or cement, and then used to produce synthetic fuels, the overall process may have lower emissions than the conventional alternative, but it is not a true low-carbon process. Rather, in this scenario, each molecule of CO₂ is emitted over two processes rather than one.
 
 <DevelopNewUsesForCapturedCo2Solution />
+
+### Enhanced Oil Recovery
+
+Enhanced oil recovery, also known as enhanced oil extraction or tertiary recovery, is a means of injecting heat, chemicals, or a high pressure gas, often carbon dioxide, into an oil well to increase production. Applied after primary (without additional injection) and secondary (water flooding), EOR works by mixing the injected fluid with the oil, thereby increasing the ease of recovery [^26]. The sources of injection for EOR are estimated as follows.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Injection Sources for EOR"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={"16 million"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Oct. 6, 2024"}
+ 
+ 
+  staticData={[
+      {
+      name: "Carbon Dioxide",
+      barlength: 166,
+      displayedValue: "44%",
+      site: "null",
+    },
+      {
+      name: "Other Gas Injection",
+      barlength: 45,
+      displayedValue: "12%",
+      site: "null",
+    },
+      {
+      name: "Thermal",
+      barlength: 120,
+      displayedValue: "32%",
+      site: "null",
+    },
+      {
+      name: "Chemical",
+      barlength: 35,
+      displayedValue: "9%",
+      site: "null",
+    },
+      {
+      name: "Other",
+      barlength: 8,
+      displayedValue: "2%",
+      site: "null",
+    }
+  ]}
+/>
+#### World EOR projects by type, as of 2017. Percentages do not add to 100% due to rounding. Source: International Energy Agency [^29].
+
+As of 2019, it was estimated that 70% of CO<sub>2</sub> for EOR was sourced from natural geologic deposits. Such EOR provides no carbon sequestration benefit [^31]. When CO<sub>2</sub> is captured from an industrial source, it is important to credit the carbon savings to either the source of capture, or to the oil well, but not to both [^31].
+
+As of 2018, about 2% of oil was produced via EOR, and lower prices and competition with other emerging production technologies had diminished interest in EOR [^30]. The International Energy Agency has estimated that EOR has the potential to sequester 60-240 billion tons of CO<sub>2</sub> from 2015 to 2050, or 1.7 to 6.9 billion tons per year over that period [^27]. If the source of CO<sub>2</sub> is from the atmosphere or from another industrial process, then each captured ton of CO<sub>2</sub> used for EOR will reduce emissions on net by 0.63 to 0.79 tons, taking into account leakage and the effect of increased oil consumption overall [^27].
+
+The leakage rate of carbon dioxide injected into oil wells has been estimated at less than 1% over 1000 years [^26], but this requires that the well is properly sealed after production has ceased [^32]. Induced seimicity has been observed as a result of EOR, though this can be managed by controlling the rate of injection [^33].
 
 ## Direct Air Capture
 Direct air capture (DAC) refers to a system that captures and removes carbon dioxide from the ambient atmosphere, rather than a concentrated industrial waste stream. The International Energy envisions that DAC will remove 980 million tons of CO2 per year by 2050, compared to just 0.01 million tons per year now [^12]. The two leading technologies are liquid solvent DAC (L-DAC) and solid sorbent DAC (S-DAC). Following are estimates of the resources required for 1 billion tons of DAC per year, about 2.5% of current emissions.
@@ -127,6 +192,22 @@ It is estimated that the world could store 8,000 to 55,000 billion tons of CO2, 
 [^24]: Willauer, H., Hardy, D., Schultz, K., Williams, F. ["The feasibility and current estimated capital costs of producing jet fuel at sea using carbon dioxide and hydrogen"](https://aip.scitation.org/doi/abs/10.1063/1.4719723?journalCode=rse). Journal of Renewable and Sustainable Energy 4. May 2012.
 
 [^25]: International Energy Agency. ["Putting CO2 to Use"](https://www.iea.org/reports/putting-co2-to-use). September 2019.
+
+[^26]: Duda, J. R., Yost, A. B., Long, R. Dehoratiis, G., Ogunsola, O. ["Carbon Dioxide Enhanced Oil Recovery"](https://www.netl.doe.gov/sites/default/files/netl-file/co2_eor_primer.pdf). National Energy Technology Laboratory, U.S. Department of Energy. March 2010.
+
+[^27]: International Energy Agency. ["Storing CO2 through Enhanced Oil Recovery"](https://www.iea.org/reports/storing-co2-through-enhanced-oil-recovery). November 2015.
+
+[^28]: Office of Fossil Energy and Carbon Management. ["Enhanced Oil Recovery"](https://www.energy.gov/fecm/enhanced-oil-recovery). U.S. Department of Energy. Accessed October 6, 2024.
+
+[^29]: International Energy Agency. ["Number of EOR projects in operation globally, 1971-2017"](https://www.iea.org/data-and-statistics/charts/number-of-eor-projects-in-operation-globally-1971-2017). November 2018.
+
+[^30]: McGlade, C., Sondak, G., Han, M. ["Whatever happened to enhanced oil recovery?"](https://www.iea.org/commentaries/whatever-happened-to-enhanced-oil-recovery). International Energy Agency. November 2018.
+
+[^31]: McGlade, C. ["Can CO2-EOR really provide carbon-negative oil?"](https://www.iea.org/commentaries/can-co2-eor-really-provide-carbon-negative-oil). International Energy Agency. April 2019.
+
+[^32]: Ide, S.T., Friedmann, S.J., Herzog, H.J. ["CO<sub>2</sub> leakage through existing wells: current technology and regulations"](https://sequestration.mit.edu/pdf/GHGT8_Ide.pdf). In 8th International Conference on Greenhouse Gas Control Technologies (Vol. 1, pp. 19-33). June 2006.
+
+[^33]: National Petroleum Council. [Meeting the Dual Challenge: A Roadmap to At-Scale Deployment of Carbon Capture, Use, and Storage](https://www.energy.gov/sites/default/files/2022-10/CCUS-Chap_8-030521.pdf). Chapter 8: CO<sub>2</sub> Enhanced Oil Recovery. March 2021.
 
 export default ({ children }) => 
   <Article 
