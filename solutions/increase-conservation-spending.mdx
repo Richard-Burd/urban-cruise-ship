@@ -1,29 +1,76 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Extinction";
-export const solution = "Increase Conservation Spending";
+export const solution = "Increase Conservation Spending - World";
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Description
-
-We reccomend increased conservation spending.
+We recommend increasing conservation spending by $350 billion annually.
+<DynamicSolutionGraphic
+  barChartTitle={"Increase Conservation Spending  – World"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 10-12-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 740,
+      displayedValue: "$740",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 350,
+      displayedValue: "$350 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
 
 ## Background
+Inadequate funding levels are a major impediment to effective global biodiversity conservation[^"1"].
+
+Conservation spending, in inflation-adjusted terms, from the U.S. Department of Agriculture has remained flat in recent years[^"15"].
 
 As the benefits of conservation greatly outweigh the cost, there is a case to increase public and philanthropic conservation spending.
 
+## Calculations
 Current spending on conservation falls short of what is needed to protect all biodiversity.
 
 <ArticleImage image={"cons_finance.svg"} width={750} height={370} />
 #### Sources: [^"12"], [^"19"].
 
-Conservation spending, in inflation-adjusted terms, from the U.S. Department of Agriculture has remained flat in recent years, and there is a strong case for increasing that spending [^"15"].
+The lack of funding is costing at least $740 billion annually in lost ecosystem services that could be vital to our economies and our well-being[^"19"].
+
+
+## Implementation
+Currently 78% of conservation finance is generated in developed countries, but as much as 59% is also delivered in those same countries, while only 41% is delivered in developing countries where the majority of the world’s biodiversity exists and the impacts of biodiversity loss are most strongly felt[^"19"]. Meaning that we also need to adjust how the funding is allocated.
+
+The 40 most severely underfunded countries contain 32% of all threatened mammalian diversity and include neighbors in some of the world’s most biodiversity-rich areas[^"1"]. Increases in international assistance would achieve a large improvement in the relative adequacy of global conservation finance[^"1"].
+
+##### Lead researchers: Lee Nelson and Michael Goff - Last updated: 10/12/2024
 
 [^"12"]: Credit Suisse, World Wildlife Fund, McKinsey & Company. ["Conservation Finance: Moving beyond donor funding toward an investor-driven approach"](https://www.cbd.int/financial/privatesector/g-private-wwf.pdf). 2014.
 
 [^"15"]: Economic Research Service, U. S. Department of Agriculture. ["Conservation spending remained roughly level in recent years, a trend projected to continue through 2023"](https://www.ers.usda.gov/data-products/chart-gallery/gallery/chart-detail/?chartId=99510). October 2020.
 
 [^"19"]: Global Canopy Program. [*The Little Biodiversity Finance Book.*](https://www.globalcanopy.org/insights/publication/the-little-biodiversity-finance-book-3rd-edition-2012/) 3rd Edition. 2012.
+
+[^"1"]: Waldron, A. et al. ["Targeting global conservation funding to limit immediate biodiversity declines"](https://doi.org/10.1073/pnas.1221370110) Biological Sciences, May 2013
+
 
 export default ({ children }) => 
   <SolutionDropdown 
