@@ -12,7 +12,7 @@ export const DynamicSolutionGraphic = dynamic(
   { ssr: false }
 );
 
-# Transportation of Fossil Fuels
+# Transportation of Energy
 
 In comparing several methods of transporting oil and natural gas, we find that pipelines generally perform better than trucking, shipping, or train transportation.
 
@@ -30,6 +30,65 @@ The two main methods of transporting natural gas are by pipeline and by shipping
 
 <ArticleImage image={"gas_transport_efficiency.svg"} width={680} height={240} />
 #### Energy lost in transporting natural gas. Sources: Interstate Natural Gas Association of America [^3] for pipelines, Nagi et al. [^4] for LNG.
+
+Concerns are raised that leakage of methane from natural gas pipelines could reduce or negate the greenhouse gas reduction benefit over coal. The International Energy Agency [^18] estimates that natural gas is responsible for 36.7 million tons of methane emissions annually as of 2022. Based on a 100 year global warming potential of methane from 28-36 [^19], methane emissions are the equivalent of 1.0 to 1.3 billion tons of CO<sub>2</sub>, or about 2.5-3% of world emissions.
+
+Following, we report several estimates of the portion of natural gas that leaks from pipelines. Alverez et al. [^17] estimate that at a leakage rate above 3.2%, natural gas power plants will exhibit greater lifecycle greenhouse gas emissions than coal power plants over at least some period of time.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Natural Gas Pipeline Leakage Rates"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  mastheadToggle={''}
+  chartType={"hide"}
+  mastheadText3={"MG, Oct. 16, 2024"}
+  
+  
+  staticData={[
+    {
+	  name:"Alvarez et al. (2018)",
+      barlength: 2.3,
+      displayedValue: "2.3%",
+      site: "null",
+	},
+    {
+	  name:"Alvarez et al. (2012)",
+      barlength: 3.0,
+      displayedValue: "3.0%",
+      site: "null",
+	},
+    {
+	  name:"Howarth et al.",
+      barlength: 3.85,
+      displayedValue: "1.7-6.0% (conventional gas)",
+      site: "null",
+	},
+    {
+	  name:"Mitchell et al.",
+      barlength: 5.3,
+      displayedValue: "1.9%-10.8% (medium estimate: 5.3%)",
+      site: "null",
+	},
+    {
+	  name:"Howarth et al.",
+      barlength: 5.75,
+      displayedValue: "3.6%-7.9% (shale gas)",
+      site: "null",
+	},
+    {
+	  name:"Chen et al.",
+      barlength: 9.4,
+      displayedValue: "9.4%",
+      site: "null",
+	}
+        
+  ]}
+/>
+#### Sources: Alverez et al. (2018) [^13], Alvarez et al. (2012) [^17], Howarth et al. [^16], Mitchell et al. [^15], Chen et al. [^14].
+
+A difficulty in producing a reliable estimate of methane leakage is that leakage rates vary widely by pipeline, with a small number showing vastly greater leakage than most others [^20]. For this reason, a large sample is needed to produce a reliable estimate, and the need is underscored to control leakage on outlying infrastructure. Events, such as the 2022 explosions at the Nordstream gas pipelines in the Baltic Sea, are also drivers of methane emissions [^21].
 
 ## Transportation of Carbon Dioxide
 
@@ -103,6 +162,24 @@ The difficulty in permitting CO<sub>2</sub> pipelines has prompted proposals for
 [^11]: Moniz, E.J., Brown, J.D., Comello, S.D., Jeong, M., Downey, M., Cohen, M.I., Hezir, J.S., Kenderdine, M.A., Schomburg, M.G., Ellis, D., Moulton, A. ["Turning CCS projects in heavy industry & power into blue chip financial investments"](https://energyfuturesinitiative.org/wp-content/uploads/sites/2/2023/02/20230212-CCS-Final_Full-copy.pdf). Energy Futures Initiative. February 2023.
 
 [^12]: Ho, A. ["The Right Track: Advancing CO2 Transport by Rail"](https://kleinmanenergy.upenn.edu/news-insights/the-right-track-advancing-co2-transport-by-rail/). Kleinman Center for Energy Policy. April 2024.
+
+[^13]: Alvarez, R.A., Zavala-Araiza, D., Lyon, D.R., Allen, D.T., Barkley, Z.R., Brandt, A.R., Davis, K.J., Herndon, S.C., Jacob, D.J., Karion, A., Kort, E.A. ["Assessment of methane emissions from the US oil and gas supply chain"](https://www.science.org/doi/10.1126/science.aar7204). Science **361**(6398), pp. 186-188. July 2018.
+
+[^14]: Chen, Y., Sherwin, E.D., Berman, E.S., Jones, B.B., Gordon, M.P., Wetherley, E.B., Kort, E.A., Brandt, A.R. ["Quantifying regional methane emissions in the New Mexico Permian Basin with a comprehensive aerial survey"](https://pubs.acs.org/doi/10.1021/acs.est.1c06458). Environmental science & technology **56**(7), pp. 4317-4323. March 2022.
+
+[^15]: Mitchell, C., Sweet, J., Jackson, T. ["A study of leakage from the UK natural gas distribution system"](https://www.sciencedirect.com/science/article/abs/pii/030142159090060H). Energy policy **18**(9), pp. 809-818. November 1990.
+
+[^16]: Howarth, R.W., Santoro, R., Ingraffea, A. ["Methane and the greenhouse-gas footprint of natural gas from shale formations: A letter"](https://link.springer.com/article/10.1007/s10584-011-0061-5). Climatic change **106**, pp. 679-690. June 2011.
+
+[^17]: Alvarez, R.A., Pacala, S.W., Winebrake, J.J., Chameides, W.L., Hamburg, S.P. ["Greater focus needed on methane leakage from natural gas infrastructure"](https://www.pnas.org/doi/pdf/10.1073/pnas.1202407109). Proceedings of the National Academy of Sciences **109**(17), pp. 6435-6440. April 2012.
+
+[^18]: International Energy Agency. ["Global Methane Tracker 2023"](https://www.iea.org/reports/global-methane-tracker-2023/overview). 2023.
+
+[^19]: International Energy Agency. ["Methane Tracker 2021"](https://www.iea.org/reports/methane-tracker-2021/methane-and-climate-change). 2021.
+
+[^20]: Brandt, A.R., Heath, G.A., Cooley, D. ["Methane leaks from natural gas systems follow extreme distributions"](https://pubs.acs.org/doi/10.1021/acs.est.6b04303?ref=recommended). Environmental Science & Technology **50**(22), pp. 12512-12520. November 2016.
+
+[^21]: Poursanidis, K., Sharanik, J., Hadjistassou, C. ["World's largest natural gas leak from nord stream pipeline estimated at 478,000 tonnes"](https://www.sciencedirect.com/science/article/pii/S2589004223028493). iScience **27**(1). January 2024.
 
 export default ({ children }) => 
   <Article 
