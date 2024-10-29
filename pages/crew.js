@@ -496,11 +496,11 @@ const Crew = () => {
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
-            Jye serves as a graphic designer, researcher, and
-            design consultant at Urban Cruise Ship. Some notable contributions
-            include dynamic graphic-generating interactive tables on the History
-            site, automated standardized estimates graphics for solutions, and
-            concept distillation and search automation for Urban Foot Notes.
+            Jye serves as a graphic designer, researcher, and design consultant
+            at Urban Cruise Ship. Some notable contributions include dynamic
+            graphic-generating interactive tables on the History site, automated
+            standardized estimates graphics for solutions, and concept
+            distillation and search automation for Urban Foot Notes.
           </div>
           <div className="my-4"></div>
           <div>
@@ -521,7 +521,11 @@ const Crew = () => {
           </div>
         </div>
         <center className="link-icon-set">
-          <a href="https://instagram.com/jye.art.studio/" target="_blank" rel="noreferrer">
+          <a
+            href="https://instagram.com/jye.art.studio/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               className="duration-500 ease-in-out focus:opacity-90 hover:opacity-90 mx-2 sm:mx-8 opacity-40 transition"
               src={`/images/external-link-icons/home.svg`}
@@ -544,6 +548,62 @@ const Crew = () => {
             />
           </a>
         </center>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
+          David Cater
+        </div>
+        <div className={crewDescriptionTestLayoutStyles}>
+          <div>
+            is a Legal Researcher with Urban Cruise Ship, and is working to
+            produce complete address reports for its Urban Foot Notes project.
+          </div>
+          <div className="my-4"></div>
+          <div>
+            David has spent over a decade as a Legal Assistant. A graduate of
+            Middle Tennessee State University with a degree in Business
+            Administration, he brings a strong understanding of both legal
+            processes and business operations.
+          </div>
+          <div className="my-4"></div>
+          <div>
+            Outside of work, he enjoys spending quality time with his family,
+            collecting coins, playing video games, and immersing himself in
+            music. You can find David and his family at farmer&apos;s markets
+            and other events, where his spouse sells handmade jewelry and other
+            accessories. As a father from a young age, David values the
+            importance of balance, believing that a healthy work/life routine is
+            key to long-term success and fulfillment.
+          </div>
+          <div>
+            David&apos;s desire to do work for Urban Cruise Ship grew out of his
+            friendships with Crew members Jye and John. He attended themed
+            get-togethers organized by Jye for variously disenfranchised (and
+            some accepted) members of the community. One evening, Jye screened
+            the documentary{" "}
+            <a
+              href="https://www.imdb.com/title/tt1863278/"
+              target="_blank"
+              rel="noreferrer"
+              className="duration-500 hover:text-red-900 hover:underline focus:text-red-900 focus:underline text-blue-900 transition"
+            >
+              <strong>
+                <i>“Immaterial John,”</i>
+              </strong>
+            </a>{" "}
+            to highlight one crew member's unusual path to success.
+          </div>
+          <div>
+            David&apos;s volunteer activities also include assisting with a
+            widely-known, established organization in Nashville, Tennessee that
+            helps individuals experiencing homelessness. There are prior
+            connections, as Urban Cruise Ship&apos;s John and Andrew have both
+            experienced multiple periods of homelessness themselves.
+          </div>
+        </div>
         <br></br>
         <br></br>
         <br></br>
