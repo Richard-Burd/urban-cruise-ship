@@ -594,7 +594,7 @@ const Crew = () => {
                 <i>“Immaterial John,”</i>
               </strong>
             </a>{" "}
-            to highlight one crew member's unusual path to success.
+            to highlight one crew member&apos;s unusual path to success.
           </div>
           <div>
             David&apos;s volunteer activities also include assisting with a
