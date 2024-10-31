@@ -1,35 +1,38 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import SolutionImages from "/components/SolutionImages.js";
+
 export const problem = "Material Loss";
-export const solution = "Recycled Plastic Procurement";
+export const solution = "Recycled Plastic Procurement Mandate - U.S.";
 
 ## Description
-We propose that states establish recycled content procurement mandates for plastics to the extent that they are financially feasible.
+We propose that states establish recycled content procurement mandates for plastics to the extent that they are financially feasible, with the goal of doubling the plastic recycling rates in the U.S.
+<SolutionImages
+ mobileSrc={"recycled_plastic_savings_arrows.svg"}
+ desktopSrc={"recycled_plastic_savings_arrows.svg"}
+
+/>
 
 ## Background
-
-Plastic recycling is struggling in the United States, having peaked at 9.5% in 2014 across all resins and fallen to 5-6% in 2021 [^"6"]. A major reason for this fall was China's Operation National Sword, which banned the importation of most plastic waste [^"7"]. Furthermore, it may be that even the modest peak recycling rate in 2014 is overstated, since the statistics assume that all waste shipped to China is recycled, which may not have necessarily been the case [^"7"].
+Plastic waste is widely recognized as a major environmental issue because most plastics persist within the environment and can take centuries to biodegrade[^"3"].
+Plastic recycling is struggling in the United States, having peaked at 9.5% in 2014 across all resins and fallen to 5-6% in 2021 [^"6"]. A major reason for this fall was China's Operation National Sword, which banned the importation of most plastic waste [^"7"]. Furthermore, it may be that even the modest peak recycling rate in 2014 is overstated, since the statistics assume that all waste shipped to China is recycled, which may not have necessarily been the case [^"7"]. The recent pandemic exacerbated low recycling rates by creating higher demand for single-use products, creating more medical waste, and created disruptions in sanitation programs[^"7"].
+84.3% of plastics generated in the U.S. end up in landfills[^"7"], leaving a very large margin for improvement.
 
 ## Calculations
-
 We estimate potential benefits of plastic markets by modeling a doubling of recycling of two plastic resins: high-density polyethylene (HDPE) and low-density polyethylene (LDPE). In 2019, the United States generated 44 million tons of plastic waste [^"3"]. Of that, about 20% is HDPE and 23% is LDPE [^"4"]. Applying some lifecycle estimates of the benefits of recycling [^"5"], we estimate the following annual benefits of doubling recycling rates of HDPE and LDPE in the United States.
 
 - 108 thousand tons CO<sub>2</sub> reduced,
 - 50 petajoules of energy saved,
 - 1 million cubic meters of water saved.
 
-Due to the high variation in commodity prices, we are not able to produce reliable estimates of the cost of additonal plastic recycling.
+Due to the high variation in commodity prices, we are not able to produce reliable estimates of the cost of additional plastic recycling.
 
 ## Implementation
 Manufacturers  typically are against requirements on recycled content as requirements may not be possible to control through internal procedures which can have supply chain implications, or compliance is affected by consumer behavior[^"1"].
 
 Model legislation calls for, over time, the mandated postconsumer plastic content to be between 20% and 40% for film bags, 15-25% for single-use containers, and 25-75% for durable containers, as well as third party verification [^"2"].
 
-##### Lead researcher: Michael Goff - Last updated: February 10, 2024
-
-
-
-
+##### Lead researchers: Michael Goff and Lee Nelson - Last updated: October 31, 2024
 
 [^"1"]: Dalhammar, C. [“Industry attitudes towards ecodesign standards for improved resource efficiency”](https://doi.org/10.1016/j.jclepro.2015.12.035) Journal of Cleaner Production December 2015.
 
@@ -44,6 +47,7 @@ Model legislation calls for, over time, the mandated postconsumer plastic conten
 [^"6"]: Greenpeace, Inc. ["Circular Claims Fall Flat Again"](https://www.greenpeace.org/usa/reports/circular-claims-fall-flat-again/). October 2022.
 
 [^"7"]: Barone, M. ["U.S. Plastic Recycling Rates Are Even Worse Than We Thought"](https://time.com/6178386/plastic-recycling-rates-overestimated/). Time. May 2022.
+
 
 export default ({ children }) => 
   <SolutionDropdown 

@@ -1,21 +1,58 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import SolutionImages from "/components/SolutionImages.js";
+
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Material Loss";
-export const solution = "Recycled Paper Procurement";
+export const solution = "Recycled Paper Procurement Mandate - U.S.";
 
 ## Description
+We propose that states establish recycled content procurement mandates to the extent that they are financially feasible, with the goal to increase total national paper recycling to 75%.
+<DynamicSolutionGraphic
+  barChartTitle={"Paper Recycling Mandate – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 10-29-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 2,
+      displayedValue: "$2 billion USD/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0,
+      displayedValue: "?",
+      site: "null",
+    },
+  ]}
+/>
+<SolutionImages
+ mobileSrc={"recycled_paper_savings_arrows.svg"}
+ desktopSrc={"recycled_paper_savings_arrows.svg"}
 
-We propose that states establish recycled content procurement mandates to the extent that they are financially feasible.
+/>
 
 ## Background
-
 In recent years, several countries [^"11"] and U.S. states [^"10"] have established recycled content mandates, requiring that a portion of the manufacturing of certain products use recycled materials.
 
-Recycling of paper in the United States is about 56% [^"1"], which, while high, is well below the highest rates of recycling in the world [^"2"]. Fibers degrade in the recycling process, which places a practical limit of five to seven recyclings for given fibers [^"12"]. Thus 100% paper recycling is not possible.
+Recycling of paper in the United States is about 38% [^"1"], which, while high, is well below the highest rates of recycling in the world [^"2"]. Fibers degrade in the recycling process, which places a practical limit of five to seven recyclings for given fibers [^"12"]. Thus 100% paper recycling is not possible.
 
 ## Calculations
-
-As of 2019, the United States managed about 110 million tonnes of paper and cardboard waste, of which 56% was recycled, 38% was landfilled, and 6% was incinerated [^"1"]. The highest national paper recycling rate in the world is Germany at 75% [^"2"], leaving a potential to increase American recycling rates by 19%.
+As of 2019, the United States managed about 110 million tonnes of paper and cardboard waste, of which 38% was recycled, 56% was landfilled, and 6% was incinerated [^"1"]. The highest national paper recycling rate in the world is Germany at 75% [^"2"], leaving a potential to increase American recycling rates by 19%.
 
 An estimated $4 billion of material value in paper is lost to landfilling, and tipping fees are another $4 billion.
 
@@ -31,12 +68,9 @@ Based on some lifecycle environmental impact estimates [^"3"] of paper recycling
 The cost of recycling paper, as opposed to the use of virgin fibers, varies and is often [^"7"], though not always [^"6"], more expensive. We are not able to present a reliable estimate of the cost of increasing the use of recycled fibers.
 
 ## Implementation
-
 In addition to price, quality of recycled fibers and contamination are issues that may limit recyclability and the suitable range of products for recycled paper [^"8"]. If the use of recycled content is driven by mandates, then there is a risk that a mandate for recycled material in one product will cannibalize the market, as opposed to driving more recycling, and divert the use of recycled material from products for which it is more useful [^"9"].
 
-##### Lead researcher: Michael Goff - Last updated: February 6, 2024
-
-
+##### Lead researchers: Michael Goff and Lee Nelson - Last updated: October 31, 2024
 
 [^"1"]: Milbrandt, A., Zuboy, J., Coney, K., Badgett, A. ["Paper and cardboard waste in the United States: Geographic, market, and energy assessment"](https://www.sciencedirect.com/science/article/pii/S2949750723000470). Waste Management Bulletin <b>2</b>(1), pp. 21-28. April 2024.
 
@@ -61,6 +95,7 @@ In addition to price, quality of recycled fibers and contamination are issues th
 [^"11"]: Plastic Europe. ["Mandatory recycled content"](https://plasticseurope.org/sustainability/circularity/recycling/mandatory-recycled-content/). Accessed February 6, 2024.
 
 [^"12"]: Holmes, A. ["How Many Times Can That Be Recycled?"](https://earth911.com/business-policy/how-many-times-recycled/). Earth911. September 2021.
+
 
 export default ({ children }) => 
   <SolutionDropdown 
