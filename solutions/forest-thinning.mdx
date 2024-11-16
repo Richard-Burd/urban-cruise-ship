@@ -1,31 +1,84 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Wildfire Risk";
 export const solution = "Forest Thinning and Controlled Burns - U.S.";
 
 
 ## Description
-The U.S. Forest Service should strategically remove dead underbrush from forests (forest thinning) and controlled burns to reduce the risk of wildfire.
+The U.S. Forest Service should strategically remove dead underbrush from forests (forest thinning) and conduct controlled burns to reduce the risk of wildfire.
+
+<DynamicSolutionGraphic
+  barChartTitle={"Forest Thinning and Controlled Burns – U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hide"}
+  arrowText1={""}
+  arrowText2={""}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 11-16-2024"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 9.9,
+      displayedValue: "$9.9",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 8.17,
+      displayedValue: "$8.17 Billion USD/year",
+      site: "null",
+    },
+  ]}
+/>
+
 
 ## Background
-More than 95% of the wildland fires in western ecosystems are suppressed successfully in the phase of initial attack, where their sizes cannot grow more than two acres. However, less than 4% of fires that cannot be suppressed in the early stage result in more than 95% of the burnt area and cause the majority of life and property damage[^”1”].
+More than 95% of the wildland fires in western ecosystems are suppressed successfully in the phase of initial attack, where their sizes cannot grow more than two acres. However, less than 4% of fires that cannot be suppressed in the early stage result in more than 95% of the burnt area and cause the majority of life and property damage[^"1"].
 
-Tree survival was greatest in areas that had both thinning and prescribed fire prior to the wildfire event. Survival was near zero for untreated areas. Survival in thinned-only areas was greater than untreated areas but substantially less than the areas with both treatments[^”2”].
+Tree survival was greatest in areas that had both thinning and prescribed fire prior to the wildfire event. Survival was near zero for untreated areas. Survival in thinned-only areas was greater than untreated areas but substantially less than the areas with both treatments[^"2"].
 
-Total small mammal biomass generally increased following both thinning and wildfire[^”3”].
+Total small mammal biomass generally increased following both thinning and wildfire[^"3"].
+
+
+## Calculations
+Prescribed burns average $74.17 per hectare, but the cost can vary widely based on location, terrain, fuel type, and intensity of the work[^"5"].
+
+The average cost of mechanized forest thinning is $2,075 per hectare[^"6"].
+
+The beneficial value of thinning per hectare is estimated at $2,604, which includes wildfire prevention and carbon emission reduction[^"7"].
+
+In 2020 there was 3.8 million hectares of land in the U.S. treated by prescribes burns[^"8"]. We use this amount as an annual average for our calculations.
+
 
 ## Implementation
-Prescribed fire is necessary to extend the effectiveness of thinning after significant tree or shrub regeneration. Continued monitoring will allow managers to use prescribed fire most efficiently to achieve fire and fuel management objectives[^”4”].
+Prescribed fire is necessary to extend the effectiveness of thinning after significant tree or shrub regeneration. Continued monitoring will allow managers to use prescribed fire most efficiently to achieve fire and fuel management objectives[^"4"].
 
-##### Lead researcher: Lee Nelson - Last updated: 10/24/2023
+##### Lead researcher: Lee Nelson - Last updated: November 16, 2024
 
-[^”1”]: Banerjee, T. [“Impacts of Forest Thinning on Wildland Fire Behavior”](https://doi.org/10.3390/f11090918) Forest Ecology and Management, August 2020
+[^"1"]: Banerjee, T. [“Impacts of Forest Thinning on Wildland Fire Behavior”](https://doi.org/10.3390/f11090918) Forest Ecology and Management, August 2020
 
-[^”2”]: Ritchie, M. et al. [“Probability of tree survival after wildfire in an interior pine forest of northern California: Effects of thinning and prescribed fire”](https://doi.org/10.1016/j.foreco.2007.04.044) Forest Ecology and Management, August 2007
+[^"2"]: Ritchie, M. et al. [“Probability of tree survival after wildfire in an interior pine forest of northern California: Effects of thinning and prescribed fire”](https://doi.org/10.1016/j.foreco.2007.04.044) Forest Ecology and Management, August 2007
 
-[^”3”]: Converse, S. et al. [“Small Mammal Responses to Thinning and Wildfire in Ponderosa Pine-Dominated Forests of the Southwestern United States”](https://doi.org/10.2193/0022-541X(2006)70[1711:SMRTTA]2.0.CO;2) Wildlife Management, December 2010
+[^"3"]: Converse, S. et al. [“Small Mammal Responses to Thinning and Wildfire in Ponderosa Pine-Dominated Forests of the Southwestern United States”](https://doi.org/10.2193/0022-541X(2006)70[1711:SMRTTA]2.0.CO;2) Wildlife Management, December 2010
 
-[^”4”]: Johnston, J. et al. [“Mechanical thinning without prescribed fire moderates wildfire behavior in an Eastern Oregon, USA ponderosa pine forest”](https://doi.org/10.1016/j.foreco.2021.119674) Forest Ecology and Management, December 2021
+[^"4"]: Johnston, J. et al. [“Mechanical thinning without prescribed fire moderates wildfire behavior in an Eastern Oregon, USA ponderosa pine forest”](https://doi.org/10.1016/j.foreco.2021.119674) Forest Ecology and Management, December 2021
+
+[^"5"]: Cleaves, D. et al. [“Prescribed Burning Costs: Trends and Influences in the National Forest System”](https://www.fs.usda.gov/psw/publications/documents/psw_gtr173/psw_gtr173_06_cleaves.pdf) USDA Forest Service, 1999
+
+[^"6"]: Chang, H. et al. [“The Cost of Forest Thinning Operations in the Western United States: A Systematic Literature Review and New Thinning Cost Model”](https://www.fs.usda.gov/rm/pubs_journals/2023/rmrs_2023_chang_h001.pdf) Journal of Forestry, 2022
+
+[^"7"]: Aleshire, P. [“Value of forest thinning $5K per acre”]( https://www.wmicentral.com/news_premium/value-of-forest-thinning-5k-per-acre/) The Independent, August 2016
+
+[^"8"]: Austin, E. [“Partners publish 2021 report on prescribed fire use in the U.S.”]( https://www.stateforesters.org/newsroom/2021-report-on-prescribed-fire-use-in-the-u-s/) National Association of State Foresters, January 2023
 
 
 export default ({ children }) => 
