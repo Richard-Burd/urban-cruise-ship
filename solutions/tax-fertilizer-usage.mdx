@@ -3,19 +3,41 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Nitrogen Pollution";
 export const solution = "Tax Fertilizer Usage";
 
-Fertilizers are critical to modern agriculture, but excessive and careless use of fertilizers results in runoff and harmful nitrogen pollution. Taxation to account for this damage will ensure that fertilizers are used appropriately.
+## Description
+We propose a tax on nitrogen fertilizers to mitigate environmental runoff damage and encourage more efficient and safe applications.
+
+## Background
+Nitrogen fertilizer runoff can cause water pollution, eutrophication, and biodiversity loss in aquatic ecosystems[^"2"]. Further, when improperly managed or overused it can cause algal blooms, oxygen depletion, and contamination of drinking water sources.
 
 As nitrogen runoff is a diffuse (nonpoint) source of pollution, regulatory approaches are challenging, and taxation to internalize the otherwise external costs of runoff are appropriate [^"9"].
 
-Sweden taxed nitrogen fertilizers from 1984 to 2009 and cadmium fertilizers from 1994 to 2009, though the taxes were revoked in the face of the financial crisis [^"1"]. The taxes amounted to about 10% of the cost of fertilizers and reduced nitrogen runoff by an etimated 6% [^"1"]. Taxes were also found to reduce fertilizer use in The Netherlands, Denmark, and Austria [^"9"].
+Sweden taxed nitrogen fertilizers from 1984 to 2009 and cadmium fertilizers from 1994 to 2009, though the taxes were revoked in the face of the financial crisis [^"1"]. The taxes amounted to about 10% of the cost of fertilizers and reduced nitrogen runoff by an estimated 6% [^"1"]. Taxes were also found to reduce fertilizer use in The Netherlands, Denmark, and Austria [^"9"].
 
-Despite their costs, fertilizer is critical to the functioning of modern agriculture, and bans such as was instituted in Sri Lanka are not appropriate [^"5"].
+In the United States it is estimated that nitrogen-related water pollution accounts for $157 billion in damages per year, this includes cleaning up contaminated water supplies, damages to fisheries, healthcare expenses, and lost recreational opportunities[^"3"].
+
+The tax will apply to nitrogen fertilizers, particularly synthetic forms like urea, ammonium nitrate, and anhydrous ammonia, and some organic forms with high nitrogen content.
+
+Determining the appropriate tax rate and assessing the environmental impact at the farm level could require complex monitoring systems.
+
+## Calculations
+The tax will be per kilogram of nitrogen fertilizer. The tax rate may vary depending on the concentration of the fertilizer and the environmental risk. Imported fertilizers may also have a higher tax rate to account for the added environmental risks of travel and contamination. Organic fertilizers or those with lower risk could have a lower rate or even no tax. There may be exemptions for farmers that use control-release fertilizers or precision agriculture technologies that limit runoff risk.
+
+## Implementation
+Despite their environmental costs, fertilizer is critical to the functioning of modern agriculture, and bans such as was instituted in Sri Lanka are not appropriate [^"5"].
+Fertilizer manufacturers and agricultural industry stakeholders might resist the tax, lobbying for lower rates or exemptions.
+
+##### Lead researcher: Lee Nelson - Last updated: 11/30/2024
 
 [^"1"]: Andersen, M. S. "Fertilizer tax in Sweden". Aarhus University. December 2016.
 
 [^"5"]: Kataria, A., Manur, A., Pradhan, S. "Sri Lanka’s Economic Crisis". Takshashila Institution. August 2022.
 
 [^"9"]: Pearce, D., Koundouri, P. "Fertilizer and Pesticide Taxes for Controlling Non-point Agricultural Pollution". Agricultural and Rural Development, World Bank. 2003.
+
+[^"2"]: Tyagi, J. et al. [“Nitrogenous fertilizers: impact on environment sustainability, mitigation strategies, and challenges”]( https://doi.org/10.1007/s13762-022-04027-9) International Journal of Environmental Science and Technology, April 2022
+
+[^"3"]: U.S. EPA [“Facts About Nutrient Pollution”]( https://www.epa.gov/nutrientpollution) U.S. Environmental Protection Agency, Accessed November 2024
+
 
 export default ({ children }) => 
   <SolutionDropdown 
