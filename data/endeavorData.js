@@ -10,7 +10,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^1]: Thompson, K., Tebbens, R. ["Retrospective cost-effectiveness analyses for polio vaccination in the United States"](https://doi.org/10.1111/j.1539-6924.2006.00831.x). Risk Analysis 26(6), pp. 1423-1440. December 2006.`,
+      `[^1]: Thompson, K., Tebbens, R. J. D. ["Retrospective cost-effectiveness analyses for polio vaccination in the United States"](https://doi.org/10.1111/j.1539-6924.2006.00831.x). Risk Analysis **26**(6), pp. 1423-1440. December 2006.`,
     ],
     subset: "public-health-projects"
   },
@@ -25,7 +25,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^2]: Sudathip, P., Kongkasuriyachai, D., Stelmach, R., Bisanzio, D., Sine, J., Sawang, S., Kitchakarn, S., Sintasath, D., Reithinger, R. ["The Investment Case for Malaria Elimination in Thailand: A Cost–Benefit Analysis"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553898/). The American journal of tropical medicine and hygiene 100(6), pp. 1445-1453. June 2019.`,
+      `[^2]: Sudathip, P., Kongkasuriyachai, D., Stelmach, R., Bisanzio, D., Sine, J., Sawang, S., Kitchakarn, S., Sintasath, D., Reithinger, R. ["The Investment Case for Malaria Elimination in Thailand: A Cost–Benefit Analysis"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553898/). The American Journal of Tropical Medicine and Hygiene **100**(6), pp. 1445-1453. June 2019.`,
     ],
     subset: "public-health-projects"
   },
@@ -40,7 +40,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^3]: Barrett, S. ["Economic considerations for the eradication endgame"](https://dx.doi.org/10.1098%2Frstb.2012.0149). Philosophical Transactions of the Royal Society B: Biological Sciences 368(1623): 20120149. August 2013.`,
+      `[^3]: Barrett, S. ["Economic considerations for the eradication endgame"](https://dx.doi.org/10.1098%2Frstb.2012.0149). Philosophical Transactions of the Royal Society B: Biological Sciences **368**(1623): 20120149. August 2013.`,
     ],
     subset: "public-health-projects"
   },
@@ -71,7 +71,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^5]: Manun, A., Zhao, B., McCabe, M., Dreher, K., Otterstatter, M., Smith, N., Blondel-Hill, E., Marra, F., Patrick. D. ["Cost-benefit analysis of a population-based education program on the wise use of antibiotics"](https://link.springer.com/article/10.17269/s41997-019-00245-w). Canadian Journal of Public Health 110, pp. 732-740. August 2019.`,
+      `[^5]: Manun, A., Zhao, B., McCabe, M., Dreher, K., Otterstatter, M., Smith, N., Blondel-Hill, E., Marra, F., Patrick. D. ["Cost-benefit analysis of a population-based education program on the wise use of antibiotics"](https://link.springer.com/article/10.17269/s41997-019-00245-w). Canadian Journal of Public Health **110**, pp. 732-740. August 2019.`,
     ],
     subset: "public-health-Campaigns"
   },
@@ -86,7 +86,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^6]: Chestnut, L., Mills, D. ["A fresh look at the benefits and costs of the US acid rain program"](https://www.sciencedirect.com/science/article/pii/S0301479705002124). Journal of Environmental Management 77(3), pp. 252-266. November 2005.`,
+      `[^6]: Chestnut, L., Mills, D. ["A fresh look at the benefits and costs of the US acid rain program"](https://www.sciencedirect.com/science/article/pii/S0301479705002124). Journal of Environmental Management **77**(3), pp. 252-266. November 2005.`,
     ],
     subset: "pollution-regulations"
   },
@@ -101,7 +101,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
+      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health **20**, pp. 1-12. December 2020.`,
     ],
     subset: "public-health-campaigns"
   },
@@ -116,7 +116,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^8]: Marseille, E., Kahn, J., Yazar-Klosinski, B., Doblin, R. ["The cost-effectiveness of MDMA-assisted psychotherapy for the treatment of chronic, treatment-resistant PTSD"](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239997). PLoS ONE 15(10), e0239997. October 2020.`,
+      `[^8]: Marseille, E., Kahn, J., Yazar-Klosinski, B., Doblin, R. ["The cost-effectiveness of MDMA-assisted psychotherapy for the treatment of chronic, treatment-resistant PTSD"](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239997). PLoS ONE **15**(10), e0239997. October 2020.`,
     ],
     subset: "public-health-projects"
   },
@@ -146,7 +146,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^10]: Logar, I., Brouwer, R., Paillex, A. ["Do the societal benefits of river restoration outweigh their costs? A cost-benefit analysis"](https://www.sciencedirect.com/science/article/pii/S030147971831363X). Journal of Environmental Management 232, pp. 1075-1085. February 2019.`,
+      `[^10]: Logar, I., Brouwer, R., Paillex, A. ["Do the societal benefits of river restoration outweigh their costs? A cost-benefit analysis"](https://www.sciencedirect.com/science/article/pii/S030147971831363X). Journal of Environmental Management **232**, pp. 1075-1085. February 2019.`,
     ],
     subset: "ecology-environment"
 
@@ -162,7 +162,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^11]: Lazo, J., Morss, R., Demuth, J. ["300 Billion Served: Sources, Perceptions, Uses, and Values of Weather Forecasts"](https://journals.ametsoc.org/bams/article/90/6/785/59633). Bulletin of the American Meteorological Society 90(6), pp. 785-798. June 2009.`,
+      `[^11]: Lazo, J., Morss, R., Demuth, J. ["300 Billion Served: Sources, Perceptions, Uses, and Values of Weather Forecasts"](https://journals.ametsoc.org/bams/article/90/6/785/59633). Bulletin of the American Meteorological Society **90**(6), pp. 785-798. June 2009.`,
     ],
     subset: "miscellaneous"
   },
@@ -177,7 +177,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^12]: Clark, K. A., Biddle, A. K., Martin, S. L. ["A Cost-Benefit Analysis of the Violence Against Women Act of 1994"](https://journals.sagepub.com/doi/abs/10.1177/10778010222183143). Violence Against Women 8(4), pp. 417-428. April 2002.`,
+      `[^12]: Clark, K. A., Biddle, A. K., Martin, S. L. ["A Cost-Benefit Analysis of the Violence Against Women Act of 1994"](https://journals.sagepub.com/doi/abs/10.1177/10778010222183143). Violence Against Women **8**(4), pp. 417-428. April 2002.`,
     ],
     subset: "public-health-projects"
   },
@@ -238,7 +238,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^17]: Krarti, M., Ali, F., Alaidroos, A., Houchati, M. ["Macro-economic benefit analysis of large scale building energy efficiency programs in Qatar"](https://www.sciencedirect.com/science/article/pii/S2212609017301061). International Journal of Sustainable Built Environment 6(2), pp. 597-609. December 2017.`,
+      `[^17]: Krarti, M., Ali, F., Alaidroos, A., Houchati, M. ["Macro-economic benefit analysis of large scale building energy efficiency programs in Qatar"](https://www.sciencedirect.com/science/article/pii/S2212609017301061). International Journal of Sustainable Built Environment **6**(2), pp. 597-609. December 2017.`,
     ],
     subset: "research-and-development"
   },
@@ -270,7 +270,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^20]: Holtgrave, D., Wunderink, K., Vallone, D., Healton, C. ["Cost–Utility Analysis of the National truth® Campaign to Prevent Youth Smoking"](https://www.sciencedirect.com/science/article/abs/pii/S0749379709000750). American Journal of Preventive Medicine 36(5). May 2009.`,
+      `[^20]: Holtgrave, D., Wunderink, K., Vallone, D., Healton, C. ["Cost–Utility Analysis of the National truth® Campaign to Prevent Youth Smoking"](https://www.sciencedirect.com/science/article/abs/pii/S0749379709000750). American Journal of Preventive Medicine **36**(5). May 2009.`,
     ],
     subset: "public-health-campaigns"
 
@@ -286,7 +286,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^21]: Hertzfeld, R. ["Measuring the economic returns from successful NASA life sciences technology transfers"](https://pubmed.ncbi.nlm.nih.gov/14983842/). Journal of Technology Transfer 27(4), pp. 311-320. December 2002.`,
+      `[^21]: Hertzfeld, R. ["Measuring the economic returns from successful NASA life sciences technology transfers"](https://pubmed.ncbi.nlm.nih.gov/14983842/). Journal of Technology Transfer **27**(4), pp. 311-320. December 2002.`,
     ],
     subset: "research-and-development"
   },
@@ -301,7 +301,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^22]: Worrell, E., Laitner, J., Ruth, M., Finman, H. ["Productivity benefits of industrial energy efficiency measures"](https://www.sciencedirect.com/science/article/abs/pii/S0360544203000914). Energy 28(11), pp. 1081-1098. September 2003.`,
+      `[^22]: Worrell, E., Laitner, J., Ruth, M., Finman, H. ["Productivity benefits of industrial energy efficiency measures"](https://www.sciencedirect.com/science/article/abs/pii/S0360544203000914). Energy **28**(11), pp. 1081-1098. September 2003.`,
     ],
     subset: "energy-production-efficiency"
   },
@@ -362,7 +362,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^27]: Sælensminde, K. ["Cost-benefit analyses of walking and cycling track networks taking into account insecurity, health effects and external costs of motorized traffic"](https://www.sciencedirect.com/science/article/abs/pii/S0965856404000539). Transportation Research Part A: Policy and Practice 38(8), pp. 593-606. October 2004.`,
+      `[^27]: Sælensminde, K. ["Cost-benefit analyses of walking and cycling track networks taking into account insecurity, health effects and external costs of motorized traffic"](https://www.sciencedirect.com/science/article/abs/pii/S0965856404000539). Transportation Research Part A: Policy and Practice **38**(8), pp. 593-606. October 2004.`,
     ],
     subset: "transportation-infrastructure"
   },
@@ -377,7 +377,7 @@ export const endeavorData = [
     co2: 424,
     habitat: null,
     sources: [
-      `[^28]: Bentzen, J., Truc, N. T. T., Nam, T. S. ["A Social Cost-Benefit Analysis of Biogas Technologies using Rice Straw and Water Hyacinths as Feedstock"](http://203.159.5.126/index.php/reric/article/view/1825). International Energy Journal 18(4). December 2018.`,
+      `[^28]: Bentzen, J., Truc, N. T. T., Nam, T. S. ["A Social Cost-Benefit Analysis of Biogas Technologies using Rice Straw and Water Hyacinths as Feedstock"](http://203.159.5.126/index.php/reric/article/view/1825). International Energy Journal **18**(4). December 2018.`,
     ],
     subset: "ecology-environment"
 
@@ -393,7 +393,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^29]: van Huizen, T., Dumhs, L., Plantenga, J. ["A Cost-Benefit Analysis of Universal Preschool Education: Evidence from a Spanish Reform"](https://dspace.library.uu.nl/handle/1874/342312). USE Discussion paper series 16(11). 2016.`,
+      `[^29]: van Huizen, T., Dumhs, L., Plantenga, J. ["A Cost-Benefit Analysis of Universal Preschool Education: Evidence from a Spanish Reform"](https://dspace.library.uu.nl/handle/1874/342312). USE Discussion paper series **16**(11). 2016.`,
     ],
     subset: "miscellaneous"
   },
@@ -423,7 +423,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^31]: Borrego-Marín, M., Berbel, J. ["Cost-benefit analysis of irrigation modernization in Guadalquivir River Basin"](https://www.sciencedirect.com/science/article/abs/pii/S0378377418303378). Agricultural Water Management 212, pp. 416-423. February 2019.`,
+      `[^31]: Borrego-Marín, M., Berbel, J. ["Cost-benefit analysis of irrigation modernization in Guadalquivir River Basin"](https://www.sciencedirect.com/science/article/abs/pii/S0378377418303378). Agricultural Water Management **212**, pp. 416-423. February 2019.`,
     ],
     subset: "ecology-environment"
   },
@@ -438,7 +438,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^32]: Held, P. J., McCormick, F., Ojo, A., Roberts, J. P. "A Cost‐Benefit Analysis of Government Compensation of Kidney Donors". American Journal of Transplantation 16(3), pp. 877-885. October 2015.`,
+      `[^32]: Held, P. J., McCormick, F., Ojo, A., Roberts, J. P. "A Cost‐Benefit Analysis of Government Compensation of Kidney Donors". American Journal of Transplantation **16**(3), pp. 877-885. October 2015.`,
     ],
     subset: "public-health-projects"
   },
@@ -453,7 +453,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^33]: Beckman, L., Svensson, M. ["The cost-effectiveness of the Olweus Bullying Prevention Program: Results from a modelling study"](https://www.sciencedirect.com/science/article/abs/pii/S0140197115002213). Journal of Adolescence 45, pp. 127-137. December 2015.`,
+      `[^33]: Beckman, L., Svensson, M. ["The cost-effectiveness of the Olweus Bullying Prevention Program: Results from a modelling study"](https://www.sciencedirect.com/science/article/abs/pii/S0140197115002213). Journal of Adolescence **45**, pp. 127-137. December 2015.`,
     ],
     subset: "public-health-campaigns"
   },
@@ -498,7 +498,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^36]: Reed, D., Cook, K., Aloe, A. ["A Cost–Benefit Analysis of Summer Reading Programs Implemented Under State Guidelines"](https://journals.sagepub.com/doi/abs/10.1177/0895904818802112). Education Policy 34(4), pp. 594-618. June 2020.`,
+      `[^36]: Reed, D., Cook, K., Aloe, A. ["A Cost–Benefit Analysis of Summer Reading Programs Implemented Under State Guidelines"](https://journals.sagepub.com/doi/abs/10.1177/0895904818802112). Education Policy **34**(4), pp. 594-618. June 2020.`,
     ],
     subset: "miscellaneous"
   },
@@ -513,7 +513,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^37]: Reed, D., Cook, K., Aloe, A. ["A Cost–Benefit Analysis of Summer Reading Programs Implemented Under State Guidelines"](https://journals.sagepub.com/doi/abs/10.1177/0895904818802112). Education Policy 34(4), pp. 594-618. June 2020.`,
+      `[^37]: Reed, D., Cook, K., Aloe, A. ["A Cost–Benefit Analysis of Summer Reading Programs Implemented Under State Guidelines"](https://journals.sagepub.com/doi/abs/10.1177/0895904818802112). Education Policy **34**(4), pp. 594-618. June 2020.`,
     ],
     subset: "energy-production-efficiency"
   },
@@ -558,7 +558,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^40]: Doran, C., Ling, R., Byrnes, J., Crane, M., Shakeshaft, A., Searles, A., Perez, D. ["Benefit Cost Analysis of Three Skin Cancer Public Education Mass-Media Campaigns Implemented in New South Wales, Australia"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732951/). PLoS One 11(1): e0147665. January 2016.`,
+      `[^40]: Doran, C., Ling, R., Byrnes, J., Crane, M., Shakeshaft, A., Searles, A., Perez, D. ["Benefit Cost Analysis of Three Skin Cancer Public Education Mass-Media Campaigns Implemented in New South Wales, Australia"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732951/). PLoS One **11**(1): e0147665. January 2016.`,
     ],
     subset: "public-health-campaigns"
   },
@@ -573,7 +573,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^41]: Baker, C., Ding, Y., Ferrufino, C., Kowal, S., Tan, J., Subedi, P. ["A cost–benefit analysis of smoking cessation prescription coverage from a US payer perspective"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6052927/). ClinicoEconomics and Outcomes Research 10, pp. 359-370. July 2018.`,
+      `[^41]: Baker, C., Ding, Y., Ferrufino, C., Kowal, S., Tan, J., Subedi, P. ["A cost–benefit analysis of smoking cessation prescription coverage from a US payer perspective"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6052927/). ClinicoEconomics and Outcomes Research **10**, pp. 359-370. July 2018.`,
     ],
     subset: "public-health-campaigns"
   },
@@ -604,7 +604,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^43]: Vitaliano, D. ["Benefits and Costs of the Erie Canal: A New View"](https://link.springer.com/article/10.1057/eej.2014.79?shared-article-renderer). Eastern Economic Journal 42, pp. 581-593. September 2016.`,
+      `[^43]: Vitaliano, D. ["Benefits and Costs of the Erie Canal: A New View"](https://link.springer.com/article/10.1057/eej.2014.79?shared-article-renderer). Eastern Economic Journal **42**, pp. 581-593. September 2016.`,
     ],
     subset: "transportation-infrastructure"
   },
@@ -664,7 +664,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^47]: Hsu, E. ["Cost-benefit analysis for recycling of agricultural wastes in Taiwan"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X20305699). Waste Management 120, pp. 424-432. February 2021.`,
+      `[^47]: Hsu, E. ["Cost-benefit analysis for recycling of agricultural wastes in Taiwan"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X20305699). Waste Management **120**, pp. 424-432. February 2021.`,
     ],
     subset: "ecology-environment"
   },
@@ -679,7 +679,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^48]: Eliasson, J. ["A cost–benefit analysis of the Stockholm congestion charging system"](https://www.sciencedirect.com/science/article/abs/pii/S0965856408002140). Transportation Research Part A: Policy and Practice 43May 2009.`,
+      `[^48]: Eliasson, J. ["A cost–benefit analysis of the Stockholm congestion charging system"](https://www.sciencedirect.com/science/article/abs/pii/S0965856408002140). Transportation Research Part A: Policy and Practice **43**(4), pp. 468-480. May 2009.`,
     ],
     subset: "transportation-infrastructure"
   },
@@ -709,7 +709,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^49]: Dittrich, R., Ball, T., Wreford, A., Moran, D., Spray, C. ["A cost‐benefit analysis of afforestation as a climate change adaptation measure to reduce flood risk"](https://onlinelibrary.wiley.com/doi/full/10.1111/jfr3.12482). Journal of Flood Risk Management 12(4), e12482. July 2018.`,
+      `[^49]: Dittrich, R., Ball, T., Wreford, A., Moran, D., Spray, C. ["A cost‐benefit analysis of afforestation as a climate change adaptation measure to reduce flood risk"](https://onlinelibrary.wiley.com/doi/full/10.1111/jfr3.12482). Journal of Flood Risk Management **12**(4), e12482. July 2018.`,
     ],
     subset: "ecology-environment"
 
@@ -725,7 +725,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^50]: Brey, R., Castillo-Manzano, I., Castro-Nuño, M., López-Valpuesta, L., Marchena-Gómez, M., Sánchez-Braza, A. ["Is the widespread use of urban land for cycling promotion policies cost effective? A Cost-Benefit Analysis of the case of Seville"](https://www.sciencedirect.com/science/article/abs/pii/S026483771630391X). Land Use Policy 63, pp. 130-139. April 2017.`,
+      `[^50]: Brey, R., Castillo-Manzano, I., Castro-Nuño, M., López-Valpuesta, L., Marchena-Gómez, M., Sánchez-Braza, A. ["Is the widespread use of urban land for cycling promotion policies cost effective? A Cost-Benefit Analysis of the case of Seville"](https://www.sciencedirect.com/science/article/abs/pii/S026483771630391X). Land Use Policy **63**, pp. 130-139. April 2017.`,
     ],
     subset: "transportation-infrastructure"
   },
@@ -740,7 +740,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^51]: Maurer, N., Yu, C. ["What T. R. Took: The Economic Impact of the Panama Canal, 1903-37"](https://www.jstor.org/stable/40056435?seq=1). The Journal of Economic History 68(3), pp. 686-721. September 2008.`,
+      `[^51]: Maurer, N., Yu, C. ["What T. R. Took: The Economic Impact of the Panama Canal, 1903-37"](https://www.jstor.org/stable/40056435?seq=1). The Journal of Economic History **68**(3), pp. 686-721. September 2008.`,
     ],
     subset: "transportation-infrastructure"
   },
@@ -770,7 +770,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^53]: Kuang, X., Zhao, F., Hao, H., Liu, Z. ["Assessing the Socioeconomic Impacts of Intelligent Connected Vehicles in China: A Cost–Benefit Analysis"](https://www.mdpi.com/2071-1050/11/12/3273). Sustainability 11(12). June 2019.`,
+      `[^53]: Kuang, X., Zhao, F., Hao, H., Liu, Z. ["Assessing the Socioeconomic Impacts of Intelligent Connected Vehicles in China: A Cost–Benefit Analysis"](https://www.mdpi.com/2071-1050/11/12/3273). Sustainability **11**(12). June 2019.`,
     ],
     subset: "transportation-infrastructure"
   },
@@ -785,7 +785,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^54]: Irwin, A., Jozaghi, E., Bluthenthal, R., Kral, H. ["A Cost-Benefit Analysis of a Potential Supervised Injection Facility in San Francisco, California, USA"](https://journals.sagepub.com/doi/abs/10.1177/0022042616679829?journalCode=joda). Journal of Drug Issues 47(2), pp. 164-184. December 2016.`,
+      `[^54]: Irwin, A., Jozaghi, E., Bluthenthal, R., Kral, H. ["A Cost-Benefit Analysis of a Potential Supervised Injection Facility in San Francisco, California, USA"](https://journals.sagepub.com/doi/abs/10.1177/0022042616679829?journalCode=joda). Journal of Drug Issues **47**(2), pp. 164-184. December 2016.`,
     ],
     subset: "public-health-projects"
 
@@ -816,7 +816,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^56]: Broughel, J., Kotrous, M. ["The Benefits of Coronavirus Suppression: A Cost-Benefit Analysis of the Response to the First Wave of COVID-19 in the United States"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3636090). Mercatus Working Paper, COVID Economics 67, pp. 128-171. February 2021.`,
+      `[^56]: Broughel, J., Kotrous, M. ["The Benefits of Coronavirus Suppression: A Cost-Benefit Analysis of the Response to the First Wave of COVID-19 in the United States"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3636090). Mercatus Working Paper, COVID Economics **67**, pp. 128-171. February 2021.`,
     ],
     subset: "public-health-projects"
   },
@@ -846,7 +846,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^58]: Hutchinson, E., Pearson, P. ["An evaluation of the environmental and health effects of vehicle exhaust catalysts in the UK"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1241821/). Environmental Health Perspectives 112(2), pp. 132-141. February 2004.`,
+      `[^58]: Hutchinson, E., Pearson, P. ["An evaluation of the environmental and health effects of vehicle exhaust catalysts in the UK"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1241821/). Environmental Health Perspectives **112**(2), pp. 132-141. February 2004.`,
     ],
     subset: "pollution-regulations"
   },
@@ -861,7 +861,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^59]: Djukic, M., Jovanoski, I., Ivanovic, O., Lazic, M., Bodroza, D. ["Cost-benefit analysis of an infrastructure project and a cost-reflective tariff: A case study for investment in wastewater treatment plant in Serbia"](https://www.sciencedirect.com/science/article/abs/pii/S1364032116000800). Renewable and Sustainable Energy Reviews 59, pp. 1419-1425. June 2016.`,
+      `[^59]: Djukic, M., Jovanoski, I., Ivanovic, O., Lazic, M., Bodroza, D. ["Cost-benefit analysis of an infrastructure project and a cost-reflective tariff: A case study for investment in wastewater treatment plant in Serbia"](https://www.sciencedirect.com/science/article/abs/pii/S1364032116000800). Renewable and Sustainable Energy Reviews **59**, pp. 1419-1425. June 2016.`,
     ],
     subset: "ecology-environment"
   },
@@ -891,7 +891,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^61]: Turner, R. K., Burgess, D., Hadley, D., Coombes, E., Jackson, N. ["A cost-benefit appraisal of coastal managed realignment policy"](https://www.sciencedirect.com/science/article/abs/pii/S0959378007000416). Global Environmental Change 17(3-4), pp. 397-407. August-October 2007.`,
+      `[^61]: Turner, R. K., Burgess, D., Hadley, D., Coombes, E., Jackson, N. ["A cost-benefit appraisal of coastal managed realignment policy"](https://www.sciencedirect.com/science/article/abs/pii/S0959378007000416). Global Environmental Change **17**(3-4), pp. 397-407. August-October 2007.`,
     ],
     subset: "ecology-environment"
   },
@@ -906,7 +906,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^62]: Morimoto, R., Hope, C. ["Applying a cost-benefit analysis model to the Three Gorges project in China"](https://www.tandfonline.com/doi/abs/10.3152/147154604781765888). Impact Assessment and Project Appraisal 22(3), pp. 205-220. 2004.`,
+      `[^62]: Morimoto, R., Hope, C. ["Applying a cost-benefit analysis model to the Three Gorges project in China"](https://www.tandfonline.com/doi/abs/10.3152/147154604781765888). Impact Assessment and Project Appraisal **22**(3), pp. 205-220. 2004.`,
     ],
     subset: "energy-production-efficiency"
   },
@@ -921,7 +921,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^63]: Graff Zivin, J., Li, D., Sampat, B. ["Public R&D Investments and Private-sector Patenting: Evidence from NIH Funding Rules"](https://www.nber.org/papers/w20889). The Review of Economic Studies 86(1), pp. 117-152. January 2019.`,
+      `[^63]: Graff Zivin, J., Li, D., Sampat, B. ["Public R&D Investments and Private-sector Patenting: Evidence from NIH Funding Rules"](https://www.nber.org/papers/w20889). The Review of Economic Studies **86**(1), pp. 117-152. January 2019.`,
       `[^64]: National Institutes of Health. ["Budget"](https://www.nih.gov/about-nih/what-we-do/budget). Accessed July 23, 2020.`,
     ],
     subset: "research-and-development"
@@ -937,7 +937,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^65]: Zhang, J., Jiang, H., Zhang, W., Ma, G., Wang, Y., Lu, Y., Hu, X., Zhou, J., Peng, F., Bi, J., Wang, J. ["Cost-benefit analysis of China’s Action Plan for Air Pollution Prevention and Control"](https://link.springer.com/article/10.1007/s42524-019-0074-8). Frontiers of Engineering Management 6, pp. 524-537. November 2019.`,
+      `[^65]: Zhang, J., Jiang, H., Zhang, W., Ma, G., Wang, Y., Lu, Y., Hu, X., Zhou, J., Peng, F., Bi, J., Wang, J. ["Cost-benefit analysis of China’s Action Plan for Air Pollution Prevention and Control"](https://link.springer.com/article/10.1007/s42524-019-0074-8). Frontiers of Engineering Management **6**, pp. 524-537. November 2019.`,
     ],
     subset: "pollution-regulations"
   },
@@ -952,7 +952,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^66]: Lavee, D. ["A cost-benefit analysis of a deposit–refund program for beverage containers in Israel"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X09003808). Waste Management 30(2), pp. 338-345. February 2010.`,
+      `[^66]: Lavee, D. ["A cost-benefit analysis of a deposit–refund program for beverage containers in Israel"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X09003808). Waste Management **30**(2), pp. 338-345. February 2010.`,
     ],
     subset: "ecology-environment"
   },
@@ -967,7 +967,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^67]: Zhou, C., Gong, Z., Hu, J., Cao, A., Liang, H. ["A cost-benefit analysis of landfill mining and material recycling in China"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X14004516). Waste Management 35, pp. 191-198. January 2015.`,
+      `[^67]: Zhou, C., Gong, Z., Hu, J., Cao, A., Liang, H. ["A cost-benefit analysis of landfill mining and material recycling in China"](https://www.sciencedirect.com/science/article/abs/pii/S0956053X14004516). Waste Management **35**, pp. 191-198. January 2015.`,
     ],
     subset: "ecology-environment"
   },
@@ -993,11 +993,11 @@ export const endeavorData = [
     cost: 0.00393,
     costExplanation: `Benefit is a net present value since the cost is offset from grass mantainance`,
     benefit: 0.00484,
-    benefitExplanation: `Unsightly grass is removed from parks and replaced with plants that can be harvested for biofules in winter`,
+    benefitExplanation: `Unsightly grass is removed from parks and replaced with plants that can be harvested for biofuels in winter`,
     co2: null,
     habitat: null,
     sources: [
-      `[^69]: Sikorska, D., Macegoniuk, S., Łaszkiewicz, E., Sikorska, P. ["Energy crops in urban parks as a promising alternative to traditional lawns - Perceptions and a cost-benefit analysis"](https://www.sciencedirect.com/science/article/pii/S1618866719304455). Urban Forestry & Urban Greening 49, 126579. March 2020.`,
+      `[^69]: Sikorska, D., Macegoniuk, S., Łaszkiewicz, E., Sikorska, P. ["Energy crops in urban parks as a promising alternative to traditional lawns - Perceptions and a cost-benefit analysis"](https://www.sciencedirect.com/science/article/pii/S1618866719304455). Urban Forestry & Urban Greening **49**: 126579. March 2020.`,
     ],
     subset: "energy-production-efficiency"
   },
@@ -1012,7 +1012,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^70]: Florio, M., Forte, S., Sirtori, E. ["Forecasting the socio-economic impact of the Large Hadron Collider: A cost–benefit analysis to 2025 and beyond"](https://www.sciencedirect.com/science/article/abs/pii/S0040162516000731). Technological Forecasting and Social Change 112, pp. 38-53. November 2016.`,
+      `[^70]: Florio, M., Forte, S., Sirtori, E. ["Forecasting the socio-economic impact of the Large Hadron Collider: A cost–benefit analysis to 2025 and beyond"](https://www.sciencedirect.com/science/article/abs/pii/S0040162516000731). Technological Forecasting and Social Change **112**, pp. 38-53. November 2016.`,
     ],
     subset: "research-and-development"
   },
@@ -1027,7 +1027,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^71]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study"](https://www.sciencedirect.com/science/article/pii/S0306261917318068). Applied Energy 212, pp. 881-894. February 2018.`,
+      `[^71]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study"](https://www.sciencedirect.com/science/article/pii/S0306261917318068). Applied Energy **212**, pp. 881-894. February 2018.`,
     ],
     subset: "energy-production-efficiency"
   },
@@ -1042,7 +1042,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^72]: Caldwell, M., Vitacco, M., Van Rybroek, G. ["Are Violent Delinquents Worth Treating? A Cost–Benefit Analysis"](https://journals.sagepub.com/doi/abs/10.1177/0022427805280053). Journal of Research in Crime and Delinquency 43(2), pp. 148-168. May 2006.`,
+      `[^72]: Caldwell, M., Vitacco, M., Van Rybroek, G. ["Are Violent Delinquents Worth Treating? A Cost–Benefit Analysis"](https://journals.sagepub.com/doi/abs/10.1177/0022427805280053). Journal of Research in Crime and Delinquency **43**(2), pp. 148-168. May 2006.`,
     ],
     subset: "public-health-projects"
   },
@@ -1057,7 +1057,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^73]: Marshik, T., Obritzhauser, W., Wagner, P., Richter, T., Mayerhofer, M., Egger-Danner, C., Käsbohrer, A., Pinior, B. ["A cost-benefit analysis and the potential trade effects of the bovine viral diarrhoea eradication programme in Styria, Austria"](https://www.sciencedirect.com/science/article/pii/S1090023317302289). The Veterinary Journal 231, pp. 19-29. January 2018.`,
+      `[^73]: Marshik, T., Obritzhauser, W., Wagner, P., Richter, T., Mayerhofer, M., Egger-Danner, C., Käsbohrer, A., Pinior, B. ["A cost-benefit analysis and the potential trade effects of the bovine viral diarrhoea eradication programme in Styria, Austria"](https://www.sciencedirect.com/science/article/pii/S1090023317302289). The Veterinary Journal **231**, pp. 19-29. January 2018.`,
     ],
     subset: "public-health-projects"
   },
@@ -1072,7 +1072,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
+      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health **20**, pp. 1-12. December 2020.`,
     ],
     subset: "public-health-campaigns"
   },
@@ -1087,7 +1087,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^74]: Tao, R., Liu, S., Tam, C. ["Cost-Benefit Analysis of High-Speed Rail Link between Hong Kong and Mainland China"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.397.4747). Journal of Engineering, Project, and Production Management 1(1), pp. 36-45. June 2011.`,
+      `[^74]: Tao, R., Liu, S., Tam, C. ["Cost-Benefit Analysis of High-Speed Rail Link between Hong Kong and Mainland China"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.397.4747). Journal of Engineering, Project, and Production Management **1**(1), pp. 36-45. June 2011.`,
     ],
     subset: "transportation-infrastructure"
   },
@@ -1102,7 +1102,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
+      `[^7]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health **20**, pp. 1-12. December 2020.`,
     ],
     subset: "public-health-campaigns"
   },
@@ -1117,7 +1117,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^47]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health 20, pp. 1-12. December 2020.`,
+      `[^47]: Broeks, M., Biesbroek, S., Over, E., van Gils, P., Toxopeus, I., Beukers, M., Temme, H. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://pubmed.ncbi.nlm.nih.gov/32389120/). BMC Public Health **20**, pp. 1-12. December 2020.`,
     ],
     subset: "ecology-environment"
   },
@@ -1132,7 +1132,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^75]: Baade, R., Matheson, V. "Going for the Gold: The Economics of the Olympics". Journal of Economic Perspectives 30(2), pp. 201-218. Spring 2016.`,
+      `[^75]: Baade, R., Matheson, V. "Going for the Gold: The Economics of the Olympics". Journal of Economic Perspectives **30**(2), pp. 201-218. Spring 2016.`,
     ],
     subset: "miscellaneous"
   },
@@ -1147,7 +1147,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^76]: Grecu, E., Aceleanu, M. I., Albulescu, C. T. ["The economic, social and environmental impact of shale gas exploitation in Romania: A cost-benefit analysis"](https://www.sciencedirect.com/science/article/abs/pii/S1364032118303721). Renewable and Sustainable Energy Reviews 93, pp. 691-700. October 2018.`,
+      `[^76]: Grecu, E., Aceleanu, M. I., Albulescu, C. T. ["The economic, social and environmental impact of shale gas exploitation in Romania: A cost-benefit analysis"](https://www.sciencedirect.com/science/article/abs/pii/S1364032118303721). Renewable and Sustainable Energy Reviews **93**, pp. 691-700. October 2018.`,
     ],
     subset: "energy-production-efficiency"
   },
@@ -1177,7 +1177,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^78]: Barbosa, A., Tella, J. ["How much does it cost to save a species from extinction? Costs and rewards of conserving the Lear's macaw"](https://royalsocietypublishing.org/doi/10.1098/rsos.190190). Royal Society open science 6(7): article 190190. July 2019.`,
+      `[^78]: Barbosa, A., Tella, J. ["How much does it cost to save a species from extinction? Costs and rewards of conserving the Lear's macaw"](https://royalsocietypublishing.org/doi/10.1098/rsos.190190). Royal Society open science **6**(7): article 190190. July 2019.`,
     ],
     subset: "ecology-environment"
   },
@@ -1192,7 +1192,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^79]: Miles, D., Stedman, M., Heald, A. ["Stay at Home, Protect the National Health Service, Save Lives”](https://onlinelibrary.wiley.com/doi/full/10.1111/ijcp.13674): A cost benefit analysis of the lockdown in the United Kingdom". International Journal of Clinical Practice 75(3), e13674. August 2020.`,
+      `[^79]: Miles, D., Stedman, M., Heald, A. ["Stay at Home, Protect the National Health Service, Save Lives”](https://onlinelibrary.wiley.com/doi/full/10.1111/ijcp.13674): A cost benefit analysis of the lockdown in the United Kingdom". International Journal of Clinical Practice **75**(3), e13674. August 2020.`,
     ],
     subset: "public-health-projects"
   },
@@ -1207,7 +1207,7 @@ export const endeavorData = [
     co2: null,
     habitat: null,
     sources: [
-      `[^80]: Hausken, K. ["Cost benefit analysis of war"](https://www.emerald.com/insight/content/doi/10.1108/IJCMA-04-2015-0023/full/html?fullSc=1). International Journal of Conflict Management 27(4), ISSN: 1044-4068. October 2016.`,
+      `[^80]: Hausken, K. ["Cost benefit analysis of war"](https://www.emerald.com/insight/content/doi/10.1108/IJCMA-04-2015-0023/full/html?fullSc=1). International Journal of Conflict Management **27**(4), ISSN: 1044-4068. October 2016.`,
     ],
     subset: "miscellaneous"
   },
