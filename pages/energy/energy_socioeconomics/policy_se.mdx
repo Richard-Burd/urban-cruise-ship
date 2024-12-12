@@ -4,6 +4,12 @@ import hierarchy from "../hierarchy.json";
 export const site = "energy";
 export const focusAreaUrl = "energy_socioeconomics";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import ArticleImage from "/components/ArticleImage.js";
 
 import ProductionTaxCreditSolution from "/solutions/production-tax-credit.mdx"
@@ -12,18 +18,60 @@ import CleanEnergyStandardSolution from "/solutions/clean-energy-standard.mdx"
 import AgreementToPhaseOutCoalSolution from "/solutions/agreement-to-phase-out-coal.mdx"
 
 # Clean Energy Deployment
-Here are reviewed several broad policy tools for accelerating clean energy deployment, improving efficiency, and phasing out pollution and emissions. Research and development as a clean energy deployment mechanism is discussed in more detail in [elsewhere](/energy/energy_socioeconomics/rd).
+Here we review several broad policy tools for accelerating clean energy deployment, improving efficiency, and phasing out pollution and emissions. Research and development as a clean energy deployment mechanism is discussed in more detail [elsewhere](/energy/energy_socioeconomics/rd).
 
 ## Electricity Deployment
 We estimate the following average values of building new power plants. We recommend the construction of solar PV plants, followed by onshore wind power, where feasible. Details are in our assessments of [individual energy production technologies](/energy/energy_production).
 
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Return on 1 GW Power Plant in Lieu of Natural Gas"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  chartType={"hide"}
+  arrowText1={"95 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO₂"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Dec. 12, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Solar Photovoltaic",
+      barlength: 1.8,
+      displayedValue: "1.8 ($2.98 billion benefit, $1.66 B cost)",
+      site: "null",
+    },   
+	{
+	  name:"Onshore Wind",
+      barlength: 1.47,
+      displayedValue: "1.47 ($2.65 billion benefit, $1.8 B cost)",
+      site: "null",
+	},
+	{
+	  name:"Generation III Nuclear",
+      barlength: 0.75,
+      displayedValue: "0.75 ($7.67 billion benefit, $10.17 B cost)",
+      site: "null",
+	},
+	{
+	  name:"Offshore Wind",
+      barlength: 0.6,
+      displayedValue: "0.6 ($4.72 billion benefit, $7.8 B cost)",
+      site: "null",
+	}
+        
+  ]}
+/>
 
-<ArticleImage image={"plant_value.svg"} width={750} height={300} />
-#### The costs and benefits of building new power plants at average costs. We assume 1 GW of new capacity is built, displacing what would otherwise be natural gas. Both the financial cost and external costs of natural gas and the various sources are considered. We also attribute to the plant the value of cost reductions via learning-by-doing; see the sections below and on specific technologies for more details.
+#### The costs and benefits of building new power plants at average costs. We assume 1 GW of new capacity is built, displacing what would otherwise be natural gas. Benefits differ across technologies because capacity factors--the ratio between actual production and theoretical production at the maximum rate 24/7--differ. Both the financial cost and external costs of natural gas and the various sources are considered. We also attribute to the plant the value of cost reductions via learning-by-doing; see the section on [learning by doing](/energy/energy_socioeconomics/learning) and on specific technologies for more details.
 
 The benefits of new plants include possibly cheaper electricity, reduction of greenhouse gases and other pollution, and the cost reduction of similar future technology through learning-by-doing. No learning-by-doing effect for nuclear power was identified in the literature; hence the cost/benefit ratio of that technology is rather poor.
 
-We emphasize that the values above are averages, and particular values for a given project varies considerably.
+We emphasize that the values above are averages, and particular values for a given project vary considerably.
 
 <CleanEnergyStandardSolution />
 
@@ -43,70 +91,61 @@ Investment trends point to ongoing advancement of renewable energy in the [power
 Economists generally believe that a broad carbon price should be a central component of reducing emissions [^16]. Following are some estimated costs of reducing emissions by several other policy tools, which may function as alternatives or supplements to carbon pricing.
 
 <ArticleImage image={"policy_comparison.svg"} width={1000} height={300} />
-#### Cost comparison of four policies implemented at either the federal level or across many states in the United States. It must be emphasized that fiscal cost to the government, or tax revenue raised by the government, is not equivalent to a cost to society as a whole. The former are lower, as the collected or spent money is still part of the economy, but a general direct comparison between different kinds of costs is difficult. Sources: analysis of Production Tax Credit and fuel excise taxes by the National Research Council [^16] and analysis of renewable portfolio standards by Greenstone and Nath [^9].
-
-## Learning By Doing
-The cost of a product tends to fall as more is produced. The effect, identified by Wright [^22] in the context of aircraft, can be quantified and modeled. Cost reduction through production is an essential element of bringing a clean energy technology to commercial maturity. Following are observed learning rates for select technologies. The learning rate is the percent cost reduction that is observed for doubling cumulative production.
-
-<ArticleImage image={"wrights_law.svg"} width={1000} height={700} />
-#### Learning rates for select technologies. Sources: Chen et al. [^6], Goldie-Scot [^8], Hax and Majluf [^12], Reeves et al. [^19], Samadi [^20], Wright [^22].
-
-Not all of the cost decline observed for a growing technology is necessarily a result of learning curves. Some of the decline may be the result of other technological improvements that would occur regardless of how much the technology is deployed [^17].
+#### Cost comparison of four policies implemented at either the federal level or across many states in the United States. Note that fiscal cost to the government, or tax revenue raised by the government, is not equivalent to a cost to society as a whole. The former are lower, as the collected or spent money is still part of the economy, but a general direct comparison between different kinds of costs is difficult. Sources: analysis of Production Tax Credit and fuel excise taxes by the National Research Council [^16] and analysis of renewable portfolio standards by Greenstone and Nath [^9].
 
 ## Commercialization of Technology
 Several lines of evidence suggest that it takes about 20 years--sometimes much less and sometimes much more--for an idea to progress from scientific research to commercial technology [^1], [^3], [^7], [^15].
 
+Companies commercializing new technologies often face a "valley of death", whereby they have demonstrated technically a potentially viable technology but are unable successfully commercialize the product [^6]. This is often caused by the fact that more money is available for companies conducting research and development and for companies with commercial products than for companies that are working to bring products to market [^8]. This challenge is exacerbated by the fact that incumbent technologies face a sunk cost advantage with their capital deployment [^12].
+
 ## International Agreements
-International agreements, such as the United Nations Framework Convention on Climate Change, Kyoto Protocol, and Paris Agreement, can help reduce emissions, but only if followed by additional policy tools. Evidence from the Kyoto Protocol is weak but suggests that it has resulted in modest emissions reductions.
+International agreements, such as the United Nations Framework Convention on Climate Change, the Kyoto Protocol, and the Paris Agreement, can help reduce emissions, but only if followed by additional policy tools. Evidence from the Kyoto Protocol is weak but suggests that it has resulted in modest emissions reductions.
 
 <ArticleImage image={"kyoto.svg"} width={1000} height={350} />
 #### Estimates of emissions reductions by countries that have adopted targets under the Kyoto Protocol, relative to what emissions would have been without targets. Sources: Aichele and Felbermayr [^2], Grunewald and Martínez-Zarzoso [^10], Iwata and Okada [^14].
 
 These values may be offset by the self-selection problem--that countries may have adopted targets that they would have achieved anyway [^10]--or the phenomenon of "exporting emissions", or importing emissions-intensive products from countries without climate change targets [^2].
 
-[^1]: Adams, J. D. ["Fundamental Stocks of Knowledge and Productivity Growth"](https://www.jstor.org/stable/2937764?seq=1). Journal of Political Economy 98(4), pp. 673-702. August 1990.
+Nascimento, Kuramochi, and Höhne [^17] find that among G20 countries, projected greenhouse gas emissions for 2030, as of 2021, were 15% lower than projected emissions for 2030 as of 2015, when the Paris Agreement was ratified. An estimated quarter of this reduction can be explained by the economic disruption of the COVID-19 pandemic, and of the remaining reduction, it is unclear how much is due to policies that were enacted as a result of Paris commitments, and how much is due to other factors.
 
-[^2]: Aichele, R., Felbermayr, G. ["Kyoto and the carbon footprint of nations"](https://www.sciencedirect.com/science/article/abs/pii/S0095069611001422). Journal of Environmental Economics and Management 63(3), pp. 336-354. May 2012.
+[^1]: Adams, J. D. ["Fundamental Stocks of Knowledge and Productivity Growth"](https://www.jstor.org/stable/2937764?seq=1). Journal of Political Economy **98**(4), pp. 673-702. August 1990.
 
-[^3]: Baldos, U. L. C., Viens, F. G., Hertel, T. W., Fuglie, K. O. ["R&D Spending, Knowledge Capital, and Agricultural Productivity Growth: A Bayesian Approach"](https://onlinelibrary.wiley.com/doi/abs/10.1093/ajae/aay039). American Journal of Agricultural Economics 101(1), pp. 291-310. January 2019.
+[^2]: Aichele, R., Felbermayr, G. ["Kyoto and the carbon footprint of nations"](https://www.sciencedirect.com/science/article/abs/pii/S0095069611001422). Journal of Environmental Economics and Management **63**(3), pp. 336-354. May 2012.
+
+[^3]: Baldos, U. L. C., Viens, F. G., Hertel, T. W., Fuglie, K. O. ["R&D Spending, Knowledge Capital, and Agricultural Productivity Growth: A Bayesian Approach"](https://onlinelibrary.wiley.com/doi/abs/10.1093/ajae/aay039). American Journal of Agricultural Economics **101**(1), pp. 291-310. January 2019.
 
 [^4]: Bipartisan Policy Center. ["Pathways to Decarbonization: A National Clean Energy Standard"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2020/03/BPC_Energy_Clean-Energy-StandardV2.pdf). March 2020.
 
 [^5]: BP. ["Statistical Review of World Energy 2022"](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html). 2022.
 
-[^6]: Chen, X., Kotlyarevsky, A., Kumiega, A., Terry, J., Wu, B., Goldberg, S., Hoffman, E. ["Small Modular Nuclear Reactors: Parametric Modeling of Integrated Reactor Vessel Manufacturing Within A Factory Environment Volume 2, Detailed Analysis"](https://www.energy.gov/sites/prod/files/2016/01/f28/IIT-SMRIRVLearningvol2.pdf). Department of Energy, Office of Nuclear Energy. August 2013.
+[^6]: Gbadegeshin, S.A., Al Natsheh, A., Ghafel, K., Mohammed, O., Koskela, A., Rimpiläinen, A., Tikkanen, J., Kuoppala, A. ["Overcoming the valley of death: a new model for high technology startups"](https://doi.org/10.1016/j.sftr.2022.100077). Sustainable Futures **4**: 100077. January 2022.
 
-[^7]: Clancy, M. ["How long does it take to go from science to technology?"](https://www.newthingsunderthesun.com/pub/6nunnxqx/release/9?readingCollection=9f57d356). New Things Under the Sun. Agust 2021.
+[^7]: Clancy, M. ["How long does it take to go from science to technology?"](https://www.newthingsunderthesun.com/pub/6nunnxqx/release/9?readingCollection=9f57d356). New Things Under the Sun. August 2021.
 
-[^8]: Goldie-Scot, L. ["A Behind the Scenes Take on Lithium-ion Battery Prices"](https://about.bnef.com/blog/behind-scenes-take-lithium-ion-battery-prices/). BloombergNEF. March 2019.
+[^8]: Markham, S.K. ["Moving technologies from lab to market"](https://doi.org/10.1080/08956308.2002.11671531). Research-Technology Management **45**(6), pp. 31-42. November 2002.
 
 [^9]: Greenstone, M., Nath, I. ["Do Renewable Portfolio Standards Deliver?"](https://epic.uchicago.edu/research/do-renewable-portfolio-standards-deliver/). Working Paper, Energy Policy Institute at the University of Chicago. May 2019.
 
-[^10]: Grunewald, N., Martínez-Zarzoso, I. ["Did the Kyoto Protocol fail? An evaluation of the effect of the Kyoto Protocol on CO2 emissions"](https://ideas.repec.org/a/cup/endeec/v21y2016i01p1-22_00.html). Environment and Development Economics 21(1), pp. 1-22. March 2015.
+[^10]: Grunewald, N., Martínez-Zarzoso, I. ["Did the Kyoto Protocol fail? An evaluation of the effect of the Kyoto Protocol on CO2 emissions"](https://ideas.repec.org/a/cup/endeec/v21y2016i01p1-22_00.html). Environment and Development Economics **21**(1), pp. 1-22. March 2015.
 
 [^11]: Harvey, F., Ambrose, J., Greenfield, P. ["More than 40 countries agree to phase out coal-fired power"](https://www.theguardian.com/environment/2021/nov/03/more-than-40-countries-agree-to-phase-out-coal-fired-power). The Guardian. November 2021.
 
-[^12]: Hax, A., Majluf, N. ["Competitive Cost Dynamics: The Experience Curve"](https://pubsonline.informs.org/doi/abs/10.1287/inte.12.5.50). INFORMS Journal on Applied Analytics 12(5), pp. 50-61. October 1982.
+[^12]: Hartley, P.R., Medlock, K.B. III. ["The valley of death for new energy technologies"](https://journals.sagepub.com/doi/10.5547/01956574.38.3.phar). The Energy Journal **38**(3), pp. 33-62. May 2017.
 
 [^13]: International Energy Agency. ["World Energy Investment 2019"](https://www.iea.org/reports/world-energy-investment-2019). May 2019.
 
-[^14]: Iwata, H., Okada, K. ["Greenhouse gas emissions and the role of the Kyoto Protocol"](https://link.springer.com/article/10.1007/s10018-012-0047-1). Environmental Economics and Policy Studies 16, pp. 325-342. 2014.
+[^14]: Iwata, H., Okada, K. ["Greenhouse gas emissions and the role of the Kyoto Protocol"](https://link.springer.com/article/10.1007/s10018-012-0047-1). Environmental Economics and Policy Studies **16**, pp. 325-342. 2014.
 
-[^15]: Marx, M., Fuegi, A. ["Reliance on Science by Inventors: Hybrid Extraction of In-Text Patent-to-Article Citations"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3718899). NBER Working Paper No. w27987. October 2020.
+[^15]: Marx, M., Fuegi, A. ["Reliance on Science by Inventors: Hybrid Extraction of In-Text Patent-to-Article Citations"](https://doi.org/10.1111/jems.12455
+). Journal of Economics & Management Strategy **31**(2), pp. 369-392. September 2021.
 
 [^16]: National Research Council; Policy and Global Affairs; Board on Science, Technology, and Economic Policy; Committee on the Effects of Provisions in the Internal Revenue Code on Greenhouse Gas Emissions; William D. Nordhaus, Stephen A. Merrill, and Paul T. Beaton, Editors. [*Effects of U.S. Tax Policy on Greenhouse Gas Emissions*](https://www.nap.edu/catalog/18299/effects-of-us-tax-policy-on-greenhouse-gas-emissions). The National Academies Press. 2013.
 
-[^17]: Nordhaus, W. D. ["The Perils of the Learning Model for Modeling Endogenous Technological Change"](https://www.jstor.org/stable/24693815?seq=1). The Energy Journal 35(1). January 2014.
+[^17]: Nascimento, L., Kuramochi, T., Höhne, N. ["The G20 emission projections to 2030 improved since the Paris Agreement, but only slightly"](https://doi.org/10.1007/s11027-022-10018-5). Mitigation and Adaptation Strategies for Global Change **27**:39. August 2022.
 
 [^18]: Office of Energy Efficiency & Renewable Energy. ["Residential and Commercial ITC Factsheets"](https://www.energy.gov/eere/solar/articles/residential-and-commercial-itc-factsheets). U.S. Department of Energy. September 2022.
 
-[^19]: Reeves, M., Stalk, G., Scognamiglio, F. ["BCG Classics Revisited: The Experience Curve"](https://www.bcg.com/publications/2013/growth-business-unit-strategy-experience-curve-bcg-classics-revisited). Boston Consulting Group. May 2013.
-
-[^20]: Samadi, S. ["The experience curve theory and its application in the field of electricity generation technologies - A literature review"](https://www.sciencedirect.com/science/article/abs/pii/S1364032117312224). Renewable and Sustainable Energy Reviews 82(3), pp. 2346-2364. February 2018.
-
 [^21]: Sherlock, M. F. ["The Renewable Electricity Production Tax Credit: In Brief"](https://sgp.fas.org/crs/misc/R43453.pdf). Congressional Research Service. April 2020.
-
-[^22]: Wright, T. ["Factors Affecting the Cost of Airplanes"](https://www.uvm.edu/pdodds/research/papers/others/1936/wright1936a.pdf). Journal of the Aeronautical Sciences 3(4), pp. 122-128. February 1936.
 
 [^23]: Yanguas Parra, P. A., Ganti, G., Brecha, R., Hare, B., Schaeffer, M., Fuentes, U. ["Global and regional coal phase-out requirements of the Paris Agreement: Insights from the IPCC Special Report on 1.5°C"](https://climateanalytics.org/publications/2019/coal-phase-out-insights-from-the-ipcc-special-report-on-15c-and-global-trends-since-2015/). Climate Analytics. September 2019.
 

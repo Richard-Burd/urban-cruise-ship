@@ -11,6 +11,7 @@
        { "article_title": "Overview", "article_url": "energy_socioecon" },
        { "article_title": "Outlook", "article_url": "energy_outlook" },
        { "article_title": "Clean Energy Deployment", "article_url": "policy_se" },
+	   { "article_title": "Learning by Doing", "article_url": "learning" },
        { "article_title": "Research and Development", "article_url": "rd" },
        { "article_title": "Energy Pricing", "article_url": "carbon_pricing_e" },
        { "article_title": "Rebound Effect", "article_url": "rebound_se" },

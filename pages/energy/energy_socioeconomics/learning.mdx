@@ -1,0 +1,42 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_socioeconomics";
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Learning by Doing
+
+The cost of a product tends to fall as more is produced. The effect, identified by Wright [^22] in the context of aircraft, can be quantified and modeled. Cost reduction through production is an essential element of bringing a clean energy technology to commercial maturity. Following are observed learning rates for select technologies. The learning rate is the percent cost reduction that is observed for doubling cumulative production.
+
+<ArticleImage image={"wrights_law.svg"} width={1000} height={700} />
+#### Learning rates for select technologies. Sources: Chen et al. [^6], Goldie-Scot [^8], Hax and Majluf [^12], Reeves et al. [^19], Samadi [^20], Wright [^22].
+
+Not all of the cost decline observed for a growing technology is necessarily a result of learning curves. Some of the decline may be the result of other technological improvements that would occur regardless of how much the technology is deployed [^17].
+
+
+
+[^6]: Chen, X., Kotlyarevsky, A., Kumiega, A., Terry, J., Wu, B., Goldberg, S., Hoffman, E. ["Small Modular Nuclear Reactors: Parametric Modeling of Integrated Reactor Vessel Manufacturing Within A Factory Environment Volume 2, Detailed Analysis"](https://www.energy.gov/sites/prod/files/2016/01/f28/IIT-SMRIRVLearningvol2.pdf). Department of Energy, Office of Nuclear Energy. August 2013.
+
+[^8]: Goldie-Scot, L. ["A Behind the Scenes Take on Lithium-ion Battery Prices"](https://about.bnef.com/blog/behind-scenes-take-lithium-ion-battery-prices/). BloombergNEF. March 2019.
+
+[^12]: Hax, A., Majluf, N. ["Competitive Cost Dynamics: The Experience Curve"](https://pubsonline.informs.org/doi/abs/10.1287/inte.12.5.50). INFORMS Journal on Applied Analytics **12**(5), pp. 50-61. October 1982.
+
+[^17]: Nordhaus, W. D. ["The Perils of the Learning Model for Modeling Endogenous Technological Change"](https://www.jstor.org/stable/24693815?seq=1). The Energy Journal **35**(1). January 2014.
+
+[^19]: Reeves, M., Stalk, G., Scognamiglio, F. ["BCG Classics Revisited: The Experience Curve"](https://www.bcg.com/publications/2013/growth-business-unit-strategy-experience-curve-bcg-classics-revisited). Boston Consulting Group. May 2013.
+
+[^20]: Samadi, S. ["The experience curve theory and its application in the field of electricity generation technologies - A literature review"](https://www.sciencedirect.com/science/article/abs/pii/S1364032117312224). Renewable and Sustainable Energy Reviews **82**(3), pp. 2346-2364. February 2018.
+
+[^22]: Wright, T. ["Factors Affecting the Cost of Airplanes"](https://www.uvm.edu/pdodds/research/papers/others/1936/wright1936a.pdf). Journal of the Aeronautical Sciences **3**(4), pp. 122-128. February 1936.
+
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>
