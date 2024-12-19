@@ -14,3 +14,4 @@
 12. Richard did a build & push on 11.18.2024 (v.3.0.1)
 13. Richard did a build & push on 12.2.2024 (v.3.0.2)
 14. Richard did a build & push on 12.13.2024 (v.3.0.3)
+15. Richard did a build & push on 12.19.2024 (v.3.0.4)
