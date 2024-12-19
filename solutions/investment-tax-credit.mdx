@@ -11,53 +11,25 @@ export const problem = "Need for Clean Electricity";
 export const solution = "Solar Investment Tax Credit - U.S.";
 
 ## Description
-We recommend the  federal solar investment tax credit be extended.
-<DynamicSolutionGraphic
-  barChartTitle={"Solar Investment Tax Credit Extension – U.S."}
-  barChartTitle2={""}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hide"}
-  arrowText1={""}
-  arrowText2={""}
-  arrowText3={""}
-  arrowText4={""}
-  mastheadText3={"Lee Nelson 7-23-2024"}
- staticData={[
-    {
-     name: "Benefit",
-      barlength: .862,
-      displayedValue: "$.862",
-      site: "null",
-    },
-    {
-      name: "Cost",
-      barlength: .64,
-      displayedValue: "$.64 Billion USD/year",
-      site: "null",
-    },
-  ]}
-/>
+We recommend the  federal solar investment tax credit be extended with modifications.
 
 
 ## Background
 The Federal Solar Investment Tax Credit (ITC) has been pivotal in subsidizing investments in clean energy, offering a 30% reduction in the cost of solar installations[^"4"]. This tax credit is instrumental in promoting sustainable energy solutions, with broad implications for environmental and economic policies [^"1"]. 
 The Federal Solar ITC was introduced to lower the financial barriers to solar energy adoption. Over the years, this policy has significantly boosted the installation of solar systems across residential and commercial sectors in the U.S. The current benefits extend beyond environmental impacts, contributing to job creation and technological innovation in renewable energy sectors [^"3"]. Historical data suggest a substantial increase in solar capacity directly linked to this tax credit, which also aligns with federal emissions reduction targets [^"2"].
 
-## Calculations
-New solar installation was $2.12 billion in 2023[^"5"]. 30% covered by the Federal Solar ITC would be $.64 billion, this is counted as both a cost and a benefit.
-There is an estimated $9,000 in energy savings over the lifetime of new systems[^"6"]. With an expected lifetime of 25 years[^"7"], that would be an annual benefit of $360. In 2022, there were 671,596 new residential solar systems installed[^"8"] equaling a total of $242 million in additional benefit.
+In 2016, the U.S. National Renewable Energy Laboratory [^"9"] modeled that an extension of the ITC would result in an additional 18 gigawatts of renewable energy capacity from 2015 to 2030, compared to an additional 450 GW that were modeled as the baseline. Most of the additional deployment would occur by the mid-2020s, suggesting that by then, mature renewable energy technologies will benefit little from additional subsidies.
 
 ## Implementation
-The tax credit would be extended by the U.S. congress.
+The tax credit would be extended by the U.S. Congress. As discussed above in the context of the Production Tax Credit, we recommend that the ITC be restricted to less mature technologies, such as those with less than 3% of electricity market penetration, to insure that the credit supports those technologies that may benefit from learning from additional deployment [^"10"].
 
 ##### Lead Researchers: jye and Lee Nelson - Last Updated July 23, 2024.
 
-[^"1"]: Hackman C. [The Role of Federal Tax Credits in U.S. Solar Industry Growth: An Analysis of the Relationship Between the Business Investment Tax Credit and Installed Solar Photovoltaic Capacity in the United States from 1997-2015.](https://repository.library.georgetown.edu/handle/10822/1050883) Georgetown University-Graduate School of Arts & Sciences. 2018.
+[^"1"]: Hackman, C. [The Role of Federal Tax Credits in U.S. Solar Industry Growth: An Analysis of the Relationship Between the Business Investment Tax Credit and Installed Solar Photovoltaic Capacity in the United States from 1997-2015.](https://repository.library.georgetown.edu/handle/10822/1050883) Georgetown University-Graduate School of Arts & Sciences. 2018.
 
-[^"2"]: Milne JE, Villar M.  [Renewable Electricity and Tax Expenditures: Lessons from Two Countries.](http://dx.doi.org/10.54648/taxi2020034) Intertax [Internet]. April 2020.
+[^"2"]: Milne, J.E., Villar, M.  [Renewable Electricity and Tax Expenditures: Lessons from Two Countries](http://dx.doi.org/10.54648/taxi2020034). Intertax **48**(4). April 2020.
 
-[^"3"]: Dwivedi C. [Influence of Production and Investment Tax Credit on Renewable Energy Growth and Power Grid.](10.1109/GREENTECH.2018.00035) 2018 IEEE Green Technologies Conference. 2018.
+[^"3"]: Dwivedi, C. [Influence of Production and Investment Tax Credit on Renewable Energy Growth and Power Grid.](10.1109/GREENTECH.2018.00035) 2018 IEEE Green Technologies Conference. 2018.
 
 [^"4"]: Office of Energy Efficiency & Renewable Energy. ["Residential and Commercial ITC Factsheets"](https://www.energy.gov/eere/solar/articles/residential-and-commercial-itc-factsheets). U.S. Department of Energy. September 2022.
 
@@ -68,6 +40,10 @@ The tax credit would be extended by the U.S. congress.
 [^"7"]: Glover, E. and Tynan, C. [“How Long Do Solar Panels Last?”](https://www.forbes.com/home-improvement/solar/how-long-do-solar-panels-last/) Forbes, June 2024
 
 [^"8"]: Fernandez, L. [“Newly installed residential solar systems in the United States in 2022, by state”](https://www.statista.com/statistics/1421976/new-residential-solar-systems-us-by-state/) Statista, November 2023
+
+[^"9"]: Mai, T., Cole, W., Lantz, E., Marcy, C., Sigrin, B. ["Impacts of federal tax credit extensions on renewable deployment and power sector emissions"](https://www.osti.gov/biblio/1239642). National Renewable Energy Lab.(NREL), Golden, CO (United States). February 2016.
+
+[^"10"]: Metcalf, G. E. ["Supporting Low-Carbon Energy Through a New Generation of Tax Credits"](https://sites.tufts.edu/cierp/files/2021/09/CPL_Policy_Brief_US_Tax-Credits.pdf). The Center for International Environment & Resource Policy, Climate Policy Lab, The Fletcher School, Tufts University. September 2021.
 
 export default ({ children }) => 
   <SolutionDropdown 

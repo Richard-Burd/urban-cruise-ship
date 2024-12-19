@@ -26,6 +26,10 @@ const Presentations = () => {
         </div>
         <div className="my-2 standard-font-3 standard-font-color-1 text-justify text-lg">
           <div className="pb-6">
+            <b>Fairfax, VA</b>, October 2024.&nbsp;<b>Michael Goff</b>
+            &nbsp;presented at the Markets & Society conference on the limitations of learning curves to forecast energy markets.
+          </div>
+		  <div className="pb-6">
             <b>Online</b>, November 2021.&nbsp;<b>Michael Goff</b>
             &nbsp;presented at the Overview Roundtable on the environmental
             impacts of space exploration.
