@@ -1,0 +1,41 @@
+import SolutionDropdown from "/components/SolutionDropdown.js";
+
+export const problem = "Preventable Diseases and Injuries";
+export const solution = "Youth Health Education Curriculum-U.S.";
+
+## Description
+
+We propose creating a nation-wide comprehensive health curriculum focused on disease and injury prevention targeted for junior high and high school students.
+
+## Background
+
+The United States faces a range of public health challenges, including high rates of obesity, heart disease, diabetes, and preventable injuries. According to the Centers for Disease Control and Prevention (CDC) [^"1"], 42% of American adults are obese, and chronic diseases account for 7 out of 10 deaths annually. Furthermore, many of these health issues stem from preventable behaviors, such as poor nutrition, lack of physical activity, and inadequate knowledge about disease prevention.
+
+A solution to these challenges is to implement a comprehensive health education curriculum in junior high and high schools nationwide. This program would teach students essential topics such as basic nutrition science, body functions, and strategies for preventing injuries and diseases. Early education on these topics can empower students to make healthier choices, reduce future healthcare costs, and promote long-term well-being. Expected benefits include reduced rates of chronic diseases, better public health outcomes, and economic advantages through decreased healthcare spending and increased productivity.
+
+## Calculations
+
+Costs would include curriculum development, which includes hiring experts and producing materials, and training teachers. As well as creating digital and printed resources for students and ongoing administration to evaluate and manage the program.
+
+Benefits include a reduction in healthcare costs through the prevention of obesity, heart disease, and diabetes. The program would create jobs for curriculum developers, trainers, and administrative staff. There would also be a large gain of workplace productivity with fewer sick days being taken.
+
+## Implementation
+
+The CDC would set the initial guidelines and provide some funding. The Department of Education would create the curriculum and oversee the initiative. State education departments would adapt the curriculum to local standards and oversee the direct implementation. School districts would enact the program, train teachers, and ensure compliance.
+The program could be funded by federal grants such as Every Student Succeeds Act[^"2"], along with public health funding from the CDC, and partnerships with private organizations and non-profits focused on health education.
+The program would need to ensure access to resources across diverse socioeconomic and geographic areas. There may be some resistance to curriculum change due to differing priorities among states and school districts.
+
+##### Lead researcher: Lee Nelson - Last updated: December 22, 2024
+
+[^"1"]: CDC [“Adult Obesity Facts”](https://www.cdc.gov/obesity/adult-obesity-facts/index.html) CDC, May 2024
+[^"2"]: Every Student Succeeds Act [“Every Student Succeeds Act”](https://www.ed.gov/laws-and-policy/laws-preschool-grade-12-education/every-student-succeeds-act-essa) Office of Civil Rights, October 2024
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown
+
+>
