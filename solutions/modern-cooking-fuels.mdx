@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,6 +11,7 @@ export const problem = "Costs of Traditional Biomass for Cooking";
 export const solution = "Modern Cooking Fuels";
 
 ## Description
+
 We promote that development agencies prioritize the spread of modern cooking fuels and the cookstoves to use them. We explore the costs and benefits of halving the population without access to liquified petroleum gas (LPG).
 
 <DynamicSolutionGraphic
@@ -18,15 +19,15 @@ We promote that development agencies prioritize the spread of modern cooking fue
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 4-28-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 100,
       displayedValue: "$100",
       site: "null",
@@ -40,8 +41,8 @@ We promote that development agencies prioritize the spread of modern cooking fue
   ]}
 />
 
-
 ## Background
+
 2.7 billion people do not have access to modern cooking fuels and technologies[^”1”],[^”2”].
 
 Modern fuels include natural gas, LPG, diesel, and renewables such as biodiesel and bio-ethanol. These fuels can be used more efficiently through the technology of improved cookstoves[^”1”].
@@ -50,26 +51,22 @@ Benefits include social and economic development (including productivity and tim
 
 Indoor air pollution from traditional biomass causes 3.8 million premature deaths every year[^”2”].
 
-
 ## Calculations
+
 Annual economic benefits are valued at $100 billion and include less expenditure on health care, health-related productivity gains, fuel collection and cooking time savings, and environmental impacts[^”3”].
 
 Annual net costs are valued at $14.4 billion and include fuel, stove, and program costs, from which monetary fuel cost savings are subtracted to estimate net costs[^”3”].
 
-
 ## Implementation
+
 Public and private finance have a key role to play in advancing clean cooking, especially in regions without the fiscal space to drive the required investment through public funds[^”4”]. Concessional and climate financing will be needed to support projects in the poorest regions[^”4”].
 
 ##### Lead researcher: Lee Nelson - Last updated: 4/28/2024
 
 [^”1”]: Bazalian, M. et al. [“Partnerships for access to modern cooking fuels and technologies”](https://doi.org/10.1016/j.cosust.2011.05.004) Current Opinion in Environmental Sustainability, September 2011
-
 [^”2”]: Baquie, S. et al. [“Access to modern fuels and satisfaction with cooking arrangements: Survey evidence from rural India”](https://doi.org/10.1016/j.esd.2017.02.003) Energy for Sustainable Development, June 2017
-
-[^”3”]: Hutton, G. et al. [“Evaluation of the costs and benefits of interventions to reduce indoor air pollution”](https://doi.org/10.1016/S0973-0826(08)60408-1) Energy for Sustainable Development, December 2007
-
+[^”3”]: Hutton, G. et al. [“Evaluation of the costs and benefits of interventions to reduce indoor air pollution”](<https://doi.org/10.1016/S0973-0826(08)60408-1>) Energy for Sustainable Development, December 2007
 [^”4”]: IEA [“Low-cost solutions can give billions access to modern cooking by 2030, but the world is failing to deliver”](https://www.iea.org/news/low-cost-solutions-can-give-billions-access-to-modern-cooking-by-2030-but-the-world-is-failing-to-deliver) IEA 50, July 2023
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -77,4 +74,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

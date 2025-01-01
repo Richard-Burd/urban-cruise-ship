@@ -1,4 +1,4 @@
-import Article from '/components/Article.js'
+import Article from "/components/Article.js";
 import hierarchy from "../hierarchy.json";
 
 export const site = "energy";
@@ -12,15 +12,17 @@ export const DynamicSolutionGraphic = dynamic(
 
 import ArticleImage from "/components/ArticleImage.js";
 
-import ProductionTaxCreditSolution from "/solutions/production-tax-credit.mdx"
-import InvestmentTaxCreditSolution from "/solutions/investment-tax-credit.mdx"
-import CleanEnergyStandardSolution from "/solutions/clean-energy-standard.mdx"
-import AgreementToPhaseOutCoalSolution from "/solutions/agreement-to-phase-out-coal.mdx"
+import ProductionTaxCreditSolution from "/solutions/production-tax-credit.mdx";
+import InvestmentTaxCreditSolution from "/solutions/investment-tax-credit.mdx";
+import CleanEnergyStandardSolution from "/solutions/clean-energy-standard.mdx";
+import AgreementToPhaseOutCoalSolution from "/solutions/agreement-to-phase-out-coal.mdx";
 
 # Clean Energy Deployment
+
 Here we review several broad policy tools for accelerating clean energy deployment, improving efficiency, and phasing out pollution and emissions. Research and development as a clean energy deployment mechanism is discussed in more detail [elsewhere](/energy/energy_socioeconomics/rd).
 
 ## Electricity Deployment
+
 We estimate the following average values of building new power plants. We recommend the construction of solar PV plants, followed by onshore wind power, where feasible. Details are in our assessments of [individual energy production technologies](/energy/energy_production).
 
 <DynamicSolutionGraphic
@@ -28,42 +30,38 @@ We estimate the following average values of building new power plants. We recomm
   barChartTitle2={"Return on 1 GW Power Plant in Lieu of Natural Gas"}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={""}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"95 million"}
   arrowText2={"tons"}
   arrowText3={"CO₂"}
   arrowText4={"reduced"}
-  mastheadToggle={''}
+  mastheadToggle={""}
   mastheadText3={"MG, Dec. 12, 2024"}
-  
-  
-  staticData={[   
+  staticData={[
     {
       name: "Solar Photovoltaic",
       barlength: 1.8,
       displayedValue: "1.8 ($2.98 billion benefit, $1.66 B cost)",
       site: "null",
-    },   
-	{
-	  name:"Onshore Wind",
+    },
+    {
+      name: "Onshore Wind",
       barlength: 1.47,
       displayedValue: "1.47 ($2.65 billion benefit, $1.8 B cost)",
       site: "null",
-	},
-	{
-	  name:"Generation III Nuclear",
+    },
+    {
+      name: "Generation III Nuclear",
       barlength: 0.75,
       displayedValue: "0.75 ($7.67 billion benefit, $10.17 B cost)",
       site: "null",
-	},
-	{
-	  name:"Offshore Wind",
+    },
+    {
+      name: "Offshore Wind",
       barlength: 0.6,
       displayedValue: "0.6 ($4.72 billion benefit, $7.8 B cost)",
       site: "null",
-	}
-        
+    },
   ]}
 />
 
@@ -75,8 +73,8 @@ We emphasize that the values above are averages, and particular values for a giv
 
 <CleanEnergyStandardSolution />
 
-
 ## Energy Investment
+
 The world invested nearly two trillion dollars in energy projects in 2018 as follows.
 
 <ArticleImage image={"world_energy_investment.svg"} width={750} height={350} />
@@ -88,12 +86,21 @@ Investment trends point to ongoing advancement of renewable energy in the [power
 <InvestmentTaxCreditSolution />
 
 ## Cost of Decarbonization Policies
+
 Economists generally believe that a broad carbon price should be a central component of reducing emissions [^16]. Following are some estimated costs of reducing emissions by several other policy tools, which may function as alternatives or supplements to carbon pricing.
 
 <ArticleImage image={"policy_comparison.svg"} width={1000} height={300} />
-#### Cost comparison of four policies implemented at either the federal level or across many states in the United States. Note that fiscal cost to the government, or tax revenue raised by the government, is not equivalent to a cost to society as a whole. The former are lower, as the collected or spent money is still part of the economy, but a general direct comparison between different kinds of costs is difficult. Sources: analysis of Production Tax Credit and fuel excise taxes by the National Research Council [^16] and analysis of renewable portfolio standards by Greenstone and Nath [^9].
+#### Cost comparison of four policies implemented at either the federal level or
+across many states in the United States. Note that fiscal cost to the government,
+or tax revenue raised by the government, is not equivalent to a cost to society as
+a whole. The former are lower, as the collected or spent money is still part of the
+economy, but a general direct comparison between different kinds of costs is difficult.
+Sources: analysis of Production Tax Credit and fuel excise taxes by the National
+Research Council [^16] and analysis of renewable portfolio standards by Greenstone
+and Nath [^9].
 
 ## Commercialization of Technology
+
 Several lines of evidence suggest that it takes about 20 years--sometimes much less and sometimes much more--for an idea to progress from scientific research to commercial technology [^1], [^3], [^7], [^15].
 
 Companies commercializing new technologies often face a "valley of death", whereby they have demonstrated technically a potentially viable technology but are unable successfully commercialize the product [^6]. This is often caused by the fact that more money is available for companies conducting research and development and for companies with commercial products than for companies that are working to bring products to market [^8]. This challenge is exacerbated by the fact that incumbent technologies face a sunk cost advantage with their capital deployment [^12].
@@ -103,56 +110,39 @@ Companies commercializing new technologies often face a "valley of death", where
 "Industrial policy" is a broad term that refers to public investment toward any number of major societal goals, such as place-based policy, geopolitical competition, decarbonization, and others. There are three main rationales for industrial policy: to correct market externalities, to address coordination or agglomeration failures, and to provide goods that would otherwise be under-provided [^19]. Many policies discussed throughout this site situate clean energy deployment in the larger context of industrial policy.
 
 ## International Agreements
+
 International agreements, such as the United Nations Framework Convention on Climate Change, the Kyoto Protocol, and the Paris Agreement, can help reduce emissions, but only if followed by additional policy tools. Evidence from the Kyoto Protocol is weak but suggests that it has resulted in modest emissions reductions.
 
 <ArticleImage image={"kyoto.svg"} width={1000} height={350} />
-#### Estimates of emissions reductions by countries that have adopted targets under the Kyoto Protocol, relative to what emissions would have been without targets. Sources: Aichele and Felbermayr [^2], Grunewald and Martínez-Zarzoso [^10], Iwata and Okada [^14].
+#### Estimates of emissions reductions by countries that have adopted targets under
+the Kyoto Protocol, relative to what emissions would have been without targets. Sources:
+Aichele and Felbermayr [^2], Grunewald and Martínez-Zarzoso [^10], Iwata and Okada
+[^14].
 
 These values may be offset by the self-selection problem--that countries may have adopted targets that they would have achieved anyway [^10]--or the phenomenon of "exporting emissions", or importing emissions-intensive products from countries without climate change targets [^2].
 
 Nascimento, Kuramochi, and Höhne [^17] find that among G20 countries, projected greenhouse gas emissions for 2030, as of 2021, were 15% lower than projected emissions for 2030 as of 2015, when the Paris Agreement was ratified. An estimated quarter of this reduction can be explained by the economic disruption of the COVID-19 pandemic, and of the remaining reduction, it is unclear how much is due to policies that were enacted as a result of Paris commitments, and how much is due to other factors.
 
 [^1]: Adams, J. D. ["Fundamental Stocks of Knowledge and Productivity Growth"](https://www.jstor.org/stable/2937764?seq=1). Journal of Political Economy **98**(4), pp. 673-702. August 1990.
-
 [^2]: Aichele, R., Felbermayr, G. ["Kyoto and the carbon footprint of nations"](https://www.sciencedirect.com/science/article/abs/pii/S0095069611001422). Journal of Environmental Economics and Management **63**(3), pp. 336-354. May 2012.
-
 [^3]: Baldos, U. L. C., Viens, F. G., Hertel, T. W., Fuglie, K. O. ["R&D Spending, Knowledge Capital, and Agricultural Productivity Growth: A Bayesian Approach"](https://onlinelibrary.wiley.com/doi/abs/10.1093/ajae/aay039). American Journal of Agricultural Economics **101**(1), pp. 291-310. January 2019.
-
 [^4]: Bipartisan Policy Center. ["Pathways to Decarbonization: A National Clean Energy Standard"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2020/03/BPC_Energy_Clean-Energy-StandardV2.pdf). March 2020.
-
 [^5]: BP. ["Statistical Review of World Energy 2022"](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html). 2022.
-
 [^6]: Gbadegeshin, S.A., Al Natsheh, A., Ghafel, K., Mohammed, O., Koskela, A., Rimpiläinen, A., Tikkanen, J., Kuoppala, A. ["Overcoming the valley of death: a new model for high technology startups"](https://doi.org/10.1016/j.sftr.2022.100077). Sustainable Futures **4**: 100077. January 2022.
-
 [^7]: Clancy, M. ["How long does it take to go from science to technology?"](https://www.newthingsunderthesun.com/pub/6nunnxqx/release/9?readingCollection=9f57d356). New Things Under the Sun. August 2021.
-
 [^8]: Markham, S.K. ["Moving technologies from lab to market"](https://doi.org/10.1080/08956308.2002.11671531). Research-Technology Management **45**(6), pp. 31-42. November 2002.
-
 [^9]: Greenstone, M., Nath, I. ["Do Renewable Portfolio Standards Deliver?"](https://epic.uchicago.edu/research/do-renewable-portfolio-standards-deliver/). Working Paper, Energy Policy Institute at the University of Chicago. May 2019.
-
 [^10]: Grunewald, N., Martínez-Zarzoso, I. ["Did the Kyoto Protocol fail? An evaluation of the effect of the Kyoto Protocol on CO2 emissions"](https://ideas.repec.org/a/cup/endeec/v21y2016i01p1-22_00.html). Environment and Development Economics **21**(1), pp. 1-22. March 2015.
-
 [^11]: Harvey, F., Ambrose, J., Greenfield, P. ["More than 40 countries agree to phase out coal-fired power"](https://www.theguardian.com/environment/2021/nov/03/more-than-40-countries-agree-to-phase-out-coal-fired-power). The Guardian. November 2021.
-
 [^12]: Hartley, P.R., Medlock, K.B. III. ["The valley of death for new energy technologies"](https://journals.sagepub.com/doi/10.5547/01956574.38.3.phar). The Energy Journal **38**(3), pp. 33-62. May 2017.
-
 [^13]: International Energy Agency. ["World Energy Investment 2019"](https://www.iea.org/reports/world-energy-investment-2019). May 2019.
-
 [^14]: Iwata, H., Okada, K. ["Greenhouse gas emissions and the role of the Kyoto Protocol"](https://link.springer.com/article/10.1007/s10018-012-0047-1). Environmental Economics and Policy Studies **16**, pp. 325-342. 2014.
-
-[^15]: Marx, M., Fuegi, A. ["Reliance on Science by Inventors: Hybrid Extraction of In-Text Patent-to-Article Citations"](https://doi.org/10.1111/jems.12455
-). Journal of Economics & Management Strategy **31**(2), pp. 369-392. September 2021.
-
-[^16]: National Research Council; Policy and Global Affairs; Board on Science, Technology, and Economic Policy; Committee on the Effects of Provisions in the Internal Revenue Code on Greenhouse Gas Emissions; William D. Nordhaus, Stephen A. Merrill, and Paul T. Beaton, Editors. [*Effects of U.S. Tax Policy on Greenhouse Gas Emissions*](https://www.nap.edu/catalog/18299/effects-of-us-tax-policy-on-greenhouse-gas-emissions). The National Academies Press. 2013.
-
+[^15]: Marx, M., Fuegi, A. ["Reliance on Science by Inventors: Hybrid Extraction of In-Text Patent-to-Article Citations"](https://doi.org/10.1111/jems.12455). Journal of Economics & Management Strategy **31**(2), pp. 369-392. September 2021.
+[^16]: National Research Council; Policy and Global Affairs; Board on Science, Technology, and Economic Policy; Committee on the Effects of Provisions in the Internal Revenue Code on Greenhouse Gas Emissions; William D. Nordhaus, Stephen A. Merrill, and Paul T. Beaton, Editors. [_Effects of U.S. Tax Policy on Greenhouse Gas Emissions_](https://www.nap.edu/catalog/18299/effects-of-us-tax-policy-on-greenhouse-gas-emissions). The National Academies Press. 2013.
 [^17]: Nascimento, L., Kuramochi, T., Höhne, N. ["The G20 emission projections to 2030 improved since the Paris Agreement, but only slightly"](https://doi.org/10.1007/s11027-022-10018-5). Mitigation and Adaptation Strategies for Global Change **27**:39. August 2022.
-
 [^18]: Office of Energy Efficiency & Renewable Energy. ["Residential and Commercial ITC Factsheets"](https://www.energy.gov/eere/solar/articles/residential-and-commercial-itc-factsheets). U.S. Department of Energy. September 2022.
-
 [^19]: Juhász, R., Lane, N., Rodrik, D. ["The new economics of industrial policy"](https://doi.org/10.1146/annurev-economics-081023-024638). Annual Review of Economics **16**, pp. 213-242.
-
 [^21]: Sherlock, M. F. ["The Renewable Electricity Production Tax Credit: In Brief"](https://sgp.fas.org/crs/misc/R43453.pdf). Congressional Research Service. April 2020.
-
 [^23]: Yanguas Parra, P. A., Ganti, G., Brecha, R., Hare, B., Schaeffer, M., Fuentes, U. ["Global and regional coal phase-out requirements of the Paris Agreement: Insights from the IPCC Special Report on 1.5°C"](https://climateanalytics.org/publications/2019/coal-phase-out-insights-from-the-ipcc-special-report-on-15c-and-global-trends-since-2015/). Climate Analytics. September 2019.
 
 export default ({ children }) => 
@@ -162,4 +152,6 @@ export default ({ children }) =>
     site={site}
   >
     {children}
-  </Article>
+  </Article
+
+>

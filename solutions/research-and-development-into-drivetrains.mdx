@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,21 +11,23 @@ export const problem = "Limitations of Wind Power";
 export const solution = "Wind Turbine Drivetrain R&D";
 
 ## Description
-We recommend R&D into new drivetrains for wind turbines. 
+
+We recommend R&D into new drivetrains for wind turbines.
+
 <DynamicSolutionGraphic
   barChartTitle={"Drivetrain Technology – U.S."}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 9-12-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 196.8,
       displayedValue: "$196.8",
       site: "null",
@@ -40,28 +42,25 @@ We recommend R&D into new drivetrains for wind turbines.
 />
 
 ## Background
+
 Wind power has advanced considerably in recent years, both in terms of market share and technology, but further development is necessary for wind to achieve its full potential. Drivetrains are one of several areas in which research is needed; others include a better understanding of atmospheric physics, aerodynamics of larger turbines, and better integration into the grid [^"54"]. The drivetrain is the power conversion system that converts the kinetic energy of the wind to electrical energy[^"1"]. The main challenges in drivetrain research include drivetrain dynamic responses in large or floating turbines, aerodynamic and farm control effects, use of rare-earth material in generators, improving reliability through prognostics, and use of advances in digitalization[^"1"].
 Monitoring has been, and will continue to be, an important part of these efforts [^"46"].
 
 ## Calculations
+
 The National Renewable Energy budget for wind energy for fiscal year 2023 was $49.2 million[^"2"]. Using a conservative return on [research and development](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd) with a benefit over cost ratio of 4, we would expect the annual benefit to be $196.8 million.
 
 ## Implementation
+
 In 2007, the National Renewable Energy Laboratory established the Drivetrain Reliability Collaborative to bring together government and industry to improve drivetrain lifespan and reduce wind turbine maintenance needs [^"25"]. The Gearbox Reliability Collaborative, focusing on gearboxes, was also established [^"25"]. Such efforts should continue to be fully funded.
 
 ##### Lead researcher: Lee Nelson - Last updated: September 12, 2024.
 
 [^"25"]: Keller, J., Sheng, S., Cotrell, J., Greco, A. ["Wind Turbine Drivetrain Reliability Collaborative Workshop"](https://www.nrel.gov/docs/fy16osti/66593.pdf). Office of Energy Efficiency & Renewable Energy, U.S. Department of Energy. February 2016.
-
 [^"46"]: Sheng, S. ["NREL's Wind Turbine Drivetrain Condition Monitoring and Wind Plant Operation and Maintenance Research During the 2010s: A US Land-Based Perspective"](https://www.osti.gov/pages/biblio/1774831). National Renewable Energy Laboratory. March 2021.
-
 [^"54"]: Veer, P. et al. ["Grand challenges in the science of wind energy"](https://www.science.org/doi/10.1126/science.aau2027). Science 366(6464). October 2019.
-
 [^"1"]: Nejad, A. et al. ["Wind turbine drivetrains: state-of-the-art technologies and future development trends"](https://doi.org/10.5194/wes-7-387-2022) Wind Energy Science: European Academy of Wind Energy, June 2022
-
 [^"2"]: National Renewable Energy Laboratory ["Business Volume for Fiscal Year 2023"](https://www.nrel.gov/about/business-volume.html) National Renewable Energy Laboratory, 2023
-
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -69,4 +68,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

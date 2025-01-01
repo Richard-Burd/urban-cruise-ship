@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Need for Clean Electricity";
 export const solution = "Clean Energy Standard - U.S.";
@@ -9,14 +9,9 @@ export const DynamicSolutionGraphic = dynamic(
   { ssr: false }
 );
 
-
 import SolutionImages from "/components/SolutionImages.js";
 
-
-
-
 ## Description
-
 
 We recommend the United States Congress implement the 80x30 clean energy standard as proposed by the Clean Energy Futures project, reducing greenhouse gas emissions by 80% by 2030 [^"9"].
 
@@ -38,18 +33,16 @@ The proposal entails clean energy credit banking, which allows the creation and 
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadToggle={''}
+  mastheadToggle={""}
   mastheadText3={"jye March 3, 2023"}
- 
- 
-  staticData={[  
-     {
+  staticData={[
+    {
       name: "Benefit",
       barlength: 88.35,
       displayedValue: "$88 billion/year",
       site: "null",
     },
-         {
+    {
       name: "Cost",
       barlength: 17.1,
       displayedValue: "$17 billion/year",
@@ -66,23 +59,21 @@ Benefits are in the form of health and environmental benefits. The two values do
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"1 billion"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadToggle={''}
+  mastheadToggle={""}
   mastheadText3={"jye March 3, 2023"}
- 
- 
-  staticData={[  
-     {
+  staticData={[
+    {
       name: "Health",
       barlength: 56.5,
       displayedValue: "$57 billion/year",
       site: "null",
     },
-         {
+    {
       name: "Environmental",
       barlength: 31.85,
       displayedValue: "$32 billion/year",
@@ -102,35 +93,33 @@ Other benefits expected by 2030 include a 71% decreased in NOₓ emissions from 
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"14 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadToggle={''}
+  mastheadToggle={""}
   mastheadText3={"jye March 3, 2023"}
- 
- 
-  staticData={[  
-     {
+  staticData={[
+    {
       name: "Carbon Capture and Storage",
       barlength: 0.153,
       displayedValue: "$153 million/year",
       site: "null",
     },
-         {
+    {
       name: "Fuel",
       barlength: 8.53,
       displayedValue: "$8.53 billion/year",
       site: "null",
     },
-                {
+    {
       name: "Operations & Maintenance",
       barlength: 12.8,
       displayedValue: "$12.8 billion/year",
       site: "null",
     },
-                   {
+    {
       name: "Levelized Capital",
       barlength: 15.2,
       displayedValue: "$15.2 billion/year",
@@ -140,34 +129,28 @@ Other benefits expected by 2030 include a 71% decreased in NOₓ emissions from 
 />
 #### Costs and benefits are averaged over 30 years [^"9"],[^"5"],[^"6"].
 
-
 These costs are 13% above costs compared to the business-as-usual trajectory [^"5"]. By 2030, fuel costs will fall by $35.4 billion as renewable sources become prevalent [^"6"]. The largest reductions of pollutants occur in the eastern U.S. due to that region's reliance on coal [^"9"],[^"6"].
-
 
 ## Implementation
 
-
 Clean Energy Standards have been proposed in the past but have failed due to Senate rules [^"1"],[^"2"]. Congress could implement this under a reconciliation process, requiring a simple majority as opposed to a new law [^"3"].
-
 
 The credit banking program could be administered by the Federal Energy Regulatory Commission (FERC) which has a mission to keep energy costs to consumers down [^"8"].
 
-
 Electric vehicle use, though not modeled here, would magnify the air quality benefits despite increasing electric generating emissions [^"5"].
-
 
 ##### Lead researcher: jye - Last updated February 21, 2024.
 
-[^"1"]: Congress.gov. [S.20 - Clean Energy Standard Act of 2010](https://www.congress.gov/bill/111th-congress/senate-bill/20). 111th Congress (2009-2010). 2009. 
-[^"2"]: Congress.gov. [S.2146 - Clean Energy Standard Act of 2012](https://www.congress.gov/bill/112th-congress/senate-bill/2146). 112th Congress (2011-2012). 2012. 
-[^"3"]: Congress.gov. [How Our Laws Are Made - Congress.gov Resources](https://www.congress.gov/help/learn-about-the-legislative-process/how-our-laws-are-made). Accessed March 2023. 
-[^"4"]: Bipartisan Policy Center. [Pathways to Decarbonization: A National Clean Energy Standard](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2020/03/BPC_Energy_Clean-Energy-StandardV2.pdf). Bipartisan Policy Center. March 2020. 
-[^"5"]: Vasilakos, P. N., Shen, H., Mehdi, Q., Wilcoxen, P., Driscoll, C., Fallon, K., Burtraw, D., Domeshek, M., Russell, A. G. [US Clean Energy Futures—Air Quality Benefits of Zero Carbon Energy Policies](https://www.mdpi.com/2073-4433/13/9/1401). Atmosphere <b>13</b>(9): 1404. August 2022. 
-[^"6"]: Vasilakos, P. N., Shen, H., Mehdi, Q., Wilcoxen, P., Driscoll, C., Fallon, K., Burtraw, D., Domeshek, M., Russell, A. G. [Incremental System Costs](https://cleanenergyfutures.insightworks.com/pages/6499.html). Clean Energy Futures. July 2021. 
-[^"7"]:  [Environmental Benefits Mapping and Analysis Program - Community Edition (BenMAP-CE) | US EPA](https://www.epa.gov/benmap). Accessed March 2023. 
-[^"8"]:  [Federal Energy Regulatory Commission](https://www.ferc.gov/). Accessed March 2023. 
-[^"9"]: Driscoll, C., Lambert, K. F., Wilcoxen, P., Russell, A., Burtraw, D., Domeshek, M., Mehdi, Q., Shen, H., Vasilakos, P. [An 80x30 Clean Electricity Standard: Carbon, Costs, and Health Benefits](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/2343/2021/07/CEF-80x30-7.15.21.pdf). Clean Energy Futures. July 2021. 
-[^"11"]:  [New Study: Clean Energy Standard Can Cut Industrial Emissions](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/2343/2021/12/80x30-CES-Case-Study-1.pdf). July 2021. 
+[^"1"]: Congress.gov. [S.20 - Clean Energy Standard Act of 2010](https://www.congress.gov/bill/111th-congress/senate-bill/20). 111th Congress (2009-2010). 2009.
+[^"2"]: Congress.gov. [S.2146 - Clean Energy Standard Act of 2012](https://www.congress.gov/bill/112th-congress/senate-bill/2146). 112th Congress (2011-2012). 2012.
+[^"3"]: Congress.gov. [How Our Laws Are Made - Congress.gov Resources](https://www.congress.gov/help/learn-about-the-legislative-process/how-our-laws-are-made). Accessed March 2023.
+[^"4"]: Bipartisan Policy Center. [Pathways to Decarbonization: A National Clean Energy Standard](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2020/03/BPC_Energy_Clean-Energy-StandardV2.pdf). Bipartisan Policy Center. March 2020.
+[^"5"]: Vasilakos, P. N., Shen, H., Mehdi, Q., Wilcoxen, P., Driscoll, C., Fallon, K., Burtraw, D., Domeshek, M., Russell, A. G. [US Clean Energy Futures—Air Quality Benefits of Zero Carbon Energy Policies](https://www.mdpi.com/2073-4433/13/9/1401). Atmosphere <b>13</b>(9): 1404. August 2022.
+[^"6"]: Vasilakos, P. N., Shen, H., Mehdi, Q., Wilcoxen, P., Driscoll, C., Fallon, K., Burtraw, D., Domeshek, M., Russell, A. G. [Incremental System Costs](https://cleanenergyfutures.insightworks.com/pages/6499.html). Clean Energy Futures. July 2021.
+[^"7"]: [Environmental Benefits Mapping and Analysis Program - Community Edition (BenMAP-CE) | US EPA](https://www.epa.gov/benmap). Accessed March 2023.
+[^"8"]: [Federal Energy Regulatory Commission](https://www.ferc.gov/). Accessed March 2023.
+[^"9"]: Driscoll, C., Lambert, K. F., Wilcoxen, P., Russell, A., Burtraw, D., Domeshek, M., Mehdi, Q., Shen, H., Vasilakos, P. [An 80x30 Clean Electricity Standard: Carbon, Costs, and Health Benefits](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/2343/2021/07/CEF-80x30-7.15.21.pdf). Clean Energy Futures. July 2021.
+[^"11"]: [New Study: Clean Energy Standard Can Cut Industrial Emissions](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/2343/2021/12/80x30-CES-Case-Study-1.pdf). July 2021.
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -175,4 +158,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

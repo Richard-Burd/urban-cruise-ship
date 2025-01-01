@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -13,6 +13,7 @@ export const solution = "Water Desalination";
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
+
 We promote the production of desalinated water in areas that are economically feasable. We examine an increase desalination capacity by 36.5 million m³/d annually.
 
 <DynamicSolutionGraphic
@@ -20,15 +21,15 @@ We promote the production of desalinated water in areas that are economically fe
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 4-28-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 3.5,
       displayedValue: "$3.5 Billion USD/year",
       site: "null",
@@ -43,16 +44,19 @@ We promote the production of desalinated water in areas that are economically fe
 />
 
 ## Background
+
 The total global desalination capacity is around 66.4 million m³/d[^”1”]. This is expected to grow at a rate of about 55% per year[^”1”].
 
 39% of the worlds total human population lives less than 100km from the sea[^”1”]. Making desalination a viable option for a large portion of our potable water needs.
 
 ## Calculations
+
 The average cost of desalinated seawater is $0.75 per cubic meter produced[^”1”]. This would be a $10 billion annual cost.
 
 The cost of providing tap water is estimated to be $2 per 3.8 cubic meters produced[^”3”] which comes to an annual cost of $3.5 billion.
 
 ## Implementation
+
 Local incentives and subsidies can help to reduce the cost to produce desalinated water[^”1”]. The development of adsorption desalination, an emerging low-energy desalination technology may also help to reduce costs[^”1”].
 
 When desalination plants are powered by renewable energy such solar or wind power this can reduce the long term costs and increase energy efficiency[^”2”].
@@ -60,9 +64,7 @@ When desalination plants are powered by renewable energy such solar or wind powe
 ##### Lead researcher: Lee Nelson - Last updated: 4/28/2024
 
 [^”1”]: Gaffour, N. et al. [“Technical review and evaluation of the economics of water desalination: Current and future challenges for better water supply sustainability”](https://doi.org/10.1016/j.desal.2012.10.015) Desalination, January 2013
-
 [^”2”]: Curto, D. et al. [“A Review of the Water Desalination Technologies”](https://doi.org/10.3390/app11020670) Applied Industrial Technologies: Department of Engineering, January 2021
-
 [^”3”]: Department of Public Health [“Drinking Water Costs and Federal Funding”](https://portal.ct.gov/-/media/departments-and-agencies/dph/dph/drinking_water/pdf/dwcfedfundpdf.pdf) Department of Public Health: Drinking Water Section
 
 export default ({ children }) => 
@@ -71,4 +73,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

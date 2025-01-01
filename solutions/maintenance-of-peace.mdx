@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,6 +11,7 @@ export const problem = "Cost of War";
 export const solution = "Maintenance of Peace";
 
 ## Description
+
 We recommend world governments increase spending on peacebuilding efforts.
 
 <DynamicSolutionGraphic
@@ -18,15 +19,15 @@ We recommend world governments increase spending on peacebuilding efforts.
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 5-5-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 25.6,
       displayedValue: "$25.6",
       site: "null",
@@ -41,51 +42,43 @@ We recommend world governments increase spending on peacebuilding efforts.
 />
 
 ## Background
+
 Although there are ongoing armed conflicts in the world as of 2021, the world has been relatively peaceful, and especially without great power conflicts, since 1991, relative to other times in history. Beyond the obvious humanitarian cost of war, a major war would require substantial energy input and likely damage the political impetus behind emissions reductions.
 
 The United States' post-9/11 violent conflict:
+
 - Killed at least 929,000 people killed, of which were 387,000 civilians [^"3"]
 - Displaced 38 million people [^"3"]
-- Released 141 MMTCO2e since March 2003 in Iraq alone [^"4"] 
+- Released 141 MMTCO2e since March 2003 in Iraq alone [^"4"]
 
 In addition, the US military alone releases an average of 70 million tons of greenhouse gasses per year, and the US Department of Defense is the single largest consumer of oil in the world. [^"3"] Increasing investment in peacebuilding efforts could decrease the amount of current emissions and prevent the large emissions associated with a violent conflict. The Russian invasion of Ukraine is claimed to have released 33 million tons of greenhouse gasses, and rebuilding is predicted to create an additional 49 million tons. [^"7"]
 
-Using a case study on the peacebuilding efforts in Rwanda, the IEP estimates a benefit-over-cost ratio of 16:1 for peacebuilding efforts. [^"5"] Assuming the models are only 50%  accurate, the ratio is still 4:1 benefit-over-cost. [^"8"]
+Using a case study on the peacebuilding efforts in Rwanda, the IEP estimates a benefit-over-cost ratio of 16:1 for peacebuilding efforts. [^"5"] Assuming the models are only 50% accurate, the ratio is still 4:1 benefit-over-cost. [^"8"]
 
 ## Calculations
+
 The United Nations peacekeeping budget for the 2021-2022 fiscal year was $6.4 billion[^"10"]. Using the above 4:1 benefit-over-cost ratio that would have a benefit of $25.6 billion of reduced costs of war.
 It was estimated that in 2019 the global economic impact of violence was $14.4 trillion dollars[^"11"], meaning there is still a very large spending gap towards peacekeeping efforts.
 
 ## Implementation
+
 Peacebuilding efforts can benefit from a holistic approach that involves not only governmental sectors, but also civilian and private sectors. This approach can give a better view of the correct actions needed and addresses the root causes of conflicts such as poverty and resource limitations.
 The average economic cost of violence in the ten most conflict-affected countries is equal to 41% of their gross domestic product[^"11"]. While the focus on these countries may be more on the lines of conflict resolution and peacebuilding, many other countries could contribute with a realignment of investments. For example, while the U.S. was the largest contributor to the UN peacekeeping budget giving about $1.8 billion, it will spend $849.8 billion on its military[^"12"].
 
 ##### Lead researchers: jye (Background and Implementation) and Lee Nelson (Calculations and Implementation) - Last updated May 4, 2024
 
-[^"1"]:  [MEASURING THE GLOBAL ECONOMIC IMPACT OF VIOLENCE AND CONFLICT](https://www.economicsandpeace.org/wp-content/uploads/2021/01/EVP-2021-web-1.pdf). 2021.
-
-[^"2"]:  [Papers - 2019 - Pentagon Fuel Use, Climate Change, and the Costs of War](https://watson.brown.edu/costsofwar/papers/ClimateChangeandCostofWar). Nov 2019.
-
-[^"3"]:  [Pentagon Fuel Use, Climate Change, and the Costs of War.](https://watson.brown.edu/costsofwar/files/cow/imce/papers/Pentagon%20Fuel%20Use%2C%20Climate%20Change%20and%20the%20Costs%20of%20War%20Revised%20November%202019%20Crawford.pdf). Nov 2019.
-
-[^"4"]:  [A Climate of War - Oil Change International](https://priceofoil.org/2008/03/01/a-climate-of-war/). Mar 2008.
-
-[^"5"]:  [Measuring Peacebuilding Cost-effectiveness](http://ods.ceipaz.org/wp-content/uploads/2018/06/Measuring-Peacebuilding_WEB.pdf). Institute for Economics and Peace2021.
-
-[^"6"]:  [Peacebuilding, 'a bargain' and 'proven investment', UN chief tells Member States](https://news.un.org/en/story/2022/03/1115112). Mar 2022.
-
-[^"7"]:  [COP27: War causing huge release of climate warming gas, claims Ukraine - BBC News](https://www.bbc.com/news/science-environment-63625693). Nov 2022.
-
-[^"8"]:  [Peacebuilding: Is It Cost Effective? - Impakter](https://impakter.com/peacebuilding-cost-effective/). Sep 2018.
-
-[^"9"]:  [Policy Recommendations from a Whole of Society perspective for the EU’s conflict prevention and peacebuilding capabilities](https://www.semanticscholar.org/paper/Policy-Recommendations-from-a-Whole-of-Society-for-Gppac/66a0097510f23020ae4e4dc69de59233f307c6da). Feb 2018.
-
-[^"10"]:  UN Peacekeeping [“How we are Funded”](https://peacekeeping.un.org/en/how-we-are-funded) United Nations, 2021
-
-[^"11"]:  Vision of Humanity [“How High is the Cost of War Around the World in 2019?”](https://www.visionofhumanity.org/how-does-war-and-violence-affect-an-economy/) Vision of Humanity, 2020
-
-[^"12"]:  U.S. DoD [“Department of Defense Releases the President's Fiscal Year 2025 Defense Budget”]( https://www.defense.gov/News/Releases/Release/Article/3703410/department-of-defense-releases-the-presidents-fiscal-year-2025-defense-budget/) U.S. Department of Defense, 2024
-
+[^"1"]: [MEASURING THE GLOBAL ECONOMIC IMPACT OF VIOLENCE AND CONFLICT](https://www.economicsandpeace.org/wp-content/uploads/2021/01/EVP-2021-web-1.pdf). 2021.
+[^"2"]: [Papers - 2019 - Pentagon Fuel Use, Climate Change, and the Costs of War](https://watson.brown.edu/costsofwar/papers/ClimateChangeandCostofWar). Nov 2019.
+[^"3"]: [Pentagon Fuel Use, Climate Change, and the Costs of War.](https://watson.brown.edu/costsofwar/files/cow/imce/papers/Pentagon%20Fuel%20Use%2C%20Climate%20Change%20and%20the%20Costs%20of%20War%20Revised%20November%202019%20Crawford.pdf). Nov 2019.
+[^"4"]: [A Climate of War - Oil Change International](https://priceofoil.org/2008/03/01/a-climate-of-war/). Mar 2008.
+[^"5"]: [Measuring Peacebuilding Cost-effectiveness](http://ods.ceipaz.org/wp-content/uploads/2018/06/Measuring-Peacebuilding_WEB.pdf). Institute for Economics and Peace2021.
+[^"6"]: [Peacebuilding, 'a bargain' and 'proven investment', UN chief tells Member States](https://news.un.org/en/story/2022/03/1115112). Mar 2022.
+[^"7"]: [COP27: War causing huge release of climate warming gas, claims Ukraine - BBC News](https://www.bbc.com/news/science-environment-63625693). Nov 2022.
+[^"8"]: [Peacebuilding: Is It Cost Effective? - Impakter](https://impakter.com/peacebuilding-cost-effective/). Sep 2018.
+[^"9"]: [Policy Recommendations from a Whole of Society perspective for the EU’s conflict prevention and peacebuilding capabilities](https://www.semanticscholar.org/paper/Policy-Recommendations-from-a-Whole-of-Society-for-Gppac/66a0097510f23020ae4e4dc69de59233f307c6da). Feb 2018.
+[^"10"]: UN Peacekeeping [“How we are Funded”](https://peacekeeping.un.org/en/how-we-are-funded) United Nations, 2021
+[^"11"]: Vision of Humanity [“How High is the Cost of War Around the World in 2019?”](https://www.visionofhumanity.org/how-does-war-and-violence-affect-an-economy/) Vision of Humanity, 2020
+[^"12"]: U.S. DoD [“Department of Defense Releases the President's Fiscal Year 2025 Defense Budget”](https://www.defense.gov/News/Releases/Release/Article/3703410/department-of-defense-releases-the-presidents-fiscal-year-2025-defense-budget/) U.S. Department of Defense, 2024
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -93,4 +86,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

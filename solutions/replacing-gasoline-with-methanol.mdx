@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -13,6 +13,7 @@ export const solution = "Replacing Gasoline with Methanol in Fleets";
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Description
+
 We propose converting fleets of frequent short-trip vehicles such as mail trucks, taxis, and delivery vehicles to methanol fuel.
 
 <DynamicSolutionGraphic
@@ -20,40 +21,40 @@ We propose converting fleets of frequent short-trip vehicles such as mail trucks
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 6-7-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 2.18,
       displayedValue: "$2.18",
       site: "null",
     },
     {
       name: "Cost",
-      barlength: .58,
+      barlength: 0.58,
       displayedValue: "$.58 Million USD/year",
       site: "null",
     },
   ]}
 />
 
-
 ## Background
+
 Due to the lower [energy density](/energy/transport/transpo_ghg#transportation-energy-efficiency) of methanol, it makes more sense to deploy a methanol fleet among cars that will make frequent, short trips, such as mail trucks, taxis, or delivery vehicles.
 For high methanol blends, as high as M-100 (100% methanol fuel), it is necessary to upgrade the engines of automobiles to use them, similar to flex-fuel engines for high ethanol blends. Though not as favorable as a low blend in the broader gasoline supply, a dedicated methanol fleet of cars shows a positive return on investment.
+
 <ArticleImage image={"methanol_blending2.svg"} width={760} height={270} />
 
-
 ## Calculations
+
 Engine upgrading costs for a 1,000 car fleet are estimated at $.58 million[^"1"].
 
 Reduction of GHG is estimated to save $.47 million and have $1.71 million in financial benefits.
-
 
 ## Implementation
 
@@ -65,11 +66,12 @@ The most significant issue will be fuel price. As a blend methanol will be price
 
 [^"1"]: Sheehy, P., Law, K., Jackson, M. D. ["Methanol Fuel Blending and Materials Compatibility Report"](https://www.ourenergypolicy.org/wp-content/uploads/2012/04/TIAX-Methanol-Fuel-Blending-Report.pdf). Prepared by TIAX LLC, for the Methanol Institute. October 2010.
 
-
 export default ({ children }) => 
   <SolutionDropdown 
     problem={problem} 
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

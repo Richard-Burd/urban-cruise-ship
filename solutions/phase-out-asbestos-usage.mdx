@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,6 +11,7 @@ export const problem = "Asbestos Exposure Deaths / Disease - World";
 export const solution = "Phase Out Asbestos Usage";
 
 ## Description
+
 We propose a complete ban on asbestos products and mining.
 
 <DynamicSolutionGraphic
@@ -18,15 +19,15 @@ We propose a complete ban on asbestos products and mining.
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 7-19-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 117.09424630655343,
       displayedValue: "$120 billion/year",
       site: "null",
@@ -50,8 +51,6 @@ Inhalation of asbestos fibers has been associated with mesothelioma, lung cancer
 
 Regulation of asbestos in the United States began in 1973 and includes a 1978 ban on asbestos as building insulation. In 1989, the Environmental Protection Agency issued a complete ban on asbestos products, but the ban was overturned two years later by the Fifth Curcuit Courts of Appeals [^"28"]. Despite the 1978 ban on asbestos insulation, the material is prevalent in buidings before that date, is often not possible or practical to remove, and yet continues to pose a health hazard. The collapse of the World Trade Center released asbestos insulation in the buildings, which is believed to have killed 4343 first responders, clean-up crews, and other people in the vicinity of Ground Zero, in contrast to the 2974 direct deaths from the September 11, 2001 terrorist attacks [^"29"].
 
-
-
 ## Calculations
 
 In 2019, the loss of 4,189,000 disability-adjusted life years due to asbestos have been found [^"2"]. Mesothelioma, the most severe asbestos-related illness, has a latency time of 20-60 years after asbestos exposure, and so we attribute the illnesses in 2019 to the asbestos consumption in 1979 of about 4.7 million tons [^"17"]. In 2022, the most recent year for which data is available as of this writing, consumption was about 1.3 million tons, to which we attribute the benefit of asbestos elimination.
@@ -70,69 +69,38 @@ An acceleration of international efforts to ban asbestos can be modeled after th
 
 Given the long latency period of asbestos and the persistence of asbestos in the environment, such as in insulation, a ban on asbestos is not a full substitute for health care and remediation.
 
-
 ##### Lead researchers: jye and Lee Nelson - Last updated: July 26, 2024.
 
 [^"1"]: Lahav, J. ["How Does Legislation Regulate Asbestos in the U.S.?"](https://www.asbestos.com/mesothelioma-lawyer/legislation/). The Mesothelioma Center. October 2022.
-
 [^"2"]: Miao, X., Yao, T., Dong, C., Chen, Z., Wei, W., Shi, Z., Xu, T., Shao, J., Niu, Q., Hu, Y., Yan, Y. ["Global, regional, and national burden of non-communicable diseases attributable to occupational asbestos exposure 1990–2019 and prediction to 2035: worsening or improving?"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10946175/). BioMed Central Public Health **24**(832). March 2024.
-
 [^"3"]: Frank, A.L., Joshi, T.K. ["The global spread of asbestos"](https://www.sciencedirect.com/science/article/pii/S2214999614003191). Annals of Global Health **80**(4), pp. 257-262. July 2014.
-
-[^"4"]:  [Chrysotile Asbestos Fact Sheet](https://www.asbestossafety.gov.au/find-out-about-asbestos/asbestos-safety-information/chrysotile-asbestos-fact-sheet).
-
-[^"5"]:  [https://vizhub.healthdata.org/gbd-compare/](https://vizhub.healthdata.org/gbd-compare/). Institute for Health Metrics and Evaluation. Accessed April 2023.
-
-[^"6"]:  [International Chrysotile Association](https://chrysotileassociation.com/).
-
-[^"7"]:  [Asbestos - Overview | Occupational Safety and Health Administration](https://www.osha.gov/asbestos).
-
-[^"8"]:  [Non-asbestiform elongate mineral particles and mesothelioma risk: Human and experimental evidence - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0013935122019053).
-
+[^"4"]: [Chrysotile Asbestos Fact Sheet](https://www.asbestossafety.gov.au/find-out-about-asbestos/asbestos-safety-information/chrysotile-asbestos-fact-sheet).
+[^"5"]: [https://vizhub.healthdata.org/gbd-compare/](https://vizhub.healthdata.org/gbd-compare/). Institute for Health Metrics and Evaluation. Accessed April 2023.
+[^"6"]: [International Chrysotile Association](https://chrysotileassociation.com/).
+[^"7"]: [Asbestos - Overview | Occupational Safety and Health Administration](https://www.osha.gov/asbestos).
+[^"8"]: [Non-asbestiform elongate mineral particles and mesothelioma risk: Human and experimental evidence - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0013935122019053).
 [^"9"]: United States Environmental Protection Agency. [FFinal Risk Evaluation for Asbestos, Part 1: Chrysotile Asbestos](https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/final-risk-evaluation-asbestos-part-1-chrysotile). December 2020.
-
-[^"10"]:  [Asbestos: elimination of asbestos-related diseases](https://www.who.int/news-room/fact-sheets/detail/asbestos-elimination-of-asbestos-related-diseases).
-
-[^"11"]:  [Learn About Asbestos | US EPA](https://www.epa.gov/asbestos/learn-about-asbestos).
-
+[^"10"]: [Asbestos: elimination of asbestos-related diseases](https://www.who.int/news-room/fact-sheets/detail/asbestos-elimination-of-asbestos-related-diseases).
+[^"11"]: [Learn About Asbestos | US EPA](https://www.epa.gov/asbestos/learn-about-asbestos).
 [^"12"]: Bernard, D. R., Schukraft, J. ["Global lead exposure report"](https://rethinkpriorities.org/publications/global-lead-exposure-report). Rethink Priorities. May 2021.
-
 [^"13"]: Armstrong, J. [“GLOBAL BENEFITS AND COSTS OF THE MONTREAL PROTOCOL”](https://link.springer.com/chapter/10.1007/978-1-4615-5585-8_26) Protecting the Ozone Layer, pp. 173-177, 1998
-
 [^"14"]: Furuya, S. et al. [“Global Asbestos Disaster”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5982039/) National Library of Medicine, May 2018
-
 [^"15"]: IMF [“World Economic Outlook”](https://www.imf.org/-/media/Files/Publications/WEO/2023/April/English/text.ashx) IMF, April 2023
-
 [^"16"]: Mayo Clinic. ["Mesothelioma"](https://www.mayoclinic.org/diseases-conditions/mesothelioma/symptoms-causes/syc-20375022). Accessed July 26, 2024.
-
 [^"17"]: Virta, R. L. ["Worldwide Asbestos Supply and Consumption Trends from 1900 through 2003"](https://pubs.usgs.gov/publication/cir1298). United States Geological Service Circular 1298. 2006.
-
 [^"18"]: Flanagan, D. M. ["Asbestos Statistics and Information"](https://www.usgs.gov/centers/national-minerals-information-center/asbestos-statistics-and-information). United States Geological Survey. Accessed July 26, 2024.
-
 [^"19"]: Dyczek, J. R. L. ["Costs estimation of the asbestos ban in Poland"](https://chrysotileassociation.com/data/cost_estimation_poland.pdf). June 2014.
-
 [^"20"]: Foltyn, Mieczyslaw. ["The Problem of Asbestos in Poland as Seen by Labour Inspectors"](http://www.ibasecretariat.org/eas_mf_poland.php). International Ban Asbestos Secretariat. June 2001.
-
 [^"21"]: United States Environmental Protection Agency. ["Asbestos Part 1; Chrysotile Asbestos; Regulation of Certain Conditions of Use Under the Toxic Substances Control Act (TSCA)"](https://www.govinfo.gov/content/pkg/FR-2024-03-28/pdf/2024-05972.pdf). Federal Register **89**(61). March 2024.
-
 [^"22"]: Code of Federal Regulations. ["Part 751—Regulation of Certain Chemical Substances and Mixtures under Section 6 of the Toxic Substances Control Act"](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-751). National Archives. Accessed July 26, 2024.
-
 [^"23"]: Basel Convention. ["Protocol on Liability and Compensation for Damages Resulting from Transboundary Movements of Hazardous Wastes and their Disposal"](https://www.basel.int/Portals/4/Basel%20Convention/docs/text/BaselConventionText-e.pdf). Accessed July 26, 2024.
-
 [^"24"]: Conroy, S. H. ["History of Asbestos, Pt. 3: Asbestos in the Industrial Age"](https://www.simmonsfirm.com/blog/history-of-asbestos-in-the-industrial-age/). February 2024.
-
 [^"25"]: International Labor Organization. ["C162 - Asbestos Convention, 1986 (No. 162)"](https://normlex.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO:12100:P12100_INSTRUMENT_ID:312307:NO). 1986.
-
 [^"26"]: Virta, R. L. ["Asbestos: Geology, Mineralogy, Mining, and Uses"](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=865005bb4af41e28f888e0dc7c6f643a6d2151ee). United States Geological Survey, United States Department of the Interior. 2002.
-
 [^"27"]: Gaudino, G., Xue, J., Yang, H. ["How asbestos and other fibers cause mesothelioma"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7082251/). Translational Lung Cancer Research **9**(Suppl 1), pp. S39–S46. February 2020.
-
 [^"28"]: United States Environmental Protection Agency. ["EPA Actions to Protect the Public from Exposure to Asbestos"](https://www.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos). March 2024.
-
 [^"29"]: Selby, K. ["20 Years Later: The Lingering Health Effects of 9/11"](https://www.asbestos.com/featured-stories/9-11-lingering-health-effects/). The Mesothelioma Center. May 2024.
-
 [^"30"]: Erickson, B. E. ["Chlor-alkali producer Olin commits to phasing out asbestos"](https://pubs.acs.org/doi/10.1021/cen-10112-polcon4). Chemical & Engineering News **101**(12), p. 12. April 2023.
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -140,4 +108,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

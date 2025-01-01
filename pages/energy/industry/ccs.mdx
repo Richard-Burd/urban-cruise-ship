@@ -1,4 +1,4 @@
-import Article from '/components/Article.js'
+import Article from "/components/Article.js";
 import hierarchy from "../hierarchy.json";
 
 export const site = "energy";
@@ -21,25 +21,34 @@ A carbon capture and sequestration/storage (CCS) system is designed to remove CO
 For [industrial heat](/energy/industry/industrial_heat) and process emissions from [major commodities](/energy/industry/major_commodities), CCS may be the only economically viable tool to reduce emissions by more than 30% [^21].
 
 ## Cost
+
 We estimate the following costs of carbon capture from various industrial sources.
 
 <ArticleImage image={"ccs_abatement_cost.svg"} width={960} height={990} />
-#### Costs from industrial sources are given by Folger [^6] and the IEA ([^13] and [^14]). Costs from coal power are estimated by Gillingham and Stock [^7], Hardisty et al. [^9], Hu and Zhai [^10], and Rubin et al. [^22]. Costs from natural gas are estimated by Budinis et al. [^2] and Rubin et al. [^22]. Fasihi et al. [^5] estimate the cost from direct air capture. The IPCC [^15] estimates the cost from bioenergy and carbon capture and sequestration (BECCS).
+#### Costs from industrial sources are given by Folger [^6] and the IEA ([^13] and
+[^14]). Costs from coal power are estimated by Gillingham and Stock [^7], Hardisty
+et al. [^9], Hu and Zhai [^10], and Rubin et al. [^22]. Costs from natural gas are
+estimated by Budinis et al. [^2] and Rubin et al. [^22]. Fasihi et al. [^5] estimate
+the cost from direct air capture. The IPCC [^15] estimates the cost from bioenergy
+and carbon capture and sequestration (BECCS).
 
 Seawater may also be a promising venue for extracting carbon dioxide [^24], though reliable potential costs estimates are limited. Recent analysis suggests that the CO₂ abatement cost of synthetic diesel from seawater may range from $373 to $717 per ton [^4].
 
 A major determinant in the monetary and energy costs of CO₂ capture is concentration, with lower costs from higher concentrations. The following are estimates of primary energy requires to capture a ton of CO₂ from various sources.
 
 <ArticleImage image={"ccs_energy_cost.svg"} width={760} height={420} />
-#### Sources: Malins [^18] and von der Assen et al. [^23], with primary energy conversion given by the Building Energy Codes Program [^3].
+#### Sources: Malins [^18] and von der Assen et al. [^23], with primary energy conversion
+given by the Building Energy Codes Program [^3].
 
 ## Sources of Carbon
+
 While industrial sources of carbon tend to be cheaper than diffuse sources such as direct air capture, only limited amounts of them are available, and fossil fuel-based sources in particular will hopefully be phased out eventually. Following are estimates of how much carbon will be available at midcentury from non-fossil sources.
 
 <ArticleImage image={"c_sources.svg"} width={730} height={370} />
 #### Source: [^16].
 
 ## Usage
+
 Most captured CO₂ today is used for enhanced oil recovery, with most of the remainder stored geologically.
 
 <ArticleImage image={"ccs_usage.svg"} width={730} height={190} />
@@ -67,49 +76,48 @@ Enhanced oil recovery, also known as enhanced oil extraction or tertiary recover
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"16 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadToggle={''}
+  mastheadToggle={""}
   mastheadText3={"MG, Oct. 6, 2024"}
- 
- 
   staticData={[
-      {
+    {
       name: "Carbon Dioxide",
       barlength: 166,
       displayedValue: "44%",
       site: "null",
     },
-      {
+    {
       name: "Other Gas Injection",
       barlength: 45,
       displayedValue: "12%",
       site: "null",
     },
-      {
+    {
       name: "Thermal",
       barlength: 120,
       displayedValue: "32%",
       site: "null",
     },
-      {
+    {
       name: "Chemical",
       barlength: 35,
       displayedValue: "9%",
       site: "null",
     },
-      {
+    {
       name: "Other",
       barlength: 8,
       displayedValue: "2%",
       site: "null",
-    }
+    },
   ]}
 />
-#### World EOR projects by type, as of 2017. Percentages do not add to 100% due to rounding. Source: International Energy Agency [^29].
+#### World EOR projects by type, as of 2017. Percentages do not add to 100% due to
+rounding. Source: International Energy Agency [^29].
 
 As of 2019, it was estimated that 70% of CO<sub>2</sub> for EOR was sourced from natural geologic deposits. Such EOR provides no carbon sequestration benefit [^31]. When CO<sub>2</sub> is captured from an industrial source, it is important to credit the carbon savings to either the source of capture, or to the oil well, but not to both [^31].
 
@@ -118,17 +126,18 @@ As of 2018, about 2% of oil was produced via EOR, and lower prices and competiti
 The leakage rate of carbon dioxide injected into oil wells has been estimated at less than 1% over 1000 years [^26], but this requires that the well is properly sealed after production has ceased [^32]. Induced seimicity has been observed as a result of EOR, though this can be managed by controlling the rate of injection [^33].
 
 ## Direct Air Capture
+
 Direct air capture (DAC) refers to a system that captures and removes carbon dioxide from the ambient atmosphere, rather than a concentrated industrial waste stream. The International Energy envisions that DAC will remove 980 million tons of CO2 per year by 2050, compared to just 0.01 million tons per year now [^12]. The two leading technologies are liquid solvent DAC (L-DAC) and solid sorbent DAC (S-DAC). Following are estimates of the resources required for 1 billion tons of DAC per year, about 2.5% of current emissions.
 
 <div className="table-wrapper">
 
-| Resource | 1 billion tons L-DAC | 1 billion tons S-DAC | Present annual consumption |
-| --- | --- | --- | --- |
-| Land Use | 400 km² | 1200-1700 km² | 149 million km² (Earth's land area) |
-| Water | 50 billion tons | 0.2-2 billion tons | 4600 billion tons |
-| Energy | 5.5-8.8 exajoules | 7.2-9.5 EJ | 600 EJ |
-| Life cycle greenhouse gas emissions | 100-400 million tons CO₂ | 30-91 million tons | 40 billion tons |
-| Cost | Up to $340 billion | Up to $540 billion | World GDP about $85 trillion in 2020 |
+| Resource                            | 1 billion tons L-DAC     | 1 billion tons S-DAC | Present annual consumption           |
+| ----------------------------------- | ------------------------ | -------------------- | ------------------------------------ |
+| Land Use                            | 400 km²                  | 1200-1700 km²        | 149 million km² (Earth's land area)  |
+| Water                               | 50 billion tons          | 0.2-2 billion tons   | 4600 billion tons                    |
+| Energy                              | 5.5-8.8 exajoules        | 7.2-9.5 EJ           | 600 EJ                               |
+| Life cycle greenhouse gas emissions | 100-400 million tons CO₂ | 30-91 million tons   | 40 billion tons                      |
+| Cost                                | Up to $340 billion       | Up to $540 billion   | World GDP about $85 trillion in 2020 |
 
 </div>
 
@@ -139,74 +148,41 @@ S-DAC can operate with lower temperature heat, enabling it to use geothermal or 
 If an L-DAC system had to desalinate its own water usage, it would add $3.50 - $9.50/ton CO₂ to the cost of carbon removal [^12]. It is possible to run a DAC device intermittently on renewable electricity as a load balancing strategy, but this would further raise the cost [^12].
 
 ## Geological Storage
+
 It is estimated that the world could store 8,000 to 55,000 billion tons of CO2, the equivalent of 200-1275 years of emissions at current rates [^12]. In the United States, it is estimated that over half of onshore storage could be developed at less than $10/ton CO2, while more than half of offshore storage could be developed at less than $35/ton [^12]. Carbon leakage is estimated at less than 0.01%, slow enough for CCS to be secure as a mitigation solution [^20].
 
-
-
 [^1]: Bao, J., Lu, W., Zhao, J., Bi, X. ["Greenhouses for CO₂ sequestration from atmosphere"](https://www.sciencedirect.com/science/article/pii/S2588913318300061). Carbon Resources Conversion 1(2), pp. 183-190. August 2018.
-
 [^2]: Budinis, S., Krevor, S., Mac Dowell, M,. Brandon, N., Hawkes, A. ["An assessment of CCS costs, barriers and potential"](https://www.sciencedirect.com/science/article/pii/S2211467X18300634). Energy Strategy Reviews 22, pp. 61-81. November 2018.
-
 [^3]: Building Energy Codes Program. ["Prototype Building Models High-rise Apartment"](https://www.energycodes.gov/901-prototype-building-models-high-rise-apartment). Building Technologies Office, Office of Energy Efficiency and Renewable Energy, U. S. Department of Energy. April 2011.
-
 [^4]: Eisaman M., Rivest, J., Karnitz, S., de Lannoy, C., Jose, A., DeVaul, R., Hannun, K. ["Indirect ocean capture of atmospheric CO2: Part II. Understanding the cost of negative emissions"](https://www.sciencedirect.com/science/article/abs/pii/S175058361730436X). International Journal of Greenhouse Gas Control 70, pp. 254-261. March 2018.
-
 [^5]: Fasihi, M., Efimova, O., Breyer, C. ["Techno-economic assessment of CO₂ direct air capture plants"](https://www.sciencedirect.com/science/article/pii/S0959652619307772). Journal of Cleaner Production 224, pp. 957-980. July 2019.
-
 [^6]: Folger, P. ["Carbon Capture: A Technology Assessment"](https://www.fas.org/sgp/crs/misc/R41325.pdf). Congressional Research Service. July 2010.
-
 [^7]: Gillingham, K., Stock, J. ["The Cost of Reducing Greenhouse Gas Emissions"](https://scholar.harvard.edu/stock/publications/cost-reducing-greenhouse-gas-emissions). Journal of Economic Perspectives 32(4), pp. 53-72. November 2018.
-
 [^8]: Global CCS Institute. ["The Global Status of CCS"](https://www.globalccsinstitute.com/resources/global-status-report/). 2018.
-
 [^9]: Hardisty, P., Sivapalan, M., Brooks, P. ["The Environmental and Economic Sustainability of Carbon Capture and Storage"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3108120/). Int J Environ Res Public Health 8(5), pp. 1460-1477. May 2011.
-
 [^10]: Hu. B,. Zhai, H. ["The cost of carbon capture and storage for coal-fired power plants in China"](https://www.sciencedirect.com/science/article/abs/pii/S1750583617300014). International Journal of Greenhouse Gas Control 65, pp. 23-31. 2017.
-
 [^11]: International Energy Agency. ["Carbon capture, utilisation and storage"](https://www.iea.org/topics/carbon-capture-and-storage/). Accessed October 1, 2019.
-
 [^12]: International Energy Agency. ["Direct Air Capture: A key technology for net zero"](https://www.iea.org/reports/direct-air-capture-3). April 2022.
-
 [^13]: International Energy Agency. ["Technology Roadmap - Carbon Capture and Storage, 2013 Edition"](http://www.iea.org/publications/freepublications/publication/technology-roadmap-carbon-capture-and-storage-2013.html).
-
 [^14]: International Energy Agency. ["Transforming Industry through CCUS"](https://webstore.iea.org/transforming-industry-through-ccus). May 2019.
-
 [^15]: IPCC. "Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change". [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA. 2014.
-
 [^16]: IRENA and Methanol Institute. ["Innovation Outlook : Renewable Methanol"](https://www.irena.org/publications/2021/Jan/Innovation-Outlook-Renewable-Methanol). International Renewable Energy Agency, Abu Dhabi. January 2021.
-
 [^17]: Leung, D., Caramanna, G., Maroto-Valer, M. ["An overview of current status of carbon dioxide capture and storage technologies"](https://www.sciencedirect.com/science/article/pii/S1364032114005450). Renewable and Sustainable Energy Systems 39, pp. 426-443. November 2014.
-
 [^18]: Malins, C. ["What role is there for electrofuel technologies in European transport’s low carbon future?"](https://trid.trb.org/view/1502488). Cerulogy. November 2017.
-
 [^19]: McGlade, C. ["Commentary: Can CO2-EOR really provide carbon-negative oil?"](https://www.iea.org/newsroom/news/2019/april/can-co2-eor-really-provide-carbon-negative-oil.html). International Energy Agency. April 2019.
-
 [^20]: Miocic, J. M., Gilfillan, S. M. V., Frank, N., Schroeder-Ritzrau, A., Burnside, N. M., Haszeldine, R. S. ["420,000 year assessment of fault leakage rates shows geological carbon storage is secure"](https://www.nature.com/articles/s41598-018-36974-0). Scientific Reports 9: 769. January 2019.
-
 [^21]: Organization for Economic Cooperation and Development, International Energy Agency. ["CCS 2014: What lies in store for CCS?"](https://www.iea.org/publications/insights/insightpublications/ccs-2014---what-lies-in-store-for-ccs.html). 2014.
-
 [^22]: Rubin, E., Davison, J., Herzog, H. ["The cost of CO₂ capture and storage"](https://www.sciencedirect.com/science/article/abs/pii/S1750583615001814). International Journal of Greenhouse Gas Control 40, pp. 378-400. September 2015.
-
 [^23]: von der Assen, N., Müller, L., Steingrube, A., Voll, P., Bardow, A. ["Selecting CO₂ Sources for CO2 Utilization by Environmental-Merit-Order Curves"](https://pubs.acs.org/doi/10.1021/acs.est.5b03474). Environmental Science & Technology 50(3), pp. 1093-1101. January 2016.
-
 [^24]: Willauer, H., Hardy, D., Schultz, K., Williams, F. ["The feasibility and current estimated capital costs of producing jet fuel at sea using carbon dioxide and hydrogen"](https://aip.scitation.org/doi/abs/10.1063/1.4719723?journalCode=rse). Journal of Renewable and Sustainable Energy 4. May 2012.
-
 [^25]: International Energy Agency. ["Putting CO2 to Use"](https://www.iea.org/reports/putting-co2-to-use). September 2019.
-
 [^26]: Duda, J. R., Yost, A. B., Long, R. Dehoratiis, G., Ogunsola, O. ["Carbon Dioxide Enhanced Oil Recovery"](https://www.netl.doe.gov/sites/default/files/netl-file/co2_eor_primer.pdf). National Energy Technology Laboratory, U.S. Department of Energy. March 2010.
-
 [^27]: International Energy Agency. ["Storing CO2 through Enhanced Oil Recovery"](https://www.iea.org/reports/storing-co2-through-enhanced-oil-recovery). November 2015.
-
 [^28]: Office of Fossil Energy and Carbon Management. ["Enhanced Oil Recovery"](https://www.energy.gov/fecm/enhanced-oil-recovery). U.S. Department of Energy. Accessed October 6, 2024.
-
 [^29]: International Energy Agency. ["Number of EOR projects in operation globally, 1971-2017"](https://www.iea.org/data-and-statistics/charts/number-of-eor-projects-in-operation-globally-1971-2017). November 2018.
-
 [^30]: McGlade, C., Sondak, G., Han, M. ["Whatever happened to enhanced oil recovery?"](https://www.iea.org/commentaries/whatever-happened-to-enhanced-oil-recovery). International Energy Agency. November 2018.
-
 [^31]: McGlade, C. ["Can CO2-EOR really provide carbon-negative oil?"](https://www.iea.org/commentaries/can-co2-eor-really-provide-carbon-negative-oil). International Energy Agency. April 2019.
-
 [^32]: Ide, S.T., Friedmann, S.J., Herzog, H.J. ["CO<sub>2</sub> leakage through existing wells: current technology and regulations"](https://sequestration.mit.edu/pdf/GHGT8_Ide.pdf). In 8th International Conference on Greenhouse Gas Control Technologies (Vol. 1, pp. 19-33). June 2006.
-
 [^33]: National Petroleum Council. [Meeting the Dual Challenge: A Roadmap to At-Scale Deployment of Carbon Capture, Use, and Storage](https://www.energy.gov/sites/default/files/2022-10/CCUS-Chap_8-030521.pdf). Chapter 8: CO<sub>2</sub> Enhanced Oil Recovery. March 2021.
 
 export default ({ children }) => 
@@ -216,4 +192,6 @@ export default ({ children }) =>
     site={site}
   >
     {children}
-  </Article>
+  </Article
+
+>

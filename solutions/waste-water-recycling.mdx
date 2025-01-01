@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,6 +11,7 @@ export const problem = "Cost of Water Provision";
 export const solution = "Waste Water Recycling";
 
 ## Description
+
 We propose to build infrastructure to treat and reuse 178 billion m³ of wastewater.
 
 <DynamicSolutionGraphic
@@ -18,15 +19,15 @@ We propose to build infrastructure to treat and reuse 178 billion m³ of wastewa
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 4-11-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 23,
       displayedValue: "$23",
       site: "null",
@@ -40,8 +41,8 @@ We propose to build infrastructure to treat and reuse 178 billion m³ of wastewa
   ]}
 />
 
-
 ## Background
+
 Only 11% of the estimated total of domestic and industrial wastewater produced is currently being reused[^”1”].
 Untreated wastewater is one of the key drivers of biodiversity loss and a major threat to human health, particularly affecting the most vulnerable people and ecosystems[^”1”]. The demand for safe wastewater reuse is expected to outpace the ability to produce reclaimed water, with the risk that untreated wastewater is used[^”1”].
 48% of the world’s wastewater still enters the environment without adequate treatment[^”1”].
@@ -51,21 +52,16 @@ Untreated wastewater is one of the key drivers of biodiversity loss and a major 
 In 2015, it was estimated that the annual production of wastewater, primarily from municipal sources, to be 370 billion m³[^”1”]. 48% of that (the amount that is not being treated[^”1”].) is 178 billion m³ annually. With a capital cost of constructing a wastewater system at $1 million per 207,251 m³ per year[^”2”] that adds up to $859 billion. With an expected life cycle of 50 years[^”3”], the cost is measured out at $17 billion annually.
 For valuation of water reuse we use the global value of irrigation water of $0.13 m³[^”4”], which adds up to $23 billion worth of water saved annually, assuming all of the treated water is reused.
 
-
 ## Implementation
+
 Possible barriers include lack of political attractiveness, lack of data in some areas, social/cultural acceptance, and unstable governance and regulations[^”1”].
 
 ##### Lead researcher: Lee Nelson - Last updated: 4/11/2024
 
 [^”1”]: UN Environmental Programme [“Wastewater: Turning Problem to Solution”](https://doi.org/10.59117/20.500.11822/43142) UNEP Rapid Response Assessment 2023
-
 [^”2”]: SAMCO [“How Much Does a Wastewater Treatment System Cost?”](https://samcotech.com/cost-wastewater-treatment-system/) SAMCO, Accessed April 11 2024
-
 [^”3”]: Raghuvanshi, S. et al. [“Waste water treatment plant life cycle assessment: treatment process to reuse of water”](https://pdf.sciencedirectassets.com/) Science Direct Elsevier, 2017
-
 [^”4”]: D'Odorico, P. et al. ["The Global Value of Water in Agriculture"](https://www.pnas.org/doi/full/10.1073/pnas.2005835117) PNAS 2020
-
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -73,4 +69,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

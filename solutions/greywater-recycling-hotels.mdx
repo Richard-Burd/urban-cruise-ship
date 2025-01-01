@@ -1,5 +1,4 @@
-
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Cardiovascular Disease";
 export const solution = "Genetic Testing for Cardiovascular Disease - US";
@@ -10,23 +9,19 @@ export const DynamicSolutionGraphic = dynamic(
   { ssr: false }
 );
 
-
 ## Description
-
 
 <DynamicSolutionGraphic
   barChartTitle={"Greywater Reuse Systems for Hotels - World"}
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"140 thousand"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"jye June 16, 2024"}
-  
-  
   staticData={[
     {
       name: "Benefit",
@@ -39,15 +34,13 @@ export const DynamicSolutionGraphic = dynamic(
       barlength: 0.03596343594931387,
       displayedValue: "$36 million/year",
       site: "null",
-    }
+    },
   ]}
 />
 
 #### Source [^"1"].
 
 ## Background
-
-
 
 ## Calculations
 
@@ -56,18 +49,16 @@ export const DynamicSolutionGraphic = dynamic(
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"7,626 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"jye June 16, 2024"}
-  
-  
   staticData={[
     {
       name: "Water Savings",
-      barlength: .06412649712918154,
+      barlength: 0.06412649712918154,
       displayedValue: "$64",
       site: "null",
     },
@@ -76,21 +67,15 @@ export const DynamicSolutionGraphic = dynamic(
       barlength: 0.19456944010000004,
       displayedValue: "$19 million/year",
       site: "null",
-    }
+    },
   ]}
 />
 
 #### Source .
 
-
-
 ## Implementation
 
-
-
 ##### Lead Researcher: jye - Last Updated June 26, 2024.
-
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -98,4 +83,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

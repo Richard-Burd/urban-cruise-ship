@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Deaths from Tuberculosis";
 export const solution = "Plan to End Tuberculosis - World";
@@ -20,7 +20,7 @@ We recommend that international organizations and national governments increase 
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"16 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
@@ -43,18 +43,21 @@ We recommend that international organizations and national governments increase 
       displayedValue: "$2.66 Billions/year",
       site: "null",
     },
-        
-  ]}
+
+
+]}
 />
+
 #### Benefits and costs are divided equally over a 28-year period, with the vaccination development and deployments temporarily reaching up to $18 billion annually [^"1"].
 
 ## Background
 
 Tuberculosis (TB) is the leading cause of death worldwide with 10 million new infections annually [^"2"]. TB is caused by the bacterium Mycobacterium tuberculosis and primarily affects the lungs (pulmonary TB), but it can also affect other parts of the body (extrapulmonary TB). The disease is spread through the air when an infected person coughs, sneezes, or speaks [^"6"].
 
-Around 25% of the world's population is latently infected with the TB bacteria [^"3"], which, if untreated, is fatal in 45% cases [^"1"]. Rapid diagnosis and targeted treatment are crucial to averting mortaility and for prevention of disease transmission [^"3"], but treatment is often frustrated by the stigma surrounding the diagnosis [^"5"]. Tuberculosis has been historically linked to marginalized and low-income groups [^"5"]. A vaccine for tuberculosis would save millions of lives and may entirely eliminate the disease [^"1"]. 
+Around 25% of the world's population is latently infected with the TB bacteria [^"3"], which, if untreated, is fatal in 45% cases [^"1"]. Rapid diagnosis and targeted treatment are crucial to averting mortaility and for prevention of disease transmission [^"3"], but treatment is often frustrated by the stigma surrounding the diagnosis [^"5"]. Tuberculosis has been historically linked to marginalized and low-income groups [^"5"]. A vaccine for tuberculosis would save millions of lives and may entirely eliminate the disease [^"1"].
 
 ## Calculations
+
 The set of TB investments will have an estimated 29.6 million lives and 195.6 million cases per year [^"1"], at a cost of $2,520 per life saved.
 
 Costs include diagnosis; treatment; prevention; upgrades to health systems (e.g. hospitals and clinics); enabling activities such as patient support, advocacy, and education; administrative program costs; and developing and distributing TB vaccines [^"4"]. Benefits are based on averted deaths, and the benefits of averted non-fatal cases are not tabulated [^"1"].
@@ -63,8 +66,7 @@ Costs include diagnosis; treatment; prevention; upgrades to health systems (e.g.
 
 The UN Sustainable Development Goals have set a target to end the epidemic by 2030, but current efforts are inadequate [^"5"]. As of 2022, increased investment is needed to meet the development goals; including, according to the WHO, another $1 billion annually to accelerate research and development; and $13 billion annually for TB prevention, diagnosis, treatment and care to achieve global targets agreed on at the UN high level-TB meeting.
 
-As of 2022, 80% spending on TB services was from domestic sources. In low- and middle-income countries, international donor funding is crucial. The main source is the Global Fund to Fight AIDS, Tuberculosis and Malaria (the Global Fund). The United States Government is the largest contributor to the Global Fund and also the largest bilateral donor. For research and development, according to the Treatment Action Group, only $1 billion per year was available in 2022 of $2 billion per year needed [^"7"]. 
-
+As of 2022, 80% spending on TB services was from domestic sources. In low- and middle-income countries, international donor funding is crucial. The main source is the Global Fund to Fight AIDS, Tuberculosis and Malaria (the Global Fund). The United States Government is the largest contributor to the Global Fund and also the largest bilateral donor. For research and development, according to the Treatment Action Group, only $1 billion per year was available in 2022 of $2 billion per year needed [^"7"].
 
 ##### Lead Researcher: jye - Last Updated February 12, 2024
 
@@ -76,13 +78,8 @@ As of 2022, 80% spending on TB services was from domestic sources. In low- and m
 [^"6"]: Centers for Disease Control. [What You Need to Know About Tuberculosis](https://www.cdc.gov/tb/publications/factsheets/general/tb.htm). Accessed February 2024.
 [^"7"]: World Health Organization. [Fact Sheet: Tuberculosis](https://www.who.int/news-room/fact-sheets/detail/tuberculosis). Accessed February 2024.
 
-
-
-
-export default ({ children }) => 
-  <SolutionDropdown 
-    problem={problem} 
-    solution={solution}
-  >
+export default ({ children }) => (
+  <SolutionDropdown problem={problem} solution={solution}>
     {children}
   </SolutionDropdown>
+);

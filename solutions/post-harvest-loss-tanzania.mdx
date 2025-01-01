@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,6 +11,7 @@ export const problem = "Post Harvest Losses - Tanzania";
 export const solution = "Hermetic Storage Bags - Tanzania";
 
 ## Description
+
 We recommend the United Nations World Food Programme be expanded to provide hermetic storage bags to assist in the reduction of post-harvest loss of maize in Tanzania.
 
 <DynamicSolutionGraphic
@@ -24,14 +25,14 @@ We recommend the United Nations World Food Programme be expanded to provide herm
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"Jye 8-13-2023"}
- staticData={[
+  staticData={[
     {
       name: "Benefit",
       barlength: 276,
       displayedValue: "$276.4",
       site: "null",
     },
-        {
+    {
       name: "Cost",
       barlength: 59.9,
       displayedValue: "$59.9 Millions USD/year",
@@ -43,7 +44,8 @@ We recommend the United Nations World Food Programme be expanded to provide herm
 #### Source. [^"3"] [^"6"] [^"7"] [^"8"]
 
 ## Background
-Inadequate storage facilities lead to substantial postharvest grain losses among smallholder farmers in developing countries, resulting in up to 40% of harvests being lost.[^"2"] Contributing factors include insecure storage, damaging traditional practices, and pest exposure.[^"1"] 
+
+Inadequate storage facilities lead to substantial postharvest grain losses among smallholder farmers in developing countries, resulting in up to 40% of harvests being lost.[^"2"] Contributing factors include insecure storage, damaging traditional practices, and pest exposure.[^"1"]
 
 In Tanzania, maize is the most stored crop, with farmers facing a 7 month time gap between harvesting periods. Postharvest losses of maize here are significant, with up to 30-40% of the harvest being lost in some rural areas [^"3"]
 
@@ -56,7 +58,6 @@ To address this, the Tanzanian governement has instituted a 10-year plan to incr
 
 While infrastructure is being put into place, hermetic storage bags offer a cost-effective solution, proven to minimize postharvest losses across various crops and regions. [^"7"] [^"10"]
 
-
 Hermetic bags are reusable multi-layer plastic structures. These bags preserve commodities for extended periods by preventing moisture, pests, and fungi without requiring pesticides or refrigeration. Their utilization can lead to postharvest losses as low as 1%–2%. For the purposes of this solution, we assume 4 uses. [^"7"] [^"10"]
 
 ## Calculations
@@ -66,32 +67,31 @@ Hermetic bags are reusable multi-layer plastic structures. These bags preserve c
   barChartTitle2={"Benefits Calculation - Tanzania"}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
 
-  mastheadText3={"jye 5-12-2023"}
-  
-  
-  staticData={[
-    {
-      name: "Commodity Preserved",
-      barlength: 204.1,
-      displayedValue: "$204.1",
-      site: "null",
-    },
-    {
-      name: "Avoided Carbon Costs",
-      barlength: 72.2,
-      displayedValue: "$72.2 Millions USD/year",
-      site: "null",
-    },
-  ]}
+mastheadText3={"jye 5-12-2023"}
+
+staticData={[
+{
+name: "Commodity Preserved",
+barlength: 204.1,
+displayedValue: "$204.1",
+site: "null",
+},
+{
+name: "Avoided Carbon Costs",
+barlength: 72.2,
+displayedValue: "$72.2 Millions USD/year",
+site: "null",
+},
+]}
 />
 
 #### Source. [^"2"] [^"8"] [^"6"]
 
-The average for the amount of grain lost due to inadequate storage is 20% [^"3"] Based on expected prices on maise in 2024 of $240 per ton, this gives an estimate of $48 per ton.  [^"11"] Hermetic storage can cut grain loss due to inadequate storage to 1-2%, saving $43.20 per ton. [^"7"] 
+The average for the amount of grain lost due to inadequate storage is 20% [^"3"] Based on expected prices on maise in 2024 of $240 per ton, this gives an estimate of $48 per ton. [^"11"] Hermetic storage can cut grain loss due to inadequate storage to 1-2%, saving $43.20 per ton. [^"7"]
 
-Tanzania stores 75% of its maize due to its long time gap between harvests. We estimate the storage needs to be 75% of its annual production, 4.72 million metric tons.  [^"3"]
+Tanzania stores 75% of its maize due to its long time gap between harvests. We estimate the storage needs to be 75% of its annual production, 4.72 million metric tons. [^"3"]
 
 We estimate avoided carbon costs by calculating the amount of preserved grain, and the carbon costs associated with maize production. [^"12"]
 
@@ -104,31 +104,28 @@ Supplying smallholder farmers with hermetic storage bags could help decrease pos
 - Distribution Infrastructure: While Tanzania has a growing road network, reaching remote farming communities can still be challenging. Efficient distribution mechanisms need to be established to ensure that every farmer has access to these bags. [^"9"]
 - Farmers need to be trained to use these bags effectively to ensure maximum benefit. This includes understanding how to store the grain, how to seal the bags properly, and how to check for any signs of damage or pest infestation. [^"13"]
 
-Studies performed in Tanzania on the success of training and hermetic bag distribution have shown a positive effect on post-harvest loss.  [^"13"] The world food programme has similar operations in 4 countries and is continuing to invest in post-harvest loss prevention. [^"14"]
-
+Studies performed in Tanzania on the success of training and hermetic bag distribution have shown a positive effect on post-harvest loss. [^"13"] The world food programme has similar operations in 4 countries and is continuing to invest in post-harvest loss prevention. [^"14"]
 
 ##### Lead researcher: jye - last updated 8/20/2023
 
 [^"1"]: Kumar D, Kalita P. [Reducing Postharvest Losses during Storage of Grain Crops to Strengthen Food Security in Developing Countries - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5296677/). Foods. Jan 2017.
-[^"2"]:  [Post-Harvest Loss Reduction | WFP Innovation](https://innovation.wfp.org/project/post-harvest-loss-prevention). 
+[^"2"]: [Post-Harvest Loss Reduction | WFP Innovation](https://innovation.wfp.org/project/post-harvest-loss-prevention).
 [^"3"]: Suleiman R. [Current Maize Production, Postharvest Losses and the Risk of Mycotoxins Contamination in Tanzania](https://dr.lib.iastate.edu/entities/publication/88da37e2-d648-49fc-880f-0083fdf324b2). Iowa State University. Jul 2015.
 [^"4"]: Abass AB, Ndunguru G, Mamiro P, Alenkhe B, Mlingi N, Bekunda M. [Post-harvest food losses in a maize-based farming system of semi-arid savannah area of Tanzania - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022474X1300101X#fig3). Journal of Stored Products Research.Apr 2014.
-[^"5"]:  [Tanzania on right track in tackling post-harvest losses | The Citizen](https://www.thecitizen.co.tz/tanzania/news/business/tanzania-on-right-track-in-tackling-post-harvest-losses-3777128). 
-[^"6"]:  [Maize production quantity - United Republic of Tanzania](https://knoema.com/atlas/United-Republic-of-Tanzania/topics/Agriculture/Crops-Production-Quantity-tonnes/Maize-production). 
-[^"7"]: Ndegwa MK, De Groote H, Gitonga ZM, Bruce AY. [Effectiveness and economics of hermetic bags for maize storage: Results of a randomized controlled trial in Kenya - ScienceDirect](http://dx.doi.org/10.1016/j.cropro.2016.08.007).  Crop Protection.Dec 2016.
-[^"8"]:  [GrainPro Hermetic Bag Premium Zipper](https://www.grainpro.com/grainpro-bag-premium-zipper). 
-[^"9"]:  [Built environment analysis for road traffic hotspot locations in Moshi, Tanzania](https://pubmed.ncbi.nlm.nih.gov/29415609/). 
+[^"5"]: [Tanzania on right track in tackling post-harvest losses | The Citizen](https://www.thecitizen.co.tz/tanzania/news/business/tanzania-on-right-track-in-tackling-post-harvest-losses-3777128).
+[^"6"]: [Maize production quantity - United Republic of Tanzania](https://knoema.com/atlas/United-Republic-of-Tanzania/topics/Agriculture/Crops-Production-Quantity-tonnes/Maize-production).
+[^"7"]: Ndegwa MK, De Groote H, Gitonga ZM, Bruce AY. [Effectiveness and economics of hermetic bags for maize storage: Results of a randomized controlled trial in Kenya - ScienceDirect](http://dx.doi.org/10.1016/j.cropro.2016.08.007). Crop Protection.Dec 2016.
+[^"8"]: [GrainPro Hermetic Bag Premium Zipper](https://www.grainpro.com/grainpro-bag-premium-zipper).
+[^"9"]: [Built environment analysis for road traffic hotspot locations in Moshi, Tanzania](https://pubmed.ncbi.nlm.nih.gov/29415609/).
 [^"10"]: Likhayo P. [Maize Grain Stored in Hermetic Bags: Effect of Moisture and Pest Infestation on Grain Quality | Semantic Scholar](https://www.semanticscholar.org/paper/Maize-Grain-Stored-in-Hermetic-Bags%3A-Effect-of-and-Likhayo-Bruce/8e6fdf1df956946d3d565a84900e36c608cc8fba). Journal of Food Quality. Nov 2018.
-[^"11"]:  [Average prices for maize worldwide from 2014 to 2024 | Statista](https://www.statista.com/statistics/675820/average-prices-maize-worldwide/). 
-[^"12"]:  [Reducing food’s environmental impacts through producers and consumers | Science](https://www.science.org/doi/10.1126/science.aaq0216). 
+[^"11"]: [Average prices for maize worldwide from 2014 to 2024 | Statista](https://www.statista.com/statistics/675820/average-prices-maize-worldwide/).
+[^"12"]: [Reducing food’s environmental impacts through producers and consumers | Science](https://www.science.org/doi/10.1126/science.aaq0216).
 [^"13"]: Chegere MJ, Lokina R, Mwakaje AG. [The impact of hermetic storage bag supply and training on food security in Tanzania](https://link.springer.com/article/10.1007/s12571-020-01052-9). July 2020.
-[^"14"]:  [The WFP PHL Venture](https://innovation.wfp.org/project/wfp-phl-venture). 
-[^"15"]:  [Comparative investment strategies in training and technology](https://www.semanticscholar.org/paper/Comparative-investment-strategies-in-training-and-Starr/85e839f1c7b8b47556403b0ed6b2a7c133246760). 
+[^"14"]: [The WFP PHL Venture](https://innovation.wfp.org/project/wfp-phl-venture).
+[^"15"]: [Comparative investment strategies in training and technology](https://www.semanticscholar.org/paper/Comparative-investment-strategies-in-training-and-Starr/85e839f1c7b8b47556403b0ed6b2a7c133246760).
 
-export default ({ children }) => 
-  <SolutionDropdown 
-    problem={problem} 
-    solution={solution}
-  >
+export default ({ children }) => (
+  <SolutionDropdown problem={problem} solution={solution}>
     {children}
   </SolutionDropdown>
+);

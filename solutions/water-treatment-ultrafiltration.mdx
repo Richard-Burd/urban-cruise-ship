@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 import SolutionImages from "/components/SolutionImages.js";
 
 import dynamic from "next/dynamic";
@@ -7,10 +7,8 @@ export const DynamicSolutionGraphic = dynamic(
   { ssr: false }
 );
 
-
 export const problem = "Arsenic Contaminated Drinking Water";
 export const solution = "Ultrafiltration Systems - U.S.";
-
 
 ## Description
 
@@ -27,8 +25,6 @@ We examine ultrafiltration (UF) membrane technology for water treatment systems 
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"jye 5-27-2023"}
-  
-  
   staticData={[
     {
       name: "Benefit",
@@ -46,14 +42,14 @@ We examine ultrafiltration (UF) membrane technology for water treatment systems 
 />
 #### Source. [^"1"] [^"5"] [^"6"] [^"10"] [^"9"] [^"11"]
 
-
 ## Background
 
-In 2014, waterborne illnesses resulted in total direct healthcare costs of $3.33 billion in the U.S.​[^"2"] 
+In 2014, waterborne illnesses resulted in total direct healthcare costs of $3.33 billion in the U.S.​[^"2"]
 
-UF membranes reduce water bourne pathogens under EPA recommendations by a factor of 300, and they enhance the water's appearance, taste, and odor. UF membranes effectively remove harmful pathogens, reducing the disease burden.[^"1"] Implementation of a UF membrane water treatment was studied in Sweden, and we use this study as a basis for extrapolation across the entire US water supply.[^"1"] 
+UF membranes reduce water bourne pathogens under EPA recommendations by a factor of 300, and they enhance the water's appearance, taste, and odor. UF membranes effectively remove harmful pathogens, reducing the disease burden.[^"1"] Implementation of a UF membrane water treatment was studied in Sweden, and we use this study as a basis for extrapolation across the entire US water supply.[^"1"]
 
 High-quality tap water could improve consumer confidence and reduce reliance on resource-intensive bottled water.[^"9"] Bottled water originated as a luxury mineral water in the 16th century, but has since grown to the most popular beverage in the world.[^"11"] Despite perceptions of being healthier and safer, studies analyzing bottled water sold in the US have found:
+
 - Chemical contamination at levels beyond national drinking standards (20% of waters sampled)[^"11"]
 - MIcroplastics and polymer compounds (93% of waters sampled)[^"11"]
 - Bacterial contamination (48% of waters sampled)[^"11"]
@@ -65,8 +61,8 @@ The bottled water industry continues to expand rapidly. The largest consumer, th
 
 Perceptions of low-quality groundwater increase the likelihood of consumers using bottled water as their primary drinking source. One study showed that 15% of respondents felt their groundwater was not safe, and 13% of the respondents used bottled water exclusively. We estimate that an increased perception of tap water safety could reduce bottled water consumption by 10%.[^"9"]
 
-
 ## Calculations
+
 Calculated average over a 20-year period by determining a per capita cost in the Sweedish case study and multiplying by the U.S. population projections for 2023.[^"10"] [^"9"]
 
 <DynamicSolutionGraphic
@@ -74,15 +70,13 @@ Calculated average over a 20-year period by determining a per capita cost in the
   barChartTitle2={"Water Treatment Technology - Benefit Calculations"}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"0.25 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"jye 6-6-2023"}
-  
-  
-    staticData={[
+  staticData={[
     {
       name: "Aesthetic",
       barlength: 9.02,
@@ -105,7 +99,6 @@ Calculated average over a 20-year period by determining a per capita cost in the
 />
 #### Source. [^"1"] [^"5"] [^"6"] [^"10"] [^"9"] [^"11"]
 
-
 Aesthetics (taste, color, odor) comprise the majority of the benefit.[^"1"]
 
 We include 6.4 billion dollars in consumer savings due to decreased reliance on bottled water.[^"1"] [^"9"]
@@ -117,14 +110,12 @@ Health benefits are calculated in terms of quality of life and avoided infection
   barChartTitle2={"Treatment Technology - Cost Calculations"}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"jye 6-6-2023"}
-  
-  
   staticData={[
     {
       name: "Investment / Capital",
@@ -143,24 +134,22 @@ Health benefits are calculated in terms of quality of life and avoided infection
 
 #### Source. [^"1"] [^"5"] [^"6"] [^"10"] [^"9"]
 
-
-
 ## Implementation
+
 The transition to UF membrane technology for water treatment will require investment from the private sector and support from governments.
 Potential obstacles to this transition could include lack of public awareness about UF membrane technology, resistance to change from traditional water treatment methods, lobbyist from bottled water industry.
 
 [^"1"]: Sköld N-P, Bergion V, Lindhe A, Keucken A, Rosén L. [Risk-Based Evaluation of Improvements in Drinking Water Treatment Using Cost-Benefit Analysis](https://www.mdpi.com/2073-4441/14/5/782). Water.Mar 2022.
-[^"2"]:  [Estimate of Burden and Direct Healthcare Cost of Infectious Waterborne Disease in the United States](https://wwwnc.cdc.gov/eid/article/27/1/19-0676_article). 
-[^"3"]:  [Water and Wastewater Systems | Cybersecurity and Infrastructure Security Agency CISA](https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/water-and-wastewater-sector). 
-[^"4"]:  [](). 
-[^"5"]:  [Bottled water volume in the U.S. 2021 | Statista](https://www.statista.com/statistics/237832/volume-of-bottled-water-in-the-us/). 
-[^"6"]:  [2023 Plastic Carbon Footprint: Official Emissions Numbers + Calculator](https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/plastic-carbon-footprint/). 
+[^"2"]: [Estimate of Burden and Direct Healthcare Cost of Infectious Waterborne Disease in the United States](https://wwwnc.cdc.gov/eid/article/27/1/19-0676_article).
+[^"3"]: [Water and Wastewater Systems | Cybersecurity and Infrastructure Security Agency CISA](https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/water-and-wastewater-sector).
+[^"4"]: []().
+[^"5"]: [Bottled water volume in the U.S. 2021 | Statista](https://www.statista.com/statistics/237832/volume-of-bottled-water-in-the-us/).
+[^"6"]: [2023 Plastic Carbon Footprint: Official Emissions Numbers + Calculator](https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/plastic-carbon-footprint/).
 [^"7"]: Villanueva CM, Garfí M, Milà C, Olmos S, Ferrer I, Tonne C. [Health and environmental impacts of drinking water choices in Barcelona, Spain: A modelling study - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0048969721039565#bb0120). Health and environmental impacts of drinking water choices in Barcelona, Spain: A modelling study. Science of The Total Environment.Nov 2021.
-[^"8"]:  [https://www.theguardian.com/environment/2021/aug/05/environmental-impact-of-bottled-water-up-to-3500-times-greater-than-tap-water](https://www.theguardian.com/environment/2021/aug/05/environmental-impact-of-bottled-water-up-to-3500-times-greater-than-tap-water). 
+[^"8"]: [https://www.theguardian.com/environment/2021/aug/05/environmental-impact-of-bottled-water-up-to-3500-times-greater-than-tap-water](https://www.theguardian.com/environment/2021/aug/05/environmental-impact-of-bottled-water-up-to-3500-times-greater-than-tap-water).
 [^"9"]: Hu Z, Morton LW, Mahler R. [Bottled Water: United States Consumers and Their Perceptions of Water Quality - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3084479/). International Journal of Environmental Research and Public Health.Feb 2011.
-[^"10"]:  [Census Bureau Projects U.S. and World Populations on New Year’s Day](https://www.census.gov/newsroom/press-releases/2022/new-years-day-population.html). 
-[^"11"]:  [Global Bottled Water Industry: A Review of Impacts and Trends](https://inweh.unu.edu/wp-content/uploads/2023/03/UNU_BottledWater_Report_F.pdf). 
-
+[^"10"]: [Census Bureau Projects U.S. and World Populations on New Year’s Day](https://www.census.gov/newsroom/press-releases/2022/new-years-day-population.html).
+[^"11"]: [Global Bottled Water Industry: A Review of Impacts and Trends](https://inweh.unu.edu/wp-content/uploads/2023/03/UNU_BottledWater_Report_F.pdf).
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -168,4 +157,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>
