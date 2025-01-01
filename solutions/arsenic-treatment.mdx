@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,10 +11,11 @@ export const problem = "Damages From Arsenic Exposure";
 export const solution = "Reverse Osmosis Filtration Systems";
 
 ## Description
+
 We propose public support to install point-of-use reverse osmosis systems to remove arsenic from contaminated drinking water. We model the goal of providing contamination free water for 100 million people.
 
-
 ## Background
+
 The World Health Organization has established a maximum containment level for arsenic of 10ug per liter of water due to arsenic being one of the most serious inorganic contaminants in drinking water[^”1”]. Long-term intake of arsenic causes serious chronic symptoms[^”1”]. The only solution to arsenic poisoning is to stop the consumption of contaminated water[^”1”]. Reverse Osmosis has been proven to reliably remove arsenic contamination as well as other problematic ions and molecules[^”1”].
 
 The primary anthropogenic sources of arsenic compounds are the mining industry, the pharmaceutical sector, enterprises producing glass and ceramics, pesticides, herbicides, dyes, woodworking enterprises, oil refineries, and the metal smelting and melted alloy industries[^”1”].
@@ -26,11 +27,11 @@ Globally, approximately 100 million people are chronically exposed to arsenic th
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   mastheadText3={"Lee Nelson 11-21-2023"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 2.1,
       displayedValue: "$2.1 Billions USD/year",
       site: "null",
@@ -45,6 +46,7 @@ Globally, approximately 100 million people are chronically exposed to arsenic th
 />
 
 ## Calculations
+
 The cost of arsenic removal per 20k people is $1,410 per day and $.052 per m3 of water produced[^”1”]. This equals $2.58 billion per year for 100 million people.
 
 Cost breakdown[^”1”]. :
@@ -63,20 +65,16 @@ Maintenance – 2%
 
 The economic benefits of arsenic removal are calculated to be $102.72 per household per year[^”3”]. Estimating that each household contains an average of 4.9 people[^”4”], we estimate this benefit to be $2.1 billion per year.
 
-
 ## Implementation
+
 This project could be funded by nonprofit organizations with cooperation of local governments to complete implementation. The main concern is the scale where point-of-use systems need to be installed within households and regularly maintained with filter replacements.
 
 ##### Lead researcher: Lee Nelson - Last updated: 11/21/2023
 
 [^”1”]: Abejon, A. et al.[“Arsenic removal from drinking water by reverse osmosis: Minimization of costs and energy consumption”](https://doi.org/10.1016/j.seppur.2015.02.017) Separation and Purification Technology, April 2015
-
 [^”2”]: Argos, M. et al. [“Arsenic and Human Health: Epidemiologic Progress and Public Health Implications”](https://doi.org/10.1515%2Freveh-2012-0021) National Library of Medicine, September 2012
-
 [^”3”]: Roy, J. [“Economic benefits of arsenic removal from ground water — A case study from West Bengal, India”](https://doi.org/10.1016/j.scitotenv.2008.02.007) Science of the Total Environment, July 2008
-
 [^”4”]: Kramer, S. [“With billions confined to their homes worldwide, which living arrangements are most common?”](https://www.pewresearch.org/short-reads/2020/03/31/with-billions-confined-to-their-homes-worldwide-which-living-arrangements-are-most-common/#:~:text=Around%20the%20world%2C%20the%20average,)%20and%20Europe%20(3.1).) PEW Research Center, March 2020
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -84,4 +82,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

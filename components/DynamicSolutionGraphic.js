@@ -32,7 +32,7 @@ const customLabelRenderer = (props) => {
   return (
     <text
       x={x + width + labelText} // {-10} for negative values (labelText)
-      y={y +12} // controls vertical placement of string to right of bar
+      y={y + 12} // controls vertical placement of string to right of bar
       textAnchor={labelAnchor} // {end} for negative values (labelAnchor)
       fill="#212121"
       fontFamily="Roboto"
@@ -107,7 +107,7 @@ const CustomYAxisTick = ({
     <g transform={`translate(${x},${y})`}>
       {windowWidth > windowWidthThreshold ? ( // check window width here
         <text //controls the insert of the title to the bar, (payload)
-          x={- 1} // {460} for negative values, {0} for positive values !REMOVED titleText NaN fix -jye
+          x={-1} // {460} for negative values, {0} for positive values !REMOVED titleText NaN fix -jye
           y={-1}
           dy={5}
           textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
@@ -119,7 +119,7 @@ const CustomYAxisTick = ({
         </text>
       ) : (
         <text //controls the insert of the title to the bar, (payload)
-          x={textWidthLeft+9} // {460} for negative values, {0} for positive values
+          x={textWidthLeft + 9} // {460} for negative values, {0} for positive values
           y={-17}
           dy={5}
           textAnchor={titleAnchor} // "start" for negative values, "end" for positive values
@@ -181,7 +181,7 @@ const DynamicSolutionGraphic = ({
       if (i === 0) {
         const metricsValue = context.measureText(item.displayedValue);
         const itemRightSide = metricsValue.width * 1.04;
-        minRightSide = itemRightSide ; //sets normal rightside
+        minRightSide = itemRightSide; //sets normal rightside
         console.log("metric width", metricsValue.width);
         console.log("item right side", itemRightSide);
       }
@@ -224,23 +224,23 @@ const DynamicSolutionGraphic = ({
   );
 
   //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
-  
-  
+
   /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
   const windowWidth = useWindowWidth();
-  const barChartWidth = 
+  const barChartWidth =
     windowWidth >= maxWindowWidth // sets mobile or desktop configuration based on windowwidth
-      ? 900 
+      ? 900
       : windowWidth;
-  const barHeight = windowWidth >= maxWindowWidth //sets bar height spacing based on window width
-      ? 29 
+  const barHeight =
+    windowWidth >= maxWindowWidth //sets bar height spacing based on window width
+      ? 29
       : 58;
-const totalChartHeight = filteredData.length * barHeight; //sets total chart height
+  const totalChartHeight = filteredData.length * barHeight; //sets total chart height
   rightSide =
     windowWidth <= maxWindowWidth // adds spacing for the right side that has already been dynamically calculated or removes it if mobile configuration
-      ? rightSide +120 //mobile
+      ? rightSide + 120 //mobile
       : rightSide + 120; //desktop
- 
+
   leftSide =
     windowWidth <= maxWindowWidth //desktop config or mobile config
       ? -50 //mobile
@@ -288,12 +288,13 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
           </h2>
         )}
       </div>
-      <div 
-      style={{ 
-        width: "100%", 
-        height: totalChartHeight,
-        marginTop: "20px",
-        }}>
+      <div
+        style={{
+          width: "100%",
+          height: totalChartHeight,
+          marginTop: "20px",
+        }}
+      >
         <BarChart
           width={barChartWidth}
           height={totalChartHeight}
@@ -306,7 +307,6 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
             bottom: 0,
           }}
           minPointSize={2} // Set the desired minimum width for the bar
-          
         >
           <XAxis type="number" hide={true} />
           <YAxis
@@ -327,7 +327,7 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
                   link={entry ? entry.link : null}
                   titleText={titleText}
                   titleAnchor={titleAnchor}
-                  // scale={windowWidth / maxWindowWidth} // TRASH? 
+                  // scale={windowWidth / maxWindowWidth} // TRASH?
                 />
               );
             }}
@@ -339,7 +339,6 @@ const totalChartHeight = filteredData.length * barHeight; //sets total chart hei
             barSize={10}
             stroke="#212121"
             strokeWidth={0.1}
-            
           >
             <LabelList
               dataKey="displayedValue"
@@ -361,14 +360,16 @@ this div allows you to put multiple elements side by side */}
       <div
         style={{
           display: "flex",
-          justifyContent: window.innerWidth <= maxWindowWidth ? "center" : "space-evenly",
-          alignItems: window.innerWidth <= maxWindowWidth ? "center" : "baseline",
+          justifyContent:
+            window.innerWidth <= maxWindowWidth ? "center" : "space-evenly",
+          alignItems:
+            window.innerWidth <= maxWindowWidth ? "center" : "baseline",
           flexDirection: window.innerWidth <= maxWindowWidth ? "column" : "row",
           flexWrap: "wrap",
         }}
       >
         {/* this is the down arrow code which will presently hide itself if chartType says hide*/}
-        {imageSrc && chartType !== "hide" && (
+        {imageSrc && chartType !== "hideArrow" && (
           <object
             style={{
               display: "flex",

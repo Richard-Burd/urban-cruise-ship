@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Emissions From Industrial Heat";
 export const solution = "R&D Into Nuclear Heat";
@@ -13,59 +13,52 @@ export const DynamicSolutionGraphic = dynamic(
 
 We propose research and development into high-temperature gas reactors (HTGRs) for nuclear industrial heat, which could provide a cost-effective solution for water desalination, thermochemical production of hydrogen, and other applications.
 
-
 ## Background
 
 HTGRs could serve as electricity generators as well as meeting industrial heating needs, thereby making better use of the heat generated that may not be captured by steam turbines.
-
 
 <DynamicSolutionGraphic
   barChartTitle={""}
   barChartTitle2={"HTGRs Research & Development - Effect on Hydrogen Costs"}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"213 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"jye March 28, 2024"}
 
-   staticData={[
-    {
-      name: "Current Price of Hydrogen",
-      barlength: 4.28,
-      displayedValue: "$3.70 / kg",
-      site: "null",
-    },
-      {
-      name: "Potential Price with R&D",
-      barlength: 0.8,
-      displayedValue: "$1.66 / kg",
-      site: "null",
-    },
-  ]}
+staticData={[
+{
+name: "Current Price of Hydrogen",
+barlength: 4.28,
+displayedValue: "$3.70 / kg",
+site: "null",
+},
+{
+name: "Potential Price with R&D",
+barlength: 0.8,
+displayedValue: "$1.66 / kg",
+site: "null",
+},
+]}
 />
 
 ##### Source [^"1"].
 
-New [hydrogen production methods](https://www.urbancruiseship.org/energy/energy_distribution/hydrogen#research-and-development-into-new-methods) involving the use of nuclear reactors have been explored. The current selling price of hydrogen is US$3.70 per kilogram. A recent analysis of a helium-cooled reactor utilized in hydrogen production resulted in production prices of US$4.28 per kilogram [^"1"]. [Small modular reactors](https://www.urbancruiseship.org/energy/energy_production/nuclear#small-modular-reactor-r-d-u-s) show promise to be able to provide less expensive hydrogen in the near future. 
+New [hydrogen production methods](https://www.urbancruiseship.org/energy/energy_distribution/hydrogen#research-and-development-into-new-methods) involving the use of nuclear reactors have been explored. The current selling price of hydrogen is US$3.70 per kilogram. A recent analysis of a helium-cooled reactor utilized in hydrogen production resulted in production prices of US$4.28 per kilogram [^"1"]. [Small modular reactors](https://www.urbancruiseship.org/energy/energy_production/nuclear#small-modular-reactor-r-d-u-s) show promise to be able to provide less expensive hydrogen in the near future.
 
 In the realm of desalination, HTGRs could provide a cogeneration method for both electricity and fresh water. This use case could also benefit from small modular reactors, as smaller sized reactors paired with large desalination plants are the most advantageous. The excess heat produced by a nuclear plant can be used along with electricty needed to facilitate the process of water desalination [^"2"].
 
 ## Implementation
 
-Public acceptance is a significant barrier to the implementation of nuclear technology, including HTGRs. Concerns about safety, radioactive waste management, and potential accidents contribute to public skepticism. 
+Public acceptance is a significant barrier to the implementation of nuclear technology, including HTGRs. Concerns about safety, radioactive waste management, and potential accidents contribute to public skepticism.
 
 ##### Lead Researcher: jye - Last Updated March 28, 2023
 
-
-
 [^"1"]: Kim T, Lee WY, Seo SH, Oh SD, Kwak HY. [Energy, Exergy and Thermoeconomic Analyses on Hydrogen Production Systems Using High-Temperature Gas-Cooled and Water-Cooled Nuclear Reactors.](http://dx.doi.org/10.3390/en16248090) Energies [Internet]. December 2023.
 [^"2"]: Gao L, Dong Y, Guo H. [Selection of Planning Options of Electricity and Freshwater Cogeneration Method Based on High-Temperature Gas-Cooled Reactor.](http://dx.doi.org/10.3390/en15124435) Energies [Internet]. June 2022.
-
-
-
 
 export default ({ children }) => 
   <SolutionDropdown 
@@ -73,4 +66,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

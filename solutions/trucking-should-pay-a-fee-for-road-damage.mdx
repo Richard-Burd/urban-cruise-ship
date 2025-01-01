@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
@@ -11,6 +11,7 @@ export const problem = "Road Damage";
 export const solution = "Trucking Road Usage Charge - U.S.";
 
 ## Description
+
 We propose a Road Use Charge (RUC) on freight trucks to account for the disproportionate amount of road damage caused by these vehicles.
 
 <DynamicSolutionGraphic
@@ -18,15 +19,15 @@ We propose a Road Use Charge (RUC) on freight trucks to account for the dispropo
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"Lee Nelson 5-20-2024"}
- staticData={[
+  staticData={[
     {
-     name: "Benefit",
+      name: "Benefit",
       barlength: 129,
       displayedValue: "$129",
       site: "null",
@@ -40,9 +41,8 @@ We propose a Road Use Charge (RUC) on freight trucks to account for the dispropo
   ]}
 />
 
-
-
 ## Background
+
 Spending on highways and roads is roughly split between states (60%) and local governments (40%)[^”1”]. With states typically spending on highways and tollways and local governments spending on local streets and roads[^”1”].
 
 In 2020, state and local governments spent $204 billion on highways and roads[^”1”]. 43% of that ($87.7 billion) went toward operational costs, such as maintenance, repair, snow and ice removal, highway and traffic design and operation, and highway safety[^”1”]. The rest going for capital construction of new highways and roads[^”1”]. State and local motor fuel taxes, $53 billion, and construction and repair fees, $22 billion, only account for a portion of the fees with the rest coming from state, local, and federal funds[^”1”].
@@ -50,12 +50,13 @@ In 2020, state and local governments spent $204 billion on highways and roads[^�
 Freight trucks cause 99% of wear-and-tear on U.S. roads and only pay for 35% of that damage[^”2”].
 
 ## Calculations
+
 Freight trucks average a total of 327.48 billion miles annually[^”4”]. In order to pay for the $129 billion gap explained above (plus the collection and administrative costs) that would mean a fee of .43¢ per mile, which is reasonable and even less than has been charged elsewhere[^”3”].
 
 Collection and administrative costs are estimated to be around 10% of the revenue[^”5”], or $13 billion.
 
-
 ## Implementation
+
 This fee will be assessed as a Road Usage Charge (RUC) as has been done in Oregon and Utah[^”3”].
 
 Implementing a RUC charge for all vehicles as well as trucks could be even more economically beneficial, for example it would reduce the amount spent on toll road administration by $85 million per year per toll road administration and dramatically reduce local governments parking meter management costs[^”6”].
@@ -63,15 +64,10 @@ Implementing a RUC charge for all vehicles as well as trucks could be even more 
 ##### Lead researcher: Lee Nelson - Last updated: 5/20/2024
 
 [^”1”]: Urban Institute. ["Highway and Road Expenditures"](https://www.urban.org/policy-centers/cross-center-initiatives/state-and-local-finance-initiative/state-and-local-backgrounders/highway-and-road-expenditures) State and Local Finance Initiative. Accessed July 11, 2021
-
 [^”2”]: True Cost. ["The Hidden Trucking Industry Subsidy"](https://truecostblog.com/2009/06/02/the-hidden-trucking-industry-subsidy/) June 2009
-
 [^”3”]: Kroes, S., Reichard, P., Teigen, S., Collard, C., Keating, M. ["Measuring the Miles: Road Usage Charges in Utah"](https://www.utahfoundation.org/reports/rucreport/) Utah Foundation, March 2021
-
-[^”4”]: American Trucking Association [“Economics and Industry Data”]( https://www.trucking.org/economics-and-industry-data) Accessed 12/11/2023
-
+[^”4”]: American Trucking Association [“Economics and Industry Data”](https://www.trucking.org/economics-and-industry-data) Accessed 12/11/2023
 [^”5”]: Humphrey School of Public Affairs [“Collection and Administration Costs”](https://dbf.dot.state.mn.us/media/utthc2o2/6_admincosts.pdf) University of Minnesota: Department of Transportation, 2021
-
 [^”6”]: Atkinson, R. [“A Policymaker’s Guide to Road User Charges”](https://itif.org/publications/2019/04/22/policymakers-guide-road-user-charges/) Information Technology and Innovation Foundation, April 2019
 
 export default ({ children }) => 
@@ -80,4 +76,6 @@ export default ({ children }) =>
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

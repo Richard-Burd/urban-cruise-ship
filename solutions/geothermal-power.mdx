@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Need to Achieve Net Zero Emissions";
 export const solution = "Accelerate Development and Deployment of Geothermal";
@@ -13,28 +13,20 @@ import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
-
 We recommend that national governments, the private sector, and other stakeholders accelerate investment into the research, development, and deployment of enhanced geothermal power plants as opposed to fossil fuel plants as part of a strategy to transition to net-zero emissions by 2050.
-
 
 ## Background
 
 Geothermal plants are thermal plants, using similar thermodynamic principles as nuclear and fossil fuel plants [^"18"]. EGS differs from conventional geothermal in that it does not depend on a naturally occurring reservoir of underground heated water [^"13"], which greatly expands the geographic range. The United States' geothermal capacity could theoretically power the country four times over, and it is accessible in most states; however, there is a need for [further research](https://www.urbancruiseship.org/energy/energy_production/geothermal#research-and-development-into-enhanced-geothermal) [^"4"].
 
 <SolutionImages
- mobileSrc={"geo_plant_compare_mobile.svg"}
- desktopSrc={"geo_plant_compare_desktop.svg"}
+  mobileSrc={"geo_plant_compare_mobile.svg"}
+  desktopSrc={"geo_plant_compare_desktop.svg"}
 />
 
 Geothermal power requires little land use relative to other renewables [^"1"]. Additionally, geothermal provides baseload power, which will be at a premium in a power grid dominated by variable renewables; it does not require fuel; and it has little water demand due to closed-loop water recycling [^"4"]. EGS also provides a potential for coproducts, including hydrogen production and recovery of zinc, lead, copper, rare earths, silica, or lithium [^"29"],[^"4"].
 
-
-
-
-
 EGS faces challenges due to its exploratory nature, as upfront capital costs are high and wells are not guaranteed to be viable, necessitating the drilling of other wells. Deep well drilling imposes environmental and human impact risks, and so the necessary regulatory oversight slows the process [^"4"].
-
-
 
 <DynamicSolutionGraphic
   barChartTitle={"Geothermal Electricity Production - World"}
@@ -47,8 +39,6 @@ EGS faces challenges due to its exploratory nature, as upfront capital costs are
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"jye 5-12-2023"}
-  
-  
   staticData={[
     {
       name: "Benefit",
@@ -67,24 +57,19 @@ EGS faces challenges due to its exploratory nature, as upfront capital costs are
 
 #### Sources: IEA [^"26"], Lazard [^"21"], EIA [^"12"], DOE [^"1"], Li et al. [^"30"].
 
-
 Costs are the levelized cost of energy from 2022 to 2050 [^"12"].
-
-
 
 <DynamicSolutionGraphic
   barChartTitle={"Geothermal Electricity Production"}
   barChartTitle2={"Benefits Calculation - World"}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"16 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
   mastheadText3={"jye 5-12-2023"}
-  
-  
   staticData={[
     {
       name: "Avoided Gas Energy",
@@ -103,27 +88,17 @@ Costs are the levelized cost of energy from 2022 to 2050 [^"12"].
 
 #### Sources: IEA [^"26"], Lazard [^"21"], EIA [^"12"], DOE [^"1"], Li et al. [^"30"].
 
-
-
 Benefits assume that expanded geothermal displaces gas, priced at an average LCOE of 7¢ per kilowatt-hour. We estimate CO<sub>2</sub>e emissions at 430 grams/kWh [^"12"] for gas-fired plants and 33 g/kWh [^"30"] for geothermal to determine avoided [social carbon costs](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e).
-
-
-
 
 ## Implementation
 
-
 We use a 6¢/kWh instead of the current 8¢/kWh [^"12"], assuming that $8.3 billion of [research and development](https://www.urbancruiseship.org/energy/energy_production/geothermal#research-and-development-into-enhanced-geothermal) will be conducted to bring costs down.
-
 
 Permitting barriers have slowed geothermal development, and the technology has not benefited from streamlining procedures that oil and gas companies are afforded. We recommend the United States streamline [geothermal permitting](https://www.urbancruiseship.org/energy/energy_production/geothermal#streamline-geothermal-permitting).
 
-
-
-
 ##### Lead researcher: jye - Last updated 5/12/2023
 
-[^"1"]: Geothermal Technologies Office. [Geothermal FAQs](https://www.energy.gov/eere/geothermal/geothermal-faqs). United States Department of Energy. Accessed March 26, 2024. 
+[^"1"]: Geothermal Technologies Office. [Geothermal FAQs](https://www.energy.gov/eere/geothermal/geothermal-faqs). United States Department of Energy. Accessed March 26, 2024.
 [^"13"]: ScienceDirect. [Enhanced Geothermal System](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/enhanced-geothermal-system). ScienceDirect Topics. Accessed March 26, 2024.
 [^"4"]: Smith, M. [Enhanced Geothermal Systems: Introduction and Issues for Congress](https://crsreports.congress.gov/product/details?prodcode=R47256). Congressional Research Service. September 2022.
 [^"18"]: ScienceDirect. [Binary Cycle](https://www.sciencedirect.com/topics/engineering/binary-cycle). ScienceDirect Topics. Accessed March 26, 2024.
@@ -140,12 +115,12 @@ Permitting barriers have slowed geothermal development, and the technology has n
 [^"12"]: U.S. Energy Information Administration. [How much carbon dioxide is produced per kilowatthour of U.S. electricity generation?](https://www.eia.gov/tools/faqs/faq.php?id=74&t=11). Accessed March 26, 2024.
 [^"30"]: Li, J., Tarpani, R.R., Stamford, L., Gallego-Schmid, A. ["Life cycle sustainability assessment and circularity of geothermal power plants"](https://www.sciencedirect.com/science/article/pii/S2352550922002950?via%3Dihub). Sustainable Production and Consumption <b>35</b>, pp. 141-156. January 2023.
 
-
-
 export default ({ children }) => 
   <SolutionDropdown 
     problem={problem} 
     solution={solution}
   >
     {children}
-  </SolutionDropdown>
+  </SolutionDropdown
+
+>

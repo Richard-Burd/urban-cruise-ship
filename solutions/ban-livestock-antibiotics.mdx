@@ -1,9 +1,7 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
-
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Antibiotic Resistance";
 export const solution = "Ban Nontherapeutic Livestock Antibiotics";
-
 
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
@@ -12,6 +10,7 @@ export const DynamicSolutionGraphic = dynamic(
 );
 
 ## Description
+
 We propose a ban in the United States on nontherapeutic applications of antibiotics for livestock.
 
 <DynamicSolutionGraphic
@@ -19,32 +18,31 @@ We propose a ban in the United States on nontherapeutic applications of antibiot
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"16 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
   arrowText4={"annually"}
-  mastheadToggle={''}
+  mastheadToggle={""}
   mastheadText3={"Michael Goff 1-24-2024"}
- 
- 
   staticData={[
-      {
+    {
       name: "Benefit",
       barlength: 21.248579467499997,
       displayedValue: "$21 billion",
       site: "null",
     },
-     {
+    {
       name: "Cost",
       barlength: 3.671805754,
       displayedValue: "$4 billion",
       site: "null",
-    } 
+    },
   ]}
 />
 
 ## Background
+
 The use of antibiotics causes positive effects by limiting the spread of antibiotic-treatable infections, while also causing negative effects by increasing the number of treatment-resistant infections. Treatment-resistant infections cost the United States 23,000 lives and $20 billion annually [^"2"]. In 2019, it was estimated that bacterial antimicrobial resistance (AMR) was associated with 4.95 million deaths, including 1.27 million deaths directly attributed [^"6"].
 
 The sensitivity of bacteria can be considered a finite natural resource [^"5"].
@@ -53,14 +51,14 @@ More than 80% of American antibiotic use is for livestock, of which 70% is for n
 
 While ending antibiotic use for therapeutic purposes as well would further curtail the development of antibiotic-resistant bacteria, doing so would have a greater cost than ending nontherapeutic use and would carry a heavy animal welfare toll, and for these reasons we do not propose that [^"12"].
 
-
 ## Calculations
+
 Estimating benefits of a reduction of antibiotics is difficult because of the great uncertainty in how this will affect the prevalence of disease. In 2015, it was estimated that the incremental cost to the U.S. health care system as a result of antibiotic-resistant microbes was $21-34 billion [^"10"]. The Union of Concerned Scientists has estimated that 70% of antibiotic use is for nontherapeutic use in livestock [^"11"], and so we estimate a benefit as 70% of the mean cost, CPI adjusted to 2020.
 
 We estimate costs from a National Research Council study (see Table 7-1 on p. 185), which finds that ending nontherapeutic antibiotics would raise meat prices by the following: chicken, 1.3 ¢ per pound; turkey, 1.5 ¢/lb; beef, 3 ¢/lb; and pork, 3 ¢/lb [^"7"]. We apply these costs to American meat production in 2021 as reported by FAOSTAT [^"8"]. FAOSTAT does not distinguish between chicken and turkey, but rather classifies both as "poultry" [^"9"], and so we apply the chicken cost to both. The cost is CPI-adjusted to 2020.
 
-
 ## Implementation
+
 Since 2006, the European Union has banned the use of antibiotics for livestock growth promotion [^"13"], and since 2022, most antibiotic usage for preventive purposes [^"14"].
 
 Consumer pressure, such as through the Consumers Union, for antibiotic-free meat, can create pressure for a ban [^"15"].
@@ -71,13 +69,12 @@ Alternatives to antibiotic use include probiotics [^"16"], prebiotics [^"17"], b
 
 ##### Lead Researchers: jye & Michael Goff - Last Updated 1/24/2024
 
-
 [^"1"]: Morgan ALK, Moran D, Van Boeckel TP. [Taxation of veterinary antibiotics to reduce antimicrobial resistance](https://www.sciencedirect.com/science/article/pii/S2352771423001702). One Health. December 2023.
-[^"2"]: Albert J.  [Strategic dynamics of antibiotic use and the evolution of antibiotic-resistant infections - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0167718721000527). International Journal of Industrial Organization [Internet]. June 2021.
-[^"3"]: Giubilini A.  [Antibiotic resistance as a tragedy of the commons: An ethical argument for a tax on antibiotic use in humans - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6767468/). Bioethics [Internet]. May 2019.
-[^"4"]: Van Boeckel TP, Glennon EE, Chen D, Gilbert M, Robinson TP, Grenfell BT, et al.  [Reducing antimicrobial use in food animals](https://www.science.org/doi/10.1126/science.aao1495). Science [Internet]. September 2017.
-[^"5"]: Vågsholm I, Höjgård S.  [Antimicrobial sensitivity—A natural resource to be protected by a Pigouvian tax?](https://www.sciencedirect.com/science/article/abs/pii/S0167587710001364). Preventive Veterinary Medicine. August 2010.
-[^"6"]: Murray C. J. L., Ikuta K. S., Sharara F., Swetschinski L., Robles Aguilar G., Gray A., et al.  [Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis - The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext). The Lancet [Internet]. February 2022.
+[^"2"]: Albert J. [Strategic dynamics of antibiotic use and the evolution of antibiotic-resistant infections - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0167718721000527). International Journal of Industrial Organization [Internet]. June 2021.
+[^"3"]: Giubilini A. [Antibiotic resistance as a tragedy of the commons: An ethical argument for a tax on antibiotic use in humans - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6767468/). Bioethics [Internet]. May 2019.
+[^"4"]: Van Boeckel TP, Glennon EE, Chen D, Gilbert M, Robinson TP, Grenfell BT, et al. [Reducing antimicrobial use in food animals](https://www.science.org/doi/10.1126/science.aao1495). Science [Internet]. September 2017.
+[^"5"]: Vågsholm I, Höjgård S. [Antimicrobial sensitivity—A natural resource to be protected by a Pigouvian tax?](https://www.sciencedirect.com/science/article/abs/pii/S0167587710001364). Preventive Veterinary Medicine. August 2010.
+[^"6"]: Murray C. J. L., Ikuta K. S., Sharara F., Swetschinski L., Robles Aguilar G., Gray A., et al. [Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis - The Lancet](<https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext>). The Lancet [Internet]. February 2022.
 [^"7"]: National Research Council. ["The use of drugs in food animals: benefits and risks"](https://nap.nationalacademies.org/read/5137/chapter/1). 1999.
 [^"8"]: Food and Agriculture Organization of the United Nations. ["FAOSTAT"](https://www.fao.org/faostat/en/#home). Accessed January 20, 2024.
 [^"9"]: Food and Agriculture Organization of the United Nations. ["Gateway to poultry production and products"](https://www.fao.org/poultry-production-products/production/poultry-species/en/). Accessed January 20, 2024.
@@ -95,12 +92,8 @@ Alternatives to antibiotic use include probiotics [^"16"], prebiotics [^"17"], b
 [^"21"]: Lindmeier, C. ["Stop using antibiotics in healthy animals to prevent the spread of antibiotic resistance"](https://www.who.int/news-room/detail/07-11-2017-stop-using-antibiotics-in-healthy-animals-to-prevent-the-spread-of-antibiotic-resistance). World Health Organization. November 2017.
 [^"22"]: Van Boeckel T.P., Glennon E.E., Chen D., Gilbert M., Robinson T.P., Grenfell B.T., Levin S.A., Bonhoeffer S., Laxminarayan R. ["Reducing antimicrobial use in food animals"](https://www.science.org/doi/10.1126/science.aao1495). Science 357(6358), pp. 1350-1352. September 2017.
 
-
-export default ({ children }) =>
-  <SolutionDropdown
-    problem={problem}
-    solution={solution}
-  >
+export default ({ children }) => (
+  <SolutionDropdown problem={problem} solution={solution}>
     {children}
   </SolutionDropdown>
-
+);

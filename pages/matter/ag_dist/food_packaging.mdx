@@ -1,18 +1,17 @@
-import Article from '/components/Article.js'
+import Article from "/components/Article.js";
 import hierarchy from "../hierarchy.json";
 
 export const site = "matter";
 export const focusAreaUrl = "ag_dist";
 
 import ArticleImage from "/components/ArticleImage.js";
-import FoodWasteSellLooseUS from "/solutions/food-waste-sell-loose-us.mdx"
+import FoodWasteSellLooseUS from "/solutions/food-waste-sell-loose-us.mdx";
 
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
   () => import("../../../components/DynamicSolutionGraphic"),
   { ssr: false }
 );
-
 
 # Food Packaging
 
@@ -25,15 +24,15 @@ As of 2015, 146 million tons of plastics, or 46% of primary nonfiber plastics pr
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"MG July 9, 2024"}
- staticData={[
+  staticData={[
     {
-     name: "Ingredients",
+      name: "Ingredients",
       barlength: 1088.9,
       displayedValue: "1089 gCO2/kg",
       site: "null",
@@ -44,24 +43,24 @@ As of 2015, 146 million tons of plastics, or 46% of primary nonfiber plastics pr
       displayedValue: "425 gCO2/kg",
       site: "null",
     },
-	{
-		name: "Distribution and Retail",
-		barlength: 331.9,
-		displayedValue: "332 gCO2/kg",
-		site: "null",
-	},
-	{
-		name: "Consumer",
-		barlength: 406.9,
-		displayedValue: "407 gCO2/kg",
-		site: "null",
-	},
-	{
-		"name":"End of Life",
-		barlength: 7.5,
-		displayedValue:"8 gCO2/kg",
-		site:"null"
-	}
+    {
+      name: "Distribution and Retail",
+      barlength: 331.9,
+      displayedValue: "332 gCO2/kg",
+      site: "null",
+    },
+    {
+      name: "Consumer",
+      barlength: 406.9,
+      displayedValue: "407 gCO2/kg",
+      site: "null",
+    },
+    {
+      name: "End of Life",
+      barlength: 7.5,
+      displayedValue: "8 gCO2/kg",
+      site: "null",
+    },
   ]}
 />
 
@@ -74,15 +73,15 @@ The same study examines overall impacts.
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"MG July 9, 2024"}
- staticData={[
+  staticData={[
     {
-     name: "Ingredients",
+      name: "Ingredients",
       barlength: 371.4,
       displayedValue: "371 μPt/kg",
       site: "null",
@@ -93,27 +92,29 @@ The same study examines overall impacts.
       displayedValue: "52 μPt/kg",
       site: "null",
     },
-	{
-		name: "Distribution and Retail",
-		barlength: 24.5,
-		displayedValue: "25 μPt/kg",
-		site: "null",
-	},
-	{
-		name: "Consumer",
-		barlength: 33.2,
-		displayedValue: "33 μPt/kg",
-		site: "null",
-	},
-	{
-		"name":"End of Life",
-		barlength: 0,
-		displayedValue:"-1 μPt/kg",
-		site:"null"
-	}
+    {
+      name: "Distribution and Retail",
+      barlength: 24.5,
+      displayedValue: "25 μPt/kg",
+      site: "null",
+    },
+    {
+      name: "Consumer",
+      barlength: 33.2,
+      displayedValue: "33 μPt/kg",
+      site: "null",
+    },
+    {
+      name: "End of Life",
+      barlength: 0,
+      displayedValue: "-1 μPt/kg",
+      site: "null",
+    },
   ]}
 />
-#### Source: Many impacts are aggregated into a single unit, called "points". Negative end-of-life impacts are possible due to resource recovery from recycling. Source: Boone et al. [^1].
+#### Source: Many impacts are aggregated into a single unit, called "points". Negative
+end-of-life impacts are possible due to resource recovery from recycling. Source:
+Boone et al. [^1].
 
 Packaging plays an important role in protecting and prolonging the shelf life of food, thereby reducing [food waste](/matter/ag_dist/food_waste), though this role is not usually well-quantified [^3]. In low-income countries especially, appropriate packaging will reduce food waste at most stages of production [^4]. For example, a benficial lifecycle assessment has been found for anti-microbial coatings for milk containers, with the benefits of shelf life extension and waste reduction outweighing the cost of the coatings themselves [^2].
 
@@ -126,15 +127,15 @@ Due to the environmental impacts of single-use plastics, especially oceanic plas
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={""}
   arrowText2={""}
   arrowText3={""}
   arrowText4={""}
   mastheadText3={"MG July 14, 2024"}
- staticData={[
+  staticData={[
     {
-     name: "Paper",
+      name: "Paper",
       barlength: 3,
       displayedValue: "3",
       site: "null",
@@ -145,18 +146,18 @@ Due to the environmental impacts of single-use plastics, especially oceanic plas
       displayedValue: "4",
       site: "null",
     },
-	{
-		name: "Non-Woven PP Plastic",
-		barlength: 11,
-		displayedValue: "11",
-		site: "null",
-	},
-	{
-		"name":"Cotton",
-		barlength: 131,
-		displayedValue:"131",
-		site:"null"
-	}
+    {
+      name: "Non-Woven PP Plastic",
+      barlength: 11,
+      displayedValue: "11",
+      site: "null",
+    },
+    {
+      name: "Cotton",
+      barlength: 131,
+      displayedValue: "131",
+      site: "null",
+    },
   ]}
 />
 
@@ -170,25 +171,15 @@ A 2014 study in the United States [^7] found that non-woven polypropolene bags s
 
 Reusable grocery bags, particularly when used to transport meat or fresh vegetables, have been observed to carry pathogens and should be washed between uses [^8].
 
-
 [^1]: Boone, L., Préat, N., Nhu, T. T., Fiordelisi, F., Guillard, V., Blanckaert, M., Dewulf, J. ["Environmental performance of plastic food packaging: Life cycle assessment extended with costs on marine ecosystem services"](https://www.sciencedirect.com/science/article/pii/S0048969723034046). Science of The Total Environment **894**: 164781. October 2023.
-
 [^2]: Manfredi, M., Fantin, V., Vignali, G., Gavara, R. ["Environmental assessment of antimicrobial coatings for packaged fresh milk"](https://www.sciencedirect.com/science/article/abs/pii/S0959652615001614). Journal of Cleaner Production **95**, pp. 291-300. May 2015.
-
 [^3]: Wohner, B., Pauer, E., Heinrich, V., Tacker, M. ["Packaging-related food losses and waste: an overview of drivers and issues"](https://www.mdpi.com/2071-1050/11/1/264). Sustainability **11**(1): 264. January 2019.
-
 [^4]: Manalili, N.M., Dorado, M.A., van Otterdijk, R. ["Appropriate Food Packaging Solutions for Developing Countries"](https://www.fao.org/sustainable-food-value-chains/library/details/en/c/266351/). Food and Agriculture Organization of the United Nations: Rome, Italy, 2014.
-
 [^5]: Edwards, C., Fry, J. M. ["Life cycle assessment of supermarket carrier bags: a review of the bags available in 2006"](https://www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006). UK Environment Agency. February 2011.
-
 [^6]: Ministry of Environment and Food in Denmark. ["Life Cycle Assessment of grocery carrier bags"](https://www2.mst.dk/Udgiv/publications/2018/02/978-87-93614-73-4.pdf). February 2018.
-
 [^7]: Kimmel, R. M. ["Life Cycle Assessment of Grocery Bags in Common Use in the United States"](https://tigerprints.clemson.edu/cgi/viewcontent.cgi?article=1006&context=cudp_environment). Clemson University Digital Press. 2014.
-
 [^8]: Barbosa, J., Albano, H., Silva, C.P., Teixeira, P. ["Microbiological contamination of reusable plastic bags for food transportation"](https://www.sciencedirect.com/science/article/abs/pii/S0956713518306418). Food Control **99**, pp. 158-163. May 2019.
-
 [^9]: Geyer, R., Jambeck, J.R., Law, K.L. ["Production, use, and fate of all plastics ever made"](https://www.science.org/doi/10.1126/sciadv.1700782). Science advances **3**(7): e1700782. July 2017.
-
 
 export default ({ children }) => 
   <Article 
@@ -197,4 +188,6 @@ export default ({ children }) =>
     site={site}
   >
     {children}
-  </Article>
+  </Article
+
+>

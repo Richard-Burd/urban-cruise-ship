@@ -1,4 +1,4 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
 export const problem = "Risk of Uncontrolled Warming";
 export const solution = "Biochar for Carbon Sequestration - China";
@@ -20,7 +20,7 @@ We examine biochar for carbon sequestration in China.
   barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
-  chartType={"hide"}
+  chartType={"hideArrow"}
   arrowText1={"2,500 million"}
   arrowText2={"tons CO₂eq"}
   arrowText3={"reduction"}
@@ -43,11 +43,12 @@ We examine biochar for carbon sequestration in China.
       displayedValue: "$225 billion/year",
       site: "null",
     },
-        
-  ]}
-/>
-#### Benefits are derived from the [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) only, without factoring expected benefits to crop yields, reductions in fertilizers, water retention, and other benefits [^"1"] [^"2"].
 
+
+]}
+/>
+
+#### Benefits are derived from the [social carbon cost](https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) only, without factoring expected benefits to crop yields, reductions in fertilizers, water retention, and other benefits [^"1"] [^"2"].
 
 ## Background
 
@@ -59,31 +60,24 @@ Biochar is then applied to the soil and worked into the ground in a process term
 
 Agriculture produces 5 billion metric tons of waste biomass per year, with over 70% from Asia [^"2"]. China expects to produce negative emission technologies (NETs) capable of providing negative emissions of up to 2.91 billion tons of CO<sub>2</sub> per year between 2050 and 2060. Biochar could sustainably provide 920 million tons of CO<sub>2</sub> sequestration annually in China alone [^"1"], with a global potential of 2.5 billion tons per year [^"2"].
 
-
-
 ## Calculations
-Crop yields increase from 8% to 15%, depending on the crop [^"1"]. These increases in crop yield are not included in benefit calculations here. Biochar production costs 30% less than activated carbon--another frequently used soil amendment for absorption and neutralization [^"5"]--and is more economical than many other sequestration technologies [^"2"]. Biochar averages at US$90 per ton of carbon sequestration [^"1"].
 
+Crop yields increase from 8% to 15%, depending on the crop [^"1"]. These increases in crop yield are not included in benefit calculations here. Biochar production costs 30% less than activated carbon--another frequently used soil amendment for absorption and neutralization [^"5"]--and is more economical than many other sequestration technologies [^"2"]. Biochar averages at US$90 per ton of carbon sequestration [^"1"].
 
 ## Implementation
 
 Without regulation, biochar production may result in a net increase of greenhouse gases. Biochar requires energy to create, and where this energy comes from could result in a net increase in CO₂[^"2"].
 
-
 ##### Lead Researcher: jye - Last Updated May 25, 2024
 
-[^"1"]: Deng, X., Teng, F., Chen, M., Du, Z., Wang, B., Li, R., Wang, P. [Exploring negative emission potential of biochar to achieve carbon neutrality goal in China](https://www.nature.com/articles/s41467-024-45314-y). Nature Communications <b>15</b>: 1085. February 2024. 
+[^"1"]: Deng, X., Teng, F., Chen, M., Du, Z., Wang, B., Li, R., Wang, P. [Exploring negative emission potential of biochar to achieve carbon neutrality goal in China](https://www.nature.com/articles/s41467-024-45314-y). Nature Communications <b>15</b>: 1085. February 2024.
 [^"2"]: Kurniawan, T. A., Othman, M. H. D., Liang, X., Goh, H. H., Gikas, P., Chong, K., Chew, K. W. [Challenges and opportunities for biochar to promote circular economy and carbon neutrality](https://doi.org/10.1016/j.jenvman.2023.117429). Journal of Environmental Management <b>332</b>: 117429. April 2023.
 [^"3"]: Lehmann, J., Stephen, J. [Biochar for Environmental Management](https://www.taylorfrancis.com/books/edit/10.4324/9780203762264/biochar-environmental-management-johannes-lehmann-stephen-joseph). Routledge, London, Second Edition. 2015.
-[^"4"]: Lehmann, J., Cowie, A., Masiello, C. A., Kammann, C., Woolf, D., Amonette, J. E., Cayuela, M. L., Camps-Arbestain, M., Whitman, T.  [Biochar in climate change mitigation](https://www.nature.com/articles/s41561-021-00852-8). Nature Geoscience <b>14</b>, pp. 883–892. December 2021.
+[^"4"]: Lehmann, J., Cowie, A., Masiello, C. A., Kammann, C., Woolf, D., Amonette, J. E., Cayuela, M. L., Camps-Arbestain, M., Whitman, T. [Biochar in climate change mitigation](https://www.nature.com/articles/s41561-021-00852-8). Nature Geoscience <b>14</b>, pp. 883–892. December 2021.
 [^"5"]: Golia, E. E., Aslanidis, P. C., Papadimou, S. G., Kantzou, O., Chartodiplomenou, M., Lakiotis, K., Androudi, M., Tsiropoulos, N. G. ["Assessment of remediation of soils, moderately contaminated by potentially toxic metals, using different forms of carbon (charcoal, biochar, activated carbon). Impacts on contamination, metals availability and soil indices"](https://www.sciencedirect.com/science/article/abs/pii/S2352554122001280). Sustainable Chemistry and Pharmacy <b>28</b>: 100724. September 2022.
 
-
-
-export default ({ children }) => 
-  <SolutionDropdown 
-    problem={problem} 
-    solution={solution}
-  >
+export default ({ children }) => (
+  <SolutionDropdown problem={problem} solution={solution}>
     {children}
   </SolutionDropdown>
+);
