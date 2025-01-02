@@ -4,6 +4,12 @@ import hierarchy from "../hierarchy.json";
 export const site = "energy";
 export const focusAreaUrl = "energy_socioeconomics";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import ArticleImage from "/components/ArticleImage.js";
 
 import DoeIncreaseRndSolution from "/solutions/doe-increase-rnd.mdx"
@@ -37,15 +43,130 @@ Our model incorporates an overall rise in electricity demand, as forecast by Ene
 
 
 ## Current Investment
-Research and development is necessary to bring new energy technologies to commercial production, which in turn are necessary for a complete transition away from fossil fuels. Worldwide, corporations spend on energy R&D as follows.
+Research and development is necessary to bring new energy technologies to commercial production, which in turn are necessary for a complete transition away from fossil fuels. Worldwide, corporations invest in energy as follows.
 
-<ArticleImage image={"corporate_rd.svg"} width={750} height={300} />
-#### Worldwide corporate spending on energy research and development in 2018. Source: IEA [^6].
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"World Annual Private Energy Investment"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={"95 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO₂"}
+  arrowText4={"reduced"}
+  mastheadToggle={""}
+  mastheadText3={"MG, Jan. 2, 2025"}
+  staticData={[
+    {
+      name: "Automotive",
+      barlength: 37,
+      displayedValue: "$37 billion",
+      site: "null",
+    },
+    {
+      name: "Oil and Gas",
+      barlength: 18.9,
+      displayedValue: "$18.9 billion",
+      site: "null",
+    },
+    {
+      name: "Thermal Power",
+      barlength: 6.9,
+      displayedValue: "$6.9 billion",
+      site: "null",
+    },
+    {
+      name: "Renewables",
+      barlength: 6.3,
+      displayedValue: "$6.3 billion",
+      site: "null",
+    },
+    {
+      name: "Nuclear",
+      barlength: 1.2,
+      displayedValue: "$1.2 billion",
+      site: "null",
+    },
+    {
+      name: "Other",
+      barlength: 5.4,
+      displayedValue: "$5.4 billion",
+      site: "null",
+    },
+  ]}
+/>
+#### Worldwide private sector energy investment in 2019. Figures are dominated by capital expenditures rather than research and development. Source: International Energy Agency [^18].
+
+Researchers from McKinsey & Company [^15] have found that as of 2019, the energy industry invested 3% of its pretax earnings on research and development, a lower rate than most industries. Businesses in OECD countries account for over two-thirds of total R&D spending, a portion that has been increasing since the 1990s [^16].
 
 There is social benefit to research and development; when one company develops a new product, it does not capture all the benefits as the product spreads to other companies. Thus, even in the presence of an economy-wide carbon price, there is justification for governments to invest in R&D [^9]. Current public investment is as follows.
 
-<ArticleImage image={"public_rd.svg"} width={800} height={430} />
-#### Government investment by International Energy Agency member countries in 2018. Source: IEA [^5]. IEA member countries are responsible for about three quarters of all worldwide public energy R&D spending [^6]. Spending includes direct expenditures as well as subsidies for private R&D.
+[//]: # (Original source denominates spending in Euros. Using a conversion of X1.10 to USD)
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Annual Public Energy R&D Spending - IEA Countries"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={"95 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO₂"}
+  arrowText4={"reduced"}
+  mastheadToggle={""}
+  mastheadText3={"MG, Jan. 2, 2025"}
+  staticData={[
+    {
+      name: "Energy Efficiency",
+      barlength: 6222.81,
+      displayedValue: "$6222 million",
+      site: "null",
+    },
+    {
+      name: "Fission and Fusion",
+      barlength: 5973.55,
+      displayedValue: "$5974 million",
+      site: "null",
+    },
+    {
+      name: "Crosscutting",
+      barlength: 4219.05,
+      displayedValue: "$4219 million",
+      site: "null",
+    },
+    {
+      name: "Renewables",
+      barlength: 3379.2,
+      displayedValue: "$3379 million",
+      site: "null",
+    },
+    {
+      name: "Hydrogen, Fuel Cells",
+      barlength: 2608.09,
+      displayedValue: "$2686 million",
+      site: "null",
+    },
+    {
+      name: "Other Power, Storage",
+      barlength: 2046.88,
+      displayedValue: "$2047 million",
+      site: "null",
+    },
+    {
+      name: "Fossil Fuels",
+      barlength: 1655.39,
+      displayedValue: "$1655 million",
+      site: "null",
+    },
+    {
+      name: "Unallocated",
+      barlength: 791.78,
+      displayedValue: "$792 million",
+      site: "null",
+    },
+  ]}
+/>
+#### Data on public energy R&D expenditures in 2023 from International Energy Agency member countries. IEA member countries comprise approximately three quarters of world total energy spending. Figures include direct spending and subsidies for private R&D. Source: IEA [^17].
 
 ## Value of R&D
 Evidence suggests that research and development carries a large social benefit.
@@ -106,6 +227,14 @@ Despite the apparent benefits of public research investment, there is a risk of 
 [^13]: Marino, M., Lhuillery, S., Parrotta, P., Sala, D. ["Additionality or crowding-out? An overall evaluation of public R&D subsidy on private R&D expenditure"](https://doi.org/10.1016/j.respol.2016.04.009). Research Policy **45**(9), pp. 1715-1730. November 2016.
 
 [^14]: Aschauer, D.A. ["Does public capital crowd out private capital?"](https://doi.org/10.1016/0304-3932(89)90002-0). Journal of monetary economics **24**(2), pp. 171-188. September 1989.
+
+[^15]: Brennan, T., Ernst, P., Katz, J., Roth, E. ["Building an R&D strategy for modern times"](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/building-an-r-and-d-strategy-for-modern-times). McKinsey & Company. November 2020.
+
+[^16]: McGee, J. ["Research and Development Expensing: Impacts of Recent Changes on Energy Innovation"](https://bipartisanpolicy.org/blog/research-and-development-expensing-impacts-of-recent-changes-on-energy-innovation/). Bipartisan Policy Center. November 2023.
+
+[^17]: International Energy Agency. ["Energy Technology RD&D Budgets Data Explorer"](https://www.iea.org/data-and-statistics/data-tools/energy-technology-rdd-budgets-data-explorer). Updated October 2024.
+
+[^18]: International Energy Agency. ["R&D and technology innovation"](https://www.iea.org/reports/world-energy-investment-2020/rd-and-technology-innovation). World Energy Investment. 2020.
 
 export default ({ children }) => 
   <Article 
