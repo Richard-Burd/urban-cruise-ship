@@ -123,12 +123,12 @@ const Accomplishments = () => {
           extensively previously by numerous other organizations.
         </div>
         <div className="pb-6" id="metrics">
-          <b>2021-Present:</b>&nbsp;As of November 13, 2024, 118 of our over-220
+          <b>2021-Present:</b>&nbsp;As of January 4, 2025, 119 of our over-230
           solutions contain at-least-mostly-full sets of estimates.&nbsp; The
-          combined totals are $8.24 trillion U.S. dollars per year in costs,
-          $16.3 trillion U.S. dollars per year in benefits, 45.94 billion tons
+          combined totals are $8.25 trillion U.S. dollars per year in costs,
+          $16.3 trillion U.S. dollars per year in benefits, 45.93 billion tons
           of carbon dioxide-equivalents per year of greenhouse gas reduction,
-          and 82 million square kilometers of habitat preserved. For context, World annual GDP is roughly $100 trillion U.S. dollars per year, humans are likely currently emitting in the vicinity of 55 billion tons of carbon dioxide equivalents per year, and the entire earth&apos;s surface area is slightly more than 510 million square kilometers.
+          and 81 million square kilometers of habitat preserved. For context, World annual GDP is roughly $100 trillion U.S. dollars per year, humans are likely currently emitting in the vicinity of 55 billion tons of carbon dioxide equivalents per year, and the entire earth&apos;s surface area is slightly more than 510 million square kilometers.
         </div>
         <div className="pb-6">
           <b>2020-Present:</b>&nbsp;Created and developed&nbsp;
