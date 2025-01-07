@@ -136,6 +136,42 @@ This process will be discussed in more detail in the sections detailing the site
 
 ...the `<ArticleImage />` component will look for the [`zero-waste.svg`](https://github.com/Richard-Burd/ucs-images/blob/master/zero_waste.svg) image that is located [in this repository](https://github.com/Richard-Burd/ucs-images/) and display it accordingly.
 
+### Dynamic Solution Graphic Component
+
+This component is located here: `components/DynamicSolutionGraphic.js` and is used to auto-generate a bar chart graphic. It can display as many bars as you'd like it to and for solutions, it can also display the up and down arrows holding the CO2e values for each solution. The code implementation for the graphic in [this](https://www.urbancruiseship.org/energy/energy_socioeconomics/rd#the-department-of-energy-should-increase-energy-r-d-u-s) solution looks like this:
+
+```javascript
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Department of Energy R&D"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"411 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO₂"}
+  arrowText4={"reduced/yr"}
+  mastheadToggle={""}
+  mastheadText3={"MG, Mar. 6, 2024"}
+  staticData={[
+    {
+      name: "Cost",
+      barlength: 15,
+      displayedValue: "$15 billion/yr",
+      site: "null",
+    },
+    {
+      name: "Benefit",
+      barlength: 408.8142754628615,
+      displayedValue: "$253 billion/yr",
+      site: "null",
+    },
+  ]}
+/>
+```
+
+... left off here ... say s.thing about `chartType={"hideArrow"}` & `chartType={""}`
+
 <br></br> <br></br> <br></br>
 
 ---
@@ -615,6 +651,8 @@ To create a new solution, we would create a new MDX file in the `/solutions` dir
 ..............etc...............
 ```
 
+NOTE: in VSCode, this can be done by right-clicking on the `solutions` directory and selecting `New File` from the dropdown menu. You can then name the file something like `lobster_solution.mdx` and hit `Enter` to create the file.
+
 Our solution will have the following body content at `./solutions/lobster_solution.mdx` :
 
 ```jsx
@@ -664,6 +702,8 @@ Images in solutions are wrapped in this `<SolutionImages />` component as shown 
   desktopHeight={320}
 />
 ```
+
+NOTE: This `<SolutionImages />` component is for special visualizations and is no longer used for the standard cost/benefit graphic featuring the up & down arrows detailing environmental tradeoffs. For that we use the Dynamic Solution Graphic Component (`<DynamicSolutionGraphic.js />`) discussed above.
 
 We provide this component with both a desktop and a mobile version for these images. Since mobile images can be read on desktop (while desktop images are hard to read on mobile) we have the option to only pass in the mobile version like this:
 
