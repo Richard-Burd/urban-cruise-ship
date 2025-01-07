@@ -170,7 +170,27 @@ This component is located here: `components/DynamicSolutionGraphic.js` and is us
 />
 ```
 
-... left off here ... say s.thing about `chartType={"hideArrow"}` & `chartType={""}`
+There are two bars, each one has an object in the `staticData{[]}` array like this:
+
+```javascript
+{
+  name: "Cost",
+  barlength: 15,
+  displayedValue: "$15 billion/yr",
+  site: "null",
+}
+```
+
+...that contains all necessary values. Here are some other prop values with explanations of what they do:
+
+- `chartType={"downArrow"}`: displays the arrow in the graphic just like the default `chartType={""}`.
+- `chartType={"hideArrow"}`: hides the arrow in the graphic.
+- `barChartTitle`: displays a larger font for the title.
+- `barChartTitle2`: displays a smaller font for the title.
+- `mastheadToggle={""}`: displays the logo (by default).
+- `mastheadToggle={"hide"}`: hides the logo.
+- `mastheadText3={"MG, Mar. 6, 2024"}`: displays the author (MG) & date of the article.
+- `arrowText1={"411 million"}`: displays the first line of arrow text as `411 million`.
 
 <br></br> <br></br> <br></br>
 
