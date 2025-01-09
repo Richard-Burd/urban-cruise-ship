@@ -1,0 +1,42 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+
+export const problem = "Product Lifespan";
+export const solution = "Repair Cafes and Workshops";
+
+## Description
+We propose a multi-faceted initiative to support the growth and expansion of repair cafes and workshops.
+
+## Background
+Repair cafes and workshops are community spaces where individuals can bring broken or damaged items to be repaired by skilled workers or with the guidance of experts. These spaces focus on repairing a wide variety of items, including electronics, furniture, clothing, and appliances. By extending the lifespan of products, repair cafes and workshops help reduce waste, decrease resource consumption, and promote a culture of sustainability and reuse[^”1”].
+
+Despite their benefits, repair cafes and workshops have struggled to expand due to a limited awareness of their existence, lack of funding a resources, lack of skilled labor, and the cultural norm of planned obsolescence in manufacturing that discourages repair and fosters a preference for new items.
+We propose a comprehensive plan to expand on repair cafes and workshops that includes the following:
+
+1.	Public Awareness Campaign: A nationwide campaign to educate people about the benefits of repairing items and using repair cafes. This could include advertisements, social media outreach, and partnerships with schools, community centers, and sustainability groups.  
+2.	Skills Training Programs: Partner with technical schools and vocational programs to train individuals in repair skills.  
+3.	Grants and Incentives: Provide financial support for new and existing repair cafes, including grants for tools, materials, and operational costs.  
+4.	Repair Regulation: Promoting regulation that supports manufacturing with repair and longevity in mind.  
+5.	Mobile Repair Units: Deploy mobile repair cafes to reach underserved and rural areas.
+
+## Calculations
+Costs would include digital and media ads as well as community events and workshops for a public awareness campaign. Training individuals in repair skills along with ongoing training programs, facilities, parts, and mobile repair units would also come with costs.
+
+Benefits would come from a reduction in waste, reduction in items produced, and a reduction in emissions from less items being produced.
+
+## Implementation
+If manufactures are regulated or incentivized to produce products with repair in mind, those manufacturers could be directly involved in programs to train individuals to fix their products and may even provide spare parts to repair cafes and workshops.
+
+Funding may be provided in part by grants such as the [EPA Solid Waste Infrastructure for Recycling (SWIFR) Grant Program](https://www.epa.gov/infrastructure/solid-waste-infrastructure-recycling-grant-program).
+
+##### Lead researcher: Lee Nelson - Last updated: January 9, 2025
+
+[^”1”]: Moalem, R.M. and Mosgaard, A. ["A Critical Review of the Role of Repair Cafés in a Sustainable Circular Transition"]( https://doi.org/10.3390/su132212351) Sustainability, 2021
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
