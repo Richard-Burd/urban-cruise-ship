@@ -1,0 +1,40 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+
+export const problem = "Environmental Impacts of Consumption";
+export const solution = "Lending Libraries - U.S.";
+
+## Description
+We propose a multi-faceted initiative to support the growth and expansion of lending libraries.
+
+
+## Background
+Lending libraries, traditionally used to share books, can extend to a wide array of items, including tools, electronics, recreational equipment, and more[^”1”]. By providing temporary access to items, lending libraries reduce the need for individual ownership, thereby lowering overall consumption and production demands. This model supports the principles of a circular economy, minimizes waste, and encourages sharing over ownership.
+
+Despite their benefits, lending libraries have faced challenges in scaling up. Those challenges include a lack of public awareness, funding constraints, logistical challenges, and cultural preferences. We propose a multi-faceted initiative to address these challenges which includes the following:
+
+1.	Public Awareness Campaign: A nationwide campaign to educate communities about the economic and environmental benefits of lending libraries. This could include social media outreach, partnerships with influencers, and educational programs in schools and community centers.  
+2.	Grants and Subsidies: Financial support for new and existing lending libraries to expand their inventory and infrastructure.  
+3.	Partnerships: Collaborations with local governments, businesses, and nonprofits to provide space, funding, and items for lending.  
+4.	Technological Integration: Development of user-friendly apps and platforms to streamline item reservations, returns, and inventory management.
+
+
+## Calculations
+Costs would include new libraries or expansion of existing libraries, including operational costs and inventory expansion. An ongoing public awareness campaign would have costs of social media and digital ads as well as educational workshops and events.
+
+Benefits would include the reduction of items being produced due to a reduction in demand, including a reduction in emissions, and a reduction in waste as items are fixed, reused, donated, or upcycled as part of the lending libraries.
+
+## Implementation
+Funding could be provided for by government grants promoting sustainability initiatives such as [Environmental Education Grants](https://www.epa.gov/education/grants) from the EPA or [Community Development Block Grants]( https://www.hudexchange.info/programs/cdbg/) from the U.S. Department of Housing and Urban Development. Other funding sources might include crowdfunding campaigns and donations from local businesses.
+
+##### Lead researcher: Lee Nelson - Last updated: January 9, 2025
+
+[^”1”]: Söderholm, J. ["Borrowing and lending tools : The materiality of x-lending libraries"](https://urn.kb.se/resolve?urn=urn:nbn:se:hb:diva-13871) Högskolan i Borås, 2018
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
