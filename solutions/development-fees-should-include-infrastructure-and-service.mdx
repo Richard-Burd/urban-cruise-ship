@@ -1,19 +1,37 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Financial Cost of Urban Sprawl";
-export const solution = "Inclusive Development Fees";
+export const solution = "Inclusive Development Fees - U.S.";
 
 ## Description
 We propose that new development fees imposed by cities include the marginal cost of providing infrastructure and services.
 
 ## Background
+Development fees in the United States are typically levied on new construction projects to cover the costs of infrastructure and public services required for that development. These fees often include impact fees, permitting fees, and utility connection charges. However, the current fee structures are often uniform, failing to account for differences in density, land use, or the actual costs incurred by municipalities to serve specific developments. As a result, single-family housing developments may pay fees disproportionate to their impact on public resources, while higher-density developments, which are generally more cost-efficient to serve, may be overburdened. Higher fees for high-density or mixed-use developments can disincentivize the very types of construction that align with sustainability goals. Without accurate cost recovery, cities may face budget shortfalls, leading to deferred infrastructure maintenance or reduced public services.
+
 We propose a comprehensive approach to the calculation of development fees. This would include differential fees based on density, charging more per unit for a single family buildings and less for multifamily buildings[^”1”], [^”2”]. Charging by area rather than by facility for commercial office, and industrial buildings[^”1”], [^”2”]. In addition to this strategy, cities should estimate the marginal hook-up and annual costs of providing a proposed development electrical, sewer, garbage, police, fire, education, and other infrastructure and services and set fees equal to the marginal cost.
 
-##### Lead researcher: Lee Nelson - Last updated: 12/4/2023
+This new structure would promote equity by ensuring fees align with the actual cost of serving developments. It would also encourage high-density, sustainable urban development and improve municipal financial health by recovering true service costs.
 
-[^”1”]: Willdan Financial Services ["City of Cudahy Development Impact Fee Study"](https://www.cityofcudahy.com/DocumentCenter/View/774/Development-Impact-Fees) April 2021
+## Calculations
+Detailed studies would need to be conducted to calculate marginal costs of services and infrastructure for different development types. Zoning and permitting software would need to be revised. Stakeholders, developers, and residents would need to be notified of the new fee structure. 
+
+The benefits include increased revenue for cities and cost saving by eliminating cross-subsidies for inefficient developments. Higher-density developments can reduce infrastructure sprawl which reduces long term maintenance costs[^”3”].
+
+
+## Implementation
+Municipal budgets can be used to cover the initial and ongoing costs and to adopt and enforce the new fee structure. Addition funding if needed could be provided by federal grants such as the [Better Utilizing Investments to Leverage Development (BUILD) Transportation Grants Program](https://www.transit.dot.gov/funding/grants/better-utilizing-investments-leverage-development-build-transportation-grants-program).
+
+Developers and certain resident groups may oppose this change if it increases their fees and there may be general pushback due to the complexity of the new structure.
+
+##### Lead researcher: Lee Nelson - Last updated: January 10, 2025
+
+[^”1”]: Willdan Financial Services ["City of Cudahy Development Impact Fee Study"](https://www.cityofcudahy.com/DocumentCenter/View/774/Development-Impact-Fees) April 2021 
 
 [^”2”]: City of Sunnyvale ["Development Impact Fees"](https://www.sunnyvale.ca.gov/home/showpublisheddocument/1632/637820855201870000) August 2022 
+
+[^”3”]: Ford, J. ["Smart Growth &  Conventional Suburban Development"](https://19january2017snapshot.epa.gov/sites/production/files/2014-07/documents/mbd-epa-infrastructure.pdf) EPA, January 2010
+
 
 
 export default ({ children }) => 
