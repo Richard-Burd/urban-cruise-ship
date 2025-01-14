@@ -1,0 +1,82 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+
+export const problem = "Pollution from Fireworks";
+export const solution = "Alternative Celebratory Displays";
+
+## Description
+We propose doing research to better quantify the damages of fireworks displays and to transition to alternative celebratory displays.
+
+## Background
+Fireworks have long been a popular means of celebration, but they pose significant societal and environmental drawbacks:  
+    1.	Fire Hazards: Fireworks are a leading cause of accidental fires, especially during dry seasons, leading to property damage, loss of natural habitats, and sometimes human fatalities[^"1"].  
+    2.	Environmental Damage: Fireworks release harmful pollutants, including heavy metals and particulate matter, into the air and water, contributing to air and water quality degradation[^"2"].  
+    3.	Health Impacts: The noise and chemical emissions from fireworks exacerbate respiratory issues, disrupt sleep, and contribute to stress-related conditions[^"2"],[^"3"].  
+    4.	Animal Welfare: The loud noises cause anxiety and distress to wildlife and pets, sometimes resulting in injuries or death from panic-driven behaviors[^"4"],[^"5"].  
+    5.	Human Well-being: Fireworks can trigger PTSD in veterans and others sensitive to loud noises, negatively affecting mental health[^"6"].
+
+Alternatives to Traditional Fireworks
+    1.	Drone Light Shows[^"7"]  
+        o	Benefits:  
+        Precise, customizable displays with minimal noise.  
+        No chemical emissions or debris left behind.  
+        Can integrate artistic and cultural themes using advanced programming.  
+        o	Drawbacks:  
+        High initial investment in equipment and programming.  
+        Requires skilled operators and significant planning.
+    2.	Laser Light Displays[^"8"]  
+        o	Benefits:  
+        Vibrant, dynamic visuals with no noise pollution.  
+        Can be synchronized with music for enhanced experiences.  
+        Energy-efficient when using modern laser technology.  
+        o	Drawbacks:  
+        May cause light pollution in sensitive areas.  
+        Potentially expensive setup and maintenance.
+    3.	Projection Mapping[^"9"]  
+        o	Benefits:  
+        Can transform buildings or landscapes into dynamic visual displays.  
+        Highly customizable and suitable for storytelling.  
+        Zero physical debris.  
+        o	Drawbacks:  
+        Requires advanced technology and expertise.  
+        Limited applicability to open spaces without suitable projection surfaces.
+
+
+## Calculations
+Fireworks started an estimated 31,302 fires in 2022, including 3,504 structure fires, 887 vehicle fires, 26,492 outside fires, and 418 unclassified fires[^"1"]. These fires caused an estimated six civilian deaths, 44 civilian injuries and $109M in direct property damage[^"1"].
+
+Research will need to be done to better quantify the environmental, health, and animal welfare damages from fireworks, this will help us to fully quantify the benefits of switching to alternative celebratory displays.
+
+All alternative options will require costs for equipment, set up, maintenance, and operators.
+
+
+## Implementation
+Local and national governments can help by passing regulations that phase out traditional fireworks and promotes alternatives. Drone and laser technology manufacturers can partner with event organizers to rent their equipment and operators for a stable long-term solution.
+
+##### Lead researcher: Lee Nelson - Last updated: January 14, 2025
+
+[^"1"]: Smith, B. and Pledger, D ["2022 Fireworks Annual Report"](https://www.cpsc.gov/s3fs-public/2022-Fireworks-Annual-Report.pdf) U.S. Consumer Product Safety Commission, June 2023
+
+[^"2"]: Hichey, C. et al. ["Toxicity of particles emitted by fireworks"]( https://doi.org/10.1186/s12989-020-00360-4) Particle and Fibre Toxicology, July 2020
+
+[^"3"]: Editorial Staff ["Fireworks and Their Impact on Health"]( https://stmlearning.com/news/all-blog-posts/fireworks-and-their-impact-on-health/) STM Learning, Accessed January 2025
+
+[^"4"]: The Humane Society ["Fireworks: An explosion of fear for animals"](https://www.humanesociety.org/resources/fireworks-explosion-fear-animals) The Humane Society, Accessed January 2025
+
+[^"5"]: Bendoris, M. ["Expert calls for fireworks crackdown after baby red panda spooked to death"](https://www.thescottishsun.co.uk/news/13867954/expert-calls-fireworks-crackdown-baby-red-panda-spooked-death/) The Scottish Sun, November 2024
+
+[^"6"]: PTSD: National Center for PTSD ["Trauma Reminders: Fireworks"]( https://www.ptsd.va.gov/understand/what/fireworks_ptsd.asp) U.S. Department of Veteran Affairs, Accessed January 2025
+
+[^"7"]: Ambiq Editorial Team ["A Closer Look at Drone Light Shows"](https://ambiq.com/blog/a-closer-look-at-drone-light-shows/) Ambiq, December 2022
+
+[^"8"]: Wikipedia ["Laser lighting display"](https://en.wikipedia.org/wiki/Laser_lighting_display) Wikipedia, Accessed January 2025
+
+[^"9"]: Ascend ["Projection Mapping Series"](https://ascendstudios.com/pros-cons-of-projection-mapping/) Ascend, July 2018
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
