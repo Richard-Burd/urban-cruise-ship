@@ -4,6 +4,12 @@ import hierarchy from "../hierarchy.json";
 export const site = "energy";
 export const focusAreaUrl = "energy_socioeconomics";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import ArticleImage from "/components/ArticleImage.js";
 
 import CarbonPricingSolution from "/solutions/carbon-pricing.mdx";
@@ -22,11 +28,17 @@ Greenhouse gas emissions, primarily from energy, have harmful impacts on the fut
 
 Major damages in climate economic modeling include rising sea level, severe weather, wider range of tropical disease, direct impact of heat, and increased cooling costs. Models generally take into account the benefits of lower heating costs and CO<sub>2</sub> fertilization of crops [^7]. Most countries will be harmed by climate change, with India hit particularly hard, though Russia, Canada, and Scandinavian countries could benefit [^25].
 
-Throughout much of Urban Cruise Ship, we have used a social cost of carbon of $50/ton CO<sub>2</sub>e, which translates to 45 ¢/gallon for gasoline [^31].
+Throughout much of Urban Cruise Ship, we have used a social cost of carbon of $50/ton CO<sub>2</sub>e, which translates to 45 ¢/gallon for gasoline [^31]. More recent estimates suggest that a higher price may be appropriate. Based on a weighted median of nearly 6,000 estimates of the social costs of carbon collected by Richard Tol [^37], with more recent estimates given higher weights, we estimate that a cost of $141.40 per ton (2024 dollars) is appropriate. We have used this figure in more recent work.
 
-More recent estimates suggest that a higher price may be appropriate. Based on a weighted median of nearly 6,000 estimates of the social costs of carbon collected by Richard Tol [^37], with more recent estimates given higher weights, we estimate that a cost of $141.40 per ton (2024 dollars) is appropriate. We have used this figure in more recent work.
+## Carbon Pricing
+
+Döbbeling-Hildebrandt et al. (2024) [^27] perform a meta-review on carbon pricing policies and found that the ones that had been implemented, despite low prices, had reduced emissions by 4% to 15% after correcting for publication bias. Gugler, Haxhimusa, and Liebensteiner [^41] find that in addressing greenhouse gas emissions in the power sector, Britain's carbon tax was far more effective than Germany's subsidizing of solar and wind. Boyce (2018) [^40] finds that carbon pricing is effective, but there is a risk of regressive distributional impacts. This problem can be mitigated with carbon dividends to the general public. However, the meta-review of Green (2021) [^42] finds a modest role for the effect of carbon pricing.
+
+Estimating the degree to which carbon pricing reduces emissions is difficult. For Resources for the Future, Rafaty, Dolphin, and Pretis (2021) [^43] find that the introduction of a carbon price, at any level, reduces emissions growth by 1-2% per year, while every dollar of the level of the price reduces emissions growth by 0.03% per year. They conclude that a carbon price is an important solution to reducing emissions but not sufficient on its own. For the OECD, D’Arcangelo et al. (2022) [^44] find that a 10 Euro ($11) carbon price results in a 3.7% reduction in fossil fuel emissions.
 
 ## Carbon Pricing Policies
+The World Bank finds that, as of 2023, there were 75 carbon pricing policies in effect worldwide at national and subnational levels [^38]. Of these, 39 were carbon taxes and 36 were emission trading schemes, both of which were in many cases accompanied by carbon offsets. As of April 2024, pricing policies covered 24% of world greenhouse gas emissions, raising an annualized $104 billion of revenue. In 2024 dollars, a price of $63-127 per ton was identified as necessary to meet the Paris Agreement's goal of limiting global warming temperature rise to 2°C and a price of $226-385/ton was identified as necessary to meet the 1.5°C temperature rise goal. Of 75 carbon pricing mechanisms, only 7, covering less than 1% of world emissions, had a price of at least $63/ton as of 2023.
+
 A carbon price typically imposes near-term economic costs with long-term climate benefits and more immediate health benefits by reducing other forms of pollution. Recent modeling has found the following costs, climate benefits, and health benefits from recent carbon pricing proposals in the United States Congress.
 
 <ArticleImage image={"carbon_plan.svg"} width={950} height={500} />
@@ -35,17 +47,106 @@ A carbon price typically imposes near-term economic costs with long-term climate
 <CarbonPricingSolution />
 
 ## Fossil Fuel Subsidies
-The International Monetary Fund has released several reports detailed energy subsidies and unpriced externalities. The 2019 values are as follows.
+The International Monetary Fund has released several reports detailing direct energy subsidies and unpriced externalities, both of which they consider to be "subsidies". The 2023 values are as follows [^46].
 
-<ArticleImage image={"energy_subsidies.svg"} width={600} height={400} />
-#### Energy subsidies and unpriced externalities, as estimated by the IMF [^4].
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Subsidies and Unpriced Externalities by Fuel"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={"95 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO₂"}
+  arrowText4={"reduced"}
+  mastheadToggle={""}
+  mastheadText3={"MG, Jan. 16, 2025"}
+  staticData={[
+    {
+      name: "Petroleum",
+      barlength: 3321,
+      displayedValue: "$3.3 trillion",
+      site: "null",
+    },
+    {
+      name: "Coal",
+      barlength: 2110,
+      displayedValue: "$2.1 trillion",
+      site: "null",
+    },
+    {
+      name: "Natural Gas",
+      barlength: 1284,
+      displayedValue: "$1.2 trillion",
+      site: "null",
+    },
+    {
+      name: "Electricity",
+      barlength: 319,
+      displayedValue: "$320 billion",
+      site: "null",
+    },
+  ]}
+/>
 
-Direct subsidies include tax breaks or direct payments, often to consumers. "Other Externalities" include externalities related to traffic, such as congestion. While we believe that such externalities should be internalized, such as through congestion pricing, it is debatable whether they could be termed energy subsidies when they apply regardless of how a car is powered.
+The IMF assesses subsidies and unpriced externalities by type. Unpriced externalities, or implicit subsidies, are assessed by four major categories: local air pollution, climate change, externalities from road use that is enabled by petroleum fuels, and forgone government tax revenues. Explicit subsidies are further divided into subsidies for consumers, such as subsidized gasoline and heating oil, and subsidies for producers. While we believe that road externalities should be internalized, such as through congestion pricing, it is debatable whether they should be termed energy subsidies since they apply regardless of how a car is powered.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Subsidies and Unpriced Externalities by Type"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={"95 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO₂"}
+  arrowText4={"reduced"}
+  mastheadToggle={""}
+  mastheadText3={"MG, Jan. 16, 2025"}
+  staticData={[
+    {
+      name: "Local Air Pollution",
+      barlength: 2200,
+      displayedValue: "$2.2 trillion",
+      site: "null",
+    },
+    {
+      name: "Climate Change",
+      barlength: 2000,
+      displayedValue: "$2.0 trillion",
+      site: "null",
+    },
+    {
+      name: "Road Use",
+      barlength: 1150,
+      displayedValue: "$1.2 trillion",
+      site: "null",
+    },
+    {
+      name: "Forgone Tax Revenue",
+      barlength: 350,
+      displayedValue: "$350 billion",
+      site: "null",
+    },
+    {
+      name: "Consumer Subsidies",
+      barlength: 1276,
+      displayedValue: "$1.3 trillion",
+      site: "null",
+    },
+    {
+      name: "Producer Subsidies",
+      barlength: 52,
+      displayedValue: "$52 billion",
+      site: "null",
+    }
+  ]}
+/>
 
 <RemoveSubsidiesSolution />
 
 ## Clean Energy Subsidies
-In our deployment section, we note that technology deployment has social value via the learning-by-doing effect. We estimate the learning-by-doing value as follows.
+In our deployment section, we note that technology deployment has social value via the [learning-by-doing effect](/energy/energy_socioeconomics/learning). We estimate the learning-by-doing value as follows.
 
 <ArticleImage image={"clean_energy_subsidy.svg"} width={600} height={220} />
 #### Estimated learning-by-doing value for clean energy technologies.
@@ -53,7 +154,7 @@ In our deployment section, we note that technology deployment has social value v
 Not all of the value estimated here is necessarily an appropriate subsidy, as the developer of the energy system will capture some of the learning benefits.
 
 ## Carbon Offsets
-Sometimes it is too expensive or infeasible to reduce onsite emissions, and in that case one may purchase carbon offsets to reduce emissions elsewhere. Such purchases may be done voluntarily or to comply with a cap-and-trade law. As of January-March 2018, the prevailing price for carbon offsets was $3-6 [^15].
+Sometimes it is too expensive or infeasible to reduce onsite emissions, and in that case one may purchase carbon offsets to reduce emissions elsewhere. Such purchases may be done voluntarily or to comply with a cap-and-trade law. Over 2023, the average carbon offset price was $6.53 per ton CO<sub>2</sub>e removed [^44].
 
 Among certified offsets, forestry and land use projects are currently the most popular.
 
@@ -68,7 +169,9 @@ In California, regional averages have been used to estimate sequestration capaci
 
 <MoreStringentMonitoringOfOffsets />
 
-At prices below the social cost of carbon (about $50/ton), an estimated 3-13 billion tons per year of carbon offsets may be available [^28]. This contrasts to world emissions of about 40 billion tons annually.
+At prices below $50/ton, a low estimate of the social cost of carbon, an estimated 3-13 billion tons per year of carbon offsets may be available [^28]. This contrasts to world emissions of about 40 billion tons annually.
+
+Following growing concern about the problems with carbon offsets as described above, the market lost about 60% of its traded value from 2021 to 2023 [^45]. As of 2023, 3.2 billion tons of non-retired CO<sub>2</sub>-equivalent have been issued through voluntary carbon markets, equivalent to about 7% of a single year's worldwide emissions [^45].
 
 ## Corporate and Municipal Clean Energy
 A Renewable Energy Certificate (REC) is similar in concept to a carbon offset, in that one REC represents a megawatt-hour of renewable energy generation. Typically, when corporations such as Google or Apple announce that they run on "100% renewable energy", it means that they purchased enough RECs to cover their full usage portfolio [^20].
@@ -77,7 +180,7 @@ RECs are useful to renewable energy generators in that they represent an additio
 
 <RecsShouldIncludeLoadBalancing />
 
-[^1]: Anderson, C., Field, C., Mach, K. ["Forest offsets partner climate‐change mitigation with conservation"](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/fee.1515). Frontiers in Ecology and the Environment 15(7). September 2017.
+[^1]: Anderson, C., Field, C., Mach, K. ["Forest offsets partner climate‐change mitigation with conservation"](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/fee.1515). Frontiers in Ecology and the Environment **15**(7). September 2017.
 
 [^2]: Calel, R., Colmer, J., Dechezleprêtre, A., Glachant, M. ["Do Carbon Offsets Offset Carbon?"](https://www.cesifo.org/DocDL/cesifo1_wp9368.pdf). CESifo Working Papers. October 2021.
 
@@ -89,7 +192,7 @@ RECs are useful to renewable energy generators in that they represent an additio
 
 [^6]: Deutch, T. ["H.R.763 - Energy Innovation and Carbon Dividend Act of 2019"](https://www.congress.gov/bill/116th-congress/house-bill/763). Congress.gov. January 2019.
 
-[^7]: Diaz, D., Moore, F. ["Quantifying the economic risks of climate change"](https://www.nature.com/articles/nclimate3411). Nature Climate Change 7, pp. 774–782. 2017.
+[^7]: Diaz, D., Moore, F. ["Quantifying the economic risks of climate change"](https://www.nature.com/articles/nclimate3411). Nature Climate Change **7**, pp. 774–782. 2017.
 
 [^8]: Durbin, D. ["Durbin Introduces Bill To Fund A Clean Climate Future"](https://www.durbin.senate.gov/newsroom/press-releases/durbin-introduces-bill-to-fund-a-clean-climate-future). Press Release, Dick Durbin. August 2020.
 
@@ -107,7 +210,7 @@ RECs are useful to renewable energy generators in that they represent an additio
 
 [^15]: Hamrick, K., Gallant, G., Donofrio, S., Thiel, A., Yoshimoto, E. ["Voluntary Carbon Markets Outlooks and Trends: January to March 2018"](https://www.forest-trends.org/publications/voluntary-carbon-markets/). EcosystemMarketplace. Sponsors: 3Degrees, BP Target Neutral, Cool Effect. August 2018.
 
-[^16]: Hänsel, M., Drupp, M., Johansson, D., Nesje, F., Azar, C., Freeman, M., Groom, B., Sterner, T. ["Climate economics support for the UN climate targets"](https://www.nature.com/articles/s41558-020-0833-x). Nature Climate Change 10, pp. 781-789. July 2020.
+[^16]: Hänsel, M., Drupp, M., Johansson, D., Nesje, F., Azar, C., Freeman, M., Groom, B., Sterner, T. ["Climate economics support for the UN climate targets"](https://www.nature.com/articles/s41558-020-0833-x). Nature Climate Change **10**, pp. 781-789. July 2020.
 
 [^17]: Interagency Working Group on Social Cost of Carbon. ["Technical Support Document: Technical Update of the Social Cost of Carbon for Regulatory Impact Analysis"](https://19january2017snapshot.epa.gov/sites/production/files/2016-12/documents/sc_co2_tsd_august_2016.pdf). Under Executive Order 12866, United States Government. August 2016.
 
@@ -117,15 +220,15 @@ RECs are useful to renewable energy generators in that they represent an additio
 
 [^20]: Mathi, S. ["What It Really Means When Google and Apple Say They Run on 100% Renewable Energy"](https://onezero.medium.com/what-it-really-means-when-google-and-apple-say-they-run-on-100-renewable-energy-f6d1719fd865). Medium. April 2020.
 
-[^21]: Moore, F., Diaz, D. ["Temperature impacts on economic growth warrant stringent mitigation policy"](http://www.nature.com/nclimate/journal/v5/n2/full/nclimate2481.html). Nature Climate Change 5, 127-131. 2015.
+[^21]: Moore, F., Diaz, D. ["Temperature impacts on economic growth warrant stringent mitigation policy"](http://www.nature.com/nclimate/journal/v5/n2/full/nclimate2481.html). Nature Climate Change **5**, pp. 127-131. 2015.
 
-[^22]: Nordhaus, W. ["Revisiting the social cost of carbon"](https://www.pnas.org/content/114/7/1518). Proceedings of the National Academy of Sciences of the United States of America 114(7), pp. 1518-1523. January 2017.
+[^22]: Nordhaus, W. ["Revisiting the social cost of carbon"](https://www.pnas.org/content/114/7/1518). Proceedings of the National Academy of Sciences of the United States of America **114**(7), pp. 1518-1523. January 2017.
 
 [^23]: Peach, S. ["'Are carbon offsets a scam?'"](https://yaleclimateconnections.org/2019/05/are-carbon-offsets-a-scam/). Yale Climate Connections. May 2019.
 
 [^24]: Rennert, K., Kingdon, C. ["Social Cost of Carbon 101"](https://www.rff.org/publications/explainers/social-cost-carbon-101/). Resources for the Future. August 2019.
 
-[^25]: Ricke, K., Drouet, L., Caldeira, K., Tavoni, M. ["Country-level social cost of carbon"](https://www.nature.com/articles/s41558-018-0282-y). Nature Climate Change 8, pp. 895-900. 2018.
+[^25]: Ricke, K., Drouet, L., Caldeira, K., Tavoni, M. ["Country-level social cost of carbon"](https://www.nature.com/articles/s41558-018-0282-y). Nature Climate Change **8**, pp. 895-900. 2018.
 
 [^26]: Roberts, D. ["RECs, which put the "green" in green electricity, explained"](https://www.vox.com/2015/11/9/9696820/renewable-energy-certificates). Vox. November 2015.
 
@@ -141,7 +244,7 @@ RECs are useful to renewable energy generators in that they represent an additio
 
 [^32]: Van Hollen, C. ["S.940 - Healthy Climate and Family Security Act of 2019"](https://www.congress.gov/bill/116th-congress/senate-bill/940). Congress.gov. March 2019.
 
-[^33]: Wang, P., Deng, X., Zhou, H., Yu, S. ["Estimates of the social cost of carbon: A review based on meta-analysis"](https://www.sciencedirect.com/science/article/pii/S0959652618334589?via%3Dihub). Journal of Cleaner Production 209, pp. 1494-1507. February 2019.
+[^33]: Wang, P., Deng, X., Zhou, H., Yu, S. ["Estimates of the social cost of carbon: A review based on meta-analysis"](https://www.sciencedirect.com/science/article/pii/S0959652618334589?via%3Dihub). Journal of Cleaner Production **209**, pp. 1494-1507. February 2019.
 
 [^34]: Whitehouse, S. ["S.1128 - American Opportunity Carbon Fee Act of 2019"](https://www.congress.gov/bill/116th-congress/senate-bill/1128). Congress.gov. April 2019.
 
@@ -150,6 +253,24 @@ RECs are useful to renewable energy generators in that they represent an additio
 [^36]: Aldy J. E., Halem Z. [The Evolving Role of Greenhouse Gas Emission Offsets in Combating Climate Change](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4203782). HKS Faculty Research Working Paper Series RWP22-011. August 2022.
 
 [^37]: Tol, R. S. J. ["The Social Cost of Carbon"](https://arxiv.org/abs/2310.12760). ArXiv. October 2023.
+
+[^38]: World Bank. ["State and Trends of Carbon Pricing 2024"](https://openknowledge.worldbank.org/entities/publication/b0d66765-299c-4fb8-921f-61f6bb979087). Washington, DC. 2024.
+
+[^39]: Döbbeling-Hildebrandt, N., Miersch, K., Khanna, T.M., Bachelet, M., Bruns, S.B., Callaghan, M., Edenhofer, O., Flachsland, C., Forster, P.M., Kalkuhl, M., Koch, N. ["Systematic review and meta-analysis of ex-post evaluations on the effectiveness of carbon pricing"](https://doi.org/10.1038/s41467-024-48512-w). Nature Communications **15**(1): 4147. May 2024.
+
+[^40]: Boyce, J.K. ["Carbon pricing: effectiveness and equity"](https://doi.org/10.1016/j.ecolecon.2018.03.030). Ecological Economics **150**, pp. 52-61. August 2018.
+
+[^41]: Gugler, K., Haxhimusa, A., Liebensteiner, M. ["Effectiveness of climate policies: Carbon pricing vs. subsidizing renewables"](https://doi.org/10.1016/j.jeem.2020.102405). Journal of Environmental Economics and Management **106**:102405. March 2021.
+
+[^42]: Green, J. F. ["Does carbon pricing reduce emissions? A review of ex-post analyses"](https://doi.org/10.1088/1748-9326/abdae9). Environmental Research Letters **16**(4): 043004. March 2021.
+
+[^43]: Rafaty, R., Dolphin, G., Pretis, F. ["Carbon pricing and the elasticity of CO2 emissions"](https://www.rff.org/publications/working-papers/carbon-pricing-and-the-elasticity-of-co2-emissions/). Resources for the Future. October 2021.
+
+[^44]: D’Arcangelo, F. M., Pisu, M., Raj, A., van Dender, K. ["Estimating the CO2 emission and revenue effects of carbon pricing"](https://www.oecd.org/en/publications/estimating-the-co2-emission-and-revenue-effects-of-carbon-pricing_39aa16d4-en.html). OECD Working Paper. November 2022.
+
+[^45]: Ecosystem Marketplace. ["2024 State of the Voluntary Carbon Market (SOVCM)"](https://www.ecosystemmarketplace.com/publications/2024-state-of-the-voluntary-carbon-markets-sovcm/). 2024.
+
+[^46]: Black, S., Liu, A., Parry, I., Vernon, A. ["“IMF Fossil Fuel Subsidies Data: 2023 Update"](https://www.imf.org/en/Publications/WP/Issues/2023/08/22/IMF-Fossil-Fuel-Subsidies-Data-2023-Update-537281).  Working paper, IMF, Washington, DC. 2023.
 
 export default ({ children }) => 
   <Article 
