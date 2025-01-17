@@ -1,5 +1,5 @@
 import { getCSSPropertyValue } from "../utils";
-import React, { useLayoutEffect, useState, useEffect } from "react";
+import React, { useLayoutEffect, useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 
@@ -8,7 +8,9 @@ import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 
 //gets the window width of the whole page, which is usually 1024 if on desktop
 const useWindowWidth = () => {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
   useLayoutEffect(() => {
     const updateWidth = () => {
@@ -23,6 +25,7 @@ const useWindowWidth = () => {
 
   return windowWidth;
 };
+
 
 const customLabelRenderer = (props) => {
   const { x, y, width, value, labelText, labelAnchor } = props;
@@ -225,8 +228,9 @@ const DynamicSingleBarChart = ({
   }
 
 
-  const filteredData = data.filter((item) =>
-    scale === "positive" ? item.barlength >= 0 : item.barlength <= 0
+  const filteredData = useMemo(
+    () => data.filter((item) => (scale === "positive" ? item.barlength >= 0 : item.barlength <= 0)),
+    [data, scale]
   );
 
 
