@@ -7,7 +7,6 @@ import Footer from "./Footer";
 const Layout = ({ children }) => {
   return (
     <>
-      {/* https://nextjs.org/docs/messages/no-document-title */}
       <Head>
         <title>Urban Cruise Ship</title>
         <meta
@@ -15,17 +14,21 @@ const Layout = ({ children }) => {
           content="Founded in 2014, Urban Cruise Ship presents environmental solutions"
         />
       </Head>
-      {/* New Wrapper Div to scale everything because John does not have any whitespace on his monitor */}
+      
+      {/* Removed transform scale - rely on container sizing instead */}
       <div
-        className="transform scale-95 mx-auto"
+        className="mx-auto"
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
-          height: "0%",
+          // minHeight: "100vh", // Uncomment if you want the layout to stretch full height
         }}
       >
+        {/* You can add px-4 or margin if you want more side whitespace:
+            e.g., className="sm:max-w-screen-lg lg:max-w-screen-lg mx-auto relative px-4"
+        */}
         <div className="sm:max-w-screen-lg lg:px-0 lg:max-w-screen-lg mx-auto relative">
           <div className="relative pr-2.5 z-10">
             <MobileNavbar />
