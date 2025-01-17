@@ -238,10 +238,10 @@ const DynamicSingleBarChart = ({
     /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
     const windowWidth = useWindowWidth();
     const barChartWidth = 
-      windowWidth >= maxWindowWidth // sets mobile or desktop configuration based on windowwidth
+      windowWidth > maxWindowWidth // sets mobile or desktop configuration based on windowwidth
         ? 900 
         : windowWidth;
-    const barHeight = windowWidth >= maxWindowWidth //sets bar height spacing based on window width
+    const barHeight = windowWidth > maxWindowWidth //sets bar height spacing based on window width
         ? 29 
         : 58;
 const totalChartHeight = filteredData.length * barHeight; //sets total chart height
