@@ -7,7 +7,7 @@ import Image from "next/image";
 
 // mobile responsive code
 
-//gets the window width of the whole page, which is usually 1024 if on desktop
+//gets the window width of the whole page, which is usually 1023 if on desktop
 const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(0);
 
@@ -98,7 +98,7 @@ const CustomYAxisTick = ({
       ? "white"
       : "#1a1a1a";
 
-  const windowWidthThreshold = 1024; // triggers the responsive changeover. use <=
+  const windowWidthThreshold = 1023; // triggers the responsive changeover. use <=
   const windowWidth = useWindowWidth();
   //const fontSize = windowWidth <= 600 ? (20 * windowWidth) / 600 : 20; // change these values to suit your design
 
@@ -135,7 +135,7 @@ const CustomYAxisTick = ({
 };
 
 const DynamicSolutionGraphic = ({
-  maxWindowWidth = 1024, // used to trigger the resize of the chart to mobile friendly
+  maxWindowWidth = 1023, // used to trigger the resize of the chart to mobile friendly
   barChartTitle,
   barChartTitle2,
   scale = "positive",
@@ -225,7 +225,7 @@ const DynamicSolutionGraphic = ({
 
   //determines spacing between bars, which affects row spacing. uses this value to determine the overall vertical.
 
-  /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
+  /* responsive code for resizing NOTE: adjusted so that any window width below 1023 causes the graphic to resize to mobile configuration*/
   const windowWidth = useWindowWidth();
   const barChartWidth =
     windowWidth > maxWindowWidth // sets mobile or desktop configuration based on windowwidth

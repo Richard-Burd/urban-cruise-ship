@@ -6,7 +6,7 @@ import { Bar, LabelList, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 
 // mobile responsive code
 
-//gets the window width of the whole page, which is usually 1024 if on desktop
+//gets the window width of the whole page, which is usually 1025 if on desktop
 const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(0);
 
@@ -100,7 +100,7 @@ const CustomYAxisTick = ({
       ? "white"
       : "#1a1a1a";
 
-  const windowWidthThreshold = 1024; // triggers the responsive changeover. use <=
+  const windowWidthThreshold = 1025; // triggers the responsive changeover. use <=
   const windowWidth = useWindowWidth();
   //const fontSize = windowWidth <= 600 ? (20 * windowWidth) / 600 : 20; // change these values to suit your design
 
@@ -178,7 +178,7 @@ const CustomYAxisTick = ({
 
 
 const DynamicSingleBarChart = ({
-  maxWindowWidth = 1024, // used to trigger the resize of the chart to mobile friendly
+  maxWindowWidth = 1025, // used to trigger the resize of the chart to mobile friendly
 
   barChartTitle2,
   barChartTitle,
@@ -231,7 +231,7 @@ const DynamicSingleBarChart = ({
 
 
 
-    /* responsive code for resizing NOTE: adjusted so that any window width below 1024 causes the graphic to resize to mobile configuration*/
+    /* responsive code for resizing NOTE: adjusted so that any window width below 1025 causes the graphic to resize to mobile configuration*/
     const windowWidth = useWindowWidth();
     const barChartWidth = 
       windowWidth > maxWindowWidth // sets mobile or desktop configuration based on windowwidth
