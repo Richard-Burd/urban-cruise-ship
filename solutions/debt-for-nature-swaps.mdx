@@ -1,0 +1,55 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+export const problem = "Debt Burden Barrier to Sustainability";
+export const solution = "Debt for Nature Investments - World";
+
+## Description
+We promote the practice of debt-for-nature swaps in which a country’s debt is forgiven in exchange for commitments of environmental conservation or beneficial climate initiatives.
+
+
+## Background
+Debt-for-nature swaps (DNS) are financial agreements in which a portion of a country's foreign debt is forgiven in exchange for commitments to environmental conservation or climate initiatives. This mechanism was first introduced in  1984 as a response to the twin challenges of unsustainable debt burdens and environmental degradation[^”1”]. Typically, conservation organizations, financial institutions, or foreign governments purchase or restructure the debt at a discount and then negotiate conservation commitments with the debtor nation.
+
+Several countries have successfully implemented DNS agreements. For example:  
+•	Bolivia (1987): One of the first DNS agreements, facilitated by Conservation International, led to the protection of 1.5 million acres of tropical forest[^”1”],[^”2”], [^”4”].  
+•	Costa Rica (1990s-2000s): Multiple DNS agreements contributed to the expansion of the country's national parks and biodiversity conservation efforts[^”3”] ,[^”4”], [^”7”].  
+•	Madagascar (2008): A swap agreement with the United States helped finance conservation projects that protected unique ecosystems and supported sustainable local economies[^”4”].
+
+Many developing nations face unsustainable debt burdens, limiting their ability to invest in conservation and climate resilience. Biodiversity loss and environmental degradation are accelerating, threatening global ecological balance and economic stability. Debt-for-nature swaps offer a win-win solution: they alleviate national debt while directing funds toward urgently needed environmental initiatives. A further benefit is strengthening international relationships by promoting cooperation between all involved parties.
+
+
+## Calculations
+There are  approximately 50 developing nations that have significant debt burdens and high conservation value[^”5”].
+With past agreements ranging from $10 million to well over $100 million per country[^”1”],[^”2”],[^”3”],[^”4”],[^”6”], we will assume an average investment of $50 million per country. That would equal a $2.5 billion investment.
+The conservation of tropical and other forests would create a substantial carbon sequestration benefit. 
+Countries with protected landscapes have seen annual eco-tourism revenues increase by 20-30% post-DNS agreements[^”7”].
+Mangrove and wetland conservation can provide flood protection and other ecosystem service supports which has valuable benefits[^”8”].
+
+
+## Implementation
+Third party non-governmental organizations such as [The Nature Conservancy]( https://www.nature.org/) would be required to oversee agreements between countries and financial institutions. Some private sector companies may want to be involved for any carbon offset or corporate sustainability programs. Some grants may be available to help funding such as the [Bezos Earth Fund]( https://www.bezosearthfund.org/). Satellite monitoring, third-party audits, and performance funding may need to be used to ensure nations meet their conservation commitments.
+
+##### Lead researcher: Lee Nelson - Last updated: 1/30/2025
+[^”1”]: Thapa, B. [“Debt-for-nature swaps: an overview”]( https://doi.org/10.1080/13504509809469990) International Journal of Sustainable Development & World Ecology, June 2009
+
+[^”2”]: McCoy, M.K. [“How one South American country became a lab for conservation”]( https://www.conservation.org/blog/how-one-south-american-country-became-a-lab-for-conservation) Conservation International, October 2023
+
+[^”3”]: Deacon, R. and Murphy, P. [“The Structure of an Environmental Transaction: The Debt-for-Nature Swap”]( https://doi.org/10.2307/3147074) Land Economics, February 1997
+
+[^”4”]: Reilly, W.K. [“Using international finance to further conservation: the first 15 years of debt-for-nature swaps.”]( https://www.google.com/books/edition/Sovereign_Debt_at_the_Crossroads/HuPwt987R7gC?hl=en&gbpv=1&dq=debt+for+nature+swap+madagascar&pg=PA197&printsec=frontcover) Sovereign debt at the crossroads: challenges and proposals for resolving the third world debt crisis, 2006
+
+[^”5”]: Press Release [“World’s least developed countries spend twice as much servicing debts as they receive in climate finance”]( https://www.iied.org/worlds-least-developed-countries-spend-twice-much-servicing-debts-they-receive-climate-finance) International Institute for Environment and Development, October 2024
+
+[^”6”]: Briceno, J.A. [“The Debt-for-Nature Lifeline”]( https://www.nature.org/en-us/what-we-do/our-insights/perspectives/debt-for-nature-lifeline/) The Nature Conservancy, June 2023
+
+[^”7”]: Dwyer, R. [“Conservation Finance: Costa Rica Costs its Success”]( https://www.euromoney.com/article/b1hhymxdycwtkz/conservation-finance-costa-rica-costs-its-success) Euromoney, October 2019
+
+[^”8”]: Salem, M. and Mercer, D.E. [“The Economic Value of Mangroves: A Meta-Analysis”]( https://doi.org/10.3390/su4030359) Sustainability, January 2012
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
