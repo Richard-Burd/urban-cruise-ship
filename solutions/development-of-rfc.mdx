@@ -1,39 +1,45 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 
-export const problem = "Reliance on Horseshoe Crabs";
-export const solution = "Transition to rFC Testing";
+export const problem = "Horseshoe Crab Blood Harvesting";
+export const solution = "rFC for Endotoxin Testing";
 
 
 ## Description
+We recommend pharmaceutical and medical companies transition to Recombinant factor C (rFC) testing to remove the need for horseshoe crab blood harvesting.
 
-
-We recommend pharmaceutical and medical companies transition to rFC testing to reduce horseshoe crab blood harvesting.
 ## Background
+Horseshoe crab blood is currently harvested for the production of Limulus Amebocyte Lysate (LAL), which is used to test for bacterial endotoxins in medical devices, vaccines, and pharmaceutical products. The process involves capturing and bleeding live horseshoe crabs before releasing them back into the wild.
+The Atlantic horseshoe crab has been identified as a keystone species that has survived an estimated 200 million years. They are an important source of food for shorebirds, sand shrimp, fish, and crabs. They are also important predators for benthic invertebrates, and their shells provide a home for a variety of species[^"1"].
+Horseshoe crab blood possesses a distinctive ability in that it will react visibly to endotoxins. This has created a demand within the medical industry for testing drugs and medical devices for safety. The blood is used with quality assurance testing[^"1"]. Since the blood is a finite biological resource this reliance on it creates supply chain vulnerabilities that could be negated by using a synthetic alternative.
+Obtaining the blood requires harvesting, bleeding, and returning the crabs. Mortality rates after harvesting range from 10 to 30%. It is unknown what the exact leading cause of death is, but the stress from removing crabs from the water may be a cause, as the crab breaths through gills. This and a sudden decrease in blood supply shock their systems[^"1"]. With over 600,000 of these crabs being harvested each year, the effect on their population is significant[^"2"],[^"5"]. The practice also raises ethical concerns regarding animal welfare. In the United States the harvesting of horseshoe crabs is regulated, however other countries are loosely or not regulated at all and do not have reliable harvesting data[^"5"].
+Recombinant factor C (rFC) provides a synthetic alternative to the crab blood[^"4"]. rFC tests are effective, and potentially superior to traditional testing[^"3"]. Using a synthetic alternative would create a more consistent and scalable production, increase reliability and efficiency of endotoxin testing, and lead to cost reductions in the long term.
 
-
-The Atlantic horseshoe crab has been identified as a keystone species that has survived an estimated 200 million years. They are an important source of food for shorebirds, sand shrimp, fish, and crabs. They are important predators for benthic invertebrates, and their shells provide a home for a variety of species[^"1"].
-
-
-Horseshoe crab blood possesses a distinctive ability in that it will react visibly to endotoxins. This has created a demand within the medical industry for testing drugs and medical devices for safety. The blood is used with quality assurance testing[^"1"].
-
-
-Obtaining the blood requires harvesting, bleeding, and returning the crabs. Mortality rates after harvesting range from 10 to 30%. It is unknown what the exact leading cause of death is, but the stress from removing crabs from the water may be a cause, as the crab breaths through gills. This and a sudden decrease in blood supply shock their systems[^"1"]. With 500,000 of these crabs being harvested each year, the effect on their population is significant[^"2"].
-
-
-Recombinant factor C (rFC) provides a synthetic alternative to the crab blood[^"4"]. rFC tests are effective, and potentially superior to traditional testing[^"3"].
-
+## Calculations
+Approximately 50mL of blood is taken from each crab[^"6"], multiplied by the estimated 600,000 crabs harvested annually equals 30 million mL. We assume that an equivalent amount of rFC is needed to meet those annual testing needs, although recent testing and studies suggest that rFC is more efficient and thus may require even less volume[^"7"].
+Existing endotoxin testing protocols using LAL will need to be adapted to using rFC. Pharmaceutical companies and medical device manufacturers would need to invest in these new protocols and laboratories would need regulatory approvals to carry them out. All of this would have associated costs to meet the demand.
+Conservation and preservation of ecosystem services where the crabs were harvested would be the main environmental benefit. Reducing reliance on a finite biological resource would reduce the risk of supply shortages and create long-term cost savings from a stable and scalable synthetic production.
 
 ## Implementation
-
-
-This new method faces challenges within the industry, which has used traditional methods for approximately 40 years. Along with the need to recognize the validity of the tests by all sectors, using new methods would require extensive alteration of current equipment and practices[^"1"].
+This new method faces challenges within the industry, which has used traditional methods for approximately 40 years. Along with the need to recognize the validity of the tests by all sectors, using new methods would require extensive alteration of current equipment and practices[^"1"]. Recently rFC has been approved to the US Pharmacopeia and has begun to see a wider use[^"8"], though it may take some time for full adoption to be mandatory, especially globally.
 
 
 [^"1"]: Krisfalusi-Gannon J, Ali W, Dellinger K, Robertson L, Brady TE, Goddard MKM, et al.  [The Role of Horseshoe Crabs in the Biomedical Industry and Recent Trends Impacting Species Sustainability](https://www.frontiersin.org/articles/10.3389/fmars.2018.00185/full). Frontiers in Marine Science. June 2018.
+
 [^"2"]: Gorman R.  [Atlantic Horseshoe Crabs and Endotoxin Testing: Perspectives on Alternatives, sustainable Methods, and the 3Rs (Replacement, Reduction, and Refinement) - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7612741/). Frontiers in Marine Science. September 2020.
+
 [^"3"]: Bolden J, Knutsen C, Levin J, Milne C, Morris T, Mozier N, et al.  [Currently Available Recombinant Alternatives to Horseshoe Crab Blood Lysates: Are They Comparable for the Detection of Environmental Bacterial Endotoxins? A Review](https://pubmed.ncbi.nlm.nih.gov/32817324/). PDA Journal of Pharmaceutical Science and Technology. August 2020.
+
 [^"4"]: Maloney T, Phelan R, Simmons N. [A synthetic alternative to horseshoe crab blood for endotoxin detection](https://pubmed.ncbi.nlm.nih.gov/30312293/). PLOS Biology [Internet]. October 2018.
+
+[^"5"]: Gauvry, G. [“Current Horseshoe Crab Harvesting Practices Cannot Support Global Demand for TAL/ LAL: The Pharmaceutical and Medical Device Industries’ Role in the Sustainability of Horseshoe Crabs”]( https://doi.org/10.1007/978-3-319-19542-1_27) Changing Global Perspectives on Horseshoe Crab Biology, Conservation and Management, 2015
+
+[^"6"]: Anderson, R. et al. [“Sub-lethal behavioral and physiological effects of the biomedical bleeding process on the American horseshoe crab, Limulus polyphemus”]( https://doi.org/10.1086/BBLv225n3p137) National Library of Medicine, December 2013
+
+[^"7"]: Biomerieux [“Discover the Future of Endotoxin Detection with rFC and USP”]( https://www.biomerieux.com/us/en/education/resource-hub/scientific-library/pharma-microorganisms-library/revolutionize-your-endotoxin-testing/discover-the-future-of-endotoxin-detection.html) Biomerieux, Accessed February 2025
+
+[^"8"]: Fathi, N. [“Expert Committee approves endotoxin testing using non-animal derived reagents”]( https://www.usp.org/news/expert-committee-approves-endotoxin-testing-using-non-animal-derived-reagents) USP Microbiology Expert Committee, July 2024
+
 
 
 export default ({ children }) =>
