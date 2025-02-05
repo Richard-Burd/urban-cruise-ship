@@ -4,42 +4,55 @@ export const problem = "Indoor Air Pollution";
 export const solution = "Indoor Air Pollution Standards";
 
 
-
 ## Description
-
 We recommend the United States, European Union, and United Kingdom adopt indoor building material standards to improve indoor air quality.
 
 ## Background
-
-People are indoors 87% of the time. Indoor Air Quality (IAQ) is thus vital in ensuring better health.[^"1"] Some of the main cause of causes of detrimental air quality are:
-- Construction materials[^"1"]
-- Furniture[^"1"]
-- Paint[^"1"]
-- Ventilation ducts[^"1"]
-- Cleaning products[^"3"]
+Indoor air quality in the U.S., E.U., and U.K. is a growing concern due to volatile organic compounds (VOCs), formaldehyde, and particulate matter released from common building materials. The World Health Organization (WHO) estimates that poor indoor air quality contributes to respiratory diseases, cardiovascular conditions, and cognitive decline[^"7"].
+People are indoors 87% of the time. Indoor Air Quality (IAQ) is thus vital in ensuring better health.[^"1"] Some of the main cause of causes of detrimental air quality are:  
+- Pressed wood products emitting formaldehyde[^"1"],[^"3"]  
+- Paint, adhesives, and finishes emitting VOCs[^"1"]  
+- Ventilation ducts and insulation materials[^"1"]  
+- Cleaning products[^"3"]  
 - Heating and cooking appliances[^"3"]
-- Formaldehyde (derives from construction materials and furniture)[^"3"]
+The chemicals released from these products can cause respiratory issues, neurological effects and carry cancer risks[^"8"]. This is typically combated by higher ventilation or air purification systems[^"3"], but by choosing materials in the home that are less polluting, less ventilation is required.[^"1"]
+Finland has stringent indoor air quality standards that include an emissions classification system, mandatory air quality assessments and encourages the use of natural low-emission materials[^"9"]. In response, companies have developed low-emitting materials, furniture, and HVAC equipment to meet these standards[^"2"]. As a result, Finland has reported reduced cases of indoor air-related illnesses and improved workplace productivity[^"9"].
 
-This is typically combated by higher ventilation or air purification systems[^"3"], but by choosing materials in the home that are less polluting, less ventilation is required.[^"1"]
-
-Finland uses a classification system for building materials to address indoor air quality. In response, companies have developed low-emitting materials, furniture, and HVAC equipment to meet these standards. [^"2"]
+## Calculations
+Government agencies would require funds for monitoring, enforcement, and public outreach.
+Retrofitting production lines for low-emission materials would be a major cost for building industries. 
+Reduced respiratory illnesses would lead to savings in healthcare costs.
+Encouraging investment in low-emission materials could create new market opportunities.
+Better IAQ could lead to a 5-10% productivity increase in workplaces[^"10"].
 
 ## Implementation
-
+In the U.S., the [Environmental Protection Agency (EPA)]( https://www.epa.gov/) and [Department of Housing and Urban Development (HUD)]( https://www.hud.gov/) would need to introduce new regulations under the Clean Air Act or other housing codes.
+In the E.U., the [European Chemicals Agency (ECHA)]( https://echa.europa.eu/) could amend REACH regulations to include stricter indoor material emissions limits.
+In the U.K., the [British Standards Institution (BSI)]( https://www.bsigroup.com/en-US/) could update existing indoor air quality guidelines post-Brexit.
 The EPA could create regulations establishing indoor air regulations that account for indoor contaminant sources. [^"4"] Such regulations could include a classification system for building materials that could affect indoor air quality[^"6"], and craft a classification system similar to what has succeeded in Finland. The implementation could involve private sector partnerships which have attempted to address indoor air pollution with private certifications.[^"5"]
 
-##### Lead researcher: jye - Last updated 5/7/2023
+##### Lead researchers: Lee Nelson and jye - Last updated February 5, 2025
 
+[^"1"]:  [Low Polluting Building Materials and Ventilation for Good Air Quality in Residential Buildings: A Cost–Benefit Study](https://www.mdpi.com/2073-4433/11/1/102).
 
+[^"2"]:  [Classification of Indoor Environment 2018 and Updated Criteria of RTS Environmental Classification](https://iopscience.iop.org/article/10.1088/1755-1315/297/1/012045/pdf).
 
+[^"3"]:  [The Inside Story: A Guide to Indoor Air Quality | CPSC.gov](https://www.cpsc.gov/Safety-Education/Safety-Guides/Home/The-Inside-Story-A-Guide-to-Indoor-Air-Quality).
 
+[^"4"]:  [Indoor Air Quality in Buildings: A Comprehensive Review on the Factors Influencing Air Pollution in Residential and Commercial Structure - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8004912/).
 
-[^"1"]:  [Low Polluting Building Materials and Ventilation for Good Air Quality in Residential Buildings: A Cost–Benefit Study](https://www.mdpi.com/2073-4433/11/1/102). 
-[^"2"]:  [Classification of Indoor Environment 2018 and Updated Criteria of RTS Environmental Classification](https://iopscience.iop.org/article/10.1088/1755-1315/297/1/012045/pdf). 
-[^"3"]:  [The Inside Story: A Guide to Indoor Air Quality | CPSC.gov](https://www.cpsc.gov/Safety-Education/Safety-Guides/Home/The-Inside-Story-A-Guide-to-Indoor-Air-Quality). 
-[^"4"]:  [Indoor Air Quality in Buildings: A Comprehensive Review on the Factors Influencing Air Pollution in Residential and Commercial Structure - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8004912/). 
-[^"5"]:  [US Indoor Air Quality Standards: Guidebook for Green & Healthy Buildings](https://www.buildingsiot.com/indoor-air-quality-standards-bd). 
-[^"6"]:  [Classification of materials as potential sources of indoor air pollution. Final report, March-September 1990](https://www.osti.gov/biblio/6175118). 
+[^"5"]:  [US Indoor Air Quality Standards: Guidebook for Green & Healthy Buildings](https://www.buildingsiot.com/indoor-air-quality-standards-bd).
+
+[^"6"]:  [Classification of materials as potential sources of indoor air pollution. Final report, March-September 1990](https://www.osti.gov/biblio/6175118).
+
+[^"7"]:  WHO [“Air quality, energy and health”]( https://www.who.int/teams/environment-climate-change-and-health/air-quality-energy-and-health/health-impacts) WHO, Accessed February 2025
+
+[^"8"]:  NIH [“Indoor Air Quality”]( https://www.niehs.nih.gov/health/topics/agents/indoor-air) National Institute of Environmental Health Sciences, Accessed February 2025
+
+[^"9"]:  Ahola, M. et al. [“Revised Finnish classification of indoor climate 2018”]( https://doi.org/10.1051/e3sconf/201911102017) Finnish Society of Indoor Air Quality and Climate, FISIAQ, Finland, 2019
+
+[^"10"]:  Wyon, D.P. [“The effects of indoor air quality on performance and productivity”]( https://doi.org/10.1111/j.1600-0668.2004.00278.x) Indoor Air, 2004
+
 
 export default ({ children }) => 
   <SolutionDropdown 
