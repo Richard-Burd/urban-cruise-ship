@@ -3,18 +3,46 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Cost of Dam Removal";
 export const solution = "Dam Decommissioning Fund";
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
-We propose that Congress establish a Dam Decommissioning Fund, to finance dam removal projects where economically and environmentally justified, financed by a construction by a fee on new dam construction. The fee would be equal to an estimated discounted cost of eventually decommissioning the new dam.
+We propose that Congress establish a Dam Decommissioning Fund, to finance dam removal projects where economically and environmentally justified financed by a construction by a fee on new dam construction. The fee would be equal to an estimated discounted cost of eventually decommissioning the new dam.
 
-<SolutionImages 
-  mobileSrc={"dam_decommissioning_fund_mobile.svg"}
-  desktopSrc={"dam_decommissioning_fund.svg"}
-   mobileHeight={318}
-  desktopHeight={206}
+<DynamicSolutionGraphic
+  barChartTitle={"Dam Decommissioning Fund - U.S."}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={"980 million tons"}
+  arrowText2={"CO₂ reduction"}
+  arrowText3={"annually"}
+  arrowText4={""}
+  mastheadText3={"MG Feb. 6, 2025"}
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: 230,
+      displayedValue: "$230 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 114,
+      displayedValue: "$114 million/year",
+      site: "null",
+    },
+  ]}
 />
+
 
 ## Calculations
 
@@ -24,11 +52,11 @@ We estimate the administration cost of the bonding program to be 1% of the (undi
 
 ## Implementation
 
-The Federal Energy Regulatory Commission (FERC) may have the authority to impose the creation of a Dam Decommissioning Fund, which would be funded by dam operators and passed to ratepayers as part of the price of electricity. Such a fund would be modeled after the waste disposal fee imposed on operators of nuclear power plants. Although FERC may have the legal authority to establish a Dam Decommissioning Fund, an explicit act of Congress would bring clarity.
+The Federal Energy Regulatory Commission may have the authority to impose the creation of a Dam Decommissioning Fund, which would be funded by dam operators and passed to ratepayers as part of the price of electricity. Such a fund would be modeled after the waste disposal fee imposed on operators of nuclear power plants. Although FERC may have the legal authority to establish a Dam Decommissioning Fund, an explicit act of Congress would bring clarity.
 
 Most dams to be constructed in the future are anticipated to be located in what are now low-income countries [^"1"]. Therefore, the full benefit of Dam Decommissioning Funds will require similar action to establish them in all countries that will build dams.
 
-##### Lead researcher: Michael Goff - Last updated April 3, 2023
+##### Lead researcher: Michael Goff - Last updated April 3, 2023.
 
 [^"1"]: International Energy Agency. ["Hydropower Special Market Report"](https://www.iea.org/reports/hydropower-special-market-report/executive-summary). 2020.
 
