@@ -3,38 +3,73 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Methane Leaks";
 export const solution = "Methane Control on Oil Wells";
 
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
 We propose international agreement to control methane leakage from oil wells.
 
-<SolutionImages 
-  mobileSrc={"oil_well_methane_control_cba_mobile.svg"}
-  desktopSrc={"oil_well_methane_control_cba_desktop.svg"}
-  mobileHeight={399}
-  desktopHeight={340}
+<DynamicSolutionGraphic
+  barChartTitle={"Oil Well Methane Control"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"showArrow"}
+  arrowText1={"980 million tons"}
+  arrowText2={"CO₂ reduction"}
+  arrowText3={"annually"}
+  arrowText4={""}
+  mastheadText3={"Lee Nelson 3-28-23"}
+  staticData={[
+    {
+      name: "Benefit",
+      barlength: 49,
+      displayedValue: "$49 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0.633,
+      displayedValue: "$633 million/year",
+      site: "null",
+    },
+  ]}
 />
 
-## Details
+## Background
 
-World emissions of methane are 356 million tons per year [^"1"], which, using a 100-year global warming potential for methane of 28.5 [^"2"], is the equivalent of 10 billion tons of carbon dioxide. Of these, 48 million tons are associated with oil wells.
+Aerial sensing has found that methane leakage rates range from 0.7% to 9.6% of energy production across oil and gas sites in the United States [^"3"]. Leakage remains a problems in abandoned oil wells [^"4"]. Methane from oil has fallen from a peak of 58 million tons in 2005 to 49 million tons on 2023 [^"5"].
 
 ## Calculations
 
-According to the International Energy Agency, 35 million tons of methane from oil can feasibly be reduced, at an annual cost of $633 million. Valuing CO<sub>2</sub> emissions at $50/ton, we estimate the value of these reductions at $49 billion. The implicit carbon mitigation cost is $0.64 per ton, well below most estimates of the social cost of carbon.
+World emissions of methane are 356 million tons per year [^"1"], which, using a 100-year global warming potential for methane of 28.5 [^"2"], is the equivalent of 10 billion tons of carbon dioxide. Of these, 48 million tons are associated with oil wells. According to the International Energy Agency, 35 million tons of methane from oil can feasibly be reduced, at an annual cost of $633 million. Valuing CO<sub>2</sub> emissions at $50/ton, we estimate the value of these reductions at $49 billion. The implicit carbon mitigation cost is $0.64 per ton, well below most estimates of the social cost of carbon.
 
 ## Implementation
 
 Many of the methane mitigation projects tracked by the IEA have negative cost, meaning that with the projects should yield economic value, even without any greenhouse gas reduction benefit accounted for. The most expensive oil-related projects tracked by the IEA have a mitigation cost of $187 per million BTU, a carbon mitigation cost of about $388/ton. Thus the cost/benefit ratio could be more favorable, but with a smaller overall benefit, by excluding expensive projects from consideration.
 
-Methane reduction could be accomplished through international agreement at the United Nations Framework Convention on Climate Change Conference of Parties (CoP).
+Methane reduction could be accomplished through international agreement at the United Nations Framework Convention on Climate Change Conference of Parties (CoP). An ideal solution is a global price on methane emissions, on the order of $1300 to $1600 per ton of methane and better monitoring of methane leaks [^"6"].
 
-##### Lead researcher: Michael Goff - Last updated April 3, 2023
+##### Lead researcher: Michael Goff - Last updated February 6, 2025.
 
 [^"1"]: International Energy Agency ["Methane Tracker"](https://www.iea.org/data-and-statistics/data-tools/methane-tracker). February 2023.
 
 [^"2"]: United States Environmental Protection Agency. ["Understanding Global Warming Potentials"](https://www.epa.gov/ghgemissions/understanding-global-warming-potentials). May 2022.
+
+[^"3"]: Sherwin, E.D., Rutherford, J.S., Zhang, Z., Chen, Y., Wetherley, E.B., Yakovlev, P.V., Berman, E.S., Jones, B.B., Cusworth, D.H., Thorpe, A.K., Ayasse, A.K. ["US oil and gas system emissions from nearly one million aerial site measurements"](https://doi.org/10.1038/s41586-024-07117-5). Nature **627**(8003), pp. 328-334. March 2024.
+
+[^"4"]: Kang, M., Kanno, C.M., Reid, M.C., Zhang, X., Mauzerall, D.L., Celia, M.A, Chen, Y., Onstott, T.C. ["Direct measurements of methane emissions from abandoned oil and gas wells in Pennsylvania"](https://doi.org/10.1073/pnas.1408315111). Proceedings of the National Academy of Sciences **111**(51), pp. 18173-18177. December 2014.
+
+[^"5"]: International Energy Agency. ["Global Methane Tracker 2024"](https://www.iea.org/reports/global-methane-tracker-2024). March 2024.
+
+[^"6"]: Hausman, C., Raimi, D. ["Plugging the Leaks: Why Existing Financial Incentives Aren’t Enough to Reduce Methane"](https://kleinmanenergy.upenn.edu/research/publications/plugging-the-leaks-why-existing-financial-incentives-arent-enough-to-reduce-methane/). Kleinman Center for Energy Policy. February 2019.
 
 export default ({ children }) => 
   <SolutionDropdown 

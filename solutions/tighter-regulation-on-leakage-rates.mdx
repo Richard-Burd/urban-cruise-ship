@@ -3,26 +3,54 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Natural Gas Methane Leaks";
 export const solution = "Tighter Regulation on Leakage";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
 We propose international agreement to control leakage from natural gas well and gas infrastructure.
 
-<SolutionImages 
-  mobileSrc={"methane_leakage_regulations_cba_mobile.svg"}
-  desktopSrc={"methane_leakage_regulations_cba_desktop.svg"}
-  mobileHeight={399}
-  desktopHeight={340}
+<DynamicSolutionGraphic
+  barChartTitle={"Methane Leakage Regulation"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"800 million"}
+  arrowText2={"tons CO₂eq/yr"}
+  arrowText3={""}
+  arrowText4={""}
+  mastheadText3={"MG, Feb. 5, 2025"}
+ staticData={[
+    {
+     name: "Benefit",
+      barlength: 40,
+      displayedValue: "$40 billion/year",
+      site: "null",
+    },
+    {
+      name: "Cost",
+      barlength: 0.285,
+      displayedValue: "$285 million/year",
+      site: "null",
+    },
+  ]}
 />
 
 ## Details
 
-World emissions of methane are 356 million tons per year [^"1"], which, using a 100-year global warming potential for methane [^"2"], is the equivalent of 10 billion tons of carbon dioxide. Of these, 34 million tons are associated with gas wells and infrastructure.
+Methane, the main constituent of natural gas, has a lower molecular weight and density than ambient air, which poses a high risk of leakage. Estimating the precise amount of this leakage is a challenge, as discussed above. Leakage rates tend to be characterized by "super-emitters", whereby a small number of ppelines are responsible for a disproportionate share of the leakage. Weller, Hamburg, and von Fischer find, in a survey of pipeline leakage, that 8% of leaks produce 40% of methane emissions [^"3"]. For this reason, a small survey is likely to produce an underestimate of total leakage.
 
 ## Calculations
 
-According to the International Energy Agency, 28 million tons of methane from coal can feasibly be reduced, at an annual cost of $285 million. Valuing CO<sub>2</sub> emissions at $50/ton, we estimate the value of these reductions at $40 billion. The implicit carbon mitigation cost is $0.36 per ton, well below most estimates of the social cost of carbon.
+World emissions of methane are 356 million tons per year [^"1"], which, using a 100-year global warming potential for methane [^"2"], is the equivalent of 10 billion tons of carbon dioxide. Of these, 34 million tons are associated with gas wells and infrastructure. According to the International Energy Agency, 28 million tons of methane from coal can feasibly be reduced, at an annual cost of $285 million.
+
+Valuing CO<sub>2</sub> emissions at $50/ton, we estimate the value of these reductions at $40 billion. The implicit carbon mitigation cost is $0.36 per ton, well below most estimates of the social cost of carbon.
 
 ## Implementation
 
@@ -30,11 +58,19 @@ Many of the methane mitigation projects tracked by the IEA have negative cost, m
 
 Methane reduction could be accomplished through international agreement at the United Nations Framework Convention on Climate Change Conference of Parties (CoP).
 
-##### Lead researcher: Michael Goff - Last updated April 3, 2023
+To date, the Global Methane Pledge is the leading effort international effort to combat methane leakage. It is a voluntary agreement, and it does not include several major methane emiters [^"4"]. The Global Methane Pledge aims to reduce methane emissions, from all sources, by 30% in 2030 relative to 2020 emissions, a target which will require specific pledges and roadmaps to achieve [^"5"].
+
+##### Lead researcher: Michael Goff - Last updated February 6, 2025.
 
 [^"1"]: International Energy Agency ["Methane Tracker"](https://www.iea.org/data-and-statistics/data-tools/methane-tracker). February 2023.
 
 [^"2"]: United States Environmental Protection Agency. ["Understanding Global Warming Potentials"](https://www.epa.gov/ghgemissions/understanding-global-warming-potentials). May 2022.
+
+[^"3"]: Weller, Z. D., Hamburg, S. P., von Fischer, J. C. ["A National Estimate of Methane Leakage from Pipeline Mains in Natural Gas Local Distribution Systems"](https://doi.org/10.1021/acs.est.0c00437). Environmental Science & Technology **54**(14), pp. 8958-8967. June 2020.
+
+[^"4"]: International Energy Agency. ["Global Methane Tracker 2022"](https://www.iea.org/reports/global-methane-tracker-2022). February 2022.
+
+[^"5"]: Malley, C.S., Borgford-Parnell, N., Haeussling, S., Howard, I.C., Lefèvre, E.N., Kuylenstierna, J.C. ["A roadmap to achieve the global methane pledge"](http://doi.org/10.1088/2752-5295/acb4b4). Environmental Research: Climate **2**(1): 011003. March 2023.
 
 export default ({ children }) => 
   <SolutionDropdown 
