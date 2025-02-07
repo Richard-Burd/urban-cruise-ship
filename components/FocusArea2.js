@@ -33,11 +33,13 @@ const FocusArea2 = (props) => {
       <div
         className={`border-t-2 border-gray-300 ${props.site}-background-gradient`}
       >
-        <FocusAreaDescriptions
-          site={props.site}
-          focusAreaDescription={props.focusAreaDescription}
-        />
         <Logos site={props.site} />
+        <div className="mx-8 pb-12">
+          <FocusAreaDescriptions
+            site={props.site}
+            focusAreaDescription={props.focusAreaDescription}
+          />
+        </div>
         <div className="scale-50 lg:scale-100 -translate-x-16 lg:-translate-x-0">
           <span
             className={`border-current ${props.site}-site-button-color ${props.site}-site-focus-area-button-border-n-font-color focus-area-title-border-width focus-area-title-shadow focus-area-title-elliptical-geometry px-10 pb-1 lg:ml-10 standard-font-1 text-5xl whitespace-nowrap`}
@@ -46,7 +48,6 @@ const FocusArea2 = (props) => {
           </span>
         </div>
         <div className="flex flex-wrap ml-8 mt-4 lg:mt-12 transform scale-75 lg:scale-100 origin-top">
-
           {findChildren(props.focusAreaUrl).map((article) => {
             return (
               <div key={article.article_url}>

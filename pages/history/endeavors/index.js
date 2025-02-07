@@ -18,7 +18,12 @@ const focusAreaUrl = "endeavors";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const focusAreaDescription = <p></p>;
+const focusAreaDescription = (
+  <div className="italic standard-font-3 text-zinc-800">
+    Here, we compare historical Endeavors on the basis of performance:
+    benefit/cost ratio and net benefits.
+  </div>
+);
 
 const HistoryEndeavors = () => {
   return (

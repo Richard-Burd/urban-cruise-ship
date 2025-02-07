@@ -23,21 +23,44 @@ const Solutions = () => {
       <JavaScriptArticlePage
         site={site}
         focusAreaName={focusAreaName}
-        focusAreaUrl={focusAreaUrl} 
-        hierarchy={hierarchy} 
+        focusAreaUrl={focusAreaUrl}
+        hierarchy={hierarchy}
         focusAreaDescription={focusAreaDescription}
       />
       <div className="custom-background">
-      <center>
+        <div className="pt-6 pb-12 italic standard-font-3 text-zinc-800 text-2xl">
+          Here, we examine the financial performance of historical Endeavors,
+          grouped into several categories. Metrics include benefit/cost ratio
+          and net benefit.
+        </div>
+        <center>
           <h2>{focusAreaName} broken down by category</h2>
           <h4>Click the bars to expand the section</h4>
         </center>
-        <SubsetDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Research and Development"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Transportation Infrastructure"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown
+          title={"Ecology & Environment"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Energy Production & Efficiency"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Public Health Campaigns"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Public Health Projects"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Research and Development"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Transportation Infrastructure"}
+          focusAreaUrl={focusAreaUrl}
+        />
         <SubsetDropdown title={"Miscellaneous"} focusAreaUrl={focusAreaUrl} />
       </div>
       <style>

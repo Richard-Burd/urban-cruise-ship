@@ -27,16 +27,38 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="custom-background">
-      <center>
+        <div className="pt-6 pb-12 px-2 standard-font-2 text-zinc-800 text-xl">
+          Here, we show cost and benefit metrics for historical endeavors and
+          proposed solutions, organized by category.
+        </div>
+        <center>
           <h2>{focusAreaName} broken down by category</h2>
           <h4>Click the bars to expand the section</h4>
         </center>
-        <SubsetDropdown title={"Ecology & Environment"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Energy Production & Efficiency"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Public Health Campaigns"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Public Health Projects"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Research and Development"} focusAreaUrl={focusAreaUrl} />
-        <SubsetDropdown title={"Transportation Infrastructure"} focusAreaUrl={focusAreaUrl} />
+        <SubsetDropdown
+          title={"Ecology & Environment"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Energy Production & Efficiency"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Public Health Campaigns"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Public Health Projects"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Research and Development"}
+          focusAreaUrl={focusAreaUrl}
+        />
+        <SubsetDropdown
+          title={"Transportation Infrastructure"}
+          focusAreaUrl={focusAreaUrl}
+        />
         <SubsetDropdown title={"Miscellaneous"} focusAreaUrl={focusAreaUrl} />
       </div>
       <style>

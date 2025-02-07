@@ -1,5 +1,5 @@
 import FocusArea2 from "../../../components/FocusArea2";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 // place any drop down elements here
 
@@ -32,7 +32,12 @@ const focusAreaUrl = "solutions-and-endeavors";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const focusAreaDescription = <p></p>;
+const focusAreaDescription = (
+  <div className="italic standard-font-3 text-zinc-800">
+    Here, we compare historical Endeavors and proposed Solutions on the basis of
+    cost and benefit metrics.
+  </div>
+);
 
 const SolutionsAndEndeavors = () => {
   return (
@@ -50,10 +55,13 @@ const SolutionsAndEndeavors = () => {
         {/* This is replaced by the component below, delete in future refactoring */}
         {/* <FullSetOfSolutionsAndEndeavors /> */}
 
-        <br></br><br></br>
+        <br></br>
+        <br></br>
         {/* <SolutionEndeavorTable /> */}
-        <br></br><br></br>
-        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         {/* <TestBarChart
           barChartTitle={"This is a Standard Test Bar Chart Under Construction"}
           scale={"positive"}
@@ -114,8 +122,10 @@ const SolutionsAndEndeavors = () => {
           titleText={495} // {460} for negative values, {0} for positive values
           titleAnchor={"start"} // "start" for a negative bar chart "end" for a positive bar chart
         /> */}
-        <br></br><br></br>
-        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         {/* <TestDualBarChart
           barChartTitle={"Cost & Efficiency Comparison Chart under Construction"}
           scale={"positive"}
@@ -131,7 +141,6 @@ const SolutionsAndEndeavors = () => {
           titleText={0} // {460} for negative values, {0} for positive values
           titleAnchor={"end"} // "start" for a negative bar chart "end" for a positive bar chart
         /> */}
-        
       </div>
       <style>
         {`

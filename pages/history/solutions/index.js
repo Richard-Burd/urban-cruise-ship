@@ -8,7 +8,6 @@ import SolutionTable from "../../../components/SolutionTable";
 // This is replaced by the component below, delete in future refactoring
 // import FullSetOfSolutions from "/solutions/full-set-of-solutions.mdx";
 
-
 const siteConfig = require("../site_config.json");
 const site = siteConfig.specialized_site_name;
 
@@ -28,7 +27,14 @@ const focusAreaUrl = "solutions";
 
 const focusAreaName = findFocusAreaName(focusAreaUrl);
 
-const focusAreaDescription = <p></p>;
+const focusAreaDescription = (
+  <div className="italic standard-font-3 text-zinc-800">
+    Here, we compare our proposed solutions on the basis of the benefit/cost
+    ratio and net benefits, taking environmental benefits into account. We also
+    compared our proposed solutions on the basis of greenhouse gases reduced and
+    habitat saved.
+  </div>
+);
 
 const Solutions = () => {
   return (
@@ -41,14 +47,16 @@ const Solutions = () => {
         focusAreaDescription={focusAreaDescription}
       />
       <div className="custom-background">
-        
         {/* This is replaced by the component below, delete in future refactoring */}
         {/* <FullSetOfSolutions /> */}
 
-        <br></br><br></br>
+        <br></br>
+        <br></br>
         <SolutionTable />
-        <br></br><br></br>
-        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
       <style>
         {`
