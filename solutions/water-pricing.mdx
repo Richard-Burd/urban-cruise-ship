@@ -5,32 +5,52 @@ export const solution = "Water Pricing";
 
 ## Description
 
-We propose that water rights be priced in accordance with the cost of provision, especially in water-stressed regions such as California.
+We propose that water rights be priced in accordance with the cost of provision, especially in water-stressed regions. 
 
 ## Background
+Water pricing varies significantly across regions, often failing to reflect the actual cost of provision. Many municipalities and governments subsidize water heavily, leading to artificially low prices that encourage overuse and inefficiency. In water-stressed areas, such as parts of California, Australia, and the Middle East, this mispricing exacerbates water shortages, leading to depletion of aquifers, increased reliance on costly desalination, and inefficient agricultural practices.
 
-Water rights pricing should reflect the marginal cost of water provision to encourage efficient use and allocation of water resources. The argument for setting water prices equal to the marginal cost of provision stems from the need to Setting prices to reflect the true costs of water, thus encourages efficient usage and reduces wasting. Economists advocate for this approach as it aligns with the principle of efficient resource allocation, ensuring that water is used where it is most valued[^"3"] Population growth, climate change, and inequalities to access have increased the need to address this topic[^"2"]. 
+Setting water prices equal to the marginal cost of provision ensures that users pay for the true cost of water, which includes extraction, treatment, distribution, and environmental impact mitigation. This pricing model encourages conservation, reduces wastage, and ensures a more sustainable allocation of water resources. Economists advocate for this approach as it aligns with the principle of efficient resource allocation, ensuring that water is used where it is most valued[^"3"] Population growth, climate change, and inequalities to access have increased the need to address this topic[^"2"]. 
 
 "Smart water metering" technologies could be effective tools for promoting water conservation at the consumer level. By allowing for individual usage tracking, these technologies can lead to significant reductions in water consumption, ranging from 20-40%. This not only aids in identifying leaks but also incentivizes users to adopt more water-efficient behaviors, contributing to overall water savings[^"4"].
 
+## Calculations
+The cost of transitioning to marginal-cost water pricing depends on infrastructure upgrades, administrative changes, and public awareness campaigns.
+Estimated costs for setting up advanced metering infrastructure (AMI) are $200–$700 per household[^"6"].
 
+In the U.S. the average residential consumer price for water is $1 per m3 of water[^"7"]. Using the marginal cost of producing desalinated water of $6.60 per m3[^"8"] as an example of possible marginal cost, that could add up to an increase of $194 per month per household if water usage rates remained the same.
+
+However, studies show that water demand decreases by 10–15% when prices reflect actual costs[^"9"],[^"10"]. That savings in water use would be significant. This would also reduce energy costs for water pumping and treatment, lower government spending on emergency drought relief programs, and increase investments into water-efficient technologies and infrastructure.
 
 ## Implementation
-
-Water pricing in Chile has shown success in improving water conservation and access via water pricing reforms, and may serve as a case study for implementation in other areas of the world [^"1"].
+Regions like Singapore, Denmark, and Chile have implemented water pricing strategies that reflect true costs, leading to more efficient water use. Water pricing in Chile has shown success in improving water conservation and access via water pricing reforms, and may serve as a case study for implementation in other areas of the world [^"1"].
 
 The adoption of  such pricing mechanisms faces challenges. These adjustments can disproportionately affect small farmers, highlighting the need for a nuanced approach to water pricing policies [^"5"]. They must also be complemented by efforts to address the social and economic dimensions of water use, such as the  impacts on different income groups and ensuring that policies do not exacerbate existing inequalities [^"2"]. 
 
 The success of water pricing and metering initiatives depends significantly on public acceptance and the political will to implement changes that may initially be unpopular [^"2"].
 
-##### Lead Researcher: jye - Last Updated February 29, 2024
+##### Lead Researchers: Lee Nelson and jye - Last Updated February 13, 2025
 
 
 [^"1"]: Donoso G. [Urban water pricing in Chile: cost recovery, affordability, and water conservation](http://dx.doi.org/10.1002/wat2.1194). WIREs Water [Internet].November 2016.
+
 [^"2"]: Garrick DE, Hanemann M, Hepburn C.  [Rethinking the economics of water: an assessment.](http://dx.doi.org/10.1093/oxrep/grz035) Oxford Review of Economic Policy [Internet]. 2020.
+
 [^"3"]: Liu Y, Tang P, Xu T, Zheng H. [Optimizing Trading Assignments in Water Right Markets](http://dx.doi.org/10.1609/aaai.v30i1.10016). Proceedings of the AAAI Conference on Artificial Intelligence [Internet]. February 2016.
+
 [^"4"]: Koech R, Cardell-Oliver R, Syme G. [Smart water metering: adoption, regulatory and social considerations](http://dx.doi.org/10.1080/13241583.2021.1983968). Australasian Journal of Water Resources [Internet]. July 2021.
+
 [^"5"]: Blomquist W. [Beneath the surface: complexities and groundwater policy-making](http://dx.doi.org/10.1093/oxrep/grz033). Oxford Review of Economic Policy [Internet]. January 2020.
+
+[^"6"]: ARCADIS [“2020 AMI COST-BENEFIT ANALYSIS”](https://www.wsscwater.com/sites/default/files/sites/wssc/files/ami/AMI%20Cost%20Benefit%20Analysis%20-2.pdf) WSSC Water, October 2020
+
+[^"7"]: Cramer, K. [“Average monthly water bill”]( https://homeguide.com/costs/average-water-bill) Homeguide, September 2024
+
+[^"8"]: Dooley, JJ [“Bounding the marginal cost of producing potable water including the use of seawater desalinization as a backstop potable water production technology”](https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-23303.pdf) U.S. DOE, April 2014
+
+[^"9"]: Zetland, D. [“The role of prices in managing water scarcity”]( https://doi.org/10.1016/j.wasec.2020.100081) Water Security, April 2021
+
+[^"10"]: Leflaive, X. [“The economics of water scarcity”]( https://dx.doi.org/10.1787/81d1bc0a-en) OECD Environment Working Papers No. 239, May 2024
 
 
 export default ({ children }) => 
