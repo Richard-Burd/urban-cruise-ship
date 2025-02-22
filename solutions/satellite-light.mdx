@@ -1,27 +1,40 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Light Pollution";
-export const solution = "Satellite Database";
+export const solution = "Satellite Database - World";
 
 ## Description
 We propose a database, like SatHub, as outlined at the SATCON 2 Workshop[^”1”] to keep track of satellite positions and reduce interference with observations and experiments.
 
 ## Background
-SatHub is envisioned as a database that includes properties of all satellites in orbit, so that astronomers can more easily correct for their visual impact on observations[^”1”].
+Astronomers worldwide face increasing challenges due to the growing number of satellites in orbit. Large satellite constellations, such as Starlink and OneWeb, reflect sunlight, creating bright streaks across astronomical images and disrupting scientific observations. These reflections interfere with research on exoplanets, cosmology, and near-Earth objects. Additionally, radio astronomers experience interference from satellite transmissions.
+
 The impact of these satellite constellations on astronomy and the night sky depends strongly on the brightness of their constituent satellites, which is a complex function of time, attitude, orbital position, and wavelength[^”2”]. Satellites can reflect enough sunlight to be visible to the unaided eye[^”2”].  This impact extends out to longer wavelengths, with thermal emission at infrared wavelengths, and spurious emission at microwave and radio wavelengths[^”2”].
 
+SatHub is envisioned as a centralized database that includes real-time properties of all satellites in orbit, so that astronomers can more easily correct for their visual impact on observations[^”1”]. Beyond astronomy, such a database could improve space situational awareness, helping to prevent satellite collisions and manage space debris more effectively.
+
 ## Calculations
+Costs will include database infrastructure, software development, and data collection as developmental costs. Ongoing operational costs would include data updates and management, maintenance and technical support, and outreach and collaboration.
+
+Benefits could include: improved astronomical research efficiency, avoiding costly satellite collisions[^”3”], enhanced space traffic management, and gaining support for future policies on space sustainability.
 
 
 ## Implementation
 SatHub would be funded through a combination of a public source, such as the National Science Foundation or NASA; by the satellite industry; and by the astronomical community.
 
+Private satellite operators may be reluctant to share proprietary orbital data. Integrating international efforts across different regulatory and research entities may provide challenges in coordinating the data. Ensuring ongoing funding beyond initial setup costs would help to create long-term sustainability of the program.
+
 [Reducing artificial light pollution](https://urban-cruise-ship.vercel.app/cities/cities_energy_and_pollution/light#light-pollution-led) on the earth could also reduce reflected light off of satellites.
 
-##### Lead researcher: Lee Nelson - Last updated: 11/10/2023
+Other [orbital debris]( https://www.urbancruiseship.org/space/ethics/orbital_debris) solutions would help to enhance the benefits of this solution even further.
+
+##### Lead researcher: Lee Nelson - Last updated: February 22, 2025
+
 [^”1”]: NOIRLab [“Satellite Constellations 2 Workshop”](https://noirlab.edu/satcon2) July, 2021
 
 [^”2”]: Rawls, M. et al. [“SATCON2 Observations Working Group Report”](https://helda.helsinki.fi/bitstream/handle/10138/338522/report.pdf) HELDA, 2021
+
+[^”3”]: Adilov, N. et al. [“An estimate of expected economic losses from satellite collisions with orbital debris”]( https://doi.org/10.1016/j.jsse.2023.01.002) Journal of Space Safety Engineering, March 2023
 
 
 export default ({ children }) => 
