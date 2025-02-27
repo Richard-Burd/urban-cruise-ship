@@ -1,32 +1,67 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
 export const problem = "Energy Lost to Motor Systems";
-export const solution = "Improved Steam Systems";
+export const solution = "Improved Steam Systems - U.S.";
 
 ## Description
 
-We propose a public program of research and development to improve steam system efficiencies.
+We propose a comprehensive public program to improve steam system efficiencies.
 
 ## Background
-
 Steam systems are the single largest consumer of energy in the United States (6% of primary energy use [^"2"]), and are found in almost all manufacturing plants [^"4"]. Industrial steam consumes 11% of the freshwater used by the entire U.S. manufacturing sector [^"3"].
+
+Industrial steam systems are critical to manufacturing, chemical processing, food production, and power generation. These systems use boilers to produce steam, which is then distributed through a network of pipes and used for various industrial processes. Many existing steam systems operate with inefficiencies due to outdated equipment, heat loss, poor maintenance, and suboptimal system designs.
 
 A comprehensive approach, including the optimization of heat recovery networks and the implementation of energy conservation measures, has been suggested as key elements for carbon emissions reduction and enhancing energy efficiency in industrial processes [^"5"].
 
+Several technologies can enhance steam system efficiency, including:  
+•	Condensate Recovery Systems – Reusing condensed steam (condensate) reduces the need for new water and minimizes energy use.  
+•	Boiler Economizers – Capture waste heat from flue gases to preheat incoming feedwater, improving boiler efficiency.  
+•	Steam Traps and Leak Management – Regular monitoring and maintenance prevent energy losses.  
+•	Combined Heat and Power (CHP) Systems – Capture excess steam energy for electricity generation.  
+•	Advanced Controls and Sensors – Optimize steam distribution and demand in real time.
+
+## Calculations
+The U.S. consumed 98.74 exajoules of primary energy in 2023[^"6"], 6%[^"2"] of that is 5.92 exajoules consumed by steam systems. We estimate that comprehensive upgrades would amount to approximately 15% reduction in energy consumption[^"7"],[^"8"]. Totaling .89 exajoules of energy saved. 
+
+The U.S. consumes 388.25 billion m³ of freshwater annually[^"9"]. Industrial steam systems account for 11%[^"3"] of that, or 42.71 billion m³ annually. We estimate that comprehensive upgrades could save around 20% on water consumption[^"10"],[^"11"], or 8.54 billion m³ reduction annually.
+
+The U.S. emits approximately 6,343 million tons of CO₂e, of which 23% or 1,459 million tons comes from the industrial sector[^"12"]. Industrial steam systems account for approximately 37% of the industrial sectors energy use[^"8"], and assuming that a 15% reduction in energy use would translate to a 15% reduction in GHG emissions, that would equal a reduction of 81 million tons of CO₂e annually. With an estimated [Social Cost of Carbon]( https://www.urbancruiseship.org/energy/energy_socioeconomics/carbon_pricing_e) set at $141.40 per ton, the GHG reduction would amount to a benefit of $11.45 billion annually.
+
 
 ## Implementation
-
 Steam systems are often left unimproved, or efficiency opportunities are not taken due to initial investment requirements or because the energy savings were undercut by priorities on short-term revenue generation. Other factors include long plant downtime [^"2"]. 
 
 Water usage and conservation should be a key metric when assessing steam system improvements [^"4"]. [Water pricing](https://www.urbancruiseship.org/matter/water/water_usage#water-pricing) could increase the mindfulness of water usage by manufacturers.
 
-##### Lead Researcher: jye - Last Updated March 1, 2024
+Utility Rebate programs such as the [Steam Trap Audit Program by Centerpoint Energy]( https://www.centerpointenergy.com/en-us/business/save-energy-money/efficiency-programs-rebates/equipment-programs-and-rebates/steam-trap-audit) could be used to reduce the cost of upgrades.
+
+##### Lead Researchers: Lee Nelson and  jye - Last Updated February 27, 2025
 
 [^"1"]: Zuberi MJS, Hasanbeigi A, Morrow W. [Electrification of industrial boilers in the USA: potentials, challenges, and policy implications.](http://dx.doi.org/10.1007/s12053-022-10079-0) Energy Efficiency [Internet]. December 2022. 
+
 [^"2"]: Masanet E, Walker ME. [Energy‐water efficiency and U.S. industrial steam.](http://dx.doi.org/10.1002/AIC.14148) AIChE Journal [Internet]. June 2013.
+
 [^"3"]: Walker M.E, Lv Z, Masanet E. [Industrial steam systems and the energy-water nexus.](https://www.semanticscholar.org/paper/Industrial-steam-systems-and-the-energy-water-Walker-Lv/68088850e6f0c9814071c533c92e3d4fb18a5efd) Environmental science & technology, 47 22, 13060-7. 2013
+
 [^"4"]: Niemeyer E, Walker ME, Lema G, Masanet E. [Impact of water consumption on the economic viability of energy efficiency improvements for industrial steam systems.](http://dx.doi.org/10.1007/s12053-023-10167-9) Energy Efficiency [Internet]. October 2023.
+
 [^"5"]: Lee JY, Chen PY. [Optimization of Heat Recovery Networks for Energy Savings in Industrial Processes.](http://dx.doi.org/10.3390/pr11020321) Processes [Internet]. January 2023.
+
+[^"6"]: EIA [“U.S. energy facts explained”]( https://www.eia.gov/energyexplained/us-energy-facts/) EIA Monthly Energy Review, April 2024
+
+[^"7"]: U.S. DOE [“BestPractices: Steam](https://www.energy.gov/sites/prod/files/2014/05/f15/saveenergyinsteam.pdf) Industrial Technologies Program, U.S. DOE, January 2006
+
+[^"8"]: Einstein, D. et al. [“Steam systems in industry: Energy use and energy efficiency improvement potentials”]( https://escholarship.org/uc/item/3m1781f1) Lawrence Berkeley National Library, 2001
+
+[^"9"]: Water Science School [“Total Water Use in the United States”]( https://www.usgs.gov/special-topics/water-science-school/science/total-water-use-united-states) USGS Water Science School, June 2018
+
+[^"10"]: Tiegs, J. [“Increase Condensate Return, Increase Savings”]( https://www.watertechusa.com/improving-condensate-return) WaterTech, Accessed February 2025
+
+[^"11"]: Johnson, T. [“Energy Tips: Steam”](https://www.nrel.gov/docs/fy01osti/27654.pdf) DOE Office of Industrial Technologies, June 2001
+
+[^"12"]: EPA [“Sources of Greenhouse Gas Emissions”]( https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions) EPA, January, 2025
+
 
 export default ({ children }) => 
   <SolutionDropdown 
