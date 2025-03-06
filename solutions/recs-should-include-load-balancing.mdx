@@ -17,18 +17,26 @@ import SolutionImages from "/components/SolutionImages.js";
 We propose the use of blockchain to address transparency issues with regards to Renewable Energy Credits [^"11"], and to extend the RECs to account for the needs for load balancing.
 
 ## Background
-
-
-Renewable Energy Certificates (RECs) are tradable certificates that represent the environmental attributes or benefits of renewable energy generation. When renewable energy is produced, it is mixed with energy from other sources, making it impossible to determine which electricity is renewable. RECs solve this problem by allowing the environmental benefits of renewable energy to be separated and traded as a separate commodity [^"4"]. However, RECs face criticism of not always being transparent about their accounting [^"2"]. With many companies claiming to switch to renewable energy through the purchase of cheap clean energy certificates without buying physical wind or solar power [^"3"], it becomes more vital to ensure RECs represent what they claim to. Otherwise, companies will appear to be more progress towards sustainability targets than they actually are [^"2"].
-
+Renewable Energy Certificates (RECs) are tradable certificates that represent the environmental attributes or benefits of renewable energy generation. When renewable energy is produced, it is mixed with energy from other sources, making it impossible to determine which electricity is renewable. RECs solve this problem by allowing the environmental benefits of renewable energy to be separated and traded as a separate commodity [^"4"]. However, RECs face criticism of not always being transparent about their accounting [^"2"]. Current RECs do not account for when the renewable energy is generated versus when electricity is consumed, leading to potential mismatches in supply and demand. This means that they do not incentivize energy consumption at times when renewable generation is highest, nor do they account for grid flexibility or storage which contributes to load balancing issues. With many companies claiming to switch to renewable energy through the purchase of cheap clean energy certificates without buying physical wind or solar power [^"3"], it becomes more vital to ensure RECs represent what they claim to. Otherwise, companies will appear to be more progress towards sustainability targets than they actually are [^"2"].
 
 REC trading platforms are often centralized and can be prone to security breaches, lack transparency, and are not always scalable to handle large volumes of trading [^"5"]. Properly tracing the origin of energy to ensure a credible chain of custody introduces significant administrative burdens, with centralized regulatory bodies being responsible for oversight on the creation, transfer, and cancellation of RECs so that double counting is prevented [^"8"].
 One of the key advantages of using blockchain for RECs is its decentralized nature, which eliminates the need for intermediaries and provides greater transparency and accountability in the trading process [^"1"].
 
-Blockchain technology utilizes tokens which are a digital representation of something else. This could be currency, a commodity, an asset, or, in this case, a certain amount of renewable energy. This tokenization simplifies the REC trading process and also addresses significant challenges such as double counting and fraud [^"7"].
+Blockchain technology utilizes tokens which are a digital representation of something else. This could be currency, a commodity, an asset, or, in this case, a certain amount of renewable energy. This tokenization simplifies the REC trading process and also addresses significant challenges such as double counting and fraud [^"7"]. Blockchain smart contracts could ensure RECs are matched with real-time energy consumption, allowing for more precise carbon accounting, and they can be issued with time stamps and additional attributes to encourage consumption when renewable generation is high. This strategy would help to offset load balancing issues that renewable energies create. They can even be linked to stored energy with discharge timing, further incentivizing grid stability[^"12"].
 
+## Calculations
+Blockchain development and integration would cost at least a minimum of $27,000 per year, with $5,400 per year in maintenance, plus fees of $.01 per transaction[^"13"]. The actual cost would most likely be higher as creating smart contracts to automate REC issuance, trading, and verification would require specialized blockchain developers. Security audits and regulatory compliance may add additional costs.
+
+Transaction costs of $.01[^"13"] per transaction on the blockchain system add a substantial benefit when compared to current transaction costs, which can vary widely. 
+
+By enabling peer-to-peer energy trading, blockchain can reduce reliance on intermediaries, lowering costs associated with traditional energy procurement processes[^"14"].
+
+Implementing blockchain ledgers would also reduce fraud and reduce the costs of auditing[^"7"].
 
 ## Implementation
+The [Federal Energy Regulatory Commission (FERC)]( https://www.ferc.gov/) would handle necessary regulations. The blockchain system will need to be developed and would benefit from a well-established system such as [Ethereum]( https://ethereum.org/en/developers/). Renewable Energy Certifiers such as [Green-e]( https://www.green-e.org/) would need to be involved as their certificate are digitized with blockchain technology.
+
+Potential funding could come from the [DOE]( https://www.energy.gov/funding-financing) and or the European Commission’s [Horizon]( https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en) program.
 
 The application of blockchain in renewable energy procurement and the verification of RECs faces challenges, including the need for significant technological and regulatory adaptation to ensure its successful integration into existing energy markets [^"6"].
 
@@ -38,8 +46,7 @@ Frameworks that address the operational and transactional issues faced by blockc
 
 If a particular electricity consumer attains "100% renewable energy" by purchasing RECs, it is not necessary for that consumer to handle energy storage or other load balancing tools that would be required in a truly 100% renewable electric grid. We also propose extensions to RECs that would account for the need for load balancing.
 
-
-##### Lead Researcher: jye - Last Updated February 19, 2024
+##### Lead Researchers: jye and Lee Nelson - Last Updated March 6, 2025
 
 [^"1"]: Han, C.S., Lotfi, Ghahroud, M., Park, M.J., Ghassemi Nejad, J. ["A new blockchain investment and energy certificate platform"](https://doi.org/10.1080/23311916.2023.2260226). Cogent Engineering **10**(2). September 2023.
 
@@ -61,10 +68,13 @@ If a particular electricity consumer attains "100% renewable energy" by purchasi
 
 [^"10"]: Nepal, J.P., Yuangyai, N., Gyawali, S., Yuangyai, C. ["Blockchain-Based Smart Renewable Energy: Review of Operational and Transactional Challenges"](https://doi.org/10.3390/en15134911). Energies **15**(3): 4911. July 2022.
 
-[^"11"]: Moravvej-Hamedani, M. Personal communication, January 2024. 
+[^"11"]: Moravvej-Hamedani, M. Personal communication, January 2024.
 
+[^"12"]: Chariot Energy [“Maximizing Renewable Energy with Grid Scale Storage Solutions”]( https://chariotenergy.com/blog/maximizing-renewable-energy-with-grid-scale-storage-solutions/) Chariot Energy, June 2024
 
+[^"13"]: Development Labs [“Blockchain Cost Analysis: Calculating Expenses for Your Next Blockchain Implementation”]( https://webisoft.com/articles/blockchain-cost/) WBSFT, February 2025
 
+[^"14"]: Cecola, B. [“How Does Blockchain Integration Impact Renewable Energy Procurement?”]( https://navigatepower.com/how-does-blockchain-integration-impact-renewable-energy-procurement/) November, 2024
 
 
 export default ({ children }) => 
