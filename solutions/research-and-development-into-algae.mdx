@@ -7,26 +7,48 @@ export const solution = "Algae Biofuel R&D";
 We recommend that national governments invest further in algae biofuel research and development.
 
 ## Background
-Algae-based biofuels are considered carbon-neutral--meaning that the carbon dioxide absorbed by algae during their growth offsets the CO₂ emitted when the biofuel is burned--use land efficiently, can use wastewater [^"3"], and reduce air pollution upon combustion [^"4"].
+Most transportation fuel is derived from petroleum, including gasoline, diesel, and jet fuel. These fossil fuels contribute to greenhouse gas (GHG) emissions, particulate matter pollution, and environmental degradation. Algae-based biofuels are an alternative energy source derived from microalgae, which can be converted into biodiesel, bioethanol, biogas, and jet fuel. Unlike traditional biofuels (e.g., corn ethanol or soybean biodiesel), algae have higher yields per acre and do not compete with food crops for arable land.
+
+Algae-based biofuels are considered carbon-neutral, meaning that the carbon dioxide absorbed by algae during their growth offsets the CO₂ emitted when the biofuel is burned. They use land efficiently, can use wastewater to reduce freshwater consumption [^"3"], and reduce air pollution upon combustion [^"4"].
 
 The process of producing algae biofuel involves cultivation, harvesting, lipid extraction, and then converting the extracted lipids to biofuels in a process called transesterification. This involves an alcohol (usually methanol) in the presence of a catalyst to produce biodiesel. Other processes can also be used, such as hydrothermal liquefaction [^"5"]. 
 
-An economic analysis of biofuel production in South Africa resulted in a cost of $2.00 to $2.09 per liter [^"1"]. With the world average price of diesel at $1.25 per liter worldwide [^"6"], there remains needed progress for algae-derived biodiesel to become a competitive alternative. However, algal biofuels show potential for economical feasibility [^"1"].
+An economic analysis of biofuel production in South Africa resulted in a cost of $2.00 to $2.09 per liter [^"1"]. Further economic assessments report selling cost of algal fuel between $0.43 and $7.93 per liter[^"8"]. With the world average price of diesel at $1.25 per liter worldwide [^"6"], there remains needed progress for algae-derived biodiesel to become a competitive alternative. However, algal biofuels show potential for economic feasibility [^"1"].
 
+## Calculations
+R&D efforts are focused on improving strain selection, increasing lipid yields, and optimizing harvesting methods. It is estimated that these focused efforts will achieve a cost parity with other diesel fuels with an annual investment of $250 million over a period of 10 years[^"8"].
+
+Algae-derived biodiesel is estimated to reduce lifecycle GHG emissions by 60% compared to petroleum diesel[^"9"].
+
+Diesel fuel consumption in the U.S. creates 455 million metric tons of  CO2 emissions annually[^"10"], that means there is a potential to reduce CO2 emissions by 273 million metric tons in the U.S. alone. 
 
 ## Implementation
 National governments can implement further R&D in algae-based biofuels by funding R&D consortia and pilot projects, establishing policy incentives, fostering international collaborations, addressing technical challenges, and investing in advanced biofuel production methods.
 
-##### Lead Researcher: jye - Last Updated January 16, 2024.
+Once cost parity is achieved, scaling of production to meet demands would require bioreactors or open-pond systems, both of which present challenges such as contamination and would need further investment. 
+
+##### Lead Researchers: jye and Lee Nelson - Last Updated March 13, 2025.
 
 [^"1"]: Mustapha, S.I., Bux, F., Isa, Y.M.  [Techno-economic analysis of biodiesel production over lipid extracted algae derived catalyst](https://www.tandfonline.com/doi/abs/10.1080/17597269.2021.1878577). Biofuels **13**(5), pp. 663-674. February 2021.
 
 [^"2"]:  [U.S. Department of Energy Announces $19 Million for Carbon Utilization Funding Opportunity](https://www.energy.gov/eere/articles/us-department-energy-announces-19-million-carbon-utilization-funding-opportunity). U.S. Department of Energy.February 2022.
+
 [^"3"]: Ayala, E. [Nutrient Recovery from Wastewater by a Consortium of Algae Species for Biofuel Production](https://scholarworks.boisestate.edu/cgi/viewcontent.cgi?article=3143&context=td). Boise State University. September 2022.
+
 [^"4"]: Sathish, T., Singaravelu, D. [Diesel Engine Emission Characteristics Study using Algae Biofuel](http://nopr.niscpr.res.in/handle/123456789/54902). Journal of Scientific & Industrial Research **79**, pp. 547-551. June 2020.
+
 [^"5"]: Acheampong, Zotorvie, T. O. T., Baidoo, M. F., Acquah, C., Danquah, M. K. [Evaluation of Biomass-to-Biofuel Conversion Technologies for Process-Scale Applications](http://www.iosrjen.org/Papers/vol11_issue8/C1108011927.pdf). IOSR Journal of Engineering **11**(8), pp. 19-27. July 2021.
+
 [^"6"]: GlobalPetrolPrices.com. [Diesel prices, liter, 08-Jan-2024](https://www.globalpetrolprices.com/diesel_prices/). Accessed January 8, 2024.
+
 [^"7"]: Hong JW, Jo SW, Yoon HS. [Research and development for algae-based technologies in Korea: a review of algae biofuel production](https://pubmed.ncbi.nlm.nih.gov/24496987/). Photosynthesis Research [Internet]. February 2014.
+
+[^"8"]: Quinn, J. and Davis, R. [“The potentials and challenges of algae based biofuels: A review of the techno-economic, life cycle, and resource assessment modeling”]( https://doi.org/10.1016/j.biortech.2014.10.075) Bioresource Technology, May 2015
+
+[^"9"]: David, R. et al. [“2017 Algae Harmonization Study: Evaluating the Potential for Future Algal Biofuel Costs, Sustainability, and Resource Assessment from Harmonized Modeling”](https://www.nrel.gov/docs/fy18osti/70715.pdf) National Renewable Energy Laboratory, 2017
+
+[^"10"]: EIA [“How much carbon dioxide is produced from U.S. gasoline and diesel fuel consumption?”]( https://www.eia.gov/tools/faqs/faq.php?id=307&t=10#:~:text=EIA%20estimates%20that%20in%202023,S.) EIA Monthly Energy Review, Environment Section, Tables 11.1 and 11.5, April 2024
+
 
 export default ({ children }) => 
   <SolutionDropdown 
