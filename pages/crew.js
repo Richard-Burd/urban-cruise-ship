@@ -496,23 +496,21 @@ const Crew = () => {
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
-            Jye serves as a graphic designer, writer, and design consultant
-            at Urban Cruise Ship. Some notable contributions include a large number of solution articles, comparative interactive tables on the History site, graphics for solutions, and concept
-            distillation for Urban Foot Notes.
+          Jye is a graphic designer, writer, and design consultant at Urban Cruise Ship, contributing extensively through solution-focused articles, comparative interactive history tables, illustrative graphics, and conceptual development for <a
+            href="www.urbanfootnotes.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+          Urban Foot Notes
+          </a>.
           </div>
           <div className="my-4"></div>
           <div>
-            They are a non-binary artist and performer. Curiously-themed parties
-            are a specialty. Their friends network includes many societal
-            minorities. Multiple spectra are represented. Five years of college
-            served an educational, not credentialing, purpose. Hobbies include
-            gaming, history, architectural exploration and hiking. Trains, castles, cathedrals, old forests, mountains loved.
-            Fairies too.
+          A non-binary artist, performer, and facilitator currently based in Berlin, Jye specializes in creating uniquely themed events, performances, and performance workshops, fostering vibrant and inclusive communities. Driven by curiosity and a passion for exploration, Jye dedicated five years to higher education. Their studies included a wide range of subjects, from art and theatre to psychology and philosophy, and they continue to pursue learning opportunities that challenge and inspire them.
           </div>
           <div className="my-4"></div>
           <div>
-            They are currently based in Berlin, seeking opportunities for creative projects, alongside that of Urban Cruise Ship. Their webpage is below if you wish to see a sampling of their
-            art.
+          Their eclectic interests include gaming, history, architectural exploration, and immersive hiking adventures, with particular affection for trains, castles, cathedrals, ancient forests, majestic mountains, and fairies. Jye is also a dedicated advocate for mental health awareness and support, and they actively engage in community-building initiatives. They are a proud member of the LGBTQIA+ community and a vocal ally for marginalized and underrepresented groups. <div>Jye continues to seek opportunities for innovative creative collaborations alongside their ongoing role at Urban Cruise Ship. To explore a selection of their art and creative projects, visit their webpage below.</div>
           </div>
         </div>
         <center className="link-icon-set">
