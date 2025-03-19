@@ -492,15 +492,13 @@ const Crew = () => {
         <br></br>
 
         <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
-          Jye
+          Jye Harrison
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
-            Jye serves as a graphic designer, researcher, and design consultant
-            at Urban Cruise Ship. Some notable contributions include dynamic
-            graphic-generating interactive tables on the History site, automated
-            standardized estimates graphics for solutions, and concept
-            distillation and search automation for Urban Foot Notes.
+            Jye serves as a graphic designer, writer, and design consultant
+            at Urban Cruise Ship. Some notable contributions include a large number of solution articles, comparative interactive tables on the History site, graphics for solutions, and concept
+            distillation for Urban Foot Notes.
           </div>
           <div className="my-4"></div>
           <div>
@@ -508,15 +506,12 @@ const Crew = () => {
             are a specialty. Their friends network includes many societal
             minorities. Multiple spectra are represented. Five years of college
             served an educational, not credentialing, purpose. Hobbies include
-            gaming, history, architectural exploration and hiking. D&D played
-            well. Trains, castles, cathedrals, old forests, mountains loved.
+            gaming, history, architectural exploration and hiking. Trains, castles, cathedrals, old forests, mountains loved.
             Fairies too.
           </div>
           <div className="my-4"></div>
           <div>
-            They consider themselves a yoga student, and environmentalist. They
-            hope to learn more, to grow, and are always looking for ways to do
-            both. Their webpage is below if you wish to see a sampling of their
+            They are currently based in Berlin, seeking opportunities for creative projects, alongside that of Urban Cruise Ship. Their webpage is below if you wish to see a sampling of their
             art.
           </div>
         </div>
