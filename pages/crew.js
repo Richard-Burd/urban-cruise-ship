@@ -323,16 +323,14 @@ const Crew = () => {
           </div>
           <div className="my-4"></div>
           <div>
-            Lee currently lives in Lansing, Michigan with his wife and two sons.
+            Lee currently lives in Cape Girardeau, Missouri with his wife and two sons.
             He has been an ethical vegan since January 2014. Lee was recruited
             by Urban Cruise Ship after his August 2018 presentation at a Vegan
             Peace meeting in Nashville, Tennessee. In February of 2019 Lee was
             elected to serve on the Board of Trustees of the Unity Spiritual
             Center of Lansing. In the fall of 2020 Lee graduated from the
             Lansing Citizens Academy, a program to learn about local government
-            and the role of citizen involvement. Lee teaches yoga and tai chi at
-            a local YMCA and enjoys seeing his students learn and grow through
-            practice. Lee has always had a love for environmentalism and also
+            and the role of citizen involvement. Lee has always had a love for environmentalism and also
             enjoys trail running, yoga, tai chi, calisthenics, hiking,
             gardening, and reading.
           </div>
