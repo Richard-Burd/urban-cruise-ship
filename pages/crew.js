@@ -323,18 +323,16 @@ const Crew = () => {
           </div>
           <div className="my-4"></div>
           <div>
-            Lee currently lives in Lansing, Michigan with his wife and two sons.
-            He has been an ethical vegan since January 2014. Lee was recruited
-            by Urban Cruise Ship after his August 2018 presentation at a Vegan
-            Peace meeting in Nashville, Tennessee. In February of 2019 Lee was
-            elected to serve on the Board of Trustees of the Unity Spiritual
-            Center of Lansing. In the fall of 2020 Lee graduated from the
-            Lansing Citizens Academy, a program to learn about local government
-            and the role of citizen involvement. Lee teaches yoga and tai chi at
-            a local YMCA and enjoys seeing his students learn and grow through
-            practice. Lee has always had a love for environmentalism and also
-            enjoys trail running, yoga, tai chi, calisthenics, hiking,
-            gardening, and reading.
+            Lee currently lives in Cape Girardeau, Missouri with his wife and
+            two sons. He has been an ethical vegan since January 2014. Lee was
+            recruited by Urban Cruise Ship after his August 2018 presentation at
+            a Vegan Peace meeting in Nashville, Tennessee. In February of 2019
+            Lee was elected to serve on the Board of Trustees of the Unity
+            Spiritual Center of Lansing. In the fall of 2020 Lee graduated from
+            the Lansing Citizens Academy, a program to learn about local
+            government and the role of citizen involvement. Lee has always had a
+            love for environmentalism and also enjoys trail running, yoga, tai
+            chi, calisthenics, hiking, gardening, and reading.
           </div>
         </div>
         <center className="link-icon-set">
@@ -607,8 +605,20 @@ const Crew = () => {
         </div>
         <div className="my-7 standard-font-3 text-justify text-lg">
           <div>
-            Roseanne Morgan is a new member of Urban Cruise Ship, her bio is
-            coming soon.
+            Roseanne Morgan joined Urban Cruise Ship&apos;s crew in 2023,
+            primarily to work on its then-new first-of-its-kind{" "}
+            <i>Urban Foot Notes</i> project, as Jye tried to refine John&apos;s
+            early sketches. She proposed graphic highlighting of non-near
+            services -- now standard -- and since further refined by Richard.
+            Roseanne surveyed the public about service preferences, and attended
+            groups like Urban Planet for their feedback. She wrote the first
+            walkability assessments.
+          </div>
+          <div className="my-4"></div>
+          <div>
+            Originally from the New York City area, Roseanne already had two
+            previous careers -- in fashion design, and culinary arts. She
+            continues to be involved with the food industry.
           </div>
           <div className="my-4"></div>
           <div></div>
