@@ -7,7 +7,9 @@ import ArticleImage from "/components/ArticleImage.js";
 
 import SolutionImages from "/components/SolutionImages.js";
 
-**Description:** We recommend that the U. S. Department of Energy, led by an appropriation from Congress, lead the construction of an HVDC grid in the United States.
+## Description
+
+We recommend that the U. S. Department of Energy, led by an appropriation from Congress, lead the construction of a high voltage direct current grid in the United States.
 
 <SolutionImages 
   mobileSrc={"hvdc_grid_construction_mobile.svg"}
@@ -16,13 +18,28 @@ import SolutionImages from "/components/SolutionImages.js";
   desktopHeight={340}
 />
 
-**Calculations:** Cost and benefit estimates are given by MacDonald et al. [^"9"]; they provide figures on an annual basis and we estimate a 7% discount rate.
+## Calculations
+
+Cost and benefit estimates are given by MacDonald et al. [^"9"]; they provide figures on an annual basis and we estimate a 7% discount rate.
 
 Greenhouse gas reduction estimates are based on the assumption of 4,000 TWh per year of total electricity in the United States; that 50% renewable energy penetration would be feasible without the HVDC grid; 80% would be feasible with it; and that the renewable energy that would be enabled by the grid would have a greenhouse gas impact of 50 grams/kWh CO₂e and would displace natural gas at 450 g/kWh.
 
-**Implementation:** Due to the scale of a national HVDC grid, funding would likely have to be a dedicated appropriation by Congress, perhaps as part of an infrastructure bill. Development may also require revising the National Environmental Policy Act (NEPA) to facilitate the land acquisition that will be necessary for the grid.
+The Seams study, lead by the National Renewable Energy Laboratory, also considered the benefits and costs of a HVDC grid [^"2"]. The study found that a national HVDC network in the United States would bring a 35-year net present operational cost of $12.4 billion and a net present operational benefit of $15.3 billion, for a benefit/cost ratio of 1.36. The benefit/cost ratio ranges from 1.22 to 1.8 based on various assumptions about energy costs. Higher ratios are found for scenarios of HVDC interconnects between the Eastern and Western Interconnections, the two largest grids in North America.
 
-[^"9"]: MacDonald, A., Clack, C., Alexander, A., Dunbar, A., Wilczak, J., Xie, Y. ["Future cost-competitive electricity systems and their impact on US CO₂ emissions"](https://www.nature.com/articles/nclimate2921). Nature Climate Change 6, pp. 526–531. January 2016.
+## Implementation
+
+Due to the scale of a national HVDC grid, funding would likely have to be a dedicated appropriation by Congress, perhaps as part of an infrastructure bill. HVDC entails interaction between alternating current and direct current transmission, which requires more investment in complex control systems [^"1"].
+
+Permitting has historically been a challenge for the development of HVDC in the United States. Local opposition, for instance, prevented the construction of Clean Line Energy's proposal for an HVDC interconnection between wind power in the Great Plains and power demands in the American Southeast. To reduce such opposition, the Federation of Amercican Scientists suggests that a national HVDC network be built primarily underground and on right-of-way already developed with highway, rail, or transmission projects [^"3"].
+
+
+[^"1"]: Joseph, T. ["The challenges and problems of HVDC schemes connected to weak grids and its correlation with existing Grid Code specifications"](https://www.hvdccentre.com/wp-content/uploads/2020/07/D1_CardiffR2_clean.pdf). The National HVDC Center, Cardiff University. August 2019.
+
+[^"2"]: Bloom, A., Novacheck, J., Brinkman, G., McCalley, J., Figueroa-Acevedo, A. L., Jahanbani-Ardakani, A., Nosair, H., Venkatraman, A., Caspary, J., Osborn, D., Lau, J. ["The Value of Increased HVDC Capacity Between Eastern and Western U.S. Grids: The Interconnections Seam Study"](https://doi.org/10.1109/TPWRS.2021.3115092). IEEE Transactions on Power Systems **37**(3). May 2022. 
+
+[^"3"]: Tracey, J. ["Creating a National HVDC Transmission Network"](https://fas.org/publication/creating-a-national-hvdc-transmission-network/). Federation of American Scientists. November 2024.
+
+[^"9"]: MacDonald, A., Clack, C., Alexander, A., Dunbar, A., Wilczak, J., Xie, Y. ["Future cost-competitive electricity systems and their impact on US CO₂ emissions"](https://www.nature.com/articles/nclimate2921). Nature Climate Change **6**, pp. 526–531. January 2016.
 
 export default ({ children }) => 
   <SolutionDropdown 

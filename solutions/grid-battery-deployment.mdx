@@ -15,7 +15,7 @@ import ArticleImage from "/components/ArticleImage.js";
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
-We propose installing 50GWh capacity of electrical energy storage batteries at strategic locations to ease grid network load balancing.
+We propose installing 50 gigawatt-hours of capacity of electrical energy storage batteries at strategic locations to ease grid network load balancing.
 
 <DynamicSolutionGraphic
   barChartTitle={"Grid Battery Deployment"}
@@ -32,13 +32,13 @@ We propose installing 50GWh capacity of electrical energy storage batteries at s
     {
      name: "Benefit",
       barlength: 84.1,
-      displayedValue: "$84.1",
+      displayedValue: "$84.1 billion/year",
       site: "null",
     },
     {
       name: "Cost",
       barlength: 41.7,
-      displayedValue: "$41.7 Billions USD/year",
+      displayedValue: "$41.7 billion/year",
       site: "null",
     },
   ]}
@@ -46,27 +46,28 @@ We propose installing 50GWh capacity of electrical energy storage batteries at s
 
 ## Calculations
 
-Cost calculations used 2020 projected numbers converted to USD. Benefit calculations were averaged and then converted to 2020 USD. Then those numbers are multiplied by 5,000 to meet our goal of installing 50GWh worth of EES batteries. All numbers are derived from Sidhu et al.[^”1”].
+Sidhu et al.[^"1"] estimate costs and benefits, including social costs and benefits, of a battery installation with a storage capacity of 10 megawatt-hours and a power capacity of 6 megawatts in Britain. As many elements of the calculations are uncertain, several model runs were conducted using a Monte Carlo simulation. Four to seven years of project costs declines resulting from a learning curve effect were included in the calculations. The per-megawatt-hour costs are then applied the proposed 50 GWh of storage.
 
 <SolutionImages 
   desktopSrc={"grid_battery_deployment_cba.svg"}
   desktopHeight={552}
 />
 
-## Implementation
-Individual utilities should study whether grid batteries make sense in their context, and if so, build them. Depending on the market, EES technologies and their applications can be subject to different regulatory context and policies[^”1”].
-
-Sources: Sidhu et al.[^”1”], Li et al.[^”2”], Ouyang et al.[^”3”].
+Several other researchers have estimated costs and benefits of battery energy storage in different contexts.
 
 <ArticleImage image={"storage_cba.svg"} width={900} height={370} />
+#### Sources: Sidhu et al. [^"1"], Li et al. [^"2"], Ouyang et al. [^"3"].
 
-##### Lead researcher: Lee Nelson - Last updated: 9/24/2023
+## Implementation
+Individual utilities should study whether grid batteries make sense in their context, and if so, build them. Depending on the market, energy storage technologies and their applications can be subject to different regulatory context and policies [^"1"].
 
-[^”1”]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study.”] (https://www.sciencedirect.com/science/article/pii/S0306261917318068) Applied Energy 212, pp. 881-894. February 2018.
+##### Lead researcher: Lee Nelson. Last updated on September 24, 2023.
 
-[^”2”]: Li, X., Chalvatzis, K., Stephanides, P. ["Innovative Energy Islands: Life-Cycle Cost-Benefit Analysis for Battery Energy Storage".] (https://www.mdpi.com/2071-1050/10/10/3371) Sustainability 10(10). September 2018.
+[^"1"]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study."](https://www.sciencedirect.com/science/article/pii/S0306261917318068) Applied Energy **212**, pp. 881-894. February 2018.
 
-[^”3”]: Ouyang, J., Mantegna, G., Li, V., Mullen, D., Patel, K., Olson, A. ["Minnesota Energy Storage Cost-Benefit Analysis".] (https://mn.gov/commerce/policy-data-reports/energy-data-reports/?id=17-415938) Prepared For: Minnesota Department of Commerce, Division of Energy Resources. Prepared By: Energy and Environmental Economics, Inc. (E3). December 2019.
+[^"2"]: Li, X., Chalvatzis, K., Stephanides, P. ["Innovative Energy Islands: Life-Cycle Cost-Benefit Analysis for Battery Energy Storage"](https://www.mdpi.com/2071-1050/10/10/3371). Sustainability **10**(10). September 2018.
+
+[^"3"]: Ouyang, J., Mantegna, G., Li, V., Mullen, D., Patel, K., Olson, A. ["Minnesota Energy Storage Cost-Benefit Analysis"](https://mn.gov/commerce/policy-data-reports/energy-data-reports/?id=17-415938). Prepared For: Minnesota Department of Commerce, Division of Energy Resources. Prepared By: Energy and Environmental Economics, Inc. (E3). December 2019.
 
 export default ({ children }) => 
   <SolutionDropdown 

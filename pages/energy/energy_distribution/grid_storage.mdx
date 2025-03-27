@@ -2,6 +2,12 @@
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const site = "energy";
 export const focusAreaUrl = "energy_distribution";
 
@@ -16,15 +22,145 @@ Energy storage might achieve [load balancing](/energy/energy_distribution/load_b
 Grid storage is near the break-even point today financially, with externalities accounted for.
 
 ## Storage Needs
-High renewable energy scenarios may require large amounts of energy storage. The following estimates storage requires for several scenarios of 80% wind and solar on the United States grid.
+High renewable energy scenarios may require large amounts of energy storage. The following are several estimates of storage requirements for scenarios of 80% wind and solar on the United States grid.
 
 <ArticleImage image={"storage_needs.svg"} width={780} height={340} />
-#### Estimate storage needed for the United States to produce 80% of electricity from wind and solar. Most estimates from Cebulla et al. [^8], with the high estimate from Shaner et al. [^20]. The estimate of Shaner et al. is based on a scenario of no curtailment of renewable energy and no high voltage direct current interconnections. Usage of curtailment or HVDC would reduce storage needs. The figure of 5.4 TWh is equal to about 12 hours of electricity usage in the United States.
+#### Estimated storage needed for the United States to produce 80% of electricity from wind and solar. Most estimates from Cebulla et al. [^8], with the high estimate from Shaner et al. [^20]. The estimate of Shaner et al. is based on a scenario of no curtailment of renewable energy and no high voltage direct current interconnections. Usage of curtailment or HVDC would reduce storage needs. The figure of 5.4 TWh is equal to about 12 hours of electricity usage in the United States.
 
 ## Storage Costs
 As of 2015, the following investment costs for storage have been observed.
 
-<ArticleImage image={"storage_investment_cost.svg"} width={1000} height={410} />
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Electricity Storage Costs - Capacity"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  mastheadToggle={""}
+  chartType={"hideArrow"}
+  mastheadText3={"MG, Mar. 27, 2025"}
+  staticData={[
+    {
+      name: "Compressed Air",
+      barlength: 39,
+      displayedValue: "$39/kWh",
+      site: "null",
+    },
+    {
+      name: "Flywheel",
+      barlength: 5399,
+      displayedValue: "$5399/kWh",
+      site: "null",
+    },
+    {
+      name: "Hydrogen",
+      barlength: 31,
+      displayedValue: "$31/kWh",
+      site: "null",
+    },
+    {
+      name: "Lead Acid",
+      barlength: 471,
+      displayedValue: "$471/kWh",
+      site: "null",
+    },
+    {
+      name: "Lithium Ion",
+      barlength: 802,
+      displayedValue: "$802/kWh",
+      site: "null",
+    },
+    {
+      name: "Pumped Hydro",
+      barlength: 80,
+      displayedValue: "$80/kWh",
+      site: "null",
+    },
+    {
+      name: "Sodium Sulphur",
+      barlength: 738,
+      displayedValue: "$738/kWh",
+      site: "null",
+    },
+    {
+      name: "Supercapacitor",
+      barlength: 13560,
+      displayedValue: "$13,560/kWh",
+      site: "null",
+    },
+    {
+      name: "Vanadium Redox Flow",
+      barlength: 760,
+      displayedValue: "$760/kWh",
+      site: "null",
+    }
+  ]}
+/>
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Electricity Storage Costs - Power"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  mastheadToggle={""}
+  chartType={"hideArrow"}
+  mastheadText3={"MG, Mar. 27, 2025"}
+  staticData={[
+    {
+      name: "Compressed Air",
+      barlength: 871,
+      displayedValue: "$871/kW",
+      site: "null",
+    },
+    {
+      name: "Flywheel",
+      barlength: 641,
+      displayedValue: "$641/kWh",
+      site: "null",
+    },
+    {
+      name: "Hydrogen",
+      barlength: 5417,
+      displayedValue: "$5417/kWh",
+      site: "null",
+    },
+    {
+      name: "Lead Acid",
+      barlength: 675,
+      displayedValue: "$675/kWh",
+      site: "null",
+    },
+    {
+      name: "Lithium Ion",
+      barlength: 678,
+      displayedValue: "$678/kWh",
+      site: "null",
+    },
+    {
+      name: "Pumped Hydro",
+      barlength: 1129,
+      displayedValue: "$1129/kWh",
+      site: "null",
+    },
+    {
+      name: "Sodium Sulphur",
+      barlength: 657,
+      displayedValue: "$657/kWh",
+      site: "null",
+    },
+    {
+      name: "Supercapacitor",
+      barlength: 296,
+      displayedValue: "$296/kWh",
+      site: "null",
+    },
+    {
+      name: "Vanadium Redox Flow",
+      barlength: 829,
+      displayedValue: "$829/kWh",
+      site: "null",
+    }
+  ]}
+/>
 #### Investment costs for energy storage as of 2015. Source: Schmidt et al. [^19].
 
 Since 2015, the cost of battery storage, especially that of lithium-ion batteries, has fallen considerably. As of late 2022, it appears that the cost has stabilized at $151/kW [^25].
@@ -42,7 +178,7 @@ For secondary response, pumped hydro and compressed air should remain the most a
 There are no well-developed solutions for seasonal storage on the immediate horizon.
 
 <ArticleImage image={"lcos_seasonal.svg"} width={870} height={510} />
-#### Source: Jenkins and Sepulveda [^13]. Seasonal storage with ammonia is expected to be less than the cost of hydrogen storage [^3][23]. See also our discussion of seasonal storage with [ammonia](/energy/energy_distribution/ammonia).
+#### Source: Jenkins and Sepulveda [^13]. Seasonal storage with ammonia is expected to be less than the cost of hydrogen storage [^3],[^23]. See also our discussion of seasonal storage with [ammonia](/energy/energy_distribution/ammonia).
 
 Energy storage requires grid integration costs in addition to the cost of the storage devices themselves [^9].
 
@@ -73,7 +209,7 @@ Due to reliance on natural geologic formations, pumped hydro and compressed air 
 ## Emerging Concepts
 
 ### Pumped Hydro
-Although pumped hydro is established, there are novel hyrdo concepts under development. Coastal sites may be able to use the ocean as a reservoir. Variable-speed pumped hydro might be of greater value than conventional pumped hydro due to a greater ability to provide ancillary services [^1].
+Although pumped hydro is established, there are novel hydro concepts under development. Coastal sites may be able to use the ocean as a reservoir. Variable-speed pumped hydro might be of greater value than conventional pumped hydro due to a greater ability to provide ancillary services [^1].
 
 ### Compressed Air
 Near-isothermal CAES has the potential for greater efficiency and lower cost [^1].
@@ -82,7 +218,7 @@ Near-isothermal CAES has the potential for greater efficiency and lower cost [^1
 A novel battery technology, developed by Ambri [^2], uses two liquid metal electrodes and a molten salt electrolyte. The goal is a grid-level battery with greater longevity.
 
 ### Flywheels
-Flywheels are at an early state of commercialization, and are most promising for short-term storage applications [^4]. Progress in low-cost, high-strength materials will further improve flywheel prospects.
+Flywheels are at an early state of commercialization and are most promising for short-term storage applications [^4]. Progress in low-cost, high-strength materials will further improve flywheel prospects.
 
 ### Capacitors
 Capacitors are an important tool for regulating grid voltage levels, but until recently they have not been regarded as feasible for large-scale energy storage. Next-generation capacitors, known as supercapacitors or ultracapacitors, can react more quickly than other storage media, smooth out sudden voltage changes, and thereby extend the life of batteries by 10-30% [^10]. Multi-hour energy storage may be achievable at 5 ¢/kWh per cycle [^16].
@@ -101,15 +237,15 @@ Betavoltaics, also called nuclear batteries, are a useful source of energy for n
 
 [^3]: Bartels, J. ["A feasibility study of implementing an Ammonia Economy"](https://lib.dr.iastate.edu/etd/11132). Iowa State University, Graduate Theses and Dissertations. 11132. 2008.
 
-[^4]: Berry, G. ["Present and Future Electricity Storage for Intermittent Renewables"](http://www.c2es.org/docUploads/10-50_Berry.pdf). Lawrence Livermore National Laboratory. From workshop proceedings, "The 10-50 Solution: Technologies and Policies for a Low-Carbon Future." The Pew Center on Global Climate Change and the National Commission on Energy Policy.
+[^4]: Berry, G. ["Present and Future Electricity Storage for Intermittent Renewables"](http://www.c2es.org/docUploads/10-50_Berry.pdf). Lawrence Livermore National Laboratory. From workshop proceedings, "The 10-50 Solution: Technologies and Policies for a Low-Carbon Future." The Pew Center on Global Climate Change and the National Commission on Energy Policy. November 2004.
 
-[^5]: Bormashov, V., Troschiev, S., Tarelkin, S., Volkov, A., Teteruk, D., Golovanov, A., Kuznetsov, N., Kornilov, N., Terentiev, S., Blank, V. ["High power density nuclear battery prototype based on diamond Schottky diodes"](https://www.sciencedirect.com/science/article/abs/pii/S0925963517307495). Diamond and Related Materials 84, pp. 41-47. April 2018.
+[^5]: Bormashov, V., Troschiev, S., Tarelkin, S., Volkov, A., Teteruk, D., Golovanov, A., Kuznetsov, N., Kornilov, N., Terentiev, S., Blank, V. ["High power density nuclear battery prototype based on diamond Schottky diodes"](https://www.sciencedirect.com/science/article/abs/pii/S0925963517307495). Diamond and Related Materials **84**, pp. 41-47. April 2018.
 
 [^6]: Bouman, E., Øberg, M., Hertwich, E. ["Lifecycle Assessment of Compressed Air Energy Storage (CAES)"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.895.6480&rep=rep1&type=pdf). The 6th International Conference on Life Cycle Management in Gothenburg 2013. 2013.
 
 [^7]: California ISO. ["California Vehicle-Grid Integration (VGI) Roadmap: Enabling vehicle-based grid services"](https://www.caiso.com/Documents/Vehicle-GridIntegrationRoadmap.pdf). February 2014.
 
-[^8]: Cebulla, F., Haas, J., Eichman, J., Nowak, W., Mancarella, P. ["How much electrical energy storage do we need? A synthesis for the U.S., Europe, and Germany"](https://www.sciencedirect.com/science/article/pii/S0959652618301665). Journal of Cleaner Production 181, pp. 449-459. April 2018.
+[^8]: Cebulla, F., Haas, J., Eichman, J., Nowak, W., Mancarella, P. ["How much electrical energy storage do we need? A synthesis for the U.S., Europe, and Germany"](https://www.sciencedirect.com/science/article/pii/S0959652618301665). Journal of Cleaner Production **181**, pp. 449-459. April 2018.
 
 [^9]: Fu, R., Remo, T., Margolis, R. ["2018 U.S. Utility-Scale Photovoltaics Plus-Energy Storage System Costs Benchmark"](https://www.osti.gov/biblio/1484345-utility-scale-photovoltaics-plus-energy-storage-system-costs-benchmark). National Renewable Energy Laboratory. November 2018.
 
@@ -119,27 +255,27 @@ Betavoltaics, also called nuclear batteries, are a useful source of energy for n
 
 [^12]: International Energy Agency. ["Energy storage"](https://www.iea.org/tcep/energyintegration/energystorage/). Tracking Clean Energy Progress. Accessed August 15, 2019.
 
-[^13]: Jenkins, J. D., Sepulveda, N. A. ["Long-duration energy storage: A blueprint for research and innovation"](https://www.sciencedirect.com/science/article/abs/pii/S2542435121003585). Joule 5(9), pp. 2241-2246. September 2021.
+[^13]: Jenkins, J. D., Sepulveda, N. A. ["Long-duration energy storage: A blueprint for research and innovation"](https://www.sciencedirect.com/science/article/abs/pii/S2542435121003585). Joule **5**(9), pp. 2241-2246. September 2021.
 
 [^14]: Kapila, S. ["Techno-economic and life cycle assessment of large energy storage systems"](https://era.library.ualberta.ca/items/cb919244-df4b-46d7-a5b8-eaae7a106df2/view/b0b5b682-ee23-4273-b375-8fa882acadf7/Kapila_Sahil_201801_MSc.pdf). A thesis submitted in partial fulfillment of the requirements for the degree of Master of Science in Engineering Management, Department of Mechanical Engineering, University of Alberta. 2018.
 
-[^15]: Li, X., Chalvatzis, K., Stephanides, P. ["Innovative Energy Islands: Life-Cycle Cost-Benefit Analysis for Battery Energy Storage"](https://www.mdpi.com/2071-1050/10/10/3371). Sustainability 10(10). September 2018.
+[^15]: Li, X., Chalvatzis, K., Stephanides, P. ["Innovative Energy Islands: Life-Cycle Cost-Benefit Analysis for Battery Energy Storage"](https://www.mdpi.com/2071-1050/10/10/3371). Sustainability **10**(10). September 2018.
 
 [^16]: Miller, J. ["Capacitors for Power Grid Storage (Multi-Hour Bulk Energy Storage using Capacitors)"](http://energy.gov/sites/prod/files/piprod/documents/Session_D_Miller_rev.pdf). JME Inc. and Case Western Reserve University. October 2010.
 
 [^17]: Ouyang, J., Mantegna, G., Li, V., Mullen, D., Patel, K., Olson, A. ["Minnesota Energy Storage Cost-Benefit Analysis"](https://mn.gov/commerce/policy-data-reports/energy-data-reports/?id=17-415938). Prepared For: Prepared for: Minnesota Department of Commerce, Division of Energy Resources. Prepared By: Energy and Environmental Economics, Inc. (E3). December 2019.
 
-[^18]: Prelas, M., Weaver, C., Watermann, M., Lukosi, E., Schott, R., Wisniewsi, D. ["A review of nuclear batteries"](https://www.sciencedirect.com/science/article/abs/pii/S0149197014000961). Progress in Nuclear Energy 75, pp. 117-148. August 2014.
+[^18]: Prelas, M., Weaver, C., Watermann, M., Lukosi, E., Schott, R., Wisniewsi, D. ["A review of nuclear batteries"](https://www.sciencedirect.com/science/article/abs/pii/S0149197014000961). Progress in Nuclear Energy **75**, pp. 117-148. August 2014.
 
-[^19]: Schmidt, O., Melchior, S., Hawkes, A., Staffel, I. ["Projecting the Future Levelized Cost of Electricity Storage Technologies"](https://www.sciencedirect.com/science/article/pii/S254243511830583X). Joule 3(1), pp. 81-100. January 2019.
+[^19]: Schmidt, O., Melchior, S., Hawkes, A., Staffel, I. ["Projecting the Future Levelized Cost of Electricity Storage Technologies"](https://www.sciencedirect.com/science/article/pii/S254243511830583X). Joule **3**(1), pp. 81-100. January 2019.
 
-[^20]: Shaner, M., Davis, S., Lewis, M., Caldeira, K. ["Geophysical constraints on the reliability of solar and wind power in the United States"](https://pubs.rsc.org/en/content/articlelanding/ee/2018/c7ee03029k). Energy & Environmental Science 11(4), pp. 914-925. 2018.
+[^20]: Shaner, M., Davis, S., Lewis, M., Caldeira, K. ["Geophysical constraints on the reliability of solar and wind power in the United States"](https://pubs.rsc.org/en/content/articlelanding/ee/2018/c7ee03029k). Energy & Environmental Science **11**(4), pp. 914-925. 2018.
 
-[^21]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study"](https://www.sciencedirect.com/science/article/pii/S0306261917318068). Applied Energy 212, pp. 881-894. February 2018.
+[^21]: Sidhu, A., Pollitt, M., Anaya, K. ["A social cost benefit analysis of grid-scale electrical energy storage projects: A case study"](https://www.sciencedirect.com/science/article/pii/S0306261917318068). Applied Energy **212**, pp. 881-894. February 2018.
 
-[^22]: Turton, H., Moura, F. ["Vehicle-to-grid systems for sustainable development: An integrated energy analysis"](http://www.sciencedirect.com/science/article/pii/S0040162507002053). Technological Forecasting & Social Change 75(8), 1091-1108. 2008.
+[^22]: Turton, H., Moura, F. ["Vehicle-to-grid systems for sustainable development: An integrated energy analysis"](http://www.sciencedirect.com/science/article/pii/S0040162507002053). Technological Forecasting & Social Change **75**(8), 1091-1108. 2008.
 
-[^23]: Valera-Medina, A., Xiao, H., Owen-Jones, M., David, W., Bowen, P. ["Ammonia for power"](https://www.sciencedirect.com/science/article/pii/S0360128517302320). Progress in Energy and Combustion Science 69, pp. 63-102. November 2018.
+[^23]: Valera-Medina, A., Xiao, H., Owen-Jones, M., David, W., Bowen, P. ["Ammonia for power"](https://www.sciencedirect.com/science/article/pii/S0360128517302320). Progress in Energy and Combustion Science **69**, pp. 63-102. November 2018.
 
 [^24]: Wang, G., Mitsos, A., Marquardt, W. ["Conceptual design of ammonia‐based energy storage system: System design and time‐invariant performance"](https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/aic.15660). AIChE Journal. January 2017.
 
