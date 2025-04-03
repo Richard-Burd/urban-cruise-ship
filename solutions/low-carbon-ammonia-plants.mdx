@@ -6,23 +6,30 @@ export const solution = "Low-Carbon Ammonia Plants";
 import ArticleImage from "/components/ArticleImage.js";
 
 ## Description
-We promote the strategic use of low-carbon ammonia plants.
+We propose the strategic use of low-carbon ammonia plants.
 
 ## Background
-At 6 ¢/kWh, ammonia electrolysis will struggle to complete with production from coal or gas regardless of the plant's capacity factor. At 3 ¢/kWh, the plant might operate profitably at even less than 50% capacity.
+In the early- to mid-20th century, electrolyzed ammonia plants were common, but improvements in the Haber-Bosch process led to the near disappearance of that technology by 2023. Nevertheless, several electrolysis plants are in various stages of development, and that pathways may become more common again in coming years [^"2"].
+
+With electricity at 6¢ per kilowatt-hour, ammonia electrolysis will struggle to complete with production from coal or gas regardless of the plant's capacity factor. At 3¢/kWh, the plant might operate profitably at even less than 50% capacity.
 
 <ArticleImage image={"ammonia_carbon.svg"} width={800} height={300} />
-#### Estimated costs of ammonia plants, with CO2 emissions valued at $50/ton, and cost of mitigated emissions. Estimates are based on a 500 metric ton per day plant, the threshhold between small and large plants given by ThyseenKrupp [^"19"].
+#### Estimated costs of ammonia plants, with CO<sub>2</sub> emissions valued at $50/ton, and cost of mitigated emissions. Estimates are based on a 500 metric ton per day plant, the threshhold between small and large plants given by ThyseenKrupp [^"1"].
 
 ## Calculations
 We estimate the costs of carbon mitigation, using above cost estimates and below greenhouse gas estimates.
 
 ## Implementation
-To be cost effective the ammonia plants would only run when electricity prices are cheap. This might mean a seasonal schedule.
 
-##### Lead researcher: Lee Nelson - Last updated: 1/14/2024
+The Mission Possible Partnership envisions that, in a scenario consistent with a 1.5° Celsius temperature rise, electrolyzed ammonia must be added at a rate that will reach nearly 100 gigawatts by the 2030s [^"3"], well in excess of the planned capacity at present [^"2"]. To be cost effective the ammonia plants would only run when electricity prices are cheap. This might mean a seasonal schedule.
 
-[^”1”]: ThyssenKrupp ["Ammonia Plants"](https://www.thyssenkrupp-industrial-solutions.com/en/products-and-services/fertilizer-plants/ammonia-plants-by-uhde) Accessed 1/13/2024
+##### Lead researcher: Lee Nelson - Last updated: January 14, 2024.
+
+[^"1"]: ThyssenKrupp. ["Ammonia Plants"](https://www.thyssenkrupp-industrial-solutions.com/en/products-and-services/fertilizer-plants/ammonia-plants-by-uhde). Accessed January 13, 2024.
+
+[^"2"]: Rouwenhorston, K. ["Technology status: ammonia production from electrolysis-based hydrogen"](https://ammoniaenergy.org/articles/technology-status-ammonia-production-from-electrolysis-based-hydrogen/). Ammonia Energy Association. Janauary 2023.
+
+[^"3"]: Rogers, M., Delasalle, F., Speelman, E., Hoffman, J., Shah, T., Wuellenweber, J., Miranda, J. P.,  de Villepin, L., Witteveen, M., Isabirye, A., Kolomanska, J., Brkovic, B., Sandström, J. ["Making Net-Zero Ammonia Possible"](https://www.missionpossiblepartnership.org/action-sectors/chemicals/). Mission Possible Partnership. September 2022.
 
 export default ({ children }) => 
   <SolutionDropdown 

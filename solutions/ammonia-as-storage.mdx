@@ -7,21 +7,23 @@ export const solution = "Ammonia As Storage";
 We propose using ammonia as a form of long-term seasonal energy storage.
 
 ## Background
-Ammonia does not contain carbon, it is not a greenhouse gas, and its flammability region in ambient air is very narrow[^”1”]. NH3 contains a high volume of H2 and can be used as a hydrogen storage molecule[^”1”]. It only needs water, air, and electricity to be produced[^”1”]. It can be stored in a tank and storage and transport is very affordable[^”1”].
-The production of NH3 involves an electrolyser, an ASU and an Haber-Bosch processes[^”1”].  This last technology is not negligible in the final cost but the most expensive process remains the electrolysis[^”1”].
+Ammonia, chemically NH<sub>3</sub>, is of interest for energy storage and many other applications as a carrier of hydrogen [^"1"]. Ammonia does not contain carbon, is not a greenhouse gas, and has narrow flammability in open air [^"1"]. Ammonia is produced with water, air, and electricity, and it is readily stored long-term in storage tanks [^"1"].
+Production steps of NH<sub>3</sub> include electrolysis, air separation, and the Haber-Bosch processes for nitrogen fixation, and while the Haber-Bosch process is of significant cost, electrolysis is the most expensive component of the process [^"1"].
 
 ## Calculations
-The global cost of using ammonia is $328.86/MWhNH3 [^”1”].
+The global cost of using ammonia is $328.86 per megawatt-hour [^"1"]. Ammonia's round-trip efficiency for 30-day storage is estimated at 23-33% [^"2"].
 
 
 ## Implementation
-There will need to be rigid safety protocols in place as ammonia has significant toxicity by inhalation and is corrosive to several metals[^”1”]. Combustion of NH3 produces NOx emission and can also damage steel combustion appliances[^”1”].
+There will need to be rigid safety protocols in place as ammonia has significant toxicity by inhalation and is corrosive to several metals, with damage from NOx emissions to steel combustion appliances a particular concern [^"1"].
 
-While there is some partial grid infrastructure for using ammonia as storage in the U.S., there is none in Europe or other countries and that will need to be developed for this to be truly viable worldwide[^”1”].
+While there is some partial grid infrastructure for using ammonia as storage in the United States, there is none in Europe or other countries and that will need to be developed for this to be truly viable worldwide [^"1"].
 
-##### Lead researcher: Lee Nelson - Last updated: 11/30/2023
+##### Lead researcher: Lee Nelson - Last updated: November 30, 2023.
 
-[^”1”]: Dias, V., Pochet, M., Contino, F., Jeanmart, H. ["Energy and Economic Costs of Chemical Storage"](https://www.frontiersin.org/articles/10.3389/fmech.2020.00021/full) Frontiers in Mechanical Engineering 6, May 2020 
+[^"1"]: Dias, V., Pochet, M., Contino, F., Jeanmart, H. ["Energy and Economic Costs of Chemical Storage"](https://doi.org/10.3389/fmech.2020.00021) Frontiers in Mechanical Engineering **6**(21). May 2020.
+
+[^"2"]: Müller, M., Pfeifer, M., Holtz, D., Müller, K. ["Comparison of green ammonia and green hydrogen pathways in terms of energy efficiency"](https://doi.org/10.1016/j.fuel.2023.129843). Fuel **357**: 129843. February 2024.
 
 
 export default ({ children }) => 
