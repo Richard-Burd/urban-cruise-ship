@@ -5,22 +5,47 @@ export const solution = "Ammonia for Shipping";
 
 import ArticleImage from "/components/ArticleImage.js";
 
+## Description
+
+We propose the use of ammonia, or another cleaner fuel, for international shipping.
+
+## Background
+
+At present, heavy fuel oil is the dominant fuel for international shipping. Due to heavy fuel oil's environmental impacts, there is great interest in transitioning to more benign fuels, especially in the Arctic, where an oil spill would have serious ecological impact [^"1"].
+
 Ammonia is considered an attractive [long-term substitute](/energy/transport/transpo_freight) for heavy fuel oil for shipping. At present, the most effective carbon mitigation option is shipping with ammonia produced from steam methane reforming, which is the most common method of producing ammonia today. Further emissions reductions are possible through carbon capture and sequestration or electrolysis. Following are estimated costs and benefits of building a new 2500 twenty-foot unit equivalent (TEU) container ship with an engine to consume ammonia instead of HFO.
 
 <ArticleImage image={"ammonia_shipping_cost.svg"} width={700} height={760} />
 #### Costs of ammonia fuel are about $246/ton for steam methane reforming without carbon capture and sequestration, as given by Al-Breiki and Bicer [^"2"], $420/ton for SMR with CCS, as noted above, and $830/ton for ammonia from electrolysis with low-carbon electricity, as given by Kim et al. [^"12"]. A distribution cost for ammonia of about $7/ton is assumed [^"20"]. Capital investment (CAPEX) and operations and management (O&M) costs are as in Kim et al., except the incremental costs of an ammonia engine are given by TNO [^"20"]. Emissions factors for heavy fuel oil, ammonia with CCS, and electrolyzed ammonia are from Kim et al., and emissions from SMR ammonia without CCS is assumed to be about 2.4 times greater than those of electrolyzed ammonia, as above for ammonia from solar PV.
 
-Compared to heavy fuel oil, ammonia eliminates SOₓ and particulate emissions, and reduces NOₓ and N₂O emissions [^"21"]. In 2018, the International Maritime Organization, the agency of the UN that governs, set a goal of reducing shipping's emissions by 50% in 2050 relative to 2008 levels [^"21"], and ammonia is one fuel, alongside methanol and synthetic methane, most likely to achieve this goal [^"8"].
+Compared to heavy fuel oil, ammonia eliminates SOₓ and particulate emissions, and reduces NOₓ and N₂O emissions [^"21"]. In 2018, the International Maritime Organization, the agency of the UN that governs international shipping, set a goal of reducing shipping's emissions by 50% in 2050 relative to 2008 levels [^"21"], and ammonia is one fuel, alongside methanol and synthetic methane, most likely to achieve this goal [^"8"].
 
-[^"2"]: Al-Breiki, M., Bicer, Y. ["Comparative cost assessment of sustainable energy carriers produced from natural gas accounting for boil-off gas and social cost of carbon"](https://www.sciencedirect.com/science/article/pii/S2352484720312312). Energy Reports 6, pp. 1897-1909. November 2020.
+## Implementation
+
+As of July 1, 2024, the International Maritime Organization has mostly banned the use of heavy fuel oil in the Arctic, with a full ban to come in 2029, but alternatives such as very low sulphur fuel oil and ultra low sulphur fuel oil carry their own ecological risks [^"3"]. Furthermore, Canada as delayed implementation of the IMO's ban, and Russia has opted out entirely [^"4"]. A transition to ammonia shipping fuel will not occur unless it can be done economically.
+
+As of 2025, there is no full-scale ammonia shipping, but there are several pilot projects, such as the development of an ammonia bunkering network [^"5"]. Development of ammonia shipping will require significant workforce development and thus a whole-of-industry effort [^"6"].
+
+
+[^"1"]: Comer, B. ["Transitioning away from heavy fuel oil in Arctic shipping"](https://theicct.org/publication/transitioning-away-from-heavy-fuel-oil-in-arctic-shipping/). Working paper, International Council on Clean Transportation.
+
+[^"2"]: Al-Breiki, M., Bicer, Y. ["Comparative cost assessment of sustainable energy carriers produced from natural gas accounting for boil-off gas and social cost of carbon"](https://www.sciencedirect.com/science/article/pii/S2352484720312312). Energy Reports **6**, pp. 1897-1909. November 2020.
+
+[^"3"]: Arctic Council. ["The changing tides of Arctic shipping: how new fuels impact the Arctic"](https://arctic-council.org/news/changing-tides-of-arctic-shipping-how-new-fuels-impact-the-arctic/). July 2024.
+
+[^"4"]: Walsh, D. ["Clean Arctic Alliance Responds to Russian Opt-out from Heavy Fuel Oil Ban, Raises Concerns Over Canada’s Implementation"](https://cleanarctic.org/2022/11/17/clean-arctic-alliance-responds-to-russian-opt-out-from-heavy-fuel-oil-ban-raises-concerns-over-canadas-implementation/). Clean Arctic Alliance. November 2022.
+
+[^"5"]: Gabrielii, C. ["Ammonia Fuel Bunkering Network project making rapid progress"](https://blog.sintef.com/energy/ammonia-fuel-bunkering-network-project-making-rapid-progress/). SINTEF. Accessed April 3, 2025.
+
+[^"6"]: Mærsk Mc-Kinney Møller Center for Zero Carbon Shipping, Lloyd’s Register Maritime Decarbonisation Hub. ["Ammonia as Fuel - Competencies and Training"](https://www.lr.org/en/knowledge/research-reports/2025/ammonia-as-fuel-competencies-and-training/). February 2025.
 
 [^"8"]: DNV GL. ["Energy Transition Outlook 2019: Maritime Forecast to 2050"](https://eto.dnv.com/2019/Maritime/#maritime-top). September 2019.
 
-[^"12"]: Kim, K., Roh, G., Kim, W., Chun, K. ["A Preliminary Study on an Alternative Ship Propulsion System Fueled by Ammonia: Environmental and Economic Assessments"](https://www.mdpi.com/2077-1312/8/3/183/htm). Journal of Marine Science and Engineering 8(3):183. March 2020.
+[^"12"]: Kim, K., Roh, G., Kim, W., Chun, K. ["A Preliminary Study on an Alternative Ship Propulsion System Fueled by Ammonia: Environmental and Economic Assessments"](https://www.mdpi.com/2077-1312/8/3/183/htm). Journal of Marine Science and Engineering **8**(3):183. March 2020.
 
 [^"20"]: TNO. ["Power-2-Fuel Cost Analysis"](https://smartport.nl/wp-content/uploads/2020/09/Cost-Analysis-Power-2-Fuel_def_2020.pdf). Prepared for SmartPort. September 2020.
 
-[^"21"]: Valera-Median, A., Amer-Hatem, F., Azaz, A. K., Dedoussi, I. C., de Joannon, M., Fernandes, R. X., Glarborg, P., Hashemi, H., He, X., Mashruk. S., McGowan, J., Mounaim-Rouselle, C., Ortiz-Prado, A., Rossetti, I., Shu, B., Yehia, M., Xiao, H., Costa, M. ["Review on Ammonia as a Potential Fuel: From Synthesis to Economics"](https://pubs.acs.org/doi/10.1021/acs.energyfuels.0c03685). Energy and Fuels. February 2021.
+[^"21"]: Valera-Median, A., Amer-Hatem, F., Azaz, A. K., Dedoussi, I. C., de Joannon, M., Fernandes, R. X., Glarborg, P., Hashemi, H., He, X., Mashruk. S., McGowan, J., Mounaim-Rouselle, C., Ortiz-Prado, A., Rossetti, I., Shu, B., Yehia, M., Xiao, H., Costa, M. ["Review on Ammonia as a Potential Fuel: From Synthesis to Economics"](https://pubs.acs.org/doi/10.1021/acs.energyfuels.0c03685). Energy and Fuels **35**(9), pp. 6964–7029. February 2021.
 
 export default ({ children }) => 
   <SolutionDropdown 
