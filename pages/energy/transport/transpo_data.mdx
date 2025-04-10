@@ -4,14 +4,59 @@ import hierarchy from "../hierarchy.json";
 export const site = "energy";
 export const focusAreaUrl = "transport";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import ArticleImage from "/components/ArticleImage.js";
 
 # Information Technology
 
-As information technology becomes more central to the world economy and society, its energy demands will grow rapidly.
+As information technology becomes more central to the world economy and society, its energy demands will grow rapidly. 
 
-## Growth in IT Energy Demand
-From 2010 to 2014, U.S. data center energy consumption grew only 4%, with demand growth only slightly outpacing energy efficiency. In the coming years, data centers energy consumption is expected to grow rapidly. Total IT energy demand is predicted to rise to from 1817 to 5860 TWh of electricity, or 20 to 63 exajoules of primary energy, from 2012 to 2025.
+## Data Centers and Artificial Intelligence
+
+In the 2020s, artificial intelligence has been the leading technological revolution driving change in the economy. Although data centers, the growth of which is driven by the training and usage of AI models, are a small part of the world energy mix, they are growing rapidly. The following worldwide data center electricity demand has been observed and projected by the International Energy Agency as of 2025 [^36].
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"World Data Center Electricity Demand"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={""}
+  mastheadToggle={''}
+  mastheadText3={"MG, Apr. 10, 2025"}
+  
+  
+  staticData={[   
+    	{
+	  name:"2024",
+      barlength: 415,
+      displayedValue: "415 terawatt-hours",
+      site: "null",
+	},
+    {
+      name: "2030",
+      barlength: 945,
+      displayedValue: "945 TWh",
+      site: "null",
+    },
+    {
+      name: "2035",
+      barlength: 1200,
+      displayedValue: "1200 TWh",
+      site: "null",
+    }
+   
+  ]}
+/>
+
+Due to great uncertainty about the trajectory of AI development, as well as broader macroeconomic trends, the IEA projects data center electricity demand in 2035 as ranging from 700 TWh to 1700 TWh. By comparison, world electricity consumption was just under 30,000 TWh in 2023 [^37]. The rate of growth of data center electricity demand has been 12% per year from 2017 to 2024, more than four times as much as the rate of growth of electricity demand overall [^36]. Data centers will account for 10% of world electricity demand growth to 2030; comparable figures are 5% in low-income countries, where other demand growths are also strong, 20% in wealthy countries, and nearly 50% in the United States.
+
+Earlier estimates were as follows. From 2010 to 2014, U.S. data center energy consumption grew only 4%, with demand growth only slightly outpacing energy efficiency. In the coming years, data centers energy consumption is expected to grow rapidly. Total IT energy demand is predicted to rise to from 1817 to 5860 TWh of electricity, or 20 to 63 exajoules of primary energy, from 2012 to 2025.
 
 <ArticleImage image={"it_energy.svg"} width={750} height={420} />
 #### IT energy consumption in 2012, reported by Cook et al. [^9], and projected in 2015, estimated by Andrae [^2]. The 2025 projection is over 20% world electricity consumption.
@@ -94,13 +139,13 @@ The rapidly growing size of deep learning models, together with diminishing retu
 
 
 
-[^1]: Alvarez-Mesa, M., Sanz-Rodríguez, S., Chi, C. C., Glowiak, M., Haring, R. ["8K/16K Video and 3D Audio Coding and Playback for Large-Screen Immersive Spaces"](https://ieeexplore.ieee.org/abstract/document/9335708). SMPTE Motion Imaging Journal 130(1), pp. 50-58. January 2021.
+[^1]: Alvarez-Mesa, M., Sanz-Rodríguez, S., Chi, C. C., Glowiak, M., Haring, R. ["8K/16K Video and 3D Audio Coding and Playback for Large-Screen Immersive Spaces"](https://ieeexplore.ieee.org/abstract/document/9335708). SMPTE Motion Imaging Journal **130**(1), pp. 50-58. January 2021.
 
 [^2]: Andrae, A. ["Total Consumer Power Consumption Forecast"](https://www.researchgate.net/publication/320225452_Total_Consumer_Power_Consumption_Forecast). Presentation to the Nordic Digital Business Summit. October 2017.
 
-[^3]: Aslan, J., Mayers, K., Koomey, J. G., France, C. ["Electricity Intensity of Internet Data Transmission: Untangling the Estimates"](https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630). Journal of Industrial Ecology 22(4), pp. 785-798. August 2017.
+[^3]: Aslan, J., Mayers, K., Koomey, J. G., France, C. ["Electricity Intensity of Internet Data Transmission: Untangling the Estimates"](https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630). Journal of Industrial Ecology **22**(4), pp. 785-798. August 2017.
 
-[^4]: Avgerinou, M., Bertoldi, P., Castellazzi, L. ["Trends in Data Centre Energy Consumption under the European Code of Conduct for Data Centre Energy Efficiency"](https://www.mdpi.com/1996-1073/10/10/1470). Energies 10(10), 1470. September 2017.
+[^4]: Avgerinou, M., Bertoldi, P., Castellazzi, L. ["Trends in Data Centre Energy Consumption under the European Code of Conduct for Data Centre Energy Efficiency"](https://www.mdpi.com/1996-1073/10/10/1470). Energies **10**(10), 1470. September 2017.
 
 [^5]: Biewald, L. ["Deep Learning and Carbon Emissions"](https://towardsdatascience.com/deep-learning-and-carbon-emissions-79723d5bc86e). Toward Data Science. June 2019.
 
@@ -118,7 +163,7 @@ The rapidly growing size of deep learning models, together with diminishing retu
 
 [^12]: Digiconomist. ["Ethereum Energy Consumption Index (beta)"](https://digiconomist.net/ethereum-energy-consumption). Accessed March 9, 2021.
 
-[^13]: Dodd, N. ["The social life of Bitcoin"](https://journals.sagepub.com/doi/abs/10.1177/0263276417746464). Theory, culture & society 35(5), pp. 35-56. December 2017.
+[^13]: Dodd, N. ["The social life of Bitcoin"](https://doi.org/10.1177/0263276417746464). Theory, Culture & Society **35**(5), pp. 35-56. December 2017.
 
 [^14]: Domingo, C. ["The Bitcoin vs Visa Electricity Consumption Fallacy"](https://hackernoon.com/the-bitcoin-vs-visa-electricity-consumption-fallacy-8cf194987a50). Hackernoon. November 2017.
 
@@ -132,7 +177,7 @@ The rapidly growing size of deep learning models, together with diminishing retu
 
 [^19]: Kamiya, G. ["The carbon footprint of streaming video: fact-checking the headlines"](https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines). International Energy Agency. December 2020.
 
-[^20]: Krizhevsky, A., Sutskever, I., Hinton, G. ["ImageNet Classification with Deep Convolutional Neural Networks"](https://dl.acm.org/doi/10.1145/3065386). Advances in neural information processing systems 25, pp. 1097-1105. 2012.
+[^20]: Krizhevsky, A., Sutskever, I., Hinton, G. ["ImageNet Classification with Deep Convolutional Neural Networks"](https://dl.acm.org/doi/10.1145/3065386). Advances in neural information processing systems **25**, pp. 1097-1105. 2012.
 
 [^21]: KÖLÜŞ, C., BAŞÇİFTÇİ, F. ["The Future Effects of Virtual Reality Games"](https://academicworks.livredelyon.com/cgi/viewcontent.cgi?article=1014&context=engineer_sci#page=57). Recent Research and Assessments for Computer Engineering, Academic Works of Livre de Lyon. 2020.
 
@@ -150,19 +195,23 @@ The rapidly growing size of deep learning models, together with diminishing retu
 
 [^28]: Peters, M. E., Neumann, M., Iyyer, M., Gardner, M., Clark, C., Lee, K., Zettlemoyer, L. ["ELMo"](https://allennlp.org/elmo). Allen Institute for Artificial Intelligence, NAACL 2018. 2018.
 
-[^29]: Robert, J., Kubler, S., Ghatpande, S. ["Enhanced Lightning Network (off-chain)-based micropayment in IoT ecosystems"](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19322654). Future Generation Computer Systems 112, pp. 283-296. November 2020.
+[^29]: Robert, J., Kubler, S., Ghatpande, S. ["Enhanced Lightning Network (off-chain)-based micropayment in IoT ecosystems"](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19322654). Future Generation Computer Systems **112**, pp. 283-296. November 2020.
 
 [^30]: Schwartz, R., Dodge, J., Smith, N. A., Etzioni, O. ["Green AI"](https://arxiv.org/abs/1907.10597). ArXiv, Allen Institute for Artificial Intelligence. August 2019.
 
-[^31]: Song, Z., Zhang, X., Eriksson, C. ["Data Center Energy and Cost Saving Evaluation"](https://www.sciencedirect.com/science/article/pii/S1876610215009467). Energy Procedia 75, pp. 1255-1260. August 2015.
+[^31]: Song, Z., Zhang, X., Eriksson, C. ["Data Center Energy and Cost Saving Evaluation"](https://www.sciencedirect.com/science/article/pii/S1876610215009467). Energy Procedia **75**, pp. 1255-1260. August 2015.
 
 [^32]: Strubell, E., Ganesh, A., McCallum, A. ["Energy and Policy Considerations for Deep Learning in NLP"](https://arxiv.org/abs/1906.02243). Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System Demonstrations. July 2019.
 
-[^33]: Wang, S. S., Roubidoux, M. A. ["Coronavirus Disease 2019 (COVID-19), Videoconferencing, and Gender"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7247518/). Journal of the American College of Radiology17(7). July 2020.
+[^33]: Wang, S. S., Roubidoux, M. A. ["Coronavirus Disease 2019 (COVID-19), Videoconferencing, and Gender"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7247518/). Journal of the American College of Radiology **17**(7). July 2020.
 
 [^34]: Zhang, R., Chan, W. K. ["Evaluation of Energy Consumption in Block-Chains with Proof of Work and Proof of Stake"](https://iopscience.iop.org/article/10.1088/1742-6596/1584/1/012023/meta). Journal of Physics: Conference Series 1584: 012023. 2020.
 
 [^35]: Zodhya. ["Which consumes more power: Banks or Bitcoins?"](https://medium.com/@zodhyatech/which-consumes-more-power-banks-or-bitcoins-8302750fe2bc). medium.com. April 2018.
+
+[^36]: Spencer, T., Singh, S., D'Ambrosio, D., Hopewell, H., Jacamon, V., Martinos, A., Salmon, N., Wanner, B. et al. ["Energy and AI"](https://www.iea.org/reports/energy-and-ai). International Energy Agency. April 2025.
+
+[^37]: Energy Institute. ["Statistical Review of World Energy"](https://www.energyinst.org/statistical-review). 2024.
 
 export default ({ children }) => 
   <Article 
