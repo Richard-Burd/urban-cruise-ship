@@ -1,5 +1,11 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 export const problem = "Negative Impacts of Gasoline";
 export const solution = "Blend 5% Methanol Into the US Gas Supply";
 
@@ -8,18 +14,41 @@ import SolutionImages from "/components/SolutionImages.js";
 ## Description
 We recommend that Congress institute a national methanol blending program into gasoline, similar to the current ethanol blending program.
 
-<SolutionImages 
-  mobileSrc={"methanol_fuel_blending_mobile.svg"}
-  desktopSrc={"methanol_fuel_blending_desktop.svg"}
-  mobileHeight={393}
-  desktopHeight={340}
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Carbon Capture for Methanol"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={""}
+  arrowText1={"11.4 million"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"Lee, Feb. 24, 2023"}
+  
+  
+  staticData={[
+    	{
+	  name:"Benefit",
+      barlength: 13.2,
+      displayedValue: "$13.2 billion/yr",
+      site: "null",
+	},
+    {
+      name: "Cost",
+      barlength: 11.2,
+      displayedValue: "$11.2 billion/yr",
+      site: "null",
+    }
+        
+  ]}
 />
 #### Source: U. S. Energy Information Administration [^"26"].
 
-## Cost Calculations
+## Calculations
 Costs and benefits assume a methanol blending that replaces 5% of gasoline in the United States, and no other fuels, with methanol. Financial costs of adding methanol are based on the median value ($280/ton) of methanol from natural gas without carbon capture and sequestration.
 
-## Benefit Calculations 
 Financial benefits of displacing gasoline are based on the average wholesale gasoline price in 2019 [^"26"]. Emissions of gasoline and methanol are as detailed above. Much greater emissions reductions are possible if methanol is produced from low-carbon processes.
 
 These figures do not account for pollution costs beyond greenhouse gases. Methanol blending results in a decrease in carbon monoxide and hydrocarbon emissions, and an increase in NOx emissions [^"10"]. If made from local energy sources, methanol blending would also bring an unquantified benefit in energy security.
