@@ -3,28 +3,56 @@ import SolutionDropdown from '/components/SolutionDropdown.js'
 export const problem = "Emissions From Aviation";
 export const solution = "Electrofuels for Aviation";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
 
 We propose blending 50% electrofuel into the jet fuel supply.
 
-<SolutionImages 
-  mobileSrc={"electrofuels_aviation_cba_mobile.svg"}
-  desktopSrc={"electrofuels_aviation_cba_desktop.svg"}
-  mobileHeight={420}
-  desktopHeight={340}
+<DynamicSolutionGraphic
+  barChartTitle={"Electrouels for Aviation"}
+  barChartTitle2={""}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"show"}
+  arrowText1={"2.25 billion"}
+  arrowText2={"tons CO₂eq"}
+  arrowText3={"reduction"}
+  arrowText4={"annually"}
+  mastheadToggle={''}
+  mastheadText3={"Lee, March 28, 2023"}
+ 
+ 
+  staticData={[  
+     {
+      name: "Cost",
+      barlength: 552,
+      displayedValue: "$552 billion",
+      site: "null",
+    },
+         {
+      name: "Benefit",
+      barlength: 381,
+      displayedValue: "$381 billion",
+      site: "null",
+    },
+       
+  ]}
 />
 
 ## Details
 
-To 2050, aircraft are expected to continue to become more efficient, but this efficiency gain will more than be offset by the growth in air travel. Given the importance of aviation to the global economy, reducing demand simply by foregoing air travel is not a realistic option.
+To 2050, aircraft are expected to continue to become more efficient, but this efficiency gain will more than be offset by the growth in air travel. Given the importance of aviation to the global economy, reducing demand simply by foregoing air travel is not realistic.
 
-Although electrofuels are not generally cost-competitive with other low-carbon fuel options, with aviation, the need for high fuel density precludes electrification, ammonia, or methanol for long-distance flights. For these, electrofuels may be the best low-carbon option. Furthermore, due to the long capital lifespan of aircraft and the logistical difficulty of providing multiple types of fuel, drop-in options are necessary to make a transition to lower carbon fuels [^"1"].
+Although electrofuels are not generally cost-competitive with other low-carbon fuel options, with aviation, the need for high fuel density precludes direct electrification, ammonia, or methanol for long-distance flights. For these, electrofuels may be the best low-carbon option. Furthermore, due to the long capital lifespan of aircraft and the logistical difficulty of providing multiple types of fuel, drop-in options are necessary to make a transition to lower carbon fuels [^"1"].
 
 Kerosene, typically used as jet fuel today, contains aromatics that electrofuels do not, without which modern jet engines might not function properly [^"1"]. Although we see no insurmountable barrier to 100% electrofuel, current regulation allows for blends up to 50%, a value modeled hereafter.
-
-Other pathways toward sustainable aviation fuels are envisioned, such as from waste stag from steel mills [^"10"] and agricultural waste [^"11"], though such feedstocks are limited. Nevertheless, the use of alternative feedstocks might present a ladder to developing the technologies that will enable full use of electrofuels.
 
 ## Calculations
 
@@ -34,11 +62,13 @@ Excluding transportation costs, combustion of one ton of kerosene emits 3.16 ton
 
 ## Implementation
 
+Other pathways toward sustainable aviation fuels are envisioned, such as from waste stag from steel mills [^"10"] and agricultural waste [^"11"], though such feedstocks are limited. Nevertheless, the use of alternative feedstocks might present a ladder to developing the technologies that will enable full use of electrofuels.
+
 A blending agreement could be implemented through international agreement by the International Civil Aviation Organization, an agency of the United Nations that regulates air travel. Significant cost reductions for electrofuel are necessary for the blending proposal described here to be feasible [^"1"]. This could be done through military procurement, which tend to be less cost-sensitive than civil aviation and for which logistical challenges can make conventional jet fuel usage less attractive [^"8"],[^"9"].
 
-##### Lead researcher: Michael Goff - Last updated April 3, 2023
+##### Lead researcher: Michael Goff - Last updated April 3, 2023.
 
-[^"1"]: Scheelhaase, J., Maertens, S., Grimme, W. ["Synthetic fuels in aviation – Current barriers and potential political measures"](https://www.sciencedirect.com/science/article/pii/S2352146519305824). Transportation Research Procedia <b>43</b>, pp. 21-30, ISSN 2352-1465. 2019.
+[^"1"]: Scheelhaase, J., Maertens, S., Grimme, W. ["Synthetic fuels in aviation – Current barriers and potential political measures"](https://doi.org/10.1016/j.trpro.2019.12.015). Transportation Research Procedia **43**, pp. 21-30, ISSN 2352-1465. 2019.
 
 [^"2"]: F&L Daily. ["Global demand for jet fuel to continue to rise through 2050"](https://www.fuelsandlubes.com/global-demand-jet-fuel-continue-rise-2050/). November 2019.
 
@@ -46,7 +76,7 @@ A blending agreement could be implemented through international agreement by the
 
 [^"4"]: Carbon Offset Guide. ["CO2 Emissions"](https://www.offsetguide.org/understanding-carbon-offsets/air-travel-climate/climate-impacts-from-aviation/co2-emissions/). Accessed March 16, 2023.
 
-[^"5"]: Voigt C., Kleine J., Sauer D., Moore R.H., Bräuer T., Le Clercq P., Kaufmann S., Scheibe M., Jurkat-Witschas T., Aigner M., Bauder U. ["Cleaner burning aviation fuels can reduce contrail cloudiness"](https://www.nature.com/articles/s43247-021-00174-y). Communications Earth & Environment 2(1): 114. June 2021.
+[^"5"]: Voigt C., Kleine J., Sauer D., Moore R.H., Bräuer T., Le Clercq P., Kaufmann S., Scheibe M., Jurkat-Witschas T., Aigner M., Bauder U. ["Cleaner burning aviation fuels can reduce contrail cloudiness"](https://www.nature.com/articles/s43247-021-00174-y). Communications Earth & Environment **2**(1): 114. June 2021.
 
 [^"6"]: Transport & Environment. ["Airline contrails warm the planet twice as much as CO2, EU study finds"](https://www.transportenvironment.org/discover/airline-contrails-warm-planet-twice-much-co2-eu-study-finds/). November 2020.
 
