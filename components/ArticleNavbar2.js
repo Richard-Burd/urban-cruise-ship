@@ -16,6 +16,7 @@ const ArticleNavbar2 = (props) => {
           <Link
             key={article.article_url}
             href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
+            legacyBehavior
           >
             <a key={article.article_url} rel="noreferrer">
               <ArticleNavbarButton

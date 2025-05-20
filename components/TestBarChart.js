@@ -131,7 +131,10 @@ const CustomYAxisTick = ({
   const entry = data.find((e) => e.name === payload.value);
   const backgroundColor =
     entry && entry.site
-      ? getCSSPropertyValue(`${entry.site}-site-button-color`, "background-color")
+      ? getCSSPropertyValue(
+          `${entry.site}-site-button-color`,
+          "background-color"
+        )
       : "transparent";
   const defaultTextColor =
     entry && (entry.site === "oceans" || entry.site === "space")
@@ -147,7 +150,7 @@ const CustomYAxisTick = ({
         height={20}
         fill={backgroundColor || "transparent"}
       />
-      <Link href={link}>
+      <Link href={link} legacyBehavior>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -256,9 +259,9 @@ const TestBarChart = ({
               </div>
             )}
           />
-          <Bar 
-            dataKey="barlength" 
-            fill="#171717" 
+          <Bar
+            dataKey="barlength"
+            fill="#171717"
             barSize={11}
             stroke="#1a1a1a"
             strokeWidth={2}

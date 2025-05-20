@@ -17,7 +17,7 @@ const MobileNavbar = () => {
     <>
       <div className="mobile-top-navbar-shadow">
         <div className="bg-amber-200 flex justify-between standard-font-1 lg:hidden overflow-hidden">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 px-5 pt-2.5 active:bg-gray-900 active:text-gray-200 text-yellow-900 text-lg">
               Home
             </a>

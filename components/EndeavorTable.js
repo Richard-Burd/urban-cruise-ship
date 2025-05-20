@@ -4,15 +4,15 @@ import { useTable, useSortBy } from "react-table";
 import { endeavorData } from "../data/endeavorData";
 
 const siteOrder = {
-  "energy": 1,
-  "matter": 2,
-  "habitat": 3,
-  "cities": 4,
-  "waste": 5,
-  "oceans": 6,
-  "space": 7,
-  "costs": 8,
-  "history": 9,
+  energy: 1,
+  matter: 2,
+  habitat: 3,
+  cities: 4,
+  waste: 5,
+  oceans: 6,
+  space: 7,
+  costs: 8,
+  history: 9,
 };
 
 endeavorData.sort((a, b) => {
@@ -49,7 +49,7 @@ function EndeavorTable() {
               ? "light-text-for-colored-tables"
               : "";
           return (
-            <Link href={value.link}>
+            <Link href={value.link} legacyBehavior>
               <a
                 target="_blank"
                 rel="noopener noreferrer"

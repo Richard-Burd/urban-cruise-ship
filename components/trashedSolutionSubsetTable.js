@@ -1,14 +1,8 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTable, useSortBy } from "react-table";
 import ReactMarkdown from "react-markdown";
 import { solutionData } from "../data/solutionData";
-
-
-
-
-
-
 
 const siteOrder = {
   energy: 1,
@@ -35,7 +29,7 @@ const siteOrder = {
 // This function grabs the data above and translates it into data for the table
 function SolutionSubsetTable(props) {
   // It uses the React "useMemo" hook that allows you to memoize the result of a function
-  
+
   const columns = React.useMemo(
     () => [
       {
@@ -51,7 +45,7 @@ function SolutionSubsetTable(props) {
         // ...therefore both the title (solution) and link (link) are passed into the
         // ... "Cell" property
         Cell: ({ value, row }) => (
-          <Link href={value.link}>
+          <Link href={value.link} legacyBehavior>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -156,36 +150,27 @@ function SolutionSubsetTable(props) {
     []
   );
 
-
-
-
-  
-
-
-
   // This combines the data from the two tables into one array
   //const combinedData = solutionData.concat(endeavorDataWithSolutionKey);
 
   // In functional React components, useState is used to define state
   const [data, setData] = useState(solutionData);
 
-    // Add a useEffect hook to filter data whenever subsetLink prop changes
-    useEffect(() => {
-      if (props.subset) {
-        // Filter combinedData based on subsetLink prop
-        const filteredData = data.filter(
-          item => item.subset === props.subset
-        );
-  
-        // Set the filtered data to state
-        setData(filteredData);
-      } else {
-        // If subsetLink prop is not provided or is removed, set the full combinedData to state
-        setData(data);
-      }
+  // Add a useEffect hook to filter data whenever subsetLink prop changes
+  useEffect(() => {
+    if (props.subset) {
+      // Filter combinedData based on subsetLink prop
+      const filteredData = data.filter((item) => item.subset === props.subset);
+
+      // Set the filtered data to state
+      setData(filteredData);
+    } else {
+      // If subsetLink prop is not provided or is removed, set the full combinedData to state
+      setData(data);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [props.subset]);
-  
+  }, [props.subset]);
+
   // This creates an instance of the React table
   const tableInstance = useTable({ columns, data }, useSortBy);
 

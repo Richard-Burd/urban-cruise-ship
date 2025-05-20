@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const FocusAreaButton = (props) => {
   return (
     <>
-      <Link href={props.href}>
+      <Link href={props.href} legacyBehavior>
         <a>
           {/* <motion.div
             initial={{ x: "-2vw", scale: 1.1, opacity: 0, rotate: -2 }}
@@ -21,11 +21,11 @@ const FocusAreaButton = (props) => {
             }}
             transition={{ duration: 0.5, type: "spring" }}
           > */}
-            <button
-              className={`border-current focus-area-button-shadow focus-area-button-border-width focus-area-button-elliptical-geometry ${props.site}-site-focus-area-button-border-n-font-color ${props.site}-site-button-color m-3 lg:m-5 py-1 px-8 standard-font-1 hover:scale-105 duration-100 active:scale-100 text-4xl`}
-            >
-              {props.focusAreaName}
-            </button>
+          <button
+            className={`border-current focus-area-button-shadow focus-area-button-border-width focus-area-button-elliptical-geometry ${props.site}-site-focus-area-button-border-n-font-color ${props.site}-site-button-color m-3 lg:m-5 py-1 px-8 standard-font-1 hover:scale-105 duration-100 active:scale-100 text-4xl`}
+          >
+            {props.focusAreaName}
+          </button>
           {/* </motion.div> */}
         </a>
       </Link>

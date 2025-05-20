@@ -80,7 +80,7 @@ const CustomYAxisTick = ({
         height={20}
         fill={backgroundColor || "transparent"}
       />
-      <Link href={link}>
+      <Link href={link} legacyBehavior>
         <a
           target="_blank"
           rel="noopener noreferrer"

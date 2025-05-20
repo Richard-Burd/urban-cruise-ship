@@ -39,7 +39,7 @@ const CustomYAxisTick = ({
   const [bgColor, setBgColor] = useState("transparent");
 
   const textLength = payload.value.length;
-  let approxCharWidth = 7
+  let approxCharWidth = 7;
   const textWidth = textLength * approxCharWidth;
 
   useEffect(() => {
@@ -82,10 +82,10 @@ const CustomYAxisTick = ({
         x={-textWidth - 6}
         y={-15}
         width={textWidth + 9}
-        height={31.1 } // using a +0.1 height to ensure no spacing visible when rendering, also larger for double bar due to rechart constraints on barHeight
+        height={31.1} // using a +0.1 height to ensure no spacing visible when rendering, also larger for double bar due to rechart constraints on barHeight
         fill={backgroundColor || "transparent"}
       />
-      <Link href={link}>
+      <Link href={link} legacyBehavior>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -93,7 +93,7 @@ const CustomYAxisTick = ({
           onMouseLeave={handleMouseLeave}
         >
           <text
-            x={titleText -1} // {460} for negative values, {0} for positive values
+            x={titleText - 1} // {460} for negative values, {0} for positive values
             y={-1}
             dy={5}
             textAnchor={titleAnchor} // "start" for negative values, "end" for positive values

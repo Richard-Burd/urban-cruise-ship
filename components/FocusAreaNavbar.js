@@ -10,6 +10,7 @@ const FocusAreasNavbar = (props) => {
           <Link
             href={`/${props.site}/${focusArea.focus_area_url}`}
             key={focusArea.focus_area_url}
+            legacyBehavior
           >
             <a>
               <FocusAreaNavbarButton

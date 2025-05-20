@@ -1,10 +1,10 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTable, useSortBy } from "react-table";
 import ReactMarkdown from "react-markdown";
-import { solutionData } from '../data/solutionData';
-import { endeavorData } from '../data/endeavorData';
-import { getCombinedData } from '../data/combineDataFunction';
+import { solutionData } from "../data/solutionData";
+import { endeavorData } from "../data/endeavorData";
+import { getCombinedData } from "../data/combineDataFunction";
 
 /* // This allows us to combine endeavors & solutions into one table
 const endeavorDataWithSolutionKey = endeavorData.map(item => {
@@ -14,16 +14,13 @@ const endeavorDataWithSolutionKey = endeavorData.map(item => {
   };
 }); */
 
-
 const CustomLink = ({ node, ...props }) => (
   <a {...props} target="_blank" rel="noopener noreferrer">
     {props.children}
   </a>
 );
 
-let footnoteData = "5"
-
-
+let footnoteData = "5";
 
 function renderFootnotes(data, focusAreaUrl) {
   const footnotesObj = {};
@@ -67,17 +64,15 @@ function renderFootnotes(data, focusAreaUrl) {
     (a, b) => parseInt(a, 10) - parseInt(b, 10)
   );
   const footnotes = sortedKeys.map((key) => footnotesObj[key]);
-//The following turns off the references section for 'solutions' when that is the focusAreaUrl.
-if (focusAreaUrl != "solutions"){
-  return (
-    <div className="solution-endeavor-footnotes">
-      <h2 id="footnote-label">References:</h2>
-      {footnotes}
-    </div>
-  );
-  
-}
-
+  //The following turns off the references section for 'solutions' when that is the focusAreaUrl.
+  if (focusAreaUrl != "solutions") {
+    return (
+      <div className="solution-endeavor-footnotes">
+        <h2 id="footnote-label">References:</h2>
+        {footnotes}
+      </div>
+    );
+  }
 }
 
 const siteOrder = {
@@ -107,7 +102,7 @@ let headerTitle = "Title"; //creates a variable that can change based on the foc
 // This function grabs the data above and translates it into data for the table
 function SubsetTable(props) {
   // It uses the React "useMemo" hook that allows you to memoize the result of a function
-  const { focusAreaUrl } = props;  // Destructure focusAreaUrl from props for use in switch statement
+  const { focusAreaUrl } = props; // Destructure focusAreaUrl from props for use in switch statement
   const columns = React.useMemo(
     () => [
       {
@@ -123,7 +118,7 @@ function SubsetTable(props) {
         // ...therefore both the title (solution) and link (link) are passed into the
         // ... "Cell" property
         Cell: ({ value, row }) => (
-          <Link href={value.link}>
+          <Link href={value.link} legacyBehavior>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -228,64 +223,54 @@ function SubsetTable(props) {
     []
   );
 
-
-
-
-  
-
-
-
   // This combines the data from the two tables into one array
   //const combinedData = solutionData.concat(endeavorDataWithSolutionKey);
 
   // In functional React components, useState is used to define state
 
+  //The following switch statement allows the table to be rendered depending on the focusAreaUrl of solutions, endeavors, or solutions-and-endeavors. it changes the headerTitle variable
+  let dataSource;
 
-//The following switch statement allows the table to be rendered depending on the focusAreaUrl of solutions, endeavors, or solutions-and-endeavors. it changes the headerTitle variable 
-let dataSource;
-
-  switch(focusAreaUrl) {
-    case 'solutions':
+  switch (focusAreaUrl) {
+    case "solutions":
       dataSource = solutionData;
-      headerTitle = 'Solution'
+      headerTitle = "Solution";
       break;
-    case 'endeavors':
+    case "endeavors":
       dataSource = endeavorData;
-      headerTitle = 'Endeavor'
-      dataSource = endeavorData.map(item => {
+      headerTitle = "Endeavor";
+      dataSource = endeavorData.map((item) => {
         return {
           ...item,
-          solution: item.endeavor
+          solution: item.endeavor,
         };
       });
       break;
-    case 'solutions-and-endeavors':
+    case "solutions-and-endeavors":
       dataSource = getCombinedData();
-      headerTitle = 'Solution / Endeavor'
+      headerTitle = "Solution / Endeavor";
       break;
     default:
       dataSource = getCombinedData();
   }
-  
+
   const [data, setData] = useState(dataSource);
 
-    // Add a useEffect hook to filter data whenever subsetLink prop changes
-    useEffect(() => {
-      if (props.subset) {
-        // Filter combinedData based on subsetLink prop
-        const filteredData = data.filter(
-          item => item.subset === props.subset
-        );
-  
-        // Set the filtered data to state
-        setData(filteredData);
-      } else {
-        // If subsetLink prop is not provided or is removed, set the full combinedData to state
-        setData(data);
-      }
+  // Add a useEffect hook to filter data whenever subsetLink prop changes
+  useEffect(() => {
+    if (props.subset) {
+      // Filter combinedData based on subsetLink prop
+      const filteredData = data.filter((item) => item.subset === props.subset);
+
+      // Set the filtered data to state
+      setData(filteredData);
+    } else {
+      // If subsetLink prop is not provided or is removed, set the full combinedData to state
+      setData(data);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [props.subset]);
-  
+  }, [props.subset]);
+
   // This creates an instance of the React table
   const tableInstance = useTable({ columns, data }, useSortBy);
 

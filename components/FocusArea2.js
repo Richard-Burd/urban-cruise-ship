@@ -53,6 +53,7 @@ const FocusArea2 = (props) => {
               <div key={article.article_url}>
                 <Link
                   href={`/${props.site}/${props.focusAreaUrl}/${article.article_url}`}
+                  legacyBehavior
                 >
                   <a rel="noreferrer">
                     <ArticleButton

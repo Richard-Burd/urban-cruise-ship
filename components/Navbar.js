@@ -15,7 +15,7 @@ const Navbar = () => {
         // className="sticky top-0 z-10" // ...so does this TailwindCSS
       >
         <div className="bg-amber-200 hidden lg:flex justify-between standard-font-1 text-yellow-900 text-lg top-navbar-shadow">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-1 pb-2 active:bg-gray-900 active:text-gray-200">
               Home
             </a>
@@ -24,29 +24,29 @@ const Navbar = () => {
             <a className={navBarStyles}>About</a>
           </Link>
 
-          <Link href="/standards">
+          <Link href="/standards" legacyBehavior>
             <a className={navBarStyles}>Standards</a>
           </Link>
 
-          <Link href="/crew">
+          <Link href="/crew" legacyBehavior>
             <a className={navBarStyles}>Crew</a>
           </Link>
 
-          <Link href="/associations">
+          <Link href="/associations" legacyBehavior>
             <a className={navBarStyles}>Associations</a>
           </Link>
 
-          <Link href="/accomplishments">
+          <Link href="/accomplishments" legacyBehavior>
             <a className="duration-100 hover:bg-gray-700 hover:text-gray-100 pl-5 pr-3 pt-1 pb-2 active:bg-gray-900 active:text-gray-200">
               Accomplishments
             </a>
           </Link>
 
-          <Link href="/publications">
+          <Link href="/publications" legacyBehavior>
             <a className={navBarStyles}>Publications</a>
           </Link>
-          
-          <Link href="/presentations">
+
+          <Link href="/presentations" legacyBehavior>
             <a className={navBarStyles}>Presentations</a>
           </Link>
           <style jsx>{`

@@ -21,22 +21,22 @@ export default function Home() {
       {/* <div className="lg:hidden pl-4 pt-1 standard-font-1 standard-font-color-1 text-4xl">
         Welcome!
       </div> */}
-      
 
       <div className="flex justify-between">
-        <div className="hidden lg:block mt-8 relative"> {/* relative positioned container */}
-          
+        <div className="hidden lg:block mt-8 relative">
+          {" "}
+          {/* relative positioned container */}
           {/* This is the header text you want to add */}
           <div
             style={{
-              position: 'absolute',
-              top: '0%', // adjust these values
-              right: '-0.5%',
-              color: '#4c4c4c', // choose appropriate color
+              position: "absolute",
+              top: "0%", // adjust these values
+              right: "-0.5%",
+              color: "#4c4c4c", // choose appropriate color
               fontFamily: "Arial Rounded MT Bold",
-              fontSize: '3.95rem', // adjust as needed
-              letterSpacing: '0.02em',
-              fontWeight: 'normal', // optional
+              fontSize: "3.95rem", // adjust as needed
+              letterSpacing: "0.02em",
+              fontWeight: "normal", // optional
               zIndex: 2, //higher index to ensure placement above svg
             }}
           >
@@ -44,34 +44,46 @@ export default function Home() {
           </div>
           <div
             style={{
-              position: 'absolute',
-              top: '19%', // adjust these values
-              left: '66.5%', // adjust these values
-              color: '#4c4c4c', // choose appropriate color
-              fontFamily: 'Roboto',
-              fontSize: '1.5rem', // adjust as needed
-              lineHeight: '1.3', //controls spacing between word wrapped lines
-              fontWeight: 'normal', // optional
+              position: "absolute",
+              top: "19%", // adjust these values
+              left: "66.5%", // adjust these values
+              color: "#4c4c4c", // choose appropriate color
+              fontFamily: "Roboto",
+              fontSize: "1.5rem", // adjust as needed
+              lineHeight: "1.3", //controls spacing between word wrapped lines
+              fontWeight: "normal", // optional
               zIndex: 2, // higher index to ensure placement above svg
-              maxWidth: '39%', // set max-width for text wrapping
-              padding: '0px', // optional padding around text
-              whiteSpace: 'normal', // ensure text can wrap
-              wordWrap: 'break-word', // allow words to be broken if necessary to prevent overflow
-              textAlign: 'justify'
+              maxWidth: "39%", // set max-width for text wrapping
+              padding: "0px", // optional padding around text
+              whiteSpace: "normal", // ensure text can wrap
+              wordWrap: "break-word", // allow words to be broken if necessary to prevent overflow
+              textAlign: "justify",
             }}
           >
-            Enabling informed choices through comparative analysis of 
-            <Link href="/history/solutions/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}> environmental solutions</a></Link> 
-            {' '}along-side historic human{' '}<Link href="/history/solutions-and-endeavors/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}>endeavors </a></Link>
-
-              
+            Enabling informed choices through comparative analysis of
+            <Link href="/history/solutions/benefit-minus-cost" legacyBehavior>
+              <a style={{ color: "#6699cc", textDecoration: "underline" }}>
+                {" "}
+                environmental solutions
+              </a>
+            </Link>{" "}
+            along-side historic human{" "}
+            <Link
+              href="/history/solutions-and-endeavors/benefit-minus-cost"
+              legacyBehavior
+            >
+              <a style={{ color: "#6699cc", textDecoration: "underline" }}>
+                endeavors{" "}
+              </a>
+            </Link>
           </div>
-          <div className="hidden lg:block"
+          <div
+            className="hidden lg:block"
             style={{
-              position: 'absolute',
-              top: '-10%', // adjust these values
-              left: '0%', // adjust these values
-            }}       
+              position: "absolute",
+              top: "-10%", // adjust these values
+              left: "0%", // adjust these values
+            }}
           >
             <Image
               className="opacity-70"
@@ -95,15 +107,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hidden lg:block"
+        <div
+          className="hidden lg:block"
           style={{
-            position: 'absolute',
-            top: '35.8%', // adjust these values
-            right: '16%',
-            color: '#4c4c4c', // choose appropriate color
+            position: "absolute",
+            top: "35.8%", // adjust these values
+            right: "16%",
+            color: "#4c4c4c", // choose appropriate color
             fontFamily: "Arial Rounded MT Bold",
-            fontSize: '3.6em', // adjust as needed
-            fontWeight: 'normal', // optional
+            fontSize: "3.6em", // adjust as needed
+            fontWeight: "normal", // optional
             zIndex: 2, //higher index to ensure placement above svg
           }}
         >
@@ -120,41 +133,29 @@ export default function Home() {
             width={320}
             priority // https://nextjs.org/docs/basic-features/image-optimization#priority
           />
-          <div className="standard-font-1 standard-font-color-1 text-5xl sm:text-6xl lg:text-6xl">Our Mission</div>
-          <div className="standard-font-2 text-xl">
-          Enabling informed choices through comparative analysis of 
-            <Link href="/history/solutions/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}> environmental solutions</a></Link> 
-            {' '}along-side historic human{' '}<Link href="/history/solutions-and-endeavors/benefit-minus-cost"><a style={{ color: '#6699cc', textDecoration: 'underline' }}>endeavors </a></Link>
+          <div className="standard-font-1 standard-font-color-1 text-5xl sm:text-6xl lg:text-6xl">
+            Our Mission
           </div>
-          
+          <div className="standard-font-2 text-xl">
+            Enabling informed choices through comparative analysis of
+            <Link href="/history/solutions/benefit-minus-cost" legacyBehavior>
+              <a style={{ color: "#6699cc", textDecoration: "underline" }}>
+                {" "}
+                environmental solutions
+              </a>
+            </Link>{" "}
+            along-side historic human{" "}
+            <Link
+              href="/history/solutions-and-endeavors/benefit-minus-cost"
+              legacyBehavior
+            >
+              <a style={{ color: "#6699cc", textDecoration: "underline" }}>
+                endeavors{" "}
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
-
-
-
-
-{/*       <div className="flex justify-between">
-        <div className="hidden lg:block mt-8">
-          <Image
-            className=""
-            src={"/images/swoosh_19_web.svg"}
-            alt={"UCS Logo"}
-            height={440}
-            width={1024}
-            priority // https://nextjs.org/docs/basic-features/image-optimization#priority
-          />
-        </div>
-        <div className="lg:hidden mx-4 mb-20">
-          <Image
-            className="opacity-70"
-            src={`/images/ucs-logo.svg`}
-            alt={"UCS Logo"}
-            height={180}
-            width={320}
-            priority // https://nextjs.org/docs/basic-features/image-optimization#priority
-          />
-        </div>
-      </div> */}
 
       {/* <--mobile view--> 770px <--tablet view--> 1025px <--desktop view--> */}
       {/* If the viewport is less than 770px, render mobile option */}

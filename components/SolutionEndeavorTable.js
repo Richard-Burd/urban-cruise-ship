@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useTable, useSortBy } from "react-table";
 import ReactMarkdown from "react-markdown";
-import { solutionData } from '../data/solutionData';
-import { endeavorData } from '../data/endeavorData';
+import { solutionData } from "../data/solutionData";
+import { endeavorData } from "../data/endeavorData";
 
 // This allows us to combine endeavors & solutions into one table
-const endeavorDataWithSolutionKey = endeavorData.map(item => {
+const endeavorDataWithSolutionKey = endeavorData.map((item) => {
   return {
     ...item,
-    solution: item.endeavor
+    solution: item.endeavor,
   };
 });
-
 
 const CustomLink = ({ node, ...props }) => (
   <a {...props} target="_blank" rel="noopener noreferrer">
@@ -111,7 +110,7 @@ function SolutionEndeavorTable() {
         // ...therefore both the title (solution) and link (link) are passed into the
         // ... "Cell" property
         Cell: ({ value, row }) => (
-          <Link href={value.link}>
+          <Link href={value.link} legacyBehavior>
             <a
               target="_blank"
               rel="noopener noreferrer"

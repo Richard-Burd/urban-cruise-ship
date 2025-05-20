@@ -38,16 +38,13 @@ const CustomYAxisTick = ({
   const [hovered, setHovered] = useState(false);
   const [bgColor, setBgColor] = useState("transparent");
 
-
-
- //text measurement tool for the highlighting function
-  const canvas = document.createElement('canvas');
-  const context = canvas.getContext('2d');
-  context.font = '14px Roboto'; // Set the font and size to be analyzed
+  //text measurement tool for the highlighting function
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  context.font = "14px Roboto"; // Set the font and size to be analyzed
   const metrics = context.measureText(payload.value);
-  const textWidth = metrics.width*1.04; //sets the text width and increases by 4% to allow for buffer
+  const textWidth = metrics.width * 1.04; //sets the text width and increases by 4% to allow for buffer
 
-  
   useEffect(() => {
     const entry = data.find((e) => e.name === payload.value);
     if (entry && entry.site) {
@@ -81,7 +78,7 @@ const CustomYAxisTick = ({
     entry && (entry.site === "oceans" || entry.site === "space")
       ? "white"
       : "#1a1a1a";
-//This area controls the color highlight for solutions
+  //This area controls the color highlight for solutions
   return (
     <g transform={`translate(${x},${y})`}>
       <rect
@@ -91,7 +88,7 @@ const CustomYAxisTick = ({
         height={29.1} // using a +0.1 height to ensure no spacing visible when rendering
         fill={backgroundColor || "transparent"}
       />
-      <Link href={link}>
+      <Link href={link} legacyBehavior>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -241,7 +238,7 @@ const DynamicSingleBarChart = ({
             fill="#212121"
             barSize={6}
             stroke="#212121"
-            strokeWidth={.1}
+            strokeWidth={0.1}
           >
             <LabelList
               dataKey="displayedValue"

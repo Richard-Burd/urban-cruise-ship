@@ -23,7 +23,7 @@ const SpecializedSiteNavbarButton = (props) => {
 
   return (
     <>
-      <Link href={`/${props.site}`}>
+      <Link href={`/${props.site}`} legacyBehavior>
         <a>
           {/* <motion.div
             initial={{ x: "-20vw", scale: 2, opacity: 0, rotate: -5 }}
@@ -51,7 +51,13 @@ const SpecializedSiteNavbarButton = (props) => {
               }
             }
           > */}
-          <div className={router.pathname.startsWith(`/${props.site}`) ? `bg-neutral-700 px-2 py-2 lg:py-3.5` : `px-2 py-2 lg:py-3.5`}>
+          <div
+            className={
+              router.pathname.startsWith(`/${props.site}`)
+                ? `bg-neutral-700 px-2 py-2 lg:py-3.5`
+                : `px-2 py-2 lg:py-3.5`
+            }
+          >
             <button
               className={`
                 elliptical-geometry 
