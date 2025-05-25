@@ -47,3 +47,7 @@
 45. Richard did a build & push on 05.06.2025 (v.3.0.36)
 46. Richard did a build & push on 05.19.2025 (v.3.0.37)
 47. Richard did a build & push on 05.22.2025 (v.3.0.38)
+48. Richard did a build & push on 05.23.2025
+    ...after this, this repo will go public so we won't have to do this anymore,
+    ...this stupid file will become useless and get deleted.
+    ...Vercel only lets me build this site because the repo is private.
