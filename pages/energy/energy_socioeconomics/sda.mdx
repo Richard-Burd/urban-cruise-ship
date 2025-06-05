@@ -1,0 +1,54 @@
+import Article from '/components/Article.js'
+import hierarchy from "../hierarchy.json";
+
+export const site = "energy";
+export const focusAreaUrl = "energy_socioeconomics";
+
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+import ArticleImage from "/components/ArticleImage.js";
+
+# Drivers of Emissions
+
+Here we develop in greater depth ideas introduced in our analysis of [population, energy, and emissions](/energy/energy_socioeconomics/energy_intensity_se).
+
+## Kaya Analysis for the United States
+
+The Kaya decomposition, developed by Kaya and Yokoburi [^1], expresses greenhouse gas emissions for a society in terms of population, wealth, energy consumption, and the emissions per unit energy: Emissions = Population × Affluence × Energy Intensity × Greenhouse Gas Intensity of Emissions. For the United States from 1965 to 2023, the four factors have evolved as follows.
+
+(Insert figure here)
+
+Energy and emissions figures are derived from the 2024 Energy Institute Statistical Review of World Energy [^2]. Energy is reported as primary energy. For combustion of fossil fuels and of fissile materials, primary energy is defined as the heating value of energy that is released upon combustion, much of which is not applied to useful purposes. For non-combustion energy sources such as solar photovoltaics and wind power, primary energy is defined as the primary energy content of the fossil fuels that they displace [^3]. This methodology will be changed in subsequent editions of the Energy Review. Emissions are defined as emissions from energy usage, which as of 2021 comprised just over 75% of world anthropogenic greenhouse gas emissions at a 100 year global warming potential [^4].
+
+Population figures are derived from the 2024 revision of the United Nations' World Population Forecast [^5]. Gross domestic product is measured in purchasing power parity terms. GDP data from 1990 to 2023 is taken from the World Bank [^6], and data from 1965 to 1989 is taken from the Penn World Table, version 10.01 [^7]. Expenditure-side real GDP at chained PPPs is used. A constant multiplier is applied to the Penn World Table data so as to harmonize with World Bank data for the year 1990.
+
+
+
+
+
+[^1]: Kaya, Y., Yokoburi, K. [*Environment, energy, and economy : strategies for sustainability*](https://unu.edu/publications/books/environment-energy-and-economy-strategies-for-sustainability.html). United Nations Univ. Press. ISBN 9280809113. March 1998.
+
+[^2]: Energy Institute. ["Statistical Review of World Energy"](https://www.energyinst.org/statistical-review). 2024, Accessed June 5, 2025.
+
+[^3]: Energy Institute. ["About the statistical review"](https://www.energyinst.org/statistical-review/about). Accessed June 5, 2025 
+
+[^4]: Climate Watch. ["Global Historical Emissions"](https://www.climatewatchdata.org/ghg-emissions?apcid=000000000000000000000000&breakBy=sector&chartType=line&end_year=2021&start_year=1990). Accessed June 5, 2025.
+
+[^5]: United Nations. ["World Population Prospects"](https://population.un.org/wpp/). Accessed June 5, 2025.
+
+[^6]: World Bank Group. ["GDP, PPP (constant 2021 international $) - United States"](https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD?locations=US). Accessed June 5, 2025.
+
+[^7]: Feenstra, R. C., Inklaar, R., Timmer, M. P. ["The Next Generation of the Penn World Table"](www.ggdc.net/pwt). American Economic Review **105**(10), pp. 3150-3182. 2015.
+
+export default ({ children }) => 
+  <Article 
+    focusAreaUrl={focusAreaUrl} 
+    hierarchy={hierarchy} 
+    site={site}
+  >
+    {children}
+  </Article>

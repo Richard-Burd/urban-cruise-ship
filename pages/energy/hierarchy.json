@@ -51,6 +51,7 @@
       { "article_title": "Load Balancing", "article_url": "load_balancing" },
       { "article_title": "Grid Design", "article_url": "grid_design" },
       { "article_title": "Electricity Storage", "article_url": "grid_storage" },
+	  { "article_title": "Electrification", "article_url": "electrification" },
       { "article_title": "Hydrogen", "article_url": "hydrogen" },
       { "article_title": "Ammonia", "article_url": "ammonia" },
       { "article_title": "Methanol", "article_url": "methanol" },
