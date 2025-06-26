@@ -20,11 +20,31 @@ Here we develop in greater depth ideas introduced in our analysis of [population
 
 The Kaya decomposition, developed by Kaya and Yokoburi [^1], expresses greenhouse gas emissions for a society in terms of population, wealth, energy consumption, and the emissions per unit energy: Emissions = Population × Affluence × Energy Intensity × Greenhouse Gas Intensity of Emissions. For the United States from 1965 to 2023, the four factors have evolved as follows.
 
-(Insert figure here)
+<ArticleImage image={"us_kaya_2025.svg"} width={960} height={576} />
+
+There are several important dependencies between the four variables, as addressed in greater detail in a Substack post [^8], and therefore for policy interventions meant to influence once variable, one should consider the influence on other variables.
+
+For the link between population and affluence, Kremer (1993) [^9] has argued that population growth has bee a long-term driver of economic growth throughout human history. In a review of recent studies about the economic impacts of population growth, London, Cayssials, and González (2022) [^10] find that most studies find that population growth has either a positive or neutral effect on economic growth, with a smaller number of studies that find a negative effect. Converse, Vandenbroucke (2016) [^11] and many other researchers have found that greater affluence tend to decrease birth rates and thus population levels.
+
+On the relationship between environmental impacts and wealth, Hecht (1985) [^12] introduced the environmental Kuznets curve. The EKC posits that an environmental impact, such as greenhouse gas emissions, tends to increase with rising per-capita wealth to a point, but beyond that point, further increases in wealth tend to decrease the impact. Reasons for this include that wealth enables greater invention of pollution control technologies and also increases the public willingness and ability to pay for those technologies. As demonstrated in a Substack post [^13], the evidence for the existence of environmental Kuznets curves is mixed and depends on the impact and the particular location.
+
+### Data
 
 Energy and emissions figures are derived from the 2024 Energy Institute Statistical Review of World Energy [^2]. Energy is reported as primary energy. For combustion of fossil fuels and of fissile materials, primary energy is defined as the heating value of energy that is released upon combustion, much of which is not applied to useful purposes. For non-combustion energy sources such as solar photovoltaics and wind power, primary energy is defined as the primary energy content of the fossil fuels that they displace [^3]. This methodology will be changed in subsequent editions of the Energy Review. Emissions are defined as emissions from energy usage, which as of 2021 comprised just over 75% of world anthropogenic greenhouse gas emissions at a 100 year global warming potential [^4].
 
 Population figures are derived from the 2024 revision of the United Nations' World Population Forecast [^5]. Gross domestic product is measured in purchasing power parity terms. GDP data from 1990 to 2023 is taken from the World Bank [^6], and data from 1965 to 1989 is taken from the Penn World Table, version 10.01 [^7]. Expenditure-side real GDP at chained PPPs is used. A constant multiplier is applied to the Penn World Table data so as to harmonize with World Bank data for the year 1990.
+
+## Energy and Emissions by Sector
+
+The Monthly Review [^14] of the United States Energy Information Administration details energy consumption and greenhouse gas emissions in the United States by five sectors: residential, commercial, industrial, transportation, and electric power. In the following, we illustrate the evolution of energy and emissions intensity in the first four of those sectors, with electricity consumption attributed to those four sectors rather than treated as its own sector.
+
+<ArticleImage image={"us_sector.svg"} width={1056} height={756} />
+
+The especially large decrease in energy consumption for the industrial sector can be partially, though not entirely, explained by an increase in net imports for manufactured goods, as discussed in our analysis of [macroeconomics](/energy/energy_socioeconomics/economics_se).
+
+### Data
+
+Population and gross domestic product are as above. All energy and greenhouse gas emissions figures are derived from the U.S. EIA's Monthly Review [^14]. Only emissions from energy, and not emissions from other sources such as non-energy methane, are considered. Energy is considered as primary energy, which is the heat content of energy released upon combustion. For non-thermal energy sources, their primary energy content is defined as the primary energy content of the fossil fuels that would be required to replace them.
 
 
 
@@ -43,6 +63,20 @@ Population figures are derived from the 2024 revision of the United Nations' Wor
 [^6]: World Bank Group. ["GDP, PPP (constant 2021 international $) - United States"](https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD?locations=US). Accessed June 5, 2025.
 
 [^7]: Feenstra, R. C., Inklaar, R., Timmer, M. P. ["The Next Generation of the Penn World Table"](www.ggdc.net/pwt). American Economic Review **105**(10), pp. 3150-3182. 2015.
+
+[^8]: Goff, M. ["The Problem with IPAT"](https://goff.substack.com/p/july-15-2023-the-problem-with-ipat?utm_source=publication-search). Substack. July 2023.
+
+[^9]: Kremer, M. ["Population Growth and Technological Change: One Million B.C. to 1990"](https://www.jstor.org/stable/2118405). The Quarterly Journal of Economics **108**(3), pp. 681-716. August 1993.
+
+[^10]: London, S., Cayssials, G., González, F.A. ["Population growth and economic growth: a panel causality analysis"](https://ideas.repec.org/p/aep/anales/4574.html). Asociación Argentina de Economía Política, Working Papers 4754. November 2022.
+
+[^11]: Vandenbroucke, G. ["The Link between Fertility and Income"](https://www.stlouisfed.org/on-the-economy/2016/december/link-fertility-income). Federal Reserve Bank of St. Louis. December 2016.
+
+[^12]: Hecht, S. B. ["Environment, development and politics: Capital accumulation and the livestock sector in Eastern Amazonia"](https://doi.org/10.1016/0305-750X(85)90114-7). World Development **13**(6), pp. 663-684. June 1985.
+
+[^13]: Goff, M. ["Kuznets Curves"](https://goff.substack.com/p/april-6-2024-kuznets-curves?utm_source=publication-search). Substack. April 2024.
+
+[^14]: United States Energy Information Administration. ["Monthly Energy Review"](https://www.eia.gov/totalenergy/data/monthly/). Accessed June 26, 2025.
 
 export default ({ children }) => 
   <Article 
