@@ -18,11 +18,18 @@ Here we develop in greater depth ideas introduced in our analysis of [population
 
 ## Kaya Analysis for the United States
 
-The Kaya decomposition, developed by Kaya and Yokoburi [^1], expresses greenhouse gas emissions for a society in terms of population; gross domestic per capita, also referred to as wealth or affluence; energy intensity, which is the amount of energy consumed per unit GDP; and the emissions per unit energy: Emissions = Population × Affluence × Energy Intensity × Greenhouse Gas Intensity of Emissions. For the United States from 1965 to 2023, the four factors have evolved as follows.
+The Kaya decomposition, developed by Kaya and Yokoburi [^1], expresses greenhouse gas emissions for a society in terms of the following four factors:
+
+- Population,
+- Gross domestic per capta, also referred to as wealth or affluence,
+- Energy intensity, the amount of energy consumed per unit GDP,
+- Emissions intensity, the amount of greenhouse gas emissions per unit energy.
+
+The equation is Emissions = Population × Affluence × Energy Intensity × Emissions Intensity. For the United States from 1965 to 2023, the four factors have evolved as follows.
 
 <ArticleImage image={"us_kaya_2025.svg"} width={960} height={576} />
 
-#### Evolution of the four Kaya metrics in the Uinted States from 1965 to 2023. Image made with Matplotlib, with data sources detailed below.
+#### Evolution of the four Kaya metrics in the United States from 1965 to 2023. Image made with Matplotlib, with data sources detailed below.
 
 There are several important dependencies between the four variables, as addressed in greater detail in a Substack post [^8], and therefore for policy interventions meant to influence one variable, one should consider the influence on the other variables.
 
@@ -41,12 +48,38 @@ Population figures are derived from the 2024 revision of the United Nations' Wor
 The Monthly Review [^14] of the United States Energy Information Administration details energy consumption and greenhouse gas emissions in the United States by five sectors: residential, commercial, industrial, transportation, and electric power. In the following, we illustrate the evolution of energy and emissions intensity in the first four of those sectors, with electricity consumption attributed to those four sectors rather than treated as its own sector.
 
 <ArticleImage image={"us_sector.svg"} width={1056} height={756} />
+#### Evolution of energy and emissions intensity for the four major sectors in the United States, relative to the 1965 value. Data sources are as described below.
 
 The especially large decrease in energy intensity for the industrial sector can be partially, though not entirely, explained by an increase in net imports for manufactured goods, as discussed in our analysis of [macroeconomics](/energy/energy_socioeconomics/economics_se).
 
+United States emissions from energy reached a peak in 2007 at just over 6 billion tons per year. To understand the factors driving change, we divide the emissions history of the U.S. into two eras: from 1973--the start of availability of our data--to 2007, and from 2007 to 2023, the most recent data availability as of this analysis. The following average annual changes were observed for the two periods.
+
+| Factor, 1973-2007 | Average annual effect, 1973-2007<br></br>millions of tons CO<sub>2</sub>|Average annual effect, 2007-2023<br></br>millions of tons CO<sub>2</sub>
+|---|---|---|
+|Population|+56.6|+44.8|
+|GDP per Capita|+116.7|+50.7|
+|Residential Energy Intensity|-21.7|-23.8|
+|Residential Emissions Intensity|-2.1|-15.9|
+|Commercial Energy Intensity|-11.0|-20.3|
+|Commercial Emissions Intensity|-2.3|-14.5|
+|Industrial Energy Intensity|-61.0|-29.1|
+|Industrial Emissions Intensity|-7.6|-18.2|
+|Transportation Energy Intensity|-29.5|-38.6|
+|Transportation Emissions Intensity|-0.1|-6.8|
+
+For the later period, improved emissions intensity is a larger factor in overall emissions decline, as well as slower population and GDP growth. Despite slowing economic growth, accelerated improvements in energy intensity were observed in the residential, commercial, and transportation sectors, though not in industry.
+
+### Methods
+
+We perform a structural decomposition analysis, as described for instance in Su and Ang [^15]. The influence of a factor is estimated by the following methodology. First, we consider the influence of the factor between two consecutive years. This is determined by letting the one factor vary while holding all other factors constant, and then noting the observed change in emissions.
+
+Using the method of varying factors one at a time, there is a residual term, or a change in emissions that is different from the sum of the changes explained by changes in each of the factors. We therefore need to allocate the residual among the other factors. This is done in such a way that the portion allocated to a given factor is equal to the share attributed to that factor among all the factors.
+
+The change attributed to a factor over a full time period is equal to the annual average change attributed to that factor.
+
 ### Data
 
-Population and gross domestic product are as above. All energy and greenhouse gas emissions figures are derived from the U.S. EIA's Monthly Review [^14]. Only emissions from energy, and not emissions from other sources such as non-energy methane, are considered. Energy is considered as primary energy, which is the heat content of energy released upon combustion. For non-thermal energy sources, their primary energy content is defined as the primary energy content of the fossil fuels that would be required to replace them.
+Population and gross domestic product are as above. All energy and greenhouse gas emissions figures are derived from the U.S. EIA's Monthly Review [^14]. Only emissions from energy, and not emissions from other sources such as non-energy methane, are considered. Energy is considered as primary energy, which is the heat content of energy released upon combustion. For non-thermal energy sources, the primary energy content is defined as the primary energy content of the fossil fuels that would be required to replace them.
 
 
 
@@ -79,6 +112,8 @@ Population and gross domestic product are as above. All energy and greenhouse ga
 [^13]: Goff, M. ["Kuznets Curves"](https://goff.substack.com/p/april-6-2024-kuznets-curves?utm_source=publication-search). Substack. April 2024.
 
 [^14]: United States Energy Information Administration. ["Monthly Energy Review"](https://www.eia.gov/totalenergy/data/monthly/). Accessed June 26, 2025.
+
+[^15]: Su, B., Ang, B.W. ["Structural decomposition analysis applied to energy and emissions: some methodological developments"](https://doi.org/10.1016/j.eneco.2011.10.009). Energy Economics **34**(1), pp. 177-188. January 2012.
 
 export default ({ children }) => 
   <Article 
