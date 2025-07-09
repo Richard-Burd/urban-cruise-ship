@@ -40,3 +40,11 @@ Using this model for appliance and tool [Lending Libraries]( https://www.urbancr
 [^"4"]: Tran, V. et al. [Machine‐as‐a‐Service: Blockchain‐based management and maintenance of industrial appliances”]( http://dx.doi.org/10.1002/eng2.12567) Engineering Reports, August 2022.
 
 [^"5"]: Yang, M. et al [“Product-service systems business models for circular supply chains”]( https://doi.org/10.1080/09537287.2018.1449247) Production Planning and Control, May 2018.
+
+export default ({ children }) => 
+  <SolutionDropdown 
+    problem={problem} 
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
