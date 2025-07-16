@@ -1122,3 +1122,5 @@ This static site uses the following:
 The app is deployed [here](https://urban-cruise-ship.vercel.app/) hosted on Vercel.
 
 ---
+
+.
