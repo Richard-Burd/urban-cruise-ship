@@ -1,6 +1,13 @@
 import Article from '/components/Article.js'
 import hierarchy from "../hierarchy.json";
 
+import dynamic from "next/dynamic";
+export const DynamicSolutionGraphic = dynamic(
+  () => import("../../../components/DynamicSolutionGraphic"),
+  { ssr: false }
+);
+
+
 export const site = "energy";
 export const focusAreaUrl = "industry";
 
@@ -21,10 +28,101 @@ Rates of combustion of solid waste are likewise stagnant.
 <ArticleImage image={"combustion_history.svg"} width={750} height={320} />
 #### Source: EPA [^2].
 
+As of 2018, the last year for which the U.S. Environmental Protection Agency has tracked data as of 2025, recycling and combustion rates of MSW in the United States has fallen to 32.1% and 11.8% respectively.
+
 There is room to increase recycling rates for all major commodities in MSW.
 
-<ArticleImage image={"recycling_rates.svg"} width={680} height={460} />
-#### Source: EPA [^2].
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"U.S. Share of Material Recycled or Composted in 2018"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={"2.2 billion"}
+  arrowText2={"tons"}
+  arrowText3={"CO2"}
+  arrowText4={"reduced"}
+  mastheadToggle={''}
+  mastheadText3={"MG, Aug. 8, 2024"}
+  
+  
+  staticData={[   
+    {
+      name: "Paper and Paperboard",
+      barlength: 0.682149,
+      displayedValue: "68.2%",
+      site: "null",
+    },
+	{
+	  name:"Nonferrous Metals (ex. Aluminum)",
+      barlength: 0.673307,
+      displayedValue: "67.3%",
+      site: "null",
+	},
+	{
+	  name:"Yard Trimmings",
+      barlength: 0.629944,
+      displayedValue: "63.0%",
+      site: "null",
+	},
+	{
+	  name:"Ferrous Metals",
+      barlength: 0.331250,
+      displayedValue: "33.1%",
+      site: "null",
+	},
+	{
+	  name:"Glass",
+      barlength: 0.249796,
+      displayedValue: "25.0%",
+      site: "null",
+	},
+	{
+	  name:"Rubber and Leather",
+      barlength: 0.182314,
+      displayedValue: "18.2%",
+      site: "null",
+	},
+	{
+	  name:"Aluminum",
+      barlength: 0.172237,
+      displayedValue: "17.2%",
+      site: "null",
+	},
+	{
+	  name:"Wood",
+      barlength: 0.171365,
+      displayedValue: "17.1%",
+      site: "null",
+	},
+	{
+	  name:"Textiles",
+      barlength: 0.147387,
+      displayedValue: "14.7%",
+      site: "null",
+	},
+	{
+	  name:"Plastics",
+      barlength: 0.086603,
+      displayedValue: "8.7%",
+      site: "null",
+	},
+	{
+	  name:"Food Waste",
+      barlength: 0.041026,
+      displayedValue: "4.1%",
+      site: "null",
+	},
+	{
+	  name:"Other",
+      barlength: 0.212719,
+      displayedValue: "21.3%",
+      site: "null",
+	}
+        
+  ]}
+/>
+#### Source: Advancing Sustainable Materials Management [^2].
 
 ## Energy and Greenhouse Gas Savings
 Recycling of major commodities saves energy and greenhouse gas emissions.
