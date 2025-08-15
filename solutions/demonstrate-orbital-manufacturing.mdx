@@ -1,11 +1,35 @@
 import SolutionDropdown from '/components/SolutionDropdown.js'
 
-export const problem = "Need for Manufactured Goods";
-export const solution = "Demonstrate Orbital Manufacturing";
+export const problem = "Need for Orbital Manufactured Goods";
+export const solution = "Sustainable Orbital Manufacturing";
 
-Due to the complexity and capital expense of orbital manufacturing, public support will likely be necessary to help the industry take hold. As of 2022, NASA's leading effort is with Axiom Space, to develop new modules for the International Space Station and eventually develop new space stations [^"7"].
+## Description
+We cautiously recommend the expansion of orbital manufacturing with focus on reusable vehicles, lifecycle assessments, and regulations to ensure future net climate benefits.
 
-[^"7"]: Maender, C., Aspiotis, J., Clemens, R., Gupta, A., Panchanathan, D., Zuniga, D., Stoudemire, J. ["Beyond the ISS : The World's First Commercial Space Station"](https://onlinelibrary.wiley.com/doi/abs/10.1002/9783527830909.ch17). From In-Space Manufacturing and Resources: Earth and Planetary Exploration Applications. July 2022.
+## Background
+Orbital (in-space) manufacturing exploits microgravity, hard vacuum, and extreme thermal environments to make materials and products that are difficult or impossible to produce on Earth. For example purer crystals, novel alloys, and contamination-free optical components. These environment-driven advantages can enable higher performance semiconductors, unique pharmaceutical crystal forms, and large precision structures (e.g., very low-defect optical fiber or telescope components) [^”1”].
+
+Current projects:  
+•	<b>[Varda Space Industries]( https://www.varda.com/)</b> — commercial returnable capsules for microgravity drug/crystal processing. Multiple missions launched; demonstrated retrievals and more flights in 2024–2025 with additional funding to scale operations.  
+•	<b>[Space Forge]( https://www.spaceforge.com/)</b> — UK firm developing ForgeStar reusable manufacturing satellites. ForgeStar-1 recently launched as an on-orbit manufacturing demonstrator (initial activation/testing phase), with plans for returnable iterations.  
+•	<b>[Redwire]( https://ir.redwirespace.com/)</b> — Comparatively long history of microgravity 3D printing and NASA-partnered in-space manufacturing R&D; Redwire continues to develop manufacturing tech and lunar/martian fabrication capabilities.  
+•	<b>NASA programs</b> — [ISAM (In-Space Servicing, Assembly, and Manufacturing)]( https://www.nasa.gov/nexis/isam/) and [InSPA (In-Space Production Applications)]( https://www.nasa.gov/international-space-station/space-station-research-and-technology/in-space-production-applications/) invest in technologies, fund demonstrations, and create procurement pathways to scale commercial production in low-earth orbit (LEO) and beyond.
+
+## Implementation
+If space-made items enable more efficient tech on Earth (more efficient power electronics, better pharma formulations), lifecycle emissions could fall, however net climate benefits depend on launch/return energy accounting and production scale[^”1”],[^”2”]. Reusable capsules and modular satellite buses are critical to ensure that the cost per kilogram to/from orbit falls and becomes predictable. Careful lifecycle assessments (LCA) are required to make decisions towards ensuring future net climate benefits.
+
+NASA, national regulators, and industry consortia will need to develop methods to certify space-manufactured products for terrestrial uses (pharma, semiconductors) and establish repeatable quality metrics and safety standards.
+
+GAO notes increased ISAM efforts risks collisions, complicates operations, and raises insurance costs[^”3”]. Monitoring, reducing, and removing [orbital debris](https://www.urbancruiseship.org/space/ethics/orbital_debris) could go a long way to reduce collision risks and associated costs.
+
+##### Lead researcher: Lee Nelson - Last updated: August 15, 2025
+
+[^”1”]: O’Callaghan, J. [“The Future of Manufacturing Might Be in Space”]( https://www.wired.com/story/why-the-future-of-manufacturing-might-be-in-space/) WIRED. May 2025.
+
+[^”2”]: Acket-Goemaere, A. et al. [“Space: The $1.8 trillion opportunity for global economic growth”]( https://www.mckinsey.com/industries/aerospace-and-defense/our-insights/space-the-1-point-8-trillion-dollar-opportunity-for-global-economic-growth) McKinsey and Company. April 2024.
+
+[^”3”]: GAO [“In-Space Servicing, Assembly, and Manufacturing: Benefits, Challenges, and Policy Options”]( https://www.gao.gov/assets/gao-25-107555.pdf) Government Accountability Office. July 2025
+
 
 export default ({ children }) => 
   <SolutionDropdown 
