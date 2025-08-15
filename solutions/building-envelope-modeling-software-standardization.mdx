@@ -9,7 +9,7 @@ import SolutionImages from "/components/SolutionImages.js";
 Architects need an *'analyze-as-you-design'* approach to catch problems early in their design phases[^"9"] while government oversight bodies have a need to accurately assess building design performance before they issue building permits.
 
 ## Background
-Architects have different software programs for analyzing building energy efficiency as do building department officials.  Unfortunately these programs do not all work well together because there is no single source of truth, and bad designs can slip through the building permit approval process [^"2"].  This incentivizes architects to fudge data in order to obtain a building permit and avoid cost overruns.  Thermal bridges make it difficult to assess the true energy efficiency of a proposed building design [^"1"], [^"5"] and stakeholders have identified this problem in proposed building code amendments [^"3"].
+Architects have different software programs for analyzing building energy efficiency as do building department officials.  Unfortunately, these programs do not all work well together because there is no single source of truth, and bad designs slip through the building permit approval process [^"2"].  This incentivizes architects to fudge data in order to obtain a building permit and avoid cost overruns.  Thermal bridges, which are localized areas in a building with high rates of heat transfer, make it difficult to assess the true energy efficiency of a proposed building design [^"1"], [^"5"] and stakeholders have identified this problem in proposed building code amendments [^"3"].
 
 <SolutionImages 
   mobileSrc={"building_software_1_mobile.svg"}
@@ -20,16 +20,16 @@ Architects have different software programs for analyzing building energy effici
 #### U. S. Department of Energy. "Spawn-of-EnergyPlus (Spawn)". October 2014 [^"10"]. International Energy Agency. "Technology Roadmap: Energy efficient building envelopes". 2013 [^"4"].
 
 ## Calculations
-Development cost was estimated by looking at the DoE's Spawn program which is of a similar scope [^"10"] and conservatively doubling it to cover unforeseen overruns.
+Development cost was estimated by considering the Department of Energy's Spawn program, which is of a similar scope [^"10"], and conservatively doubling the cost to cover unforeseen overruns.
 
 The CO₂ reduction estimate is based on projected heating & cooling savings from energy efficient building envelopes [^"11"], [^"12"]. We make a conservative assumption that this solution would capture 0.01% of these savings in Europe & North America, and convert those energy savings into avoided emissions [^"13"].  Benefit calculations look at the monetary value of these same energy savings [^"14"] and  scope them to the same 0.01% of the total.
 
 ## Implementation
-**Step 1:** The U.S. Department of Energy should develop an application programming interface (API) that will take data from their EnergyPlus [^"7"] software application and transfer it to the DOE’s REScheck and COMcheck applications [^"8"].
+**Step 1:** The U.S. Department of Energy should develop an application programming interface that will take data from their EnergyPlus [^"7"] software application and transfer it to the DOE’s REScheck and COMcheck applications [^"8"].
 
 **Step 2:** The U.S. Department of Energy should mandate that building permit-issuing authorities in all 50 U.S. states allow for the use of REScheck and COMcheck to submit evidence of compliance with energy efficiency regulations. States can still allow architects to use other programs, but states must give the option to use REScheck and COMcheck when evaluating a design for purposes of issuing a building permit.
 
-**Step 3:** Once the DOE implements step 1 and mandates step 2, companies like Trimble and GraphiSoft (see image below) will be incentivized to make their BIM programs compatible with the DOE’s Energy Plus, which to date has not happened due to technical hurdles [^"6"]. This translates to a *network-effect* in which the industry can turn to for a single point of truth.
+**Step 3:** Once the DOE implements step 1 and mandates step 2, companies like Trimble and GraphiSoft (see image below) will be incentivized to make their BIM programs compatible with the DOE’s Energy Plus, which to date has not happened due to technical hurdles [^"6"]. This translates to a *network-effect*, in which the industry can turn to standardized software for a single point of truth.
 
 <SolutionImages 
   mobileSrc={"bem_software.svg"}
@@ -40,7 +40,7 @@ The CO₂ reduction estimate is based on projected heating & cooling savings fro
 
 <br></br>
 
-##### Lead researcher: Richard Burd - Last updated: 2/8/2023
+##### Lead researcher: Richard Burd - Last updated February 8, 2023.
 
 [^"1"]: BC Housing. ["Video 1 – Introduction to the Building Envelope Thermal Bridging Guide"](https://www.youtube.com/watch?v=IM_dphE-WDY). October 2018.
 
@@ -51,7 +51,7 @@ The CO₂ reduction estimate is based on projected heating & cooling savings fro
 
 [^"4"]: International Energy Agency. ["Technology Roadmap: Energy efficient building envelopes"](https://webstore.iea.org/technology-roadmap-energy-efficient-building-envelopes). 2013.
 
-[^"5"]: Lawton, M. ["The Myths and Realities of Thermal Bridging" with Mark Lawton"](https://www.youtube.com/watch?v=FPpU3dc0BcU). University of Toronto - Daniels. March 2013.
+[^"5"]: Lawton, M. ["'The Myths and Realities of Thermal Bridging' with Mark Lawton"](https://www.youtube.com/watch?v=FPpU3dc0BcU). University of Toronto - Daniels. March 2013.
 
 [^"6"]: Moon, H. J., Choi, M. S., Kim, S. K., Ryu, S. H. ["Case Studies for the Evaluation of Interoperability Between a BIM Based Architectural Model and Building Performance Analysis Programs"](http://ibpsa.org/proceedings/BS2011/P_1510.pdf). Proceedings of Building Simulation 2011: 12th Conference of International Building Performance Simulation Association, Sydney. November 2011.
 
@@ -63,13 +63,13 @@ The CO₂ reduction estimate is based on projected heating & cooling savings fro
 
 [^"10"]: U. S. Department of Energy. ["Spawn-of-EnergyPlus (Spawn)"](https://www.energy.gov/eere/buildings/downloads/spawn-energyplus-spawn). October 2014.
 
-[^"11"]: IEA ["Technology Roadmap for Energy Efficient Building Envelopes features cool roofing](https://heatisland.lbl.gov/news/ieas-technology-roadmap-energy-efficient). Accessed February 8, 2023.
+[^"11"]:  International Energy Agency. [Technology Roadmap for Energy Efficient Building Envelopes features cool roofing](https://heatisland.lbl.gov/news/ieas-technology-roadmap-energy-efficient). Accessed February 8, 2023.
 
-[^"12"]: IEA ["Technology Roadmap *Energy efficient building envelopes*"](https://iea.blob.core.windows.net/assets/2be63379-1185-42e7-9608-94e5d3682956/TechnologyRoadmapEnergyEfficientBuildingEnvelopes.pdf#page=25) p.23 (p.25 of the PDF) OECD/IEA, 2013 Paris. Accessed February 8, 2023.
+[^"12"]:  International Energy Agency. ["Technology Roadmap *Energy efficient building envelopes*"](https://iea.blob.core.windows.net/assets/2be63379-1185-42e7-9608-94e5d3682956/TechnologyRoadmapEnergyEfficientBuildingEnvelopes.pdf#page=25) p.23, OECD/IEA, 2013 Paris. Accessed February 8, 2023.
 
-[^"13"]: United States Environmental Protection Agency [Greenhouse Gas Equivalencies Calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator). Accessed February 8, 2023.
+[^"13"]: United States Environmental Protection Agency. [Greenhouse Gas Equivalencies Calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator). Accessed February 8, 2023.
 
-[^"14"]: IEA ["Technology Roadmap *Energy efficient building envelopes*"](https://iea.blob.core.windows.https://iea.blob.core.windows.net/assets/2be63379-1185-42e7-9608-94e5d3682956/TechnologyRoadmapEnergyEfficientBuildingEnvelopes.pdf#page=28) p.26 (p.28 of the PDF) OECD/IEA, 2013 Paris. Accessed February 8, 2023.
+[^"14"]:  International Energy Agency. ["Technology Roadmap *Energy efficient building envelopes*"](https://iea.blob.core.windows.https://iea.blob.core.windows.net/assets/2be63379-1185-42e7-9608-94e5d3682956/TechnologyRoadmapEnergyEfficientBuildingEnvelopes.pdf#page=28) p.26, OECD/IEA, 2013 Paris. Accessed February 8, 2023.
 
 export default ({ children }) => 
   <SolutionDropdown 
