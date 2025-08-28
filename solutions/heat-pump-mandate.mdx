@@ -6,10 +6,7 @@ export const solution = "Heat Pump Water Heater Mandate for New Home Constructio
 import SolutionImages from "/components/SolutionImages.js";
 
 ## Description
-Building codes should require that new homes are constructed with electric heat pump water heaters and also include the option to easily replace these water heaters with tankless water heaters if doing so would reduce energy consumption of the occupant.
-
-## Background
-Almost all new homes are built with traditional gas & electric resistance (ER) water heaters installed for providing hot water.  These water heaters cost less that electric heat pump water heaters but consume more energy [^"2"], [^"5"], [^"6"]. Tankless water heaters are more efficient than electric heat pump water heaters for households that consume less water.  Home builders should provide optionality to homeowners so that home owners can easily install the water heater of their choice. Home owners are incentivized to choose the most efficient water heater (for their needs) which is usually the one with the smallest carbon footprint.
+We proposed that building codes require that new homes are constructed with electric heat pump water heaters and include the option to easily replace these water heaters with tankless water heaters if doing so would reduce energy consumption of the occupant.
 
 <SolutionImages 
   mobileSrc={"nc_hp_mandate_1_mobile.svg"}
@@ -17,28 +14,30 @@ Almost all new homes are built with traditional gas & electric resistance (ER) w
   mobileHeight={420}
   desktopHeight={340}
 />
-
 #### Source: Carroll and Couzo [^"1"].
 
+## Background
+Most new homes are built with traditional gas and electric resistance water heaters installed for providing hot water. These water heaters cost less that electric heat pump water heaters but consume more energy [^"2"], [^"5"], [^"6"]. Tankless water heaters are more efficient than electric heat pump water heaters for households that consume less water. Home builders should provide optionality to homeowners so that home owners can easily install the water heater of their choice. Home owners are incentivized to choose the most efficient water heater for their needs, which is usually the one with the smallest carbon footprint.
+
 ## Calculations
-One study looks at requiring heat pump water heaters for new construction in the state of North Carolina and found such a policy would incur an up front cost of $29.5 million and return a savings of $125.3 million over the course of a 10 year period and reduce CO₂ emissions in that state by 441,000 metric tons [^"1"]. We adjust those numbers for inflation from 2018 to 2020 and apply a 5% discount rate to the benefits over a 10 year period to arrive at our above estimates.
+Carroll and Zouzo (2021) [^"1"] look at requiring heat pump water heaters for new construction in the state of North Carolina and found such a policy would incur an up front cost of $29.5 million and return a savings of $125.3 million over the course of a 10 year period and reduce CO₂ emissions in that state by 441,000 metric tons. We adjust those numbers for inflation from 2018 to 2020 and apply a 5% discount rate to the benefits over a 10 year period to arrive at our above estimates.
 
 ## Implementation
 We recommend state level legislation to install electrical heat pump water heaters in all new single family home construction. In addition to requiring heat pump water heaters in new home construction, building codes should also require enough room in water heater closets for both a heat pump and a tankless water to be installed simultaneously.  This gives new homeowners optionality when they move in to use either one left behind by the previous owner if the previous owner installed a tankless water heater. The code should also require electricity and gas lines to both locations with shutoff valves already installed in each line as well as both in-and-out airway (HVAC) ducts to service the water heater closet [^"3"], [^"4"].  This greatly reduces the cost of installation and provides the home owner with further optionality in reducing their energy consumption.
 
-##### Lead researcher: Richard Burd - Last updated: 2/7/2023
+##### Lead researcher: Richard Burd - Last updated February 7, 2023.
 
 [^"1"]: Carroll, Z., Couzo, E. ["Should North Carolina require more efficient water heaters in homes? A cost-benefit analysis"](https://www.sciencedirect.com/science/article/abs/pii/S0301421520308247). Energy Policy **150**: 112113. March 2021.
 
 [^"2"]: PV Heating & Air. ["Who Wins the Tank vs Tankless Water Heaters Contest?"](https://www.pvhvac.com/blog/tank-vs-tankless-water-heaters). Accessed March 12, 2021.
 
-[^"3"]: Weldman, Mike. [*Looking at a Modern Heat Pump Water Heater System*](https://youtu.be/saz8ci4WUsc) Mike Weldmen Homes. Accessed January 29, 2023.
+[^"3"]: Weldman, M. [*Looking at a Modern Heat Pump Water Heater System*](https://youtu.be/saz8ci4WUsc). Mike Weldmen Homes. Accessed January 29, 2023.
 
-[^"4"]: Family DIY TV ["Vent your Rheem or AO Smith Hyrbid Water Heater or Don’t vent – That’s the question!"](https://www.youtube.com/watch?v=SHJLvfgpJWg). Accessed January 29, 2023.
+[^"4"]: Family DIY TV. ["Vent your Rheem or AO Smith Hyrbid Water Heater or Don't vent – That’s the question!"](https://www.youtube.com/watch?v=SHJLvfgpJWg). Accessed January 29, 2023.
 
-[^"5"]: Franco, Victor; Lekov, Alex; Meyers, Steve & Letschert, Virginie. ["Heat Pump Water Heaters and American Homes: A Good Fit?"](https://digital.library.unt.edu/ark:/67531/metadc830471/), article, May 14, 2010; Berkeley, California, University of North Texas Libraries, [UNT Digital Library](https://digital.library.unt.edu); crediting UNT Libraries Government Documents Department. Accessed January 29, 2023
+[^"5"]: Franco, V., Lekov, A., Meyers, S., Virginie, L. ["Heat Pump Water Heaters and American Homes: A Good Fit?"](https://digital.library.unt.edu/ark:/67531/metadc830471/). ACEEE Summer Study on Energy Efficiency in Buildings. May 2010.
 
-[^"6"]: Anna M. Brockway, Pierre Delforge, ["Emissions reduction potential from electric heat pumps in California homes"](https://www.sciencedirect.com/science/article/pii/S1040619018302331), The Electricity Journal **31**(9), pp. 44-53, ISSN 1040-6190. Accessed January 30, 2023.
+[^"6"]: Brockway, A. M., Delforge, P. ["Emissions reduction potential from electric heat pumps in California homes"](https://doi.org/10.1016/j.tej.2018.10.012). The Electricity Journal **31**(9), pp. 44-53. November 2018.
 
 export default ({ children }) => 
   <SolutionDropdown 
