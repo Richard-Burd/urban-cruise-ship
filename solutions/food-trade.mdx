@@ -7,23 +7,41 @@ export const solution = "Food Trade - World";
 As the food system's emissions are much greater in the growing phase than in the transportation phase, we propose that countries retain freedom of food trade. Restrictions on food trade will generally increase growing emissions by more than they will decrease transportation emissions.
 
 ## Background
+Food trade is highly globalized, with most staple commodities moving across borders. Bulk shipments are largely transported by sea, which is relatively low in GHG intensity around 0.02 kg CO₂e/t-km[^”4”]. This allows regions with favorable climates, soils, and resource conditions to supply others that are less suitable for certain crops. Research consistently shows that the production phase dominates GHG emissions: farm activities, fertilizer use, livestock methane, and land-use change typically account for about 85% of food’s footprint, whereas transport contributes on average about 6%[^”5”],[^”6”]. Air-freighted perishables are the main exception.
+
 About 23% of the food produced for human consumption is traded internationally[^”1”]. Many regions of the world are in conditions of food shortage due to a local imbalance between production and demand[^”1”].
+Freer trade enables sourcing from regions where production is most efficient and least carbon-intensive (e.g., field-grown vegetables from warm climates versus heated greenhouse production in colder ones). By importing rather than forcing domestic production of high-footprint foods, countries avoid the need for intensive irrigation, heavy fertilizer use, or deforestation to create new croplands. Trade liberalization typically consolidates flows into bulk shipping routes, which are more energy-efficient than fragmented short-haul or greenhouse-heavy local systems.
 
-The energy spent in car use for eating out has been estimated at 20 MJ per outside meal[^”2”]. It is estimated that the environmental impact of car based shopping are greater  than those of transport within the distribution system itself[^”2”].
-
+Freer trade reduces vulnerability to local climate shocks, pests, and crop failures by diversifying supply. Farmers in efficient producing countries gain market access thus lifting incomes and spreading agricultural innovations. Countries facing water scarcity can import water-intensive crops instead of depleting their own freshwater supplies[^”6”]. Broader trade increases access to fresh fruits, vegetables, and plant proteins year-round, contributing to greater variety and overall improvements in health.
+The energy spent in car use for eating out has been estimated at 20 MJ per outside meal[^”2”]. It is estimated that the environmental impacts of car based shopping are greater than those of transport within the distribution system itself[^”2”].
 
 ## Calculations
 Each year, 200 billion metric tons of food are transported globally – 60% by sea, 35% by land, and 5% by air[^”2”].
 
-
 ## Implementation
-There will need to be an agreement between nations to keep food trade unrestricted. This agreement will be monitored by the United Nations.
+There will need to be an agreement between nations that will be monitored by the United Nations.
 
-##### Lead researcher: Lee Nelson - Last updated: 1/15/2024
+This could be done with the following:  
+-	Gradual lowering of import tariffs and quotas on food goods, especially where emissions data show clear environmental benefits from trade.  
+-	Aligning sanitary and phytosanitary measures internationally by adopting [Codex Alimentarius]( https://www.fao.org/fao-who-codexalimentarius/en/) guidelines to reduce “hidden” trade barriers.  
+-	 Developing global standards for measuring and labeling product-level emissions so that trade flows reflect environmental efficiency.  
+-	Embedding environmental safeguards in trade deals to avoid leakage (e.g., preventing deforestation-driven exports) [^”6”].
+
+While freer food trade, in most circumstances, would reduce GHG emissions in food production, it is widely agreed that the [impact of dietary choice](https://www.urbancruiseship.org/matter/diet/diet_fw), especially reducing animal based consumption, leads to a much larger reduction[^”3”], [^”4”],[^”5”].
+
+##### Lead researcher: Lee Nelson - Last updated: September 22, 2025
 
 [^”1”]: D'Odorico, P. et al. [“Feeding humanity through global food trade”](https://doi.org/10.1002/2014EF000250) Earth’s Future, August 2014
-
 [^”2”]: Konieczny P. et al. [“Using Carbon Footprint To Evaluate Environmental Issues Of Food Transportation”]( http://www.logforum.net) Scientific Journal of Logistics, 2013
+
+[^”3”]: Weber, C. and Matthews, H. [“Food-Miles and the Relative Climate Impacts of Food Choices in the United States”]( https://pubs.acs.org/doi/10.1021/es702969f?) Environmental Science and Technology, April 2008.
+
+[^”4”]: Poore, J. and Nemecek, T. [“Reducing food’s environmental impacts through producers and consumers”]( https://doi.org/10.1126/science.aaq0216) Science, June 2018.
+
+[^”5”]: Filho, W. et al [“An overview of the interactions between food production and climate change”]( https://doi.org/10.1016/j.scitotenv.2022.156438) Science of the Total Environment, September 2022.
+
+[^”6”]: Ritchie, H. et al. [“Environmental Impacts of Food Production”]( https://ourworldindata.org/environmental-impacts-of-food) Our World in Data, 2022.
+
 
 export default ({ children }) => 
   <SolutionDropdown 
