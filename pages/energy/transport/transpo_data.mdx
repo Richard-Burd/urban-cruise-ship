@@ -56,17 +56,107 @@ In the 2020s, artificial intelligence has been the leading technological revolut
 
 Due to great uncertainty about the trajectory of AI development, as well as broader macroeconomic trends, the IEA projects data center electricity demand in 2035 as ranging from 700 TWh to 1700 TWh. By comparison, world electricity consumption was just under 30,000 TWh in 2023 [^37]. The rate of growth of data center electricity demand has been 12% per year from 2017 to 2024, more than four times as much as the rate of growth of electricity demand overall [^36]. Data centers will account for 10% of world electricity demand growth to 2030; comparable figures are 5% in low-income countries, where other demand growths are also strong, 20% in wealthy countries, and nearly 50% in the United States.
 
-Earlier estimates were as follows. From 2010 to 2014, U.S. data center energy consumption grew only 4%, with demand growth only slightly outpacing energy efficiency. Total IT energy demand is predicted to rise to from 1817 to 5860 TWh of electricity, or 20 to 63 exajoules of primary energy, from 2012 to 2025.
+Estimating current data center energy usage, let alone projecting into the future, has been a challenge.
 
-<ArticleImage image={"it_energy.svg"} width={750} height={420} />
-#### IT energy consumption in 2012, reported by Cook et al. [^9], and projected in 2015, estimated by Andrae [^2]. The 2025 projection is over 20% world electricity consumption.
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"Worldwide Data Center Energy Usage in 2023"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={""}
+  mastheadToggle={''}
+  mastheadText3={"MG, Apr. 10, 2025"}
+  
+  
+  staticData={[   
+    	{
+	  name:"Global Estimates",
+      barlength: 335,
+      displayedValue: "335 TWh",
+      site: "null",
+	},
+    {
+      name: "Country/Region Estimates",
+      barlength: 360,
+      displayedValue: "360 TWh",
+      site: "null",
+    },
+    {
+      name: "Company Estimates",
+      barlength: 340,
+      displayedValue: "340 TWh",
+      site: "null",
+    }
+   
+  ]}
+/>
+#### Kamiya and Coroamă [^38] review several studies of data center energy usage since 2014. They report estimates of overall global energy consumption from data centers based on what they consider to be high quality studies based on three methodologies: global estimates, country/regional estimates, and estimates based on large companies. All studies they consider report worldwide energy usage between 210 and 470 terawatt-hours.
 
-This growth will continue despite rapid ongoing improvement in energy efficiency.
+The above numbers comprise just over 1% of world electricity consumption. Some studies report much higher data center energy consumption, but they are judged to be of poor quality [^38]. Projections for 2030 range from 200 to 8000 TWh per year, though the larger estimates are from studies judged to be of lower quality [^38].
 
-<ArticleImage image={"energy_it.svg"} width={670} height={490} />
-#### Energy efficiency in IT has been, and is expected to, improve rapidly. Source: Andrae [^2].
+In the 2020s, the biggest driver of data server energy growth has been artificial intelligence and generative AI in particular. Most studies considered found that energy usage associated with AI was less than 75 TWh per year in 2023 [^38].
 
-The energy efficiency of data transmissions have been observed to roughly double every two years per gigabyte [^3].
+Researchers at Lawrence Berkeley National Laboratory [^40] have estimated the following United States data center energy usage for 2023.
+
+<DynamicSolutionGraphic
+  barChartTitle={""}
+  barChartTitle2={"United States Data Center Energy Usage in 2023"}
+  rightSideAdd={0}
+  leftSideAdd={0}
+  chartType={"hideArrow"}
+  arrowText1={""}
+  mastheadToggle={''}
+  mastheadText3={"MG, Apr. 10, 2025"}
+  
+  
+  staticData={[   
+    {
+	  name:"GPU-Accelerated AI Servers",
+      barlength: 60,
+      displayedValue: "60 TWh",
+      site: "null",
+	},
+    {
+	  name:"Data Storage",
+      barlength: 7,
+      displayedValue: "7 TWh",
+      site: "null",
+	},
+    {
+	  name:"Networking",
+      barlength: 6,
+      displayedValue: "6 TWh",
+      site: "null",
+	},
+    {
+	  name:"Infrastructure",
+      barlength: 60,
+      displayedValue: "60 TWh",
+      site: "null",
+	},
+    {
+	  name:"Bitcoin Mining",
+      barlength: 40,
+      displayedValue: "40 TWh",
+      site: "null",
+	},
+    {
+	  name:"Other Data Servers",
+      barlength: 40,
+      displayedValue: "40 TWh",
+      site: "null",
+	}
+   
+  ]}
+/>
+#### Source: Shehabi et al. [^40].
+
+### Energy Efficiency
+
+Masanet et al. [^39] consider energy consumption in data centers from 2010 to 2018. Over that time, electricity consumption increased from 194 TWh to 205 TWh, a 6% increase, while compute instances increased by a factor of 6.5. Some higher forecasts for future data center electricity demand fail to account for future efficiency gains [^38].
+
+The energy efficiency of data transmission have been observed to roughly double every two years per gigabyte [^3].
 
 ## Energy Savings Potential
 There are several options available to reduce the energy needs of data centers. European data centers have an average Power Usage Effectiveness--the ratio between total energy consumption and that used directly by the processors--of 1.8 [^4]. The state of the art is at worst 1.12, indicating a potential savings of 38%. Data centers are typically more energy efficient when they can use the air of a cooler climate for cooling [^31]. Eventually, [liquid cooling](https://engineering.leeds.ac.uk/news/article/20134/school-of-mechanical-engineering/152/'wet'-computer-server-wins-green-enterprise-it-award) of processors could save 80% of the data center's energy consumption.
@@ -212,6 +302,12 @@ The rapidly growing size of deep learning models, together with diminishing retu
 [^36]: Spencer, T., Singh, S., D'Ambrosio, D., Hopewell, H., Jacamon, V., Martinos, A., Salmon, N., Wanner, B. et al. ["Energy and AI"](https://www.iea.org/reports/energy-and-ai). International Energy Agency. April 2025.
 
 [^37]: Energy Institute. ["Statistical Review of World Energy"](https://www.energyinst.org/statistical-review). 2024.
+
+[^38]: Kamiya, G., Coroamă, V. C. ["Data Centre Energy Use: Critical Review of Models and Results"](https://www.iea-4e.org/edna/publications/data-centre-energy-use-critical-review-of-models-and-results/). Efficient, Demand Flexible Appliances, Energy Efficient End-use Equipment, International Energy Agency Technology Collaboration Programme. March 2025.
+
+[^39]: Masanet, E., Shehabi, A., Lei, N., Smith, S., Koomey, J. ["Recalibrating global data center energy-use estimates"](https://doi.org/10.1126/science.aba3758). Science **367**(6481), pp. 984-986. February 2020.
+
+[^40]: Shehabi, A., Hubbard, A., Newkirk, A., Lei, N., Siddik, M.A., Holecek, B., Koomey, J., Masanet, E., Sartor, D. ["2024 United States Data Center Energy Usage Report"](https://doi.org/10.71468/P1WC7Q). Lawrence Berkeley National Laboratory, Energy Analysis & Environmental Impacts Division. 2024.
 
 export default ({ children }) => 
   <Article 
