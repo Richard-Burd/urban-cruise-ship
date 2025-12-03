@@ -1,0 +1,43 @@
+import SolutionDropdown from '/components/SolutionDropdown.js'
+
+
+export const problem = "Pedestrian Safety";
+export const solution = "Sidewalk Policy - U.S.";
+
+## Description
+We propose national sidewalk policy that clarifies the responsibility to build and maintain sidewalks, while promoting safety, green sidewalk construction, and vehicle use reduction.
+
+## Background
+There is currently no national policy for who builds or maintains sidewalks. This responsibility varies widely by jurisdiction and in many U.S. cities property owners are responsible for installing and repairing sidewalks. This leaves many gaps between residential areas where people might want to walk to public spaces. Overall, this creates a huge variety in coverage as well as quality and level of upkeep. The gaps and lack of maintenance also tend to be skewed towards low-income and minority neighborhoods which has led to more pedestrian injuries for these marginalized groups[^”1”]. In areas where there is a split in responsibility between owners, HOA’s, and municipalities, the responsibility can become confused which can lead to fragmented funding and deferred maintenance.
+
+In 2023, 7,148 pedestrians were killed by drivers in the United States [^”2”]. About 65% of those or 4,646 were in locations lacking sidewalks[^”2”]. The number of fatalities occurring after dark increased by 84% (compared to a 28% increase in daytime fatalities) since 2010[^”2”], suggesting that proper infrastructure around sidewalks such as lighting is also important. This issue is continuing to get worse as pedestrian deaths have increased by 80% since 2009 while all other traffic fatalities increased by 13%[^”2”].
+
+##Calculations
+While the safety benefits of building sidewalks are clear, the environmental costs are significant and may take quite some time to offset. Building one mile of sidewalk with typical concrete would produce about 60 metric tonnes of embodied CO2 [^”4”]. That would require about 41 avoided 1-mile car trips per day over a ten year period [^”3”].
+
+## Implementation
+The U.S. [Department of Transportation (USDOT)](https://www.transportation.gov/) in cooperation with the [Federal Highway Administration (FHWA)]( https://highways.dot.gov/) should create a national framework that includes mandates for local municipalities to build and maintain ADA-compliant sidewalks that prioritize safety, equity, and emissions reduction. This framework would include minimum widths, lighting, curb ramps, stormwater treatment standards, winter maintenance policies, and best-practice designs. 
+
+Funding could come from dedicated federal grants such as the [Safe Streets and Roads for All]( https://www.transportation.gov/grants/SS4A) grants or create new grants and programs that prioritize projects in high-fatality corridors and historically underinvested neighborhoods.
+
+On the local level each municipality would be charged to create an actionable Sidewalk Action Plan to inventory missing or broken sidewalks, identify where sidewalks can lead to public spaces, prioritize equity and safety, and create a strategy to fund maintenance. These plans can be used to direct any federal funding where it is most needed.
+
+Green cement designs should be investigated and encouraged, including low-carbon blends, reclaimed aggregates, permeable pavements, and bioswale integrations. 
+
+
+##### Lead researcher: Lee Nelson - Last updated: December 3, 2025
+[^”1”]: Barry, V. et al. [“Emergency Department Visits for Pedestrians Injured in Motor Vehicle Traffic Crashes — United States, January 2021–December 2023”]( https://www.cdc.gov/mmwr/volumes/73/wr/mm7317a1.htm?s_cid=mm7317a1_w) CDC, May 2024
+
+[^”2”]: Governors Highway Safety Association [“Pedestrian Traffic Fatalities by State”]( https://www.ghsa.org/resource-hub/pedestrian-fatalities-2023-data) GHSA, June 2024
+
+[^”3”]: EPA [“Greenhouse Gas Emissions from a Typical Passenger Vehicle”]( https://19january2021snapshot.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle_.html) EPA, Accessed December 2025
+
+[^”4”]: Turner, N. [“Concrete is one of the biggest contributors to carbon emissions: New technologies could change that”]( https://www.machinerypartner.com/blog/concrete-is-one-of-the-biggest-contributors-to-carbon-emissions-new-technologies-could-change-that) Machinery Partner, December 2024
+
+export default ({ children }) =>
+  <SolutionDropdown
+    problem={problem}
+    solution={solution}
+  >
+    {children}
+  </SolutionDropdown>
