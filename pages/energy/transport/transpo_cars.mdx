@@ -14,6 +14,14 @@ import EndCafeExemptionForSUVsSolution from "/solutions/end-cafe-exemption-for-s
 
 The energy intensity of driving depends on many factors, including four in particular: the number of passengers in the car, the type of car, the type of fuel the car consumes, and the way in which it is used. Intercity trips tend to have a lower energy intensity due to better fuel economy on the highway and the fact that there are typically more passengers on a longer trip [^18]. See our analysis of the [broader impacts of transportation](/cities/cities_energy_and_pollution/cities_transportation) for more information.
 
+## Car Ownership
+
+Worldwide, the rate of car ownership generally various with gross domestic product.
+<ArticleImage image={"car_rate.png"} width={750} height={340} />
+#### Rate of private car ownership and GDP of countries of the world. Each dot represents a country, with larger dots indicating greater population. Sources: Wikipedia ([^26] and [^27]). The CIA World Factbook is used for GDP data.
+
+Singapore achieves a low rate of car ownership and high GDP, in part, with its Electronic Road Pricing system, which Agarwal and Koo (2016) [^28] assess plays an important role in shifting commuter behavior to mass transit.
+
 ## Type of Car
 Based on Model Year 2018 vehicles, pickup trucks consume 58% more energy per passenger-kilometer than sedans.
 
@@ -26,7 +34,7 @@ A car's primary energy consumption also depends on the type of fuel. Despite hav
 <ArticleImage image={"img2019_05_23_byfuel.svg"} width={700} height={500} />
 #### Primary energy consumption of the average sedan and SUV in the U.S. Model Year 2018 fleet. Most estimates are based on figures provided by fueleconomy.gov [^6] and the EPA [^24], with data on natural gas provided by the Office of Energy Efficiency and Renewable Energy [^23]. The hydrogen fuel cell scenario assumes that the hydrogen is produced by methane steam reforming.
 
-For a typical light-duty vehicle, greenhouse gases emissions vary by fuel source as follows.
+For a typical light-duty vehicle, greenhouse gas emissions vary by fuel source as follows.
 
 <ArticleImage image={"ghg_by_fuel.svg"} width={900} height={470} />
 #### Sources: most figures from the GREET model [^1] and methanol figures from Joseck and Elgowainy [^10].
@@ -139,6 +147,12 @@ The International Energy Agency estimates that 1.5 exajoules of energy could be 
 [^24]: U.S. Environmental Protection Agency. ["Automotive Trends Report"](https://www.epa.gov/automotive-trends/download-automotive-trends-report). 2018.
 
 [^25]: Spencer, T., Singh, S., D'Ambrosio, D., Hopewell, H., Jacamon, V., Martinos, A., Salmon, N., Wanner, B. et al. ["Energy and AI"](https://www.iea.org/reports/energy-and-ai). International Energy Agency. April 2025.
+
+[^26]: Wikipedia. ["https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)"](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)). Accessed November 13, 2025.
+
+[^27]: Wikipedia. ["List of countries and territories by motor vehicles per capita"](https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_motor_vehicles_per_capita). Accessed November 13, 2025.
+
+[^28]: Agarwal, S., Koo, K. M. ["Impact of electronic road pricing (ERP) changes on transport modal choice"](https://doi.org/10.1016/j.regsciurbeco.2016.05.003). Regional Science and Urban Economics **60**, pp. 1-11. September 2016.
 
 export default ({ children }) => 
   <Article 
