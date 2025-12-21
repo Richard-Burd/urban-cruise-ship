@@ -490,7 +490,7 @@ const Crew = () => {
         <br></br>
 
         <div className="crew-member-custom-text-size standard-font-1 border-b-2 border-zinc-700 mt-2 -mb-2 standard-font-color-1">
-          Jye Harrison
+         Jye Harrison
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
