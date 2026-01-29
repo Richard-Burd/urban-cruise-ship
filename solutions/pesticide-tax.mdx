@@ -12,7 +12,7 @@ export const solution = "Pesticide Tax - World";
 
 ## Description
 
-We propose a two-layer taxing system on pesticides that will target the most hazardous chemicals and their use to reduce their overall environmental and health impacts efficiently.
+We propose a two-layer tax on pesticides that will target the most hazardous chemicals and their use to reduce their overall environmental and health impacts efficiently.
 
 <DynamicSolutionGraphic
   barChartTitle={"Pesticide Tax - World"}
@@ -25,13 +25,13 @@ We propose a two-layer taxing system on pesticides that will target the most haz
     {
       name: "Benefit",
       barlength: 88.79,
-      displayedValue: "$88.79",
+      displayedValue: "$88.79 million/year",
       site: "null",
     },
     {
       name: "Cost",
       barlength: 25.66,
-      displayedValue: "$25.66 Millions USD/year",
+      displayedValue: "$25.66 million/year",
       site: "null",
     },
   ]}
@@ -39,42 +39,42 @@ We propose a two-layer taxing system on pesticides that will target the most haz
 
 ## Background
 
-Pesticides are estimated to cost $14.66 billion in annual environmental and societal damages in the United States[^”1”]. This includes pesticide impacts on public health; livestock and livestock product losses; increased control expenses resulting from pesticide-related destruction of natural enemies and from the development of pesticide resistance in pests; crop pollination problems and honeybee losses; crop and crop product losses; bird, fish, and other wildlife losses; and governmental expenditures to reduce the environmental and social costs of the recommended application of pesticides.
+Pesticides are estimated to cost $14.66 billion in annual environmental and societal damages in the United States [^"1"]. This includes pesticide impacts on public health; livestock and livestock product losses; increased control expenses resulting from pesticide-related destruction of natural enemies and from the development of pesticide resistance in pests; crop pollination problems and honeybee losses; crop and crop product losses; bird, fish, and other wildlife losses; and governmental expenditures to reduce the environmental and social costs of the recommended application of pesticides.
 
-By comparing the ratio of kg of pesticides used in the U.S. and the world total [^”1”] we estimate that the global cost would be $87.96 billion annually.
+Applying an American-based estimte of the per-kilgram damages of pesticides [^"1"], we estimate that the global cost is $87.96 billion annually.
 
-A straight value-added tax on pesticides would only encourage farmers to purchase more harmful pesticides. For this reason, we have chosen a combination of a Hazard Tax (based on how hazardous a pesticide is to humans and the environment, to reduce the use of the most harmful pesticides) and a Unit Tax (based on a per-hectare use, aimed at reducing the number of times a crop is sprayed)[^”2”].
+A straight value-added tax on pesticides would only encourage farmers to purchase more harmful pesticides. For this reason, we have chosen a combination of a Hazard Tax (based on how hazardous a pesticide is to humans and the environment, to reduce the use of the most harmful pesticides) and a Unit Tax (based on a per-hectare use, aimed at reducing the number of times a crop is sprayed)[^"2"].
 
 ## Calculations
 
-A total of 2,661.14 metric tons of pesticides are sprayed each year[^”3”]. On average 2.69 kg of pesticide is sprayed per hectare of cropland[^”4”]. Therefore a Unit Tax of $27.36[^”2”] per hectare sprayed is calculated to raise $24.55 million annually.
+A total of 2,661.14 metric tons of pesticides are sprayed each year [^"3"]. On average 2.69 kg of pesticide is sprayed per hectare of cropland [^"4"]. Therefore a Unit Tax of $27.36 [^"2"] per hectare sprayed is calculated to raise $24.55 million annually.
 
-A 250-hectare mixed-use farm was found to average 4,414.1 Hazard Points per year[^”2”]. A levy of $2.50 per Hazard Point[^”2”] would then raise $39.61 million per year.
+A 250-hectare mixed-use farm was found to average 4,414.1 Hazard Points per year [^"2"]. A levy of $2.50 per Hazard Point [^"2"] would then raise $39.61 million per year.
 
-Together these two taxes would equal $64.16 million.
+Together, these two taxes would raise $64.16 million.
 
-In 2021 the global pesticide market was valued at $218.24 billion[^”5”]. These taxes would reduce pesticide use by .028% by price elasticity of demand[^”6”], that would equal a $24.63 million benefit reduction of the environmental and societal costs of pesticides outlined above.
+In 2021, the global pesticide market was valued at $218.24 billion [^"5"]. These taxes would reduce pesticide use by .028% by an estimated price elasticity of demand [^"6"], yielding a $24.63 million benefit reduction of the environmental and societal costs of pesticides outlined above.
 
-Similar to the taxation structure in Denmark[^”7”], we assume that the cost of maintaining and monitoring these taxes would equal 40% of the taxes raised or $25.66 million.
+Similar to the taxation structure in Denmark [^"7"], we assume that the cost of maintaining and monitoring these taxes would equal 40% of the taxes raised or $25.66 million.
 
 ## Implementation
 
-The Food and Agriculture Organization of the United Nations is currently the entity most equipped to handle the registration and taxation of pesticides on a global scale, possibly in conjunction with the United Nations Environmental Programme (UNEP). Currently, the World Health Organization recommends classifying pesticides by hazard[^”8”]. Their hazard ratings only account for human hazards and lack the environmental hazard ratings outlined by Falconer & Hodge[^”2”]. This would be a significant upgrade and could also be used as a method to decide a level at which a pesticide should be banned from being produced or used. Many pesticides are banned in some countries but not in others[^”9”]. This would create a unified registry of pesticides and prevent the export of banned pesticides which has become an ethical issue[^”10”].
+The Food and Agriculture Organization of the United Nations is currently the entity most equipped to handle the registration and taxation of pesticides on a global scale, possibly in conjunction with the United Nations Environmental Programme (UNEP). Currently, the World Health Organization recommends classifying pesticides by hazard [^"8"]. Their hazard ratings only account for human hazards and lack the environmental hazard ratings outlined by Falconer and Hodge [^"2"]. This would be a significant upgrade and could also be used as a method to decide a level at which a pesticide should be banned from being produced or used. Many pesticides are banned in some countries but not in others [^"9"]. This would create a unified registry of pesticides and prevent the export of banned pesticides which has become an ethical issue [^"10"].
 
 We recommend that this taxation solution be implemented alongside an integrated pest management solution that promotes farming practices to reduce the overall need for pesticides.
 
-##### Lead researcher: Lee Nelson - Last updated: 8/11/2023
+##### Lead researcher: Lee Nelson - Last updated August 11, 2023.
 
-[^”1”]: Pimentel, D. “Environmental and Economic Costs of the Application of Pesticides Primarily in the United States” (https://doi.org/10.1007/978-1-4020-8992-3_4) Integrated Pest Management: Innovation-Development Process. Springer, Dordrecht. 2009
-[^”2”]: Falconer, K., & Hodge, I. “Pesticide taxation and multi-objective policy-making: farm modeling to evaluate profit/environment trade-offs.”(https://doi.org/10.1016/S0921-8009(00)00236-6) Ecological Economics, 36(2), 263–279. (2001)
-[^”3”]: Statista “Global Pesticide Use by Type” (https://www.statista.com/statistics/1263206/global-pesticide-use-by-type/) Accessed 3/18/2023
-[^”4”]: Our World in Data “Pesticide Use per Hectrare of Cropland” (“https://ourworldindata.org/grapher/pesticide-use-per-hectare-of-cropland) Accessed 3/18/2023
-[^”5”]: Statista “Worldwide agrochemical market value” (https://www.statista.com/statistics/311943/agrochemical-market-value-worldwide/) Accessed 3/18/2023
-[^”6”]: Böcker, T., Finger R. “A Meta-Analysis on the Elasticity of Demand for Pesticides” (https://doi.org/10.1111/1477-9552.12198) Journal of Agricultural Economics 14 September 2016
-[^”7”]: Schou, JS., Streibig, JC. “Pesticide Taxes in Scandinavia” Pesticide Outlook 10(6) 227-229 (http://files.foes.de/de/downloads/tagungvilm2005/scandinaviastudy.pdf) 1999
-[^”8”]: World Health Organization “The WHO Recommended Classification of Pesticides by Hazard and guidelines to classification” (https://www.who.int/publications/i/item/9789240005662) 2019
-[^”9”]: Pesticide Action Network International “PAN INTERNATIONAL CONSOLIDATED LIST OF BANNED PESTICIDES” (https://pan-international.org/pan-international-consolidated-list-of-banned-pesticides/) Accessed 3/22/2023
-[^”10”]: Larry K. Lowry & Arthur L. Frank “Exporting DBCP and Other Banned Pesticides: Consideration of Ethical Issues” (https://www.tandfonline.com/doi/abs/10.1179/oeh.1999.5.2.135) International Journal of Occupational and Environmental Health, 5:2, 135-141, DOI: 10.1179/oeh.1999.5.2.135 1999
+[^"1"]: Pimentel, D. ["Environmental and Economic Costs of the Application of Pesticides Primarily in the United States"](https://doi.org/10.1007/978-1-4020-8992-3_4). In *Integrated Pest Management: Innovation-Development Process*. Springer, Dordrecht. 2009,
+[^"2"]: Falconer, K., & Hodge, I. ["Pesticide taxation and multi-objective policy-making: farm modeling to evaluate profit/environment trade-offs"](https://doi.org/10.1016/S0921-8009(00)00236-6). Ecological Economics, **36**(2), pp. 263–279. 2001.
+[^"3"]: Statista. ["Global Pesticide Use by Type"](https://www.statista.com/statistics/1263206/global-pesticide-use-by-type/). Accessed March 18, 2023.
+[^"4"]: Our World in Data. ["Pesticide Use per Hectrare of Cropland"](https://ourworldindata.org/grapher/pesticide-use-per-hectare-of-cropland) Accessed March 18, 2023.
+[^"5"]: Statista. ["Worldwide agrochemical market value"](https://www.statista.com/statistics/311943/agrochemical-market-value-worldwide/). Accessed March 18, 2023.
+[^"6"]: Böcker, T., Finger R. ["A Meta-Analysis on the Elasticity of Demand for Pesticides"](https://doi.org/10.1111/1477-9552.12198). Journal of Agricultural Economics **68**(2), pp. 518-533. September 2016.
+[^"7"]: Schou, J.S., Streibig, J.C. ["Pesticide Taxes in Scandinavia"](https://researchprofiles.ku.dk/en/publications/pesticide-taxes-in-scandinavia/). Pesticide Outlook **10**(6), pp. 227-229. 1999.
+[^"8"]: World Health Organization. ["The WHO Recommended Classification of Pesticides by Hazard and guidelines to classification"](https://www.who.int/publications/i/item/9789240005662). 2019
+[^"9"]: Pesticide Action Network International. ["Pan International Consolidated List of Banned Pesticides"](https://pan-international.org/pan-international-consolidated-list-of-banned-pesticides/). Accessed March 22, 2023.
+[^"10"]: Lowry, L. K., Frank, A. L. ["Exporting DBCP and Other Banned Pesticides: Consideration of Ethical Issues"](https://doi.org/10.1179/oeh.1999.5.2.135). International Journal of Occupational and Environmental Health **5**(2), pp. 135-141. 1999.
 
 export default ({ children }) => 
   <SolutionDropdown 
