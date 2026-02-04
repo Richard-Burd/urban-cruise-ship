@@ -1037,7 +1037,7 @@ Our website takes this value above (`"LSC R&D"`) and then runs the [`lib/convert
 
 If you are unsure as to how our `convertToUrlSlug.js` function will slugify a particularly unconventional title, you can copy & paste the function from [here](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/lib/convertToUrlSlug.js) and then open up any internet browser and press `Ctrl+Shift+i` to open the developer tool, then paste the function into the console as shown below.
 
-![image of Google Chrome Dev Tools with convertToUrlSlug function in console](https://jyeartstudio.com/ucs-images/use_code_to_make_slug.jpg)
+![image of Google Chrome Dev Tools with convertToUrlSlug function in console](https://cdn.urbancruiseship.org/ucs-images/use_code_to_make_slug.jpg)
 
 You will then want to _call_ the function in the console with your title as the function's variable and type `Enter`. After that, you will see the resulting slug that you need to put on the left side of the "`#`" symbol in the `link` property of your new entry in the `solutionData` file is located here: [`/data/solutionData.js`](https://github.com/Richard-Burd/urban-cruise-ship/blob/main/data/solutionData.js).
 <br>
@@ -1048,7 +1048,7 @@ You will then want to _call_ the function in the console with your title as the 
 
 You may be in a situation where you already have a solution up on the site and you just want to find its fragment identifier link. You can find this link by going to an internet browser like Google Chrome and pressing `Ctrl+Shift+i` to open up the developer tools. you will then navigate to the **Elements** tab and press on the **Selector** icon. You then need to hover over the solution lozenge itself and search for the parent `id` property in the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) shown in the dev tools window.
 
-![image of Google Chrome Dev Tools with Selector in Elements Tab](https://jyeartstudio.com/ucs-images/find_the_solution_id_in_browser.jpg)
+![image of Google Chrome Dev Tools with Selector in Elements Tab](https://cdn.urbancruiseship.org/ucs-images/find_the_solution_id_in_browser.jpg)
 
 <br>
 <br>
@@ -1063,7 +1063,7 @@ You may be in a situation where you already have a solution up on the site and y
 
 Some of our article buttons have a unique requirement to display a specified text on the top line of text with a specified text on the bottom line of text. below is one such button from the [HISTORY/Solutions](https://www.urbancruiseship.org/history/solutions) section:
 
-![image of the Net Benefit button](https://jyeartstudio.com/ucs-images/top_n_bottom_text_button.jpg)
+![image of the Net Benefit button](https://cdn.urbancruiseship.org/ucs-images/top_n_bottom_text_button.jpg)
 
 NOTE: the **_Net Benefit_** is defined as the 'top' line and the **_(Benefit - Cost)_** is defined as the bottom line. We do not our text to be arbitrarily wrapped as it is elsewhere throughout the site but instead want it defined by humans. This is achieved by adding an extra key & value pair to the `hierarchy.json` file in the specialized site [in our case HISTORY] you wish to modify. Below there is a `"article_title_two": "(Benefit / Cost)"` line that indicates the text that should be displayed on the bottom line of the button. The `article_title_two` key is optional and if it is not present, the text will be displayed on a single line as it is elsewhere on the site. The `article_title_two` key is only used for the top and bottom text buttons. The `article_title` key is used for all other buttons. Below is an example of the `hierarchy.json` file for the HISTORY section:
 
