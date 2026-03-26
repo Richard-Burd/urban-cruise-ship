@@ -494,26 +494,34 @@ const Crew = () => {
         </div>
         <div className={crewDescriptionTestLayoutStyles}>
           <div>
-          Jye is a graphic designer, writer, and design consultant at Urban Cruise Ship, contributing extensively through solution-focused articles, comparative interactive history tables, illustrative graphics, and conceptual development for <a
+          Jye is a Berlin-based freelance journalist specializing in environmental systems, and public infrastructure. Their work focuses on translating complex, data-driven research into clear, accessible reporting that serves general audiences, activists, and policy stakeholders.  </div>
+          <div className="my-4"></div>
+          <div>
+          Since 2022, they have been contracted by Urban Cruise Ship as a journalist and editor. They also have served as a designer and visual artist for both Urban Cruise Ship, and its sister organization, <a
             href="www.urbanfootnotes.com"
             target="_blank"
             rel="noreferrer"
           >
           Urban Foot Notes
+          </a>, contributing to the development of visual and narrative content across multiple platforms.
+          </div>
+          <div className="my-4"></div>
+          <div> Jye approaches scientific journalism through a systems-thinking lens, investigating how large actors, corporations, and governments shape the impact on climate, culture and human wellbeing. Their broader journalistic interests include climate-responsive urban planning, the relationship between walkability and public health, and the role of evidence-based reporting in shaping sustainable policy. They are committed to rigorous, transparent sourcing and to making environmental data meaningful to the communities it affects. </div>
+          <div className="my-4"></div>
+          <div>
+          Alongside their journalistic endeavors, they work as a visual and performance artist, developing original work rooted in folklore, clown and physical theatre. Their creative practice draws on formal training and years of interdisciplinary study across art, theatre, psychology, and philosophy. Their other projects and art can be explored at <a
+            href="https://jyeartstudio.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+          jyeartstudio.com
           </a>.
           </div>
-          <div className="my-4"></div>
-          <div>
-          A non-binary artist, performer, and facilitator currently based in Berlin, Jye specializes in creating uniquely themed events, performances, and performance workshops, fostering vibrant and inclusive communities. Driven by curiosity and a passion for exploration, Jye dedicated five years to higher education. Their studies included a wide range of subjects, from art and theatre to psychology and philosophy, and they continue to pursue learning opportunities that challenge and inspire them.
-          </div>
-          <div className="my-4"></div>
-          <div>
-          Their eclectic interests include gaming, history, architectural exploration, and immersive hiking adventures, with particular affection for trains, castles, cathedrals, ancient forests, majestic mountains, and fairies. Jye is also a dedicated advocate for mental health awareness and support, and they actively engage in community-building initiatives. They are a proud member of the LGBTQIA+ community and a vocal ally for marginalized and underrepresented groups. <div>Jye continues to seek opportunities for innovative creative collaborations alongside their ongoing role at Urban Cruise Ship. To explore a selection of their art and creative projects, visit their webpage below.</div>
-          </div>
+          
         </div>
         <center className="link-icon-set">
           <a
-            href="https://instagram.com/jye.art.studio/"
+            href="https://jyeartstudio.com/"
             target="_blank"
             rel="noreferrer"
           >
