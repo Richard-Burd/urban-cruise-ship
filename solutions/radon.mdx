@@ -13,36 +13,9 @@ export const solution = "Radon Testing for Low-Income Households - U.S.";
 ## Description
 We recommend the United States federal government enhance radon monitoring and outreach within low-income households, providing free testing.
 
-<DynamicSolutionGraphic
-  barChartTitle={"Radon Testing for Low-Income Households – U.S."}
-  barChartTitle2={""}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"show"}
-  arrowText1={"3500 lives saved"}
-  arrowText2={"per year"}
-  arrowText3={""}
-  arrowText4={""}
-  mastheadText3={"Lee Nelson 7-21-2024"}
- staticData={[
-    {
-     name: "Benefit",
-      barlength: 7.945,
-      displayedValue: "$8 billion/year",
-      site: "null",
-    },
-    {
-      name: "Cost",
-      barlength: 3.787249929650756,
-      displayedValue: "$4 billion/year",
-      site: "null",
-    },
-  ]}
-/>
-
 ## Background
 
-Radon is a naturally occurring radioactive gas. The most dangerous isotope, <sup>222</sup>Rn, also simply called radon, is on the decay chain of Uranium-238 and has a half-life of about 3.8 days. Concentrations of <sup>222</sup>Rn vary widely by geography [^"15"]. Radon cannot be detected with specialized testing equipment, which typically costs $150 to $300, whereas mitigation in a home found to contain unsafely high levels of radon typically costs $800 to $1500 [^"16"]. Radon mitigation entails sealing basement cracks, from which radon can enter a home.
+Radon is a naturally occurring radioactive gas. The most dangerous isotope, <sup>222</sup>Rn, also simply called radon, is on the decay chain of Uranium-238 and has a half-life of about 3.8 days. Concentrations of <sup>222</sup>Rn vary widely by geography [^"15"]. Radon cannot be detected without specialized testing equipment, which typically costs $150 to $300, whereas mitigation in a home found to contain unsafely high levels of radon typically costs $800 to $1500 [^"16"]. Radon mitigation entails sealing basement cracks, from which radon can enter a home.
 
 When inhaled, alpha particles released from radon's radioactive decay can initiate biological processes that lead to lung cancer [^"17"]. Radon is assessed to be the second leading cause of lung cancer in the United States and the leading cause among non-smokers [^"11"]. The U.S. Environmental Protection Agency recommends mitigation for homes with a radon level above 4 picocuries per liter (148 becquerels per cubic meter [^"23"]) and recommendends considering actions for radon levels between 2 and 4 pCi/L [^"22"]. By comparison, the average radon home radon level is 1.3 pCi/L, and the average outdoor air concentration is 0.4 pCi/L [^"22"].
 
@@ -52,20 +25,11 @@ In the United States, many states provide financial assistance for radon testing
 
 
 
-## Calculations
-Our calculation strategy is first to estimate the potential scope of expanded testing in terms of disability-adjust life-years (DALYs) saved, and second, to estimate the per-DALY cost and benefit of a program.
-
-It is the goal of the the 2021-2025 National Radon Action Plan [^"7"] to save 3500 lives per year. This is a sixth of the often-quoted 21,000 annual deaths from radon-induced lung cancer in the United States [^"11"], and an ambitious goal that will be challenging to achieve.
-
-Haucke [^"13"] estimates in Germany that expanded testing would mitigate health hazards at a cost of just under $50,000 per DALY, adjusting for currency conversion and inflation. We value a DALY at $100,000 [^"14"].
-
-
-
 ## Implementation
 
-Radon testing remains low; for example, in 2022, the state of Minnesota found that just under 1% of households had engaged in professional radon tests in 2022, down 40% from 2020 [^"24"]. Mitigation when tests reveal elevated radon levels remain a challenge. In Calgary, for instance, a mitigation rate of 38% was found for homes that test above 200 Bq/m<sup>3</sup>, the Canadian standard for action [^"25"]. Several studies [^"26"],[^"27"] have found that higher mitigations are necessary for expanded testing to be cost-effective.
+Limited analysis suggests that radon testing expansion is cost favorable. For example, Haucke [^"13"] estimates in Germany that expanded testing would mitigate health hazards at a cost of just under $50,000 per DALY, adjusting for currency conversion and inflation. We frequently value a DALY at $100,000 [^"14"]. Modernized research on the nature of the risk is necessary. As noted above, estimates of radon risk in the United States rely heavily on an outdated study with controversial methodological assumptions about risk. Better data will allow the expansion of programs with confidence.
 
-Modernized research on the nature of the risk is necessary. As noted above, estimates of radon risk in the United States rely heavily on an outdated study with controversial methodological assumptions about risk.
+Radon testing remains low; for example, in 2022, the state of Minnesota found that just under 1% of households had engaged in professional radon tests in 2022, down 40% from 2020 [^"24"]. Mitigation when tests reveal elevated radon levels remain a challenge. In Calgary, for instance, a mitigation rate of 38% was found for homes that test above 200 Bq/m<sup>3</sup>, the Canadian standard for action [^"25"]. Several studies [^"26"],[^"27"] have found that higher mitigations are necessary for expanded testing to be cost-effective.
 
 Several studies, such as that of Gaskin et al. [^"2"], have found radon-resistant standards for new construction to be more cost-effective than retrofitting existing homes.
 
