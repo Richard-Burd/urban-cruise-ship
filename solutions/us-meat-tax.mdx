@@ -1,118 +1,141 @@
-import SolutionDropdown from '/components/SolutionDropdown.js'
+import SolutionDropdown from "/components/SolutionDropdown.js";
 
-export const problem = "Environmental Impacts of Meat";
-export const solution = "U.S. Meat Tax";
-
+import { endeavorBenefitMinusCost } from "../lib/dynamicBarCharts/endeavorProc";
 import dynamic from "next/dynamic";
 export const DynamicSolutionGraphic = dynamic(
   () => import("../components/DynamicSolutionGraphic"),
   { ssr: false }
 );
 
-import SolutionImages from "/components/SolutionImages.js";
+export const problem = "Externalized Costs of Meat Consumption";
+export const solution = "Meat Tax (United States)";
 
 ## Description
-Livestock accounts for 20% of all worldwide GHG emissions [^"1"]. We propose a United States nationwide tax of 33.3% on beef, 11.3% on pork, and 8.9% on chicken to account for the environmental costs of meat production [^"2"].
+
+We propose that the United States enact an excise tax on red and processed meat, set at rates that approximate the health and environmental costs of consumption, with revenues recycled to offset regressivity.
 
 <DynamicSolutionGraphic
-  barChartTitle={"Meat Tax"}
-  barChartTitle2={"United States"}
+  barChartTitle={"Meat Tax - United States"}
+  barChartTitle2={""}
   rightSideAdd={0}
   leftSideAdd={0}
   chartType={""}
-  arrowText1={"135 million"}
-  arrowText2={"tons CO₂eq"}
-  arrowText3={"reduction"}
-  arrowText4={"annually"}
-  mastheadToggle={""}
-  mastheadText3={"Lee Nelson Mar.23.2023"}
+  arrowText1={"~100 million"}
+  arrowText2={"tons CO₂e"}
+  arrowText3={"reduced/yr"}
+  arrowText4={"(global)"}
+  mastheadText3={"MG 4-30-2026"}
   staticData={[
     {
-      name: "Benefits",
-      barlength: 26.3,
-      displayedValue: "$26.3 billion/year",
+      name: "Benefit",
+      barlength: 21.5,
+      displayedValue: "$21.5 billion/year",
       site: "null",
     },
     {
-      name: "Costs",
-      barlength: 0.0385,
-      displayedValue: "$38.5 million/year",
+      name: "Cost",
+      barlength: 19.4,
+      displayedValue: "$19.4 billion/year",
       site: "null",
     },
   ]}
 />
+
+## Background
+
+The United States is the world's largest consumer of beef in aggregate, with per capita consumption of approximately 58 pounds per year [^"1"]. Americans consumed roughly 107.5 billion pounds of red meat and poultry in 2024, with beef and processed meat representing the largest sources of diet-related externalities [^"2"]. Livestock agriculture accounted for approximately 274 million metric tons of CO₂-equivalent emissions in 2022, or about 4.3% of total U.S. greenhouse gas emissions [^"3"], with cattle alone responsible for roughly 230 MMT CO₂e in 2024 [^"3a"]. U.S. beef production emits an estimated 257.5 million metric tons CO₂e per year across its supply chain [^"4"].
+
+Beyond the climate footprint, red and processed meat consumption is associated with elevated mortality from colorectal cancer, type 2 diabetes, coronary heart disease, and stroke. The World Health Organization classifies processed meat as a Group 1 carcinogen and unprocessed red meat as a Group 2A carcinogen [^"5"]. Globally, red and processed meat consumption was associated with an estimated 2.4 million deaths in 2020 and $285 billion in healthcare costs [^"5"]. Because the United States has exceptionally high per capita meat consumption and an expensive healthcare system, its share of these costs is disproportionately large.
+
+A tax on meat is a Pigouvian instrument: when the market price of a good fails to reflect its full social cost, a corrective tax can move consumption toward the socially efficient quantity, raise revenue, and generate co-benefits across health, climate, and land use. Modelling studies consistently find that health and environmental benefits of a well-designed meat tax exceed its costs, including the consumer surplus loss [^"6"]. The key design choices, including what tax rate, what meats, where in the supply chain, and how to recycle revenues, substantially determine the net welfare outcome.
 
 ## Calculations
-Using the ratio between the tax rate and the reduction of demand by Springman et al. [^"3"] we assume that our tax rates will lead to a 10.8%, 2.8%, and 3% reduction in beef, pork, and chicken respectively. This would reduce yearly CO₂ emissions from livestock consumption [^"4"] by 135 million tons per year [^"5"].
 
-The revenue from this meat tax would raise approximately $12.6 billion dollars [^"6"].
+### Benefits
 
-A meat tax within this range would reduce diet related healthcare costs by 14%, [^"7"] or $7 billion out of $50 billion in overall diet-related health costs [^"8"]. 
+**Avoided Healthcare Costs.** Springmann et al. (2018) [^"5"] estimate that globally optimal health-motivated taxation of red and processed meat would prevent approximately 222,000 deaths per year and save $41 billion in healthcare costs annually. The tax rates in that study are 4% for unprocessed red meat and 25% for processed meat [^"5"], though the U.S.-specific rates are likely higher due to the high costs of the U.S. healthcare system. Given that the U.S. accounts for a large fraction of the global health cost burden from meat consumption, which is driven by both high per capita consumption and high per-unit healthcare costs, and that the Springmann et al. global figure covers all countries, we apply a scaling approach: the U.S. share of the global $285 billion health-cost burden is estimated at roughly 20–25% based on the combination of U.S. per capita consumption and healthcare cost multipliers, yielding approximately $57–71 billion in annual health costs attributable to red and processed meat in the United States. Under optimal taxation, health cost savings of 14% globally translate to an estimated $8–10 billion per year in U.S. healthcare savings [^"5"]. The 14% global reduction from Springmann et al. (2018) is likely a conservative estimate for the United States, both because U.S. per capita consumption substantially exceeds the global average and because the global figure is diluted by low-income countries where optimal tax rates are near zero and behavioral responses are therefore minimal.
 
-<DynamicSolutionGraphic
-  barChartTitle={"Meat Tax - Benefit Breakdown"}
-  barChartTitle2={"United States"}
-  rightSideAdd={0}
-  leftSideAdd={0}
-  chartType={"hideArrow"}
-  arrowText1={"135 million"}
-  arrowText2={"tons CO₂eq"}
-  arrowText3={"reduction"}
-  arrowText4={"annually"}
-  mastheadToggle={""}
-  mastheadText3={"Lee Nelson Mar.25.2023"}
-  staticData={[
-    {
-      name: "Tax Revenue",
-      barlength: 12.6,
-      displayedValue: "$12.6 billion/year",
-      site: "null",
-    },
-    {
-      name: "Health Care Savings",
-      barlength: 7,
-      displayedValue: "$7 billion/year",
-      site: "null",
-    },
-	{
-        name: "CO₂ Reduction",
-        barlength: 6.7,
-        displayedValue: "$6.7 billion/year",
-        site: "null",
-	}
-  ]}
-/>
+We additionally multiply health benefits by the 72% that represent costs not borne by private households [^"18"]. The reason is that the 28% first party costs are implicitly included in the quality-adjusted life years benefits of a meat tax as benefits described below.
 
-We use the average cost of passing state legislature ($13,625,000) [^"9"] and add the average cost of federal regulations ($11,714,286) [^"10"] to come up with a guess as to how much it would cost to enact this tax. Compliance costs are estimated to average $13,142,857 per regulation annually[^"10"].
+**Quality-Adjusted Life Years.** The health benefit of a U.S. meat tax can be estimated from two complementary U.S.-specific studies. Micha et al. (2017) [^"new1"] estimated that high processed meat intake was associated with approximately 57,766 cardiometabolic deaths per year in the United States in 2012, making it the third-largest dietary driver of cardiovascular and diabetes mortality after sodium and insufficient nuts and seeds. Peñalvo et al. (2017) [^"new2"], building on this baseline, modelled a 10% tax on processed meat (combined with taxes on unprocessed red meat and sugar-sweetened beverages) and estimated it would prevent approximately 23,000 cardiometabolic deaths per year in the U.S., with a 30% tax preventing roughly 63,000. Kim et al. (2019) [^"new3"] modelled a 10% excise tax on processed meat specifically in the U.S. and found it would add approximately 44,900 quality-adjusted life years (QALYs) over ten years from cancer reductions alone, and 472,000 QALYs over a lifetime horizon. These figures cover only processed meat; the evidence for unprocessed red meat causing cardiometabolic harm is more contested following a 2022 methodological critique of the Global Burden of Disease 2019 estimates, which found that GBD 2019 had increased its estimated deaths attributable to unprocessed red meat 36-fold relative to GBD 2017, largely by setting the theoretical minimum risk exposure level to zero [^"new4"].
 
-We also assume that over time 34.1 million hectares of land will be repurposed from beef production [^"11"].
+Translating the cardiometabolic mortality estimates to dollar values depends on the valuation method. Using the U.S. government's value of a statistical life, as of 2025, of approximately $14.2 million [^"new5"], preventing 10,000–15,000 deaths per year from a 20–25% processed meat tax--a plausible midpoint scaling from Peñalvo et al.'s modelled results--implies health benefits of approximately $142–213 billion per year. These figures are likely too high, however, because VSL implicitly values each death as if it occurs in a young person with full remaining life expectancy, whereas diet-related chronic disease deaths occur predominantly in older adults with fewer remaining life years. A more conservative QALY-based approach at $150,000 per QALY, applied to the Kim et al. lifetime estimate of 472,000 QALYs annualized over 30 years, yields approximately $2.4 billion per year from cancer outcomes alone under a 10% tax. Scaling to a 20–25% tax and adding cardiometabolic outcomes suggests a plausible value of at least $10 billion per year in health benefits from processed meat reduction. The true figure is sensitive to the following: the tax rate modelled; whether unprocessed red meat is included; the chosen valuation method; and assumptions about dietary substitution, particularly whether consumers shift toward poultry, which carries its own but smaller health costs.
+
+**Environmental Benefits.** Beyond direct health costs, environmental benefits from a U.S. meat tax include reduced greenhouse gas emissions. A 15–20% reduction in beef and processed meat consumption, consistent with the Springmann et al. demand response, applied to the 257.5 million ton CO₂e annual U.S. beef sector footprint [^"4"] yields approximately 38–51 million ton CO₂e reduced domestically per year. At a social cost of carbon of $120–200 per tonne (a recent U.S. government interim value) [^"7"], environmental benefits total approximately $5–10 billion per year in the U.S. alone. Associated benefits from reduced land use, water consumption, and biodiversity loss add further value but are not quantified here.
+
+Avoided consumption of red meat will be substituted by some other food, which has its own greenhouse gas impact. It is unclear what the substitution would be, but based on the analysis of Poore and Nemecek (2018) [^"17"], it is unlikely that more than a third of the greenhouse gas reduction from reduced red meat consumption will be offset by substitutions.
+
+Combining health savings, quality of life, and environmental benefits, we estimate total annual benefits in the range of $19.1 to $23.8 billion per year in the United States. We use $21.5 billion as a central estimate, acknowledging substantial uncertainty in both the health and environmental components.
+
+### Costs
+
+The costs are of two types. First, administrative and compliance costs for an upstream excise tax collected at the slaughterhouse or processor level are estimated at approximately 1–2% of tax revenue, based on analogy with sugar-sweetened beverage excise taxes, for which U.S. modelling found government administrative and industry compliance costs of approximately 1% each of revenues collected [^"8"]. If a 20% average effective tax on the approximately $100 billion U.S. retail beef and processed meat market raises revenues of roughly $15–20 billion per year, administrative and compliance costs would be approximately $300–400 million per year.
+
+Second, the consumer surplus loss from reduced consumption is a real social cost, though it is partially offset by internality corrections (i.e., where consumers' revealed preferences for meat over-weight short-term taste preferences relative to their own long-run health interests). Broeks et al. (2020) [^"6"] found that for the Netherlands, a 15% meat tax imposed consumer surplus losses of approximately €21 billion over 30 years, while health and environmental benefits exceeded €24 billion over the same period. Scaling to U.S. population and consumption patterns, the gross consumer surplus loss from a comparable tax is on the order of $18-20 billion per year before internality adjustments.
+
+We treat the gross consumer surplus loss as the cost estimate, for conservatism, noting that the literature argues a significant fraction of this reflects time-inconsistent preferences rather than true welfare loss [^"9"]. While internality effects are not quantified directly, they are included indirectly as the QALY benefit of a meat tax. The benefit-to-cost ratio of just above 1.0 is below the range of prior modelling studies, though it is sensitive to assumptions about the social cost of carbon and the valuation of statistical lives. The ratio would likely be much higher animal welfare and non-greenhouse gas environmental impacts were considered.
 
 ## Implementation
-This may need to come after, or in conjunction with a plant-based informational advocacy campaign to gain acceptance from the general public. Calculations are modeled as sales tax, legislation may need to be passed at the state level instead of federally. There will be strong opposition from the meat industry that will need to be countered.
 
-##### Lead researcher: Lee Nelson - Last updated March 22, 2023.
+The most administratively practical design is an upstream excise tax levied at slaughter or first processing, analogous to how federal alcohol excise taxes operate. This concentrates the compliance burden on a small number of large processors, as the four largest U.S. beef packers process roughly 75% of national supply [^"10"], and it avoids the classification challenges of a retail-level tax on processed foods with variable meat content. Rates should be differentiated at minimum between unprocessed red meat and processed meat, given their different health cost profiles. Emissions-intensity differentiation across production systems (feedlot vs. grass-fed) would be more environmentally efficient but is not currently feasible at scale due to agricultural GHG measurement limitations [^"11"].
 
-[^"1"]: McMichael, A. J., Powles, J. W., Butler, C. D., Uauy, R. ["Food, livestock production, energy, climate change, and health"](https://doi.org/10.1016/S0140-6736(07)61256-2). The Lancet **370**(9594), pp, 1253-1263. October 2007.
+Without revenue recycling, a meat tax is modestly regressive, since lower-income households spend a larger share of income on food. However, the literature finds that this regressivity is mild and can be fully reversed through per-capita lump-sum transfers or targeted reductions in other food taxes (e.g., sales or excise taxes on fruits and vegetables) [^"12"]. Revenue recycling is therefore both a welfare necessity and a political strategy: presenting the tax as part of a package that returns revenue to households, rather than as a net fiscal extraction, significantly improves public acceptability.
 
-[^"2"]: Säll S., Gren I. ["Effects of an environmental tax on meat and dairy consumption in Sweden"](https://doi.org/10.1016/j.foodpol.2015.05.008). Food Policy, Volume 55, Pages 41-53, ISSN 0306-9192. August 2015.
+Price signals alone are insufficient to change deeply entrenched consumption patterns. A meat tax should be paired with the following: (a) public procurement reform to reduce meat in federal institutions (schools, military, hospitals); (b) front-of-pack labelling of the climate and health costs of meat products; (c) investment in alternative protein research and development; and (d) transition support for livestock farmers, particularly smaller independent producers who are most vulnerable to demand-side shocks. Note that development in alternative proteins will reduce the consumer surplus cost associated with a meat tax.
 
-[^"3"]: Springmann, M., Mason-D’Croz, D., Robinson, S. Weibe, K., Godfray, C. J., Rayner, M., Scarborough, P. ["Mitigation potential and global health impacts from emissions pricing of food commodities"](https://doi.org/10.1038/nclimate3155). Nature Climate Change **7**, pp. 69–74. November 2016.
+The principal political obstacles are the concentrated lobbying power of the meat industry and low public support. The U.S. meat and dairy industry spent over $10 million on political contributions and lobbying in 2023 alone [^"10"]. Public support for a meat tax is below 50% in the U.S., with opposition particularly strong among rural, conservative, and male constituencies [^"13"]. Advocacy research suggests that health-based framings (rather than climate framings), combination with subsidies for healthier alternatives, and clear revenue-recycling commitments improve acceptability [^"14"]. No U.S. jurisdiction has yet enacted a direct meat tax, making the political window narrow in the near term; subsidy reform (phasing out the large federal feed-crop subsidies that implicitly lower meat prices) may be a more politically tractable near-term entry point [^"15"]. Subsidy reform is indeed necessary, as feed-crop subsidies artificially lower meat prices and work against the goals of a meat tax.
 
-[^"4"]: Kuck, G., Schnitkey, G. ["An Overview of Meat Consumption in the United States"](https://farmdocdaily.illinois.edu/2021/05/an-overview-of-meat-consumption-in-the-united-states.html). Farmdoc Daily **11**(76). Department of Agricultural and Consumer Economics, University of Illinois at Urbana-Champaign. May 2021.
+Several important empirical questions remain contested. The health benefits depend on cross-price elasticities: if beef tax shifts consumption toward processed chicken (more animals per kilogram, different health profile), health gains are reduced, and it may be harmful overall from an animal welfare perspective. Carbon leakage is a concern if production shifts to less regulated exporters. And the health cost savings estimated by Springmann et al. (2018) are based on global models; U.S.-specific estimates remain less certain. Despite these uncertainties, the consistency of net positive welfare findings across multiple independent modelling studies in different countries provides reasonable confidence that the direction of the benefit-cost assessment is robust.
 
-[^"5"]: Our World In Data. ["The carbon footprint of foods: are differences explained by the impacts of methane?"](https://ourworldindata.org/carbon-footprint-food-methane) Accessed January 17, 2023.
+##### Lead researcher: Michael Goff - Last updated April 30, 2026.
 
-[^"6"]: U.S. Bureau of Labor Statistics. ["Consumer Expenditure Surveys"](https://www.bls.gov/cex/tables/calendar-year/mean/cu-all-multi-year-2021.pdf). 2021.
+[^"1"]: Michigan Farm News. ["U.S. beef consumption stable in 2024, pork and poultry expected to increase"](https://www.michiganfarmnews.com/us-beef-consumption-stable-in-2024-pork-and-poultry-expected-to-increase). April 2024.
 
-[^"7"]: Springmann, M., Mason-D’Croz, D., Robinson, S., Wiebe, K., Godfray, H.C.J., Rayner M, Scarborough, P. ["Health-motivated taxes on red and processed meat: A modelling study on optimal tax levels and associated health impacts"](https://doi.org/10.1371/journal.pone.0204139). PLoS ONE **13**(11): e0204139. November 2018.
+[^"2"]: Flatt Osborne, J. ["U.S. Meat Consumption Statistics & Facts To Know In 2026"](https://worldanimalfoundation.org/advocate/us-meat-consumption/). World Animal Foundation. April 2026.
 
-[^"8"]: Jardim, T.V., Mozaffarian, D., Abrahams-Gessel, S., Sy, S., Lee, Y., Liu, J., Huang, Y., Rehm, C., Wilde, P., Micha, R., Gaziano, T. A. ["Cardiometabolic disease costs associated with suboptimal diet in the United States: A cost analysis based on a microsimulation model"](https://doi.org/10.1371/journal.pmed.1002981). PLoS Med **16**(12): e1002981. December 2019.
+[^"3"]: Munch, D. ["2022 EPA Emissions Inventory Highlights Agriculture's Sustainability Strides"](https://www.fb.org/market-intel/2022-epa-emissions-inventory-highlights-agricultures-sustainability-strides). American Farm Bureau Federation. April 2024.
 
-[^"9"]: Legislative Service Bureau. ["Average Cost of Enacting a New State Law"](https://www.michigancapitolconfidential.com/enacting-a-new-state-law-costs-272500-on-average). Accessed January 14, 2023.
+[^"3a"]: Congressional Budget Office. ["Emissions of Greenhouse Gases in the Agriculture Sector"](https://www.cbo.gov/publication/61690). August 2025.
 
-[^"10"]: Office of Management and Budget [“Costs and Benefits of U.S. Government Regulations”](https://www.thoughtco.com/costs-and-benefits-of-government-regulations-4068946). Accessed January 14, 2023.
+[^"4"]: Alemu, A.W., Romero-Perez, A., Nkrumah, J.D., Beauchemin, K.A., Guan, L.L., Basarab, J.A., Schenkel, F.S., Miller, S.P., Plastow, G.S., Fitzsimmons, C. ["Greenhouse gas emissions in U.S. beef production can be reduced by up to 30% with the adoption of selected mitigation measures"](https://doi.org/10.1038/s43016-024-01031-9). Nature Food **5**, pp. 726–736. August 2024.
 
-[^"11"]: Bloomberg ["U.S. Land Use"](https://www.bloomberg.com/graphics/2018-us-land-use/#xj4y7vzkg). Accessed January 14, 2023.
+[^"5"]: Springmann, M., Mason-D'Croz, D., Robinson, S., Wiebe, K., Godfray, H.C.J., Rayner, M., Scarborough, P. ["Health-motivated taxes on red and processed meat: A modelling study on optimal tax levels and associated health impacts"](https://doi.org/10.1371/journal.pone.0204139). PLOS ONE **13**(11), e0204139. November 2018.
+
+[^"6"]: Broeks, M.J., Biesbroek, S., Over, E.A.B., van Gils, P.F., Toxopeus, I., Beukers, M.H., Temme, E.H.M. ["A social cost-benefit analysis of meat taxation and a fruit and vegetables subsidy for a healthy and sustainable food consumption in the Netherlands"](https://doi.org/10.1186/s12889-020-08590-z). BMC Public Health **20**, 643. May 2020.
+
+[^"7"]: United States Environmental Protection Agency. ["EPA Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances"](https://www.epa.gov/system/files/documents/2023-12/epa_scghg_2023_report_final.pdf). Washington, DC: EPA. 2023.
+
+[^"8"]: Du, M., Griecci, C.F., Kim, D.D., Cudhea, F., Ruan, M., Eom, H., Wong, J.B., Wilde, P.E., Michaud, D.S., Lee, Y., Micha, R., Mozaffarian, D., Fang Zhang, F., ["Cost-effectiveness of a national sugar-sweetened beverage tax to reduce cancer burdens and disparities in the United States"](https://doi.org/10.1093/jncics/pkaa073). JNCI Cancer Spectrum **4**(6): pkaa073. December 2020.
+
+[^"9"]: Funke, F., Mattauch, L., van den Bijgaart, I., Godfray, H.C.J., Hepburn, C., Klenert, D., Springmann, M., Treich, N. ["Toward Optimal Meat Pricing: Is It Time to Tax Meat Consumption?"](https://doi.org/10.1086/721078). Review of Environmental Economics and Policy **16**(2), pp. 219–240. 2022.
+
+[^"10"]: McCracken, J. ["Meat industry increases political spending, lobbying as U.S.DA updates crucial regulations"](https://missouriindependent.com/2024/06/06/meat-industry-increases-political-spending-lobbying-as-usda-updates-crucial-regulations/). Missouri Independent. June 2024.
+
+[^"11"]: United States Department of Agriculture. ["Federal Strategy to Advance Greenhouse Gas Emissions Measurement and Monitoring for the Agriculture and Forest Sectors"](https://www.usda.gov/sites/default/files/documents/Draft-Federal-Ag-and-Forest-MMRV-Strategy.pdf). Washington, DC: U.S.DA. July 2023.
+
+[^"12"]: Klenert, D., Funke, F., Cai, M. ["Meat taxes in Europe can be designed to avoid overburdening low-income consumers"](https://doi.org/10.1038/s43016-023-00849-z). Nature Food **4**(10), pp. 894–901. October 2023.
+
+[^"13"]: Elwing, E., Harring, N., Jagers, S.C., Persson, M. ["Public support for meat-reduction policy instruments is higher for subsidies and health framing than alternatives across six countries"](https://doi.org/10.1038/s44458-026-00043-9). Communications Sustainability **1**: 38. March 2026.
+
+[^"14"]: Fesenfeld, L. ["The political economy of taxing meat"](https://doi.org/10.1038/s43016-023-00716-x). Nature Food **4**(3), pp. 209–210. February 2023.
+
+[^"15"]: Farm Action. ["The Feed-Meat Complex: Unpacking the Truth About How Big Meat Pockets Billions in Farm Subsidies"](https://farmaction.us/2020/11/16/thefeedmeatcomplex/). November 2020.
+
+[^"16"]: Guy, J. ["'Meat taxes' would save many lives and cut health care costs, study says"](https://www.cnn.com/2018/11/07/health/meat-tax-healthcare-scientists-scli-intl). CNN. November 2018.
+
+[^"17"]: Poore, J., Nemecek, T. ["Reducing food’s environmental impacts through producers and consumers"](https://doi.org/10.1126/science.aaq0216). Science **360**(6392), pp. 987-992. June 2018.
+
+[^"new1"]: Micha, R., Peñalvo, J.L., Cudhea, F., Imamura, F., Rehm, C.D., Mozaffarian, D. ["Association between dietary factors and mortality from heart disease, stroke, and type 2 diabetes in the United States"](https://doi.org/10.1001/jama.2017.0947). Journal of the American Medical Association **317**(9), pp. 912–924. March 2017.
+
+[^"new2"]: Peñalvo, J.L., Cudhea, F., Micha, R., Rehm, C.D., Afshin, A., Whitsel, L., Wilde, P., Gaziano, T., Pearson-Stuttard, J., O'Flaherty, M., Capewell, S., Mozaffarian, D. ["The potential impact of food taxes and subsidies on cardiovascular disease and diabetes burden and disparities in the United States"](https://doi.org/10.1186/s12916-017-0971-9). BMC Medicine **15**, 208. November 2017.
+
+[^"new3"]: Kim, D.D., Wilde, P.E., Michaud, D.S., Mozaffarian, D., Forman, J.P., Wong, J.B., Zhang, F.F. ["Cost effectiveness of nutrition policies on processed meat: implications for cancer burden in the U.S."](https://doi.org/10.1016/j.amepre.2019.02.023). American Journal of Preventive Medicine **57**(5), pp. 635–644. November 2019.
+
+[^"new4"]: Stanton, A.V., Leroy, F., Elliott, C., Mann, N., Muller, D.C., Muller, M., Navarro, M.A., Norde, M.M., Pearce, K.L., Pett, K., Pimpin, L., Powles, J., Mente, A., Yusuf, S. ["36-fold higher estimate of deaths attributable to red meat intake in GBD 2019: is this reliable?"](https://doi.org/10.1016/S0140-6736(22)00311-7). The Lancet **399**(10332), pp. e23–e26. February 2022.
+
+[^"new5"]: United States Department of Transportation. ["Guidance on Treatment of the Economic Value of a Statistical Life"](https://www.transportation.gov/office-policy/transportation-policy/revised-departmental-guidance-on-valuation-of-a-statistical-life-in-economic-analysis). Washington, DC: U.S.DOT. Accessed April 30, 2026.
+
+[^"18"]: Centers for Medicare & Medicaid Services. ["NHE Fact Sheet"](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet). United States Department of Health and Human Services. Accessed April 30, 2026.
 
 export default ({ children }) => 
   <SolutionDropdown 
