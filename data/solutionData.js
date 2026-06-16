@@ -164,7 +164,8 @@ export const solutionData = [
     sources: null,
     subset: "miscellaneous",
   },
-  {
+/*   This solution has been removed until we have a better estimate of the cost and benefit. The current estimate is based on a single study that may not be representative of the true cost and benefit of this solution. We will revisit this solution once we have more data. -- jye june 16 2023
+  { 
     solution: `Meat Tax - U.S.`,
     link: `/matter/diet/diet_fw#u-s-meat-tax`,
     site: `matter`,
@@ -174,7 +175,7 @@ export const solutionData = [
     habitat: 341000,
     sources: null,
     subset: "public-health-campaigns",
-  },
+  }, */
   {
     solution: `Modular Island Desalination - Mediterranean Islands`,
     link: `/matter/water/water_provision#renewable-energy-powered-desalinization-expansion-prioritization`,
