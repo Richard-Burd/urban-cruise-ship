@@ -445,7 +445,7 @@ const Crew = () => {
             />
           </a>
           <a
-            href="https://richard-burd.github.io/"
+            href="https://www.richardburd.dev"
             target="_blank"
             rel="noreferrer"
           >
